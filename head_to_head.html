@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Head to Head</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<div id="nav"></div>
+
+<main>
+    <h1>Head to Head</h1>
+    <div id="h2h-container">Loading...</div>
+</main>
+
+<script src="data.js" onload="loadMod()"></script>
+<script>
+function loadMod() {
+    var s = document.createElement("script");
+    s.type = "module";
+    s.src = "head_to_head.js";
+    document.body.appendChild(s);
+}
+</script>
+
+</body>
+</html>

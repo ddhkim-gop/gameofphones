@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Draft</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+<div id="nav"></div>
+
+<main>
+    <h1>Draft</h1>
+
+    <div class="card">
+        <label for="yearSelect"><strong>Select Draft Year:</strong></label>
+        <select id="yearSelect">
+            <option value="2026">2026</option>
+            <option value="2025">2025</option>
+            <option value="2024">2024</option>
+            <option value="2023">2023</option>
+        </select>
+    </div>
+
+    <div class="card">
+        <h3>Positional Breakdown</h3>
+        <div id="position-stats">Loading...</div>
+    </div>
+
+    <div id="draft-container">Loading...</div>
+</main>
+
+<script src="data.js" onload="loadMod()"></script>
+<script>
+function loadMod() {
+    var s = document.createElement("script");
+    s.type = "module";
+    s.src = "draft.js";
+    document.body.appendChild(s);
+}
+</script>
+
+</body>
+</html>
