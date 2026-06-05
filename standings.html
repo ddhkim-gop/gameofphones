@@ -14,8 +14,15 @@
 
 <div id="standings-container">Loading...</div>
 
-<script src="data.js"></script>
-<script type="module" src="standings.js"></script>
+<script src="data.js" onload="loadMod()"></script>
+<script>
+function loadMod() {
+    var s = document.createElement("script");
+    s.type = "module";
+    s.src = "standings.js";
+    document.body.appendChild(s);
+}
+</script>
 
 </body>
 </html>

@@ -15,8 +15,15 @@
     <div id="h2h-container">Loading...</div>
 </main>
 
-<script src="data.js"></script>
-<script type="module" src="head_to_head.js"></script>
+<script src="data.js" onload="loadMod()"></script>
+<script>
+function loadMod() {
+    var s = document.createElement("script");
+    s.type = "module";
+    s.src = "head_to_head.js";
+    document.body.appendChild(s);
+}
+</script>
 
 </body>
 </html>

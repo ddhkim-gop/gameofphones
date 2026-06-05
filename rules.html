@@ -14,8 +14,15 @@
 
 <div id="rules-container">Loading...</div>
 
-<script src="data.js"></script>
-<script type="module" src="rules.js"></script>
+<script src="data.js" onload="loadMod()"></script>
+<script>
+function loadMod() {
+    var s = document.createElement("script");
+    s.type = "module";
+    s.src = "rules.js";
+    document.body.appendChild(s);
+}
+</script>
 
 </body>
 </html>
