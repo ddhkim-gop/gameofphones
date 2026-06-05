@@ -32,15 +32,8 @@
     <div id="draft-container">Loading...</div>
 </main>
 
-<script src="data.js" onload="loadMod()"></script>
-<script>
-function loadMod() {
-    var s = document.createElement("script");
-    s.type = "module";
-    s.src = "draft.js";
-    document.body.appendChild(s);
-}
-</script>
+<script src="data.js"></script>
+<script type="module" src="draft.js"></script>
 
 </body>
 </html>
