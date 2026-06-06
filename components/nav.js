@@ -5,6 +5,7 @@ export function renderNav() {
     const page = location.pathname.split("/").pop() || "index.html";
     const teamsActive = ["teams.html", "assets.html"].includes(page);
     const txActive = ["transactions.html", "trade_analyzer.html"].includes(page);
+    const standingsActive = ["standings.html", "report_card.html"].includes(page);
 
     function cur(p) { return page === p ? ' class="current"' : ""; }
 
@@ -123,7 +124,15 @@ export function renderNav() {
             <div class="nav-links" id="nav-links">
                 <a href="index.html"${cur("index.html")}>Home</a>
                 <a href="draft.html"${cur("draft.html")}>Draft</a>
-                <a href="standings.html"${cur("standings.html")}>Standings</a>
+                <div class="nav-dropdown${standingsActive ? " active" : ""}" data-dropdown="standings">
+                    <span class="nav-dropdown-label">Standings ▾</span>
+                    <div class="nav-dropdown-menu">
+                        <div class="nav-dropdown-menu-inner">
+                            <a href="standings.html">Standings</a>
+                            <a href="report_card.html">Manager Report Card</a>
+                        </div>
+                    </div>
+                </div>
                 <div class="nav-dropdown${teamsActive ? " active" : ""}" data-dropdown="teams">
                     <span class="nav-dropdown-label">Teams ▾</span>
                     <div class="nav-dropdown-menu">

@@ -10,7 +10,8 @@ let allPlayerStats = {};
 let allDraftData = {};
 let playerNameMap = {};
 let currentView = "all_time";
-let currentPage = "standings"; // "standings" | "report_card"
+const IS_REPORT_CARD_PAGE = location.pathname.includes("report_card");
+let currentPage = IS_REPORT_CARD_PAGE ? "report_card" : "standings";
 
 const FAAB_BUDGET = 100;
 const YEARS = ["2026", "2025", "2024", "2023"];
@@ -912,40 +913,36 @@ async function init() {
         allDraftData["2025"] = draft2025;
 
         const controls = document.getElementById("s-controls");
-        controls.innerHTML = `
-            <div class="filter-bar" style="display:flex;align-items:center;gap:12px;flex-wrap:wrap;margin-bottom:16px;">
-                <div style="display:flex;background:#252830;border-radius:10px;padding:3px;gap:2px;">
-                    <button class="page-tab active" id="tab-standings" onclick="switchPage('standings')">Standings</button>
-                    <button class="page-tab" id="tab-report_card" onclick="switchPage('report_card')">Manager Report Card</button>
-                </div>
-                <select id="s-select">
-                    <option value="all_time" selected>All Years</option>
-                    <option value="2026">2026</option>
-                    <option value="2025">2025</option>
-                    <option value="2024">2024</option>
-                    <option value="2023">2023</option>
-                </select>
-            </div>
-        `;
-        // Restore state from URL
-        const params = new URLSearchParams(location.search);
-        const yearParam = params.get("year");
-        if (yearParam && (YEARS.includes(yearParam) || yearParam === "all_time")) {
-            currentView = yearParam;
-        }
-        const hash = location.hash.replace("#", "");
-        if (hash === "report_card") {
-            currentPage = "report_card";
-            document.getElementById("tab-report_card")?.classList.add("active");
-            document.getElementById("tab-standings")?.classList.remove("active");
-        }
-        document.getElementById("s-select").value = currentView;
 
-        document.getElementById("s-select").addEventListener("change", (e) => {
-            currentView = e.target.value;
-            updateUrl();
-            render();
-        });
+        if (IS_REPORT_CARD_PAGE) {
+            controls.innerHTML = "";
+        } else {
+            // Restore year from URL
+            const params = new URLSearchParams(location.search);
+            const yearParam = params.get("year");
+            if (yearParam && (YEARS.includes(yearParam) || yearParam === "all_time")) {
+                currentView = yearParam;
+            }
+
+            controls.innerHTML = `
+                <div class="filter-bar" style="display:flex;align-items:center;gap:12px;flex-wrap:wrap;margin-bottom:16px;">
+                    <select id="s-select">
+                        <option value="all_time">All Years</option>
+                        <option value="2026">2026</option>
+                        <option value="2025">2025</option>
+                        <option value="2024">2024</option>
+                        <option value="2023">2023</option>
+                    </select>
+                </div>
+            `;
+            document.getElementById("s-select").value = currentView;
+            document.getElementById("s-select").addEventListener("change", (e) => {
+                currentView = e.target.value;
+                updateUrl();
+                render();
+            });
+        }
+
         render();
 
     } catch (err) {
