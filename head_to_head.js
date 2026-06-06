@@ -20,16 +20,19 @@ function getTeams(dataset) {
     });
 }
 
-function recordCell(d) {
-    if (!d) return `<td class="cell-empty">—</td>`;
+function recordCell(d, colInactive) {
+    const dimStyle = colInactive ? "opacity:0.35;" : "";
+    if (!d) return `<td class="cell-pad" style="${dimStyle}"><div class="cell-empty">—</div></td>`;
     const { wins, losses, ties } = d;
     const total = wins + losses + ties;
     const pct = total > 0 ? wins / total : 0;
-    const hue = Math.round(pct * 120); // 0=red, 120=green
-    const bg = `hsla(${hue}, 60%, 92%, 1)`;
-    const color = `hsl(${hue}, 50%, 30%)`;
+    const hue = Math.round(pct * 120);
+    const bg = `hsla(${hue}, 58%, 22%, 1)`;
+    const color = `hsl(${hue}, 80%, 72%)`;
     const record = ties > 0 ? `${wins}-${losses}-${ties}` : `${wins}-${losses}`;
-    return `<td class="cell-record" style="background:${bg};color:${color}" title="${d.pf} PF / ${d.pa} PA">${record}</td>`;
+    return `<td class="cell-pad" style="${dimStyle}" title="${d.pf?.toFixed(0)} PF / ${d.pa?.toFixed(0)} PA">
+        <div class="cell-record" style="background:${bg};color:${color}">${record}</div>
+    </td>`;
 }
 
 function renderMatrix(dataset) {
@@ -40,31 +43,30 @@ function renderMatrix(dataset) {
 
     // Header row
     html += `<thead><tr><th class="corner"></th>`;
-    teams.forEach(t => html += `<th class="col-head"><div>${t}</div></th>`);
+    teams.forEach(t => html += `<th class="col-head${INACTIVE.has(t) ? " col-inactive" : ""}"><div>${t}</div></th>`);
     html += `</tr></thead><tbody>`;
 
     // Data rows
     teams.forEach(a => {
-        // Compute overall record for this team
-        let w = 0, l = 0, ti = 0, pf = 0;
+        let w = 0, l = 0, ti = 0, pf = 0, pa = 0;
         teams.forEach(b => {
             if (a === b) return;
             const d = dataset[a]?.[b];
-            if (d) { w += d.wins; l += d.losses; ti += d.ties; pf += d.pf; }
+            if (d) { w += d.wins; l += d.losses; ti += d.ties; pf += d.pf || 0; pa += d.pa || 0; }
         });
         const overall = ti > 0 ? `${w}-${l}-${ti}` : `${w}-${l}`;
 
         html += `<tr class="${INACTIVE.has(a) ? 'inactive-row' : ''}">`;
         html += `<td class="row-head">
             <div class="row-name">${a}</div>
-            <div class="row-record">${overall} • ${pf.toFixed(0)} PF</div>
+            <div class="row-record">${overall} · ${pf.toFixed(0)} PF · ${pa.toFixed(0)} PA</div>
         </td>`;
 
         teams.forEach(b => {
             if (a === b) {
-                html += `<td class="cell-self">●</td>`;
+                html += `<td class="cell-self${INACTIVE.has(b) ? ' col-inactive-cell' : ''}">●</td>`;
             } else {
-                html += recordCell(dataset[a]?.[b]);
+                html += recordCell(dataset[a]?.[b], INACTIVE.has(b));
             }
         });
 
@@ -106,41 +108,18 @@ async function init() {
     <style>
         #h2h-container { max-width: 100%; overflow-x: auto; }
 
-        .h2h-controls {
-            display: flex;
-            gap: 8px;
-            flex-wrap: wrap;
-            margin-bottom: 20px;
-        }
-        .h2h-btn {
-            padding: 6px 16px;
-            border-radius: 999px;
-            border: 1px solid #e5e7eb;
-            background: #fff;
-            font-size: 13px;
-            font-weight: 600;
-            cursor: pointer;
-            color: #374151;
-            transition: all 0.15s;
-        }
-        .h2h-btn:hover { border-color: #9ca3af; }
-        .h2h-btn.active {
-            background: #111827;
-            color: #fff;
-            border-color: #111827;
-        }
-
         .view-label {
             font-size: 18px;
             font-weight: 700;
             margin-bottom: 16px;
-            color: #111827;
+            color: #f0f1f3;
         }
 
-        .matrix-wrap { overflow-x: auto; }
+        .matrix-wrap { overflow-x: auto; -webkit-overflow-scrolling: touch; }
 
         .matrix {
-            border-collapse: collapse;
+            border-collapse: separate;
+            border-spacing: 0;
             font-size: 12px;
             white-space: nowrap;
         }
@@ -149,59 +128,74 @@ async function init() {
             text-align: center;
         }
 
-        .corner { width: 160px; }
+        .corner { width: 180px; }
 
         .col-head {
-            height: 100px;
+            height: 80px;
             vertical-align: bottom;
-            padding-bottom: 6px;
+            padding-bottom: 4px;
         }
         .col-head div {
             writing-mode: vertical-rl;
             transform: rotate(180deg);
             font-size: 11px;
             font-weight: 700;
-            color: #374151;
+            color: #f0f1f3;
             padding: 4px 6px;
         }
+        .col-head.col-inactive div { opacity: 0.35; }
 
         .row-head {
             text-align: left;
-            padding: 6px 12px 6px 0;
-            min-width: 160px;
+            padding: 3px 14px 3px 0;
+            min-width: 170px;
         }
         .row-name {
             font-size: 13px;
             font-weight: 700;
-            color: #111827;
+            color: #f0f1f3;
         }
         .row-record {
             font-size: 11px;
-            color: #9ca3af;
+            color: #8b9099;
             margin-top: 1px;
         }
 
+        .cell-pad { padding: 3px; }
+
         .cell-record {
-            width: 52px;
-            height: 40px;
-            font-size: 12px;
+            width: 40px;
+            height: 26px;
+            font-size: 10px;
             font-weight: 700;
-            border-radius: 4px;
+            border-radius: 5px;
             cursor: default;
+            display: flex;
+            align-items: center;
+            justify-content: center;
         }
         .cell-self {
-            color: #e5e7eb;
-            font-size: 16px;
+            color: #2d3139;
+            font-size: 14px;
+            padding: 3px;
         }
-        .cell-empty { color: #e5e7eb; }
+        .cell-empty {
+            color: #2d3139;
+            width: 40px;
+            height: 26px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            font-size: 12px;
+        }
+        .col-inactive-cell { opacity: 0.35; }
 
-        .matrix tbody tr:hover .row-name { color: #7c3aed; }
-        .inactive-row { opacity: 0.45; }
-        .col-head.inactive { opacity: 0.45; }
+        .matrix tbody tr:hover .row-name { color: #818cf8; }
+        .inactive-row { opacity: 0.35; }
         .inactive-row td, .col-head.inactive { font-style: italic; }
 
         .h2h-empty {
-            color: #9ca3af;
+            color: #5a6070;
             padding: 40px 0;
             text-align: center;
         }
@@ -215,12 +209,11 @@ async function init() {
     try {
         data = await api.getHeadToHead();
 
-        const seasons = Object.keys(data.seasons || {}).sort().reverse();
         const controls = document.getElementById("h2h-controls");
         controls.innerHTML = `
             <div class="filter-bar">
                 <select id="h2h-select">
-                    <option value="all_time">All-Time</option>
+                    <option value="all_time">All Years</option>
                     <option value="2026">2026</option>
                     <option value="2025">2025</option>
                     <option value="2024">2024</option>

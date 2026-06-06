@@ -4696,11 +4696,12 @@ window.__STATIC_DATA__ = {
       "players": [
         {
           "player_id": "10219",
-          "espn_id": 4362619,
+          "espn_id": null,
           "name": "Chris Rodriguez",
           "position": "RB",
           "team": "JAX",
           "age": 26,
+          "birth_date": "1999-09-26",
           "college": "Kentucky",
           "height": "71",
           "weight": "224",
@@ -4710,11 +4711,12 @@ window.__STATIC_DATA__ = {
         },
         {
           "player_id": "11533",
-          "espn_id": 3953687,
+          "espn_id": null,
           "name": "Brandon Aubrey",
           "position": "K",
           "team": "DAL",
           "age": 31,
+          "birth_date": "1995-03-14",
           "college": "Notre Dame",
           "height": "75",
           "weight": "218",
@@ -4724,11 +4726,12 @@ window.__STATIC_DATA__ = {
         },
         {
           "player_id": "11628",
-          "espn_id": 4432708,
+          "espn_id": null,
           "name": "Marvin Harrison",
           "position": "WR",
           "team": "ARI",
           "age": 23,
+          "birth_date": "2002-08-11",
           "college": "Ohio State",
           "height": "75",
           "weight": "220",
@@ -4743,6 +4746,7 @@ window.__STATIC_DATA__ = {
           "position": "WR",
           "team": null,
           "age": 24,
+          "birth_date": "2001-06-28",
           "college": "Alabama",
           "height": "72",
           "weight": "204",
@@ -4752,11 +4756,12 @@ window.__STATIC_DATA__ = {
         },
         {
           "player_id": "12518",
-          "espn_id": 4431459,
+          "espn_id": null,
           "name": "Tyler Warren",
           "position": "TE",
           "team": "IND",
           "age": 24,
+          "birth_date": "2002-05-24",
           "college": "Penn State",
           "height": "78",
           "weight": "256",
@@ -4766,11 +4771,12 @@ window.__STATIC_DATA__ = {
         },
         {
           "player_id": "12519",
-          "espn_id": 4685278,
+          "espn_id": null,
           "name": "Luther Burden",
           "position": "WR",
           "team": "CHI",
           "age": 22,
+          "birth_date": "2003-12-12",
           "college": "Missouri",
           "height": "72",
           "weight": "210",
@@ -4780,11 +4786,12 @@ window.__STATIC_DATA__ = {
         },
         {
           "player_id": "12526",
-          "espn_id": 4685472,
+          "espn_id": null,
           "name": "Tetairoa McMillan",
           "position": "WR",
           "team": "CAR",
           "age": 23,
+          "birth_date": "2003-04-05",
           "college": "Arizona",
           "height": "77",
           "weight": "212",
@@ -4794,11 +4801,12 @@ window.__STATIC_DATA__ = {
         },
         {
           "player_id": "13302",
-          "espn_id": 4685526,
+          "espn_id": null,
           "name": "Adam Randall",
           "position": "RB",
           "team": "BAL",
           "age": 21,
+          "birth_date": "2004-07-14",
           "college": "Clemson",
           "height": "75",
           "weight": "232",
@@ -4808,11 +4816,12 @@ window.__STATIC_DATA__ = {
         },
         {
           "player_id": "13303",
-          "espn_id": 4685413,
+          "espn_id": null,
           "name": "Cade Klubnik",
           "position": "QB",
           "team": "NYJ",
           "age": 22,
+          "birth_date": "2003-10-10",
           "college": "Clemson",
           "height": "74",
           "weight": "207",
@@ -4822,11 +4831,12 @@ window.__STATIC_DATA__ = {
         },
         {
           "player_id": "13306",
-          "espn_id": 4431325,
+          "espn_id": null,
           "name": "Taylen Green",
           "position": "QB",
           "team": "CLE",
           "age": 23,
+          "birth_date": "2002-10-18",
           "college": "Arkansas",
           "height": "78",
           "weight": "230",
@@ -4836,11 +4846,12 @@ window.__STATIC_DATA__ = {
         },
         {
           "player_id": "13392",
-          "espn_id": 4885466,
+          "espn_id": null,
           "name": "Jeff Caldwell",
           "position": "WR",
           "team": "KC",
           "age": 23,
+          "birth_date": "2003-03-02",
           "college": "Cincinnati",
           "height": "77",
           "weight": "215",
@@ -4850,11 +4861,12 @@ window.__STATIC_DATA__ = {
         },
         {
           "player_id": "13404",
-          "espn_id": 4567747,
+          "espn_id": null,
           "name": "Garrett Nussmeier",
           "position": "QB",
           "team": "KC",
           "age": 24,
+          "birth_date": "2002-02-07",
           "college": "LSU",
           "height": "73",
           "weight": "205",
@@ -4864,11 +4876,12 @@ window.__STATIC_DATA__ = {
         },
         {
           "player_id": "13419",
-          "espn_id": 4685489,
+          "espn_id": null,
           "name": "Jaydn Ott",
           "position": "RB",
           "team": "KC",
           "age": 23,
+          "birth_date": "2002-12-16",
           "college": "Oklahoma",
           "height": "71",
           "weight": "208",
@@ -4878,11 +4891,12 @@ window.__STATIC_DATA__ = {
         },
         {
           "player_id": "13477",
-          "espn_id": 5092508,
+          "espn_id": null,
           "name": "Colbie Young",
           "position": "WR",
           "team": "CIN",
           "age": 23,
+          "birth_date": "2002-07-24",
           "college": "Georgia",
           "height": "76",
           "weight": "218",
@@ -4897,6 +4911,7 @@ window.__STATIC_DATA__ = {
           "position": "QB",
           "team": "KC",
           "age": 30,
+          "birth_date": "1995-09-17",
           "college": "Texas Tech",
           "height": "74",
           "weight": "225",
@@ -4911,6 +4926,7 @@ window.__STATIC_DATA__ = {
           "position": "RB",
           "team": "ARI",
           "age": 31,
+          "birth_date": "1995-05-05",
           "college": "Pittsburgh",
           "height": "73",
           "weight": "233",
@@ -4925,6 +4941,7 @@ window.__STATIC_DATA__ = {
           "position": "QB",
           "team": "IND",
           "age": 29,
+          "birth_date": "1997-05-27",
           "college": "Duke",
           "height": "77",
           "weight": "230",
@@ -4939,6 +4956,7 @@ window.__STATIC_DATA__ = {
           "position": "RB",
           "team": "NYG",
           "age": 28,
+          "birth_date": "1997-09-03",
           "college": "Florida Atlantic",
           "height": "67",
           "weight": "203",
@@ -4953,6 +4971,7 @@ window.__STATIC_DATA__ = {
           "position": "WR",
           "team": "DAL",
           "age": 27,
+          "birth_date": "1999-04-08",
           "college": "Oklahoma",
           "height": "74",
           "weight": "198",
@@ -4967,6 +4986,7 @@ window.__STATIC_DATA__ = {
           "position": "TE",
           "team": "NO",
           "age": 29,
+          "birth_date": "1996-09-13",
           "college": "Oregon",
           "height": "76",
           "weight": "231",
@@ -4976,11 +4996,12 @@ window.__STATIC_DATA__ = {
         },
         {
           "player_id": "7547",
-          "espn_id": 4374302,
+          "espn_id": null,
           "name": "Amon-Ra St. Brown",
           "position": "WR",
           "team": "DET",
           "age": 26,
+          "birth_date": "1999-10-24",
           "college": "USC",
           "height": "72",
           "weight": "202",
@@ -4990,11 +5011,12 @@ window.__STATIC_DATA__ = {
         },
         {
           "player_id": "7588",
-          "espn_id": 4361579,
+          "espn_id": null,
           "name": "Javonte Williams",
           "position": "RB",
           "team": "DAL",
           "age": 26,
+          "birth_date": "2000-04-25",
           "college": "North Carolina",
           "height": "70",
           "weight": "222",
@@ -5004,11 +5026,12 @@ window.__STATIC_DATA__ = {
         },
         {
           "player_id": "8136",
-          "espn_id": 4697815,
+          "espn_id": null,
           "name": "Rachaad White",
           "position": "RB",
           "team": "WAS",
           "age": 27,
+          "birth_date": "1999-01-12",
           "college": "Arizona State",
           "height": "72",
           "weight": "214",
@@ -5018,11 +5041,12 @@ window.__STATIC_DATA__ = {
         },
         {
           "player_id": "8138",
-          "espn_id": 4379399,
+          "espn_id": null,
           "name": "James Cook",
           "position": "RB",
           "team": "BUF",
           "age": 26,
+          "birth_date": "1999-09-25",
           "college": "Georgia",
           "height": "71",
           "weight": "190",
@@ -5032,11 +5056,12 @@ window.__STATIC_DATA__ = {
         },
         {
           "player_id": "8146",
-          "espn_id": 4569618,
+          "espn_id": null,
           "name": "Garrett Wilson",
           "position": "WR",
           "team": "NYJ",
           "age": 25,
+          "birth_date": "2000-07-22",
           "college": "Ohio State",
           "height": "72",
           "weight": "183",
@@ -5046,11 +5071,12 @@ window.__STATIC_DATA__ = {
         },
         {
           "player_id": "9758",
-          "espn_id": 4432577,
+          "espn_id": null,
           "name": "C.J. Stroud",
           "position": "QB",
           "team": "HOU",
           "age": 24,
+          "birth_date": "2001-10-03",
           "college": "Ohio State",
           "height": "75",
           "weight": "218",
@@ -5066,11 +5092,12 @@ window.__STATIC_DATA__ = {
       "players": [
         {
           "player_id": "10229",
-          "espn_id": 4428331,
+          "espn_id": null,
           "name": "Rashee Rice",
           "position": "WR",
           "team": "KC",
           "age": 26,
+          "birth_date": "2000-04-22",
           "college": "SMU",
           "height": "73",
           "weight": "204",
@@ -5080,11 +5107,12 @@ window.__STATIC_DATA__ = {
         },
         {
           "player_id": "10236",
-          "espn_id": 4385690,
+          "espn_id": null,
           "name": "Dalton Kincaid",
           "position": "TE",
           "team": "BUF",
           "age": 26,
+          "birth_date": "1999-10-18",
           "college": "Utah",
           "height": "75",
           "weight": "246",
@@ -5094,11 +5122,12 @@ window.__STATIC_DATA__ = {
         },
         {
           "player_id": "11627",
-          "espn_id": 4431280,
+          "espn_id": null,
           "name": "Troy Franklin",
           "position": "WR",
           "team": "DEN",
           "age": 23,
+          "birth_date": "2003-02-06",
           "college": "Oregon",
           "height": "75",
           "weight": "180",
@@ -5108,11 +5137,12 @@ window.__STATIC_DATA__ = {
         },
         {
           "player_id": "11646",
-          "espn_id": 4695883,
+          "espn_id": null,
           "name": "Jalen Coker",
           "position": "WR",
           "team": "CAR",
           "age": 24,
+          "birth_date": "2001-10-30",
           "college": "Holy Cross",
           "height": "75",
           "weight": "213",
@@ -5122,11 +5152,12 @@ window.__STATIC_DATA__ = {
         },
         {
           "player_id": "11655",
-          "espn_id": 4360516,
+          "espn_id": null,
           "name": "Tyrone Tracy",
           "position": "RB",
           "team": "NYG",
           "age": 26,
+          "birth_date": "1999-11-23",
           "college": "Purdue",
           "height": "71",
           "weight": "210",
@@ -5136,11 +5167,12 @@ window.__STATIC_DATA__ = {
         },
         {
           "player_id": "12484",
-          "espn_id": 4877706,
+          "espn_id": null,
           "name": "Jayden Higgins",
           "position": "WR",
           "team": "HOU",
           "age": 23,
+          "birth_date": "2002-12-15",
           "college": "Iowa State",
           "height": "76",
           "weight": "215",
@@ -5150,11 +5182,12 @@ window.__STATIC_DATA__ = {
         },
         {
           "player_id": "12487",
-          "espn_id": 4570037,
+          "espn_id": null,
           "name": "Terrance Ferguson",
           "position": "TE",
           "team": "LAR",
           "age": 23,
+          "birth_date": "2003-03-07",
           "college": "Oregon",
           "height": "77",
           "weight": "252",
@@ -5164,11 +5197,12 @@ window.__STATIC_DATA__ = {
         },
         {
           "player_id": "12489",
-          "espn_id": 4568490,
+          "espn_id": null,
           "name": "RJ Harvey",
           "position": "RB",
           "team": "DEN",
           "age": 25,
+          "birth_date": "2001-02-04",
           "college": "UCF",
           "height": "68",
           "weight": "205",
@@ -5178,11 +5212,12 @@ window.__STATIC_DATA__ = {
         },
         {
           "player_id": "12499",
-          "espn_id": 4883647,
+          "espn_id": null,
           "name": "Elic Ayomanor",
           "position": "WR",
           "team": "TEN",
           "age": 23,
+          "birth_date": "2003-06-03",
           "college": "Stanford",
           "height": "74",
           "weight": "206",
@@ -5192,11 +5227,12 @@ window.__STATIC_DATA__ = {
         },
         {
           "player_id": "12506",
-          "espn_id": 5083076,
+          "espn_id": null,
           "name": "Harold Fannin",
           "position": "TE",
           "team": "CLE",
           "age": 21,
+          "birth_date": "2004-07-20",
           "college": "Bowling Green",
           "height": "76",
           "weight": "241",
@@ -5206,11 +5242,12 @@ window.__STATIC_DATA__ = {
         },
         {
           "player_id": "12510",
-          "espn_id": 4432734,
+          "espn_id": null,
           "name": "Jalen Milroe",
           "position": "QB",
           "team": "SEA",
           "age": 23,
+          "birth_date": "2002-12-13",
           "college": "Alabama",
           "height": "74",
           "weight": "216",
@@ -5220,11 +5257,12 @@ window.__STATIC_DATA__ = {
         },
         {
           "player_id": "12511",
-          "espn_id": 4429955,
+          "espn_id": null,
           "name": "Will Howard",
           "position": "QB",
           "team": "PIT",
           "age": 24,
+          "birth_date": "2001-09-24",
           "college": "Ohio State",
           "height": "76",
           "weight": "236",
@@ -5234,11 +5272,12 @@ window.__STATIC_DATA__ = {
         },
         {
           "player_id": "12535",
-          "espn_id": 5123663,
+          "espn_id": null,
           "name": "Isaac TeSlaa",
           "position": "WR",
           "team": "DET",
           "age": 24,
+          "birth_date": "2002-02-20",
           "college": "Arkansas",
           "height": "76",
           "weight": "214",
@@ -5248,11 +5287,12 @@ window.__STATIC_DATA__ = {
         },
         {
           "player_id": "13338",
-          "espn_id": 4685307,
+          "espn_id": null,
           "name": "Kevin Coleman",
           "position": "WR",
           "team": "MIA",
           "age": 22,
+          "birth_date": "2003-09-10",
           "college": "Missouri",
           "height": "70",
           "weight": "180",
@@ -5262,11 +5302,12 @@ window.__STATIC_DATA__ = {
         },
         {
           "player_id": "13353",
-          "espn_id": 5091739,
+          "espn_id": null,
           "name": "Chris Brazzell",
           "position": "WR",
           "team": "CAR",
           "age": 22,
+          "birth_date": "2003-09-22",
           "college": "Tennessee",
           "height": "76",
           "weight": "198",
@@ -5276,11 +5317,12 @@ window.__STATIC_DATA__ = {
         },
         {
           "player_id": "13420",
-          "espn_id": 4879276,
+          "espn_id": null,
           "name": "Bryce Lance",
           "position": "WR",
           "team": "NO",
           "age": 23,
+          "birth_date": "2002-08-20",
           "college": "North Dakota State",
           "height": "75",
           "weight": "204",
@@ -5295,6 +5337,7 @@ window.__STATIC_DATA__ = {
           "position": "WR",
           "team": "LAR",
           "age": 33,
+          "birth_date": "1992-12-24",
           "college": "Fresno State",
           "height": "73",
           "weight": "204",
@@ -5309,6 +5352,7 @@ window.__STATIC_DATA__ = {
           "position": "QB",
           "team": "ARI",
           "age": 33,
+          "birth_date": "1992-12-11",
           "college": "North Carolina State",
           "height": "76",
           "weight": "235",
@@ -5323,6 +5367,7 @@ window.__STATIC_DATA__ = {
           "position": "RB",
           "team": "NO",
           "age": 30,
+          "birth_date": "1995-07-25",
           "college": "Tennessee",
           "height": "70",
           "weight": "215",
@@ -5337,6 +5382,7 @@ window.__STATIC_DATA__ = {
           "position": "RB",
           "team": "MIN",
           "age": 31,
+          "birth_date": "1994-12-02",
           "college": "UTEP",
           "height": "70",
           "weight": "208",
@@ -5351,6 +5397,7 @@ window.__STATIC_DATA__ = {
           "position": "QB",
           "team": "LAR",
           "age": 38,
+          "birth_date": "1988-02-07",
           "college": "Georgia",
           "height": "75",
           "weight": "214",
@@ -5365,6 +5412,7 @@ window.__STATIC_DATA__ = {
           "position": "WR",
           "team": "SF",
           "age": 29,
+          "birth_date": "1996-11-18",
           "college": "Texas A&M",
           "height": "71",
           "weight": "200",
@@ -5379,6 +5427,7 @@ window.__STATIC_DATA__ = {
           "position": "RB",
           "team": null,
           "age": 30,
+          "birth_date": "1995-12-27",
           "college": "Georgia",
           "height": "71",
           "weight": "227",
@@ -5393,6 +5442,7 @@ window.__STATIC_DATA__ = {
           "position": "TE",
           "team": "HOU",
           "age": 29,
+          "birth_date": "1996-07-11",
           "college": "Stanford",
           "height": "77",
           "weight": "242",
@@ -5407,6 +5457,7 @@ window.__STATIC_DATA__ = {
           "position": "TE",
           "team": "PHI",
           "age": 31,
+          "birth_date": "1995-01-03",
           "college": "South Dakota State",
           "height": "77",
           "weight": "256",
@@ -5421,6 +5472,7 @@ window.__STATIC_DATA__ = {
           "position": "QB",
           "team": "ARI",
           "age": 30,
+          "birth_date": "1996-05-16",
           "college": "Washington State",
           "height": "73",
           "weight": "225",
@@ -5435,6 +5487,7 @@ window.__STATIC_DATA__ = {
           "position": "RB",
           "team": "DEN",
           "age": 27,
+          "birth_date": "1998-12-17",
           "college": "Ohio State",
           "height": "70",
           "weight": "212",
@@ -5444,11 +5497,12 @@ window.__STATIC_DATA__ = {
         },
         {
           "player_id": "7594",
-          "espn_id": 4241416,
+          "espn_id": null,
           "name": "Chuba Hubbard",
           "position": "RB",
           "team": "CAR",
           "age": 26,
+          "birth_date": "1999-06-11",
           "college": "Oklahoma State",
           "height": "73",
           "weight": "210",
@@ -5458,11 +5512,12 @@ window.__STATIC_DATA__ = {
         },
         {
           "player_id": "8205",
-          "espn_id": 4361529,
+          "espn_id": null,
           "name": "Isiah Pacheco",
           "position": "RB",
           "team": "DET",
           "age": 27,
+          "birth_date": "1999-03-02",
           "college": "Rutgers",
           "height": "70",
           "weight": "216",
@@ -5472,11 +5527,12 @@ window.__STATIC_DATA__ = {
         },
         {
           "player_id": "8408",
-          "espn_id": 4360569,
+          "espn_id": null,
           "name": "Jordan Mason",
           "position": "RB",
           "team": "MIN",
           "age": 27,
+          "birth_date": "1999-05-24",
           "college": "Georgia Tech",
           "height": "71",
           "weight": "230",
@@ -5486,11 +5542,12 @@ window.__STATIC_DATA__ = {
         },
         {
           "player_id": "8676",
-          "espn_id": 4032473,
+          "espn_id": null,
           "name": "Rashid Shaheed",
           "position": "WR",
           "team": "SEA",
           "age": 27,
+          "birth_date": "1998-08-31",
           "college": "Weber State",
           "height": "72",
           "weight": "180",
@@ -5500,11 +5557,12 @@ window.__STATIC_DATA__ = {
         },
         {
           "player_id": "8800",
-          "espn_id": 4240603,
+          "espn_id": null,
           "name": "Malik Davis",
           "position": "RB",
           "team": "DAL",
           "age": 27,
+          "birth_date": "1998-11-26",
           "college": "Florida",
           "height": "70",
           "weight": "205",
@@ -5520,11 +5578,12 @@ window.__STATIC_DATA__ = {
       "players": [
         {
           "player_id": "11435",
-          "espn_id": 4887558,
+          "espn_id": null,
           "name": "Emanuel Wilson",
           "position": "RB",
           "team": "SEA",
           "age": 27,
+          "birth_date": "1999-05-08",
           "college": "Fort Valley State",
           "height": "70",
           "weight": "226",
@@ -5534,11 +5593,12 @@ window.__STATIC_DATA__ = {
         },
         {
           "player_id": "11566",
-          "espn_id": 4426348,
+          "espn_id": null,
           "name": "Jayden Daniels",
           "position": "QB",
           "team": "WAS",
           "age": 25,
+          "birth_date": "2000-12-18",
           "college": "LSU",
           "height": "76",
           "weight": "210",
@@ -5548,11 +5608,12 @@ window.__STATIC_DATA__ = {
         },
         {
           "player_id": "11575",
-          "espn_id": 4429501,
+          "espn_id": null,
           "name": "Ray Davis",
           "position": "RB",
           "team": "BUF",
           "age": 26,
+          "birth_date": "1999-11-11",
           "college": "Kentucky",
           "height": "68",
           "weight": "211",
@@ -5562,11 +5623,12 @@ window.__STATIC_DATA__ = {
         },
         {
           "player_id": "11584",
-          "espn_id": 4596448,
+          "espn_id": null,
           "name": "Bucky Irving",
           "position": "RB",
           "team": "TB",
           "age": 23,
+          "birth_date": "2002-08-19",
           "college": "Oregon",
           "height": "70",
           "weight": "195",
@@ -5576,11 +5638,12 @@ window.__STATIC_DATA__ = {
         },
         {
           "player_id": "11624",
-          "espn_id": 4683062,
+          "espn_id": null,
           "name": "Xavier Worthy",
           "position": "WR",
           "team": "KC",
           "age": 23,
+          "birth_date": "2003-04-27",
           "college": "Texas",
           "height": "71",
           "weight": "165",
@@ -5590,11 +5653,12 @@ window.__STATIC_DATA__ = {
         },
         {
           "player_id": "12467",
-          "espn_id": 4685397,
+          "espn_id": null,
           "name": "Jordan James",
           "position": "RB",
           "team": "SF",
           "age": 22,
+          "birth_date": "2004-03-29",
           "college": "Oregon",
           "height": "69",
           "weight": "208",
@@ -5604,11 +5668,12 @@ window.__STATIC_DATA__ = {
         },
         {
           "player_id": "12471",
-          "espn_id": 4874509,
+          "espn_id": null,
           "name": "DJ Giddens",
           "position": "RB",
           "team": "IND",
           "age": 22,
+          "birth_date": "2003-08-26",
           "college": "Kansas State",
           "height": "72",
           "weight": "212",
@@ -5618,11 +5683,12 @@ window.__STATIC_DATA__ = {
         },
         {
           "player_id": "12493",
-          "espn_id": 4595342,
+          "espn_id": null,
           "name": "Oronde Gadsden",
           "position": "TE",
           "team": "LAC",
           "age": 22,
+          "birth_date": "2003-06-25",
           "college": "Syracuse",
           "height": "77",
           "weight": "236",
@@ -5632,11 +5698,12 @@ window.__STATIC_DATA__ = {
         },
         {
           "player_id": "12718",
-          "espn_id": 4710855,
+          "espn_id": null,
           "name": "Konata Mumpfield",
           "position": "WR",
           "team": "LAR",
           "age": 23,
+          "birth_date": "2002-10-24",
           "college": "Pittsburgh",
           "height": "73",
           "weight": "188",
@@ -5646,11 +5713,12 @@ window.__STATIC_DATA__ = {
         },
         {
           "player_id": "13272",
-          "espn_id": 4430841,
+          "espn_id": null,
           "name": "Carson Beck",
           "position": "QB",
           "team": "ARI",
           "age": 23,
+          "birth_date": "2002-11-19",
           "college": "Miami (FL)",
           "height": "76",
           "weight": "233",
@@ -5660,11 +5728,12 @@ window.__STATIC_DATA__ = {
         },
         {
           "player_id": "13347",
-          "espn_id": 4832846,
+          "espn_id": null,
           "name": "Demond Claiborne",
           "position": "RB",
           "team": "MIN",
           "age": 22,
+          "birth_date": "2003-10-09",
           "college": "Wake Forest",
           "height": "70",
           "weight": "188",
@@ -5674,11 +5743,12 @@ window.__STATIC_DATA__ = {
         },
         {
           "player_id": "13423",
-          "espn_id": 5081508,
+          "espn_id": null,
           "name": "Eli Heidenreich",
           "position": "RB",
           "team": "PIT",
           "age": 22,
+          "birth_date": "2003-06-28",
           "college": "Navy",
           "height": "72",
           "weight": "198",
@@ -5688,11 +5758,12 @@ window.__STATIC_DATA__ = {
         },
         {
           "player_id": "13434",
-          "espn_id": 4880236,
+          "espn_id": null,
           "name": "Will Kacmarek",
           "position": "TE",
           "team": "MIA",
           "age": 23,
+          "birth_date": "2003-02-12",
           "college": "Ohio State",
           "height": "78",
           "weight": "258",
@@ -5707,6 +5778,7 @@ window.__STATIC_DATA__ = {
           "position": "QB",
           "team": "WAS",
           "age": 32,
+          "birth_date": "1993-10-30",
           "college": "Oregon",
           "height": "76",
           "weight": "222",
@@ -5721,6 +5793,7 @@ window.__STATIC_DATA__ = {
           "position": "K",
           "team": "SEA",
           "age": 35,
+          "birth_date": "1991-05-12",
           "college": "Marist",
           "height": "70",
           "weight": "190",
@@ -5735,6 +5808,7 @@ window.__STATIC_DATA__ = {
           "position": "WR",
           "team": null,
           "age": 31,
+          "birth_date": "1994-03-01",
           "college": "West Alabama",
           "height": "70",
           "weight": "191",
@@ -5749,6 +5823,7 @@ window.__STATIC_DATA__ = {
           "position": "K",
           "team": "HOU",
           "age": 32,
+          "birth_date": "1994-01-29",
           "college": "UCLA",
           "height": "72",
           "weight": "183",
@@ -5763,6 +5838,7 @@ window.__STATIC_DATA__ = {
           "position": "TE",
           "team": "DEN",
           "age": 31,
+          "birth_date": "1994-09-02",
           "college": "Ole Miss",
           "height": "75",
           "weight": "240",
@@ -5777,6 +5853,7 @@ window.__STATIC_DATA__ = {
           "position": "QB",
           "team": "SEA",
           "age": 29,
+          "birth_date": "1997-06-05",
           "college": "USC",
           "height": "75",
           "weight": "225",
@@ -5791,6 +5868,7 @@ window.__STATIC_DATA__ = {
           "position": "WR",
           "team": "PHI",
           "age": 29,
+          "birth_date": "1997-06-04",
           "college": "Oklahoma",
           "height": "69",
           "weight": "170",
@@ -5805,6 +5883,7 @@ window.__STATIC_DATA__ = {
           "position": "RB",
           "team": "IND",
           "age": 27,
+          "birth_date": "1999-01-19",
           "college": "Wisconsin",
           "height": "70",
           "weight": "226",
@@ -5819,6 +5898,7 @@ window.__STATIC_DATA__ = {
           "position": "WR",
           "team": "NYG",
           "age": 28,
+          "birth_date": "1997-10-29",
           "college": "Tulane",
           "height": "71",
           "weight": "177",
@@ -5828,11 +5908,12 @@ window.__STATIC_DATA__ = {
         },
         {
           "player_id": "8121",
-          "espn_id": 4361432,
+          "espn_id": null,
           "name": "Romeo Doubs",
           "position": "WR",
           "team": "NE",
           "age": 26,
+          "birth_date": "2000-04-13",
           "college": "Nevada",
           "height": "74",
           "weight": "210",
@@ -5842,11 +5923,12 @@ window.__STATIC_DATA__ = {
         },
         {
           "player_id": "8132",
-          "espn_id": 4373626,
+          "espn_id": null,
           "name": "Tyler Allgeier",
           "position": "RB",
           "team": "ARI",
           "age": 26,
+          "birth_date": "2000-04-15",
           "college": "BYU",
           "height": "70",
           "weight": "225",
@@ -5856,11 +5938,12 @@ window.__STATIC_DATA__ = {
         },
         {
           "player_id": "8180",
-          "espn_id": 4382466,
+          "espn_id": null,
           "name": "Jalen Nailor",
           "position": "WR",
           "team": "LV",
           "age": 27,
+          "birth_date": "1999-03-02",
           "college": "Michigan State",
           "height": "72",
           "weight": "190",
@@ -5870,11 +5953,12 @@ window.__STATIC_DATA__ = {
         },
         {
           "player_id": "8183",
-          "espn_id": 4361741,
+          "espn_id": null,
           "name": "Brock Purdy",
           "position": "QB",
           "team": "SF",
           "age": 26,
+          "birth_date": "1999-12-27",
           "college": "Iowa State",
           "height": "73",
           "weight": "220",
@@ -5884,11 +5968,12 @@ window.__STATIC_DATA__ = {
         },
         {
           "player_id": "8228",
-          "espn_id": 4569987,
+          "espn_id": null,
           "name": "Jaylen Warren",
           "position": "RB",
           "team": "PIT",
           "age": 27,
+          "birth_date": "1998-11-01",
           "college": "Oklahoma State",
           "height": "68",
           "weight": "215",
@@ -5898,11 +5983,12 @@ window.__STATIC_DATA__ = {
         },
         {
           "player_id": "9482",
-          "espn_id": 4429086,
+          "espn_id": null,
           "name": "Michael Mayer",
           "position": "TE",
           "team": "LV",
           "age": 24,
+          "birth_date": "2001-07-06",
           "college": "Notre Dame",
           "height": "76",
           "weight": "256",
@@ -5912,11 +5998,12 @@ window.__STATIC_DATA__ = {
         },
         {
           "player_id": "9484",
-          "espn_id": 4572680,
+          "espn_id": null,
           "name": "Tucker Kraft",
           "position": "TE",
           "team": "GB",
           "age": 25,
+          "birth_date": "2000-11-03",
           "college": "South Dakota State",
           "height": "77",
           "weight": "259",
@@ -5926,11 +6013,12 @@ window.__STATIC_DATA__ = {
         },
         {
           "player_id": "9488",
-          "espn_id": 4430878,
+          "espn_id": null,
           "name": "Jaxon Smith-Njigba",
           "position": "WR",
           "team": "SEA",
           "age": 24,
+          "birth_date": "2002-02-14",
           "college": "Ohio State",
           "height": "72",
           "weight": "197",
@@ -5946,11 +6034,12 @@ window.__STATIC_DATA__ = {
       "players": [
         {
           "player_id": "11557",
-          "espn_id": 4360698,
+          "espn_id": null,
           "name": "Joe Milton",
           "position": "QB",
           "team": "DAL",
           "age": 26,
+          "birth_date": "2000-03-06",
           "college": "Tennessee",
           "height": "77",
           "weight": "236",
@@ -5960,11 +6049,12 @@ window.__STATIC_DATA__ = {
         },
         {
           "player_id": "11643",
-          "espn_id": 4682745,
+          "espn_id": null,
           "name": "Jaylen Wright",
           "position": "RB",
           "team": "MIA",
           "age": 23,
+          "birth_date": "2003-04-01",
           "college": "Tennessee",
           "height": "70",
           "weight": "208",
@@ -5979,6 +6069,7 @@ window.__STATIC_DATA__ = {
           "position": "QB",
           "team": "LV",
           "age": 37,
+          "birth_date": "1988-08-19",
           "college": "Michigan State",
           "height": "75",
           "weight": "209",
@@ -5988,11 +6079,12 @@ window.__STATIC_DATA__ = {
         },
         {
           "player_id": "12495",
-          "espn_id": 4711533,
+          "espn_id": null,
           "name": "Ollie Gordon",
           "position": "RB",
           "team": "MIA",
           "age": 22,
+          "birth_date": "2004-01-15",
           "college": "Oklahoma State",
           "height": "74",
           "weight": "225",
@@ -6002,11 +6094,12 @@ window.__STATIC_DATA__ = {
         },
         {
           "player_id": "12533",
-          "espn_id": 4575131,
+          "espn_id": null,
           "name": "Jacory Croskey-Merritt",
           "position": "RB",
           "team": "WAS",
           "age": 25,
+          "birth_date": "2001-04-12",
           "college": "Arizona",
           "height": "71",
           "weight": "208",
@@ -6016,11 +6109,12 @@ window.__STATIC_DATA__ = {
         },
         {
           "player_id": "12534",
-          "espn_id": 4608686,
+          "espn_id": null,
           "name": "Kyle Monangai",
           "position": "RB",
           "team": "CHI",
-          "age": 23,
+          "age": 24,
+          "birth_date": "2002-06-06",
           "college": "Rutgers",
           "height": "68",
           "weight": "207",
@@ -6030,11 +6124,12 @@ window.__STATIC_DATA__ = {
         },
         {
           "player_id": "12688",
-          "espn_id": 4702576,
+          "espn_id": null,
           "name": "Cam Miller",
           "position": "QB",
           "team": "MIA",
           "age": 24,
+          "birth_date": "2001-06-18",
           "college": "North Dakota State",
           "height": "73",
           "weight": "211",
@@ -6044,11 +6139,12 @@ window.__STATIC_DATA__ = {
         },
         {
           "player_id": "13324",
-          "espn_id": 4432260,
+          "espn_id": null,
           "name": "Matt Hibner",
           "position": "TE",
           "team": "BAL",
           "age": 24,
+          "birth_date": "2002-03-09",
           "college": "SMU",
           "height": "76",
           "weight": "251",
@@ -6058,11 +6154,12 @@ window.__STATIC_DATA__ = {
         },
         {
           "player_id": "13380",
-          "espn_id": 4685553,
+          "espn_id": null,
           "name": "Brenen Thompson",
           "position": "WR",
           "team": "LAC",
           "age": 22,
+          "birth_date": "2003-07-25",
           "college": "Mississippi State",
           "height": "69",
           "weight": "170",
@@ -6077,6 +6174,7 @@ window.__STATIC_DATA__ = {
           "position": "QB",
           "team": "NYJ",
           "age": 35,
+          "birth_date": "1990-10-10",
           "college": "West Virginia",
           "height": "74",
           "weight": "221",
@@ -6091,6 +6189,7 @@ window.__STATIC_DATA__ = {
           "position": "WR",
           "team": "SF",
           "age": 32,
+          "birth_date": "1993-08-21",
           "college": "Texas A&M",
           "height": "77",
           "weight": "231",
@@ -6105,6 +6204,7 @@ window.__STATIC_DATA__ = {
           "position": "RB",
           "team": "BAL",
           "age": 32,
+          "birth_date": "1994-01-04",
           "college": "Alabama",
           "height": "74",
           "weight": "252",
@@ -6119,6 +6219,7 @@ window.__STATIC_DATA__ = {
           "position": "RB",
           "team": null,
           "age": 29,
+          "birth_date": "1996-07-24",
           "college": "Oklahoma",
           "height": "73",
           "weight": "220",
@@ -6133,6 +6234,7 @@ window.__STATIC_DATA__ = {
           "position": "TE",
           "team": "SF",
           "age": 32,
+          "birth_date": "1993-10-09",
           "college": "Iowa",
           "height": "76",
           "weight": "250",
@@ -6147,6 +6249,7 @@ window.__STATIC_DATA__ = {
           "position": "RB",
           "team": null,
           "age": 30,
+          "birth_date": "1995-05-17",
           "college": "Western Colorado",
           "height": "70",
           "weight": "200",
@@ -6161,6 +6264,7 @@ window.__STATIC_DATA__ = {
           "position": "RB",
           "team": "PHI",
           "age": 29,
+          "birth_date": "1997-02-09",
           "college": "Penn State",
           "height": "72",
           "weight": "233",
@@ -6175,6 +6279,7 @@ window.__STATIC_DATA__ = {
           "position": "WR",
           "team": "DEN",
           "age": 30,
+          "birth_date": "1995-10-10",
           "college": "SMU",
           "height": "76",
           "weight": "216",
@@ -6189,6 +6294,7 @@ window.__STATIC_DATA__ = {
           "position": "WR",
           "team": "MIN",
           "age": 26,
+          "birth_date": "1999-06-16",
           "college": "LSU",
           "height": "73",
           "weight": "195",
@@ -6203,6 +6309,7 @@ window.__STATIC_DATA__ = {
           "position": "QB",
           "team": "GB",
           "age": 27,
+          "birth_date": "1998-11-02",
           "college": "Utah State",
           "height": "76",
           "weight": "219",
@@ -6217,6 +6324,7 @@ window.__STATIC_DATA__ = {
           "position": "TE",
           "team": "LAR",
           "age": 27,
+          "birth_date": "1999-01-08",
           "college": "Stanford",
           "height": "79",
           "weight": "266",
@@ -6231,6 +6339,7 @@ window.__STATIC_DATA__ = {
           "position": "RB",
           "team": "PIT",
           "age": 27,
+          "birth_date": "1998-06-14",
           "college": "South Carolina",
           "height": "71",
           "weight": "215",
@@ -6240,11 +6349,12 @@ window.__STATIC_DATA__ = {
         },
         {
           "player_id": "7525",
-          "espn_id": 4594449,
+          "espn_id": null,
           "name": "DeVonta Smith",
           "position": "WR",
           "team": "PHI",
           "age": 27,
+          "birth_date": "1998-11-14",
           "college": "Alabama",
           "height": "72",
           "weight": "170",
@@ -6254,11 +6364,12 @@ window.__STATIC_DATA__ = {
         },
         {
           "player_id": "7543",
-          "espn_id": 4239996,
+          "espn_id": null,
           "name": "Travis Etienne",
           "position": "RB",
           "team": "NO",
           "age": 27,
+          "birth_date": "1999-01-26",
           "college": "Clemson",
           "height": "70",
           "weight": "215",
@@ -6268,11 +6379,12 @@ window.__STATIC_DATA__ = {
         },
         {
           "player_id": "7585",
-          "espn_id": 4242546,
+          "espn_id": null,
           "name": "Davis Mills",
           "position": "QB",
           "team": "HOU",
           "age": 27,
+          "birth_date": "1998-10-21",
           "college": "Stanford",
           "height": "76",
           "weight": "225",
@@ -6282,11 +6394,12 @@ window.__STATIC_DATA__ = {
         },
         {
           "player_id": "8131",
-          "espn_id": 4361050,
+          "espn_id": null,
           "name": "Isaiah Likely",
           "position": "TE",
           "team": "NYG",
           "age": 26,
+          "birth_date": "2000-04-18",
           "college": "Coastal Carolina",
           "height": "76",
           "weight": "241",
@@ -6296,11 +6409,12 @@ window.__STATIC_DATA__ = {
         },
         {
           "player_id": "8134",
-          "espn_id": 4373678,
+          "espn_id": null,
           "name": "Khalil Shakir",
           "position": "WR",
           "team": "BUF",
           "age": 26,
+          "birth_date": "2000-02-03",
           "college": "Boise State",
           "height": "72",
           "weight": "190",
@@ -6310,11 +6424,12 @@ window.__STATIC_DATA__ = {
         },
         {
           "player_id": "8137",
-          "espn_id": 4426354,
+          "espn_id": null,
           "name": "George Pickens",
           "position": "WR",
           "team": "DAL",
           "age": 25,
+          "birth_date": "2001-03-04",
           "college": "Georgia",
           "height": "75",
           "weight": "200",
@@ -6324,11 +6439,12 @@ window.__STATIC_DATA__ = {
         },
         {
           "player_id": "8151",
-          "espn_id": 4567048,
+          "espn_id": null,
           "name": "Kenneth Walker",
           "position": "RB",
           "team": "KC",
           "age": 25,
+          "birth_date": "2000-10-20",
           "college": "Michigan State",
           "height": "69",
           "weight": "211",
@@ -6338,11 +6454,12 @@ window.__STATIC_DATA__ = {
         },
         {
           "player_id": "8161",
-          "espn_id": 4242512,
+          "espn_id": null,
           "name": "Malik Willis",
           "position": "QB",
           "team": "MIA",
           "age": 27,
+          "birth_date": "1999-05-25",
           "college": "Liberty",
           "height": "73",
           "weight": "225",
@@ -6352,11 +6469,12 @@ window.__STATIC_DATA__ = {
         },
         {
           "player_id": "8259",
-          "espn_id": 4362081,
+          "espn_id": null,
           "name": "Cameron Dicker",
           "position": "K",
           "team": "LAC",
           "age": 26,
+          "birth_date": "2000-05-06",
           "college": "Texas",
           "height": "73",
           "weight": "216",
@@ -6366,11 +6484,12 @@ window.__STATIC_DATA__ = {
         },
         {
           "player_id": "8698",
-          "espn_id": 4259147,
+          "espn_id": null,
           "name": "Jake Tonges",
           "position": "TE",
           "team": "SF",
           "age": 26,
+          "birth_date": "1999-07-08",
           "college": "California",
           "height": "76",
           "weight": "240",
@@ -6386,11 +6505,12 @@ window.__STATIC_DATA__ = {
       "players": [
         {
           "player_id": "11562",
-          "espn_id": 4426339,
+          "espn_id": null,
           "name": "Spencer Rattler",
           "position": "QB",
           "team": "NO",
           "age": 25,
+          "birth_date": "2000-09-28",
           "college": "South Carolina",
           "height": "72",
           "weight": "211",
@@ -6400,11 +6520,12 @@ window.__STATIC_DATA__ = {
         },
         {
           "player_id": "11589",
-          "espn_id": 4429275,
+          "espn_id": null,
           "name": "Trey Benson",
           "position": "RB",
           "team": "ARI",
           "age": 23,
+          "birth_date": "2002-07-23",
           "college": "Florida State",
           "height": "72",
           "weight": "220",
@@ -6414,11 +6535,12 @@ window.__STATIC_DATA__ = {
         },
         {
           "player_id": "11600",
-          "espn_id": 4431588,
+          "espn_id": null,
           "name": "Ja'Tavion Sanders",
           "position": "TE",
           "team": "CAR",
           "age": 23,
+          "birth_date": "2003-03-27",
           "college": "Texas",
           "height": "76",
           "weight": "252",
@@ -6428,11 +6550,12 @@ window.__STATIC_DATA__ = {
         },
         {
           "player_id": "11631",
-          "espn_id": 4432773,
+          "espn_id": null,
           "name": "Brian Thomas",
           "position": "WR",
           "team": "JAX",
           "age": 23,
+          "birth_date": "2002-10-08",
           "college": "LSU",
           "height": "74",
           "weight": "209",
@@ -6442,11 +6565,12 @@ window.__STATIC_DATA__ = {
         },
         {
           "player_id": "11729",
-          "espn_id": 4912274,
+          "espn_id": null,
           "name": "Sione Vaki",
           "position": "RB",
           "team": "DET",
           "age": 24,
+          "birth_date": "2001-07-30",
           "college": "Utah",
           "height": "71",
           "weight": "216",
@@ -6456,11 +6580,12 @@ window.__STATIC_DATA__ = {
         },
         {
           "player_id": "12469",
-          "espn_id": 5081397,
+          "espn_id": null,
           "name": "Dylan Sampson",
           "position": "RB",
           "team": "CLE",
           "age": 21,
+          "birth_date": "2004-09-14",
           "college": "Tennessee",
           "height": "68",
           "weight": "200",
@@ -6470,11 +6595,12 @@ window.__STATIC_DATA__ = {
         },
         {
           "player_id": "12472",
-          "espn_id": 4601080,
+          "espn_id": null,
           "name": "Raheim Sanders",
           "position": "RB",
           "team": "CLE",
           "age": 23,
+          "birth_date": "2002-06-08",
           "college": "South Carolina",
           "height": "72",
           "weight": "230",
@@ -6484,11 +6610,12 @@ window.__STATIC_DATA__ = {
         },
         {
           "player_id": "12500",
-          "espn_id": 4889929,
+          "espn_id": null,
           "name": "Quinn Ewers",
           "position": "QB",
           "team": "MIA",
           "age": 23,
+          "birth_date": "2003-03-15",
           "college": "Texas",
           "height": "74",
           "weight": "209",
@@ -6498,11 +6625,12 @@ window.__STATIC_DATA__ = {
         },
         {
           "player_id": "12505",
-          "espn_id": 5082630,
+          "espn_id": null,
           "name": "Jalen Royals",
           "position": "WR",
           "team": "KC",
           "age": 23,
+          "birth_date": "2003-02-18",
           "college": "Utah State",
           "height": "72",
           "weight": "195",
@@ -6512,11 +6640,12 @@ window.__STATIC_DATA__ = {
         },
         {
           "player_id": "12512",
-          "espn_id": 4685702,
+          "espn_id": null,
           "name": "Quinshon Judkins",
           "position": "RB",
           "team": "CLE",
           "age": 22,
+          "birth_date": "2003-10-29",
           "college": "Ohio State",
           "height": "72",
           "weight": "221",
@@ -6526,11 +6655,12 @@ window.__STATIC_DATA__ = {
         },
         {
           "player_id": "12524",
-          "espn_id": 4432762,
+          "espn_id": null,
           "name": "Shedeur Sanders",
           "position": "QB",
           "team": "CLE",
           "age": 24,
+          "birth_date": "2002-02-07",
           "college": "Colorado",
           "height": "74",
           "weight": "212",
@@ -6545,6 +6675,7 @@ window.__STATIC_DATA__ = {
           "position": "TE",
           "team": "KC",
           "age": 36,
+          "birth_date": "1989-10-05",
           "college": "Cincinnati",
           "height": "77",
           "weight": "250",
@@ -6559,6 +6690,7 @@ window.__STATIC_DATA__ = {
           "position": "WR",
           "team": "NYG",
           "age": 33,
+          "birth_date": "1992-11-05",
           "college": "LSU",
           "height": "71",
           "weight": "198",
@@ -6573,6 +6705,7 @@ window.__STATIC_DATA__ = {
           "position": "QB",
           "team": "BAL",
           "age": 29,
+          "birth_date": "1997-01-07",
           "college": "Louisville",
           "height": "74",
           "weight": "205",
@@ -6587,6 +6720,7 @@ window.__STATIC_DATA__ = {
           "position": "TE",
           "team": "BAL",
           "age": 30,
+          "birth_date": "1995-09-06",
           "college": "Oklahoma",
           "height": "77",
           "weight": "250",
@@ -6601,6 +6735,7 @@ window.__STATIC_DATA__ = {
           "position": "RB",
           "team": "GB",
           "age": 28,
+          "birth_date": "1998-02-11",
           "college": "Alabama",
           "height": "70",
           "weight": "223",
@@ -6615,6 +6750,7 @@ window.__STATIC_DATA__ = {
           "position": "WR",
           "team": "NE",
           "age": 28,
+          "birth_date": "1997-06-30",
           "college": "Ole Miss",
           "height": "73",
           "weight": "226",
@@ -6629,6 +6765,7 @@ window.__STATIC_DATA__ = {
           "position": "RB",
           "team": "HOU",
           "age": 28,
+          "birth_date": "1997-06-07",
           "college": "Iowa State",
           "height": "71",
           "weight": "230",
@@ -6638,11 +6775,12 @@ window.__STATIC_DATA__ = {
         },
         {
           "player_id": "7523",
-          "espn_id": 4360310,
+          "espn_id": null,
           "name": "Trevor Lawrence",
           "position": "QB",
           "team": "JAX",
           "age": 26,
+          "birth_date": "1999-10-06",
           "college": "Clemson",
           "height": "78",
           "weight": "220",
@@ -6652,11 +6790,12 @@ window.__STATIC_DATA__ = {
         },
         {
           "player_id": "7538",
-          "espn_id": 4361259,
+          "espn_id": null,
           "name": "Zach Wilson",
           "position": "QB",
           "team": "NO",
           "age": 26,
+          "birth_date": "1999-08-03",
           "college": "BYU",
           "height": "74",
           "weight": "214",
@@ -6666,11 +6805,12 @@ window.__STATIC_DATA__ = {
         },
         {
           "player_id": "7553",
-          "espn_id": 4360248,
+          "espn_id": null,
           "name": "Kyle Pitts",
           "position": "TE",
           "team": "ATL",
           "age": 25,
+          "birth_date": "2000-10-06",
           "college": "Florida",
           "height": "78",
           "weight": "250",
@@ -6680,11 +6820,12 @@ window.__STATIC_DATA__ = {
         },
         {
           "player_id": "7567",
-          "espn_id": 4371733,
+          "espn_id": null,
           "name": "Kenneth Gainwell",
           "position": "RB",
           "team": "TB",
           "age": 27,
+          "birth_date": "1999-03-14",
           "college": "Memphis",
           "height": "69",
           "weight": "200",
@@ -6694,11 +6835,12 @@ window.__STATIC_DATA__ = {
         },
         {
           "player_id": "8112",
-          "espn_id": 4426502,
+          "espn_id": null,
           "name": "Drake London",
           "position": "WR",
           "team": "ATL",
           "age": 24,
+          "birth_date": "2001-07-24",
           "college": "USC",
           "height": "76",
           "weight": "215",
@@ -6708,11 +6850,12 @@ window.__STATIC_DATA__ = {
         },
         {
           "player_id": "8148",
-          "espn_id": 4426388,
+          "espn_id": null,
           "name": "Jameson Williams",
           "position": "WR",
           "team": "DET",
           "age": 25,
+          "birth_date": "2001-03-26",
           "college": "Alabama",
           "height": "73",
           "weight": "182",
@@ -6722,11 +6865,12 @@ window.__STATIC_DATA__ = {
         },
         {
           "player_id": "9221",
-          "espn_id": 4429795,
+          "espn_id": null,
           "name": "Jahmyr Gibbs",
           "position": "RB",
           "team": "DET",
           "age": 24,
+          "birth_date": "2002-03-20",
           "college": "Alabama",
           "height": "69",
           "weight": "202",
@@ -6736,11 +6880,12 @@ window.__STATIC_DATA__ = {
         },
         {
           "player_id": "9226",
-          "espn_id": 4429160,
+          "espn_id": null,
           "name": "De'Von Achane",
           "position": "RB",
           "team": "MIA",
           "age": 24,
+          "birth_date": "2001-10-13",
           "college": "Texas A&M",
           "height": "69",
           "weight": "191",
@@ -6750,11 +6895,12 @@ window.__STATIC_DATA__ = {
         },
         {
           "player_id": "9229",
-          "espn_id": 4429084,
+          "espn_id": null,
           "name": "Anthony Richardson",
           "position": "QB",
           "team": "IND",
           "age": 24,
+          "birth_date": "2002-05-22",
           "college": "Florida",
           "height": "76",
           "weight": "244",
@@ -6764,11 +6910,12 @@ window.__STATIC_DATA__ = {
         },
         {
           "player_id": "9480",
-          "espn_id": 4430539,
+          "espn_id": null,
           "name": "Brenton Strange",
           "position": "TE",
           "team": "JAX",
           "age": 25,
+          "birth_date": "2000-12-27",
           "college": "Penn State",
           "height": "76",
           "weight": "253",
@@ -6778,11 +6925,12 @@ window.__STATIC_DATA__ = {
         },
         {
           "player_id": "9997",
-          "espn_id": 4429615,
+          "espn_id": null,
           "name": "Zay Flowers",
           "position": "WR",
           "team": "BAL",
           "age": 25,
+          "birth_date": "2000-09-11",
           "college": "Boston College",
           "height": "69",
           "weight": "183",
@@ -6798,11 +6946,12 @@ window.__STATIC_DATA__ = {
       "players": [
         {
           "player_id": "10213",
-          "espn_id": 4428718,
+          "espn_id": null,
           "name": "Tre Tucker",
           "position": "WR",
           "team": "LV",
           "age": 25,
+          "birth_date": "2001-03-08",
           "college": "Cincinnati",
           "height": "68",
           "weight": "182",
@@ -6812,11 +6961,12 @@ window.__STATIC_DATA__ = {
         },
         {
           "player_id": "10226",
-          "espn_id": 4368003,
+          "espn_id": null,
           "name": "Andrei Iosivas",
           "position": "WR",
           "team": "CIN",
           "age": 26,
+          "birth_date": "1999-10-15",
           "college": "Princeton",
           "height": "75",
           "weight": "210",
@@ -6826,11 +6976,12 @@ window.__STATIC_DATA__ = {
         },
         {
           "player_id": "11539",
-          "espn_id": 4689936,
+          "espn_id": null,
           "name": "Jake Bates",
           "position": "K",
           "team": "DET",
           "age": 27,
+          "birth_date": "1999-03-03",
           "college": "Arkansas",
           "height": "70",
           "weight": "202",
@@ -6840,11 +6991,12 @@ window.__STATIC_DATA__ = {
         },
         {
           "player_id": "11564",
-          "espn_id": 4431452,
+          "espn_id": null,
           "name": "Drake Maye",
           "position": "QB",
           "team": "NE",
           "age": 23,
+          "birth_date": "2002-08-30",
           "college": "North Carolina",
           "height": "76",
           "weight": "225",
@@ -6854,11 +7006,12 @@ window.__STATIC_DATA__ = {
         },
         {
           "player_id": "11565",
-          "espn_id": 4433970,
+          "espn_id": null,
           "name": "J.J. McCarthy",
           "position": "QB",
           "team": "MIN",
           "age": 23,
+          "birth_date": "2003-01-20",
           "college": "Michigan",
           "height": "75",
           "weight": "219",
@@ -6868,11 +7021,12 @@ window.__STATIC_DATA__ = {
         },
         {
           "player_id": "11569",
-          "espn_id": 4710341,
+          "espn_id": null,
           "name": "Jarquez Hunter",
           "position": "RB",
           "team": "LAR",
           "age": 23,
+          "birth_date": "2002-12-29",
           "college": "Auburn",
           "height": "70",
           "weight": "211",
@@ -6882,11 +7036,12 @@ window.__STATIC_DATA__ = {
         },
         {
           "player_id": "11620",
-          "espn_id": 4431299,
+          "espn_id": null,
           "name": "Rome Odunze",
           "position": "WR",
           "team": "CHI",
           "age": 24,
+          "birth_date": "2002-06-03",
           "college": "Washington",
           "height": "75",
           "weight": "214",
@@ -6896,11 +7051,12 @@ window.__STATIC_DATA__ = {
         },
         {
           "player_id": "11632",
-          "espn_id": 4595348,
+          "espn_id": null,
           "name": "Malik Nabers",
           "position": "WR",
           "team": "NYG",
           "age": 22,
+          "birth_date": "2003-07-28",
           "college": "LSU",
           "height": "72",
           "weight": "200",
@@ -6910,11 +7066,12 @@ window.__STATIC_DATA__ = {
         },
         {
           "player_id": "11783",
-          "espn_id": 5083754,
+          "espn_id": null,
           "name": "Ryan Flournoy",
           "position": "WR",
           "team": "DAL",
           "age": 26,
+          "birth_date": "1999-10-27",
           "college": "Southeast Missouri State",
           "height": "73",
           "weight": "205",
@@ -6924,11 +7081,12 @@ window.__STATIC_DATA__ = {
         },
         {
           "player_id": "11792",
-          "espn_id": 4567104,
+          "espn_id": null,
           "name": "Will Reichard",
           "position": "K",
           "team": "MIN",
           "age": 25,
+          "birth_date": "2001-01-09",
           "college": "Alabama",
           "height": "73",
           "weight": "190",
@@ -6938,11 +7096,12 @@ window.__STATIC_DATA__ = {
         },
         {
           "player_id": "12490",
-          "espn_id": 4882093,
+          "espn_id": null,
           "name": "Bhayshul Tuten",
           "position": "RB",
           "team": "JAX",
           "age": 23,
+          "birth_date": "2003-02-14",
           "college": "Virginia Tech",
           "height": "69",
           "weight": "209",
@@ -6952,11 +7111,12 @@ window.__STATIC_DATA__ = {
         },
         {
           "player_id": "12496",
-          "espn_id": 4565185,
+          "espn_id": null,
           "name": "Tai Felton",
           "position": "WR",
           "team": "MIN",
           "age": 23,
+          "birth_date": "2003-03-15",
           "college": "Maryland",
           "height": "73",
           "weight": "186",
@@ -6966,11 +7126,12 @@ window.__STATIC_DATA__ = {
         },
         {
           "player_id": "12527",
-          "espn_id": 4890973,
+          "espn_id": null,
           "name": "Ashton Jeanty",
           "position": "RB",
           "team": "LV",
           "age": 22,
+          "birth_date": "2003-12-02",
           "college": "Boise State",
           "height": "68",
           "weight": "208",
@@ -6980,11 +7141,12 @@ window.__STATIC_DATA__ = {
         },
         {
           "player_id": "12543",
-          "espn_id": 4429299,
+          "espn_id": null,
           "name": "Tahj Brooks",
           "position": "RB",
           "team": "CIN",
           "age": 24,
+          "birth_date": "2002-05-13",
           "college": "Texas Tech",
           "height": "69",
           "weight": "220",
@@ -6994,11 +7156,12 @@ window.__STATIC_DATA__ = {
         },
         {
           "player_id": "13279",
-          "espn_id": 4871023,
+          "espn_id": null,
           "name": "Carnell Tate",
           "position": "WR",
           "team": "TEN",
           "age": 21,
+          "birth_date": "2005-01-19",
           "college": "Ohio State",
           "height": "74",
           "weight": "192",
@@ -7008,11 +7171,12 @@ window.__STATIC_DATA__ = {
         },
         {
           "player_id": "13296",
-          "espn_id": 4869645,
+          "espn_id": null,
           "name": "Caleb Douglas",
           "position": "WR",
           "team": "MIA",
           "age": 22,
+          "birth_date": "2003-09-09",
           "college": "Texas Tech",
           "height": "76",
           "weight": "205",
@@ -7022,11 +7186,12 @@ window.__STATIC_DATA__ = {
         },
         {
           "player_id": "13333",
-          "espn_id": 4683151,
+          "espn_id": null,
           "name": "Deion Burks",
           "position": "WR",
           "team": "IND",
           "age": 23,
+          "birth_date": "2003-01-08",
           "college": "Oklahoma",
           "height": "69",
           "weight": "180",
@@ -7041,6 +7206,7 @@ window.__STATIC_DATA__ = {
           "position": "WR",
           "team": "CLE",
           "age": 27,
+          "birth_date": "1999-04-24",
           "college": "Alabama",
           "height": "73",
           "weight": "195",
@@ -7050,11 +7216,12 @@ window.__STATIC_DATA__ = {
         },
         {
           "player_id": "7591",
-          "espn_id": 4362887,
+          "espn_id": null,
           "name": "Justin Fields",
           "position": "QB",
           "team": "KC",
           "age": 27,
+          "birth_date": "1999-03-05",
           "college": "Ohio State",
           "height": "75",
           "weight": "227",
@@ -7064,11 +7231,12 @@ window.__STATIC_DATA__ = {
         },
         {
           "player_id": "7600",
-          "espn_id": 4361411,
+          "espn_id": null,
           "name": "Pat Freiermuth",
           "position": "TE",
           "team": "PIT",
           "age": 27,
+          "birth_date": "1998-10-25",
           "college": "Penn State",
           "height": "77",
           "weight": "258",
@@ -7078,11 +7246,12 @@ window.__STATIC_DATA__ = {
         },
         {
           "player_id": "8119",
-          "espn_id": 4361409,
+          "espn_id": null,
           "name": "Jahan Dotson",
           "position": "WR",
           "team": "ATL",
           "age": 26,
+          "birth_date": "2000-03-22",
           "college": "Penn State",
           "height": "71",
           "weight": "184",
@@ -7092,11 +7261,12 @@ window.__STATIC_DATA__ = {
         },
         {
           "player_id": "8126",
-          "espn_id": 4569587,
+          "espn_id": null,
           "name": "Wan'Dale Robinson",
           "position": "WR",
           "team": "TEN",
           "age": 25,
+          "birth_date": "2001-01-05",
           "college": "Kentucky",
           "height": "68",
           "weight": "185",
@@ -7106,11 +7276,12 @@ window.__STATIC_DATA__ = {
         },
         {
           "player_id": "8130",
-          "espn_id": 4361307,
+          "espn_id": null,
           "name": "Trey McBride",
           "position": "TE",
           "team": "ARI",
           "age": 26,
+          "birth_date": "1999-11-22",
           "college": "Colorado State",
           "height": "76",
           "weight": "246",
@@ -7120,11 +7291,12 @@ window.__STATIC_DATA__ = {
         },
         {
           "player_id": "8135",
-          "espn_id": 4567156,
+          "espn_id": null,
           "name": "Treylon Burks",
           "position": "WR",
           "team": "WAS",
           "age": 26,
+          "birth_date": "2000-03-23",
           "college": "Arkansas",
           "height": "74",
           "weight": "225",
@@ -7134,11 +7306,12 @@ window.__STATIC_DATA__ = {
         },
         {
           "player_id": "9224",
-          "espn_id": 4362238,
+          "espn_id": null,
           "name": "Chase Brown",
           "position": "RB",
           "team": "CIN",
           "age": 26,
+          "birth_date": "2000-03-21",
           "college": "Illinois",
           "height": "70",
           "weight": "210",
@@ -7148,11 +7321,12 @@ window.__STATIC_DATA__ = {
         },
         {
           "player_id": "9494",
-          "espn_id": 4686472,
+          "espn_id": null,
           "name": "Marvin Mims",
           "position": "WR",
           "team": "DEN",
           "age": 24,
+          "birth_date": "2002-03-19",
           "college": "Oklahoma",
           "height": "71",
           "weight": "182",
@@ -7162,11 +7336,12 @@ window.__STATIC_DATA__ = {
         },
         {
           "player_id": "9501",
-          "espn_id": 4427095,
+          "espn_id": null,
           "name": "DeMario Douglas",
           "position": "WR",
           "team": "NE",
           "age": 25,
+          "birth_date": "2000-12-08",
           "college": "Liberty",
           "height": "68",
           "weight": "185",
@@ -7176,11 +7351,12 @@ window.__STATIC_DATA__ = {
         },
         {
           "player_id": "9504",
-          "espn_id": 4429022,
+          "espn_id": null,
           "name": "Kayshon Boutte",
           "position": "WR",
           "team": "NE",
           "age": 24,
+          "birth_date": "2002-05-07",
           "college": "LSU",
           "height": "71",
           "weight": "203",
@@ -7190,11 +7366,12 @@ window.__STATIC_DATA__ = {
         },
         {
           "player_id": "9509",
-          "espn_id": 4430807,
+          "espn_id": null,
           "name": "Bijan Robinson",
           "position": "RB",
           "team": "ATL",
           "age": 24,
+          "birth_date": "2002-01-30",
           "college": "Texas",
           "height": "71",
           "weight": "215",
@@ -7204,11 +7381,12 @@ window.__STATIC_DATA__ = {
         },
         {
           "player_id": "9511",
-          "espn_id": 4596334,
+          "espn_id": null,
           "name": "Keaton Mitchell",
           "position": "RB",
           "team": "LAC",
           "age": 24,
+          "birth_date": "2002-01-17",
           "college": "East Carolina",
           "height": "68",
           "weight": "191",
@@ -7218,11 +7396,12 @@ window.__STATIC_DATA__ = {
         },
         {
           "player_id": "9754",
-          "espn_id": 4429025,
+          "espn_id": null,
           "name": "Quentin Johnston",
           "position": "WR",
           "team": "LAC",
           "age": 24,
+          "birth_date": "2001-09-06",
           "college": "TCU",
           "height": "74",
           "weight": "208",
@@ -7238,11 +7417,12 @@ window.__STATIC_DATA__ = {
       "players": [
         {
           "player_id": "11560",
-          "espn_id": 4431611,
+          "espn_id": null,
           "name": "Caleb Williams",
           "position": "QB",
           "team": "CHI",
           "age": 24,
+          "birth_date": "2001-11-18",
           "college": "USC",
           "height": "73",
           "weight": "226",
@@ -7252,11 +7432,12 @@ window.__STATIC_DATA__ = {
         },
         {
           "player_id": "11571",
-          "espn_id": 4695404,
+          "espn_id": null,
           "name": "Isaiah Davis",
           "position": "RB",
           "team": "NYJ",
           "age": 24,
+          "birth_date": "2002-02-21",
           "college": "South Dakota State",
           "height": "73",
           "weight": "220",
@@ -7266,11 +7447,12 @@ window.__STATIC_DATA__ = {
         },
         {
           "player_id": "11596",
-          "espn_id": 4690923,
+          "espn_id": null,
           "name": "Ben Sinnott",
           "position": "TE",
           "team": "WAS",
           "age": 23,
+          "birth_date": "2002-06-14",
           "college": "Kansas State",
           "height": "76",
           "weight": "245",
@@ -7280,11 +7462,12 @@ window.__STATIC_DATA__ = {
         },
         {
           "player_id": "11618",
-          "espn_id": 4430834,
+          "espn_id": null,
           "name": "Jalen McMillan",
           "position": "WR",
           "team": "TB",
           "age": 24,
+          "birth_date": "2001-12-07",
           "college": "Washington",
           "height": "73",
           "weight": "192",
@@ -7294,11 +7477,12 @@ window.__STATIC_DATA__ = {
         },
         {
           "player_id": "12470",
-          "espn_id": 4683423,
+          "espn_id": null,
           "name": "Riley Leonard",
           "position": "QB",
           "team": "IND",
           "age": 23,
+          "birth_date": "2002-09-13",
           "college": "Notre Dame",
           "height": "76",
           "weight": "213",
@@ -7308,11 +7492,12 @@ window.__STATIC_DATA__ = {
         },
         {
           "player_id": "12502",
-          "espn_id": 4686728,
+          "espn_id": null,
           "name": "Gunnar Helm",
           "position": "TE",
           "team": "TEN",
           "age": 23,
+          "birth_date": "2002-09-06",
           "college": "Texas",
           "height": "77",
           "weight": "241",
@@ -7322,11 +7507,12 @@ window.__STATIC_DATA__ = {
         },
         {
           "player_id": "12541",
-          "espn_id": 4432775,
+          "espn_id": null,
           "name": "Dont'e Thornton",
           "position": "WR",
           "team": "LV",
           "age": 23,
+          "birth_date": "2002-11-30",
           "college": "Tennessee",
           "height": "77",
           "weight": "205",
@@ -7336,11 +7522,12 @@ window.__STATIC_DATA__ = {
         },
         {
           "player_id": "13286",
-          "espn_id": 4685512,
+          "espn_id": null,
           "name": "Jadarian Price",
           "position": "RB",
           "team": "SEA",
           "age": 22,
+          "birth_date": "2003-10-09",
           "college": "Notre Dame",
           "height": "71",
           "weight": "209",
@@ -7350,11 +7537,12 @@ window.__STATIC_DATA__ = {
         },
         {
           "player_id": "13288",
-          "espn_id": 4685555,
+          "espn_id": null,
           "name": "Nicholas Singleton",
           "position": "RB",
           "team": "TEN",
           "age": 22,
+          "birth_date": "2004-01-06",
           "college": "Penn State",
           "height": "72",
           "weight": "219",
@@ -7364,11 +7552,12 @@ window.__STATIC_DATA__ = {
         },
         {
           "player_id": "13289",
-          "espn_id": 4714771,
+          "espn_id": null,
           "name": "Drew Allar",
           "position": "QB",
           "team": "PIT",
           "age": 22,
+          "birth_date": "2004-03-08",
           "college": "Penn State",
           "height": "77",
           "weight": "228",
@@ -7378,11 +7567,12 @@ window.__STATIC_DATA__ = {
         },
         {
           "player_id": "13311",
-          "espn_id": 4869961,
+          "espn_id": null,
           "name": "Chris Bell",
           "position": "WR",
           "team": "MIA",
           "age": 21,
+          "birth_date": "2004-06-07",
           "college": "Louisville",
           "height": "74",
           "weight": "220",
@@ -7392,11 +7582,12 @@ window.__STATIC_DATA__ = {
         },
         {
           "player_id": "13319",
-          "espn_id": 4702559,
+          "espn_id": null,
           "name": "Oscar Delp",
           "position": "TE",
           "team": "NO",
           "age": 22,
+          "birth_date": "2003-08-04",
           "college": "Georgia",
           "height": "76",
           "weight": "245",
@@ -7406,11 +7597,12 @@ window.__STATIC_DATA__ = {
         },
         {
           "player_id": "13320",
-          "espn_id": 4870612,
+          "espn_id": null,
           "name": "Zachariah Branch",
           "position": "WR",
           "team": "ATL",
           "age": 22,
+          "birth_date": "2004-03-29",
           "college": "Georgia",
           "height": "70",
           "weight": "180",
@@ -7420,11 +7612,12 @@ window.__STATIC_DATA__ = {
         },
         {
           "player_id": "13335",
-          "espn_id": 4879250,
+          "espn_id": null,
           "name": "Cole Payton",
           "position": "QB",
           "team": "PHI",
           "age": 23,
+          "birth_date": "2002-10-26",
           "college": "North Dakota State",
           "height": "74",
           "weight": "232",
@@ -7434,11 +7627,12 @@ window.__STATIC_DATA__ = {
         },
         {
           "player_id": "13348",
-          "espn_id": 4713118,
+          "espn_id": null,
           "name": "J'Mari Taylor",
           "position": "RB",
           "team": "JAX",
           "age": 24,
+          "birth_date": "2002-03-15",
           "college": "Virginia",
           "height": "69",
           "weight": "199",
@@ -7448,11 +7642,12 @@ window.__STATIC_DATA__ = {
         },
         {
           "player_id": "13401",
-          "espn_id": 4594749,
+          "espn_id": null,
           "name": "Michael Trigg",
           "position": "TE",
           "team": "DAL",
           "age": 23,
+          "birth_date": "2002-06-27",
           "college": "Baylor",
           "height": "76",
           "weight": "240",
@@ -7462,11 +7657,12 @@ window.__STATIC_DATA__ = {
         },
         {
           "player_id": "13403",
-          "espn_id": 4685477,
+          "espn_id": null,
           "name": "Jam Miller",
           "position": "RB",
           "team": "NE",
           "age": null,
+          "birth_date": null,
           "college": "Alabama",
           "height": "70",
           "weight": "209",
@@ -7476,11 +7672,12 @@ window.__STATIC_DATA__ = {
         },
         {
           "player_id": "13411",
-          "espn_id": 4869748,
+          "espn_id": null,
           "name": "Zavion Thomas",
           "position": "WR",
           "team": "CHI",
           "age": 22,
+          "birth_date": "2004-02-14",
           "college": "LSU",
           "height": "70",
           "weight": "190",
@@ -7490,11 +7687,12 @@ window.__STATIC_DATA__ = {
         },
         {
           "player_id": "13413",
-          "espn_id": 4912218,
+          "espn_id": null,
           "name": "Cyrus Allen",
           "position": "WR",
           "team": "KC",
           "age": 23,
+          "birth_date": "2003-02-11",
           "college": "Cincinnati",
           "height": "71",
           "weight": "180",
@@ -7504,11 +7702,12 @@ window.__STATIC_DATA__ = {
         },
         {
           "player_id": "13414",
-          "espn_id": 4696044,
+          "espn_id": null,
           "name": "Kaelon Black",
           "position": "RB",
           "team": "SF",
           "age": 24,
+          "birth_date": "2001-10-17",
           "college": "Indiana",
           "height": "69",
           "weight": "208",
@@ -7523,6 +7722,7 @@ window.__STATIC_DATA__ = {
           "position": "WR",
           "team": null,
           "age": 33,
+          "birth_date": "1992-04-27",
           "college": "California",
           "height": "74",
           "weight": "211",
@@ -7537,6 +7737,7 @@ window.__STATIC_DATA__ = {
           "position": "K",
           "team": "PIT",
           "age": 35,
+          "birth_date": "1991-03-16",
           "college": "Rice",
           "height": "74",
           "weight": "185",
@@ -7551,6 +7752,7 @@ window.__STATIC_DATA__ = {
           "position": "WR",
           "team": null,
           "age": 32,
+          "birth_date": "1993-11-29",
           "college": "Maryland",
           "height": "72",
           "weight": "191",
@@ -7565,6 +7767,7 @@ window.__STATIC_DATA__ = {
           "position": "QB",
           "team": "CLE",
           "age": 30,
+          "birth_date": "1995-09-14",
           "college": "Clemson",
           "height": "75",
           "weight": "223",
@@ -7579,6 +7782,7 @@ window.__STATIC_DATA__ = {
           "position": "WR",
           "team": "SEA",
           "age": 32,
+          "birth_date": "1993-06-15",
           "college": "Eastern Washington",
           "height": "73",
           "weight": "205",
@@ -7593,6 +7797,7 @@ window.__STATIC_DATA__ = {
           "position": "WR",
           "team": "TEN",
           "age": 31,
+          "birth_date": "1994-12-20",
           "college": "Alabama",
           "height": "73",
           "weight": "190",
@@ -7607,6 +7812,7 @@ window.__STATIC_DATA__ = {
           "position": "WR",
           "team": "WAS",
           "age": 30,
+          "birth_date": "1995-09-15",
           "college": "Ohio State",
           "height": "72",
           "weight": "210",
@@ -7621,6 +7827,7 @@ window.__STATIC_DATA__ = {
           "position": "WR",
           "team": "JAX",
           "age": 29,
+          "birth_date": "1996-11-09",
           "college": "North Carolina State",
           "height": "74",
           "weight": "200",
@@ -7635,6 +7842,7 @@ window.__STATIC_DATA__ = {
           "position": "RB",
           "team": "BAL",
           "age": 28,
+          "birth_date": "1997-11-14",
           "college": "Oklahoma State",
           "height": "70",
           "weight": "205",
@@ -7649,6 +7857,7 @@ window.__STATIC_DATA__ = {
           "position": "RB",
           "team": null,
           "age": 27,
+          "birth_date": "1998-03-09",
           "college": "Alabama",
           "height": "73",
           "weight": "242",
@@ -7658,11 +7867,12 @@ window.__STATIC_DATA__ = {
         },
         {
           "player_id": "8210",
-          "espn_id": 4360635,
+          "espn_id": null,
           "name": "Chig Okonkwo",
           "position": "TE",
           "team": "WAS",
           "age": 26,
+          "birth_date": "1999-09-08",
           "college": "Maryland",
           "height": "75",
           "weight": "238",
@@ -7678,11 +7888,12 @@ window.__STATIC_DATA__ = {
       "players": [
         {
           "player_id": "11559",
-          "espn_id": 4360423,
+          "espn_id": null,
           "name": "Michael Penix",
           "position": "QB",
           "team": "ATL",
           "age": 26,
+          "birth_date": "2000-05-08",
           "college": "Washington",
           "height": "75",
           "weight": "220",
@@ -7692,11 +7903,12 @@ window.__STATIC_DATA__ = {
         },
         {
           "player_id": "11576",
-          "espn_id": 4685247,
+          "espn_id": null,
           "name": "Braelon Allen",
           "position": "RB",
           "team": "NYJ",
           "age": 22,
+          "birth_date": "2004-01-20",
           "college": "Wisconsin",
           "height": "73",
           "weight": "235",
@@ -7706,11 +7918,12 @@ window.__STATIC_DATA__ = {
         },
         {
           "player_id": "11583",
-          "espn_id": 4678008,
+          "espn_id": null,
           "name": "Jonathon Brooks",
           "position": "RB",
           "team": "CAR",
           "age": 22,
+          "birth_date": "2003-07-21",
           "college": "Texas",
           "height": "72",
           "weight": "207",
@@ -7720,11 +7933,12 @@ window.__STATIC_DATA__ = {
         },
         {
           "player_id": "11625",
-          "espn_id": 4597500,
+          "espn_id": null,
           "name": "Adonai Mitchell",
           "position": "WR",
           "team": "NYJ",
           "age": 23,
+          "birth_date": "2002-10-08",
           "college": "Texas",
           "height": "74",
           "weight": "205",
@@ -7734,11 +7948,12 @@ window.__STATIC_DATA__ = {
         },
         {
           "player_id": "11626",
-          "espn_id": 4430034,
+          "espn_id": null,
           "name": "Xavier Legette",
           "position": "WR",
           "team": "CAR",
           "age": 25,
+          "birth_date": "2001-01-29",
           "college": "South Carolina",
           "height": "75",
           "weight": "227",
@@ -7748,11 +7963,12 @@ window.__STATIC_DATA__ = {
         },
         {
           "player_id": "11647",
-          "espn_id": 4430968,
+          "espn_id": null,
           "name": "Kimani Vidal",
           "position": "RB",
           "team": "LAC",
           "age": 24,
+          "birth_date": "2001-08-28",
           "college": "Troy",
           "height": "68",
           "weight": "215",
@@ -7762,11 +7978,12 @@ window.__STATIC_DATA__ = {
         },
         {
           "player_id": "11650",
-          "espn_id": 4426948,
+          "espn_id": null,
           "name": "Luke McCaffrey",
           "position": "WR",
           "team": "WAS",
           "age": 25,
+          "birth_date": "2001-04-02",
           "college": "Rice",
           "height": "74",
           "weight": "195",
@@ -7776,11 +7993,12 @@ window.__STATIC_DATA__ = {
         },
         {
           "player_id": "12498",
-          "espn_id": 4808766,
+          "espn_id": null,
           "name": "Mason Taylor",
           "position": "TE",
           "team": "NYJ",
           "age": 22,
+          "birth_date": "2004-05-08",
           "college": "LSU",
           "height": "77",
           "weight": "251",
@@ -7790,11 +8008,12 @@ window.__STATIC_DATA__ = {
         },
         {
           "player_id": "12514",
-          "espn_id": 4567750,
+          "espn_id": null,
           "name": "Emeka Egbuka",
           "position": "WR",
           "team": "TB",
           "age": 23,
+          "birth_date": "2002-10-14",
           "college": "Ohio State",
           "height": "73",
           "weight": "205",
@@ -7804,11 +8023,12 @@ window.__STATIC_DATA__ = {
         },
         {
           "player_id": "12517",
-          "espn_id": 4723086,
+          "espn_id": null,
           "name": "Colston Loveland",
           "position": "TE",
           "team": "CHI",
           "age": 22,
+          "birth_date": "2004-04-09",
           "college": "Michigan",
           "height": "78",
           "weight": "241",
@@ -7818,11 +8038,12 @@ window.__STATIC_DATA__ = {
         },
         {
           "player_id": "12521",
-          "espn_id": 4678006,
+          "espn_id": null,
           "name": "Elijah Arroyo",
           "position": "TE",
           "team": "SEA",
           "age": 23,
+          "birth_date": "2003-04-05",
           "college": "Miami (FL)",
           "height": "77",
           "weight": "254",
@@ -7832,11 +8053,12 @@ window.__STATIC_DATA__ = {
         },
         {
           "player_id": "12540",
-          "espn_id": 4431268,
+          "espn_id": null,
           "name": "Chimere Dike",
           "position": "WR",
           "team": "TEN",
           "age": 24,
+          "birth_date": "2001-12-14",
           "college": "Florida",
           "height": "73",
           "weight": "196",
@@ -7846,11 +8068,12 @@ window.__STATIC_DATA__ = {
         },
         {
           "player_id": "12545",
-          "espn_id": 4360689,
+          "espn_id": null,
           "name": "Tyler Shough",
           "position": "QB",
           "team": "NO",
           "age": 26,
+          "birth_date": "1999-09-28",
           "college": "Louisville",
           "height": "77",
           "weight": "219",
@@ -7860,11 +8083,12 @@ window.__STATIC_DATA__ = {
         },
         {
           "player_id": "12547",
-          "espn_id": 4613202,
+          "espn_id": null,
           "name": "Kyle Williams",
           "position": "WR",
           "team": "NE",
           "age": 23,
+          "birth_date": "2002-11-13",
           "college": "Washington State",
           "height": "71",
           "weight": "190",
@@ -7874,11 +8098,12 @@ window.__STATIC_DATA__ = {
         },
         {
           "player_id": "12641",
-          "espn_id": 4602667,
+          "espn_id": null,
           "name": "Jaylin Lane",
           "position": "WR",
           "team": "WAS",
           "age": 24,
+          "birth_date": "2002-05-01",
           "college": "Virginia Tech",
           "height": "70",
           "weight": "196",
@@ -7888,11 +8113,12 @@ window.__STATIC_DATA__ = {
         },
         {
           "player_id": "12711",
-          "espn_id": 4697745,
+          "espn_id": null,
           "name": "Tyler Loop",
           "position": "K",
           "team": "BAL",
           "age": 24,
+          "birth_date": "2001-08-04",
           "college": "Arizona",
           "height": "71",
           "weight": "191",
@@ -7902,11 +8128,12 @@ window.__STATIC_DATA__ = {
         },
         {
           "player_id": "13274",
-          "espn_id": 4685261,
+          "espn_id": null,
           "name": "Germie Bernard",
           "position": "WR",
           "team": "PIT",
           "age": 22,
+          "birth_date": "2003-12-02",
           "college": "Alabama",
           "height": "73",
           "weight": "206",
@@ -7916,11 +8143,12 @@ window.__STATIC_DATA__ = {
         },
         {
           "player_id": "13285",
-          "espn_id": 4682648,
+          "espn_id": null,
           "name": "Malachi Fields",
           "position": "WR",
           "team": "NYG",
           "age": 22,
+          "birth_date": "2003-08-26",
           "college": "Notre Dame",
           "height": "76",
           "weight": "222",
@@ -7930,11 +8158,12 @@ window.__STATIC_DATA__ = {
         },
         {
           "player_id": "13287",
-          "espn_id": 4870808,
+          "espn_id": null,
           "name": "Jeremiyah Love",
           "position": "RB",
           "team": "ARI",
           "age": 21,
+          "birth_date": "2005-05-31",
           "college": "Notre Dame",
           "height": "72",
           "weight": "212",
@@ -7944,11 +8173,12 @@ window.__STATIC_DATA__ = {
         },
         {
           "player_id": "13394",
-          "espn_id": 4879194,
+          "espn_id": null,
           "name": "Josh Cameron",
           "position": "WR",
           "team": "JAX",
           "age": 23,
+          "birth_date": "2003-03-18",
           "college": "Baylor",
           "height": "73",
           "weight": "224",
@@ -7958,11 +8188,12 @@ window.__STATIC_DATA__ = {
         },
         {
           "player_id": "13405",
-          "espn_id": 4685246,
+          "espn_id": null,
           "name": "Kaytron Allen",
           "position": "RB",
           "team": "WAS",
           "age": 23,
+          "birth_date": "2003-01-08",
           "college": "Penn State",
           "height": "71",
           "weight": "217",
@@ -7977,6 +8208,7 @@ window.__STATIC_DATA__ = {
           "position": "QB",
           "team": "TB",
           "age": 31,
+          "birth_date": "1995-04-14",
           "college": "Oklahoma",
           "height": "73",
           "weight": "215",
@@ -7991,6 +8223,7 @@ window.__STATIC_DATA__ = {
           "position": "TE",
           "team": "NO",
           "age": 28,
+          "birth_date": "1997-11-20",
           "college": "Iowa",
           "height": "76",
           "weight": "249",
@@ -8005,6 +8238,7 @@ window.__STATIC_DATA__ = {
           "position": "RB",
           "team": "BUF",
           "age": 28,
+          "birth_date": "1997-09-17",
           "college": "Maryland",
           "height": "70",
           "weight": "210",
@@ -8019,6 +8253,7 @@ window.__STATIC_DATA__ = {
           "position": "QB",
           "team": "LAC",
           "age": 28,
+          "birth_date": "1998-03-10",
           "college": "Oregon",
           "height": "78",
           "weight": "236",
@@ -8033,6 +8268,7 @@ window.__STATIC_DATA__ = {
           "position": "WR",
           "team": "SF",
           "age": 28,
+          "birth_date": "1998-03-17",
           "college": "Arizona State",
           "height": "72",
           "weight": "200",
@@ -8042,11 +8278,12 @@ window.__STATIC_DATA__ = {
         },
         {
           "player_id": "8117",
-          "espn_id": 4249417,
+          "espn_id": null,
           "name": "Jalen Tolbert",
           "position": "WR",
           "team": "MIA",
           "age": 27,
+          "birth_date": "1999-02-27",
           "college": "South Alabama",
           "height": "73",
           "weight": "195",
@@ -8056,11 +8293,12 @@ window.__STATIC_DATA__ = {
         },
         {
           "player_id": "8154",
-          "espn_id": 4241474,
+          "espn_id": null,
           "name": "Brian Robinson",
           "position": "RB",
           "team": "ATL",
           "age": 27,
+          "birth_date": "1999-03-22",
           "college": "Alabama",
           "height": "73",
           "weight": "225",
@@ -8070,11 +8308,12 @@ window.__STATIC_DATA__ = {
         },
         {
           "player_id": "9502",
-          "espn_id": 4366031,
+          "espn_id": null,
           "name": "Tank Dell",
           "position": "WR",
           "team": "HOU",
           "age": 26,
+          "birth_date": "1999-10-29",
           "college": "Houston",
           "height": "70",
           "weight": "165",
@@ -8084,11 +8323,12 @@ window.__STATIC_DATA__ = {
         },
         {
           "player_id": "9756",
-          "espn_id": 4429205,
+          "espn_id": null,
           "name": "Jordan Addison",
           "position": "WR",
           "team": "MIN",
           "age": 24,
+          "birth_date": "2002-01-27",
           "college": "USC",
           "height": "71",
           "weight": "179",
@@ -8109,6 +8349,7 @@ window.__STATIC_DATA__ = {
           "position": "WR",
           "team": null,
           "age": 30,
+          "birth_date": "1996-01-06",
           "college": "Ohio State",
           "height": "74",
           "weight": "225",
@@ -8123,6 +8364,7 @@ window.__STATIC_DATA__ = {
           "position": "QB",
           "team": "MIN",
           "age": 28,
+          "birth_date": "1997-08-07",
           "college": "Oklahoma",
           "height": "70",
           "weight": "207",
@@ -8132,11 +8374,12 @@ window.__STATIC_DATA__ = {
         },
         {
           "player_id": "11619",
-          "espn_id": 4430637,
+          "espn_id": null,
           "name": "Ja'Lynn Polk",
           "position": "WR",
           "team": "NO",
           "age": 24,
+          "birth_date": "2002-04-11",
           "college": "Washington",
           "height": "73",
           "weight": "203",
@@ -8146,11 +8389,12 @@ window.__STATIC_DATA__ = {
         },
         {
           "player_id": "13317",
-          "espn_id": 5220680,
+          "espn_id": null,
           "name": "Ted Hurst",
           "position": "WR",
           "team": "TB",
           "age": 21,
+          "birth_date": "2004-07-02",
           "college": "Georgia State",
           "height": "75",
           "weight": "206",
@@ -8165,6 +8409,7 @@ window.__STATIC_DATA__ = {
           "position": "K",
           "team": null,
           "age": 31,
+          "birth_date": "1995-01-23",
           "college": "Auburn",
           "height": "77",
           "weight": "215",
@@ -8179,6 +8424,7 @@ window.__STATIC_DATA__ = {
           "position": "WR",
           "team": "NYG",
           "age": 29,
+          "birth_date": "1997-01-12",
           "college": "Auburn",
           "height": "73",
           "weight": "198",
@@ -8188,11 +8434,12 @@ window.__STATIC_DATA__ = {
         },
         {
           "player_id": "9497",
-          "espn_id": 4692590,
+          "espn_id": null,
           "name": "Jalin Hyatt",
           "position": "WR",
           "team": "NYG",
           "age": 24,
+          "birth_date": "2001-09-25",
           "college": "Tennessee",
           "height": "72",
           "weight": "185",
@@ -8202,11 +8449,12 @@ window.__STATIC_DATA__ = {
         },
         {
           "player_id": "13345",
-          "espn_id": 4702555,
+          "espn_id": null,
           "name": "Jonah Coleman",
           "position": "RB",
           "team": "DEN",
           "age": 22,
+          "birth_date": "2003-08-20",
           "college": "Washington",
           "height": "68",
           "weight": "220",
@@ -8216,11 +8464,12 @@ window.__STATIC_DATA__ = {
         },
         {
           "player_id": "9757",
-          "espn_id": 4599739,
+          "espn_id": null,
           "name": "Kendre Miller",
           "position": "RB",
           "team": "NO",
           "age": 23,
+          "birth_date": "2002-06-11",
           "college": "TCU",
           "height": "72",
           "weight": "220",
@@ -8230,11 +8479,12 @@ window.__STATIC_DATA__ = {
         },
         {
           "player_id": "13150",
-          "espn_id": 4715355,
+          "espn_id": null,
           "name": "Darius Cooper",
           "position": "WR",
           "team": "PHI",
           "age": 24,
+          "birth_date": "2001-11-22",
           "college": "Tarleton State",
           "height": "71",
           "weight": "210",
@@ -8244,11 +8494,12 @@ window.__STATIC_DATA__ = {
         },
         {
           "player_id": "13281",
-          "espn_id": 4880281,
+          "espn_id": null,
           "name": "Jordyn Tyson",
           "position": "WR",
           "team": "NO",
           "age": 21,
+          "birth_date": "2004-08-12",
           "college": "Arizona State",
           "height": "74",
           "weight": "203",
@@ -8258,11 +8509,12 @@ window.__STATIC_DATA__ = {
         },
         {
           "player_id": "13275",
-          "espn_id": 4685522,
+          "espn_id": null,
           "name": "Ty Simpson",
           "position": "QB",
           "team": "LAR",
           "age": 23,
+          "birth_date": "2002-12-21",
           "college": "Alabama",
           "height": "73",
           "weight": "211",
@@ -8277,6 +8529,7 @@ window.__STATIC_DATA__ = {
           "position": "QB",
           "team": "DET",
           "age": 31,
+          "birth_date": "1994-10-14",
           "college": "California",
           "height": "76",
           "weight": "217",
@@ -8291,6 +8544,7 @@ window.__STATIC_DATA__ = {
           "position": "WR",
           "team": "NE",
           "age": 32,
+          "birth_date": "1993-09-16",
           "college": "North Carolina",
           "height": "76",
           "weight": "221",
@@ -8300,11 +8554,12 @@ window.__STATIC_DATA__ = {
         },
         {
           "player_id": "12530",
-          "espn_id": 4685415,
+          "espn_id": null,
           "name": "Travis Hunter",
           "position": "WR",
           "team": "JAX",
           "age": 23,
+          "birth_date": "2003-05-18",
           "college": "Colorado",
           "height": "73",
           "weight": "185",
@@ -8314,11 +8569,12 @@ window.__STATIC_DATA__ = {
         },
         {
           "player_id": "8142",
-          "espn_id": 4360078,
+          "espn_id": null,
           "name": "Alec Pierce",
           "position": "WR",
           "team": "IND",
           "age": 26,
+          "birth_date": "2000-05-02",
           "college": "Cincinnati",
           "height": "75",
           "weight": "211",
@@ -8328,11 +8584,12 @@ window.__STATIC_DATA__ = {
         },
         {
           "player_id": "8143",
-          "espn_id": 4372019,
+          "espn_id": null,
           "name": "Jerome Ford",
           "position": "RB",
           "team": "WAS",
           "age": 26,
+          "birth_date": "1999-09-12",
           "college": "Cincinnati",
           "height": "70",
           "weight": "210",
@@ -8342,11 +8599,12 @@ window.__STATIC_DATA__ = {
         },
         {
           "player_id": "13424",
-          "espn_id": 4686468,
+          "espn_id": null,
           "name": "Seth McGowan",
           "position": "RB",
           "team": "IND",
           "age": 24,
+          "birth_date": "2001-10-23",
           "college": "Kentucky",
           "height": "72",
           "weight": "223",
@@ -8356,11 +8614,12 @@ window.__STATIC_DATA__ = {
         },
         {
           "player_id": "8208",
-          "espn_id": 4362748,
+          "espn_id": null,
           "name": "Tyler Badie",
           "position": "RB",
           "team": "DEN",
           "age": 26,
+          "birth_date": "2000-02-07",
           "college": "Missouri",
           "height": "68",
           "weight": "197",
@@ -8375,6 +8634,7 @@ window.__STATIC_DATA__ = {
           "position": "TE",
           "team": "LAR",
           "age": 33,
+          "birth_date": "1993-01-01",
           "college": "Western Kentucky",
           "height": "78",
           "weight": "253",
@@ -8384,11 +8644,12 @@ window.__STATIC_DATA__ = {
         },
         {
           "player_id": "13330",
-          "espn_id": 5083315,
+          "espn_id": null,
           "name": "Kenyon Sadiq",
           "position": "TE",
           "team": "NYJ",
           "age": 21,
+          "birth_date": "2005-03-04",
           "college": "Oregon",
           "height": "75",
           "weight": "241",
@@ -8403,6 +8664,7 @@ window.__STATIC_DATA__ = {
           "position": "K",
           "team": "TB",
           "age": 30,
+          "birth_date": "1996-04-09",
           "college": "Illinois",
           "height": "72",
           "weight": "190",
@@ -8412,11 +8674,12 @@ window.__STATIC_DATA__ = {
         },
         {
           "player_id": "9486",
-          "espn_id": 4428850,
+          "espn_id": null,
           "name": "Dontayvion Wicks",
           "position": "WR",
           "team": "PHI",
           "age": 24,
+          "birth_date": "2001-06-16",
           "college": "Virginia",
           "height": "73",
           "weight": "206",
@@ -8426,11 +8689,12 @@ window.__STATIC_DATA__ = {
         },
         {
           "player_id": "8110",
-          "espn_id": 4242355,
+          "espn_id": null,
           "name": "Jake Ferguson",
           "position": "TE",
           "team": "DAL",
           "age": 27,
+          "birth_date": "1999-01-18",
           "college": "Wisconsin",
           "height": "77",
           "weight": "250",
@@ -8445,6 +8709,7 @@ window.__STATIC_DATA__ = {
           "position": "TE",
           "team": "BUF",
           "age": 29,
+          "birth_date": "1996-11-14",
           "college": "Ole Miss",
           "height": "76",
           "weight": "254",
@@ -8459,6 +8724,7 @@ window.__STATIC_DATA__ = {
           "position": "WR",
           "team": "TB",
           "age": 30,
+          "birth_date": "1996-02-27",
           "college": "Penn State",
           "height": "73",
           "weight": "209",
@@ -8473,6 +8739,7 @@ window.__STATIC_DATA__ = {
           "position": "WR",
           "team": "IND",
           "age": 29,
+          "birth_date": "1997-03-21",
           "college": "Indiana",
           "height": "74",
           "weight": "211",
@@ -8482,11 +8749,12 @@ window.__STATIC_DATA__ = {
         },
         {
           "player_id": "8147",
-          "espn_id": 4567096,
+          "espn_id": null,
           "name": "John Metchie",
           "position": "WR",
           "team": "CAR",
           "age": 25,
+          "birth_date": "2000-07-18",
           "college": "Alabama",
           "height": "71",
           "weight": "187",
@@ -8496,11 +8764,12 @@ window.__STATIC_DATA__ = {
         },
         {
           "player_id": "13268",
-          "espn_id": 5088338,
+          "espn_id": null,
           "name": "Elijah Sarratt",
           "position": "WR",
           "team": "BAL",
           "age": 23,
+          "birth_date": "2003-05-28",
           "college": "Indiana",
           "height": "74",
           "weight": "210",
@@ -8510,11 +8779,12 @@ window.__STATIC_DATA__ = {
         },
         {
           "player_id": "12529",
-          "espn_id": 4432710,
+          "espn_id": null,
           "name": "TreVeyon Henderson",
           "position": "RB",
           "team": "NE",
           "age": 23,
+          "birth_date": "2002-10-22",
           "college": "Ohio State",
           "height": "70",
           "weight": "202",
@@ -8529,6 +8799,7 @@ window.__STATIC_DATA__ = {
           "position": "TE",
           "team": "MIN",
           "age": 28,
+          "birth_date": "1997-07-03",
           "college": "Iowa",
           "height": "77",
           "weight": "248",
@@ -8538,11 +8809,12 @@ window.__STATIC_DATA__ = {
         },
         {
           "player_id": "8111",
-          "espn_id": 4243331,
+          "espn_id": null,
           "name": "Cade Otton",
           "position": "TE",
           "team": "TB",
           "age": 27,
+          "birth_date": "1999-04-15",
           "college": "Washington",
           "height": "77",
           "weight": "247",
@@ -8552,11 +8824,12 @@ window.__STATIC_DATA__ = {
         },
         {
           "player_id": "11610",
-          "espn_id": 4569603,
+          "espn_id": null,
           "name": "Malik Washington",
           "position": "WR",
           "team": "MIA",
           "age": 25,
+          "birth_date": "2001-01-04",
           "college": "Virginia",
           "height": "68",
           "weight": "195",
@@ -8566,11 +8839,12 @@ window.__STATIC_DATA__ = {
         },
         {
           "player_id": "13301",
-          "espn_id": 5081432,
+          "espn_id": null,
           "name": "Antonio Williams",
           "position": "WR",
           "team": "WAS",
           "age": 21,
+          "birth_date": "2004-07-14",
           "college": "Clemson",
           "height": "71",
           "weight": "195",
@@ -8580,11 +8854,12 @@ window.__STATIC_DATA__ = {
         },
         {
           "player_id": "11439",
-          "espn_id": 4722893,
+          "espn_id": null,
           "name": "Jaleel McLaughlin",
           "position": "RB",
           "team": "DEN",
           "age": 25,
+          "birth_date": "2000-09-13",
           "college": "Youngstown State",
           "height": "67",
           "weight": "187",
@@ -8594,11 +8869,12 @@ window.__STATIC_DATA__ = {
         },
         {
           "player_id": "12507",
-          "espn_id": 4685382,
+          "espn_id": null,
           "name": "Omarion Hampton",
           "position": "RB",
           "team": "LAC",
           "age": 23,
+          "birth_date": "2003-03-16",
           "college": "North Carolina",
           "height": "72",
           "weight": "220",
@@ -8614,11 +8890,12 @@ window.__STATIC_DATA__ = {
       "players": [
         {
           "player_id": "10222",
-          "espn_id": 4362249,
+          "espn_id": null,
           "name": "Jayden Reed",
           "position": "WR",
           "team": "GB",
           "age": 26,
+          "birth_date": "2000-04-28",
           "college": "Michigan State",
           "height": "71",
           "weight": "187",
@@ -8628,11 +8905,12 @@ window.__STATIC_DATA__ = {
         },
         {
           "player_id": "11603",
-          "espn_id": 4576297,
+          "espn_id": null,
           "name": "AJ Barner",
           "position": "TE",
           "team": "SEA",
           "age": 24,
+          "birth_date": "2002-05-03",
           "college": "Michigan",
           "height": "78",
           "weight": "251",
@@ -8642,11 +8920,12 @@ window.__STATIC_DATA__ = {
         },
         {
           "player_id": "11604",
-          "espn_id": 4432665,
+          "espn_id": null,
           "name": "Brock Bowers",
           "position": "TE",
           "team": "LV",
           "age": 23,
+          "birth_date": "2002-12-13",
           "college": "Georgia",
           "height": "76",
           "weight": "235",
@@ -8656,11 +8935,12 @@ window.__STATIC_DATA__ = {
         },
         {
           "player_id": "11635",
-          "espn_id": 4612826,
+          "espn_id": null,
           "name": "Ladd McConkey",
           "position": "WR",
           "team": "LAC",
           "age": 24,
+          "birth_date": "2001-11-11",
           "college": "Georgia",
           "height": "72",
           "weight": "185",
@@ -8670,11 +8950,12 @@ window.__STATIC_DATA__ = {
         },
         {
           "player_id": "11637",
-          "espn_id": 4635008,
+          "espn_id": null,
           "name": "Keon Coleman",
           "position": "WR",
           "team": "BUF",
           "age": 23,
+          "birth_date": "2003-05-17",
           "college": "Florida State",
           "height": "75",
           "weight": "213",
@@ -8684,11 +8965,12 @@ window.__STATIC_DATA__ = {
         },
         {
           "player_id": "11638",
-          "espn_id": 4428209,
+          "espn_id": null,
           "name": "Ricky Pearsall",
           "position": "WR",
           "team": "SF",
           "age": 25,
+          "birth_date": "2000-09-09",
           "college": "Florida",
           "height": "73",
           "weight": "189",
@@ -8698,11 +8980,12 @@ window.__STATIC_DATA__ = {
         },
         {
           "player_id": "11651",
-          "espn_id": 4372561,
+          "espn_id": null,
           "name": "Isaac Guerendo",
           "position": "RB",
           "team": "SF",
           "age": 25,
+          "birth_date": "2000-06-28",
           "college": "Louisville",
           "height": "72",
           "weight": "221",
@@ -8712,11 +8995,12 @@ window.__STATIC_DATA__ = {
         },
         {
           "player_id": "12048",
-          "espn_id": 4429835,
+          "espn_id": null,
           "name": "George Holani",
           "position": "RB",
           "team": "SEA",
           "age": 26,
+          "birth_date": "1999-12-16",
           "college": "Boise State",
           "height": "71",
           "weight": "210",
@@ -8726,11 +9010,12 @@ window.__STATIC_DATA__ = {
         },
         {
           "player_id": "12455",
-          "espn_id": 4596602,
+          "espn_id": null,
           "name": "Brashard Smith",
           "position": "RB",
           "team": "KC",
           "age": 23,
+          "birth_date": "2003-04-11",
           "college": "SMU",
           "height": "70",
           "weight": "196",
@@ -8740,11 +9025,12 @@ window.__STATIC_DATA__ = {
         },
         {
           "player_id": "12462",
-          "espn_id": 4808830,
+          "espn_id": null,
           "name": "Damien Martinez",
           "position": "RB",
           "team": "GB",
           "age": 22,
+          "birth_date": "2004-01-31",
           "college": "Miami (FL)",
           "height": "72",
           "weight": "217",
@@ -8754,11 +9040,12 @@ window.__STATIC_DATA__ = {
         },
         {
           "player_id": "12481",
-          "espn_id": 4696981,
+          "espn_id": null,
           "name": "Cam Skattebo",
           "position": "RB",
           "team": "NYG",
           "age": 24,
+          "birth_date": "2002-02-05",
           "college": "Arizona State",
           "height": "71",
           "weight": "215",
@@ -8768,11 +9055,12 @@ window.__STATIC_DATA__ = {
         },
         {
           "player_id": "12503",
-          "espn_id": 4808839,
+          "espn_id": null,
           "name": "Isaiah Bond",
           "position": "WR",
           "team": "CLE",
           "age": 22,
+          "birth_date": "2004-03-15",
           "college": "Texas",
           "height": "71",
           "weight": "180",
@@ -8782,11 +9070,12 @@ window.__STATIC_DATA__ = {
         },
         {
           "player_id": "12508",
-          "espn_id": 4689114,
+          "espn_id": null,
           "name": "Jaxson Dart",
           "position": "QB",
           "team": "NYG",
           "age": 23,
+          "birth_date": "2003-05-13",
           "college": "Ole Miss",
           "height": "74",
           "weight": "223",
@@ -8796,11 +9085,12 @@ window.__STATIC_DATA__ = {
         },
         {
           "player_id": "12544",
-          "espn_id": 4911851,
+          "espn_id": null,
           "name": "LeQuint Allen",
           "position": "RB",
           "team": "JAX",
           "age": 21,
+          "birth_date": "2004-08-05",
           "college": "Syracuse",
           "height": "72",
           "weight": "201",
@@ -8810,11 +9100,12 @@ window.__STATIC_DATA__ = {
         },
         {
           "player_id": "13269",
-          "espn_id": 4837248,
+          "espn_id": null,
           "name": "Fernando Mendoza",
           "position": "QB",
           "team": "LV",
           "age": 22,
+          "birth_date": "2003-10-01",
           "college": "Indiana",
           "height": "77",
           "weight": "225",
@@ -8824,11 +9115,12 @@ window.__STATIC_DATA__ = {
         },
         {
           "player_id": "13294",
-          "espn_id": 4870795,
+          "espn_id": null,
           "name": "Makai Lemon",
           "position": "WR",
           "team": "PHI",
           "age": 22,
+          "birth_date": "2004-06-02",
           "college": "USC",
           "height": "71",
           "weight": "192",
@@ -8838,11 +9130,12 @@ window.__STATIC_DATA__ = {
         },
         {
           "player_id": "13298",
-          "espn_id": 4870653,
+          "espn_id": null,
           "name": "KC Concepcion",
           "position": "WR",
           "team": "CLE",
           "age": 21,
+          "birth_date": "2004-09-23",
           "college": "Texas A&M",
           "height": "72",
           "weight": "190",
@@ -8852,11 +9145,12 @@ window.__STATIC_DATA__ = {
         },
         {
           "player_id": "13349",
-          "espn_id": 4431574,
+          "espn_id": null,
           "name": "Eli Stowers",
           "position": "TE",
           "team": "PHI",
           "age": 23,
+          "birth_date": "2003-04-15",
           "college": "Vanderbilt",
           "height": "75",
           "weight": "239",
@@ -8866,11 +9160,12 @@ window.__STATIC_DATA__ = {
         },
         {
           "player_id": "13421",
-          "espn_id": 4831959,
+          "espn_id": null,
           "name": "Eli Raridon",
           "position": "TE",
           "team": "NE",
           "age": 22,
+          "birth_date": "2004-02-12",
           "college": "Notre Dame",
           "height": "78",
           "weight": "245",
@@ -8885,6 +9180,7 @@ window.__STATIC_DATA__ = {
           "position": "TE",
           "team": "NE",
           "age": 31,
+          "birth_date": "1994-12-07",
           "college": "Arkansas",
           "height": "77",
           "weight": "249",
@@ -8899,6 +9195,7 @@ window.__STATIC_DATA__ = {
           "position": "K",
           "team": "DEN",
           "age": 31,
+          "birth_date": "1994-07-07",
           "college": "Georgia State",
           "height": "71",
           "weight": "184",
@@ -8913,6 +9210,7 @@ window.__STATIC_DATA__ = {
           "position": "QB",
           "team": "ATL",
           "age": 28,
+          "birth_date": "1998-03-02",
           "college": "Alabama",
           "height": "73",
           "weight": "225",
@@ -8927,6 +9225,7 @@ window.__STATIC_DATA__ = {
           "position": "QB",
           "team": "CIN",
           "age": 29,
+          "birth_date": "1996-12-10",
           "college": "LSU",
           "height": "76",
           "weight": "215",
@@ -8936,11 +9235,12 @@ window.__STATIC_DATA__ = {
         },
         {
           "player_id": "7564",
-          "espn_id": 4362628,
+          "espn_id": null,
           "name": "Ja'Marr Chase",
           "position": "WR",
           "team": "CIN",
           "age": 26,
+          "birth_date": "2000-03-01",
           "college": "LSU",
           "height": "72",
           "weight": "205",
@@ -8950,11 +9250,12 @@ window.__STATIC_DATA__ = {
         },
         {
           "player_id": "8144",
-          "espn_id": 4361370,
+          "espn_id": null,
           "name": "Chris Olave",
           "position": "WR",
           "team": "NO",
           "age": 25,
+          "birth_date": "2000-06-27",
           "college": "Ohio State",
           "height": "72",
           "weight": "187",
@@ -8964,11 +9265,12 @@ window.__STATIC_DATA__ = {
         },
         {
           "player_id": "8155",
-          "espn_id": 4427366,
+          "espn_id": null,
           "name": "Breece Hall",
           "position": "RB",
           "team": "NYJ",
           "age": 25,
+          "birth_date": "2001-05-31",
           "college": "Iowa State",
           "height": "71",
           "weight": "217",
@@ -8978,11 +9280,12 @@ window.__STATIC_DATA__ = {
         },
         {
           "player_id": "8172",
-          "espn_id": 4367209,
+          "espn_id": null,
           "name": "Greg Dulcich",
           "position": "TE",
           "team": "MIA",
           "age": 26,
+          "birth_date": "2000-03-26",
           "college": "UCLA",
           "height": "76",
           "weight": "245",
@@ -8992,11 +9295,12 @@ window.__STATIC_DATA__ = {
         },
         {
           "player_id": "9228",
-          "espn_id": 4685720,
+          "espn_id": null,
           "name": "Bryce Young",
           "position": "QB",
           "team": "CAR",
           "age": 24,
+          "birth_date": "2001-07-25",
           "college": "Alabama",
           "height": "70",
           "weight": "204",
@@ -9006,11 +9310,12 @@ window.__STATIC_DATA__ = {
         },
         {
           "player_id": "9487",
-          "espn_id": 4432620,
+          "espn_id": null,
           "name": "Parker Washington",
           "position": "WR",
           "team": "JAX",
           "age": 24,
+          "birth_date": "2002-03-21",
           "college": "Penn State",
           "height": "70",
           "weight": "204",
@@ -9020,11 +9325,12 @@ window.__STATIC_DATA__ = {
         },
         {
           "player_id": "9500",
-          "espn_id": 4688813,
+          "espn_id": null,
           "name": "Josh Downs",
           "position": "WR",
           "team": "IND",
           "age": 24,
+          "birth_date": "2001-08-12",
           "college": "North Carolina",
           "height": "69",
           "weight": "171",
@@ -9040,11 +9346,12 @@ window.__STATIC_DATA__ = {
       "players": [
         {
           "player_id": "11563",
-          "espn_id": 4426338,
+          "espn_id": null,
           "name": "Bo Nix",
           "position": "QB",
           "team": "DEN",
           "age": 26,
+          "birth_date": "2000-02-25",
           "college": "Oregon",
           "height": "74",
           "weight": "217",
@@ -9054,11 +9361,12 @@ window.__STATIC_DATA__ = {
         },
         {
           "player_id": "11581",
-          "espn_id": 4429023,
+          "espn_id": null,
           "name": "MarShawn Lloyd",
           "position": "RB",
           "team": "GB",
           "age": 25,
+          "birth_date": "2001-01-05",
           "college": "USC",
           "height": "69",
           "weight": "220",
@@ -9068,11 +9376,12 @@ window.__STATIC_DATA__ = {
         },
         {
           "player_id": "11586",
-          "espn_id": 4429096,
+          "espn_id": null,
           "name": "Blake Corum",
           "position": "RB",
           "team": "LAR",
           "age": 25,
+          "birth_date": "2000-11-25",
           "college": "Michigan",
           "height": "68",
           "weight": "202",
@@ -9082,11 +9391,12 @@ window.__STATIC_DATA__ = {
         },
         {
           "player_id": "11597",
-          "espn_id": 4429148,
+          "espn_id": null,
           "name": "Theo Johnson",
           "position": "TE",
           "team": "NYG",
           "age": 25,
+          "birth_date": "2001-02-26",
           "college": "Penn State",
           "height": "78",
           "weight": "264",
@@ -9096,11 +9406,12 @@ window.__STATIC_DATA__ = {
         },
         {
           "player_id": "11786",
-          "espn_id": 4686361,
+          "espn_id": null,
           "name": "Cam Little",
           "position": "K",
           "team": "JAX",
           "age": 22,
+          "birth_date": "2003-08-17",
           "college": "Arkansas",
           "height": "73",
           "weight": "172",
@@ -9110,11 +9421,12 @@ window.__STATIC_DATA__ = {
         },
         {
           "player_id": "12474",
-          "espn_id": 4429059,
+          "espn_id": null,
           "name": "Woody Marks",
           "position": "RB",
           "team": "HOU",
           "age": 25,
+          "birth_date": "2000-12-29",
           "college": "USC",
           "height": "70",
           "weight": "208",
@@ -9124,11 +9436,12 @@ window.__STATIC_DATA__ = {
         },
         {
           "player_id": "12482",
-          "espn_id": 4431487,
+          "espn_id": null,
           "name": "Savion Williams",
           "position": "WR",
           "team": "GB",
           "age": 24,
+          "birth_date": "2001-11-22",
           "college": "TCU",
           "height": "76",
           "weight": "222",
@@ -9138,11 +9451,12 @@ window.__STATIC_DATA__ = {
         },
         {
           "player_id": "12483",
-          "espn_id": 4603186,
+          "espn_id": null,
           "name": "Jack Bech",
           "position": "WR",
           "team": "LV",
           "age": 23,
+          "birth_date": "2002-12-18",
           "college": "TCU",
           "height": "73",
           "weight": "214",
@@ -9152,11 +9466,12 @@ window.__STATIC_DATA__ = {
         },
         {
           "player_id": "12485",
-          "espn_id": 4608810,
+          "espn_id": null,
           "name": "Tez Johnson",
           "position": "WR",
           "team": "TB",
           "age": 24,
+          "birth_date": "2002-05-18",
           "college": "Oregon",
           "height": "70",
           "weight": "165",
@@ -9166,11 +9481,12 @@ window.__STATIC_DATA__ = {
         },
         {
           "player_id": "12497",
-          "espn_id": 4597703,
+          "espn_id": null,
           "name": "Tory Horton",
           "position": "WR",
           "team": "SEA",
           "age": 23,
+          "birth_date": "2002-11-29",
           "college": "Colorado State",
           "height": "74",
           "weight": "196",
@@ -9180,11 +9496,12 @@ window.__STATIC_DATA__ = {
         },
         {
           "player_id": "12504",
-          "espn_id": 4819231,
+          "espn_id": null,
           "name": "Kaleb Johnson",
           "position": "RB",
           "team": "PIT",
           "age": 22,
+          "birth_date": "2003-08-14",
           "college": "Iowa",
           "height": "73",
           "weight": "224",
@@ -9194,11 +9511,12 @@ window.__STATIC_DATA__ = {
         },
         {
           "player_id": "12522",
-          "espn_id": 4688380,
+          "espn_id": null,
           "name": "Cam Ward",
           "position": "QB",
           "team": "TEN",
           "age": 24,
+          "birth_date": "2002-05-25",
           "college": "Miami (FL)",
           "height": "74",
           "weight": "219",
@@ -9208,11 +9526,12 @@ window.__STATIC_DATA__ = {
         },
         {
           "player_id": "12536",
-          "espn_id": 4586312,
+          "espn_id": null,
           "name": "Jaylin Noel",
           "position": "WR",
           "team": "HOU",
           "age": 23,
+          "birth_date": "2002-09-04",
           "college": "Iowa State",
           "height": "71",
           "weight": "201",
@@ -9222,11 +9541,12 @@ window.__STATIC_DATA__ = {
         },
         {
           "player_id": "13276",
-          "espn_id": 4723820,
+          "espn_id": null,
           "name": "Omar Cooper",
           "position": "WR",
           "team": "NYJ",
           "age": 22,
+          "birth_date": "2003-12-14",
           "college": "Indiana",
           "height": "72",
           "weight": "199",
@@ -9236,11 +9556,12 @@ window.__STATIC_DATA__ = {
         },
         {
           "player_id": "13282",
-          "espn_id": 5085189,
+          "espn_id": null,
           "name": "Jack Endries",
           "position": "TE",
           "team": "CIN",
           "age": 22,
+          "birth_date": "2004-03-26",
           "college": "Texas",
           "height": "77",
           "weight": "245",
@@ -9250,11 +9571,12 @@ window.__STATIC_DATA__ = {
         },
         {
           "player_id": "13293",
-          "espn_id": 4870847,
+          "espn_id": null,
           "name": "Ja'Kobi Lane",
           "position": "WR",
           "team": "BAL",
           "age": 22,
+          "birth_date": "2004-05-05",
           "college": "USC",
           "height": "76",
           "weight": "200",
@@ -9264,11 +9586,12 @@ window.__STATIC_DATA__ = {
         },
         {
           "player_id": "13305",
-          "espn_id": 4686658,
+          "espn_id": null,
           "name": "Mike Washington",
           "position": "RB",
           "team": "LV",
           "age": 22,
+          "birth_date": "2003-07-03",
           "college": "Arkansas",
           "height": "74",
           "weight": "228",
@@ -9278,11 +9601,12 @@ window.__STATIC_DATA__ = {
         },
         {
           "player_id": "13337",
-          "espn_id": 4832955,
+          "espn_id": null,
           "name": "Emmett Johnson",
           "position": "RB",
           "team": "KC",
           "age": 22,
+          "birth_date": "2003-10-10",
           "college": "Nebraska",
           "height": "71",
           "weight": "200",
@@ -9292,11 +9616,12 @@ window.__STATIC_DATA__ = {
         },
         {
           "player_id": "13346",
-          "espn_id": 4832800,
+          "espn_id": null,
           "name": "Denzel Boston",
           "position": "WR",
           "team": "CLE",
           "age": 22,
+          "birth_date": "2003-12-06",
           "college": "Washington",
           "height": "76",
           "weight": "215",
@@ -9306,11 +9631,12 @@ window.__STATIC_DATA__ = {
         },
         {
           "player_id": "13417",
-          "espn_id": 4710714,
+          "espn_id": null,
           "name": "De'Zhaun Stribling",
           "position": "WR",
           "team": "SF",
           "age": 23,
+          "birth_date": "2002-12-18",
           "college": "Ole Miss",
           "height": "74",
           "weight": "207",
@@ -9325,6 +9651,7 @@ window.__STATIC_DATA__ = {
           "position": "QB",
           "team": "DAL",
           "age": 32,
+          "birth_date": "1993-07-29",
           "college": "Mississippi State",
           "height": "74",
           "weight": "230",
@@ -9339,6 +9666,7 @@ window.__STATIC_DATA__ = {
           "position": "RB",
           "team": "TEN",
           "age": 29,
+          "birth_date": "1997-04-30",
           "college": "Memphis",
           "height": "72",
           "weight": "209",
@@ -9353,6 +9681,7 @@ window.__STATIC_DATA__ = {
           "position": "RB",
           "team": "CHI",
           "age": 27,
+          "birth_date": "1999-01-14",
           "college": "Georgia",
           "height": "68",
           "weight": "204",
@@ -9367,6 +9696,7 @@ window.__STATIC_DATA__ = {
           "position": "TE",
           "team": "CHI",
           "age": 27,
+          "birth_date": "1999-03-10",
           "college": "Notre Dame",
           "height": "78",
           "weight": "257",
@@ -9376,11 +9706,12 @@ window.__STATIC_DATA__ = {
         },
         {
           "player_id": "7670",
-          "espn_id": 4242433,
+          "espn_id": null,
           "name": "Joshua Palmer",
           "position": "WR",
           "team": "BUF",
           "age": 26,
+          "birth_date": "1999-09-22",
           "college": "Tennessee",
           "height": "73",
           "weight": "210",
@@ -9390,11 +9721,12 @@ window.__STATIC_DATA__ = {
         },
         {
           "player_id": "8167",
-          "espn_id": 4248528,
+          "espn_id": null,
           "name": "Christian Watson",
           "position": "WR",
           "team": "GB",
           "age": 27,
+          "birth_date": "1999-05-12",
           "college": "North Dakota State",
           "height": "76",
           "weight": "208",
@@ -9404,11 +9736,12 @@ window.__STATIC_DATA__ = {
         },
         {
           "player_id": "9225",
-          "espn_id": 4429013,
+          "espn_id": null,
           "name": "Tank Bigsby",
           "position": "RB",
           "team": "PHI",
           "age": 23,
+          "birth_date": "2002-08-30",
           "college": "Auburn",
           "height": "71",
           "weight": "215",
@@ -9418,11 +9751,12 @@ window.__STATIC_DATA__ = {
         },
         {
           "player_id": "9493",
-          "espn_id": 4426515,
+          "espn_id": null,
           "name": "Puka Nacua",
           "position": "WR",
           "team": "LAR",
           "age": 25,
+          "birth_date": "2001-05-29",
           "college": "BYU",
           "height": "74",
           "weight": "216",
@@ -9432,11 +9766,12 @@ window.__STATIC_DATA__ = {
         },
         {
           "player_id": "9506",
-          "espn_id": 4430871,
+          "espn_id": null,
           "name": "Sean Tucker",
           "position": "RB",
           "team": "TB",
           "age": 24,
+          "birth_date": "2001-10-25",
           "college": "Syracuse",
           "height": "70",
           "weight": "205",
@@ -9451,6 +9786,7 @@ window.__STATIC_DATA__ = {
           "position": "QB",
           "team": "PIT",
           "age": 42,
+          "birth_date": "1983-12-02",
           "college": "California",
           "height": "74",
           "weight": "223",
@@ -9460,11 +9796,12 @@ window.__STATIC_DATA__ = {
         },
         {
           "player_id": "9753",
-          "espn_id": 4426385,
+          "espn_id": null,
           "name": "Zach Charbonnet",
           "position": "RB",
           "team": "SEA",
           "age": 25,
+          "birth_date": "2001-01-08",
           "college": "UCLA",
           "height": "73",
           "weight": "220",
@@ -9480,11 +9817,12 @@ window.__STATIC_DATA__ = {
       "players": [
         {
           "player_id": "10232",
-          "espn_id": 4360761,
+          "espn_id": null,
           "name": "Michael Wilson",
           "position": "WR",
           "team": "ARI",
           "age": 26,
+          "birth_date": "2000-02-23",
           "college": "Stanford",
           "height": "74",
           "weight": "213",
@@ -9494,11 +9832,12 @@ window.__STATIC_DATA__ = {
         },
         {
           "player_id": "10859",
-          "espn_id": 4430027,
+          "espn_id": null,
           "name": "Sam LaPorta",
           "position": "TE",
           "team": "DET",
           "age": 25,
+          "birth_date": "2001-01-12",
           "college": "Iowa",
           "height": "75",
           "weight": "245",
@@ -9508,11 +9847,12 @@ window.__STATIC_DATA__ = {
         },
         {
           "player_id": "12457",
-          "espn_id": 4685279,
+          "espn_id": null,
           "name": "Jaydon Blue",
           "position": "RB",
           "team": "DAL",
           "age": 22,
+          "birth_date": "2004-01-08",
           "college": "Texas",
           "height": "69",
           "weight": "198",
@@ -9522,11 +9862,12 @@ window.__STATIC_DATA__ = {
         },
         {
           "player_id": "12476",
-          "espn_id": 4431292,
+          "espn_id": null,
           "name": "Devin Neal",
           "position": "RB",
           "team": "NO",
           "age": 22,
+          "birth_date": "2003-08-12",
           "college": "Kansas",
           "height": "71",
           "weight": "213",
@@ -9536,11 +9877,12 @@ window.__STATIC_DATA__ = {
         },
         {
           "player_id": "12492",
-          "espn_id": 4600981,
+          "espn_id": null,
           "name": "Pat Bryant",
           "position": "WR",
           "team": "DEN",
           "age": 23,
+          "birth_date": "2002-12-10",
           "college": "Illinois",
           "height": "74",
           "weight": "204",
@@ -9550,11 +9892,12 @@ window.__STATIC_DATA__ = {
         },
         {
           "player_id": "12501",
-          "espn_id": 4701936,
+          "espn_id": null,
           "name": "Matthew Golden",
           "position": "WR",
           "team": "GB",
           "age": 22,
+          "birth_date": "2003-08-01",
           "college": "Texas",
           "height": "71",
           "weight": "191",
@@ -9564,11 +9907,12 @@ window.__STATIC_DATA__ = {
         },
         {
           "player_id": "12509",
-          "espn_id": 4686612,
+          "espn_id": null,
           "name": "Tre' Harris",
           "position": "WR",
           "team": "LAC",
           "age": 24,
+          "birth_date": "2002-02-28",
           "college": "Ole Miss",
           "height": "75",
           "weight": "210",
@@ -9578,11 +9922,12 @@ window.__STATIC_DATA__ = {
         },
         {
           "player_id": "12531",
-          "espn_id": 4685350,
+          "espn_id": null,
           "name": "Trevor Etienne",
           "position": "RB",
           "team": "CAR",
           "age": 21,
+          "birth_date": "2004-07-09",
           "college": "Georgia",
           "height": "68",
           "weight": "198",
@@ -9592,11 +9937,12 @@ window.__STATIC_DATA__ = {
         },
         {
           "player_id": "12713",
-          "espn_id": 4569923,
+          "espn_id": null,
           "name": "Andy Borregales",
           "position": "K",
           "team": "NE",
           "age": 23,
+          "birth_date": "2003-01-02",
           "college": "Miami (FL)",
           "height": "71",
           "weight": "202",
@@ -9606,11 +9952,12 @@ window.__STATIC_DATA__ = {
         },
         {
           "player_id": "13278",
-          "espn_id": 4833029,
+          "espn_id": null,
           "name": "Max Klare",
           "position": "TE",
           "team": "LAR",
           "age": 22,
+          "birth_date": "2003-07-08",
           "college": "Ohio State",
           "height": "76",
           "weight": "246",
@@ -9620,11 +9967,12 @@ window.__STATIC_DATA__ = {
         },
         {
           "player_id": "13400",
-          "espn_id": 4912052,
+          "espn_id": null,
           "name": "Justin Joly",
           "position": "TE",
           "team": "DEN",
           "age": 21,
+          "birth_date": "2004-07-09",
           "college": "North Carolina State",
           "height": "75",
           "weight": "241",
@@ -9634,11 +9982,12 @@ window.__STATIC_DATA__ = {
         },
         {
           "player_id": "13402",
-          "espn_id": 4683153,
+          "espn_id": null,
           "name": "Skyler Bell",
           "position": "WR",
           "team": "BUF",
           "age": 23,
+          "birth_date": "2002-07-05",
           "college": "UConn",
           "height": "71",
           "weight": "192",
@@ -9653,6 +10002,7 @@ window.__STATIC_DATA__ = {
           "position": "TE",
           "team": "LAC",
           "age": 29,
+          "birth_date": "1996-07-10",
           "college": "Miami (FL)",
           "height": "76",
           "weight": "246",
@@ -9667,6 +10017,7 @@ window.__STATIC_DATA__ = {
           "position": "RB",
           "team": "SF",
           "age": 29,
+          "birth_date": "1996-06-07",
           "college": "Stanford",
           "height": "71",
           "weight": "210",
@@ -9681,6 +10032,7 @@ window.__STATIC_DATA__ = {
           "position": "WR",
           "team": "BUF",
           "age": 29,
+          "birth_date": "1997-04-14",
           "college": "Maryland",
           "height": "72",
           "weight": "213",
@@ -9695,6 +10047,7 @@ window.__STATIC_DATA__ = {
           "position": "QB",
           "team": "BUF",
           "age": 30,
+          "birth_date": "1996-05-21",
           "college": "Wyoming",
           "height": "77",
           "weight": "237",
@@ -9709,6 +10062,7 @@ window.__STATIC_DATA__ = {
           "position": "WR",
           "team": "PIT",
           "age": 28,
+          "birth_date": "1997-12-14",
           "college": "Ole Miss",
           "height": "76",
           "weight": "229",
@@ -9723,6 +10077,7 @@ window.__STATIC_DATA__ = {
           "position": "WR",
           "team": null,
           "age": 30,
+          "birth_date": "1996-01-15",
           "college": "South Carolina",
           "height": "72",
           "weight": "215",
@@ -9737,6 +10092,7 @@ window.__STATIC_DATA__ = {
           "position": "WR",
           "team": "CIN",
           "age": 27,
+          "birth_date": "1999-01-18",
           "college": "Clemson",
           "height": "76",
           "weight": "220",
@@ -9751,6 +10107,7 @@ window.__STATIC_DATA__ = {
           "position": "WR",
           "team": "PIT",
           "age": 28,
+          "birth_date": "1997-10-05",
           "college": "USC",
           "height": "76",
           "weight": "223",
@@ -9765,6 +10122,7 @@ window.__STATIC_DATA__ = {
           "position": "QB",
           "team": "PHI",
           "age": 27,
+          "birth_date": "1998-08-07",
           "college": "Oklahoma",
           "height": "73",
           "weight": "223",
@@ -9779,6 +10137,7 @@ window.__STATIC_DATA__ = {
           "position": "WR",
           "team": "MIN",
           "age": 28,
+          "birth_date": "1997-07-10",
           "college": "Tennessee",
           "height": "75",
           "weight": "212",
@@ -9788,11 +10147,12 @@ window.__STATIC_DATA__ = {
         },
         {
           "player_id": "7526",
-          "espn_id": 4372016,
+          "espn_id": null,
           "name": "Jaylen Waddle",
           "position": "WR",
           "team": "DEN",
           "age": 27,
+          "birth_date": "1998-11-25",
           "college": "Alabama",
           "height": "70",
           "weight": "185",
@@ -9802,11 +10162,12 @@ window.__STATIC_DATA__ = {
         },
         {
           "player_id": "7527",
-          "espn_id": 4241464,
+          "espn_id": null,
           "name": "Mac Jones",
           "position": "QB",
           "team": "SF",
           "age": 27,
+          "birth_date": "1998-09-05",
           "college": "Alabama",
           "height": "75",
           "weight": "220",
@@ -9816,11 +10177,12 @@ window.__STATIC_DATA__ = {
         },
         {
           "player_id": "7569",
-          "espn_id": 4258173,
+          "espn_id": null,
           "name": "Nico Collins",
           "position": "WR",
           "team": "HOU",
           "age": 27,
+          "birth_date": "1999-03-19",
           "college": "Michigan",
           "height": "76",
           "weight": "222",
@@ -9830,11 +10192,12 @@ window.__STATIC_DATA__ = {
         },
         {
           "player_id": "7571",
-          "espn_id": 4360939,
+          "espn_id": null,
           "name": "Rashod Bateman",
           "position": "WR",
           "team": "BAL",
           "age": 26,
+          "birth_date": "1999-11-29",
           "college": "Minnesota",
           "height": "73",
           "weight": "193",
@@ -9844,11 +10207,12 @@ window.__STATIC_DATA__ = {
         },
         {
           "player_id": "7611",
-          "espn_id": 4569173,
+          "espn_id": null,
           "name": "Rhamondre Stevenson",
           "position": "RB",
           "team": "NE",
           "age": 28,
+          "birth_date": "1998-02-23",
           "college": "Oklahoma",
           "height": "72",
           "weight": "227",
@@ -9858,11 +10222,12 @@ window.__STATIC_DATA__ = {
         },
         {
           "player_id": "8150",
-          "espn_id": 4430737,
+          "espn_id": null,
           "name": "Kyren Williams",
           "position": "RB",
           "team": "LAR",
           "age": 25,
+          "birth_date": "2000-08-26",
           "college": "Notre Dame",
           "height": "69",
           "weight": "207",
@@ -9872,11 +10237,12 @@ window.__STATIC_DATA__ = {
         },
         {
           "player_id": "9479",
-          "espn_id": 4430802,
+          "espn_id": null,
           "name": "Darnell Washington",
           "position": "TE",
           "team": "PIT",
           "age": 24,
+          "birth_date": "2001-08-17",
           "college": "Georgia",
           "height": "79",
           "weight": "264",
@@ -9886,11 +10252,12 @@ window.__STATIC_DATA__ = {
         },
         {
           "player_id": "9508",
-          "espn_id": 4428557,
+          "espn_id": null,
           "name": "Tyjae Spears",
           "position": "RB",
           "team": "TEN",
           "age": 24,
+          "birth_date": "2001-06-15",
           "college": "Tulane",
           "height": "71",
           "weight": "195",
@@ -10213,6 +10580,83 @@ window.__STATIC_DATA__ = {
       },
       "settings": null,
       "user_id": "1241952885734899712"
+    }
+  ],
+  "league_users": [
+    {
+      "user_id": "444998067259699200",
+      "username": "ddhk",
+      "avatar_url": "https://sleepercdn.com/avatars/thumbs/f129554ea7b77076b18ba12a6a3186d9"
+    },
+    {
+      "user_id": "467460096968880128",
+      "username": "Paul_Yoon",
+      "avatar_url": null
+    },
+    {
+      "user_id": "603691074287898624",
+      "username": "andyxia124",
+      "avatar_url": "https://sleepercdn.com/avatars/thumbs/608075f398ac0269defee79911f6934c"
+    },
+    {
+      "user_id": "604551786463838208",
+      "username": "jonsung",
+      "avatar_url": "https://sleepercdn.com/avatars/thumbs/efc9c2257712db114a28584bff9beff5"
+    },
+    {
+      "user_id": "604571782049001472",
+      "username": "spiffster",
+      "avatar_url": "https://sleepercdn.com/avatars/thumbs/762b0a00afa766a8e4919a6b0bf13efe"
+    },
+    {
+      "user_id": "608472883282378752",
+      "username": "ericdang",
+      "avatar_url": "https://sleepercdn.com/avatars/thumbs/00c60af588f23afbc094f0d7ebe70650"
+    },
+    {
+      "user_id": "783829554916651008",
+      "username": "RichaleeMVP",
+      "avatar_url": "https://sleepercdn.com/avatars/thumbs/cbdacfe48312bfe71899d8707649631d"
+    },
+    {
+      "user_id": "853064035690713088",
+      "username": "IconicJH",
+      "avatar_url": "https://sleepercdn.com/avatars/thumbs/c3d69631f7f478ccc52604c2d19ce22c"
+    },
+    {
+      "user_id": "862912273105174528",
+      "username": "ganathan",
+      "avatar_url": "https://sleepercdn.com/avatars/thumbs/cb99028c1124521db44c93824cf7c2fc"
+    },
+    {
+      "user_id": "865098089516621824",
+      "username": "ngman",
+      "avatar_url": "https://sleepercdn.com/avatars/thumbs/c04fc8d62f7682975853e0a61db64f18"
+    },
+    {
+      "user_id": "964263197861568512",
+      "username": "eikichii952",
+      "avatar_url": "https://sleepercdn.com/avatars/thumbs/4f4090e5e9c3941414db40a871e3e909"
+    },
+    {
+      "user_id": "994709442740457472",
+      "username": "NoSkilzPak",
+      "avatar_url": "https://sleepercdn.com/avatars/thumbs/e499e4f49a4900cf141313ebe3c69cf9"
+    },
+    {
+      "user_id": "1124796770866909184",
+      "username": "paddleham",
+      "avatar_url": "https://sleepercdn.com/avatars/thumbs/15d7cf259bc30eab8f6120f45f652fb6"
+    },
+    {
+      "user_id": "1241946358257045504",
+      "username": "velmixon",
+      "avatar_url": "https://sleepercdn.com/avatars/thumbs/2e6ce5a7584ad3edb16cac3853ac62bf"
+    },
+    {
+      "user_id": "1241952885734899712",
+      "username": "victordhe",
+      "avatar_url": "https://sleepercdn.com/avatars/thumbs/7572250c2fb084c434fed0e82229e183"
     }
   ],
   "transactions": [
@@ -56369,259 +56813,259 @@ window.__STATIC_DATA__ = {
     "2025": [
       {
         "name": "ddhk",
-        "wins": 14,
-        "losses": 4,
-        "pf": 3012.0,
-        "pa": 2334.96
+        "wins": 12,
+        "losses": 2,
+        "pf": 2424.72,
+        "pa": 1758.0
       },
       {
         "name": "jonsung",
-        "wins": 14,
-        "losses": 4,
-        "pf": 2840.62,
-        "pa": 2531.6
+        "wins": 11,
+        "losses": 3,
+        "pf": 2213.82,
+        "pa": 1997.56
       },
       {
         "name": "andyxia124",
-        "wins": 13,
-        "losses": 5,
-        "pf": 2906.84,
-        "pa": 2649.98
-      },
-      {
-        "name": "ganathan",
-        "wins": 12,
-        "losses": 6,
-        "pf": 2997.06,
-        "pa": 2464.62
+        "wins": 10,
+        "losses": 4,
+        "pf": 2250.94,
+        "pa": 2074.4
       },
       {
         "name": "IconicJH",
-        "wins": 11,
-        "losses": 7,
-        "pf": 2598.76,
-        "pa": 2474.42
+        "wins": 10,
+        "losses": 4,
+        "pf": 2008.08,
+        "pa": 1849.1
       },
       {
-        "name": "velmixon",
+        "name": "ganathan",
         "wins": 9,
-        "losses": 9,
-        "pf": 2622.88,
-        "pa": 2581.58
-      },
-      {
-        "name": "ngman",
-        "wins": 8,
-        "losses": 10,
-        "pf": 2469.34,
-        "pa": 2660.44
+        "losses": 5,
+        "pf": 2377.56,
+        "pa": 1919.36
       },
       {
         "name": "NoSkilzPak",
-        "wins": 8,
-        "losses": 10,
-        "pf": 2416.54,
-        "pa": 2651.1
+        "wins": 7,
+        "losses": 7,
+        "pf": 1919.2,
+        "pa": 2044.84
+      },
+      {
+        "name": "velmixon",
+        "wins": 6,
+        "losses": 8,
+        "pf": 1998.74,
+        "pa": 1976.06
+      },
+      {
+        "name": "ngman",
+        "wins": 6,
+        "losses": 8,
+        "pf": 1888.26,
+        "pa": 2031.98
       },
       {
         "name": "spiffster",
-        "wins": 7,
-        "losses": 11,
-        "pf": 2163.06,
-        "pa": 2263.4
+        "wins": 5,
+        "losses": 9,
+        "pf": 1700.84,
+        "pa": 1863.5
       },
       {
         "name": "Paul_Yoon",
-        "wins": 6,
-        "losses": 12,
-        "pf": 1917.68,
-        "pa": 2176.0
+        "wins": 4,
+        "losses": 10,
+        "pf": 1530.42,
+        "pa": 1830.0
       },
       {
         "name": "paddleham",
-        "wins": 5,
-        "losses": 13,
-        "pf": 2149.54,
-        "pa": 2514.4
+        "wins": 3,
+        "losses": 11,
+        "pf": 1769.74,
+        "pa": 2111.78
       },
       {
         "name": "eikichii952",
         "wins": 1,
-        "losses": 17,
-        "pf": 1846.58,
-        "pa": 2618.92
+        "losses": 13,
+        "pf": 1552.2,
+        "pa": 2177.94
       }
     ],
     "2024": [
       {
         "name": "jonsung",
-        "wins": 14,
-        "losses": 4,
-        "pf": 3176.1,
-        "pa": 2533.58
-      },
-      {
-        "name": "ddhk",
-        "wins": 12,
-        "losses": 6,
-        "pf": 2746.2,
-        "pa": 2530.3
+        "wins": 11,
+        "losses": 3,
+        "pf": 2545.92,
+        "pa": 1993.76
       },
       {
         "name": "urmummma",
-        "wins": 12,
-        "losses": 6,
-        "pf": 2629.1,
-        "pa": 2464.82
+        "wins": 10,
+        "losses": 4,
+        "pf": 2052.08,
+        "pa": 1868.54
       },
       {
         "name": "Paul_Yoon",
-        "wins": 11,
-        "losses": 7,
-        "pf": 2960.08,
-        "pa": 2635.62
+        "wins": 9,
+        "losses": 5,
+        "pf": 2346.76,
+        "pa": 2030.04
       },
       {
         "name": "ganathan",
-        "wins": 11,
-        "losses": 7,
-        "pf": 2913.04,
-        "pa": 2750.2
+        "wins": 9,
+        "losses": 5,
+        "pf": 2278.26,
+        "pa": 2139.98
+      },
+      {
+        "name": "ddhk",
+        "wins": 9,
+        "losses": 5,
+        "pf": 2091.88,
+        "pa": 1973.98
       },
       {
         "name": "IconicJH",
-        "wins": 11,
-        "losses": 7,
-        "pf": 2461.78,
-        "pa": 2640.88
-      },
-      {
-        "name": "andyxia124",
-        "wins": 10,
-        "losses": 8,
-        "pf": 2580.06,
-        "pa": 2469.7
-      },
-      {
-        "name": "riqi",
-        "wins": 7,
-        "losses": 11,
-        "pf": 2493.08,
-        "pa": 2662.38
+        "wins": 8,
+        "losses": 6,
+        "pf": 1896.46,
+        "pa": 2035.6
       },
       {
         "name": "spiffster",
         "wins": 6,
-        "losses": 12,
-        "pf": 2541.36,
-        "pa": 2850.88
+        "losses": 8,
+        "pf": 2054.78,
+        "pa": 2174.1
       },
       {
-        "name": "ngman",
+        "name": "riqi",
         "wins": 6,
-        "losses": 12,
-        "pf": 2286.1,
-        "pa": 2595.84
+        "losses": 8,
+        "pf": 1958.16,
+        "pa": 2064.36
+      },
+      {
+        "name": "andyxia124",
+        "wins": 6,
+        "losses": 8,
+        "pf": 1895.24,
+        "pa": 1930.76
       },
       {
         "name": "NoSkilzPak",
         "wins": 5,
-        "losses": 13,
-        "pf": 2341.76,
-        "pa": 2549.1
+        "losses": 9,
+        "pf": 1916.5,
+        "pa": 1971.72
+      },
+      {
+        "name": "ngman",
+        "wins": 5,
+        "losses": 9,
+        "pf": 1842.44,
+        "pa": 2051.1
       },
       {
         "name": "eikichii952",
-        "wins": 1,
-        "losses": 17,
-        "pf": 1846.0,
-        "pa": 2533.7
+        "wins": 0,
+        "losses": 14,
+        "pf": 1413.72,
+        "pa": 2058.26
       }
     ],
     "2023": [
       {
-        "name": "jonsung",
-        "wins": 14,
-        "losses": 4,
-        "pf": 3073.34,
-        "pa": 2565.78
+        "name": "spiffster",
+        "wins": 12,
+        "losses": 2,
+        "pf": 2349.72,
+        "pa": 1761.62
       },
       {
-        "name": "spiffster",
-        "wins": 14,
-        "losses": 4,
-        "pf": 2991.16,
-        "pa": 2445.04
+        "name": "jonsung",
+        "wins": 11,
+        "losses": 3,
+        "pf": 2361.12,
+        "pa": 1917.14
       },
       {
         "name": "ganathan",
-        "wins": 12,
-        "losses": 6,
-        "pf": 3125.62,
-        "pa": 2469.52
-      },
-      {
-        "name": "ddhk",
-        "wins": 10,
-        "losses": 8,
-        "pf": 2643.8,
-        "pa": 2558.52
+        "wins": 9,
+        "losses": 5,
+        "pf": 2451.62,
+        "pa": 1852.14
       },
       {
         "name": "IconicJH",
-        "wins": 10,
-        "losses": 8,
-        "pf": 2284.84,
-        "pa": 2384.34
-      },
-      {
-        "name": "NoSkilzPak",
         "wins": 9,
-        "losses": 9,
-        "pf": 2387.38,
-        "pa": 2408.34
-      },
-      {
-        "name": "riqi",
-        "wins": 8,
-        "losses": 10,
-        "pf": 2727.34,
-        "pa": 2733.24
+        "losses": 5,
+        "pf": 1814.34,
+        "pa": 1763.54
       },
       {
         "name": "edgxrjiang",
         "wins": 8,
-        "losses": 10,
-        "pf": 2484.78,
-        "pa": 2569.6
+        "losses": 6,
+        "pf": 2051.56,
+        "pa": 1968.66
+      },
+      {
+        "name": "riqi",
+        "wins": 7,
+        "losses": 7,
+        "pf": 2085.54,
+        "pa": 2073.64
+      },
+      {
+        "name": "ddhk",
+        "wins": 7,
+        "losses": 7,
+        "pf": 2003.36,
+        "pa": 2040.48
+      },
+      {
+        "name": "NoSkilzPak",
+        "wins": 7,
+        "losses": 7,
+        "pf": 1868.52,
+        "pa": 1940.66
       },
       {
         "name": "Paul_Yoon",
-        "wins": 7,
-        "losses": 11,
-        "pf": 2140.5,
-        "pa": 2577.02
+        "wins": 6,
+        "losses": 8,
+        "pf": 1698.08,
+        "pa": 1975.26
       },
       {
         "name": "eikichii952",
-        "wins": 5,
-        "losses": 13,
-        "pf": 2067.2,
-        "pa": 2671.6
+        "wins": 4,
+        "losses": 10,
+        "pf": 1623.5,
+        "pa": 2006.76
       },
       {
         "name": "andyxia124",
-        "wins": 4,
-        "losses": 14,
-        "pf": 2042.38,
-        "pa": 2533.26
+        "wins": 2,
+        "losses": 12,
+        "pf": 1564.36,
+        "pa": 1996.64
       },
       {
         "name": "shmyung",
         "wins": 2,
-        "losses": 16,
-        "pf": 1496.78,
-        "pa": 2446.52
+        "losses": 12,
+        "pf": 1286.68,
+        "pa": 1861.86
       }
     ]
   },
@@ -56639,10 +57083,10 @@ window.__STATIC_DATA__ = {
           },
           "jonsung": {
             "wins": 2,
-            "losses": 1,
+            "losses": 0,
             "ties": 0,
-            "pf": 552.06,
-            "pa": 480.16
+            "pf": 396.46,
+            "pa": 283.4
           },
           "spiffster": {
             "wins": 2,
@@ -56652,11 +57096,11 @@ window.__STATIC_DATA__ = {
             "pa": 199.18
           },
           "NoSkilzPak": {
-            "wins": 2,
+            "wins": 1,
             "losses": 0,
             "ties": 0,
-            "pf": 366.76,
-            "pa": 284.26
+            "pf": 168.1,
+            "pa": 155.92
           },
           "IconicJH": {
             "wins": 1,
@@ -56702,10 +57146,10 @@ window.__STATIC_DATA__ = {
           },
           "ganathan": {
             "wins": 0,
-            "losses": 2,
+            "losses": 1,
             "ties": 0,
-            "pf": 284.16,
-            "pa": 387.16
+            "pf": 140.82,
+            "pa": 224.18
           }
         },
         "eikichii952": {
@@ -56732,10 +57176,10 @@ window.__STATIC_DATA__ = {
           },
           "spiffster": {
             "wins": 1,
-            "losses": 1,
+            "losses": 0,
             "ties": 0,
-            "pf": 230.16,
-            "pa": 231.86
+            "pf": 136.68,
+            "pa": 109.38
           },
           "NoSkilzPak": {
             "wins": 0,
@@ -56746,10 +57190,10 @@ window.__STATIC_DATA__ = {
           },
           "Paul_Yoon": {
             "wins": 0,
-            "losses": 2,
+            "losses": 1,
             "ties": 0,
-            "pf": 166.9,
-            "pa": 276.12
+            "pf": 91.3,
+            "pa": 138.9
           },
           "ngman": {
             "wins": 0,
@@ -56810,11 +57254,11 @@ window.__STATIC_DATA__ = {
             "pa": 327.16
           },
           "eikichii952": {
-            "wins": 1,
+            "wins": 0,
             "losses": 1,
             "ties": 0,
-            "pf": 231.86,
-            "pa": 230.16
+            "pf": 109.38,
+            "pa": 136.68
           },
           "jonsung": {
             "wins": 0,
@@ -56824,11 +57268,11 @@ window.__STATIC_DATA__ = {
             "pa": 158.72
           },
           "paddleham": {
-            "wins": 2,
+            "wins": 1,
             "losses": 0,
             "ties": 0,
-            "pf": 251.18,
-            "pa": 203.16
+            "pf": 91.92,
+            "pa": 87.8
           },
           "ganathan": {
             "wins": 1,
@@ -56882,18 +57326,18 @@ window.__STATIC_DATA__ = {
             "pa": 203.3
           },
           "NoSkilzPak": {
-            "wins": 2,
+            "wins": 1,
             "losses": 1,
             "ties": 0,
-            "pf": 398.66,
-            "pa": 387.88
+            "pf": 246.54,
+            "pa": 237.28
           },
           "jonsung": {
             "wins": 0,
-            "losses": 2,
+            "losses": 1,
             "ties": 0,
-            "pf": 352.76,
-            "pa": 383.82
+            "pf": 175.36,
+            "pa": 190.46
           },
           "ddhk": {
             "wins": 0,
@@ -56932,10 +57376,10 @@ window.__STATIC_DATA__ = {
           },
           "velmixon": {
             "wins": 1,
-            "losses": 1,
+            "losses": 0,
             "ties": 0,
-            "pf": 332.74,
-            "pa": 302.98
+            "pf": 148.82,
+            "pa": 111.3
           },
           "andyxia124": {
             "wins": 0,
@@ -56962,17 +57406,17 @@ window.__STATIC_DATA__ = {
           },
           "IconicJH": {
             "wins": 1,
-            "losses": 2,
+            "losses": 1,
             "ties": 0,
-            "pf": 387.88,
-            "pa": 398.66
+            "pf": 237.28,
+            "pa": 246.54
           },
           "ddhk": {
             "wins": 0,
-            "losses": 2,
+            "losses": 1,
             "ties": 0,
-            "pf": 284.26,
-            "pa": 366.76
+            "pf": 155.92,
+            "pa": 168.1
           },
           "eikichii952": {
             "wins": 1,
@@ -57011,10 +57455,10 @@ window.__STATIC_DATA__ = {
           },
           "ngman": {
             "wins": 1,
-            "losses": 1,
+            "losses": 0,
             "ties": 0,
-            "pf": 256.74,
-            "pa": 273.34
+            "pf": 134.44,
+            "pa": 107.54
           },
           "Paul_Yoon": {
             "wins": 1,
@@ -57033,11 +57477,11 @@ window.__STATIC_DATA__ = {
             "pa": 271.78
           },
           "ddhk": {
-            "wins": 1,
+            "wins": 0,
             "losses": 2,
             "ties": 0,
-            "pf": 480.16,
-            "pa": 552.06
+            "pf": 283.4,
+            "pa": 396.46
           },
           "eikichii952": {
             "wins": 2,
@@ -57047,11 +57491,11 @@ window.__STATIC_DATA__ = {
             "pa": 188.46
           },
           "IconicJH": {
-            "wins": 2,
+            "wins": 1,
             "losses": 0,
             "ties": 0,
-            "pf": 383.82,
-            "pa": 352.76
+            "pf": 190.46,
+            "pa": 175.36
           },
           "spiffster": {
             "wins": 1,
@@ -57068,11 +57512,11 @@ window.__STATIC_DATA__ = {
             "pa": 160.16
           },
           "andyxia124": {
-            "wins": 1,
+            "wins": 0,
             "losses": 1,
             "ties": 0,
-            "pf": 280.42,
-            "pa": 234.58
+            "pf": 118.94,
+            "pa": 123.22
           },
           "ganathan": {
             "wins": 1,
@@ -57119,18 +57563,18 @@ window.__STATIC_DATA__ = {
             "pa": 310.38
           },
           "ganathan": {
-            "wins": 2,
-            "losses": 1,
-            "ties": 0,
-            "pf": 536.82,
-            "pa": 538.0
-          },
-          "ngman": {
             "wins": 1,
             "losses": 1,
             "ties": 0,
-            "pf": 408.14,
-            "pa": 338.92
+            "pf": 357.52,
+            "pa": 371.2
+          },
+          "ngman": {
+            "wins": 0,
+            "losses": 1,
+            "ties": 0,
+            "pf": 163.24,
+            "pa": 181.3
           },
           "Paul_Yoon": {
             "wins": 1,
@@ -57148,10 +57592,10 @@ window.__STATIC_DATA__ = {
           },
           "jonsung": {
             "wins": 1,
-            "losses": 1,
+            "losses": 0,
             "ties": 0,
-            "pf": 234.58,
-            "pa": 280.42
+            "pf": 123.22,
+            "pa": 118.94
           },
           "ddhk": {
             "wins": 0,
@@ -57191,11 +57635,11 @@ window.__STATIC_DATA__ = {
             "pa": 333.28
           },
           "ngman": {
-            "wins": 1,
+            "wins": 0,
             "losses": 2,
             "ties": 0,
-            "pf": 424.86,
-            "pa": 438.92
+            "pf": 253.28,
+            "pa": 289.52
           },
           "Paul_Yoon": {
             "wins": 2,
@@ -57206,10 +57650,10 @@ window.__STATIC_DATA__ = {
           },
           "ganathan": {
             "wins": 0,
-            "losses": 2,
+            "losses": 1,
             "ties": 0,
-            "pf": 282.56,
-            "pa": 334.98
+            "pf": 149.62,
+            "pa": 152.46
           },
           "paddleham": {
             "wins": 1,
@@ -57247,11 +57691,11 @@ window.__STATIC_DATA__ = {
             "pa": 148.64
           },
           "IconicJH": {
-            "wins": 1,
+            "wins": 0,
             "losses": 1,
             "ties": 0,
-            "pf": 302.98,
-            "pa": 332.74
+            "pf": 111.3,
+            "pa": 148.82
           },
           "spiffster": {
             "wins": 0,
@@ -57285,10 +57729,10 @@ window.__STATIC_DATA__ = {
           },
           "paddleham": {
             "wins": 0,
-            "losses": 2,
+            "losses": 1,
             "ties": 0,
-            "pf": 169.56,
-            "pa": 249.86
+            "pf": 107.48,
+            "pa": 160.74
           },
           "andyxia124": {
             "wins": 0,
@@ -57298,11 +57742,11 @@ window.__STATIC_DATA__ = {
             "pa": 153.66
           },
           "eikichii952": {
-            "wins": 2,
+            "wins": 1,
             "losses": 0,
             "ties": 0,
-            "pf": 276.12,
-            "pa": 166.9
+            "pf": 138.9,
+            "pa": 91.3
           },
           "ddhk": {
             "wins": 0,
@@ -57350,10 +57794,10 @@ window.__STATIC_DATA__ = {
           },
           "velmixon": {
             "wins": 2,
-            "losses": 1,
+            "losses": 0,
             "ties": 0,
-            "pf": 438.92,
-            "pa": 424.86
+            "pf": 289.52,
+            "pa": 253.28
           },
           "paddleham": {
             "wins": 1,
@@ -57364,10 +57808,10 @@ window.__STATIC_DATA__ = {
           },
           "andyxia124": {
             "wins": 1,
-            "losses": 1,
+            "losses": 0,
             "ties": 0,
-            "pf": 338.92,
-            "pa": 408.14
+            "pf": 181.3,
+            "pa": 163.24
           },
           "ganathan": {
             "wins": 0,
@@ -57405,11 +57849,11 @@ window.__STATIC_DATA__ = {
             "pa": 143.28
           },
           "NoSkilzPak": {
-            "wins": 1,
+            "wins": 0,
             "losses": 1,
             "ties": 0,
-            "pf": 273.34,
-            "pa": 256.74
+            "pf": 107.54,
+            "pa": 134.44
           },
           "jonsung": {
             "wins": 0,
@@ -57442,11 +57886,11 @@ window.__STATIC_DATA__ = {
             "pa": 342.18
           },
           "Paul_Yoon": {
-            "wins": 2,
+            "wins": 1,
             "losses": 0,
             "ties": 0,
-            "pf": 249.86,
-            "pa": 169.56
+            "pf": 160.74,
+            "pa": 107.48
           },
           "velmixon": {
             "wins": 0,
@@ -57457,10 +57901,10 @@ window.__STATIC_DATA__ = {
           },
           "spiffster": {
             "wins": 0,
-            "losses": 2,
+            "losses": 1,
             "ties": 0,
-            "pf": 203.16,
-            "pa": 251.18
+            "pf": 87.8,
+            "pa": 91.92
           },
           "IconicJH": {
             "wins": 0,
@@ -57515,17 +57959,17 @@ window.__STATIC_DATA__ = {
           },
           "andyxia124": {
             "wins": 1,
-            "losses": 2,
+            "losses": 1,
             "ties": 0,
-            "pf": 538.0,
-            "pa": 536.82
+            "pf": 371.2,
+            "pa": 357.52
           },
           "velmixon": {
-            "wins": 2,
+            "wins": 1,
             "losses": 0,
             "ties": 0,
-            "pf": 334.98,
-            "pa": 282.56
+            "pf": 152.46,
+            "pa": 149.62
           },
           "ngman": {
             "wins": 1,
@@ -57570,11 +58014,11 @@ window.__STATIC_DATA__ = {
             "pa": 120.12
           },
           "ddhk": {
-            "wins": 2,
+            "wins": 1,
             "losses": 0,
             "ties": 0,
-            "pf": 387.16,
-            "pa": 284.16
+            "pf": 224.18,
+            "pa": 140.82
           }
         }
       },
@@ -57582,10 +58026,10 @@ window.__STATIC_DATA__ = {
         "ddhk": {
           "IconicJH": {
             "wins": 2,
-            "losses": 1,
+            "losses": 0,
             "ties": 0,
-            "pf": 440.76,
-            "pa": 354.84
+            "pf": 285.04,
+            "pa": 193.3
           },
           "eikichii952": {
             "wins": 2,
@@ -57609,18 +58053,18 @@ window.__STATIC_DATA__ = {
             "pa": 122.44
           },
           "spiffster": {
-            "wins": 2,
+            "wins": 1,
             "losses": 0,
             "ties": 0,
-            "pf": 410.88,
-            "pa": 299.56
+            "pf": 187.6,
+            "pa": 134.26
           },
           "Paul_Yoon": {
-            "wins": 1,
+            "wins": 0,
             "losses": 1,
             "ties": 0,
-            "pf": 273.78,
-            "pa": 296.26
+            "pf": 126.84,
+            "pa": 161.24
           },
           "andyxia124": {
             "wins": 0,
@@ -57660,11 +58104,11 @@ window.__STATIC_DATA__ = {
         },
         "IconicJH": {
           "ddhk": {
-            "wins": 1,
+            "wins": 0,
             "losses": 2,
             "ties": 0,
-            "pf": 354.84,
-            "pa": 440.76
+            "pf": 193.3,
+            "pa": 285.04
           },
           "NoSkilzPak": {
             "wins": 2,
@@ -57682,10 +58126,10 @@ window.__STATIC_DATA__ = {
           },
           "jonsung": {
             "wins": 0,
-            "losses": 2,
+            "losses": 1,
             "ties": 0,
-            "pf": 255.1,
-            "pa": 370.06
+            "pf": 135.08,
+            "pa": 187.7
           },
           "eikichii952": {
             "wins": 1,
@@ -57709,11 +58153,11 @@ window.__STATIC_DATA__ = {
             "pa": 169.26
           },
           "riqi": {
-            "wins": 1,
+            "wins": 0,
             "losses": 1,
             "ties": 0,
-            "pf": 272.08,
-            "pa": 287.52
+            "pf": 117.52,
+            "pa": 148.7
           },
           "ganathan": {
             "wins": 1,
@@ -57747,10 +58191,10 @@ window.__STATIC_DATA__ = {
           },
           "jonsung": {
             "wins": 1,
-            "losses": 2,
+            "losses": 1,
             "ties": 0,
-            "pf": 412.24,
-            "pa": 501.8
+            "pf": 294.98,
+            "pa": 331.16
           },
           "IconicJH": {
             "wins": 0,
@@ -57768,17 +58212,17 @@ window.__STATIC_DATA__ = {
           },
           "ddhk": {
             "wins": 0,
-            "losses": 2,
+            "losses": 1,
             "ties": 0,
-            "pf": 299.56,
-            "pa": 410.88
+            "pf": 134.26,
+            "pa": 187.6
           },
           "urmummma": {
             "wins": 1,
-            "losses": 1,
+            "losses": 0,
             "ties": 0,
-            "pf": 276.6,
-            "pa": 305.84
+            "pf": 167.04,
+            "pa": 151.36
           },
           "ngman": {
             "wins": 1,
@@ -57833,10 +58277,10 @@ window.__STATIC_DATA__ = {
           },
           "eikichii952": {
             "wins": 2,
-            "losses": 1,
+            "losses": 0,
             "ties": 0,
-            "pf": 362.5,
-            "pa": 279.36
+            "pf": 273.56,
+            "pa": 189.84
           },
           "ddhk": {
             "wins": 0,
@@ -57875,10 +58319,10 @@ window.__STATIC_DATA__ = {
           },
           "andyxia124": {
             "wins": 0,
-            "losses": 2,
+            "losses": 1,
             "ties": 0,
-            "pf": 235.5,
-            "pa": 315.9
+            "pf": 95.76,
+            "pa": 133.6
           },
           "ganathan": {
             "wins": 0,
@@ -57904,11 +58348,11 @@ window.__STATIC_DATA__ = {
             "pa": 202.0
           },
           "spiffster": {
-            "wins": 2,
+            "wins": 1,
             "losses": 1,
             "ties": 0,
-            "pf": 501.8,
-            "pa": 412.24
+            "pf": 331.16,
+            "pa": 294.98
           },
           "ddhk": {
             "wins": 1,
@@ -57918,11 +58362,11 @@ window.__STATIC_DATA__ = {
             "pa": 360.32
           },
           "IconicJH": {
-            "wins": 2,
+            "wins": 1,
             "losses": 0,
             "ties": 0,
-            "pf": 370.06,
-            "pa": 255.1
+            "pf": 187.7,
+            "pa": 135.08
           },
           "NoSkilzPak": {
             "wins": 1,
@@ -57939,11 +58383,11 @@ window.__STATIC_DATA__ = {
             "pa": 137.48
           },
           "ganathan": {
-            "wins": 2,
+            "wins": 1,
             "losses": 0,
             "ties": 0,
-            "pf": 384.08,
-            "pa": 330.64
+            "pf": 209.08,
+            "pa": 156.48
           },
           "urmummma": {
             "wins": 1,
@@ -57990,11 +58434,11 @@ window.__STATIC_DATA__ = {
             "pa": 277.34
           },
           "NoSkilzPak": {
-            "wins": 1,
+            "wins": 0,
             "losses": 2,
             "ties": 0,
-            "pf": 279.36,
-            "pa": 362.5
+            "pf": 189.84,
+            "pa": 273.56
           },
           "spiffster": {
             "wins": 0,
@@ -58026,10 +58470,10 @@ window.__STATIC_DATA__ = {
           },
           "ngman": {
             "wins": 0,
-            "losses": 2,
+            "losses": 1,
             "ties": 0,
-            "pf": 200.84,
-            "pa": 277.66
+            "pf": 96.26,
+            "pa": 172.0
           },
           "urmummma": {
             "wins": 0,
@@ -58062,11 +58506,11 @@ window.__STATIC_DATA__ = {
             "pa": 400.82
           },
           "ngman": {
-            "wins": 2,
+            "wins": 1,
             "losses": 1,
             "ties": 0,
-            "pf": 460.96,
-            "pa": 356.48
+            "pf": 301.64,
+            "pa": 238.12
           },
           "urmummma": {
             "wins": 0,
@@ -58111,11 +58555,11 @@ window.__STATIC_DATA__ = {
             "pa": 145.14
           },
           "NoSkilzPak": {
-            "wins": 2,
+            "wins": 1,
             "losses": 0,
             "ties": 0,
-            "pf": 315.9,
-            "pa": 235.5
+            "pf": 133.6,
+            "pa": 95.76
           },
           "jonsung": {
             "wins": 0,
@@ -58142,10 +58586,10 @@ window.__STATIC_DATA__ = {
           },
           "ganathan": {
             "wins": 1,
-            "losses": 2,
+            "losses": 1,
             "ties": 0,
-            "pf": 531.32,
-            "pa": 513.4
+            "pf": 366.98,
+            "pa": 338.92
           },
           "riqi": {
             "wins": 2,
@@ -58162,18 +58606,18 @@ window.__STATIC_DATA__ = {
             "pa": 136.34
           },
           "urmummma": {
-            "wins": 1,
+            "wins": 0,
             "losses": 1,
             "ties": 0,
-            "pf": 314.2,
-            "pa": 353.32
+            "pf": 139.42,
+            "pa": 197.54
           },
           "ddhk": {
             "wins": 1,
-            "losses": 1,
+            "losses": 0,
             "ties": 0,
-            "pf": 296.26,
-            "pa": 273.78
+            "pf": 161.24,
+            "pa": 126.84
           },
           "IconicJH": {
             "wins": 1,
@@ -58214,17 +58658,17 @@ window.__STATIC_DATA__ = {
         "riqi": {
           "ganathan": {
             "wins": 0,
-            "losses": 3,
+            "losses": 2,
             "ties": 0,
-            "pf": 403.98,
-            "pa": 515.26
+            "pf": 261.48,
+            "pa": 331.36
           },
           "urmummma": {
-            "wins": 2,
+            "wins": 1,
             "losses": 1,
             "ties": 0,
-            "pf": 475.06,
-            "pa": 413.56
+            "pf": 291.5,
+            "pa": 282.38
           },
           "Paul_Yoon": {
             "wins": 0,
@@ -58263,10 +58707,10 @@ window.__STATIC_DATA__ = {
           },
           "IconicJH": {
             "wins": 1,
-            "losses": 1,
+            "losses": 0,
             "ties": 0,
-            "pf": 287.52,
-            "pa": 272.08
+            "pf": 148.7,
+            "pa": 117.52
           },
           "ddhk": {
             "wins": 0,
@@ -58292,18 +58736,18 @@ window.__STATIC_DATA__ = {
         },
         "ganathan": {
           "riqi": {
-            "wins": 3,
+            "wins": 2,
             "losses": 0,
             "ties": 0,
-            "pf": 515.26,
-            "pa": 403.98
+            "pf": 331.36,
+            "pa": 261.48
           },
           "Paul_Yoon": {
-            "wins": 2,
+            "wins": 1,
             "losses": 1,
             "ties": 0,
-            "pf": 513.4,
-            "pa": 531.32
+            "pf": 338.92,
+            "pa": 366.98
           },
           "ngman": {
             "wins": 1,
@@ -58335,10 +58779,10 @@ window.__STATIC_DATA__ = {
           },
           "jonsung": {
             "wins": 0,
-            "losses": 2,
+            "losses": 1,
             "ties": 0,
-            "pf": 330.64,
-            "pa": 384.08
+            "pf": 156.48,
+            "pa": 209.08
           },
           "ddhk": {
             "wins": 1,
@@ -58379,10 +58823,10 @@ window.__STATIC_DATA__ = {
           },
           "riqi": {
             "wins": 1,
-            "losses": 2,
+            "losses": 1,
             "ties": 0,
-            "pf": 413.56,
-            "pa": 475.06
+            "pf": 282.38,
+            "pa": 291.5
           },
           "andyxia124": {
             "wins": 2,
@@ -58400,17 +58844,17 @@ window.__STATIC_DATA__ = {
           },
           "Paul_Yoon": {
             "wins": 1,
-            "losses": 1,
+            "losses": 0,
             "ties": 0,
-            "pf": 353.32,
-            "pa": 314.2
+            "pf": 197.54,
+            "pa": 139.42
           },
           "spiffster": {
-            "wins": 1,
+            "wins": 0,
             "losses": 1,
             "ties": 0,
-            "pf": 305.84,
-            "pa": 276.6
+            "pf": 151.36,
+            "pa": 167.04
           },
           "NoSkilzPak": {
             "wins": 1,
@@ -58458,10 +58902,10 @@ window.__STATIC_DATA__ = {
           },
           "andyxia124": {
             "wins": 1,
-            "losses": 2,
+            "losses": 1,
             "ties": 0,
-            "pf": 356.48,
-            "pa": 460.96
+            "pf": 238.12,
+            "pa": 301.64
           },
           "ganathan": {
             "wins": 1,
@@ -58499,11 +58943,11 @@ window.__STATIC_DATA__ = {
             "pa": 122.48
           },
           "eikichii952": {
-            "wins": 2,
+            "wins": 1,
             "losses": 0,
             "ties": 0,
-            "pf": 277.66,
-            "pa": 200.84
+            "pf": 172.0,
+            "pa": 96.26
           },
           "jonsung": {
             "wins": 0,
@@ -58531,11 +58975,11 @@ window.__STATIC_DATA__ = {
       "2023": {
         "ddhk": {
           "IconicJH": {
-            "wins": 1,
+            "wins": 0,
             "losses": 2,
             "ties": 0,
-            "pf": 426.84,
-            "pa": 414.54
+            "pf": 234.56,
+            "pa": 300.28
           },
           "jonsung": {
             "wins": 0,
@@ -58560,10 +59004,10 @@ window.__STATIC_DATA__ = {
           },
           "spiffster": {
             "wins": 0,
-            "losses": 2,
+            "losses": 1,
             "ties": 0,
-            "pf": 237.8,
-            "pa": 335.54
+            "pf": 106.52,
+            "pa": 162.02
           },
           "ganathan": {
             "wins": 0,
@@ -58587,11 +59031,11 @@ window.__STATIC_DATA__ = {
             "pa": 176.86
           },
           "Paul_Yoon": {
-            "wins": 2,
+            "wins": 1,
             "losses": 0,
             "ties": 0,
-            "pf": 316.2,
-            "pa": 248.92
+            "pf": 170.2,
+            "pa": 138.0
           },
           "andyxia124": {
             "wins": 1,
@@ -58611,10 +59055,10 @@ window.__STATIC_DATA__ = {
         "IconicJH": {
           "ddhk": {
             "wins": 2,
-            "losses": 1,
+            "losses": 0,
             "ties": 0,
-            "pf": 414.54,
-            "pa": 426.84
+            "pf": 300.28,
+            "pa": 234.56
           },
           "NoSkilzPak": {
             "wins": 1,
@@ -58639,17 +59083,17 @@ window.__STATIC_DATA__ = {
           },
           "jonsung": {
             "wins": 0,
-            "losses": 2,
-            "ties": 0,
-            "pf": 271.0,
-            "pa": 325.9
-          },
-          "edgxrjiang": {
-            "wins": 1,
             "losses": 1,
             "ties": 0,
-            "pf": 254.58,
-            "pa": 252.74
+            "pf": 159.44,
+            "pa": 180.12
+          },
+          "edgxrjiang": {
+            "wins": 0,
+            "losses": 1,
+            "ties": 0,
+            "pf": 116.38,
+            "pa": 140.88
           },
           "ganathan": {
             "wins": 1,
@@ -58704,10 +59148,10 @@ window.__STATIC_DATA__ = {
           },
           "jonsung": {
             "wins": 2,
-            "losses": 1,
+            "losses": 0,
             "ties": 0,
-            "pf": 564.06,
-            "pa": 517.86
+            "pf": 399.52,
+            "pa": 317.98
           },
           "IconicJH": {
             "wins": 1,
@@ -58717,11 +59161,11 @@ window.__STATIC_DATA__ = {
             "pa": 168.42
           },
           "ddhk": {
-            "wins": 2,
+            "wins": 1,
             "losses": 0,
             "ties": 0,
-            "pf": 335.54,
-            "pa": 237.8
+            "pf": 162.02,
+            "pa": 106.52
           },
           "Paul_Yoon": {
             "wins": 0,
@@ -58731,11 +59175,11 @@ window.__STATIC_DATA__ = {
             "pa": 133.04
           },
           "riqi": {
-            "wins": 2,
+            "wins": 1,
             "losses": 0,
             "ties": 0,
-            "pf": 356.42,
-            "pa": 341.92
+            "pf": 172.38,
+            "pa": 160.54
           },
           "shmyung": {
             "wins": 1,
@@ -58797,10 +59241,10 @@ window.__STATIC_DATA__ = {
           },
           "eikichii952": {
             "wins": 0,
-            "losses": 2,
+            "losses": 1,
             "ties": 0,
-            "pf": 233.2,
-            "pa": 280.08
+            "pf": 113.56,
+            "pa": 158.16
           },
           "riqi": {
             "wins": 0,
@@ -58824,11 +59268,11 @@ window.__STATIC_DATA__ = {
             "pa": 113.64
           },
           "shmyung": {
-            "wins": 2,
+            "wins": 1,
             "losses": 0,
             "ties": 0,
-            "pf": 257.7,
-            "pa": 169.72
+            "pf": 134.32,
+            "pa": 99.42
           },
           "ganathan": {
             "wins": 1,
@@ -58861,11 +59305,11 @@ window.__STATIC_DATA__ = {
             "pa": 281.42
           },
           "spiffster": {
-            "wins": 1,
+            "wins": 0,
             "losses": 2,
             "ties": 0,
-            "pf": 517.86,
-            "pa": 564.06
+            "pf": 317.98,
+            "pa": 399.52
           },
           "NoSkilzPak": {
             "wins": 1,
@@ -58875,11 +59319,11 @@ window.__STATIC_DATA__ = {
             "pa": 115.76
           },
           "IconicJH": {
-            "wins": 2,
+            "wins": 1,
             "losses": 0,
             "ties": 0,
-            "pf": 325.9,
-            "pa": 271.0
+            "pf": 180.12,
+            "pa": 159.44
           },
           "andyxia124": {
             "wins": 1,
@@ -58897,10 +59341,10 @@ window.__STATIC_DATA__ = {
           },
           "ganathan": {
             "wins": 1,
-            "losses": 1,
+            "losses": 0,
             "ties": 0,
-            "pf": 353.12,
-            "pa": 376.48
+            "pf": 189.62,
+            "pa": 174.82
           },
           "edgxrjiang": {
             "wins": 1,
@@ -58954,11 +59398,11 @@ window.__STATIC_DATA__ = {
             "pa": 135.18
           },
           "NoSkilzPak": {
-            "wins": 2,
+            "wins": 1,
             "losses": 0,
             "ties": 0,
-            "pf": 280.08,
-            "pa": 233.2
+            "pf": 158.16,
+            "pa": 113.56
           },
           "shmyung": {
             "wins": 1,
@@ -58969,10 +59413,10 @@ window.__STATIC_DATA__ = {
           },
           "andyxia124": {
             "wins": 1,
-            "losses": 1,
+            "losses": 0,
             "ties": 0,
-            "pf": 285.78,
-            "pa": 312.4
+            "pf": 148.72,
+            "pa": 118.76
           },
           "edgxrjiang": {
             "wins": 1,
@@ -59005,11 +59449,11 @@ window.__STATIC_DATA__ = {
         },
         "andyxia124": {
           "shmyung": {
-            "wins": 2,
+            "wins": 1,
             "losses": 1,
             "ties": 0,
-            "pf": 326.06,
-            "pa": 218.34
+            "pf": 216.34,
+            "pa": 170.34
           },
           "ganathan": {
             "wins": 0,
@@ -59047,11 +59491,11 @@ window.__STATIC_DATA__ = {
             "pa": 108.5
           },
           "eikichii952": {
-            "wins": 1,
+            "wins": 0,
             "losses": 1,
             "ties": 0,
-            "pf": 312.4,
-            "pa": 285.78
+            "pf": 118.76,
+            "pa": 148.72
           },
           "NoSkilzPak": {
             "wins": 0,
@@ -59085,10 +59529,10 @@ window.__STATIC_DATA__ = {
         "shmyung": {
           "andyxia124": {
             "wins": 1,
-            "losses": 2,
+            "losses": 1,
             "ties": 0,
-            "pf": 218.34,
-            "pa": 326.06
+            "pf": 170.34,
+            "pa": 216.34
           },
           "Paul_Yoon": {
             "wins": 0,
@@ -59141,10 +59585,10 @@ window.__STATIC_DATA__ = {
           },
           "NoSkilzPak": {
             "wins": 0,
-            "losses": 2,
+            "losses": 1,
             "ties": 0,
-            "pf": 169.72,
-            "pa": 257.7
+            "pf": 99.42,
+            "pa": 134.32
           },
           "IconicJH": {
             "wins": 1,
@@ -59184,18 +59628,18 @@ window.__STATIC_DATA__ = {
             "pa": 286.12
           },
           "edgxrjiang": {
-            "wins": 1,
+            "wins": 0,
             "losses": 1,
             "ties": 0,
-            "pf": 263.34,
-            "pa": 267.7
+            "pf": 158.04,
+            "pa": 164.74
           },
           "ganathan": {
             "wins": 0,
-            "losses": 2,
+            "losses": 1,
             "ties": 0,
-            "pf": 258.02,
-            "pa": 353.3
+            "pf": 113.28,
+            "pa": 171.38
           },
           "spiffster": {
             "wins": 1,
@@ -59220,10 +59664,10 @@ window.__STATIC_DATA__ = {
           },
           "ddhk": {
             "wins": 0,
-            "losses": 2,
+            "losses": 1,
             "ties": 0,
-            "pf": 248.92,
-            "pa": 316.2
+            "pf": 138.0,
+            "pa": 170.2
           },
           "eikichii952": {
             "wins": 1,
@@ -59249,18 +59693,18 @@ window.__STATIC_DATA__ = {
             "pa": 271.08
           },
           "edgxrjiang": {
-            "wins": 1,
+            "wins": 0,
             "losses": 2,
             "ties": 0,
-            "pf": 483.34,
-            "pa": 474.48
+            "pf": 296.78,
+            "pa": 335.3
           },
           "ganathan": {
             "wins": 0,
-            "losses": 3,
+            "losses": 2,
             "ties": 0,
-            "pf": 433.9,
-            "pa": 579.9
+            "pf": 295.64,
+            "pa": 414.4
           },
           "andyxia124": {
             "wins": 1,
@@ -59285,10 +59729,10 @@ window.__STATIC_DATA__ = {
           },
           "spiffster": {
             "wins": 0,
-            "losses": 2,
+            "losses": 1,
             "ties": 0,
-            "pf": 341.92,
-            "pa": 356.42
+            "pf": 160.54,
+            "pa": 172.38
           },
           "ddhk": {
             "wins": 1,
@@ -59329,10 +59773,10 @@ window.__STATIC_DATA__ = {
           },
           "riqi": {
             "wins": 2,
-            "losses": 1,
+            "losses": 0,
             "ties": 0,
-            "pf": 474.48,
-            "pa": 483.34
+            "pf": 335.3,
+            "pa": 296.78
           },
           "shmyung": {
             "wins": 2,
@@ -59343,10 +59787,10 @@ window.__STATIC_DATA__ = {
           },
           "Paul_Yoon": {
             "wins": 1,
-            "losses": 1,
+            "losses": 0,
             "ties": 0,
-            "pf": 267.7,
-            "pa": 263.34
+            "pf": 164.74,
+            "pa": 158.04
           },
           "andyxia124": {
             "wins": 1,
@@ -59357,10 +59801,10 @@ window.__STATIC_DATA__ = {
           },
           "IconicJH": {
             "wins": 1,
-            "losses": 1,
+            "losses": 0,
             "ties": 0,
-            "pf": 252.74,
-            "pa": 254.58
+            "pf": 140.88,
+            "pa": 116.38
           },
           "ddhk": {
             "wins": 0,
@@ -59414,11 +59858,11 @@ window.__STATIC_DATA__ = {
             "pa": 249.44
           },
           "riqi": {
-            "wins": 3,
+            "wins": 2,
             "losses": 0,
             "ties": 0,
-            "pf": 579.9,
-            "pa": 433.9
+            "pf": 414.4,
+            "pa": 295.64
           },
           "shmyung": {
             "wins": 1,
@@ -59428,11 +59872,11 @@ window.__STATIC_DATA__ = {
             "pa": 72.3
           },
           "Paul_Yoon": {
-            "wins": 2,
+            "wins": 1,
             "losses": 0,
             "ties": 0,
-            "pf": 353.3,
-            "pa": 258.02
+            "pf": 171.38,
+            "pa": 113.28
           },
           "ddhk": {
             "wins": 1,
@@ -59449,11 +59893,11 @@ window.__STATIC_DATA__ = {
             "pa": 134.34
           },
           "jonsung": {
-            "wins": 1,
+            "wins": 0,
             "losses": 1,
             "ties": 0,
-            "pf": 376.48,
-            "pa": 353.12
+            "pf": 174.82,
+            "pa": 189.62
           },
           "eikichii952": {
             "wins": 1,
@@ -59490,31 +59934,31 @@ window.__STATIC_DATA__ = {
         },
         "jonsung": {
           "wins": 3,
-          "losses": 4,
-          "ties": 0,
-          "pf": 1193.8,
-          "pa": 1273.58
-        },
-        "spiffster": {
-          "wins": 4,
-          "losses": 2,
-          "ties": 0,
-          "pf": 975.84,
-          "pa": 834.28
-        },
-        "NoSkilzPak": {
-          "wins": 5,
-          "losses": 0,
-          "ties": 0,
-          "pf": 828.9,
-          "pa": 662.92
-        },
-        "IconicJH": {
-          "wins": 4,
           "losses": 3,
           "ties": 0,
-          "pf": 1049.82,
-          "pa": 877.62
+          "pf": 1038.2,
+          "pa": 1076.82
+        },
+        "spiffster": {
+          "wins": 3,
+          "losses": 1,
+          "ties": 0,
+          "pf": 621.28,
+          "pa": 495.46
+        },
+        "NoSkilzPak": {
+          "wins": 4,
+          "losses": 0,
+          "ties": 0,
+          "pf": 630.24,
+          "pa": 534.58
+        },
+        "IconicJH": {
+          "wins": 3,
+          "losses": 2,
+          "ties": 0,
+          "pf": 701.82,
+          "pa": 601.82
         },
         "ngman": {
           "wins": 2,
@@ -59524,11 +59968,11 @@ window.__STATIC_DATA__ = {
           "pa": 191.94
         },
         "Paul_Yoon": {
-          "wins": 4,
+          "wins": 2,
           "losses": 1,
           "ties": 0,
-          "pf": 789.68,
-          "pa": 647.78
+          "pf": 496.74,
+          "pa": 401.84
         },
         "andyxia124": {
           "wins": 2,
@@ -59553,10 +59997,10 @@ window.__STATIC_DATA__ = {
         },
         "ganathan": {
           "wins": 0,
-          "losses": 4,
+          "losses": 3,
           "ties": 0,
-          "pf": 527.92,
-          "pa": 749.76
+          "pf": 384.58,
+          "pa": 586.78
         },
         "riqi": {
           "wins": 1,
@@ -59611,31 +60055,31 @@ window.__STATIC_DATA__ = {
         },
         "spiffster": {
           "wins": 1,
-          "losses": 4,
-          "ties": 0,
-          "pf": 576.78,
-          "pa": 787.12
-        },
-        "NoSkilzPak": {
-          "wins": 3,
           "losses": 3,
           "ties": 0,
-          "pf": 686.84,
-          "pa": 729.58
+          "pf": 483.3,
+          "pa": 664.64
+        },
+        "NoSkilzPak": {
+          "wins": 1,
+          "losses": 3,
+          "ties": 0,
+          "pf": 475.4,
+          "pa": 521.0
         },
         "Paul_Yoon": {
           "wins": 0,
-          "losses": 4,
+          "losses": 3,
           "ties": 0,
-          "pf": 354.5,
-          "pa": 530.48
+          "pf": 278.9,
+          "pa": 393.26
         },
         "ngman": {
           "wins": 0,
-          "losses": 3,
+          "losses": 2,
           "ties": 0,
-          "pf": 347.96,
-          "pa": 431.18
+          "pf": 243.38,
+          "pa": 325.52
         },
         "velmixon": {
           "wins": 0,
@@ -59646,10 +60090,10 @@ window.__STATIC_DATA__ = {
         },
         "andyxia124": {
           "wins": 1,
-          "losses": 3,
+          "losses": 2,
           "ties": 0,
-          "pf": 487.6,
-          "pa": 648.62
+          "pf": 350.54,
+          "pa": 454.98
         },
         "ganathan": {
           "wins": 0,
@@ -59710,32 +60154,32 @@ window.__STATIC_DATA__ = {
           "pa": 840.38
         },
         "ddhk": {
-          "wins": 2,
-          "losses": 4,
+          "wins": 1,
+          "losses": 3,
           "ties": 0,
-          "pf": 834.28,
-          "pa": 975.84
+          "pf": 495.46,
+          "pa": 621.28
         },
         "eikichii952": {
-          "wins": 4,
+          "wins": 3,
           "losses": 1,
           "ties": 0,
-          "pf": 787.12,
-          "pa": 576.78
+          "pf": 664.64,
+          "pa": 483.3
         },
         "jonsung": {
           "wins": 3,
-          "losses": 4,
+          "losses": 2,
           "ties": 0,
-          "pf": 1107.38,
-          "pa": 1178.38
+          "pf": 825.58,
+          "pa": 807.86
         },
         "paddleham": {
-          "wins": 2,
+          "wins": 1,
           "losses": 0,
           "ties": 0,
-          "pf": 251.18,
-          "pa": 203.16
+          "pf": 91.92,
+          "pa": 87.8
         },
         "ganathan": {
           "wins": 2,
@@ -59774,17 +60218,17 @@ window.__STATIC_DATA__ = {
         },
         "urmummma": {
           "wins": 1,
-          "losses": 1,
-          "ties": 0,
-          "pf": 276.6,
-          "pa": 305.84
-        },
-        "riqi": {
-          "wins": 3,
           "losses": 0,
           "ties": 0,
-          "pf": 499.04,
-          "pa": 463.8
+          "pf": 167.04,
+          "pa": 151.36
+        },
+        "riqi": {
+          "wins": 2,
+          "losses": 0,
+          "ties": 0,
+          "pf": 315.0,
+          "pa": 282.42
         },
         "shmyung": {
           "wins": 1,
@@ -59817,25 +60261,25 @@ window.__STATIC_DATA__ = {
           "pa": 513.44
         },
         "NoSkilzPak": {
-          "wins": 5,
+          "wins": 4,
           "losses": 2,
           "ties": 0,
-          "pf": 935.48,
-          "pa": 938.68
+          "pf": 783.36,
+          "pa": 788.08
         },
         "jonsung": {
           "wins": 0,
-          "losses": 6,
+          "losses": 3,
           "ties": 0,
-          "pf": 878.86,
-          "pa": 1079.78
+          "pf": 469.88,
+          "pa": 558.28
         },
         "ddhk": {
-          "wins": 3,
-          "losses": 4,
+          "wins": 2,
+          "losses": 3,
           "ties": 0,
-          "pf": 877.62,
-          "pa": 1049.82
+          "pf": 601.82,
+          "pa": 701.82
         },
         "ganathan": {
           "wins": 3,
@@ -59867,10 +60311,10 @@ window.__STATIC_DATA__ = {
         },
         "velmixon": {
           "wins": 1,
-          "losses": 1,
+          "losses": 0,
           "ties": 0,
-          "pf": 332.74,
-          "pa": 302.98
+          "pf": 148.82,
+          "pa": 111.3
         },
         "andyxia124": {
           "wins": 2,
@@ -59880,11 +60324,11 @@ window.__STATIC_DATA__ = {
           "pa": 404.86
         },
         "riqi": {
-          "wins": 2,
+          "wins": 1,
           "losses": 1,
           "ties": 0,
-          "pf": 394.28,
-          "pa": 376.7
+          "pf": 239.72,
+          "pa": 237.88
         },
         "urmummma": {
           "wins": 0,
@@ -59894,11 +60338,11 @@ window.__STATIC_DATA__ = {
           "pa": 142.6
         },
         "edgxrjiang": {
-          "wins": 1,
+          "wins": 0,
           "losses": 1,
           "ties": 0,
-          "pf": 254.58,
-          "pa": 252.74
+          "pf": 116.38,
+          "pa": 140.88
         },
         "shmyung": {
           "wins": 0,
@@ -59925,31 +60369,31 @@ window.__STATIC_DATA__ = {
         },
         "IconicJH": {
           "wins": 2,
-          "losses": 5,
+          "losses": 4,
           "ties": 0,
-          "pf": 938.68,
-          "pa": 935.48
+          "pf": 788.08,
+          "pa": 783.36
         },
         "ddhk": {
           "wins": 0,
-          "losses": 5,
+          "losses": 4,
           "ties": 0,
-          "pf": 662.92,
-          "pa": 828.9
+          "pf": 534.58,
+          "pa": 630.24
         },
         "eikichii952": {
           "wins": 3,
-          "losses": 3,
+          "losses": 1,
           "ties": 0,
-          "pf": 729.58,
-          "pa": 686.84
+          "pf": 521.0,
+          "pa": 475.4
         },
         "andyxia124": {
           "wins": 2,
-          "losses": 2,
+          "losses": 1,
           "ties": 0,
-          "pf": 546.96,
-          "pa": 583.84
+          "pf": 407.22,
+          "pa": 401.54
         },
         "velmixon": {
           "wins": 0,
@@ -59974,10 +60418,10 @@ window.__STATIC_DATA__ = {
         },
         "ngman": {
           "wins": 1,
-          "losses": 2,
+          "losses": 1,
           "ties": 0,
-          "pf": 384.3,
-          "pa": 406.62
+          "pf": 262.0,
+          "pa": 240.82
         },
         "Paul_Yoon": {
           "wins": 3,
@@ -60001,11 +60445,11 @@ window.__STATIC_DATA__ = {
           "pa": 337.2
         },
         "shmyung": {
-          "wins": 2,
+          "wins": 1,
           "losses": 0,
           "ties": 0,
-          "pf": 257.7,
-          "pa": 169.72
+          "pf": 134.32,
+          "pa": 99.42
         },
         "edgxrjiang": {
           "wins": 1,
@@ -60024,11 +60468,11 @@ window.__STATIC_DATA__ = {
           "pa": 543.22
         },
         "ddhk": {
-          "wins": 4,
+          "wins": 3,
           "losses": 3,
           "ties": 0,
-          "pf": 1273.58,
-          "pa": 1193.8
+          "pf": 1076.82,
+          "pa": 1038.2
         },
         "eikichii952": {
           "wins": 6,
@@ -60038,18 +60482,18 @@ window.__STATIC_DATA__ = {
           "pa": 604.08
         },
         "IconicJH": {
-          "wins": 6,
+          "wins": 3,
           "losses": 0,
           "ties": 0,
-          "pf": 1079.78,
-          "pa": 878.86
+          "pf": 558.28,
+          "pa": 469.88
         },
         "spiffster": {
-          "wins": 4,
+          "wins": 2,
           "losses": 3,
           "ties": 0,
-          "pf": 1178.38,
-          "pa": 1107.38
+          "pf": 807.86,
+          "pa": 825.58
         },
         "velmixon": {
           "wins": 1,
@@ -60059,18 +60503,18 @@ window.__STATIC_DATA__ = {
           "pa": 160.16
         },
         "andyxia124": {
-          "wins": 3,
+          "wins": 2,
           "losses": 1,
           "ties": 0,
-          "pf": 540.66,
-          "pa": 437.94
+          "pf": 379.18,
+          "pa": 326.58
         },
         "ganathan": {
-          "wins": 4,
-          "losses": 1,
+          "wins": 3,
+          "losses": 0,
           "ties": 0,
-          "pf": 921.02,
-          "pa": 859.6
+          "pf": 582.52,
+          "pa": 483.78
         },
         "paddleham": {
           "wins": 1,
@@ -60138,18 +60582,18 @@ window.__STATIC_DATA__ = {
           "pa": 310.38
         },
         "ganathan": {
-          "wins": 3,
+          "wins": 2,
           "losses": 3,
           "ties": 0,
-          "pf": 951.1,
-          "pa": 1075.82
+          "pf": 771.8,
+          "pa": 909.02
         },
         "ngman": {
-          "wins": 3,
+          "wins": 1,
           "losses": 2,
           "ties": 0,
-          "pf": 869.1,
-          "pa": 695.4
+          "pf": 464.88,
+          "pa": 419.42
         },
         "Paul_Yoon": {
           "wins": 2,
@@ -60159,18 +60603,18 @@ window.__STATIC_DATA__ = {
           "pa": 755.42
         },
         "NoSkilzPak": {
-          "wins": 2,
+          "wins": 1,
           "losses": 2,
           "ties": 0,
-          "pf": 583.84,
-          "pa": 546.96
+          "pf": 401.54,
+          "pa": 407.22
         },
         "jonsung": {
           "wins": 1,
-          "losses": 3,
+          "losses": 2,
           "ties": 0,
-          "pf": 437.94,
-          "pa": 540.66
+          "pf": 326.58,
+          "pa": 379.18
         },
         "ddhk": {
           "wins": 1,
@@ -60180,11 +60624,11 @@ window.__STATIC_DATA__ = {
           "pa": 430.04
         },
         "eikichii952": {
-          "wins": 3,
+          "wins": 2,
           "losses": 1,
           "ties": 0,
-          "pf": 648.62,
-          "pa": 487.6
+          "pf": 454.98,
+          "pa": 350.54
         },
         "spiffster": {
           "wins": 2,
@@ -60215,11 +60659,11 @@ window.__STATIC_DATA__ = {
           "pa": 299.2
         },
         "shmyung": {
-          "wins": 2,
+          "wins": 1,
           "losses": 1,
           "ties": 0,
-          "pf": 326.06,
-          "pa": 218.34
+          "pf": 216.34,
+          "pa": 170.34
         },
         "edgxrjiang": {
           "wins": 0,
@@ -60238,11 +60682,11 @@ window.__STATIC_DATA__ = {
           "pa": 333.28
         },
         "ngman": {
-          "wins": 1,
+          "wins": 0,
           "losses": 2,
           "ties": 0,
-          "pf": 424.86,
-          "pa": 438.92
+          "pf": 253.28,
+          "pa": 289.52
         },
         "Paul_Yoon": {
           "wins": 2,
@@ -60253,10 +60697,10 @@ window.__STATIC_DATA__ = {
         },
         "ganathan": {
           "wins": 0,
-          "losses": 2,
+          "losses": 1,
           "ties": 0,
-          "pf": 282.56,
-          "pa": 334.98
+          "pf": 149.62,
+          "pa": 152.46
         },
         "paddleham": {
           "wins": 1,
@@ -60294,11 +60738,11 @@ window.__STATIC_DATA__ = {
           "pa": 148.64
         },
         "IconicJH": {
-          "wins": 1,
+          "wins": 0,
           "losses": 1,
           "ties": 0,
-          "pf": 302.98,
-          "pa": 332.74
+          "pf": 111.3,
+          "pa": 148.82
         },
         "spiffster": {
           "wins": 0,
@@ -60318,10 +60762,10 @@ window.__STATIC_DATA__ = {
         },
         "ganathan": {
           "wins": 2,
-          "losses": 5,
+          "losses": 3,
           "ties": 0,
-          "pf": 996.0,
-          "pa": 1151.68
+          "pf": 686.92,
+          "pa": 795.28
         },
         "velmixon": {
           "wins": 0,
@@ -60332,10 +60776,10 @@ window.__STATIC_DATA__ = {
         },
         "paddleham": {
           "wins": 0,
-          "losses": 2,
+          "losses": 1,
           "ties": 0,
-          "pf": 169.56,
-          "pa": 249.86
+          "pf": 107.48,
+          "pa": 160.74
         },
         "andyxia124": {
           "wins": 3,
@@ -60345,18 +60789,18 @@ window.__STATIC_DATA__ = {
           "pa": 682.52
         },
         "eikichii952": {
-          "wins": 4,
+          "wins": 3,
           "losses": 0,
           "ties": 0,
-          "pf": 530.48,
-          "pa": 354.5
+          "pf": 393.26,
+          "pa": 278.9
         },
         "ddhk": {
           "wins": 1,
-          "losses": 4,
+          "losses": 2,
           "ties": 0,
-          "pf": 647.78,
-          "pa": 789.68
+          "pf": 401.84,
+          "pa": 496.74
         },
         "IconicJH": {
           "wins": 1,
@@ -60394,11 +60838,11 @@ window.__STATIC_DATA__ = {
           "pa": 525.92
         },
         "urmummma": {
-          "wins": 1,
+          "wins": 0,
           "losses": 1,
           "ties": 0,
-          "pf": 314.2,
-          "pa": 353.32
+          "pf": 139.42,
+          "pa": 197.54
         },
         "shmyung": {
           "wins": 2,
@@ -60408,11 +60852,11 @@ window.__STATIC_DATA__ = {
           "pa": 179.5
         },
         "edgxrjiang": {
-          "wins": 1,
+          "wins": 0,
           "losses": 1,
           "ties": 0,
-          "pf": 263.34,
-          "pa": 267.7
+          "pf": 158.04,
+          "pa": 164.74
         }
       },
       "ngman": {
@@ -60425,10 +60869,10 @@ window.__STATIC_DATA__ = {
         },
         "velmixon": {
           "wins": 2,
-          "losses": 1,
+          "losses": 0,
           "ties": 0,
-          "pf": 438.92,
-          "pa": 424.86
+          "pf": 289.52,
+          "pa": 253.28
         },
         "paddleham": {
           "wins": 1,
@@ -60439,10 +60883,10 @@ window.__STATIC_DATA__ = {
         },
         "andyxia124": {
           "wins": 2,
-          "losses": 3,
+          "losses": 1,
           "ties": 0,
-          "pf": 695.4,
-          "pa": 869.1
+          "pf": 419.42,
+          "pa": 464.88
         },
         "ganathan": {
           "wins": 1,
@@ -60459,11 +60903,11 @@ window.__STATIC_DATA__ = {
           "pa": 312.26
         },
         "eikichii952": {
-          "wins": 3,
+          "wins": 2,
           "losses": 0,
           "ties": 0,
-          "pf": 431.18,
-          "pa": 347.96
+          "pf": 325.52,
+          "pa": 243.38
         },
         "spiffster": {
           "wins": 0,
@@ -60480,11 +60924,11 @@ window.__STATIC_DATA__ = {
           "pa": 297.62
         },
         "NoSkilzPak": {
-          "wins": 2,
+          "wins": 1,
           "losses": 1,
           "ties": 0,
-          "pf": 406.62,
-          "pa": 384.3
+          "pf": 240.82,
+          "pa": 262.0
         },
         "jonsung": {
           "wins": 0,
@@ -60531,11 +60975,11 @@ window.__STATIC_DATA__ = {
           "pa": 342.18
         },
         "Paul_Yoon": {
-          "wins": 2,
+          "wins": 1,
           "losses": 0,
           "ties": 0,
-          "pf": 249.86,
-          "pa": 169.56
+          "pf": 160.74,
+          "pa": 107.48
         },
         "velmixon": {
           "wins": 0,
@@ -60546,10 +60990,10 @@ window.__STATIC_DATA__ = {
         },
         "spiffster": {
           "wins": 0,
-          "losses": 2,
+          "losses": 1,
           "ties": 0,
-          "pf": 203.16,
-          "pa": 251.18
+          "pf": 87.8,
+          "pa": 91.92
         },
         "IconicJH": {
           "wins": 0,
@@ -60596,25 +61040,25 @@ window.__STATIC_DATA__ = {
           "pa": 166.28
         },
         "Paul_Yoon": {
-          "wins": 5,
+          "wins": 3,
           "losses": 2,
           "ties": 0,
-          "pf": 1151.68,
-          "pa": 996.0
+          "pf": 795.28,
+          "pa": 686.92
         },
         "andyxia124": {
           "wins": 3,
-          "losses": 3,
+          "losses": 2,
           "ties": 0,
-          "pf": 1075.82,
-          "pa": 951.1
+          "pf": 909.02,
+          "pa": 771.8
         },
         "velmixon": {
-          "wins": 2,
+          "wins": 1,
           "losses": 0,
           "ties": 0,
-          "pf": 334.98,
-          "pa": 282.56
+          "pf": 152.46,
+          "pa": 149.62
         },
         "ngman": {
           "wins": 2,
@@ -60638,11 +61082,11 @@ window.__STATIC_DATA__ = {
           "pa": 410.68
         },
         "jonsung": {
-          "wins": 1,
-          "losses": 4,
+          "wins": 0,
+          "losses": 3,
           "ties": 0,
-          "pf": 859.6,
-          "pa": 921.02
+          "pf": 483.78,
+          "pa": 582.52
         },
         "NoSkilzPak": {
           "wins": 2,
@@ -60659,18 +61103,18 @@ window.__STATIC_DATA__ = {
           "pa": 326.84
         },
         "ddhk": {
+          "wins": 3,
+          "losses": 0,
+          "ties": 0,
+          "pf": 586.78,
+          "pa": 384.58
+        },
+        "riqi": {
           "wins": 4,
           "losses": 0,
           "ties": 0,
-          "pf": 749.76,
-          "pa": 527.92
-        },
-        "riqi": {
-          "wins": 6,
-          "losses": 0,
-          "ties": 0,
-          "pf": 1095.16,
-          "pa": 837.88
+          "pf": 745.76,
+          "pa": 557.12
         },
         "urmummma": {
           "wins": 1,
@@ -60697,17 +61141,17 @@ window.__STATIC_DATA__ = {
       "riqi": {
         "ganathan": {
           "wins": 0,
-          "losses": 6,
+          "losses": 4,
           "ties": 0,
-          "pf": 837.88,
-          "pa": 1095.16
+          "pf": 557.12,
+          "pa": 745.76
         },
         "urmummma": {
-          "wins": 2,
+          "wins": 1,
           "losses": 1,
           "ties": 0,
-          "pf": 475.06,
-          "pa": 413.56
+          "pf": 291.5,
+          "pa": 282.38
         },
         "Paul_Yoon": {
           "wins": 1,
@@ -60746,10 +61190,10 @@ window.__STATIC_DATA__ = {
         },
         "IconicJH": {
           "wins": 1,
-          "losses": 2,
+          "losses": 1,
           "ties": 0,
-          "pf": 376.7,
-          "pa": 394.28
+          "pf": 237.88,
+          "pa": 239.72
         },
         "ddhk": {
           "wins": 1,
@@ -60760,10 +61204,10 @@ window.__STATIC_DATA__ = {
         },
         "spiffster": {
           "wins": 0,
-          "losses": 3,
+          "losses": 2,
           "ties": 0,
-          "pf": 463.8,
-          "pa": 499.04
+          "pf": 282.42,
+          "pa": 315.0
         },
         "NoSkilzPak": {
           "wins": 2,
@@ -60773,11 +61217,11 @@ window.__STATIC_DATA__ = {
           "pa": 251.88
         },
         "edgxrjiang": {
-          "wins": 1,
+          "wins": 0,
           "losses": 2,
           "ties": 0,
-          "pf": 483.34,
-          "pa": 474.48
+          "pf": 296.78,
+          "pa": 335.3
         },
         "shmyung": {
           "wins": 1,
@@ -60797,10 +61241,10 @@ window.__STATIC_DATA__ = {
         },
         "riqi": {
           "wins": 1,
-          "losses": 2,
+          "losses": 1,
           "ties": 0,
-          "pf": 413.56,
-          "pa": 475.06
+          "pf": 282.38,
+          "pa": 291.5
         },
         "andyxia124": {
           "wins": 2,
@@ -60818,17 +61262,17 @@ window.__STATIC_DATA__ = {
         },
         "Paul_Yoon": {
           "wins": 1,
-          "losses": 1,
+          "losses": 0,
           "ties": 0,
-          "pf": 353.32,
-          "pa": 314.2
+          "pf": 197.54,
+          "pa": 139.42
         },
         "spiffster": {
-          "wins": 1,
+          "wins": 0,
           "losses": 1,
           "ties": 0,
-          "pf": 305.84,
-          "pa": 276.6
+          "pf": 151.36,
+          "pa": 167.04
         },
         "NoSkilzPak": {
           "wins": 1,
@@ -60869,10 +61313,10 @@ window.__STATIC_DATA__ = {
       "shmyung": {
         "andyxia124": {
           "wins": 1,
-          "losses": 2,
+          "losses": 1,
           "ties": 0,
-          "pf": 218.34,
-          "pa": 326.06
+          "pf": 170.34,
+          "pa": 216.34
         },
         "Paul_Yoon": {
           "wins": 0,
@@ -60925,10 +61369,10 @@ window.__STATIC_DATA__ = {
         },
         "NoSkilzPak": {
           "wins": 0,
-          "losses": 2,
+          "losses": 1,
           "ties": 0,
-          "pf": 169.72,
-          "pa": 257.7
+          "pf": 99.42,
+          "pa": 134.32
         },
         "IconicJH": {
           "wins": 1,
@@ -60955,10 +61399,10 @@ window.__STATIC_DATA__ = {
         },
         "riqi": {
           "wins": 2,
-          "losses": 1,
+          "losses": 0,
           "ties": 0,
-          "pf": 474.48,
-          "pa": 483.34
+          "pf": 335.3,
+          "pa": 296.78
         },
         "shmyung": {
           "wins": 2,
@@ -60969,10 +61413,10 @@ window.__STATIC_DATA__ = {
         },
         "Paul_Yoon": {
           "wins": 1,
-          "losses": 1,
+          "losses": 0,
           "ties": 0,
-          "pf": 267.7,
-          "pa": 263.34
+          "pf": 164.74,
+          "pa": 158.04
         },
         "andyxia124": {
           "wins": 1,
@@ -60983,10 +61427,10 @@ window.__STATIC_DATA__ = {
         },
         "IconicJH": {
           "wins": 1,
-          "losses": 1,
+          "losses": 0,
           "ties": 0,
-          "pf": 252.74,
-          "pa": 254.58
+          "pf": 140.88,
+          "pa": 116.38
         },
         "ddhk": {
           "wins": 0,

@@ -2,9 +2,46 @@ import { api } from "./dataService.js";
 import { renderNav } from "./components/nav.js";
 
 const YEARS = ["2023", "2024", "2025", "2026"];
+const FUTURE_YEARS = ["2027", "2028", "2029"];
+const ROUNDS = [1, 2, 3];
 const POS_ORDER = ["QB", "RB", "WR", "TE", "K", "DEF"];
+
+let allTransactions = [];
+
+// ESPN team logo URL
+function teamLogoUrl(abbrev) {
+    if (!abbrev) return null;
+    return `https://a.espncdn.com/i/teamlogos/nfl/500-dark/${abbrev.toLowerCase()}.png`;
+}
+
+function calcAgeDecimal(birthDate) {
+    if (!birthDate) return null;
+    const birth = new Date(birthDate);
+    const now = new Date();
+    const msPerYear = 365.25 * 24 * 60 * 60 * 1000;
+    return ((now - birth) / msPerYear).toFixed(1);
+}
 let statsCache = {};
+let usersMap = {};
 const espnIdCache = {};
+
+const POS_COLORS = {
+    QB:  "#e74c82",
+    RB:  "#3ecf8e",
+    WR:  "#4299e1",
+    TE:  "#f6ad55",
+    K:   "#9f7aea",
+    DEF: "#64748b",
+};
+function posColor(pos) { return POS_COLORS[(pos||"").toUpperCase()] || "#5a6070"; }
+
+function playerValueScore(p) {
+    // Sort by 2025 pts_half_ppr desc; fallback to 2024, then 0
+    const pid = p.player_id;
+    if (statsCache["2025"]?.[pid]?.pts_half_ppr > 0) return statsCache["2025"][pid].pts_half_ppr;
+    if (statsCache["2024"]?.[pid]?.pts_half_ppr > 0) return statsCache["2024"][pid].pts_half_ppr;
+    return 0;
+}
 
 async function init() {
     await new Promise(r =>
@@ -17,22 +54,74 @@ async function init() {
     ensurePopover();
 
     const container = document.getElementById("teams-container");
-    container.innerHTML = "Loading...";
+    container.innerHTML = `<div style="color:#8b9099;padding:20px;">Loading...</div>`;
 
-    const rosters = await api.getRosters("2026");
+    const [rosters, tradedPicks, leagueUsers, txData] = await Promise.all([
+        api.getRosters("2026"),
+        api.getTradedPicks(),
+        api.getLeagueUsers(),
+        api.getTransactions(),
+    ]);
+    allTransactions = txData || [];
     await loadPlayerStats();
+
+    (leagueUsers || []).forEach(u => { usersMap[u.username] = u.avatar_url; });
+
+    // Compute picks ownership per team
+    const ownership = {};
+    FUTURE_YEARS.forEach(year => {
+        ownership[year] = {};
+        ROUNDS.forEach(round => {
+            ownership[year][round] = {};
+            (rosters || []).forEach(r => {
+                const name = r.owner || `Roster ${r.roster_id}`;
+                ownership[year][round][name] = name;
+            });
+        });
+    });
+    (tradedPicks || []).forEach(p => {
+        const year = p.season, round = p.round, original = p.original_owner_name, current = p.owner_name;
+        if (ownership[year]?.[round]?.[original] !== undefined) {
+            ownership[year][round][original] = current;
+        }
+    });
+    const pickCountByTeam = {};
+    FUTURE_YEARS.forEach(year => {
+        ROUNDS.forEach(round => {
+            Object.entries(ownership[year][round]).forEach(([, current]) => {
+                pickCountByTeam[current] = (pickCountByTeam[current] || 0) + 1;
+            });
+        });
+    });
 
     container.innerHTML = "";
 
     (rosters || []).forEach(team => {
+        const ownerName = team.owner || `Roster ${team.roster_id}`;
         const card = document.createElement("div");
         card.className = "card";
+        card.style.cssText = "background:#1e2027;border:1px solid #2d3139;border-radius:12px;padding:16px;";
 
-        const title = document.createElement("h3");
-        title.textContent = team.owner || `Roster ${team.roster_id}`;
-        card.appendChild(title);
+        // Team header with avatar
+        const avatarUrl = usersMap[ownerName];
+        const avatarHtml = avatarUrl
+            ? `<img src="${avatarUrl}" style="width:32px;height:32px;border-radius:50%;object-fit:cover;flex-shrink:0;" onerror="this.style.display='none'">`
+            : `<span style="width:32px;height:32px;border-radius:50%;background:#252830;display:inline-flex;align-items:center;justify-content:center;font-size:13px;font-weight:700;color:#5a6070;flex-shrink:0;">${ownerName[0].toUpperCase()}</span>`;
 
-        // Group players by position
+        const playerCount = (team.players || []).filter(p => p && p.name).length;
+        const pickCount = pickCountByTeam[ownerName] || 0;
+
+        const header = document.createElement("div");
+        header.style.cssText = "display:flex;align-items:center;gap:10px;margin-bottom:14px;padding-bottom:12px;border-bottom:1px solid #2d3139;";
+        header.innerHTML = `
+            ${avatarHtml}
+            <div style="flex:1;min-width:0;">
+                <div style="font-size:14px;font-weight:700;color:#f0f1f3;white-space:nowrap;overflow:hidden;text-overflow:ellipsis;">${ownerName}</div>
+                <div style="font-size:11px;color:#5a6070;margin-top:2px;">${playerCount} players · ${pickCount} picks</div>
+            </div>`;
+        card.appendChild(header);
+
+        // Group + sort players
         const grouped = {};
         (team.players || []).forEach(p => {
             if (!p || !p.name) return;
@@ -41,11 +130,15 @@ async function init() {
             grouped[pos].push(p);
         });
 
+        // Sort within each position by value
+        Object.keys(grouped).forEach(pos => {
+            grouped[pos].sort((a, b) => playerValueScore(b) - playerValueScore(a));
+        });
+
         const sortedPos = POS_ORDER.filter(p => grouped[p])
             .concat(Object.keys(grouped).filter(p => !POS_ORDER.includes(p)));
 
         sortedPos.forEach(pos => {
-            // Position divider
             const divider = document.createElement("div");
             divider.className = "position-divider";
             divider.textContent = pos;
@@ -54,15 +147,40 @@ async function init() {
             grouped[pos].forEach(p => {
                 const row = document.createElement("div");
                 row.className = "player";
-                const posClrMap = { QB: "#fee2e2", RB: "#dcfce7", WR: "#dbeafe", TE: "#fef9c3", K: "#f3e8ff", DEF: "#f1f5f9" };
-                const rowColor = posClrMap[p.position] || "#f9fafb";
-                row.style.background = rowColor;
-                row.innerHTML = `<span>${p.name}</span>`;
+                row.style.cssText = "display:flex;align-items:center;gap:8px;padding:6px 8px;margin-top:3px;background:#252830;border-radius:8px;cursor:pointer;border:1px solid transparent;transition:background 0.12s,border-color 0.12s;";
 
-                row.addEventListener("click", (e) => {
-                    openPopover(e.currentTarget, p);
-                });
+                const badge = document.createElement("span");
+                badge.className = "player-pos-badge";
+                badge.textContent = p.position || "?";
+                badge.style.background = posColor(p.position);
+                badge.style.color = "#fff";
+                badge.style.cssText = `background:${posColor(p.position)};color:#fff;font-size:10px;font-weight:800;padding:2px 6px;border-radius:4px;flex-shrink:0;letter-spacing:.02em;`;
 
+                const nameSpan = document.createElement("span");
+                nameSpan.textContent = p.name;
+                nameSpan.style.cssText = "font-size:13px;font-weight:600;color:#f0f1f3;flex:1;text-align:left;overflow:hidden;text-overflow:ellipsis;white-space:nowrap;";
+
+                const metaSpan = document.createElement("span");
+                metaSpan.style.cssText = "font-size:11px;color:#5a6070;flex-shrink:0;white-space:nowrap;display:flex;align-items:center;gap:4px;";
+                const ageDecimal = calcAgeDecimal(p.birth_date);
+                const ageStr = ageDecimal ? ageDecimal : (p.age ? p.age : "");
+                if (p.team) {
+                    const logoUrl = teamLogoUrl(p.team);
+                    const logoEl = document.createElement("img");
+                    logoEl.src = logoUrl;
+                    logoEl.style.cssText = "width:14px;height:14px;object-fit:contain;flex-shrink:0;";
+                    logoEl.onerror = () => { logoEl.replaceWith(document.createTextNode(p.team)); };
+                    metaSpan.appendChild(logoEl);
+                }
+                if (ageStr) metaSpan.appendChild(document.createTextNode(ageStr));
+
+                row.appendChild(badge);
+                row.appendChild(nameSpan);
+                row.appendChild(metaSpan);
+
+                row.addEventListener("click", (e) => { e.stopPropagation(); openPopover(e.currentTarget, p); });
+                row.addEventListener("mouseenter", () => { row.style.background = "#2d3139"; row.style.borderColor = "#3d4350"; });
+                row.addEventListener("mouseleave", () => { row.style.background = "#252830"; row.style.borderColor = "transparent"; });
                 card.appendChild(row);
             });
         });
@@ -73,43 +191,31 @@ async function init() {
 
 async function loadPlayerStats() {
     for (const year of YEARS) {
-        try {
-            statsCache[year] = await api.getPlayerStats(year);
-        } catch {
-            statsCache[year] = {};
-        }
+        try { statsCache[year] = await api.getPlayerStats(year); }
+        catch { statsCache[year] = {}; }
     }
 }
 
 function ensurePopover() {
     if (document.getElementById("player-popover")) return;
-
     const pop = document.createElement("div");
     pop.id = "player-popover";
-    pop.innerHTML = `<div id="popover-body"></div>`;
+    pop.innerHTML = `<div id="popover-body" style="font-size:13px;line-height:1.5;"></div>`;
+    pop.style.cssText = `
+        display:none;position:fixed;z-index:9999;
+        background:#13151a;border:1px solid #2d3139;
+        border-radius:12px;width:370px;
+        max-height:calc(100vh - 24px);overflow-y:auto;
+        box-shadow:0 10px 40px rgba(0,0,0,0.6);
+    `;
     document.body.appendChild(pop);
 
     document.addEventListener("click", (e) => {
-        const popover = document.getElementById("player-popover");
-        if (!popover) return;
-        const clickedPlayer = e.target.closest(".player");
-        const clickedPopover = popover.contains(e.target);
-        if (!clickedPlayer && !clickedPopover) {
-            popover.style.display = "none";
+        const pop = document.getElementById("player-popover");
+        if (pop && !e.target.closest(".player") && !pop.contains(e.target)) {
+            pop.style.display = "none";
         }
     });
-}
-
-function posColor(pos) {
-    const colors = { QB: "#e74c3c", RB: "#2ecc71", WR: "#3498db", TE: "#f39c12", K: "#9b59b6" };
-    return colors[pos] || "#95a5a6";
-}
-
-function statusBadge(status, injury) {
-    if (!injury && (!status || status === "Active")) return "";
-    const s = injury || status;
-    const color = s === "Questionable" ? "#f39c12" : s === "Out" ? "#e74c3c" : s === "IR" ? "#c0392b" : "#95a5a6";
-    return `<span style="background:${color};color:#fff;font-size:10px;font-weight:700;padding:2px 7px;border-radius:999px;margin-left:8px;">${s}</span>`;
 }
 
 function formatDate(str) {
@@ -120,9 +226,7 @@ function formatDate(str) {
 async function lookupEspnId(name) {
     if (espnIdCache[name] !== undefined) return espnIdCache[name];
     try {
-        const r = await fetch(
-            `https://site.api.espn.com/apis/common/v3/search?query=${encodeURIComponent(name)}&limit=5&type=athlete&sport=football`
-        );
+        const r = await fetch(`https://site.api.espn.com/apis/common/v3/search?query=${encodeURIComponent(name)}&limit=5&type=athlete&sport=football`);
         const d = await r.json();
         const items = d.items || [];
         const match = items.find(i => i.displayName?.toLowerCase() === name.toLowerCase()) || items[0];
@@ -135,6 +239,56 @@ async function lookupEspnId(name) {
     }
 }
 
+function renderNews(articles, injuries) {
+    // Articles are already athlete-specific from ESPN API — no need to filter by name
+    let html = "";
+
+    injuries.forEach(inj => {
+        html += `<div class="pc-news-item">
+            <div class="pc-news-headline" style="color:#fbbf24;">⚠ ${inj.shortComment || "Injury Update"}</div>
+            ${inj.longComment ? `<div class="pc-news-impact"><span class="pc-impact-label">Impact:</span> ${inj.longComment}</div>` : ""}
+            <div class="pc-news-date">${formatDate(inj.date)}</div>
+        </div>`;
+    });
+
+    if (injuries.length && articles.length) {
+        html += `<hr style="border:none;border-top:1px solid #2d3139;margin:10px 0;">`;
+    }
+
+    articles.slice(0, 5).forEach(a => {
+        html += `<div class="pc-news-item">
+            <div class="pc-news-headline">${a.headline || ""}</div>
+            ${a.description ? `<div class="pc-news-impact"><span class="pc-impact-label">Impact:</span> ${a.description}</div>` : ""}
+            <div class="pc-news-date">${formatDate(a.published)}</div>
+        </div>`;
+    });
+
+    if (!html) return `<div style="color:#5a6070;font-size:12px;">No recent news</div>`;
+    return html;
+}
+
+function positionPopover(popover, element) {
+    const rect = element.getBoundingClientRect();
+    const popW = 370;
+    const maxH = window.innerHeight - 24;
+    popover.style.maxHeight = `${maxH}px`;
+
+    // Horizontal: prefer right side of element, fall back to left
+    let left = rect.right + 12;
+    if (left + popW > window.innerWidth - 8) left = rect.left - popW - 12;
+    if (left < 8) left = 8;
+
+    // Vertical: start at element top, clamp so bottom doesn't overflow
+    const popH = Math.min(maxH, 560); // estimate
+    let top = rect.top;
+    if (top + popH > window.innerHeight - 12) top = window.innerHeight - popH - 12;
+    if (top < 12) top = 12;
+
+    popover.style.left = `${left}px`;
+    popover.style.top = `${top}px`;
+    popover.style.transform = "";
+}
+
 async function openPopover(element, player) {
     const popover = document.getElementById("player-popover");
     const body = document.getElementById("popover-body");
@@ -145,82 +299,73 @@ async function openPopover(element, player) {
     const posClr = posColor(pos);
     const heightStr = player.height
         ? `${Math.floor(Number(player.height) / 12)}'${Number(player.height) % 12}"`
-        : "-";
+        : "—";
 
     const headshotUrl = player.espn_id
         ? `https://a.espncdn.com/i/headshots/nfl/players/full/${player.espn_id}.png`
         : `https://sleepercdn.com/content/nfl/players/thumb/${pid}.jpg`;
 
-    let historyRows = "";
-    for (const year of YEARS) {
-        const stat = statsCache?.[year]?.[pid];
-        if (stat && stat.pts_half_ppr > 0) {
-            historyRows += `
-                <div style="display:flex;justify-content:space-between;padding:4px 0;border-bottom:1px solid #f3f4f6;font-size:12px;">
-                    <span style="color:#6b7280;width:40px;">${year}</span>
-                    <span style="font-weight:600;">${stat.position}${stat.rank}</span>
-                    <span style="color:#374151;">${stat.pts_half_ppr?.toFixed(1) ?? 0} pts</span>
-                </div>
-            `;
+    // Transaction history for this player
+    const playerTxRows = [];
+    (allTransactions || []).forEach(t => {
+        if (t.type !== "waiver" && t.type !== "free_agent" && t.type !== "trade") return;
+        const playerName = player.name;
+        let action = "", team = "";
+        if (t.type === "trade") {
+            Object.entries(t.assets_received || {}).forEach(([rcvTeam, assets]) => {
+                if ((assets || []).some(a => a.name === playerName)) {
+                    action = "trade → "; team = rcvTeam;
+                }
+            });
+        } else {
+            if ((t.added || []).some(a => a.name === playerName)) {
+                action = t.type === "waiver" ? "waiver ↑" : "FA ↑";
+                team = (t.teams || [])[0] || "";
+            } else if ((t.dropped || []).some(a => a.name === playerName)) {
+                action = "dropped ↓";
+                team = (t.teams || [])[0] || "";
+            }
         }
-    }
+        if (action) playerTxRows.push({ date: t.created || "", action, team, season: t.season || "" });
+    });
+    playerTxRows.sort((a, b) => a.date.localeCompare(b.date));
+
+    const txHistoryHtml = playerTxRows.length
+        ? playerTxRows.map(r => `
+            <div style="display:flex;justify-content:space-between;align-items:center;padding:4px 0;border-bottom:1px solid #2d3139;font-size:11px;">
+                <span style="color:#f0f1f3;font-weight:600;">${r.action} <span style="color:#8b9099;font-weight:400;">${r.team}</span></span>
+                <span style="color:#5a6070;">${r.date}</span>
+            </div>`).join("")
+        : `<div style="color:#5a6070;font-size:12px;">No transaction history</div>`;
 
     body.innerHTML = `
         <style>
-            #player-popover {
-                width: 360px;
-                max-height: 85vh;
-                overflow-y: auto;
-                padding: 0 !important;
-                border-radius: 12px !important;
-            }
-            .pc-header {
-                background: linear-gradient(135deg, #1a1a2e 0%, #16213e 100%);
-                padding: 16px;
-                border-radius: 12px 12px 0 0;
-                display: flex;
-                gap: 12px;
-                align-items: center;
-                position: relative;
-            }
-            .pc-close {
-                position: absolute; top: 10px; right: 10px;
-                background: rgba(255,255,255,0.15); border: none; color: #fff;
-                width: 24px; height: 24px; border-radius: 50%; cursor: pointer;
-                font-size: 14px; display: flex; align-items: center; justify-content: center;
-            }
-            .pc-headshot {
-                width: 72px; height: 72px;
-                border-radius: 50%;
-                object-fit: cover;
-                border: 2px solid ${posClr};
-                flex-shrink: 0;
-                background: #2d3748;
-            }
-            .pc-name { color: #fff; font-size: 17px; font-weight: 800; margin-bottom: 4px; }
-            .pc-sub { color: #9ca3af; font-size: 12px; display:flex; align-items:center; gap:6px; flex-wrap:wrap; }
-            .pc-pos-badge { background:${posClr}; color:#fff; font-size:11px; font-weight:700; padding:2px 8px; border-radius:4px; }
-            .pc-bio {
-                display: grid; grid-template-columns: repeat(4,1fr);
-                border-bottom: 1px solid #e5e7eb;
-            }
-            .pc-bio-item { padding:10px 6px; text-align:center; border-right:1px solid #e5e7eb; overflow:hidden; }
+            .pc-header { background:linear-gradient(135deg,#1e2027 0%,#252830 100%); padding:16px; border-radius:12px 12px 0 0; display:flex; gap:12px; align-items:center; position:relative; border-bottom:1px solid #2d3139; }
+            .pc-close { position:absolute;top:10px;right:10px; background:rgba(255,255,255,0.08);border:1px solid rgba(255,255,255,0.1); color:#8b9099;width:26px;height:26px;border-radius:50%;cursor:pointer; font-size:13px;display:flex;align-items:center;justify-content:center; }
+            .pc-close:hover { background:rgba(255,255,255,0.15);color:#f0f1f3; }
+            .pc-headshot { width:68px;height:68px;border-radius:50%;object-fit:cover;border:2px solid ${posClr};flex-shrink:0;background:#252830; }
+            .pc-name { color:#f0f1f3;font-size:17px;font-weight:800;margin-bottom:5px;line-height:1.2; }
+            .pc-sub { color:#8b9099;font-size:12px;display:flex;align-items:center;gap:6px;flex-wrap:wrap; }
+            .pc-pos-badge { background:${posClr};color:#fff;font-size:11px;font-weight:700;padding:2px 8px;border-radius:4px; }
+            .pc-bio { display:grid;grid-template-columns:repeat(4,1fr);border-bottom:1px solid #2d3139;background:#1e2027; }
+            .pc-bio-item { padding:10px 6px;text-align:center;border-right:1px solid #2d3139;overflow:hidden; }
             .pc-bio-item:last-child { border-right:none; }
-            .pc-bio-label { font-size:9px; text-transform:uppercase; letter-spacing:0.05em; color:#9ca3af; margin-bottom:2px; white-space:nowrap; }
-            .pc-bio-val { font-size:12px; font-weight:700; color:#111827; white-space:nowrap; }
-            .pc-section { padding:12px 16px; border-bottom:1px solid #e5e7eb; }
-            .pc-section-title { font-size:11px; text-transform:uppercase; letter-spacing:0.06em; color:#9ca3af; margin-bottom:8px; font-weight:700; }
-            .pc-stats-table { width:100%; border-collapse:collapse; font-size:11px; }
-            .pc-stats-table th { color:#9ca3af; text-align:center; padding:4px 6px; border-bottom:1px solid #f3f4f6; font-weight:600; }
-            .pc-stats-table td { text-align:center; padding:5px 6px; border-bottom:1px solid #f3f4f6; }
-            .pc-stats-table td:first-child { text-align:left; font-weight:600; color:#374151; }
-            .pc-stats-table tr:last-child td { font-weight:700; background:#f9fafb; }
-            .pc-news-item { margin-bottom:12px; }
-            .pc-news-headline { font-size:13px; font-weight:700; color:#111827; margin-bottom:3px; line-height:1.4; }
-            .pc-news-desc { font-size:12px; color:#6b7280; line-height:1.5; }
-            .pc-news-date { font-size:10px; color:#9ca3af; margin-top:3px; }
-            .pc-injury-short { font-size:12px; font-weight:600; color:#111827; margin-bottom:3px; line-height:1.4; }
-            .pc-injury-long { font-size:11px; color:#6b7280; line-height:1.5; }
+            .pc-bio-label { font-size:9px;text-transform:uppercase;letter-spacing:.05em;color:#5a6070;margin-bottom:3px;white-space:nowrap; }
+            .pc-bio-val { font-size:13px;font-weight:700;color:#f0f1f3;white-space:nowrap; }
+            .pc-section { padding:12px 16px;border-bottom:1px solid #2d3139;background:#13151a; }
+            .pc-section:last-child { border-bottom:none;border-radius:0 0 12px 12px; }
+            .pc-section-title { font-size:10px;text-transform:uppercase;letter-spacing:.07em;color:#5a6070;margin-bottom:10px;font-weight:700; }
+            .pc-stats-table { width:100%;border-collapse:collapse;font-size:11px; }
+            .pc-stats-table th { color:#5a6070;text-align:center;padding:4px 6px;border-bottom:1px solid #2d3139;font-weight:600; }
+            .pc-stats-table td { text-align:center;padding:5px 6px;border-bottom:1px solid #2d3139;color:#c9cdd4; }
+            .pc-stats-table td:first-child { text-align:left;font-weight:600;color:#f0f1f3; }
+            .pc-stats-table tr:last-child td { font-weight:700;background:#1e2027;color:#f0f1f3; }
+            .pc-news-item { margin-bottom:14px; }
+            .pc-news-item:last-child { margin-bottom:0; }
+            .pc-news-headline { font-size:13px;font-weight:700;color:#f0f1f3;margin-bottom:4px;line-height:1.4; }
+            .pc-news-impact { font-size:12px;color:#8b9099;line-height:1.5;margin-bottom:3px; }
+            .pc-impact-label { font-weight:700;color:#5a6070;text-transform:uppercase;font-size:10px;letter-spacing:.04em;margin-right:4px; }
+            .pc-news-date { font-size:10px;color:#5a6070; }
         </style>
 
         <div class="pc-header">
@@ -228,53 +373,51 @@ async function openPopover(element, player) {
             <img class="pc-headshot" src="${headshotUrl}"
                 onerror="this.src='https://sleepercdn.com/content/nfl/players/thumb/${pid}.jpg'" />
             <div style="flex:1;min-width:0;">
-                <div class="pc-name">${player.name}${statusBadge(player.status, player.injury_status)}</div>
+                <div class="pc-name">${player.name}</div>
                 <div class="pc-sub">
                     <span class="pc-pos-badge">${pos}</span>
                     <span>${player.team || ""}</span>
-                    ${player.college ? `<span>• ${player.college}</span>` : ""}
+                    ${player.birth_date || player.age ? `<span>· Age ${calcAgeDecimal(player.birth_date) || player.age}</span>` : ""}
+                    ${player.college ? `<span>· ${player.college}</span>` : ""}
                 </div>
             </div>
         </div>
 
         <div class="pc-bio">
-            <div class="pc-bio-item"><div class="pc-bio-label">Age</div><div class="pc-bio-val">${player.age ?? "-"}</div></div>
+            <div class="pc-bio-item"><div class="pc-bio-label">Age</div><div class="pc-bio-val">${calcAgeDecimal(player.birth_date) ?? player.age ?? "—"}</div></div>
             <div class="pc-bio-item"><div class="pc-bio-label">Height</div><div class="pc-bio-val">${heightStr}</div></div>
-            <div class="pc-bio-item"><div class="pc-bio-label">Weight</div><div class="pc-bio-val">${player.weight ? player.weight + " lbs" : "-"}</div></div>
-            <div class="pc-bio-item"><div class="pc-bio-label">Exp</div><div class="pc-bio-val">${player.years_exp ?? "-"} yr</div></div>
+            <div class="pc-bio-item"><div class="pc-bio-label">Weight</div><div class="pc-bio-val">${player.weight ? player.weight + " lbs" : "—"}</div></div>
+            <div class="pc-bio-item"><div class="pc-bio-label">Exp</div><div class="pc-bio-val">${player.years_exp ?? "—"} yr</div></div>
         </div>
 
-        ${historyRows ? `
-        <div class="pc-section">
-            <div class="pc-section-title">0.5 PPR Position Rank</div>
-            ${historyRows}
-        </div>` : ""}
+        <div class="pc-section" id="espn-stats-rank-placeholder"></div>
 
         <div class="pc-section" id="espn-stats">
             <div class="pc-section-title">Career Stats</div>
-            <div style="color:#9ca3af;font-size:12px;">Loading...</div>
+            <div style="color:#5a6070;font-size:12px;">Loading...</div>
         </div>
 
-        <div class="pc-section" id="espn-news" style="border-bottom:none;">
+        <div class="pc-section" id="espn-news">
             <div class="pc-section-title">Latest News</div>
-            <div style="color:#9ca3af;font-size:12px;">Loading...</div>
+            <div style="color:#5a6070;font-size:12px;">Loading...</div>
+        </div>
+
+        <div class="pc-section">
+            <div class="pc-section-title">Transaction History</div>
+            ${txHistoryHtml}
         </div>
     `;
 
-    const rect = element.getBoundingClientRect();
     popover.style.display = "block";
-    popover.style.position = "fixed";
-    popover.style.top = `${Math.min(rect.top, window.innerHeight - 520)}px`;
-    popover.style.left = `${rect.right + 12}px`;
-    if (rect.right + 12 + 360 > window.innerWidth) {
-        popover.style.left = `${rect.left - 372}px`;
-    }
+    positionPopover(popover, element);
 
     const espnId = player.espn_id || await lookupEspnId(player.name);
 
     if (!espnId) {
-        document.getElementById("espn-stats").innerHTML = `<div class="pc-section-title">Career Stats</div><div style="color:#9ca3af;font-size:12px;">Not available</div>`;
-        document.getElementById("espn-news").innerHTML = `<div class="pc-section-title">Latest News</div><div style="color:#9ca3af;font-size:12px;">Not available</div>`;
+        const rp = document.getElementById("espn-stats-rank-placeholder");
+        if (rp) rp.remove();
+        document.getElementById("espn-stats").innerHTML = `<div class="pc-section-title">Career Stats</div><div style="color:#5a6070;font-size:12px;">Not available</div>`;
+        document.getElementById("espn-news").innerHTML = `<div class="pc-section-title">Latest News</div><div style="color:#5a6070;font-size:12px;">Not available</div>`;
         return;
     }
 
@@ -292,82 +435,58 @@ async function openPopover(element, player) {
 
         const statsEl = document.getElementById("espn-stats");
         const categories = statsData.categories || [];
-        const catPriority = { QB: "Passing", RB: "Rushing", WR: "Receiving", TE: "Receiving", K: "Scoring" };
+        const catPriority = { QB:"Passing", RB:"Rushing", WR:"Receiving", TE:"Receiving", K:"Scoring" };
         const cat = categories.find(c => c.displayName === catPriority[pos]) || categories[0];
 
+        // Build a map of season year → position rank from local statsCache
+        const rankByYear = {};
+        for (const yr of YEARS) {
+            const stat = statsCache?.[yr]?.[pid];
+            if (stat?.pts_half_ppr > 0) rankByYear[yr] = `${stat.position}${stat.rank}`;
+        }
+
+        // Remove the rank placeholder div now that we have data
+        const rankPlaceholder = document.getElementById("espn-stats-rank-placeholder");
+        if (rankPlaceholder) rankPlaceholder.remove();
+
         if (cat && cat.statistics?.length) {
-            const keyStats = {
-                QB: [0, 2, 4, 6, 7, 10],
-                RB: [0, 1, 2, 4, 5, 6],
-                WR: [0, 1, 2, 3, 4, 5],
-                TE: [0, 1, 2, 3, 4, 5],
-                K:  [0, 1, 2, 3],
-            };
-            const indices = keyStats[pos] || [0, 1, 2, 3, 4];
+            const keyStats = { QB:[0,2,4,6,7,10], RB:[0,1,2,4,5,6], WR:[0,1,2,3,4,5], TE:[0,1,2,3,4,5], K:[0,1,2,3] };
+            const indices = keyStats[pos] || [0,1,2,3,4];
             const labels = indices.map(i => cat.labels?.[i]).filter(Boolean);
             const seasons = [...cat.statistics].reverse().slice(0, 8);
-
             const rows = seasons.map(s => {
-                const vals = indices.map(i => s.stats?.[i] ?? "-").join("</td><td>");
-                return `<tr><td>${s.season?.displayName ?? ""}</td><td>${vals}</td></tr>`;
+                const yr = s.season?.year ? String(s.season.year) : "";
+                const rank = rankByYear[yr] ? `<td style="font-weight:700;color:#f0f1f3;">${rankByYear[yr]}</td>` : `<td style="color:#5a6070;">—</td>`;
+                const vals = indices.map(i => s.stats?.[i] ?? "—").join("</td><td>");
+                return `<tr><td>${s.season?.displayName ?? ""}</td>${rank}<td>${vals}</td></tr>`;
             }).join("");
-
-            const totals = indices.map(i => cat.totals?.[i] ?? "-").join("</td><td>");
+            const totals = indices.map(i => cat.totals?.[i] ?? "—").join("</td><td>");
 
             statsEl.innerHTML = `
                 <div class="pc-section-title">${cat.displayName} — Career</div>
                 <div style="overflow-x:auto;">
                     <table class="pc-stats-table">
-                        <thead><tr>
-                            <th style="text-align:left;">Year</th>
-                            ${labels.map(l => `<th>${l}</th>`).join("")}
-                        </tr></thead>
-                        <tbody>
-                            ${rows}
-                            <tr><td>Career</td><td>${totals}</td></tr>
-                        </tbody>
+                        <thead><tr><th style="text-align:left;">Year</th><th>Rank</th>${labels.map(l => `<th>${l}</th>`).join("")}</tr></thead>
+                        <tbody>${rows}<tr><td>Career</td><td>—</td><td>${totals}</td></tr></tbody>
                     </table>
-                </div>
-            `;
+                </div>`;
         } else {
-            statsEl.innerHTML = `<div class="pc-section-title">Career Stats</div><div style="color:#9ca3af;font-size:12px;">No stats available</div>`;
+            statsEl.innerHTML = `<div class="pc-section-title">Career Stats</div><div style="color:#5a6070;font-size:12px;">No stats available</div>`;
         }
 
-        const newsEl = document.getElementById("espn-news");
         const articles = newsData.articles || [];
         const injuries = athleteData.athlete?.injuries || [];
-
-        let newsHtml = "";
-        injuries.forEach(inj => {
-            newsHtml += `
-                <div class="pc-news-item">
-                    <div class="pc-injury-short">${inj.shortComment || ""}</div>
-                    <div class="pc-injury-long">${inj.longComment || ""}</div>
-                    <div class="pc-news-date">${formatDate(inj.date)}</div>
-                </div>
-                <hr style="border:none;border-top:1px solid #f3f4f6;margin:8px 0;">
-            `;
-        });
-
-        articles.slice(0, 4).forEach(a => {
-            newsHtml += `
-                <div class="pc-news-item">
-                    <div class="pc-news-headline">${a.headline || ""}</div>
-                    <div class="pc-news-desc">${a.description || ""}</div>
-                    <div class="pc-news-date">${formatDate(a.published)}</div>
-                </div>
-            `;
-        });
-
-        newsEl.innerHTML = `
+        document.getElementById("espn-news").innerHTML = `
             <div class="pc-section-title">Latest News</div>
-            ${newsHtml || '<div style="color:#9ca3af;font-size:12px;">No recent news</div>'}
-        `;
+            ${renderNews(articles, injuries)}`;
+
+        // Re-clamp position after content loaded (height changed)
+        positionPopover(popover, element);
 
     } catch (e) {
         console.error("ESPN fetch error:", e);
-        document.getElementById("espn-stats").innerHTML = `<div class="pc-section-title">Career Stats</div><div style="color:#9ca3af;font-size:12px;">Failed to load</div>`;
-        document.getElementById("espn-news").innerHTML = `<div class="pc-section-title">Latest News</div><div style="color:#9ca3af;font-size:12px;">Failed to load</div>`;
+        document.getElementById("espn-stats").innerHTML = `<div class="pc-section-title">Career Stats</div><div style="color:#5a6070;font-size:12px;">Failed to load</div>`;
+        document.getElementById("espn-news").innerHTML = `<div class="pc-section-title">Latest News</div><div style="color:#5a6070;font-size:12px;">Failed to load</div>`;
     }
 }
 
