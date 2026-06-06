@@ -358,12 +358,12 @@ function computeGrades(allManagers) {
         const hasWaiver = m.waiverTotal > 0;
 
         const composite =
-            playoffScore * 0.20 +
-            winScore     * 0.15 +
-            champScore   * 0.15 +
-            seedScore    * 0.10 +
-            (hasDraft  ? draftScore  : 50) * 0.20 +
-            (hasTrade  ? tradeScore  : 50) * 0.10 +
+            playoffScore * 0.15 +
+            winScore     * 0.10 +
+            champScore   * 0.30 +
+            seedScore    * 0.15 +
+            (hasDraft  ? draftScore  : 50) * 0.15 +
+            (hasTrade  ? tradeScore  : 50) * 0.05 +
             (hasWaiver ? waiverScore : 50) * 0.05 +
             luckScore    * 0.05;
 
@@ -479,12 +479,12 @@ function renderReportCard() {
         <div style="margin-top:24px;background:#1e2027;border:1px solid #2d3139;border-radius:12px;padding:18px 20px;">
             <div style="font-size:13px;font-weight:700;color:#f0f1f3;margin-bottom:14px;">How the Overall Grade is computed</div>
             <div style="display:grid;grid-template-columns:repeat(auto-fill,minmax(200px,1fr));gap:10px;margin-bottom:16px;">
-                ${gradeWeightRow("Playoff Rate", 20, "Playoff appearances ÷ seasons played")}
-                ${gradeWeightRow("Win Rate", 15, "All-time regular season W/(W+L)")}
-                ${gradeWeightRow("Championship Rate", 15, "Championships ÷ seasons played")}
-                ${gradeWeightRow("Draft Grade", 20, "Avg pts of picks vs round expectation")}
-                ${gradeWeightRow("Trade Grade", 10, "Net pts received vs given per player")}
-                ${gradeWeightRow("Avg Seed", 10, "Lower regular season finish = better")}
+                ${gradeWeightRow("Championship Rate", 30, "Championships ÷ seasons played")}
+                ${gradeWeightRow("Avg Seed", 15, "Lower regular season finish = better")}
+                ${gradeWeightRow("Playoff Rate", 15, "Playoff appearances ÷ seasons played")}
+                ${gradeWeightRow("Draft Grade", 15, "Avg pts of picks vs round expectation")}
+                ${gradeWeightRow("Win Rate", 10, "All-time regular season W/(W+L)")}
+                ${gradeWeightRow("Trade Grade", 5, "Net pts received vs given per player")}
                 ${gradeWeightRow("Waiver Hit Rate", 5, "% of adds scoring above median claim")}
                 ${gradeWeightRow("Luck (inverse)", 5, "Rewards luck-adjusted performance")}
             </div>
