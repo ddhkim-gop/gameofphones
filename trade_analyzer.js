@@ -101,6 +101,12 @@ function totalValue(items) {
 
 // ── Trade summary narrative ───────────────────────────────────────────────────
 
+function playerSeasonLine(item, year) {
+    const d = item.byYear.find(e => e.year === year)?.data;
+    if (!d) return null;
+    return `${d.pts.toFixed(0)} pts (#${d.rank} ${d.position})`;
+}
+
 function tradeNarrative(tx, itemsA, itemsB, valA, valB) {
     const [teamA, teamB] = tx.teams;
     const margin = Math.abs(valA - valB);
@@ -111,37 +117,53 @@ function tradeNarrative(tx, itemsA, itemsB, valA, valB) {
     const parts = [];
 
     if (noData) {
-        parts.push(`This trade was made in ${tx.season} and no completed seasons have elapsed yet, so post-trade value can't be measured. Check back after the ${parseInt(tx.season) + 1} season.`);
-    } else if (margin < 5) {
-        parts.push(`This trade was roughly even. Both sides generated comparable post-trade value (${valA.toFixed(0)} vs ${valB.toFixed(0)}/100).`);
+        parts.push(`This trade was made in ${tx.season} and no completed seasons have elapsed yet. Check back after the ${parseInt(tx.season) + 1} season.`);
+        return parts.join(" ");
+    }
+
+    // Verdict
+    if (margin < 5) {
+        parts.push(`This trade was roughly even.`);
     } else {
         const winner = valA > valB ? teamA : teamB;
         const loser  = valA > valB ? teamB : teamA;
-        const winVal = Math.max(valA, valB).toFixed(0);
-        const loseVal = Math.min(valA, valB).toFixed(0);
-        const descriptor = pct > 0.8 ? "a dominant advantage" : pct > 0.5 ? "a clear win" : "a slight edge";
-        parts.push(`<strong>${winner}</strong> wins this trade by ${descriptor} — ${winVal} vs ${loseVal} post-trade value.`);
+        const descriptor = pct > 0.8 ? "dominated" : pct > 0.5 ? "clearly won" : "edged";
+        parts.push(`<strong>${winner}</strong> ${descriptor} this trade.`);
     }
 
-    if (!noData) {
-        const allItems = [
-            ...itemsA.filter(i => !i.isPick && i.avg !== null).map(i => ({...i, _team: teamA})),
-            ...itemsB.filter(i => !i.isPick && i.avg !== null).map(i => ({...i, _team: teamB})),
-        ].sort((a,b) => (b.avg ?? 0) - (a.avg ?? 0));
+    // Talk about what each notable player actually did
+    const allItems = [
+        ...itemsA.filter(i => !i.isPick && i.byYear.some(e => e.data)).map(i => ({...i, _team: teamA})),
+        ...itemsB.filter(i => !i.isPick && i.byYear.some(e => e.data)).map(i => ({...i, _team: teamB})),
+    ].sort((a,b) => (b.avg ?? 0) - (a.avg ?? 0));
 
-        const best = allItems[0];
-        if (best) {
-            const yearSummary = best.byYear.filter(y => y.data).map(y => `${y.year}: ${y.data.score}/100 (#${y.data.rank} ${y.data.position})`).join(", ");
-            parts.push(`The best asset in the deal was <strong>${best.name}</strong> (${best._team}), averaging ${best.avg.toFixed(0)}/100 post-trade${yearSummary ? ` — ${yearSummary}` : ""}.`);
+    // Top performers — describe what they did each year
+    const stars = allItems.filter(i => (i.avg ?? 0) >= 35).slice(0, 3);
+    for (const p of stars) {
+        const yearLines = p.byYear.filter(e => e.data).map(e => {
+            const d = e.data;
+            return `${e.year}: ${d.pts.toFixed(0)} pts (#${d.rank} ${d.position})`;
+        });
+        if (yearLines.length === 1) {
+            parts.push(`<strong>${p.name}</strong> (${p._team}) put up ${yearLines[0].replace(/^\d+: /, "")}.`);
+        } else {
+            parts.push(`<strong>${p.name}</strong> (${p._team}) had ${yearLines.join(", ")}.`);
         }
-        if (allItems.length > 1 && allItems[1].avg >= 40) {
-            const e2 = allItems[1];
-            parts.push(`<strong>${e2.name}</strong> was also a quality return at ${e2.avg.toFixed(0)}/100.`);
-        }
-        const busts = allItems.filter(i => (i.avg ?? 0) < 8);
-        if (busts.length > 0) {
-            parts.push(`<strong>${busts[0].name}</strong> contributed almost nothing after the trade — a clear bust.`);
-        }
+    }
+
+    // Busts — players who barely contributed
+    const busts = allItems.filter(i => (i.avg ?? 0) < 8 && i.byYear.some(e => e.data));
+    if (busts.length > 0) {
+        const b = busts[0];
+        const yearLines = b.byYear.filter(e => e.data).map(e => `${e.year}: ${e.data.pts.toFixed(0)} pts`).join(", ");
+        parts.push(`<strong>${b.name}</strong> (${b._team}) was a bust — ${yearLines}.`);
+    }
+
+    // Players with no data at all (retired/inactive)
+    const noShows = allItems.filter(i => !i.byYear.some(e => e.data)).slice(0, 2);
+    if (noShows.length > 0) {
+        const names = noShows.map(i => `<strong>${i.name}</strong>`).join(" and ");
+        parts.push(`${names} had no fantasy production in the post-trade window.`);
     }
 
     const aGivesPicks = (tx.assets_received[teamB] || []).some(a => a.position === "PICK");
