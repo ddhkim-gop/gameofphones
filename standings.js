@@ -775,7 +775,6 @@ function switchPage(page) {
     render();
 }
 
-window.switchPage = switchPage;
 
 async function init() {
     await new Promise(r =>
@@ -925,8 +924,8 @@ async function init() {
 
         controls.innerHTML = `
             <div style="display:flex;align-items:center;gap:6px;margin-bottom:12px;">
-                <button class="page-tab${currentPage === 'standings' ? ' active' : ''}" id="tab-standings" onclick="switchPage('standings')">Standings</button>
-                <button class="page-tab${currentPage === 'report_card' ? ' active' : ''}" id="tab-report_card" onclick="switchPage('report_card')">Manager Report Card</button>
+                <button class="page-tab${currentPage === 'standings' ? ' active' : ''}" id="tab-standings">Standings</button>
+                <button class="page-tab${currentPage === 'report_card' ? ' active' : ''}" id="tab-report_card">Manager Report Card</button>
             </div>
             <div id="year-select-bar" class="filter-bar" style="display:flex;align-items:center;gap:12px;flex-wrap:wrap;margin-bottom:16px;">
                 <select id="s-select">
@@ -938,6 +937,8 @@ async function init() {
                 </select>
             </div>
         `;
+        document.getElementById("tab-standings").addEventListener("click", () => switchPage("standings"));
+        document.getElementById("tab-report_card").addEventListener("click", () => switchPage("report_card"));
         document.getElementById("s-select").value = currentView;
         document.getElementById("s-select").addEventListener("change", (e) => {
             currentView = e.target.value;

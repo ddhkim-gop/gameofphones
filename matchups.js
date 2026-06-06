@@ -397,8 +397,10 @@ async function init() {
         .mu-grid { display: grid; grid-template-columns: 1fr 1fr; gap: 14px; }
         @media (max-width: 768px) {
             .mu-grid { grid-template-columns: 1fr; }
-            .mu-matchup-grid { grid-template-columns: 1fr !important; }
-            .mu-matchup-grid > div[style*="width:1px"] { width: 100% !important; height: 1px !important; }
+        }
+        @media (max-width: 480px) {
+            .mu-matchup-grid { font-size: 12px; }
+            .mu-matchup-grid > div { padding: 10px 8px !important; }
         }
     </style>
     <div class="filter-bar" style="display:flex;gap:10px;flex-wrap:wrap;margin-bottom:20px;">

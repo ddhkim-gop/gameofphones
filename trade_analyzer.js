@@ -427,9 +427,6 @@ async function init() {
             <input type="checkbox" id="ta-preseason"> Show pre-season trades
         </label>
     </div>
-    <div style="font-size:12px;color:#5a6070;margin-bottom:20px;">
-        Post-trade value (0–100) is based on half-PPR fantasy points in completed seasons after the trade. 100 = ~400 pts (elite QB), 75 = ~300 pts, 50 = ~200 pts. Win/loss reflects which side accumulated more total post-trade value.
-    </div>
     <div id="ta-board"><div style="color:#5a6070;padding:40px 0;text-align:center;">Loading…</div></div>
     `;
 
