@@ -101,10 +101,36 @@ function totalValue(items) {
 
 // ── Trade summary narrative ───────────────────────────────────────────────────
 
-function playerSeasonLine(item, year) {
-    const d = item.byYear.find(e => e.year === year)?.data;
-    if (!d) return null;
-    return `${d.pts.toFixed(0)} pts (#${d.rank} ${d.position})`;
+// Describe a player's rank in natural language, per position
+function rankDesc(rank, pos) {
+    if (!rank) return null;
+    const p = (pos || "").toUpperCase();
+    // Thresholds: [maxRank, label]
+    const tiers = {
+        QB:  [[1,"the overall QB1"],[3,"an elite QB"],[8,"a top-tier QB"],[14,"a solid starter at QB"],[24,"a streamer at QB"],[99,"a non-factor at QB"]],
+        RB:  [[1,"the overall RB1"],[3,"an elite RB"],[8,"a top-5 RB"],[15,"a strong RB starter"],[24,"a solid RB depth piece"],[36,"a fringe RB"],[99,"a non-factor at RB"]],
+        WR:  [[1,"the overall WR1"],[3,"an elite WR"],[8,"a top-5 WR"],[16,"a strong WR starter"],[30,"a solid WR depth piece"],[48,"a fringe WR"],[99,"a non-factor at WR"]],
+        TE:  [[1,"the overall TE1"],[3,"an elite TE"],[8,"a top-5 TE"],[14,"a reliable starter at TE"],[20,"a depth TE"],[99,"a non-factor at TE"]],
+        K:   [[5,"a top kicker"],[12,"a solid kicker"],[99,"a fringe kicker"]],
+        DEF: [[5,"a top defense"],[12,"a solid defense"],[99,"a fringe defense"]],
+    };
+    const list = tiers[p] || tiers.WR;
+    for (const [max, label] of list) {
+        if (rank <= max) return label;
+    }
+    return "a non-factor";
+}
+
+// Check if a player was traded away again after this trade
+function wasLaterFlipped(playerName, fromTeam, afterSeason, afterWeek) {
+    return allTransactions.some(t => {
+        if (t.type !== "trade") return false;
+        if (t.season < afterSeason || (t.season === afterSeason && t.week <= afterWeek)) return false;
+        // Player appears as an asset given away by fromTeam (i.e. in the other team's received list)
+        return t.teams.some(team => team !== fromTeam &&
+            (t.assets_received[team] || []).some(a => a.name === playerName)
+        );
+    });
 }
 
 function tradeNarrative(tx, itemsA, itemsB, valA, valB) {
@@ -126,44 +152,62 @@ function tradeNarrative(tx, itemsA, itemsB, valA, valB) {
         parts.push(`This trade was roughly even.`);
     } else {
         const winner = valA > valB ? teamA : teamB;
-        const loser  = valA > valB ? teamB : teamA;
         const descriptor = pct > 0.8 ? "dominated" : pct > 0.5 ? "clearly won" : "edged";
         parts.push(`<strong>${winner}</strong> ${descriptor} this trade.`);
     }
 
-    // Talk about what each notable player actually did
+    // Build player list sorted by value
     const allItems = [
-        ...itemsA.filter(i => !i.isPick && i.byYear.some(e => e.data)).map(i => ({...i, _team: teamA})),
-        ...itemsB.filter(i => !i.isPick && i.byYear.some(e => e.data)).map(i => ({...i, _team: teamB})),
+        ...itemsA.filter(i => !i.isPick).map(i => ({...i, _team: teamA})),
+        ...itemsB.filter(i => !i.isPick).map(i => ({...i, _team: teamB})),
     ].sort((a,b) => (b.avg ?? 0) - (a.avg ?? 0));
 
-    // Top performers — describe what they did each year
-    const stars = allItems.filter(i => (i.avg ?? 0) >= 35).slice(0, 3);
-    for (const p of stars) {
-        const yearLines = p.byYear.filter(e => e.data).map(e => {
-            const d = e.data;
-            return `${e.year}: ${d.pts.toFixed(0)} pts (#${d.rank} ${d.position})`;
-        });
-        if (yearLines.length === 1) {
-            parts.push(`<strong>${p.name}</strong> (${p._team}) put up ${yearLines[0].replace(/^\d+: /, "")}.`);
+    // Describe top contributors naturally by rank
+    const contributors = allItems.filter(i => i.byYear.some(e => e.data) && (i.avg ?? 0) >= 30).slice(0, 4);
+    for (const p of contributors) {
+        const validYears = p.byYear.filter(e => e.data);
+        const flipped = wasLaterFlipped(p.name, p._team, tx.season, tx.week);
+
+        if (validYears.length === 1) {
+            const d = validYears[0].data;
+            const desc = rankDesc(d.rank, d.position);
+            const flipNote = flipped ? `, before being flipped in a later trade` : ``;
+            parts.push(`<strong>${p.name}</strong> gave ${p._team} a strong return, finishing as ${desc} in ${validYears[0].year}${flipNote}.`);
         } else {
-            parts.push(`<strong>${p.name}</strong> (${p._team}) had ${yearLines.join(", ")}.`);
+            // Multiple years — look for consistency or arc
+            const descs = validYears.map(e => ({ year: e.year, desc: rankDesc(e.data.rank, e.data.position), rank: e.data.rank }));
+            const first = descs[0], last = descs[descs.length - 1];
+            // Meaningful improvement: rank improved by at least 8 spots
+            const improving = last.rank < first.rank - 8;
+            // Meaningful decline: rank dropped by at least 8 spots
+            const declining = last.rank > first.rank + 8;
+            const flipNote = flipped ? ` before eventually being moved on` : ``;
+            if (improving) {
+                parts.push(`<strong>${p.name}</strong> broke out for ${p._team} — ${first.desc} in ${first.year}, then ${last.desc} in ${last.year}${flipNote}.`);
+            } else if (declining) {
+                parts.push(`<strong>${p.name}</strong> started strong for ${p._team} as ${first.desc} in ${first.year} but fell off to ${last.desc} in ${last.year}${flipNote}.`);
+            } else {
+                parts.push(`<strong>${p.name}</strong> was a consistent piece for ${p._team}, finishing as ${first.desc} in ${first.year} and ${last.desc} in ${last.year}${flipNote}.`);
+            }
         }
     }
 
-    // Busts — players who barely contributed
-    const busts = allItems.filter(i => (i.avg ?? 0) < 8 && i.byYear.some(e => e.data));
-    if (busts.length > 0) {
-        const b = busts[0];
-        const yearLines = b.byYear.filter(e => e.data).map(e => `${e.year}: ${e.data.pts.toFixed(0)} pts`).join(", ");
-        parts.push(`<strong>${b.name}</strong> (${b._team}) was a bust — ${yearLines}.`);
+    // Busts
+    const busts = allItems.filter(i => i.byYear.some(e => e.data) && (i.avg ?? 0) < 8);
+    for (const b of busts.slice(0, 1)) {
+        const flipped = wasLaterFlipped(b.name, b._team, tx.season, tx.week);
+        if (flipped) {
+            parts.push(`<strong>${b.name}</strong> never contributed for ${b._team} and was eventually moved.`);
+        } else {
+            parts.push(`<strong>${b.name}</strong> was a bust, contributing almost nothing after the trade.`);
+        }
     }
 
-    // Players with no data at all (retired/inactive)
-    const noShows = allItems.filter(i => !i.byYear.some(e => e.data)).slice(0, 2);
-    if (noShows.length > 0) {
-        const names = noShows.map(i => `<strong>${i.name}</strong>`).join(" and ");
-        parts.push(`${names} had no fantasy production in the post-trade window.`);
+    // Inactive / no data players
+    const inactive = allItems.filter(i => !i.byYear.some(e => e.data));
+    if (inactive.length > 0) {
+        const names = inactive.slice(0, 2).map(i => `<strong>${i.name}</strong>`).join(" and ");
+        parts.push(`${names} had no production in the post-trade window.`);
     }
 
     const aGivesPicks = (tx.assets_received[teamB] || []).some(a => a.position === "PICK");
