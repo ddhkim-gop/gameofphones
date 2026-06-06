@@ -82,13 +82,40 @@ function getWeekLabel(weekStr) {
     return `Week ${w}`;
 }
 
+let _dropdownId = 0;
+
 function renderWeek(weekStr, weekMatchups) {
     const label = getWeekLabel(weekStr);
-    const cards = weekMatchups.map(m => renderMatchup(m)).join("");
+
+    // Split ddhk matchup from the rest
+    const ddhkIdx = weekMatchups.findIndex(m => m.teams?.some(t => t.owner === "ddhk"));
+    const featured = ddhkIdx >= 0 ? weekMatchups[ddhkIdx] : weekMatchups[0];
+    const rest = weekMatchups.filter((_, i) => i !== (ddhkIdx >= 0 ? ddhkIdx : 0));
+
+    const featuredCard = renderMatchup(featured);
+
+    let otherSection = "";
+    if (rest.length) {
+        const id = `other-${weekStr}-${++_dropdownId}`;
+        const otherCards = rest.map(m => renderMatchup(m)).join("");
+        otherSection = `
+            <div style="margin-top:10px;">
+                <button onclick="var el=document.getElementById('${id}');var arrow=document.getElementById('arr-${id}');var open=el.style.display!=='none';el.style.display=open?'none':'block';arrow.textContent=open?'▸':'▾';"
+                    style="background:none;border:none;cursor:pointer;display:flex;align-items:center;gap:6px;color:#5a6070;font-size:11px;font-weight:700;text-transform:uppercase;letter-spacing:.06em;padding:4px 0;">
+                    <span id="arr-${id}" style="font-size:10px;">▸</span>
+                    Other Matchups (${rest.length})
+                </button>
+                <div id="${id}" style="display:none;margin-top:8px;">
+                    <div style="display:grid;grid-template-columns:repeat(auto-fill,minmax(560px,1fr));gap:14px;">${otherCards}</div>
+                </div>
+            </div>`;
+    }
+
     return `
         <div style="margin-bottom:32px;">
             <div style="font-size:11px;font-weight:700;text-transform:uppercase;letter-spacing:.08em;color:#5a6070;margin-bottom:12px;padding-bottom:8px;border-bottom:1px solid #2d3139;">${label}</div>
-            <div style="display:grid;grid-template-columns:repeat(auto-fill,minmax(560px,1fr));gap:14px;">${cards}</div>
+            ${featuredCard}
+            ${otherSection}
         </div>`;
 }
 
