@@ -231,6 +231,81 @@ function buildWaiverGrades() {
     return result;
 }
 
+function computeEndOfSeasonRosters() {
+    // Reconstruct each team's roster at end of each completed season
+    // using draft picks + transactions processed in order
+    const result = {}; // { year: { team: Set<playerName> } }
+
+    STAT_YEARS.forEach(year => {
+        const rosters = {};
+        result[year] = rosters;
+
+        // Seed with draft picks
+        (allDraftData[year] || []).forEach(pick => {
+            if (!rosters[pick.picked_by]) rosters[pick.picked_by] = new Set();
+            rosters[pick.picked_by].add(pick.player);
+        });
+
+        // Apply transactions chronologically
+        const yearTx = (transactions || [])
+            .filter(t => t.season === year && t.status === "complete")
+            .sort((a, b) => {
+                const ai = BigInt(a.transaction_id || 0);
+                const bi = BigInt(b.transaction_id || 0);
+                return ai < bi ? -1 : ai > bi ? 1 : 0;
+            });
+
+        yearTx.forEach(t => {
+            if (t.type === "trade") {
+                (t.teams || []).forEach(team => {
+                    if (!rosters[team]) rosters[team] = new Set();
+                    (t.assets_received?.[team] || []).forEach(asset => {
+                        if (asset.position === "PICK") return;
+                        rosters[team].add(asset.name);
+                        (t.teams || []).filter(ot => ot !== team).forEach(ot => {
+                            rosters[ot]?.delete(asset.name);
+                        });
+                    });
+                });
+            } else if (t.type === "waiver" || t.type === "free_agent") {
+                const team = (t.teams || [])[0];
+                if (!team) return;
+                if (!rosters[team]) rosters[team] = new Set();
+                (t.added   || []).forEach(p => rosters[team].add(p.name));
+                (t.dropped || []).forEach(p => rosters[team].delete(p.name));
+            }
+        });
+    });
+
+    return result;
+}
+
+function computeRosterValues() {
+    // For each team, sum pts_half_ppr of their end-of-season roster per year, then average
+    const endRosters = computeEndOfSeasonRosters();
+    const result = {}; // { manager: { yearValues: {year: pts}, avgValue } }
+
+    STAT_YEARS.forEach(year => {
+        const stats = allPlayerStats[year] || {};
+        Object.entries(endRosters[year] || {}).forEach(([team, playerNames]) => {
+            if (!result[team]) result[team] = { yearValues: {}, avgValue: 0 };
+            let total = 0;
+            playerNames.forEach(name => {
+                const pid = playerNameMap[name];
+                if (pid && stats[pid]) total += stats[pid].pts_half_ppr;
+            });
+            result[team].yearValues[year] = total;
+        });
+    });
+
+    Object.values(result).forEach(m => {
+        const vals = Object.values(m.yearValues).filter(v => v > 0);
+        m.avgValue = vals.length > 0 ? vals.reduce((a,b) => a+b) / vals.length : 0;
+    });
+
+    return result;
+}
+
 function computeManagerStats() {
     const draftGrades = buildDraftGrades();
     const tradeGrades = buildTradeGrades();
@@ -423,19 +498,27 @@ function gradeWeightRow(label, pct, desc) {
 
 function renderReportCard() {
     const allManagers = computeManagerStats();
-    const computed = computeGrades(allManagers);
+    const computed    = computeGrades(allManagers);
+    const rosterVals  = computeRosterValues();
+
+    // Merge roster values onto each manager
+    computed.forEach(m => {
+        const rv = rosterVals[m.name] || { avgValue: 0, yearValues: {} };
+        m.rosterValue     = rv.avgValue;
+        m.rosterYearVals  = rv.yearValues;
+    });
 
     // Active = in current year's standings
     const active2026 = new Set(((standings || {})["2026"] || []).map(r => r.name));
-    const active   = computed.filter(m =>  active2026.has(m.name)).sort((a, b) => b.composite - a.composite);
-    const inactive = computed.filter(m => !active2026.has(m.name)).sort((a, b) => b.composite - a.composite);
+    const active   = computed.filter(m =>  active2026.has(m.name)).sort((a, b) => b.rosterValue - a.rosterValue);
+    const inactive = computed.filter(m => !active2026.has(m.name)).sort((a, b) => b.rosterValue - a.rosterValue);
     const allSorted = [...active, ...inactive];
 
-    // Rank-based grading: top → A+, bottom → F, spread evenly
+    // Rank-based grading by roster value: top → A+, bottom → F
     const GRADE_SCALE = ["A+","A","A-","B+","B","B-","C+","C","C-","D+","D","F"];
     allSorted.forEach((m, i) => {
         const pct = allSorted.length > 1 ? i / (allSorted.length - 1) : 0;
-        m.grade = GRADE_SCALE[Math.round(pct * (GRADE_SCALE.length - 1))];
+        m.grade    = GRADE_SCALE[Math.round(pct * (GRADE_SCALE.length - 1))];
         m.isActive = active2026.has(m.name);
     });
 
@@ -491,6 +574,7 @@ function renderReportCard() {
                 </div>
                 <div style="font-size:10px;font-weight:700;text-transform:uppercase;letter-spacing:.05em;color:#5a6070;margin-bottom:8px;padding-bottom:6px;border-bottom:1px solid #2d3139;">Season Stats</div>
                 <div style="display:grid;grid-template-columns:1fr 1fr;gap:8px;">
+                    ${metricCell("Roster Value", m.rosterValue > 0 ? Math.round(m.rosterValue).toLocaleString() + " pts" : "—", "#a78bfa")}
                     ${metricCell("Playoff Rate", playoffPct, playoffColor)}
                     ${metricCell("Win Rate", winPct)}
                     ${metricCell("Avg Seed", avgSeedStr)}
@@ -504,18 +588,14 @@ function renderReportCard() {
     html += `</div>
         <div style="margin-top:24px;background:#1e2027;border:1px solid #2d3139;border-radius:12px;padding:18px 20px;">
             <div style="font-size:13px;font-weight:700;color:#f0f1f3;margin-bottom:4px;">How the Overall Grade is computed</div>
-            <div style="font-size:11px;color:#5a6070;margin-bottom:14px;">Managers ranked by weighted composite score. Top manager = A+, bottom = F, others distributed evenly across the scale.</div>
-            <div style="display:grid;grid-template-columns:repeat(auto-fill,minmax(200px,1fr));gap:10px;margin-bottom:16px;">
-                ${gradeWeightRow("Championship Rate", 35, "Championships ÷ seasons played")}
-                ${gradeWeightRow("Avg Seed", 20, "Lower regular season finish = better")}
-                ${gradeWeightRow("Win Rate", 15, "All-time regular season W/(W+L)")}
-                ${gradeWeightRow("Draft Grade", 10, "Avg pts of picks vs round expectation")}
-                ${gradeWeightRow("Playoff Rate", 10, "Playoff appearances ÷ seasons played")}
-                ${gradeWeightRow("Trade Grade", 5, "Net pts received vs given per player")}
-                ${gradeWeightRow("Waiver Hit Rate", 5, "% of adds scoring above median claim")}
+            <div style="font-size:11px;color:#5a6070;margin-bottom:14px;">
+                Managers are ranked by <strong style="color:#a78bfa;">Average Roster Value</strong> — the total half-PPR fantasy points of their end-of-season roster, averaged across completed seasons (2023–2025).
+                Rosters are reconstructed from draft picks, then adjusted for every trade and waiver claim made during each season.
+                Top manager = A+, bottom = F, rest distributed evenly across the scale.
+                Inactive managers (not in 2026) appear at the bottom.
             </div>
             <div style="font-size:11px;color:#5a6070;line-height:1.6;border-top:1px solid #2d3139;padding-top:12px;">
-                Draft, Trade, and Waiver grades use completed seasons only (2023–2025). Inactive managers (not in 2026) appear at the bottom, dimmed.
+                Category grades (Draft / Trades / Waivers) are still shown per card as relative sub-grades — they do not affect the overall grade.
                 Luck Index = actual wins − Pythagorean expected wins (PF²÷(PF²+PA²)).
             </div>
         </div>
@@ -675,11 +755,20 @@ function render() {
     }
 }
 
+function updateUrl() {
+    const params = new URLSearchParams();
+    if (currentView !== "all_time") params.set("year", currentView);
+    const search = params.toString() ? "?" + params.toString() : "";
+    const hash   = currentPage !== "standings" ? "#" + currentPage : "";
+    history.replaceState(null, "", location.pathname + search + hash);
+}
+
 function switchPage(page) {
     currentPage = page;
     document.querySelectorAll(".page-tab").forEach(btn => btn.classList.remove("active"));
     const activeBtn = document.getElementById(`tab-${page}`);
     if (activeBtn) activeBtn.classList.add("active");
+    updateUrl();
     render();
 }
 
@@ -838,8 +927,23 @@ async function init() {
                 </select>
             </div>
         `;
+        // Restore state from URL
+        const params = new URLSearchParams(location.search);
+        const yearParam = params.get("year");
+        if (yearParam && (YEARS.includes(yearParam) || yearParam === "all_time")) {
+            currentView = yearParam;
+        }
+        const hash = location.hash.replace("#", "");
+        if (hash === "report_card") {
+            currentPage = "report_card";
+            document.getElementById("tab-report_card")?.classList.add("active");
+            document.getElementById("tab-standings")?.classList.remove("active");
+        }
+        document.getElementById("s-select").value = currentView;
+
         document.getElementById("s-select").addEventListener("change", (e) => {
             currentView = e.target.value;
+            updateUrl();
             render();
         });
         render();
