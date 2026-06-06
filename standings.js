@@ -6,9 +6,15 @@ let transactions = null;
 let history = null;
 let leagueUsers = [];
 let divisionsData = {};
+let allPlayerStats = {};
+let allDraftData = {};
+let playerNameMap = {};
 let currentView = "all_time";
+let currentPage = "standings"; // "standings" | "report_card"
 
 const FAAB_BUDGET = 100;
+const YEARS = ["2026", "2025", "2024", "2023"];
+const STAT_YEARS = ["2023", "2024", "2025"]; // completed seasons with full stats
 
 function computeFaabRemaining(year) {
     const spent = {};
@@ -36,10 +42,7 @@ function avatarEl(name, size) {
     return `<span style="width:${sz}px;height:${sz}px;border-radius:50%;background:#252830;display:inline-flex;align-items:center;justify-content:center;font-size:${Math.round(sz*0.45)}px;font-weight:700;color:#5a6070;flex-shrink:0;">${(name||"?")[0].toUpperCase()}</span>`;
 }
 
-const YEARS = ["2026", "2025", "2024", "2023"];
-
 function buildTxStats(txData) {
-    // Only count complete trade/waiver/free_agent — exclude commissioner and failed
     const stats = {};
     (txData || []).forEach(t => {
         if (t.status === "failed") return;
@@ -123,6 +126,352 @@ function buildAllTime(standingsData, txStats) {
         avgPF: r.pf / (seasonCounts[r.name] || 1),
     })).sort((a, b) => b.wins - a.wins || b.pf - a.pf);
 }
+
+// ── Report Card logic ──────────────────────────────────────────────────────
+
+function buildDraftGrades() {
+    // Returns { year: { manager: avgSurplusPoints } }
+    const result = {};
+    STAT_YEARS.forEach(year => {
+        const yearDraft = allDraftData[year] || [];
+        if (!yearDraft.length) return;
+        const stats = allPlayerStats[year] || {};
+
+        const picks = yearDraft.map(pick => {
+            const pid = playerNameMap[pick.player];
+            const pts = pid && stats[pid] ? stats[pid].pts_half_ppr : null;
+            return { ...pick, pts };
+        });
+
+        // Average pts per round
+        const roundAvg = {};
+        picks.forEach(p => {
+            if (p.pts == null) return;
+            if (!roundAvg[p.round]) roundAvg[p.round] = { sum: 0, count: 0 };
+            roundAvg[p.round].sum += p.pts;
+            roundAvg[p.round].count++;
+        });
+        Object.keys(roundAvg).forEach(r => {
+            roundAvg[r].avg = roundAvg[r].sum / roundAvg[r].count;
+        });
+
+        // Per-team surplus: actual pts - expected pts for that round
+        const teamSurplus = {};
+        picks.forEach(p => {
+            if (p.pts == null) return;
+            const expected = roundAvg[p.round]?.avg || 0;
+            if (!teamSurplus[p.picked_by]) teamSurplus[p.picked_by] = { sum: 0, count: 0 };
+            teamSurplus[p.picked_by].sum += p.pts - expected;
+            teamSurplus[p.picked_by].count++;
+        });
+        result[year] = {};
+        Object.entries(teamSurplus).forEach(([team, d]) => {
+            result[year][team] = d.count > 0 ? d.sum / d.count : 0;
+        });
+    });
+    return result;
+}
+
+function buildTradeGrades() {
+    // Returns { manager: { totalNetValue, count } }
+    const result = {};
+    (transactions || [])
+        .filter(t => t.type === "trade" && t.status === "complete" && STAT_YEARS.includes(t.season))
+        .forEach(t => {
+            const stats = allPlayerStats[t.season] || {};
+            t.teams.forEach(team => {
+                if (!result[team]) result[team] = { totalNetValue: 0, count: 0 };
+                const received = (t.assets_received?.[team] || []).filter(a => a.position !== "PICK");
+                const given = t.teams
+                    .filter(ot => ot !== team)
+                    .flatMap(ot => (t.assets_received?.[ot] || []).filter(a => a.position !== "PICK"));
+
+                const ptsFor = (arr) => arr.reduce((sum, p) => {
+                    const pid = playerNameMap[p.name];
+                    return sum + (pid && stats[pid] ? stats[pid].pts_half_ppr : 0);
+                }, 0);
+
+                const ptsReceived = ptsFor(received);
+                const ptsGiven = ptsFor(given);
+                const total = received.length + given.length;
+                const net = total > 0 ? (ptsReceived - ptsGiven) / total : 0;
+                result[team].totalNetValue += net;
+                result[team].count++;
+            });
+        });
+    return result;
+}
+
+function buildWaiverGrades() {
+    // Returns { manager: { hits, total } } — "hit" = waiver add scored above median
+    const claims = [];
+    (transactions || [])
+        .filter(t => t.type === "waiver" && t.status === "complete" && STAT_YEARS.includes(t.season))
+        .forEach(t => {
+            const stats = allPlayerStats[t.season] || {};
+            const team = (t.teams || [])[0];
+            if (!team) return;
+            (t.added || []).forEach(p => {
+                if (p.position === "K" || p.position === "DEF") return;
+                const pid = playerNameMap[p.name];
+                const pts = pid && stats[pid] ? stats[pid].pts_half_ppr : null;
+                claims.push({ team, pts });
+            });
+        });
+
+    const validPts = claims.filter(c => c.pts != null).map(c => c.pts).sort((a, b) => a - b);
+    const median = validPts.length ? validPts[Math.floor(validPts.length / 2)] : 0;
+
+    const result = {};
+    claims.forEach(({ team, pts }) => {
+        if (!result[team]) result[team] = { hits: 0, total: 0 };
+        result[team].total++;
+        if (pts != null && pts > median) result[team].hits++;
+    });
+    return result;
+}
+
+function computeManagerStats() {
+    const draftGrades = buildDraftGrades();
+    const tradeGrades = buildTradeGrades();
+    const waiverGrades = buildWaiverGrades();
+    const managers = {};
+
+    YEARS.forEach(year => {
+        const seasonStandings = (standings || {})[year] || [];
+        const season = (history || {})[year] || {};
+        const winners = season.winners_bracket || [];
+        const champMatch = winners.find(m => m.place === 1);
+        const champ = champMatch?.winner;
+        const finalist = champMatch?.loser;
+        const playoffTeams = new Set(winners.flatMap(m => [m.winner, m.loser].filter(Boolean)));
+
+        seasonStandings.forEach((row, idx) => {
+            const name = row.name;
+            if (!managers[name]) {
+                managers[name] = {
+                    name, seasons: 0,
+                    totalWins: 0, totalLosses: 0, totalPF: 0, totalPA: 0,
+                    championships: 0, finals: 0, playoffAppearances: 0,
+                    seeds: [], pyLuck: 0,
+                    draftSurpluses: [],
+                    tradeValue: 0, tradeCount: 0,
+                    waiverHits: 0, waiverTotal: 0,
+                };
+            }
+            const m = managers[name];
+            m.seasons++;
+            m.totalWins    += row.wins;
+            m.totalLosses  += row.losses;
+            m.totalPF      += row.pf;
+            m.totalPA      += row.pa;
+            if (name === champ)    m.championships++;
+            if (name === finalist) m.finals++;
+            if (playoffTeams.has(name)) m.playoffAppearances++;
+            m.seeds.push(idx + 1);
+
+            // Pythagorean luck (actual wins vs expected from PF/PA ratio)
+            const games = row.wins + row.losses;
+            const pyWins = games > 0 ? (row.pf ** 2) / (row.pf ** 2 + row.pa ** 2) * games : 0;
+            m.pyLuck += row.wins - pyWins;
+
+            // Draft surplus for this year
+            const ds = draftGrades[year]?.[name];
+            if (ds !== undefined) m.draftSurpluses.push(ds);
+        });
+    });
+
+    // Merge trade and waiver grades
+    Object.values(managers).forEach(m => {
+        const tg = tradeGrades[m.name];
+        if (tg) { m.tradeValue = tg.totalNetValue; m.tradeCount = tg.count; }
+        const wg = waiverGrades[m.name];
+        if (wg) { m.waiverHits = wg.hits; m.waiverTotal = wg.total; }
+    });
+
+    return Object.values(managers);
+}
+
+function normalize(val, min, max) {
+    if (max === min) return 50;
+    return Math.max(0, Math.min(100, (val - min) / (max - min) * 100));
+}
+
+function scoreToGrade(score) {
+    if (score >= 93) return "A+";
+    if (score >= 90) return "A";
+    if (score >= 87) return "A-";
+    if (score >= 83) return "B+";
+    if (score >= 80) return "B";
+    if (score >= 77) return "B-";
+    if (score >= 73) return "C+";
+    if (score >= 70) return "C";
+    if (score >= 67) return "C-";
+    if (score >= 60) return "D";
+    return "F";
+}
+
+function gradeColor(grade) {
+    if (!grade || grade === "—") return "#5a6070";
+    const g = grade[0];
+    if (g === "A") return "#3ecf8e";
+    if (g === "B") return "#60a5fa";
+    if (g === "C") return "#fbbf24";
+    if (g === "D") return "#f97316";
+    return "#f87171";
+}
+
+function computeGrades(allManagers) {
+    const pick = (fn) => allManagers.map(fn);
+
+    const playoffRates  = pick(m => m.seasons > 0 ? m.playoffAppearances / m.seasons : 0);
+    const winRates      = pick(m => (m.totalWins + m.totalLosses) > 0 ? m.totalWins / (m.totalWins + m.totalLosses) : 0);
+    const champRates    = pick(m => m.seasons > 0 ? m.championships / m.seasons : 0);
+    const avgSeeds      = pick(m => m.seeds.length > 0 ? m.seeds.reduce((a,b) => a+b) / m.seeds.length : 12);
+    const pyLucks       = pick(m => m.pyLuck);
+    const draftScores   = pick(m => m.draftSurpluses.length > 0 ? m.draftSurpluses.reduce((a,b) => a+b) / m.draftSurpluses.length : 0);
+    const tradeScores   = pick(m => m.tradeCount > 0 ? m.tradeValue / m.tradeCount : 0);
+    const waiverRates   = pick(m => m.waiverTotal > 0 ? m.waiverHits / m.waiverTotal : 0);
+
+    const mm = arr => [Math.min(...arr), Math.max(...arr)];
+    const [prMin, prMax] = mm(playoffRates);
+    const [wrMin, wrMax] = mm(winRates);
+    const [crMin, crMax] = mm(champRates);
+    const [asMin, asMax] = mm(avgSeeds);
+    const [plMin, plMax] = mm(pyLucks);
+    const [dsMin, dsMax] = mm(draftScores);
+    const [tsMin, tsMax] = mm(tradeScores);
+    const [waMin, waMax] = mm(waiverRates);
+
+    return allManagers.map((m, i) => {
+        const playoffScore  = normalize(playoffRates[i], prMin, prMax);
+        const winScore      = normalize(winRates[i], wrMin, wrMax);
+        const champScore    = normalize(champRates[i], crMin, crMax);
+        const seedScore     = normalize(-avgSeeds[i], -asMax, -asMin); // lower seed = better
+        const luckScore     = normalize(pyLucks[i], plMin, plMax);
+        const draftScore    = normalize(draftScores[i], dsMin, dsMax);
+        const tradeScore    = normalize(tradeScores[i], tsMin, tsMax);
+        const waiverScore   = normalize(waiverRates[i], waMin, waMax);
+
+        const hasDraft  = m.draftSurpluses.length > 0;
+        const hasTrade  = m.tradeCount > 0;
+        const hasWaiver = m.waiverTotal > 0;
+
+        const composite =
+            playoffScore * 0.20 +
+            winScore     * 0.15 +
+            champScore   * 0.15 +
+            seedScore    * 0.10 +
+            (hasDraft  ? draftScore  : 50) * 0.20 +
+            (hasTrade  ? tradeScore  : 50) * 0.10 +
+            (hasWaiver ? waiverScore : 50) * 0.05 +
+            luckScore    * 0.05;
+
+        return {
+            ...m,
+            playoffRate:   playoffRates[i],
+            winRate:       winRates[i],
+            avgSeed:       avgSeeds[i],
+            draftSurpAvg:  draftScores[i],
+            tradeValueAvg: tradeScores[i],
+            waiverRate:    waiverRates[i],
+            composite,
+            grade:        scoreToGrade(composite),
+            draftGrade:   hasDraft  ? scoreToGrade(draftScore)  : "—",
+            tradeGrade:   hasTrade  ? scoreToGrade(tradeScore)  : "—",
+            waiverGrade:  hasWaiver ? scoreToGrade(waiverScore) : "—",
+        };
+    });
+}
+
+function metricCell(label, value, color) {
+    const c = color || "#f0f1f3";
+    return `
+        <div style="background:#252830;border-radius:8px;padding:10px 12px;">
+            <div style="font-size:10px;font-weight:700;text-transform:uppercase;letter-spacing:.05em;color:#5a6070;margin-bottom:4px;">${label}</div>
+            <div style="font-size:16px;font-weight:700;color:${c};">${value}</div>
+        </div>
+    `;
+}
+
+function gradeCell(label, grade) {
+    const c = gradeColor(grade);
+    return `
+        <div style="background:#252830;border-radius:8px;padding:10px 12px;">
+            <div style="font-size:10px;font-weight:700;text-transform:uppercase;letter-spacing:.05em;color:#5a6070;margin-bottom:4px;">${label}</div>
+            <div style="font-size:20px;font-weight:800;color:${c};">${grade || "—"}</div>
+        </div>
+    `;
+}
+
+function renderReportCard() {
+    const allManagers = computeManagerStats();
+    const withGrades = computeGrades(allManagers).sort((a, b) => b.composite - a.composite);
+
+    let html = `<div style="display:grid;grid-template-columns:repeat(auto-fill,minmax(320px,1fr));gap:16px;">`;
+
+    withGrades.forEach(m => {
+        const playoffPct  = (m.playoffRate * 100).toFixed(0) + "%";
+        const winPct      = (m.winRate * 100).toFixed(1) + "%";
+        const avgSeedStr  = m.avgSeed.toFixed(1);
+        const pfPerGame   = (m.totalWins + m.totalLosses) > 0
+            ? (m.totalPF / (m.totalWins + m.totalLosses)).toFixed(1) : "—";
+        const pyLuck      = m.pyLuck.toFixed(1);
+        const pyLuckStr   = m.pyLuck >= 0 ? `+${pyLuck}` : pyLuck;
+        const pyLuckColor = m.pyLuck > 2 ? "#3ecf8e" : m.pyLuck < -2 ? "#f87171" : "#c9cdd4";
+        const playoffColor = m.playoffRate >= 0.75 ? "#3ecf8e" : m.playoffRate >= 0.5 ? "#60a5fa" : "#f87171";
+
+        const gc = gradeColor(m.grade);
+        const champBadge = m.championships > 0
+            ? `<div style="background:#2c2102;border:0.8px solid #b45309;border-radius:8px;padding:6px 12px;margin-bottom:12px;font-size:12px;color:#fbbf24;font-weight:700;">🏆 ${m.championships} Championship${m.championships > 1 ? "s" : ""}</div>`
+            : "";
+
+        html += `
+            <div class="card" style="padding:20px;background:#1e2027;border-color:#2d3139;">
+                <div style="display:flex;align-items:center;gap:12px;margin-bottom:16px;">
+                    ${avatarEl(m.name, 40)}
+                    <div style="flex:1;min-width:0;">
+                        <div style="font-size:15px;font-weight:700;color:#f0f1f3;">${m.name}</div>
+                        <div style="font-size:11px;color:#5a6070;">${m.seasons} season${m.seasons !== 1 ? "s" : ""} · ${m.totalWins}W-${m.totalLosses}L</div>
+                    </div>
+                    <div style="text-align:center;background:${gc}1a;border:1.5px solid ${gc};border-radius:10px;padding:6px 14px;flex-shrink:0;">
+                        <div style="font-size:10px;font-weight:700;text-transform:uppercase;letter-spacing:.05em;color:${gc};opacity:0.8;margin-bottom:2px;">Overall</div>
+                        <div style="font-size:24px;font-weight:800;color:${gc};line-height:1;">${m.grade}</div>
+                    </div>
+                </div>
+                ${champBadge}
+                <div style="font-size:10px;font-weight:700;text-transform:uppercase;letter-spacing:.05em;color:#5a6070;margin-bottom:8px;padding-bottom:6px;border-bottom:1px solid #2d3139;">Category Grades</div>
+                <div style="display:grid;grid-template-columns:1fr 1fr 1fr;gap:8px;margin-bottom:12px;">
+                    ${gradeCell("Draft", m.draftGrade)}
+                    ${gradeCell("Trades", m.tradeGrade)}
+                    ${gradeCell("Waivers", m.waiverGrade)}
+                </div>
+                <div style="font-size:10px;font-weight:700;text-transform:uppercase;letter-spacing:.05em;color:#5a6070;margin-bottom:8px;padding-bottom:6px;border-bottom:1px solid #2d3139;">Season Stats</div>
+                <div style="display:grid;grid-template-columns:1fr 1fr;gap:8px;">
+                    ${metricCell("Playoff Rate", playoffPct, playoffColor)}
+                    ${metricCell("Win Rate", winPct)}
+                    ${metricCell("Avg Seed", avgSeedStr)}
+                    ${metricCell("Finals", m.finals > 0 ? m.finals + "×" : "—")}
+                    ${metricCell("PF/Game", pfPerGame)}
+                    ${metricCell("Luck Index", pyLuckStr, pyLuckColor)}
+                </div>
+            </div>
+        `;
+    });
+
+    html += `</div>
+        <div style="margin-top:20px;font-size:11px;color:#5a6070;line-height:1.7;">
+            <strong style="color:#3a4050;">How grades are computed:</strong><br>
+            <strong>Draft</strong> — average pts of drafted players vs round expectation (completed seasons only) &nbsp;·&nbsp;
+            <strong>Trades</strong> — net season pts received vs given per player involved &nbsp;·&nbsp;
+            <strong>Waivers</strong> — % of waiver adds who scored above median among all claims &nbsp;·&nbsp;
+            <strong>Luck Index</strong> — actual wins minus Pythagorean expected wins (PF²/(PF²+PA²))
+        </div>
+    `;
+    return html;
+}
+
+// ── Standings table logic ──────────────────────────────────────────────────
 
 function renderTable(rows, txStats, year, playoffRecords, isAllTime) {
     if (!rows || !rows.length) return `<div class="s-empty">No data for this period.</div>`;
@@ -249,7 +598,16 @@ function renderDivisions(allRows, txStats, year, playoffRecords) {
 function render() {
     const board = document.getElementById("s-board");
     const label = document.getElementById("s-label");
+    const yearSelect = document.getElementById("s-select");
 
+    if (currentPage === "report_card") {
+        if (yearSelect) yearSelect.style.display = "none";
+        label.textContent = "Manager Report Card";
+        board.innerHTML = renderReportCard();
+        return;
+    }
+
+    if (yearSelect) yearSelect.style.display = "";
     const txStats = buildTxStats(transactions);
 
     if (currentView === "all_time") {
@@ -264,6 +622,16 @@ function render() {
         board.innerHTML = renderDivisions(rows, txStats, currentView, playoffRecords);
     }
 }
+
+function switchPage(page) {
+    currentPage = page;
+    document.querySelectorAll(".page-tab").forEach(btn => btn.classList.remove("active"));
+    const activeBtn = document.getElementById(`tab-${page}`);
+    if (activeBtn) activeBtn.classList.add("active");
+    render();
+}
+
+window.switchPage = switchPage;
 
 async function init() {
     await new Promise(r =>
@@ -346,6 +714,21 @@ async function init() {
             padding: 40px 0;
             text-align: center;
         }
+
+        .page-tab {
+            background: none;
+            border: none;
+            padding: 7px 14px;
+            border-radius: 8px;
+            font-size: 13px;
+            font-weight: 600;
+            color: #8b9099;
+            cursor: pointer;
+            transition: background 0.15s, color 0.15s;
+            font-family: inherit;
+        }
+        .page-tab:hover { color: #f0f1f3; background: #1e2027; }
+        .page-tab.active { color: #f0f1f3; background: #1e2027; }
     </style>
 
     <div class="s-controls" id="s-controls"></div>
@@ -354,17 +737,46 @@ async function init() {
     `;
 
     try {
-        [standings, transactions, history, leagueUsers, divisionsData] = await Promise.all([
+        const [
+            standingsData, txData, historyData, usersData, divsData,
+            nameMap,
+            stats2023, stats2024, stats2025,
+            draft2023, draft2024, draft2025,
+        ] = await Promise.all([
             api.getStandings(),
             api.getTransactions(),
             api.getSeasonHistory(),
             api.getLeagueUsers(),
             api.getDivisions(),
+            api.getPlayerNameMap(),
+            api.getPlayerStats("2023"),
+            api.getPlayerStats("2024"),
+            api.getPlayerStats("2025"),
+            api.getDraft("2023"),
+            api.getDraft("2024"),
+            api.getDraft("2025"),
         ]);
+
+        standings     = standingsData;
+        transactions  = txData;
+        history       = historyData;
+        leagueUsers   = usersData;
+        divisionsData = divsData;
+        playerNameMap = nameMap;
+        allPlayerStats["2023"] = stats2023;
+        allPlayerStats["2024"] = stats2024;
+        allPlayerStats["2025"] = stats2025;
+        allDraftData["2023"] = draft2023;
+        allDraftData["2024"] = draft2024;
+        allDraftData["2025"] = draft2025;
 
         const controls = document.getElementById("s-controls");
         controls.innerHTML = `
-            <div class="filter-bar">
+            <div class="filter-bar" style="display:flex;align-items:center;gap:12px;flex-wrap:wrap;margin-bottom:16px;">
+                <div style="display:flex;background:#252830;border-radius:10px;padding:3px;gap:2px;">
+                    <button class="page-tab active" id="tab-standings" onclick="switchPage('standings')">Standings</button>
+                    <button class="page-tab" id="tab-report_card" onclick="switchPage('report_card')">Manager Report Card</button>
+                </div>
                 <select id="s-select">
                     <option value="all_time" selected>All Years</option>
                     <option value="2026">2026</option>
