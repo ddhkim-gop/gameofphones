@@ -30,13 +30,14 @@ export function renderNav() {
                 border-radius: 8px;
                 font-size: 14px;
                 font-weight: 500;
-                color: #8b9099;
+                color: var(--text-3, #8b9099);
                 white-space: nowrap;
-                transition: color 0.15s;
+                transition: color 0.15s, background 0.15s;
                 user-select: none;
+                font-family: inherit;
             }
-            .nav-dropdown.active .nav-dropdown-label { color: #f0f1f3; }
-            .nav-dropdown:hover .nav-dropdown-label { color: #f0f1f3; }
+            .nav-dropdown.active .nav-dropdown-label { color: var(--text-1, #f0f1f3); font-weight: 700; }
+            .nav-dropdown:hover .nav-dropdown-label { color: var(--text-1, #f0f1f3); background: var(--card-el, #252830); }
             .nav-dropdown-menu {
                 display: none;
                 position: absolute;

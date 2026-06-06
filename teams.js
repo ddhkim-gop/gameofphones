@@ -150,9 +150,14 @@ async function init() {
             grouped[pos].push(p);
         });
 
-        // Sort within each position by value
+        // Sort within each position by search_rank (ADP proxy), fallback to value score
         Object.keys(grouped).forEach(pos => {
-            grouped[pos].sort((a, b) => playerValueScore(b) - playerValueScore(a));
+            grouped[pos].sort((a, b) => {
+                const ra = a.search_rank ?? 999999;
+                const rb = b.search_rank ?? 999999;
+                if (ra !== rb) return ra - rb;
+                return playerValueScore(b) - playerValueScore(a);
+            });
         });
 
         const sortedPos = POS_ORDER.filter(p => grouped[p])
@@ -191,13 +196,6 @@ async function init() {
 
                 const metaSpan = document.createElement("span");
                 metaSpan.style.cssText = "font-size:11px;color:#5a6070;flex-shrink:0;white-space:nowrap;display:flex;align-items:center;gap:4px;";
-                const rank = posRankStr(p);
-                if (rank) {
-                    const rankEl = document.createElement("span");
-                    rankEl.textContent = rank;
-                    rankEl.style.cssText = "font-size:10px;font-weight:700;color:#8b9099;";
-                    metaSpan.appendChild(rankEl);
-                }
                 const ageDecimal = calcAgeDecimal(p.birth_date);
                 const ageStr = ageDecimal ? ageDecimal : (p.age ? p.age : "");
                 if (p.team) {
@@ -420,10 +418,10 @@ async function openPopover(element, player) {
         </div>
 
         <div class="pc-bio">
+            <div class="pc-bio-item"><div class="pc-bio-label">Rank</div><div class="pc-bio-val" style="color:${posClr};">${posRankStr(player) ?? "—"}</div></div>
             <div class="pc-bio-item"><div class="pc-bio-label">Age</div><div class="pc-bio-val">${calcAgeDecimal(player.birth_date) ?? player.age ?? "—"}</div></div>
             <div class="pc-bio-item"><div class="pc-bio-label">Height</div><div class="pc-bio-val">${heightStr}</div></div>
             <div class="pc-bio-item"><div class="pc-bio-label">Weight</div><div class="pc-bio-val">${player.weight ? player.weight + " lbs" : "—"}</div></div>
-            <div class="pc-bio-item"><div class="pc-bio-label">Exp</div><div class="pc-bio-val">${player.years_exp ?? "—"} yr</div></div>
         </div>
 
         <div class="pc-section" id="espn-stats-rank-placeholder"></div>
