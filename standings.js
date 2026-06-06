@@ -265,8 +265,8 @@ function computeManagerStats() {
             m.totalLosses  += row.losses;
             m.totalPF      += row.pf;
             m.totalPA      += row.pa;
-            if (name === champ)    m.championships++;
-            if (name === finalist) m.finals++;
+            if (name === champ)                    m.championships++;
+            if (name === champ || name === finalist) m.finals++;
             if (playoffTeams.has(name)) m.playoffAppearances++;
             m.seeds.push(idx + 1);
 
