@@ -118,25 +118,13 @@ function renderWeek(weekStr, weekMatchups) {
     const label = getWeekLabel(weekStr);
     const ddhkIdx = weekMatchups.findIndex(m => m.teams?.some(t => t.owner === "ddhk"));
     const fi = ddhkIdx >= 0 ? ddhkIdx : 0;
-    const featured = weekMatchups[fi];
-    const rest = weekMatchups.filter((_, i) => i !== fi);
-
-    const id = `oth-${++_did}`;
-    const otherSection = rest.length ? `
-        <div style="margin-top:10px;">
-            <button onclick="(function(){var el=document.getElementById('${id}'),ar=document.getElementById('ar-${id}'),open=el.style.display!=='none';el.style.display=open?'none':'block';ar.textContent=open?'▸':'▾';})()"
-                style="background:none;border:none;cursor:pointer;display:flex;align-items:center;gap:6px;color:#5a6070;font-size:11px;font-weight:700;text-transform:uppercase;letter-spacing:.06em;padding:4px 0;">
-                <span id="ar-${id}">▸</span> Other Matchups (${rest.length})
-            </button>
-            <div id="${id}" style="display:none;margin-top:8px;">
-                <div class="mu-grid">${rest.map(m => renderMatchup(m, weekStr)).join("")}</div>
-            </div>
-        </div>` : "";
+    const ordered = fi > 0
+        ? [weekMatchups[fi], ...weekMatchups.filter((_, i) => i !== fi)]
+        : weekMatchups;
 
     return `<div style="margin-bottom:32px;">
         <div style="font-size:11px;font-weight:700;text-transform:uppercase;letter-spacing:.08em;color:#5a6070;margin-bottom:12px;padding-bottom:8px;border-bottom:1px solid #2d3139;">${label}</div>
-        ${renderMatchup(featured, weekStr)}
-        ${otherSection}
+        <div class="mu-grid">${ordered.map(m => renderMatchup(m, weekStr)).join("")}</div>
     </div>`;
 }
 
@@ -188,8 +176,9 @@ async function init() {
     <style>
         #matchups-container { max-width: 1200px; }
         .mu-matchup-grid { display: grid; grid-template-columns: 1fr 1px 1fr; }
-        .mu-grid { display: grid; grid-template-columns: repeat(auto-fill, minmax(540px, 1fr)); gap: 14px; }
-        @media (max-width: 680px) {
+        .mu-grid { display: grid; grid-template-columns: 1fr 1fr; gap: 14px; }
+        @media (max-width: 768px) {
+            .mu-grid { grid-template-columns: 1fr; }
             .mu-matchup-grid { grid-template-columns: 1fr !important; }
             .mu-matchup-grid > div[style*="width:1px"] { width: 100% !important; height: 1px !important; }
         }

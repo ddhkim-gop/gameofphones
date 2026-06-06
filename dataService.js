@@ -20,4 +20,5 @@ export const api = {
     async getSeasonHistory()   { return D.season_history || {}; },
     async getTradedPicks()     { return D.traded_picks || []; },
     async getDivisions()       { return D.divisions || {}; },
+    async getPlayerNameMap()   { return D.player_name_map || {}; },
 };

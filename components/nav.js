@@ -5,6 +5,10 @@ export function renderNav() {
     const page = location.pathname.split("/").pop() || "index.html";
     const teamsPages = ["teams.html", "assets.html"];
     const teamsActive = teamsPages.includes(page);
+    const matchupsPages = ["matchups.html", "matchup_recap.html"];
+    const matchupsActive = matchupsPages.includes(page);
+    const txPages = ["transactions.html", "trade_analyzer.html"];
+    const txActive = txPages.includes(page);
 
     el.innerHTML = `
         <nav class="card">
@@ -20,8 +24,24 @@ export function renderNav() {
                     </div>
                 </div>
             </div>
-            <a href="transactions.html">Transactions</a>
-            <a href="matchups.html">Matchups</a>
+            <div class="nav-dropdown${txActive ? " active" : ""}">
+                <span class="nav-dropdown-label">Transactions ▾</span>
+                <div class="nav-dropdown-menu">
+                    <div class="nav-dropdown-menu-inner">
+                        <a href="transactions.html">Transactions</a>
+                        <a href="trade_analyzer.html">Trade Analyzer</a>
+                    </div>
+                </div>
+            </div>
+            <div class="nav-dropdown${matchupsActive ? " active" : ""}">
+                <span class="nav-dropdown-label">Matchups ▾</span>
+                <div class="nav-dropdown-menu">
+                    <div class="nav-dropdown-menu-inner">
+                        <a href="matchups.html">Scores</a>
+                        <a href="matchup_recap.html">Recap</a>
+                    </div>
+                </div>
+            </div>
             <a href="head_to_head.html">H2H</a>
             <a href="season_history.html">History</a>
         </nav>

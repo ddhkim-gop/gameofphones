@@ -63623,5 +63623,6 @@ window.__STATIC_DATA__ = {
       "edgxrjiang": 2,
       "ganathan": 2
     }
-  }
+  },
+  "player_name_map": {}
 };
