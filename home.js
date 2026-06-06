@@ -121,20 +121,45 @@ function teamLogoHome(abbrev) {
     return `https://a.espncdn.com/i/teamlogos/nfl/500-dark/${abbrev.toLowerCase()}.png`;
 }
 
-// Best player on each team's current roster for the given year's stats
+// Best player on each team's roster for the given year's stats
+// For a specific year: use that year's roster + stats. Falls back to adjacent years' stats.
+// For all_time: search across all years the team was active, best single-season score.
 // Returns { player, score, year } or null
 function bestPlayerForTeam(teamName, year) {
-    const teamRosters = rostersData?.["2026"] || [];
-    const roster = teamRosters.find(r => r.owner === teamName);
+    const isAllTime = !year || year === "all_time";
+
+    if (isAllTime) {
+        // Search each year's roster with that year's stats
+        let best = null, bestScore = -1, bestYear = null;
+        for (const y of ["2025", "2024", "2023", "2026"]) {
+            const teamRosters = rostersData?.[y] || [];
+            const roster = teamRosters.find(r => r.owner === teamName);
+            if (!roster) continue;
+            (roster.players || []).forEach(p => {
+                if (!p?.player_id) return;
+                const s = statsCache[y]?.[p.player_id]?.pts_half_ppr;
+                if (s > 0 && s > bestScore) { bestScore = s; best = p; bestYear = y; }
+            });
+        }
+        return best ? { player: best, score: bestScore, year: bestYear } : null;
+    }
+
+    // Specific year: use that year's roster, fall back to adjacent years' stats
+    const tryRosterYears = [year, "2025", "2024", "2023", "2026"];
+    let roster = null, rosterYear = null;
+    for (const ry of tryRosterYears) {
+        const found = (rostersData?.[ry] || []).find(r => r.owner === teamName);
+        if (found) { roster = found; rosterYear = ry; break; }
+    }
     if (!roster) return null;
-    const tryYears = year && year !== "all_time"
-        ? [year, "2025", "2024", "2023"]
-        : ["2025", "2024", "2023"];
+
+    // For stats, prefer the selected year but fall back
+    const tryStatYears = [year, "2025", "2024", "2023"];
     let best = null, bestScore = -1, bestYear = null;
     (roster.players || []).forEach(p => {
         if (!p?.player_id) return;
         const pid = p.player_id;
-        for (const y of tryYears) {
+        for (const y of tryStatYears) {
             const s = statsCache[y]?.[pid]?.pts_half_ppr;
             if (s > 0) {
                 if (s > bestScore) { bestScore = s; best = p; bestYear = y; }
@@ -182,11 +207,11 @@ function renderStandingsTable(rows, playoffRec, isAllTime, faabRemaining) {
         const bpResult = bestPlayerForTeam(r.name, isAllTime ? null : selectedYear);
         const bp = bpResult?.player;
         const bpCell = bp
-            ? `<td style="${TD};text-align:left;max-width:180px;">
+            ? `<td style="${TD};text-align:left;max-width:200px;">
                 <div style="display:flex;align-items:center;gap:5px;min-width:0;flex-wrap:wrap;">
+                    ${bp.team ? `<img src="${teamLogoHome(bp.team)}" style="width:14px;height:14px;object-fit:contain;flex-shrink:0;" onerror="this.style.display='none'">` : ""}
                     <span style="background:${posColorHome(bp.position)};color:#fff;font-size:9px;font-weight:800;padding:1px 5px;border-radius:3px;flex-shrink:0;">${bp.position||"?"}</span>
                     <span style="font-size:11px;font-weight:600;color:#f0f1f3;overflow:hidden;text-overflow:ellipsis;white-space:nowrap;" title="${bp.name}">${bp.name}</span>
-                    ${bp.team ? `<img src="${teamLogoHome(bp.team)}" style="width:13px;height:13px;object-fit:contain;flex-shrink:0;" onerror="this.style.display='none'">` : ""}
                     ${isAllTime && bpResult.year ? `<span style="font-size:10px;color:#5a6070;flex-shrink:0;">${bpResult.year}</span>` : ""}
                     ${bpResult.score > 0 ? `<span style="font-size:10px;font-weight:700;color:#8b9099;flex-shrink:0;">${bpResult.score.toFixed(1)}</span>` : ""}
                 </div>
@@ -214,7 +239,7 @@ function renderStandingsTable(rows, playoffRec, isAllTime, faabRemaining) {
     }).join("");
 
     return `<div style="overflow-x:auto;-webkit-overflow-scrolling:touch;">
-        <table style="width:100%;border-collapse:collapse;font-size:13px;background:#1e2027;border-radius:12px;overflow:hidden;min-width:520px;">
+        <table style="width:100%;border-collapse:collapse;font-size:13px;background:#1e2027;border-radius:12px;overflow:hidden;min-width:680px;">
             <thead>${header}</thead>
             <tbody>${body}</tbody>
         </table>
@@ -427,27 +452,37 @@ async function init() {
     <div id="home-standings-table" style="color:#5a6070;padding:20px 0;">Loading...</div>`;
 
     try {
-        const [standings, history, leagueUsers, transactions, rosters2026] = await Promise.all([
+        const [standings, history, leagueUsers, transactions, rosters2026, rosters2025, rosters2024, rosters2023] = await Promise.all([
             api.getStandings(),
             api.getSeasonHistory(),
             api.getLeagueUsers(),
             api.getTransactions(),
             api.getRosters("2026"),
+            api.getRosters("2025"),
+            api.getRosters("2024"),
+            api.getRosters("2023"),
         ]);
 
         standingsData = standings;
         historyData = history;
         transactionsData = transactions || [];
-        rostersData = { "2026": rosters2026 || [] };
+        rostersData = {
+            "2026": rosters2026 || [],
+            "2025": rosters2025 || [],
+            "2024": rosters2024 || [],
+            "2023": rosters2023 || [],
+        };
         (leagueUsers || []).forEach(u => { usersMap[u.username] = u.avatar_url; });
 
-        // Load recent stats for best player column
+        // Load stats for best player column (all years)
         try {
-            const [s25, s24, s23] = await Promise.all([
+            const [s26, s25, s24, s23] = await Promise.all([
+                api.getPlayerStats("2026"),
                 api.getPlayerStats("2025"),
                 api.getPlayerStats("2024"),
                 api.getPlayerStats("2023"),
             ]);
+            statsCache["2026"] = s26 || {};
             statsCache["2025"] = s25 || {};
             statsCache["2024"] = s24 || {};
             statsCache["2023"] = s23 || {};
