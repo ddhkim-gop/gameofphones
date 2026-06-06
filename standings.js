@@ -130,40 +130,50 @@ function buildAllTime(standingsData, txStats) {
 // ── Report Card logic ──────────────────────────────────────────────────────
 
 function buildDraftGrades() {
-    // Returns { year: { manager: avgSurplusPoints } }
+    // Grade each team on drafted players present on their END-OF-SEASON ROSTER
+    // (regardless of who originally drafted them — trades factor in naturally).
+    // Surplus = player's actual pts − avg pts for that draft round.
+    const endRosters = computeEndOfSeasonRosters();
     const result = {};
+
     STAT_YEARS.forEach(year => {
         const yearDraft = allDraftData[year] || [];
         if (!yearDraft.length) return;
         const stats = allPlayerStats[year] || {};
 
-        const picks = yearDraft.map(pick => {
+        // Build name → { round, pts } for every drafted player this year
+        const draftedPlayers = {};
+        yearDraft.forEach(pick => {
             const pid = playerNameMap[pick.player];
             const pts = pid && stats[pid] ? stats[pid].pts_half_ppr : null;
-            return { ...pick, pts };
+            if (pts != null) draftedPlayers[pick.player] = { round: pick.round, pts };
         });
 
-        // Average pts per round
+        // Round average across all drafted players
         const roundAvg = {};
-        picks.forEach(p => {
-            if (p.pts == null) return;
-            if (!roundAvg[p.round]) roundAvg[p.round] = { sum: 0, count: 0 };
-            roundAvg[p.round].sum += p.pts;
-            roundAvg[p.round].count++;
+        Object.values(draftedPlayers).forEach(({ round, pts }) => {
+            if (!roundAvg[round]) roundAvg[round] = { sum: 0, count: 0 };
+            roundAvg[round].sum += pts;
+            roundAvg[round].count++;
         });
         Object.keys(roundAvg).forEach(r => {
             roundAvg[r].avg = roundAvg[r].sum / roundAvg[r].count;
         });
 
-        // Per-team surplus: actual pts - expected pts for that round
+        // For each team: find drafted players on their end-of-season roster
         const teamSurplus = {};
-        picks.forEach(p => {
-            if (p.pts == null) return;
-            const expected = roundAvg[p.round]?.avg || 0;
-            if (!teamSurplus[p.picked_by]) teamSurplus[p.picked_by] = { sum: 0, count: 0 };
-            teamSurplus[p.picked_by].sum += p.pts - expected;
-            teamSurplus[p.picked_by].count++;
+        const yearRosters = endRosters[year] || {};
+        Object.entries(yearRosters).forEach(([team, playerNames]) => {
+            playerNames.forEach(name => {
+                const dp = draftedPlayers[name];
+                if (!dp) return; // not a player drafted this year
+                const expected = roundAvg[dp.round]?.avg || 0;
+                if (!teamSurplus[team]) teamSurplus[team] = { sum: 0, count: 0 };
+                teamSurplus[team].sum += dp.pts - expected;
+                teamSurplus[team].count++;
+            });
         });
+
         result[year] = {};
         Object.entries(teamSurplus).forEach(([team, d]) => {
             result[year][team] = d.count > 0 ? d.sum / d.count : 0;
