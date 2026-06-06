@@ -128,8 +128,8 @@ window.__STATIC_DATA__ = {
         "position": "RB",
         "team": "IND",
         "picked_by": "spiffster",
-        "original_owner": "ddhk",
-        "traded": true
+        "original_owner": "spiffster",
+        "traded": false
       },
       {
         "pick_no": 14,
@@ -138,8 +138,8 @@ window.__STATIC_DATA__ = {
         "position": "QB",
         "team": "IND",
         "picked_by": "Paul_Yoon",
-        "original_owner": "Slot 13",
-        "traded": true
+        "original_owner": "Paul_Yoon",
+        "traded": false
       },
       {
         "pick_no": 15,
@@ -148,8 +148,8 @@ window.__STATIC_DATA__ = {
         "position": "RB",
         "team": "ATL",
         "picked_by": "IconicJH",
-        "original_owner": "spiffster",
-        "traded": true
+        "original_owner": "IconicJH",
+        "traded": false
       },
       {
         "pick_no": 16,
@@ -158,8 +158,8 @@ window.__STATIC_DATA__ = {
         "position": "WR",
         "team": "NYJ",
         "picked_by": "andyxia124",
-        "original_owner": "Paul_Yoon",
-        "traded": true
+        "original_owner": "andyxia124",
+        "traded": false
       },
       {
         "pick_no": 17,
@@ -168,8 +168,8 @@ window.__STATIC_DATA__ = {
         "position": "TE",
         "team": "KC",
         "picked_by": "riqi",
-        "original_owner": "IconicJH",
-        "traded": true
+        "original_owner": "riqi",
+        "traded": false
       },
       {
         "pick_no": 18,
@@ -178,8 +178,8 @@ window.__STATIC_DATA__ = {
         "position": "WR",
         "team": "NE",
         "picked_by": "NoSkilzPak",
-        "original_owner": "andyxia124",
-        "traded": true
+        "original_owner": "NoSkilzPak",
+        "traded": false
       },
       {
         "pick_no": 19,
@@ -188,8 +188,8 @@ window.__STATIC_DATA__ = {
         "position": "RB",
         "team": "NYJ",
         "picked_by": "eikichii952",
-        "original_owner": "riqi",
-        "traded": true
+        "original_owner": "eikichii952",
+        "traded": false
       },
       {
         "pick_no": 20,
@@ -198,8 +198,8 @@ window.__STATIC_DATA__ = {
         "position": "RB",
         "team": "PHI",
         "picked_by": "jonsung",
-        "original_owner": "NoSkilzPak",
-        "traded": true
+        "original_owner": "jonsung",
+        "traded": false
       },
       {
         "pick_no": 21,
@@ -208,8 +208,8 @@ window.__STATIC_DATA__ = {
         "position": "QB",
         "team": "CLE",
         "picked_by": "shmyung",
-        "original_owner": "eikichii952",
-        "traded": true
+        "original_owner": "shmyung",
+        "traded": false
       },
       {
         "pick_no": 22,
@@ -218,8 +218,8 @@ window.__STATIC_DATA__ = {
         "position": "WR",
         "team": "DET",
         "picked_by": "edgxrjiang",
-        "original_owner": "jonsung",
-        "traded": true
+        "original_owner": "edgxrjiang",
+        "traded": false
       },
       {
         "pick_no": 23,
@@ -228,8 +228,8 @@ window.__STATIC_DATA__ = {
         "position": "WR",
         "team": "DEN",
         "picked_by": "ganathan",
-        "original_owner": "shmyung",
-        "traded": true
+        "original_owner": "ganathan",
+        "traded": false
       },
       {
         "pick_no": 24,
@@ -238,8 +238,8 @@ window.__STATIC_DATA__ = {
         "position": "TE",
         "team": "ATL",
         "picked_by": "ddhk",
-        "original_owner": "edgxrjiang",
-        "traded": true
+        "original_owner": "ddhk",
+        "traded": false
       },
       {
         "pick_no": 25,
@@ -248,8 +248,8 @@ window.__STATIC_DATA__ = {
         "position": "TE",
         "team": "BAL",
         "picked_by": "ddhk",
-        "original_owner": "spiffster",
-        "traded": true
+        "original_owner": "ddhk",
+        "traded": false
       },
       {
         "pick_no": 26,
@@ -258,8 +258,8 @@ window.__STATIC_DATA__ = {
         "position": "QB",
         "team": "DAL",
         "picked_by": "ganathan",
-        "original_owner": "Slot 13",
-        "traded": true
+        "original_owner": "ganathan",
+        "traded": false
       },
       {
         "pick_no": 27,
@@ -268,8 +268,8 @@ window.__STATIC_DATA__ = {
         "position": "WR",
         "team": "NO",
         "picked_by": "edgxrjiang",
-        "original_owner": "ddhk",
-        "traded": true
+        "original_owner": "edgxrjiang",
+        "traded": false
       },
       {
         "pick_no": 28,
@@ -278,8 +278,8 @@ window.__STATIC_DATA__ = {
         "position": "WR",
         "team": "CIN",
         "picked_by": "shmyung",
-        "original_owner": "ganathan",
-        "traded": true
+        "original_owner": "shmyung",
+        "traded": false
       },
       {
         "pick_no": 29,
@@ -288,8 +288,8 @@ window.__STATIC_DATA__ = {
         "position": "RB",
         "team": "",
         "picked_by": "jonsung",
-        "original_owner": "edgxrjiang",
-        "traded": true
+        "original_owner": "jonsung",
+        "traded": false
       },
       {
         "pick_no": 30,
@@ -298,8 +298,8 @@ window.__STATIC_DATA__ = {
         "position": "WR",
         "team": "SEA",
         "picked_by": "eikichii952",
-        "original_owner": "shmyung",
-        "traded": true
+        "original_owner": "eikichii952",
+        "traded": false
       },
       {
         "pick_no": 31,
@@ -308,8 +308,8 @@ window.__STATIC_DATA__ = {
         "position": "QB",
         "team": "CAR",
         "picked_by": "NoSkilzPak",
-        "original_owner": "jonsung",
-        "traded": true
+        "original_owner": "NoSkilzPak",
+        "traded": false
       },
       {
         "pick_no": 32,
@@ -318,8 +318,8 @@ window.__STATIC_DATA__ = {
         "position": "WR",
         "team": "PHI",
         "picked_by": "riqi",
-        "original_owner": "eikichii952",
-        "traded": true
+        "original_owner": "riqi",
+        "traded": false
       },
       {
         "pick_no": 33,
@@ -328,8 +328,8 @@ window.__STATIC_DATA__ = {
         "position": "WR",
         "team": "ATL",
         "picked_by": "andyxia124",
-        "original_owner": "NoSkilzPak",
-        "traded": true
+        "original_owner": "andyxia124",
+        "traded": false
       },
       {
         "pick_no": 34,
@@ -338,8 +338,8 @@ window.__STATIC_DATA__ = {
         "position": "WR",
         "team": "",
         "picked_by": "IconicJH",
-        "original_owner": "riqi",
-        "traded": true
+        "original_owner": "IconicJH",
+        "traded": false
       },
       {
         "pick_no": 35,
@@ -348,8 +348,8 @@ window.__STATIC_DATA__ = {
         "position": "WR",
         "team": "SEA",
         "picked_by": "Paul_Yoon",
-        "original_owner": "andyxia124",
-        "traded": true
+        "original_owner": "Paul_Yoon",
+        "traded": false
       },
       {
         "pick_no": 36,
@@ -358,8 +358,8 @@ window.__STATIC_DATA__ = {
         "position": "WR",
         "team": "",
         "picked_by": "spiffster",
-        "original_owner": "IconicJH",
-        "traded": true
+        "original_owner": "spiffster",
+        "traded": false
       },
       {
         "pick_no": 37,
@@ -368,8 +368,8 @@ window.__STATIC_DATA__ = {
         "position": "WR",
         "team": "LAR",
         "picked_by": "spiffster",
-        "original_owner": "edgxrjiang",
-        "traded": true
+        "original_owner": "spiffster",
+        "traded": false
       },
       {
         "pick_no": 38,
@@ -378,8 +378,8 @@ window.__STATIC_DATA__ = {
         "position": "QB",
         "team": "HOU",
         "picked_by": "Paul_Yoon",
-        "original_owner": "ganathan",
-        "traded": true
+        "original_owner": "Paul_Yoon",
+        "traded": false
       },
       {
         "pick_no": 39,
@@ -388,8 +388,8 @@ window.__STATIC_DATA__ = {
         "position": "RB",
         "team": "GB",
         "picked_by": "IconicJH",
-        "original_owner": "ddhk",
-        "traded": true
+        "original_owner": "IconicJH",
+        "traded": false
       },
       {
         "pick_no": 40,
@@ -398,8 +398,8 @@ window.__STATIC_DATA__ = {
         "position": "QB",
         "team": "MIN",
         "picked_by": "andyxia124",
-        "original_owner": "Slot 13",
-        "traded": true
+        "original_owner": "andyxia124",
+        "traded": false
       },
       {
         "pick_no": 41,
@@ -408,8 +408,8 @@ window.__STATIC_DATA__ = {
         "position": "RB",
         "team": "KC",
         "picked_by": "riqi",
-        "original_owner": "spiffster",
-        "traded": true
+        "original_owner": "riqi",
+        "traded": false
       },
       {
         "pick_no": 42,
@@ -418,7 +418,7 @@ window.__STATIC_DATA__ = {
         "position": "RB",
         "team": "DET",
         "picked_by": "andyxia124",
-        "original_owner": "Paul_Yoon",
+        "original_owner": "NoSkilzPak",
         "traded": true
       },
       {
@@ -428,8 +428,8 @@ window.__STATIC_DATA__ = {
         "position": "RB",
         "team": "",
         "picked_by": "eikichii952",
-        "original_owner": "IconicJH",
-        "traded": true
+        "original_owner": "eikichii952",
+        "traded": false
       },
       {
         "pick_no": 44,
@@ -438,8 +438,8 @@ window.__STATIC_DATA__ = {
         "position": "RB",
         "team": "",
         "picked_by": "jonsung",
-        "original_owner": "andyxia124",
-        "traded": true
+        "original_owner": "jonsung",
+        "traded": false
       },
       {
         "pick_no": 45,
@@ -448,8 +448,8 @@ window.__STATIC_DATA__ = {
         "position": "RB",
         "team": "NO",
         "picked_by": "shmyung",
-        "original_owner": "riqi",
-        "traded": true
+        "original_owner": "shmyung",
+        "traded": false
       },
       {
         "pick_no": 46,
@@ -458,8 +458,8 @@ window.__STATIC_DATA__ = {
         "position": "QB",
         "team": "ATL",
         "picked_by": "edgxrjiang",
-        "original_owner": "NoSkilzPak",
-        "traded": true
+        "original_owner": "edgxrjiang",
+        "traded": false
       },
       {
         "pick_no": 47,
@@ -468,8 +468,8 @@ window.__STATIC_DATA__ = {
         "position": "RB",
         "team": "NE",
         "picked_by": "ganathan",
-        "original_owner": "eikichii952",
-        "traded": true
+        "original_owner": "ganathan",
+        "traded": false
       },
       {
         "pick_no": 48,
@@ -478,7 +478,7 @@ window.__STATIC_DATA__ = {
         "position": "WR",
         "team": "PIT",
         "picked_by": "shmyung",
-        "original_owner": "jonsung",
+        "original_owner": "ddhk",
         "traded": true
       },
       {
@@ -488,7 +488,7 @@ window.__STATIC_DATA__ = {
         "position": "RB",
         "team": "BAL",
         "picked_by": "jonsung",
-        "original_owner": "IconicJH",
+        "original_owner": "ddhk",
         "traded": true
       },
       {
@@ -498,7 +498,7 @@ window.__STATIC_DATA__ = {
         "position": "RB",
         "team": "TEN",
         "picked_by": "riqi",
-        "original_owner": "Paul_Yoon",
+        "original_owner": "ganathan",
         "traded": true
       },
       {
@@ -508,8 +508,8 @@ window.__STATIC_DATA__ = {
         "position": "TE",
         "team": "MIN",
         "picked_by": "edgxrjiang",
-        "original_owner": "spiffster",
-        "traded": true
+        "original_owner": "edgxrjiang",
+        "traded": false
       },
       {
         "pick_no": 52,
@@ -518,7 +518,7 @@ window.__STATIC_DATA__ = {
         "position": "WR",
         "team": "MIN",
         "picked_by": "Paul_Yoon",
-        "original_owner": "Slot 13",
+        "original_owner": "shmyung",
         "traded": true
       },
       {
@@ -528,8 +528,8 @@ window.__STATIC_DATA__ = {
         "position": "WR",
         "team": "CLE",
         "picked_by": "jonsung",
-        "original_owner": "ddhk",
-        "traded": true
+        "original_owner": "jonsung",
+        "traded": false
       },
       {
         "pick_no": 54,
@@ -538,7 +538,7 @@ window.__STATIC_DATA__ = {
         "position": "WR",
         "team": "GB",
         "picked_by": "shmyung",
-        "original_owner": "ganathan",
+        "original_owner": "eikichii952",
         "traded": true
       },
       {
@@ -548,8 +548,8 @@ window.__STATIC_DATA__ = {
         "position": "WR",
         "team": "LAC",
         "picked_by": "NoSkilzPak",
-        "original_owner": "edgxrjiang",
-        "traded": true
+        "original_owner": "NoSkilzPak",
+        "traded": false
       },
       {
         "pick_no": 56,
@@ -558,7 +558,7 @@ window.__STATIC_DATA__ = {
         "position": "WR",
         "team": "",
         "picked_by": "ganathan",
-        "original_owner": "shmyung",
+        "original_owner": "riqi",
         "traded": true
       },
       {
@@ -568,8 +568,8 @@ window.__STATIC_DATA__ = {
         "position": "WR",
         "team": "DAL",
         "picked_by": "andyxia124",
-        "original_owner": "jonsung",
-        "traded": true
+        "original_owner": "andyxia124",
+        "traded": false
       },
       {
         "pick_no": 58,
@@ -578,8 +578,8 @@ window.__STATIC_DATA__ = {
         "position": "RB",
         "team": "PHI",
         "picked_by": "IconicJH",
-        "original_owner": "eikichii952",
-        "traded": true
+        "original_owner": "IconicJH",
+        "traded": false
       },
       {
         "pick_no": 59,
@@ -588,8 +588,8 @@ window.__STATIC_DATA__ = {
         "position": "RB",
         "team": "DAL",
         "picked_by": "Paul_Yoon",
-        "original_owner": "NoSkilzPak",
-        "traded": true
+        "original_owner": "Paul_Yoon",
+        "traded": false
       },
       {
         "pick_no": 60,
@@ -598,8 +598,8 @@ window.__STATIC_DATA__ = {
         "position": "RB",
         "team": "DEN",
         "picked_by": "spiffster",
-        "original_owner": "riqi",
-        "traded": true
+        "original_owner": "spiffster",
+        "traded": false
       },
       {
         "pick_no": 61,
@@ -608,8 +608,8 @@ window.__STATIC_DATA__ = {
         "position": "QB",
         "team": "IND",
         "picked_by": "spiffster",
-        "original_owner": "jonsung",
-        "traded": true
+        "original_owner": "spiffster",
+        "traded": false
       },
       {
         "pick_no": 62,
@@ -618,7 +618,7 @@ window.__STATIC_DATA__ = {
         "position": "WR",
         "team": "TEN",
         "picked_by": "edgxrjiang",
-        "original_owner": "shmyung",
+        "original_owner": "Paul_Yoon",
         "traded": true
       },
       {
@@ -628,8 +628,8 @@ window.__STATIC_DATA__ = {
         "position": "WR",
         "team": "WAS",
         "picked_by": "IconicJH",
-        "original_owner": "edgxrjiang",
-        "traded": true
+        "original_owner": "IconicJH",
+        "traded": false
       },
       {
         "pick_no": 64,
@@ -638,8 +638,8 @@ window.__STATIC_DATA__ = {
         "position": "WR",
         "team": "DET",
         "picked_by": "andyxia124",
-        "original_owner": "ganathan",
-        "traded": true
+        "original_owner": "andyxia124",
+        "traded": false
       },
       {
         "pick_no": 65,
@@ -648,7 +648,7 @@ window.__STATIC_DATA__ = {
         "position": "WR",
         "team": "BUF",
         "picked_by": "ganathan",
-        "original_owner": "ddhk",
+        "original_owner": "riqi",
         "traded": true
       },
       {
@@ -658,7 +658,7 @@ window.__STATIC_DATA__ = {
         "position": "WR",
         "team": "WAS",
         "picked_by": "IconicJH",
-        "original_owner": "Slot 13",
+        "original_owner": "NoSkilzPak",
         "traded": true
       },
       {
@@ -668,7 +668,7 @@ window.__STATIC_DATA__ = {
         "position": "WR",
         "team": "SF",
         "picked_by": "shmyung",
-        "original_owner": "spiffster",
+        "original_owner": "eikichii952",
         "traded": true
       },
       {
@@ -678,8 +678,8 @@ window.__STATIC_DATA__ = {
         "position": "TE",
         "team": "SF",
         "picked_by": "jonsung",
-        "original_owner": "Paul_Yoon",
-        "traded": true
+        "original_owner": "jonsung",
+        "traded": false
       },
       {
         "pick_no": 69,
@@ -688,7 +688,7 @@ window.__STATIC_DATA__ = {
         "position": "TE",
         "team": "PHI",
         "picked_by": "eikichii952",
-        "original_owner": "IconicJH",
+        "original_owner": "shmyung",
         "traded": true
       },
       {
@@ -698,8 +698,8 @@ window.__STATIC_DATA__ = {
         "position": "RB",
         "team": "CHI",
         "picked_by": "edgxrjiang",
-        "original_owner": "andyxia124",
-        "traded": true
+        "original_owner": "edgxrjiang",
+        "traded": false
       },
       {
         "pick_no": 71,
@@ -708,8 +708,8 @@ window.__STATIC_DATA__ = {
         "position": "WR",
         "team": "PIT",
         "picked_by": "riqi",
-        "original_owner": "riqi",
-        "traded": false
+        "original_owner": "ganathan",
+        "traded": true
       },
       {
         "pick_no": 72,
@@ -718,7 +718,7 @@ window.__STATIC_DATA__ = {
         "position": "WR",
         "team": "TB",
         "picked_by": "riqi",
-        "original_owner": "NoSkilzPak",
+        "original_owner": "ddhk",
         "traded": true
       },
       {
@@ -728,7 +728,7 @@ window.__STATIC_DATA__ = {
         "position": "RB",
         "team": "",
         "picked_by": "Paul_Yoon",
-        "original_owner": "riqi",
+        "original_owner": "ddhk",
         "traded": true
       },
       {
@@ -738,8 +738,8 @@ window.__STATIC_DATA__ = {
         "position": "RB",
         "team": "",
         "picked_by": "ganathan",
-        "original_owner": "andyxia124",
-        "traded": true
+        "original_owner": "ganathan",
+        "traded": false
       },
       {
         "pick_no": 75,
@@ -748,7 +748,7 @@ window.__STATIC_DATA__ = {
         "position": "WR",
         "team": "ATL",
         "picked_by": "Paul_Yoon",
-        "original_owner": "IconicJH",
+        "original_owner": "edgxrjiang",
         "traded": true
       },
       {
@@ -758,7 +758,7 @@ window.__STATIC_DATA__ = {
         "position": "RB",
         "team": "",
         "picked_by": "jonsung",
-        "original_owner": "Paul_Yoon",
+        "original_owner": "shmyung",
         "traded": true
       },
       {
@@ -768,8 +768,8 @@ window.__STATIC_DATA__ = {
         "position": "WR",
         "team": "PHI",
         "picked_by": "jonsung",
-        "original_owner": "spiffster",
-        "traded": true
+        "original_owner": "jonsung",
+        "traded": false
       },
       {
         "pick_no": 78,
@@ -778,7 +778,7 @@ window.__STATIC_DATA__ = {
         "position": "RB",
         "team": "",
         "picked_by": "IconicJH",
-        "original_owner": "Slot 13",
+        "original_owner": "eikichii952",
         "traded": true
       },
       {
@@ -788,8 +788,8 @@ window.__STATIC_DATA__ = {
         "position": "TE",
         "team": "BUF",
         "picked_by": "NoSkilzPak",
-        "original_owner": "ddhk",
-        "traded": true
+        "original_owner": "NoSkilzPak",
+        "traded": false
       },
       {
         "pick_no": 80,
@@ -798,7 +798,7 @@ window.__STATIC_DATA__ = {
         "position": "RB",
         "team": "MIN",
         "picked_by": "ddhk",
-        "original_owner": "ganathan",
+        "original_owner": "riqi",
         "traded": true
       },
       {
@@ -808,7 +808,7 @@ window.__STATIC_DATA__ = {
         "position": "RB",
         "team": "WAS",
         "picked_by": "NoSkilzPak",
-        "original_owner": "edgxrjiang",
+        "original_owner": "andyxia124",
         "traded": true
       },
       {
@@ -818,8 +818,8 @@ window.__STATIC_DATA__ = {
         "position": "WR",
         "team": "",
         "picked_by": "IconicJH",
-        "original_owner": "shmyung",
-        "traded": true
+        "original_owner": "IconicJH",
+        "traded": false
       },
       {
         "pick_no": 83,
@@ -828,7 +828,7 @@ window.__STATIC_DATA__ = {
         "position": "WR",
         "team": "",
         "picked_by": "ddhk",
-        "original_owner": "jonsung",
+        "original_owner": "Paul_Yoon",
         "traded": true
       },
       {
@@ -838,8 +838,8 @@ window.__STATIC_DATA__ = {
         "position": "QB",
         "team": "LV",
         "picked_by": "spiffster",
-        "original_owner": "eikichii952",
-        "traded": true
+        "original_owner": "spiffster",
+        "traded": false
       },
       {
         "pick_no": 85,
@@ -848,8 +848,8 @@ window.__STATIC_DATA__ = {
         "position": "WR",
         "team": "SF",
         "picked_by": "spiffster",
-        "original_owner": "NoSkilzPak",
-        "traded": true
+        "original_owner": "spiffster",
+        "traded": false
       },
       {
         "pick_no": 86,
@@ -858,8 +858,8 @@ window.__STATIC_DATA__ = {
         "position": "WR",
         "team": "",
         "picked_by": "Paul_Yoon",
-        "original_owner": "eikichii952",
-        "traded": true
+        "original_owner": "Paul_Yoon",
+        "traded": false
       },
       {
         "pick_no": 87,
@@ -868,7 +868,7 @@ window.__STATIC_DATA__ = {
         "position": "RB",
         "team": "DET",
         "picked_by": "NoSkilzPak",
-        "original_owner": "jonsung",
+        "original_owner": "IconicJH",
         "traded": true
       },
       {
@@ -878,8 +878,8 @@ window.__STATIC_DATA__ = {
         "position": "WR",
         "team": "BAL",
         "picked_by": "andyxia124",
-        "original_owner": "shmyung",
-        "traded": true
+        "original_owner": "andyxia124",
+        "traded": false
       },
       {
         "pick_no": 89,
@@ -888,8 +888,8 @@ window.__STATIC_DATA__ = {
         "position": "QB",
         "team": "DET",
         "picked_by": "riqi",
-        "original_owner": "edgxrjiang",
-        "traded": true
+        "original_owner": "riqi",
+        "traded": false
       },
       {
         "pick_no": 90,
@@ -898,8 +898,8 @@ window.__STATIC_DATA__ = {
         "position": "QB",
         "team": "LAC",
         "picked_by": "NoSkilzPak",
-        "original_owner": "ganathan",
-        "traded": true
+        "original_owner": "NoSkilzPak",
+        "traded": false
       },
       {
         "pick_no": 91,
@@ -908,7 +908,7 @@ window.__STATIC_DATA__ = {
         "position": "TE",
         "team": "",
         "picked_by": "IconicJH",
-        "original_owner": "ddhk",
+        "original_owner": "eikichii952",
         "traded": true
       },
       {
@@ -918,7 +918,7 @@ window.__STATIC_DATA__ = {
         "position": "TE",
         "team": "PIT",
         "picked_by": "shmyung",
-        "original_owner": "Slot 13",
+        "original_owner": "jonsung",
         "traded": true
       },
       {
@@ -928,7 +928,7 @@ window.__STATIC_DATA__ = {
         "position": "RB",
         "team": "SEA",
         "picked_by": "eikichii952",
-        "original_owner": "spiffster",
+        "original_owner": "shmyung",
         "traded": true
       },
       {
@@ -938,8 +938,8 @@ window.__STATIC_DATA__ = {
         "position": "WR",
         "team": "",
         "picked_by": "Paul_Yoon",
-        "original_owner": "Paul_Yoon",
-        "traded": false
+        "original_owner": "edgxrjiang",
+        "traded": true
       },
       {
         "pick_no": 95,
@@ -948,8 +948,8 @@ window.__STATIC_DATA__ = {
         "position": "WR",
         "team": "",
         "picked_by": "ganathan",
-        "original_owner": "IconicJH",
-        "traded": true
+        "original_owner": "ganathan",
+        "traded": false
       },
       {
         "pick_no": 96,
@@ -958,8 +958,8 @@ window.__STATIC_DATA__ = {
         "position": "RB",
         "team": "NO",
         "picked_by": "ddhk",
-        "original_owner": "andyxia124",
-        "traded": true
+        "original_owner": "ddhk",
+        "traded": false
       },
       {
         "pick_no": 97,
@@ -968,7 +968,7 @@ window.__STATIC_DATA__ = {
         "position": "WR",
         "team": "",
         "picked_by": "Paul_Yoon",
-        "original_owner": "eikichii952",
+        "original_owner": "ddhk",
         "traded": true
       },
       {
@@ -978,8 +978,8 @@ window.__STATIC_DATA__ = {
         "position": "WR",
         "team": "BAL",
         "picked_by": "ganathan",
-        "original_owner": "NoSkilzPak",
-        "traded": true
+        "original_owner": "ganathan",
+        "traded": false
       },
       {
         "pick_no": 99,
@@ -988,8 +988,8 @@ window.__STATIC_DATA__ = {
         "position": "RB",
         "team": "BUF",
         "picked_by": "edgxrjiang",
-        "original_owner": "riqi",
-        "traded": true
+        "original_owner": "edgxrjiang",
+        "traded": false
       },
       {
         "pick_no": 100,
@@ -998,7 +998,7 @@ window.__STATIC_DATA__ = {
         "position": "RB",
         "team": "HOU",
         "picked_by": "Paul_Yoon",
-        "original_owner": "andyxia124",
+        "original_owner": "shmyung",
         "traded": true
       },
       {
@@ -1008,8 +1008,8 @@ window.__STATIC_DATA__ = {
         "position": "WR",
         "team": "SF",
         "picked_by": "jonsung",
-        "original_owner": "IconicJH",
-        "traded": true
+        "original_owner": "jonsung",
+        "traded": false
       },
       {
         "pick_no": 102,
@@ -1018,8 +1018,8 @@ window.__STATIC_DATA__ = {
         "position": "WR",
         "team": "",
         "picked_by": "eikichii952",
-        "original_owner": "Paul_Yoon",
-        "traded": true
+        "original_owner": "eikichii952",
+        "traded": false
       },
       {
         "pick_no": 103,
@@ -1028,8 +1028,8 @@ window.__STATIC_DATA__ = {
         "position": "RB",
         "team": "",
         "picked_by": "NoSkilzPak",
-        "original_owner": "spiffster",
-        "traded": true
+        "original_owner": "NoSkilzPak",
+        "traded": false
       },
       {
         "pick_no": 104,
@@ -1038,8 +1038,8 @@ window.__STATIC_DATA__ = {
         "position": "RB",
         "team": "NO",
         "picked_by": "riqi",
-        "original_owner": "Slot 13",
-        "traded": true
+        "original_owner": "riqi",
+        "traded": false
       },
       {
         "pick_no": 105,
@@ -1048,8 +1048,8 @@ window.__STATIC_DATA__ = {
         "position": "WR",
         "team": "",
         "picked_by": "andyxia124",
-        "original_owner": "ddhk",
-        "traded": true
+        "original_owner": "andyxia124",
+        "traded": false
       },
       {
         "pick_no": 106,
@@ -1058,7 +1058,7 @@ window.__STATIC_DATA__ = {
         "position": "QB",
         "team": "CAR",
         "picked_by": "shmyung",
-        "original_owner": "ganathan",
+        "original_owner": "IconicJH",
         "traded": true
       },
       {
@@ -1068,7 +1068,7 @@ window.__STATIC_DATA__ = {
         "position": "RB",
         "team": "ARI",
         "picked_by": "ddhk",
-        "original_owner": "edgxrjiang",
+        "original_owner": "Paul_Yoon",
         "traded": true
       },
       {
@@ -1078,8 +1078,8 @@ window.__STATIC_DATA__ = {
         "position": "TE",
         "team": "DEN",
         "picked_by": "spiffster",
-        "original_owner": "shmyung",
-        "traded": true
+        "original_owner": "spiffster",
+        "traded": false
       },
       {
         "pick_no": 109,
@@ -1088,8 +1088,8 @@ window.__STATIC_DATA__ = {
         "position": "RB",
         "team": "",
         "picked_by": "spiffster",
-        "original_owner": "andyxia124",
-        "traded": true
+        "original_owner": "spiffster",
+        "traded": false
       },
       {
         "pick_no": 110,
@@ -1098,7 +1098,7 @@ window.__STATIC_DATA__ = {
         "position": "QB",
         "team": "GB",
         "picked_by": "jonsung",
-        "original_owner": "riqi",
+        "original_owner": "Paul_Yoon",
         "traded": true
       },
       {
@@ -1108,7 +1108,7 @@ window.__STATIC_DATA__ = {
         "position": "RB",
         "team": "MIA",
         "picked_by": "shmyung",
-        "original_owner": "NoSkilzPak",
+        "original_owner": "IconicJH",
         "traded": true
       },
       {
@@ -1118,8 +1118,8 @@ window.__STATIC_DATA__ = {
         "position": "WR",
         "team": "DEN",
         "picked_by": "andyxia124",
-        "original_owner": "eikichii952",
-        "traded": true
+        "original_owner": "andyxia124",
+        "traded": false
       },
       {
         "pick_no": 113,
@@ -1128,8 +1128,8 @@ window.__STATIC_DATA__ = {
         "position": "RB",
         "team": "ATL",
         "picked_by": "jonsung",
-        "original_owner": "jonsung",
-        "traded": false
+        "original_owner": "riqi",
+        "traded": true
       },
       {
         "pick_no": 114,
@@ -1138,8 +1138,8 @@ window.__STATIC_DATA__ = {
         "position": "TE",
         "team": "LV",
         "picked_by": "NoSkilzPak",
-        "original_owner": "shmyung",
-        "traded": true
+        "original_owner": "NoSkilzPak",
+        "traded": false
       },
       {
         "pick_no": 115,
@@ -1148,8 +1148,8 @@ window.__STATIC_DATA__ = {
         "position": "QB",
         "team": "NYJ",
         "picked_by": "eikichii952",
-        "original_owner": "edgxrjiang",
-        "traded": true
+        "original_owner": "eikichii952",
+        "traded": false
       },
       {
         "pick_no": 116,
@@ -1158,8 +1158,8 @@ window.__STATIC_DATA__ = {
         "position": "QB",
         "team": "",
         "picked_by": "jonsung",
-        "original_owner": "ganathan",
-        "traded": true
+        "original_owner": "jonsung",
+        "traded": false
       },
       {
         "pick_no": 117,
@@ -1168,8 +1168,8 @@ window.__STATIC_DATA__ = {
         "position": "WR",
         "team": "PHI",
         "picked_by": "shmyung",
-        "original_owner": "ddhk",
-        "traded": true
+        "original_owner": "shmyung",
+        "traded": false
       },
       {
         "pick_no": 118,
@@ -1178,8 +1178,8 @@ window.__STATIC_DATA__ = {
         "position": "RB",
         "team": "CAR",
         "picked_by": "edgxrjiang",
-        "original_owner": "Slot 13",
-        "traded": true
+        "original_owner": "edgxrjiang",
+        "traded": false
       },
       {
         "pick_no": 119,
@@ -1188,8 +1188,8 @@ window.__STATIC_DATA__ = {
         "position": "WR",
         "team": "KC",
         "picked_by": "ganathan",
-        "original_owner": "spiffster",
-        "traded": true
+        "original_owner": "ganathan",
+        "traded": false
       },
       {
         "pick_no": 120,
@@ -1198,7 +1198,7 @@ window.__STATIC_DATA__ = {
         "position": "WR",
         "team": "NYG",
         "picked_by": "riqi",
-        "original_owner": "Paul_Yoon",
+        "original_owner": "ddhk",
         "traded": true
       },
       {
@@ -1208,8 +1208,8 @@ window.__STATIC_DATA__ = {
         "position": "QB",
         "team": "PIT",
         "picked_by": "ddhk",
-        "original_owner": "shmyung",
-        "traded": true
+        "original_owner": "ddhk",
+        "traded": false
       },
       {
         "pick_no": 122,
@@ -1218,8 +1218,8 @@ window.__STATIC_DATA__ = {
         "position": "TE",
         "team": "LAC",
         "picked_by": "ganathan",
-        "original_owner": "jonsung",
-        "traded": true
+        "original_owner": "ganathan",
+        "traded": false
       },
       {
         "pick_no": 123,
@@ -1228,8 +1228,8 @@ window.__STATIC_DATA__ = {
         "position": "WR",
         "team": "DAL",
         "picked_by": "edgxrjiang",
-        "original_owner": "eikichii952",
-        "traded": true
+        "original_owner": "edgxrjiang",
+        "traded": false
       },
       {
         "pick_no": 124,
@@ -1238,7 +1238,7 @@ window.__STATIC_DATA__ = {
         "position": "TE",
         "team": "DET",
         "picked_by": "edgxrjiang",
-        "original_owner": "NoSkilzPak",
+        "original_owner": "shmyung",
         "traded": true
       },
       {
@@ -1248,7 +1248,7 @@ window.__STATIC_DATA__ = {
         "position": "WR",
         "team": "",
         "picked_by": "ddhk",
-        "original_owner": "riqi",
+        "original_owner": "jonsung",
         "traded": true
       },
       {
@@ -1258,8 +1258,8 @@ window.__STATIC_DATA__ = {
         "position": "WR",
         "team": "",
         "picked_by": "eikichii952",
-        "original_owner": "andyxia124",
-        "traded": true
+        "original_owner": "eikichii952",
+        "traded": false
       },
       {
         "pick_no": 127,
@@ -1268,8 +1268,8 @@ window.__STATIC_DATA__ = {
         "position": "QB",
         "team": "TEN",
         "picked_by": "NoSkilzPak",
-        "original_owner": "IconicJH",
-        "traded": true
+        "original_owner": "NoSkilzPak",
+        "traded": false
       },
       {
         "pick_no": 128,
@@ -1278,8 +1278,8 @@ window.__STATIC_DATA__ = {
         "position": "WR",
         "team": "NYG",
         "picked_by": "riqi",
-        "original_owner": "Paul_Yoon",
-        "traded": true
+        "original_owner": "riqi",
+        "traded": false
       },
       {
         "pick_no": 129,
@@ -1288,7 +1288,7 @@ window.__STATIC_DATA__ = {
         "position": "RB",
         "team": "CHI",
         "picked_by": "NoSkilzPak",
-        "original_owner": "spiffster",
+        "original_owner": "andyxia124",
         "traded": true
       },
       {
@@ -1298,8 +1298,8 @@ window.__STATIC_DATA__ = {
         "position": "QB",
         "team": "",
         "picked_by": "IconicJH",
-        "original_owner": "Slot 13",
-        "traded": true
+        "original_owner": "IconicJH",
+        "traded": false
       },
       {
         "pick_no": 131,
@@ -1308,7 +1308,7 @@ window.__STATIC_DATA__ = {
         "position": "WR",
         "team": "IND",
         "picked_by": "shmyung",
-        "original_owner": "ddhk",
+        "original_owner": "Paul_Yoon",
         "traded": true
       },
       {
@@ -1318,8 +1318,8 @@ window.__STATIC_DATA__ = {
         "position": "RB",
         "team": "",
         "picked_by": "spiffster",
-        "original_owner": "ganathan",
-        "traded": true
+        "original_owner": "spiffster",
+        "traded": false
       },
       {
         "pick_no": 133,
@@ -1328,8 +1328,8 @@ window.__STATIC_DATA__ = {
         "position": "RB",
         "team": "",
         "picked_by": "spiffster",
-        "original_owner": "Paul_Yoon",
-        "traded": true
+        "original_owner": "spiffster",
+        "traded": false
       },
       {
         "pick_no": 134,
@@ -1338,7 +1338,7 @@ window.__STATIC_DATA__ = {
         "position": "TE",
         "team": "CHI",
         "picked_by": "edgxrjiang",
-        "original_owner": "IconicJH",
+        "original_owner": "Paul_Yoon",
         "traded": true
       },
       {
@@ -1348,8 +1348,8 @@ window.__STATIC_DATA__ = {
         "position": "WR",
         "team": "TEN",
         "picked_by": "IconicJH",
-        "original_owner": "andyxia124",
-        "traded": true
+        "original_owner": "IconicJH",
+        "traded": false
       },
       {
         "pick_no": 136,
@@ -1358,8 +1358,8 @@ window.__STATIC_DATA__ = {
         "position": "WR",
         "team": "GB",
         "picked_by": "andyxia124",
-        "original_owner": "riqi",
-        "traded": true
+        "original_owner": "andyxia124",
+        "traded": false
       },
       {
         "pick_no": 137,
@@ -1368,7 +1368,7 @@ window.__STATIC_DATA__ = {
         "position": "RB",
         "team": "",
         "picked_by": "ddhk",
-        "original_owner": "NoSkilzPak",
+        "original_owner": "riqi",
         "traded": true
       },
       {
@@ -1378,8 +1378,8 @@ window.__STATIC_DATA__ = {
         "position": "WR",
         "team": "NYG",
         "picked_by": "NoSkilzPak",
-        "original_owner": "eikichii952",
-        "traded": true
+        "original_owner": "NoSkilzPak",
+        "traded": false
       },
       {
         "pick_no": 139,
@@ -1388,7 +1388,7 @@ window.__STATIC_DATA__ = {
         "position": "RB",
         "team": "PHI",
         "picked_by": "shmyung",
-        "original_owner": "jonsung",
+        "original_owner": "eikichii952",
         "traded": true
       },
       {
@@ -1398,8 +1398,8 @@ window.__STATIC_DATA__ = {
         "position": "WR",
         "team": "",
         "picked_by": "jonsung",
-        "original_owner": "shmyung",
-        "traded": true
+        "original_owner": "jonsung",
+        "traded": false
       },
       {
         "pick_no": 141,
@@ -1408,7 +1408,7 @@ window.__STATIC_DATA__ = {
         "position": "WR",
         "team": "NYG",
         "picked_by": "jonsung",
-        "original_owner": "edgxrjiang",
+        "original_owner": "shmyung",
         "traded": true
       },
       {
@@ -1418,7 +1418,7 @@ window.__STATIC_DATA__ = {
         "position": "RB",
         "team": "CIN",
         "picked_by": "Paul_Yoon",
-        "original_owner": "ganathan",
+        "original_owner": "edgxrjiang",
         "traded": true
       },
       {
@@ -1428,8 +1428,8 @@ window.__STATIC_DATA__ = {
         "position": "QB",
         "team": "SF",
         "picked_by": "ganathan",
-        "original_owner": "ddhk",
-        "traded": true
+        "original_owner": "ganathan",
+        "traded": false
       },
       {
         "pick_no": 144,
@@ -1438,7 +1438,7 @@ window.__STATIC_DATA__ = {
         "position": "WR",
         "team": "DEN",
         "picked_by": "riqi",
-        "original_owner": "Slot 13",
+        "original_owner": "ddhk",
         "traded": true
       },
       {
@@ -1448,8 +1448,8 @@ window.__STATIC_DATA__ = {
         "position": "TE",
         "team": "WAS",
         "picked_by": "ddhk",
-        "original_owner": "ganathan",
-        "traded": true
+        "original_owner": "ddhk",
+        "traded": false
       },
       {
         "pick_no": 146,
@@ -1458,8 +1458,8 @@ window.__STATIC_DATA__ = {
         "position": "RB",
         "team": "",
         "picked_by": "ganathan",
-        "original_owner": "edgxrjiang",
-        "traded": true
+        "original_owner": "ganathan",
+        "traded": false
       },
       {
         "pick_no": 147,
@@ -1468,8 +1468,8 @@ window.__STATIC_DATA__ = {
         "position": "RB",
         "team": "DAL",
         "picked_by": "edgxrjiang",
-        "original_owner": "shmyung",
-        "traded": true
+        "original_owner": "edgxrjiang",
+        "traded": false
       },
       {
         "pick_no": 148,
@@ -1478,8 +1478,8 @@ window.__STATIC_DATA__ = {
         "position": "TE",
         "team": "MIA",
         "picked_by": "shmyung",
-        "original_owner": "jonsung",
-        "traded": true
+        "original_owner": "shmyung",
+        "traded": false
       },
       {
         "pick_no": 149,
@@ -1488,7 +1488,7 @@ window.__STATIC_DATA__ = {
         "position": "RB",
         "team": "PHI",
         "picked_by": "IconicJH",
-        "original_owner": "eikichii952",
+        "original_owner": "jonsung",
         "traded": true
       },
       {
@@ -1498,7 +1498,7 @@ window.__STATIC_DATA__ = {
         "position": "WR",
         "team": "GB",
         "picked_by": "shmyung",
-        "original_owner": "NoSkilzPak",
+        "original_owner": "eikichii952",
         "traded": true
       },
       {
@@ -1508,8 +1508,8 @@ window.__STATIC_DATA__ = {
         "position": "RB",
         "team": "ARI",
         "picked_by": "NoSkilzPak",
-        "original_owner": "riqi",
-        "traded": true
+        "original_owner": "NoSkilzPak",
+        "traded": false
       },
       {
         "pick_no": 152,
@@ -1518,8 +1518,8 @@ window.__STATIC_DATA__ = {
         "position": "TE",
         "team": "GB",
         "picked_by": "riqi",
-        "original_owner": "andyxia124",
-        "traded": true
+        "original_owner": "riqi",
+        "traded": false
       },
       {
         "pick_no": 153,
@@ -1528,8 +1528,8 @@ window.__STATIC_DATA__ = {
         "position": "WR",
         "team": "NE",
         "picked_by": "andyxia124",
-        "original_owner": "IconicJH",
-        "traded": true
+        "original_owner": "andyxia124",
+        "traded": false
       },
       {
         "pick_no": 154,
@@ -1538,7 +1538,7 @@ window.__STATIC_DATA__ = {
         "position": "WR",
         "team": "",
         "picked_by": "eikichii952",
-        "original_owner": "Paul_Yoon",
+        "original_owner": "IconicJH",
         "traded": true
       },
       {
@@ -1548,8 +1548,8 @@ window.__STATIC_DATA__ = {
         "position": "WR",
         "team": "JAX",
         "picked_by": "Paul_Yoon",
-        "original_owner": "spiffster",
-        "traded": true
+        "original_owner": "Paul_Yoon",
+        "traded": false
       },
       {
         "pick_no": 156,
@@ -1558,8 +1558,8 @@ window.__STATIC_DATA__ = {
         "position": "TE",
         "team": "HOU",
         "picked_by": "spiffster",
-        "original_owner": "Slot 13",
-        "traded": true
+        "original_owner": "spiffster",
+        "traded": false
       },
       {
         "pick_no": 157,
@@ -1568,8 +1568,8 @@ window.__STATIC_DATA__ = {
         "position": "WR",
         "team": "",
         "picked_by": "spiffster",
-        "original_owner": "Slot 13",
-        "traded": true
+        "original_owner": "spiffster",
+        "traded": false
       },
       {
         "pick_no": 158,
@@ -1578,7 +1578,7 @@ window.__STATIC_DATA__ = {
         "position": "QB",
         "team": "SF",
         "picked_by": "shmyung",
-        "original_owner": "spiffster",
+        "original_owner": "Paul_Yoon",
         "traded": true
       },
       {
@@ -1588,7 +1588,7 @@ window.__STATIC_DATA__ = {
         "position": "RB",
         "team": "CIN",
         "picked_by": "jonsung",
-        "original_owner": "Paul_Yoon",
+        "original_owner": "IconicJH",
         "traded": true
       },
       {
@@ -1598,8 +1598,8 @@ window.__STATIC_DATA__ = {
         "position": "RB",
         "team": "WAS",
         "picked_by": "andyxia124",
-        "original_owner": "IconicJH",
-        "traded": true
+        "original_owner": "andyxia124",
+        "traded": false
       },
       {
         "pick_no": 161,
@@ -1608,8 +1608,8 @@ window.__STATIC_DATA__ = {
         "position": "WR",
         "team": "IND",
         "picked_by": "riqi",
-        "original_owner": "andyxia124",
-        "traded": true
+        "original_owner": "riqi",
+        "traded": false
       },
       {
         "pick_no": 162,
@@ -1618,8 +1618,8 @@ window.__STATIC_DATA__ = {
         "position": "RB",
         "team": "",
         "picked_by": "NoSkilzPak",
-        "original_owner": "riqi",
-        "traded": true
+        "original_owner": "NoSkilzPak",
+        "traded": false
       },
       {
         "pick_no": 163,
@@ -1628,7 +1628,7 @@ window.__STATIC_DATA__ = {
         "position": "TE",
         "team": "ARI",
         "picked_by": "IconicJH",
-        "original_owner": "NoSkilzPak",
+        "original_owner": "eikichii952",
         "traded": true
       },
       {
@@ -1638,7 +1638,7 @@ window.__STATIC_DATA__ = {
         "position": "RB",
         "team": "",
         "picked_by": "ddhk",
-        "original_owner": "eikichii952",
+        "original_owner": "jonsung",
         "traded": true
       },
       {
@@ -1648,7 +1648,7 @@ window.__STATIC_DATA__ = {
         "position": "WR",
         "team": "HOU",
         "picked_by": "Paul_Yoon",
-        "original_owner": "jonsung",
+        "original_owner": "shmyung",
         "traded": true
       },
       {
@@ -1658,8 +1658,8 @@ window.__STATIC_DATA__ = {
         "position": "WR",
         "team": "CLE",
         "picked_by": "edgxrjiang",
-        "original_owner": "shmyung",
-        "traded": true
+        "original_owner": "edgxrjiang",
+        "traded": false
       },
       {
         "pick_no": 167,
@@ -1668,8 +1668,8 @@ window.__STATIC_DATA__ = {
         "position": "WR",
         "team": "CAR",
         "picked_by": "ganathan",
-        "original_owner": "edgxrjiang",
-        "traded": true
+        "original_owner": "ganathan",
+        "traded": false
       },
       {
         "pick_no": 168,
@@ -1678,8 +1678,8 @@ window.__STATIC_DATA__ = {
         "position": "QB",
         "team": "DAL",
         "picked_by": "ddhk",
-        "original_owner": "ganathan",
-        "traded": true
+        "original_owner": "ddhk",
+        "traded": false
       },
       {
         "pick_no": 169,
@@ -1688,8 +1688,8 @@ window.__STATIC_DATA__ = {
         "position": "WR",
         "team": "HOU",
         "picked_by": "ddhk",
-        "original_owner": "Slot 13",
-        "traded": true
+        "original_owner": "ddhk",
+        "traded": false
       },
       {
         "pick_no": 170,
@@ -1698,8 +1698,8 @@ window.__STATIC_DATA__ = {
         "position": "RB",
         "team": "TEN",
         "picked_by": "ganathan",
-        "original_owner": "ddhk",
-        "traded": true
+        "original_owner": "ganathan",
+        "traded": false
       },
       {
         "pick_no": 171,
@@ -1708,8 +1708,8 @@ window.__STATIC_DATA__ = {
         "position": "RB",
         "team": "",
         "picked_by": "edgxrjiang",
-        "original_owner": "ganathan",
-        "traded": true
+        "original_owner": "edgxrjiang",
+        "traded": false
       },
       {
         "pick_no": 172,
@@ -1718,8 +1718,8 @@ window.__STATIC_DATA__ = {
         "position": "WR",
         "team": "",
         "picked_by": "shmyung",
-        "original_owner": "edgxrjiang",
-        "traded": true
+        "original_owner": "shmyung",
+        "traded": false
       },
       {
         "pick_no": 173,
@@ -1728,7 +1728,7 @@ window.__STATIC_DATA__ = {
         "position": "TE",
         "team": "NYG",
         "picked_by": "ddhk",
-        "original_owner": "shmyung",
+        "original_owner": "jonsung",
         "traded": true
       },
       {
@@ -1738,8 +1738,8 @@ window.__STATIC_DATA__ = {
         "position": "WR",
         "team": "",
         "picked_by": "eikichii952",
-        "original_owner": "jonsung",
-        "traded": true
+        "original_owner": "eikichii952",
+        "traded": false
       },
       {
         "pick_no": 175,
@@ -1748,8 +1748,8 @@ window.__STATIC_DATA__ = {
         "position": "RB",
         "team": "",
         "picked_by": "NoSkilzPak",
-        "original_owner": "eikichii952",
-        "traded": true
+        "original_owner": "NoSkilzPak",
+        "traded": false
       },
       {
         "pick_no": 176,
@@ -1758,8 +1758,8 @@ window.__STATIC_DATA__ = {
         "position": "RB",
         "team": "NYG",
         "picked_by": "riqi",
-        "original_owner": "NoSkilzPak",
-        "traded": true
+        "original_owner": "riqi",
+        "traded": false
       },
       {
         "pick_no": 177,
@@ -1768,8 +1768,8 @@ window.__STATIC_DATA__ = {
         "position": "QB",
         "team": "",
         "picked_by": "andyxia124",
-        "original_owner": "riqi",
-        "traded": true
+        "original_owner": "andyxia124",
+        "traded": false
       },
       {
         "pick_no": 178,
@@ -1778,7 +1778,7 @@ window.__STATIC_DATA__ = {
         "position": "TE",
         "team": "",
         "picked_by": "jonsung",
-        "original_owner": "andyxia124",
+        "original_owner": "IconicJH",
         "traded": true
       },
       {
@@ -1788,8 +1788,8 @@ window.__STATIC_DATA__ = {
         "position": "RB",
         "team": "",
         "picked_by": "Paul_Yoon",
-        "original_owner": "IconicJH",
-        "traded": true
+        "original_owner": "Paul_Yoon",
+        "traded": false
       },
       {
         "pick_no": 180,
@@ -1798,8 +1798,8 @@ window.__STATIC_DATA__ = {
         "position": "QB",
         "team": "ARI",
         "picked_by": "spiffster",
-        "original_owner": "Paul_Yoon",
-        "traded": true
+        "original_owner": "spiffster",
+        "traded": false
       },
       {
         "pick_no": 181,
@@ -1808,8 +1808,8 @@ window.__STATIC_DATA__ = {
         "position": "WR",
         "team": "",
         "picked_by": "spiffster",
-        "original_owner": "ganathan",
-        "traded": true
+        "original_owner": "spiffster",
+        "traded": false
       },
       {
         "pick_no": 182,
@@ -1818,7 +1818,7 @@ window.__STATIC_DATA__ = {
         "position": "WR",
         "team": "",
         "picked_by": "shmyung",
-        "original_owner": "ddhk",
+        "original_owner": "Paul_Yoon",
         "traded": true
       },
       {
@@ -1828,8 +1828,8 @@ window.__STATIC_DATA__ = {
         "position": "WR",
         "team": "NE",
         "picked_by": "IconicJH",
-        "original_owner": "Slot 13",
-        "traded": true
+        "original_owner": "IconicJH",
+        "traded": false
       },
       {
         "pick_no": 184,
@@ -1838,8 +1838,8 @@ window.__STATIC_DATA__ = {
         "position": "QB",
         "team": "TEN",
         "picked_by": "andyxia124",
-        "original_owner": "spiffster",
-        "traded": true
+        "original_owner": "andyxia124",
+        "traded": false
       },
       {
         "pick_no": 185,
@@ -1848,8 +1848,8 @@ window.__STATIC_DATA__ = {
         "position": "WR",
         "team": "SEA",
         "picked_by": "riqi",
-        "original_owner": "Paul_Yoon",
-        "traded": true
+        "original_owner": "riqi",
+        "traded": false
       },
       {
         "pick_no": 186,
@@ -1858,8 +1858,8 @@ window.__STATIC_DATA__ = {
         "position": "RB",
         "team": "PIT",
         "picked_by": "NoSkilzPak",
-        "original_owner": "IconicJH",
-        "traded": true
+        "original_owner": "NoSkilzPak",
+        "traded": false
       },
       {
         "pick_no": 187,
@@ -1868,8 +1868,8 @@ window.__STATIC_DATA__ = {
         "position": "WR",
         "team": "",
         "picked_by": "eikichii952",
-        "original_owner": "andyxia124",
-        "traded": true
+        "original_owner": "eikichii952",
+        "traded": false
       },
       {
         "pick_no": 188,
@@ -1878,7 +1878,7 @@ window.__STATIC_DATA__ = {
         "position": "QB",
         "team": "LAR",
         "picked_by": "ddhk",
-        "original_owner": "riqi",
+        "original_owner": "jonsung",
         "traded": true
       },
       {
@@ -1888,7 +1888,7 @@ window.__STATIC_DATA__ = {
         "position": "QB",
         "team": "",
         "picked_by": "Paul_Yoon",
-        "original_owner": "NoSkilzPak",
+        "original_owner": "shmyung",
         "traded": true
       },
       {
@@ -1898,8 +1898,8 @@ window.__STATIC_DATA__ = {
         "position": "RB",
         "team": "TB",
         "picked_by": "edgxrjiang",
-        "original_owner": "eikichii952",
-        "traded": true
+        "original_owner": "edgxrjiang",
+        "traded": false
       },
       {
         "pick_no": 191,
@@ -1908,8 +1908,8 @@ window.__STATIC_DATA__ = {
         "position": "TE",
         "team": "DAL",
         "picked_by": "ganathan",
-        "original_owner": "jonsung",
-        "traded": true
+        "original_owner": "ganathan",
+        "traded": false
       },
       {
         "pick_no": 192,
@@ -1918,7 +1918,7 @@ window.__STATIC_DATA__ = {
         "position": "WR",
         "team": "WAS",
         "picked_by": "IconicJH",
-        "original_owner": "shmyung",
+        "original_owner": "ddhk",
         "traded": true
       },
       {
@@ -1928,8 +1928,8 @@ window.__STATIC_DATA__ = {
         "position": "RB",
         "team": "",
         "picked_by": "ddhk",
-        "original_owner": "Paul_Yoon",
-        "traded": true
+        "original_owner": "ddhk",
+        "traded": false
       },
       {
         "pick_no": 194,
@@ -1938,8 +1938,8 @@ window.__STATIC_DATA__ = {
         "position": "RB",
         "team": "",
         "picked_by": "ganathan",
-        "original_owner": "spiffster",
-        "traded": true
+        "original_owner": "ganathan",
+        "traded": false
       },
       {
         "pick_no": 195,
@@ -1948,8 +1948,8 @@ window.__STATIC_DATA__ = {
         "position": "TE",
         "team": "BUF",
         "picked_by": "edgxrjiang",
-        "original_owner": "Slot 13",
-        "traded": true
+        "original_owner": "edgxrjiang",
+        "traded": false
       },
       {
         "pick_no": 196,
@@ -1958,8 +1958,8 @@ window.__STATIC_DATA__ = {
         "position": "WR",
         "team": "ARI",
         "picked_by": "shmyung",
-        "original_owner": "ddhk",
-        "traded": true
+        "original_owner": "shmyung",
+        "traded": false
       },
       {
         "pick_no": 197,
@@ -1968,7 +1968,7 @@ window.__STATIC_DATA__ = {
         "position": "RB",
         "team": "TB",
         "picked_by": "shmyung",
-        "original_owner": "ganathan",
+        "original_owner": "jonsung",
         "traded": true
       },
       {
@@ -1978,7 +1978,7 @@ window.__STATIC_DATA__ = {
         "position": "RB",
         "team": "",
         "picked_by": "ddhk",
-        "original_owner": "edgxrjiang",
+        "original_owner": "eikichii952",
         "traded": true
       },
       {
@@ -1988,8 +1988,8 @@ window.__STATIC_DATA__ = {
         "position": "WR",
         "team": "KC",
         "picked_by": "NoSkilzPak",
-        "original_owner": "shmyung",
-        "traded": true
+        "original_owner": "NoSkilzPak",
+        "traded": false
       },
       {
         "pick_no": 200,
@@ -1998,8 +1998,8 @@ window.__STATIC_DATA__ = {
         "position": "WR",
         "team": "",
         "picked_by": "riqi",
-        "original_owner": "jonsung",
-        "traded": true
+        "original_owner": "riqi",
+        "traded": false
       },
       {
         "pick_no": 201,
@@ -2008,8 +2008,8 @@ window.__STATIC_DATA__ = {
         "position": "TE",
         "team": "PIT",
         "picked_by": "andyxia124",
-        "original_owner": "eikichii952",
-        "traded": true
+        "original_owner": "andyxia124",
+        "traded": false
       },
       {
         "pick_no": 202,
@@ -2018,8 +2018,8 @@ window.__STATIC_DATA__ = {
         "position": "TE",
         "team": "",
         "picked_by": "IconicJH",
-        "original_owner": "NoSkilzPak",
-        "traded": true
+        "original_owner": "IconicJH",
+        "traded": false
       },
       {
         "pick_no": 203,
@@ -2028,8 +2028,8 @@ window.__STATIC_DATA__ = {
         "position": "TE",
         "team": "NO",
         "picked_by": "Paul_Yoon",
-        "original_owner": "riqi",
-        "traded": true
+        "original_owner": "Paul_Yoon",
+        "traded": false
       },
       {
         "pick_no": 204,
@@ -2038,8 +2038,8 @@ window.__STATIC_DATA__ = {
         "position": "WR",
         "team": "DET",
         "picked_by": "spiffster",
-        "original_owner": "andyxia124",
-        "traded": true
+        "original_owner": "spiffster",
+        "traded": false
       },
       {
         "pick_no": 205,
@@ -2048,8 +2048,8 @@ window.__STATIC_DATA__ = {
         "position": "WR",
         "team": "BUF",
         "picked_by": "spiffster",
-        "original_owner": "shmyung",
-        "traded": true
+        "original_owner": "spiffster",
+        "traded": false
       },
       {
         "pick_no": 206,
@@ -2058,8 +2058,8 @@ window.__STATIC_DATA__ = {
         "position": "RB",
         "team": "CAR",
         "picked_by": "Paul_Yoon",
-        "original_owner": "edgxrjiang",
-        "traded": true
+        "original_owner": "Paul_Yoon",
+        "traded": false
       },
       {
         "pick_no": 207,
@@ -2068,8 +2068,8 @@ window.__STATIC_DATA__ = {
         "position": "QB",
         "team": "",
         "picked_by": "IconicJH",
-        "original_owner": "ganathan",
-        "traded": true
+        "original_owner": "IconicJH",
+        "traded": false
       },
       {
         "pick_no": 208,
@@ -2078,8 +2078,8 @@ window.__STATIC_DATA__ = {
         "position": "RB",
         "team": "NYG",
         "picked_by": "andyxia124",
-        "original_owner": "ddhk",
-        "traded": true
+        "original_owner": "andyxia124",
+        "traded": false
       },
       {
         "pick_no": 209,
@@ -2088,8 +2088,8 @@ window.__STATIC_DATA__ = {
         "position": "TE",
         "team": "LAR",
         "picked_by": "riqi",
-        "original_owner": "Slot 13",
-        "traded": true
+        "original_owner": "riqi",
+        "traded": false
       },
       {
         "pick_no": 210,
@@ -2098,8 +2098,8 @@ window.__STATIC_DATA__ = {
         "position": "K",
         "team": "",
         "picked_by": "NoSkilzPak",
-        "original_owner": "spiffster",
-        "traded": true
+        "original_owner": "NoSkilzPak",
+        "traded": false
       },
       {
         "pick_no": 211,
@@ -2108,8 +2108,8 @@ window.__STATIC_DATA__ = {
         "position": "RB",
         "team": "",
         "picked_by": "eikichii952",
-        "original_owner": "Paul_Yoon",
-        "traded": true
+        "original_owner": "eikichii952",
+        "traded": false
       },
       {
         "pick_no": 212,
@@ -2118,8 +2118,8 @@ window.__STATIC_DATA__ = {
         "position": "TE",
         "team": "CIN",
         "picked_by": "jonsung",
-        "original_owner": "IconicJH",
-        "traded": true
+        "original_owner": "jonsung",
+        "traded": false
       },
       {
         "pick_no": 213,
@@ -2128,7 +2128,7 @@ window.__STATIC_DATA__ = {
         "position": "TE",
         "team": "",
         "picked_by": "eikichii952",
-        "original_owner": "andyxia124",
+        "original_owner": "shmyung",
         "traded": true
       },
       {
@@ -2138,8 +2138,8 @@ window.__STATIC_DATA__ = {
         "position": "K",
         "team": "CIN",
         "picked_by": "edgxrjiang",
-        "original_owner": "riqi",
-        "traded": true
+        "original_owner": "edgxrjiang",
+        "traded": false
       },
       {
         "pick_no": 215,
@@ -2148,8 +2148,8 @@ window.__STATIC_DATA__ = {
         "position": "WR",
         "team": "NYG",
         "picked_by": "ganathan",
-        "original_owner": "NoSkilzPak",
-        "traded": true
+        "original_owner": "ganathan",
+        "traded": false
       },
       {
         "pick_no": 216,
@@ -2158,8 +2158,8 @@ window.__STATIC_DATA__ = {
         "position": "RB",
         "team": "HOU",
         "picked_by": "eikichii952",
-        "original_owner": "eikichii952",
-        "traded": false
+        "original_owner": "ddhk",
+        "traded": true
       },
       {
         "pick_no": 217,
@@ -2168,8 +2168,8 @@ window.__STATIC_DATA__ = {
         "position": "RB",
         "team": "",
         "picked_by": "ddhk",
-        "original_owner": "andyxia124",
-        "traded": true
+        "original_owner": "ddhk",
+        "traded": false
       },
       {
         "pick_no": 218,
@@ -2178,8 +2178,8 @@ window.__STATIC_DATA__ = {
         "position": "WR",
         "team": "",
         "picked_by": "ganathan",
-        "original_owner": "IconicJH",
-        "traded": true
+        "original_owner": "ganathan",
+        "traded": false
       },
       {
         "pick_no": 219,
@@ -2188,8 +2188,8 @@ window.__STATIC_DATA__ = {
         "position": "QB",
         "team": "TB",
         "picked_by": "edgxrjiang",
-        "original_owner": "Paul_Yoon",
-        "traded": true
+        "original_owner": "edgxrjiang",
+        "traded": false
       },
       {
         "pick_no": 220,
@@ -2198,8 +2198,8 @@ window.__STATIC_DATA__ = {
         "position": "TE",
         "team": "NO",
         "picked_by": "shmyung",
-        "original_owner": "spiffster",
-        "traded": true
+        "original_owner": "shmyung",
+        "traded": false
       },
       {
         "pick_no": 221,
@@ -2208,8 +2208,8 @@ window.__STATIC_DATA__ = {
         "position": "WR",
         "team": "LAR",
         "picked_by": "jonsung",
-        "original_owner": "Slot 13",
-        "traded": true
+        "original_owner": "jonsung",
+        "traded": false
       },
       {
         "pick_no": 222,
@@ -2218,8 +2218,8 @@ window.__STATIC_DATA__ = {
         "position": "WR",
         "team": "TEN",
         "picked_by": "eikichii952",
-        "original_owner": "ddhk",
-        "traded": true
+        "original_owner": "eikichii952",
+        "traded": false
       },
       {
         "pick_no": 223,
@@ -2228,8 +2228,8 @@ window.__STATIC_DATA__ = {
         "position": "TE",
         "team": "NYJ",
         "picked_by": "NoSkilzPak",
-        "original_owner": "ganathan",
-        "traded": true
+        "original_owner": "NoSkilzPak",
+        "traded": false
       },
       {
         "pick_no": 224,
@@ -2238,8 +2238,8 @@ window.__STATIC_DATA__ = {
         "position": "K",
         "team": "KC",
         "picked_by": "riqi",
-        "original_owner": "edgxrjiang",
-        "traded": true
+        "original_owner": "riqi",
+        "traded": false
       },
       {
         "pick_no": 225,
@@ -2248,8 +2248,8 @@ window.__STATIC_DATA__ = {
         "position": "WR",
         "team": "MIA",
         "picked_by": "andyxia124",
-        "original_owner": "shmyung",
-        "traded": true
+        "original_owner": "andyxia124",
+        "traded": false
       },
       {
         "pick_no": 226,
@@ -2258,8 +2258,8 @@ window.__STATIC_DATA__ = {
         "position": "K",
         "team": "",
         "picked_by": "jonsung",
-        "original_owner": "jonsung",
-        "traded": false
+        "original_owner": "IconicJH",
+        "traded": true
       },
       {
         "pick_no": 227,
@@ -2268,8 +2268,8 @@ window.__STATIC_DATA__ = {
         "position": "WR",
         "team": "",
         "picked_by": "Paul_Yoon",
-        "original_owner": "eikichii952",
-        "traded": true
+        "original_owner": "Paul_Yoon",
+        "traded": false
       },
       {
         "pick_no": 228,
@@ -2278,8 +2278,8 @@ window.__STATIC_DATA__ = {
         "position": "WR",
         "team": "NYJ",
         "picked_by": "spiffster",
-        "original_owner": "NoSkilzPak",
-        "traded": true
+        "original_owner": "spiffster",
+        "traded": false
       },
       {
         "pick_no": 229,
@@ -2288,8 +2288,8 @@ window.__STATIC_DATA__ = {
         "position": "WR",
         "team": "",
         "picked_by": "spiffster",
-        "original_owner": "eikichii952",
-        "traded": true
+        "original_owner": "spiffster",
+        "traded": false
       },
       {
         "pick_no": 230,
@@ -2298,7 +2298,7 @@ window.__STATIC_DATA__ = {
         "position": "K",
         "team": "",
         "picked_by": "eikichii952",
-        "original_owner": "jonsung",
+        "original_owner": "Paul_Yoon",
         "traded": true
       },
       {
@@ -2308,8 +2308,8 @@ window.__STATIC_DATA__ = {
         "position": "K",
         "team": "BUF",
         "picked_by": "IconicJH",
-        "original_owner": "shmyung",
-        "traded": true
+        "original_owner": "IconicJH",
+        "traded": false
       },
       {
         "pick_no": 232,
@@ -2318,8 +2318,8 @@ window.__STATIC_DATA__ = {
         "position": "RB",
         "team": "",
         "picked_by": "andyxia124",
-        "original_owner": "edgxrjiang",
-        "traded": true
+        "original_owner": "andyxia124",
+        "traded": false
       },
       {
         "pick_no": 233,
@@ -2328,8 +2328,8 @@ window.__STATIC_DATA__ = {
         "position": "WR",
         "team": "DAL",
         "picked_by": "riqi",
-        "original_owner": "ganathan",
-        "traded": true
+        "original_owner": "riqi",
+        "traded": false
       },
       {
         "pick_no": 234,
@@ -2338,8 +2338,8 @@ window.__STATIC_DATA__ = {
         "position": "QB",
         "team": "",
         "picked_by": "NoSkilzPak",
-        "original_owner": "ddhk",
-        "traded": true
+        "original_owner": "NoSkilzPak",
+        "traded": false
       },
       {
         "pick_no": 235,
@@ -2348,7 +2348,7 @@ window.__STATIC_DATA__ = {
         "position": "WR",
         "team": "",
         "picked_by": "jonsung",
-        "original_owner": "Slot 13",
+        "original_owner": "eikichii952",
         "traded": true
       },
       {
@@ -2358,8 +2358,8 @@ window.__STATIC_DATA__ = {
         "position": "WR",
         "team": "PIT",
         "picked_by": "jonsung",
-        "original_owner": "spiffster",
-        "traded": true
+        "original_owner": "jonsung",
+        "traded": false
       },
       {
         "pick_no": 237,
@@ -2368,8 +2368,8 @@ window.__STATIC_DATA__ = {
         "position": "WR",
         "team": "BUF",
         "picked_by": "shmyung",
-        "original_owner": "Paul_Yoon",
-        "traded": true
+        "original_owner": "shmyung",
+        "traded": false
       },
       {
         "pick_no": 238,
@@ -2378,8 +2378,8 @@ window.__STATIC_DATA__ = {
         "position": "WR",
         "team": "",
         "picked_by": "edgxrjiang",
-        "original_owner": "IconicJH",
-        "traded": true
+        "original_owner": "edgxrjiang",
+        "traded": false
       },
       {
         "pick_no": 239,
@@ -2388,8 +2388,8 @@ window.__STATIC_DATA__ = {
         "position": "RB",
         "team": "",
         "picked_by": "ganathan",
-        "original_owner": "andyxia124",
-        "traded": true
+        "original_owner": "ganathan",
+        "traded": false
       },
       {
         "pick_no": 240,
@@ -2398,8 +2398,8 @@ window.__STATIC_DATA__ = {
         "position": "WR",
         "team": "NYG",
         "picked_by": "riqi",
-        "original_owner": "riqi",
-        "traded": false
+        "original_owner": "ddhk",
+        "traded": true
       },
       {
         "pick_no": 241,
@@ -2408,8 +2408,8 @@ window.__STATIC_DATA__ = {
         "position": "TE",
         "team": "",
         "picked_by": "ddhk",
-        "original_owner": "NoSkilzPak",
-        "traded": true
+        "original_owner": "ddhk",
+        "traded": false
       },
       {
         "pick_no": 242,
@@ -2418,8 +2418,8 @@ window.__STATIC_DATA__ = {
         "position": "RB",
         "team": "",
         "picked_by": "ganathan",
-        "original_owner": "riqi",
-        "traded": true
+        "original_owner": "ganathan",
+        "traded": false
       },
       {
         "pick_no": 243,
@@ -2428,8 +2428,8 @@ window.__STATIC_DATA__ = {
         "position": "RB",
         "team": "TEN",
         "picked_by": "edgxrjiang",
-        "original_owner": "andyxia124",
-        "traded": true
+        "original_owner": "edgxrjiang",
+        "traded": false
       },
       {
         "pick_no": 244,
@@ -2438,8 +2438,8 @@ window.__STATIC_DATA__ = {
         "position": "RB",
         "team": "",
         "picked_by": "shmyung",
-        "original_owner": "IconicJH",
-        "traded": true
+        "original_owner": "shmyung",
+        "traded": false
       },
       {
         "pick_no": 245,
@@ -2448,8 +2448,8 @@ window.__STATIC_DATA__ = {
         "position": "TE",
         "team": "",
         "picked_by": "jonsung",
-        "original_owner": "Paul_Yoon",
-        "traded": true
+        "original_owner": "jonsung",
+        "traded": false
       },
       {
         "pick_no": 246,
@@ -2458,7 +2458,7 @@ window.__STATIC_DATA__ = {
         "position": "WR",
         "team": "",
         "picked_by": "Paul_Yoon",
-        "original_owner": "spiffster",
+        "original_owner": "eikichii952",
         "traded": true
       },
       {
@@ -2468,8 +2468,8 @@ window.__STATIC_DATA__ = {
         "position": "QB",
         "team": "LAR",
         "picked_by": "NoSkilzPak",
-        "original_owner": "Slot 13",
-        "traded": true
+        "original_owner": "NoSkilzPak",
+        "traded": false
       },
       {
         "pick_no": 248,
@@ -2478,8 +2478,8 @@ window.__STATIC_DATA__ = {
         "position": "WR",
         "team": "HOU",
         "picked_by": "riqi",
-        "original_owner": "ddhk",
-        "traded": true
+        "original_owner": "riqi",
+        "traded": false
       },
       {
         "pick_no": 249,
@@ -2488,8 +2488,8 @@ window.__STATIC_DATA__ = {
         "position": "RB",
         "team": "",
         "picked_by": "andyxia124",
-        "original_owner": "ganathan",
-        "traded": true
+        "original_owner": "andyxia124",
+        "traded": false
       },
       {
         "pick_no": 250,
@@ -2498,8 +2498,8 @@ window.__STATIC_DATA__ = {
         "position": "RB",
         "team": "JAX",
         "picked_by": "IconicJH",
-        "original_owner": "edgxrjiang",
-        "traded": true
+        "original_owner": "IconicJH",
+        "traded": false
       },
       {
         "pick_no": 251,
@@ -2508,8 +2508,8 @@ window.__STATIC_DATA__ = {
         "position": "WR",
         "team": "",
         "picked_by": "Paul_Yoon",
-        "original_owner": "shmyung",
-        "traded": true
+        "original_owner": "Paul_Yoon",
+        "traded": false
       },
       {
         "pick_no": 252,
@@ -2518,8 +2518,8 @@ window.__STATIC_DATA__ = {
         "position": "RB",
         "team": "",
         "picked_by": "spiffster",
-        "original_owner": "jonsung",
-        "traded": true
+        "original_owner": "spiffster",
+        "traded": false
       },
       {
         "pick_no": 253,
@@ -2528,8 +2528,8 @@ window.__STATIC_DATA__ = {
         "position": "WR",
         "team": "",
         "picked_by": "spiffster",
-        "original_owner": "riqi",
-        "traded": true
+        "original_owner": "spiffster",
+        "traded": false
       },
       {
         "pick_no": 254,
@@ -2538,8 +2538,8 @@ window.__STATIC_DATA__ = {
         "position": "RB",
         "team": "GB",
         "picked_by": "Paul_Yoon",
-        "original_owner": "NoSkilzPak",
-        "traded": true
+        "original_owner": "Paul_Yoon",
+        "traded": false
       },
       {
         "pick_no": 255,
@@ -2548,8 +2548,8 @@ window.__STATIC_DATA__ = {
         "position": "WR",
         "team": "BUF",
         "picked_by": "IconicJH",
-        "original_owner": "eikichii952",
-        "traded": true
+        "original_owner": "IconicJH",
+        "traded": false
       },
       {
         "pick_no": 256,
@@ -2558,8 +2558,8 @@ window.__STATIC_DATA__ = {
         "position": "QB",
         "team": "NO",
         "picked_by": "andyxia124",
-        "original_owner": "jonsung",
-        "traded": true
+        "original_owner": "andyxia124",
+        "traded": false
       },
       {
         "pick_no": 257,
@@ -2568,8 +2568,8 @@ window.__STATIC_DATA__ = {
         "position": "TE",
         "team": "TB",
         "picked_by": "riqi",
-        "original_owner": "shmyung",
-        "traded": true
+        "original_owner": "riqi",
+        "traded": false
       },
       {
         "pick_no": 258,
@@ -2578,8 +2578,8 @@ window.__STATIC_DATA__ = {
         "position": "TE",
         "team": "GB",
         "picked_by": "NoSkilzPak",
-        "original_owner": "edgxrjiang",
-        "traded": true
+        "original_owner": "NoSkilzPak",
+        "traded": false
       },
       {
         "pick_no": 259,
@@ -2588,8 +2588,8 @@ window.__STATIC_DATA__ = {
         "position": "RB",
         "team": "",
         "picked_by": "eikichii952",
-        "original_owner": "ganathan",
-        "traded": true
+        "original_owner": "eikichii952",
+        "traded": false
       },
       {
         "pick_no": 260,
@@ -2598,8 +2598,8 @@ window.__STATIC_DATA__ = {
         "position": "TE",
         "team": "",
         "picked_by": "jonsung",
-        "original_owner": "ddhk",
-        "traded": true
+        "original_owner": "jonsung",
+        "traded": false
       },
       {
         "pick_no": 261,
@@ -2608,8 +2608,8 @@ window.__STATIC_DATA__ = {
         "position": "WR",
         "team": "LAR",
         "picked_by": "shmyung",
-        "original_owner": "Slot 13",
-        "traded": true
+        "original_owner": "shmyung",
+        "traded": false
       },
       {
         "pick_no": 262,
@@ -2618,8 +2618,8 @@ window.__STATIC_DATA__ = {
         "position": "TE",
         "team": "TEN",
         "picked_by": "edgxrjiang",
-        "original_owner": "spiffster",
-        "traded": true
+        "original_owner": "edgxrjiang",
+        "traded": false
       },
       {
         "pick_no": 263,
@@ -2628,8 +2628,8 @@ window.__STATIC_DATA__ = {
         "position": "QB",
         "team": "SEA",
         "picked_by": "ganathan",
-        "original_owner": "Paul_Yoon",
-        "traded": true
+        "original_owner": "ganathan",
+        "traded": false
       },
       {
         "pick_no": 264,
@@ -2638,8 +2638,8 @@ window.__STATIC_DATA__ = {
         "position": "WR",
         "team": "MIA",
         "picked_by": "ddhk",
-        "original_owner": "IconicJH",
-        "traded": true
+        "original_owner": "ddhk",
+        "traded": false
       },
       {
         "pick_no": 265,
@@ -2648,8 +2648,8 @@ window.__STATIC_DATA__ = {
         "position": "QB",
         "team": "",
         "picked_by": "ddhk",
-        "original_owner": "jonsung",
-        "traded": true
+        "original_owner": "ddhk",
+        "traded": false
       },
       {
         "pick_no": 266,
@@ -2658,8 +2658,8 @@ window.__STATIC_DATA__ = {
         "position": "WR",
         "team": "JAX",
         "picked_by": "ganathan",
-        "original_owner": "eikichii952",
-        "traded": true
+        "original_owner": "ganathan",
+        "traded": false
       },
       {
         "pick_no": 267,
@@ -2668,8 +2668,8 @@ window.__STATIC_DATA__ = {
         "position": "WR",
         "team": "CIN",
         "picked_by": "edgxrjiang",
-        "original_owner": "NoSkilzPak",
-        "traded": true
+        "original_owner": "edgxrjiang",
+        "traded": false
       },
       {
         "pick_no": 268,
@@ -2678,7 +2678,7 @@ window.__STATIC_DATA__ = {
         "position": "RB",
         "team": "",
         "picked_by": "eikichii952",
-        "original_owner": "riqi",
+        "original_owner": "shmyung",
         "traded": true
       },
       {
@@ -2688,8 +2688,8 @@ window.__STATIC_DATA__ = {
         "position": "QB",
         "team": "NYJ",
         "picked_by": "jonsung",
-        "original_owner": "andyxia124",
-        "traded": true
+        "original_owner": "jonsung",
+        "traded": false
       },
       {
         "pick_no": 270,
@@ -2698,8 +2698,8 @@ window.__STATIC_DATA__ = {
         "position": "TE",
         "team": "GB",
         "picked_by": "eikichii952",
-        "original_owner": "IconicJH",
-        "traded": true
+        "original_owner": "eikichii952",
+        "traded": false
       },
       {
         "pick_no": 271,
@@ -2708,8 +2708,8 @@ window.__STATIC_DATA__ = {
         "position": "QB",
         "team": "",
         "picked_by": "NoSkilzPak",
-        "original_owner": "Paul_Yoon",
-        "traded": true
+        "original_owner": "NoSkilzPak",
+        "traded": false
       },
       {
         "pick_no": 272,
@@ -2718,8 +2718,8 @@ window.__STATIC_DATA__ = {
         "position": "TE",
         "team": "DAL",
         "picked_by": "riqi",
-        "original_owner": "spiffster",
-        "traded": true
+        "original_owner": "riqi",
+        "traded": false
       },
       {
         "pick_no": 273,
@@ -2728,8 +2728,8 @@ window.__STATIC_DATA__ = {
         "position": "RB",
         "team": "NO",
         "picked_by": "andyxia124",
-        "original_owner": "Slot 13",
-        "traded": true
+        "original_owner": "andyxia124",
+        "traded": false
       },
       {
         "pick_no": 274,
@@ -2738,8 +2738,8 @@ window.__STATIC_DATA__ = {
         "position": "QB",
         "team": "LV",
         "picked_by": "IconicJH",
-        "original_owner": "ddhk",
-        "traded": true
+        "original_owner": "IconicJH",
+        "traded": false
       },
       {
         "pick_no": 275,
@@ -2748,8 +2748,8 @@ window.__STATIC_DATA__ = {
         "position": "TE",
         "team": "DET",
         "picked_by": "Paul_Yoon",
-        "original_owner": "ganathan",
-        "traded": true
+        "original_owner": "Paul_Yoon",
+        "traded": false
       },
       {
         "pick_no": 276,
@@ -2758,8 +2758,8 @@ window.__STATIC_DATA__ = {
         "position": "K",
         "team": "WAS",
         "picked_by": "spiffster",
-        "original_owner": "edgxrjiang",
-        "traded": true
+        "original_owner": "spiffster",
+        "traded": false
       },
       {
         "pick_no": 277,
@@ -2768,8 +2768,8 @@ window.__STATIC_DATA__ = {
         "position": "RB",
         "team": "MIN",
         "picked_by": "spiffster",
-        "original_owner": "IconicJH",
-        "traded": true
+        "original_owner": "spiffster",
+        "traded": false
       },
       {
         "pick_no": 278,
@@ -2778,8 +2778,8 @@ window.__STATIC_DATA__ = {
         "position": "WR",
         "team": "",
         "picked_by": "Paul_Yoon",
-        "original_owner": "andyxia124",
-        "traded": true
+        "original_owner": "Paul_Yoon",
+        "traded": false
       },
       {
         "pick_no": 279,
@@ -2788,8 +2788,8 @@ window.__STATIC_DATA__ = {
         "position": "WR",
         "team": "LV",
         "picked_by": "IconicJH",
-        "original_owner": "riqi",
-        "traded": true
+        "original_owner": "IconicJH",
+        "traded": false
       },
       {
         "pick_no": 280,
@@ -2798,8 +2798,8 @@ window.__STATIC_DATA__ = {
         "position": "TE",
         "team": "JAX",
         "picked_by": "andyxia124",
-        "original_owner": "NoSkilzPak",
-        "traded": true
+        "original_owner": "andyxia124",
+        "traded": false
       },
       {
         "pick_no": 281,
@@ -2808,8 +2808,8 @@ window.__STATIC_DATA__ = {
         "position": "RB",
         "team": "DAL",
         "picked_by": "riqi",
-        "original_owner": "eikichii952",
-        "traded": true
+        "original_owner": "riqi",
+        "traded": false
       },
       {
         "pick_no": 282,
@@ -2818,8 +2818,8 @@ window.__STATIC_DATA__ = {
         "position": "RB",
         "team": "",
         "picked_by": "NoSkilzPak",
-        "original_owner": "jonsung",
-        "traded": true
+        "original_owner": "NoSkilzPak",
+        "traded": false
       },
       {
         "pick_no": 283,
@@ -2828,7 +2828,7 @@ window.__STATIC_DATA__ = {
         "position": "WR",
         "team": "",
         "picked_by": "Paul_Yoon",
-        "original_owner": "shmyung",
+        "original_owner": "eikichii952",
         "traded": true
       },
       {
@@ -2838,8 +2838,8 @@ window.__STATIC_DATA__ = {
         "position": "K",
         "team": "LAC",
         "picked_by": "jonsung",
-        "original_owner": "edgxrjiang",
-        "traded": true
+        "original_owner": "jonsung",
+        "traded": false
       },
       {
         "pick_no": 285,
@@ -2848,7 +2848,7 @@ window.__STATIC_DATA__ = {
         "position": "WR",
         "team": "",
         "picked_by": "eikichii952",
-        "original_owner": "ganathan",
+        "original_owner": "shmyung",
         "traded": true
       },
       {
@@ -2858,8 +2858,8 @@ window.__STATIC_DATA__ = {
         "position": "RB",
         "team": "SEA",
         "picked_by": "edgxrjiang",
-        "original_owner": "ddhk",
-        "traded": true
+        "original_owner": "edgxrjiang",
+        "traded": false
       },
       {
         "pick_no": 287,
@@ -2868,8 +2868,8 @@ window.__STATIC_DATA__ = {
         "position": "RB",
         "team": "LAR",
         "picked_by": "ganathan",
-        "original_owner": "Slot 13",
-        "traded": true
+        "original_owner": "ganathan",
+        "traded": false
       },
       {
         "pick_no": 288,
@@ -2878,7 +2878,7 @@ window.__STATIC_DATA__ = {
         "position": "K",
         "team": "SEA",
         "picked_by": "Paul_Yoon",
-        "original_owner": "spiffster",
+        "original_owner": "ddhk",
         "traded": true
       },
       {
@@ -2888,7 +2888,7 @@ window.__STATIC_DATA__ = {
         "position": "TE",
         "team": "",
         "picked_by": "jonsung",
-        "original_owner": "edgxrjiang",
+        "original_owner": "ddhk",
         "traded": true
       },
       {
@@ -2898,8 +2898,8 @@ window.__STATIC_DATA__ = {
         "position": "WR",
         "team": "NO",
         "picked_by": "ganathan",
-        "original_owner": "shmyung",
-        "traded": true
+        "original_owner": "ganathan",
+        "traded": false
       },
       {
         "pick_no": 291,
@@ -2908,8 +2908,8 @@ window.__STATIC_DATA__ = {
         "position": "QB",
         "team": "ARI",
         "picked_by": "edgxrjiang",
-        "original_owner": "jonsung",
-        "traded": true
+        "original_owner": "edgxrjiang",
+        "traded": false
       },
       {
         "pick_no": 292,
@@ -2918,8 +2918,8 @@ window.__STATIC_DATA__ = {
         "position": "WR",
         "team": "",
         "picked_by": "shmyung",
-        "original_owner": "eikichii952",
-        "traded": true
+        "original_owner": "shmyung",
+        "traded": false
       },
       {
         "pick_no": 293,
@@ -2928,8 +2928,8 @@ window.__STATIC_DATA__ = {
         "position": "RB",
         "team": "",
         "picked_by": "jonsung",
-        "original_owner": "NoSkilzPak",
-        "traded": true
+        "original_owner": "jonsung",
+        "traded": false
       },
       {
         "pick_no": 294,
@@ -2938,8 +2938,8 @@ window.__STATIC_DATA__ = {
         "position": "RB",
         "team": "",
         "picked_by": "eikichii952",
-        "original_owner": "riqi",
-        "traded": true
+        "original_owner": "eikichii952",
+        "traded": false
       },
       {
         "pick_no": 295,
@@ -2948,8 +2948,8 @@ window.__STATIC_DATA__ = {
         "position": "QB",
         "team": "BAL",
         "picked_by": "NoSkilzPak",
-        "original_owner": "andyxia124",
-        "traded": true
+        "original_owner": "NoSkilzPak",
+        "traded": false
       },
       {
         "pick_no": 296,
@@ -2958,8 +2958,8 @@ window.__STATIC_DATA__ = {
         "position": "WR",
         "team": "PIT",
         "picked_by": "riqi",
-        "original_owner": "IconicJH",
-        "traded": true
+        "original_owner": "riqi",
+        "traded": false
       },
       {
         "pick_no": 297,
@@ -2968,8 +2968,8 @@ window.__STATIC_DATA__ = {
         "position": "RB",
         "team": "",
         "picked_by": "andyxia124",
-        "original_owner": "Paul_Yoon",
-        "traded": true
+        "original_owner": "andyxia124",
+        "traded": false
       },
       {
         "pick_no": 298,
@@ -2978,8 +2978,8 @@ window.__STATIC_DATA__ = {
         "position": "QB",
         "team": "MIA",
         "picked_by": "IconicJH",
-        "original_owner": "spiffster",
-        "traded": true
+        "original_owner": "IconicJH",
+        "traded": false
       },
       {
         "pick_no": 299,
@@ -2988,8 +2988,8 @@ window.__STATIC_DATA__ = {
         "position": "TE",
         "team": "PHI",
         "picked_by": "Paul_Yoon",
-        "original_owner": "Slot 13",
-        "traded": true
+        "original_owner": "Paul_Yoon",
+        "traded": false
       },
       {
         "pick_no": 300,
@@ -2998,8 +2998,8 @@ window.__STATIC_DATA__ = {
         "position": "RB",
         "team": "",
         "picked_by": "spiffster",
-        "original_owner": "ddhk",
-        "traded": true
+        "original_owner": "spiffster",
+        "traded": false
       },
       {
         "pick_no": 301,
@@ -3248,8 +3248,8 @@ window.__STATIC_DATA__ = {
         "position": "RB",
         "team": "",
         "picked_by": "spiffster",
-        "original_owner": "ddhk",
-        "traded": true
+        "original_owner": "spiffster",
+        "traded": false
       },
       {
         "pick_no": 326,
@@ -3258,8 +3258,8 @@ window.__STATIC_DATA__ = {
         "position": "WR",
         "team": "",
         "picked_by": "Paul_Yoon",
-        "original_owner": "Slot 13",
-        "traded": true
+        "original_owner": "Paul_Yoon",
+        "traded": false
       },
       {
         "pick_no": 327,
@@ -3268,8 +3268,8 @@ window.__STATIC_DATA__ = {
         "position": "RB",
         "team": "",
         "picked_by": "IconicJH",
-        "original_owner": "spiffster",
-        "traded": true
+        "original_owner": "IconicJH",
+        "traded": false
       },
       {
         "pick_no": 328,
@@ -3278,8 +3278,8 @@ window.__STATIC_DATA__ = {
         "position": "RB",
         "team": "",
         "picked_by": "andyxia124",
-        "original_owner": "Paul_Yoon",
-        "traded": true
+        "original_owner": "andyxia124",
+        "traded": false
       },
       {
         "pick_no": 329,
@@ -3288,8 +3288,8 @@ window.__STATIC_DATA__ = {
         "position": "WR",
         "team": "ARI",
         "picked_by": "riqi",
-        "original_owner": "IconicJH",
-        "traded": true
+        "original_owner": "riqi",
+        "traded": false
       },
       {
         "pick_no": 330,
@@ -3298,8 +3298,8 @@ window.__STATIC_DATA__ = {
         "position": "QB",
         "team": "",
         "picked_by": "NoSkilzPak",
-        "original_owner": "andyxia124",
-        "traded": true
+        "original_owner": "NoSkilzPak",
+        "traded": false
       },
       {
         "pick_no": 331,
@@ -3308,8 +3308,8 @@ window.__STATIC_DATA__ = {
         "position": "TE",
         "team": "IND",
         "picked_by": "eikichii952",
-        "original_owner": "riqi",
-        "traded": true
+        "original_owner": "eikichii952",
+        "traded": false
       },
       {
         "pick_no": 332,
@@ -3318,7 +3318,7 @@ window.__STATIC_DATA__ = {
         "position": "RB",
         "team": "",
         "picked_by": "ddhk",
-        "original_owner": "NoSkilzPak",
+        "original_owner": "jonsung",
         "traded": true
       },
       {
@@ -3328,8 +3328,8 @@ window.__STATIC_DATA__ = {
         "position": "K",
         "team": "",
         "picked_by": "shmyung",
-        "original_owner": "eikichii952",
-        "traded": true
+        "original_owner": "shmyung",
+        "traded": false
       },
       {
         "pick_no": 334,
@@ -3338,8 +3338,8 @@ window.__STATIC_DATA__ = {
         "position": "QB",
         "team": "",
         "picked_by": "edgxrjiang",
-        "original_owner": "jonsung",
-        "traded": true
+        "original_owner": "edgxrjiang",
+        "traded": false
       },
       {
         "pick_no": 335,
@@ -3348,8 +3348,8 @@ window.__STATIC_DATA__ = {
         "position": "QB",
         "team": "",
         "picked_by": "ganathan",
-        "original_owner": "shmyung",
-        "traded": true
+        "original_owner": "ganathan",
+        "traded": false
       },
       {
         "pick_no": 336,
@@ -3358,8 +3358,8 @@ window.__STATIC_DATA__ = {
         "position": "K",
         "team": "SF",
         "picked_by": "ddhk",
-        "original_owner": "edgxrjiang",
-        "traded": true
+        "original_owner": "ddhk",
+        "traded": false
       },
       {
         "pick_no": 337,
@@ -3368,8 +3368,8 @@ window.__STATIC_DATA__ = {
         "position": "RB",
         "team": "",
         "picked_by": "ddhk",
-        "original_owner": "spiffster",
-        "traded": true
+        "original_owner": "ddhk",
+        "traded": false
       },
       {
         "pick_no": 338,
@@ -3378,8 +3378,8 @@ window.__STATIC_DATA__ = {
         "position": "WR",
         "team": "",
         "picked_by": "ganathan",
-        "original_owner": "Slot 13",
-        "traded": true
+        "original_owner": "ganathan",
+        "traded": false
       },
       {
         "pick_no": 339,
@@ -3388,8 +3388,8 @@ window.__STATIC_DATA__ = {
         "position": "QB",
         "team": "DEN",
         "picked_by": "edgxrjiang",
-        "original_owner": "ddhk",
-        "traded": true
+        "original_owner": "edgxrjiang",
+        "traded": false
       },
       {
         "pick_no": 340,
@@ -3398,8 +3398,8 @@ window.__STATIC_DATA__ = {
         "position": "K",
         "team": "",
         "picked_by": "shmyung",
-        "original_owner": "ganathan",
-        "traded": true
+        "original_owner": "shmyung",
+        "traded": false
       },
       {
         "pick_no": 341,
@@ -3408,7 +3408,7 @@ window.__STATIC_DATA__ = {
         "position": "QB",
         "team": "NYG",
         "picked_by": "ddhk",
-        "original_owner": "edgxrjiang",
+        "original_owner": "jonsung",
         "traded": true
       },
       {
@@ -3418,8 +3418,8 @@ window.__STATIC_DATA__ = {
         "position": "RB",
         "team": "",
         "picked_by": "eikichii952",
-        "original_owner": "shmyung",
-        "traded": true
+        "original_owner": "eikichii952",
+        "traded": false
       },
       {
         "pick_no": 343,
@@ -3428,8 +3428,8 @@ window.__STATIC_DATA__ = {
         "position": "QB",
         "team": "WAS",
         "picked_by": "NoSkilzPak",
-        "original_owner": "jonsung",
-        "traded": true
+        "original_owner": "NoSkilzPak",
+        "traded": false
       },
       {
         "pick_no": 344,
@@ -3438,8 +3438,8 @@ window.__STATIC_DATA__ = {
         "position": "QB",
         "team": "MIN",
         "picked_by": "riqi",
-        "original_owner": "eikichii952",
-        "traded": true
+        "original_owner": "riqi",
+        "traded": false
       },
       {
         "pick_no": 345,
@@ -3448,8 +3448,8 @@ window.__STATIC_DATA__ = {
         "position": "TE",
         "team": "MIA",
         "picked_by": "andyxia124",
-        "original_owner": "NoSkilzPak",
-        "traded": true
+        "original_owner": "andyxia124",
+        "traded": false
       },
       {
         "pick_no": 346,
@@ -3458,8 +3458,8 @@ window.__STATIC_DATA__ = {
         "position": "TE",
         "team": "ATL",
         "picked_by": "IconicJH",
-        "original_owner": "riqi",
-        "traded": true
+        "original_owner": "IconicJH",
+        "traded": false
       },
       {
         "pick_no": 347,
@@ -3468,8 +3468,8 @@ window.__STATIC_DATA__ = {
         "position": "RB",
         "team": "",
         "picked_by": "Paul_Yoon",
-        "original_owner": "andyxia124",
-        "traded": true
+        "original_owner": "Paul_Yoon",
+        "traded": false
       },
       {
         "pick_no": 348,
@@ -3478,8 +3478,8 @@ window.__STATIC_DATA__ = {
         "position": "RB",
         "team": "NYJ",
         "picked_by": "spiffster",
-        "original_owner": "IconicJH",
-        "traded": true
+        "original_owner": "spiffster",
+        "traded": false
       },
       {
         "pick_no": 349,
@@ -3488,8 +3488,8 @@ window.__STATIC_DATA__ = {
         "position": "RB",
         "team": "",
         "picked_by": "spiffster",
-        "original_owner": "edgxrjiang",
-        "traded": true
+        "original_owner": "spiffster",
+        "traded": false
       },
       {
         "pick_no": 350,
@@ -3498,8 +3498,8 @@ window.__STATIC_DATA__ = {
         "position": "TE",
         "team": "PIT",
         "picked_by": "Paul_Yoon",
-        "original_owner": "ganathan",
-        "traded": true
+        "original_owner": "Paul_Yoon",
+        "traded": false
       },
       {
         "pick_no": 351,
@@ -3508,8 +3508,8 @@ window.__STATIC_DATA__ = {
         "position": "WR",
         "team": "CIN",
         "picked_by": "IconicJH",
-        "original_owner": "ddhk",
-        "traded": true
+        "original_owner": "IconicJH",
+        "traded": false
       },
       {
         "pick_no": 352,
@@ -3518,8 +3518,8 @@ window.__STATIC_DATA__ = {
         "position": "RB",
         "team": "",
         "picked_by": "andyxia124",
-        "original_owner": "Slot 13",
-        "traded": true
+        "original_owner": "andyxia124",
+        "traded": false
       },
       {
         "pick_no": 353,
@@ -3528,8 +3528,8 @@ window.__STATIC_DATA__ = {
         "position": "RB",
         "team": "",
         "picked_by": "riqi",
-        "original_owner": "spiffster",
-        "traded": true
+        "original_owner": "riqi",
+        "traded": false
       },
       {
         "pick_no": 354,
@@ -3538,8 +3538,8 @@ window.__STATIC_DATA__ = {
         "position": "RB",
         "team": "",
         "picked_by": "NoSkilzPak",
-        "original_owner": "Paul_Yoon",
-        "traded": true
+        "original_owner": "NoSkilzPak",
+        "traded": false
       },
       {
         "pick_no": 355,
@@ -3548,8 +3548,8 @@ window.__STATIC_DATA__ = {
         "position": "TE",
         "team": "TB",
         "picked_by": "eikichii952",
-        "original_owner": "IconicJH",
-        "traded": true
+        "original_owner": "eikichii952",
+        "traded": false
       },
       {
         "pick_no": 356,
@@ -3558,7 +3558,7 @@ window.__STATIC_DATA__ = {
         "position": "WR",
         "team": "",
         "picked_by": "ddhk",
-        "original_owner": "andyxia124",
+        "original_owner": "jonsung",
         "traded": true
       },
       {
@@ -3568,8 +3568,8 @@ window.__STATIC_DATA__ = {
         "position": "RB",
         "team": "",
         "picked_by": "shmyung",
-        "original_owner": "riqi",
-        "traded": true
+        "original_owner": "shmyung",
+        "traded": false
       },
       {
         "pick_no": 358,
@@ -3578,8 +3578,8 @@ window.__STATIC_DATA__ = {
         "position": "WR",
         "team": "NE",
         "picked_by": "edgxrjiang",
-        "original_owner": "NoSkilzPak",
-        "traded": true
+        "original_owner": "edgxrjiang",
+        "traded": false
       },
       {
         "pick_no": 359,
@@ -3588,8 +3588,8 @@ window.__STATIC_DATA__ = {
         "position": "K",
         "team": "NYJ",
         "picked_by": "ganathan",
-        "original_owner": "eikichii952",
-        "traded": true
+        "original_owner": "ganathan",
+        "traded": false
       },
       {
         "pick_no": 360,
@@ -3598,8 +3598,8 @@ window.__STATIC_DATA__ = {
         "position": "TE",
         "team": "",
         "picked_by": "ddhk",
-        "original_owner": "jonsung",
-        "traded": true
+        "original_owner": "ddhk",
+        "traded": false
       }
     ],
     "2024": [
@@ -3730,8 +3730,8 @@ window.__STATIC_DATA__ = {
         "position": "WR",
         "team": "BUF",
         "picked_by": "urmummma",
-        "original_owner": "Slot 13",
-        "traded": true
+        "original_owner": "urmummma",
+        "traded": false
       },
       {
         "pick_no": 14,
@@ -3740,7 +3740,7 @@ window.__STATIC_DATA__ = {
         "position": "RB",
         "team": "ARI",
         "picked_by": "andyxia124",
-        "original_owner": "urmummma",
+        "original_owner": "NoSkilzPak",
         "traded": true
       },
       {
@@ -3750,8 +3750,8 @@ window.__STATIC_DATA__ = {
         "position": "WR",
         "team": "NYJ",
         "picked_by": "eikichii952",
-        "original_owner": "NoSkilzPak",
-        "traded": true
+        "original_owner": "eikichii952",
+        "traded": false
       },
       {
         "pick_no": 16,
@@ -3760,8 +3760,8 @@ window.__STATIC_DATA__ = {
         "position": "RB",
         "team": "LAR",
         "picked_by": "andyxia124",
-        "original_owner": "eikichii952",
-        "traded": true
+        "original_owner": "andyxia124",
+        "traded": false
       },
       {
         "pick_no": 17,
@@ -3770,7 +3770,7 @@ window.__STATIC_DATA__ = {
         "position": "WR",
         "team": "CAR",
         "picked_by": "eikichii952",
-        "original_owner": "andyxia124",
+        "original_owner": "IconicJH",
         "traded": true
       },
       {
@@ -3780,8 +3780,8 @@ window.__STATIC_DATA__ = {
         "position": "QB",
         "team": "DEN",
         "picked_by": "ngman",
-        "original_owner": "IconicJH",
-        "traded": true
+        "original_owner": "ngman",
+        "traded": false
       },
       {
         "pick_no": 19,
@@ -3790,7 +3790,7 @@ window.__STATIC_DATA__ = {
         "position": "QB",
         "team": "ATL",
         "picked_by": "eikichii952",
-        "original_owner": "ngman",
+        "original_owner": "ddhk",
         "traded": true
       },
       {
@@ -3800,7 +3800,7 @@ window.__STATIC_DATA__ = {
         "position": "WR",
         "team": "SF",
         "picked_by": "ganathan",
-        "original_owner": "ddhk",
+        "original_owner": "Paul_Yoon",
         "traded": true
       },
       {
@@ -3810,7 +3810,7 @@ window.__STATIC_DATA__ = {
         "position": "TE",
         "team": "HOU",
         "picked_by": "NoSkilzPak",
-        "original_owner": "Paul_Yoon",
+        "original_owner": "riqi",
         "traded": true
       },
       {
@@ -3820,8 +3820,8 @@ window.__STATIC_DATA__ = {
         "position": "WR",
         "team": "DEN",
         "picked_by": "spiffster",
-        "original_owner": "riqi",
-        "traded": true
+        "original_owner": "spiffster",
+        "traded": false
       },
       {
         "pick_no": 23,
@@ -3830,7 +3830,7 @@ window.__STATIC_DATA__ = {
         "position": "WR",
         "team": "NO",
         "picked_by": "andyxia124",
-        "original_owner": "spiffster",
+        "original_owner": "jonsung",
         "traded": true
       },
       {
@@ -3840,8 +3840,8 @@ window.__STATIC_DATA__ = {
         "position": "WR",
         "team": "PIT",
         "picked_by": "ganathan",
-        "original_owner": "jonsung",
-        "traded": true
+        "original_owner": "ganathan",
+        "traded": false
       },
       {
         "pick_no": 25,
@@ -3850,7 +3850,7 @@ window.__STATIC_DATA__ = {
         "position": "RB",
         "team": "MIA",
         "picked_by": "ngman",
-        "original_owner": "ganathan",
+        "original_owner": "urmummma",
         "traded": true
       },
       {
@@ -3860,7 +3860,7 @@ window.__STATIC_DATA__ = {
         "position": "TE",
         "team": "CAR",
         "picked_by": "andyxia124",
-        "original_owner": "Slot 13",
+        "original_owner": "NoSkilzPak",
         "traded": true
       },
       {
@@ -3870,7 +3870,7 @@ window.__STATIC_DATA__ = {
         "position": "RB",
         "team": "GB",
         "picked_by": "ngman",
-        "original_owner": "urmummma",
+        "original_owner": "eikichii952",
         "traded": true
       },
       {
@@ -3880,8 +3880,8 @@ window.__STATIC_DATA__ = {
         "position": "QB",
         "team": "NO",
         "picked_by": "andyxia124",
-        "original_owner": "NoSkilzPak",
-        "traded": true
+        "original_owner": "andyxia124",
+        "traded": false
       },
       {
         "pick_no": 29,
@@ -3890,8 +3890,8 @@ window.__STATIC_DATA__ = {
         "position": "WR",
         "team": "CLE",
         "picked_by": "IconicJH",
-        "original_owner": "eikichii952",
-        "traded": true
+        "original_owner": "IconicJH",
+        "traded": false
       },
       {
         "pick_no": 30,
@@ -3900,7 +3900,7 @@ window.__STATIC_DATA__ = {
         "position": "WR",
         "team": "",
         "picked_by": "riqi",
-        "original_owner": "andyxia124",
+        "original_owner": "ngman",
         "traded": true
       },
       {
@@ -3910,7 +3910,7 @@ window.__STATIC_DATA__ = {
         "position": "RB",
         "team": "TB",
         "picked_by": "Paul_Yoon",
-        "original_owner": "IconicJH",
+        "original_owner": "ddhk",
         "traded": true
       },
       {
@@ -3920,7 +3920,7 @@ window.__STATIC_DATA__ = {
         "position": "RB",
         "team": "BUF",
         "picked_by": "ganathan",
-        "original_owner": "ngman",
+        "original_owner": "Paul_Yoon",
         "traded": true
       },
       {
@@ -3930,8 +3930,8 @@ window.__STATIC_DATA__ = {
         "position": "RB",
         "team": "NYJ",
         "picked_by": "riqi",
-        "original_owner": "ddhk",
-        "traded": true
+        "original_owner": "riqi",
+        "traded": false
       },
       {
         "pick_no": 34,
@@ -3940,7 +3940,7 @@ window.__STATIC_DATA__ = {
         "position": "WR",
         "team": "",
         "picked_by": "ddhk",
-        "original_owner": "Paul_Yoon",
+        "original_owner": "spiffster",
         "traded": true
       },
       {
@@ -3950,7 +3950,7 @@ window.__STATIC_DATA__ = {
         "position": "TE",
         "team": "WAS",
         "picked_by": "ddhk",
-        "original_owner": "riqi",
+        "original_owner": "jonsung",
         "traded": true
       },
       {
@@ -3960,7 +3960,7 @@ window.__STATIC_DATA__ = {
         "position": "RB",
         "team": "NO",
         "picked_by": "eikichii952",
-        "original_owner": "spiffster",
+        "original_owner": "ganathan",
         "traded": true
       }
     ],
@@ -4092,8 +4092,8 @@ window.__STATIC_DATA__ = {
         "position": "RB",
         "team": "PIT",
         "picked_by": "ngman",
-        "original_owner": "Slot 13",
-        "traded": true
+        "original_owner": "ngman",
+        "traded": false
       },
       {
         "pick_no": 14,
@@ -4102,7 +4102,7 @@ window.__STATIC_DATA__ = {
         "position": "TE",
         "team": "IND",
         "picked_by": "spiffster",
-        "original_owner": "ngman",
+        "original_owner": "eikichii952",
         "traded": true
       },
       {
@@ -4112,7 +4112,7 @@ window.__STATIC_DATA__ = {
         "position": "WR",
         "team": "GB",
         "picked_by": "ganathan",
-        "original_owner": "eikichii952",
+        "original_owner": "NoSkilzPak",
         "traded": true
       },
       {
@@ -4122,7 +4122,7 @@ window.__STATIC_DATA__ = {
         "position": "WR",
         "team": "NYJ",
         "picked_by": "velmixon",
-        "original_owner": "NoSkilzPak",
+        "original_owner": "andyxia124",
         "traded": true
       },
       {
@@ -4132,7 +4132,7 @@ window.__STATIC_DATA__ = {
         "position": "TE",
         "team": "CHI",
         "picked_by": "eikichii952",
-        "original_owner": "andyxia124",
+        "original_owner": "ddhk",
         "traded": true
       },
       {
@@ -4142,7 +4142,7 @@ window.__STATIC_DATA__ = {
         "position": "WR",
         "team": "LAC",
         "picked_by": "ganathan",
-        "original_owner": "ddhk",
+        "original_owner": "Paul_Yoon",
         "traded": true
       },
       {
@@ -4152,7 +4152,7 @@ window.__STATIC_DATA__ = {
         "position": "WR",
         "team": "HOU",
         "picked_by": "ngman",
-        "original_owner": "Paul_Yoon",
+        "original_owner": "paddleham",
         "traded": true
       },
       {
@@ -4162,7 +4162,7 @@ window.__STATIC_DATA__ = {
         "position": "WR",
         "team": "NE",
         "picked_by": "eikichii952",
-        "original_owner": "paddleham",
+        "original_owner": "spiffster",
         "traded": true
       },
       {
@@ -4172,7 +4172,7 @@ window.__STATIC_DATA__ = {
         "position": "WR",
         "team": "LV",
         "picked_by": "eikichii952",
-        "original_owner": "spiffster",
+        "original_owner": "velmixon",
         "traded": true
       },
       {
@@ -4182,8 +4182,8 @@ window.__STATIC_DATA__ = {
         "position": "RB",
         "team": "JAX",
         "picked_by": "IconicJH",
-        "original_owner": "velmixon",
-        "traded": true
+        "original_owner": "IconicJH",
+        "traded": false
       },
       {
         "pick_no": 23,
@@ -4192,8 +4192,8 @@ window.__STATIC_DATA__ = {
         "position": "RB",
         "team": "DAL",
         "picked_by": "ganathan",
-        "original_owner": "IconicJH",
-        "traded": true
+        "original_owner": "ganathan",
+        "traded": false
       },
       {
         "pick_no": 24,
@@ -4202,7 +4202,7 @@ window.__STATIC_DATA__ = {
         "position": "TE",
         "team": "NYJ",
         "picked_by": "eikichii952",
-        "original_owner": "ganathan",
+        "original_owner": "jonsung",
         "traded": true
       },
       {
@@ -4212,8 +4212,8 @@ window.__STATIC_DATA__ = {
         "position": "WR",
         "team": "HOU",
         "picked_by": "ngman",
-        "original_owner": "jonsung",
-        "traded": true
+        "original_owner": "ngman",
+        "traded": false
       },
       {
         "pick_no": 26,
@@ -4222,8 +4222,8 @@ window.__STATIC_DATA__ = {
         "position": "WR",
         "team": "WAS",
         "picked_by": "eikichii952",
-        "original_owner": "Slot 13",
-        "traded": true
+        "original_owner": "eikichii952",
+        "traded": false
       },
       {
         "pick_no": 27,
@@ -4232,7 +4232,7 @@ window.__STATIC_DATA__ = {
         "position": "QB",
         "team": "SEA",
         "picked_by": "spiffster",
-        "original_owner": "ngman",
+        "original_owner": "NoSkilzPak",
         "traded": true
       },
       {
@@ -4242,8 +4242,8 @@ window.__STATIC_DATA__ = {
         "position": "QB",
         "team": "CLE",
         "picked_by": "andyxia124",
-        "original_owner": "eikichii952",
-        "traded": true
+        "original_owner": "andyxia124",
+        "traded": false
       },
       {
         "pick_no": 29,
@@ -4252,7 +4252,7 @@ window.__STATIC_DATA__ = {
         "position": "RB",
         "team": "CLE",
         "picked_by": "andyxia124",
-        "original_owner": "NoSkilzPak",
+        "original_owner": "ddhk",
         "traded": true
       },
       {
@@ -4262,7 +4262,7 @@ window.__STATIC_DATA__ = {
         "position": "WR",
         "team": "TEN",
         "picked_by": "NoSkilzPak",
-        "original_owner": "andyxia124",
+        "original_owner": "Paul_Yoon",
         "traded": true
       },
       {
@@ -4272,7 +4272,7 @@ window.__STATIC_DATA__ = {
         "position": "RB",
         "team": "NO",
         "picked_by": "spiffster",
-        "original_owner": "ddhk",
+        "original_owner": "paddleham",
         "traded": true
       },
       {
@@ -4282,7 +4282,7 @@ window.__STATIC_DATA__ = {
         "position": "RB",
         "team": "SF",
         "picked_by": "NoSkilzPak",
-        "original_owner": "Paul_Yoon",
+        "original_owner": "spiffster",
         "traded": true
       },
       {
@@ -4292,7 +4292,7 @@ window.__STATIC_DATA__ = {
         "position": "TE",
         "team": "CLE",
         "picked_by": "ganathan",
-        "original_owner": "paddleham",
+        "original_owner": "velmixon",
         "traded": true
       },
       {
@@ -4302,7 +4302,7 @@ window.__STATIC_DATA__ = {
         "position": "WR",
         "team": "DET",
         "picked_by": "jonsung",
-        "original_owner": "spiffster",
+        "original_owner": "IconicJH",
         "traded": true
       },
       {
@@ -4312,7 +4312,7 @@ window.__STATIC_DATA__ = {
         "position": "RB",
         "team": "IND",
         "picked_by": "spiffster",
-        "original_owner": "velmixon",
+        "original_owner": "ganathan",
         "traded": true
       },
       {
@@ -4322,7 +4322,7 @@ window.__STATIC_DATA__ = {
         "position": "TE",
         "team": "",
         "picked_by": "velmixon",
-        "original_owner": "IconicJH",
+        "original_owner": "jonsung",
         "traded": true
       }
     ],
