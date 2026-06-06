@@ -1,0 +1,8 @@
+venv/
+backend/
+data/
+frontend/
+gameofphones/
+.claude/
+__pycache__/
+*.pyc
