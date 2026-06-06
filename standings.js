@@ -3,7 +3,7 @@ import { renderNav } from "./components/nav.js";
 
 let standings = null;
 let transactions = null;
-let history = null;
+let seasonHistory = null;
 let leagueUsers = [];
 let divisionsData = {};
 let allPlayerStats = {};
@@ -314,7 +314,7 @@ function computeManagerStats() {
 
     YEARS.forEach(year => {
         const seasonStandings = (standings || {})[year] || [];
-        const season = (history || {})[year] || {};
+        const season = (seasonHistory || {})[year] || {};
         const winners = season.winners_bracket || [];
         const champMatch  = winners.find(m => m.place === 1);
         const place3Match = winners.find(m => m.place === 3);
@@ -748,12 +748,12 @@ function render() {
     if (currentView === "all_time") {
         label.textContent = "All Years Standings";
         const rows = buildAllTime(standings, txStats);
-        const playoffRecords = buildAllTimePlayoffRecords(history);
+        const playoffRecords = buildAllTimePlayoffRecords(seasonHistory);
         board.innerHTML = renderTable(rows, {}, "all_time", playoffRecords, true);
     } else {
         label.textContent = `${currentView} Season`;
         const rows = standings[currentView] || [];
-        const playoffRecords = buildPlayoffRecords(history, currentView);
+        const playoffRecords = buildPlayoffRecords(seasonHistory, currentView);
         board.innerHTML = renderDivisions(rows, txStats, currentView, playoffRecords);
     }
 }
@@ -902,7 +902,7 @@ async function init() {
 
         standings     = standingsData;
         transactions  = txData;
-        history       = historyData;
+        seasonHistory = historyData;
         leagueUsers   = usersData;
         divisionsData = divsData;
         playerNameMap = nameMap;

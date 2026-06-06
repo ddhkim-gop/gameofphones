@@ -76,11 +76,11 @@ function renderLineup(starters) {
     return starters.map(s => {
         const pts = s.points != null ? s.points.toFixed(1) : "—";
         const clr = posColor(s.position);
-        return `<div style="display:flex;align-items:center;gap:7px;padding:5px 0;border-bottom:1px solid #1a1c22;">
-            <span style="background:${clr};color:#fff;font-size:9px;font-weight:800;padding:2px 5px;border-radius:3px;width:28px;text-align:center;flex-shrink:0;">${s.position||"?"}</span>
-            <span style="flex:1;font-size:12px;color:#c9cdd4;overflow:hidden;text-overflow:ellipsis;white-space:nowrap;">${s.name||"Unknown"}</span>
+        return `<div class="mu-player-row">
+            <span class="mu-pos-badge" style="background:${clr};">${s.position||"?"}</span>
+            <span class="mu-player-name">${s.name||"Unknown"}</span>
             ${s.nfl_team ? `<img src="https://a.espncdn.com/i/teamlogos/nfl/500-dark/${s.nfl_team.toLowerCase()}.png" style="width:13px;height:13px;object-fit:contain;flex-shrink:0;" onerror="this.style.display='none'">` : ""}
-            <span style="font-size:12px;font-weight:700;color:${pts > 0 ? '#f0f1f3' : '#5a6070'};flex-shrink:0;min-width:32px;text-align:right;">${pts}</span>
+            <span class="mu-player-pts" style="color:${+pts > 0 ? '#f0f1f3' : '#5a6070'};">${pts}</span>
         </div>`;
     }).join("");
 }
@@ -277,17 +277,17 @@ function renderMatchup(matchup, weekStr, weekStats) {
 
     const teamCol = (team, isWinner) => {
         const rec = recordStr(weekStr, team.owner);
-        return `<div style="padding:14px;">
-            <div style="display:flex;align-items:center;gap:8px;margin-bottom:4px;">
-                ${avatarEl(team.owner, 26)}
+        return `<div class="mu-team-col">
+            <div style="display:flex;align-items:center;gap:6px;margin-bottom:4px;">
+                ${avatarEl(team.owner, 24)}
                 <div style="flex:1;min-width:0;">
                     <div style="font-size:13px;font-weight:700;color:${isWinner ? '#f0f1f3' : '#8b9099'};overflow:hidden;text-overflow:ellipsis;white-space:nowrap;">${team.owner}</div>
                     ${rec ? `<div style="font-size:10px;color:#5a6070;margin-top:1px;">${rec}</div>` : ""}
                 </div>
-                <div style="font-size:20px;font-weight:800;color:${isWinner ? '#f0f1f3' : '#5a6070'};flex-shrink:0;">${(team.points||0).toFixed(2)}</div>
+                <div class="mu-score" style="color:${isWinner ? '#f0f1f3' : '#5a6070'};">${(team.points||0).toFixed(2)}</div>
                 ${isWinner
-                    ? `<span style="font-size:9px;font-weight:800;color:#3ecf8e;background:#0d2b1e;border-radius:4px;padding:2px 6px;flex-shrink:0;">W</span>`
-                    : `<span style="font-size:9px;font-weight:800;color:#f87171;background:#2b0d0d;border-radius:4px;padding:2px 6px;flex-shrink:0;">L</span>`}
+                    ? `<span style="font-size:9px;font-weight:800;color:#3ecf8e;background:#0d2b1e;border-radius:4px;padding:2px 5px;flex-shrink:0;">W</span>`
+                    : `<span style="font-size:9px;font-weight:800;color:#f87171;background:#2b0d0d;border-radius:4px;padding:2px 5px;flex-shrink:0;">L</span>`}
             </div>
             <div style="font-size:10px;font-weight:700;text-transform:uppercase;letter-spacing:.06em;color:#5a6070;margin:8px 0 4px;">Starters</div>
             ${renderLineup(team.starters)}
@@ -393,14 +393,24 @@ async function init() {
     container.innerHTML = `
     <style>
         #matchups-container { max-width: 1200px; }
-        .mu-matchup-grid { display: grid; grid-template-columns: 1fr 1px 1fr; }
+        .mu-matchup-grid { display: grid; grid-template-columns: 1fr 1px 1fr; min-width: 0; }
+        .mu-team-col { padding: 14px; min-width: 0; overflow: hidden; }
         .mu-grid { display: grid; grid-template-columns: 1fr 1fr; gap: 14px; }
+        .mu-score { font-size: 20px; font-weight: 800; flex-shrink: 0; }
+        .mu-player-row { display: flex; align-items: center; gap: 7px; padding: 5px 0; border-bottom: 1px solid #1a1c22; }
+        .mu-pos-badge { font-size: 9px; font-weight: 800; padding: 2px 5px; border-radius: 3px; width: 28px; text-align: center; flex-shrink: 0; color: #fff; }
+        .mu-player-name { flex: 1; font-size: 12px; color: #c9cdd4; overflow: hidden; text-overflow: ellipsis; white-space: nowrap; min-width: 0; }
+        .mu-player-pts { font-size: 12px; font-weight: 700; flex-shrink: 0; min-width: 28px; text-align: right; }
         @media (max-width: 768px) {
             .mu-grid { grid-template-columns: 1fr; }
         }
-        @media (max-width: 480px) {
-            .mu-matchup-grid { font-size: 12px; }
-            .mu-matchup-grid > div { padding: 10px 8px !important; }
+        @media (max-width: 500px) {
+            .mu-team-col { padding: 8px 6px; }
+            .mu-score { font-size: 14px; }
+            .mu-player-row { gap: 4px; }
+            .mu-pos-badge { width: 22px; font-size: 8px; padding: 2px 3px; }
+            .mu-player-name { font-size: 11px; }
+            .mu-player-pts { font-size: 11px; min-width: 22px; }
         }
     </style>
     <div class="filter-bar" style="display:flex;gap:10px;flex-wrap:wrap;margin-bottom:20px;">
