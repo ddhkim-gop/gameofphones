@@ -358,14 +358,13 @@ function computeGrades(allManagers) {
         const hasWaiver = m.waiverTotal > 0;
 
         const composite =
-            playoffScore * 0.15 +
-            winScore     * 0.10 +
-            champScore   * 0.30 +
-            seedScore    * 0.15 +
-            (hasDraft  ? draftScore  : 50) * 0.15 +
+            champScore   * 0.35 +
+            seedScore    * 0.20 +
+            winScore     * 0.15 +
+            playoffScore * 0.10 +
+            (hasDraft  ? draftScore  : 50) * 0.10 +
             (hasTrade  ? tradeScore  : 50) * 0.05 +
-            (hasWaiver ? waiverScore : 50) * 0.05 +
-            luckScore    * 0.05;
+            (hasWaiver ? waiverScore : 50) * 0.05;
 
         return {
             ...m,
@@ -479,14 +478,13 @@ function renderReportCard() {
         <div style="margin-top:24px;background:#1e2027;border:1px solid #2d3139;border-radius:12px;padding:18px 20px;">
             <div style="font-size:13px;font-weight:700;color:#f0f1f3;margin-bottom:14px;">How the Overall Grade is computed</div>
             <div style="display:grid;grid-template-columns:repeat(auto-fill,minmax(200px,1fr));gap:10px;margin-bottom:16px;">
-                ${gradeWeightRow("Championship Rate", 30, "Championships ÷ seasons played")}
-                ${gradeWeightRow("Avg Seed", 15, "Lower regular season finish = better")}
-                ${gradeWeightRow("Playoff Rate", 15, "Playoff appearances ÷ seasons played")}
-                ${gradeWeightRow("Draft Grade", 15, "Avg pts of picks vs round expectation")}
-                ${gradeWeightRow("Win Rate", 10, "All-time regular season W/(W+L)")}
+                ${gradeWeightRow("Championship Rate", 35, "Championships ÷ seasons played")}
+                ${gradeWeightRow("Avg Seed", 20, "Lower regular season finish = better")}
+                ${gradeWeightRow("Win Rate", 15, "All-time regular season W/(W+L)")}
+                ${gradeWeightRow("Draft Grade", 10, "Avg pts of picks vs round expectation")}
+                ${gradeWeightRow("Playoff Rate", 10, "Playoff appearances ÷ seasons played")}
                 ${gradeWeightRow("Trade Grade", 5, "Net pts received vs given per player")}
                 ${gradeWeightRow("Waiver Hit Rate", 5, "% of adds scoring above median claim")}
-                ${gradeWeightRow("Luck (inverse)", 5, "Rewards luck-adjusted performance")}
             </div>
             <div style="font-size:11px;color:#5a6070;line-height:1.6;border-top:1px solid #2d3139;padding-top:12px;">
                 All metrics are normalized across the 12 managers so grades are relative, not absolute — someone always gets an A and someone always gets an F.
