@@ -100,12 +100,12 @@ export function renderNav() {
                     font-size: 13px;
                     padding: 7px 10px;
                 }
-                /* Dropdowns on mobile: tap label to open inline dropdown below */
+                /* Dropdowns on mobile: fixed below the nav bar (top set by JS) */
                 .nav-dropdown-menu {
                     position: fixed;
                     left: 8px;
                     right: 8px;
-                    top: auto;
+                    top: 56px;
                     width: auto;
                     min-width: 0;
                     z-index: 2000;
@@ -159,7 +159,14 @@ export function renderNav() {
             e.stopPropagation();
             const isOpen = dd.classList.contains("open");
             dropdowns.forEach(d => d.classList.remove("open"));
-            if (!isOpen) dd.classList.add("open");
+            if (!isOpen) {
+                dd.classList.add("open");
+                if (window.innerWidth <= 680) {
+                    const menu = dd.querySelector(".nav-dropdown-menu");
+                    const bottom = navCard.getBoundingClientRect().bottom;
+                    menu.style.top = bottom + "px";
+                }
+            }
         });
     });
 
