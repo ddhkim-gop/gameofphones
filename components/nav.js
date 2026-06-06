@@ -13,12 +13,10 @@ export function renderNav() {
             .nav-card {
                 display: flex;
                 align-items: center;
-                justify-content: space-between;
                 padding: 6px 12px;
                 position: relative;
                 overflow: visible !important;
             }
-            /* Desktop links row */
             .nav-links {
                 display: flex;
                 align-items: center;
@@ -42,20 +40,6 @@ export function renderNav() {
                 background: var(--card-el, #252830);
             }
             .nav-links a.current { font-weight: 700; }
-
-            /* Hamburger button — hidden on desktop */
-            .nav-hamburger {
-                display: none;
-                background: none;
-                border: none;
-                cursor: pointer;
-                padding: 8px;
-                color: var(--text-3, #8b9099);
-                font-size: 22px;
-                line-height: 1;
-                border-radius: 8px;
-            }
-            .nav-hamburger:hover { background: #252830; color: #f0f1f3; }
 
             /* Dropdown (desktop) */
             .nav-dropdown { position: relative; display: inline-flex; align-items: center; }
@@ -96,65 +80,43 @@ export function renderNav() {
             }
             .nav-dropdown-menu a:hover { background: #252830; }
 
-            /* Mobile */
+            /* Mobile: horizontal scrollable tab strip */
             @media (max-width: 680px) {
                 .nav-card {
-                    flex-direction: column;
-                    align-items: stretch;
-                    padding: 4px 8px;
-                    gap: 0;
-                }
-                .nav-links { display: none; }
-                .nav-hamburger {
-                    display: block;
-                    align-self: flex-start;
-                }
-
-                /* Open: nav-links become a stacked list inside the card (no absolute, no clipping) */
-                .nav-card.mobile-open .nav-links {
-                    display: flex;
-                    flex-direction: column;
-                    align-items: stretch;
-                    gap: 2px;
-                    padding: 6px 0 4px;
-                    border-top: 1px solid #2d3139;
-                    margin-top: 4px;
-                }
-                .nav-card.mobile-open .nav-links a,
-                .nav-card.mobile-open .nav-dropdown-label {
-                    font-size: 15px;
-                    padding: 12px 14px;
-                    border-radius: 8px;
-                    display: block;
-                    width: 100%;
-                    box-sizing: border-box;
-                }
-                .nav-card.mobile-open .nav-dropdown {
-                    display: block;
-                    width: 100%;
-                }
-                /* Sub-items always visible inline on mobile */
-                .nav-card.mobile-open .nav-dropdown-menu {
-                    position: static;
-                    display: block !important;
                     padding: 0;
+                    overflow-x: auto !important;
+                    overflow-y: visible;
+                    -webkit-overflow-scrolling: touch;
+                    scrollbar-width: none;
                 }
-                .nav-card.mobile-open .nav-dropdown-menu-inner {
-                    background: #252830;
-                    border: none;
-                    box-shadow: none;
-                    border-radius: 8px;
-                    padding: 4px 4px 4px 16px;
-                    margin-top: 2px;
+                .nav-card::-webkit-scrollbar { display: none; }
+                .nav-links {
+                    gap: 0;
+                    padding: 4px 8px;
+                    flex-wrap: nowrap;
+                    min-width: max-content;
                 }
-                .nav-card.mobile-open .nav-dropdown-menu a {
+                .nav-links a, .nav-dropdown-label {
+                    font-size: 13px;
+                    padding: 7px 10px;
+                }
+                /* Dropdowns on mobile: tap label to open inline dropdown below */
+                .nav-dropdown-menu {
+                    position: fixed;
+                    left: 8px;
+                    right: 8px;
+                    top: auto;
+                    width: auto;
+                    min-width: 0;
+                    z-index: 2000;
+                }
+                .nav-dropdown-menu-inner {
+                    padding: 8px;
+                }
+                .nav-dropdown-menu a {
                     font-size: 14px !important;
-                    padding: 10px 12px !important;
-                    min-height: 0;
-                    color: var(--text-3, #8b9099);
+                    padding: 11px 14px !important;
                 }
-                .nav-card.mobile-open .nav-dropdown-menu a:hover,
-                .nav-card.mobile-open .nav-dropdown-menu a:active { color: #f0f1f3; background: #1e2027; }
             }
         </style>
         <nav class="card nav-card" id="nav-card">
@@ -184,27 +146,16 @@ export function renderNav() {
                 <a href="head_to_head.html"${cur("head_to_head.html")}>H2H</a>
                 <a href="season_history.html"${cur("season_history.html")}>History</a>
             </div>
-            <button class="nav-hamburger" id="nav-hamburger" aria-label="Menu">☰</button>
         </nav>
     `;
 
     const navCard = el.querySelector("#nav-card");
-    const hamburger = el.querySelector("#nav-hamburger");
     const dropdowns = el.querySelectorAll(".nav-dropdown");
 
-    // Hamburger toggle
-    hamburger.addEventListener("click", e => {
-        e.stopPropagation();
-        navCard.classList.toggle("mobile-open");
-        hamburger.textContent = navCard.classList.contains("mobile-open") ? "✕" : "☰";
-    });
-
-    // Desktop dropdown toggle (click-based, works on touch too)
+    // Dropdown toggle (click)
     dropdowns.forEach(dd => {
         const label = dd.querySelector(".nav-dropdown-label");
         label.addEventListener("click", e => {
-            // On mobile the menu is always visible inline — nothing to toggle
-            if (window.innerWidth <= 680) return;
             e.stopPropagation();
             const isOpen = dd.classList.contains("open");
             dropdowns.forEach(d => d.classList.remove("open"));
@@ -212,10 +163,8 @@ export function renderNav() {
         });
     });
 
-    // Close desktop dropdowns and mobile menu when clicking outside
+    // Close dropdowns when clicking outside
     document.addEventListener("click", () => {
         dropdowns.forEach(d => d.classList.remove("open"));
-        navCard.classList.remove("mobile-open");
-        hamburger.textContent = "☰";
     });
 }

@@ -167,37 +167,45 @@ function buildBracketSVG(matches, playoffWeek1 = 15) {
     return svg;
 }
 
-function buildConsolationCards(winners, losers) {
-    const placementGames = [
-        ...winners.filter(m => m.place && m.place !== 1),
-        ...losers.filter(m => m.place),
-    ].sort((a, b) => a.place - b.place);
+function buildChampPath(winners) {
+    const champMatch = winners.find(m => m.place === 1);
+    if (!champMatch) return winners.filter(m => !m.place || m.place === 1);
 
-    if (!placementGames.length) {
-        const maxRound = Math.max(...losers.map(m => m.round));
-        placementGames.push(...losers.filter(m => m.round === maxRound));
-    }
+    const champRound = champMatch.round;
+    const r3Teams = new Set([champMatch.team1, champMatch.team2]);
 
-    return placementGames.map(m => {
-        const placeLabel = m.place ? `${ordinal(m.place)} Place` : "Consolation";
-        const t1w = m.winner === m.team1;
-        const t2w = m.winner === m.team2;
-        const t1style = t1w ? "color:#f0f1f3;font-weight:700;" : (m.winner ? "color:#5a6070;text-decoration:line-through;" : "color:#c9cdd4;");
-        const t2style = t2w ? "color:#f0f1f3;font-weight:700;" : (m.winner ? "color:#5a6070;text-decoration:line-through;" : "color:#c9cdd4;");
-        return `
-            <div style="background:#252830;border:0.8px solid #3d4350;border-radius:8px;padding:10px 14px;min-width:190px;flex:1;max-width:260px;">
-                <div style="font-size:10px;font-weight:700;text-transform:uppercase;letter-spacing:.06em;color:#5a6070;margin-bottom:8px;">${placeLabel}</div>
-                <div style="display:flex;justify-content:space-between;align-items:center;font-size:12px;${t1style}">
-                    <span>${m.team1 || "TBD"}</span>
-                    ${m.team1_pts != null ? `<span style="flex-shrink:0;margin-left:8px;">${m.team1_pts.toFixed(1)}</span>` : ""}
-                </div>
-                <div style="height:0.5px;background:#2d3139;margin:6px 0;"></div>
-                <div style="display:flex;justify-content:space-between;align-items:center;font-size:12px;${t2style}">
-                    <span>${m.team2 || "TBD"}</span>
-                    ${m.team2_pts != null ? `<span style="flex-shrink:0;margin-left:8px;">${m.team2_pts.toFixed(1)}</span>` : ""}
-                </div>
-            </div>`;
-    }).join("");
+    const r2Matches = winners.filter(m =>
+        m.round === champRound - 1 && r3Teams.has(m.winner)
+    );
+    const r2Teams = new Set(r2Matches.flatMap(m => [m.team1, m.team2]));
+
+    const r1Matches = winners.filter(m =>
+        m.round === champRound - 2 && r2Teams.has(m.winner)
+    );
+
+    // If 2-round bracket (no R1), just return R2 + champ
+    return [...(r1Matches.length ? r1Matches : r2Matches), ...(r1Matches.length ? r2Matches : []), champMatch];
+}
+
+function renderPlacementCard(m) {
+    const placeLabel = m.place ? `${ordinal(m.place)} Place` : "Consolation";
+    const t1w = m.winner === m.team1;
+    const t2w = m.winner === m.team2;
+    const t1style = t1w ? "color:#f0f1f3;font-weight:700;" : (m.winner ? "color:#5a6070;text-decoration:line-through;" : "color:#c9cdd4;");
+    const t2style = t2w ? "color:#f0f1f3;font-weight:700;" : (m.winner ? "color:#5a6070;text-decoration:line-through;" : "color:#c9cdd4;");
+    return `
+        <div style="background:#252830;border:0.8px solid #3d4350;border-radius:8px;padding:10px 14px;min-width:175px;flex:1;max-width:250px;">
+            <div style="font-size:10px;font-weight:700;text-transform:uppercase;letter-spacing:.06em;color:#5a6070;margin-bottom:8px;">${placeLabel}</div>
+            <div style="display:flex;justify-content:space-between;align-items:center;font-size:12px;${t1style}">
+                <span>${m.team1 || "TBD"}</span>
+                ${m.team1_pts != null ? `<span style="flex-shrink:0;margin-left:8px;">${m.team1_pts.toFixed(1)}</span>` : ""}
+            </div>
+            <div style="height:0.5px;background:#2d3139;margin:6px 0;"></div>
+            <div style="display:flex;justify-content:space-between;align-items:center;font-size:12px;${t2style}">
+                <span>${m.team2 || "TBD"}</span>
+                ${m.team2_pts != null ? `<span style="flex-shrink:0;margin-left:8px;">${m.team2_pts.toFixed(1)}</span>` : ""}
+            </div>
+        </div>`;
 }
 
 function renderDraftOrder(year) {
@@ -669,15 +677,21 @@ function renderSeason(year) {
         </div>
     `;
 
-    const champPath = winners.filter(m => !m.place || m.place === 1);
-    const consolCards = buildConsolationCards(winners, losers);
+    const champPath = buildChampPath(winners);
+    const placementGames = winners.filter(m => m.place && m.place !== 1).sort((a, b) => a.place - b.place);
+    const consolGames = losers.filter(m => m.place).sort((a, b) => a.place - b.place);
+
     const bracketHtml = `
         <div class="card" style="padding:14px;background:#1e2027;border-color:#2d3139;">
             <div class="sh-section-title">Playoff Bracket</div>
             <div class="bracket-wrap">${buildBracketSVG(champPath)}</div>
-            ${consolCards ? `
-                <div class="sh-section-title" style="margin-top:20px;">Consolation</div>
-                <div style="display:flex;flex-wrap:wrap;gap:10px;">${consolCards}</div>
+            ${placementGames.length ? `
+                <div class="sh-section-title" style="margin-top:20px;">Placement Games</div>
+                <div style="display:flex;flex-wrap:wrap;gap:10px;">${placementGames.map(renderPlacementCard).join("")}</div>
+            ` : ""}
+            ${consolGames.length ? `
+                <div class="sh-section-title" style="margin-top:16px;">Consolation</div>
+                <div style="display:flex;flex-wrap:wrap;gap:10px;">${consolGames.map(renderPlacementCard).join("")}</div>
             ` : ""}
         </div>
     `;
