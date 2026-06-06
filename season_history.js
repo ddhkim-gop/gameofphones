@@ -18,11 +18,11 @@ const CARD_W = 200;
 const CARD_H = 64;
 const ROW_H = 100;
 const ROUND_W = 260;
-const PAD_TOP = 40;
+const PAD_TOP = 54;
 const PAD_LEFT = 20;
 const FONT = "font-size:12px;font-family:-apple-system,sans-serif;";
 
-function buildBracketSVG(matches) {
+function buildBracketSVG(matches, playoffWeek1 = 15) {
     if (!matches || !matches.length) return "";
 
     const byRound = {};
@@ -37,7 +37,6 @@ function buildBracketSVG(matches) {
     const totalH = PAD_TOP + maxMatchesR1 * ROW_H + 20;
     const totalW = PAD_LEFT + rounds.length * ROUND_W + 20;
 
-    const roundNames = { 1: "Quarterfinals", 2: "Semifinals", 3: "Championship" };
     const SVG_CARD    = "#252830";
     const SVG_STROKE  = "#3d4350";
     const SVG_CHAMP   = "#2c2102";
@@ -55,10 +54,17 @@ function buildBracketSVG(matches) {
         const ms = byRound[round];
         const x = PAD_LEFT + ri * ROUND_W;
         const slotsPerCard = maxMatchesR1 / ms.length;
+        const weekNum = playoffWeek1 + ri;
+        const isLast = ri === rounds.length - 1;
+        const roundLabel = isLast ? "Finals" : `Round ${ri + 1}`;
 
-        svg += `<text x="${x + CARD_W/2}" y="20" text-anchor="middle"
+        svg += `<text x="${x + CARD_W/2}" y="18" text-anchor="middle"
             style="font-size:11px;font-weight:700;text-transform:uppercase;letter-spacing:0.06em;fill:${SVG_TEXT2};font-family:-apple-system,sans-serif;">
-            ${roundNames[round] || `Round ${round}`}
+            ${roundLabel}
+        </text>`;
+        svg += `<text x="${x + CARD_W/2}" y="34" text-anchor="middle"
+            style="font-size:10px;fill:${SVG_TEXT2};opacity:0.65;font-family:-apple-system,sans-serif;">
+            (Week ${weekNum})
         </text>`;
 
         ms.forEach((m, mi) => {
@@ -159,6 +165,39 @@ function buildBracketSVG(matches) {
 
     svg += `</svg>`;
     return svg;
+}
+
+function buildConsolationCards(winners, losers) {
+    const placementGames = [
+        ...winners.filter(m => m.place && m.place !== 1),
+        ...losers.filter(m => m.place),
+    ].sort((a, b) => a.place - b.place);
+
+    if (!placementGames.length) {
+        const maxRound = Math.max(...losers.map(m => m.round));
+        placementGames.push(...losers.filter(m => m.round === maxRound));
+    }
+
+    return placementGames.map(m => {
+        const placeLabel = m.place ? `${ordinal(m.place)} Place` : "Consolation";
+        const t1w = m.winner === m.team1;
+        const t2w = m.winner === m.team2;
+        const t1style = t1w ? "color:#f0f1f3;font-weight:700;" : (m.winner ? "color:#5a6070;text-decoration:line-through;" : "color:#c9cdd4;");
+        const t2style = t2w ? "color:#f0f1f3;font-weight:700;" : (m.winner ? "color:#5a6070;text-decoration:line-through;" : "color:#c9cdd4;");
+        return `
+            <div style="background:#252830;border:0.8px solid #3d4350;border-radius:8px;padding:10px 14px;min-width:190px;flex:1;max-width:260px;">
+                <div style="font-size:10px;font-weight:700;text-transform:uppercase;letter-spacing:.06em;color:#5a6070;margin-bottom:8px;">${placeLabel}</div>
+                <div style="display:flex;justify-content:space-between;align-items:center;font-size:12px;${t1style}">
+                    <span>${m.team1 || "TBD"}</span>
+                    ${m.team1_pts != null ? `<span style="flex-shrink:0;margin-left:8px;">${m.team1_pts.toFixed(1)}</span>` : ""}
+                </div>
+                <div style="height:0.5px;background:#2d3139;margin:6px 0;"></div>
+                <div style="display:flex;justify-content:space-between;align-items:center;font-size:12px;${t2style}">
+                    <span>${m.team2 || "TBD"}</span>
+                    ${m.team2_pts != null ? `<span style="flex-shrink:0;margin-left:8px;">${m.team2_pts.toFixed(1)}</span>` : ""}
+                </div>
+            </div>`;
+    }).join("");
 }
 
 function renderDraftOrder(year) {
@@ -608,7 +647,8 @@ function renderSeason(year) {
     const standingsHtml = `
         <div class="card" style="padding:14px;background:#1e2027;border-color:#2d3139;">
             <div class="sh-section-title">Regular Season</div>
-            <table class="sh-table">
+            <div style="overflow-x:auto;-webkit-overflow-scrolling:touch;">
+            <table class="sh-table" style="min-width:260px;">
                 <thead><tr>
                     <th style="width:20px;text-align:left;">#</th>
                     <th style="text-align:left;">Team</th>
@@ -625,16 +665,19 @@ function renderSeason(year) {
                     `).join("")}
                 </tbody>
             </table>
+            </div>
         </div>
     `;
 
+    const champPath = winners.filter(m => !m.place || m.place === 1);
+    const consolCards = buildConsolationCards(winners, losers);
     const bracketHtml = `
         <div class="card" style="padding:14px;background:#1e2027;border-color:#2d3139;">
             <div class="sh-section-title">Playoff Bracket</div>
-            <div class="bracket-wrap">${buildBracketSVG(winners)}</div>
-            ${losers.length ? `
-                <div class="sh-section-title" style="margin-top:24px;">Consolation Bracket</div>
-                <div class="bracket-wrap" style="max-height:200px;">${buildBracketSVG(losers)}</div>
+            <div class="bracket-wrap">${buildBracketSVG(champPath)}</div>
+            ${consolCards ? `
+                <div class="sh-section-title" style="margin-top:20px;">Consolation</div>
+                <div style="display:flex;flex-wrap:wrap;gap:10px;">${consolCards}</div>
             ` : ""}
         </div>
     `;
