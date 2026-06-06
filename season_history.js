@@ -235,7 +235,7 @@ function buildPlacementBracketHtml(winners, champPath) {
 
     return `
         <div class="sh-section-title" style="margin-top:20px;">Placement Games</div>
-        <div style="display:flex;gap:24px;flex-wrap:wrap;align-items:flex-start;">
+        <div style="display:grid;grid-template-columns:1fr 1fr;gap:24px;align-items:start;">
             ${thirdHtml}
             ${fifthHtml}
         </div>
