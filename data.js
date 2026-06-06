@@ -5164,7 +5164,7 @@ window.__STATIC_DATA__ = {
       "players": [
         {
           "player_id": "10219",
-          "espn_id": null,
+          "espn_id": 4362619,
           "name": "Chris Rodriguez",
           "position": "RB",
           "team": "JAX",
@@ -5179,7 +5179,7 @@ window.__STATIC_DATA__ = {
         },
         {
           "player_id": "11533",
-          "espn_id": null,
+          "espn_id": 3953687,
           "name": "Brandon Aubrey",
           "position": "K",
           "team": "DAL",
@@ -5194,7 +5194,7 @@ window.__STATIC_DATA__ = {
         },
         {
           "player_id": "11628",
-          "espn_id": null,
+          "espn_id": 4432708,
           "name": "Marvin Harrison",
           "position": "WR",
           "team": "ARI",
@@ -5224,7 +5224,7 @@ window.__STATIC_DATA__ = {
         },
         {
           "player_id": "12518",
-          "espn_id": null,
+          "espn_id": 4431459,
           "name": "Tyler Warren",
           "position": "TE",
           "team": "IND",
@@ -5239,7 +5239,7 @@ window.__STATIC_DATA__ = {
         },
         {
           "player_id": "12519",
-          "espn_id": null,
+          "espn_id": 4685278,
           "name": "Luther Burden",
           "position": "WR",
           "team": "CHI",
@@ -5254,7 +5254,7 @@ window.__STATIC_DATA__ = {
         },
         {
           "player_id": "12526",
-          "espn_id": null,
+          "espn_id": 4685472,
           "name": "Tetairoa McMillan",
           "position": "WR",
           "team": "CAR",
@@ -5269,7 +5269,7 @@ window.__STATIC_DATA__ = {
         },
         {
           "player_id": "13302",
-          "espn_id": null,
+          "espn_id": 4685526,
           "name": "Adam Randall",
           "position": "RB",
           "team": "BAL",
@@ -5284,7 +5284,7 @@ window.__STATIC_DATA__ = {
         },
         {
           "player_id": "13303",
-          "espn_id": null,
+          "espn_id": 4685413,
           "name": "Cade Klubnik",
           "position": "QB",
           "team": "NYJ",
@@ -5299,7 +5299,7 @@ window.__STATIC_DATA__ = {
         },
         {
           "player_id": "13306",
-          "espn_id": null,
+          "espn_id": 4431325,
           "name": "Taylen Green",
           "position": "QB",
           "team": "CLE",
@@ -5314,7 +5314,7 @@ window.__STATIC_DATA__ = {
         },
         {
           "player_id": "13392",
-          "espn_id": null,
+          "espn_id": 4885466,
           "name": "Jeff Caldwell",
           "position": "WR",
           "team": "KC",
@@ -5329,7 +5329,7 @@ window.__STATIC_DATA__ = {
         },
         {
           "player_id": "13404",
-          "espn_id": null,
+          "espn_id": 4567747,
           "name": "Garrett Nussmeier",
           "position": "QB",
           "team": "KC",
@@ -5344,7 +5344,7 @@ window.__STATIC_DATA__ = {
         },
         {
           "player_id": "13419",
-          "espn_id": null,
+          "espn_id": 4685489,
           "name": "Jaydn Ott",
           "position": "RB",
           "team": "KC",
@@ -5359,7 +5359,7 @@ window.__STATIC_DATA__ = {
         },
         {
           "player_id": "13477",
-          "espn_id": null,
+          "espn_id": 5092508,
           "name": "Colbie Young",
           "position": "WR",
           "team": "CIN",
@@ -5464,7 +5464,7 @@ window.__STATIC_DATA__ = {
         },
         {
           "player_id": "7547",
-          "espn_id": null,
+          "espn_id": 4374302,
           "name": "Amon-Ra St. Brown",
           "position": "WR",
           "team": "DET",
@@ -5479,7 +5479,7 @@ window.__STATIC_DATA__ = {
         },
         {
           "player_id": "7588",
-          "espn_id": null,
+          "espn_id": 4361579,
           "name": "Javonte Williams",
           "position": "RB",
           "team": "DAL",
@@ -5494,7 +5494,7 @@ window.__STATIC_DATA__ = {
         },
         {
           "player_id": "8136",
-          "espn_id": null,
+          "espn_id": 4697815,
           "name": "Rachaad White",
           "position": "RB",
           "team": "WAS",
@@ -5509,7 +5509,7 @@ window.__STATIC_DATA__ = {
         },
         {
           "player_id": "8138",
-          "espn_id": null,
+          "espn_id": 4379399,
           "name": "James Cook",
           "position": "RB",
           "team": "BUF",
@@ -5524,7 +5524,7 @@ window.__STATIC_DATA__ = {
         },
         {
           "player_id": "8146",
-          "espn_id": null,
+          "espn_id": 4569618,
           "name": "Garrett Wilson",
           "position": "WR",
           "team": "NYJ",
@@ -5539,7 +5539,7 @@ window.__STATIC_DATA__ = {
         },
         {
           "player_id": "9758",
-          "espn_id": null,
+          "espn_id": 4432577,
           "name": "C.J. Stroud",
           "position": "QB",
           "team": "HOU",
@@ -5560,7 +5560,7 @@ window.__STATIC_DATA__ = {
       "players": [
         {
           "player_id": "10229",
-          "espn_id": null,
+          "espn_id": 4428331,
           "name": "Rashee Rice",
           "position": "WR",
           "team": "KC",
@@ -5575,7 +5575,7 @@ window.__STATIC_DATA__ = {
         },
         {
           "player_id": "10236",
-          "espn_id": null,
+          "espn_id": 4385690,
           "name": "Dalton Kincaid",
           "position": "TE",
           "team": "BUF",
@@ -5590,7 +5590,7 @@ window.__STATIC_DATA__ = {
         },
         {
           "player_id": "11627",
-          "espn_id": null,
+          "espn_id": 4431280,
           "name": "Troy Franklin",
           "position": "WR",
           "team": "DEN",
@@ -5605,7 +5605,7 @@ window.__STATIC_DATA__ = {
         },
         {
           "player_id": "11646",
-          "espn_id": null,
+          "espn_id": 4695883,
           "name": "Jalen Coker",
           "position": "WR",
           "team": "CAR",
@@ -5620,7 +5620,7 @@ window.__STATIC_DATA__ = {
         },
         {
           "player_id": "11655",
-          "espn_id": null,
+          "espn_id": 4360516,
           "name": "Tyrone Tracy",
           "position": "RB",
           "team": "NYG",
@@ -5635,7 +5635,7 @@ window.__STATIC_DATA__ = {
         },
         {
           "player_id": "12484",
-          "espn_id": null,
+          "espn_id": 4877706,
           "name": "Jayden Higgins",
           "position": "WR",
           "team": "HOU",
@@ -5650,7 +5650,7 @@ window.__STATIC_DATA__ = {
         },
         {
           "player_id": "12487",
-          "espn_id": null,
+          "espn_id": 4570037,
           "name": "Terrance Ferguson",
           "position": "TE",
           "team": "LAR",
@@ -5665,7 +5665,7 @@ window.__STATIC_DATA__ = {
         },
         {
           "player_id": "12489",
-          "espn_id": null,
+          "espn_id": 4568490,
           "name": "RJ Harvey",
           "position": "RB",
           "team": "DEN",
@@ -5680,7 +5680,7 @@ window.__STATIC_DATA__ = {
         },
         {
           "player_id": "12499",
-          "espn_id": null,
+          "espn_id": 4883647,
           "name": "Elic Ayomanor",
           "position": "WR",
           "team": "TEN",
@@ -5695,7 +5695,7 @@ window.__STATIC_DATA__ = {
         },
         {
           "player_id": "12506",
-          "espn_id": null,
+          "espn_id": 5083076,
           "name": "Harold Fannin",
           "position": "TE",
           "team": "CLE",
@@ -5710,7 +5710,7 @@ window.__STATIC_DATA__ = {
         },
         {
           "player_id": "12510",
-          "espn_id": null,
+          "espn_id": 4432734,
           "name": "Jalen Milroe",
           "position": "QB",
           "team": "SEA",
@@ -5725,7 +5725,7 @@ window.__STATIC_DATA__ = {
         },
         {
           "player_id": "12511",
-          "espn_id": null,
+          "espn_id": 4429955,
           "name": "Will Howard",
           "position": "QB",
           "team": "PIT",
@@ -5740,7 +5740,7 @@ window.__STATIC_DATA__ = {
         },
         {
           "player_id": "12535",
-          "espn_id": null,
+          "espn_id": 5123663,
           "name": "Isaac TeSlaa",
           "position": "WR",
           "team": "DET",
@@ -5755,7 +5755,7 @@ window.__STATIC_DATA__ = {
         },
         {
           "player_id": "13338",
-          "espn_id": null,
+          "espn_id": 4685307,
           "name": "Kevin Coleman",
           "position": "WR",
           "team": "MIA",
@@ -5770,7 +5770,7 @@ window.__STATIC_DATA__ = {
         },
         {
           "player_id": "13353",
-          "espn_id": null,
+          "espn_id": 5091739,
           "name": "Chris Brazzell",
           "position": "WR",
           "team": "CAR",
@@ -5785,7 +5785,7 @@ window.__STATIC_DATA__ = {
         },
         {
           "player_id": "13420",
-          "espn_id": null,
+          "espn_id": 4879276,
           "name": "Bryce Lance",
           "position": "WR",
           "team": "NO",
@@ -5965,7 +5965,7 @@ window.__STATIC_DATA__ = {
         },
         {
           "player_id": "7594",
-          "espn_id": null,
+          "espn_id": 4241416,
           "name": "Chuba Hubbard",
           "position": "RB",
           "team": "CAR",
@@ -5980,7 +5980,7 @@ window.__STATIC_DATA__ = {
         },
         {
           "player_id": "8205",
-          "espn_id": null,
+          "espn_id": 4361529,
           "name": "Isiah Pacheco",
           "position": "RB",
           "team": "DET",
@@ -5995,7 +5995,7 @@ window.__STATIC_DATA__ = {
         },
         {
           "player_id": "8408",
-          "espn_id": null,
+          "espn_id": 4360569,
           "name": "Jordan Mason",
           "position": "RB",
           "team": "MIN",
@@ -6010,7 +6010,7 @@ window.__STATIC_DATA__ = {
         },
         {
           "player_id": "8676",
-          "espn_id": null,
+          "espn_id": 4032473,
           "name": "Rashid Shaheed",
           "position": "WR",
           "team": "SEA",
@@ -6025,7 +6025,7 @@ window.__STATIC_DATA__ = {
         },
         {
           "player_id": "8800",
-          "espn_id": null,
+          "espn_id": 4240603,
           "name": "Malik Davis",
           "position": "RB",
           "team": "DAL",
@@ -6046,7 +6046,7 @@ window.__STATIC_DATA__ = {
       "players": [
         {
           "player_id": "11435",
-          "espn_id": null,
+          "espn_id": 4887558,
           "name": "Emanuel Wilson",
           "position": "RB",
           "team": "SEA",
@@ -6061,7 +6061,7 @@ window.__STATIC_DATA__ = {
         },
         {
           "player_id": "11566",
-          "espn_id": null,
+          "espn_id": 4426348,
           "name": "Jayden Daniels",
           "position": "QB",
           "team": "WAS",
@@ -6076,7 +6076,7 @@ window.__STATIC_DATA__ = {
         },
         {
           "player_id": "11575",
-          "espn_id": null,
+          "espn_id": 4429501,
           "name": "Ray Davis",
           "position": "RB",
           "team": "BUF",
@@ -6091,7 +6091,7 @@ window.__STATIC_DATA__ = {
         },
         {
           "player_id": "11584",
-          "espn_id": null,
+          "espn_id": 4596448,
           "name": "Bucky Irving",
           "position": "RB",
           "team": "TB",
@@ -6106,7 +6106,7 @@ window.__STATIC_DATA__ = {
         },
         {
           "player_id": "11624",
-          "espn_id": null,
+          "espn_id": 4683062,
           "name": "Xavier Worthy",
           "position": "WR",
           "team": "KC",
@@ -6121,7 +6121,7 @@ window.__STATIC_DATA__ = {
         },
         {
           "player_id": "12467",
-          "espn_id": null,
+          "espn_id": 4685397,
           "name": "Jordan James",
           "position": "RB",
           "team": "SF",
@@ -6136,7 +6136,7 @@ window.__STATIC_DATA__ = {
         },
         {
           "player_id": "12471",
-          "espn_id": null,
+          "espn_id": 4874509,
           "name": "DJ Giddens",
           "position": "RB",
           "team": "IND",
@@ -6151,7 +6151,7 @@ window.__STATIC_DATA__ = {
         },
         {
           "player_id": "12493",
-          "espn_id": null,
+          "espn_id": 4595342,
           "name": "Oronde Gadsden",
           "position": "TE",
           "team": "LAC",
@@ -6166,7 +6166,7 @@ window.__STATIC_DATA__ = {
         },
         {
           "player_id": "12718",
-          "espn_id": null,
+          "espn_id": 4710855,
           "name": "Konata Mumpfield",
           "position": "WR",
           "team": "LAR",
@@ -6181,7 +6181,7 @@ window.__STATIC_DATA__ = {
         },
         {
           "player_id": "13272",
-          "espn_id": null,
+          "espn_id": 4430841,
           "name": "Carson Beck",
           "position": "QB",
           "team": "ARI",
@@ -6196,7 +6196,7 @@ window.__STATIC_DATA__ = {
         },
         {
           "player_id": "13347",
-          "espn_id": null,
+          "espn_id": 4832846,
           "name": "Demond Claiborne",
           "position": "RB",
           "team": "MIN",
@@ -6211,7 +6211,7 @@ window.__STATIC_DATA__ = {
         },
         {
           "player_id": "13423",
-          "espn_id": null,
+          "espn_id": 5081508,
           "name": "Eli Heidenreich",
           "position": "RB",
           "team": "PIT",
@@ -6226,7 +6226,7 @@ window.__STATIC_DATA__ = {
         },
         {
           "player_id": "13434",
-          "espn_id": null,
+          "espn_id": 4880236,
           "name": "Will Kacmarek",
           "position": "TE",
           "team": "MIA",
@@ -6376,7 +6376,7 @@ window.__STATIC_DATA__ = {
         },
         {
           "player_id": "8121",
-          "espn_id": null,
+          "espn_id": 4361432,
           "name": "Romeo Doubs",
           "position": "WR",
           "team": "NE",
@@ -6391,7 +6391,7 @@ window.__STATIC_DATA__ = {
         },
         {
           "player_id": "8132",
-          "espn_id": null,
+          "espn_id": 4373626,
           "name": "Tyler Allgeier",
           "position": "RB",
           "team": "ARI",
@@ -6406,7 +6406,7 @@ window.__STATIC_DATA__ = {
         },
         {
           "player_id": "8180",
-          "espn_id": null,
+          "espn_id": 4382466,
           "name": "Jalen Nailor",
           "position": "WR",
           "team": "LV",
@@ -6421,7 +6421,7 @@ window.__STATIC_DATA__ = {
         },
         {
           "player_id": "8183",
-          "espn_id": null,
+          "espn_id": 4361741,
           "name": "Brock Purdy",
           "position": "QB",
           "team": "SF",
@@ -6436,7 +6436,7 @@ window.__STATIC_DATA__ = {
         },
         {
           "player_id": "8228",
-          "espn_id": null,
+          "espn_id": 4569987,
           "name": "Jaylen Warren",
           "position": "RB",
           "team": "PIT",
@@ -6451,7 +6451,7 @@ window.__STATIC_DATA__ = {
         },
         {
           "player_id": "9482",
-          "espn_id": null,
+          "espn_id": 4429086,
           "name": "Michael Mayer",
           "position": "TE",
           "team": "LV",
@@ -6466,7 +6466,7 @@ window.__STATIC_DATA__ = {
         },
         {
           "player_id": "9484",
-          "espn_id": null,
+          "espn_id": 4572680,
           "name": "Tucker Kraft",
           "position": "TE",
           "team": "GB",
@@ -6481,7 +6481,7 @@ window.__STATIC_DATA__ = {
         },
         {
           "player_id": "9488",
-          "espn_id": null,
+          "espn_id": 4430878,
           "name": "Jaxon Smith-Njigba",
           "position": "WR",
           "team": "SEA",
@@ -6502,7 +6502,7 @@ window.__STATIC_DATA__ = {
       "players": [
         {
           "player_id": "11557",
-          "espn_id": null,
+          "espn_id": 4360698,
           "name": "Joe Milton",
           "position": "QB",
           "team": "DAL",
@@ -6517,7 +6517,7 @@ window.__STATIC_DATA__ = {
         },
         {
           "player_id": "11643",
-          "espn_id": null,
+          "espn_id": 4682745,
           "name": "Jaylen Wright",
           "position": "RB",
           "team": "MIA",
@@ -6547,7 +6547,7 @@ window.__STATIC_DATA__ = {
         },
         {
           "player_id": "12495",
-          "espn_id": null,
+          "espn_id": 4711533,
           "name": "Ollie Gordon",
           "position": "RB",
           "team": "MIA",
@@ -6562,7 +6562,7 @@ window.__STATIC_DATA__ = {
         },
         {
           "player_id": "12533",
-          "espn_id": null,
+          "espn_id": 4575131,
           "name": "Jacory Croskey-Merritt",
           "position": "RB",
           "team": "WAS",
@@ -6577,7 +6577,7 @@ window.__STATIC_DATA__ = {
         },
         {
           "player_id": "12534",
-          "espn_id": null,
+          "espn_id": 4608686,
           "name": "Kyle Monangai",
           "position": "RB",
           "team": "CHI",
@@ -6592,7 +6592,7 @@ window.__STATIC_DATA__ = {
         },
         {
           "player_id": "12688",
-          "espn_id": null,
+          "espn_id": 4702576,
           "name": "Cam Miller",
           "position": "QB",
           "team": "MIA",
@@ -6607,7 +6607,7 @@ window.__STATIC_DATA__ = {
         },
         {
           "player_id": "13324",
-          "espn_id": null,
+          "espn_id": 4432260,
           "name": "Matt Hibner",
           "position": "TE",
           "team": "BAL",
@@ -6622,7 +6622,7 @@ window.__STATIC_DATA__ = {
         },
         {
           "player_id": "13380",
-          "espn_id": null,
+          "espn_id": 4685553,
           "name": "Brenen Thompson",
           "position": "WR",
           "team": "LAC",
@@ -6817,7 +6817,7 @@ window.__STATIC_DATA__ = {
         },
         {
           "player_id": "7525",
-          "espn_id": null,
+          "espn_id": 4594449,
           "name": "DeVonta Smith",
           "position": "WR",
           "team": "PHI",
@@ -6832,7 +6832,7 @@ window.__STATIC_DATA__ = {
         },
         {
           "player_id": "7543",
-          "espn_id": null,
+          "espn_id": 4239996,
           "name": "Travis Etienne",
           "position": "RB",
           "team": "NO",
@@ -6847,7 +6847,7 @@ window.__STATIC_DATA__ = {
         },
         {
           "player_id": "7585",
-          "espn_id": null,
+          "espn_id": 4242546,
           "name": "Davis Mills",
           "position": "QB",
           "team": "HOU",
@@ -6862,7 +6862,7 @@ window.__STATIC_DATA__ = {
         },
         {
           "player_id": "8131",
-          "espn_id": null,
+          "espn_id": 4361050,
           "name": "Isaiah Likely",
           "position": "TE",
           "team": "NYG",
@@ -6877,7 +6877,7 @@ window.__STATIC_DATA__ = {
         },
         {
           "player_id": "8134",
-          "espn_id": null,
+          "espn_id": 4373678,
           "name": "Khalil Shakir",
           "position": "WR",
           "team": "BUF",
@@ -6892,7 +6892,7 @@ window.__STATIC_DATA__ = {
         },
         {
           "player_id": "8137",
-          "espn_id": null,
+          "espn_id": 4426354,
           "name": "George Pickens",
           "position": "WR",
           "team": "DAL",
@@ -6907,7 +6907,7 @@ window.__STATIC_DATA__ = {
         },
         {
           "player_id": "8151",
-          "espn_id": null,
+          "espn_id": 4567048,
           "name": "Kenneth Walker",
           "position": "RB",
           "team": "KC",
@@ -6922,7 +6922,7 @@ window.__STATIC_DATA__ = {
         },
         {
           "player_id": "8161",
-          "espn_id": null,
+          "espn_id": 4242512,
           "name": "Malik Willis",
           "position": "QB",
           "team": "MIA",
@@ -6937,7 +6937,7 @@ window.__STATIC_DATA__ = {
         },
         {
           "player_id": "8259",
-          "espn_id": null,
+          "espn_id": 4362081,
           "name": "Cameron Dicker",
           "position": "K",
           "team": "LAC",
@@ -6952,7 +6952,7 @@ window.__STATIC_DATA__ = {
         },
         {
           "player_id": "8698",
-          "espn_id": null,
+          "espn_id": 4259147,
           "name": "Jake Tonges",
           "position": "TE",
           "team": "SF",
@@ -6973,7 +6973,7 @@ window.__STATIC_DATA__ = {
       "players": [
         {
           "player_id": "11562",
-          "espn_id": null,
+          "espn_id": 4426339,
           "name": "Spencer Rattler",
           "position": "QB",
           "team": "NO",
@@ -6988,7 +6988,7 @@ window.__STATIC_DATA__ = {
         },
         {
           "player_id": "11589",
-          "espn_id": null,
+          "espn_id": 4429275,
           "name": "Trey Benson",
           "position": "RB",
           "team": "ARI",
@@ -7003,7 +7003,7 @@ window.__STATIC_DATA__ = {
         },
         {
           "player_id": "11600",
-          "espn_id": null,
+          "espn_id": 4431588,
           "name": "Ja'Tavion Sanders",
           "position": "TE",
           "team": "CAR",
@@ -7018,7 +7018,7 @@ window.__STATIC_DATA__ = {
         },
         {
           "player_id": "11631",
-          "espn_id": null,
+          "espn_id": 4432773,
           "name": "Brian Thomas",
           "position": "WR",
           "team": "JAX",
@@ -7033,7 +7033,7 @@ window.__STATIC_DATA__ = {
         },
         {
           "player_id": "11729",
-          "espn_id": null,
+          "espn_id": 4912274,
           "name": "Sione Vaki",
           "position": "RB",
           "team": "DET",
@@ -7048,7 +7048,7 @@ window.__STATIC_DATA__ = {
         },
         {
           "player_id": "12469",
-          "espn_id": null,
+          "espn_id": 5081397,
           "name": "Dylan Sampson",
           "position": "RB",
           "team": "CLE",
@@ -7063,7 +7063,7 @@ window.__STATIC_DATA__ = {
         },
         {
           "player_id": "12472",
-          "espn_id": null,
+          "espn_id": 4601080,
           "name": "Raheim Sanders",
           "position": "RB",
           "team": "CLE",
@@ -7078,7 +7078,7 @@ window.__STATIC_DATA__ = {
         },
         {
           "player_id": "12500",
-          "espn_id": null,
+          "espn_id": 4889929,
           "name": "Quinn Ewers",
           "position": "QB",
           "team": "MIA",
@@ -7093,7 +7093,7 @@ window.__STATIC_DATA__ = {
         },
         {
           "player_id": "12505",
-          "espn_id": null,
+          "espn_id": 5082630,
           "name": "Jalen Royals",
           "position": "WR",
           "team": "KC",
@@ -7108,7 +7108,7 @@ window.__STATIC_DATA__ = {
         },
         {
           "player_id": "12512",
-          "espn_id": null,
+          "espn_id": 4685702,
           "name": "Quinshon Judkins",
           "position": "RB",
           "team": "CLE",
@@ -7123,7 +7123,7 @@ window.__STATIC_DATA__ = {
         },
         {
           "player_id": "12524",
-          "espn_id": null,
+          "espn_id": 4432762,
           "name": "Shedeur Sanders",
           "position": "QB",
           "team": "CLE",
@@ -7243,7 +7243,7 @@ window.__STATIC_DATA__ = {
         },
         {
           "player_id": "7523",
-          "espn_id": null,
+          "espn_id": 4360310,
           "name": "Trevor Lawrence",
           "position": "QB",
           "team": "JAX",
@@ -7258,7 +7258,7 @@ window.__STATIC_DATA__ = {
         },
         {
           "player_id": "7538",
-          "espn_id": null,
+          "espn_id": 4361259,
           "name": "Zach Wilson",
           "position": "QB",
           "team": "NO",
@@ -7273,7 +7273,7 @@ window.__STATIC_DATA__ = {
         },
         {
           "player_id": "7553",
-          "espn_id": null,
+          "espn_id": 4360248,
           "name": "Kyle Pitts",
           "position": "TE",
           "team": "ATL",
@@ -7288,7 +7288,7 @@ window.__STATIC_DATA__ = {
         },
         {
           "player_id": "7567",
-          "espn_id": null,
+          "espn_id": 4371733,
           "name": "Kenneth Gainwell",
           "position": "RB",
           "team": "TB",
@@ -7303,7 +7303,7 @@ window.__STATIC_DATA__ = {
         },
         {
           "player_id": "8112",
-          "espn_id": null,
+          "espn_id": 4426502,
           "name": "Drake London",
           "position": "WR",
           "team": "ATL",
@@ -7318,7 +7318,7 @@ window.__STATIC_DATA__ = {
         },
         {
           "player_id": "8148",
-          "espn_id": null,
+          "espn_id": 4426388,
           "name": "Jameson Williams",
           "position": "WR",
           "team": "DET",
@@ -7333,7 +7333,7 @@ window.__STATIC_DATA__ = {
         },
         {
           "player_id": "9221",
-          "espn_id": null,
+          "espn_id": 4429795,
           "name": "Jahmyr Gibbs",
           "position": "RB",
           "team": "DET",
@@ -7348,7 +7348,7 @@ window.__STATIC_DATA__ = {
         },
         {
           "player_id": "9226",
-          "espn_id": null,
+          "espn_id": 4429160,
           "name": "De'Von Achane",
           "position": "RB",
           "team": "MIA",
@@ -7363,7 +7363,7 @@ window.__STATIC_DATA__ = {
         },
         {
           "player_id": "9229",
-          "espn_id": null,
+          "espn_id": 4429084,
           "name": "Anthony Richardson",
           "position": "QB",
           "team": "IND",
@@ -7378,7 +7378,7 @@ window.__STATIC_DATA__ = {
         },
         {
           "player_id": "9480",
-          "espn_id": null,
+          "espn_id": 4430539,
           "name": "Brenton Strange",
           "position": "TE",
           "team": "JAX",
@@ -7393,7 +7393,7 @@ window.__STATIC_DATA__ = {
         },
         {
           "player_id": "9997",
-          "espn_id": null,
+          "espn_id": 4429615,
           "name": "Zay Flowers",
           "position": "WR",
           "team": "BAL",
@@ -7414,7 +7414,7 @@ window.__STATIC_DATA__ = {
       "players": [
         {
           "player_id": "10213",
-          "espn_id": null,
+          "espn_id": 4428718,
           "name": "Tre Tucker",
           "position": "WR",
           "team": "LV",
@@ -7429,7 +7429,7 @@ window.__STATIC_DATA__ = {
         },
         {
           "player_id": "10226",
-          "espn_id": null,
+          "espn_id": 4368003,
           "name": "Andrei Iosivas",
           "position": "WR",
           "team": "CIN",
@@ -7444,7 +7444,7 @@ window.__STATIC_DATA__ = {
         },
         {
           "player_id": "11539",
-          "espn_id": null,
+          "espn_id": 4689936,
           "name": "Jake Bates",
           "position": "K",
           "team": "DET",
@@ -7459,7 +7459,7 @@ window.__STATIC_DATA__ = {
         },
         {
           "player_id": "11564",
-          "espn_id": null,
+          "espn_id": 4431452,
           "name": "Drake Maye",
           "position": "QB",
           "team": "NE",
@@ -7474,7 +7474,7 @@ window.__STATIC_DATA__ = {
         },
         {
           "player_id": "11565",
-          "espn_id": null,
+          "espn_id": 4433970,
           "name": "J.J. McCarthy",
           "position": "QB",
           "team": "MIN",
@@ -7489,7 +7489,7 @@ window.__STATIC_DATA__ = {
         },
         {
           "player_id": "11569",
-          "espn_id": null,
+          "espn_id": 4710341,
           "name": "Jarquez Hunter",
           "position": "RB",
           "team": "LAR",
@@ -7504,7 +7504,7 @@ window.__STATIC_DATA__ = {
         },
         {
           "player_id": "11620",
-          "espn_id": null,
+          "espn_id": 4431299,
           "name": "Rome Odunze",
           "position": "WR",
           "team": "CHI",
@@ -7519,7 +7519,7 @@ window.__STATIC_DATA__ = {
         },
         {
           "player_id": "11632",
-          "espn_id": null,
+          "espn_id": 4595348,
           "name": "Malik Nabers",
           "position": "WR",
           "team": "NYG",
@@ -7534,7 +7534,7 @@ window.__STATIC_DATA__ = {
         },
         {
           "player_id": "11783",
-          "espn_id": null,
+          "espn_id": 5083754,
           "name": "Ryan Flournoy",
           "position": "WR",
           "team": "DAL",
@@ -7549,7 +7549,7 @@ window.__STATIC_DATA__ = {
         },
         {
           "player_id": "11792",
-          "espn_id": null,
+          "espn_id": 4567104,
           "name": "Will Reichard",
           "position": "K",
           "team": "MIN",
@@ -7564,7 +7564,7 @@ window.__STATIC_DATA__ = {
         },
         {
           "player_id": "12490",
-          "espn_id": null,
+          "espn_id": 4882093,
           "name": "Bhayshul Tuten",
           "position": "RB",
           "team": "JAX",
@@ -7579,7 +7579,7 @@ window.__STATIC_DATA__ = {
         },
         {
           "player_id": "12496",
-          "espn_id": null,
+          "espn_id": 4565185,
           "name": "Tai Felton",
           "position": "WR",
           "team": "MIN",
@@ -7594,7 +7594,7 @@ window.__STATIC_DATA__ = {
         },
         {
           "player_id": "12527",
-          "espn_id": null,
+          "espn_id": 4890973,
           "name": "Ashton Jeanty",
           "position": "RB",
           "team": "LV",
@@ -7609,7 +7609,7 @@ window.__STATIC_DATA__ = {
         },
         {
           "player_id": "12543",
-          "espn_id": null,
+          "espn_id": 4429299,
           "name": "Tahj Brooks",
           "position": "RB",
           "team": "CIN",
@@ -7624,7 +7624,7 @@ window.__STATIC_DATA__ = {
         },
         {
           "player_id": "13279",
-          "espn_id": null,
+          "espn_id": 4871023,
           "name": "Carnell Tate",
           "position": "WR",
           "team": "TEN",
@@ -7639,7 +7639,7 @@ window.__STATIC_DATA__ = {
         },
         {
           "player_id": "13296",
-          "espn_id": null,
+          "espn_id": 4869645,
           "name": "Caleb Douglas",
           "position": "WR",
           "team": "MIA",
@@ -7654,7 +7654,7 @@ window.__STATIC_DATA__ = {
         },
         {
           "player_id": "13333",
-          "espn_id": null,
+          "espn_id": 4683151,
           "name": "Deion Burks",
           "position": "WR",
           "team": "IND",
@@ -7684,7 +7684,7 @@ window.__STATIC_DATA__ = {
         },
         {
           "player_id": "7591",
-          "espn_id": null,
+          "espn_id": 4362887,
           "name": "Justin Fields",
           "position": "QB",
           "team": "KC",
@@ -7699,7 +7699,7 @@ window.__STATIC_DATA__ = {
         },
         {
           "player_id": "7600",
-          "espn_id": null,
+          "espn_id": 4361411,
           "name": "Pat Freiermuth",
           "position": "TE",
           "team": "PIT",
@@ -7714,7 +7714,7 @@ window.__STATIC_DATA__ = {
         },
         {
           "player_id": "8119",
-          "espn_id": null,
+          "espn_id": 4361409,
           "name": "Jahan Dotson",
           "position": "WR",
           "team": "ATL",
@@ -7729,7 +7729,7 @@ window.__STATIC_DATA__ = {
         },
         {
           "player_id": "8126",
-          "espn_id": null,
+          "espn_id": 4569587,
           "name": "Wan'Dale Robinson",
           "position": "WR",
           "team": "TEN",
@@ -7744,7 +7744,7 @@ window.__STATIC_DATA__ = {
         },
         {
           "player_id": "8130",
-          "espn_id": null,
+          "espn_id": 4361307,
           "name": "Trey McBride",
           "position": "TE",
           "team": "ARI",
@@ -7759,7 +7759,7 @@ window.__STATIC_DATA__ = {
         },
         {
           "player_id": "8135",
-          "espn_id": null,
+          "espn_id": 4567156,
           "name": "Treylon Burks",
           "position": "WR",
           "team": "WAS",
@@ -7774,7 +7774,7 @@ window.__STATIC_DATA__ = {
         },
         {
           "player_id": "9224",
-          "espn_id": null,
+          "espn_id": 4362238,
           "name": "Chase Brown",
           "position": "RB",
           "team": "CIN",
@@ -7789,7 +7789,7 @@ window.__STATIC_DATA__ = {
         },
         {
           "player_id": "9494",
-          "espn_id": null,
+          "espn_id": 4686472,
           "name": "Marvin Mims",
           "position": "WR",
           "team": "DEN",
@@ -7804,7 +7804,7 @@ window.__STATIC_DATA__ = {
         },
         {
           "player_id": "9501",
-          "espn_id": null,
+          "espn_id": 4427095,
           "name": "DeMario Douglas",
           "position": "WR",
           "team": "NE",
@@ -7819,7 +7819,7 @@ window.__STATIC_DATA__ = {
         },
         {
           "player_id": "9504",
-          "espn_id": null,
+          "espn_id": 4429022,
           "name": "Kayshon Boutte",
           "position": "WR",
           "team": "NE",
@@ -7834,7 +7834,7 @@ window.__STATIC_DATA__ = {
         },
         {
           "player_id": "9509",
-          "espn_id": null,
+          "espn_id": 4430807,
           "name": "Bijan Robinson",
           "position": "RB",
           "team": "ATL",
@@ -7849,7 +7849,7 @@ window.__STATIC_DATA__ = {
         },
         {
           "player_id": "9511",
-          "espn_id": null,
+          "espn_id": 4596334,
           "name": "Keaton Mitchell",
           "position": "RB",
           "team": "LAC",
@@ -7864,7 +7864,7 @@ window.__STATIC_DATA__ = {
         },
         {
           "player_id": "9754",
-          "espn_id": null,
+          "espn_id": 4429025,
           "name": "Quentin Johnston",
           "position": "WR",
           "team": "LAC",
@@ -7885,7 +7885,7 @@ window.__STATIC_DATA__ = {
       "players": [
         {
           "player_id": "11560",
-          "espn_id": null,
+          "espn_id": 4431611,
           "name": "Caleb Williams",
           "position": "QB",
           "team": "CHI",
@@ -7900,7 +7900,7 @@ window.__STATIC_DATA__ = {
         },
         {
           "player_id": "11571",
-          "espn_id": null,
+          "espn_id": 4695404,
           "name": "Isaiah Davis",
           "position": "RB",
           "team": "NYJ",
@@ -7915,7 +7915,7 @@ window.__STATIC_DATA__ = {
         },
         {
           "player_id": "11596",
-          "espn_id": null,
+          "espn_id": 4690923,
           "name": "Ben Sinnott",
           "position": "TE",
           "team": "WAS",
@@ -7930,7 +7930,7 @@ window.__STATIC_DATA__ = {
         },
         {
           "player_id": "11618",
-          "espn_id": null,
+          "espn_id": 4430834,
           "name": "Jalen McMillan",
           "position": "WR",
           "team": "TB",
@@ -7945,7 +7945,7 @@ window.__STATIC_DATA__ = {
         },
         {
           "player_id": "12470",
-          "espn_id": null,
+          "espn_id": 4683423,
           "name": "Riley Leonard",
           "position": "QB",
           "team": "IND",
@@ -7960,7 +7960,7 @@ window.__STATIC_DATA__ = {
         },
         {
           "player_id": "12502",
-          "espn_id": null,
+          "espn_id": 4686728,
           "name": "Gunnar Helm",
           "position": "TE",
           "team": "TEN",
@@ -7975,7 +7975,7 @@ window.__STATIC_DATA__ = {
         },
         {
           "player_id": "12541",
-          "espn_id": null,
+          "espn_id": 4432775,
           "name": "Dont'e Thornton",
           "position": "WR",
           "team": "LV",
@@ -7990,7 +7990,7 @@ window.__STATIC_DATA__ = {
         },
         {
           "player_id": "13286",
-          "espn_id": null,
+          "espn_id": 4685512,
           "name": "Jadarian Price",
           "position": "RB",
           "team": "SEA",
@@ -8005,7 +8005,7 @@ window.__STATIC_DATA__ = {
         },
         {
           "player_id": "13288",
-          "espn_id": null,
+          "espn_id": 4685555,
           "name": "Nicholas Singleton",
           "position": "RB",
           "team": "TEN",
@@ -8020,7 +8020,7 @@ window.__STATIC_DATA__ = {
         },
         {
           "player_id": "13289",
-          "espn_id": null,
+          "espn_id": 4714771,
           "name": "Drew Allar",
           "position": "QB",
           "team": "PIT",
@@ -8035,7 +8035,7 @@ window.__STATIC_DATA__ = {
         },
         {
           "player_id": "13311",
-          "espn_id": null,
+          "espn_id": 4869961,
           "name": "Chris Bell",
           "position": "WR",
           "team": "MIA",
@@ -8050,7 +8050,7 @@ window.__STATIC_DATA__ = {
         },
         {
           "player_id": "13319",
-          "espn_id": null,
+          "espn_id": 4702559,
           "name": "Oscar Delp",
           "position": "TE",
           "team": "NO",
@@ -8065,7 +8065,7 @@ window.__STATIC_DATA__ = {
         },
         {
           "player_id": "13320",
-          "espn_id": null,
+          "espn_id": 4870612,
           "name": "Zachariah Branch",
           "position": "WR",
           "team": "ATL",
@@ -8080,7 +8080,7 @@ window.__STATIC_DATA__ = {
         },
         {
           "player_id": "13335",
-          "espn_id": null,
+          "espn_id": 4879250,
           "name": "Cole Payton",
           "position": "QB",
           "team": "PHI",
@@ -8095,7 +8095,7 @@ window.__STATIC_DATA__ = {
         },
         {
           "player_id": "13348",
-          "espn_id": null,
+          "espn_id": 4713118,
           "name": "J'Mari Taylor",
           "position": "RB",
           "team": "JAX",
@@ -8110,7 +8110,7 @@ window.__STATIC_DATA__ = {
         },
         {
           "player_id": "13401",
-          "espn_id": null,
+          "espn_id": 4594749,
           "name": "Michael Trigg",
           "position": "TE",
           "team": "DAL",
@@ -8125,7 +8125,7 @@ window.__STATIC_DATA__ = {
         },
         {
           "player_id": "13403",
-          "espn_id": null,
+          "espn_id": 4685477,
           "name": "Jam Miller",
           "position": "RB",
           "team": "NE",
@@ -8140,7 +8140,7 @@ window.__STATIC_DATA__ = {
         },
         {
           "player_id": "13411",
-          "espn_id": null,
+          "espn_id": 4869748,
           "name": "Zavion Thomas",
           "position": "WR",
           "team": "CHI",
@@ -8155,7 +8155,7 @@ window.__STATIC_DATA__ = {
         },
         {
           "player_id": "13413",
-          "espn_id": null,
+          "espn_id": 4912218,
           "name": "Cyrus Allen",
           "position": "WR",
           "team": "KC",
@@ -8170,7 +8170,7 @@ window.__STATIC_DATA__ = {
         },
         {
           "player_id": "13414",
-          "espn_id": null,
+          "espn_id": 4696044,
           "name": "Kaelon Black",
           "position": "RB",
           "team": "SF",
@@ -8335,7 +8335,7 @@ window.__STATIC_DATA__ = {
         },
         {
           "player_id": "8210",
-          "espn_id": null,
+          "espn_id": 4360635,
           "name": "Chig Okonkwo",
           "position": "TE",
           "team": "WAS",
@@ -8356,7 +8356,7 @@ window.__STATIC_DATA__ = {
       "players": [
         {
           "player_id": "11559",
-          "espn_id": null,
+          "espn_id": 4360423,
           "name": "Michael Penix",
           "position": "QB",
           "team": "ATL",
@@ -8371,7 +8371,7 @@ window.__STATIC_DATA__ = {
         },
         {
           "player_id": "11576",
-          "espn_id": null,
+          "espn_id": 4685247,
           "name": "Braelon Allen",
           "position": "RB",
           "team": "NYJ",
@@ -8386,7 +8386,7 @@ window.__STATIC_DATA__ = {
         },
         {
           "player_id": "11583",
-          "espn_id": null,
+          "espn_id": 4678008,
           "name": "Jonathon Brooks",
           "position": "RB",
           "team": "CAR",
@@ -8401,7 +8401,7 @@ window.__STATIC_DATA__ = {
         },
         {
           "player_id": "11625",
-          "espn_id": null,
+          "espn_id": 4597500,
           "name": "Adonai Mitchell",
           "position": "WR",
           "team": "NYJ",
@@ -8416,7 +8416,7 @@ window.__STATIC_DATA__ = {
         },
         {
           "player_id": "11626",
-          "espn_id": null,
+          "espn_id": 4430034,
           "name": "Xavier Legette",
           "position": "WR",
           "team": "CAR",
@@ -8431,7 +8431,7 @@ window.__STATIC_DATA__ = {
         },
         {
           "player_id": "11647",
-          "espn_id": null,
+          "espn_id": 4430968,
           "name": "Kimani Vidal",
           "position": "RB",
           "team": "LAC",
@@ -8446,7 +8446,7 @@ window.__STATIC_DATA__ = {
         },
         {
           "player_id": "11650",
-          "espn_id": null,
+          "espn_id": 4426948,
           "name": "Luke McCaffrey",
           "position": "WR",
           "team": "WAS",
@@ -8461,7 +8461,7 @@ window.__STATIC_DATA__ = {
         },
         {
           "player_id": "12498",
-          "espn_id": null,
+          "espn_id": 4808766,
           "name": "Mason Taylor",
           "position": "TE",
           "team": "NYJ",
@@ -8476,7 +8476,7 @@ window.__STATIC_DATA__ = {
         },
         {
           "player_id": "12514",
-          "espn_id": null,
+          "espn_id": 4567750,
           "name": "Emeka Egbuka",
           "position": "WR",
           "team": "TB",
@@ -8491,7 +8491,7 @@ window.__STATIC_DATA__ = {
         },
         {
           "player_id": "12517",
-          "espn_id": null,
+          "espn_id": 4723086,
           "name": "Colston Loveland",
           "position": "TE",
           "team": "CHI",
@@ -8506,7 +8506,7 @@ window.__STATIC_DATA__ = {
         },
         {
           "player_id": "12521",
-          "espn_id": null,
+          "espn_id": 4678006,
           "name": "Elijah Arroyo",
           "position": "TE",
           "team": "SEA",
@@ -8521,7 +8521,7 @@ window.__STATIC_DATA__ = {
         },
         {
           "player_id": "12540",
-          "espn_id": null,
+          "espn_id": 4431268,
           "name": "Chimere Dike",
           "position": "WR",
           "team": "TEN",
@@ -8536,7 +8536,7 @@ window.__STATIC_DATA__ = {
         },
         {
           "player_id": "12545",
-          "espn_id": null,
+          "espn_id": 4360689,
           "name": "Tyler Shough",
           "position": "QB",
           "team": "NO",
@@ -8551,7 +8551,7 @@ window.__STATIC_DATA__ = {
         },
         {
           "player_id": "12547",
-          "espn_id": null,
+          "espn_id": 4613202,
           "name": "Kyle Williams",
           "position": "WR",
           "team": "NE",
@@ -8566,7 +8566,7 @@ window.__STATIC_DATA__ = {
         },
         {
           "player_id": "12641",
-          "espn_id": null,
+          "espn_id": 4602667,
           "name": "Jaylin Lane",
           "position": "WR",
           "team": "WAS",
@@ -8581,7 +8581,7 @@ window.__STATIC_DATA__ = {
         },
         {
           "player_id": "12711",
-          "espn_id": null,
+          "espn_id": 4697745,
           "name": "Tyler Loop",
           "position": "K",
           "team": "BAL",
@@ -8596,7 +8596,7 @@ window.__STATIC_DATA__ = {
         },
         {
           "player_id": "13274",
-          "espn_id": null,
+          "espn_id": 4685261,
           "name": "Germie Bernard",
           "position": "WR",
           "team": "PIT",
@@ -8611,7 +8611,7 @@ window.__STATIC_DATA__ = {
         },
         {
           "player_id": "13285",
-          "espn_id": null,
+          "espn_id": 4682648,
           "name": "Malachi Fields",
           "position": "WR",
           "team": "NYG",
@@ -8626,7 +8626,7 @@ window.__STATIC_DATA__ = {
         },
         {
           "player_id": "13287",
-          "espn_id": null,
+          "espn_id": 4870808,
           "name": "Jeremiyah Love",
           "position": "RB",
           "team": "ARI",
@@ -8641,7 +8641,7 @@ window.__STATIC_DATA__ = {
         },
         {
           "player_id": "13394",
-          "espn_id": null,
+          "espn_id": 4879194,
           "name": "Josh Cameron",
           "position": "WR",
           "team": "JAX",
@@ -8656,7 +8656,7 @@ window.__STATIC_DATA__ = {
         },
         {
           "player_id": "13405",
-          "espn_id": null,
+          "espn_id": 4685246,
           "name": "Kaytron Allen",
           "position": "RB",
           "team": "WAS",
@@ -8746,7 +8746,7 @@ window.__STATIC_DATA__ = {
         },
         {
           "player_id": "8117",
-          "espn_id": null,
+          "espn_id": 4249417,
           "name": "Jalen Tolbert",
           "position": "WR",
           "team": "MIA",
@@ -8761,7 +8761,7 @@ window.__STATIC_DATA__ = {
         },
         {
           "player_id": "8154",
-          "espn_id": null,
+          "espn_id": 4241474,
           "name": "Brian Robinson",
           "position": "RB",
           "team": "ATL",
@@ -8776,7 +8776,7 @@ window.__STATIC_DATA__ = {
         },
         {
           "player_id": "9502",
-          "espn_id": null,
+          "espn_id": 4366031,
           "name": "Tank Dell",
           "position": "WR",
           "team": "HOU",
@@ -8791,7 +8791,7 @@ window.__STATIC_DATA__ = {
         },
         {
           "player_id": "9756",
-          "espn_id": null,
+          "espn_id": 4429205,
           "name": "Jordan Addison",
           "position": "WR",
           "team": "MIN",
@@ -8842,7 +8842,7 @@ window.__STATIC_DATA__ = {
         },
         {
           "player_id": "11619",
-          "espn_id": null,
+          "espn_id": 4430637,
           "name": "Ja'Lynn Polk",
           "position": "WR",
           "team": "NO",
@@ -8857,7 +8857,7 @@ window.__STATIC_DATA__ = {
         },
         {
           "player_id": "13317",
-          "espn_id": null,
+          "espn_id": 5220680,
           "name": "Ted Hurst",
           "position": "WR",
           "team": "TB",
@@ -8902,7 +8902,7 @@ window.__STATIC_DATA__ = {
         },
         {
           "player_id": "9497",
-          "espn_id": null,
+          "espn_id": 4692590,
           "name": "Jalin Hyatt",
           "position": "WR",
           "team": "NYG",
@@ -8917,7 +8917,7 @@ window.__STATIC_DATA__ = {
         },
         {
           "player_id": "13345",
-          "espn_id": null,
+          "espn_id": 4702555,
           "name": "Jonah Coleman",
           "position": "RB",
           "team": "DEN",
@@ -8932,7 +8932,7 @@ window.__STATIC_DATA__ = {
         },
         {
           "player_id": "9757",
-          "espn_id": null,
+          "espn_id": 4599739,
           "name": "Kendre Miller",
           "position": "RB",
           "team": "NO",
@@ -8947,7 +8947,7 @@ window.__STATIC_DATA__ = {
         },
         {
           "player_id": "13150",
-          "espn_id": null,
+          "espn_id": 4715355,
           "name": "Darius Cooper",
           "position": "WR",
           "team": "PHI",
@@ -8962,7 +8962,7 @@ window.__STATIC_DATA__ = {
         },
         {
           "player_id": "13281",
-          "espn_id": null,
+          "espn_id": 4880281,
           "name": "Jordyn Tyson",
           "position": "WR",
           "team": "NO",
@@ -8977,7 +8977,7 @@ window.__STATIC_DATA__ = {
         },
         {
           "player_id": "13275",
-          "espn_id": null,
+          "espn_id": 4685522,
           "name": "Ty Simpson",
           "position": "QB",
           "team": "LAR",
@@ -9022,7 +9022,7 @@ window.__STATIC_DATA__ = {
         },
         {
           "player_id": "12530",
-          "espn_id": null,
+          "espn_id": 4685415,
           "name": "Travis Hunter",
           "position": "WR",
           "team": "JAX",
@@ -9037,7 +9037,7 @@ window.__STATIC_DATA__ = {
         },
         {
           "player_id": "8142",
-          "espn_id": null,
+          "espn_id": 4360078,
           "name": "Alec Pierce",
           "position": "WR",
           "team": "IND",
@@ -9052,7 +9052,7 @@ window.__STATIC_DATA__ = {
         },
         {
           "player_id": "8143",
-          "espn_id": null,
+          "espn_id": 4372019,
           "name": "Jerome Ford",
           "position": "RB",
           "team": "WAS",
@@ -9067,7 +9067,7 @@ window.__STATIC_DATA__ = {
         },
         {
           "player_id": "13424",
-          "espn_id": null,
+          "espn_id": 4686468,
           "name": "Seth McGowan",
           "position": "RB",
           "team": "IND",
@@ -9082,7 +9082,7 @@ window.__STATIC_DATA__ = {
         },
         {
           "player_id": "8208",
-          "espn_id": null,
+          "espn_id": 4362748,
           "name": "Tyler Badie",
           "position": "RB",
           "team": "DEN",
@@ -9112,7 +9112,7 @@ window.__STATIC_DATA__ = {
         },
         {
           "player_id": "13330",
-          "espn_id": null,
+          "espn_id": 5083315,
           "name": "Kenyon Sadiq",
           "position": "TE",
           "team": "NYJ",
@@ -9142,7 +9142,7 @@ window.__STATIC_DATA__ = {
         },
         {
           "player_id": "9486",
-          "espn_id": null,
+          "espn_id": 4428850,
           "name": "Dontayvion Wicks",
           "position": "WR",
           "team": "PHI",
@@ -9157,7 +9157,7 @@ window.__STATIC_DATA__ = {
         },
         {
           "player_id": "8110",
-          "espn_id": null,
+          "espn_id": 4242355,
           "name": "Jake Ferguson",
           "position": "TE",
           "team": "DAL",
@@ -9217,7 +9217,7 @@ window.__STATIC_DATA__ = {
         },
         {
           "player_id": "8147",
-          "espn_id": null,
+          "espn_id": 4567096,
           "name": "John Metchie",
           "position": "WR",
           "team": "CAR",
@@ -9232,7 +9232,7 @@ window.__STATIC_DATA__ = {
         },
         {
           "player_id": "13268",
-          "espn_id": null,
+          "espn_id": 5088338,
           "name": "Elijah Sarratt",
           "position": "WR",
           "team": "BAL",
@@ -9247,7 +9247,7 @@ window.__STATIC_DATA__ = {
         },
         {
           "player_id": "12529",
-          "espn_id": null,
+          "espn_id": 4432710,
           "name": "TreVeyon Henderson",
           "position": "RB",
           "team": "NE",
@@ -9277,7 +9277,7 @@ window.__STATIC_DATA__ = {
         },
         {
           "player_id": "8111",
-          "espn_id": null,
+          "espn_id": 4243331,
           "name": "Cade Otton",
           "position": "TE",
           "team": "TB",
@@ -9292,7 +9292,7 @@ window.__STATIC_DATA__ = {
         },
         {
           "player_id": "11610",
-          "espn_id": null,
+          "espn_id": 4569603,
           "name": "Malik Washington",
           "position": "WR",
           "team": "MIA",
@@ -9307,7 +9307,7 @@ window.__STATIC_DATA__ = {
         },
         {
           "player_id": "13301",
-          "espn_id": null,
+          "espn_id": 5081432,
           "name": "Antonio Williams",
           "position": "WR",
           "team": "WAS",
@@ -9322,7 +9322,7 @@ window.__STATIC_DATA__ = {
         },
         {
           "player_id": "11439",
-          "espn_id": null,
+          "espn_id": 4722893,
           "name": "Jaleel McLaughlin",
           "position": "RB",
           "team": "DEN",
@@ -9337,7 +9337,7 @@ window.__STATIC_DATA__ = {
         },
         {
           "player_id": "12507",
-          "espn_id": null,
+          "espn_id": 4685382,
           "name": "Omarion Hampton",
           "position": "RB",
           "team": "LAC",
@@ -9358,7 +9358,7 @@ window.__STATIC_DATA__ = {
       "players": [
         {
           "player_id": "10222",
-          "espn_id": null,
+          "espn_id": 4362249,
           "name": "Jayden Reed",
           "position": "WR",
           "team": "GB",
@@ -9373,7 +9373,7 @@ window.__STATIC_DATA__ = {
         },
         {
           "player_id": "11603",
-          "espn_id": null,
+          "espn_id": 4576297,
           "name": "AJ Barner",
           "position": "TE",
           "team": "SEA",
@@ -9388,7 +9388,7 @@ window.__STATIC_DATA__ = {
         },
         {
           "player_id": "11604",
-          "espn_id": null,
+          "espn_id": 4432665,
           "name": "Brock Bowers",
           "position": "TE",
           "team": "LV",
@@ -9403,7 +9403,7 @@ window.__STATIC_DATA__ = {
         },
         {
           "player_id": "11635",
-          "espn_id": null,
+          "espn_id": 4612826,
           "name": "Ladd McConkey",
           "position": "WR",
           "team": "LAC",
@@ -9418,7 +9418,7 @@ window.__STATIC_DATA__ = {
         },
         {
           "player_id": "11637",
-          "espn_id": null,
+          "espn_id": 4635008,
           "name": "Keon Coleman",
           "position": "WR",
           "team": "BUF",
@@ -9433,7 +9433,7 @@ window.__STATIC_DATA__ = {
         },
         {
           "player_id": "11638",
-          "espn_id": null,
+          "espn_id": 4428209,
           "name": "Ricky Pearsall",
           "position": "WR",
           "team": "SF",
@@ -9448,7 +9448,7 @@ window.__STATIC_DATA__ = {
         },
         {
           "player_id": "11651",
-          "espn_id": null,
+          "espn_id": 4372561,
           "name": "Isaac Guerendo",
           "position": "RB",
           "team": "SF",
@@ -9463,7 +9463,7 @@ window.__STATIC_DATA__ = {
         },
         {
           "player_id": "12048",
-          "espn_id": null,
+          "espn_id": 4429835,
           "name": "George Holani",
           "position": "RB",
           "team": "SEA",
@@ -9478,7 +9478,7 @@ window.__STATIC_DATA__ = {
         },
         {
           "player_id": "12455",
-          "espn_id": null,
+          "espn_id": 4596602,
           "name": "Brashard Smith",
           "position": "RB",
           "team": "KC",
@@ -9493,7 +9493,7 @@ window.__STATIC_DATA__ = {
         },
         {
           "player_id": "12462",
-          "espn_id": null,
+          "espn_id": 4808830,
           "name": "Damien Martinez",
           "position": "RB",
           "team": "GB",
@@ -9508,7 +9508,7 @@ window.__STATIC_DATA__ = {
         },
         {
           "player_id": "12481",
-          "espn_id": null,
+          "espn_id": 4696981,
           "name": "Cam Skattebo",
           "position": "RB",
           "team": "NYG",
@@ -9523,7 +9523,7 @@ window.__STATIC_DATA__ = {
         },
         {
           "player_id": "12503",
-          "espn_id": null,
+          "espn_id": 4808839,
           "name": "Isaiah Bond",
           "position": "WR",
           "team": "CLE",
@@ -9538,7 +9538,7 @@ window.__STATIC_DATA__ = {
         },
         {
           "player_id": "12508",
-          "espn_id": null,
+          "espn_id": 4689114,
           "name": "Jaxson Dart",
           "position": "QB",
           "team": "NYG",
@@ -9553,7 +9553,7 @@ window.__STATIC_DATA__ = {
         },
         {
           "player_id": "12544",
-          "espn_id": null,
+          "espn_id": 4911851,
           "name": "LeQuint Allen",
           "position": "RB",
           "team": "JAX",
@@ -9568,7 +9568,7 @@ window.__STATIC_DATA__ = {
         },
         {
           "player_id": "13269",
-          "espn_id": null,
+          "espn_id": 4837248,
           "name": "Fernando Mendoza",
           "position": "QB",
           "team": "LV",
@@ -9583,7 +9583,7 @@ window.__STATIC_DATA__ = {
         },
         {
           "player_id": "13294",
-          "espn_id": null,
+          "espn_id": 4870795,
           "name": "Makai Lemon",
           "position": "WR",
           "team": "PHI",
@@ -9598,7 +9598,7 @@ window.__STATIC_DATA__ = {
         },
         {
           "player_id": "13298",
-          "espn_id": null,
+          "espn_id": 4870653,
           "name": "KC Concepcion",
           "position": "WR",
           "team": "CLE",
@@ -9613,7 +9613,7 @@ window.__STATIC_DATA__ = {
         },
         {
           "player_id": "13349",
-          "espn_id": null,
+          "espn_id": 4431574,
           "name": "Eli Stowers",
           "position": "TE",
           "team": "PHI",
@@ -9628,7 +9628,7 @@ window.__STATIC_DATA__ = {
         },
         {
           "player_id": "13421",
-          "espn_id": null,
+          "espn_id": 4831959,
           "name": "Eli Raridon",
           "position": "TE",
           "team": "NE",
@@ -9703,7 +9703,7 @@ window.__STATIC_DATA__ = {
         },
         {
           "player_id": "7564",
-          "espn_id": null,
+          "espn_id": 4362628,
           "name": "Ja'Marr Chase",
           "position": "WR",
           "team": "CIN",
@@ -9718,7 +9718,7 @@ window.__STATIC_DATA__ = {
         },
         {
           "player_id": "8144",
-          "espn_id": null,
+          "espn_id": 4361370,
           "name": "Chris Olave",
           "position": "WR",
           "team": "NO",
@@ -9733,7 +9733,7 @@ window.__STATIC_DATA__ = {
         },
         {
           "player_id": "8155",
-          "espn_id": null,
+          "espn_id": 4427366,
           "name": "Breece Hall",
           "position": "RB",
           "team": "NYJ",
@@ -9748,7 +9748,7 @@ window.__STATIC_DATA__ = {
         },
         {
           "player_id": "8172",
-          "espn_id": null,
+          "espn_id": 4367209,
           "name": "Greg Dulcich",
           "position": "TE",
           "team": "MIA",
@@ -9763,7 +9763,7 @@ window.__STATIC_DATA__ = {
         },
         {
           "player_id": "9228",
-          "espn_id": null,
+          "espn_id": 4685720,
           "name": "Bryce Young",
           "position": "QB",
           "team": "CAR",
@@ -9778,7 +9778,7 @@ window.__STATIC_DATA__ = {
         },
         {
           "player_id": "9487",
-          "espn_id": null,
+          "espn_id": 4432620,
           "name": "Parker Washington",
           "position": "WR",
           "team": "JAX",
@@ -9793,7 +9793,7 @@ window.__STATIC_DATA__ = {
         },
         {
           "player_id": "9500",
-          "espn_id": null,
+          "espn_id": 4688813,
           "name": "Josh Downs",
           "position": "WR",
           "team": "IND",
@@ -9814,7 +9814,7 @@ window.__STATIC_DATA__ = {
       "players": [
         {
           "player_id": "11563",
-          "espn_id": null,
+          "espn_id": 4426338,
           "name": "Bo Nix",
           "position": "QB",
           "team": "DEN",
@@ -9829,7 +9829,7 @@ window.__STATIC_DATA__ = {
         },
         {
           "player_id": "11581",
-          "espn_id": null,
+          "espn_id": 4429023,
           "name": "MarShawn Lloyd",
           "position": "RB",
           "team": "GB",
@@ -9844,7 +9844,7 @@ window.__STATIC_DATA__ = {
         },
         {
           "player_id": "11586",
-          "espn_id": null,
+          "espn_id": 4429096,
           "name": "Blake Corum",
           "position": "RB",
           "team": "LAR",
@@ -9859,7 +9859,7 @@ window.__STATIC_DATA__ = {
         },
         {
           "player_id": "11597",
-          "espn_id": null,
+          "espn_id": 4429148,
           "name": "Theo Johnson",
           "position": "TE",
           "team": "NYG",
@@ -9874,7 +9874,7 @@ window.__STATIC_DATA__ = {
         },
         {
           "player_id": "11786",
-          "espn_id": null,
+          "espn_id": 4686361,
           "name": "Cam Little",
           "position": "K",
           "team": "JAX",
@@ -9889,7 +9889,7 @@ window.__STATIC_DATA__ = {
         },
         {
           "player_id": "12474",
-          "espn_id": null,
+          "espn_id": 4429059,
           "name": "Woody Marks",
           "position": "RB",
           "team": "HOU",
@@ -9904,7 +9904,7 @@ window.__STATIC_DATA__ = {
         },
         {
           "player_id": "12482",
-          "espn_id": null,
+          "espn_id": 4431487,
           "name": "Savion Williams",
           "position": "WR",
           "team": "GB",
@@ -9919,7 +9919,7 @@ window.__STATIC_DATA__ = {
         },
         {
           "player_id": "12483",
-          "espn_id": null,
+          "espn_id": 4603186,
           "name": "Jack Bech",
           "position": "WR",
           "team": "LV",
@@ -9934,7 +9934,7 @@ window.__STATIC_DATA__ = {
         },
         {
           "player_id": "12485",
-          "espn_id": null,
+          "espn_id": 4608810,
           "name": "Tez Johnson",
           "position": "WR",
           "team": "TB",
@@ -9949,7 +9949,7 @@ window.__STATIC_DATA__ = {
         },
         {
           "player_id": "12497",
-          "espn_id": null,
+          "espn_id": 4597703,
           "name": "Tory Horton",
           "position": "WR",
           "team": "SEA",
@@ -9964,7 +9964,7 @@ window.__STATIC_DATA__ = {
         },
         {
           "player_id": "12504",
-          "espn_id": null,
+          "espn_id": 4819231,
           "name": "Kaleb Johnson",
           "position": "RB",
           "team": "PIT",
@@ -9979,7 +9979,7 @@ window.__STATIC_DATA__ = {
         },
         {
           "player_id": "12522",
-          "espn_id": null,
+          "espn_id": 4688380,
           "name": "Cam Ward",
           "position": "QB",
           "team": "TEN",
@@ -9994,7 +9994,7 @@ window.__STATIC_DATA__ = {
         },
         {
           "player_id": "12536",
-          "espn_id": null,
+          "espn_id": 4586312,
           "name": "Jaylin Noel",
           "position": "WR",
           "team": "HOU",
@@ -10009,7 +10009,7 @@ window.__STATIC_DATA__ = {
         },
         {
           "player_id": "13276",
-          "espn_id": null,
+          "espn_id": 4723820,
           "name": "Omar Cooper",
           "position": "WR",
           "team": "NYJ",
@@ -10024,7 +10024,7 @@ window.__STATIC_DATA__ = {
         },
         {
           "player_id": "13282",
-          "espn_id": null,
+          "espn_id": 5085189,
           "name": "Jack Endries",
           "position": "TE",
           "team": "CIN",
@@ -10039,7 +10039,7 @@ window.__STATIC_DATA__ = {
         },
         {
           "player_id": "13293",
-          "espn_id": null,
+          "espn_id": 4870847,
           "name": "Ja'Kobi Lane",
           "position": "WR",
           "team": "BAL",
@@ -10054,7 +10054,7 @@ window.__STATIC_DATA__ = {
         },
         {
           "player_id": "13305",
-          "espn_id": null,
+          "espn_id": 4686658,
           "name": "Mike Washington",
           "position": "RB",
           "team": "LV",
@@ -10069,7 +10069,7 @@ window.__STATIC_DATA__ = {
         },
         {
           "player_id": "13337",
-          "espn_id": null,
+          "espn_id": 4832955,
           "name": "Emmett Johnson",
           "position": "RB",
           "team": "KC",
@@ -10084,7 +10084,7 @@ window.__STATIC_DATA__ = {
         },
         {
           "player_id": "13346",
-          "espn_id": null,
+          "espn_id": 4832800,
           "name": "Denzel Boston",
           "position": "WR",
           "team": "CLE",
@@ -10099,7 +10099,7 @@ window.__STATIC_DATA__ = {
         },
         {
           "player_id": "13417",
-          "espn_id": null,
+          "espn_id": 4710714,
           "name": "De'Zhaun Stribling",
           "position": "WR",
           "team": "SF",
@@ -10174,7 +10174,7 @@ window.__STATIC_DATA__ = {
         },
         {
           "player_id": "7670",
-          "espn_id": null,
+          "espn_id": 4242433,
           "name": "Joshua Palmer",
           "position": "WR",
           "team": "BUF",
@@ -10189,7 +10189,7 @@ window.__STATIC_DATA__ = {
         },
         {
           "player_id": "8167",
-          "espn_id": null,
+          "espn_id": 4248528,
           "name": "Christian Watson",
           "position": "WR",
           "team": "GB",
@@ -10204,7 +10204,7 @@ window.__STATIC_DATA__ = {
         },
         {
           "player_id": "9225",
-          "espn_id": null,
+          "espn_id": 4429013,
           "name": "Tank Bigsby",
           "position": "RB",
           "team": "PHI",
@@ -10219,7 +10219,7 @@ window.__STATIC_DATA__ = {
         },
         {
           "player_id": "9493",
-          "espn_id": null,
+          "espn_id": 4426515,
           "name": "Puka Nacua",
           "position": "WR",
           "team": "LAR",
@@ -10234,7 +10234,7 @@ window.__STATIC_DATA__ = {
         },
         {
           "player_id": "9506",
-          "espn_id": null,
+          "espn_id": 4430871,
           "name": "Sean Tucker",
           "position": "RB",
           "team": "TB",
@@ -10264,7 +10264,7 @@ window.__STATIC_DATA__ = {
         },
         {
           "player_id": "9753",
-          "espn_id": null,
+          "espn_id": 4426385,
           "name": "Zach Charbonnet",
           "position": "RB",
           "team": "SEA",
@@ -10285,7 +10285,7 @@ window.__STATIC_DATA__ = {
       "players": [
         {
           "player_id": "10232",
-          "espn_id": null,
+          "espn_id": 4360761,
           "name": "Michael Wilson",
           "position": "WR",
           "team": "ARI",
@@ -10300,7 +10300,7 @@ window.__STATIC_DATA__ = {
         },
         {
           "player_id": "10859",
-          "espn_id": null,
+          "espn_id": 4430027,
           "name": "Sam LaPorta",
           "position": "TE",
           "team": "DET",
@@ -10315,7 +10315,7 @@ window.__STATIC_DATA__ = {
         },
         {
           "player_id": "12457",
-          "espn_id": null,
+          "espn_id": 4685279,
           "name": "Jaydon Blue",
           "position": "RB",
           "team": "DAL",
@@ -10330,7 +10330,7 @@ window.__STATIC_DATA__ = {
         },
         {
           "player_id": "12476",
-          "espn_id": null,
+          "espn_id": 4431292,
           "name": "Devin Neal",
           "position": "RB",
           "team": "NO",
@@ -10345,7 +10345,7 @@ window.__STATIC_DATA__ = {
         },
         {
           "player_id": "12492",
-          "espn_id": null,
+          "espn_id": 4600981,
           "name": "Pat Bryant",
           "position": "WR",
           "team": "DEN",
@@ -10360,7 +10360,7 @@ window.__STATIC_DATA__ = {
         },
         {
           "player_id": "12501",
-          "espn_id": null,
+          "espn_id": 4701936,
           "name": "Matthew Golden",
           "position": "WR",
           "team": "GB",
@@ -10375,7 +10375,7 @@ window.__STATIC_DATA__ = {
         },
         {
           "player_id": "12509",
-          "espn_id": null,
+          "espn_id": 4686612,
           "name": "Tre' Harris",
           "position": "WR",
           "team": "LAC",
@@ -10390,7 +10390,7 @@ window.__STATIC_DATA__ = {
         },
         {
           "player_id": "12531",
-          "espn_id": null,
+          "espn_id": 4685350,
           "name": "Trevor Etienne",
           "position": "RB",
           "team": "CAR",
@@ -10405,7 +10405,7 @@ window.__STATIC_DATA__ = {
         },
         {
           "player_id": "12713",
-          "espn_id": null,
+          "espn_id": 4569923,
           "name": "Andy Borregales",
           "position": "K",
           "team": "NE",
@@ -10420,7 +10420,7 @@ window.__STATIC_DATA__ = {
         },
         {
           "player_id": "13278",
-          "espn_id": null,
+          "espn_id": 4833029,
           "name": "Max Klare",
           "position": "TE",
           "team": "LAR",
@@ -10435,7 +10435,7 @@ window.__STATIC_DATA__ = {
         },
         {
           "player_id": "13400",
-          "espn_id": null,
+          "espn_id": 4912052,
           "name": "Justin Joly",
           "position": "TE",
           "team": "DEN",
@@ -10450,7 +10450,7 @@ window.__STATIC_DATA__ = {
         },
         {
           "player_id": "13402",
-          "espn_id": null,
+          "espn_id": 4683153,
           "name": "Skyler Bell",
           "position": "WR",
           "team": "BUF",
@@ -10615,7 +10615,7 @@ window.__STATIC_DATA__ = {
         },
         {
           "player_id": "7526",
-          "espn_id": null,
+          "espn_id": 4372016,
           "name": "Jaylen Waddle",
           "position": "WR",
           "team": "DEN",
@@ -10630,7 +10630,7 @@ window.__STATIC_DATA__ = {
         },
         {
           "player_id": "7527",
-          "espn_id": null,
+          "espn_id": 4241464,
           "name": "Mac Jones",
           "position": "QB",
           "team": "SF",
@@ -10645,7 +10645,7 @@ window.__STATIC_DATA__ = {
         },
         {
           "player_id": "7569",
-          "espn_id": null,
+          "espn_id": 4258173,
           "name": "Nico Collins",
           "position": "WR",
           "team": "HOU",
@@ -10660,7 +10660,7 @@ window.__STATIC_DATA__ = {
         },
         {
           "player_id": "7571",
-          "espn_id": null,
+          "espn_id": 4360939,
           "name": "Rashod Bateman",
           "position": "WR",
           "team": "BAL",
@@ -10675,7 +10675,7 @@ window.__STATIC_DATA__ = {
         },
         {
           "player_id": "7611",
-          "espn_id": null,
+          "espn_id": 4569173,
           "name": "Rhamondre Stevenson",
           "position": "RB",
           "team": "NE",
@@ -10690,7 +10690,7 @@ window.__STATIC_DATA__ = {
         },
         {
           "player_id": "8150",
-          "espn_id": null,
+          "espn_id": 4430737,
           "name": "Kyren Williams",
           "position": "RB",
           "team": "LAR",
@@ -10705,7 +10705,7 @@ window.__STATIC_DATA__ = {
         },
         {
           "player_id": "9479",
-          "espn_id": null,
+          "espn_id": 4430802,
           "name": "Darnell Washington",
           "position": "TE",
           "team": "PIT",
@@ -10720,7 +10720,7 @@ window.__STATIC_DATA__ = {
         },
         {
           "player_id": "9508",
-          "espn_id": null,
+          "espn_id": 4428557,
           "name": "Tyjae Spears",
           "position": "RB",
           "team": "TEN",

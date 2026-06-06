@@ -43,6 +43,15 @@ function playerValueScore(p) {
     return 0;
 }
 
+function posRankStr(p) {
+    const pid = p.player_id;
+    for (const yr of ["2025", "2024", "2023"]) {
+        const s = statsCache[yr]?.[pid];
+        if (s?.rank > 0) return `${s.position || p.position}${s.rank}`;
+    }
+    return null;
+}
+
 async function init() {
     await new Promise(r =>
         document.readyState === "loading"
@@ -108,8 +117,18 @@ async function init() {
             ? `<img src="${avatarUrl}" style="width:32px;height:32px;border-radius:50%;object-fit:cover;flex-shrink:0;" onerror="this.style.display='none'">`
             : `<span style="width:32px;height:32px;border-radius:50%;background:#252830;display:inline-flex;align-items:center;justify-content:center;font-size:13px;font-weight:700;color:#5a6070;flex-shrink:0;">${ownerName[0].toUpperCase()}</span>`;
 
-        const playerCount = (team.players || []).filter(p => p && p.name).length;
+        const activePlayers = (team.players || []).filter(p => p && p.name);
+        const playerCount = activePlayers.length;
         const pickCount = pickCountByTeam[ownerName] || 0;
+
+        const ages = activePlayers.map(p => {
+            if (p.birth_date) {
+                const birth = new Date(p.birth_date);
+                return (Date.now() - birth) / (365.25 * 24 * 60 * 60 * 1000);
+            }
+            return p.age ? Number(p.age) : null;
+        }).filter(a => a !== null);
+        const avgAge = ages.length ? (ages.reduce((s, a) => s + a, 0) / ages.length).toFixed(1) : null;
 
         const header = document.createElement("div");
         header.style.cssText = "display:flex;align-items:center;gap:10px;margin-bottom:14px;padding-bottom:12px;border-bottom:1px solid #2d3139;";
@@ -118,6 +137,7 @@ async function init() {
             <div style="flex:1;min-width:0;">
                 <div style="font-size:14px;font-weight:700;color:#f0f1f3;white-space:nowrap;overflow:hidden;text-overflow:ellipsis;">${ownerName}</div>
                 <div style="font-size:11px;color:#5a6070;margin-top:2px;">${playerCount} players · ${pickCount} picks</div>
+                ${avgAge ? `<div style="font-size:11px;color:#5a6070;margin-top:1px;">avg age ${avgAge}</div>` : ""}
             </div>`;
         card.appendChild(header);
 
@@ -171,6 +191,13 @@ async function init() {
 
                 const metaSpan = document.createElement("span");
                 metaSpan.style.cssText = "font-size:11px;color:#5a6070;flex-shrink:0;white-space:nowrap;display:flex;align-items:center;gap:4px;";
+                const rank = posRankStr(p);
+                if (rank) {
+                    const rankEl = document.createElement("span");
+                    rankEl.textContent = rank;
+                    rankEl.style.cssText = "font-size:10px;font-weight:700;color:#8b9099;";
+                    metaSpan.appendChild(rankEl);
+                }
                 const ageDecimal = calcAgeDecimal(p.birth_date);
                 const ageStr = ageDecimal ? ageDecimal : (p.age ? p.age : "");
                 if (p.team) {
