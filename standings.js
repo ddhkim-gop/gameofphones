@@ -241,9 +241,11 @@ function computeManagerStats() {
         const seasonStandings = (standings || {})[year] || [];
         const season = (history || {})[year] || {};
         const winners = season.winners_bracket || [];
-        const champMatch = winners.find(m => m.place === 1);
-        const champ = champMatch?.winner;
+        const champMatch  = winners.find(m => m.place === 1);
+        const place3Match = winners.find(m => m.place === 3);
+        const champ    = champMatch?.winner;
         const finalist = champMatch?.loser;
+        const third    = place3Match?.winner;
         const playoffTeams = new Set(winners.flatMap(m => [m.winner, m.loser].filter(Boolean)));
 
         seasonStandings.forEach((row, idx) => {
@@ -252,7 +254,7 @@ function computeManagerStats() {
                 managers[name] = {
                     name, seasons: 0,
                     totalWins: 0, totalLosses: 0, totalPF: 0, totalPA: 0,
-                    championships: 0, finals: 0, playoffAppearances: 0,
+                    first: 0, second: 0, third: 0, playoffAppearances: 0,
                     seeds: [], pyLuck: 0,
                     draftSurpluses: [],
                     tradeValue: 0, tradeCount: 0,
@@ -265,8 +267,9 @@ function computeManagerStats() {
             m.totalLosses  += row.losses;
             m.totalPF      += row.pf;
             m.totalPA      += row.pa;
-            if (name === champ)                    m.championships++;
-            if (name === champ || name === finalist) m.finals++;
+            if (name === champ)    m.first++;
+            if (name === finalist) m.second++;
+            if (name === third)    m.third++;
             if (playoffTeams.has(name)) m.playoffAppearances++;
             m.seeds.push(idx + 1);
 
@@ -326,7 +329,7 @@ function computeGrades(allManagers) {
 
     const playoffRates  = pick(m => m.seasons > 0 ? m.playoffAppearances / m.seasons : 0);
     const winRates      = pick(m => (m.totalWins + m.totalLosses) > 0 ? m.totalWins / (m.totalWins + m.totalLosses) : 0);
-    const champRates    = pick(m => m.seasons > 0 ? m.championships / m.seasons : 0);
+    const champRates    = pick(m => m.seasons > 0 ? m.first / m.seasons : 0);
     const avgSeeds      = pick(m => m.seeds.length > 0 ? m.seeds.reduce((a,b) => a+b) / m.seeds.length : 12);
     const pyLucks       = pick(m => m.pyLuck);
     const draftScores   = pick(m => m.draftSurpluses.length > 0 ? m.draftSurpluses.reduce((a,b) => a+b) / m.draftSurpluses.length : 0);
@@ -375,7 +378,6 @@ function computeGrades(allManagers) {
             tradeValueAvg: tradeScores[i],
             waiverRate:    waiverRates[i],
             composite,
-            grade:        scoreToGrade(composite),
             draftGrade:   hasDraft  ? scoreToGrade(draftScore)  : "—",
             tradeGrade:   hasTrade  ? scoreToGrade(tradeScore)  : "—",
             waiverGrade:  hasWaiver ? scoreToGrade(waiverScore) : "—",
@@ -421,29 +423,54 @@ function gradeWeightRow(label, pct, desc) {
 
 function renderReportCard() {
     const allManagers = computeManagerStats();
-    const withGrades = computeGrades(allManagers).sort((a, b) => b.composite - a.composite);
+    const computed = computeGrades(allManagers);
+
+    // Active = in current year's standings
+    const active2026 = new Set(((standings || {})["2026"] || []).map(r => r.name));
+    const active   = computed.filter(m =>  active2026.has(m.name)).sort((a, b) => b.composite - a.composite);
+    const inactive = computed.filter(m => !active2026.has(m.name)).sort((a, b) => b.composite - a.composite);
+    const allSorted = [...active, ...inactive];
+
+    // Rank-based grading: top → A+, bottom → F, spread evenly
+    const GRADE_SCALE = ["A+","A","A-","B+","B","B-","C+","C","C-","D+","D","F"];
+    allSorted.forEach((m, i) => {
+        const pct = allSorted.length > 1 ? i / (allSorted.length - 1) : 0;
+        m.grade = GRADE_SCALE[Math.round(pct * (GRADE_SCALE.length - 1))];
+        m.isActive = active2026.has(m.name);
+    });
 
     let html = `<div style="display:grid;grid-template-columns:repeat(4,1fr);gap:16px;">`;
 
-    withGrades.forEach(m => {
-        const playoffPct  = (m.playoffRate * 100).toFixed(0) + "%";
-        const winPct      = (m.winRate * 100).toFixed(1) + "%";
-        const avgSeedStr  = m.avgSeed.toFixed(1);
-        const pfPerGame   = (m.totalWins + m.totalLosses) > 0
+    allSorted.forEach(m => {
+        const playoffPct   = (m.playoffRate * 100).toFixed(0) + "%";
+        const winPct       = (m.winRate * 100).toFixed(1) + "%";
+        const avgSeedStr   = m.avgSeed.toFixed(1);
+        const pfPerGame    = (m.totalWins + m.totalLosses) > 0
             ? (m.totalPF / (m.totalWins + m.totalLosses)).toFixed(1) : "—";
-        const pyLuck      = m.pyLuck.toFixed(1);
-        const pyLuckStr   = m.pyLuck >= 0 ? `+${pyLuck}` : pyLuck;
-        const pyLuckColor = m.pyLuck > 2 ? "#3ecf8e" : m.pyLuck < -2 ? "#f87171" : "#c9cdd4";
+        const pyLuck       = m.pyLuck.toFixed(1);
+        const pyLuckStr    = m.pyLuck >= 0 ? `+${pyLuck}` : pyLuck;
+        const pyLuckColor  = m.pyLuck > 2 ? "#3ecf8e" : m.pyLuck < -2 ? "#f87171" : "#c9cdd4";
         const playoffColor = m.playoffRate >= 0.75 ? "#3ecf8e" : m.playoffRate >= 0.5 ? "#60a5fa" : "#f87171";
 
-        const gc = gradeColor(m.grade);
-        const champBadge = m.championships > 0
-            ? `<div style="background:#2c2102;border:0.8px solid #b45309;border-radius:8px;padding:6px 12px;margin-bottom:12px;font-size:12px;color:#fbbf24;font-weight:700;">🏆 ${m.championships} Championship${m.championships > 1 ? "s" : ""}</div>`
+        const gc = m.isActive ? gradeColor(m.grade) : "#5a6070";
+
+        // Podium row — only show medals earned
+        const podiumParts = [
+            m.first  ? `<span style="font-size:13px;font-weight:700;color:#f0f1f3;">🥇<span style="color:#fbbf24;">×${m.first}</span></span>`  : null,
+            m.second ? `<span style="font-size:13px;font-weight:700;color:#f0f1f3;">🥈<span style="color:#c8d6e5;">×${m.second}</span></span>` : null,
+            m.third  ? `<span style="font-size:13px;font-weight:700;color:#f0f1f3;">🥉<span style="color:#cd9b5a;">×${m.third}</span></span>`  : null,
+        ].filter(Boolean);
+        const podiumRow = podiumParts.length
+            ? `<div style="display:flex;gap:12px;align-items:center;background:#252830;border-radius:8px;padding:8px 12px;margin-bottom:12px;">${podiumParts.join("")}</div>`
+            : "";
+
+        const inactiveBadge = !m.isActive
+            ? `<div style="font-size:10px;font-weight:700;text-transform:uppercase;letter-spacing:.05em;color:#5a6070;margin-bottom:8px;">Inactive</div>`
             : "";
 
         html += `
-            <div class="card" style="padding:20px;background:#1e2027;border-color:#2d3139;">
-                <div style="display:flex;align-items:center;gap:12px;margin-bottom:16px;">
+            <div class="card" style="padding:20px;background:#1e2027;border-color:#2d3139;${!m.isActive ? "opacity:0.7;" : ""}">
+                <div style="display:flex;align-items:center;gap:12px;margin-bottom:12px;">
                     ${avatarEl(m.name, 40)}
                     <div style="flex:1;min-width:0;">
                         <div style="font-size:15px;font-weight:700;color:#f0f1f3;">${m.name}</div>
@@ -454,7 +481,8 @@ function renderReportCard() {
                         <div style="font-size:24px;font-weight:800;color:${gc};line-height:1;">${m.grade}</div>
                     </div>
                 </div>
-                ${champBadge}
+                ${inactiveBadge}
+                ${podiumRow}
                 <div style="font-size:10px;font-weight:700;text-transform:uppercase;letter-spacing:.05em;color:#5a6070;margin-bottom:8px;padding-bottom:6px;border-bottom:1px solid #2d3139;">Category Grades</div>
                 <div style="display:grid;grid-template-columns:1fr 1fr 1fr;gap:8px;margin-bottom:12px;">
                     ${gradeCell("Draft", m.draftGrade)}
@@ -466,7 +494,6 @@ function renderReportCard() {
                     ${metricCell("Playoff Rate", playoffPct, playoffColor)}
                     ${metricCell("Win Rate", winPct)}
                     ${metricCell("Avg Seed", avgSeedStr)}
-                    ${metricCell("Finals", m.finals > 0 ? m.finals + "×" : "—")}
                     ${metricCell("PF/Game", pfPerGame)}
                     ${metricCell("Luck Index", pyLuckStr, pyLuckColor)}
                 </div>
@@ -476,7 +503,8 @@ function renderReportCard() {
 
     html += `</div>
         <div style="margin-top:24px;background:#1e2027;border:1px solid #2d3139;border-radius:12px;padding:18px 20px;">
-            <div style="font-size:13px;font-weight:700;color:#f0f1f3;margin-bottom:14px;">How the Overall Grade is computed</div>
+            <div style="font-size:13px;font-weight:700;color:#f0f1f3;margin-bottom:4px;">How the Overall Grade is computed</div>
+            <div style="font-size:11px;color:#5a6070;margin-bottom:14px;">Managers ranked by weighted composite score. Top manager = A+, bottom = F, others distributed evenly across the scale.</div>
             <div style="display:grid;grid-template-columns:repeat(auto-fill,minmax(200px,1fr));gap:10px;margin-bottom:16px;">
                 ${gradeWeightRow("Championship Rate", 35, "Championships ÷ seasons played")}
                 ${gradeWeightRow("Avg Seed", 20, "Lower regular season finish = better")}
@@ -487,8 +515,7 @@ function renderReportCard() {
                 ${gradeWeightRow("Waiver Hit Rate", 5, "% of adds scoring above median claim")}
             </div>
             <div style="font-size:11px;color:#5a6070;line-height:1.6;border-top:1px solid #2d3139;padding-top:12px;">
-                All metrics are normalized across the 12 managers so grades are relative, not absolute — someone always gets an A and someone always gets an F.
-                Draft, Trade, and Waiver grades use completed seasons only (2023–2025).
+                Draft, Trade, and Waiver grades use completed seasons only (2023–2025). Inactive managers (not in 2026) appear at the bottom, dimmed.
                 Luck Index = actual wins − Pythagorean expected wins (PF²÷(PF²+PA²)).
             </div>
         </div>
