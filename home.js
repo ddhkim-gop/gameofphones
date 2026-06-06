@@ -51,6 +51,51 @@ function buildPlayoffRecords(year) {
     return records;
 }
 
+const COMPLETED_YEARS = ["2023", "2024", "2025"];
+const PRIZE_FIRST = 250, PRIZE_SECOND = 100, PRIZE_THIRD = 50;
+const SIDE_POT_PER_YEAR = 200;
+
+function getSeasonPlacements(year) {
+    const wb = ((historyData || {})[year] || {}).winners_bracket || [];
+    if (!wb.length) return null;
+    const maxRound = Math.max(...wb.map(m => m.round));
+    const finals = wb.filter(m => m.round === maxRound).sort((a, b) => a.match - b.match);
+    return { first: finals[0]?.winner, second: finals[0]?.loser, third: finals[1]?.winner };
+}
+
+function computeSidePot() {
+    let pot = 0;
+    const events = [];
+    const champYears = {};
+    for (const year of COMPLETED_YEARS) {
+        const p = getSeasonPlacements(year);
+        if (!p?.first) continue;
+        pot += SIDE_POT_PER_YEAR;
+        if (!champYears[p.first]) champYears[p.first] = [];
+        champYears[p.first].push(parseInt(year));
+        const yn = parseInt(year);
+        if (champYears[p.first].filter(y => y >= yn - 2).length >= 2) {
+            events.push({ year, winner: p.first, amount: pot });
+            pot = 0;
+        }
+    }
+    return { events, currentPot: pot };
+}
+
+function computePrizesWon() {
+    const totals = {};
+    const { events } = computeSidePot();
+    for (const year of COMPLETED_YEARS) {
+        const p = getSeasonPlacements(year);
+        if (!p) continue;
+        if (p.first)  totals[p.first]  = (totals[p.first]  || 0) + PRIZE_FIRST;
+        if (p.second) totals[p.second] = (totals[p.second] || 0) + PRIZE_SECOND;
+        if (p.third)  totals[p.third]  = (totals[p.third]  || 0) + PRIZE_THIRD;
+    }
+    events.forEach(e => { totals[e.winner] = (totals[e.winner] || 0) + e.amount; });
+    return totals;
+}
+
 // Compute FAAB remaining for a given year per team
 function computeFaabRemaining(year) {
     const BUDGET = 100;
@@ -177,63 +222,94 @@ const PAYOUTS = [
 ];
 
 function buildFeesTable() {
-    // Compute fees per user based on which years they appear in standings
-    const userYears = {};
-    YEARS.forEach(year => {
+    const ALL_YEARS = ["2023", "2024", "2025", "2026"];
+    const userYearsMap = {};
+    ALL_YEARS.forEach(year => {
         (standingsData[year] || []).forEach(r => {
-            if (!userYears[r.name]) userYears[r.name] = [];
-            userYears[r.name].push(year);
+            if (!userYearsMap[r.name]) userYearsMap[r.name] = new Set();
+            userYearsMap[r.name].add(year);
         });
     });
 
-    // First year in 2023 = $100 entry, subsequent years = $50
-    const feeRows = Object.entries(userYears)
-        .map(([name, years]) => {
-            const sortedYears = years.sort();
-            const entryYear = sortedYears[0];
-            const entryFee = entryYear === "2023" ? 100 : 100; // $100 entry fee always
-            const annualFees = (sortedYears.length - 1) * 50;
-            const totalPaid = entryFee + annualFees;
-            const yearBadges = sortedYears.map(y =>
-                `<span style="background:#252830;color:#8b9099;border-radius:4px;padding:1px 6px;font-size:10px;font-weight:600;">${y}</span>`
-            ).join(" ");
-            const av = usersMap[name];
-            return { name, sortedYears, totalPaid, yearBadges, av, joinYear: entryYear };
-        })
-        .sort((a, b) => b.totalPaid - a.totalPaid || a.name.localeCompare(b.name));
+    const prizesWon = computePrizesWon();
+    const { events: sidePotEvents, currentPot } = computeSidePot();
+
+    const feeRows = Object.entries(userYearsMap).map(([name, yearsSet]) => {
+        const firstYear = [...yearsSet].sort()[0];
+        let totalPaid = 0;
+        const yearFees = {};
+        ALL_YEARS.forEach(year => {
+            if (!yearsSet.has(year)) { yearFees[year] = null; return; }
+            const fee = year === firstYear ? 100 : 50;
+            yearFees[year] = fee;
+            totalPaid += fee;
+        });
+        return { name, yearFees, totalPaid, totalWon: prizesWon[name] || 0, av: usersMap[name] };
+    }).sort((a, b) => b.totalWon - a.totalWon || b.totalPaid - a.totalPaid);
 
     const totalPool = feeRows.reduce((s, r) => s + r.totalPaid, 0);
+    const totalWonAll = feeRows.reduce((s, r) => s + r.totalWon, 0);
 
-    const rows = feeRows.map(r => `
-        <tr style="border-bottom:1px solid #2d3139;">
+    const sidePotNote = sidePotEvents.map(e =>
+        `<span style="color:#fbbf24;font-weight:700;">${e.winner}</span> claimed <span style="color:#3ecf8e;font-weight:700;">$${e.amount}</span> side pot after winning in ${e.year} (2× in 3 years)`
+    ).join(" · ");
+
+    const yearHeaders = ALL_YEARS.map(y => `<th style="${TH}">${y}</th>`).join("");
+
+    const rows = feeRows.map(r => {
+        const yearCells = ALL_YEARS.map(year => {
+            const fee = r.yearFees[year];
+            if (fee === null) return `<td style="${TD};color:#2d3139;">—</td>`;
+            return `<td style="${TD};${fee === 100 ? 'color:#fbbf24;font-weight:700;' : 'color:#8b9099;}'}">$${fee}</td>`;
+        }).join("");
+        const net = r.totalWon - r.totalPaid;
+        const netStr = net === 0 ? "$0" : net > 0 ? `+$${net}` : `-$${Math.abs(net)}`;
+        const netColor = net > 0 ? "#3ecf8e" : net < 0 ? "#f87171" : "#8b9099";
+        return `<tr style="border-bottom:1px solid #2d3139;">
             <td style="${TD};text-align:left;">
                 <div style="display:flex;align-items:center;gap:8px;">
                     ${avatarEl(r.av, r.name, 22)}
                     <span style="font-weight:600;color:#f0f1f3;font-size:12px;">${r.name}</span>
                 </div>
             </td>
-            <td style="${TD}">${r.joinYear}</td>
-            <td style="${TD}">${r.sortedYears.length}</td>
-            <td style="${TD};display:flex;flex-wrap:wrap;gap:3px;justify-content:center;">${r.yearBadges}</td>
-            <td style="${TD};color:#3ecf8e;font-weight:700;">$${r.totalPaid}</td>
-        </tr>`).join("");
+            ${yearCells}
+            <td style="${TD};color:#f87171;font-weight:700;">$${r.totalPaid}</td>
+            <td style="${TD};color:#3ecf8e;font-weight:700;">${r.totalWon > 0 ? '$' + r.totalWon : '—'}</td>
+            <td style="${TD};color:${netColor};font-weight:700;">${netStr}</td>
+        </tr>`;
+    }).join("");
 
     return `
         <div style="background:#1e2027;border:1px solid #2d3139;border-radius:10px;padding:16px;margin-top:16px;">
-            <div style="font-size:10px;text-transform:uppercase;letter-spacing:.08em;color:#5a6070;font-weight:700;margin-bottom:14px;padding-bottom:8px;border-bottom:1px solid #2d3139;">
-                Fee History
-                <span style="float:right;color:#fbbf24;font-size:11px;text-transform:none;letter-spacing:0;">Total Collected: $${totalPool}</span>
+            <div style="font-size:10px;text-transform:uppercase;letter-spacing:.08em;color:#5a6070;font-weight:700;margin-bottom:8px;padding-bottom:8px;border-bottom:1px solid #2d3139;display:flex;justify-content:space-between;align-items:center;flex-wrap:wrap;gap:8px;">
+                <span>Fee History</span>
+                <span style="color:#fbbf24;font-size:11px;text-transform:none;letter-spacing:0;">Total Collected: $${totalPool}</span>
             </div>
+            ${sidePotNote ? `<div style="font-size:11px;color:#8b9099;margin-bottom:10px;padding:8px 10px;background:#252830;border-radius:6px;">${sidePotNote}</div>` : ''}
             <div style="overflow-x:auto;">
-                <table style="width:100%;border-collapse:collapse;font-size:12px;min-width:400px;">
+                <table style="width:100%;border-collapse:collapse;font-size:12px;min-width:560px;">
                     <thead>
                         <tr style="background:#252830;">
-                            ${["Manager","Joined","Seasons","Years Active","Total Paid"].map(h => `<th style="${TH}">${h}</th>`).join("")}
+                            <th style="${TH};text-align:left;">Manager</th>
+                            ${yearHeaders}
+                            <th style="${TH}">Total Paid</th>
+                            <th style="${TH}">Total Won</th>
+                            <th style="${TH}">Net</th>
                         </tr>
                     </thead>
                     <tbody>${rows}</tbody>
+                    <tfoot>
+                        <tr style="background:#252830;border-top:2px solid #3d4149;">
+                            <td style="${TD};text-align:left;font-weight:700;color:#5a6070;font-size:10px;text-transform:uppercase;">Total</td>
+                            ${ALL_YEARS.map(() => `<td style="${TD}"></td>`).join("")}
+                            <td style="${TD};color:#f87171;font-weight:700;">$${totalPool}</td>
+                            <td style="${TD};color:#3ecf8e;font-weight:700;">$${totalWonAll}</td>
+                            <td style="${TD};color:#5a6070;">—</td>
+                        </tr>
+                    </tfoot>
                 </table>
             </div>
+            ${currentPot > 0 ? `<div style="margin-top:10px;padding:8px 12px;background:#1a2010;border:1px solid #3ecf8e44;border-radius:6px;font-size:11px;display:flex;justify-content:space-between;align-items:center;"><span style="color:#8b9099;">Current Side Pot</span><span style="color:#3ecf8e;font-weight:700;font-size:13px;">$${currentPot}</span></div>` : ''}
         </div>`;
 }
 

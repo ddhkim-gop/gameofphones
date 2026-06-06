@@ -17,7 +17,17 @@ function pickColor(pos) {
     return PICK_COLORS[(pos || "").toUpperCase()] || "#d1d5db";
 }
 
-function renderPositions(picks) {
+function avgAge(picks, pos, draftYear) {
+    const sep1 = new Date(`${draftYear}-09-01`).getTime();
+    const msPerYear = 365.25 * 24 * 3600 * 1000;
+    const ages = picks
+        .filter(p => (p.position || "").toUpperCase() === pos && p.birth_date)
+        .map(p => (sep1 - new Date(p.birth_date).getTime()) / msPerYear);
+    if (!ages.length) return null;
+    return (ages.reduce((s, a) => s + a, 0) / ages.length).toFixed(1);
+}
+
+function renderPositions(picks, year) {
     const stats = { QB: 0, RB: 0, WR: 0, TE: 0, K: 0, OTHER: 0 };
     picks.forEach(p => {
         const pos = (p.position || "OTHER").toUpperCase();
@@ -26,21 +36,24 @@ function renderPositions(picks) {
     });
     const total = picks.length || 0;
     const boxes = [
-        { label:"QB",    n:stats.QB,  bg:"#fda4af" },
-        { label:"RB",    n:stats.RB,  bg:"#86efac" },
-        { label:"WR",    n:stats.WR,  bg:"#93c5fd" },
-        { label:"TE",    n:stats.TE,  bg:"#fdba74" },
-        { label:"K",     n:stats.K,   bg:"#c4b5fd" },
-        { label:"Total", n:total,     bg:"#ffffff" },
+        { label:"QB",    n:stats.QB,  bg:"#fda4af", pos:"QB" },
+        { label:"RB",    n:stats.RB,  bg:"#86efac", pos:"RB" },
+        { label:"WR",    n:stats.WR,  bg:"#93c5fd", pos:"WR" },
+        { label:"TE",    n:stats.TE,  bg:"#fdba74", pos:"TE" },
+        { label:"K",     n:stats.K,   bg:"#c4b5fd", pos:"K"  },
+        { label:"Total", n:total,     bg:"#ffffff",  pos:null },
     ];
     el("position-stats").innerHTML = `
         <div style="display:grid;grid-template-columns:repeat(6,1fr);gap:10px;margin-bottom:24px;">
-            ${boxes.map(({ label, n, bg }) => `
+            ${boxes.map(({ label, n, bg, pos }) => {
+                const avg = pos ? avgAge(picks, pos, year) : null;
+                return `
                 <div style="background:${bg};border-radius:10px;padding:10px 12px;text-align:center;border:1px solid rgba(0,0,0,0.08);">
                     <div style="font-size:10px;font-weight:700;text-transform:uppercase;letter-spacing:0.06em;color:rgba(0,0,0,0.45);margin-bottom:2px;">${label}</div>
                     <div style="font-size:20px;font-weight:800;color:rgba(0,0,0,0.75);">${n}</div>
-                </div>
-            `).join("")}
+                    ${avg != null ? `<div style="font-size:9px;color:rgba(0,0,0,0.4);margin-top:3px;">avg ${avg}</div>` : ""}
+                </div>`;
+            }).join("")}
         </div>
     `;
 }
@@ -98,7 +111,7 @@ function renderPickCard(p, round) {
         </div>
         <div style="font-size:12px;font-weight:800;color:rgba(0,0,0,0.85);line-height:1.2;margin-top:2px;overflow:hidden;text-overflow:ellipsis;white-space:nowrap;">${safeName(p.player)}</div>
         <div style="font-size:10px;color:rgba(0,0,0,0.6);">Picked by: ${safeName(p.picked_by)}</div>
-        ${traded ? `<div style="font-size:10px;color:rgba(0,0,0,0.4);">Original owner: ${safeName(p.original_owner)}</div>` : ""}
+        ${traded ? `<div style="font-size:10px;color:rgba(0,0,0,0.6);">Original owner: ${safeName(p.original_owner)}</div>` : ""}
     </div>`;
 }
 
@@ -240,7 +253,7 @@ function openPickPopover(element, data) {
                 </div>
                 ${traded ? `<div style="text-align:right;">
                     <div style="font-size:10px;color:#5a6070;text-transform:uppercase;letter-spacing:.05em;margin-bottom:3px;">Original Owner</div>
-                    <div style="font-size:13px;font-weight:700;color:#a78bfa;">${originalOwner}</div>
+                    <div style="font-size:13px;font-weight:700;color:#f0f1f3;">${originalOwner}</div>
                 </div>` : ""}
             </div>
             <div style="font-size:10px;text-transform:uppercase;letter-spacing:.07em;color:#5a6070;font-weight:700;margin-bottom:8px;">Trade History</div>
@@ -271,7 +284,7 @@ async function load(year) {
         const picks = await api.getDraft(year);
         // Attach season to each pick for pick history lookup
         (picks || []).forEach(p => { p.season = year; });
-        renderPositions(picks);
+        renderPositions(picks, year);
         renderDraft(picks);
     } catch (err) {
         console.error("Draft load error:", err);

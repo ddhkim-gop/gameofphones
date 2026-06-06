@@ -9,7 +9,8 @@ window.__STATIC_DATA__ = {
         "team": "KC",
         "picked_by": "ddhk",
         "original_owner": "ddhk",
-        "traded": false
+        "traded": false,
+        "birth_date": "1995-09-17"
       },
       {
         "pick_no": 2,
@@ -19,7 +20,8 @@ window.__STATIC_DATA__ = {
         "team": "BUF",
         "picked_by": "ganathan",
         "original_owner": "ganathan",
-        "traded": false
+        "traded": false,
+        "birth_date": "1996-05-21"
       },
       {
         "pick_no": 3,
@@ -29,7 +31,8 @@ window.__STATIC_DATA__ = {
         "team": "PHI",
         "picked_by": "edgxrjiang",
         "original_owner": "edgxrjiang",
-        "traded": false
+        "traded": false,
+        "birth_date": "1998-08-07"
       },
       {
         "pick_no": 4,
@@ -39,7 +42,8 @@ window.__STATIC_DATA__ = {
         "team": "CIN",
         "picked_by": "shmyung",
         "original_owner": "shmyung",
-        "traded": false
+        "traded": false,
+        "birth_date": "1996-12-10"
       },
       {
         "pick_no": 5,
@@ -49,7 +53,8 @@ window.__STATIC_DATA__ = {
         "team": "MIN",
         "picked_by": "jonsung",
         "original_owner": "jonsung",
-        "traded": false
+        "traded": false,
+        "birth_date": "1999-06-16"
       },
       {
         "pick_no": 6,
@@ -59,7 +64,8 @@ window.__STATIC_DATA__ = {
         "team": "LAC",
         "picked_by": "eikichii952",
         "original_owner": "eikichii952",
-        "traded": false
+        "traded": false,
+        "birth_date": "1998-03-10"
       },
       {
         "pick_no": 7,
@@ -69,7 +75,8 @@ window.__STATIC_DATA__ = {
         "team": "CIN",
         "picked_by": "NoSkilzPak",
         "original_owner": "NoSkilzPak",
-        "traded": false
+        "traded": false,
+        "birth_date": "2000-03-01"
       },
       {
         "pick_no": 8,
@@ -79,7 +86,8 @@ window.__STATIC_DATA__ = {
         "team": "BAL",
         "picked_by": "riqi",
         "original_owner": "riqi",
-        "traded": false
+        "traded": false,
+        "birth_date": "1997-01-07"
       },
       {
         "pick_no": 9,
@@ -89,7 +97,8 @@ window.__STATIC_DATA__ = {
         "team": "JAX",
         "picked_by": "andyxia124",
         "original_owner": "andyxia124",
-        "traded": false
+        "traded": false,
+        "birth_date": "1999-10-06"
       },
       {
         "pick_no": 10,
@@ -99,7 +108,8 @@ window.__STATIC_DATA__ = {
         "team": "KC",
         "picked_by": "IconicJH",
         "original_owner": "IconicJH",
-        "traded": false
+        "traded": false,
+        "birth_date": "1999-03-05"
       },
       {
         "pick_no": 11,
@@ -109,7 +119,8 @@ window.__STATIC_DATA__ = {
         "team": "DAL",
         "picked_by": "Paul_Yoon",
         "original_owner": "Paul_Yoon",
-        "traded": false
+        "traded": false,
+        "birth_date": "1999-04-08"
       },
       {
         "pick_no": 12,
@@ -119,7 +130,8 @@ window.__STATIC_DATA__ = {
         "team": "SF",
         "picked_by": "spiffster",
         "original_owner": "spiffster",
-        "traded": false
+        "traded": false,
+        "birth_date": "1996-06-07"
       },
       {
         "pick_no": 13,
@@ -129,7 +141,8 @@ window.__STATIC_DATA__ = {
         "team": "IND",
         "picked_by": "spiffster",
         "original_owner": "spiffster",
-        "traded": false
+        "traded": false,
+        "birth_date": "1999-01-19"
       },
       {
         "pick_no": 14,
@@ -139,7 +152,8 @@ window.__STATIC_DATA__ = {
         "team": "IND",
         "picked_by": "Paul_Yoon",
         "original_owner": "Paul_Yoon",
-        "traded": false
+        "traded": false,
+        "birth_date": "2002-05-22"
       },
       {
         "pick_no": 15,
@@ -149,7 +163,8 @@ window.__STATIC_DATA__ = {
         "team": "ATL",
         "picked_by": "IconicJH",
         "original_owner": "IconicJH",
-        "traded": false
+        "traded": false,
+        "birth_date": "2002-01-30"
       },
       {
         "pick_no": 16,
@@ -159,7 +174,8 @@ window.__STATIC_DATA__ = {
         "team": "NYJ",
         "picked_by": "andyxia124",
         "original_owner": "andyxia124",
-        "traded": false
+        "traded": false,
+        "birth_date": "2000-07-22"
       },
       {
         "pick_no": 17,
@@ -169,7 +185,8 @@ window.__STATIC_DATA__ = {
         "team": "KC",
         "picked_by": "riqi",
         "original_owner": "riqi",
-        "traded": false
+        "traded": false,
+        "birth_date": "1989-10-05"
       },
       {
         "pick_no": 18,
@@ -179,7 +196,8 @@ window.__STATIC_DATA__ = {
         "team": "NE",
         "picked_by": "NoSkilzPak",
         "original_owner": "NoSkilzPak",
-        "traded": false
+        "traded": false,
+        "birth_date": "1997-06-30"
       },
       {
         "pick_no": 19,
@@ -189,7 +207,8 @@ window.__STATIC_DATA__ = {
         "team": "NYJ",
         "picked_by": "eikichii952",
         "original_owner": "eikichii952",
-        "traded": false
+        "traded": false,
+        "birth_date": "2001-05-31"
       },
       {
         "pick_no": 20,
@@ -199,7 +218,8 @@ window.__STATIC_DATA__ = {
         "team": "PHI",
         "picked_by": "jonsung",
         "original_owner": "jonsung",
-        "traded": false
+        "traded": false,
+        "birth_date": "1997-02-09"
       },
       {
         "pick_no": 21,
@@ -209,7 +229,8 @@ window.__STATIC_DATA__ = {
         "team": "CLE",
         "picked_by": "shmyung",
         "original_owner": "shmyung",
-        "traded": false
+        "traded": false,
+        "birth_date": "1995-09-14"
       },
       {
         "pick_no": 22,
@@ -219,7 +240,8 @@ window.__STATIC_DATA__ = {
         "team": "DET",
         "picked_by": "edgxrjiang",
         "original_owner": "edgxrjiang",
-        "traded": false
+        "traded": false,
+        "birth_date": "1999-10-24"
       },
       {
         "pick_no": 23,
@@ -229,7 +251,8 @@ window.__STATIC_DATA__ = {
         "team": "DEN",
         "picked_by": "ganathan",
         "original_owner": "ganathan",
-        "traded": false
+        "traded": false,
+        "birth_date": "1998-11-25"
       },
       {
         "pick_no": 24,
@@ -239,7 +262,8 @@ window.__STATIC_DATA__ = {
         "team": "ATL",
         "picked_by": "ddhk",
         "original_owner": "ddhk",
-        "traded": false
+        "traded": false,
+        "birth_date": "2000-10-06"
       },
       {
         "pick_no": 25,
@@ -249,7 +273,8 @@ window.__STATIC_DATA__ = {
         "team": "BAL",
         "picked_by": "ddhk",
         "original_owner": "ddhk",
-        "traded": false
+        "traded": false,
+        "birth_date": "1995-09-06"
       },
       {
         "pick_no": 26,
@@ -259,7 +284,8 @@ window.__STATIC_DATA__ = {
         "team": "DAL",
         "picked_by": "ganathan",
         "original_owner": "ganathan",
-        "traded": false
+        "traded": false,
+        "birth_date": "1993-07-29"
       },
       {
         "pick_no": 27,
@@ -269,7 +295,8 @@ window.__STATIC_DATA__ = {
         "team": "NO",
         "picked_by": "edgxrjiang",
         "original_owner": "edgxrjiang",
-        "traded": false
+        "traded": false,
+        "birth_date": "2000-06-27"
       },
       {
         "pick_no": 28,
@@ -279,7 +306,8 @@ window.__STATIC_DATA__ = {
         "team": "CIN",
         "picked_by": "shmyung",
         "original_owner": "shmyung",
-        "traded": false
+        "traded": false,
+        "birth_date": "1999-01-18"
       },
       {
         "pick_no": 29,
@@ -289,7 +317,8 @@ window.__STATIC_DATA__ = {
         "team": "",
         "picked_by": "jonsung",
         "original_owner": "jonsung",
-        "traded": false
+        "traded": false,
+        "birth_date": "1995-05-17"
       },
       {
         "pick_no": 30,
@@ -299,7 +328,8 @@ window.__STATIC_DATA__ = {
         "team": "SEA",
         "picked_by": "eikichii952",
         "original_owner": "eikichii952",
-        "traded": false
+        "traded": false,
+        "birth_date": "1993-06-15"
       },
       {
         "pick_no": 31,
@@ -309,7 +339,8 @@ window.__STATIC_DATA__ = {
         "team": "CAR",
         "picked_by": "NoSkilzPak",
         "original_owner": "NoSkilzPak",
-        "traded": false
+        "traded": false,
+        "birth_date": "2001-07-25"
       },
       {
         "pick_no": 32,
@@ -319,7 +350,8 @@ window.__STATIC_DATA__ = {
         "team": "PHI",
         "picked_by": "riqi",
         "original_owner": "riqi",
-        "traded": false
+        "traded": false,
+        "birth_date": "1998-11-14"
       },
       {
         "pick_no": 33,
@@ -329,7 +361,8 @@ window.__STATIC_DATA__ = {
         "team": "ATL",
         "picked_by": "andyxia124",
         "original_owner": "andyxia124",
-        "traded": false
+        "traded": false,
+        "birth_date": "2001-07-24"
       },
       {
         "pick_no": 34,
@@ -339,7 +372,8 @@ window.__STATIC_DATA__ = {
         "team": "",
         "picked_by": "IconicJH",
         "original_owner": "IconicJH",
-        "traded": false
+        "traded": false,
+        "birth_date": "1994-03-01"
       },
       {
         "pick_no": 35,
@@ -349,7 +383,8 @@ window.__STATIC_DATA__ = {
         "team": "SEA",
         "picked_by": "Paul_Yoon",
         "original_owner": "Paul_Yoon",
-        "traded": false
+        "traded": false,
+        "birth_date": "2002-02-14"
       },
       {
         "pick_no": 36,
@@ -359,7 +394,8 @@ window.__STATIC_DATA__ = {
         "team": "",
         "picked_by": "spiffster",
         "original_owner": "spiffster",
-        "traded": false
+        "traded": false,
+        "birth_date": "1993-11-29"
       },
       {
         "pick_no": 37,
@@ -369,7 +405,8 @@ window.__STATIC_DATA__ = {
         "team": "LAR",
         "picked_by": "spiffster",
         "original_owner": "spiffster",
-        "traded": false
+        "traded": false,
+        "birth_date": "1992-12-24"
       },
       {
         "pick_no": 38,
@@ -379,7 +416,8 @@ window.__STATIC_DATA__ = {
         "team": "HOU",
         "picked_by": "Paul_Yoon",
         "original_owner": "Paul_Yoon",
-        "traded": false
+        "traded": false,
+        "birth_date": "2001-10-03"
       },
       {
         "pick_no": 39,
@@ -389,7 +427,8 @@ window.__STATIC_DATA__ = {
         "team": "GB",
         "picked_by": "IconicJH",
         "original_owner": "IconicJH",
-        "traded": false
+        "traded": false,
+        "birth_date": "1998-02-11"
       },
       {
         "pick_no": 40,
@@ -399,7 +438,8 @@ window.__STATIC_DATA__ = {
         "team": "MIN",
         "picked_by": "andyxia124",
         "original_owner": "andyxia124",
-        "traded": false
+        "traded": false,
+        "birth_date": "1997-08-07"
       },
       {
         "pick_no": 41,
@@ -409,7 +449,8 @@ window.__STATIC_DATA__ = {
         "team": "KC",
         "picked_by": "riqi",
         "original_owner": "riqi",
-        "traded": false
+        "traded": false,
+        "birth_date": "2000-10-20"
       },
       {
         "pick_no": 42,
@@ -419,7 +460,8 @@ window.__STATIC_DATA__ = {
         "team": "DET",
         "picked_by": "andyxia124",
         "original_owner": "NoSkilzPak",
-        "traded": true
+        "traded": true,
+        "birth_date": "2002-03-20"
       },
       {
         "pick_no": 43,
@@ -429,7 +471,8 @@ window.__STATIC_DATA__ = {
         "team": "",
         "picked_by": "eikichii952",
         "original_owner": "eikichii952",
-        "traded": false
+        "traded": false,
+        "birth_date": "1998-03-09"
       },
       {
         "pick_no": 44,
@@ -439,7 +482,8 @@ window.__STATIC_DATA__ = {
         "team": "",
         "picked_by": "jonsung",
         "original_owner": "jonsung",
-        "traded": false
+        "traded": false,
+        "birth_date": "1995-12-27"
       },
       {
         "pick_no": 45,
@@ -449,7 +493,8 @@ window.__STATIC_DATA__ = {
         "team": "NO",
         "picked_by": "shmyung",
         "original_owner": "shmyung",
-        "traded": false
+        "traded": false,
+        "birth_date": "1999-01-26"
       },
       {
         "pick_no": 46,
@@ -459,7 +504,8 @@ window.__STATIC_DATA__ = {
         "team": "ATL",
         "picked_by": "edgxrjiang",
         "original_owner": "edgxrjiang",
-        "traded": false
+        "traded": false,
+        "birth_date": "1998-03-02"
       },
       {
         "pick_no": 47,
@@ -469,7 +515,8 @@ window.__STATIC_DATA__ = {
         "team": "NE",
         "picked_by": "ganathan",
         "original_owner": "ganathan",
-        "traded": false
+        "traded": false,
+        "birth_date": "1998-02-23"
       },
       {
         "pick_no": 48,
@@ -479,7 +526,8 @@ window.__STATIC_DATA__ = {
         "team": "PIT",
         "picked_by": "shmyung",
         "original_owner": "ddhk",
-        "traded": true
+        "traded": true,
+        "birth_date": "1997-12-14"
       },
       {
         "pick_no": 49,
@@ -489,7 +537,8 @@ window.__STATIC_DATA__ = {
         "team": "BAL",
         "picked_by": "jonsung",
         "original_owner": "ddhk",
-        "traded": true
+        "traded": true,
+        "birth_date": "1994-01-04"
       },
       {
         "pick_no": 50,
@@ -499,7 +548,8 @@ window.__STATIC_DATA__ = {
         "team": "TEN",
         "picked_by": "riqi",
         "original_owner": "ganathan",
-        "traded": true
+        "traded": true,
+        "birth_date": "1997-04-30"
       },
       {
         "pick_no": 51,
@@ -509,7 +559,8 @@ window.__STATIC_DATA__ = {
         "team": "MIN",
         "picked_by": "edgxrjiang",
         "original_owner": "edgxrjiang",
-        "traded": false
+        "traded": false,
+        "birth_date": "1997-07-03"
       },
       {
         "pick_no": 52,
@@ -519,7 +570,8 @@ window.__STATIC_DATA__ = {
         "team": "MIN",
         "picked_by": "Paul_Yoon",
         "original_owner": "shmyung",
-        "traded": true
+        "traded": true,
+        "birth_date": "2002-01-27"
       },
       {
         "pick_no": 53,
@@ -529,7 +581,8 @@ window.__STATIC_DATA__ = {
         "team": "CLE",
         "picked_by": "jonsung",
         "original_owner": "jonsung",
-        "traded": false
+        "traded": false,
+        "birth_date": "1999-04-24"
       },
       {
         "pick_no": 54,
@@ -539,7 +592,8 @@ window.__STATIC_DATA__ = {
         "team": "GB",
         "picked_by": "shmyung",
         "original_owner": "eikichii952",
-        "traded": true
+        "traded": true,
+        "birth_date": "1999-05-12"
       },
       {
         "pick_no": 55,
@@ -549,7 +603,8 @@ window.__STATIC_DATA__ = {
         "team": "LAC",
         "picked_by": "NoSkilzPak",
         "original_owner": "NoSkilzPak",
-        "traded": false
+        "traded": false,
+        "birth_date": "2001-09-06"
       },
       {
         "pick_no": 56,
@@ -559,7 +614,8 @@ window.__STATIC_DATA__ = {
         "team": "",
         "picked_by": "ganathan",
         "original_owner": "riqi",
-        "traded": true
+        "traded": true,
+        "birth_date": "1996-01-15"
       },
       {
         "pick_no": 57,
@@ -569,7 +625,8 @@ window.__STATIC_DATA__ = {
         "team": "DAL",
         "picked_by": "andyxia124",
         "original_owner": "andyxia124",
-        "traded": false
+        "traded": false,
+        "birth_date": "2001-03-04"
       },
       {
         "pick_no": 58,
@@ -579,7 +636,8 @@ window.__STATIC_DATA__ = {
         "team": "PHI",
         "picked_by": "IconicJH",
         "original_owner": "IconicJH",
-        "traded": false
+        "traded": false,
+        "birth_date": "2000-02-19"
       },
       {
         "pick_no": 59,
@@ -589,7 +647,8 @@ window.__STATIC_DATA__ = {
         "team": "DAL",
         "picked_by": "Paul_Yoon",
         "original_owner": "Paul_Yoon",
-        "traded": false
+        "traded": false,
+        "birth_date": "2000-04-25"
       },
       {
         "pick_no": 60,
@@ -599,7 +658,8 @@ window.__STATIC_DATA__ = {
         "team": "DEN",
         "picked_by": "spiffster",
         "original_owner": "spiffster",
-        "traded": false
+        "traded": false,
+        "birth_date": "1998-12-17"
       },
       {
         "pick_no": 61,
@@ -609,7 +669,8 @@ window.__STATIC_DATA__ = {
         "team": "IND",
         "picked_by": "spiffster",
         "original_owner": "spiffster",
-        "traded": false
+        "traded": false,
+        "birth_date": "1997-05-27"
       },
       {
         "pick_no": 62,
@@ -619,7 +680,8 @@ window.__STATIC_DATA__ = {
         "team": "TEN",
         "picked_by": "edgxrjiang",
         "original_owner": "Paul_Yoon",
-        "traded": true
+        "traded": true,
+        "birth_date": "1994-12-20"
       },
       {
         "pick_no": 63,
@@ -629,7 +691,8 @@ window.__STATIC_DATA__ = {
         "team": "WAS",
         "picked_by": "IconicJH",
         "original_owner": "IconicJH",
-        "traded": false
+        "traded": false,
+        "birth_date": "2000-03-23"
       },
       {
         "pick_no": 64,
@@ -639,7 +702,8 @@ window.__STATIC_DATA__ = {
         "team": "DET",
         "picked_by": "andyxia124",
         "original_owner": "andyxia124",
-        "traded": false
+        "traded": false,
+        "birth_date": "2001-03-26"
       },
       {
         "pick_no": 65,
@@ -649,7 +713,8 @@ window.__STATIC_DATA__ = {
         "team": "BUF",
         "picked_by": "ganathan",
         "original_owner": "riqi",
-        "traded": true
+        "traded": true,
+        "birth_date": "1997-04-14"
       },
       {
         "pick_no": 66,
@@ -659,7 +724,8 @@ window.__STATIC_DATA__ = {
         "team": "WAS",
         "picked_by": "IconicJH",
         "original_owner": "NoSkilzPak",
-        "traded": true
+        "traded": true,
+        "birth_date": "1995-09-15"
       },
       {
         "pick_no": 67,
@@ -669,7 +735,8 @@ window.__STATIC_DATA__ = {
         "team": "SF",
         "picked_by": "shmyung",
         "original_owner": "eikichii952",
-        "traded": true
+        "traded": true,
+        "birth_date": "1998-03-17"
       },
       {
         "pick_no": 68,
@@ -679,7 +746,8 @@ window.__STATIC_DATA__ = {
         "team": "SF",
         "picked_by": "jonsung",
         "original_owner": "jonsung",
-        "traded": false
+        "traded": false,
+        "birth_date": "1993-10-09"
       },
       {
         "pick_no": 69,
@@ -689,7 +757,8 @@ window.__STATIC_DATA__ = {
         "team": "PHI",
         "picked_by": "eikichii952",
         "original_owner": "shmyung",
-        "traded": true
+        "traded": true,
+        "birth_date": "1995-01-03"
       },
       {
         "pick_no": 70,
@@ -699,7 +768,8 @@ window.__STATIC_DATA__ = {
         "team": "CHI",
         "picked_by": "edgxrjiang",
         "original_owner": "edgxrjiang",
-        "traded": false
+        "traded": false,
+        "birth_date": "1999-01-14"
       },
       {
         "pick_no": 71,
@@ -709,7 +779,8 @@ window.__STATIC_DATA__ = {
         "team": "PIT",
         "picked_by": "riqi",
         "original_owner": "ganathan",
-        "traded": true
+        "traded": true,
+        "birth_date": "1997-10-05"
       },
       {
         "pick_no": 72,
@@ -719,7 +790,8 @@ window.__STATIC_DATA__ = {
         "team": "TB",
         "picked_by": "riqi",
         "original_owner": "ddhk",
-        "traded": true
+        "traded": true,
+        "birth_date": "1996-02-27"
       },
       {
         "pick_no": 73,
@@ -729,7 +801,8 @@ window.__STATIC_DATA__ = {
         "team": "",
         "picked_by": "Paul_Yoon",
         "original_owner": "ddhk",
-        "traded": true
+        "traded": true,
+        "birth_date": "1997-05-01"
       },
       {
         "pick_no": 74,
@@ -739,7 +812,8 @@ window.__STATIC_DATA__ = {
         "team": "",
         "picked_by": "ganathan",
         "original_owner": "ganathan",
-        "traded": false
+        "traded": false,
+        "birth_date": "1999-06-22"
       },
       {
         "pick_no": 75,
@@ -749,7 +823,8 @@ window.__STATIC_DATA__ = {
         "team": "ATL",
         "picked_by": "Paul_Yoon",
         "original_owner": "edgxrjiang",
-        "traded": true
+        "traded": true,
+        "birth_date": "2000-03-22"
       },
       {
         "pick_no": 76,
@@ -759,7 +834,8 @@ window.__STATIC_DATA__ = {
         "team": "",
         "picked_by": "jonsung",
         "original_owner": "shmyung",
-        "traded": true
+        "traded": true,
+        "birth_date": "1996-07-24"
       },
       {
         "pick_no": 77,
@@ -769,7 +845,8 @@ window.__STATIC_DATA__ = {
         "team": "PHI",
         "picked_by": "jonsung",
         "original_owner": "jonsung",
-        "traded": false
+        "traded": false,
+        "birth_date": "1997-06-04"
       },
       {
         "pick_no": 78,
@@ -779,7 +856,8 @@ window.__STATIC_DATA__ = {
         "team": "",
         "picked_by": "IconicJH",
         "original_owner": "eikichii952",
-        "traded": true
+        "traded": true,
+        "birth_date": "1998-06-19"
       },
       {
         "pick_no": 79,
@@ -789,7 +867,8 @@ window.__STATIC_DATA__ = {
         "team": "BUF",
         "picked_by": "NoSkilzPak",
         "original_owner": "NoSkilzPak",
-        "traded": false
+        "traded": false,
+        "birth_date": "1999-10-18"
       },
       {
         "pick_no": 80,
@@ -799,7 +878,8 @@ window.__STATIC_DATA__ = {
         "team": "MIN",
         "picked_by": "ddhk",
         "original_owner": "riqi",
-        "traded": true
+        "traded": true,
+        "birth_date": "1994-12-02"
       },
       {
         "pick_no": 81,
@@ -809,7 +889,8 @@ window.__STATIC_DATA__ = {
         "team": "WAS",
         "picked_by": "NoSkilzPak",
         "original_owner": "andyxia124",
-        "traded": true
+        "traded": true,
+        "birth_date": "1999-01-12"
       },
       {
         "pick_no": 82,
@@ -819,7 +900,8 @@ window.__STATIC_DATA__ = {
         "team": "",
         "picked_by": "IconicJH",
         "original_owner": "IconicJH",
-        "traded": false
+        "traded": false,
+        "birth_date": "1999-01-27"
       },
       {
         "pick_no": 83,
@@ -829,7 +911,8 @@ window.__STATIC_DATA__ = {
         "team": "",
         "picked_by": "ddhk",
         "original_owner": "Paul_Yoon",
-        "traded": true
+        "traded": true,
+        "birth_date": "1992-06-06"
       },
       {
         "pick_no": 84,
@@ -839,7 +922,8 @@ window.__STATIC_DATA__ = {
         "team": "LV",
         "picked_by": "spiffster",
         "original_owner": "spiffster",
-        "traded": false
+        "traded": false,
+        "birth_date": "1988-08-19"
       },
       {
         "pick_no": 85,
@@ -849,7 +933,8 @@ window.__STATIC_DATA__ = {
         "team": "SF",
         "picked_by": "spiffster",
         "original_owner": "spiffster",
-        "traded": false
+        "traded": false,
+        "birth_date": "1996-11-18"
       },
       {
         "pick_no": 86,
@@ -859,7 +944,8 @@ window.__STATIC_DATA__ = {
         "team": "",
         "picked_by": "Paul_Yoon",
         "original_owner": "Paul_Yoon",
-        "traded": false
+        "traded": false,
+        "birth_date": "1994-06-17"
       },
       {
         "pick_no": 87,
@@ -869,7 +955,8 @@ window.__STATIC_DATA__ = {
         "team": "DET",
         "picked_by": "NoSkilzPak",
         "original_owner": "IconicJH",
-        "traded": true
+        "traded": true,
+        "birth_date": "1999-03-02"
       },
       {
         "pick_no": 88,
@@ -879,7 +966,8 @@ window.__STATIC_DATA__ = {
         "team": "BAL",
         "picked_by": "andyxia124",
         "original_owner": "andyxia124",
-        "traded": false
+        "traded": false,
+        "birth_date": "2000-09-11"
       },
       {
         "pick_no": 89,
@@ -889,7 +977,8 @@ window.__STATIC_DATA__ = {
         "team": "DET",
         "picked_by": "riqi",
         "original_owner": "riqi",
-        "traded": false
+        "traded": false,
+        "birth_date": "1994-10-14"
       },
       {
         "pick_no": 90,
@@ -899,7 +988,8 @@ window.__STATIC_DATA__ = {
         "team": "LAC",
         "picked_by": "NoSkilzPak",
         "original_owner": "NoSkilzPak",
-        "traded": false
+        "traded": false,
+        "birth_date": "2000-05-09"
       },
       {
         "pick_no": 91,
@@ -909,7 +999,8 @@ window.__STATIC_DATA__ = {
         "team": "",
         "picked_by": "IconicJH",
         "original_owner": "eikichii952",
-        "traded": true
+        "traded": true,
+        "birth_date": "1992-09-13"
       },
       {
         "pick_no": 92,
@@ -919,7 +1010,8 @@ window.__STATIC_DATA__ = {
         "team": "PIT",
         "picked_by": "shmyung",
         "original_owner": "jonsung",
-        "traded": true
+        "traded": true,
+        "birth_date": "1998-10-25"
       },
       {
         "pick_no": 93,
@@ -929,7 +1021,8 @@ window.__STATIC_DATA__ = {
         "team": "SEA",
         "picked_by": "eikichii952",
         "original_owner": "shmyung",
-        "traded": true
+        "traded": true,
+        "birth_date": "2001-01-08"
       },
       {
         "pick_no": 94,
@@ -939,7 +1032,8 @@ window.__STATIC_DATA__ = {
         "team": "",
         "picked_by": "Paul_Yoon",
         "original_owner": "edgxrjiang",
-        "traded": true
+        "traded": true,
+        "birth_date": "1996-07-05"
       },
       {
         "pick_no": 95,
@@ -949,7 +1043,8 @@ window.__STATIC_DATA__ = {
         "team": "",
         "picked_by": "ganathan",
         "original_owner": "ganathan",
-        "traded": false
+        "traded": false,
+        "birth_date": "1992-04-27"
       },
       {
         "pick_no": 96,
@@ -959,7 +1054,8 @@ window.__STATIC_DATA__ = {
         "team": "NO",
         "picked_by": "ddhk",
         "original_owner": "ddhk",
-        "traded": false
+        "traded": false,
+        "birth_date": "1995-07-25"
       },
       {
         "pick_no": 97,
@@ -969,7 +1065,8 @@ window.__STATIC_DATA__ = {
         "team": "",
         "picked_by": "Paul_Yoon",
         "original_owner": "ddhk",
-        "traded": true
+        "traded": true,
+        "birth_date": "1994-10-04"
       },
       {
         "pick_no": 98,
@@ -979,7 +1076,8 @@ window.__STATIC_DATA__ = {
         "team": "BAL",
         "picked_by": "ganathan",
         "original_owner": "ganathan",
-        "traded": false
+        "traded": false,
+        "birth_date": "1999-11-29"
       },
       {
         "pick_no": 99,
@@ -989,7 +1087,8 @@ window.__STATIC_DATA__ = {
         "team": "BUF",
         "picked_by": "edgxrjiang",
         "original_owner": "edgxrjiang",
-        "traded": false
+        "traded": false,
+        "birth_date": "1999-09-25"
       },
       {
         "pick_no": 100,
@@ -999,7 +1098,8 @@ window.__STATIC_DATA__ = {
         "team": "HOU",
         "picked_by": "Paul_Yoon",
         "original_owner": "shmyung",
-        "traded": true
+        "traded": true,
+        "birth_date": "1997-06-07"
       },
       {
         "pick_no": 101,
@@ -1009,7 +1109,8 @@ window.__STATIC_DATA__ = {
         "team": "SF",
         "picked_by": "jonsung",
         "original_owner": "jonsung",
-        "traded": false
+        "traded": false,
+        "birth_date": "1993-08-21"
       },
       {
         "pick_no": 102,
@@ -1019,7 +1120,8 @@ window.__STATIC_DATA__ = {
         "team": "",
         "picked_by": "eikichii952",
         "original_owner": "eikichii952",
-        "traded": false
+        "traded": false,
+        "birth_date": "1992-09-28"
       },
       {
         "pick_no": 103,
@@ -1029,7 +1131,8 @@ window.__STATIC_DATA__ = {
         "team": "",
         "picked_by": "NoSkilzPak",
         "original_owner": "NoSkilzPak",
-        "traded": false
+        "traded": false,
+        "birth_date": "1995-08-10"
       },
       {
         "pick_no": 104,
@@ -1039,7 +1142,8 @@ window.__STATIC_DATA__ = {
         "team": "NO",
         "picked_by": "riqi",
         "original_owner": "riqi",
-        "traded": false
+        "traded": false,
+        "birth_date": "2002-06-11"
       },
       {
         "pick_no": 105,
@@ -1049,7 +1153,8 @@ window.__STATIC_DATA__ = {
         "team": "",
         "picked_by": "andyxia124",
         "original_owner": "andyxia124",
-        "traded": false
+        "traded": false,
+        "birth_date": "1999-04-01"
       },
       {
         "pick_no": 106,
@@ -1059,7 +1164,8 @@ window.__STATIC_DATA__ = {
         "team": "CAR",
         "picked_by": "shmyung",
         "original_owner": "IconicJH",
-        "traded": true
+        "traded": true,
+        "birth_date": "1998-06-06"
       },
       {
         "pick_no": 107,
@@ -1069,7 +1175,8 @@ window.__STATIC_DATA__ = {
         "team": "ARI",
         "picked_by": "ddhk",
         "original_owner": "Paul_Yoon",
-        "traded": true
+        "traded": true,
+        "birth_date": "1995-05-05"
       },
       {
         "pick_no": 108,
@@ -1079,7 +1186,8 @@ window.__STATIC_DATA__ = {
         "team": "DEN",
         "picked_by": "spiffster",
         "original_owner": "spiffster",
-        "traded": false
+        "traded": false,
+        "birth_date": "1994-09-02"
       },
       {
         "pick_no": 109,
@@ -1089,7 +1197,8 @@ window.__STATIC_DATA__ = {
         "team": "",
         "picked_by": "spiffster",
         "original_owner": "spiffster",
-        "traded": false
+        "traded": false,
+        "birth_date": "1998-06-23"
       },
       {
         "pick_no": 110,
@@ -1099,7 +1208,8 @@ window.__STATIC_DATA__ = {
         "team": "GB",
         "picked_by": "jonsung",
         "original_owner": "Paul_Yoon",
-        "traded": true
+        "traded": true,
+        "birth_date": "1998-11-02"
       },
       {
         "pick_no": 111,
@@ -1109,7 +1219,8 @@ window.__STATIC_DATA__ = {
         "team": "MIA",
         "picked_by": "shmyung",
         "original_owner": "IconicJH",
-        "traded": true
+        "traded": true,
+        "birth_date": "2001-10-13"
       },
       {
         "pick_no": 112,
@@ -1119,7 +1230,8 @@ window.__STATIC_DATA__ = {
         "team": "DEN",
         "picked_by": "andyxia124",
         "original_owner": "andyxia124",
-        "traded": false
+        "traded": false,
+        "birth_date": "2002-03-19"
       },
       {
         "pick_no": 113,
@@ -1129,7 +1241,8 @@ window.__STATIC_DATA__ = {
         "team": "ATL",
         "picked_by": "jonsung",
         "original_owner": "riqi",
-        "traded": true
+        "traded": true,
+        "birth_date": "1999-03-22"
       },
       {
         "pick_no": 114,
@@ -1139,7 +1252,8 @@ window.__STATIC_DATA__ = {
         "team": "LV",
         "picked_by": "NoSkilzPak",
         "original_owner": "NoSkilzPak",
-        "traded": false
+        "traded": false,
+        "birth_date": "2001-07-06"
       },
       {
         "pick_no": 115,
@@ -1149,7 +1263,8 @@ window.__STATIC_DATA__ = {
         "team": "NYJ",
         "picked_by": "eikichii952",
         "original_owner": "eikichii952",
-        "traded": false
+        "traded": false,
+        "birth_date": "1990-10-10"
       },
       {
         "pick_no": 116,
@@ -1159,7 +1274,8 @@ window.__STATIC_DATA__ = {
         "team": "",
         "picked_by": "jonsung",
         "original_owner": "jonsung",
-        "traded": false
+        "traded": false,
+        "birth_date": "1988-11-29"
       },
       {
         "pick_no": 117,
@@ -1169,7 +1285,8 @@ window.__STATIC_DATA__ = {
         "team": "PHI",
         "picked_by": "shmyung",
         "original_owner": "shmyung",
-        "traded": false
+        "traded": false,
+        "birth_date": "2000-03-27"
       },
       {
         "pick_no": 118,
@@ -1179,7 +1296,8 @@ window.__STATIC_DATA__ = {
         "team": "CAR",
         "picked_by": "edgxrjiang",
         "original_owner": "edgxrjiang",
-        "traded": false
+        "traded": false,
+        "birth_date": "1998-05-02"
       },
       {
         "pick_no": 119,
@@ -1189,7 +1307,8 @@ window.__STATIC_DATA__ = {
         "team": "KC",
         "picked_by": "ganathan",
         "original_owner": "ganathan",
-        "traded": false
+        "traded": false,
+        "birth_date": "2000-04-22"
       },
       {
         "pick_no": 120,
@@ -1199,7 +1318,8 @@ window.__STATIC_DATA__ = {
         "team": "NYG",
         "picked_by": "riqi",
         "original_owner": "ddhk",
-        "traded": true
+        "traded": true,
+        "birth_date": "1996-11-22"
       },
       {
         "pick_no": 121,
@@ -1209,7 +1329,8 @@ window.__STATIC_DATA__ = {
         "team": "PIT",
         "picked_by": "ddhk",
         "original_owner": "ddhk",
-        "traded": false
+        "traded": false,
+        "birth_date": "1983-12-02"
       },
       {
         "pick_no": 122,
@@ -1219,7 +1340,8 @@ window.__STATIC_DATA__ = {
         "team": "LAC",
         "picked_by": "ganathan",
         "original_owner": "ganathan",
-        "traded": false
+        "traded": false,
+        "birth_date": "1996-07-10"
       },
       {
         "pick_no": 123,
@@ -1229,7 +1351,8 @@ window.__STATIC_DATA__ = {
         "team": "DAL",
         "picked_by": "edgxrjiang",
         "original_owner": "edgxrjiang",
-        "traded": false
+        "traded": false,
+        "birth_date": "2001-04-20"
       },
       {
         "pick_no": 124,
@@ -1239,7 +1362,8 @@ window.__STATIC_DATA__ = {
         "team": "DET",
         "picked_by": "edgxrjiang",
         "original_owner": "shmyung",
-        "traded": true
+        "traded": true,
+        "birth_date": "2001-01-12"
       },
       {
         "pick_no": 125,
@@ -1249,7 +1373,8 @@ window.__STATIC_DATA__ = {
         "team": "",
         "picked_by": "ddhk",
         "original_owner": "jonsung",
-        "traded": true
+        "traded": true,
+        "birth_date": "1993-03-03"
       },
       {
         "pick_no": 126,
@@ -1259,7 +1384,8 @@ window.__STATIC_DATA__ = {
         "team": "",
         "picked_by": "eikichii952",
         "original_owner": "eikichii952",
-        "traded": false
+        "traded": false,
+        "birth_date": "1993-09-25"
       },
       {
         "pick_no": 127,
@@ -1269,7 +1395,8 @@ window.__STATIC_DATA__ = {
         "team": "TEN",
         "picked_by": "NoSkilzPak",
         "original_owner": "NoSkilzPak",
-        "traded": false
+        "traded": false,
+        "birth_date": "1999-06-27"
       },
       {
         "pick_no": 128,
@@ -1279,7 +1406,8 @@ window.__STATIC_DATA__ = {
         "team": "NYG",
         "picked_by": "riqi",
         "original_owner": "riqi",
-        "traded": false
+        "traded": false,
+        "birth_date": "1992-11-05"
       },
       {
         "pick_no": 129,
@@ -1289,7 +1417,8 @@ window.__STATIC_DATA__ = {
         "team": "CHI",
         "picked_by": "NoSkilzPak",
         "original_owner": "andyxia124",
-        "traded": true
+        "traded": true,
+        "birth_date": "2001-01-31"
       },
       {
         "pick_no": 130,
@@ -1299,7 +1428,8 @@ window.__STATIC_DATA__ = {
         "team": "",
         "picked_by": "IconicJH",
         "original_owner": "IconicJH",
-        "traded": false
+        "traded": false,
+        "birth_date": "1991-03-28"
       },
       {
         "pick_no": 131,
@@ -1309,7 +1439,8 @@ window.__STATIC_DATA__ = {
         "team": "IND",
         "picked_by": "shmyung",
         "original_owner": "Paul_Yoon",
-        "traded": true
+        "traded": true,
+        "birth_date": "2001-08-12"
       },
       {
         "pick_no": 132,
@@ -1319,7 +1450,8 @@ window.__STATIC_DATA__ = {
         "team": "",
         "picked_by": "spiffster",
         "original_owner": "spiffster",
-        "traded": false
+        "traded": false,
+        "birth_date": "1998-04-21"
       },
       {
         "pick_no": 133,
@@ -1329,7 +1461,8 @@ window.__STATIC_DATA__ = {
         "team": "",
         "picked_by": "spiffster",
         "original_owner": "spiffster",
-        "traded": false
+        "traded": false,
+        "birth_date": "1997-02-11"
       },
       {
         "pick_no": 134,
@@ -1339,7 +1472,8 @@ window.__STATIC_DATA__ = {
         "team": "CHI",
         "picked_by": "edgxrjiang",
         "original_owner": "Paul_Yoon",
-        "traded": true
+        "traded": true,
+        "birth_date": "1999-03-10"
       },
       {
         "pick_no": 135,
@@ -1349,7 +1483,8 @@ window.__STATIC_DATA__ = {
         "team": "TEN",
         "picked_by": "IconicJH",
         "original_owner": "IconicJH",
-        "traded": false
+        "traded": false,
+        "birth_date": "2001-01-05"
       },
       {
         "pick_no": 136,
@@ -1359,7 +1494,8 @@ window.__STATIC_DATA__ = {
         "team": "GB",
         "picked_by": "andyxia124",
         "original_owner": "andyxia124",
-        "traded": false
+        "traded": false,
+        "birth_date": "2000-09-10"
       },
       {
         "pick_no": 137,
@@ -1369,7 +1505,8 @@ window.__STATIC_DATA__ = {
         "team": "",
         "picked_by": "ddhk",
         "original_owner": "riqi",
-        "traded": true
+        "traded": true,
+        "birth_date": "1996-02-02"
       },
       {
         "pick_no": 138,
@@ -1379,7 +1516,8 @@ window.__STATIC_DATA__ = {
         "team": "NYG",
         "picked_by": "NoSkilzPak",
         "original_owner": "NoSkilzPak",
-        "traded": false
+        "traded": false,
+        "birth_date": "2001-09-25"
       },
       {
         "pick_no": 139,
@@ -1389,7 +1527,8 @@ window.__STATIC_DATA__ = {
         "team": "PHI",
         "picked_by": "shmyung",
         "original_owner": "eikichii952",
-        "traded": true
+        "traded": true,
+        "birth_date": "2002-08-30"
       },
       {
         "pick_no": 140,
@@ -1399,7 +1538,8 @@ window.__STATIC_DATA__ = {
         "team": "",
         "picked_by": "jonsung",
         "original_owner": "jonsung",
-        "traded": false
+        "traded": false,
+        "birth_date": "2000-06-09"
       },
       {
         "pick_no": 141,
@@ -1409,7 +1549,8 @@ window.__STATIC_DATA__ = {
         "team": "NYG",
         "picked_by": "jonsung",
         "original_owner": "shmyung",
-        "traded": true
+        "traded": true,
+        "birth_date": "1997-10-29"
       },
       {
         "pick_no": 142,
@@ -1419,7 +1560,8 @@ window.__STATIC_DATA__ = {
         "team": "CIN",
         "picked_by": "Paul_Yoon",
         "original_owner": "edgxrjiang",
-        "traded": true
+        "traded": true,
+        "birth_date": "1995-09-16"
       },
       {
         "pick_no": 143,
@@ -1429,7 +1571,8 @@ window.__STATIC_DATA__ = {
         "team": "SF",
         "picked_by": "ganathan",
         "original_owner": "ganathan",
-        "traded": false
+        "traded": false,
+        "birth_date": "1998-09-05"
       },
       {
         "pick_no": 144,
@@ -1439,7 +1582,8 @@ window.__STATIC_DATA__ = {
         "team": "DEN",
         "picked_by": "riqi",
         "original_owner": "ddhk",
-        "traded": true
+        "traded": true,
+        "birth_date": "1995-10-10"
       },
       {
         "pick_no": 145,
@@ -1449,7 +1593,8 @@ window.__STATIC_DATA__ = {
         "team": "WAS",
         "picked_by": "ddhk",
         "original_owner": "ddhk",
-        "traded": false
+        "traded": false,
+        "birth_date": "1999-09-08"
       },
       {
         "pick_no": 146,
@@ -1459,7 +1604,8 @@ window.__STATIC_DATA__ = {
         "team": "",
         "picked_by": "ganathan",
         "original_owner": "ganathan",
-        "traded": false
+        "traded": false,
+        "birth_date": "1995-04-03"
       },
       {
         "pick_no": 147,
@@ -1469,7 +1615,8 @@ window.__STATIC_DATA__ = {
         "team": "DAL",
         "picked_by": "edgxrjiang",
         "original_owner": "edgxrjiang",
-        "traded": false
+        "traded": false,
+        "birth_date": "2002-10-05"
       },
       {
         "pick_no": 148,
@@ -1479,7 +1626,8 @@ window.__STATIC_DATA__ = {
         "team": "MIA",
         "picked_by": "shmyung",
         "original_owner": "shmyung",
-        "traded": false
+        "traded": false,
+        "birth_date": "2000-03-26"
       },
       {
         "pick_no": 149,
@@ -1489,7 +1637,8 @@ window.__STATIC_DATA__ = {
         "team": "PHI",
         "picked_by": "IconicJH",
         "original_owner": "jonsung",
-        "traded": true
+        "traded": true,
+        "birth_date": "1998-05-02"
       },
       {
         "pick_no": 150,
@@ -1499,7 +1648,8 @@ window.__STATIC_DATA__ = {
         "team": "GB",
         "picked_by": "shmyung",
         "original_owner": "eikichii952",
-        "traded": true
+        "traded": true,
+        "birth_date": "2000-04-28"
       },
       {
         "pick_no": 151,
@@ -1509,7 +1659,8 @@ window.__STATIC_DATA__ = {
         "team": "ARI",
         "picked_by": "NoSkilzPak",
         "original_owner": "NoSkilzPak",
-        "traded": false
+        "traded": false,
+        "birth_date": "2000-04-15"
       },
       {
         "pick_no": 152,
@@ -1519,7 +1670,8 @@ window.__STATIC_DATA__ = {
         "team": "GB",
         "picked_by": "riqi",
         "original_owner": "riqi",
-        "traded": false
+        "traded": false,
+        "birth_date": "2000-09-02"
       },
       {
         "pick_no": 153,
@@ -1529,7 +1681,8 @@ window.__STATIC_DATA__ = {
         "team": "NE",
         "picked_by": "andyxia124",
         "original_owner": "andyxia124",
-        "traded": false
+        "traded": false,
+        "birth_date": "2000-04-13"
       },
       {
         "pick_no": 154,
@@ -1539,7 +1692,8 @@ window.__STATIC_DATA__ = {
         "team": "",
         "picked_by": "eikichii952",
         "original_owner": "IconicJH",
-        "traded": true
+        "traded": true,
+        "birth_date": "1995-12-11"
       },
       {
         "pick_no": 155,
@@ -1549,7 +1703,8 @@ window.__STATIC_DATA__ = {
         "team": "JAX",
         "picked_by": "Paul_Yoon",
         "original_owner": "Paul_Yoon",
-        "traded": false
+        "traded": false,
+        "birth_date": "1996-11-09"
       },
       {
         "pick_no": 156,
@@ -1559,7 +1714,8 @@ window.__STATIC_DATA__ = {
         "team": "HOU",
         "picked_by": "spiffster",
         "original_owner": "spiffster",
-        "traded": false
+        "traded": false,
+        "birth_date": "1996-07-11"
       },
       {
         "pick_no": 157,
@@ -1569,7 +1725,8 @@ window.__STATIC_DATA__ = {
         "team": "",
         "picked_by": "spiffster",
         "original_owner": "spiffster",
-        "traded": false
+        "traded": false,
+        "birth_date": "1990-08-22"
       },
       {
         "pick_no": 158,
@@ -1579,7 +1736,8 @@ window.__STATIC_DATA__ = {
         "team": "SF",
         "picked_by": "shmyung",
         "original_owner": "Paul_Yoon",
-        "traded": true
+        "traded": true,
+        "birth_date": "1999-12-27"
       },
       {
         "pick_no": 159,
@@ -1589,7 +1747,8 @@ window.__STATIC_DATA__ = {
         "team": "CIN",
         "picked_by": "jonsung",
         "original_owner": "IconicJH",
-        "traded": true
+        "traded": true,
+        "birth_date": "2000-03-21"
       },
       {
         "pick_no": 160,
@@ -1599,7 +1758,8 @@ window.__STATIC_DATA__ = {
         "team": "WAS",
         "picked_by": "andyxia124",
         "original_owner": "andyxia124",
-        "traded": false
+        "traded": false,
+        "birth_date": "1999-09-12"
       },
       {
         "pick_no": 161,
@@ -1609,7 +1769,8 @@ window.__STATIC_DATA__ = {
         "team": "IND",
         "picked_by": "riqi",
         "original_owner": "riqi",
-        "traded": false
+        "traded": false,
+        "birth_date": "2000-05-02"
       },
       {
         "pick_no": 162,
@@ -1619,7 +1780,8 @@ window.__STATIC_DATA__ = {
         "team": "",
         "picked_by": "NoSkilzPak",
         "original_owner": "NoSkilzPak",
-        "traded": false
+        "traded": false,
+        "birth_date": "2001-05-30"
       },
       {
         "pick_no": 163,
@@ -1629,7 +1791,8 @@ window.__STATIC_DATA__ = {
         "team": "ARI",
         "picked_by": "IconicJH",
         "original_owner": "eikichii952",
-        "traded": true
+        "traded": true,
+        "birth_date": "1999-11-22"
       },
       {
         "pick_no": 164,
@@ -1639,7 +1802,8 @@ window.__STATIC_DATA__ = {
         "team": "",
         "picked_by": "ddhk",
         "original_owner": "jonsung",
-        "traded": true
+        "traded": true,
+        "birth_date": "1995-07-22"
       },
       {
         "pick_no": 165,
@@ -1649,7 +1813,8 @@ window.__STATIC_DATA__ = {
         "team": "HOU",
         "picked_by": "Paul_Yoon",
         "original_owner": "shmyung",
-        "traded": true
+        "traded": true,
+        "birth_date": "1999-03-19"
       },
       {
         "pick_no": 166,
@@ -1659,7 +1824,8 @@ window.__STATIC_DATA__ = {
         "team": "CLE",
         "picked_by": "edgxrjiang",
         "original_owner": "edgxrjiang",
-        "traded": false
+        "traded": false,
+        "birth_date": "2000-04-19"
       },
       {
         "pick_no": 167,
@@ -1669,7 +1835,8 @@ window.__STATIC_DATA__ = {
         "team": "CAR",
         "picked_by": "ganathan",
         "original_owner": "ganathan",
-        "traded": false
+        "traded": false,
+        "birth_date": "2000-07-18"
       },
       {
         "pick_no": 168,
@@ -1679,7 +1846,8 @@ window.__STATIC_DATA__ = {
         "team": "DAL",
         "picked_by": "ddhk",
         "original_owner": "ddhk",
-        "traded": false
+        "traded": false,
+        "birth_date": "2000-09-16"
       },
       {
         "pick_no": 169,
@@ -1689,7 +1857,8 @@ window.__STATIC_DATA__ = {
         "team": "HOU",
         "picked_by": "ddhk",
         "original_owner": "ddhk",
-        "traded": false
+        "traded": false,
+        "birth_date": "1999-10-29"
       },
       {
         "pick_no": 170,
@@ -1699,7 +1868,8 @@ window.__STATIC_DATA__ = {
         "team": "TEN",
         "picked_by": "ganathan",
         "original_owner": "ganathan",
-        "traded": false
+        "traded": false,
+        "birth_date": "2001-06-15"
       },
       {
         "pick_no": 171,
@@ -1709,7 +1879,8 @@ window.__STATIC_DATA__ = {
         "team": "",
         "picked_by": "edgxrjiang",
         "original_owner": "edgxrjiang",
-        "traded": false
+        "traded": false,
+        "birth_date": "2001-07-08"
       },
       {
         "pick_no": 172,
@@ -1719,7 +1890,8 @@ window.__STATIC_DATA__ = {
         "team": "",
         "picked_by": "shmyung",
         "original_owner": "shmyung",
-        "traded": false
+        "traded": false,
+        "birth_date": "1996-03-04"
       },
       {
         "pick_no": 173,
@@ -1729,7 +1901,8 @@ window.__STATIC_DATA__ = {
         "team": "NYG",
         "picked_by": "ddhk",
         "original_owner": "jonsung",
-        "traded": true
+        "traded": true,
+        "birth_date": "2000-04-18"
       },
       {
         "pick_no": 174,
@@ -1739,7 +1912,8 @@ window.__STATIC_DATA__ = {
         "team": "",
         "picked_by": "eikichii952",
         "original_owner": "eikichii952",
-        "traded": false
+        "traded": false,
+        "birth_date": "1994-11-15"
       },
       {
         "pick_no": 175,
@@ -1749,7 +1923,8 @@ window.__STATIC_DATA__ = {
         "team": "",
         "picked_by": "NoSkilzPak",
         "original_owner": "NoSkilzPak",
-        "traded": false
+        "traded": false,
+        "birth_date": "1996-04-24"
       },
       {
         "pick_no": 176,
@@ -1759,7 +1934,8 @@ window.__STATIC_DATA__ = {
         "team": "NYG",
         "picked_by": "riqi",
         "original_owner": "riqi",
-        "traded": false
+        "traded": false,
+        "birth_date": "1997-09-03"
       },
       {
         "pick_no": 177,
@@ -1769,7 +1945,8 @@ window.__STATIC_DATA__ = {
         "team": "",
         "picked_by": "andyxia124",
         "original_owner": "andyxia124",
-        "traded": false
+        "traded": false,
+        "birth_date": "1999-08-31"
       },
       {
         "pick_no": 178,
@@ -1779,7 +1956,8 @@ window.__STATIC_DATA__ = {
         "team": "",
         "picked_by": "jonsung",
         "original_owner": "IconicJH",
-        "traded": true
+        "traded": true,
+        "birth_date": "1998-08-09"
       },
       {
         "pick_no": 179,
@@ -1789,7 +1967,8 @@ window.__STATIC_DATA__ = {
         "team": "",
         "picked_by": "Paul_Yoon",
         "original_owner": "Paul_Yoon",
-        "traded": false
+        "traded": false,
+        "birth_date": "1992-05-03"
       },
       {
         "pick_no": 180,
@@ -1799,7 +1978,8 @@ window.__STATIC_DATA__ = {
         "team": "ARI",
         "picked_by": "spiffster",
         "original_owner": "spiffster",
-        "traded": false
+        "traded": false,
+        "birth_date": "1996-05-16"
       },
       {
         "pick_no": 181,
@@ -1809,7 +1989,8 @@ window.__STATIC_DATA__ = {
         "team": "",
         "picked_by": "spiffster",
         "original_owner": "spiffster",
-        "traded": false
+        "traded": false,
+        "birth_date": "1996-09-23"
       },
       {
         "pick_no": 182,
@@ -1819,7 +2000,8 @@ window.__STATIC_DATA__ = {
         "team": "",
         "picked_by": "shmyung",
         "original_owner": "Paul_Yoon",
-        "traded": true
+        "traded": true,
+        "birth_date": "1999-02-19"
       },
       {
         "pick_no": 183,
@@ -1829,7 +2011,8 @@ window.__STATIC_DATA__ = {
         "team": "NE",
         "picked_by": "IconicJH",
         "original_owner": "IconicJH",
-        "traded": false
+        "traded": false,
+        "birth_date": "2002-05-07"
       },
       {
         "pick_no": 184,
@@ -1839,7 +2022,8 @@ window.__STATIC_DATA__ = {
         "team": "TEN",
         "picked_by": "andyxia124",
         "original_owner": "andyxia124",
-        "traded": false
+        "traded": false,
+        "birth_date": "1998-01-13"
       },
       {
         "pick_no": 185,
@@ -1849,7 +2033,8 @@ window.__STATIC_DATA__ = {
         "team": "SEA",
         "picked_by": "riqi",
         "original_owner": "riqi",
-        "traded": false
+        "traded": false,
+        "birth_date": "1998-08-31"
       },
       {
         "pick_no": 186,
@@ -1859,7 +2044,8 @@ window.__STATIC_DATA__ = {
         "team": "PIT",
         "picked_by": "NoSkilzPak",
         "original_owner": "NoSkilzPak",
-        "traded": false
+        "traded": false,
+        "birth_date": "1998-11-01"
       },
       {
         "pick_no": 187,
@@ -1869,7 +2055,8 @@ window.__STATIC_DATA__ = {
         "team": "",
         "picked_by": "eikichii952",
         "original_owner": "eikichii952",
-        "traded": false
+        "traded": false,
+        "birth_date": "1995-03-30"
       },
       {
         "pick_no": 188,
@@ -1879,7 +2066,8 @@ window.__STATIC_DATA__ = {
         "team": "LAR",
         "picked_by": "ddhk",
         "original_owner": "jonsung",
-        "traded": true
+        "traded": true,
+        "birth_date": "1988-02-07"
       },
       {
         "pick_no": 189,
@@ -1889,7 +2077,8 @@ window.__STATIC_DATA__ = {
         "team": "",
         "picked_by": "Paul_Yoon",
         "original_owner": "shmyung",
-        "traded": true
+        "traded": true,
+        "birth_date": "1991-11-02"
       },
       {
         "pick_no": 190,
@@ -1899,7 +2088,8 @@ window.__STATIC_DATA__ = {
         "team": "TB",
         "picked_by": "edgxrjiang",
         "original_owner": "edgxrjiang",
-        "traded": false
+        "traded": false,
+        "birth_date": "2001-10-25"
       },
       {
         "pick_no": 191,
@@ -1909,7 +2099,8 @@ window.__STATIC_DATA__ = {
         "team": "DAL",
         "picked_by": "ganathan",
         "original_owner": "ganathan",
-        "traded": false
+        "traded": false,
+        "birth_date": "1998-09-28"
       },
       {
         "pick_no": 192,
@@ -1919,7 +2110,8 @@ window.__STATIC_DATA__ = {
         "team": "WAS",
         "picked_by": "IconicJH",
         "original_owner": "ddhk",
-        "traded": true
+        "traded": true,
+        "birth_date": "1996-07-26"
       },
       {
         "pick_no": 193,
@@ -1929,7 +2121,8 @@ window.__STATIC_DATA__ = {
         "team": "",
         "picked_by": "ddhk",
         "original_owner": "ddhk",
-        "traded": false
+        "traded": false,
+        "birth_date": "1999-04-11"
       },
       {
         "pick_no": 194,
@@ -1939,7 +2132,8 @@ window.__STATIC_DATA__ = {
         "team": "",
         "picked_by": "ganathan",
         "original_owner": "ganathan",
-        "traded": false
+        "traded": false,
+        "birth_date": "2001-11-02"
       },
       {
         "pick_no": 195,
@@ -1949,7 +2143,8 @@ window.__STATIC_DATA__ = {
         "team": "BUF",
         "picked_by": "edgxrjiang",
         "original_owner": "edgxrjiang",
-        "traded": false
+        "traded": false,
+        "birth_date": "1996-11-14"
       },
       {
         "pick_no": 196,
@@ -1959,7 +2154,8 @@ window.__STATIC_DATA__ = {
         "team": "ARI",
         "picked_by": "shmyung",
         "original_owner": "shmyung",
-        "traded": false
+        "traded": false,
+        "birth_date": "2000-02-23"
       },
       {
         "pick_no": 197,
@@ -1969,7 +2165,8 @@ window.__STATIC_DATA__ = {
         "team": "TB",
         "picked_by": "shmyung",
         "original_owner": "jonsung",
-        "traded": true
+        "traded": true,
+        "birth_date": "1999-03-14"
       },
       {
         "pick_no": 198,
@@ -1979,7 +2176,8 @@ window.__STATIC_DATA__ = {
         "team": "",
         "picked_by": "ddhk",
         "original_owner": "eikichii952",
-        "traded": true
+        "traded": true,
+        "birth_date": "1995-08-06"
       },
       {
         "pick_no": 199,
@@ -1989,7 +2187,8 @@ window.__STATIC_DATA__ = {
         "team": "KC",
         "picked_by": "NoSkilzPak",
         "original_owner": "NoSkilzPak",
-        "traded": false
+        "traded": false,
+        "birth_date": "2000-08-07"
       },
       {
         "pick_no": 200,
@@ -1999,7 +2198,8 @@ window.__STATIC_DATA__ = {
         "team": "",
         "picked_by": "riqi",
         "original_owner": "riqi",
-        "traded": false
+        "traded": false,
+        "birth_date": "1998-07-07"
       },
       {
         "pick_no": 201,
@@ -2009,7 +2209,8 @@ window.__STATIC_DATA__ = {
         "team": "PIT",
         "picked_by": "andyxia124",
         "original_owner": "andyxia124",
-        "traded": false
+        "traded": false,
+        "birth_date": "2001-08-17"
       },
       {
         "pick_no": 202,
@@ -2019,7 +2220,8 @@ window.__STATIC_DATA__ = {
         "team": "",
         "picked_by": "IconicJH",
         "original_owner": "IconicJH",
-        "traded": false
+        "traded": false,
+        "birth_date": "1990-11-10"
       },
       {
         "pick_no": 203,
@@ -2029,7 +2231,8 @@ window.__STATIC_DATA__ = {
         "team": "NO",
         "picked_by": "Paul_Yoon",
         "original_owner": "Paul_Yoon",
-        "traded": false
+        "traded": false,
+        "birth_date": "1996-09-13"
       },
       {
         "pick_no": 204,
@@ -2039,7 +2242,8 @@ window.__STATIC_DATA__ = {
         "team": "DET",
         "picked_by": "spiffster",
         "original_owner": "spiffster",
-        "traded": false
+        "traded": false,
+        "birth_date": "1998-05-29"
       },
       {
         "pick_no": 205,
@@ -2049,7 +2253,8 @@ window.__STATIC_DATA__ = {
         "team": "BUF",
         "picked_by": "spiffster",
         "original_owner": "spiffster",
-        "traded": false
+        "traded": false,
+        "birth_date": "1999-09-22"
       },
       {
         "pick_no": 206,
@@ -2059,7 +2264,8 @@ window.__STATIC_DATA__ = {
         "team": "CAR",
         "picked_by": "Paul_Yoon",
         "original_owner": "Paul_Yoon",
-        "traded": false
+        "traded": false,
+        "birth_date": "1999-06-11"
       },
       {
         "pick_no": 207,
@@ -2069,7 +2275,8 @@ window.__STATIC_DATA__ = {
         "team": "",
         "picked_by": "IconicJH",
         "original_owner": "IconicJH",
-        "traded": false
+        "traded": false,
+        "birth_date": "1988-07-27"
       },
       {
         "pick_no": 208,
@@ -2079,7 +2286,8 @@ window.__STATIC_DATA__ = {
         "team": "NYG",
         "picked_by": "andyxia124",
         "original_owner": "andyxia124",
-        "traded": false
+        "traded": false,
+        "birth_date": "1999-11-04"
       },
       {
         "pick_no": 209,
@@ -2089,7 +2297,8 @@ window.__STATIC_DATA__ = {
         "team": "LAR",
         "picked_by": "riqi",
         "original_owner": "riqi",
-        "traded": false
+        "traded": false,
+        "birth_date": "1993-01-01"
       },
       {
         "pick_no": 210,
@@ -2099,7 +2308,8 @@ window.__STATIC_DATA__ = {
         "team": "",
         "picked_by": "NoSkilzPak",
         "original_owner": "NoSkilzPak",
-        "traded": false
+        "traded": false,
+        "birth_date": "1989-11-21"
       },
       {
         "pick_no": 211,
@@ -2109,7 +2319,8 @@ window.__STATIC_DATA__ = {
         "team": "",
         "picked_by": "eikichii952",
         "original_owner": "eikichii952",
-        "traded": false
+        "traded": false,
+        "birth_date": "1995-11-16"
       },
       {
         "pick_no": 212,
@@ -2119,7 +2330,8 @@ window.__STATIC_DATA__ = {
         "team": "CIN",
         "picked_by": "jonsung",
         "original_owner": "jonsung",
-        "traded": false
+        "traded": false,
+        "birth_date": "1995-10-03"
       },
       {
         "pick_no": 213,
@@ -2129,7 +2341,8 @@ window.__STATIC_DATA__ = {
         "team": "",
         "picked_by": "eikichii952",
         "original_owner": "shmyung",
-        "traded": true
+        "traded": true,
+        "birth_date": "1994-06-25"
       },
       {
         "pick_no": 214,
@@ -2139,7 +2352,8 @@ window.__STATIC_DATA__ = {
         "team": "CIN",
         "picked_by": "edgxrjiang",
         "original_owner": "edgxrjiang",
-        "traded": false
+        "traded": false,
+        "birth_date": "1999-07-21"
       },
       {
         "pick_no": 215,
@@ -2149,7 +2363,8 @@ window.__STATIC_DATA__ = {
         "team": "NYG",
         "picked_by": "ganathan",
         "original_owner": "ganathan",
-        "traded": false
+        "traded": false,
+        "birth_date": "1998-10-21"
       },
       {
         "pick_no": 216,
@@ -2159,7 +2374,8 @@ window.__STATIC_DATA__ = {
         "team": "HOU",
         "picked_by": "eikichii952",
         "original_owner": "ddhk",
-        "traded": true
+        "traded": true,
+        "birth_date": "2000-10-26"
       },
       {
         "pick_no": 217,
@@ -2169,7 +2385,8 @@ window.__STATIC_DATA__ = {
         "team": "",
         "picked_by": "ddhk",
         "original_owner": "ddhk",
-        "traded": false
+        "traded": false,
+        "birth_date": "1995-04-13"
       },
       {
         "pick_no": 218,
@@ -2179,7 +2396,8 @@ window.__STATIC_DATA__ = {
         "team": "",
         "picked_by": "ganathan",
         "original_owner": "ganathan",
-        "traded": false
+        "traded": false,
+        "birth_date": "1999-12-15"
       },
       {
         "pick_no": 219,
@@ -2189,7 +2407,8 @@ window.__STATIC_DATA__ = {
         "team": "TB",
         "picked_by": "edgxrjiang",
         "original_owner": "edgxrjiang",
-        "traded": false
+        "traded": false,
+        "birth_date": "1995-04-14"
       },
       {
         "pick_no": 220,
@@ -2199,7 +2418,8 @@ window.__STATIC_DATA__ = {
         "team": "NO",
         "picked_by": "shmyung",
         "original_owner": "shmyung",
-        "traded": false
+        "traded": false,
+        "birth_date": "1997-11-20"
       },
       {
         "pick_no": 221,
@@ -2209,7 +2429,8 @@ window.__STATIC_DATA__ = {
         "team": "LAR",
         "picked_by": "jonsung",
         "original_owner": "jonsung",
-        "traded": false
+        "traded": false,
+        "birth_date": "2001-05-29"
       },
       {
         "pick_no": 222,
@@ -2219,7 +2440,8 @@ window.__STATIC_DATA__ = {
         "team": "TEN",
         "picked_by": "eikichii952",
         "original_owner": "eikichii952",
-        "traded": false
+        "traded": false,
+        "birth_date": "1997-06-10"
       },
       {
         "pick_no": 223,
@@ -2229,7 +2451,8 @@ window.__STATIC_DATA__ = {
         "team": "NYJ",
         "picked_by": "NoSkilzPak",
         "original_owner": "NoSkilzPak",
-        "traded": false
+        "traded": false,
+        "birth_date": "1998-10-09"
       },
       {
         "pick_no": 224,
@@ -2239,7 +2462,8 @@ window.__STATIC_DATA__ = {
         "team": "KC",
         "picked_by": "riqi",
         "original_owner": "riqi",
-        "traded": false
+        "traded": false,
+        "birth_date": "1995-07-14"
       },
       {
         "pick_no": 225,
@@ -2249,7 +2473,8 @@ window.__STATIC_DATA__ = {
         "team": "MIA",
         "picked_by": "andyxia124",
         "original_owner": "andyxia124",
-        "traded": false
+        "traded": false,
+        "birth_date": "2000-06-09"
       },
       {
         "pick_no": 226,
@@ -2259,7 +2484,8 @@ window.__STATIC_DATA__ = {
         "team": "",
         "picked_by": "jonsung",
         "original_owner": "IconicJH",
-        "traded": true
+        "traded": true,
+        "birth_date": "1995-01-23"
       },
       {
         "pick_no": 227,
@@ -2269,7 +2495,8 @@ window.__STATIC_DATA__ = {
         "team": "",
         "picked_by": "Paul_Yoon",
         "original_owner": "Paul_Yoon",
-        "traded": false
+        "traded": false,
+        "birth_date": "1992-04-10"
       },
       {
         "pick_no": 228,
@@ -2279,7 +2506,8 @@ window.__STATIC_DATA__ = {
         "team": "NYJ",
         "picked_by": "spiffster",
         "original_owner": "spiffster",
-        "traded": false
+        "traded": false,
+        "birth_date": "1993-11-23"
       },
       {
         "pick_no": 229,
@@ -2289,7 +2517,8 @@ window.__STATIC_DATA__ = {
         "team": "",
         "picked_by": "spiffster",
         "original_owner": "spiffster",
-        "traded": false
+        "traded": false,
+        "birth_date": "1995-09-05"
       },
       {
         "pick_no": 230,
@@ -2299,7 +2528,8 @@ window.__STATIC_DATA__ = {
         "team": "",
         "picked_by": "eikichii952",
         "original_owner": "Paul_Yoon",
-        "traded": true
+        "traded": true,
+        "birth_date": "1994-08-03"
       },
       {
         "pick_no": 231,
@@ -2309,7 +2539,8 @@ window.__STATIC_DATA__ = {
         "team": "BUF",
         "picked_by": "IconicJH",
         "original_owner": "IconicJH",
-        "traded": false
+        "traded": false,
+        "birth_date": "1997-02-14"
       },
       {
         "pick_no": 232,
@@ -2319,7 +2550,8 @@ window.__STATIC_DATA__ = {
         "team": "",
         "picked_by": "andyxia124",
         "original_owner": "andyxia124",
-        "traded": false
+        "traded": false,
+        "birth_date": "1999-10-26"
       },
       {
         "pick_no": 233,
@@ -2329,7 +2561,8 @@ window.__STATIC_DATA__ = {
         "team": "DAL",
         "picked_by": "riqi",
         "original_owner": "riqi",
-        "traded": false
+        "traded": false,
+        "birth_date": "1994-10-10"
       },
       {
         "pick_no": 234,
@@ -2339,7 +2572,8 @@ window.__STATIC_DATA__ = {
         "team": "",
         "picked_by": "NoSkilzPak",
         "original_owner": "NoSkilzPak",
-        "traded": false
+        "traded": false,
+        "birth_date": "1998-03-06"
       },
       {
         "pick_no": 235,
@@ -2349,7 +2583,8 @@ window.__STATIC_DATA__ = {
         "team": "",
         "picked_by": "jonsung",
         "original_owner": "eikichii952",
-        "traded": true
+        "traded": true,
+        "birth_date": "1996-08-11"
       },
       {
         "pick_no": 236,
@@ -2359,7 +2594,8 @@ window.__STATIC_DATA__ = {
         "team": "PIT",
         "picked_by": "jonsung",
         "original_owner": "jonsung",
-        "traded": false
+        "traded": false,
+        "birth_date": "1999-10-26"
       },
       {
         "pick_no": 237,
@@ -2369,7 +2605,8 @@ window.__STATIC_DATA__ = {
         "team": "BUF",
         "picked_by": "shmyung",
         "original_owner": "shmyung",
-        "traded": false
+        "traded": false,
+        "birth_date": "2000-02-03"
       },
       {
         "pick_no": 238,
@@ -2379,7 +2616,8 @@ window.__STATIC_DATA__ = {
         "team": "",
         "picked_by": "edgxrjiang",
         "original_owner": "edgxrjiang",
-        "traded": false
+        "traded": false,
+        "birth_date": "1995-12-21"
       },
       {
         "pick_no": 239,
@@ -2389,7 +2627,8 @@ window.__STATIC_DATA__ = {
         "team": "",
         "picked_by": "ganathan",
         "original_owner": "ganathan",
-        "traded": false
+        "traded": false,
+        "birth_date": "1992-04-09"
       },
       {
         "pick_no": 240,
@@ -2399,7 +2638,8 @@ window.__STATIC_DATA__ = {
         "team": "NYG",
         "picked_by": "riqi",
         "original_owner": "ddhk",
-        "traded": true
+        "traded": true,
+        "birth_date": "1997-01-12"
       },
       {
         "pick_no": 241,
@@ -2409,7 +2649,8 @@ window.__STATIC_DATA__ = {
         "team": "",
         "picked_by": "ddhk",
         "original_owner": "ddhk",
-        "traded": false
+        "traded": false,
+        "birth_date": "1990-08-23"
       },
       {
         "pick_no": 242,
@@ -2419,7 +2660,8 @@ window.__STATIC_DATA__ = {
         "team": "",
         "picked_by": "ganathan",
         "original_owner": "ganathan",
-        "traded": false
+        "traded": false,
+        "birth_date": "1995-01-18"
       },
       {
         "pick_no": 243,
@@ -2429,7 +2671,8 @@ window.__STATIC_DATA__ = {
         "team": "TEN",
         "picked_by": "edgxrjiang",
         "original_owner": "edgxrjiang",
-        "traded": false
+        "traded": false,
+        "birth_date": "1999-05-07"
       },
       {
         "pick_no": 244,
@@ -2439,7 +2682,8 @@ window.__STATIC_DATA__ = {
         "team": "",
         "picked_by": "shmyung",
         "original_owner": "shmyung",
-        "traded": false
+        "traded": false,
+        "birth_date": "1999-09-18"
       },
       {
         "pick_no": 245,
@@ -2449,7 +2693,8 @@ window.__STATIC_DATA__ = {
         "team": "",
         "picked_by": "jonsung",
         "original_owner": "jonsung",
-        "traded": false
+        "traded": false,
+        "birth_date": "1993-08-24"
       },
       {
         "pick_no": 246,
@@ -2459,7 +2704,8 @@ window.__STATIC_DATA__ = {
         "team": "",
         "picked_by": "Paul_Yoon",
         "original_owner": "eikichii952",
-        "traded": true
+        "traded": true,
+        "birth_date": "1997-07-16"
       },
       {
         "pick_no": 247,
@@ -2469,7 +2715,8 @@ window.__STATIC_DATA__ = {
         "team": "LAR",
         "picked_by": "NoSkilzPak",
         "original_owner": "NoSkilzPak",
-        "traded": false
+        "traded": false,
+        "birth_date": "1997-10-28"
       },
       {
         "pick_no": 248,
@@ -2479,7 +2726,8 @@ window.__STATIC_DATA__ = {
         "team": "HOU",
         "picked_by": "riqi",
         "original_owner": "riqi",
-        "traded": false
+        "traded": false,
+        "birth_date": "2000-06-01"
       },
       {
         "pick_no": 249,
@@ -2489,7 +2737,8 @@ window.__STATIC_DATA__ = {
         "team": "",
         "picked_by": "andyxia124",
         "original_owner": "andyxia124",
-        "traded": false
+        "traded": false,
+        "birth_date": "2001-08-09"
       },
       {
         "pick_no": 250,
@@ -2499,7 +2748,8 @@ window.__STATIC_DATA__ = {
         "team": "JAX",
         "picked_by": "IconicJH",
         "original_owner": "IconicJH",
-        "traded": false
+        "traded": false,
+        "birth_date": "1999-09-26"
       },
       {
         "pick_no": 251,
@@ -2509,7 +2759,8 @@ window.__STATIC_DATA__ = {
         "team": "",
         "picked_by": "Paul_Yoon",
         "original_owner": "Paul_Yoon",
-        "traded": false
+        "traded": false,
+        "birth_date": "1995-01-11"
       },
       {
         "pick_no": 252,
@@ -2519,7 +2770,8 @@ window.__STATIC_DATA__ = {
         "team": "",
         "picked_by": "spiffster",
         "original_owner": "spiffster",
-        "traded": false
+        "traded": false,
+        "birth_date": "1991-03-17"
       },
       {
         "pick_no": 253,
@@ -2529,7 +2781,8 @@ window.__STATIC_DATA__ = {
         "team": "",
         "picked_by": "spiffster",
         "original_owner": "spiffster",
-        "traded": false
+        "traded": false,
+        "birth_date": "1993-01-20"
       },
       {
         "pick_no": 254,
@@ -2539,7 +2792,8 @@ window.__STATIC_DATA__ = {
         "team": "GB",
         "picked_by": "Paul_Yoon",
         "original_owner": "Paul_Yoon",
-        "traded": false
+        "traded": false,
+        "birth_date": "1998-12-10"
       },
       {
         "pick_no": 255,
@@ -2549,7 +2803,8 @@ window.__STATIC_DATA__ = {
         "team": "BUF",
         "picked_by": "IconicJH",
         "original_owner": "IconicJH",
-        "traded": false
+        "traded": false,
+        "birth_date": "1998-03-12"
       },
       {
         "pick_no": 256,
@@ -2559,7 +2814,8 @@ window.__STATIC_DATA__ = {
         "team": "NO",
         "picked_by": "andyxia124",
         "original_owner": "andyxia124",
-        "traded": false
+        "traded": false,
+        "birth_date": "1999-08-03"
       },
       {
         "pick_no": 257,
@@ -2569,7 +2825,8 @@ window.__STATIC_DATA__ = {
         "team": "TB",
         "picked_by": "riqi",
         "original_owner": "riqi",
-        "traded": false
+        "traded": false,
+        "birth_date": "1999-04-15"
       },
       {
         "pick_no": 258,
@@ -2579,7 +2836,8 @@ window.__STATIC_DATA__ = {
         "team": "GB",
         "picked_by": "NoSkilzPak",
         "original_owner": "NoSkilzPak",
-        "traded": false
+        "traded": false,
+        "birth_date": "2000-11-03"
       },
       {
         "pick_no": 259,
@@ -2589,7 +2847,8 @@ window.__STATIC_DATA__ = {
         "team": "",
         "picked_by": "eikichii952",
         "original_owner": "eikichii952",
-        "traded": false
+        "traded": false,
+        "birth_date": "1998-09-08"
       },
       {
         "pick_no": 260,
@@ -2599,7 +2858,8 @@ window.__STATIC_DATA__ = {
         "team": "",
         "picked_by": "jonsung",
         "original_owner": "jonsung",
-        "traded": false
+        "traded": false,
+        "birth_date": "1991-07-01"
       },
       {
         "pick_no": 261,
@@ -2609,7 +2869,8 @@ window.__STATIC_DATA__ = {
         "team": "LAR",
         "picked_by": "shmyung",
         "original_owner": "shmyung",
-        "traded": false
+        "traded": false,
+        "birth_date": "2001-10-12"
       },
       {
         "pick_no": 262,
@@ -2619,7 +2880,8 @@ window.__STATIC_DATA__ = {
         "team": "TEN",
         "picked_by": "edgxrjiang",
         "original_owner": "edgxrjiang",
-        "traded": false
+        "traded": false,
+        "birth_date": "2000-09-22"
       },
       {
         "pick_no": 263,
@@ -2629,7 +2891,8 @@ window.__STATIC_DATA__ = {
         "team": "SEA",
         "picked_by": "ganathan",
         "original_owner": "ganathan",
-        "traded": false
+        "traded": false,
+        "birth_date": "1997-06-05"
       },
       {
         "pick_no": 264,
@@ -2639,7 +2902,8 @@ window.__STATIC_DATA__ = {
         "team": "MIA",
         "picked_by": "ddhk",
         "original_owner": "ddhk",
-        "traded": false
+        "traded": false,
+        "birth_date": "1999-02-27"
       },
       {
         "pick_no": 265,
@@ -2649,7 +2913,8 @@ window.__STATIC_DATA__ = {
         "team": "",
         "picked_by": "ddhk",
         "original_owner": "ddhk",
-        "traded": false
+        "traded": false,
+        "birth_date": "1995-03-25"
       },
       {
         "pick_no": 266,
@@ -2659,7 +2924,8 @@ window.__STATIC_DATA__ = {
         "team": "JAX",
         "picked_by": "ganathan",
         "original_owner": "ganathan",
-        "traded": false
+        "traded": false,
+        "birth_date": "2002-03-21"
       },
       {
         "pick_no": 267,
@@ -2669,7 +2935,8 @@ window.__STATIC_DATA__ = {
         "team": "CIN",
         "picked_by": "edgxrjiang",
         "original_owner": "edgxrjiang",
-        "traded": false
+        "traded": false,
+        "birth_date": "1998-10-29"
       },
       {
         "pick_no": 268,
@@ -2679,7 +2946,8 @@ window.__STATIC_DATA__ = {
         "team": "",
         "picked_by": "eikichii952",
         "original_owner": "shmyung",
-        "traded": true
+        "traded": true,
+        "birth_date": "1996-04-13"
       },
       {
         "pick_no": 269,
@@ -2689,7 +2957,8 @@ window.__STATIC_DATA__ = {
         "team": "NYJ",
         "picked_by": "jonsung",
         "original_owner": "jonsung",
-        "traded": false
+        "traded": false,
+        "birth_date": "1999-04-26"
       },
       {
         "pick_no": 270,
@@ -2699,7 +2968,8 @@ window.__STATIC_DATA__ = {
         "team": "GB",
         "picked_by": "eikichii952",
         "original_owner": "eikichii952",
-        "traded": false
+        "traded": false,
+        "birth_date": "1999-09-08"
       },
       {
         "pick_no": 271,
@@ -2709,7 +2979,8 @@ window.__STATIC_DATA__ = {
         "team": "",
         "picked_by": "NoSkilzPak",
         "original_owner": "NoSkilzPak",
-        "traded": false
+        "traded": false,
+        "birth_date": "1999-03-23"
       },
       {
         "pick_no": 272,
@@ -2719,7 +2990,8 @@ window.__STATIC_DATA__ = {
         "team": "DAL",
         "picked_by": "riqi",
         "original_owner": "riqi",
-        "traded": false
+        "traded": false,
+        "birth_date": "1999-01-18"
       },
       {
         "pick_no": 273,
@@ -2729,7 +3001,8 @@ window.__STATIC_DATA__ = {
         "team": "NO",
         "picked_by": "andyxia124",
         "original_owner": "andyxia124",
-        "traded": false
+        "traded": false,
+        "birth_date": "1998-05-12"
       },
       {
         "pick_no": 274,
@@ -2739,7 +3012,8 @@ window.__STATIC_DATA__ = {
         "team": "LV",
         "picked_by": "IconicJH",
         "original_owner": "IconicJH",
-        "traded": false
+        "traded": false,
+        "birth_date": "1998-09-01"
       },
       {
         "pick_no": 275,
@@ -2749,7 +3023,8 @@ window.__STATIC_DATA__ = {
         "team": "DET",
         "picked_by": "Paul_Yoon",
         "original_owner": "Paul_Yoon",
-        "traded": false
+        "traded": false,
+        "birth_date": "1995-07-30"
       },
       {
         "pick_no": 276,
@@ -2759,7 +3034,8 @@ window.__STATIC_DATA__ = {
         "team": "WAS",
         "picked_by": "spiffster",
         "original_owner": "spiffster",
-        "traded": false
+        "traded": false,
+        "birth_date": "1999-11-23"
       },
       {
         "pick_no": 277,
@@ -2769,7 +3045,8 @@ window.__STATIC_DATA__ = {
         "team": "MIN",
         "picked_by": "spiffster",
         "original_owner": "spiffster",
-        "traded": false
+        "traded": false,
+        "birth_date": "1999-05-24"
       },
       {
         "pick_no": 278,
@@ -2779,7 +3056,8 @@ window.__STATIC_DATA__ = {
         "team": "",
         "picked_by": "Paul_Yoon",
         "original_owner": "Paul_Yoon",
-        "traded": false
+        "traded": false,
+        "birth_date": "2000-12-14"
       },
       {
         "pick_no": 279,
@@ -2789,7 +3067,8 @@ window.__STATIC_DATA__ = {
         "team": "LV",
         "picked_by": "IconicJH",
         "original_owner": "IconicJH",
-        "traded": false
+        "traded": false,
+        "birth_date": "2001-03-08"
       },
       {
         "pick_no": 280,
@@ -2799,7 +3078,8 @@ window.__STATIC_DATA__ = {
         "team": "JAX",
         "picked_by": "andyxia124",
         "original_owner": "andyxia124",
-        "traded": false
+        "traded": false,
+        "birth_date": "2000-12-27"
       },
       {
         "pick_no": 281,
@@ -2809,7 +3089,8 @@ window.__STATIC_DATA__ = {
         "team": "DAL",
         "picked_by": "riqi",
         "original_owner": "riqi",
-        "traded": false
+        "traded": false,
+        "birth_date": "1998-11-26"
       },
       {
         "pick_no": 282,
@@ -2819,7 +3100,8 @@ window.__STATIC_DATA__ = {
         "team": "",
         "picked_by": "NoSkilzPak",
         "original_owner": "NoSkilzPak",
-        "traded": false
+        "traded": false,
+        "birth_date": "1998-08-09"
       },
       {
         "pick_no": 283,
@@ -2829,7 +3111,8 @@ window.__STATIC_DATA__ = {
         "team": "",
         "picked_by": "Paul_Yoon",
         "original_owner": "eikichii952",
-        "traded": true
+        "traded": true,
+        "birth_date": "1993-02-10"
       },
       {
         "pick_no": 284,
@@ -2839,7 +3122,8 @@ window.__STATIC_DATA__ = {
         "team": "LAC",
         "picked_by": "jonsung",
         "original_owner": "jonsung",
-        "traded": false
+        "traded": false,
+        "birth_date": "2000-05-06"
       },
       {
         "pick_no": 285,
@@ -2849,7 +3133,8 @@ window.__STATIC_DATA__ = {
         "team": "",
         "picked_by": "eikichii952",
         "original_owner": "shmyung",
-        "traded": true
+        "traded": true,
+        "birth_date": "1993-08-24"
       },
       {
         "pick_no": 286,
@@ -2859,7 +3144,8 @@ window.__STATIC_DATA__ = {
         "team": "SEA",
         "picked_by": "edgxrjiang",
         "original_owner": "edgxrjiang",
-        "traded": false
+        "traded": false,
+        "birth_date": "2000-03-03"
       },
       {
         "pick_no": 287,
@@ -2869,7 +3155,8 @@ window.__STATIC_DATA__ = {
         "team": "LAR",
         "picked_by": "ganathan",
         "original_owner": "ganathan",
-        "traded": false
+        "traded": false,
+        "birth_date": "2000-08-26"
       },
       {
         "pick_no": 288,
@@ -2879,7 +3166,8 @@ window.__STATIC_DATA__ = {
         "team": "SEA",
         "picked_by": "Paul_Yoon",
         "original_owner": "ddhk",
-        "traded": true
+        "traded": true,
+        "birth_date": "1991-05-12"
       },
       {
         "pick_no": 289,
@@ -2889,7 +3177,8 @@ window.__STATIC_DATA__ = {
         "team": "",
         "picked_by": "jonsung",
         "original_owner": "ddhk",
-        "traded": true
+        "traded": true,
+        "birth_date": "1999-06-06"
       },
       {
         "pick_no": 290,
@@ -2899,7 +3188,8 @@ window.__STATIC_DATA__ = {
         "team": "NO",
         "picked_by": "ganathan",
         "original_owner": "ganathan",
-        "traded": false
+        "traded": false,
+        "birth_date": "2001-04-02"
       },
       {
         "pick_no": 291,
@@ -2909,7 +3199,8 @@ window.__STATIC_DATA__ = {
         "team": "ARI",
         "picked_by": "edgxrjiang",
         "original_owner": "edgxrjiang",
-        "traded": false
+        "traded": false,
+        "birth_date": "1992-12-11"
       },
       {
         "pick_no": 292,
@@ -2919,7 +3210,8 @@ window.__STATIC_DATA__ = {
         "team": "",
         "picked_by": "shmyung",
         "original_owner": "shmyung",
-        "traded": false
+        "traded": false,
+        "birth_date": "1999-06-17"
       },
       {
         "pick_no": 293,
@@ -2929,7 +3221,8 @@ window.__STATIC_DATA__ = {
         "team": "",
         "picked_by": "jonsung",
         "original_owner": "jonsung",
-        "traded": false
+        "traded": false,
+        "birth_date": "1997-12-15"
       },
       {
         "pick_no": 294,
@@ -2939,7 +3232,8 @@ window.__STATIC_DATA__ = {
         "team": "",
         "picked_by": "eikichii952",
         "original_owner": "eikichii952",
-        "traded": false
+        "traded": false,
+        "birth_date": "2000-04-11"
       },
       {
         "pick_no": 295,
@@ -2949,7 +3243,8 @@ window.__STATIC_DATA__ = {
         "team": "BAL",
         "picked_by": "NoSkilzPak",
         "original_owner": "NoSkilzPak",
-        "traded": false
+        "traded": false,
+        "birth_date": "1998-02-03"
       },
       {
         "pick_no": 296,
@@ -2959,7 +3254,8 @@ window.__STATIC_DATA__ = {
         "team": "PIT",
         "picked_by": "riqi",
         "original_owner": "riqi",
-        "traded": false
+        "traded": false,
+        "birth_date": "1997-06-27"
       },
       {
         "pick_no": 297,
@@ -2969,7 +3265,8 @@ window.__STATIC_DATA__ = {
         "team": "",
         "picked_by": "andyxia124",
         "original_owner": "andyxia124",
-        "traded": false
+        "traded": false,
+        "birth_date": "1999-11-26"
       },
       {
         "pick_no": 298,
@@ -2979,7 +3276,8 @@ window.__STATIC_DATA__ = {
         "team": "MIA",
         "picked_by": "IconicJH",
         "original_owner": "IconicJH",
-        "traded": false
+        "traded": false,
+        "birth_date": "1999-05-25"
       },
       {
         "pick_no": 299,
@@ -2989,7 +3287,8 @@ window.__STATIC_DATA__ = {
         "team": "PHI",
         "picked_by": "Paul_Yoon",
         "original_owner": "Paul_Yoon",
-        "traded": false
+        "traded": false,
+        "birth_date": "2000-02-24"
       },
       {
         "pick_no": 300,
@@ -2999,7 +3298,8 @@ window.__STATIC_DATA__ = {
         "team": "",
         "picked_by": "spiffster",
         "original_owner": "spiffster",
-        "traded": false
+        "traded": false,
+        "birth_date": "1997-11-20"
       },
       {
         "pick_no": 301,
@@ -3009,7 +3309,8 @@ window.__STATIC_DATA__ = {
         "team": "NE",
         "picked_by": "spiffster",
         "original_owner": "spiffster",
-        "traded": false
+        "traded": false,
+        "birth_date": "1994-12-07"
       },
       {
         "pick_no": 302,
@@ -3019,7 +3320,8 @@ window.__STATIC_DATA__ = {
         "team": "LV",
         "picked_by": "Paul_Yoon",
         "original_owner": "Paul_Yoon",
-        "traded": false
+        "traded": false,
+        "birth_date": "2000-04-17"
       },
       {
         "pick_no": 303,
@@ -3029,7 +3331,8 @@ window.__STATIC_DATA__ = {
         "team": "LAC",
         "picked_by": "IconicJH",
         "original_owner": "IconicJH",
-        "traded": false
+        "traded": false,
+        "birth_date": "2002-01-17"
       },
       {
         "pick_no": 304,
@@ -3039,7 +3342,8 @@ window.__STATIC_DATA__ = {
         "team": "LV",
         "picked_by": "andyxia124",
         "original_owner": "andyxia124",
-        "traded": false
+        "traded": false,
+        "birth_date": "1994-03-15"
       },
       {
         "pick_no": 305,
@@ -3049,7 +3353,8 @@ window.__STATIC_DATA__ = {
         "team": "PHI",
         "picked_by": "riqi",
         "original_owner": "riqi",
-        "traded": false
+        "traded": false,
+        "birth_date": "2001-06-16"
       },
       {
         "pick_no": 306,
@@ -3059,7 +3364,8 @@ window.__STATIC_DATA__ = {
         "team": "",
         "picked_by": "NoSkilzPak",
         "original_owner": "NoSkilzPak",
-        "traded": false
+        "traded": false,
+        "birth_date": "1998-10-05"
       },
       {
         "pick_no": 307,
@@ -3069,7 +3375,8 @@ window.__STATIC_DATA__ = {
         "team": "",
         "picked_by": "eikichii952",
         "original_owner": "eikichii952",
-        "traded": false
+        "traded": false,
+        "birth_date": "1995-02-16"
       },
       {
         "pick_no": 308,
@@ -3079,7 +3386,8 @@ window.__STATIC_DATA__ = {
         "team": "",
         "picked_by": "jonsung",
         "original_owner": "jonsung",
-        "traded": false
+        "traded": false,
+        "birth_date": "1999-11-14"
       },
       {
         "pick_no": 309,
@@ -3089,7 +3397,8 @@ window.__STATIC_DATA__ = {
         "team": "ARI",
         "picked_by": "shmyung",
         "original_owner": "shmyung",
-        "traded": false
+        "traded": false,
+        "birth_date": "2001-04-11"
       },
       {
         "pick_no": 310,
@@ -3099,7 +3408,8 @@ window.__STATIC_DATA__ = {
         "team": "",
         "picked_by": "edgxrjiang",
         "original_owner": "edgxrjiang",
-        "traded": false
+        "traded": false,
+        "birth_date": "1993-03-15"
       },
       {
         "pick_no": 311,
@@ -3109,7 +3419,8 @@ window.__STATIC_DATA__ = {
         "team": "PIT",
         "picked_by": "ganathan",
         "original_owner": "ganathan",
-        "traded": false
+        "traded": false,
+        "birth_date": "2001-08-16"
       },
       {
         "pick_no": 312,
@@ -3119,7 +3430,8 @@ window.__STATIC_DATA__ = {
         "team": "IND",
         "picked_by": "ddhk",
         "original_owner": "ddhk",
-        "traded": false
+        "traded": false,
+        "birth_date": "1997-03-21"
       },
       {
         "pick_no": 313,
@@ -3129,7 +3441,8 @@ window.__STATIC_DATA__ = {
         "team": "NYG",
         "picked_by": "ddhk",
         "original_owner": "ddhk",
-        "traded": false
+        "traded": false,
+        "birth_date": "1999-03-24"
       },
       {
         "pick_no": 314,
@@ -3139,7 +3452,8 @@ window.__STATIC_DATA__ = {
         "team": "",
         "picked_by": "ganathan",
         "original_owner": "ganathan",
-        "traded": false
+        "traded": false,
+        "birth_date": "1997-08-03"
       },
       {
         "pick_no": 315,
@@ -3149,7 +3463,8 @@ window.__STATIC_DATA__ = {
         "team": "HOU",
         "picked_by": "edgxrjiang",
         "original_owner": "edgxrjiang",
-        "traded": false
+        "traded": false,
+        "birth_date": "1997-05-06"
       },
       {
         "pick_no": 316,
@@ -3159,7 +3474,8 @@ window.__STATIC_DATA__ = {
         "team": "LAC",
         "picked_by": "shmyung",
         "original_owner": "shmyung",
-        "traded": false
+        "traded": false,
+        "birth_date": "2000-09-11"
       },
       {
         "pick_no": 317,
@@ -3169,7 +3485,8 @@ window.__STATIC_DATA__ = {
         "team": "",
         "picked_by": "jonsung",
         "original_owner": "jonsung",
-        "traded": false
+        "traded": false,
+        "birth_date": "1996-02-27"
       },
       {
         "pick_no": 318,
@@ -3179,7 +3496,8 @@ window.__STATIC_DATA__ = {
         "team": "MIA",
         "picked_by": "eikichii952",
         "original_owner": "eikichii952",
-        "traded": false
+        "traded": false,
+        "birth_date": "1999-10-07"
       },
       {
         "pick_no": 319,
@@ -3189,7 +3507,8 @@ window.__STATIC_DATA__ = {
         "team": "ARI",
         "picked_by": "NoSkilzPak",
         "original_owner": "NoSkilzPak",
-        "traded": false
+        "traded": false,
+        "birth_date": "2000-10-27"
       },
       {
         "pick_no": 320,
@@ -3199,7 +3518,8 @@ window.__STATIC_DATA__ = {
         "team": "KC",
         "picked_by": "riqi",
         "original_owner": "riqi",
-        "traded": false
+        "traded": false,
+        "birth_date": "1999-04-30"
       },
       {
         "pick_no": 321,
@@ -3209,7 +3529,8 @@ window.__STATIC_DATA__ = {
         "team": "PHI",
         "picked_by": "andyxia124",
         "original_owner": "andyxia124",
-        "traded": false
+        "traded": false,
+        "birth_date": "1998-06-09"
       },
       {
         "pick_no": 322,
@@ -3219,7 +3540,8 @@ window.__STATIC_DATA__ = {
         "team": "",
         "picked_by": "IconicJH",
         "original_owner": "IconicJH",
-        "traded": false
+        "traded": false,
+        "birth_date": "2000-03-09"
       },
       {
         "pick_no": 323,
@@ -3229,7 +3551,8 @@ window.__STATIC_DATA__ = {
         "team": "ARI",
         "picked_by": "Paul_Yoon",
         "original_owner": "Paul_Yoon",
-        "traded": false
+        "traded": false,
+        "birth_date": "1995-08-04"
       },
       {
         "pick_no": 324,
@@ -3239,7 +3562,8 @@ window.__STATIC_DATA__ = {
         "team": "",
         "picked_by": "spiffster",
         "original_owner": "spiffster",
-        "traded": false
+        "traded": false,
+        "birth_date": "1990-03-12"
       },
       {
         "pick_no": 325,
@@ -3249,7 +3573,8 @@ window.__STATIC_DATA__ = {
         "team": "",
         "picked_by": "spiffster",
         "original_owner": "spiffster",
-        "traded": false
+        "traded": false,
+        "birth_date": "1993-01-22"
       },
       {
         "pick_no": 326,
@@ -3259,7 +3584,8 @@ window.__STATIC_DATA__ = {
         "team": "",
         "picked_by": "Paul_Yoon",
         "original_owner": "Paul_Yoon",
-        "traded": false
+        "traded": false,
+        "birth_date": "1996-01-22"
       },
       {
         "pick_no": 327,
@@ -3269,7 +3595,8 @@ window.__STATIC_DATA__ = {
         "team": "",
         "picked_by": "IconicJH",
         "original_owner": "IconicJH",
-        "traded": false
+        "traded": false,
+        "birth_date": "1995-02-17"
       },
       {
         "pick_no": 328,
@@ -3279,7 +3606,8 @@ window.__STATIC_DATA__ = {
         "team": "",
         "picked_by": "andyxia124",
         "original_owner": "andyxia124",
-        "traded": false
+        "traded": false,
+        "birth_date": "1998-07-03"
       },
       {
         "pick_no": 329,
@@ -3289,7 +3617,8 @@ window.__STATIC_DATA__ = {
         "team": "ARI",
         "picked_by": "riqi",
         "original_owner": "riqi",
-        "traded": false
+        "traded": false,
+        "birth_date": "1997-09-12"
       },
       {
         "pick_no": 330,
@@ -3299,7 +3628,8 @@ window.__STATIC_DATA__ = {
         "team": "",
         "picked_by": "NoSkilzPak",
         "original_owner": "NoSkilzPak",
-        "traded": false
+        "traded": false,
+        "birth_date": "1986-09-05"
       },
       {
         "pick_no": 331,
@@ -3309,7 +3639,8 @@ window.__STATIC_DATA__ = {
         "team": "IND",
         "picked_by": "eikichii952",
         "original_owner": "eikichii952",
-        "traded": false
+        "traded": false,
+        "birth_date": "1999-06-22"
       },
       {
         "pick_no": 332,
@@ -3319,7 +3650,8 @@ window.__STATIC_DATA__ = {
         "team": "",
         "picked_by": "ddhk",
         "original_owner": "jonsung",
-        "traded": true
+        "traded": true,
+        "birth_date": "1999-01-30"
       },
       {
         "pick_no": 333,
@@ -3329,7 +3661,8 @@ window.__STATIC_DATA__ = {
         "team": "",
         "picked_by": "shmyung",
         "original_owner": "shmyung",
-        "traded": false
+        "traded": false,
+        "birth_date": "1991-07-25"
       },
       {
         "pick_no": 334,
@@ -3339,7 +3672,8 @@ window.__STATIC_DATA__ = {
         "team": "",
         "picked_by": "edgxrjiang",
         "original_owner": "edgxrjiang",
-        "traded": false
+        "traded": false,
+        "birth_date": "1999-03-10"
       },
       {
         "pick_no": 335,
@@ -3349,7 +3683,8 @@ window.__STATIC_DATA__ = {
         "team": "",
         "picked_by": "ganathan",
         "original_owner": "ganathan",
-        "traded": false
+        "traded": false,
+        "birth_date": "1998-03-24"
       },
       {
         "pick_no": 336,
@@ -3359,7 +3694,8 @@ window.__STATIC_DATA__ = {
         "team": "SF",
         "picked_by": "ddhk",
         "original_owner": "ddhk",
-        "traded": false
+        "traded": false,
+        "birth_date": "1995-09-13"
       },
       {
         "pick_no": 337,
@@ -3369,7 +3705,8 @@ window.__STATIC_DATA__ = {
         "team": "",
         "picked_by": "ddhk",
         "original_owner": "ddhk",
-        "traded": false
+        "traded": false,
+        "birth_date": "1997-10-18"
       },
       {
         "pick_no": 338,
@@ -3379,7 +3716,8 @@ window.__STATIC_DATA__ = {
         "team": "",
         "picked_by": "ganathan",
         "original_owner": "ganathan",
-        "traded": false
+        "traded": false,
+        "birth_date": "2001-01-24"
       },
       {
         "pick_no": 339,
@@ -3389,7 +3727,8 @@ window.__STATIC_DATA__ = {
         "team": "DEN",
         "picked_by": "edgxrjiang",
         "original_owner": "edgxrjiang",
-        "traded": false
+        "traded": false,
+        "birth_date": "1996-08-08"
       },
       {
         "pick_no": 340,
@@ -3399,7 +3738,8 @@ window.__STATIC_DATA__ = {
         "team": "",
         "picked_by": "shmyung",
         "original_owner": "shmyung",
-        "traded": false
+        "traded": false,
+        "birth_date": "1987-04-09"
       },
       {
         "pick_no": 341,
@@ -3409,7 +3749,8 @@ window.__STATIC_DATA__ = {
         "team": "NYG",
         "picked_by": "ddhk",
         "original_owner": "jonsung",
-        "traded": true
+        "traded": true,
+        "birth_date": "1994-01-06"
       },
       {
         "pick_no": 342,
@@ -3419,7 +3760,8 @@ window.__STATIC_DATA__ = {
         "team": "",
         "picked_by": "eikichii952",
         "original_owner": "eikichii952",
-        "traded": false
+        "traded": false,
+        "birth_date": "1996-11-12"
       },
       {
         "pick_no": 343,
@@ -3429,7 +3771,8 @@ window.__STATIC_DATA__ = {
         "team": "WAS",
         "picked_by": "NoSkilzPak",
         "original_owner": "NoSkilzPak",
-        "traded": false
+        "traded": false,
+        "birth_date": "1993-10-30"
       },
       {
         "pick_no": 344,
@@ -3439,7 +3782,8 @@ window.__STATIC_DATA__ = {
         "team": "MIN",
         "picked_by": "riqi",
         "original_owner": "riqi",
-        "traded": false
+        "traded": false,
+        "birth_date": "1992-12-30"
       },
       {
         "pick_no": 345,
@@ -3449,7 +3793,8 @@ window.__STATIC_DATA__ = {
         "team": "MIA",
         "picked_by": "andyxia124",
         "original_owner": "andyxia124",
-        "traded": false
+        "traded": false,
+        "birth_date": "2000-03-16"
       },
       {
         "pick_no": 346,
@@ -3459,7 +3804,8 @@ window.__STATIC_DATA__ = {
         "team": "ATL",
         "picked_by": "IconicJH",
         "original_owner": "IconicJH",
-        "traded": false
+        "traded": false,
+        "birth_date": "1994-10-29"
       },
       {
         "pick_no": 347,
@@ -3469,7 +3815,8 @@ window.__STATIC_DATA__ = {
         "team": "",
         "picked_by": "Paul_Yoon",
         "original_owner": "Paul_Yoon",
-        "traded": false
+        "traded": false,
+        "birth_date": "1997-10-05"
       },
       {
         "pick_no": 348,
@@ -3479,7 +3826,8 @@ window.__STATIC_DATA__ = {
         "team": "NYJ",
         "picked_by": "spiffster",
         "original_owner": "spiffster",
-        "traded": false
+        "traded": false,
+        "birth_date": "1998-02-09"
       },
       {
         "pick_no": 349,
@@ -3489,7 +3837,8 @@ window.__STATIC_DATA__ = {
         "team": "",
         "picked_by": "spiffster",
         "original_owner": "spiffster",
-        "traded": false
+        "traded": false,
+        "birth_date": "1995-02-28"
       },
       {
         "pick_no": 350,
@@ -3499,7 +3848,8 @@ window.__STATIC_DATA__ = {
         "team": "PIT",
         "picked_by": "Paul_Yoon",
         "original_owner": "Paul_Yoon",
-        "traded": false
+        "traded": false,
+        "birth_date": "1994-04-30"
       },
       {
         "pick_no": 351,
@@ -3509,7 +3859,8 @@ window.__STATIC_DATA__ = {
         "team": "CIN",
         "picked_by": "IconicJH",
         "original_owner": "IconicJH",
-        "traded": false
+        "traded": false,
+        "birth_date": "1999-10-15"
       },
       {
         "pick_no": 352,
@@ -3519,7 +3870,8 @@ window.__STATIC_DATA__ = {
         "team": "",
         "picked_by": "andyxia124",
         "original_owner": "andyxia124",
-        "traded": false
+        "traded": false,
+        "birth_date": "2000-10-23"
       },
       {
         "pick_no": 353,
@@ -3529,7 +3881,8 @@ window.__STATIC_DATA__ = {
         "team": "",
         "picked_by": "riqi",
         "original_owner": "riqi",
-        "traded": false
+        "traded": false,
+        "birth_date": "1990-01-18"
       },
       {
         "pick_no": 354,
@@ -3539,7 +3892,8 @@ window.__STATIC_DATA__ = {
         "team": "",
         "picked_by": "NoSkilzPak",
         "original_owner": "NoSkilzPak",
-        "traded": false
+        "traded": false,
+        "birth_date": "2000-11-17"
       },
       {
         "pick_no": 355,
@@ -3549,7 +3903,8 @@ window.__STATIC_DATA__ = {
         "team": "TB",
         "picked_by": "eikichii952",
         "original_owner": "eikichii952",
-        "traded": false
+        "traded": false,
+        "birth_date": "2000-06-15"
       },
       {
         "pick_no": 356,
@@ -3559,7 +3914,8 @@ window.__STATIC_DATA__ = {
         "team": "",
         "picked_by": "ddhk",
         "original_owner": "jonsung",
-        "traded": true
+        "traded": true,
+        "birth_date": "1998-11-13"
       },
       {
         "pick_no": 357,
@@ -3569,7 +3925,8 @@ window.__STATIC_DATA__ = {
         "team": "",
         "picked_by": "shmyung",
         "original_owner": "shmyung",
-        "traded": false
+        "traded": false,
+        "birth_date": "1999-02-18"
       },
       {
         "pick_no": 358,
@@ -3579,7 +3936,8 @@ window.__STATIC_DATA__ = {
         "team": "NE",
         "picked_by": "edgxrjiang",
         "original_owner": "edgxrjiang",
-        "traded": false
+        "traded": false,
+        "birth_date": "1993-09-16"
       },
       {
         "pick_no": 359,
@@ -3589,7 +3947,8 @@ window.__STATIC_DATA__ = {
         "team": "NYJ",
         "picked_by": "ganathan",
         "original_owner": "ganathan",
-        "traded": false
+        "traded": false,
+        "birth_date": "1995-11-16"
       },
       {
         "pick_no": 360,
@@ -3599,7 +3958,8 @@ window.__STATIC_DATA__ = {
         "team": "",
         "picked_by": "ddhk",
         "original_owner": "ddhk",
-        "traded": false
+        "traded": false,
+        "birth_date": "1997-08-16"
       }
     ],
     "2024": [
@@ -3611,7 +3971,8 @@ window.__STATIC_DATA__ = {
         "team": "CHI",
         "picked_by": "urmummma",
         "original_owner": "urmummma",
-        "traded": false
+        "traded": false,
+        "birth_date": "2001-11-18"
       },
       {
         "pick_no": 2,
@@ -3621,7 +3982,8 @@ window.__STATIC_DATA__ = {
         "team": "ARI",
         "picked_by": "NoSkilzPak",
         "original_owner": "NoSkilzPak",
-        "traded": false
+        "traded": false,
+        "birth_date": "2002-08-11"
       },
       {
         "pick_no": 3,
@@ -3631,7 +3993,8 @@ window.__STATIC_DATA__ = {
         "team": "WAS",
         "picked_by": "NoSkilzPak",
         "original_owner": "eikichii952",
-        "traded": true
+        "traded": true,
+        "birth_date": "2000-12-18"
       },
       {
         "pick_no": 4,
@@ -3641,7 +4004,8 @@ window.__STATIC_DATA__ = {
         "team": "NYG",
         "picked_by": "andyxia124",
         "original_owner": "andyxia124",
-        "traded": false
+        "traded": false,
+        "birth_date": "2003-07-28"
       },
       {
         "pick_no": 5,
@@ -3651,7 +4015,8 @@ window.__STATIC_DATA__ = {
         "team": "CHI",
         "picked_by": "IconicJH",
         "original_owner": "IconicJH",
-        "traded": false
+        "traded": false,
+        "birth_date": "2002-06-03"
       },
       {
         "pick_no": 6,
@@ -3661,7 +4026,8 @@ window.__STATIC_DATA__ = {
         "team": "LAC",
         "picked_by": "urmummma",
         "original_owner": "ngman",
-        "traded": true
+        "traded": true,
+        "birth_date": "2001-11-11"
       },
       {
         "pick_no": 7,
@@ -3671,7 +4037,8 @@ window.__STATIC_DATA__ = {
         "team": "LV",
         "picked_by": "urmummma",
         "original_owner": "ddhk",
-        "traded": true
+        "traded": true,
+        "birth_date": "2002-12-13"
       },
       {
         "pick_no": 8,
@@ -3681,7 +4048,8 @@ window.__STATIC_DATA__ = {
         "team": "JAX",
         "picked_by": "andyxia124",
         "original_owner": "Paul_Yoon",
-        "traded": true
+        "traded": true,
+        "birth_date": "2002-10-08"
       },
       {
         "pick_no": 9,
@@ -3691,7 +4059,8 @@ window.__STATIC_DATA__ = {
         "team": "MIN",
         "picked_by": "IconicJH",
         "original_owner": "riqi",
-        "traded": true
+        "traded": true,
+        "birth_date": "2003-01-20"
       },
       {
         "pick_no": 10,
@@ -3701,7 +4070,8 @@ window.__STATIC_DATA__ = {
         "team": "KC",
         "picked_by": "NoSkilzPak",
         "original_owner": "spiffster",
-        "traded": true
+        "traded": true,
+        "birth_date": "2003-04-27"
       },
       {
         "pick_no": 11,
@@ -3711,7 +4081,8 @@ window.__STATIC_DATA__ = {
         "team": "CAR",
         "picked_by": "eikichii952",
         "original_owner": "jonsung",
-        "traded": true
+        "traded": true,
+        "birth_date": "2003-07-21"
       },
       {
         "pick_no": 12,
@@ -3721,7 +4092,8 @@ window.__STATIC_DATA__ = {
         "team": "NE",
         "picked_by": "IconicJH",
         "original_owner": "ganathan",
-        "traded": true
+        "traded": true,
+        "birth_date": "2002-08-30"
       },
       {
         "pick_no": 13,
@@ -3731,7 +4103,8 @@ window.__STATIC_DATA__ = {
         "team": "BUF",
         "picked_by": "urmummma",
         "original_owner": "urmummma",
-        "traded": false
+        "traded": false,
+        "birth_date": "2003-05-17"
       },
       {
         "pick_no": 14,
@@ -3741,7 +4114,8 @@ window.__STATIC_DATA__ = {
         "team": "ARI",
         "picked_by": "andyxia124",
         "original_owner": "NoSkilzPak",
-        "traded": true
+        "traded": true,
+        "birth_date": "2002-07-23"
       },
       {
         "pick_no": 15,
@@ -3751,7 +4125,8 @@ window.__STATIC_DATA__ = {
         "team": "NYJ",
         "picked_by": "eikichii952",
         "original_owner": "eikichii952",
-        "traded": false
+        "traded": false,
+        "birth_date": "2002-10-08"
       },
       {
         "pick_no": 16,
@@ -3761,7 +4136,8 @@ window.__STATIC_DATA__ = {
         "team": "LAR",
         "picked_by": "andyxia124",
         "original_owner": "andyxia124",
-        "traded": false
+        "traded": false,
+        "birth_date": "2000-11-25"
       },
       {
         "pick_no": 17,
@@ -3771,7 +4147,8 @@ window.__STATIC_DATA__ = {
         "team": "CAR",
         "picked_by": "eikichii952",
         "original_owner": "IconicJH",
-        "traded": true
+        "traded": true,
+        "birth_date": "2001-01-29"
       },
       {
         "pick_no": 18,
@@ -3781,7 +4158,8 @@ window.__STATIC_DATA__ = {
         "team": "DEN",
         "picked_by": "ngman",
         "original_owner": "ngman",
-        "traded": false
+        "traded": false,
+        "birth_date": "2000-02-25"
       },
       {
         "pick_no": 19,
@@ -3791,7 +4169,8 @@ window.__STATIC_DATA__ = {
         "team": "ATL",
         "picked_by": "eikichii952",
         "original_owner": "ddhk",
-        "traded": true
+        "traded": true,
+        "birth_date": "2000-05-08"
       },
       {
         "pick_no": 20,
@@ -3801,7 +4180,8 @@ window.__STATIC_DATA__ = {
         "team": "SF",
         "picked_by": "ganathan",
         "original_owner": "Paul_Yoon",
-        "traded": true
+        "traded": true,
+        "birth_date": "2000-09-09"
       },
       {
         "pick_no": 21,
@@ -3811,7 +4191,8 @@ window.__STATIC_DATA__ = {
         "team": "HOU",
         "picked_by": "NoSkilzPak",
         "original_owner": "riqi",
-        "traded": true
+        "traded": true,
+        "birth_date": "2000-06-12"
       },
       {
         "pick_no": 22,
@@ -3821,7 +4202,8 @@ window.__STATIC_DATA__ = {
         "team": "DEN",
         "picked_by": "spiffster",
         "original_owner": "spiffster",
-        "traded": false
+        "traded": false,
+        "birth_date": "2003-02-06"
       },
       {
         "pick_no": 23,
@@ -3831,7 +4213,8 @@ window.__STATIC_DATA__ = {
         "team": "NO",
         "picked_by": "andyxia124",
         "original_owner": "jonsung",
-        "traded": true
+        "traded": true,
+        "birth_date": "2002-04-11"
       },
       {
         "pick_no": 24,
@@ -3841,7 +4224,8 @@ window.__STATIC_DATA__ = {
         "team": "PIT",
         "picked_by": "ganathan",
         "original_owner": "ganathan",
-        "traded": false
+        "traded": false,
+        "birth_date": "2001-06-19"
       },
       {
         "pick_no": 25,
@@ -3851,7 +4235,8 @@ window.__STATIC_DATA__ = {
         "team": "MIA",
         "picked_by": "ngman",
         "original_owner": "urmummma",
-        "traded": true
+        "traded": true,
+        "birth_date": "2003-04-01"
       },
       {
         "pick_no": 26,
@@ -3861,7 +4246,8 @@ window.__STATIC_DATA__ = {
         "team": "CAR",
         "picked_by": "andyxia124",
         "original_owner": "NoSkilzPak",
-        "traded": true
+        "traded": true,
+        "birth_date": "2003-03-27"
       },
       {
         "pick_no": 27,
@@ -3871,7 +4257,8 @@ window.__STATIC_DATA__ = {
         "team": "GB",
         "picked_by": "ngman",
         "original_owner": "eikichii952",
-        "traded": true
+        "traded": true,
+        "birth_date": "2001-01-05"
       },
       {
         "pick_no": 28,
@@ -3881,7 +4268,8 @@ window.__STATIC_DATA__ = {
         "team": "NO",
         "picked_by": "andyxia124",
         "original_owner": "andyxia124",
-        "traded": false
+        "traded": false,
+        "birth_date": "2000-09-28"
       },
       {
         "pick_no": 29,
@@ -3891,7 +4279,8 @@ window.__STATIC_DATA__ = {
         "team": "CLE",
         "picked_by": "IconicJH",
         "original_owner": "IconicJH",
-        "traded": false
+        "traded": false,
+        "birth_date": "2002-03-21"
       },
       {
         "pick_no": 30,
@@ -3901,7 +4290,8 @@ window.__STATIC_DATA__ = {
         "team": "",
         "picked_by": "riqi",
         "original_owner": "ngman",
-        "traded": true
+        "traded": true,
+        "birth_date": "2001-06-28"
       },
       {
         "pick_no": 31,
@@ -3911,7 +4301,8 @@ window.__STATIC_DATA__ = {
         "team": "TB",
         "picked_by": "Paul_Yoon",
         "original_owner": "ddhk",
-        "traded": true
+        "traded": true,
+        "birth_date": "2002-08-19"
       },
       {
         "pick_no": 32,
@@ -3921,7 +4312,8 @@ window.__STATIC_DATA__ = {
         "team": "BUF",
         "picked_by": "ganathan",
         "original_owner": "Paul_Yoon",
-        "traded": true
+        "traded": true,
+        "birth_date": "1999-11-11"
       },
       {
         "pick_no": 33,
@@ -3931,7 +4323,8 @@ window.__STATIC_DATA__ = {
         "team": "NYJ",
         "picked_by": "riqi",
         "original_owner": "riqi",
-        "traded": false
+        "traded": false,
+        "birth_date": "2004-01-20"
       },
       {
         "pick_no": 34,
@@ -3941,7 +4334,8 @@ window.__STATIC_DATA__ = {
         "team": "",
         "picked_by": "ddhk",
         "original_owner": "spiffster",
-        "traded": true
+        "traded": true,
+        "birth_date": "2002-02-18"
       },
       {
         "pick_no": 35,
@@ -3951,7 +4345,8 @@ window.__STATIC_DATA__ = {
         "team": "WAS",
         "picked_by": "ddhk",
         "original_owner": "jonsung",
-        "traded": true
+        "traded": true,
+        "birth_date": "2002-06-14"
       },
       {
         "pick_no": 36,
@@ -3961,7 +4356,8 @@ window.__STATIC_DATA__ = {
         "team": "NO",
         "picked_by": "eikichii952",
         "original_owner": "ganathan",
-        "traded": true
+        "traded": true,
+        "birth_date": "2003-09-06"
       }
     ],
     "2025": [
@@ -3973,7 +4369,8 @@ window.__STATIC_DATA__ = {
         "team": "LV",
         "picked_by": "andyxia124",
         "original_owner": "ngman",
-        "traded": true
+        "traded": true,
+        "birth_date": "2003-12-02"
       },
       {
         "pick_no": 2,
@@ -3983,7 +4380,8 @@ window.__STATIC_DATA__ = {
         "team": "CAR",
         "picked_by": "ddhk",
         "original_owner": "eikichii952",
-        "traded": true
+        "traded": true,
+        "birth_date": "2003-04-05"
       },
       {
         "pick_no": 3,
@@ -3993,7 +4391,8 @@ window.__STATIC_DATA__ = {
         "team": "LAC",
         "picked_by": "ddhk",
         "original_owner": "NoSkilzPak",
-        "traded": true
+        "traded": true,
+        "birth_date": "2003-03-16"
       },
       {
         "pick_no": 4,
@@ -4003,7 +4402,8 @@ window.__STATIC_DATA__ = {
         "team": "CLE",
         "picked_by": "andyxia124",
         "original_owner": "andyxia124",
-        "traded": false
+        "traded": false,
+        "birth_date": "2003-10-29"
       },
       {
         "pick_no": 5,
@@ -4013,7 +4413,8 @@ window.__STATIC_DATA__ = {
         "team": "JAX",
         "picked_by": "eikichii952",
         "original_owner": "ddhk",
-        "traded": true
+        "traded": true,
+        "birth_date": "2003-05-18"
       },
       {
         "pick_no": 6,
@@ -4023,7 +4424,8 @@ window.__STATIC_DATA__ = {
         "team": "NE",
         "picked_by": "ddhk",
         "original_owner": "Paul_Yoon",
-        "traded": true
+        "traded": true,
+        "birth_date": "2002-10-22"
       },
       {
         "pick_no": 7,
@@ -4033,7 +4435,8 @@ window.__STATIC_DATA__ = {
         "team": "NYG",
         "picked_by": "ddhk",
         "original_owner": "paddleham",
-        "traded": true
+        "traded": true,
+        "birth_date": "2002-02-05"
       },
       {
         "pick_no": 8,
@@ -4043,7 +4446,8 @@ window.__STATIC_DATA__ = {
         "team": "TEN",
         "picked_by": "ngman",
         "original_owner": "spiffster",
-        "traded": true
+        "traded": true,
+        "birth_date": "2002-05-25"
       },
       {
         "pick_no": 9,
@@ -4053,7 +4457,8 @@ window.__STATIC_DATA__ = {
         "team": "TB",
         "picked_by": "velmixon",
         "original_owner": "velmixon",
-        "traded": false
+        "traded": false,
+        "birth_date": "2002-10-14"
       },
       {
         "pick_no": 10,
@@ -4063,7 +4468,8 @@ window.__STATIC_DATA__ = {
         "team": "NYG",
         "picked_by": "velmixon",
         "original_owner": "IconicJH",
-        "traded": true
+        "traded": true,
+        "birth_date": "2003-05-13"
       },
       {
         "pick_no": 11,
@@ -4073,7 +4479,8 @@ window.__STATIC_DATA__ = {
         "team": "CHI",
         "picked_by": "ddhk",
         "original_owner": "ganathan",
-        "traded": true
+        "traded": true,
+        "birth_date": "2003-12-12"
       },
       {
         "pick_no": 12,
@@ -4083,7 +4490,8 @@ window.__STATIC_DATA__ = {
         "team": "DEN",
         "picked_by": "spiffster",
         "original_owner": "jonsung",
-        "traded": true
+        "traded": true,
+        "birth_date": "2001-02-04"
       },
       {
         "pick_no": 13,
@@ -4093,7 +4501,8 @@ window.__STATIC_DATA__ = {
         "team": "PIT",
         "picked_by": "ngman",
         "original_owner": "ngman",
-        "traded": false
+        "traded": false,
+        "birth_date": "2003-08-14"
       },
       {
         "pick_no": 14,
@@ -4103,7 +4512,8 @@ window.__STATIC_DATA__ = {
         "team": "IND",
         "picked_by": "spiffster",
         "original_owner": "eikichii952",
-        "traded": true
+        "traded": true,
+        "birth_date": "2002-05-24"
       },
       {
         "pick_no": 15,
@@ -4113,7 +4523,8 @@ window.__STATIC_DATA__ = {
         "team": "GB",
         "picked_by": "ganathan",
         "original_owner": "NoSkilzPak",
-        "traded": true
+        "traded": true,
+        "birth_date": "2003-08-01"
       },
       {
         "pick_no": 16,
@@ -4123,7 +4534,8 @@ window.__STATIC_DATA__ = {
         "team": "NYJ",
         "picked_by": "velmixon",
         "original_owner": "andyxia124",
-        "traded": true
+        "traded": true,
+        "birth_date": "2001-10-11"
       },
       {
         "pick_no": 17,
@@ -4133,7 +4545,8 @@ window.__STATIC_DATA__ = {
         "team": "CHI",
         "picked_by": "eikichii952",
         "original_owner": "ddhk",
-        "traded": true
+        "traded": true,
+        "birth_date": "2004-04-09"
       },
       {
         "pick_no": 18,
@@ -4143,7 +4556,8 @@ window.__STATIC_DATA__ = {
         "team": "LAC",
         "picked_by": "ganathan",
         "original_owner": "Paul_Yoon",
-        "traded": true
+        "traded": true,
+        "birth_date": "2002-02-28"
       },
       {
         "pick_no": 19,
@@ -4153,7 +4567,8 @@ window.__STATIC_DATA__ = {
         "team": "HOU",
         "picked_by": "ngman",
         "original_owner": "paddleham",
-        "traded": true
+        "traded": true,
+        "birth_date": "2002-12-15"
       },
       {
         "pick_no": 20,
@@ -4163,7 +4578,8 @@ window.__STATIC_DATA__ = {
         "team": "NE",
         "picked_by": "eikichii952",
         "original_owner": "spiffster",
-        "traded": true
+        "traded": true,
+        "birth_date": "2002-11-13"
       },
       {
         "pick_no": 21,
@@ -4173,7 +4589,8 @@ window.__STATIC_DATA__ = {
         "team": "LV",
         "picked_by": "eikichii952",
         "original_owner": "velmixon",
-        "traded": true
+        "traded": true,
+        "birth_date": "2002-12-18"
       },
       {
         "pick_no": 22,
@@ -4183,7 +4600,8 @@ window.__STATIC_DATA__ = {
         "team": "JAX",
         "picked_by": "IconicJH",
         "original_owner": "IconicJH",
-        "traded": false
+        "traded": false,
+        "birth_date": "2003-02-14"
       },
       {
         "pick_no": 23,
@@ -4193,7 +4611,8 @@ window.__STATIC_DATA__ = {
         "team": "DAL",
         "picked_by": "ganathan",
         "original_owner": "ganathan",
-        "traded": false
+        "traded": false,
+        "birth_date": "2004-01-08"
       },
       {
         "pick_no": 24,
@@ -4203,7 +4622,8 @@ window.__STATIC_DATA__ = {
         "team": "NYJ",
         "picked_by": "eikichii952",
         "original_owner": "jonsung",
-        "traded": true
+        "traded": true,
+        "birth_date": "2004-05-08"
       },
       {
         "pick_no": 25,
@@ -4213,7 +4633,8 @@ window.__STATIC_DATA__ = {
         "team": "HOU",
         "picked_by": "ngman",
         "original_owner": "ngman",
-        "traded": false
+        "traded": false,
+        "birth_date": "2002-09-04"
       },
       {
         "pick_no": 26,
@@ -4223,7 +4644,8 @@ window.__STATIC_DATA__ = {
         "team": "WAS",
         "picked_by": "eikichii952",
         "original_owner": "eikichii952",
-        "traded": false
+        "traded": false,
+        "birth_date": "2002-05-01"
       },
       {
         "pick_no": 27,
@@ -4233,7 +4655,8 @@ window.__STATIC_DATA__ = {
         "team": "SEA",
         "picked_by": "spiffster",
         "original_owner": "NoSkilzPak",
-        "traded": true
+        "traded": true,
+        "birth_date": "2002-12-13"
       },
       {
         "pick_no": 28,
@@ -4243,7 +4666,8 @@ window.__STATIC_DATA__ = {
         "team": "CLE",
         "picked_by": "andyxia124",
         "original_owner": "andyxia124",
-        "traded": false
+        "traded": false,
+        "birth_date": "2002-02-07"
       },
       {
         "pick_no": 29,
@@ -4253,7 +4677,8 @@ window.__STATIC_DATA__ = {
         "team": "CLE",
         "picked_by": "andyxia124",
         "original_owner": "ddhk",
-        "traded": true
+        "traded": true,
+        "birth_date": "2004-09-14"
       },
       {
         "pick_no": 30,
@@ -4263,7 +4688,8 @@ window.__STATIC_DATA__ = {
         "team": "TEN",
         "picked_by": "NoSkilzPak",
         "original_owner": "Paul_Yoon",
-        "traded": true
+        "traded": true,
+        "birth_date": "2003-06-03"
       },
       {
         "pick_no": 31,
@@ -4273,7 +4699,8 @@ window.__STATIC_DATA__ = {
         "team": "NO",
         "picked_by": "spiffster",
         "original_owner": "paddleham",
-        "traded": true
+        "traded": true,
+        "birth_date": "2003-08-12"
       },
       {
         "pick_no": 32,
@@ -4283,7 +4710,8 @@ window.__STATIC_DATA__ = {
         "team": "SF",
         "picked_by": "NoSkilzPak",
         "original_owner": "spiffster",
-        "traded": true
+        "traded": true,
+        "birth_date": "2004-03-29"
       },
       {
         "pick_no": 33,
@@ -4293,7 +4721,8 @@ window.__STATIC_DATA__ = {
         "team": "CLE",
         "picked_by": "ganathan",
         "original_owner": "velmixon",
-        "traded": true
+        "traded": true,
+        "birth_date": "2004-07-20"
       },
       {
         "pick_no": 34,
@@ -4303,7 +4732,8 @@ window.__STATIC_DATA__ = {
         "team": "DET",
         "picked_by": "jonsung",
         "original_owner": "IconicJH",
-        "traded": true
+        "traded": true,
+        "birth_date": "2002-02-20"
       },
       {
         "pick_no": 35,
@@ -4313,7 +4743,8 @@ window.__STATIC_DATA__ = {
         "team": "IND",
         "picked_by": "spiffster",
         "original_owner": "ganathan",
-        "traded": true
+        "traded": true,
+        "birth_date": "2003-08-26"
       },
       {
         "pick_no": 36,
@@ -4323,7 +4754,8 @@ window.__STATIC_DATA__ = {
         "team": "",
         "picked_by": "velmixon",
         "original_owner": "jonsung",
-        "traded": true
+        "traded": true,
+        "birth_date": "1999-09-21"
       }
     ],
     "2026": [
@@ -4335,7 +4767,8 @@ window.__STATIC_DATA__ = {
         "team": "ARI",
         "picked_by": "eikichii952",
         "original_owner": "eikichii952",
-        "traded": false
+        "traded": false,
+        "birth_date": "2005-05-31"
       },
       {
         "pick_no": 2,
@@ -4345,7 +4778,8 @@ window.__STATIC_DATA__ = {
         "team": "TEN",
         "picked_by": "IconicJH",
         "original_owner": "Paul_Yoon",
-        "traded": true
+        "traded": true,
+        "birth_date": "2005-01-19"
       },
       {
         "pick_no": 3,
@@ -4355,7 +4789,8 @@ window.__STATIC_DATA__ = {
         "team": "NO",
         "picked_by": "paddleham",
         "original_owner": "paddleham",
-        "traded": false
+        "traded": false,
+        "birth_date": "2004-08-12"
       },
       {
         "pick_no": 4,
@@ -4365,7 +4800,8 @@ window.__STATIC_DATA__ = {
         "team": "LV",
         "picked_by": "velmixon",
         "original_owner": "spiffster",
-        "traded": true
+        "traded": true,
+        "birth_date": "2003-10-01"
       },
       {
         "pick_no": 5,
@@ -4375,7 +4811,8 @@ window.__STATIC_DATA__ = {
         "team": "PHI",
         "picked_by": "velmixon",
         "original_owner": "velmixon",
-        "traded": false
+        "traded": false,
+        "birth_date": "2004-06-02"
       },
       {
         "pick_no": 6,
@@ -4385,7 +4822,8 @@ window.__STATIC_DATA__ = {
         "team": "SEA",
         "picked_by": "Paul_Yoon",
         "original_owner": "IconicJH",
-        "traded": true
+        "traded": true,
+        "birth_date": "2003-10-09"
       },
       {
         "pick_no": 7,
@@ -4395,7 +4833,8 @@ window.__STATIC_DATA__ = {
         "team": "NYJ",
         "picked_by": "ngman",
         "original_owner": "ngman",
-        "traded": false
+        "traded": false,
+        "birth_date": "2003-12-14"
       },
       {
         "pick_no": 8,
@@ -4405,7 +4844,8 @@ window.__STATIC_DATA__ = {
         "team": "CLE",
         "picked_by": "velmixon",
         "original_owner": "NoSkilzPak",
-        "traded": true
+        "traded": true,
+        "birth_date": "2004-09-23"
       },
       {
         "pick_no": 9,
@@ -4415,7 +4855,8 @@ window.__STATIC_DATA__ = {
         "team": "NYJ",
         "picked_by": "paddleham",
         "original_owner": "ddhk",
-        "traded": true
+        "traded": true,
+        "birth_date": "2005-03-04"
       },
       {
         "pick_no": 10,
@@ -4425,7 +4866,8 @@ window.__STATIC_DATA__ = {
         "team": "CLE",
         "picked_by": "ngman",
         "original_owner": "ganathan",
-        "traded": true
+        "traded": true,
+        "birth_date": "2003-12-06"
       },
       {
         "pick_no": 11,
@@ -4435,7 +4877,8 @@ window.__STATIC_DATA__ = {
         "team": "LAR",
         "picked_by": "paddleham",
         "original_owner": "andyxia124",
-        "traded": true
+        "traded": true,
+        "birth_date": "2002-12-21"
       },
       {
         "pick_no": 12,
@@ -4445,7 +4888,8 @@ window.__STATIC_DATA__ = {
         "team": "PHI",
         "picked_by": "velmixon",
         "original_owner": "jonsung",
-        "traded": true
+        "traded": true,
+        "birth_date": "2003-04-15"
       },
       {
         "pick_no": 13,
@@ -4455,7 +4899,8 @@ window.__STATIC_DATA__ = {
         "team": "DEN",
         "picked_by": "paddleham",
         "original_owner": "eikichii952",
-        "traded": true
+        "traded": true,
+        "birth_date": "2003-08-20"
       },
       {
         "pick_no": 14,
@@ -4465,7 +4910,8 @@ window.__STATIC_DATA__ = {
         "team": "MIA",
         "picked_by": "Paul_Yoon",
         "original_owner": "Paul_Yoon",
-        "traded": false
+        "traded": false,
+        "birth_date": "2004-06-07"
       },
       {
         "pick_no": 15,
@@ -4475,7 +4921,8 @@ window.__STATIC_DATA__ = {
         "team": "WAS",
         "picked_by": "paddleham",
         "original_owner": "paddleham",
-        "traded": false
+        "traded": false,
+        "birth_date": "2004-07-14"
       },
       {
         "pick_no": 16,
@@ -4485,7 +4932,8 @@ window.__STATIC_DATA__ = {
         "team": "PIT",
         "picked_by": "eikichii952",
         "original_owner": "spiffster",
-        "traded": true
+        "traded": true,
+        "birth_date": "2003-12-02"
       },
       {
         "pick_no": 17,
@@ -4495,7 +4943,8 @@ window.__STATIC_DATA__ = {
         "team": "TEN",
         "picked_by": "Paul_Yoon",
         "original_owner": "velmixon",
-        "traded": true
+        "traded": true,
+        "birth_date": "2004-01-06"
       },
       {
         "pick_no": 18,
@@ -4505,7 +4954,8 @@ window.__STATIC_DATA__ = {
         "team": "NYG",
         "picked_by": "eikichii952",
         "original_owner": "IconicJH",
-        "traded": true
+        "traded": true,
+        "birth_date": "2003-08-26"
       },
       {
         "pick_no": 19,
@@ -4515,7 +4965,8 @@ window.__STATIC_DATA__ = {
         "team": "SF",
         "picked_by": "ngman",
         "original_owner": "ngman",
-        "traded": false
+        "traded": false,
+        "birth_date": "2002-12-18"
       },
       {
         "pick_no": 20,
@@ -4525,7 +4976,8 @@ window.__STATIC_DATA__ = {
         "team": "ARI",
         "picked_by": "NoSkilzPak",
         "original_owner": "NoSkilzPak",
-        "traded": false
+        "traded": false,
+        "birth_date": "2002-11-19"
       },
       {
         "pick_no": 21,
@@ -4535,7 +4987,8 @@ window.__STATIC_DATA__ = {
         "team": "ATL",
         "picked_by": "Paul_Yoon",
         "original_owner": "ddhk",
-        "traded": true
+        "traded": true,
+        "birth_date": "2004-03-29"
       },
       {
         "pick_no": 22,
@@ -4545,7 +4998,8 @@ window.__STATIC_DATA__ = {
         "team": "BUF",
         "picked_by": "ganathan",
         "original_owner": "ganathan",
-        "traded": false
+        "traded": false,
+        "birth_date": "2002-07-05"
       },
       {
         "pick_no": 23,
@@ -4555,7 +5009,8 @@ window.__STATIC_DATA__ = {
         "team": "KC",
         "picked_by": "ngman",
         "original_owner": "andyxia124",
-        "traded": true
+        "traded": true,
+        "birth_date": "2003-10-10"
       },
       {
         "pick_no": 24,
@@ -4565,7 +5020,8 @@ window.__STATIC_DATA__ = {
         "team": "LV",
         "picked_by": "ngman",
         "original_owner": "jonsung",
-        "traded": true
+        "traded": true,
+        "birth_date": "2003-07-03"
       },
       {
         "pick_no": 25,
@@ -4575,7 +5031,8 @@ window.__STATIC_DATA__ = {
         "team": "TB",
         "picked_by": "paddleham",
         "original_owner": "eikichii952",
-        "traded": true
+        "traded": true,
+        "birth_date": "2004-07-02"
       },
       {
         "pick_no": 26,
@@ -4585,7 +5042,8 @@ window.__STATIC_DATA__ = {
         "team": "MIN",
         "picked_by": "NoSkilzPak",
         "original_owner": "Paul_Yoon",
-        "traded": true
+        "traded": true,
+        "birth_date": "2003-10-09"
       },
       {
         "pick_no": 27,
@@ -4595,7 +5053,8 @@ window.__STATIC_DATA__ = {
         "team": "BAL",
         "picked_by": "paddleham",
         "original_owner": "paddleham",
-        "traded": false
+        "traded": false,
+        "birth_date": "2003-05-28"
       },
       {
         "pick_no": 28,
@@ -4605,7 +5064,8 @@ window.__STATIC_DATA__ = {
         "team": "WAS",
         "picked_by": "eikichii952",
         "original_owner": "spiffster",
-        "traded": true
+        "traded": true,
+        "birth_date": "2003-01-08"
       },
       {
         "pick_no": 29,
@@ -4615,7 +5075,8 @@ window.__STATIC_DATA__ = {
         "team": "LAC",
         "picked_by": "jonsung",
         "original_owner": "velmixon",
-        "traded": true
+        "traded": true,
+        "birth_date": "2003-07-25"
       },
       {
         "pick_no": 30,
@@ -4625,7 +5086,8 @@ window.__STATIC_DATA__ = {
         "team": "PIT",
         "picked_by": "NoSkilzPak",
         "original_owner": "IconicJH",
-        "traded": true
+        "traded": true,
+        "birth_date": "2003-06-28"
       },
       {
         "pick_no": 31,
@@ -4635,7 +5097,8 @@ window.__STATIC_DATA__ = {
         "team": "BAL",
         "picked_by": "ngman",
         "original_owner": "ngman",
-        "traded": false
+        "traded": false,
+        "birth_date": "2004-05-05"
       },
       {
         "pick_no": 32,
@@ -4645,7 +5108,8 @@ window.__STATIC_DATA__ = {
         "team": "MIA",
         "picked_by": "NoSkilzPak",
         "original_owner": "NoSkilzPak",
-        "traded": false
+        "traded": false,
+        "birth_date": "2003-02-12"
       },
       {
         "pick_no": 33,
@@ -4655,7 +5119,8 @@ window.__STATIC_DATA__ = {
         "team": "CAR",
         "picked_by": "spiffster",
         "original_owner": "ddhk",
-        "traded": true
+        "traded": true,
+        "birth_date": "2003-09-22"
       },
       {
         "pick_no": 34,
@@ -4665,7 +5130,8 @@ window.__STATIC_DATA__ = {
         "team": "CLE",
         "picked_by": "ddhk",
         "original_owner": "ganathan",
-        "traded": true
+        "traded": true,
+        "birth_date": "2002-10-18"
       },
       {
         "pick_no": 35,
@@ -4675,7 +5141,8 @@ window.__STATIC_DATA__ = {
         "team": "SF",
         "picked_by": "Paul_Yoon",
         "original_owner": "andyxia124",
-        "traded": true
+        "traded": true,
+        "birth_date": "2001-10-17"
       },
       {
         "pick_no": 36,
@@ -4685,7 +5152,8 @@ window.__STATIC_DATA__ = {
         "team": "IND",
         "picked_by": "paddleham",
         "original_owner": "jonsung",
-        "traded": true
+        "traded": true,
+        "birth_date": "2001-10-23"
       }
     ]
   },
