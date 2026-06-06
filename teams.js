@@ -2,6 +2,7 @@ import { api } from "./dataService.js";
 import { renderNav } from "./components/nav.js";
 
 const YEARS = ["2023", "2024", "2025", "2026"];
+const POS_ORDER = ["QB", "RB", "WR", "TE", "K", "DEF"];
 let statsCache = {};
 const espnIdCache = {};
 
@@ -31,21 +32,39 @@ async function init() {
         title.textContent = team.owner || `Roster ${team.roster_id}`;
         card.appendChild(title);
 
+        // Group players by position
+        const grouped = {};
         (team.players || []).forEach(p => {
             if (!p || !p.name) return;
+            const pos = p.position || "OTHER";
+            if (!grouped[pos]) grouped[pos] = [];
+            grouped[pos].push(p);
+        });
 
-            const row = document.createElement("div");
-            row.className = "player";
-            row.innerHTML = `
-                <span>${p.name}</span>
-                <span>${p.position || ""}</span>
-            `;
+        const sortedPos = POS_ORDER.filter(p => grouped[p])
+            .concat(Object.keys(grouped).filter(p => !POS_ORDER.includes(p)));
 
-            row.addEventListener("click", (e) => {
-                openPopover(e.currentTarget, p);
+        sortedPos.forEach(pos => {
+            // Position divider
+            const divider = document.createElement("div");
+            divider.className = "position-divider";
+            divider.textContent = pos;
+            card.appendChild(divider);
+
+            grouped[pos].forEach(p => {
+                const row = document.createElement("div");
+                row.className = "player";
+                const posClrMap = { QB: "#fee2e2", RB: "#dcfce7", WR: "#dbeafe", TE: "#fef9c3", K: "#f3e8ff", DEF: "#f1f5f9" };
+                const rowColor = posClrMap[p.position] || "#f9fafb";
+                row.style.background = rowColor;
+                row.innerHTML = `<span>${p.name}</span>`;
+
+                row.addEventListener("click", (e) => {
+                    openPopover(e.currentTarget, p);
+                });
+
+                card.appendChild(row);
             });
-
-            card.appendChild(row);
         });
 
         container.appendChild(card);
@@ -132,7 +151,6 @@ async function openPopover(element, player) {
         ? `https://a.espncdn.com/i/headshots/nfl/players/full/${player.espn_id}.png`
         : `https://sleepercdn.com/content/nfl/players/thumb/${pid}.jpg`;
 
-    // PPR rank history — only years with pts > 0
     let historyRows = "";
     for (const year of YEARS) {
         const stat = statsCache?.[year]?.[pid];
@@ -163,6 +181,13 @@ async function openPopover(element, player) {
                 display: flex;
                 gap: 12px;
                 align-items: center;
+                position: relative;
+            }
+            .pc-close {
+                position: absolute; top: 10px; right: 10px;
+                background: rgba(255,255,255,0.15); border: none; color: #fff;
+                width: 24px; height: 24px; border-radius: 50%; cursor: pointer;
+                font-size: 14px; display: flex; align-items: center; justify-content: center;
             }
             .pc-headshot {
                 width: 72px; height: 72px;
@@ -198,8 +223,8 @@ async function openPopover(element, player) {
             .pc-injury-long { font-size:11px; color:#6b7280; line-height:1.5; }
         </style>
 
-        <button onclick="document.getElementById('player-popover').style.display='none'" style="position:absolute;top:10px;right:10px;background:rgba(255,255,255,0.15);border:none;color:#fff;width:24px;height:24px;border-radius:50%;cursor:pointer;font-size:14px;display:flex;align-items:center;justify-content:center;z-index:1;">✕</button>
-        <div class="pc-header" style="position:relative;">
+        <div class="pc-header">
+            <button class="pc-close" onclick="document.getElementById('player-popover').style.display='none'">✕</button>
             <img class="pc-headshot" src="${headshotUrl}"
                 onerror="this.src='https://sleepercdn.com/content/nfl/players/thumb/${pid}.jpg'" />
             <div style="flex:1;min-width:0;">
@@ -236,7 +261,6 @@ async function openPopover(element, player) {
         </div>
     `;
 
-    // Position popover
     const rect = element.getBoundingClientRect();
     popover.style.display = "block";
     popover.style.position = "fixed";
@@ -246,7 +270,6 @@ async function openPopover(element, player) {
         popover.style.left = `${rect.left - 372}px`;
     }
 
-    // Resolve ESPN ID
     const espnId = player.espn_id || await lookupEspnId(player.name);
 
     if (!espnId) {
@@ -267,7 +290,6 @@ async function openPopover(element, player) {
             fetch(`https://site.api.espn.com/apis/common/v3/sports/football/nfl/athletes/${espnId}`).then(r => r.json()),
         ]);
 
-        // Career Stats
         const statsEl = document.getElementById("espn-stats");
         const categories = statsData.categories || [];
         const catPriority = { QB: "Passing", RB: "Rushing", WR: "Receiving", TE: "Receiving", K: "Scoring" };
@@ -311,13 +333,11 @@ async function openPopover(element, player) {
             statsEl.innerHTML = `<div class="pc-section-title">Career Stats</div><div style="color:#9ca3af;font-size:12px;">No stats available</div>`;
         }
 
-        // News
         const newsEl = document.getElementById("espn-news");
         const articles = newsData.articles || [];
         const injuries = athleteData.athlete?.injuries || [];
 
         let newsHtml = "";
-
         injuries.forEach(inj => {
             newsHtml += `
                 <div class="pc-news-item">
