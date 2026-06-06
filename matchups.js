@@ -139,8 +139,8 @@ function buildChart(t1, t2) {
         pts2.push(cum2);
     }
 
-    const W = 360, H = 90;
-    const PAD = { t: 8, r: 8, b: 20, l: 36 };
+    const W = 480, H = 160;
+    const PAD = { t: 12, r: 16, b: 28, l: 40 };
     const maxPts = Math.max(...pts1, ...pts2, 50);
     const gW = W - PAD.l - PAD.r;
     const gH = H - PAD.t - PAD.b;
@@ -158,31 +158,31 @@ function buildChart(t1, t2) {
     // Y axis labels
     const yTicks = [0, Math.round(maxPts / 2), Math.round(maxPts)];
     const yTicksHtml = yTicks.map(v =>
-        `<text x="${PAD.l - 4}" y="${yScale(v) + 4}" text-anchor="end" style="font-size:9px;fill:#5a6070;">${v}</text>`
+        `<text x="${PAD.l - 6}" y="${yScale(v) + 4}" text-anchor="end" style="font-size:10px;fill:#5a6070;">${v}</text>`
     ).join("");
 
     // Final score labels at end of lines
     const finalLabel = (pts, color, isTop) => {
-        const x = xScale(n) + 3;
+        const x = xScale(n) + 5;
         const y = yScale(pts[pts.length - 1]);
-        return `<text x="${x}" y="${y + (isTop ? -3 : 9)}" style="font-size:9px;font-weight:700;fill:${color};">${pts[pts.length-1].toFixed(1)}</text>`;
+        return `<text x="${x}" y="${y + (isTop ? -4 : 11)}" style="font-size:10px;font-weight:700;fill:${color};">${pts[pts.length-1].toFixed(1)}</text>`;
     };
 
-    return `<svg width="${W}" height="${H}" viewBox="0 0 ${W} ${H}" style="display:block;overflow:visible;max-width:100%;">
+    return `<svg width="${W}" height="${H}" viewBox="0 0 ${W} ${H}" style="display:block;overflow:visible;max-width:100%;margin:0 auto;">
         <!-- grid lines -->
-        ${yTicks.map(v => `<line x1="${PAD.l}" y1="${yScale(v)}" x2="${PAD.l + gW}" y2="${yScale(v)}" stroke="#2d3139" stroke-width="0.5"/>`).join("")}
+        ${yTicks.map(v => `<line x1="${PAD.l}" y1="${yScale(v)}" x2="${PAD.l + gW}" y2="${yScale(v)}" stroke="#2d3139" stroke-width="0.8"/>`).join("")}
         <!-- x axis -->
-        <line x1="${PAD.l}" y1="${PAD.t + gH}" x2="${PAD.l + gW}" y2="${PAD.t + gH}" stroke="#2d3139" stroke-width="0.5"/>
+        <line x1="${PAD.l}" y1="${PAD.t + gH}" x2="${PAD.l + gW}" y2="${PAD.t + gH}" stroke="#2d3139" stroke-width="0.8"/>
         ${yTicksHtml}
         <!-- lines -->
-        <polyline points="${polyline(pts2)}" fill="none" stroke="${c2}" stroke-width="1.5" stroke-linejoin="round"/>
-        <polyline points="${polyline(pts1)}" fill="none" stroke="${c1}" stroke-width="1.5" stroke-linejoin="round"/>
+        <polyline points="${polyline(pts2)}" fill="none" stroke="${c2}" stroke-width="2" stroke-linejoin="round"/>
+        <polyline points="${polyline(pts1)}" fill="none" stroke="${c1}" stroke-width="2" stroke-linejoin="round"/>
         <!-- dots at final point -->
-        <circle cx="${xScale(n)}" cy="${yScale(pts1[n])}" r="3" fill="${c1}"/>
-        <circle cx="${xScale(n)}" cy="${yScale(pts2[n])}" r="3" fill="${c2}"/>
-        <!-- name + score labels -->
-        <text x="${PAD.l}" y="${H - 4}" style="font-size:9px;fill:${c1};">${t1.owner}</text>
-        <text x="${PAD.l + gW / 2}" y="${H - 4}" text-anchor="middle" style="font-size:9px;fill:${c2};">${t2.owner}</text>
+        <circle cx="${xScale(n)}" cy="${yScale(pts1[n])}" r="4" fill="${c1}"/>
+        <circle cx="${xScale(n)}" cy="${yScale(pts2[n])}" r="4" fill="${c2}"/>
+        <!-- name labels at bottom -->
+        <text x="${PAD.l}" y="${H - 6}" style="font-size:10px;fill:${c1};">${t1.owner}</text>
+        <text x="${PAD.l + gW / 2}" y="${H - 6}" text-anchor="middle" style="font-size:10px;fill:${c2};">${t2.owner}</text>
         ${finalLabel(pts1, c1, pts1[n] >= pts2[n])}
         ${finalLabel(pts2, c2, pts2[n] > pts1[n])}
     </svg>`;
@@ -304,8 +304,8 @@ function renderMatchup(matchup, weekStr, weekStats) {
             <div style="width:1px;background:#2d3139;"></div>
             ${teamCol(t2, t2win)}
         </div>
-        ${chart ? `<div style="padding:10px 16px 10px;border-top:1px solid #2d3139;background:#171a20;">
-            <div style="font-size:9px;font-weight:700;text-transform:uppercase;letter-spacing:.07em;color:#5a6070;margin-bottom:6px;">Score progression</div>
+        ${chart ? `<div style="padding:14px 20px 16px;border-top:1px solid #2d3139;background:#171a20;display:flex;flex-direction:column;align-items:center;">
+            <div style="font-size:9px;font-weight:700;text-transform:uppercase;letter-spacing:.07em;color:#5a6070;margin-bottom:10px;align-self:flex-start;">Score progression</div>
             ${chart}
         </div>` : ""}
         ${recap ? `<div style="padding:10px 16px 14px;background:#171a20;border-top:1px solid #1a1c22;">
