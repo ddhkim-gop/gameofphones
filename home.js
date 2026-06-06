@@ -122,26 +122,27 @@ function teamLogoHome(abbrev) {
 }
 
 // Best player on each team's current roster for the given year's stats
+// Returns { player, score, year } or null
 function bestPlayerForTeam(teamName, year) {
     const teamRosters = rostersData?.["2026"] || [];
     const roster = teamRosters.find(r => r.owner === teamName);
     if (!roster) return null;
-    // Try selected year, then adjacent years as fallback
     const tryYears = year && year !== "all_time"
         ? [year, "2025", "2024", "2023"]
         : ["2025", "2024", "2023"];
-    let best = null, bestScore = -1;
+    let best = null, bestScore = -1, bestYear = null;
     (roster.players || []).forEach(p => {
         if (!p?.player_id) return;
         const pid = p.player_id;
-        let score = 0;
         for (const y of tryYears) {
             const s = statsCache[y]?.[pid]?.pts_half_ppr;
-            if (s > 0) { score = s; break; }
+            if (s > 0) {
+                if (s > bestScore) { bestScore = s; best = p; bestYear = y; }
+                break;
+            }
         }
-        if (score > bestScore) { bestScore = score; best = p; }
     });
-    return best;
+    return best ? { player: best, score: bestScore, year: bestYear } : null;
 }
 
 function renderStandingsTable(rows, playoffRec, isAllTime, faabRemaining) {
@@ -178,13 +179,16 @@ function renderStandingsTable(rows, playoffRec, isAllTime, faabRemaining) {
         const faabCell = !isAllTime
             ? `<td style="${TD};${faabLeft != null && faabLeft < 20 ? 'color:#f87171;font-weight:700;' : ''}">${faabLeft != null ? `$${faabLeft}` : "—"}</td>`
             : "";
-        const bp = bestPlayerForTeam(r.name, isAllTime ? "2025" : selectedYear);
+        const bpResult = bestPlayerForTeam(r.name, isAllTime ? null : selectedYear);
+        const bp = bpResult?.player;
         const bpCell = bp
-            ? `<td style="${TD};text-align:left;max-width:150px;">
-                <div style="display:flex;align-items:center;gap:5px;min-width:0;">
+            ? `<td style="${TD};text-align:left;max-width:180px;">
+                <div style="display:flex;align-items:center;gap:5px;min-width:0;flex-wrap:wrap;">
                     <span style="background:${posColorHome(bp.position)};color:#fff;font-size:9px;font-weight:800;padding:1px 5px;border-radius:3px;flex-shrink:0;">${bp.position||"?"}</span>
                     <span style="font-size:11px;font-weight:600;color:#f0f1f3;overflow:hidden;text-overflow:ellipsis;white-space:nowrap;" title="${bp.name}">${bp.name}</span>
                     ${bp.team ? `<img src="${teamLogoHome(bp.team)}" style="width:13px;height:13px;object-fit:contain;flex-shrink:0;" onerror="this.style.display='none'">` : ""}
+                    ${isAllTime && bpResult.year ? `<span style="font-size:10px;color:#5a6070;flex-shrink:0;">${bpResult.year}</span>` : ""}
+                    ${bpResult.score > 0 ? `<span style="font-size:10px;font-weight:700;color:#8b9099;flex-shrink:0;">${bpResult.score.toFixed(1)}</span>` : ""}
                 </div>
               </td>`
             : `<td style="${TD}">—</td>`;
