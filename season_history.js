@@ -221,36 +221,25 @@ function buildPlacementBracketHtml(winners, champPath) {
 
     if (!place3 && !place5 && !place7) return "";
 
-    const parts = [];
+    const thirdHtml = champR2.length && place3
+        ? `<div><div style="margin-bottom:6px;font-size:9px;font-weight:700;text-transform:uppercase;letter-spacing:.06em;color:#5a6070;">3rd Place</div><div class="bracket-wrap">${buildBracketSVG([...champR2, place3])}</div></div>`
+        : place3 ? renderPlacementCard(place3) : "";
 
-    // 3rd place bracket: champR2 losers → 3rd place
-    if (champR2.length && place3) {
-        parts.push(`
-            <div style="margin-bottom:6px;font-size:9px;font-weight:700;text-transform:uppercase;letter-spacing:.06em;color:#5a6070;">3rd Place</div>
-            <div class="bracket-wrap">${buildBracketSVG([...champR2, place3])}</div>
-        `);
-    } else if (place3) {
-        parts.push(renderPlacementCard(place3));
-    }
+    const fifthHtml = consolR2.length && place5
+        ? `<div><div style="margin-bottom:6px;font-size:9px;font-weight:700;text-transform:uppercase;letter-spacing:.06em;color:#5a6070;">5th Place</div><div class="bracket-wrap">${buildBracketSVG([...consolR2, place5])}</div></div>`
+        : place5 ? renderPlacementCard(place5) : "";
 
-    // 5th place bracket: consolR2 winners → 5th place
-    if (consolR2.length && place5) {
-        parts.push(`
-            <div style="margin-top:18px;margin-bottom:6px;font-size:9px;font-weight:700;text-transform:uppercase;letter-spacing:.06em;color:#5a6070;">5th Place</div>
-            <div class="bracket-wrap">${buildBracketSVG([...consolR2, place5])}</div>
-        `);
-    } else if (place5) {
-        parts.push(renderPlacementCard(place5));
-    }
-
-    // 7th place: standalone card (consolR2 losers — those games already shown above)
-    if (place7) {
-        parts.push(`<div style="margin-top:12px;display:flex;gap:10px;flex-wrap:wrap;">${renderPlacementCard(place7)}</div>`);
-    }
+    const seventhHtml = place7
+        ? `<div style="margin-top:12px;display:flex;gap:10px;flex-wrap:wrap;">${renderPlacementCard(place7)}</div>`
+        : "";
 
     return `
         <div class="sh-section-title" style="margin-top:20px;">Placement Games</div>
-        ${parts.join("")}
+        <div style="display:flex;gap:24px;flex-wrap:wrap;align-items:flex-start;">
+            ${thirdHtml}
+            ${fifthHtml}
+        </div>
+        ${seventhHtml}
     `;
 }
 
@@ -690,6 +679,60 @@ function generateSeasonRecap(year, s) {
         sections.push({ title: "Transactions", text: txText });
     }
 
+    // ── Playoffs ─────────────────────────────────────────────────────────────
+    if (winners.length > 0) {
+        const place3Match  = winners.find(m => m.place === 3);
+        const place5Match  = winners.find(m => m.place === 5);
+        const place7Match  = winners.find(m => m.place === 7);
+        const third   = place3Match?.winner || null;
+        const fifth   = place5Match?.winner || null;
+        const seventh = place7Match?.winner || null;
+        const champMatchLocal = winners.find(m => m.place === 1);
+        const secondLocal = champMatchLocal?.loser || null;
+        const champSeedLocal = standings.findIndex(t => t.name === champ) + 1;
+
+        let playText = "";
+
+        if (champMatchLocal) {
+            const margin = champMatchLocal.team1_pts != null && champMatchLocal.team2_pts != null
+                ? Math.abs(champMatchLocal.team1_pts - champMatchLocal.team2_pts).toFixed(1) : null;
+            playText += `<strong>${champ}</strong> claimed the championship`;
+            if (secondLocal) playText += `, defeating <strong>${secondLocal}</strong>`;
+            if (margin) playText += ` by ${margin} points`;
+            playText += `. `;
+            if (champSeedLocal > 3) {
+                playText += `Coming in as the ${ordinal(champSeedLocal)} seed, it was a run that nobody saw coming. `;
+            } else if (standings[0]?.name !== champ) {
+                playText += `They backed up their seeding with a decisive postseason run. `;
+            }
+        }
+
+        if (secondLocal) {
+            const secondSeed = standings.findIndex(t => t.name === secondLocal) + 1;
+            if (secondSeed === 1) {
+                playText += `<strong>${secondLocal}</strong> had the best record all year but came up short when it mattered most. `;
+            } else {
+                playText += `<strong>${secondLocal}</strong> made it to the finals as the ${ordinal(secondSeed)} seed before falling short. `;
+            }
+        }
+
+        if (third) {
+            const margin3 = place3Match?.team1_pts != null && place3Match?.team2_pts != null
+                ? Math.abs(place3Match.team1_pts - place3Match.team2_pts).toFixed(1) : null;
+            playText += `<strong>${third}</strong> took 3rd place${margin3 ? ` by ${margin3} points` : ""}. `;
+        }
+        if (fifth) playText += `<strong>${fifth}</strong> finished 5th. `;
+        if (seventh) playText += `<strong>${seventh}</strong> finished 7th. `;
+
+        const nonPlayoff = standings.filter(t => !new Set([...winners.flatMap(m => [m.team1, m.team2])]).has(t.name));
+        const bestMissed = [...nonPlayoff].sort((a,b) => b.pf - a.pf)[0];
+        if (bestMissed && standings[7] && bestMissed.pf > standings[7].pf) {
+            playText += `Outside the bracket, <strong>${bestMissed.name}</strong> scored more than the 8th seed on pure points — a reminder that schedule luck shapes who gets in. `;
+        }
+
+        if (playText) sections.push({ title: "Playoffs", text: playText });
+    }
+
     return sections.map(sec => `
         <div style="margin-bottom:16px;">
             <div style="font-size:10px;font-weight:700;text-transform:uppercase;letter-spacing:.07em;color:#5a6070;margin-bottom:6px;">${sec.title}</div>
@@ -766,7 +809,11 @@ function renderSeason(year) {
         </div>
     `;
 
-    const champBadge = champ ? `<div class="sh-champion">🏆 ${champ}</div>` : "";
+    const champBadge = [
+        champ       ? `<div class="sh-champion">🏆 ${champ}</div>` : "",
+        secondPlace ? `<div class="sh-place-badge sh-silver">🥈 ${secondPlace}</div>` : "",
+        thirdPlace  ? `<div class="sh-place-badge sh-bronze">🥉 ${thirdPlace}</div>` : "",
+    ].filter(Boolean).join("");
     const draftOrderHtml = renderDraftOrder(year);
     const teamList = standings.map(t => t.name);
 
@@ -779,8 +826,8 @@ function renderSeason(year) {
     });
 
     const recapCard = seasonHtml ? `
-        <div class="card" style="padding:16px 20px;background:#1e2027;border-color:#2d3139;">
-            <div style="display:flex;align-items:center;gap:12px;margin-bottom:16px;flex-wrap:wrap;">
+        <div class="card" style="padding:16px 20px;background:#1e2027;border-color:#2d3139;display:flex;flex-direction:column;box-sizing:border-box;">
+            <div style="display:flex;align-items:center;gap:12px;margin-bottom:16px;flex-wrap:wrap;flex-shrink:0;">
                 <div class="sh-section-title" style="margin:0;">Summary</div>
                 <select style="font-size:12px;padding:4px 8px;" onchange="(function(sel){
                     var year='${year}', val=sel.value;
@@ -792,7 +839,7 @@ function renderSeason(year) {
                     ${teamList.map(t => `<option value="${t}">${t}</option>`).join("")}
                 </select>
             </div>
-            <div id="sh-recap-${year}">${seasonHtml}</div>
+            <div id="sh-recap-${year}" style="flex:1;overflow-y:auto;">${seasonHtml}</div>
         </div>` : "";
 
     return `
@@ -862,7 +909,10 @@ async function init() {
             border:1px solid #b45309; border-radius:999px;
             padding:4px 14px; font-size:13px; font-weight:700; color:#fbbf24;
         }
-        .sh-grid { display:grid; grid-template-columns:280px 1fr; gap:20px; align-items:start; min-width:0; }
+        .sh-place-badge { border-radius:999px; padding:4px 14px; font-size:13px; font-weight:700; }
+        .sh-silver { background:linear-gradient(135deg,#141a2e,#1c2640); border:1px solid #64748b; color:#c8d6e5; }
+        .sh-bronze { background:linear-gradient(135deg,#1c1608,#231d0b); border:1px solid #7c5f2a; color:#cd9b5a; }
+        .sh-grid { display:grid; grid-template-columns:280px 1fr; gap:20px; align-items:stretch; min-width:0; }
         .sh-grid > * { min-width:0; }
         .sh-section-title {
             font-size:10px; text-transform:uppercase; letter-spacing:0.07em;
