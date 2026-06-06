@@ -84,16 +84,19 @@ function renderPickCard(p, roundNum) {
     }).replace(/'/g,"&#39;")}' style="
         background:${bg};border-radius:8px;padding:7px 8px;
         height:${CARD_H}px;box-sizing:border-box;
-        display:flex;flex-direction:column;gap:2px;
+        display:flex;flex-direction:column;gap:3px;
         cursor:pointer;transition:filter .12s;
     " onmouseenter="this.style.filter='brightness(.9)'" onmouseleave="this.style.filter=''">
 
-        <div style="font-size:9px;font-weight:700;color:rgba(0,0,0,0.38);letter-spacing:.02em;">${label}</div>
+        <!-- Row 1: name (left) + pick number (right) -->
+        <div style="display:flex;align-items:flex-start;justify-content:space-between;gap:4px;">
+            <div style="font-size:12px;font-weight:800;color:rgba(0,0,0,.85);line-height:1.2;
+                        overflow:hidden;text-overflow:ellipsis;white-space:nowrap;flex:1;min-width:0;">${name}</div>
+            <div style="font-size:9px;font-weight:700;color:rgba(0,0,0,0.38);letter-spacing:.02em;flex-shrink:0;white-space:nowrap;">${label}</div>
+        </div>
 
-        <div style="font-size:12px;font-weight:800;color:rgba(0,0,0,.85);line-height:1.2;
-                    overflow:hidden;text-overflow:ellipsis;white-space:nowrap;flex-shrink:0;">${name}</div>
-
-        <div style="display:flex;align-items:center;gap:4px;flex-shrink:0;">
+        <!-- Row 2: pos badge + NFL team -->
+        <div style="display:flex;align-items:center;gap:4px;">
             <span style="background:${fg};color:#fff;border-radius:3px;padding:1px 5px;
                          font-size:8px;font-weight:800;letter-spacing:.04em;flex-shrink:0;">${pos||"—"}</span>
             <span style="font-size:9px;color:rgba(0,0,0,.5);overflow:hidden;text-overflow:ellipsis;white-space:nowrap;">
@@ -101,18 +104,14 @@ function renderPickCard(p, roundNum) {
             </span>
         </div>
 
+        <!-- Row 3: picker avatar + name (bottom), with → if traded -->
         <div style="margin-top:auto;display:flex;align-items:center;gap:4px;min-width:0;">
+            ${traded ? `<span style="font-size:10px;color:rgba(0,0,0,.4);flex-shrink:0;font-weight:700;">→</span>` : ""}
             ${avatarEl(p.picked_by, 14)}
             <span style="font-size:9px;color:rgba(0,0,0,.55);overflow:hidden;text-overflow:ellipsis;white-space:nowrap;flex:1;">
                 ${p.picked_by||"—"}
             </span>
         </div>
-        ${traded ? `
-        <div style="display:flex;align-items:center;gap:3px;min-width:0;">
-            <span style="font-size:9px;color:rgba(0,0,0,.35);flex-shrink:0;">→</span>
-            ${avatarEl(p.original_owner, 12)}
-            <span style="font-size:8px;color:rgba(0,0,0,.35);overflow:hidden;text-overflow:ellipsis;white-space:nowrap;">${p.original_owner}</span>
-        </div>` : ""}
     </div>`;
 }
 
