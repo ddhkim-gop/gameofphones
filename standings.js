@@ -5,6 +5,7 @@ let standings = null;
 let transactions = null;
 let history = null;
 let leagueUsers = [];
+let divisionsData = {};
 let currentView = "2025";
 
 const FAAB_BUDGET = 100;
@@ -221,6 +222,30 @@ function renderTable(rows, txStats, year, playoffRecords, isAllTime) {
     return html;
 }
 
+function renderDivisions(allRows, txStats, year, playoffRecords) {
+    const divMap = divisionsData[year] || {};
+    const hasDivs = Object.keys(divMap).length > 0;
+
+    if (!hasDivs) {
+        return renderTable(allRows, txStats, year, playoffRecords, false);
+    }
+
+    const div1 = allRows.filter(r => divMap[r.name] === 1).sort((a, b) => b.wins - a.wins || b.pf - a.pf);
+    const div2 = allRows.filter(r => divMap[r.name] === 2).sort((a, b) => b.wins - a.wins || b.pf - a.pf);
+    const unassigned = allRows.filter(r => divMap[r.name] == null);
+
+    const DIV_LABEL = `
+        <div style="font-size:10px;font-weight:700;text-transform:uppercase;letter-spacing:.08em;
+            color:#5a6070;padding:10px 12px 6px;margin-top:12px;border-bottom:1px solid #2d3139;">
+    `;
+
+    let html = "";
+    if (div1.length) html += `${DIV_LABEL}Division 1</div>` + renderTable(div1, txStats, year, playoffRecords, false);
+    if (div2.length) html += `${DIV_LABEL}Division 2</div>` + renderTable(div2, txStats, year, playoffRecords, false);
+    if (unassigned.length) html += `${DIV_LABEL}Other</div>` + renderTable(unassigned, txStats, year, playoffRecords, false);
+    return html;
+}
+
 function render() {
     const board = document.getElementById("s-board");
     const label = document.getElementById("s-label");
@@ -236,7 +261,7 @@ function render() {
         label.textContent = `${currentView} Season`;
         const rows = standings[currentView] || [];
         const playoffRecords = buildPlayoffRecords(history, currentView);
-        board.innerHTML = renderTable(rows, txStats, currentView, playoffRecords, false);
+        board.innerHTML = renderDivisions(rows, txStats, currentView, playoffRecords);
     }
 }
 
@@ -329,11 +354,12 @@ async function init() {
     `;
 
     try {
-        [standings, transactions, history, leagueUsers] = await Promise.all([
+        [standings, transactions, history, leagueUsers, divisionsData] = await Promise.all([
             api.getStandings(),
             api.getTransactions(),
             api.getSeasonHistory(),
             api.getLeagueUsers(),
+            api.getDivisions(),
         ]);
 
         const controls = document.getElementById("s-controls");

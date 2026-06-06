@@ -63198,5 +63198,63 @@ window.__STATIC_DATA__ = {
         }
       ]
     }
+  },
+  "divisions": {
+    "2026": {
+      "ddhk": 1,
+      "spiffster": 1,
+      "NoSkilzPak": 1,
+      "jonsung": 1,
+      "andyxia124": 2,
+      "IconicJH": 1,
+      "Paul_Yoon": 2,
+      "eikichii952": 1,
+      "paddleham": 2,
+      "velmixon": 2,
+      "ngman": 2,
+      "ganathan": 2
+    },
+    "2025": {
+      "ddhk": 1,
+      "spiffster": 1,
+      "NoSkilzPak": 1,
+      "jonsung": 1,
+      "andyxia124": 2,
+      "IconicJH": 1,
+      "Paul_Yoon": 2,
+      "eikichii952": 1,
+      "paddleham": 2,
+      "velmixon": 2,
+      "ngman": 2,
+      "ganathan": 2
+    },
+    "2024": {
+      "ddhk": 1,
+      "spiffster": 1,
+      "NoSkilzPak": 1,
+      "jonsung": 1,
+      "andyxia124": 2,
+      "IconicJH": 1,
+      "Paul_Yoon": 2,
+      "eikichii952": 1,
+      "riqi": 2,
+      "urmummma": 2,
+      "ngman": 2,
+      "ganathan": 2
+    },
+    "2023": {
+      "ddhk": 1,
+      "spiffster": 1,
+      "NoSkilzPak": 1,
+      "jonsung": 1,
+      "andyxia124": 2,
+      "IconicJH": 1,
+      "Paul_Yoon": 2,
+      "eikichii952": 1,
+      "riqi": 2,
+      "shmyung": 2,
+      "edgxrjiang": 2,
+      "ganathan": 2
+    }
   }
 };

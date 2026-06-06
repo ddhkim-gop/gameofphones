@@ -157,8 +157,17 @@ async function init() {
                 badge.style.cssText = `background:${posColor(p.position)};color:#fff;font-size:10px;font-weight:800;padding:2px 6px;border-radius:4px;flex-shrink:0;letter-spacing:.02em;`;
 
                 const nameSpan = document.createElement("span");
-                nameSpan.textContent = p.name;
-                nameSpan.style.cssText = "font-size:13px;font-weight:600;color:#f0f1f3;flex:1;text-align:left;overflow:hidden;text-overflow:ellipsis;white-space:nowrap;";
+                nameSpan.style.cssText = "font-size:13px;font-weight:600;color:#f0f1f3;flex:1;text-align:left;overflow:hidden;text-overflow:ellipsis;white-space:nowrap;display:flex;align-items:center;gap:5px;";
+                const nameText = document.createElement("span");
+                nameText.textContent = p.name;
+                nameText.style.cssText = "overflow:hidden;text-overflow:ellipsis;white-space:nowrap;";
+                nameSpan.appendChild(nameText);
+                if (p.years_exp === 0) {
+                    const rookie = document.createElement("span");
+                    rookie.textContent = "R";
+                    rookie.style.cssText = "font-size:9px;font-weight:800;color:#fff;background:#f59e0b;border-radius:3px;padding:1px 4px;flex-shrink:0;letter-spacing:.03em;";
+                    nameSpan.appendChild(rookie);
+                }
 
                 const metaSpan = document.createElement("span");
                 metaSpan.style.cssText = "font-size:11px;color:#5a6070;flex-shrink:0;white-space:nowrap;display:flex;align-items:center;gap:4px;";
