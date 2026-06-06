@@ -6,34 +6,25 @@
     <title>Draft</title>
     <link rel="stylesheet" href="style.css">
 </head>
-
 <body>
-
 <div id="nav"></div>
-
 <main>
     <h1>Draft</h1>
 
-    <div class="card">
-        <label for="yearSelect"><strong>Select Draft Year:</strong></label>
+    <div style="display:flex;align-items:center;gap:16px;margin-bottom:16px;flex-wrap:wrap;">
         <select id="yearSelect">
             <option value="2026">2026</option>
             <option value="2025">2025</option>
             <option value="2024">2024</option>
             <option value="2023">2023</option>
         </select>
-    </div>
-
-    <div class="card">
-        <h3>Positional Breakdown</h3>
-        <div id="position-stats">Loading...</div>
+        <div id="position-stats"></div>
     </div>
 
     <div id="draft-container">Loading...</div>
 </main>
 
 <script src="data.js"></script>
-<script type="module" src="draft.js"></script>
-
+<script type="module" src="draft.js?v=20260606a"></script>
 </body>
 </html>

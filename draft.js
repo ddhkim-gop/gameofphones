@@ -1,307 +1,338 @@
 import { api } from "./dataService.js";
 import { renderNav } from "./components/nav.js";
 
-function el(id) { return document.getElementById(id); }
-function safeName(v) { return (v == null || v === "") ? "Unknown" : v; }
+const PICK_BG = { QB:"#fda4af", RB:"#86efac", WR:"#93c5fd", TE:"#fdba74", K:"#c4b5fd", DEF:"#94a3b8" };
+const PICK_FG = { QB:"#e74c82", RB:"#16a34a", WR:"#2563eb", TE:"#d97706", K:"#7c3aed", DEF:"#475569" };
 
-const PICK_COLORS = {
-    QB:  "#fda4af",
-    RB:  "#86efac",
-    WR:  "#93c5fd",
-    TE:  "#fdba74",
-    K:   "#c4b5fd",
-    DEF: "#94a3b8",
-};
+const CARD_H = 90;
+const COL_W  = 130; // px per team column
 
-function pickColor(pos) {
-    return PICK_COLORS[(pos || "").toUpperCase()] || "#d1d5db";
+let allTransactions = [];
+let leagueUsers     = [];
+let playerStats     = {};   // year → { player_id: { pts_half_ppr } }
+let playerNameMap   = {};   // player_name → player_id
+
+function pickBg(pos)  { return PICK_BG[(pos||"").toUpperCase()] || "#d1d5db"; }
+function pickFg(pos)  { return PICK_FG[(pos||"").toUpperCase()] || "#374151"; }
+
+function abbrevName(name) {
+    if (!name) return "?";
+    const parts = name.trim().split(/\s+/);
+    if (parts.length < 2) return name;
+    return parts[0][0] + ". " + parts.slice(1).join(" ");
 }
 
-function avgAge(picks, pos, draftYear) {
-    const sep1 = new Date(`${draftYear}-09-01`).getTime();
-    const msPerYear = 365.25 * 24 * 3600 * 1000;
-    const ages = picks
-        .filter(p => (p.position || "").toUpperCase() === pos && p.birth_date)
-        .map(p => (sep1 - new Date(p.birth_date).getTime()) / msPerYear);
-    if (!ages.length) return null;
-    return (ages.reduce((s, a) => s + a, 0) / ages.length).toFixed(1);
+function avatarEl(username, size = 24) {
+    const u = leagueUsers.find(u => u.username === username);
+    const url = u?.avatar_url;
+    const sz = size;
+    if (url) return `<img src="${url}" style="width:${sz}px;height:${sz}px;border-radius:50%;object-fit:cover;flex-shrink:0;">`;
+    const letter = (username || "?")[0].toUpperCase();
+    return `<span style="width:${sz}px;height:${sz}px;border-radius:50%;background:rgba(0,0,0,0.15);display:inline-flex;align-items:center;justify-content:center;font-size:${Math.round(sz*0.45)}px;font-weight:800;color:rgba(0,0,0,0.45);flex-shrink:0;">${letter}</span>`;
 }
+
+// ── Positional breakdown ──────────────────────────────────────────────────────
 
 function renderPositions(picks, year) {
-    const stats = { QB: 0, RB: 0, WR: 0, TE: 0, K: 0, OTHER: 0 };
+    const counts = { QB:0, RB:0, WR:0, TE:0, K:0, OTHER:0 };
     picks.forEach(p => {
-        const pos = (p.position || "OTHER").toUpperCase();
-        if (stats[pos] !== undefined) stats[pos]++;
-        else stats.OTHER++;
+        const pos = (p.position||"OTHER").toUpperCase();
+        counts[pos] !== undefined ? counts[pos]++ : counts.OTHER++;
     });
-    const total = picks.length || 0;
+    const total = picks.length;
     const boxes = [
-        { label:"QB",    n:stats.QB,  bg:"#fda4af", pos:"QB" },
-        { label:"RB",    n:stats.RB,  bg:"#86efac", pos:"RB" },
-        { label:"WR",    n:stats.WR,  bg:"#93c5fd", pos:"WR" },
-        { label:"TE",    n:stats.TE,  bg:"#fdba74", pos:"TE" },
-        { label:"K",     n:stats.K,   bg:"#c4b5fd", pos:"K"  },
-        { label:"Total", n:total,     bg:"#ffffff",  pos:null },
+        { label:"QB", n:counts.QB, bg:PICK_BG.QB },
+        { label:"RB", n:counts.RB, bg:PICK_BG.RB },
+        { label:"WR", n:counts.WR, bg:PICK_BG.WR },
+        { label:"TE", n:counts.TE, bg:PICK_BG.TE },
+        { label:"K",  n:counts.K,  bg:PICK_BG.K  },
+        { label:"Total", n:total,  bg:"#f1f5f9"   },
     ];
-    el("position-stats").innerHTML = `
-        <div style="display:grid;grid-template-columns:repeat(6,1fr);gap:10px;margin-bottom:24px;">
-            ${boxes.map(({ label, n, bg, pos }) => {
-                const avg = pos ? avgAge(picks, pos, year) : null;
-                return `
-                <div style="background:${bg};border-radius:10px;padding:10px 12px;text-align:center;border:1px solid rgba(0,0,0,0.08);">
-                    <div style="font-size:10px;font-weight:700;text-transform:uppercase;letter-spacing:0.06em;color:rgba(0,0,0,0.45);margin-bottom:2px;">${label}</div>
-                    <div style="font-size:20px;font-weight:800;color:rgba(0,0,0,0.75);">${n}</div>
-                    ${avg != null ? `<div style="font-size:9px;color:rgba(0,0,0,0.6);margin-top:3px;">avg ${avg}</div>` : ""}
-                </div>`;
-            }).join("")}
-        </div>
-    `;
+    document.getElementById("position-stats").innerHTML = `
+        <div style="display:flex;gap:8px;flex-wrap:wrap;">
+            ${boxes.map(({label, n, bg}) => `
+                <div style="background:${bg};border-radius:8px;padding:8px 14px;text-align:center;min-width:52px;">
+                    <div style="font-size:9px;font-weight:700;text-transform:uppercase;letter-spacing:.06em;color:rgba(0,0,0,0.45);">${label}</div>
+                    <div style="font-size:20px;font-weight:800;color:rgba(0,0,0,0.75);line-height:1.2;">${n}</div>
+                </div>`).join("")}
+        </div>`;
 }
 
-const POS_BRIGHT = { QB:"#e74c82", RB:"#3ecf8e", WR:"#4299e1", TE:"#f6ad55", K:"#9f7aea", DEF:"#64748b" };
-const CARD_HEIGHT = 92; // fixed height for all pick cards
+// ── Pick card ─────────────────────────────────────────────────────────────────
 
-let tradedPicksData = [];
-let allTransactions = [];
-
-function getPickHistory(pickYear, pickRound, pickNo, pickedBy, originalOwner) {
-    // Find all trades that involved this pick from transactions
-    const pickName1 = `${pickYear} Round ${pickRound}`;
-    const pickName2 = `${pickYear} R${pickRound}`;
-    const events = [];
-
-    (allTransactions || []).forEach(t => {
-        if (t.type !== "trade") return;
-        let found = false;
-        Object.entries(t.assets_received || {}).forEach(([team, assets]) => {
-            (assets || []).forEach(a => {
-                if ((a.position || "").toUpperCase() !== "PICK") return;
-                const name = (a.name || "");
-                if (name.includes(pickYear) && (name.includes(`Round ${pickRound}`) || name.includes(`R${pickRound}`))) {
-                    found = true;
-                    events.push({ date: t.created, team, type: "received" });
-                }
-            });
-        });
-    });
-
-    return events;
-}
-
-function renderPickCard(p, round) {
+function renderPickCard(p, roundNum) {
     if (!p) {
-        return `<div style="height:${CARD_HEIGHT}px;background:#1a1c21;border-radius:8px;border:1px dashed #2d3139;"></div>`;
+        return `<div style="height:${CARD_H}px;background:#1a1c21;border-radius:8px;border:1px dashed #2d3139;box-sizing:border-box;"></div>`;
     }
-    const pos = (p.position || "").toUpperCase();
-    const bg = pickColor(pos);
-    const posClr = POS_BRIGHT[pos] || "rgba(0,0,0,0.25)";
-    const traded = p.original_owner && p.original_owner !== p.picked_by;
 
-    return `<div class="pick-card-clickable" data-pick='${JSON.stringify({
-        year: p.season || "", round: String(round), pickNo: String(p._pick_in_round || ""),
-        pickedBy: p.picked_by || "", originalOwner: p.original_owner || "",
-        player: p.player || "", pos, team: p.team || "",
-    }).replace(/'/g, "&#39;")}' style="background:${bg};border-radius:8px;padding:9px 10px;height:${CARD_HEIGHT}px;box-sizing:border-box;display:flex;flex-direction:column;gap:3px;cursor:pointer;transition:filter 0.12s;" onmouseenter="this.style.filter='brightness(0.93)'" onmouseleave="this.style.filter=''">
-        <div style="display:flex;justify-content:space-between;align-items:center;gap:4px;">
-            <div style="display:flex;align-items:center;gap:5px;min-width:0;">
-                <span style="background:${posClr};color:#fff;border-radius:4px;padding:1px 6px;font-size:10px;font-weight:800;letter-spacing:0.04em;flex-shrink:0;">${pos || "—"}</span>
-                <span style="font-size:10px;font-weight:600;color:rgba(0,0,0,0.55);overflow:hidden;text-overflow:ellipsis;white-space:nowrap;">${p.team || "—"}</span>
-            </div>
-            <span style="font-size:10px;font-weight:700;color:rgba(0,0,0,0.4);flex-shrink:0;">${round}.${p._pick_in_round}</span>
+    const pos     = (p.position || "").toUpperCase();
+    const bg      = pickBg(pos);
+    const fg      = pickFg(pos);
+    const traded  = p.original_owner && p.original_owner !== p.picked_by;
+    const label   = `${roundNum}.${p._pick_in_round}`;
+    const name    = abbrevName(p.player);
+
+    // pts from player stats
+    const pid  = playerNameMap[p.player];
+    const pts  = pid && playerStats[pid] ? playerStats[pid].pts_half_ppr : null;
+    const ptsStr = pts != null ? ` · ${Math.round(pts)}` : "";
+
+    return `<div class="pick-card" data-pick='${JSON.stringify({
+        round: String(roundNum), pickNo: String(p._pick_in_round),
+        pickedBy: p.picked_by||"", originalOwner: p.original_owner||"",
+        player: p.player||"", pos, team: p.team||"", label,
+    }).replace(/'/g,"&#39;")}' style="
+        background:${bg};border-radius:8px;padding:7px 8px;
+        height:${CARD_H}px;box-sizing:border-box;
+        display:flex;flex-direction:column;gap:2px;
+        cursor:pointer;transition:filter .12s;
+    " onmouseenter="this.style.filter='brightness(.9)'" onmouseleave="this.style.filter=''">
+
+        <div style="font-size:9px;font-weight:700;color:rgba(0,0,0,0.38);letter-spacing:.02em;">${label}</div>
+
+        <div style="font-size:12px;font-weight:800;color:rgba(0,0,0,.85);line-height:1.2;
+                    overflow:hidden;text-overflow:ellipsis;white-space:nowrap;flex-shrink:0;">${name}</div>
+
+        <div style="display:flex;align-items:center;gap:4px;flex-shrink:0;">
+            <span style="background:${fg};color:#fff;border-radius:3px;padding:1px 5px;
+                         font-size:8px;font-weight:800;letter-spacing:.04em;flex-shrink:0;">${pos||"—"}</span>
+            <span style="font-size:9px;color:rgba(0,0,0,.5);overflow:hidden;text-overflow:ellipsis;white-space:nowrap;">
+                ${p.team||""}${ptsStr}
+            </span>
         </div>
-        <div style="font-size:12px;font-weight:800;color:rgba(0,0,0,0.85);line-height:1.2;margin-top:2px;overflow:hidden;text-overflow:ellipsis;white-space:nowrap;">${safeName(p.player)}</div>
-        <div style="font-size:10px;color:rgba(0,0,0,0.6);">Picked by: ${safeName(p.picked_by)}</div>
-        ${traded ? `<div style="font-size:10px;color:rgba(0,0,0,0.6);">Original owner: ${safeName(p.original_owner)}</div>` : ""}
+
+        <div style="margin-top:auto;display:flex;align-items:center;gap:4px;min-width:0;">
+            ${avatarEl(p.picked_by, 14)}
+            <span style="font-size:9px;color:rgba(0,0,0,.55);overflow:hidden;text-overflow:ellipsis;white-space:nowrap;flex:1;">
+                ${p.picked_by||"—"}
+            </span>
+        </div>
+        ${traded ? `
+        <div style="display:flex;align-items:center;gap:3px;min-width:0;">
+            <span style="font-size:9px;color:rgba(0,0,0,.35);flex-shrink:0;">→</span>
+            ${avatarEl(p.original_owner, 12)}
+            <span style="font-size:8px;color:rgba(0,0,0,.35);overflow:hidden;text-overflow:ellipsis;white-space:nowrap;">${p.original_owner}</span>
+        </div>` : ""}
     </div>`;
 }
 
+// ── Main board ────────────────────────────────────────────────────────────────
+
 function renderDraft(picks) {
-    const container = el("draft-container");
+    const container = document.getElementById("draft-container");
     if (!picks || !picks.length) {
-        container.innerHTML = `<div class="card">No draft data found for this year.</div>`;
+        container.innerHTML = `<div class="card">No draft data found.</div>`;
         return;
     }
 
-    const grouped = {};
+    // Group by round
+    const byRound = {};
     picks.forEach(p => {
         const r = p.round || 0;
-        if (!grouped[r]) grouped[r] = [];
-        grouped[r].push(p);
+        if (!byRound[r]) byRound[r] = [];
+        byRound[r].push(p);
+    });
+    const rounds = Object.keys(byRound).map(Number).sort((a,b) => a-b);
+
+    // Sort each round by pick_no; assign _pick_in_round
+    rounds.forEach(r => {
+        byRound[r].sort((a,b) => (a.pick_no||0)-(b.pick_no||0));
+        byRound[r].forEach((p,i) => { p._pick_in_round = i+1; });
     });
 
-    const sortedRounds = Object.keys(grouped).sort((a, b) => Number(a) - Number(b));
-    sortedRounds.forEach(round => {
-        grouped[round]
-            .sort((a, b) => (a.pick_no || 0) - (b.pick_no || 0))
-            .forEach((p, i) => { p._pick_in_round = i + 1; });
+    const nTeams = Math.max(...rounds.map(r => byRound[r].length));
+
+    // Column order = original owners of round-1 picks, in pick order
+    const round1 = (byRound[1] || []).slice().sort((a,b) => (a.pick_no||0)-(b.pick_no||0));
+    const colTeams = round1.map(p => p.original_owner || p.picked_by);
+
+    // Build grid: grid[round][col] = pick  (snake draft)
+    const grid = {};
+    rounds.forEach(r => {
+        grid[r] = new Array(nTeams).fill(null);
+        byRound[r].forEach(p => {
+            const i   = p._pick_in_round - 1;                     // 0-indexed position within round
+            const col = r % 2 === 1 ? i : (nTeams - 1 - i);      // snake: even rounds reverse
+            grid[r][col] = p;
+        });
     });
 
-    const nTeams = Math.max(...sortedRounds.map(r => grouped[r].length));
+    // ── Column headers ──────────────────────────────────────────────────────
+    const headerCells = colTeams.map(team => {
+        const u = leagueUsers.find(u => u.username === team);
+        const url = u?.avatar_url;
+        const avatarHtml = url
+            ? `<img src="${url}" style="width:36px;height:36px;border-radius:50%;object-fit:cover;border:2px solid #2d3139;">`
+            : `<div style="width:36px;height:36px;border-radius:50%;background:#252830;display:flex;align-items:center;justify-content:center;font-size:14px;font-weight:800;color:#5a6070;">${(team||"?")[0].toUpperCase()}</div>`;
+        return `
+            <div style="display:flex;flex-direction:column;align-items:center;gap:5px;padding:10px 4px 8px;">
+                ${avatarHtml}
+                <div style="font-size:10px;font-weight:700;color:#c9cdd4;text-align:center;
+                            max-width:${COL_W-8}px;overflow:hidden;text-overflow:ellipsis;white-space:nowrap;">
+                    ${team||"—"}
+                </div>
+            </div>`;
+    }).join("");
 
-    const headerCols = Array.from({ length: nTeams }, (_, i) =>
-        `<div style="text-align:center;font-size:10px;font-weight:700;text-transform:uppercase;letter-spacing:0.05em;color:#5a6070;padding:4px 0;">Pick ${i+1}</div>`
-    ).join("");
+    // ── Rows ────────────────────────────────────────────────────────────────
+    const rowsHtml = rounds.map(r => {
+        const cells = Array.from({length: nTeams}, (_,c) => `<div>${renderPickCard(grid[r][c], r)}</div>`).join("");
+        return `
+            <div style="display:grid;grid-template-columns:40px repeat(${nTeams},${COL_W}px);gap:5px;margin-bottom:5px;align-items:stretch;">
+                <div style="display:flex;align-items:center;justify-content:center;
+                            background:#252830;border-radius:6px;font-size:10px;font-weight:700;
+                            color:#5a6070;letter-spacing:.04em;min-height:${CARD_H}px;">
+                    R${r}
+                </div>
+                ${cells}
+            </div>`;
+    }).join("");
 
-    let html = `
-    <div style="overflow-x:auto;-webkit-overflow-scrolling:touch;">
-    <div style="min-width:${60 + nTeams * 148}px;">
-        <div style="display:grid;grid-template-columns:60px repeat(${nTeams},1fr);gap:6px;margin-bottom:4px;padding:0 2px;">
-            <div></div>
-            ${headerCols}
+    container.innerHTML = `
+        <div style="overflow-x:auto;-webkit-overflow-scrolling:touch;padding-bottom:8px;">
+            <div style="min-width:${40 + nTeams * (COL_W + 5)}px;">
+                <div style="display:grid;grid-template-columns:40px repeat(${nTeams},${COL_W}px);gap:5px;margin-bottom:2px;">
+                    <div></div>
+                    ${headerCells}
+                </div>
+                ${rowsHtml}
+            </div>
         </div>`;
 
-    sortedRounds.forEach(round => {
-        const roundPicks = grouped[round];
-        const slots = Array.from({ length: nTeams }, (_, i) => roundPicks[i] || null);
-        const cells = slots.map(p => `<div>${renderPickCard(p, round)}</div>`).join("");
-
-        html += `
-        <div style="display:grid;grid-template-columns:60px repeat(${nTeams},1fr);gap:6px;margin-bottom:6px;align-items:stretch;">
-            <div style="display:flex;align-items:center;justify-content:center;background:#252830;border-radius:6px;font-size:11px;font-weight:700;color:#5a6070;letter-spacing:0.04em;min-height:${CARD_HEIGHT}px;">R${round}</div>
-            ${cells}
-        </div>`;
-    });
-
-    html += `</div></div>`;
-    container.innerHTML = html;
-
-    // Attach click handlers for pick history popover
-    container.querySelectorAll(".pick-card-clickable").forEach(card => {
+    // Click → popover
+    container.querySelectorAll(".pick-card").forEach(card => {
         card.addEventListener("click", () => {
-            try {
-                const data = JSON.parse(card.getAttribute("data-pick").replace(/&#39;/g, "'"));
-                openPickPopover(card, data);
-            } catch (e) { console.error(e); }
+            try { openPickPopover(card, JSON.parse(card.getAttribute("data-pick").replace(/&#39;/g,"'"))); }
+            catch(e) { console.error(e); }
         });
     });
 }
 
-// Pick history popover
+// ── Popover ───────────────────────────────────────────────────────────────────
+
 function ensurePickPopover() {
     if (document.getElementById("pick-popover")) return;
     const pop = document.createElement("div");
     pop.id = "pick-popover";
-    pop.style.cssText = `
-        display:none;position:fixed;z-index:9999;
-        background:#13151a;border:1px solid #2d3139;
-        border-radius:12px;width:300px;max-height:calc(100vh - 24px);
-        overflow-y:auto;box-shadow:0 10px 40px rgba(0,0,0,0.6);
-        padding:0;
-    `;
+    pop.style.cssText = `display:none;position:fixed;z-index:9999;background:#13151a;border:1px solid #2d3139;border-radius:12px;width:280px;max-height:calc(100vh - 24px);overflow-y:auto;box-shadow:0 10px 40px rgba(0,0,0,.6);`;
     document.body.appendChild(pop);
     document.addEventListener("click", e => {
         const p = document.getElementById("pick-popover");
-        if (p && !e.target.closest(".pick-card-clickable") && !p.contains(e.target)) {
-            p.style.display = "none";
-        }
+        if (p && !e.target.closest(".pick-card") && !p.contains(e.target)) p.style.display = "none";
     });
 }
 
-function openPickPopover(element, data) {
+function openPickPopover(el, data) {
     const pop = document.getElementById("pick-popover");
     if (!pop) return;
-
-    const { year, round, pickNo, pickedBy, originalOwner, player, pos, team } = data;
-    const bg = pickColor(pos);
-    const posClr = POS_BRIGHT[pos] || "#5a6070";
+    const { round, pickNo, pickedBy, originalOwner, player, pos, team, label } = data;
+    const bg = pickBg(pos);
+    const fg = pickFg(pos);
     const traded = originalOwner && originalOwner !== pickedBy;
 
-    // Find trade history for this pick from transactions
-    const pickLabel = `${year} Round ${round}`;
+    // Trade history for this pick
     const tradeHistory = [];
-    (allTransactions || []).forEach(t => {
+    (allTransactions||[]).forEach(t => {
         if (t.type !== "trade") return;
-        Object.entries(t.assets_received || {}).forEach(([teamReceiver, assets]) => {
-            (assets || []).forEach(a => {
-                if ((a.position || "").toUpperCase() !== "PICK") return;
-                const name = a.name || "";
-                if (name.includes(year) && (name.includes(`Round ${round}`) || name.includes(`R${round}`))) {
-                    tradeHistory.push({ date: t.created, receiver: teamReceiver });
+        Object.entries(t.assets_received||{}).forEach(([receiver, assets]) => {
+            (assets||[]).forEach(a => {
+                if ((a.position||"").toUpperCase() !== "PICK") return;
+                const n = a.name||"";
+                if (n.includes(`Round ${round}`) || n.includes(`R${round}`)) {
+                    tradeHistory.push({ receiver, date: t.created });
                 }
             });
         });
     });
-
-    const historyHtml = tradeHistory.length
-        ? tradeHistory.map(e =>
-            `<div style="display:flex;justify-content:space-between;padding:5px 0;border-bottom:1px solid #2d3139;font-size:12px;">
-                <span style="color:#f0f1f3;font-weight:600;">→ ${e.receiver}</span>
-                <span style="color:#5a6070;">${e.date || ""}</span>
-            </div>`
-        ).join("")
-        : `<div style="color:#5a6070;font-size:12px;">No trade history</div>`;
 
     pop.innerHTML = `
         <div style="background:${bg};padding:14px 16px;border-radius:12px 12px 0 0;">
             <div style="display:flex;justify-content:space-between;align-items:flex-start;">
                 <div>
-                    <div style="font-size:10px;font-weight:700;color:rgba(0,0,0,0.45);text-transform:uppercase;letter-spacing:0.05em;">Round ${round} · Pick ${pickNo}</div>
-                    <div style="font-size:16px;font-weight:800;color:rgba(0,0,0,0.85);margin-top:3px;">${player || "Unknown"}</div>
+                    <div style="font-size:10px;font-weight:700;color:rgba(0,0,0,.4);text-transform:uppercase;letter-spacing:.05em;">Pick ${label}</div>
+                    <div style="font-size:16px;font-weight:800;color:rgba(0,0,0,.85);margin-top:3px;">${player||"Unknown"}</div>
                     <div style="display:flex;align-items:center;gap:5px;margin-top:5px;">
-                        <span style="background:${posClr};color:#fff;border-radius:4px;padding:1px 7px;font-size:11px;font-weight:800;">${pos}</span>
-                        <span style="font-size:11px;color:rgba(0,0,0,0.55);font-weight:600;">${team}</span>
+                        <span style="background:${fg};color:#fff;border-radius:4px;padding:1px 7px;font-size:11px;font-weight:800;">${pos}</span>
+                        <span style="font-size:11px;color:rgba(0,0,0,.55);font-weight:600;">${team}</span>
                     </div>
                 </div>
-                <button onclick="document.getElementById('pick-popover').style.display='none'" style="background:rgba(0,0,0,0.1);border:none;border-radius:50%;width:24px;height:24px;cursor:pointer;color:rgba(0,0,0,0.5);font-size:12px;display:flex;align-items:center;justify-content:center;flex-shrink:0;">✕</button>
+                <button onclick="document.getElementById('pick-popover').style.display='none'"
+                    style="background:rgba(0,0,0,.1);border:none;border-radius:50%;width:24px;height:24px;cursor:pointer;color:rgba(0,0,0,.5);font-size:12px;display:flex;align-items:center;justify-content:center;flex-shrink:0;">✕</button>
             </div>
         </div>
         <div style="padding:14px 16px;">
-            <div style="display:flex;justify-content:space-between;margin-bottom:12px;padding-bottom:10px;border-bottom:1px solid #2d3139;">
+            <div style="display:flex;gap:16px;margin-bottom:12px;padding-bottom:10px;border-bottom:1px solid #2d3139;">
                 <div>
                     <div style="font-size:10px;color:#5a6070;text-transform:uppercase;letter-spacing:.05em;margin-bottom:3px;">Picked By</div>
-                    <div style="font-size:13px;font-weight:700;color:#f0f1f3;">${pickedBy || "—"}</div>
+                    <div style="display:flex;align-items:center;gap:6px;">${avatarEl(pickedBy,20)}<span style="font-size:13px;font-weight:700;color:#f0f1f3;">${pickedBy||"—"}</span></div>
                 </div>
-                ${traded ? `<div style="text-align:right;">
+                ${traded ? `<div>
                     <div style="font-size:10px;color:#5a6070;text-transform:uppercase;letter-spacing:.05em;margin-bottom:3px;">Original Owner</div>
-                    <div style="font-size:13px;font-weight:700;color:#f0f1f3;">${originalOwner}</div>
+                    <div style="display:flex;align-items:center;gap:6px;">${avatarEl(originalOwner,20)}<span style="font-size:13px;font-weight:700;color:#f0f1f3;">${originalOwner}</span></div>
                 </div>` : ""}
             </div>
+            ${tradeHistory.length ? `
             <div style="font-size:10px;text-transform:uppercase;letter-spacing:.07em;color:#5a6070;font-weight:700;margin-bottom:8px;">Trade History</div>
-            ${historyHtml}
-        </div>
-    `;
+            ${tradeHistory.map(e => `
+                <div style="display:flex;justify-content:space-between;padding:5px 0;border-bottom:1px solid #2d3139;font-size:12px;">
+                    <span style="color:#f0f1f3;font-weight:600;">→ ${e.receiver}</span>
+                    <span style="color:#5a6070;">${e.date||""}</span>
+                </div>`).join("")}` : ""}
+        </div>`;
 
     pop.style.display = "block";
-
-    // Position popover
-    const rect = element.getBoundingClientRect();
-    const popW = 300;
+    const rect = el.getBoundingClientRect();
+    const popW = 280;
     let left = rect.right + 8;
     if (left + popW > window.innerWidth - 8) left = rect.left - popW - 8;
     if (left < 8) left = 8;
     let top = rect.top;
-    const estH = 300;
-    if (top + estH > window.innerHeight - 12) top = window.innerHeight - estH - 12;
+    if (top + 320 > window.innerHeight - 12) top = window.innerHeight - 320 - 12;
     if (top < 12) top = 12;
     pop.style.left = `${left}px`;
-    pop.style.top = `${top}px`;
+    pop.style.top  = `${top}px`;
 }
 
+// ── Load ──────────────────────────────────────────────────────────────────────
+
 async function load(year) {
-    el("draft-container").innerHTML = `<div class="card" style="color:var(--text-3);">Loading ${year} draft...</div>`;
-    el("position-stats").innerHTML = "";
+    document.getElementById("draft-container").innerHTML = `<div class="card" style="color:var(--text-3);">Loading ${year} draft...</div>`;
+    document.getElementById("position-stats").innerHTML = "";
     try {
         const picks = await api.getDraft(year);
-        // Attach season to each pick for pick history lookup
-        (picks || []).forEach(p => { p.season = year; });
+        (picks||[]).forEach(p => { p.season = year; });
+
+        // Load player stats for this year if available (2023-2025)
+        if (["2023","2024","2025"].includes(year)) {
+            const [stats, nameMap] = await Promise.all([
+                api.getPlayerStats(year).catch(()=>({})),
+                api.getPlayerNameMap().catch(()=>({})),
+            ]);
+            playerStats   = stats || {};
+            playerNameMap = nameMap || {};
+        } else {
+            playerStats   = {};
+            playerNameMap = {};
+        }
+
         renderPositions(picks, year);
         renderDraft(picks);
-    } catch (err) {
+    } catch(err) {
         console.error("Draft load error:", err);
-        el("draft-container").innerHTML = `<div class="card">Failed to load draft data for ${year}.</div>`;
+        document.getElementById("draft-container").innerHTML = `<div class="card">Failed to load draft data for ${year}.</div>`;
     }
 }
+
+// ── Init ──────────────────────────────────────────────────────────────────────
 
 document.addEventListener("DOMContentLoaded", async () => {
     renderNav();
     ensurePickPopover();
-    const select = el("yearSelect");
 
-    // Load transactions for pick history
-    try {
-        allTransactions = await api.getTransactions() || [];
-    } catch { allTransactions = []; }
+    try { allTransactions = await api.getTransactions() || []; } catch { allTransactions = []; }
+    try { leagueUsers     = await api.getLeagueUsers()  || []; } catch { leagueUsers = []; }
 
+    const select = document.getElementById("yearSelect");
     load(select.value);
     select.addEventListener("change", () => load(select.value));
 });
