@@ -3,6 +3,7 @@ backend/
 data/
 frontend/
 gameofphones/
+importer/
 .claude/
 __pycache__/
 *.pyc
