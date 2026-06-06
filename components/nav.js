@@ -97,29 +97,29 @@ export function renderNav() {
             }
             .nav-dropdown-menu a:hover { background: #252830; }
 
-            /* Mobile drawer */
+            /* Mobile */
             @media (max-width: 680px) {
-                .nav-card { padding: 4px 12px; }
+                .nav-card {
+                    flex-direction: column;
+                    align-items: stretch;
+                    padding: 4px 8px;
+                    gap: 0;
+                }
                 .nav-links { display: none; }
-                .nav-hamburger { display: block; }
+                .nav-hamburger {
+                    display: block;
+                    align-self: flex-start;
+                }
 
-                /* Mobile open state */
+                /* Open: nav-links become a stacked list inside the card (no absolute, no clipping) */
                 .nav-card.mobile-open .nav-links {
                     display: flex;
                     flex-direction: column;
                     align-items: stretch;
-                    position: absolute;
-                    top: 100%;
-                    left: 0;
-                    right: 0;
-                    background: #1a1d24;
-                    border: 1px solid #2d3139;
-                    border-top: none;
-                    border-radius: 0 0 12px 12px;
-                    padding: 8px;
-                    z-index: 999;
                     gap: 2px;
-                    box-shadow: 0 8px 24px rgba(0,0,0,0.5);
+                    padding: 6px 0 4px;
+                    border-top: 1px solid #2d3139;
+                    margin-top: 4px;
                 }
                 .nav-card.mobile-open .nav-links a,
                 .nav-card.mobile-open .nav-dropdown-label {
@@ -134,7 +134,7 @@ export function renderNav() {
                     display: block;
                     width: 100%;
                 }
-                /* On mobile, sub-items show inline below the label */
+                /* Sub-items always visible inline on mobile */
                 .nav-card.mobile-open .nav-dropdown-menu {
                     position: static;
                     display: block !important;
@@ -154,7 +154,8 @@ export function renderNav() {
                     min-height: 0;
                     color: var(--text-3, #8b9099);
                 }
-                .nav-card.mobile-open .nav-dropdown-menu a:hover { color: #f0f1f3; }
+                .nav-card.mobile-open .nav-dropdown-menu a:hover,
+                .nav-card.mobile-open .nav-dropdown-menu a:active { color: #f0f1f3; background: #1e2027; }
             }
         </style>
         <nav class="card nav-card" id="nav-card">
