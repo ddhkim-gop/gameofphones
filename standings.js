@@ -404,11 +404,27 @@ function gradeCell(label, grade) {
     `;
 }
 
+function gradeWeightRow(label, pct, desc) {
+    const barW = Math.round(pct * 3.5); // max 70px for 20%
+    return `
+        <div style="background:#252830;border-radius:8px;padding:10px 12px;">
+            <div style="display:flex;align-items:center;justify-content:space-between;margin-bottom:5px;">
+                <span style="font-size:12px;font-weight:700;color:#c9cdd4;">${label}</span>
+                <span style="font-size:12px;font-weight:800;color:#3ecf8e;">${pct}%</span>
+            </div>
+            <div style="height:4px;background:#1e2027;border-radius:2px;margin-bottom:6px;">
+                <div style="height:4px;width:${barW}px;max-width:100%;background:#3ecf8e;border-radius:2px;"></div>
+            </div>
+            <div style="font-size:10px;color:#5a6070;">${desc}</div>
+        </div>
+    `;
+}
+
 function renderReportCard() {
     const allManagers = computeManagerStats();
     const withGrades = computeGrades(allManagers).sort((a, b) => b.composite - a.composite);
 
-    let html = `<div style="display:grid;grid-template-columns:repeat(auto-fill,minmax(320px,1fr));gap:16px;">`;
+    let html = `<div style="display:grid;grid-template-columns:repeat(4,1fr);gap:16px;">`;
 
     withGrades.forEach(m => {
         const playoffPct  = (m.playoffRate * 100).toFixed(0) + "%";
@@ -460,12 +476,23 @@ function renderReportCard() {
     });
 
     html += `</div>
-        <div style="margin-top:20px;font-size:11px;color:#5a6070;line-height:1.7;">
-            <strong style="color:#3a4050;">How grades are computed:</strong><br>
-            <strong>Draft</strong> — average pts of drafted players vs round expectation (completed seasons only) &nbsp;·&nbsp;
-            <strong>Trades</strong> — net season pts received vs given per player involved &nbsp;·&nbsp;
-            <strong>Waivers</strong> — % of waiver adds who scored above median among all claims &nbsp;·&nbsp;
-            <strong>Luck Index</strong> — actual wins minus Pythagorean expected wins (PF²/(PF²+PA²))
+        <div style="margin-top:24px;background:#1e2027;border:1px solid #2d3139;border-radius:12px;padding:18px 20px;">
+            <div style="font-size:13px;font-weight:700;color:#f0f1f3;margin-bottom:14px;">How the Overall Grade is computed</div>
+            <div style="display:grid;grid-template-columns:repeat(auto-fill,minmax(200px,1fr));gap:10px;margin-bottom:16px;">
+                ${gradeWeightRow("Playoff Rate", 20, "Playoff appearances ÷ seasons played")}
+                ${gradeWeightRow("Win Rate", 15, "All-time regular season W/(W+L)")}
+                ${gradeWeightRow("Championship Rate", 15, "Championships ÷ seasons played")}
+                ${gradeWeightRow("Draft Grade", 20, "Avg pts of picks vs round expectation")}
+                ${gradeWeightRow("Trade Grade", 10, "Net pts received vs given per player")}
+                ${gradeWeightRow("Avg Seed", 10, "Lower regular season finish = better")}
+                ${gradeWeightRow("Waiver Hit Rate", 5, "% of adds scoring above median claim")}
+                ${gradeWeightRow("Luck (inverse)", 5, "Rewards luck-adjusted performance")}
+            </div>
+            <div style="font-size:11px;color:#5a6070;line-height:1.6;border-top:1px solid #2d3139;padding-top:12px;">
+                All metrics are normalized across the 12 managers so grades are relative, not absolute — someone always gets an A and someone always gets an F.
+                Draft, Trade, and Waiver grades use completed seasons only (2023–2025).
+                Luck Index = actual wins − Pythagorean expected wins (PF²÷(PF²+PA²)).
+            </div>
         </div>
     `;
     return html;
