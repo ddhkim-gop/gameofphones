@@ -8,18 +8,17 @@ const YEARS = ["2026", "2025", "2024", "2023"];
 const REAL_STAT_YEARS = ["2023", "2024", "2025"];
 const POS_COLORS = { QB:"#e74c82", RB:"#3ecf8e", WR:"#4299e1", TE:"#f6ad55", K:"#9f7aea", PICK:"#5a6070" };
 
-// Pts thresholds for color-coding bar (half-PPR)
-const POS_MAX = { QB: 420, RB: 320, WR: 320, TE: 250, K: 180, DEF: 180 };
-
-function ptsColor(pts, pos) {
-    const max = POS_MAX[(pos||"").toUpperCase()] || 320;
-    if (pts >= max * 0.65) return "#3ecf8e";
-    if (pts >= max * 0.35) return "#f6ad55";
-    return "#f87171";
+// Consistent 0–100 scale: 400 half-PPR pts = 100. Linear, position-agnostic.
+// Elite QB (~400 pts) = 100, elite RB/WR (~300 pts) = 75, elite TE (~200 pts) = 50.
+const PTS_PER_POINT = 4;
+function ptsToScore(pts) {
+    if (pts == null || pts < 0) return 0;
+    return Math.min(100, Math.round(pts / PTS_PER_POINT));
 }
-function ptsBarPct(pts, pos) {
-    const max = POS_MAX[(pos||"").toUpperCase()] || 320;
-    return Math.min(100, Math.round((pts / max) * 100));
+function scoreColor(score) {
+    if (score >= 65) return "#3ecf8e";
+    if (score >= 35) return "#f6ad55";
+    return "#f87171";
 }
 
 let allTransactions = [];
@@ -32,13 +31,13 @@ let selectedYear = "2025";
 
 function playerIdFor(name) { return nameToId[name] || null; }
 
-// Get stats for a player in a given year: { pts, rank, position }
+// Get stats for a player in a given year: { pts, score, rank, position }
 function playerYearData(name, year) {
     const pid = playerIdFor(name);
     if (!pid) return null;
     const st = (statsCache[year] || {})[pid];
     if (!st || st.pts_half_ppr == null) return null;
-    return { pts: st.pts_half_ppr, rank: st.rank, position: st.position };
+    return { pts: st.pts_half_ppr, score: ptsToScore(st.pts_half_ppr), rank: st.rank, position: st.position };
 }
 
 // Post-trade years: only REAL_STAT_YEARS that are strictly after the trade year
@@ -47,18 +46,18 @@ function postTradeYears(tradeYear) {
     return REAL_STAT_YEARS.filter(y => parseInt(y) > yi);
 }
 
-// Average half-PPR pts across post-trade years for a player
+// Average score across post-trade years for a player
 function playerPostTradeValue(name, tradeYear) {
     const years = postTradeYears(tradeYear);
     if (!years.length) return { avg: null, byYear: [], position: null };
     const byYear = years.map(y => ({ year: y, data: playerYearData(name, y) }));
     const valid = byYear.filter(e => e.data !== null);
-    const avg = valid.length ? valid.reduce((s, e) => s + e.data.pts, 0) / valid.length : null;
+    const avg = valid.length ? valid.reduce((s, e) => s + e.data.score, 0) / valid.length : null;
     const position = valid.length ? valid[valid.length - 1].data.position : null;
     return { avg, byYear, position };
 }
 
-// Pick value: resolved player's post-trade pts, or round-based estimate
+// Pick value: resolved player's post-trade score, or round-based estimate
 function pickPostTradeValue(asset, receivingTeam, tradeYear) {
     const m = asset.name.match(/(\d{4})\s+Round\s+(\d+)/i);
     if (!m) return { avg: null, byYear: [], resolved: null, estimated: false };
@@ -73,18 +72,18 @@ function pickPostTradeValue(asset, receivingTeam, tradeYear) {
         const ptYears = REAL_STAT_YEARS.filter(y => parseInt(y) >= parseInt(pickYear) && parseInt(y) > parseInt(tradeYear));
         const byYear = ptYears.map(y => ({ year: y, data: playerYearData(resolved.player, y) }));
         const valid  = byYear.filter(e => e.data !== null);
-        const avg    = valid.length ? valid.reduce((s, e) => s + e.data.pts, 0) / valid.length : null;
+        const avg    = valid.length ? valid.reduce((s, e) => s + e.data.score, 0) / valid.length : null;
         const position = valid.length ? valid[valid.length - 1].data.position : null;
         return { avg, byYear, resolved: resolved.player, resolvedPos: resolved.position, position, estimated: false };
     }
 
-    // Unresolved — estimate by round (typical half-PPR avg for drafted player)
+    // Unresolved — estimate by round (converted to 0-100 scale)
     const baseVal = parseInt(pickYear) > 2025 ? null :
-        round === 1 ? 180 : round === 2 ? 110 : 55;
+        round === 1 ? 45 : round === 2 ? 28 : 14;
     return { avg: baseVal, byYear: [], resolved: null, estimated: baseVal !== null, position: null };
 }
 
-// Compute full side value
+// Compute full side value — preserve position from asset if stats don't have it
 function sideValue(assets, receivingTeam, tradeYear) {
     return assets.map(asset => {
         if (asset.position === "PICK") {
@@ -92,7 +91,7 @@ function sideValue(assets, receivingTeam, tradeYear) {
             return { ...asset, ...v, isPick: true };
         }
         const v = playerPostTradeValue(asset.name, tradeYear);
-        return { ...asset, ...v, isPick: false };
+        return { ...asset, ...v, position: v.position || asset.position, isPick: false };
     });
 }
 
@@ -111,21 +110,19 @@ function tradeNarrative(tx, itemsA, itemsB, valA, valB) {
 
     const parts = [];
 
-    // Verdict line
     if (noData) {
         parts.push(`This trade was made in ${tx.season} and no completed seasons have elapsed yet, so post-trade value can't be measured. Check back after the ${parseInt(tx.season) + 1} season.`);
-    } else if (margin < 20) {
-        parts.push(`This trade was roughly even. Both sides scored comparable fantasy points in the post-trade window (${valA.toFixed(0)} vs ${valB.toFixed(0)} pts).`);
+    } else if (margin < 5) {
+        parts.push(`This trade was roughly even. Both sides generated comparable post-trade value (${valA.toFixed(0)} vs ${valB.toFixed(0)}/100).`);
     } else {
         const winner = valA > valB ? teamA : teamB;
         const loser  = valA > valB ? teamB : teamA;
         const winVal = Math.max(valA, valB).toFixed(0);
         const loseVal = Math.min(valA, valB).toFixed(0);
         const descriptor = pct > 0.8 ? "a dominant advantage" : pct > 0.5 ? "a clear win" : "a slight edge";
-        parts.push(`<strong>${winner}</strong> wins this trade by ${descriptor} — ${winVal} pts post-trade vs ${loseVal} for ${loser}.`);
+        parts.push(`<strong>${winner}</strong> wins this trade by ${descriptor} — ${winVal} vs ${loseVal} post-trade value.`);
     }
 
-    // Standout performers
     if (!noData) {
         const allItems = [
             ...itemsA.filter(i => !i.isPick && i.avg !== null).map(i => ({...i, _team: teamA})),
@@ -134,20 +131,19 @@ function tradeNarrative(tx, itemsA, itemsB, valA, valB) {
 
         const best = allItems[0];
         if (best) {
-            const yearSummary = best.byYear.filter(y => y.data).map(y => `${y.year}: #${y.data.rank} ${y.data.position} (${y.data.pts.toFixed(0)} pts)`).join(", ");
-            parts.push(`The best asset in the deal was <strong>${best.name}</strong> (${best._team}), averaging ${best.avg.toFixed(0)} pts/yr after the trade${yearSummary ? ` — ${yearSummary}` : ""}.`);
+            const yearSummary = best.byYear.filter(y => y.data).map(y => `${y.year}: ${y.data.score}/100 (#${y.data.rank} ${y.data.position})`).join(", ");
+            parts.push(`The best asset in the deal was <strong>${best.name}</strong> (${best._team}), averaging ${best.avg.toFixed(0)}/100 post-trade${yearSummary ? ` — ${yearSummary}` : ""}.`);
         }
-        if (allItems.length > 1 && allItems[1].avg > 80) {
+        if (allItems.length > 1 && allItems[1].avg >= 40) {
             const e2 = allItems[1];
-            parts.push(`<strong>${e2.name}</strong> was also a quality return at ${e2.avg.toFixed(0)} pts/yr.`);
+            parts.push(`<strong>${e2.name}</strong> was also a quality return at ${e2.avg.toFixed(0)}/100.`);
         }
-        const busts = allItems.filter(i => (i.avg ?? 0) < 20);
-        if (busts.length > 0 && busts[0].avg < 10) {
+        const busts = allItems.filter(i => (i.avg ?? 0) < 8);
+        if (busts.length > 0) {
             parts.push(`<strong>${busts[0].name}</strong> contributed almost nothing after the trade — a clear bust.`);
         }
     }
 
-    // Team strategy context
     const aGivesPicks = (tx.assets_received[teamB] || []).some(a => a.position === "PICK");
     const bGivesPicks = (tx.assets_received[teamA] || []).some(a => a.position === "PICK");
     const aPickCount  = (tx.assets_received[teamB] || []).filter(a => a.position === "PICK").length;
@@ -176,10 +172,10 @@ function posTag(pos, small = false) {
     return `<span style="background:${color};color:#fff;font-size:${sz};font-weight:800;padding:2px 5px;border-radius:3px;flex-shrink:0;">${pos||"?"}</span>`;
 }
 
-function scoreBar(pts, pos) {
-    if (pts === null || pts === undefined) return "";
-    const pct = ptsBarPct(pts, pos || "WR");
-    const color = ptsColor(pts, pos || "WR");
+function scoreBar(score) {
+    if (score === null || score === undefined) return "";
+    const pct = Math.min(100, score);
+    const color = scoreColor(score);
     return `<div style="height:4px;background:#2d3139;border-radius:2px;margin-top:3px;overflow:hidden;">
         <div style="width:${pct}%;height:100%;background:${color};border-radius:2px;"></div>
     </div>`;
@@ -197,7 +193,7 @@ function renderItemCard(item, tradeYear) {
 
         let resolvedHtml = "";
         if (item.resolved) {
-            const color = item.avg != null ? ptsColor(item.avg, item.resolvedPos) : "#5a6070";
+            const color = item.avg != null ? scoreColor(item.avg) : "#5a6070";
             resolvedHtml = `
             <div style="margin-top:5px;padding:5px 8px;background:#1a1c22;border-radius:6px;border-left:2px solid #3d4350;">
                 <div style="font-size:10px;color:#5a6070;margin-bottom:2px;">Drafted</div>
@@ -205,10 +201,10 @@ function renderItemCard(item, tradeYear) {
                     ${posTag(item.resolvedPos, true)}
                     <span style="font-size:11px;font-weight:600;color:#c9cdd4;">${item.resolved}</span>
                 </div>
-                ${item.avg !== null ? `<div style="font-size:10px;color:#8b9099;">Post-trade avg: <strong style="color:${color};">${item.avg.toFixed(1)} pts/yr</strong></div>${scoreBar(item.avg, item.resolvedPos)}` : ""}
+                ${item.avg !== null ? `<div style="font-size:10px;color:#8b9099;">Post-trade value: <strong style="color:${color};">${item.avg.toFixed(0)}/100</strong></div>${scoreBar(item.avg)}` : ""}
             </div>`;
         } else if (item.estimated && !future) {
-            resolvedHtml = `<div style="font-size:10px;color:#5a6070;margin-top:3px;">Est. ~${item.avg} pts/yr (pick unresolved)</div>`;
+            resolvedHtml = `<div style="font-size:10px;color:#5a6070;margin-top:3px;">Est. ~${item.avg}/100 (pick unresolved)</div>`;
         } else {
             resolvedHtml = `<div style="font-size:10px;color:#5a6070;margin-top:3px;">${future ? "Future pick — value TBD" : "Pick data unavailable"}</div>`;
         }
@@ -224,29 +220,29 @@ function renderItemCard(item, tradeYear) {
     }
 
     // Regular player
-    const pos = item.position || (item.byYear.find(e => e.data)?.data?.position) || null;
-    const avgColor = item.avg === null ? "#5a6070" : ptsColor(item.avg, pos);
-    const avgDisplay = item.avg !== null ? `${item.avg.toFixed(1)} pts/yr` : hasData ? "0 pts" : "—";
+    const pos = item.position;
+    const avgColor = item.avg === null ? "#5a6070" : scoreColor(item.avg);
+    const avgDisplay = item.avg !== null ? `${item.avg.toFixed(0)}/100` : hasData ? "0/100" : "—";
 
     const yearRows = item.byYear.map(e => {
         if (!e.data) return `<span style="color:#5a6070;">${e.year}: —</span>`;
-        return `<span>${e.year}: <strong style="color:#c9cdd4;">${e.data.pts.toFixed(0)} pts</strong> <span style="color:#5a6070;">#${e.data.rank} ${e.data.position}</span></span>`;
+        return `<span>${e.year}: <strong style="color:#c9cdd4;">${e.data.score}/100</strong> <span style="color:#5a6070;">#${e.data.rank} ${e.data.position} (${e.data.pts.toFixed(0)} pts)</span></span>`;
     }).join(" · ");
 
     return `
     <div style="margin-bottom:10px;">
         <div style="display:flex;align-items:center;gap:5px;margin-bottom:3px;">
-            ${posTag(item.position)}
+            ${posTag(pos)}
             <span style="font-size:13px;font-weight:600;color:#c9cdd4;">${item.name}</span>
             ${item.team ? `<span style="font-size:10px;color:#5a6070;">${item.team}</span>` : ""}
         </div>
         <div style="display:flex;align-items:center;gap:8px;flex-wrap:wrap;font-size:10px;color:#8b9099;margin-bottom:2px;">
             ${hasData
-                ? `<span>Post-trade avg: <strong style="color:${avgColor};font-size:12px;">${avgDisplay}</strong></span>` +
+                ? `<span>Post-trade value: <strong style="color:${avgColor};font-size:12px;">${avgDisplay}</strong></span>` +
                   (item.byYear.length ? `<span style="color:#3d4350;">|</span><span>${yearRows}</span>` : "")
                 : `<span style="color:#5a6070;">No post-trade data yet</span>`}
         </div>
-        ${item.avg !== null ? scoreBar(item.avg, pos) : ""}
+        ${item.avg !== null ? scoreBar(item.avg) : ""}
     </div>`;
 }
 
@@ -263,7 +259,7 @@ function renderTradeCard(tx) {
     const hasData = ptYears.length > 0;
 
     let winner = null;
-    if (hasData && Math.abs(valA - valB) >= 20) {
+    if (hasData && Math.abs(valA - valB) >= 5) {
         winner = valA > valB ? teamA : teamB;
     }
 
@@ -275,12 +271,12 @@ function renderTradeCard(tx) {
         return `
         <div style="flex:1;min-width:0;padding:0 14px 0 0;">
             <div style="display:flex;align-items:center;gap:7px;margin-bottom:10px;padding-bottom:8px;border-bottom:1px solid #2d3139;">
-                <span style="font-size:13px;font-weight:800;color:${isWinner ? "#3ecf8e" : isLoser ? "#8b9099" : "#f0f1f3"};">${team}</span>
-                ${isWinner ? '<span style="font-size:10px;font-weight:700;color:#3ecf8e;background:#0d2b1e;border-radius:4px;padding:2px 6px;">WIN</span>' : ""}
+                <span style="font-size:13px;font-weight:800;color:#f0f1f3;">${team}</span>
+                ${isWinner ? '<span style="font-size:10px;font-weight:700;color:#3ecf8e;background:#0d2b1e;border-radius:4px;padding:2px 6px;">W</span>' : ""}
                 ${isLoser  ? '<span style="font-size:10px;font-weight:700;color:#f87171;background:#2b0d0d;border-radius:4px;padding:2px 6px;">L</span>' : ""}
             </div>
             ${items.map(i => renderItemCard(i, tx.season)).join("")}
-            ${hasData ? `<div style="font-size:10px;color:#5a6070;border-top:1px solid #2d3139;padding-top:5px;margin-top:4px;">Total post-trade: <strong style="color:#c9cdd4;">${val.toFixed(0)} pts</strong></div>` : ""}
+            ${hasData ? `<div style="font-size:10px;color:#5a6070;border-top:1px solid #2d3139;padding-top:5px;margin-top:4px;">Total post-trade value: <strong style="color:#c9cdd4;">${val.toFixed(0)}</strong></div>` : ""}
         </div>`;
     };
 
@@ -357,7 +353,7 @@ async function init() {
         </label>
     </div>
     <div style="font-size:12px;color:#5a6070;margin-bottom:20px;">
-        Post-trade value is measured in half-PPR fantasy points scored in completed seasons after the trade date. Win/loss reflects which side accumulated more total post-trade points.
+        Post-trade value (0–100) is based on half-PPR fantasy points in completed seasons after the trade. 100 = ~400 pts (elite QB), 75 = ~300 pts, 50 = ~200 pts. Win/loss reflects which side accumulated more total post-trade value.
     </div>
     <div id="ta-board"><div style="color:#5a6070;padding:40px 0;text-align:center;">Loading…</div></div>
     `;
@@ -372,7 +368,6 @@ async function init() {
     allTransactions = transactions;
     nameToId = nameMap;
 
-    // Load stats for all real years + draft for all years
     await Promise.all([
         ...REAL_STAT_YEARS.map(y => api.getPlayerStats(y).then(d => { statsCache[y] = d; }).catch(() => {})),
         ...["2023","2024","2025","2026"].map(y => api.getDraft(y).then(d => { draftCache[y] = d || []; }).catch(() => {})),
