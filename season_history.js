@@ -54,7 +54,7 @@ function buildBracketSVG(matches, playoffWeek1 = 15) {
         const ms = byRound[round];
         const x = PAD_LEFT + ri * ROUND_W;
         const slotsPerCard = maxMatchesR1 / ms.length;
-        const weekNum = playoffWeek1 + ri;
+        const weekNum = playoffWeek1 + round - 1;
         const isLast = ri === rounds.length - 1;
         const roundLabel = isLast ? "Finals" : `Round ${ri + 1}`;
 
@@ -206,6 +206,52 @@ function renderPlacementCard(m) {
                 ${m.team2_pts != null ? `<span style="flex-shrink:0;margin-left:8px;">${m.team2_pts.toFixed(1)}</span>` : ""}
             </div>
         </div>`;
+}
+
+function buildPlacementBracketHtml(winners, champPath) {
+    // Find the R2 consolation track matches (R2 games not in the championship path)
+    const champPathSet = new Set(champPath.map(m => `${m.round}-${m.team1}-${m.team2}`));
+    const maxRound = Math.max(...winners.map(m => m.round));
+    const r2All = winners.filter(m => m.round === maxRound - 1);
+    const consolR2 = r2All.filter(m => !champPathSet.has(`${m.round}-${m.team1}-${m.team2}`));
+
+    const place3 = winners.find(m => m.place === 3);
+    const place5 = winners.find(m => m.place === 5);
+    const place7 = winners.find(m => m.place === 7);
+
+    const bracketMatches = consolR2.length && place5
+        ? [...consolR2, place5]
+        : (place5 ? [place5] : []);
+
+    const bracketSvg = bracketMatches.length ? buildBracketSVG(bracketMatches) : "";
+
+    const standaloneCards = [place3, place7].filter(Boolean).map(renderPlacementCard).join("");
+
+    if (!bracketSvg && !standaloneCards) return "";
+
+    return `
+        <div class="sh-section-title" style="margin-top:20px;">Placement Games</div>
+        ${bracketSvg ? `<div class="bracket-wrap">${bracketSvg}</div>` : ""}
+        ${standaloneCards ? `<div style="display:flex;flex-wrap:wrap;gap:10px;margin-top:12px;">${standaloneCards}</div>` : ""}
+    `;
+}
+
+function buildConsolBracketHtml(losers) {
+    if (!losers.length) return "";
+    const maxRound = Math.max(...losers.map(m => m.round));
+    const r1 = losers.filter(m => m.round === maxRound - 1);
+    const place9 = losers.find(m => m.place === 9);
+    const place11 = losers.find(m => m.place === 11);
+
+    const bracketMatches = r1.length && place9 ? [...r1, place9] : (place9 ? [place9] : []);
+    const bracketSvg = bracketMatches.length ? buildBracketSVG(bracketMatches) : "";
+    const card11 = place11 ? renderPlacementCard(place11) : "";
+
+    return `
+        <div class="sh-section-title" style="margin-top:20px;">Consolation</div>
+        ${bracketSvg ? `<div class="bracket-wrap">${bracketSvg}</div>` : ""}
+        ${card11 ? `<div style="display:flex;flex-wrap:wrap;gap:10px;margin-top:12px;">${card11}</div>` : ""}
+    `;
 }
 
 function renderDraftOrder(year) {
@@ -678,21 +724,15 @@ function renderSeason(year) {
     `;
 
     const champPath = buildChampPath(winners);
-    const placementGames = winners.filter(m => m.place && m.place !== 1).sort((a, b) => a.place - b.place);
-    const consolGames = losers.filter(m => m.place).sort((a, b) => a.place - b.place);
+    const placementHtml = winners.length ? buildPlacementBracketHtml(winners, champPath) : "";
+    const consolHtml    = losers.length  ? buildConsolBracketHtml(losers) : "";
 
     const bracketHtml = `
         <div class="card" style="padding:14px;background:#1e2027;border-color:#2d3139;">
             <div class="sh-section-title">Playoff Bracket</div>
             <div class="bracket-wrap">${buildBracketSVG(champPath)}</div>
-            ${placementGames.length ? `
-                <div class="sh-section-title" style="margin-top:20px;">Placement Games</div>
-                <div style="display:flex;flex-wrap:wrap;gap:10px;">${placementGames.map(renderPlacementCard).join("")}</div>
-            ` : ""}
-            ${consolGames.length ? `
-                <div class="sh-section-title" style="margin-top:16px;">Consolation</div>
-                <div style="display:flex;flex-wrap:wrap;gap:10px;">${consolGames.map(renderPlacementCard).join("")}</div>
-            ` : ""}
+            ${placementHtml}
+            ${consolHtml}
         </div>
     `;
 

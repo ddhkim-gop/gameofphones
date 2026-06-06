@@ -74,7 +74,8 @@ function pickPostTradeValue(asset, receivingTeam, tradeYear) {
         const valid  = byYear.filter(e => e.data !== null);
         const avg    = valid.length ? valid.reduce((s, e) => s + e.data.score, 0) / valid.length : null;
         const position = valid.length ? valid[valid.length - 1].data.position : null;
-        return { avg, byYear, resolved: resolved.player, resolvedPos: resolved.position, position, estimated: false };
+        return { avg, byYear, resolved: resolved.player, resolvedPos: resolved.position,
+                 origOwner: resolved.original_owner || null, position, estimated: false };
     }
 
     // Unresolved — estimate by round (converted to 0-100 scale)
@@ -233,9 +234,14 @@ function tradeNarrative(tx, itemsA, itemsB, valA, valB) {
 // ── Rendering ─────────────────────────────────────────────────────────────────
 
 function posTag(pos, small = false) {
-    const color = POS_COLORS[(pos||"").toUpperCase()] || "#5a6070";
+    const p = (pos || "").toUpperCase();
     const sz = small ? "8px" : "9px";
-    return `<span style="background:${color};color:#fff;font-size:${sz};font-weight:800;padding:2px 5px;border-radius:3px;flex-shrink:0;">${pos||"?"}</span>`;
+    const base = `font-size:${sz};font-weight:800;padding:2px 0;border-radius:3px;flex-shrink:0;min-width:30px;text-align:center;display:inline-block;letter-spacing:.03em;`;
+    if (p === "PICK") {
+        return `<span style="${base}background:#1e2027;color:#a78bfa;border:1px solid #3d3560;">PICK</span>`;
+    }
+    const color = POS_COLORS[p] || "#5a6070";
+    return `<span style="${base}background:${color};color:#fff;">${pos || "?"}</span>`;
 }
 
 function scoreBar(score) {
@@ -280,6 +286,7 @@ function renderItemCard(item, tradeYear) {
             <div style="display:flex;align-items:center;gap:5px;margin-bottom:3px;">
                 ${posTag("PICK")}
                 <span style="font-size:12px;font-weight:600;color:#8b9099;">${label}</span>
+                ${item.fromTeam ? `<span style="font-size:10px;color:#5a6070;">· from ${item.fromTeam}</span>` : ""}
             </div>
             ${resolvedHtml}
         </div>`;
@@ -317,8 +324,10 @@ function renderTradeCard(tx) {
     const assetsA = tx.assets_received[teamA] || [];
     const assetsB = tx.assets_received[teamB] || [];
 
-    const itemsA = sideValue(assetsA, teamA, tx.season);
-    const itemsB = sideValue(assetsB, teamB, tx.season);
+    const itemsA = sideValue(assetsA, teamA, tx.season).map(i =>
+        i.isPick ? { ...i, fromTeam: i.origOwner || teamB } : i);
+    const itemsB = sideValue(assetsB, teamB, tx.season).map(i =>
+        i.isPick ? { ...i, fromTeam: i.origOwner || teamA } : i);
     const valA   = totalValue(itemsA);
     const valB   = totalValue(itemsB);
     const ptYears = postTradeYears(tx.season);
