@@ -114,16 +114,31 @@ function computeFaabRemaining(year) {
     return result;
 }
 
-// Best player on each team's current roster
-function bestPlayerForTeam(teamName) {
+const POS_COLORS_HOME = { QB:"#e74c82", RB:"#3ecf8e", WR:"#4299e1", TE:"#f6ad55", K:"#9f7aea", DEF:"#64748b" };
+function posColorHome(pos) { return POS_COLORS_HOME[(pos||"").toUpperCase()] || "#5a6070"; }
+function teamLogoHome(abbrev) {
+    if (!abbrev) return null;
+    return `https://a.espncdn.com/i/teamlogos/nfl/500-dark/${abbrev.toLowerCase()}.png`;
+}
+
+// Best player on each team's current roster for the given year's stats
+function bestPlayerForTeam(teamName, year) {
     const teamRosters = rostersData?.["2026"] || [];
     const roster = teamRosters.find(r => r.owner === teamName);
     if (!roster) return null;
+    // Try selected year, then adjacent years as fallback
+    const tryYears = year && year !== "all_time"
+        ? [year, "2025", "2024", "2023"]
+        : ["2025", "2024", "2023"];
     let best = null, bestScore = -1;
     (roster.players || []).forEach(p => {
         if (!p?.player_id) return;
         const pid = p.player_id;
-        const score = statsCache["2025"]?.[pid]?.pts_half_ppr || statsCache["2024"]?.[pid]?.pts_half_ppr || 0;
+        let score = 0;
+        for (const y of tryYears) {
+            const s = statsCache[y]?.[pid]?.pts_half_ppr;
+            if (s > 0) { score = s; break; }
+        }
         if (score > bestScore) { bestScore = score; best = p; }
     });
     return best;
@@ -163,9 +178,15 @@ function renderStandingsTable(rows, playoffRec, isAllTime, faabRemaining) {
         const faabCell = !isAllTime
             ? `<td style="${TD};${faabLeft != null && faabLeft < 20 ? 'color:#f87171;font-weight:700;' : ''}">${faabLeft != null ? `$${faabLeft}` : "—"}</td>`
             : "";
-        const bp = bestPlayerForTeam(r.name);
+        const bp = bestPlayerForTeam(r.name, isAllTime ? "2025" : selectedYear);
         const bpCell = bp
-            ? `<td style="${TD};text-align:left;font-size:11px;max-width:120px;overflow:hidden;text-overflow:ellipsis;white-space:nowrap;" title="${bp.name}">${bp.name}</td>`
+            ? `<td style="${TD};text-align:left;max-width:150px;">
+                <div style="display:flex;align-items:center;gap:5px;min-width:0;">
+                    <span style="background:${posColorHome(bp.position)};color:#fff;font-size:9px;font-weight:800;padding:1px 5px;border-radius:3px;flex-shrink:0;">${bp.position||"?"}</span>
+                    <span style="font-size:11px;font-weight:600;color:#f0f1f3;overflow:hidden;text-overflow:ellipsis;white-space:nowrap;" title="${bp.name}">${bp.name}</span>
+                    ${bp.team ? `<img src="${teamLogoHome(bp.team)}" style="width:13px;height:13px;object-fit:contain;flex-shrink:0;" onerror="this.style.display='none'">` : ""}
+                </div>
+              </td>`
             : `<td style="${TD}">—</td>`;
 
         return `<tr style="border-bottom:1px solid #2d3139;">
@@ -418,12 +439,14 @@ async function init() {
 
         // Load recent stats for best player column
         try {
-            const [s25, s24] = await Promise.all([
+            const [s25, s24, s23] = await Promise.all([
                 api.getPlayerStats("2025"),
                 api.getPlayerStats("2024"),
+                api.getPlayerStats("2023"),
             ]);
             statsCache["2025"] = s25 || {};
             statsCache["2024"] = s24 || {};
+            statsCache["2023"] = s23 || {};
         } catch { /* stats optional */ }
 
         document.getElementById("home-year-select").addEventListener("change", e => {

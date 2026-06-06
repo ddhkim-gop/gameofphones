@@ -1,0 +1,326 @@
+[
+  {
+    "pick_no": 1,
+    "round": 1,
+    "roster_id": 5,
+    "owner": "andyxia124",
+    "player": "Ashton Jeanty",
+    "position": "RB",
+    "team": "LV"
+  },
+  {
+    "pick_no": 2,
+    "round": 1,
+    "roster_id": 1,
+    "owner": "ddhk",
+    "player": "Tetairoa McMillan",
+    "position": "WR",
+    "team": "CAR"
+  },
+  {
+    "pick_no": 3,
+    "round": 1,
+    "roster_id": 1,
+    "owner": "ddhk",
+    "player": "Omarion Hampton",
+    "position": "RB",
+    "team": "LAC"
+  },
+  {
+    "pick_no": 4,
+    "round": 1,
+    "roster_id": 5,
+    "owner": "andyxia124",
+    "player": "Quinshon Judkins",
+    "position": "RB",
+    "team": "CLE"
+  },
+  {
+    "pick_no": 5,
+    "round": 1,
+    "roster_id": 8,
+    "owner": "eikichii952",
+    "player": "Travis Hunter",
+    "position": "WR",
+    "team": "JAX"
+  },
+  {
+    "pick_no": 6,
+    "round": 1,
+    "roster_id": 1,
+    "owner": "ddhk",
+    "player": "TreVeyon Henderson",
+    "position": "RB",
+    "team": "NE"
+  },
+  {
+    "pick_no": 7,
+    "round": 1,
+    "roster_id": 1,
+    "owner": "ddhk",
+    "player": "Cam Skattebo",
+    "position": "RB",
+    "team": "NYG"
+  },
+  {
+    "pick_no": 8,
+    "round": 1,
+    "roster_id": 11,
+    "owner": "ngman",
+    "player": "Cam Ward",
+    "position": "QB",
+    "team": "TEN"
+  },
+  {
+    "pick_no": 9,
+    "round": 1,
+    "roster_id": 10,
+    "owner": "velmixon",
+    "player": "Emeka Egbuka",
+    "position": "WR",
+    "team": "TB"
+  },
+  {
+    "pick_no": 10,
+    "round": 1,
+    "roster_id": 10,
+    "owner": "velmixon",
+    "player": "Jaxson Dart",
+    "position": "QB",
+    "team": "NYG"
+  },
+  {
+    "pick_no": 11,
+    "round": 1,
+    "roster_id": 1,
+    "owner": "ddhk",
+    "player": "Luther Burden",
+    "position": "WR",
+    "team": "CHI"
+  },
+  {
+    "pick_no": 12,
+    "round": 1,
+    "roster_id": 2,
+    "owner": "spiffster",
+    "player": "RJ Harvey",
+    "position": "RB",
+    "team": "DEN"
+  },
+  {
+    "pick_no": 13,
+    "round": 2,
+    "roster_id": 11,
+    "owner": "ngman",
+    "player": "Kaleb Johnson",
+    "position": "RB",
+    "team": "PIT"
+  },
+  {
+    "pick_no": 14,
+    "round": 2,
+    "roster_id": 2,
+    "owner": "spiffster",
+    "player": "Tyler Warren",
+    "position": "TE",
+    "team": "IND"
+  },
+  {
+    "pick_no": 15,
+    "round": 2,
+    "roster_id": 12,
+    "owner": "ganathan",
+    "player": "Matthew Golden",
+    "position": "WR",
+    "team": "GB"
+  },
+  {
+    "pick_no": 16,
+    "round": 2,
+    "roster_id": 10,
+    "owner": "velmixon",
+    "player": "Arian Smith",
+    "position": "WR",
+    "team": "NYJ"
+  },
+  {
+    "pick_no": 17,
+    "round": 2,
+    "roster_id": 8,
+    "owner": "eikichii952",
+    "player": "Colston Loveland",
+    "position": "TE",
+    "team": "CHI"
+  },
+  {
+    "pick_no": 18,
+    "round": 2,
+    "roster_id": 12,
+    "owner": "ganathan",
+    "player": "Tre' Harris",
+    "position": "WR",
+    "team": "LAC"
+  },
+  {
+    "pick_no": 19,
+    "round": 2,
+    "roster_id": 11,
+    "owner": "ngman",
+    "player": "Jayden Higgins",
+    "position": "WR",
+    "team": "HOU"
+  },
+  {
+    "pick_no": 20,
+    "round": 2,
+    "roster_id": 8,
+    "owner": "eikichii952",
+    "player": "Kyle Williams",
+    "position": "WR",
+    "team": "NE"
+  },
+  {
+    "pick_no": 21,
+    "round": 2,
+    "roster_id": 8,
+    "owner": "eikichii952",
+    "player": "Jack Bech",
+    "position": "WR",
+    "team": "LV"
+  },
+  {
+    "pick_no": 22,
+    "round": 2,
+    "roster_id": 6,
+    "owner": "IconicJH",
+    "player": "Bhayshul Tuten",
+    "position": "RB",
+    "team": "JAX"
+  },
+  {
+    "pick_no": 23,
+    "round": 2,
+    "roster_id": 12,
+    "owner": "ganathan",
+    "player": "Jaydon Blue",
+    "position": "RB",
+    "team": "DAL"
+  },
+  {
+    "pick_no": 24,
+    "round": 2,
+    "roster_id": 8,
+    "owner": "eikichii952",
+    "player": "Mason Taylor",
+    "position": "TE",
+    "team": "NYJ"
+  },
+  {
+    "pick_no": 25,
+    "round": 3,
+    "roster_id": 11,
+    "owner": "ngman",
+    "player": "Jaylin Noel",
+    "position": "WR",
+    "team": "HOU"
+  },
+  {
+    "pick_no": 26,
+    "round": 3,
+    "roster_id": 8,
+    "owner": "eikichii952",
+    "player": "Jaylin Lane",
+    "position": "WR",
+    "team": "WAS"
+  },
+  {
+    "pick_no": 27,
+    "round": 3,
+    "roster_id": 2,
+    "owner": "spiffster",
+    "player": "Jalen Milroe",
+    "position": "QB",
+    "team": "SEA"
+  },
+  {
+    "pick_no": 28,
+    "round": 3,
+    "roster_id": 5,
+    "owner": "andyxia124",
+    "player": "Shedeur Sanders",
+    "position": "QB",
+    "team": "CLE"
+  },
+  {
+    "pick_no": 29,
+    "round": 3,
+    "roster_id": 5,
+    "owner": "andyxia124",
+    "player": "Dylan Sampson",
+    "position": "RB",
+    "team": "CLE"
+  },
+  {
+    "pick_no": 30,
+    "round": 3,
+    "roster_id": 3,
+    "owner": "NoSkilzPak",
+    "player": "Elic Ayomanor",
+    "position": "WR",
+    "team": "TEN"
+  },
+  {
+    "pick_no": 31,
+    "round": 3,
+    "roster_id": 2,
+    "owner": "spiffster",
+    "player": "Devin Neal",
+    "position": "RB",
+    "team": "NO"
+  },
+  {
+    "pick_no": 32,
+    "round": 3,
+    "roster_id": 3,
+    "owner": "NoSkilzPak",
+    "player": "Jordan James",
+    "position": "RB",
+    "team": "SF"
+  },
+  {
+    "pick_no": 33,
+    "round": 3,
+    "roster_id": 12,
+    "owner": "ganathan",
+    "player": "Harold Fannin",
+    "position": "TE",
+    "team": "CLE"
+  },
+  {
+    "pick_no": 34,
+    "round": 3,
+    "roster_id": 4,
+    "owner": "jonsung",
+    "player": "Isaac TeSlaa",
+    "position": "WR",
+    "team": "DET"
+  },
+  {
+    "pick_no": 35,
+    "round": 3,
+    "roster_id": 2,
+    "owner": "spiffster",
+    "player": "DJ Giddens",
+    "position": "RB",
+    "team": "IND"
+  },
+  {
+    "pick_no": 36,
+    "round": 3,
+    "roster_id": 10,
+    "owner": "velmixon",
+    "player": "Caden Prieskorn",
+    "position": "TE",
+    "team": null
+  }
+]

@@ -318,22 +318,26 @@ async function init() {
             display: inline-block;
             color: #fff;
             border-radius: 4px;
-            padding: 1px 6px;
+            padding: 1px 0;
             font-size: 10px;
             font-weight: 800;
             letter-spacing: 0.04em;
             flex-shrink: 0;
+            min-width: 36px;
+            text-align: center;
         }
         .pick-badge {
             display: inline-block;
             background: #252830;
             color: #a78bfa;
             border-radius: 4px;
-            padding: 1px 6px;
+            padding: 1px 0;
             font-size: 10px;
             font-weight: 800;
             letter-spacing: 0.04em;
             flex-shrink: 0;
+            min-width: 36px;
+            text-align: center;
         }
 
         .tx-verb {
