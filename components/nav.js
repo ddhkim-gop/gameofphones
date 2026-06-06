@@ -4,7 +4,6 @@ export function renderNav() {
 
     const page = location.pathname.split("/").pop() || "index.html";
     const teamsActive = ["teams.html", "assets.html"].includes(page);
-    const matchupsActive = ["matchups.html", "matchup_recap.html"].includes(page);
     const txActive = ["transactions.html", "trade_analyzer.html"].includes(page);
 
     function cur(p) { return page === p ? ' class="current"' : ""; }
@@ -181,15 +180,7 @@ export function renderNav() {
                         </div>
                     </div>
                 </div>
-                <div class="nav-dropdown${matchupsActive ? " active" : ""}" data-dropdown="matchups">
-                    <span class="nav-dropdown-label">Matchups ▾</span>
-                    <div class="nav-dropdown-menu">
-                        <div class="nav-dropdown-menu-inner">
-                            <a href="matchups.html">Scores</a>
-                            <a href="matchup_recap.html">Recap</a>
-                        </div>
-                    </div>
-                </div>
+                <a href="matchups.html"${cur("matchups.html")}>Matchups</a>
                 <a href="head_to_head.html"${cur("head_to_head.html")}>H2H</a>
                 <a href="season_history.html"${cur("season_history.html")}>History</a>
             </div>

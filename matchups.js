@@ -66,6 +66,71 @@ function renderLineup(starters) {
     }).join("");
 }
 
+// ── Recap narrative ───────────────────────────────────────────────────────────
+
+function topPlayer(starters) {
+    return starters.reduce((best, s) => s.points > best.points ? s : best, starters[0]);
+}
+function zeroers(starters) {
+    return starters.filter(s => s.points === 0 && s.position !== "K");
+}
+function marginTag(m) {
+    if (m < 5)  return "nail-biter";
+    if (m < 15) return "close";
+    if (m < 30) return "comfortable";
+    if (m < 50) return "decisive";
+    return "dominant";
+}
+function strHash(s) {
+    let h = 0;
+    for (let i = 0; i < s.length; i++) h = (h * 31 + s.charCodeAt(i)) | 0;
+    return h;
+}
+function pick(arr, seed) { return arr[Math.abs(seed) % arr.length]; }
+
+const CLOSE_OPENERS   = ["It came down to the wire.", "This one wasn't decided until the final whistle.", "A close call that could have gone either way.", "Barely enough to survive."];
+const BLOWOUT_OPENERS = ["No drama here.", "A statement win from start to finish.", "This one was over early.", "Dominant performance top to bottom."];
+const MID_OPENERS     = ["A solid win with room to spare.", "Enough firepower to get the job done.", "A workmanlike victory.", "Consistent production secured the W."];
+
+function generateRecap(matchup, weekStr) {
+    const [a, b] = matchup.teams;
+    if (!a || !b || !a.starters?.length || !b.starters?.length) return "";
+    const winner = a.points > b.points ? a : b;
+    const loser  = a.points > b.points ? b : a;
+    const margin = Math.abs(a.points - b.points);
+    const tag    = marginTag(margin);
+    const seed   = strHash(`${winner.owner}${loser.owner}${weekStr}`);
+    const isPlayoff = parseInt(weekStr) >= PLAYOFF_START;
+
+    let opener;
+    if (tag === "nail-biter" || tag === "close") opener = pick(CLOSE_OPENERS, seed);
+    else if (tag === "dominant" || tag === "decisive") opener = pick(BLOWOUT_OPENERS, seed + 1);
+    else opener = pick(MID_OPENERS, seed + 2);
+
+    const winTop  = topPlayer(winner.starters);
+    const loseTop = topPlayer(loser.starters);
+    const playoffNote = isPlayoff ? " in the playoffs" : "";
+
+    let body = `${winner.owner} defeated ${loser.owner}${playoffNote} by ${margin.toFixed(2)} points (${winner.points.toFixed(2)}–${loser.points.toFixed(2)}). `;
+    body += `${winTop.name} led ${winner.owner}'s lineup with ${winTop.points.toFixed(1)} points. `;
+    if (loseTop.points >= winTop.points) {
+        body += `${loser.owner} actually had the top scorer of the matchup — ${loseTop.name} with ${loseTop.points.toFixed(1)} — but couldn't get enough support elsewhere. `;
+    } else {
+        body += `${loseTop.name} was ${loser.owner}'s best option at ${loseTop.points.toFixed(1)} points. `;
+    }
+    const zeros = zeroers(loser.starters);
+    if (zeros.length >= 2) body += `${loser.owner} was hurt by ${zeros.length} zero-point performances including ${zeros[0].name} and ${zeros[1].name}. `;
+    else if (zeros.length === 1) body += `A zero from ${zeros[0].name} didn't help ${loser.owner}'s cause. `;
+    const winZeros = zeroers(winner.starters);
+    if (winZeros.length >= 1) body += `${winner.owner} even overcame a scoreless outing from ${winZeros[0].name}. `;
+    if (tag === "nail-biter") body += `A couple of extra points from either side could have changed the outcome.`;
+    else if (tag === "dominant") body += `The result was never really in doubt.`;
+
+    return `${opener} ${body}`;
+}
+
+// ── Matchup card ──────────────────────────────────────────────────────────────
+
 function renderMatchup(matchup, weekStr) {
     if (!matchup || !matchup.teams || matchup.teams.length < 2) return "";
     const [t1, t2] = matchup.teams;
@@ -74,7 +139,7 @@ function renderMatchup(matchup, weekStr) {
 
     const teamCol = (team, isWinner) => {
         const rec = recordStr(weekStr, team.owner);
-        return `<div style="padding:14px;${isWinner ? '' : ''}">
+        return `<div style="padding:14px;">
             <div style="display:flex;align-items:center;gap:8px;margin-bottom:4px;">
                 ${avatarEl(team.owner, 26)}
                 <div style="flex:1;min-width:0;">
@@ -92,12 +157,17 @@ function renderMatchup(matchup, weekStr) {
         </div>`;
     };
 
+    const recap = generateRecap(matchup, weekStr);
+
     return `<div style="background:#1e2027;border:1px solid #2d3139;border-radius:12px;overflow:hidden;">
         <div class="mu-matchup-grid">
             ${teamCol(t1, t1win)}
             <div style="width:1px;background:#2d3139;"></div>
             ${teamCol(t2, t2win)}
         </div>
+        ${recap ? `<div style="padding:12px 16px;border-top:1px solid #2d3139;background:#171a20;">
+            <p style="margin:0;font-size:12px;line-height:1.65;color:#8b9099;">${recap}</p>
+        </div>` : ""}
     </div>`;
 }
 
