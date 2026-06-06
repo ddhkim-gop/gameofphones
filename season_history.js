@@ -758,7 +758,7 @@ function renderSeason(year) {
     const consolHtml    = losers.length  ? buildConsolBracketHtml(losers) : "";
 
     const bracketHtml = `
-        <div class="card" style="padding:14px;background:#1e2027;border-color:#2d3139;">
+        <div class="card" style="padding:14px;background:#1e2027;border-color:#2d3139;margin-top:20px;">
             <div class="sh-section-title">Playoff Bracket</div>
             <div class="bracket-wrap">${buildBracketSVG(champPath)}</div>
             ${placementHtml}
@@ -779,7 +779,7 @@ function renderSeason(year) {
     });
 
     const recapCard = seasonHtml ? `
-        <div class="card" style="padding:16px 20px;background:#1e2027;border-color:#2d3139;margin-top:20px;">
+        <div class="card" style="padding:16px 20px;background:#1e2027;border-color:#2d3139;">
             <div style="display:flex;align-items:center;gap:12px;margin-bottom:16px;flex-wrap:wrap;">
                 <div class="sh-section-title" style="margin:0;">Summary</div>
                 <select style="font-size:12px;padding:4px 8px;" onchange="(function(sel){
@@ -802,13 +802,13 @@ function renderSeason(year) {
                 ${champBadge}
             </div>
             <div class="sh-grid">
-                <div style="min-width:0;overflow:hidden;">
+                <div>
                     ${standingsHtml}
                     ${draftOrderHtml}
                 </div>
-                ${bracketHtml}
+                ${recapCard}
             </div>
-            ${recapCard}
+            ${bracketHtml}
         </div>
     `;
 }
