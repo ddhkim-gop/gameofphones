@@ -208,29 +208,6 @@ function renderPlacementCard(m) {
         </div>`;
 }
 
-function renderMatchupGroupCard(matches) {
-    return `<div style="background:#252830;border:0.8px solid #3d4350;border-radius:8px;padding:10px 14px;">
-        ${matches.map((m, i) => {
-            const t1w = m.winner === m.team1;
-            const t2w = m.winner === m.team2;
-            const t1s = t1w ? "color:#f0f1f3;font-weight:700;" : (m.winner ? "color:#5a6070;text-decoration:line-through;" : "color:#c9cdd4;");
-            const t2s = t2w ? "color:#f0f1f3;font-weight:700;" : (m.winner ? "color:#5a6070;text-decoration:line-through;" : "color:#c9cdd4;");
-            return `
-                ${i > 0 ? '<div style="border-top:1px solid #2d3139;margin:8px 0;"></div>' : ""}
-                <div style="display:flex;justify-content:space-between;align-items:center;font-size:12px;${t1s}">
-                    <span>${m.team1 || "TBD"}</span>
-                    ${m.team1_pts != null ? `<span style="flex-shrink:0;margin-left:8px;">${m.team1_pts.toFixed(1)}</span>` : ""}
-                </div>
-                <div style="height:0.5px;background:#2d3139;margin:5px 0;"></div>
-                <div style="display:flex;justify-content:space-between;align-items:center;font-size:12px;${t2s}">
-                    <span>${m.team2 || "TBD"}</span>
-                    ${m.team2_pts != null ? `<span style="flex-shrink:0;margin-left:8px;">${m.team2_pts.toFixed(1)}</span>` : ""}
-                </div>
-            `;
-        }).join("")}
-    </div>`;
-}
-
 function buildPlacementBracketHtml(winners, champPath) {
     const champPathSet = new Set(champPath.map(m => `${m.round}-${m.team1}-${m.team2}`));
     const maxRound = Math.max(...winners.map(m => m.round));
@@ -244,19 +221,36 @@ function buildPlacementBracketHtml(winners, champPath) {
 
     if (!place3 && !place5 && !place7) return "";
 
-    const leftCol = [
-        champR2.length ? renderMatchupGroupCard(champR2) : "",
-        consolR2.length ? renderMatchupGroupCard(consolR2) : "",
-    ].filter(Boolean).join('<div style="height:10px;"></div>');
+    const parts = [];
 
-    const rightCol = [place3, place5, place7].filter(Boolean).map(renderPlacementCard).join('<div style="height:8px;"></div>');
+    // 3rd place bracket: champR2 losers → 3rd place
+    if (champR2.length && place3) {
+        parts.push(`
+            <div style="margin-bottom:6px;font-size:9px;font-weight:700;text-transform:uppercase;letter-spacing:.06em;color:#5a6070;">3rd Place</div>
+            <div class="bracket-wrap">${buildBracketSVG([...champR2, place3])}</div>
+        `);
+    } else if (place3) {
+        parts.push(renderPlacementCard(place3));
+    }
+
+    // 5th place bracket: consolR2 winners → 5th place
+    if (consolR2.length && place5) {
+        parts.push(`
+            <div style="margin-top:18px;margin-bottom:6px;font-size:9px;font-weight:700;text-transform:uppercase;letter-spacing:.06em;color:#5a6070;">5th Place</div>
+            <div class="bracket-wrap">${buildBracketSVG([...consolR2, place5])}</div>
+        `);
+    } else if (place5) {
+        parts.push(renderPlacementCard(place5));
+    }
+
+    // 7th place: standalone card (consolR2 losers — those games already shown above)
+    if (place7) {
+        parts.push(`<div style="margin-top:12px;display:flex;gap:10px;flex-wrap:wrap;">${renderPlacementCard(place7)}</div>`);
+    }
 
     return `
         <div class="sh-section-title" style="margin-top:20px;">Placement Games</div>
-        <div style="display:grid;grid-template-columns:1fr 1fr;gap:12px;align-items:start;">
-            <div>${leftCol}</div>
-            <div>${rightCol}</div>
-        </div>
+        ${parts.join("")}
     `;
 }
 
@@ -269,15 +263,24 @@ function buildConsolBracketHtml(losers) {
 
     if (!r1.length && !place9 && !place11) return "";
 
-    const leftCol = r1.length ? renderMatchupGroupCard(r1) : "";
-    const rightCol = [place9, place11].filter(Boolean).map(renderPlacementCard).join('<div style="height:8px;"></div>');
+    const parts = [];
+
+    if (r1.length && place9) {
+        parts.push(`
+            <div style="margin-bottom:6px;font-size:9px;font-weight:700;text-transform:uppercase;letter-spacing:.06em;color:#5a6070;">9th Place</div>
+            <div class="bracket-wrap">${buildBracketSVG([...r1, place9])}</div>
+        `);
+    } else if (place9) {
+        parts.push(renderPlacementCard(place9));
+    }
+
+    if (place11) {
+        parts.push(`<div style="margin-top:12px;display:flex;gap:10px;flex-wrap:wrap;">${renderPlacementCard(place11)}</div>`);
+    }
 
     return `
         <div class="sh-section-title" style="margin-top:20px;">Consolation</div>
-        <div style="display:grid;grid-template-columns:1fr 1fr;gap:12px;align-items:start;">
-            <div>${leftCol}</div>
-            <div>${rightCol}</div>
-        </div>
+        ${parts.join("")}
     `;
 }
 
