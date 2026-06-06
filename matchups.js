@@ -10,9 +10,11 @@ const POS_COLORS = { QB:"#e74c82", RB:"#3ecf8e", WR:"#4299e1", TE:"#f6ad55", K:"
 function posColor(pos) { return POS_COLORS[(pos||"").toUpperCase()] || "#5a6070"; }
 
 let usersMap = {};
-let matchupsCache = {}; // year → weeks data
+let matchupsCache = {};
+let recordsCache = {};   // year → { owner → { w, l } } per week cumulative
 let selectedYear = YEARS[0];
 let selectedWeek = null;
+let _did = 0;
 
 function avatarEl(name, size = 24) {
     const url = usersMap[name];
@@ -23,7 +25,34 @@ function avatarEl(name, size = 24) {
     return `<span style="width:${sz}px;height:${sz}px;border-radius:50%;background:#252830;display:inline-flex;align-items:center;justify-content:center;font-size:${Math.round(sz*0.4)}px;font-weight:700;color:#5a6070;flex-shrink:0;">${(name||"?")[0].toUpperCase()}</span>`;
 }
 
-function renderLineup(starters, winner) {
+// Build cumulative W/L records through each week
+function buildRecords(data) {
+    const totals = {}; // owner → {w, l}
+    const byWeek = {}; // weekStr → { owner → {w, l} snapshot after that week }
+    const weeks = Object.keys(data).sort((a, b) => parseInt(a) - parseInt(b));
+    for (const w of weeks) {
+        // Only count regular season for records
+        if (parseInt(w) >= PLAYOFF_START) { byWeek[w] = JSON.parse(JSON.stringify(totals)); continue; }
+        for (const matchup of (data[w] || [])) {
+            const [t1, t2] = matchup.teams || [];
+            if (!t1 || !t2) continue;
+            if (!totals[t1.owner]) totals[t1.owner] = { w: 0, l: 0 };
+            if (!totals[t2.owner]) totals[t2.owner] = { w: 0, l: 0 };
+            if (t1.points > t2.points) { totals[t1.owner].w++; totals[t2.owner].l++; }
+            else if (t2.points > t1.points) { totals[t2.owner].w++; totals[t1.owner].l++; }
+        }
+        byWeek[w] = JSON.parse(JSON.stringify(totals));
+    }
+    return byWeek;
+}
+
+function recordStr(weekStr, owner) {
+    const rec = recordsCache[selectedYear]?.[weekStr]?.[owner];
+    if (!rec) return null;
+    return `${rec.w}-${rec.l}`;
+}
+
+function renderLineup(starters) {
     if (!starters || !starters.length) return `<div style="color:#5a6070;font-size:12px;padding:8px 0;">No lineup data</div>`;
     return starters.map(s => {
         const pts = s.points != null ? s.points.toFixed(1) : "—";
@@ -37,38 +66,37 @@ function renderLineup(starters, winner) {
     }).join("");
 }
 
-function renderMatchup(matchup) {
-    if (!matchup.teams || matchup.teams.length < 2) return "";
+function renderMatchup(matchup, weekStr) {
+    if (!matchup || !matchup.teams || matchup.teams.length < 2) return "";
     const [t1, t2] = matchup.teams;
     const t1win = t1.points > t2.points;
     const t2win = t2.points > t1.points;
-    const t1pts = (t1.points || 0).toFixed(2);
-    const t2pts = (t2.points || 0).toFixed(2);
 
-    const teamHeader = (team, isWinner) => `
-        <div style="display:flex;align-items:center;gap:8px;margin-bottom:10px;">
-            ${avatarEl(team.owner, 28)}
-            <div style="flex:1;min-width:0;">
-                <div style="font-size:13px;font-weight:700;color:${isWinner ? '#f0f1f3' : '#8b9099'};overflow:hidden;text-overflow:ellipsis;white-space:nowrap;">${team.owner}</div>
+    const teamCol = (team, isWinner) => {
+        const rec = recordStr(weekStr, team.owner);
+        return `<div style="padding:14px;${isWinner ? '' : ''}">
+            <div style="display:flex;align-items:center;gap:8px;margin-bottom:4px;">
+                ${avatarEl(team.owner, 26)}
+                <div style="flex:1;min-width:0;">
+                    <div style="font-size:13px;font-weight:700;color:${isWinner ? '#f0f1f3' : '#8b9099'};overflow:hidden;text-overflow:ellipsis;white-space:nowrap;">${team.owner}</div>
+                    ${rec ? `<div style="font-size:10px;color:#5a6070;margin-top:1px;">${rec}</div>` : ""}
+                </div>
+                <div style="font-size:20px;font-weight:800;color:${isWinner ? '#f0f1f3' : '#5a6070'};flex-shrink:0;">${(team.points||0).toFixed(2)}</div>
+                ${isWinner
+                    ? `<span style="font-size:9px;font-weight:800;color:#3ecf8e;background:#0d2b1e;border-radius:4px;padding:2px 6px;flex-shrink:0;">W</span>`
+                    : `<span style="font-size:9px;font-weight:800;color:#f87171;background:#2b0d0d;border-radius:4px;padding:2px 6px;flex-shrink:0;">L</span>`}
             </div>
-            <div style="font-size:22px;font-weight:800;color:${isWinner ? '#f0f1f3' : '#5a6070'};flex-shrink:0;">${(team.points||0).toFixed(2)}</div>
-            ${isWinner ? `<span style="font-size:9px;font-weight:800;color:#3ecf8e;background:#0d2b1e;border-radius:4px;padding:2px 6px;flex-shrink:0;">W</span>` : `<span style="font-size:9px;font-weight:800;color:#f87171;background:#2b0d0d;border-radius:4px;padding:2px 6px;flex-shrink:0;">L</span>`}
+            <div style="font-size:10px;font-weight:700;text-transform:uppercase;letter-spacing:.06em;color:#5a6070;margin:8px 0 4px;">Starters</div>
+            ${renderLineup(team.starters)}
+            <div style="text-align:right;margin-top:6px;font-size:11px;color:#5a6070;">Total: <strong style="color:#c9cdd4;">${(team.points||0).toFixed(2)}</strong></div>
         </div>`;
+    };
 
     return `<div style="background:#1e2027;border:1px solid #2d3139;border-radius:12px;overflow:hidden;">
-        <div style="display:grid;grid-template-columns:1fr 1fr;gap:0;">
-            <div style="padding:14px;border-right:1px solid #2d3139;">
-                ${teamHeader(t1, t1win)}
-                <div style="font-size:10px;font-weight:700;text-transform:uppercase;letter-spacing:.06em;color:#5a6070;margin-bottom:6px;">Starters</div>
-                ${renderLineup(t1.starters, t1win)}
-                <div style="text-align:right;margin-top:6px;font-size:11px;color:#5a6070;">Total: <strong style="color:#c9cdd4;">${t1pts}</strong></div>
-            </div>
-            <div style="padding:14px;">
-                ${teamHeader(t2, t2win)}
-                <div style="font-size:10px;font-weight:700;text-transform:uppercase;letter-spacing:.06em;color:#5a6070;margin-bottom:6px;">Starters</div>
-                ${renderLineup(t2.starters, t2win)}
-                <div style="text-align:right;margin-top:6px;font-size:11px;color:#5a6070;">Total: <strong style="color:#c9cdd4;">${t2pts}</strong></div>
-            </div>
+        <div class="mu-matchup-grid">
+            ${teamCol(t1, t1win)}
+            <div style="width:1px;background:#2d3139;"></div>
+            ${teamCol(t2, t2win)}
         </div>
     </div>`;
 }
@@ -76,121 +104,112 @@ function renderMatchup(matchup) {
 function getWeekLabel(weekStr) {
     const w = parseInt(weekStr);
     if (w >= PLAYOFF_START) {
-        const labels = { [PLAYOFF_START]: "Playoffs · Round 1", [PLAYOFF_START+1]: "Playoffs · Semifinals", [PLAYOFF_START+2]: "Playoffs · Championship" };
+        const labels = {
+            [PLAYOFF_START]:   "Playoffs · Round 1",
+            [PLAYOFF_START+1]: "Playoffs · Semifinals",
+            [PLAYOFF_START+2]: "Playoffs · Championship"
+        };
         return labels[w] || `Playoffs · Week ${w}`;
     }
     return `Week ${w}`;
 }
 
-let _dropdownId = 0;
-
 function renderWeek(weekStr, weekMatchups) {
     const label = getWeekLabel(weekStr);
-
-    // Split ddhk matchup from the rest
     const ddhkIdx = weekMatchups.findIndex(m => m.teams?.some(t => t.owner === "ddhk"));
-    const featured = ddhkIdx >= 0 ? weekMatchups[ddhkIdx] : weekMatchups[0];
-    const rest = weekMatchups.filter((_, i) => i !== (ddhkIdx >= 0 ? ddhkIdx : 0));
+    const fi = ddhkIdx >= 0 ? ddhkIdx : 0;
+    const featured = weekMatchups[fi];
+    const rest = weekMatchups.filter((_, i) => i !== fi);
 
-    const featuredCard = renderMatchup(featured);
+    const id = `oth-${++_did}`;
+    const otherSection = rest.length ? `
+        <div style="margin-top:10px;">
+            <button onclick="(function(){var el=document.getElementById('${id}'),ar=document.getElementById('ar-${id}'),open=el.style.display!=='none';el.style.display=open?'none':'block';ar.textContent=open?'▸':'▾';})()"
+                style="background:none;border:none;cursor:pointer;display:flex;align-items:center;gap:6px;color:#5a6070;font-size:11px;font-weight:700;text-transform:uppercase;letter-spacing:.06em;padding:4px 0;">
+                <span id="ar-${id}">▸</span> Other Matchups (${rest.length})
+            </button>
+            <div id="${id}" style="display:none;margin-top:8px;">
+                <div class="mu-grid">${rest.map(m => renderMatchup(m, weekStr)).join("")}</div>
+            </div>
+        </div>` : "";
 
-    let otherSection = "";
-    if (rest.length) {
-        const id = `other-${weekStr}-${++_dropdownId}`;
-        const otherCards = rest.map(m => renderMatchup(m)).join("");
-        otherSection = `
-            <div style="margin-top:10px;">
-                <button onclick="var el=document.getElementById('${id}');var arrow=document.getElementById('arr-${id}');var open=el.style.display!=='none';el.style.display=open?'none':'block';arrow.textContent=open?'▸':'▾';"
-                    style="background:none;border:none;cursor:pointer;display:flex;align-items:center;gap:6px;color:#5a6070;font-size:11px;font-weight:700;text-transform:uppercase;letter-spacing:.06em;padding:4px 0;">
-                    <span id="arr-${id}" style="font-size:10px;">▸</span>
-                    Other Matchups (${rest.length})
-                </button>
-                <div id="${id}" style="display:none;margin-top:8px;">
-                    <div style="display:grid;grid-template-columns:repeat(auto-fill,minmax(560px,1fr));gap:14px;">${otherCards}</div>
-                </div>
-            </div>`;
-    }
-
-    return `
-        <div style="margin-bottom:32px;">
-            <div style="font-size:11px;font-weight:700;text-transform:uppercase;letter-spacing:.08em;color:#5a6070;margin-bottom:12px;padding-bottom:8px;border-bottom:1px solid #2d3139;">${label}</div>
-            ${featuredCard}
-            ${otherSection}
-        </div>`;
+    return `<div style="margin-bottom:32px;">
+        <div style="font-size:11px;font-weight:700;text-transform:uppercase;letter-spacing:.08em;color:#5a6070;margin-bottom:12px;padding-bottom:8px;border-bottom:1px solid #2d3139;">${label}</div>
+        ${renderMatchup(featured, weekStr)}
+        ${otherSection}
+    </div>`;
 }
 
 function renderAll(data) {
     const board = document.getElementById("mu-board");
+    if (!board) return;
     const weeks = Object.keys(data).sort((a, b) => parseInt(a) - parseInt(b));
     if (!weeks.length) {
         board.innerHTML = `<div style="color:#5a6070;padding:40px 0;text-align:center;">No matchup data for this season.</div>`;
         return;
     }
-
-    // Filter to selected week or all
     const toShow = selectedWeek ? [selectedWeek] : weeks;
     board.innerHTML = toShow.map(w => data[w] ? renderWeek(w, data[w]) : "").join("");
 }
 
 function buildWeekSelect(data) {
+    const el = document.getElementById("mu-week-select");
+    if (!el) return;
     const weeks = Object.keys(data).sort((a, b) => parseInt(a) - parseInt(b));
-    const opts = [`<option value="">All Weeks</option>`];
-    weeks.forEach(w => opts.push(`<option value="${w}">${getWeekLabel(w)}</option>`));
-    document.getElementById("mu-week-select").innerHTML = opts.join("");
-    document.getElementById("mu-week-select").value = selectedWeek || "";
+    el.innerHTML = [`<option value="">All Weeks</option>`, ...weeks.map(w => `<option value="${w}">${getWeekLabel(w)}</option>`)].join("");
+    el.value = selectedWeek || "";
 }
 
 async function loadYear(year) {
-    document.getElementById("mu-board").innerHTML = `<div style="color:#5a6070;padding:20px 0;">Loading ${year}...</div>`;
-    if (!matchupsCache[year]) {
-        matchupsCache[year] = await api.getMatchups(year);
+    const board = document.getElementById("mu-board");
+    if (board) board.innerHTML = `<div style="color:#5a6070;padding:20px 0;">Loading ${year}…</div>`;
+    try {
+        if (!matchupsCache[year]) {
+            matchupsCache[year] = await api.getMatchups(year);
+        }
+        const data = matchupsCache[year] || {};
+        if (!recordsCache[year]) {
+            recordsCache[year] = buildRecords(data);
+        }
+        selectedWeek = null;
+        buildWeekSelect(data);
+        renderAll(data);
+    } catch (err) {
+        if (board) board.innerHTML = `<div style="color:#f87171;padding:20px 0;">Error loading matchups: ${err.message}</div>`;
+        console.error("matchups load error:", err);
     }
-    const data = matchupsCache[year] || {};
-    selectedWeek = null;
-    buildWeekSelect(data);
-    renderAll(data);
 }
 
 async function init() {
-    await new Promise(r =>
-        document.readyState === "loading"
-            ? document.addEventListener("DOMContentLoaded", r)
-            : r()
-    );
+    await new Promise(r => document.readyState === "loading" ? document.addEventListener("DOMContentLoaded", r) : r());
 
     const container = document.getElementById("matchups-container");
     container.innerHTML = `
     <style>
         #matchups-container { max-width: 1200px; }
-        @media (max-width: 700px) {
-            #matchups-container [style*="grid-template-columns:1fr 1fr"] {
-                grid-template-columns: 1fr !important;
-            }
-            #matchups-container [style*="grid-template-columns:1fr 1fr"] > div:first-child {
-                border-right: none !important;
-                border-bottom: 1px solid #2d3139;
-            }
+        .mu-matchup-grid { display: grid; grid-template-columns: 1fr 1px 1fr; }
+        .mu-grid { display: grid; grid-template-columns: repeat(auto-fill, minmax(540px, 1fr)); gap: 14px; }
+        @media (max-width: 680px) {
+            .mu-matchup-grid { grid-template-columns: 1fr !important; }
+            .mu-matchup-grid > div[style*="width:1px"] { width: 100% !important; height: 1px !important; }
         }
     </style>
     <div class="filter-bar" style="display:flex;gap:10px;flex-wrap:wrap;margin-bottom:20px;">
-        <select id="mu-year-select">
-            ${YEARS.map(y => `<option value="${y}">${y}</option>`).join("")}
-        </select>
+        <select id="mu-year-select">${YEARS.map(y => `<option value="${y}">${y}</option>`).join("")}</select>
         <select id="mu-week-select"><option value="">All Weeks</option></select>
     </div>
-    <div id="mu-board">Loading...</div>`;
+    <div id="mu-board">Loading…</div>`;
 
     try {
         const leagueUsers = await api.getLeagueUsers();
         (leagueUsers || []).forEach(u => { usersMap[u.username] = u.avatar_url; });
-    } catch { /* ok */ }
+    } catch { /* avatars optional */ }
 
     document.getElementById("mu-year-select").addEventListener("change", e => {
         selectedYear = e.target.value;
         selectedWeek = null;
         loadYear(selectedYear);
     });
-
     document.getElementById("mu-week-select").addEventListener("change", e => {
         selectedWeek = e.target.value || null;
         renderAll(matchupsCache[selectedYear] || {});
