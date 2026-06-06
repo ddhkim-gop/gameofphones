@@ -213,13 +213,15 @@ function renderStandingsTable(rows, playoffRec, isAllTime, faabRemaining) {
         const bpResult = bestPlayerForTeam(r.name, isAllTime ? null : selectedYear);
         const bp = bpResult?.player;
         const bpCell = bp
-            ? `<td style="${TD};text-align:left;max-width:200px;">
-                <div style="display:flex;align-items:center;gap:5px;min-width:0;flex-wrap:wrap;">
+            ? `<td style="${TD};text-align:left;max-width:220px;">
+                <div style="display:flex;align-items:center;gap:5px;min-width:0;">
                     ${bp.team ? `<img src="${teamLogoHome(bp.team)}" style="width:14px;height:14px;object-fit:contain;flex-shrink:0;" onerror="this.style.display='none'">` : ""}
                     <span style="background:${posColorHome(bp.position)};color:#fff;font-size:9px;font-weight:800;padding:1px 5px;border-radius:3px;flex-shrink:0;">${bp.position||"?"}</span>
-                    <span style="font-size:11px;font-weight:600;color:#f0f1f3;overflow:hidden;text-overflow:ellipsis;white-space:nowrap;" title="${bp.name}">${bp.name}</span>
-                    ${isAllTime && bpResult.year ? `<span style="font-size:10px;color:#5a6070;flex-shrink:0;">${bpResult.year}</span>` : ""}
-                    ${bpResult.score > 0 ? `<span style="font-size:10px;font-weight:700;color:#8b9099;flex-shrink:0;">${bpResult.score.toFixed(1)}</span>` : ""}
+                    <span style="font-size:11px;font-weight:600;color:#f0f1f3;overflow:hidden;text-overflow:ellipsis;white-space:nowrap;flex:1;" title="${bp.name}">${bp.name}</span>
+                    <span style="display:flex;align-items:center;gap:4px;flex-shrink:0;margin-left:auto;padding-left:6px;">
+                        ${isAllTime && bpResult.year ? `<span style="font-size:10px;color:#5a6070;">${bpResult.year}</span>` : ""}
+                        ${bpResult.score > 0 ? `<span style="font-size:10px;font-weight:700;color:#8b9099;">${bpResult.score.toFixed(1)}</span>` : ""}
+                    </span>
                 </div>
               </td>`
             : `<td style="${TD}">—</td>`;
