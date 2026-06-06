@@ -3,74 +3,77 @@ export function renderNav() {
     if (!el) return;
 
     const page = location.pathname.split("/").pop() || "index.html";
-    const teamsPages = ["teams.html", "assets.html"];
-    const teamsActive = teamsPages.includes(page);
-    const matchupsPages = ["matchups.html", "matchup_recap.html"];
-    const matchupsActive = matchupsPages.includes(page);
-    const txPages = ["transactions.html", "trade_analyzer.html"];
-    const txActive = txPages.includes(page);
+    const teamsActive = ["teams.html", "assets.html"].includes(page);
+    const matchupsActive = ["matchups.html", "matchup_recap.html"].includes(page);
+    const txActive = ["transactions.html", "trade_analyzer.html"].includes(page);
+
+    function cur(p) { return page === p ? ' class="current"' : ""; }
 
     el.innerHTML = `
-        <nav class="card">
-            <a href="index.html">Home</a>
-            <a href="draft.html">Draft</a>
-            <a href="standings.html">Standings</a>
-            <div class="nav-dropdown${teamsActive ? " active" : ""}">
-                <span class="nav-dropdown-label">Teams ▾</span>
-                <div class="nav-dropdown-menu">
-                    <div class="nav-dropdown-menu-inner">
-                        <a href="teams.html">Rosters</a>
-                        <a href="assets.html">Picks</a>
-                    </div>
-                </div>
-            </div>
-            <div class="nav-dropdown${txActive ? " active" : ""}">
-                <span class="nav-dropdown-label">Transactions ▾</span>
-                <div class="nav-dropdown-menu">
-                    <div class="nav-dropdown-menu-inner">
-                        <a href="transactions.html">Transactions</a>
-                        <a href="trade_analyzer.html">Trade Analyzer</a>
-                    </div>
-                </div>
-            </div>
-            <div class="nav-dropdown${matchupsActive ? " active" : ""}">
-                <span class="nav-dropdown-label">Matchups ▾</span>
-                <div class="nav-dropdown-menu">
-                    <div class="nav-dropdown-menu-inner">
-                        <a href="matchups.html">Scores</a>
-                        <a href="matchup_recap.html">Recap</a>
-                    </div>
-                </div>
-            </div>
-            <a href="head_to_head.html">H2H</a>
-            <a href="season_history.html">History</a>
-        </nav>
         <style>
-            .nav-dropdown { position: relative; display: inline-flex; align-items: center; }
-            .nav-dropdown-label {
-                cursor: pointer;
+            .nav-card {
+                display: flex;
+                align-items: center;
+                justify-content: space-between;
                 padding: 6px 12px;
+                position: relative;
+                overflow: visible !important;
+            }
+            /* Desktop links row */
+            .nav-links {
+                display: flex;
+                align-items: center;
+                gap: 2px;
+                flex-wrap: nowrap;
+            }
+            .nav-links a, .nav-dropdown-label {
+                padding: 7px 11px;
                 border-radius: 8px;
                 font-size: 14px;
                 font-weight: 500;
                 color: var(--text-3, #8b9099);
                 white-space: nowrap;
                 transition: color 0.15s, background 0.15s;
+                text-decoration: none;
+                display: inline-block;
+                line-height: 1.4;
+            }
+            .nav-links a:hover, .nav-links a.current {
+                color: var(--text-1, #f0f1f3);
+                background: var(--card-el, #252830);
+            }
+            .nav-links a.current { font-weight: 700; }
+
+            /* Hamburger button — hidden on desktop */
+            .nav-hamburger {
+                display: none;
+                background: none;
+                border: none;
+                cursor: pointer;
+                padding: 8px;
+                color: var(--text-3, #8b9099);
+                font-size: 22px;
+                line-height: 1;
+                border-radius: 8px;
+            }
+            .nav-hamburger:hover { background: #252830; color: #f0f1f3; }
+
+            /* Dropdown (desktop) */
+            .nav-dropdown { position: relative; display: inline-flex; align-items: center; }
+            .nav-dropdown-label {
+                cursor: pointer;
                 user-select: none;
                 font-family: inherit;
-                line-height: 1.4;
-                display: inline-block;
             }
             .nav-dropdown.active .nav-dropdown-label { color: var(--text-1, #f0f1f3); font-weight: 700; }
-            .nav-dropdown:hover .nav-dropdown-label { color: var(--text-1, #f0f1f3); background: var(--card-el, #252830); }
+            .nav-dropdown-label:hover { color: var(--text-1, #f0f1f3); background: var(--card-el, #252830); }
             .nav-dropdown-menu {
                 display: none;
                 position: absolute;
-                top: 100%;
+                top: calc(100% + 4px);
                 left: 0;
-                padding-top: 6px;
                 z-index: 1000;
-                min-width: 120px;
+                min-width: 150px;
             }
             .nav-dropdown-menu-inner {
                 background: #1e2027;
@@ -82,15 +85,145 @@ export function renderNav() {
                 flex-direction: column;
                 gap: 2px;
             }
-            .nav-dropdown:hover .nav-dropdown-menu { display: block; }
+            .nav-dropdown.open .nav-dropdown-menu { display: block; }
             .nav-dropdown-menu a {
-                padding: 7px 12px !important;
+                padding: 9px 14px !important;
                 border-radius: 6px !important;
                 font-size: 13px !important;
                 white-space: nowrap;
-                display: block;
+                display: flex !important;
+                align-items: center;
+                min-height: 40px;
             }
             .nav-dropdown-menu a:hover { background: #252830; }
+
+            /* Mobile drawer */
+            @media (max-width: 680px) {
+                .nav-card { padding: 4px 12px; }
+                .nav-links { display: none; }
+                .nav-hamburger { display: block; }
+
+                /* Mobile open state */
+                .nav-card.mobile-open .nav-links {
+                    display: flex;
+                    flex-direction: column;
+                    align-items: stretch;
+                    position: absolute;
+                    top: 100%;
+                    left: 0;
+                    right: 0;
+                    background: #1a1d24;
+                    border: 1px solid #2d3139;
+                    border-top: none;
+                    border-radius: 0 0 12px 12px;
+                    padding: 8px;
+                    z-index: 999;
+                    gap: 2px;
+                    box-shadow: 0 8px 24px rgba(0,0,0,0.5);
+                }
+                .nav-card.mobile-open .nav-links a,
+                .nav-card.mobile-open .nav-dropdown-label {
+                    font-size: 15px;
+                    padding: 12px 14px;
+                    border-radius: 8px;
+                    display: block;
+                    width: 100%;
+                    box-sizing: border-box;
+                }
+                .nav-card.mobile-open .nav-dropdown {
+                    display: block;
+                    width: 100%;
+                }
+                /* On mobile, sub-items show inline below the label */
+                .nav-card.mobile-open .nav-dropdown-menu {
+                    position: static;
+                    display: block !important;
+                    padding: 0;
+                }
+                .nav-card.mobile-open .nav-dropdown-menu-inner {
+                    background: #252830;
+                    border: none;
+                    box-shadow: none;
+                    border-radius: 8px;
+                    padding: 4px 4px 4px 16px;
+                    margin-top: 2px;
+                }
+                .nav-card.mobile-open .nav-dropdown-menu a {
+                    font-size: 14px !important;
+                    padding: 10px 12px !important;
+                    min-height: 0;
+                    color: var(--text-3, #8b9099);
+                }
+                .nav-card.mobile-open .nav-dropdown-menu a:hover { color: #f0f1f3; }
+            }
         </style>
+        <nav class="card nav-card" id="nav-card">
+            <div class="nav-links" id="nav-links">
+                <a href="index.html"${cur("index.html")}>Home</a>
+                <a href="draft.html"${cur("draft.html")}>Draft</a>
+                <a href="standings.html"${cur("standings.html")}>Standings</a>
+                <div class="nav-dropdown${teamsActive ? " active" : ""}" data-dropdown="teams">
+                    <span class="nav-dropdown-label">Teams ▾</span>
+                    <div class="nav-dropdown-menu">
+                        <div class="nav-dropdown-menu-inner">
+                            <a href="teams.html">Rosters</a>
+                            <a href="assets.html">Picks</a>
+                        </div>
+                    </div>
+                </div>
+                <div class="nav-dropdown${txActive ? " active" : ""}" data-dropdown="tx">
+                    <span class="nav-dropdown-label">Transactions ▾</span>
+                    <div class="nav-dropdown-menu">
+                        <div class="nav-dropdown-menu-inner">
+                            <a href="transactions.html">Transactions</a>
+                            <a href="trade_analyzer.html">Trade Analyzer</a>
+                        </div>
+                    </div>
+                </div>
+                <div class="nav-dropdown${matchupsActive ? " active" : ""}" data-dropdown="matchups">
+                    <span class="nav-dropdown-label">Matchups ▾</span>
+                    <div class="nav-dropdown-menu">
+                        <div class="nav-dropdown-menu-inner">
+                            <a href="matchups.html">Scores</a>
+                            <a href="matchup_recap.html">Recap</a>
+                        </div>
+                    </div>
+                </div>
+                <a href="head_to_head.html"${cur("head_to_head.html")}>H2H</a>
+                <a href="season_history.html"${cur("season_history.html")}>History</a>
+            </div>
+            <button class="nav-hamburger" id="nav-hamburger" aria-label="Menu">☰</button>
+        </nav>
     `;
+
+    const navCard = el.querySelector("#nav-card");
+    const hamburger = el.querySelector("#nav-hamburger");
+    const dropdowns = el.querySelectorAll(".nav-dropdown");
+
+    // Hamburger toggle
+    hamburger.addEventListener("click", e => {
+        e.stopPropagation();
+        navCard.classList.toggle("mobile-open");
+        hamburger.textContent = navCard.classList.contains("mobile-open") ? "✕" : "☰";
+    });
+
+    // Desktop dropdown toggle (click-based, works on touch too)
+    dropdowns.forEach(dd => {
+        const label = dd.querySelector(".nav-dropdown-label");
+        label.addEventListener("click", e => {
+            // On mobile the menu is always visible inline — nothing to toggle
+            if (window.innerWidth <= 680) return;
+            e.stopPropagation();
+            const isOpen = dd.classList.contains("open");
+            dropdowns.forEach(d => d.classList.remove("open"));
+            if (!isOpen) dd.classList.add("open");
+        });
+    });
+
+    // Close desktop dropdowns and mobile menu when clicking outside
+    document.addEventListener("click", () => {
+        dropdowns.forEach(d => d.classList.remove("open"));
+        navCard.classList.remove("mobile-open");
+        hamburger.textContent = "☰";
+    });
 }
