@@ -200,8 +200,6 @@ function renderDraftOrder(year) {
 
 function generateTeamRecap(teamName, year, s) {
     const standings = s.standings || [];
-    const winners   = s.winners_bracket || [];
-    const losers    = s.losers_bracket  || [];
     const champ     = s.champion;
     const matchups  = allMatchups[year] || {};
     const yearTxs   = allTransactions.filter(tx => tx.type === "trade" && tx.season === year);
@@ -210,15 +208,13 @@ function generateTeamRecap(teamName, year, s) {
     if (!row) return `<p style="color:#5a6070;">No data for ${teamName} in ${year}.</p>`;
 
     const seed = standings.findIndex(t => t.name === teamName) + 1;
-    const allBracket = [...winners, ...losers];
-    const playoffTeams = new Set([...winners, ...losers].flatMap(m => [m.team1, m.team2]));
-    const madePlayoffs = playoffTeams.has(teamName);
+    const isChamp = champ === teamName;
 
-    // Collect weekly results
+    // Collect weekly results (regular season only)
     const weekResults = [];
     for (const [wk, ms] of Object.entries(matchups)) {
         const w = parseInt(wk);
-        if (w > 14) continue; // regular season only
+        if (w > 14) continue;
         for (const m of ms) {
             const mine = (m.teams || []).find(t => t.owner === teamName);
             const opp  = (m.teams || []).find(t => t.owner !== teamName);
@@ -228,24 +224,26 @@ function generateTeamRecap(teamName, year, s) {
     }
     weekResults.sort((a,b) => a.week - b.week);
 
-    const wins   = weekResults.filter(r => r.won).length;
-    const losses = weekResults.filter(r => !r.won).length;
-
     // Streaks
     function longestStreak(arr, won) {
-        let best = 0, cur = 0;
-        for (const r of arr) { if (r.won === won) { cur++; best = Math.max(best, cur); } else cur = 0; }
-        return best;
+        let best = 0, cur = 0, bestEnd = -1;
+        for (let i = 0; i < arr.length; i++) {
+            if (arr[i].won === won) { cur++; if (cur > best) { best = cur; bestEnd = i; } }
+            else cur = 0;
+        }
+        return { len: best, endIdx: bestEnd };
     }
-    const bestWinStreak  = longestStreak(weekResults, true);
-    const bestLoseStreak = longestStreak(weekResults, false);
+    const winStreak  = longestStreak(weekResults, true);
+    const loseStreak = longestStreak(weekResults, false);
 
-    // Best/worst weeks
-    const sorted  = [...weekResults].sort((a,b) => b.pts - a.pts);
-    const bestWk  = sorted[0];
-    const worstWk = sorted[sorted.length - 1];
+    // Scoring extremes
+    const sorted   = [...weekResults].sort((a,b) => b.pts - a.pts);
+    const bestWk   = sorted[0];
+    const worstWk  = sorted[sorted.length - 1];
     const biggestWin  = [...weekResults].filter(r => r.won).sort((a,b) => (b.pts-b.oppPts)-(a.pts-a.oppPts))[0];
     const closestWin  = [...weekResults].filter(r => r.won).sort((a,b) => (a.pts-a.oppPts)-(b.pts-b.oppPts))[0];
+    const worstLoss   = [...weekResults].filter(r => !r.won).sort((a,b) => (b.oppPts-b.pts)-(a.oppPts-a.pts))[0];
+    const heartbreaks = weekResults.filter(r => !r.won && r.oppPts - r.pts < 10).sort((a,b) => (a.oppPts-a.pts)-(b.oppPts-b.pts));
 
     // Phase records
     const early = weekResults.filter(r => r.week <= 5);
@@ -253,85 +251,146 @@ function generateTeamRecap(teamName, year, s) {
     const late  = weekResults.filter(r => r.week >= 10);
     const phaseRec = arr => `${arr.filter(r=>r.won).length}-${arr.filter(r=>!r.won).length}`;
 
+    // League scoring context
+    const allPF = standings.map(t => t.pf);
+    const pfRank = [...allPF].sort((a,b) => b-a).indexOf(row.pf) + 1;
+    const allPA  = standings.map(t => t.pa);
+    const paRank = [...allPA].sort((a,b) => a-b).indexOf(row.pa) + 1;
+
     // Trades involving this team
     const myTrades = yearTxs.filter(tx => tx.teams.includes(teamName));
-    const inSeason = myTrades.filter(tx => tx.week >= 1);
+    const inSeason  = myTrades.filter(tx => tx.week >= 1);
     const preSeason = myTrades.filter(tx => tx.week === 0);
-
-    // Playoff results
-    const myPlayoffGames = allBracket.filter(m => m.team1 === teamName || m.team2 === teamName)
-        .sort((a,b) => a.round - b.round);
-    const champMatch = winners.find(m => m.place === 1);
-    const thirdMatch = winners.find(m => m.place === 3);
-    const isChamp    = champ === teamName;
-    const isSecond   = champMatch?.loser === teamName;
-    const isThird    = thirdMatch?.winner === teamName;
 
     const sections = [];
 
     // ── Regular Season ──────────────────────────────────────────────────────
-    let regText = `${teamName} finished the ${year} regular season ${row.wins}-${row.losses} (${ordinal(seed)} seed), scoring ${row.pf.toFixed(0)} points and allowing ${row.pa.toFixed(0)}.`;
+    let regText = "";
 
-    if (early.length && mid.length && late.length) {
-        regText += ` Their season broke down as: ${phaseRec(early)} in weeks 1–5, ${phaseRec(mid)} in weeks 6–9, and ${phaseRec(late)} in weeks 10–14.`;
+    if (isChamp) {
+        regText += `${teamName} were the ${year} champions, capping off a season that the league won't forget. `;
     }
 
-    if (bestWinStreak >= 4) regText += ` A ${bestWinStreak}-game winning streak was a highlight of their year.`;
-    if (bestLoseStreak >= 4) regText += ` They also endured a ${bestLoseStreak}-game skid that tested their playoff hopes.`;
+    // Opening record summary
+    const recDesc = row.wins >= 10 ? "dominant" : row.wins >= 8 ? "strong" : row.wins >= 6 ? "competitive" : row.wins >= 4 ? "disappointing" : "rough";
+    regText += `They put together a ${recDesc} ${row.wins}-${row.losses} record, finishing as the ${ordinal(seed)} seed. `;
+
+    // Scoring context
+    if (pfRank === 1) {
+        regText += `Their offense was the best in the league — ${row.pf.toFixed(0)} points scored, more than anyone else. `;
+    } else if (pfRank <= 3) {
+        regText += `They ranked ${ordinal(pfRank)} in scoring with ${row.pf.toFixed(0)} points — one of the more potent offenses in the league. `;
+    } else if (pfRank >= standings.length - 1) {
+        regText += `Scoring was a problem all year — ${row.pf.toFixed(0)} points put them near the bottom of the league offensively. `;
+    }
+    if (paRank === 1) {
+        regText += `Defensively, they gave up the fewest points in the league (${row.pa.toFixed(0)} PA), which proved crucial to their success. `;
+    } else if (paRank >= standings.length - 1) {
+        regText += `They also had the misfortune of facing some of the highest-scoring opponents all year — ${row.pa.toFixed(0)} points allowed, worst in the league. `;
+    }
+
+    // Phase breakdown
+    if (early.length && mid.length && late.length) {
+        const earlyRec = phaseRec(early), midRec = phaseRec(mid), lateRec = phaseRec(late);
+        const earlyW = early.filter(r=>r.won).length, midW = mid.filter(r=>r.won).length, lateW = late.filter(r=>r.won).length;
+        // Find the strongest and weakest phase
+        const phases = [{name:"early (Weeks 1–5)", w:earlyW, rec:earlyRec},{name:"mid-season (Weeks 6–9)", w:midW, rec:midRec},{name:"late (Weeks 10–14)", w:lateW, rec:lateRec}];
+        const best = phases.reduce((a,b) => b.w > a.w ? b : a);
+        const worst = phases.reduce((a,b) => b.w < a.w ? b : a);
+        if (best.name !== worst.name) {
+            regText += `They were at their best in the ${best.name} (${best.rec}) and struggled most in the ${worst.name} (${worst.rec}). `;
+        }
+    }
+
+    // Streaks
+    if (winStreak.len >= 4) {
+        regText += `A ${winStreak.len}-game winning streak mid-season was the clear high point — they looked like a legitimate contender during that run. `;
+    } else if (winStreak.len >= 3) {
+        regText += `A ${winStreak.len}-game winning streak gave them momentum at key points in the year. `;
+    }
+    if (loseStreak.len >= 4) {
+        regText += `A brutal ${loseStreak.len}-game losing streak threatened to derail their entire season. `;
+    } else if (loseStreak.len >= 3) {
+        regText += `A ${loseStreak.len}-game skid at one point put real pressure on their season. `;
+    }
 
     sections.push({ title: "Regular Season", text: regText });
 
     // ── Key Performances ────────────────────────────────────────────────────
     let perfText = "";
-    if (bestWk) perfText += `Best scoring week was Week ${bestWk.week} — ${bestWk.pts.toFixed(2)} points${bestWk.won ? ` (W vs ${bestWk.opp})` : ` (still lost to ${bestWk.opp} who put up ${bestWk.oppPts.toFixed(2)})`}.`;
-    if (worstWk) perfText += ` Their lowest output came in Week ${worstWk.week} with just ${worstWk.pts.toFixed(2)} points${worstWk.won ? `, still enough to beat ${worstWk.opp}` : `, a ${(worstWk.oppPts - worstWk.pts).toFixed(2)}-point loss to ${worstWk.opp}`}.`;
-    if (biggestWin) perfText += ` Most dominant win: Week ${biggestWin.week} over ${biggestWin.opp} by ${(biggestWin.pts - biggestWin.oppPts).toFixed(2)} points.`;
-    if (closestWin && closestWin !== biggestWin) perfText += ` Closest win: Week ${closestWin.week} over ${closestWin.opp} by just ${(closestWin.pts - closestWin.oppPts).toFixed(2)} points.`;
+
+    if (bestWk) {
+        if (bestWk.won) {
+            perfText += `Their best scoring week came in Week ${bestWk.week}, putting up ${bestWk.pts.toFixed(2)} points in a win over ${bestWk.opp}. `;
+        } else {
+            perfText += `Bizarrely, their highest-scoring week (Week ${bestWk.week}, ${bestWk.pts.toFixed(2)} pts) still ended in a loss — ${bestWk.opp} had the nerve to put up ${bestWk.oppPts.toFixed(2)}. `;
+        }
+    }
+    if (worstWk) {
+        if (!worstWk.won) {
+            perfText += `Their worst output was Week ${worstWk.week} — just ${worstWk.pts.toFixed(2)} points, a ${(worstWk.oppPts - worstWk.pts).toFixed(2)}-point loss to ${worstWk.opp}. `;
+        } else {
+            perfText += `Even in their lowest-scoring week (Week ${worstWk.week}, ${worstWk.pts.toFixed(2)} pts), they scraped out a win against ${worstWk.opp}. `;
+        }
+    }
+    if (biggestWin) {
+        perfText += `Most dominant performance: Week ${biggestWin.week}, where they blew out ${biggestWin.opp} by ${(biggestWin.pts - biggestWin.oppPts).toFixed(2)} points. `;
+    }
+    if (heartbreaks.length > 0) {
+        const hb = heartbreaks[0];
+        perfText += `Toughest loss: Week ${hb.week}, dropped a razor-thin game to ${hb.opp} by just ${(hb.oppPts - hb.pts).toFixed(2)} points. `;
+    }
+    if (closestWin && closestWin !== biggestWin && (!heartbreaks.length || heartbreaks[0].week !== closestWin.week)) {
+        perfText += `They also pulled off a nail-biter in Week ${closestWin.week}, edging ${closestWin.opp} by ${(closestWin.pts - closestWin.oppPts).toFixed(2)} points. `;
+    }
+    if (worstLoss && heartbreaks.length === 0) {
+        perfText += `Worst defeat: Week ${worstLoss.week}, a ${(worstLoss.oppPts - worstLoss.pts).toFixed(2)}-point blowout loss to ${worstLoss.opp}. `;
+    }
 
     if (perfText) sections.push({ title: "Key Performances", text: perfText });
 
     // ── Transactions ────────────────────────────────────────────────────────
     if (myTrades.length > 0) {
-        const txLines = [];
-        for (const tx of [...preSeason, ...inSeason].slice(0, 5)) {
-            const iGet = (tx.assets_received[teamName] || []);
-            const iGive = (tx.assets_received[tx.teams.find(t => t !== teamName)] || []);
-            const gotPlayers = iGet.filter(a => a.position !== "PICK").map(a => a.name);
-            const gotPicks   = iGet.filter(a => a.position === "PICK").map(a => a.name);
-            const gavePlayers = iGive.filter(a => a.position !== "PICK").map(a => a.name);
-            const gavePicks   = iGive.filter(a => a.position === "PICK").map(a => a.name);
-            const other = tx.teams.find(t => t !== teamName);
-            const wkLabel = tx.week === 0 ? "Pre-season" : `Week ${tx.week}`;
-            const got  = [...gotPlayers, ...gotPicks.map(p => `<em>${p}</em>`)].join(", ");
-            const gave = [...gavePlayers, ...gavePicks.map(p => `<em>${p}</em>`)].join(", ");
-            txLines.push(`${wkLabel}: received ${got || "—"} from ${other} in exchange for ${gave || "—"}.`);
-        }
-        sections.push({ title: "Transactions", text: txLines.join(" ") });
-    }
+        let txText = "";
 
-    // ── Playoffs ────────────────────────────────────────────────────────────
-    if (madePlayoffs || myPlayoffGames.length > 0) {
-        let playoffText = "";
-        if (!madePlayoffs) {
-            playoffText = `${teamName} missed the playoffs, finishing ${row.wins}-${row.losses}.`;
-        } else {
-            if (isChamp) playoffText += `${teamName} won it all in ${year}. `;
-            else if (isSecond) playoffText += `${teamName} reached the championship but fell short of the title. `;
-            else if (isThird) playoffText += `${teamName} finished 3rd after a strong playoff run. `;
-            else playoffText += `${teamName} made the playoffs but were eliminated before the final. `;
-
-            for (const pg of myPlayoffGames) {
-                const myPts  = pg.team1 === teamName ? pg.team1_pts : pg.team2_pts;
-                const oppPts = pg.team1 === teamName ? pg.team2_pts : pg.team1_pts;
-                const oppName = pg.team1 === teamName ? pg.team2 : pg.team1;
-                const roundNames = { 1: "Round 1", 2: "Semifinals", 3: "Championship/3rd Place" };
-                const result = myPts > oppPts ? "defeated" : "lost to";
-                playoffText += `${roundNames[pg.round] || `Round ${pg.round}`}: ${result} ${oppName} (${myPts.toFixed(2)}–${oppPts.toFixed(2)}). `;
+        if (preSeason.length > 0) {
+            txText += `Before the season even started, ${teamName} were already active. `;
+            for (const tx of preSeason.slice(0, 2)) {
+                const other = tx.teams.find(t => t !== teamName);
+                const iGet  = (tx.assets_received[teamName] || []);
+                const gotPlayers = iGet.filter(a => a.position !== "PICK").map(a => `<strong>${a.name}</strong>`);
+                const gotPicks   = iGet.filter(a => a.position === "PICK").map(a => `<em>${a.name}</em>`);
+                const got = [...gotPlayers, ...gotPicks].join(", ");
+                if (got) txText += `They brought in ${got} from ${other} in a pre-season deal. `;
             }
         }
-        sections.push({ title: "Playoffs", text: playoffText });
+
+        for (const tx of inSeason.slice(0, 4)) {
+            const other = tx.teams.find(t => t !== teamName);
+            const iGet  = (tx.assets_received[teamName] || []);
+            const iGive = (tx.assets_received[other] || []);
+            const gotPlayers  = iGet.filter(a => a.position !== "PICK").map(a => `<strong>${a.name}</strong>`);
+            const gotPicks    = iGet.filter(a => a.position === "PICK").map(a => `<em>${a.name}</em>`);
+            const gavePlayers = iGive.filter(a => a.position !== "PICK").map(a => `<strong>${a.name}</strong>`);
+            const gavePicks   = iGive.filter(a => a.position === "PICK").map(a => `<em>${a.name}</em>`);
+            const got  = [...gotPlayers, ...gotPicks].join(", ");
+            const gave = [...gavePlayers, ...gavePicks].join(", ");
+            if (got && gave) {
+                txText += `Week ${tx.week}: acquired ${got} from ${other} in exchange for ${gave}. `;
+            } else if (got) {
+                txText += `Week ${tx.week}: received ${got} from ${other}. `;
+            }
+        }
+
+        if (myTrades.length > 4) {
+            txText += `In total, ${teamName} made ${myTrades.length} trades this season — one of the most active rosters in the league. `;
+        } else if (myTrades.length === 1) {
+            txText += `That was their only trade of the season. `;
+        }
+
+        sections.push({ title: "Transactions", text: txText });
     } else {
-        sections.push({ title: "Playoffs", text: `${teamName} did not qualify for the ${year} playoffs.` });
+        sections.push({ title: "Transactions", text: `${teamName} made no trades this season, riding their draft through the entire year.` });
     }
 
     return sections.map(sec => `
@@ -349,95 +408,132 @@ function generateSeasonRecap(year, s) {
     const champ     = s.champion;
     if (!champ || !standings.length) return "";
 
-    const matchups  = allMatchups[year] || {};
-    const yearTxs   = allTransactions.filter(tx => tx.type === "trade" && tx.season === year);
+    const matchups      = allMatchups[year] || {};
+    const yearTxs       = allTransactions.filter(tx => tx.type === "trade" && tx.season === year);
     const inSeasonTrades = yearTxs.filter(tx => tx.week >= 1).sort((a,b) => a.week - b.week);
+    const preSeasonTrades = yearTxs.filter(tx => tx.week === 0);
 
-    const seed1      = standings[0];
-    const champIdx   = standings.findIndex(t => t.name === champ);
-    const champSeed  = champIdx + 1;
-    const champRow   = standings[champIdx] || {};
-    const mostPF     = standings.reduce((a, b) => b.pf > a.pf ? b : a, standings[0]);
-    const leastPA    = standings.reduce((a, b) => b.pa < a.pa ? b : a, standings[0]);
-    const champMatch  = winners.find(m => m.place === 1);
-    const second     = champMatch?.loser;
-    const thirdMatch  = winners.find(m => m.place === 3);
-    const third      = thirdMatch?.winner;
-    const semiMatches = winners.filter(m => m.round === 2);
-    const qfMatches   = winners.filter(m => m.round === 1);
+    const seed1     = standings[0];
+    const champIdx  = standings.findIndex(t => t.name === champ);
+    const champSeed = champIdx + 1;
+    const champRow  = standings[champIdx] || {};
+    const mostPF    = standings.reduce((a, b) => b.pf > a.pf ? b : a, standings[0]);
+    const leastPF   = standings.reduce((a, b) => b.pf < a.pf ? b : a, standings[0]);
+    const mostPA    = standings.reduce((a, b) => b.pa > a.pa ? b : a, standings[0]);
+    const leastPA   = standings.reduce((a, b) => b.pa < a.pa ? b : a, standings[0]);
+    const champMatch = winners.find(m => m.place === 1);
+    const second    = champMatch?.loser;
 
-    const playoffTeams = new Set();
-    winners.forEach(m => { playoffTeams.add(m.team1); playoffTeams.add(m.team2); });
+    // Collect all regular-season games for league-wide stats
+    const allGames = [];
+    for (const [wk, ms] of Object.entries(matchups)) {
+        const w = parseInt(wk);
+        if (w > 14) continue;
+        for (const m of ms) {
+            const [t1, t2] = m.teams || [];
+            if (!t1 || !t2) continue;
+            const winner = t1.points > t2.points ? t1 : t2;
+            const loser  = t1.points > t2.points ? t2 : t1;
+            allGames.push({ week: w, winner, loser, margin: winner.points - loser.points });
+        }
+    }
+    const closestGame  = [...allGames].sort((a,b) => a.margin - b.margin)[0];
+    const biggestBlowout = [...allGames].sort((a,b) => b.margin - a.margin)[0];
+    const highestScoring = [...allGames].sort((a,b) => b.winner.points - a.winner.points)[0];
+
+    // Per-team record tracking for narrative context
+    const teamRecords = {};
+    for (const t of standings) teamRecords[t.name] = { wins: 0, losses: 0 };
+    for (const g of allGames) {
+        if (teamRecords[g.winner.owner]) teamRecords[g.winner.owner].wins++;
+        if (teamRecords[g.loser.owner])  teamRecords[g.loser.owner].losses++;
+    }
 
     const sections = [];
 
     // ── Regular Season ──────────────────────────────────────────────────────
-    const seed1Row = standings[0];
     let regText = "";
+
     if (seed1.name === champ) {
-        regText += `<strong>${champ}</strong> were the class of the ${year} league from wire to wire. They led the regular season ${seed1Row.wins}-${seed1Row.losses}, claimed the top seed, and backed it up with a championship run.`;
+        regText += `<strong>${champ}</strong> were the story of the ${year} season — they set the pace in the regular season at ${seed1.wins}-${seed1.losses} and never let anyone forget who the best team was. `;
     } else {
-        regText += `<strong>${seed1.name}</strong> dominated the ${year} regular season at ${seed1Row.wins}-${seed1Row.losses} — but the trophy went elsewhere. <strong>${champ}</strong> came in as the ${ordinal(champSeed)} seed and pulled off a championship run that no one can dispute.`;
+        regText += `<strong>${seed1.name}</strong> had the best record in ${year} at ${seed1.wins}-${seed1.losses} and looked like the team to beat all year. <strong>${champ}</strong> came in as the ${ordinal(champSeed)} seed but proved that regular season records only tell part of the story. `;
     }
-    if (mostPF.name === seed1.name) {
-        regText += ` ${seed1.name} were also the most explosive offense, leading the league with ${mostPF.pf.toFixed(0)} points scored.`;
-    } else if (mostPF.name !== champ) {
-        regText += ` ${mostPF.name} led all teams in scoring (${mostPF.pf.toFixed(0)} PF) without making a deep playoff run — the classic case of points not equaling wins.`;
+
+    // Scoring leaders
+    if (mostPF.name === champ) {
+        regText += `${champ} were also the most productive offense in the league, putting up ${mostPF.pf.toFixed(0)} points — more than anyone else. `;
+    } else if (mostPF.name === seed1.name) {
+        regText += `${seed1.name} backed up their record with the league's best offense — ${mostPF.pf.toFixed(0)} points scored, pulling away from the field. `;
+    } else {
+        regText += `<strong>${mostPF.name}</strong> was the highest-scoring team in the league at ${mostPF.pf.toFixed(0)} points, even if their record didn't always reflect it. `;
     }
-    const playoffList  = standings.filter(t => playoffTeams.has(t.name));
-    const bubbleTeams  = standings.filter(t => !playoffTeams.has(t.name));
-    if (playoffList.length >= 4) {
-        regText += ` The playoff field: ${playoffList.map(t => t.name).join(", ")}.`;
-        if (bubbleTeams.length) {
-            const missed = bubbleTeams.slice(0,2).map(t => `${t.name} (${t.wins}-${t.losses})`).join(" and ");
-            regText += ` Left out: ${missed}.`;
-        }
+
+    // Defensive/luck narrative
+    if (leastPA.name !== mostPF.name) {
+        regText += `<strong>${leastPA.name}</strong> had the good fortune of facing the weakest opponents week to week, allowing just ${leastPA.pa.toFixed(0)} points all season. `;
     }
+    if (mostPA.name !== leastPF.name) {
+        regText += `On the other end, <strong>${mostPA.name}</strong> couldn't catch a break — they gave up ${mostPA.pa.toFixed(0)} points, the most in the league. `;
+    }
+
+    // Bottom of standings
+    const lastPlace = standings[standings.length - 1];
+    if (lastPlace && lastPlace.name !== champ && lastPlace.wins <= 4) {
+        regText += `<strong>${lastPlace.name}</strong> had a season to forget, finishing last at ${lastPlace.wins}-${lastPlace.losses}. `;
+    }
+
     sections.push({ title: "Regular Season", text: regText });
 
-    // ── Late-Season Battles ─────────────────────────────────────────────────
-    if (Object.keys(matchups).length > 0) {
-        const lateGames = [];
-        for (const w of ["11","12","13","14"]) {
-            for (const m of (matchups[w] || [])) {
-                const [t1, t2] = m.teams || [];
-                if (!t1 || !t2) continue;
-                const margin = Math.abs(t1.points - t2.points);
-                const winner = t1.points > t2.points ? t1 : t2;
-                const loser  = t1.points > t2.points ? t2 : t1;
-                const eitherInPlayoffs = playoffTeams.has(winner.owner) || playoffTeams.has(loser.owner);
-                lateGames.push({ week: parseInt(w), margin, winner, loser, eitherInPlayoffs });
-            }
+    // ── Memorable Moments ───────────────────────────────────────────────────
+    if (allGames.length > 0) {
+        let momText = "";
+
+        if (closestGame) {
+            momText += `The closest game of the entire season came in Week ${closestGame.week}: <strong>${closestGame.winner.owner}</strong> survived a scare against <strong>${closestGame.loser.owner}</strong>, winning by just ${closestGame.margin.toFixed(2)} points (${closestGame.winner.points.toFixed(2)}–${closestGame.loser.points.toFixed(2)}). `;
+        }
+        if (biggestBlowout && biggestBlowout !== closestGame) {
+            momText += `The most lopsided result of the year was Week ${biggestBlowout.week}, where <strong>${biggestBlowout.winner.owner}</strong> demolished <strong>${biggestBlowout.loser.owner}</strong> by ${biggestBlowout.margin.toFixed(2)} points. `;
+        }
+        if (highestScoring && highestScoring.winner.points > 180) {
+            momText += `The single highest score of the season came from <strong>${highestScoring.winner.owner}</strong> in Week ${highestScoring.week} — ${highestScoring.winner.points.toFixed(2)} points, an eye-opening performance that put the rest of the league on notice. `;
         }
 
-        let lateText = "";
-        const byTightness = [...lateGames].sort((a,b) => a.margin - b.margin);
-        if (byTightness.length) {
-            const t = byTightness[0];
-            const note = t.eitherInPlayoffs ? " — a result with direct playoff seeding implications" : "";
-            lateText += `The tightest game of the stretch run came in Week ${t.week}: <strong>${t.winner.owner}</strong> edged <strong>${t.loser.owner}</strong> by just ${t.margin.toFixed(2)} points (${t.winner.points.toFixed(2)}–${t.loser.points.toFixed(2)})${note}.`;
+        // Find any team that went on a significant streak
+        const streaks = {};
+        for (const t of standings) {
+            let cur = 0, best = 0;
+            const games = allGames.filter(g => g.winner.owner === t.name || g.loser.owner === t.name)
+                .sort((a,b) => a.week - b.week);
+            for (const g of games) {
+                if (g.winner.owner === t.name) { cur++; best = Math.max(best, cur); } else cur = 0;
+            }
+            if (best >= 5) streaks[t.name] = best;
         }
-        const topSeedLoss = lateGames.find(g => g.loser.owner === seed1.name);
-        if (topSeedLoss && seed1.name !== champ) {
-            lateText += ` Even ${seed1.name} weren't immune — they dropped a Week ${topSeedLoss.week} game to ${topSeedLoss.winner.owner} (${topSeedLoss.winner.points.toFixed(2)}–${topSeedLoss.loser.points.toFixed(2)}).`;
+        for (const [team, len] of Object.entries(streaks)) {
+            momText += `<strong>${team}</strong> put together a ${len}-game winning streak at one point — one of the most dominant runs of the ${year} season. `;
         }
-        const bigWin = [...lateGames].sort((a,b) => b.winner.points - a.winner.points)[0];
-        if (bigWin && bigWin.winner.points > 185) {
-            lateText += ` <strong>${bigWin.winner.owner}</strong> posted the week's highest score in Week ${bigWin.week} — ${bigWin.winner.points.toFixed(2)} points in a dominant ${bigWin.margin.toFixed(2)}-point win over ${bigWin.loser.owner}.`;
-        }
-        if (lateText) sections.push({ title: "Late-Season Battles", text: lateText });
+
+        if (momText) sections.push({ title: "Memorable Moments", text: momText });
     }
 
     // ── Transactions ────────────────────────────────────────────────────────
-    if (inSeasonTrades.length > 0) {
+    const allTrades = [...preSeasonTrades, ...inSeasonTrades];
+    if (allTrades.length > 0) {
         let txText = "";
+
+        // Champion's key moves
         const champTrades = inSeasonTrades.filter(tx => tx.teams.includes(champ));
         if (champTrades.length > 0) {
             const ct = champTrades[0];
             const gets = (ct.assets_received[champ] || []).filter(x => x.position !== "PICK").map(x => `<strong>${x.name}</strong>`);
             const from = ct.teams.find(t => t !== champ);
-            if (gets.length) txText += `${champ}'s key in-season move: Week ${ct.week}, they acquired ${gets.slice(0,3).join(", ")} from ${from}${gets.length > 3 ? " among others" : ""} — a deal that fueled their playoff push.`;
+            if (gets.length) {
+                txText += `<strong>${champ}</strong> made a move that defined their season: in Week ${ct.week} they acquired ${gets.slice(0,3).join(", ")} from ${from}${gets.length > 3 ? " along with other pieces" : ""}. `;
+            }
         }
+
+        // Biggest blockbuster overall
         const biggest = [...inSeasonTrades].sort((a,b) => {
             const pa = Object.values(a.assets_received).flat().filter(x => x.position !== "PICK").length;
             const pb = Object.values(b.assets_received).flat().filter(x => x.position !== "PICK").length;
@@ -445,48 +541,31 @@ function generateSeasonRecap(year, s) {
         })[0];
         if (biggest && !biggest.teams.includes(champ)) {
             const [bA, bB] = biggest.teams;
-            const getA = (biggest.assets_received[bA] || []).filter(x => x.position !== "PICK").map(x => x.name);
-            const getB = (biggest.assets_received[bB] || []).filter(x => x.position !== "PICK").map(x => x.name);
+            const getA = (biggest.assets_received[bA] || []).filter(x => x.position !== "PICK").map(x => `<strong>${x.name}</strong>`);
+            const getB = (biggest.assets_received[bB] || []).filter(x => x.position !== "PICK").map(x => `<strong>${x.name}</strong>`);
             if (getA.length + getB.length >= 3) {
-                txText += ` Biggest blockbuster (Week ${biggest.week}): <strong>${bB}</strong> sent ${getB.slice(0,3).join(", ")} to <strong>${bA}</strong> in exchange for ${getA.slice(0,3).join(", ")}${getA.length > 3 ? " and more" : ""}.`;
+                txText += `The biggest deal of the year came in Week ${biggest.week}: <strong>${bA}</strong> and <strong>${bB}</strong> swapped ${getB.slice(0,3).join(", ")} for ${getA.slice(0,3).join(", ")}${getA.length > 3 ? " and more" : ""}. `;
             }
         }
+
+        // Pre-season activity
+        if (preSeasonTrades.length > 0) {
+            const activePre = new Set(preSeasonTrades.flatMap(t => t.teams));
+            txText += `Even before the season kicked off, ${preSeasonTrades.length} pre-season trade${preSeasonTrades.length > 1 ? "s" : ""} involving ${[...activePre].join(", ")} signaled an active year ahead. `;
+        }
+
+        // Trade volume summary
         const activeTraders = new Set(inSeasonTrades.flatMap(tx => tx.teams));
-        txText += ` Overall, ${inSeasonTrades.length} in-season trade${inSeasonTrades.length > 1 ? "s" : ""} involving ${activeTraders.size} teams reshaped rosters before the postseason.`;
+        const tradeCounts = {};
+        for (const tx of inSeasonTrades) for (const t of tx.teams) tradeCounts[t] = (tradeCounts[t] || 0) + 1;
+        const mostActive = Object.entries(tradeCounts).sort((a,b) => b[1]-a[1])[0];
+        if (mostActive && mostActive[1] >= 3) {
+            txText += `<strong>${mostActive[0]}</strong> was the most trade-active team all season with ${mostActive[1]} deals. `;
+        }
+        txText += `All told, ${inSeasonTrades.length} in-season trade${inSeasonTrades.length !== 1 ? "s" : ""} involving ${activeTraders.size} teams reshaped the landscape throughout ${year}.`;
+
         sections.push({ title: "Transactions", text: txText });
     }
-
-    // ── Playoffs ────────────────────────────────────────────────────────────
-    let playoffText = "";
-    if (qfMatches.length > 0) {
-        const qfLines = qfMatches.map(m =>
-            `${m.winner} def. ${m.loser} (${Math.max(m.team1_pts,m.team2_pts).toFixed(2)}–${Math.min(m.team1_pts,m.team2_pts).toFixed(2)})`);
-        playoffText += `<strong>Round 1:</strong> ${qfLines.join(" &nbsp;·&nbsp; ")}.`;
-    }
-    if (semiMatches.length > 0) {
-        const semiUpsets = semiMatches.filter(m => {
-            const ws = standings.findIndex(t => t.name === m.winner) + 1;
-            const ls = standings.findIndex(t => t.name === m.loser)  + 1;
-            return ws > ls && ws > 0 && ls > 0;
-        });
-        const semiLines = semiMatches.map(m => {
-            const upset = semiUpsets.includes(m);
-            return `${m.winner} def. ${m.loser} (${Math.max(m.team1_pts,m.team2_pts).toFixed(2)}–${Math.min(m.team1_pts,m.team2_pts).toFixed(2)})${upset ? " 🚨" : ""}`;
-        });
-        playoffText += ` <strong>Semifinals:</strong> ${semiLines.join(" &nbsp;·&nbsp; ")}.${semiUpsets.length ? " (🚨 = upset)" : ""}`;
-    }
-    if (champMatch) {
-        const champPts  = champMatch.team1 === champ ? champMatch.team1_pts : champMatch.team2_pts;
-        const secondPts = champMatch.team1 === champ ? champMatch.team2_pts : champMatch.team1_pts;
-        const margin    = Math.abs(champPts - secondPts);
-        const tone      = margin < 10 ? "a narrow" : margin > 40 ? "a dominant" : "a convincing";
-        playoffText += ` <strong>Championship:</strong> <strong>${champ}</strong> defeated <strong>${second}</strong> in ${tone} title game, ${champPts.toFixed(2)}–${secondPts.toFixed(2)}.`;
-    }
-    if (third) {
-        const tf = winners.find(m => m.place === 3);
-        if (tf) playoffText += ` <strong>3rd Place:</strong> ${third} over ${tf.loser} (${Math.max(tf.team1_pts,tf.team2_pts).toFixed(2)}–${Math.min(tf.team1_pts,tf.team2_pts).toFixed(2)}).`;
-    }
-    if (playoffText) sections.push({ title: "Playoffs", text: playoffText });
 
     return sections.map(sec => `
         <div style="margin-bottom:16px;">
