@@ -129,18 +129,24 @@ function bestPlayerForTeam(teamName, year) {
     const isAllTime = !year || year === "all_time";
 
     if (isAllTime) {
-        // Search each year's roster with that year's stats
-        let best = null, bestScore = -1, bestYear = null;
-        for (const y of ["2025", "2024", "2023", "2026"]) {
-            const teamRosters = rostersData?.[y] || [];
-            const roster = teamRosters.find(r => r.owner === teamName);
+        // Collect all unique players across every year this team had a roster
+        const allStatYears = ["2025", "2024", "2023", "2026"];
+        const playerMap = {}; // player_id → player object
+        for (const y of allStatYears) {
+            const roster = (rostersData?.[y] || []).find(r => r.owner === teamName);
             if (!roster) continue;
             (roster.players || []).forEach(p => {
-                if (!p?.player_id) return;
-                const s = statsCache[y]?.[p.player_id]?.pts_half_ppr;
-                if (s > 0 && s > bestScore) { bestScore = s; best = p; bestYear = y; }
+                if (p?.player_id && !playerMap[p.player_id]) playerMap[p.player_id] = p;
             });
         }
+        // For each unique player, find best score across all stat years
+        let best = null, bestScore = -1, bestYear = null;
+        Object.values(playerMap).forEach(p => {
+            for (const y of allStatYears) {
+                const s = statsCache[y]?.[p.player_id]?.pts_half_ppr;
+                if (s > 0 && s > bestScore) { bestScore = s; best = p; bestYear = y; }
+            }
+        });
         return best ? { player: best, score: bestScore, year: bestYear } : null;
     }
 

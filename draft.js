@@ -51,7 +51,7 @@ function renderPositions(picks, year) {
                 <div style="background:${bg};border-radius:10px;padding:10px 12px;text-align:center;border:1px solid rgba(0,0,0,0.08);">
                     <div style="font-size:10px;font-weight:700;text-transform:uppercase;letter-spacing:0.06em;color:rgba(0,0,0,0.45);margin-bottom:2px;">${label}</div>
                     <div style="font-size:20px;font-weight:800;color:rgba(0,0,0,0.75);">${n}</div>
-                    ${avg != null ? `<div style="font-size:9px;color:rgba(0,0,0,0.4);margin-top:3px;">avg ${avg}</div>` : ""}
+                    ${avg != null ? `<div style="font-size:9px;color:rgba(0,0,0,0.6);margin-top:3px;">avg ${avg}</div>` : ""}
                 </div>`;
             }).join("")}
         </div>

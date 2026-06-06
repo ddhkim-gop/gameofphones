@@ -6,7 +6,7 @@ let transactions = null;
 let history = null;
 let leagueUsers = [];
 let divisionsData = {};
-let currentView = "2025";
+let currentView = "all_time";
 
 const FAAB_BUDGET = 100;
 
@@ -366,9 +366,9 @@ async function init() {
         controls.innerHTML = `
             <div class="filter-bar">
                 <select id="s-select">
-                    <option value="all_time">All Years</option>
+                    <option value="all_time" selected>All Years</option>
                     <option value="2026">2026</option>
-                    <option value="2025" selected>2025</option>
+                    <option value="2025">2025</option>
                     <option value="2024">2024</option>
                     <option value="2023">2023</option>
                 </select>

@@ -1,7 +1,7 @@
 import { api } from "./dataService.js";
 import { renderNav } from "./components/nav.js";
 
-const YEARS = ["2023", "2024", "2025", "2026"];
+const YEARS = ["2018", "2019", "2020", "2021", "2022", "2023", "2024", "2025", "2026"];
 const FUTURE_YEARS = ["2027", "2028", "2029"];
 const ROUNDS = [1, 2, 3];
 const POS_ORDER = ["QB", "RB", "WR", "TE", "K", "DEF"];
@@ -476,7 +476,7 @@ async function openPopover(element, player) {
         const rankByYear = {};
         for (const yr of YEARS) {
             const stat = statsCache?.[yr]?.[pid];
-            if (stat?.pts_half_ppr > 0) rankByYear[yr] = `${stat.position}${stat.rank}`;
+            if (stat?.rank > 0) rankByYear[yr] = `${stat.position || p.position}${stat.rank}`;
         }
 
         // Remove the rank placeholder div now that we have data

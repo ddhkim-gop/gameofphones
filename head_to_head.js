@@ -3,6 +3,7 @@ import { renderNav } from "./components/nav.js";
 
 let data = null;
 let currentView = "all_time";
+let usersMap = {}; // username → avatar_url
 
 const INACTIVE = new Set(['edgxrjiang', 'riqi', 'shmyung', 'urmummma']);
 
@@ -57,9 +58,18 @@ function renderMatrix(dataset) {
         const overall = ti > 0 ? `${w}-${l}-${ti}` : `${w}-${l}`;
 
         html += `<tr class="${INACTIVE.has(a) ? 'inactive-row' : ''}">`;
+        const avatarUrl = usersMap[a];
+        const avatarHtml = avatarUrl
+            ? `<img src="${avatarUrl}" style="width:22px;height:22px;border-radius:50%;object-fit:cover;flex-shrink:0;" onerror="this.style.display='none'">`
+            : `<span style="width:22px;height:22px;border-radius:50%;background:#252830;display:inline-flex;align-items:center;justify-content:center;font-size:9px;font-weight:700;color:#5a6070;flex-shrink:0;">${a[0].toUpperCase()}</span>`;
         html += `<td class="row-head">
-            <div class="row-name">${a}</div>
-            <div class="row-record">${overall} · ${pf.toFixed(0)} PF · ${pa.toFixed(0)} PA</div>
+            <div style="display:flex;align-items:center;justify-content:flex-start;gap:7px;">
+                ${avatarHtml}
+                <div>
+                    <div class="row-name">${a}</div>
+                    <div class="row-record">${overall} · ${pf.toFixed(0)} PF · ${pa.toFixed(0)} PA</div>
+                </div>
+            </div>
         </td>`;
 
         teams.forEach(b => {
@@ -127,8 +137,11 @@ async function init() {
             padding: 0;
             text-align: center;
         }
+        .matrix td.row-head {
+            text-align: left !important;
+        }
 
-        .corner { width: 180px; }
+        .corner { width: 200px; }
 
         .col-head {
             height: 80px;
@@ -147,28 +160,29 @@ async function init() {
 
         .row-head {
             text-align: left;
-            padding: 3px 14px 3px 0;
-            min-width: 170px;
+            padding: 3px 16px 3px 0;
+            min-width: 190px;
         }
         .row-name {
             font-size: 13px;
             font-weight: 700;
             color: #f0f1f3;
+            line-height: 1.2;
         }
         .row-record {
-            font-size: 11px;
+            font-size: 10px;
             color: #8b9099;
             margin-top: 1px;
         }
 
-        .cell-pad { padding: 3px; }
+        .cell-pad { padding: 4px 3px; }
 
         .cell-record {
-            width: 40px;
-            height: 26px;
-            font-size: 10px;
+            width: 34px;
+            height: 20px;
+            font-size: 9.5px;
             font-weight: 700;
-            border-radius: 5px;
+            border-radius: 4px;
             cursor: default;
             display: flex;
             align-items: center;
@@ -177,12 +191,12 @@ async function init() {
         .cell-self {
             color: #2d3139;
             font-size: 14px;
-            padding: 3px;
+            padding: 4px 3px;
         }
         .cell-empty {
             color: #2d3139;
-            width: 40px;
-            height: 26px;
+            width: 34px;
+            height: 20px;
             display: flex;
             align-items: center;
             justify-content: center;
@@ -207,7 +221,12 @@ async function init() {
     `;
 
     try {
-        data = await api.getHeadToHead();
+        const [h2hData, leagueUsers] = await Promise.all([
+            api.getHeadToHead(),
+            api.getLeagueUsers(),
+        ]);
+        data = h2hData;
+        (leagueUsers || []).forEach(u => { usersMap[u.username] = u.avatar_url; });
 
         const controls = document.getElementById("h2h-controls");
         controls.innerHTML = `

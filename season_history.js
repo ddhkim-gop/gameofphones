@@ -168,14 +168,17 @@ function renderDraftOrder(year) {
     const round1 = draftData.filter(p => p.round === 1).sort((a, b) => (a.pick_no || 0) - (b.pick_no || 0));
     if (!round1.length) return "";
 
-    const rows = round1.map((p, i) => `
+    const rows = round1.map((p, i) => {
+        const original = p.original_owner || "—";
+        const pickedBy = p.picked_by || p.original_owner || "—";
+        const traded = p.original_owner && p.picked_by && p.original_owner !== p.picked_by;
+        return `
         <tr style="border-bottom:1px solid #2d3139;">
             <td style="padding:6px 8px;text-align:center;color:#5a6070;font-size:11px;font-weight:700;">${i + 1}</td>
-            <td style="padding:6px 8px;text-align:left;font-weight:600;color:#f0f1f3;font-size:12px;">${p.picked_by || p.original_owner || "—"}</td>
-            ${p.original_owner && p.original_owner !== p.picked_by
-                ? `<td style="padding:6px 8px;font-size:11px;color:#a78bfa;">(traded from ${p.original_owner})</td>`
-                : `<td style="padding:6px 8px;font-size:11px;color:#5a6070;">own pick</td>`}
-        </tr>`).join("");
+            <td style="padding:6px 8px;text-align:left;font-weight:600;color:#f0f1f3;font-size:12px;">${original}</td>
+            <td style="padding:6px 8px;text-align:right;font-size:11px;${traded ? 'color:#a78bfa;font-weight:600;' : 'color:#5a6070;'}">${traded ? pickedBy : '—'}</td>
+        </tr>`;
+    }).join("");
 
     return `
         <div class="card" style="padding:14px;background:#1e2027;border-color:#2d3139;margin-top:20px;">
@@ -184,7 +187,7 @@ function renderDraftOrder(year) {
                 <thead><tr style="background:#252830;">
                     <th style="padding:6px 8px;text-align:center;font-size:10px;text-transform:uppercase;letter-spacing:.05em;color:#5a6070;border-bottom:1px solid #2d3139;width:36px;">#</th>
                     <th style="padding:6px 8px;text-align:left;font-size:10px;text-transform:uppercase;letter-spacing:.05em;color:#5a6070;border-bottom:1px solid #2d3139;">Manager</th>
-                    <th style="padding:6px 8px;text-align:left;font-size:10px;text-transform:uppercase;letter-spacing:.05em;color:#5a6070;border-bottom:1px solid #2d3139;">Note</th>
+                    <th style="padding:6px 8px;text-align:right;font-size:10px;text-transform:uppercase;letter-spacing:.05em;color:#5a6070;border-bottom:1px solid #2d3139;">Picked By</th>
                 </tr></thead>
                 <tbody>${rows}</tbody>
             </table>

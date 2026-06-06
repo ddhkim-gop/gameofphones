@@ -21,6 +21,7 @@ export function renderNav() {
                 </div>
             </div>
             <a href="transactions.html">Transactions</a>
+            <a href="matchups.html">Matchups</a>
             <a href="head_to_head.html">H2H</a>
             <a href="season_history.html">History</a>
         </nav>
