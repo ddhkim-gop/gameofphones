@@ -547,15 +547,13 @@ function renderReportCard() {
 
         const gc = m.isActive ? gradeColor(m.grade) : "#5a6070";
 
-        // Podium row — only show medals earned
+        // Podium row — always shown for consistent card height
         const podiumParts = [
-            m.first  ? `<span style="font-size:13px;font-weight:700;color:#f0f1f3;">🥇<span style="color:#fbbf24;">×${m.first}</span></span>`  : null,
-            m.second ? `<span style="font-size:13px;font-weight:700;color:#f0f1f3;">🥈<span style="color:#c8d6e5;">×${m.second}</span></span>` : null,
-            m.third  ? `<span style="font-size:13px;font-weight:700;color:#f0f1f3;">🥉<span style="color:#cd9b5a;">×${m.third}</span></span>`  : null,
-        ].filter(Boolean);
-        const podiumRow = podiumParts.length
-            ? `<div style="display:flex;gap:12px;align-items:center;background:#252830;border-radius:8px;padding:8px 12px;margin-bottom:12px;">${podiumParts.join("")}</div>`
-            : "";
+            `<span style="font-size:13px;font-weight:700;color:${m.first  ? '#f0f1f3' : '#3a3d47'};">🥇<span style="color:${m.first  ? '#fbbf24' : '#3a3d47'};">×${m.first  || 0}</span></span>`,
+            `<span style="font-size:13px;font-weight:700;color:${m.second ? '#f0f1f3' : '#3a3d47'};">🥈<span style="color:${m.second ? '#c8d6e5' : '#3a3d47'};">×${m.second || 0}</span></span>`,
+            `<span style="font-size:13px;font-weight:700;color:${m.third  ? '#f0f1f3' : '#3a3d47'};">🥉<span style="color:${m.third  ? '#cd9b5a' : '#3a3d47'};">×${m.third  || 0}</span></span>`,
+        ];
+        const podiumRow = `<div style="display:flex;gap:12px;align-items:center;background:#252830;border-radius:8px;padding:8px 12px;margin-bottom:12px;">${podiumParts.join("")}</div>`;
 
         const inactiveBadge = !m.isActive
             ? `<div style="font-size:10px;font-weight:700;text-transform:uppercase;letter-spacing:.05em;color:#5a6070;margin-bottom:8px;">Inactive</div>`

@@ -304,8 +304,8 @@ function renderMatchup(matchup, weekStr, weekStats) {
             <div style="width:1px;background:#2d3139;"></div>
             ${teamCol(t2, t2win)}
         </div>
-        ${chart ? `<div style="padding:10px 16px 10px;border-top:1px solid #2d3139;background:#171a20;display:flex;flex-direction:column;align-items:center;">
-            <div style="font-size:9px;font-weight:700;text-transform:uppercase;letter-spacing:.07em;color:#5a6070;margin-bottom:6px;width:100%;max-width:${W}px;">Score progression</div>
+        ${chart ? `<div style="padding:10px 16px 10px;border-top:1px solid #2d3139;background:#171a20;">
+            <div style="font-size:9px;font-weight:700;text-transform:uppercase;letter-spacing:.07em;color:#5a6070;margin-bottom:6px;">Score progression</div>
             ${chart}
         </div>` : ""}
         ${recap ? `<div style="padding:10px 16px 14px;background:#171a20;border-top:1px solid #1a1c22;">
