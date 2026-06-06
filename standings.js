@@ -10,8 +10,7 @@ let allPlayerStats = {};
 let allDraftData = {};
 let playerNameMap = {};
 let currentView = "all_time";
-const IS_REPORT_CARD_PAGE = location.pathname.includes("report_card");
-let currentPage = IS_REPORT_CARD_PAGE ? "report_card" : "standings";
+let currentPage = location.hash === "#report_card" ? "report_card" : "standings";
 
 const FAAB_BUDGET = 100;
 const YEARS = ["2026", "2025", "2024", "2023"];
@@ -733,14 +732,17 @@ function render() {
     const label = document.getElementById("s-label");
     const yearSelect = document.getElementById("s-select");
 
+    const yearSelectBar = document.getElementById("year-select-bar");
     if (currentPage === "report_card") {
         if (yearSelect) yearSelect.style.display = "none";
+        if (yearSelectBar) yearSelectBar.style.display = "none";
         label.textContent = "Manager Report Card";
         board.innerHTML = renderReportCard();
         return;
     }
 
     if (yearSelect) yearSelect.style.display = "";
+    if (yearSelectBar) yearSelectBar.style.display = "";
     const txStats = buildTxStats(transactions);
 
     if (currentView === "all_time") {
@@ -914,34 +916,34 @@ async function init() {
 
         const controls = document.getElementById("s-controls");
 
-        if (IS_REPORT_CARD_PAGE) {
-            controls.innerHTML = "";
-        } else {
-            // Restore year from URL
-            const params = new URLSearchParams(location.search);
-            const yearParam = params.get("year");
-            if (yearParam && (YEARS.includes(yearParam) || yearParam === "all_time")) {
-                currentView = yearParam;
-            }
-
-            controls.innerHTML = `
-                <div class="filter-bar" style="display:flex;align-items:center;gap:12px;flex-wrap:wrap;margin-bottom:16px;">
-                    <select id="s-select">
-                        <option value="all_time">All Years</option>
-                        <option value="2026">2026</option>
-                        <option value="2025">2025</option>
-                        <option value="2024">2024</option>
-                        <option value="2023">2023</option>
-                    </select>
-                </div>
-            `;
-            document.getElementById("s-select").value = currentView;
-            document.getElementById("s-select").addEventListener("change", (e) => {
-                currentView = e.target.value;
-                updateUrl();
-                render();
-            });
+        // Restore year from URL
+        const params = new URLSearchParams(location.search);
+        const yearParam = params.get("year");
+        if (yearParam && (YEARS.includes(yearParam) || yearParam === "all_time")) {
+            currentView = yearParam;
         }
+
+        controls.innerHTML = `
+            <div style="display:flex;align-items:center;gap:6px;margin-bottom:12px;">
+                <button class="page-tab${currentPage === 'standings' ? ' active' : ''}" id="tab-standings" onclick="switchPage('standings')">Standings</button>
+                <button class="page-tab${currentPage === 'report_card' ? ' active' : ''}" id="tab-report_card" onclick="switchPage('report_card')">Manager Report Card</button>
+            </div>
+            <div id="year-select-bar" class="filter-bar" style="display:flex;align-items:center;gap:12px;flex-wrap:wrap;margin-bottom:16px;">
+                <select id="s-select">
+                    <option value="all_time">All Years</option>
+                    <option value="2026">2026</option>
+                    <option value="2025">2025</option>
+                    <option value="2024">2024</option>
+                    <option value="2023">2023</option>
+                </select>
+            </div>
+        `;
+        document.getElementById("s-select").value = currentView;
+        document.getElementById("s-select").addEventListener("change", (e) => {
+            currentView = e.target.value;
+            updateUrl();
+            render();
+        });
 
         render();
 
