@@ -208,49 +208,76 @@ function renderPlacementCard(m) {
         </div>`;
 }
 
+function renderMatchupGroupCard(matches) {
+    return `<div style="background:#252830;border:0.8px solid #3d4350;border-radius:8px;padding:10px 14px;">
+        ${matches.map((m, i) => {
+            const t1w = m.winner === m.team1;
+            const t2w = m.winner === m.team2;
+            const t1s = t1w ? "color:#f0f1f3;font-weight:700;" : (m.winner ? "color:#5a6070;text-decoration:line-through;" : "color:#c9cdd4;");
+            const t2s = t2w ? "color:#f0f1f3;font-weight:700;" : (m.winner ? "color:#5a6070;text-decoration:line-through;" : "color:#c9cdd4;");
+            return `
+                ${i > 0 ? '<div style="border-top:1px solid #2d3139;margin:8px 0;"></div>' : ""}
+                <div style="display:flex;justify-content:space-between;align-items:center;font-size:12px;${t1s}">
+                    <span>${m.team1 || "TBD"}</span>
+                    ${m.team1_pts != null ? `<span style="flex-shrink:0;margin-left:8px;">${m.team1_pts.toFixed(1)}</span>` : ""}
+                </div>
+                <div style="height:0.5px;background:#2d3139;margin:5px 0;"></div>
+                <div style="display:flex;justify-content:space-between;align-items:center;font-size:12px;${t2s}">
+                    <span>${m.team2 || "TBD"}</span>
+                    ${m.team2_pts != null ? `<span style="flex-shrink:0;margin-left:8px;">${m.team2_pts.toFixed(1)}</span>` : ""}
+                </div>
+            `;
+        }).join("")}
+    </div>`;
+}
+
 function buildPlacementBracketHtml(winners, champPath) {
-    // Find the R2 consolation track matches (R2 games not in the championship path)
     const champPathSet = new Set(champPath.map(m => `${m.round}-${m.team1}-${m.team2}`));
     const maxRound = Math.max(...winners.map(m => m.round));
     const r2All = winners.filter(m => m.round === maxRound - 1);
+    const champR2 = r2All.filter(m => champPathSet.has(`${m.round}-${m.team1}-${m.team2}`));
     const consolR2 = r2All.filter(m => !champPathSet.has(`${m.round}-${m.team1}-${m.team2}`));
 
     const place3 = winners.find(m => m.place === 3);
     const place5 = winners.find(m => m.place === 5);
     const place7 = winners.find(m => m.place === 7);
 
-    const bracketMatches = consolR2.length && place5
-        ? [...consolR2, place5]
-        : (place5 ? [place5] : []);
+    if (!place3 && !place5 && !place7) return "";
 
-    const bracketSvg = bracketMatches.length ? buildBracketSVG(bracketMatches) : "";
+    const leftCol = [
+        champR2.length ? renderMatchupGroupCard(champR2) : "",
+        consolR2.length ? renderMatchupGroupCard(consolR2) : "",
+    ].filter(Boolean).join('<div style="height:10px;"></div>');
 
-    const standaloneCards = [place3, place7].filter(Boolean).map(renderPlacementCard).join("");
-
-    if (!bracketSvg && !standaloneCards) return "";
+    const rightCol = [place3, place5, place7].filter(Boolean).map(renderPlacementCard).join('<div style="height:8px;"></div>');
 
     return `
         <div class="sh-section-title" style="margin-top:20px;">Placement Games</div>
-        ${bracketSvg ? `<div class="bracket-wrap">${bracketSvg}</div>` : ""}
-        ${standaloneCards ? `<div style="display:flex;flex-wrap:wrap;gap:10px;margin-top:12px;">${standaloneCards}</div>` : ""}
+        <div style="display:grid;grid-template-columns:1fr 1fr;gap:12px;align-items:start;">
+            <div>${leftCol}</div>
+            <div>${rightCol}</div>
+        </div>
     `;
 }
 
 function buildConsolBracketHtml(losers) {
     if (!losers.length) return "";
     const maxRound = Math.max(...losers.map(m => m.round));
-    const r1 = losers.filter(m => m.round === maxRound - 1);
+    const r1 = losers.filter(m => m.round < maxRound);
     const place9 = losers.find(m => m.place === 9);
     const place11 = losers.find(m => m.place === 11);
 
-    const bracketMatches = r1.length && place9 ? [...r1, place9] : (place9 ? [place9] : []);
-    const bracketSvg = bracketMatches.length ? buildBracketSVG(bracketMatches) : "";
-    const card11 = place11 ? renderPlacementCard(place11) : "";
+    if (!r1.length && !place9 && !place11) return "";
+
+    const leftCol = r1.length ? renderMatchupGroupCard(r1) : "";
+    const rightCol = [place9, place11].filter(Boolean).map(renderPlacementCard).join('<div style="height:8px;"></div>');
 
     return `
         <div class="sh-section-title" style="margin-top:20px;">Consolation</div>
-        ${bracketSvg ? `<div class="bracket-wrap">${bracketSvg}</div>` : ""}
-        ${card11 ? `<div style="display:flex;flex-wrap:wrap;gap:10px;margin-top:12px;">${card11}</div>` : ""}
+        <div style="display:grid;grid-template-columns:1fr 1fr;gap:12px;align-items:start;">
+            <div>${leftCol}</div>
+            <div>${rightCol}</div>
+        </div>
     `;
 }
 
@@ -714,7 +741,7 @@ function renderSeason(year) {
                             <td class="rank">${i+1}</td>
                             <td style="text-align:left;font-weight:600;">${t.name}${rowTrophy(t.name)}</td>
                             <td>${t.wins}</td><td>${t.losses}</td>
-                            <td>${t.pf}</td><td>${t.pa}</td>
+                            <td>${Math.round(t.pf)}</td><td>${Math.round(t.pa)}</td>
                         </tr>
                     `).join("")}
                 </tbody>
@@ -833,7 +860,7 @@ async function init() {
             padding:4px 14px; font-size:13px; font-weight:700; color:#fbbf24;
         }
         .sh-grid { display:grid; grid-template-columns:280px 1fr; gap:20px; align-items:start; min-width:0; }
-        .sh-grid > * { min-width:0; overflow:hidden; }
+        .sh-grid > * { min-width:0; }
         .sh-section-title {
             font-size:10px; text-transform:uppercase; letter-spacing:0.07em;
             color:#5a6070; font-weight:700; margin-bottom:10px;
