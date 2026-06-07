@@ -4,7 +4,7 @@ import { renderNav } from "./components/nav.js";
 const PICK_BG = { QB:"#fda4af", RB:"#86efac", WR:"#93c5fd", TE:"#fdba74", K:"#c4b5fd", DEF:"#94a3b8" };
 const PICK_FG = { QB:"#e74c82", RB:"#16a34a", WR:"#2563eb", TE:"#d97706", K:"#7c3aed", DEF:"#475569" };
 
-const CARD_H = 90;
+const CARD_H = 72;
 const COL_W  = 130; // px per team column
 
 let allTransactions = [];
