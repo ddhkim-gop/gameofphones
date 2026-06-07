@@ -242,13 +242,15 @@ function ensurePopover() {
                    background:rgba(255,255,255,0.08);border:1px solid rgba(255,255,255,0.1);
                    color:#8b9099;width:26px;height:26px;border-radius:50%;cursor:pointer;
                    font-size:13px;display:flex;align-items:center;justify-content:center;flex-shrink:0;">✕</button>
-        <div id="popover-body" style="font-size:13px;line-height:1.5;overflow-y:auto;height:100%;border-radius:12px;"></div>`;
+        <div id="popover-body" style="font-size:13px;line-height:1.5;overflow-y:auto;min-height:0;flex:1;border-radius:12px;"></div>`;
     pop.style.cssText = `
-        display:none;position:fixed;z-index:9999;
+        position:fixed;z-index:9999;
         background:#13151a;border:1px solid #2d3139;
         border-radius:12px;overflow:hidden;
+        flex-direction:column;
         box-shadow:0 10px 40px rgba(0,0,0,0.6);
     `;
+    pop.style.display = "none";
     document.body.appendChild(pop);
 
     document.addEventListener("click", (e) => {
@@ -461,7 +463,7 @@ async function openPopover(element, player) {
         </div>
     `;
 
-    popover.style.display = "block";
+    popover.style.display = "flex";
     positionPopover(popover, element);
 
     const espnId = player.espn_id || await lookupEspnId(player.name);
