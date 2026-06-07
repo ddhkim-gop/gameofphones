@@ -449,12 +449,12 @@ function computeGrades(allManagers) {
 
         const composite =
             champScore   * 0.45 +
-            seedScore    * 0.20 +
+            seedScore    * 0.15 +
             winScore     * 0.15 +
-            (hasDraft  ? draftScore  : 50) * 0.10 +
-            playoffScore * 0.05 +
-            (hasTrade  ? tradeScore  : 50) * 0.03 +
-            (hasWaiver ? waiverScore : 50) * 0.02;
+            playoffScore * 0.10 +
+            (hasTrade  ? tradeScore  : 50) * 0.06 +
+            (hasDraft  ? draftScore  : 50) * 0.05 +
+            (hasWaiver ? waiverScore : 50) * 0.04;
 
         return {
             ...m,
@@ -603,12 +603,12 @@ function renderReportCard() {
             </div>
             <div style="display:grid;grid-template-columns:1fr 1fr;gap:6px;margin-bottom:14px;">
                 ${gradeWeightRow("Championships", 45, "Titles won relative to peers")}
-                ${gradeWeightRow("Avg Seeding", 20, "Regular season finish (lower = better)")}
+                ${gradeWeightRow("Avg Seeding", 15, "Regular season finish (lower = better)")}
                 ${gradeWeightRow("Win Rate", 15, "Overall W/L percentage")}
-                ${gradeWeightRow("Draft Surplus", 10, "Points above expected by draft slot")}
-                ${gradeWeightRow("Playoff Rate", 5, "Playoff appearances (8/12 spots)")}
-                ${gradeWeightRow("Trade Value", 3, "Net points gained via trades")}
-                ${gradeWeightRow("Waiver Hit Rate", 2, "Waiver adds above median scorer")}
+                ${gradeWeightRow("Playoff Rate", 10, "Playoff appearances (8/12 spots)")}
+                ${gradeWeightRow("Trade Value", 6, "Net points gained via trades")}
+                ${gradeWeightRow("Draft Surplus", 5, "Points above expected by draft slot")}
+                ${gradeWeightRow("Waiver Hit Rate", 4, "Waiver adds above median scorer")}
             </div>
             <div style="font-size:11px;color:#5a6070;line-height:1.6;border-top:1px solid #2d3139;padding-top:12px;">
                 Top manager = A+, bottom = F, rest distributed evenly across the scale. Inactive managers appear at the bottom.
