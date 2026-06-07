@@ -448,13 +448,13 @@ function computeGrades(allManagers) {
         const hasWaiver = m.waiverTotal > 0;
 
         const composite =
-            champScore   * 0.35 +
+            champScore   * 0.45 +
             seedScore    * 0.20 +
             winScore     * 0.15 +
-            playoffScore * 0.10 +
             (hasDraft  ? draftScore  : 50) * 0.10 +
-            (hasTrade  ? tradeScore  : 50) * 0.05 +
-            (hasWaiver ? waiverScore : 50) * 0.05;
+            playoffScore * 0.05 +
+            (hasTrade  ? tradeScore  : 50) * 0.03 +
+            (hasWaiver ? waiverScore : 50) * 0.02;
 
         return {
             ...m,
@@ -522,8 +522,8 @@ function renderReportCard() {
 
     // Active = in current year's standings
     const active2026 = new Set(((standings || {})["2026"] || []).map(r => r.name));
-    const active   = computed.filter(m =>  active2026.has(m.name)).sort((a, b) => b.rosterValue - a.rosterValue);
-    const inactive = computed.filter(m => !active2026.has(m.name)).sort((a, b) => b.rosterValue - a.rosterValue);
+    const active   = computed.filter(m =>  active2026.has(m.name)).sort((a, b) => b.composite - a.composite);
+    const inactive = computed.filter(m => !active2026.has(m.name)).sort((a, b) => b.composite - a.composite);
     const allSorted = [...active, ...inactive];
 
     // Rank-based grading by roster value: top → A+, bottom → F
@@ -599,13 +599,20 @@ function renderReportCard() {
         <div style="margin-top:24px;background:#1e2027;border:1px solid #2d3139;border-radius:12px;padding:18px 20px;">
             <div style="font-size:13px;font-weight:700;color:#f0f1f3;margin-bottom:4px;">How the Overall Grade is computed</div>
             <div style="font-size:11px;color:#5a6070;margin-bottom:14px;">
-                Managers are ranked by <strong style="color:#a78bfa;">Average Roster Value</strong> — the total half-PPR fantasy points of their end-of-season roster, averaged across completed seasons (2023–2025).
-                Rosters are reconstructed from draft picks, then adjusted for every trade and waiver claim made during each season.
-                Top manager = A+, bottom = F, rest distributed evenly across the scale.
-                Inactive managers (not in 2026) appear at the bottom.
+                Managers are ranked by a weighted composite score. All metrics are normalized relative to peers (0–100), then blended:
+            </div>
+            <div style="display:grid;grid-template-columns:1fr 1fr;gap:6px;margin-bottom:14px;">
+                ${gradeWeightRow("Championships", 45, "Titles won relative to peers")}
+                ${gradeWeightRow("Avg Seeding", 20, "Regular season finish (lower = better)")}
+                ${gradeWeightRow("Win Rate", 15, "Overall W/L percentage")}
+                ${gradeWeightRow("Draft Surplus", 10, "Points above expected by draft slot")}
+                ${gradeWeightRow("Playoff Rate", 5, "Playoff appearances (8/12 spots)")}
+                ${gradeWeightRow("Trade Value", 3, "Net points gained via trades")}
+                ${gradeWeightRow("Waiver Hit Rate", 2, "Waiver adds above median scorer")}
             </div>
             <div style="font-size:11px;color:#5a6070;line-height:1.6;border-top:1px solid #2d3139;padding-top:12px;">
-                Category grades (Draft / Trades / Waivers) are still shown per card as relative sub-grades — they do not affect the overall grade.
+                Top manager = A+, bottom = F, rest distributed evenly across the scale. Inactive managers appear at the bottom.
+                Category grades (Draft / Trades / Waivers) are relative sub-grades shown for context.
                 Luck Index = actual wins − Pythagorean expected wins (PF²÷(PF²+PA²)).
             </div>
         </div>
