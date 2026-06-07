@@ -33,28 +33,51 @@ function avatarEl(username, size = 24) {
 
 // ── Positional breakdown ──────────────────────────────────────────────────────
 
+function calcAvgAge(picks) {
+    if (!picks.length) return null;
+    const now = new Date();
+    const ages = picks.map(p => {
+        if (!p.birth_date) return null;
+        const ms = now - new Date(p.birth_date);
+        return ms / (365.25 * 24 * 60 * 60 * 1000);
+    }).filter(a => a !== null);
+    if (!ages.length) return null;
+    return (ages.reduce((s, a) => s + a, 0) / ages.length).toFixed(1);
+}
+
 function renderPositions(picks, year) {
-    const counts = { QB:0, RB:0, WR:0, TE:0, K:0, OTHER:0 };
+    const byPos = { QB:[], RB:[], WR:[], TE:[], K:[] };
     picks.forEach(p => {
-        const pos = (p.position||"OTHER").toUpperCase();
-        counts[pos] !== undefined ? counts[pos]++ : counts.OTHER++;
+        const pos = (p.position||"").toUpperCase();
+        if (byPos[pos]) byPos[pos].push(p);
     });
     const total = picks.length;
-    const boxes = [
-        { label:"QB", n:counts.QB, bg:PICK_BG.QB },
-        { label:"RB", n:counts.RB, bg:PICK_BG.RB },
-        { label:"WR", n:counts.WR, bg:PICK_BG.WR },
-        { label:"TE", n:counts.TE, bg:PICK_BG.TE },
-        { label:"K",  n:counts.K,  bg:PICK_BG.K  },
-        { label:"Total", n:total,  bg:"#f1f5f9"   },
-    ];
-    document.getElementById("position-stats").innerHTML = `
-        <div style="display:flex;gap:8px;flex-wrap:wrap;">
-            ${boxes.map(({label, n, bg}) => `
-                <div style="background:${bg};border-radius:8px;padding:8px 14px;text-align:center;min-width:52px;">
-                    <div style="font-size:9px;font-weight:700;text-transform:uppercase;letter-spacing:.06em;color:rgba(0,0,0,0.45);">${label}</div>
-                    <div style="font-size:20px;font-weight:800;color:rgba(0,0,0,0.75);line-height:1.2;">${n}</div>
+
+    const POSITIONS = ["QB","RB","WR","TE","K"];
+    const posBoxes = POSITIONS.map(pos => ({
+        label: pos,
+        n: byPos[pos].length,
+        age: calcAvgAge(byPos[pos]),
+        bg: PICK_BG[pos],
+        fg: PICK_FG[pos],
+    }));
+    const allAge = calcAvgAge(picks);
+
+    const el = document.getElementById("position-stats");
+    el.style.cssText = "width:100%;";
+    el.innerHTML = `
+        <div style="display:flex;gap:6px;width:100%;">
+            ${posBoxes.map(({label, n, age, bg, fg}) => `
+                <div style="background:${bg};border-radius:8px;padding:8px 6px;text-align:center;flex:1;min-width:0;">
+                    <div style="font-size:9px;font-weight:700;text-transform:uppercase;letter-spacing:.06em;color:rgba(0,0,0,0.45);margin-bottom:3px;">${label}</div>
+                    <div style="font-size:20px;font-weight:800;color:rgba(0,0,0,0.75);line-height:1.1;">${n}</div>
+                    ${age != null ? `<div style="font-size:9px;font-weight:600;color:rgba(0,0,0,0.4);margin-top:3px;">avg ${age}</div>` : ""}
                 </div>`).join("")}
+            <div style="background:#e2e8f0;border-radius:8px;padding:8px 6px;text-align:center;flex:1;min-width:0;">
+                <div style="font-size:9px;font-weight:700;text-transform:uppercase;letter-spacing:.06em;color:rgba(0,0,0,0.35);margin-bottom:3px;">Total</div>
+                <div style="font-size:20px;font-weight:800;color:rgba(0,0,0,0.6);line-height:1.1;">${total}</div>
+                ${allAge != null ? `<div style="font-size:9px;font-weight:600;color:rgba(0,0,0,0.35);margin-top:3px;">avg ${allAge}</div>` : ""}
+            </div>
         </div>`;
 }
 
