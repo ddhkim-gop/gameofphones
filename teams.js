@@ -113,10 +113,6 @@ async function init() {
 
         // Team header with avatar
         const avatarUrl = usersMap[ownerName];
-        const letterSpan = `<span style="width:32px;height:32px;border-radius:50%;background:#252830;display:inline-flex;align-items:center;justify-content:center;font-size:13px;font-weight:700;color:#5a6070;flex-shrink:0;">${ownerName[0].toUpperCase()}</span>`;
-        const avatarHtml = avatarUrl
-            ? `<img src="${avatarUrl}" style="width:32px;height:32px;border-radius:50%;object-fit:cover;flex-shrink:0;" onerror="this.outerHTML='${letterSpan.replace(/'/g,"&#39;").replace(/"/g,"&quot;")}'">`
-            : letterSpan;
 
         const activePlayers = (team.players || []).filter(p => p && p.name);
         const playerCount = activePlayers.length;
@@ -133,13 +129,31 @@ async function init() {
 
         const header = document.createElement("div");
         header.style.cssText = "display:flex;align-items:center;gap:10px;margin-bottom:14px;padding-bottom:12px;border-bottom:1px solid #2d3139;";
+
+        // Build avatar via DOM (never via innerHTML) so styles are never re-parsed
+        const avatarEl = document.createElement(avatarUrl ? "img" : "span");
+        avatarEl.style.cssText = "width:32px;height:32px;border-radius:50%;flex-shrink:0;";
+        if (avatarUrl) {
+            avatarEl.src = avatarUrl;
+            avatarEl.style.objectFit = "cover";
+            avatarEl.addEventListener("error", () => {
+                const fb = document.createElement("span");
+                fb.style.cssText = "width:32px;height:32px;border-radius:50%;background:#252830;display:inline-flex;align-items:center;justify-content:center;font-size:13px;font-weight:700;color:#c9cdd4;flex-shrink:0;";
+                fb.textContent = ownerName[0].toUpperCase();
+                avatarEl.replaceWith(fb);
+            });
+        } else {
+            avatarEl.style.cssText += "background:#252830;display:inline-flex;align-items:center;justify-content:center;font-size:13px;font-weight:700;color:#c9cdd4;";
+            avatarEl.textContent = ownerName[0].toUpperCase();
+        }
+
         header.innerHTML = `
-            ${avatarHtml}
             <div style="flex:1;min-width:0;">
                 <div style="font-size:14px;font-weight:700;color:#f0f1f3;white-space:nowrap;overflow:hidden;text-overflow:ellipsis;">${ownerName}</div>
                 <div style="font-size:11px;color:#5a6070;margin-top:2px;">${playerCount} players · ${pickCount} picks</div>
                 ${avgAge ? `<div style="font-size:11px;color:#5a6070;margin-top:1px;">avg age ${avgAge}</div>` : ""}
             </div>`;
+        header.prepend(avatarEl);
         card.appendChild(header);
 
         // Group + sort players
