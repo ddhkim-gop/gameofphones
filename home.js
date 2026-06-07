@@ -8,6 +8,7 @@ let rostersData = null;
 let statsCache = {};
 let usersMap = {};
 let transactionsData = [];
+let matchupsData = {};   // year → { week: [matchup] }
 let selectedYear = "all_time";
 
 function avatarEl(url, name, size) {
@@ -176,7 +177,57 @@ function bestPlayerForTeam(teamName, year) {
     return best ? { player: best, score: bestScore, year: bestYear } : null;
 }
 
-function renderStandingsTable(rows, playoffRec, isAllTime, faabRemaining) {
+// SOS = average points scored by each team's opponents across regular-season weeks
+function computeSOS(yearMatchups) {
+    // yearMatchups: { "1": [{matchup_id, teams:[{owner,points},...]}, ...], "2": [...], ... }
+    const opp = {}; // teamName → { total: sum of opp pts, count: games }
+    Object.values(yearMatchups || {}).forEach(weekMatchups => {
+        (weekMatchups || []).forEach(m => {
+            const teams = m.teams || [];
+            if (teams.length !== 2) return;
+            const [a, b] = teams;
+            if (!a?.owner || !b?.owner) return;
+            if (!opp[a.owner]) opp[a.owner] = { total: 0, count: 0 };
+            if (!opp[b.owner]) opp[b.owner] = { total: 0, count: 0 };
+            opp[a.owner].total += b.points || 0;
+            opp[a.owner].count++;
+            opp[b.owner].total += a.points || 0;
+            opp[b.owner].count++;
+        });
+    });
+    const result = {};
+    Object.entries(opp).forEach(([name, d]) => {
+        result[name] = d.count > 0 ? d.total / d.count : null;
+    });
+    return result;
+}
+
+function computeAllTimeSOS() {
+    const opp = {};
+    YEARS.forEach(year => {
+        Object.values(matchupsData[year] || {}).forEach(weekMatchups => {
+            (weekMatchups || []).forEach(m => {
+                const teams = m.teams || [];
+                if (teams.length !== 2) return;
+                const [a, b] = teams;
+                if (!a?.owner || !b?.owner) return;
+                if (!opp[a.owner]) opp[a.owner] = { total: 0, count: 0 };
+                if (!opp[b.owner]) opp[b.owner] = { total: 0, count: 0 };
+                opp[a.owner].total += b.points || 0;
+                opp[a.owner].count++;
+                opp[b.owner].total += a.points || 0;
+                opp[b.owner].count++;
+            });
+        });
+    });
+    const result = {};
+    Object.entries(opp).forEach(([name, d]) => {
+        result[name] = d.count > 0 ? d.total / d.count : null;
+    });
+    return result;
+}
+
+function renderStandingsTable(rows, playoffRec, isAllTime, faabRemaining, sosMap) {
     const extraHeaders = isAllTime
         ? `<th style="${TH}">Avg PF</th><th style="${TH}">Best PF</th>`
         : "";
@@ -192,6 +243,7 @@ function renderStandingsTable(rows, playoffRec, isAllTime, faabRemaining) {
             <th style="${TH}">PA</th>
             <th style="${TH}">+/-</th>
             ${extraHeaders}
+            <th style="${TH}">SOS</th>
             <th style="${TH}">PO W-L</th>
             ${faabHeader}
             <th style="${TH}">Top Player</th>
@@ -226,6 +278,11 @@ function renderStandingsTable(rows, playoffRec, isAllTime, faabRemaining) {
               </td>`
             : `<td style="${TD}">—</td>`;
 
+        const sos = sosMap?.[r.name];
+        const sosStr = sos != null ? sos.toFixed(1) : "—";
+        // Compute rank among all rows for coloring (higher SOS = harder = red)
+        const sosCell = `<td style="${TD};color:#8b9099;">${sosStr}</td>`;
+
         return `<tr style="border-bottom:1px solid #2d3139;">
             <td style="${TD};color:#5a6070;font-weight:700;">${i+1}</td>
             <td style="${TD};text-align:left;">
@@ -240,6 +297,7 @@ function renderStandingsTable(rows, playoffRec, isAllTime, faabRemaining) {
             <td style="${TD}">${r.pa.toFixed(1)}</td>
             <td style="${TD};color:${diffColor};font-weight:700;">${diff > 0 ? "+" : ""}${diff}</td>
             ${extraCells}
+            ${sosCell}
             <td style="${TD}">${poStr}</td>
             ${faabCell}
             ${bpCell}
@@ -262,7 +320,8 @@ function updateStandings() {
     const rows = isAllTime ? buildAllTimeRows() : (standingsData[selectedYear] || []);
     const playoffRec = buildPlayoffRecords(selectedYear);
     const faabRemaining = !isAllTime ? computeFaabRemaining(selectedYear) : {};
-    document.getElementById("home-standings-table").innerHTML = renderStandingsTable(rows, playoffRec, isAllTime, faabRemaining);
+    const sosMap = isAllTime ? computeAllTimeSOS() : computeSOS(matchupsData[selectedYear]);
+    document.getElementById("home-standings-table").innerHTML = renderStandingsTable(rows, playoffRec, isAllTime, faabRemaining, sosMap);
 }
 
 // ── League Rules ──────────────────────────────────────────────
@@ -460,7 +519,8 @@ async function init() {
     <div id="home-standings-table" style="color:#5a6070;padding:20px 0;">Loading...</div>`;
 
     try {
-        const [standings, history, leagueUsers, transactions, rosters2026, rosters2025, rosters2024, rosters2023] = await Promise.all([
+        const [standings, history, leagueUsers, transactions, rosters2026, rosters2025, rosters2024, rosters2023,
+               mu2026, mu2025, mu2024, mu2023] = await Promise.all([
             api.getStandings(),
             api.getSeasonHistory(),
             api.getLeagueUsers(),
@@ -469,11 +529,16 @@ async function init() {
             api.getRosters("2025"),
             api.getRosters("2024"),
             api.getRosters("2023"),
+            api.getMatchups("2026").catch(() => ({})),
+            api.getMatchups("2025").catch(() => ({})),
+            api.getMatchups("2024").catch(() => ({})),
+            api.getMatchups("2023").catch(() => ({})),
         ]);
 
         standingsData = standings;
         historyData = history;
         transactionsData = transactions || [];
+        matchupsData = { "2026": mu2026||{}, "2025": mu2025||{}, "2024": mu2024||{}, "2023": mu2023||{} };
         rostersData = {
             "2026": rosters2026 || [],
             "2025": rosters2025 || [],
