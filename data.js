@@ -11426,7 +11426,7 @@ window.__STATIC_DATA__ = {
     {
       "user_id": "467460096968880128",
       "username": "Paul_Yoon",
-      "avatar_url": "assets/paul_yoon_avatar.svg"
+      "avatar_url": "assets/paul_yoon_avatar.png"
     },
     {
       "user_id": "603691074287898624",
