@@ -26,9 +26,10 @@ function avatarEl(username, size = 24) {
     const u = leagueUsers.find(u => u.username === username);
     const url = u?.avatar_url;
     const sz = size;
-    if (url) return `<img src="${url}" style="width:${sz}px;height:${sz}px;border-radius:50%;object-fit:cover;flex-shrink:0;">`;
     const letter = (username || "?")[0].toUpperCase();
-    return `<span style="width:${sz}px;height:${sz}px;border-radius:50%;background:rgba(0,0,0,0.15);display:inline-flex;align-items:center;justify-content:center;font-size:${Math.round(sz*0.45)}px;font-weight:800;color:rgba(0,0,0,0.45);flex-shrink:0;">${letter}</span>`;
+    const fallback = `<span style="width:${sz}px;height:${sz}px;border-radius:50%;background:rgba(0,0,0,0.15);display:inline-flex;align-items:center;justify-content:center;font-size:${Math.round(sz*0.45)}px;font-weight:800;color:rgba(0,0,0,0.45);flex-shrink:0;">${letter}</span>`;
+    if (!url) return fallback;
+    return `<img src="${url}" style="width:${sz}px;height:${sz}px;border-radius:50%;object-fit:cover;flex-shrink:0;" onerror="this.outerHTML='${fallback.replace(/'/g, "&#39;")}'">`;
 }
 
 // ── Positional breakdown ──────────────────────────────────────────────────────
@@ -184,9 +185,10 @@ function renderDraft(picks) {
     const headerCells = colTeams.map(team => {
         const u = leagueUsers.find(u => u.username === team);
         const url = u?.avatar_url;
+        const letterDiv = `<div style="width:36px;height:36px;border-radius:50%;background:#252830;display:flex;align-items:center;justify-content:center;font-size:14px;font-weight:800;color:#5a6070;">${(team||"?")[0].toUpperCase()}</div>`;
         const avatarHtml = url
-            ? `<img src="${url}" style="width:36px;height:36px;border-radius:50%;object-fit:cover;border:2px solid #2d3139;">`
-            : `<div style="width:36px;height:36px;border-radius:50%;background:#252830;display:flex;align-items:center;justify-content:center;font-size:14px;font-weight:800;color:#5a6070;">${(team||"?")[0].toUpperCase()}</div>`;
+            ? `<img src="${url}" style="width:36px;height:36px;border-radius:50%;object-fit:cover;border:2px solid #2d3139;" onerror="this.outerHTML='${letterDiv.replace(/'/g,"&#39;")}'">`
+            : letterDiv;
         return `
             <div style="display:flex;flex-direction:column;align-items:center;gap:5px;padding:10px 4px 8px;">
                 ${avatarHtml}
