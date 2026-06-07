@@ -305,12 +305,12 @@ function positionPopover(popover, element) {
     const isMobile = window.innerWidth < 600;
 
     if (isMobile) {
-        // Centered modal with bounded height
-        popover.style.left = "50%";
-        popover.style.top = "50%";
-        popover.style.transform = "translate(-50%, -50%)";
-        popover.style.width = `${Math.min(340, window.innerWidth - 24)}px`;
-        popover.style.maxHeight = `${window.innerHeight * 0.82}px`;
+        // CSS handles centering via media query — clear any JS-set overrides
+        popover.style.left = "";
+        popover.style.top = "";
+        popover.style.transform = "";
+        popover.style.width = "";
+        popover.style.maxHeight = "";
         return;
     }
 

@@ -326,14 +326,18 @@ main {
 
     #player-popover {
         position: fixed !important;
-        bottom: 0 !important; left: 0 !important;
-        top: auto !important; right: 0 !important;
-        width: 100% !important;
+        top: 50% !important;
+        left: 50% !important;
+        bottom: auto !important;
+        right: auto !important;
+        transform: translate(-50%, -50%) !important;
+        width: calc(100vw - 24px) !important;
+        max-width: 360px !important;
         max-height: 82vh !important;
         overflow-y: auto !important;
-        border-radius: var(--radius-lg) var(--radius-lg) 0 0;
+        border-radius: var(--radius-md) !important;
         padding: 0 !important;
-        box-shadow: 0 -4px 20px rgba(0,0,0,0.5);
+        box-shadow: 0 10px 40px rgba(0,0,0,0.7);
     }
 
     .s-table { font-size: 11px; }
