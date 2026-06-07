@@ -238,8 +238,8 @@ function ensurePopover() {
     pop.style.cssText = `
         display:none;position:fixed;z-index:9999;
         background:#13151a;border:1px solid #2d3139;
-        border-radius:12px;width:370px;
-        max-height:calc(100vh - 24px);overflow-y:auto;
+        border-radius:12px;
+        overflow-y:auto;
         box-shadow:0 10px 40px rgba(0,0,0,0.6);
     `;
     document.body.appendChild(pop);
@@ -302,25 +302,39 @@ function renderNews(articles, injuries) {
 }
 
 function positionPopover(popover, element) {
+    const isMobile = window.innerWidth < 600;
+
+    if (isMobile) {
+        // Centered modal with bounded height
+        popover.style.left = "50%";
+        popover.style.top = "50%";
+        popover.style.transform = "translate(-50%, -50%)";
+        popover.style.width = `${Math.min(340, window.innerWidth - 24)}px`;
+        popover.style.maxHeight = `${window.innerHeight * 0.82}px`;
+        return;
+    }
+
+    // Desktop: anchor to clicked element
     const rect = element.getBoundingClientRect();
     const popW = 370;
-    const maxH = window.innerHeight - 24;
-    popover.style.maxHeight = `${maxH}px`;
+    popover.style.width = `${popW}px`;
+    popover.style.transform = "";
 
-    // Horizontal: prefer right side of element, fall back to left
+    // Horizontal: prefer right, fall back to left
     let left = rect.right + 12;
     if (left + popW > window.innerWidth - 8) left = rect.left - popW - 12;
     if (left < 8) left = 8;
 
-    // Vertical: start at element top, clamp so bottom doesn't overflow
-    const popH = Math.min(maxH, 560); // estimate
+    // Vertical: clamp so it fits within viewport
+    const maxH = window.innerHeight - 24;
+    popover.style.maxHeight = `${maxH}px`;
+    const popH = Math.min(popover.scrollHeight || 520, maxH);
     let top = rect.top;
     if (top + popH > window.innerHeight - 12) top = window.innerHeight - popH - 12;
     if (top < 12) top = 12;
 
     popover.style.left = `${left}px`;
     popover.style.top = `${top}px`;
-    popover.style.transform = "";
 }
 
 async function openPopover(element, player) {
