@@ -227,7 +227,18 @@ function computeAllTimeSOS() {
     return result;
 }
 
+function buildSosRanks(rows, sosMap) {
+    // Rank 1 = hardest schedule (highest avg opp PF), N = easiest
+    const sorted = [...rows]
+        .filter(r => sosMap?.[r.name] != null)
+        .sort((a, b) => (sosMap[b.name] ?? 0) - (sosMap[a.name] ?? 0));
+    const ranks = {};
+    sorted.forEach((r, i) => { ranks[r.name] = i + 1; });
+    return ranks;
+}
+
 function renderStandingsTable(rows, playoffRec, isAllTime, faabRemaining, sosMap) {
+    const sosRanks = buildSosRanks(rows, sosMap);
     const extraHeaders = isAllTime
         ? `<th style="${TH}">Avg PF</th><th style="${TH}">Best PF</th>`
         : "";
@@ -279,8 +290,7 @@ function renderStandingsTable(rows, playoffRec, isAllTime, faabRemaining, sosMap
             : `<td style="${TD}">—</td>`;
 
         const sos = sosMap?.[r.name];
-        const sosStr = sos != null ? sos.toFixed(1) : "—";
-        // Compute rank among all rows for coloring (higher SOS = harder = red)
+        const sosStr = sos != null ? sosRanks[r.name] ?? "—" : "—";
         const sosCell = `<td style="${TD};color:#8b9099;">${sosStr}</td>`;
 
         return `<tr style="border-bottom:1px solid #2d3139;">
