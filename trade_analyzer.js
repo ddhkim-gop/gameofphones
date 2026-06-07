@@ -58,15 +58,25 @@ function playerPostTradeValue(name, tradeYear) {
 }
 
 // Pick value: resolved player's post-trade score, or round-based estimate
-function pickPostTradeValue(asset, receivingTeam, tradeYear) {
+function pickPostTradeValue(asset, receivingTeam, tradeYear, givingTeam, usedPickKeys) {
     const m = asset.name.match(/(\d{4})\s+Round\s+(\d+)/i);
     if (!m) return { avg: null, byYear: [], resolved: null, estimated: false };
     const [, pickYear, roundStr] = m;
     const round = parseInt(roundStr);
     const draft = draftCache[pickYear] || [];
-    const resolved = draft.length
-        ? draft.find(p => p.round === round && p.traded && p.picked_by === receivingTeam)
-        : null;
+
+    // Candidates: same round, picked by receiving team, not already claimed
+    const candidates = draft
+        .filter(p => p.round === round && p.picked_by === receivingTeam
+                     && !usedPickKeys.has(`${pickYear}-${p.pick_no}`))
+        .sort((a, b) => (a.pick_no || 0) - (b.pick_no || 0));
+
+    // Prefer the pick whose original_owner matches the giving team (most precise)
+    const resolved = (givingTeam && candidates.find(p => p.original_owner === givingTeam))
+                   || candidates[0]
+                   || null;
+
+    if (resolved) usedPickKeys.add(`${pickYear}-${resolved.pick_no}`);
 
     if (resolved) {
         const ptYears = REAL_STAT_YEARS.filter(y => parseInt(y) >= parseInt(pickYear) && parseInt(y) > parseInt(tradeYear));
@@ -85,10 +95,10 @@ function pickPostTradeValue(asset, receivingTeam, tradeYear) {
 }
 
 // Compute full side value — preserve position from asset if stats don't have it
-function sideValue(assets, receivingTeam, tradeYear) {
+function sideValue(assets, receivingTeam, tradeYear, givingTeam, usedPickKeys) {
     return assets.map(asset => {
         if (asset.position === "PICK") {
-            const v = pickPostTradeValue(asset, receivingTeam, tradeYear);
+            const v = pickPostTradeValue(asset, receivingTeam, tradeYear, givingTeam, usedPickKeys);
             return { ...asset, ...v, isPick: true };
         }
         const v = playerPostTradeValue(asset.name, tradeYear);
@@ -324,9 +334,10 @@ function renderTradeCard(tx) {
     const assetsA = tx.assets_received[teamA] || [];
     const assetsB = tx.assets_received[teamB] || [];
 
-    const itemsA = sideValue(assetsA, teamA, tx.season).map(i =>
+    const usedPickKeys = new Set(); // prevent same draft pick resolving twice in one trade
+    const itemsA = sideValue(assetsA, teamA, tx.season, teamB, usedPickKeys).map(i =>
         i.isPick ? { ...i, fromTeam: i.origOwner || teamB } : i);
-    const itemsB = sideValue(assetsB, teamB, tx.season).map(i =>
+    const itemsB = sideValue(assetsB, teamB, tx.season, teamA, usedPickKeys).map(i =>
         i.isPick ? { ...i, fromTeam: i.origOwner || teamA } : i);
     const valA   = totalValue(itemsA);
     const valB   = totalValue(itemsB);
