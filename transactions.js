@@ -3,6 +3,7 @@ import { renderNav } from "./components/nav.js";
 
 const POS_COLORS = { QB:"#e74c82", RB:"#3ecf8e", WR:"#4299e1", TE:"#f6ad55", K:"#9f7aea", DEF:"#94a3b8" };
 const FAAB_BUDGET = 100;
+const NUM_TEAMS = 12; // league size — used to convert overall pick_no to round-relative slot
 
 let allData = [];
 let usersMap = {};
@@ -54,19 +55,21 @@ function assetRow(asset, receivedBy, pickConsumers) {
         // name format: "2025 Round 2" → year=2025, round=2
         const m = (asset.name || "").match(/(\d{4})\s+Round\s+(\d+)/i);
         let draftedHtml = "";
+        const round = m ? parseInt(m[2]) : null;
+        let slotSuffix = "";
         if (m && receivedBy) {
-            const key = `${m[1]}-${m[2]}-${receivedBy}`;
+            const key = `${m[1]}-${round}-${receivedBy}`;
             const arr = pickMap[key] || [];
             const idx = pickConsumers[key] || 0;
             const dp = arr[idx];
             if (dp) {
                 pickConsumers[key] = idx + 1;
-                const pickSlot = `R${m[2]}.P${dp.pick_no}`;
+                const pickInRound = dp.pick_no - (round - 1) * NUM_TEAMS;
+                slotSuffix = ` (${round}.${String(pickInRound).padStart(2, "0")})`;
                 draftedHtml = `
     <div style="margin-top:4px;padding:4px 8px;background:#1a1c22;border-radius:6px;border-left:2px solid #3d4350;">
         <div style="font-size:10px;color:#5a6070;margin-bottom:2px;">Drafted</div>
         <div style="display:flex;align-items:center;gap:5px;">
-            <span style="font-size:10px;font-weight:700;color:#8b9099;flex-shrink:0;">${pickSlot}</span>
             ${posBadge(dp.position)}
             <span style="font-size:11px;font-weight:600;color:#c9cdd4;">${dp.player}</span>
         </div>
@@ -76,7 +79,7 @@ function assetRow(asset, receivedBy, pickConsumers) {
         return `<div class="tx-asset-row" style="flex-direction:column;align-items:flex-start;">
     <div style="display:flex;align-items:center;gap:6px;">
         <span class="pick-badge">PICK</span>
-        <span class="tx-asset-name">${fmtPick(asset.name)}</span>
+        <span class="tx-asset-name">${fmtPick(asset.name)}${slotSuffix}</span>
     </div>
     ${draftedHtml}
 </div>`;
@@ -223,7 +226,7 @@ function buildUserDropdown(activeUsers, inactiveUsers) {
 
     const menuHtml = `
         <div class="tx-ud-option" data-user="all" style="display:flex;align-items:center;gap:8px;padding:7px 12px;cursor:pointer;border-radius:6px;">
-            <span style="font-size:16px;">👥</span><span style="font-size:13px;color:#c9cdd4;">All Users</span>
+            <span style="font-size:13px;line-height:1;">👥</span><span style="font-size:13px;color:#c9cdd4;">All Users</span>
         </div>
         ${activeUsers.map(u => optionHtml(u)).join("")}
         ${inactiveUsers.length ? `<div style="margin:4px 8px;border-top:1px solid #2d3139;"></div><div style="font-size:10px;color:#5a6070;padding:4px 12px;text-transform:uppercase;letter-spacing:.06em;">Former Members</div>${inactiveUsers.map(u => optionHtml(u)).join("")}` : ""}
@@ -231,14 +234,14 @@ function buildUserDropdown(activeUsers, inactiveUsers) {
 
     wrap.innerHTML = `
         <style>
-            #txUserFilterBtn { background:#1e2028;border:1.5px solid #2d3139;border-radius:999px;padding:7px 14px;cursor:pointer;display:flex;align-items:center;gap:8px;font-size:13px;color:#c9cdd4;white-space:nowrap;user-select:none;font-family:inherit; }
+            #txUserFilterBtn { background:#1e2028;border:1.5px solid #2d3139;border-radius:999px;padding:7px 14px;cursor:pointer;display:flex;align-items:center;gap:6px;font-size:13px;line-height:1;color:#c9cdd4;white-space:nowrap;user-select:none;font-family:inherit; }
             #txUserFilterBtn:hover { border-color:#5a6070; }
             #txUserFilterMenu { position:absolute;top:calc(100% + 4px);left:0;background:#1e2028;border:1px solid #2d3139;border-radius:8px;padding:4px;z-index:100;min-width:180px;box-shadow:0 8px 24px rgba(0,0,0,.4); }
             .tx-ud-option:hover { background:#252830; }
             .tx-ud-option.selected { background:#252830; }
         </style>
         <div style="position:relative;">
-            <button id="txUserFilterBtn"><span style="font-size:16px;">👥</span> All Users <span style="font-size:10px;color:#5a6070;">▼</span></button>
+            <button id="txUserFilterBtn"><span style="font-size:13px;line-height:1;">👥</span> All Users <span style="font-size:10px;color:#5a6070;">▼</span></button>
             <div id="txUserFilterMenu" style="display:none;">${menuHtml}</div>
         </div>
     `;
@@ -256,7 +259,7 @@ function buildUserDropdown(activeUsers, inactiveUsers) {
             selectedUser = el.dataset.user;
             menu.style.display = "none";
             if (selectedUser === "all") {
-                btn.innerHTML = '<span style="font-size:16px;">👥</span> All Users <span style="font-size:10px;color:#5a6070;">▼</span>';
+                btn.innerHTML = '<span style="font-size:13px;line-height:1;">👥</span> All Users <span style="font-size:10px;color:#5a6070;">▼</span>';
             } else {
                 const url = usersMap[selectedUser];
                 const color = accentColor(selectedUser);

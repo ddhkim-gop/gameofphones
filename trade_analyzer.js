@@ -87,7 +87,7 @@ function pickPostTradeValue(asset, receivingTeam, tradeYear, givingTeam, usedPic
         const avg    = valid.length ? valid.reduce((s, e) => s + e.data.score, 0) / valid.length : null;
         const position = valid.length ? valid[valid.length - 1].data.position : null;
         return { avg, byYear, resolved: resolved.player, resolvedPos: resolved.position,
-                 origOwner: resolved.original_owner || null, position, estimated: false };
+                 origOwner: resolved.original_owner || null, resolvedPickNo: resolved.pick_no || null, position, estimated: false };
     }
 
     // Unresolved — estimate by round (converted to 0-100 scale)
@@ -288,8 +288,10 @@ function renderItemCard(item, tradeYear) {
 
     if (item.isPick) {
         const m = item.name.match(/(\d{4})\s+Round\s+(\d+)/i);
-        const ordinals = ["","1st","2nd","3rd","4th"];
-        const label = m ? `${m[1]} ${ordinals[parseInt(m[2])] || m[2]+"th"} Round Pick` : item.name;
+        const NUM_TEAMS_TA = 12;
+        const round_ta = m ? parseInt(m[2]) : null;
+        const slotTA = (m && item.resolvedPickNo) ? ` (${round_ta}.${String(item.resolvedPickNo - (round_ta - 1) * NUM_TEAMS_TA).padStart(2, '0')})` : '';
+        const label = m ? `${m[1]} R${m[2]}${slotTA}` : item.name;
         const future = !m || parseInt(m[1]) > 2025;
 
         let resolvedHtml = "";
@@ -420,7 +422,7 @@ function buildTAUserDropdown(activeUsers, inactiveUsers) {
 
     const menuHtml = `
         <div class="ta-ud-option" data-user="all" style="display:flex;align-items:center;gap:8px;padding:7px 12px;cursor:pointer;border-radius:6px;">
-            <span style="font-size:16px;">👥</span><span style="font-size:13px;color:#c9cdd4;">All Users</span>
+            <span style="font-size:13px;line-height:1;">👥</span><span style="font-size:13px;color:#c9cdd4;">All Users</span>
         </div>
         ${activeUsers.map(u => optionHtml(u)).join("")}
         ${inactiveUsers.length ? `<div style="margin:4px 8px;border-top:1px solid #2d3139;"></div><div style="font-size:10px;color:#5a6070;padding:4px 12px;text-transform:uppercase;letter-spacing:.06em;">Former Members</div>${inactiveUsers.map(u => optionHtml(u)).join("")}` : ""}
@@ -428,14 +430,14 @@ function buildTAUserDropdown(activeUsers, inactiveUsers) {
 
     wrap.innerHTML = `
         <style>
-            #taUserFilterBtn { background:#1e2028;border:1.5px solid #2d3139;border-radius:999px;padding:7px 14px;cursor:pointer;display:flex;align-items:center;gap:8px;font-size:13px;color:#c9cdd4;white-space:nowrap;user-select:none; }
+            #taUserFilterBtn { background:#1e2028;border:1.5px solid #2d3139;border-radius:999px;padding:7px 14px;cursor:pointer;display:flex;align-items:center;gap:6px;line-height:1;font-size:13px;color:#c9cdd4;white-space:nowrap;user-select:none; }
             #taUserFilterBtn:hover { border-color:#5a6070; }
             #taUserFilterMenu { position:absolute;top:calc(100% + 4px);left:0;background:#1e2028;border:1px solid #2d3139;border-radius:8px;padding:4px;z-index:100;min-width:180px;box-shadow:0 8px 24px rgba(0,0,0,.4); }
             .ta-ud-option:hover { background:#252830; }
             .ta-ud-option.selected { background:#252830; }
         </style>
         <div style="position:relative;">
-            <button id="taUserFilterBtn"><span style="font-size:16px;">👥</span> All Users <span style="font-size:10px;color:#5a6070;">▼</span></button>
+            <button id="taUserFilterBtn"><span style="font-size:13px;line-height:1;">👥</span> All Users <span style="font-size:10px;color:#5a6070;">▼</span></button>
             <div id="taUserFilterMenu" style="display:none;">${menuHtml}</div>
         </div>
     `;
@@ -454,7 +456,7 @@ function buildTAUserDropdown(activeUsers, inactiveUsers) {
             menu.style.display = "none";
             // Update button face
             if (selectedTAUser === "all") {
-                btn.innerHTML = '<span style="font-size:16px;">👥</span> All Users <span style="font-size:10px;color:#5a6070;">▼</span>';
+                btn.innerHTML = '<span style="font-size:13px;line-height:1;">👥</span> All Users <span style="font-size:10px;color:#5a6070;">▼</span>';
             } else {
                 const url = usersMap[selectedTAUser];
                 const color = accentColor(selectedTAUser);

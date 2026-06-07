@@ -422,7 +422,7 @@ function buildMuUserDropdown(activeUsers, inactiveUsers) {
 
     const menuHtml = `
         <div class="mu-ud-option" data-user="all" style="display:flex;align-items:center;gap:8px;padding:7px 12px;cursor:pointer;border-radius:6px;">
-            <span style="font-size:16px;">👥</span><span style="font-size:13px;color:#c9cdd4;">All Users</span>
+            <span style="font-size:13px;line-height:1;">👥</span><span style="font-size:13px;color:#c9cdd4;">All Users</span>
         </div>
         ${activeUsers.map(u => optionHtml(u)).join("")}
         ${inactiveUsers.length ? `<div style="margin:4px 8px;border-top:1px solid #2d3139;"></div><div style="font-size:10px;color:#5a6070;padding:4px 12px;text-transform:uppercase;letter-spacing:.06em;">Former Members</div>${inactiveUsers.map(u => optionHtml(u)).join("")}` : ""}
@@ -430,13 +430,13 @@ function buildMuUserDropdown(activeUsers, inactiveUsers) {
 
     wrap.innerHTML = `
         <style>
-            #muUserFilterBtn { background:#1e2028;border:1.5px solid #2d3139;border-radius:999px;padding:7px 14px;cursor:pointer;display:flex;align-items:center;gap:8px;font-size:13px;color:#c9cdd4;white-space:nowrap;user-select:none;font-family:inherit; }
+            #muUserFilterBtn { background:#1e2028;border:1.5px solid #2d3139;border-radius:999px;padding:7px 14px;cursor:pointer;display:flex;align-items:center;gap:6px;line-height:1;font-size:13px;color:#c9cdd4;white-space:nowrap;user-select:none;font-family:inherit; }
             #muUserFilterBtn:hover { border-color:#5a6070; }
             #muUserFilterMenu { position:absolute;top:calc(100% + 4px);left:0;background:#1e2028;border:1px solid #2d3139;border-radius:8px;padding:4px;z-index:100;min-width:180px;box-shadow:0 8px 24px rgba(0,0,0,.4); }
             .mu-ud-option:hover { background:#252830; }
         </style>
         <div style="position:relative;">
-            <button id="muUserFilterBtn"><span style="font-size:16px;">👥</span> All Users <span style="font-size:10px;color:#5a6070;">▼</span></button>
+            <button id="muUserFilterBtn"><span style="font-size:13px;line-height:1;">👥</span> All Users <span style="font-size:10px;color:#5a6070;">▼</span></button>
             <div id="muUserFilterMenu" style="display:none;">${menuHtml}</div>
         </div>
     `;
@@ -454,7 +454,7 @@ function buildMuUserDropdown(activeUsers, inactiveUsers) {
             selectedMuUser = el.dataset.user;
             menu.style.display = "none";
             if (selectedMuUser === "all") {
-                btn.innerHTML = '<span style="font-size:16px;">👥</span> All Users <span style="font-size:10px;color:#5a6070;">▼</span>';
+                btn.innerHTML = '<span style="font-size:13px;line-height:1;">👥</span> All Users <span style="font-size:10px;color:#5a6070;">▼</span>';
             } else {
                 const url = usersMap[selectedMuUser];
                 const color = accentColorMu(selectedMuUser);
