@@ -326,14 +326,14 @@ main {
 
     #player-popover {
         position: fixed !important;
-        top: 57% !important;
+        top: calc(50% + 20px) !important;
         left: 50% !important;
         bottom: auto !important;
         right: auto !important;
         transform: translate(-50%, -50%) !important;
         width: calc(100vw - 24px) !important;
         max-width: 360px !important;
-        max-height: 82vh !important;
+        max-height: 70vh !important;
         overflow-y: auto !important;
         border-radius: var(--radius-md) !important;
         padding: 0 !important;
