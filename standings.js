@@ -337,7 +337,7 @@ function computeManagerStats() {
             const name = row.name;
             if (!managers[name]) {
                 managers[name] = {
-                    name, seasons: 0,
+                    name, seasons: 0, completedSeasons: 0,
                     totalWins: 0, totalLosses: 0, totalPF: 0, totalPA: 0,
                     first: 0, second: 0, third: 0, playoffAppearances: 0,
                     seeds: [], pyLuck: 0,
@@ -347,7 +347,9 @@ function computeManagerStats() {
                 };
             }
             const m = managers[name];
+            const isCompleted = STAT_YEARS.includes(year);
             m.seasons++;
+            if (isCompleted) m.completedSeasons++;
             m.totalWins    += row.wins;
             m.totalLosses  += row.losses;
             m.totalPF      += row.pf;
@@ -355,7 +357,7 @@ function computeManagerStats() {
             if (name === champ)    m.first++;
             if (name === finalist) m.second++;
             if (name === third)    m.third++;
-            if (playoffTeams.has(name)) m.playoffAppearances++;
+            if (isCompleted && playoffTeams.has(name)) m.playoffAppearances++;
             m.seeds.push(idx + 1);
 
             // Pythagorean luck (actual wins vs expected from PF/PA ratio)
@@ -412,7 +414,7 @@ function gradeColor(grade) {
 function computeGrades(allManagers) {
     const pick = (fn) => allManagers.map(fn);
 
-    const playoffRates  = pick(m => m.seasons > 0 ? m.playoffAppearances / m.seasons : 0);
+    const playoffRates  = pick(m => m.completedSeasons > 0 ? m.playoffAppearances / m.completedSeasons : 0);
     const winRates      = pick(m => (m.totalWins + m.totalLosses) > 0 ? m.totalWins / (m.totalWins + m.totalLosses) : 0);
     const champRates    = pick(m => m.seasons > 0 ? m.first / m.seasons : 0);
     const avgSeeds      = pick(m => m.seeds.length > 0 ? m.seeds.reduce((a,b) => a+b) / m.seeds.length : 12);
