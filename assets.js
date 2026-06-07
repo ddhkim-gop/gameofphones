@@ -67,7 +67,8 @@ async function init() {
                     const bg = p.own ? "#252830" : "#1e1b33";
                     const color = p.own ? "#c9cdd4" : "#a78bfa";
                     const border = p.own ? "#2d3139" : "#4c3d8a";
-                    return `<span style="background:${bg};color:${color};border:1px solid ${border};border-radius:6px;padding:3px 8px;font-size:11px;font-weight:600;white-space:nowrap;display:block;" title="${p.own ? "Own pick" : `From ${p.original}`}">R${p.round}${!p.own ? ` ↙ ${p.original}` : ""}</span>`;
+                    const label = p.own ? `R${p.round}` : `${p.original}'s R${p.round}`;
+                    return `<span style="background:${bg};color:${color};border:1px solid ${border};border-radius:6px;padding:3px 8px;font-size:11px;font-weight:600;white-space:nowrap;display:block;" title="${p.own ? "Own pick" : `${p.original}'s pick`}">${label}</span>`;
                 }).join("");
                 return `<div style="flex:1;min-width:70px;">
                     <div style="font-size:10px;font-weight:700;color:#5a6070;text-transform:uppercase;letter-spacing:.05em;margin-bottom:5px;">${year}</div>
