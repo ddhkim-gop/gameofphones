@@ -64,7 +64,7 @@ function renderPositions(picks, year) {
     const allAge = calcAvgAge(picks);
 
     const el = document.getElementById("position-stats");
-    el.style.cssText = "width:100%;margin-bottom:40px;";
+    el.style.cssText = "width:100%;";
     el.innerHTML = `
         <div style="display:flex;gap:6px;width:100%;">
             ${posBoxes.map(({label, n, age, bg, fg}) => `
