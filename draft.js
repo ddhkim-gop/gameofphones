@@ -104,6 +104,7 @@ function renderPickCard(p, roundNum) {
         round: String(roundNum), pickNo: String(p._pick_in_round),
         pickedBy: p.picked_by||"", originalOwner: p.original_owner||"",
         player: p.player||"", pos, team: p.team||"", label,
+        year: p.season||"",
     }).replace(/'/g,"&#39;")}' style="
         background:${bg};border-radius:8px;padding:7px 8px;
         height:${CARD_H}px;box-sizing:border-box;
@@ -236,7 +237,7 @@ function ensurePickPopover() {
     if (document.getElementById("pick-popover")) return;
     const pop = document.createElement("div");
     pop.id = "pick-popover";
-    pop.style.cssText = `display:none;position:fixed;z-index:9999;background:#13151a;border:1px solid #2d3139;border-radius:12px;width:280px;max-height:calc(100vh - 24px);overflow-y:auto;box-shadow:0 10px 40px rgba(0,0,0,.6);`;
+    pop.style.cssText = `display:none;position:fixed;z-index:9999;background:#13151a;border:1px solid #2d3139;border-radius:12px;width:300px;max-height:min(480px,calc(100vh - 32px));overflow-y:auto;box-shadow:0 10px 40px rgba(0,0,0,.6);`;
     document.body.appendChild(pop);
     document.addEventListener("click", e => {
         const p = document.getElementById("pick-popover");
@@ -247,20 +248,27 @@ function ensurePickPopover() {
 function openPickPopover(el, data) {
     const pop = document.getElementById("pick-popover");
     if (!pop) return;
-    const { round, pickNo, pickedBy, originalOwner, player, pos, team, label } = data;
+    const { round, pickNo, pickedBy, originalOwner, player, pos, team, label, year } = data;
     const bg = pickBg(pos);
     const fg = pickFg(pos);
     const traded = originalOwner && originalOwner !== pickedBy;
 
-    // Trade history for this pick
+    // Trade history: only trades where this specific pick changed hands.
+    // Match on year + round in asset name, and at least one team is originalOwner or pickedBy.
+    const relevantTeams = new Set([originalOwner, pickedBy].filter(Boolean));
     const tradeHistory = [];
     (allTransactions||[]).forEach(t => {
         if (t.type !== "trade") return;
+        // Must involve at least one known owner of this pick
+        if (!t.teams.some(tm => relevantTeams.has(tm))) return;
         Object.entries(t.assets_received||{}).forEach(([receiver, assets]) => {
             (assets||[]).forEach(a => {
                 if ((a.position||"").toUpperCase() !== "PICK") return;
                 const n = a.name||"";
-                if (n.includes(`Round ${round}`) || n.includes(`R${round}`)) {
+                // Match year (if present in name) and round
+                const matchesYear = !year || n.includes(year);
+                const matchesRound = n.includes(`Round ${round}`) || n.match(new RegExp(`R${round}\\b`));
+                if (matchesYear && matchesRound) {
                     tradeHistory.push({ receiver, date: t.created });
                 }
             });
@@ -304,12 +312,13 @@ function openPickPopover(el, data) {
 
     pop.style.display = "block";
     const rect = el.getBoundingClientRect();
-    const popW = 280;
+    const popW = 300;
+    const popH = Math.min(480, window.innerHeight - 32);
     let left = rect.right + 8;
     if (left + popW > window.innerWidth - 8) left = rect.left - popW - 8;
     if (left < 8) left = 8;
     let top = rect.top;
-    if (top + 320 > window.innerHeight - 12) top = window.innerHeight - 320 - 12;
+    if (top + popH > window.innerHeight - 12) top = window.innerHeight - popH - 12;
     if (top < 12) top = 12;
     pop.style.left = `${left}px`;
     pop.style.top  = `${top}px`;
