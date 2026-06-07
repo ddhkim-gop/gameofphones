@@ -326,11 +326,10 @@ function positionPopover(popover, element) {
     if (left < 8) left = 8;
 
     // Vertical: clamp so it fits within viewport
-    const maxH = window.innerHeight - 24;
+    const maxH = Math.min(window.innerHeight - 48, 600);
     popover.style.maxHeight = `${maxH}px`;
-    const popH = Math.min(popover.scrollHeight || 520, maxH);
     let top = rect.top;
-    if (top + popH > window.innerHeight - 12) top = window.innerHeight - popH - 12;
+    if (top + maxH > window.innerHeight - 12) top = window.innerHeight - maxH - 12;
     if (top < 12) top = 12;
 
     popover.style.left = `${left}px`;
@@ -388,7 +387,7 @@ async function openPopover(element, player) {
 
     body.innerHTML = `
         <style>
-            .pc-header { background:linear-gradient(135deg,#1e2027 0%,#252830 100%); padding:16px; border-radius:12px 12px 0 0; display:flex; gap:12px; align-items:center; position:relative; border-bottom:1px solid #2d3139; }
+            .pc-header { background:linear-gradient(135deg,#1e2027 0%,#252830 100%); padding:16px; border-radius:12px 12px 0 0; display:flex; gap:12px; align-items:center; position:sticky; top:0; z-index:2; border-bottom:1px solid #2d3139; }
             .pc-close { position:absolute;top:10px;right:10px; background:rgba(255,255,255,0.08);border:1px solid rgba(255,255,255,0.1); color:#8b9099;width:26px;height:26px;border-radius:50%;cursor:pointer; font-size:13px;display:flex;align-items:center;justify-content:center; }
             .pc-close:hover { background:rgba(255,255,255,0.15);color:#f0f1f3; }
             .pc-headshot { width:68px;height:68px;border-radius:50%;object-fit:cover;border:2px solid ${posClr};flex-shrink:0;background:#252830; }
