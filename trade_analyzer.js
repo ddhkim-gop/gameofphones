@@ -27,6 +27,7 @@ let statsCache = {};
 let draftCache = {};
 let usersMap = {};
 let selectedYear = "2025";
+let selectedTAUser = "all";
 
 // ── Value system ──────────────────────────────────────────────────────────────
 
@@ -401,11 +402,82 @@ function renderTradeCard(tx) {
     </div>`;
 }
 
+
+function buildTAUserDropdown(activeUsers, inactiveUsers) {
+    const wrap = document.getElementById("taUserFilterWrap");
+    if (!wrap) return;
+
+    function optionHtml(username) {
+        const url = usersMap[username];
+        const color = accentColor(username);
+        const letter = (username||"?")[0].toUpperCase();
+        const sz = 22;
+        const avatarHtml = url
+            ? `<img src="${url}" style="width:${sz}px;height:${sz}px;border-radius:50%;object-fit:cover;flex-shrink:0;" onerror="this.style.display='none'">`
+            : `<span style="width:${sz}px;height:${sz}px;border-radius:50%;background:${color};display:inline-flex;align-items:center;justify-content:center;font-size:10px;font-weight:700;color:#fff;flex-shrink:0;">${letter}</span>`;
+        return `<div class="ta-ud-option" data-user="${username}" style="display:flex;align-items:center;gap:8px;padding:7px 12px;cursor:pointer;border-radius:6px;white-space:nowrap;">${avatarHtml}<span style="font-size:13px;color:#c9cdd4;">${username}</span></div>`;
+    }
+
+    const menuHtml = `
+        <div class="ta-ud-option" data-user="all" style="display:flex;align-items:center;gap:8px;padding:7px 12px;cursor:pointer;border-radius:6px;">
+            <span style="font-size:16px;">👥</span><span style="font-size:13px;color:#c9cdd4;">All Users</span>
+        </div>
+        ${activeUsers.map(u => optionHtml(u)).join("")}
+        ${inactiveUsers.length ? `<div style="margin:4px 8px;border-top:1px solid #2d3139;"></div><div style="font-size:10px;color:#5a6070;padding:4px 12px;text-transform:uppercase;letter-spacing:.06em;">Former Members</div>${inactiveUsers.map(u => optionHtml(u)).join("")}` : ""}
+    `;
+
+    wrap.innerHTML = `
+        <style>
+            #taUserFilterBtn { background:#1e2028;border:1.5px solid #2d3139;border-radius:999px;padding:7px 14px;cursor:pointer;display:flex;align-items:center;gap:8px;font-size:13px;color:#c9cdd4;white-space:nowrap;user-select:none; }
+            #taUserFilterBtn:hover { border-color:#5a6070; }
+            #taUserFilterMenu { position:absolute;top:calc(100% + 4px);left:0;background:#1e2028;border:1px solid #2d3139;border-radius:8px;padding:4px;z-index:100;min-width:180px;box-shadow:0 8px 24px rgba(0,0,0,.4); }
+            .ta-ud-option:hover { background:#252830; }
+            .ta-ud-option.selected { background:#252830; }
+        </style>
+        <div style="position:relative;">
+            <button id="taUserFilterBtn"><span style="font-size:16px;">👥</span> All Users <span style="font-size:10px;color:#5a6070;">▼</span></button>
+            <div id="taUserFilterMenu" style="display:none;">${menuHtml}</div>
+        </div>
+    `;
+
+    const btn = document.getElementById("taUserFilterBtn");
+    const menu = document.getElementById("taUserFilterMenu");
+
+    btn.addEventListener("click", e => {
+        e.stopPropagation();
+        menu.style.display = menu.style.display === "none" ? "block" : "none";
+    });
+
+    menu.querySelectorAll(".ta-ud-option").forEach(el => {
+        el.addEventListener("click", () => {
+            selectedTAUser = el.dataset.user;
+            menu.style.display = "none";
+            // Update button face
+            if (selectedTAUser === "all") {
+                btn.innerHTML = '<span style="font-size:16px;">👥</span> All Users <span style="font-size:10px;color:#5a6070;">▼</span>';
+            } else {
+                const url = usersMap[selectedTAUser];
+                const color = accentColor(selectedTAUser);
+                const letter = (selectedTAUser||"?")[0].toUpperCase();
+                const sz = 22;
+                const av = url
+                    ? `<img src="${url}" style="width:${sz}px;height:${sz}px;border-radius:50%;object-fit:cover;">`
+                    : `<span style="width:${sz}px;height:${sz}px;border-radius:50%;background:${color};display:inline-flex;align-items:center;justify-content:center;font-size:10px;font-weight:700;color:#fff;">${letter}</span>`;
+                btn.innerHTML = `${av} <span style="font-size:13px;">${selectedTAUser}</span> <span style="font-size:10px;color:#5a6070;">▼</span>`;
+            }
+            renderAll(selectedYear, document.getElementById("ta-preseason")?.checked || false);
+        });
+    });
+
+    document.addEventListener("click", () => { menu.style.display = "none"; }, { capture: true, passive: true });
+}
+
 function renderAll(year, showPreseason) {
     const board = document.getElementById("ta-board");
     if (!board) return;
 
-    const yearTrades = allTransactions.filter(tx => tx.type === "trade" && tx.season === year);
+    const yearTrades = allTransactions.filter(tx => tx.type === "trade" && tx.season === year
+        && (selectedTAUser === "all" || (tx.teams || []).includes(selectedTAUser)));
     const inSeason   = yearTrades.filter(tx => tx.week >= 1).sort((a,b) => a.week - b.week);
     const preseason  = yearTrades.filter(tx => tx.week === 0);
 
@@ -456,6 +528,7 @@ async function init() {
         <label style="display:flex;align-items:center;gap:6px;font-size:13px;color:#8b9099;cursor:pointer;">
             <input type="checkbox" id="ta-preseason"> Show pre-season trades
         </label>
+        <div id="taUserFilterWrap"></div>
     </div>
     <div id="ta-board"><div style="color:#5a6070;padding:40px 0;text-align:center;">Loading…</div></div>
     `;
@@ -472,6 +545,17 @@ async function init() {
     allTransactions = transactions;
     nameToId = nameMap;
     (leagueUsers || []).forEach(u => { usersMap[u.username] = u.username === "Paul_Yoon" ? PAUL_YOON_AVATAR : u.avatar_url; });
+
+    // Build user dropdown from trade data (captures all participants)
+    const rosters2026ta = await api.getRosters("2026").catch(() => []);
+    const activeSetTA = new Set((rosters2026ta || []).map(r => r.owner).filter(Boolean));
+    const taUsernames = new Set();
+    (allTransactions || []).forEach(t => { (t.teams || []).forEach(u => taUsernames.add(u)); });
+    (leagueUsers || []).forEach(u => taUsernames.add(u.username));
+    [...taUsernames].filter(u => u && !/^[A-Z]{2,3}$/.test(u)).forEach(u => { if (!usersMap[u]) usersMap[u] = null; });
+    const taActiveUsers   = [...taUsernames].filter(u => u && !/^[A-Z]{2,3}$/.test(u) && activeSetTA.has(u)).sort();
+    const taInactiveUsers = [...taUsernames].filter(u => u && !/^[A-Z]{2,3}$/.test(u) && !activeSetTA.has(u)).sort();
+    buildTAUserDropdown(taActiveUsers, taInactiveUsers);
 
     await Promise.all([
         ...REAL_STAT_YEARS.map(y => api.getPlayerStats(y).then(d => { statsCache[y] = d; }).catch(() => {})),

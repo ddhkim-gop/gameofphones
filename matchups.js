@@ -15,6 +15,7 @@ let recordsCache = {};   // year → { owner → { w, l } } per week cumulative
 let weekStatsCache = {}; // "year_week" → { player_id → stats }
 let selectedYear = YEARS[0];
 let selectedWeek = null;
+let selectedMuUser = "all";
 let _did = 0;
 
 // Fetch per-week player stats from Sleeper's public API
@@ -353,10 +354,20 @@ async function renderAll(data) {
         board.innerHTML = `<div style="color:#5a6070;padding:40px 0;text-align:center;">No matchup data for this season.</div>`;
         return;
     }
-    const toShow = selectedWeek ? [selectedWeek] : weeks;
+    // Filter matchups to only those involving the selected user
+    const filteredData = selectedMuUser === "all" ? data :
+        Object.fromEntries(Object.entries(data).map(([w, games]) => [
+            w, (games || []).filter(m => (m.teams || []).some(t => t.owner === selectedMuUser))
+        ]).filter(([, games]) => games.length > 0));
+    const filteredWeeks = Object.keys(filteredData).sort((a, b) => parseInt(a) - parseInt(b));
+    if (!filteredWeeks.length) {
+        board.innerHTML = `<div style="color:#5a6070;padding:40px 0;text-align:center;">No matchups found for ${selectedMuUser}.</div>`;
+        return;
+    }
+    const toShow = selectedWeek ? [selectedWeek] : filteredWeeks;
     // Render a loading placeholder immediately, then fill week by week
     board.innerHTML = `<div style="color:#5a6070;padding:20px 0;">Loading game stats…</div>`;
-    const rendered = await Promise.all(toShow.map(w => data[w] ? renderWeek(w, data[w]) : Promise.resolve("")));
+    const rendered = await Promise.all(toShow.map(w => filteredData[w] ? renderWeek(w, filteredData[w]) : Promise.resolve("")));
     board.innerHTML = rendered.join("");
 }
 
@@ -386,6 +397,79 @@ async function loadYear(year) {
         if (board) board.innerHTML = `<div style="color:#f87171;padding:20px 0;">Error loading matchups: ${err.message}</div>`;
         console.error("matchups load error:", err);
     }
+}
+
+
+const AVATAR_COLORS_MU = ["#5a5be6","#e74c82","#3ecf8e","#f6ad55","#4299e1","#9f7aea","#ed64a6","#38b2ac"];
+function accentColorMu(name) {
+    return AVATAR_COLORS_MU[(name||"?").split("").reduce((s,c)=>s+c.charCodeAt(0),0) % AVATAR_COLORS_MU.length];
+}
+
+function buildMuUserDropdown(activeUsers, inactiveUsers) {
+    const wrap = document.getElementById("muUserFilterWrap");
+    if (!wrap) return;
+
+    function optionHtml(username) {
+        const url = usersMap[username];
+        const color = accentColorMu(username);
+        const letter = (username||"?")[0].toUpperCase();
+        const sz = 22;
+        const avatarHtml = url
+            ? `<img src="${url}" style="width:${sz}px;height:${sz}px;border-radius:50%;object-fit:cover;flex-shrink:0;" onerror="this.style.display='none'">`
+            : `<span style="width:${sz}px;height:${sz}px;border-radius:50%;background:${color};display:inline-flex;align-items:center;justify-content:center;font-size:10px;font-weight:700;color:#fff;flex-shrink:0;">${letter}</span>`;
+        return `<div class="mu-ud-option" data-user="${username}" style="display:flex;align-items:center;gap:8px;padding:7px 12px;cursor:pointer;border-radius:6px;white-space:nowrap;">${avatarHtml}<span style="font-size:13px;color:#c9cdd4;">${username}</span></div>`;
+    }
+
+    const menuHtml = `
+        <div class="mu-ud-option" data-user="all" style="display:flex;align-items:center;gap:8px;padding:7px 12px;cursor:pointer;border-radius:6px;">
+            <span style="font-size:16px;">👥</span><span style="font-size:13px;color:#c9cdd4;">All Users</span>
+        </div>
+        ${activeUsers.map(u => optionHtml(u)).join("")}
+        ${inactiveUsers.length ? `<div style="margin:4px 8px;border-top:1px solid #2d3139;"></div><div style="font-size:10px;color:#5a6070;padding:4px 12px;text-transform:uppercase;letter-spacing:.06em;">Former Members</div>${inactiveUsers.map(u => optionHtml(u)).join("")}` : ""}
+    `;
+
+    wrap.innerHTML = `
+        <style>
+            #muUserFilterBtn { background:#1e2028;border:1.5px solid #2d3139;border-radius:999px;padding:7px 14px;cursor:pointer;display:flex;align-items:center;gap:8px;font-size:13px;color:#c9cdd4;white-space:nowrap;user-select:none;font-family:inherit; }
+            #muUserFilterBtn:hover { border-color:#5a6070; }
+            #muUserFilterMenu { position:absolute;top:calc(100% + 4px);left:0;background:#1e2028;border:1px solid #2d3139;border-radius:8px;padding:4px;z-index:100;min-width:180px;box-shadow:0 8px 24px rgba(0,0,0,.4); }
+            .mu-ud-option:hover { background:#252830; }
+        </style>
+        <div style="position:relative;">
+            <button id="muUserFilterBtn"><span style="font-size:16px;">👥</span> All Users <span style="font-size:10px;color:#5a6070;">▼</span></button>
+            <div id="muUserFilterMenu" style="display:none;">${menuHtml}</div>
+        </div>
+    `;
+
+    const btn = document.getElementById("muUserFilterBtn");
+    const menu = document.getElementById("muUserFilterMenu");
+
+    btn.addEventListener("click", e => {
+        e.stopPropagation();
+        menu.style.display = menu.style.display === "none" ? "block" : "none";
+    });
+
+    menu.querySelectorAll(".mu-ud-option").forEach(el => {
+        el.addEventListener("click", () => {
+            selectedMuUser = el.dataset.user;
+            menu.style.display = "none";
+            if (selectedMuUser === "all") {
+                btn.innerHTML = '<span style="font-size:16px;">👥</span> All Users <span style="font-size:10px;color:#5a6070;">▼</span>';
+            } else {
+                const url = usersMap[selectedMuUser];
+                const color = accentColorMu(selectedMuUser);
+                const letter = (selectedMuUser||"?")[0].toUpperCase();
+                const sz = 22;
+                const av = url
+                    ? `<img src="${url}" style="width:${sz}px;height:${sz}px;border-radius:50%;object-fit:cover;">`
+                    : `<span style="width:${sz}px;height:${sz}px;border-radius:50%;background:${color};display:inline-flex;align-items:center;justify-content:center;font-size:10px;font-weight:700;color:#fff;">${letter}</span>`;
+                btn.innerHTML = `${av} <span style="font-size:13px;">${selectedMuUser}</span> <span style="font-size:10px;color:#5a6070;">▼</span>`;
+            }
+            renderAll(matchupsCache[selectedYear] || {});
+        });
+    });
+
+    document.addEventListener("click", () => { menu.style.display = "none"; }, { capture: true, passive: true });
 }
 
 async function init() {
@@ -418,6 +502,7 @@ async function init() {
     <div class="filter-bar" style="display:flex;gap:10px;flex-wrap:wrap;margin-bottom:20px;">
         <select id="mu-year-select">${YEARS.map(y => `<option value="${y}">${y}</option>`).join("")}</select>
         <select id="mu-week-select"><option value="">All Weeks</option></select>
+        <div id="muUserFilterWrap" style="position:relative;display:inline-block;"></div>
     </div>
     <div id="mu-board">Loading…</div>`;
 
@@ -438,6 +523,23 @@ async function init() {
     });
 
     await loadYear(selectedYear);
+
+    // Build user dropdown from loaded matchup data
+    try {
+        const rosters2026mu = await api.getRosters("2026").catch(() => []);
+        const activeSetMu = new Set((rosters2026mu || []).map(r => r.owner).filter(Boolean));
+        const muUsernames = new Set();
+        // Collect all users from all cached matchup data
+        Object.values(matchupsCache).forEach(yearData => {
+            Object.values(yearData || {}).forEach(games => {
+                (games || []).forEach(m => (m.teams || []).forEach(t => { if (t.owner) muUsernames.add(t.owner); }));
+            });
+        });
+        Object.keys(usersMap).forEach(u => { if (u) muUsernames.add(u); });
+        const muActive   = [...muUsernames].filter(u => u && activeSetMu.has(u)).sort();
+        const muInactive = [...muUsernames].filter(u => u && !activeSetMu.has(u)).sort();
+        buildMuUserDropdown(muActive, muInactive);
+    } catch { /* dropdown optional */ }
 }
 
 init();

@@ -5,6 +5,10 @@ let data = null;
 let currentView = "all_time";
 let usersMap = {}; // username → avatar_url
 
+const AVATAR_COLORS_H2H = ["#5a5be6","#e74c82","#3ecf8e","#f6ad55","#4299e1","#9f7aea","#ed64a6","#38b2ac"];
+function accentColorH2H(name) {
+    return AVATAR_COLORS_H2H[(name||"?").split("").reduce((s,c)=>s+c.charCodeAt(0),0) % AVATAR_COLORS_H2H.length];
+}
 const INACTIVE = new Set(['edgxrjiang', 'riqi', 'shmyung', 'urmummma']);
 
 function getTeams(dataset) {
@@ -59,9 +63,10 @@ function renderMatrix(dataset) {
 
         html += `<tr class="${INACTIVE.has(a) ? 'inactive-row' : ''}">`;
         const avatarUrl = usersMap[a];
+        const _h2hColor = accentColorH2H(a);
         const avatarHtml = avatarUrl
-            ? `<img src="${avatarUrl}" style="width:22px;height:22px;border-radius:50%;object-fit:cover;flex-shrink:0;" onerror="this.style.display='none'">`
-            : `<span style="width:22px;height:22px;border-radius:50%;background:#252830;display:inline-flex;align-items:center;justify-content:center;font-size:9px;font-weight:700;color:#5a6070;flex-shrink:0;">${a[0].toUpperCase()}</span>`;
+            ? `<img src="${avatarUrl}" style="width:22px;height:22px;border-radius:50%;object-fit:cover;flex-shrink:0;" onerror="this.outerHTML='<span style=\'width:22px;height:22px;border-radius:50%;background:${_h2hColor};display:inline-flex;align-items:center;justify-content:center;font-size:9px;font-weight:700;color:#fff;flex-shrink:0;\'>${a[0].toUpperCase()}</span>'">`
+            : `<span style="width:22px;height:22px;border-radius:50%;background:${_h2hColor};display:inline-flex;align-items:center;justify-content:center;font-size:9px;font-weight:700;color:#fff;flex-shrink:0;">${a[0].toUpperCase()}</span>`;
         html += `<td class="row-head">
             <div style="display:flex;align-items:center;justify-content:flex-start;gap:7px;">
                 ${avatarHtml}

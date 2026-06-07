@@ -49,20 +49,24 @@ function avatarEl(name) {
     return fallback;
 }
 
-function assetRow(asset, receivedBy) {
+function assetRow(asset, receivedBy, pickConsumers) {
     if ((asset.position || "").toUpperCase() === "PICK") {
-        // Try to find the player drafted with this pick
         // name format: "2025 Round 2" → year=2025, round=2
         const m = (asset.name || "").match(/(\d{4})\s+Round\s+(\d+)/i);
         let draftedHtml = "";
         if (m && receivedBy) {
             const key = `${m[1]}-${m[2]}-${receivedBy}`;
-            const dp = pickMap[key];
+            const arr = pickMap[key] || [];
+            const idx = pickConsumers[key] || 0;
+            const dp = arr[idx];
             if (dp) {
+                pickConsumers[key] = idx + 1;
+                const pickSlot = `R${m[2]}.P${dp.pick_no}`;
                 draftedHtml = `
     <div style="margin-top:4px;padding:4px 8px;background:#1a1c22;border-radius:6px;border-left:2px solid #3d4350;">
         <div style="font-size:10px;color:#5a6070;margin-bottom:2px;">Drafted</div>
         <div style="display:flex;align-items:center;gap:5px;">
+            <span style="font-size:10px;font-weight:700;color:#8b9099;flex-shrink:0;">${pickSlot}</span>
             ${posBadge(dp.position)}
             <span style="font-size:11px;font-weight:600;color:#c9cdd4;">${dp.player}</span>
         </div>
@@ -88,6 +92,10 @@ function renderTrade(t) {
     const entries = Object.entries(t.assets_received || {});
     if (entries.length < 2) return "";
 
+    // Per-trade consumption index for pick arrays (supports same manager
+    // receiving multiple picks in the same round/year in one deal).
+    const pickConsumers = {};
+
     const cols = entries.map(([team, assets]) => `
         <div class="tx-trade-col">
             <div class="tx-col-header">
@@ -95,7 +103,7 @@ function renderTrade(t) {
                 <span class="tx-col-name">@${team}</span>
                 <span class="tx-in-label">→ IN</span>
             </div>
-            <div class="tx-assets">${(assets || []).map(a => assetRow(a, team)).join("")}</div>
+            <div class="tx-assets">${(assets || []).map(a => assetRow(a, team, pickConsumers)).join("")}</div>
         </div>`
     ).join('<div class="tx-swap">⇄</div>');
 
@@ -193,86 +201,77 @@ function attachFailedBids(txs) {
 
 // ── Custom user dropdown with avatars ─────────────────────────────────────────
 
-function userAvatarHtml(username, size) {
-    const sz = size || 22;
-    const url = usersMap[username];
-    const letter = (username || "?")[0].toUpperCase();
-    const AVATAR_COLORS = ["#5a5be6","#e74c82","#3ecf8e","#f6ad55","#4299e1","#9f7aea","#ed64a6","#38b2ac"];
-    const color = AVATAR_COLORS[username.split("").reduce((s,c)=>s+c.charCodeAt(0),0) % AVATAR_COLORS.length];
-    const fallback = `<span style="width:${sz}px;height:${sz}px;border-radius:50%;background:${color};display:inline-flex;align-items:center;justify-content:center;font-size:${Math.round(sz*0.45)}px;font-weight:700;color:#fff;flex-shrink:0;">${letter}</span>`;
-    if (url) {
-        const fb = fallback.replace(/'/g,"&#39;").replace(/"/g,"&quot;");
-        return `<img src="${url}" style="width:${sz}px;height:${sz}px;border-radius:50%;object-fit:cover;flex-shrink:0;" onerror="this.outerHTML='${fb}'">`;
-    }
-    return fallback;
+const AVATAR_COLORS = ["#5a5be6","#e74c82","#3ecf8e","#f6ad55","#4299e1","#9f7aea","#ed64a6","#38b2ac"];
+function accentColor(name) {
+    return AVATAR_COLORS[(name||"?").split("").reduce((s,c)=>s+c.charCodeAt(0),0) % AVATAR_COLORS.length];
 }
 
 function buildUserDropdown(activeUsers, inactiveUsers) {
     const wrap = document.getElementById("userFilterWrap");
     if (!wrap) return;
 
-    const allGroups = [
-        { users: activeUsers, label: null },
-        { users: inactiveUsers, label: "Former Members" }
-    ];
-
-    function optionHtml(u, disabled) {
-        return `<div class="ud-option${disabled ? " ud-disabled" : ""}" data-value="${u}" style="display:flex;align-items:center;gap:8px;padding:6px 10px;cursor:pointer;border-radius:6px;">
-            ${userAvatarHtml(u, 22)}
-            <span style="font-size:13px;color:#c9cdd4;">${u}</span>
-        </div>`;
+    function optionHtml(username) {
+        const url = usersMap[username];
+        const color = accentColor(username);
+        const letter = (username||"?")[0].toUpperCase();
+        const sz = 22;
+        const avatarHtml = url
+            ? `<img src="${url}" style="width:${sz}px;height:${sz}px;border-radius:50%;object-fit:cover;flex-shrink:0;" onerror="this.style.display='none'">`
+            : `<span style="width:${sz}px;height:${sz}px;border-radius:50%;background:${color};display:inline-flex;align-items:center;justify-content:center;font-size:10px;font-weight:700;color:#fff;flex-shrink:0;">${letter}</span>`;
+        return `<div class="tx-ud-option" data-user="${username}" style="display:flex;align-items:center;gap:8px;padding:7px 12px;cursor:pointer;border-radius:6px;white-space:nowrap;">${avatarHtml}<span style="font-size:13px;color:#c9cdd4;">${username}</span></div>`;
     }
 
-    wrap.innerHTML = `
-    <style>
-        #udBtn { display:flex;align-items:center;gap:8px;background:#252830;border:1px solid #3d4350;border-radius:8px;padding:6px 10px;cursor:pointer;font-size:13px;color:#c9cdd4;min-width:140px;font-family:inherit; }
-        #udBtn:hover { border-color:#5a6070; }
-        #udMenu { position:absolute;top:calc(100% + 4px);left:0;z-index:100;background:#1e2027;border:1px solid #3d4350;border-radius:10px;padding:6px;min-width:180px;max-height:320px;overflow-y:auto;box-shadow:0 8px 24px rgba(0,0,0,.5); }
-        .ud-option:hover { background:#252830; }
-        .ud-option.selected { background:#2d3139; }
-        .ud-group-label { font-size:10px;font-weight:700;text-transform:uppercase;letter-spacing:.06em;color:#5a6070;padding:8px 10px 4px; }
-        .ud-divider { height:1px;background:#2d3139;margin:4px 0; }
-    </style>
-    <button id="udBtn">
-        <span id="udBtnAvatar">${userAvatarHtml("_all", 22).replace(userAvatarHtml("_all",22), `<span style="width:22px;height:22px;border-radius:50%;background:#3d4350;display:inline-flex;align-items:center;justify-content:center;font-size:11px;color:#8b9099;">👥</span>`)}</span>
-        <span id="udBtnLabel" style="flex:1;text-align:left;">All Users</span>
-        <span style="color:#5a6070;font-size:10px;">▾</span>
-    </button>
-    <div id="udMenu" style="display:none;">
-        <div class="ud-option selected" data-value="all" style="display:flex;align-items:center;gap:8px;padding:6px 10px;cursor:pointer;border-radius:6px;">
-            <span style="width:22px;height:22px;border-radius:50%;background:#3d4350;display:inline-flex;align-items:center;justify-content:center;font-size:11px;color:#8b9099;">👥</span>
-            <span style="font-size:13px;color:#c9cdd4;">All Users</span>
+    const menuHtml = `
+        <div class="tx-ud-option" data-user="all" style="display:flex;align-items:center;gap:8px;padding:7px 12px;cursor:pointer;border-radius:6px;">
+            <span style="font-size:16px;">👥</span><span style="font-size:13px;color:#c9cdd4;">All Users</span>
         </div>
-        ${activeUsers.map(u => optionHtml(u, false)).join("")}
-        ${inactiveUsers.length ? `<div class="ud-divider"></div><div class="ud-group-label">Former Members</div>${inactiveUsers.map(u => optionHtml(u, false)).join("")}` : ""}
-    </div>`;
+        ${activeUsers.map(u => optionHtml(u)).join("")}
+        ${inactiveUsers.length ? `<div style="margin:4px 8px;border-top:1px solid #2d3139;"></div><div style="font-size:10px;color:#5a6070;padding:4px 12px;text-transform:uppercase;letter-spacing:.06em;">Former Members</div>${inactiveUsers.map(u => optionHtml(u)).join("")}` : ""}
+    `;
 
-    const btn = document.getElementById("udBtn");
-    const menu = document.getElementById("udMenu");
+    wrap.innerHTML = `
+        <style>
+            #txUserFilterBtn { background:#1e2028;border:1.5px solid #2d3139;border-radius:999px;padding:7px 14px;cursor:pointer;display:flex;align-items:center;gap:8px;font-size:13px;color:#c9cdd4;white-space:nowrap;user-select:none;font-family:inherit; }
+            #txUserFilterBtn:hover { border-color:#5a6070; }
+            #txUserFilterMenu { position:absolute;top:calc(100% + 4px);left:0;background:#1e2028;border:1px solid #2d3139;border-radius:8px;padding:4px;z-index:100;min-width:180px;box-shadow:0 8px 24px rgba(0,0,0,.4); }
+            .tx-ud-option:hover { background:#252830; }
+            .tx-ud-option.selected { background:#252830; }
+        </style>
+        <div style="position:relative;">
+            <button id="txUserFilterBtn"><span style="font-size:16px;">👥</span> All Users <span style="font-size:10px;color:#5a6070;">▼</span></button>
+            <div id="txUserFilterMenu" style="display:none;">${menuHtml}</div>
+        </div>
+    `;
+
+    const btn = document.getElementById("txUserFilterBtn");
+    const menu = document.getElementById("txUserFilterMenu");
 
     btn.addEventListener("click", e => {
         e.stopPropagation();
         menu.style.display = menu.style.display === "none" ? "block" : "none";
     });
-    document.addEventListener("click", () => { menu.style.display = "none"; });
 
-    menu.addEventListener("click", e => {
-        const opt = e.target.closest(".ud-option");
-        if (!opt) return;
-        const val = opt.dataset.value;
-        selectedUser = val;
-        // Update button face
-        menu.querySelectorAll(".ud-option").forEach(o => o.classList.toggle("selected", o.dataset.value === val));
-        if (val === "all") {
-            document.getElementById("udBtnAvatar").innerHTML = `<span style="width:22px;height:22px;border-radius:50%;background:#3d4350;display:inline-flex;align-items:center;justify-content:center;font-size:11px;color:#8b9099;">👥</span>`;
-            document.getElementById("udBtnLabel").textContent = "All Users";
-        } else {
-            document.getElementById("udBtnAvatar").innerHTML = userAvatarHtml(val, 22);
-            document.getElementById("udBtnLabel").textContent = val;
-        }
-        menu.style.display = "none";
-        render();
+    menu.querySelectorAll(".tx-ud-option").forEach(el => {
+        el.addEventListener("click", () => {
+            selectedUser = el.dataset.user;
+            menu.style.display = "none";
+            if (selectedUser === "all") {
+                btn.innerHTML = '<span style="font-size:16px;">👥</span> All Users <span style="font-size:10px;color:#5a6070;">▼</span>';
+            } else {
+                const url = usersMap[selectedUser];
+                const color = accentColor(selectedUser);
+                const letter = (selectedUser||"?")[0].toUpperCase();
+                const sz = 22;
+                const av = url
+                    ? `<img src="${url}" style="width:${sz}px;height:${sz}px;border-radius:50%;object-fit:cover;">`
+                    : `<span style="width:${sz}px;height:${sz}px;border-radius:50%;background:${color};display:inline-flex;align-items:center;justify-content:center;font-size:10px;font-weight:700;color:#fff;">${letter}</span>`;
+                btn.innerHTML = `${av} <span style="font-size:13px;">${selectedUser}</span> <span style="font-size:10px;color:#5a6070;">▼</span>`;
+            }
+            render();
+        });
     });
+
+    document.addEventListener("click", () => { menu.style.display = "none"; }, { capture: true, passive: true });
 }
 
 function render() {
@@ -529,22 +528,39 @@ async function init() {
         // Determine active users (have rosters in any year)
         const rosters2026 = await api.getRosters("2026").catch(() => []);
         const activeSet = new Set((rosters2026 || []).map(r => r.owner).filter(Boolean));
-        const allUsernames = (usersList || []).map(u => u.username);
-        const activeUsers   = allUsernames.filter(u => activeSet.has(u)).sort();
-        const inactiveUsers = allUsernames.filter(u => !activeSet.has(u)).sort();
+        // Collect ALL usernames from transactions (captures former members not in leagueUsers)
+        const txUsernames = new Set();
+        (txData || []).forEach(t => {
+            (t.teams || []).forEach(u => txUsernames.add(u));
+            if (t.team) txUsernames.add(t.team);
+        });
+        (usersList || []).forEach(u => txUsernames.add(u.username));
+        // Filter out NFL team codes (e.g. "KC", "DAL") that appear in transaction data
+        const allTxUsers = [...txUsernames].filter(u => u && !/^[A-Z]{2,3}$/.test(u));
+        const activeUsers   = allTxUsers.filter(u => activeSet.has(u)).sort();
+        const inactiveUsers = allTxUsers.filter(u => !activeSet.has(u)).sort();
 
         buildUserDropdown(activeUsers, inactiveUsers);
+        // Add former members to usersMap (letter fallback since no avatar_url)
+        [...txUsernames].filter(u => !usersMap[u]).forEach(u => { usersMap[u] = null; });
         faabRemainingMap = computeFaabRemaining(allData);
 
-        // Build pick→player lookup from draft archive
+        // Build pick→player lookup from draft archive.
+        // Key: "year-round-picked_by" → sorted array of traded picks (pick_no, player, position).
+        // Only includes picks that arrived via trade (original_owner !== picked_by).
+        // Sorted by pick_no so sequential consumption in assetRow matches draft order.
         const draftArchive = window.__STATIC_DATA__?.draft || {};
         Object.entries(draftArchive).forEach(([year, picks]) => {
             (picks || []).forEach(p => {
-                if (p.player && p.picked_by) {
-                    pickMap[`${year}-${p.round}-${p.picked_by}`] = { player: p.player, position: p.position, team: p.team };
+                if (p.player && p.picked_by && p.original_owner !== p.picked_by) {
+                    const key = `${year}-${p.round}-${p.picked_by}`;
+                    if (!pickMap[key]) pickMap[key] = [];
+                    pickMap[key].push({ player: p.player, position: p.position, team: p.team, pick_no: p.pick_no });
                 }
             });
         });
+        // Sort each array by pick_no ascending
+        Object.values(pickMap).forEach(arr => arr.sort((a, b) => a.pick_no - b.pick_no));
 
         document.getElementById("filterYear").addEventListener("change", render);
         document.getElementById("filterType").addEventListener("change", render);

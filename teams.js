@@ -302,8 +302,17 @@ async function lookupEspnId(name) {
     }
 }
 
-function renderNews(articles, injuries) {
-    // Articles are already athlete-specific from ESPN API — no need to filter by name
+function renderNews(articles, injuries, playerName) {
+    // Filter articles to only those mentioning the player by (last) name
+    const lastName = playerName ? playerName.split(" ").slice(-1)[0].toLowerCase() : null;
+    const relevant = lastName
+        ? articles.filter(a => {
+            const text = ((a.headline || "") + " " + (a.description || "")).toLowerCase();
+            return text.includes(lastName);
+          })
+        : articles;
+    // Fall back to all articles if filtering leaves nothing
+    const filtered = relevant.length > 0 ? relevant : articles;
     let html = "";
 
     injuries.forEach(inj => {
@@ -318,7 +327,7 @@ function renderNews(articles, injuries) {
         html += `<hr style="border:none;border-top:1px solid #2d3139;margin:10px 0;">`;
     }
 
-    articles.slice(0, 5).forEach(a => {
+    filtered.slice(0, 5).forEach(a => {
         html += `<div class="pc-news-item">
             <div class="pc-news-headline">${a.headline || ""}</div>
             ${a.description ? `<div class="pc-news-impact"><span class="pc-impact-label">Impact:</span> ${a.description}</div>` : ""}
@@ -553,7 +562,7 @@ async function openPopover(element, player) {
         const injuries = athleteData.athlete?.injuries || [];
         document.getElementById("espn-news").innerHTML = `
             <div class="pc-section-title">Latest News</div>
-            ${renderNews(articles, injuries)}`;
+            ${renderNews(articles, injuries, player.name)}`;
 
         // Re-clamp position after content loaded (height changed)
         positionPopover(popover, element);
