@@ -298,8 +298,7 @@ nav a.active { color: var(--text-1); font-weight: 700; }
 
 /* ── Main content wrapper ──────────────────────────────────── */
 main {
-    max-width: 1400px;
-    margin: 0 auto;
+    width: 100%;
 }
 
 /* ── Mobile ≤ 600px ────────────────────────────────────────── */
