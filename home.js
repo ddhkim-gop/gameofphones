@@ -148,6 +148,24 @@ function bestPlayerForTeam(teamName, year) {
                 if (p?.player_id && !playerMap[p.player_id]) playerMap[p.player_id] = p;
             });
         }
+
+        // Fallback for historical/inactive managers not in current rosters:
+        // use their draft picks (via player_name_map) to find player_ids
+        if (Object.keys(playerMap).length === 0) {
+            const nameMap = window.__STATIC_DATA__?.player_name_map || {};
+            const draftArchive = window.__STATIC_DATA__?.draft || {};
+            Object.entries(draftArchive).forEach(([dYear, picks]) => {
+                (picks || []).forEach(p => {
+                    if (p.picked_by === teamName && p.player) {
+                        const pid = nameMap[p.player];
+                        if (pid && !playerMap[pid]) {
+                            playerMap[pid] = { player_id: pid, name: p.player, position: p.position, team: p.team };
+                        }
+                    }
+                });
+            });
+        }
+
         // For each unique player, find best score across all stat years
         let best = null, bestScore = -1, bestYear = null;
         Object.values(playerMap).forEach(p => {
@@ -573,18 +591,16 @@ async function init() {
         (leagueUsers || []).forEach(u => { usersMap[u.username] = u.username === "Paul_Yoon" ? PAUL_YOON_AVATAR : u.avatar_url; });
 
         // Load stats for best player column (all years)
-        try {
-            const [s26, s25, s24, s23] = await Promise.all([
-                api.getPlayerStats("2026"),
-                api.getPlayerStats("2025"),
-                api.getPlayerStats("2024"),
-                api.getPlayerStats("2023"),
-            ]);
-            statsCache["2026"] = s26 || {};
-            statsCache["2025"] = s25 || {};
-            statsCache["2024"] = s24 || {};
-            statsCache["2023"] = s23 || {};
-        } catch { /* stats optional */ }
+        const [s26, s25, s24, s23] = await Promise.all([
+            api.getPlayerStats("2026").catch(() => ({})),
+            api.getPlayerStats("2025").catch(() => ({})),
+            api.getPlayerStats("2024").catch(() => ({})),
+            api.getPlayerStats("2023").catch(() => ({})),
+        ]);
+        statsCache["2026"] = s26 || {};
+        statsCache["2025"] = s25 || {};
+        statsCache["2024"] = s24 || {};
+        statsCache["2023"] = s23 || {};
 
         document.getElementById("home-year-select").addEventListener("change", e => {
             selectedYear = e.target.value;
