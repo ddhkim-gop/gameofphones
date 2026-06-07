@@ -7,6 +7,8 @@ const FAAB_BUDGET = 100;
 let allData = [];
 let usersMap = {};
 let faabRemainingMap = {}; // transaction_id → remaining after this bid
+// pickMap["2025-2-ddhk"] = { player, position, team }  (year-round-picked_by)
+let pickMap = {};
 
 function computeFaabRemaining(txData) {
     const spent = {}; // "team-season" → running total
@@ -38,17 +40,30 @@ function posBadge(pos) {
 
 function avatarEl(name) {
     const url = usersMap[name];
+    const letter = (name||"?")[0].toUpperCase();
+    const fallback = `<span class="tx-avatar-init">${letter}</span>`;
     if (url) {
-        return `<img class="tx-avatar" src="${url}" onerror="this.outerHTML='<span class=\\'tx-avatar-init\\'>${(name||"?")[0].toUpperCase()}</span>'">`;
+        return `<img class="tx-avatar" src="${url}" onerror="this.outerHTML='${fallback.replace(/'/g,"&#39;").replace(/"/g,"&quot;")}'">`;
     }
-    return `<span class="tx-avatar-init">${(name || "?")[0].toUpperCase()}</span>`;
+    return fallback;
 }
 
-function assetRow(asset) {
+function assetRow(asset, receivedBy) {
     if ((asset.position || "").toUpperCase() === "PICK") {
+        // Try to find the player drafted with this pick
+        // name format: "2025 Round 2" → year=2025, round=2
+        const m = (asset.name || "").match(/(\d{4})\s+Round\s+(\d+)/i);
+        let draftedHtml = "";
+        if (m && receivedBy) {
+            const key = `${m[1]}-${m[2]}-${receivedBy}`;
+            const dp = pickMap[key];
+            if (dp) {
+                draftedHtml = `<span style="color:#8b9099;font-size:11px;margin-left:6px;">→ ${dp.player}</span>`;
+            }
+        }
         return `<div class="tx-asset-row">
             <span class="pick-badge">PICK</span>
-            <span class="tx-asset-name">${fmtPick(asset.name)}</span>
+            <span class="tx-asset-name">${fmtPick(asset.name)}</span>${draftedHtml}
         </div>`;
     }
     return `<div class="tx-asset-row">
@@ -69,7 +84,7 @@ function renderTrade(t) {
                 <span class="tx-col-name">@${team}</span>
                 <span class="tx-in-label">→ IN</span>
             </div>
-            <div class="tx-assets">${(assets || []).map(assetRow).join("")}</div>
+            <div class="tx-assets">${(assets || []).map(a => assetRow(a, team)).join("")}</div>
         </div>`
     ).join('<div class="tx-swap">⇄</div>');
 
@@ -409,6 +424,16 @@ async function init() {
         allData = txData;
         (usersList || []).forEach(u => { usersMap[u.username] = u.avatar_url; });
         faabRemainingMap = computeFaabRemaining(allData);
+
+        // Build pick→player lookup from draft archive
+        const draftArchive = window.__STATIC_DATA__?.draft || {};
+        Object.entries(draftArchive).forEach(([year, picks]) => {
+            (picks || []).forEach(p => {
+                if (p.player && p.picked_by) {
+                    pickMap[`${year}-${p.round}-${p.picked_by}`] = { player: p.player, position: p.position, team: p.team };
+                }
+            });
+        });
 
         document.getElementById("filterYear").addEventListener("change", render);
         document.getElementById("filterType").addEventListener("change", render);
