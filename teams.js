@@ -113,7 +113,7 @@ async function init() {
 
         // Team header with avatar
         const avatarUrl = usersMap[ownerName];
-        const letterSpan = `<span style="width:32px;height:32px;border-radius:50%;background:#252830;display:inline-flex;align-items:center;justify-content:center;font-size:13px;font-weight:700;color:#5a6070;flex-shrink:0;">${ownerName[0].toUpperCase()}</span>`;
+        const letterSpan = `<span style='width:32px;height:32px;border-radius:50%;background:#252830;display:inline-flex;align-items:center;justify-content:center;font-size:13px;font-weight:700;color:#5a6070;flex-shrink:0;'>${ownerName[0].toUpperCase()}</span>`;
         const avatarHtml = avatarUrl
             ? `<img src="${avatarUrl}" style="width:32px;height:32px;border-radius:50%;object-fit:cover;flex-shrink:0;" onerror="this.outerHTML='${letterSpan.replace(/'/g,"&#39;")}'">`
             : letterSpan;
