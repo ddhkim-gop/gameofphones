@@ -11417,7 +11417,7 @@ window.__STATIC_DATA__ = {
       "user_id": "1241952885734899712"
     }
   ],
-  "league_users": [
+  "league_users":   [
     {
       "user_id": "444998067259699200",
       "username": "ddhk",
@@ -11444,6 +11444,11 @@ window.__STATIC_DATA__ = {
       "avatar_url": "https://sleepercdn.com/avatars/thumbs/762b0a00afa766a8e4919a6b0bf13efe"
     },
     {
+      "user_id": "605379154468200448",
+      "username": "edgxrjiang",
+      "avatar_url": "https://sleepercdn.com/avatars/thumbs/b1c63f4f24573d74efbb374e6f617c04"
+    },
+    {
       "user_id": "608472883282378752",
       "username": "ericdang",
       "avatar_url": "https://sleepercdn.com/avatars/thumbs/00c60af588f23afbc094f0d7ebe70650"
@@ -11464,19 +11469,39 @@ window.__STATIC_DATA__ = {
       "avatar_url": "https://sleepercdn.com/avatars/thumbs/cb99028c1124521db44c93824cf7c2fc"
     },
     {
-      "user_id": "865098089516621824",
-      "username": "ngman",
-      "avatar_url": "https://sleepercdn.com/avatars/thumbs/c04fc8d62f7682975853e0a61db64f18"
-    },
-    {
       "user_id": "964263197861568512",
       "username": "eikichii952",
       "avatar_url": "https://sleepercdn.com/avatars/thumbs/4f4090e5e9c3941414db40a871e3e909"
     },
     {
+      "user_id": "965358563533156352",
+      "username": "shmyung",
+      "avatar_url": "https://sleepercdn.com/avatars/thumbs/8eb8f8bf999945d523f2c4033f70473e"
+    },
+    {
+      "user_id": "966422938096332800",
+      "username": "riqi",
+      "avatar_url": "https://sleepercdn.com/avatars/thumbs/e7af4deab0289b4f5505646424895246"
+    },
+    {
+      "user_id": "994342133354029056",
+      "username": "JUNNNNAY",
+      "avatar_url": "https://sleepercdn.com/avatars/thumbs/e7af4deab0289b4f5505646424895246"
+    },
+    {
       "user_id": "994709442740457472",
       "username": "NoSkilzPak",
       "avatar_url": "https://sleepercdn.com/avatars/thumbs/e499e4f49a4900cf141313ebe3c69cf9"
+    },
+    {
+      "user_id": "865098089516621824",
+      "username": "ngman",
+      "avatar_url": "https://sleepercdn.com/avatars/thumbs/c04fc8d62f7682975853e0a61db64f18"
+    },
+    {
+      "user_id": "1091462372469907456",
+      "username": "urmummma",
+      "avatar_url": "https://sleepercdn.com/avatars/thumbs/b319fdf8b7b5b0359d3c78622ba4d70c"
     },
     {
       "user_id": "1124796770866909184",
@@ -11492,26 +11517,6 @@ window.__STATIC_DATA__ = {
       "user_id": "1241952885734899712",
       "username": "victordhe",
       "avatar_url": "https://sleepercdn.com/avatars/thumbs/7572250c2fb084c434fed0e82229e183"
-    },
-    {
-      "user_id": "966422938096332800",
-      "username": "riqi",
-      "avatar_url": "https://sleepercdn.com/avatars/thumbs/e7af4deab0289b4f5505646424895246"
-    },
-    {
-      "user_id": "605379154468200448",
-      "username": "edgxrjiang",
-      "avatar_url": "https://sleepercdn.com/avatars/thumbs/b1c63f4f24573d74efbb374e6f617c04"
-    },
-    {
-      "user_id": "965358563533156352",
-      "username": "shmyung",
-      "avatar_url": "https://sleepercdn.com/avatars/thumbs/8eb8f8bf999945d523f2c4033f70473e"
-    },
-    {
-      "user_id": "1091462372469907456",
-      "username": "urmummma",
-      "avatar_url": "https://sleepercdn.com/avatars/thumbs/b319fdf8b7b5b0359d3c78622ba4d70c"
     }
   ],
   "transactions": [
