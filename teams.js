@@ -234,12 +234,19 @@ function ensurePopover() {
     if (document.getElementById("player-popover")) return;
     const pop = document.createElement("div");
     pop.id = "player-popover";
-    pop.innerHTML = `<div id="popover-body" style="font-size:13px;line-height:1.5;"></div>`;
+    // Outer: fixed container, no overflow (keeps close button from scrolling)
+    // Inner: scrollable body
+    pop.innerHTML = `
+        <button id="popover-close" onclick="document.getElementById('player-popover').style.display='none'"
+            style="position:absolute;top:10px;right:10px;z-index:10;
+                   background:rgba(255,255,255,0.08);border:1px solid rgba(255,255,255,0.1);
+                   color:#8b9099;width:26px;height:26px;border-radius:50%;cursor:pointer;
+                   font-size:13px;display:flex;align-items:center;justify-content:center;flex-shrink:0;">✕</button>
+        <div id="popover-body" style="font-size:13px;line-height:1.5;overflow-y:auto;height:100%;border-radius:12px;"></div>`;
     pop.style.cssText = `
         display:none;position:fixed;z-index:9999;
         background:#13151a;border:1px solid #2d3139;
-        border-radius:12px;
-        overflow-y:auto;
+        border-radius:12px;overflow:hidden;
         box-shadow:0 10px 40px rgba(0,0,0,0.6);
     `;
     document.body.appendChild(pop);
@@ -387,7 +394,7 @@ async function openPopover(element, player) {
 
     body.innerHTML = `
         <style>
-            .pc-header { background:linear-gradient(135deg,#1e2027 0%,#252830 100%); padding:16px; border-radius:12px 12px 0 0; display:flex; gap:12px; align-items:center; position:sticky; top:0; z-index:2; border-bottom:1px solid #2d3139; }
+            .pc-header { background:linear-gradient(135deg,#1e2027 0%,#252830 100%); padding:16px; border-radius:12px 12px 0 0; display:flex; gap:12px; align-items:center; position:relative; border-bottom:1px solid #2d3139; }
             .pc-close { position:absolute;top:10px;right:10px; background:rgba(255,255,255,0.08);border:1px solid rgba(255,255,255,0.1); color:#8b9099;width:26px;height:26px;border-radius:50%;cursor:pointer; font-size:13px;display:flex;align-items:center;justify-content:center; }
             .pc-close:hover { background:rgba(255,255,255,0.15);color:#f0f1f3; }
             .pc-headshot { width:68px;height:68px;border-radius:50%;object-fit:cover;border:2px solid ${posClr};flex-shrink:0;background:#252830; }
@@ -415,8 +422,7 @@ async function openPopover(element, player) {
             .pc-news-date { font-size:10px;color:#5a6070; }
         </style>
 
-        <div class="pc-header">
-            <button class="pc-close" onclick="document.getElementById('player-popover').style.display='none'">✕</button>
+        <div class="pc-header" style="padding-right:42px;"><!-- close btn is outside scroll area -->
             <img class="pc-headshot" src="${headshotUrl}"
                 onerror="this.src='https://sleepercdn.com/content/nfl/players/thumb/${pid}.jpg'" />
             <div style="flex:1;min-width:0;">
