@@ -145,7 +145,13 @@ function bestPlayerForTeam(teamName, year) {
         Object.values(playerMap).forEach(p => {
             for (const y of allStatYears) {
                 const s = statsCache[y]?.[p.player_id]?.pts_half_ppr;
-                if (s > 0 && s > bestScore) { bestScore = s; best = p; bestYear = y; }
+                if (s > 0 && s > bestScore) {
+                    bestScore = s; bestYear = y;
+                    // Use the player object from that year's roster so team reflects that season
+                    const yRoster = (rostersData?.[y] || []).find(r => r.owner === teamName);
+                    const yPlayer = yRoster?.players?.find(pl => pl?.player_id === p.player_id);
+                    best = yPlayer || p;
+                }
             }
         });
         return best ? { player: best, score: bestScore, year: bestYear } : null;
