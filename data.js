@@ -62547,7 +62547,7 @@ window.__STATIC_DATA__ = {
       "owner_name": "ddhk",
       "original_owner_name": "spiffster"
     }
-  ]],
+  ],
   "season_history": {
     "2023": {
       "champion": "ganathan",
