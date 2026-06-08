@@ -629,7 +629,17 @@ async function openPopover(element, player) {
                 <button id="pc-tab-gamelogs" style="background:none;border:1px solid #2d3139;color:#5a6070;font-size:11px;font-weight:700;padding:4px 12px;border-radius:6px;cursor:pointer;font-family:inherit;">Game Logs</button>
             </div>
             <div id="espn-stats">
-                <div style="height:29px;margin-bottom:10px;"></div>
+                <div style="display:flex;align-items:center;gap:8px;margin-bottom:10px;">
+                    <div style="font-size:10px;text-transform:uppercase;letter-spacing:.06em;color:#5a6070;font-weight:700;">Season</div>
+                    <select id="pc-stats-year" style="background:#252830;border:1px solid #2d3139;border-radius:6px;color:#f0f1f3;font-size:12px;padding:3px 8px;cursor:pointer;">
+                        <option value="all">All</option>
+                        <option value="2025">2025</option>
+                        <option value="2024">2024</option>
+                        <option value="2023">2023</option>
+                        <option value="2022">2022</option>
+                        <option value="2021">2021</option>
+                    </select>
+                </div>
                 <div id="pc-stats-body"><div style="color:#5a6070;font-size:12px;">Loading...</div></div>
             </div>
             <div id="espn-gamelogs" style="display:none;">
@@ -664,6 +674,7 @@ async function openPopover(element, player) {
     document.getElementById("pc-tab-stats")?.addEventListener("click", () => switchPcTab("stats"));
     document.getElementById("pc-tab-gamelogs")?.addEventListener("click", () => switchPcTab("gamelogs"));
     document.getElementById("pc-gamelog-year")?.addEventListener("change", () => loadGameLog());
+    document.getElementById("pc-stats-year")?.addEventListener("change", () => renderStatsForYear());
 
     // Store identifiers on popover for async tab handlers
     popover.dataset.pos = pos;
