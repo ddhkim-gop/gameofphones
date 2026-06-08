@@ -527,12 +527,13 @@ async function init() {
             .mu-player-name { font-size: 11px; }
             .mu-player-pts { font-size: 11px; min-width: 22px; }
             #mu-year-select, #mu-week-select { font-size: 12px; padding: 5px 24px 5px 8px; }
+            #mu-week-select { flex: 1; min-width: 0; }
             #muUserFilterBtn { font-size: 12px; padding: 5px 10px; }
         }
     </style>
     <div class="filter-bar" style="display:flex;gap:8px;flex-wrap:nowrap;margin-bottom:20px;align-items:center;">
         <select id="mu-year-select" style="flex-shrink:0;">${YEARS.map(y => `<option value="${y}">${y}</option>`).join("")}</select>
-        <select id="mu-week-select" style="flex:1;min-width:0;""><option value="">All Weeks</option></select>
+        <select id="mu-week-select"><option value="">All Weeks</option></select>
         <div id="muUserFilterWrap" style="position:relative;display:inline-block;flex-shrink:0;"></div>
     </div>
     <div id="mu-board">Loading…</div>`;
