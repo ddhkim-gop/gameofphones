@@ -132,15 +132,20 @@ async function init() {
         header.style.cssText = "display:flex;align-items:center;gap:10px;margin-bottom:14px;padding-bottom:12px;border-bottom:1px solid #2d3139;";
 
         // Pick a consistent accent color from the username (same palette Sleeper uses)
-        const AVATAR_COLORS = ["#5a5be6","#e74c82","#3ecf8e","#f6ad55","#4299e1","#9f7aea","#ed64a6","#38b2ac"];
-        const accentColor = AVATAR_COLORS[ownerName.split("").reduce((s,c)=>s+c.charCodeAt(0),0) % AVATAR_COLORS.length];
+        const AVATAR_COLORS_T = ["#5a5be6","#e74c82","#3ecf8e","#f6ad55","#4299e1","#9f7aea","#ed64a6","#38b2ac"];
+        const accentColor = AVATAR_COLORS_T[ownerName.split("").reduce((s,c)=>s+c.charCodeAt(0),0) % AVATAR_COLORS_T.length];
+        const INACTIVE_USERS_T = new Set(['edgxrjiang', 'riqi', 'shmyung', 'urmummma', 'JUNNNNAY']);
 
-        // Build avatar via DOM (never via innerHTML) so styles are never re-parsed
-        const avatarEl = document.createElement(avatarUrl ? "img" : "span");
-        avatarEl.style.cssText = "width:32px;height:32px;border-radius:50%;flex-shrink:0;";
-        if (avatarUrl) {
+        // Build avatar element
+        let avatarEl;
+        if (INACTIVE_USERS_T.has(ownerName)) {
+            avatarEl = document.createElement("span");
+            avatarEl.style.cssText = "width:32px;height:32px;border-radius:50%;background:#3a3f4a;display:flex;align-items:center;justify-content:center;font-size:13px;font-weight:700;color:#5a6070;flex-shrink:0;";
+            avatarEl.textContent = ownerName[0].toUpperCase();
+        } else if (avatarUrl) {
+            avatarEl = document.createElement("img");
             avatarEl.src = avatarUrl;
-            avatarEl.style.objectFit = "cover";
+            avatarEl.style.cssText = "width:32px;height:32px;border-radius:50%;object-fit:cover;flex-shrink:0;";
             avatarEl.addEventListener("error", () => {
                 const fb = document.createElement("span");
                 fb.style.cssText = `width:32px;height:32px;border-radius:50%;background:${accentColor};display:flex;align-items:center;justify-content:center;font-size:13px;font-weight:700;color:#fff;flex-shrink:0;`;
@@ -148,6 +153,7 @@ async function init() {
                 avatarEl.replaceWith(fb);
             });
         } else {
+            avatarEl = document.createElement("span");
             avatarEl.style.cssText = `width:32px;height:32px;border-radius:50%;background:${accentColor};display:flex;align-items:center;justify-content:center;font-size:13px;font-weight:700;color:#fff;flex-shrink:0;`;
             avatarEl.textContent = ownerName[0].toUpperCase();
         }

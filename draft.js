@@ -23,14 +23,18 @@ function abbrevName(name) {
 }
 
 const AVATAR_COLORS_DRAFT = ["#5a5be6","#e74c82","#3ecf8e","#f6ad55","#4299e1","#9f7aea","#ed64a6","#38b2ac"];
+const INACTIVE_USERS = new Set(['edgxrjiang', 'riqi', 'shmyung', 'urmummma', 'JUNNNNAY']);
 function accentColorDraft(name) {
     return AVATAR_COLORS_DRAFT[(name||"?").split("").reduce((s,c)=>s+c.charCodeAt(0),0) % AVATAR_COLORS_DRAFT.length];
 }
 function avatarEl(username, size = 24) {
-    const u = leagueUsers.find(u => u.username === username);
-    const url = username === "Paul_Yoon" ? "https://sleepercdn.com/images/v4/avatars/avatar_default_blue.webp" : u?.avatar_url;
     const sz = size;
     const letter = (username || "?")[0].toUpperCase();
+    if (INACTIVE_USERS.has(username)) {
+        return `<span style="width:${sz}px;height:${sz}px;border-radius:50%;background:#3a3f4a;display:inline-flex;align-items:center;justify-content:center;font-size:${Math.round(sz*0.45)}px;font-weight:700;color:#5a6070;flex-shrink:0;">${letter}</span>`;
+    }
+    const u = leagueUsers.find(u => u.username === username);
+    const url = u?.avatar_url;
     const fallback = `<span style="width:${sz}px;height:${sz}px;border-radius:50%;background:${accentColorDraft(username)};display:inline-flex;align-items:center;justify-content:center;font-size:${Math.round(sz*0.45)}px;font-weight:800;color:#fff;flex-shrink:0;">${letter}</span>`;
     if (!url) return fallback;
     return `<img src="${url}" style="width:${sz}px;height:${sz}px;border-radius:50%;object-fit:cover;flex-shrink:0;" onerror="this.outerHTML='${fallback.replace(/'/g,"&#39;").replace(/"/g,"&quot;")}'">`;
@@ -187,12 +191,18 @@ function renderDraft(picks) {
 
     // ── Column headers ──────────────────────────────────────────────────────
     const headerCells = colTeams.map(team => {
-        const u = leagueUsers.find(u => u.username === team);
-        const url = team === "Paul_Yoon" ? "https://sleepercdn.com/images/v4/avatars/avatar_default_blue.webp" : u?.avatar_url;
+        const inactiveDiv = `<div style="width:36px;height:36px;border-radius:50%;background:#3a3f4a;display:flex;align-items:center;justify-content:center;font-size:14px;font-weight:700;color:#5a6070;">${(team||"?")[0].toUpperCase()}</div>`;
         const letterDiv = `<div style="width:36px;height:36px;border-radius:50%;background:#252830;display:flex;align-items:center;justify-content:center;font-size:14px;font-weight:800;color:#5a6070;">${(team||"?")[0].toUpperCase()}</div>`;
-        const avatarHtml = url
-            ? `<img src="${url}" style="width:36px;height:36px;border-radius:50%;object-fit:cover;border:2px solid #2d3139;" onerror="this.outerHTML='${letterDiv.replace(/'/g,"&#39;").replace(/"/g,"&quot;")}'">`
-            : letterDiv;
+        let avatarHtml;
+        if (INACTIVE_USERS.has(team)) {
+            avatarHtml = inactiveDiv;
+        } else {
+            const u = leagueUsers.find(u => u.username === team);
+            const url = u?.avatar_url;
+            avatarHtml = url
+                ? `<img src="${url}" style="width:36px;height:36px;border-radius:50%;object-fit:cover;border:2px solid #2d3139;" onerror="this.outerHTML='${letterDiv.replace(/'/g,"&#39;").replace(/"/g,"&quot;")}'">`
+                : letterDiv;
+        }
         return `
             <div style="display:flex;flex-direction:column;align-items:center;gap:5px;padding:10px 4px 8px;">
                 ${avatarHtml}

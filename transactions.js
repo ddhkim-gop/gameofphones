@@ -40,9 +40,13 @@ function posBadge(pos) {
     return `<span class="pos-badge" style="background:${color}">${pos || "?"}</span>`;
 }
 
+const INACTIVE_USERS = new Set(['edgxrjiang', 'riqi', 'shmyung', 'urmummma', 'JUNNNNAY']);
 function avatarEl(name) {
-    const url = usersMap[name];
     const letter = (name||"?")[0].toUpperCase();
+    if (INACTIVE_USERS.has(name)) {
+        return `<span class="tx-avatar-init tx-avatar-inactive">${letter}</span>`;
+    }
+    const url = usersMap[name];
     const fallback = `<span class="tx-avatar-init">${letter}</span>`;
     if (url) {
         return `<img class="tx-avatar" src="${url}" onerror="this.outerHTML='${fallback.replace(/'/g,"&#39;").replace(/"/g,"&quot;")}'">`;
@@ -489,6 +493,10 @@ async function init() {
             font-weight: 700;
             color: #5a6070;
             flex-shrink: 0;
+        }
+        .tx-avatar-inactive {
+            background: #3a3f4a;
+            color: #5a6070;
         }
 
         .tx-lost-bids { margin-top: 8px; display: flex; flex-wrap: wrap; gap: 6px; align-items: center; }
