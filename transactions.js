@@ -10,6 +10,9 @@ let usersMap = {};
 let faabRemainingMap = {}; // transaction_id → remaining after this bid
 // pickMap["2025-2-ddhk"] = { player, position, team }  (year-round-picked_by)
 let pickMap = {};
+// pickRetradeMap["2025-2-ddhk"] = [{toTeam, date, txId}, ...] sorted by date
+// When ddhk received a 2025 R2 pick in a trade, then later re-traded it, this tracks those re-trades.
+let pickRetradeMap = {};
 let selectedUser = "all";
 
 function computeFaabRemaining(txData) {
@@ -54,23 +57,80 @@ function avatarEl(name) {
     return fallback;
 }
 
-function assetRow(asset, receivedBy, pickConsumers) {
+// Build the full retrade chain for a pick received by `team`, returning HTML lines.
+// Follows the chain: if team later re-traded it, show who they sent it to,
+// then whether THAT team re-traded it, until we reach the final drafter.
+function buildPickChainHtml(year, round, team, afterDate, depth) {
+    if (depth > 6) return ""; // guard against infinite loops
+    const key = `${year}-${round}-${team}`;
+    const retradeIdx = `_idx_${key}_${afterDate}`;
+    const retradeArr = pickRetradeMap[key] || [];
+    // Find the first re-trade that happened AFTER afterDate
+    const parseTxDate = s => s ? new Date(s.replace(' •', ',').replace(/\s+PT$/, '')).getTime() : 0;
+    const afterTs = parseTxDate(afterDate);
+    const retrade = retradeArr.find(r => parseTxDate(r.date) > afterTs);
+    if (!retrade) {
+        // No re-trade — check if this team actually drafted with it
+        const draftKey = `${year}-${round}-${team}`;
+        // (Caller will handle showing "Drafted" for the final holder)
+        return null;
+    }
+    // This team re-traded the pick. Show the next hop, then recurse.
+    let html = `<div style="display:flex;align-items:center;gap:5px;margin-top:3px;">
+        <span style="font-size:9px;color:#5a6070;">↓ traded to</span>
+        <span style="font-size:11px;font-weight:600;color:#a78bfa;">${retrade.toTeam}</span>
+        <span style="font-size:10px;color:#5a6070;">${retrade.date.split('•')[0].trim()}</span>
+    </div>`;
+    // Recurse: did THAT team also re-trade it?
+    const nextChain = buildPickChainHtml(year, round, retrade.toTeam, retrade.date, depth + 1);
+    if (nextChain === null) {
+        // retrade.toTeam kept it — find what they drafted
+        const dpArr = pickMap[`${year}-${round}-${retrade.toTeam}`] || [];
+        if (dpArr.length) {
+            const dp = dpArr[0];
+            const pickInRound = dp.pick_no - (round - 1) * NUM_TEAMS;
+            html += `<div style="display:flex;align-items:center;gap:5px;margin-top:3px;">
+                <span style="font-size:9px;color:#5a6070;">→ drafted</span>
+                ${posBadge(dp.position)}
+                <span style="font-size:11px;font-weight:600;color:#c9cdd4;">${dp.player}</span>
+                <span style="font-size:10px;color:#5a6070;">(${round}.${String(pickInRound).padStart(2,"0")})</span>
+            </div>`;
+        }
+    } else {
+        html += nextChain;
+    }
+    return html;
+}
+
+function assetRow(asset, receivedBy, pickConsumers, tradeDate) {
     if ((asset.position || "").toUpperCase() === "PICK") {
         // name format: "2025 Round 2" → year=2025, round=2
         const m = (asset.name || "").match(/(\d{4})\s+Round\s+(\d+)/i);
-        let draftedHtml = "";
+        let detailHtml = "";
         const round = m ? parseInt(m[2]) : null;
         let slotSuffix = "";
         if (m && receivedBy) {
-            const key = `${m[1]}-${round}-${receivedBy}`;
-            const arr = pickMap[key] || [];
+            const year = m[1];
+            const key = `${year}-${round}-${receivedBy}`;
             const idx = pickConsumers[key] || 0;
-            const dp = arr[idx];
-            if (dp) {
-                pickConsumers[key] = idx + 1;
-                const pickInRound = dp.pick_no - (round - 1) * NUM_TEAMS;
-                slotSuffix = ` (${round}.${String(pickInRound).padStart(2, "0")})`;
-                draftedHtml = `
+
+            // Check if receivedBy later re-traded this pick
+            const chainHtml = buildPickChainHtml(year, round, receivedBy, tradeDate || "", 0);
+
+            if (chainHtml !== null) {
+                // Pick was re-traded — show the chain instead of drafted player
+                detailHtml = `<div style="margin-top:4px;padding:4px 8px;background:#1a1c22;border-radius:6px;border-left:2px solid #a78bfa22;">
+                    ${chainHtml}
+                </div>`;
+            } else {
+                // Pick stayed with receivedBy — show who they drafted
+                const arr = pickMap[key] || [];
+                const dp = arr[idx];
+                if (dp) {
+                    pickConsumers[key] = idx + 1;
+                    const pickInRound = dp.pick_no - (round - 1) * NUM_TEAMS;
+                    slotSuffix = ` (${round}.${String(pickInRound).padStart(2, "0")})`;
+                    detailHtml = `
     <div style="margin-top:4px;padding:4px 8px;background:#1a1c22;border-radius:6px;border-left:2px solid #3d4350;">
         <div style="font-size:10px;color:#5a6070;margin-bottom:2px;">Drafted</div>
         <div style="display:flex;align-items:center;gap:5px;">
@@ -78,6 +138,7 @@ function assetRow(asset, receivedBy, pickConsumers) {
             <span style="font-size:11px;font-weight:600;color:#c9cdd4;">${dp.player}</span>
         </div>
     </div>`;
+                }
             }
         }
         return `<div class="tx-asset-row" style="flex-direction:column;align-items:flex-start;">
@@ -85,7 +146,7 @@ function assetRow(asset, receivedBy, pickConsumers) {
         <span class="pick-badge">PICK</span>
         <span class="tx-asset-name">${fmtPick(asset.name)}${slotSuffix}</span>
     </div>
-    ${draftedHtml}
+    ${detailHtml}
 </div>`;
     }
     return `<div class="tx-asset-row">
@@ -110,7 +171,7 @@ function renderTrade(t) {
                 <span class="tx-col-name">@${team}</span>
                 <span class="tx-in-label">→ IN</span>
             </div>
-            <div class="tx-assets">${(assets || []).map(a => assetRow(a, team, pickConsumers)).join("")}</div>
+            <div class="tx-assets">${(assets || []).map(a => assetRow(a, team, pickConsumers, t.created)).join("")}</div>
         </div>`
     ).join('<div class="tx-swap">⇄</div>');
 
@@ -572,6 +633,41 @@ async function init() {
         });
         // Sort each array by pick_no ascending
         Object.values(pickMap).forEach(arr => arr.sort((a, b) => a.pick_no - b.pick_no));
+
+        // Build pickRetradeMap: for each team that received a pick in a trade,
+        // track if/when they sent that same pick on to another team.
+        // Key: "year-round-holder" → [{toTeam, date, txId}, ...] sorted by date.
+        function parseTxDate(s) {
+            if (!s) return 0;
+            try { return new Date(s.replace(' •', ',').replace(/\s+PT$/, '')).getTime(); }
+            catch { return 0; }
+        }
+        const trades = allData.filter(t => t.type === "trade" && t.status !== "failed");
+        const tradesSorted = [...trades].sort((a, b) => parseTxDate(a.created) - parseTxDate(b.created));
+
+        tradesSorted.forEach(t => {
+            const date = t.created || "";
+            const txId = t.transaction_id || "";
+            const teams = t.teams || [];
+            for (const [recvTeam, assets] of Object.entries(t.assets_received || {})) {
+                for (const a of assets) {
+                    if ((a.position || "").toUpperCase() !== "PICK") continue;
+                    const m = (a.name || "").match(/(\d{4})\s+Round\s+(\d+)/i);
+                    if (!m) continue;
+                    const year = m[1], round = parseInt(m[2]);
+                    // "recvTeam received this pick" — record that recvTeam now holds year/round pick
+                    // All other teams in this trade SENT this pick (they gave it up)
+                    for (const sender of teams) {
+                        if (sender === recvTeam) continue;
+                        const key = `${year}-${round}-${sender}`;
+                        if (!pickRetradeMap[key]) pickRetradeMap[key] = [];
+                        pickRetradeMap[key].push({ toTeam: recvTeam, date, txId });
+                    }
+                }
+            }
+        });
+        // Sort each array by date
+        Object.values(pickRetradeMap).forEach(arr => arr.sort((a, b) => parseTxDate(a.date) - parseTxDate(b.date)));
 
         document.getElementById("filterYear").addEventListener("change", render);
         document.getElementById("filterType").addEventListener("change", render);

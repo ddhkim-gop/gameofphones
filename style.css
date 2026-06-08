@@ -232,7 +232,7 @@ nav a.active { color: var(--text-1); font-weight: 700; }
 /* ── Teams ─────────────────────────────────────────────────── */
 #teams-container {
     display: grid;
-    grid-template-columns: repeat(auto-fill, minmax(260px, 1fr));
+    grid-template-columns: repeat(6, 1fr);
     gap: var(--gap);
 }
 
