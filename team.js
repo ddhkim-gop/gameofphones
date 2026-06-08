@@ -483,6 +483,43 @@ async function init() {
             `<button data-year="${yr}" onclick="switchDraftTab(this)" class="draft-tab-btn${i===0?' draft-tab-active':''}" style="background:none;border:none;padding:7px 14px;border-radius:8px;font-size:13px;font-weight:600;cursor:pointer;font-family:inherit;color:#8b9099;transition:background .15s,color .15s;">${yr}</button>`
         ).join('');
 
+        // ── Compact draft summary card (for col 3) ───────────────────────────
+        const draftSummaryRows = draftYears.map(yr => {
+            const allPicks = (draftByYear[yr] || []).filter(p => p.picked_by === teamName);
+            if (!allPicks.length) return '';
+            const isStartup = yr === "2023";
+            const score = recapScore(allPicks, isStartup);
+            const scoreColor = score >= 7 ? "#3ecf8e" : score >= 5 ? "#f6ad55" : "#e74c82";
+            const revisitYear = parseInt(yr) + 2;
+            const canRevisit = revisitYear <= 2026;
+            const grade = canRevisit ? revisitedGrade(allPicks) : null;
+            const onRosterCnt = allPicks.filter(p => playerStatus(p.player) === "roster").length;
+            const retentionPct = Math.round(onRosterCnt / allPicks.length * 100);
+            return `<div style="display:flex;align-items:center;gap:10px;padding:10px 0;border-bottom:1px solid #2d3139;">
+                <div style="font-size:13px;font-weight:700;color:#f0f1f3;width:36px;flex-shrink:0;">${yr}</div>
+                <div style="font-size:11px;color:#5a6070;flex:1;">${isStartup ? "Startup" : "Rookie"}</div>
+                ${score !== null ? `<div style="display:flex;align-items:baseline;gap:2px;">
+                    <span style="font-size:18px;font-weight:900;color:${scoreColor};">${score}</span>
+                    <span style="font-size:11px;color:#5a6070;">/10</span>
+                </div>` : '<div style="font-size:13px;color:#5a6070;">—</div>'}
+                ${grade ? `<div style="font-size:20px;font-weight:900;color:${grade.color};width:24px;text-align:right;">${grade.grade}</div>` : `<div style="font-size:13px;color:#5a6070;width:24px;text-align:right;">—</div>`}
+                <div style="font-size:11px;color:#5a6070;width:38px;text-align:right;flex-shrink:0;">${retentionPct}%</div>
+            </div>`;
+        }).filter(Boolean).join('');
+
+        const draftSummaryCard = draftSummaryRows ? `
+        <div style="background:#1e2027;border:1px solid #2d3139;border-radius:12px;padding:20px;">
+          <div style="display:flex;justify-content:space-between;align-items:center;margin-bottom:4px;">
+            <div style="font-size:14px;font-weight:700;color:#f0f1f3;">Draft Summary</div>
+          </div>
+          <div style="display:flex;justify-content:flex-end;gap:10px;margin-bottom:4px;padding-bottom:6px;border-bottom:1px solid #2d3139;">
+            <div style="font-size:10px;color:#5a6070;text-transform:uppercase;letter-spacing:.05em;width:42px;text-align:right;">Score</div>
+            <div style="font-size:10px;color:#5a6070;text-transform:uppercase;letter-spacing:.05em;width:24px;text-align:right;">Grade</div>
+            <div style="font-size:10px;color:#5a6070;text-transform:uppercase;letter-spacing:.05em;width:38px;text-align:right;">Keep%</div>
+          </div>
+          ${draftSummaryRows}
+        </div>` : '';
+
         const draftHtml = draftTabButtons ? `
         <div style="background:#1e2027;border:1px solid #2d3139;border-radius:12px;padding:20px;margin-top:16px;">
             <div style="font-size:14px;font-weight:700;color:#f0f1f3;margin-bottom:14px;">Draft History</div>
@@ -591,6 +628,8 @@ async function init() {
               </div>
               ${partnerRows}
             </div>` : ''}
+
+            ${draftSummaryCard}
 
           </div><!-- /col 3 -->
         </div><!-- /team-page-wrap -->
