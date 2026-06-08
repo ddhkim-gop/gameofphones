@@ -314,7 +314,12 @@ function generateTeamRecap(teamName, year, s) {
     const standings = s.standings || [];
     const champ     = s.champion;
     const matchups  = allMatchups[year] || {};
-    const yearTxs   = allTransactions.filter(tx => tx.type === "trade" && tx.season === year);
+    const yearTrades = allTransactions.filter(tx => tx.type === "trade" && tx.season === year);
+    const yearMoves  = allTransactions.filter(tx =>
+        (tx.type === "waiver" || tx.type === "free_agent") &&
+        tx.season === year && tx.status === "complete" &&
+        (tx.teams || []).includes(teamName)
+    );
 
     const row = standings.find(t => t.name === teamName);
     if (!row) return `<p style="color:#5a6070;">No data for ${teamName} in ${year}.</p>`;
@@ -349,9 +354,9 @@ function generateTeamRecap(teamName, year, s) {
     const loseStreak = longestStreak(weekResults, false);
 
     // Scoring extremes
-    const sorted   = [...weekResults].sort((a,b) => b.pts - a.pts);
-    const bestWk   = sorted[0];
-    const worstWk  = sorted[sorted.length - 1];
+    const sorted      = [...weekResults].sort((a,b) => b.pts - a.pts);
+    const bestWk      = sorted[0];
+    const worstWk     = sorted[sorted.length - 1];
     const biggestWin  = [...weekResults].filter(r => r.won).sort((a,b) => (b.pts-b.oppPts)-(a.pts-a.oppPts))[0];
     const closestWin  = [...weekResults].filter(r => r.won).sort((a,b) => (a.pts-a.oppPts)-(b.pts-b.oppPts))[0];
     const worstLoss   = [...weekResults].filter(r => !r.won).sort((a,b) => (b.oppPts-b.pts)-(a.oppPts-a.pts))[0];
@@ -362,6 +367,7 @@ function generateTeamRecap(teamName, year, s) {
     const mid   = weekResults.filter(r => r.week >= 6 && r.week <= 9);
     const late  = weekResults.filter(r => r.week >= 10);
     const phaseRec = arr => `${arr.filter(r=>r.won).length}-${arr.filter(r=>!r.won).length}`;
+    const phaseWins = arr => arr.filter(r=>r.won).length;
 
     // League scoring context
     const allPF = standings.map(t => t.pf);
@@ -370,140 +376,167 @@ function generateTeamRecap(teamName, year, s) {
     const paRank = [...allPA].sort((a,b) => a-b).indexOf(row.pa) + 1;
 
     // Trades involving this team
-    const myTrades = yearTxs.filter(tx => tx.teams.includes(teamName));
-    const inSeason  = myTrades.filter(tx => tx.week >= 1);
-    const preSeason = myTrades.filter(tx => tx.week === 0);
+    const myTrades   = yearTrades.filter(tx => (tx.teams || []).includes(teamName));
+    const inSeason   = myTrades.filter(tx => tx.week >= 1).sort((a,b) => a.week - b.week);
+    const preSeason  = myTrades.filter(tx => tx.week === 0);
+
+    // Helper: record after a given week
+    const recordAfter = wk => {
+        const after = weekResults.filter(r => r.week > wk);
+        return after.length ? `${after.filter(r=>r.won).length}-${after.filter(r=>!r.won).length} after` : null;
+    };
 
     const sections = [];
 
-    // ── Regular Season ──────────────────────────────────────────────────────
+    // ── Season Overview ──────────────────────────────────────────────────────
     let regText = "";
-
-    if (isChamp) {
-        regText += `${teamName} were the ${year} champions, capping off a season that the league won't forget. `;
-    }
-
-    // Opening record summary
+    if (isChamp) regText += `${teamName} were the ${year} champions. `;
     const recDesc = row.wins >= 10 ? "dominant" : row.wins >= 8 ? "strong" : row.wins >= 6 ? "competitive" : row.wins >= 4 ? "disappointing" : "rough";
-    regText += `They put together a ${recDesc} ${row.wins}-${row.losses} record, finishing as the ${ordinal(seed)} seed. `;
+    regText += `They finished ${row.wins}-${row.losses} as the ${ordinal(seed)} seed`;
 
-    // Scoring context
     if (pfRank === 1) {
-        regText += `Their offense was the best in the league — ${row.pf.toFixed(0)} points scored, more than anyone else. `;
+        regText += `, leading the league in scoring with ${row.pf.toFixed(0)} pts. `;
     } else if (pfRank <= 3) {
-        regText += `They ranked ${ordinal(pfRank)} in scoring with ${row.pf.toFixed(0)} points — one of the more potent offenses in the league. `;
+        regText += `, ranking ${ordinal(pfRank)} in scoring (${row.pf.toFixed(0)} pts). `;
     } else if (pfRank >= standings.length - 1) {
-        regText += `Scoring was a problem all year — ${row.pf.toFixed(0)} points put them near the bottom of the league offensively. `;
-    }
-    if (paRank === 1) {
-        regText += `Defensively, they gave up the fewest points in the league (${row.pa.toFixed(0)} PA), which proved crucial to their success. `;
-    } else if (paRank >= standings.length - 1) {
-        regText += `They also had the misfortune of facing some of the highest-scoring opponents all year — ${row.pa.toFixed(0)} points allowed, worst in the league. `;
+        regText += `, but scoring just ${row.pf.toFixed(0)} pts — near the bottom of the league. `;
+    } else {
+        regText += `. `;
     }
 
-    // Phase breakdown
     if (early.length && mid.length && late.length) {
-        const earlyRec = phaseRec(early), midRec = phaseRec(mid), lateRec = phaseRec(late);
-        const earlyW = early.filter(r=>r.won).length, midW = mid.filter(r=>r.won).length, lateW = late.filter(r=>r.won).length;
-        // Find the strongest and weakest phase
-        const phases = [{name:"early (Weeks 1–5)", w:earlyW, rec:earlyRec},{name:"mid-season (Weeks 6–9)", w:midW, rec:midRec},{name:"late (Weeks 10–14)", w:lateW, rec:lateRec}];
-        const best = phases.reduce((a,b) => b.w > a.w ? b : a);
+        const phases = [
+            {name:"early (Wks 1–5)", w:phaseWins(early), rec:phaseRec(early)},
+            {name:"mid-season (Wks 6–9)", w:phaseWins(mid), rec:phaseRec(mid)},
+            {name:"late (Wks 10–14)", w:phaseWins(late), rec:phaseRec(late)}
+        ];
+        const best  = phases.reduce((a,b) => b.w > a.w ? b : a);
         const worst = phases.reduce((a,b) => b.w < a.w ? b : a);
         if (best.name !== worst.name) {
-            regText += `They were at their best in the ${best.name} (${best.rec}) and struggled most in the ${worst.name} (${worst.rec}). `;
+            regText += `Their strongest stretch was ${best.name} (${best.rec}), while they hit a wall in the ${worst.name} (${worst.rec}). `;
+        }
+    }
+    if (winStreak.len >= 3) {
+        regText += `A ${winStreak.len}-game winning streak was their peak momentum. `;
+    }
+    if (loseStreak.len >= 3) {
+        regText += `A ${loseStreak.len}-game losing skid hurt them at a critical stretch. `;
+    }
+
+    sections.push({ title: "Season Overview", text: regText });
+
+    // ── Roster Moves ──────────────────────────────────────────────────────────
+    let movesText = "";
+
+    // Pre-season trades
+    if (preSeason.length > 0) {
+        movesText += `${teamName} reshaped their roster before the season even started. `;
+        for (const tx of preSeason.slice(0, 3)) {
+            const other = tx.teams.find(t => t !== teamName) || "?";
+            const got  = (tx.assets_received[teamName] || []).filter(a => a.position !== "PICK").map(a => `<strong>${a.name}</strong>`);
+            const gave = (tx.assets_received[other] || []).filter(a => a.position !== "PICK").map(a => `<strong>${a.name}</strong>`);
+            if (got.length && gave.length) movesText += `They sent ${gave.join(", ")} to ${other} and got back ${got.join(", ")}. `;
+            else if (got.length) movesText += `They picked up ${got.join(", ")} from ${other} before the year began. `;
         }
     }
 
-    // Streaks
-    if (winStreak.len >= 4) {
-        regText += `A ${winStreak.len}-game winning streak mid-season was the clear high point — they looked like a legitimate contender during that run. `;
-    } else if (winStreak.len >= 3) {
-        regText += `A ${winStreak.len}-game winning streak gave them momentum at key points in the year. `;
-    }
-    if (loseStreak.len >= 4) {
-        regText += `A brutal ${loseStreak.len}-game losing streak threatened to derail their entire season. `;
-    } else if (loseStreak.len >= 3) {
-        regText += `A ${loseStreak.len}-game skid at one point put real pressure on their season. `;
+    // In-season trades — show impact by tracking record after each deal
+    if (inSeason.length > 0) {
+        const tradeImpact = inSeason.slice(0, 5).map(tx => {
+            const other      = tx.teams.find(t => t !== teamName) || "?";
+            const got        = (tx.assets_received[teamName] || []).filter(a => a.position !== "PICK").map(a => `<strong>${a.name}</strong>`);
+            const gave       = (tx.assets_received[other]    || []).filter(a => a.position !== "PICK").map(a => `<strong>${a.name}</strong>`);
+            const gotPicks   = (tx.assets_received[teamName] || []).filter(a => a.position === "PICK").map(a => `<em>${a.name}</em>`);
+            const gavePicks  = (tx.assets_received[other]    || []).filter(a => a.position === "PICK").map(a => `<em>${a.name}</em>`);
+            const allGot     = [...got, ...gotPicks];
+            const allGave    = [...gave, ...gavePicks];
+            const postRecord = recordAfter(tx.week);
+            return { week: tx.week, other, got: allGot, gave: allGave, postRecord };
+        });
+
+        if (!preSeason.length) {
+            movesText += `${teamName} made ${myTrades.length === 1 ? "one trade" : `${myTrades.length} trades`} during the season. `;
+        }
+
+        for (const ti of tradeImpact) {
+            if (!ti.got.length && !ti.gave.length) continue;
+            if (ti.got.length && ti.gave.length) {
+                movesText += `In Week ${ti.week} they sent ${ti.gave.join(", ")} to ${ti.other} for ${ti.got.join(", ")}`;
+            } else if (ti.got.length) {
+                movesText += `Week ${ti.week}: received ${ti.got.join(", ")} from ${ti.other}`;
+            } else {
+                movesText += `Week ${ti.week}: sent ${ti.gave.join(", ")} to ${ti.other}`;
+            }
+            if (ti.postRecord && parseInt(year) <= 2025) {
+                movesText += ` — they went ${ti.postRecord} that deal`;
+            }
+            movesText += `. `;
+        }
+        if (myTrades.length > 5) {
+            movesText += `Overall one of the most active rosters in the league with ${myTrades.length} trades. `;
+        }
+    } else if (preSeason.length === 0) {
+        movesText += `${teamName} made no trades this season, riding their original roster through the entire year. `;
     }
 
-    sections.push({ title: "Regular Season", text: regText });
+    // Key waiver/FA pickups
+    const pickups = yearMoves.filter(tx => (tx.added || []).length > 0)
+        .sort((a,b) => a.week - b.week);
+    if (pickups.length > 0) {
+        // Show up to 3 most notable pickups (prefer non-K/DEF, prefer earlier weeks)
+        const notable = pickups
+            .filter(tx => (tx.added || []).some(p => p.position !== "K" && p.position !== "DEF"))
+            .slice(0, 3);
+        if (notable.length > 0) {
+            movesText += `On the waiver wire, `;
+            const pickupLines = notable.map(tx => {
+                const added   = (tx.added || []).filter(p => p.position !== "K" && p.position !== "DEF").map(p => `<strong>${p.name}</strong> (${p.position})`);
+                const dropped = (tx.dropped || []).filter(p => p.position !== "K" && p.position !== "DEF").map(p => `<strong>${p.name}</strong>`);
+                let line = `Week ${tx.week}: added ${added.join(", ")}`;
+                if (dropped.length) line += ` off ${dropped.join(", ")}`;
+                return line;
+            });
+            movesText += pickupLines.join("; ") + `. `;
+            if (pickups.length > 3) {
+                movesText += `They made ${pickups.length} total waiver/FA moves on the season. `;
+            }
+        }
+    } else if (myTrades.length === 0) {
+        movesText += `They also stayed off the waiver wire entirely — a pure set-it-and-forget-it approach. `;
+    }
 
-    // ── Key Performances ────────────────────────────────────────────────────
+    sections.push({ title: "Roster Moves", text: movesText });
+
+    // ── Key Moments ────────────────────────────────────────────────────────
     let perfText = "";
-
     if (bestWk) {
         if (bestWk.won) {
-            perfText += `Their best scoring week came in Week ${bestWk.week}, putting up ${bestWk.pts.toFixed(2)} points in a win over ${bestWk.opp}. `;
+            perfText += `Best week: Week ${bestWk.week} — ${bestWk.pts.toFixed(1)} pts, a win over ${bestWk.opp}. `;
         } else {
-            perfText += `Bizarrely, their highest-scoring week (Week ${bestWk.week}, ${bestWk.pts.toFixed(2)} pts) still ended in a loss — ${bestWk.opp} had the nerve to put up ${bestWk.oppPts.toFixed(2)}. `;
+            perfText += `In their best scoring week (Week ${bestWk.week}, ${bestWk.pts.toFixed(1)} pts), they still lost — ${bestWk.opp} put up ${bestWk.oppPts.toFixed(1)}. `;
         }
     }
-    if (worstWk) {
+    if (worstWk && worstWk.week !== bestWk?.week) {
         if (!worstWk.won) {
-            perfText += `Their worst output was Week ${worstWk.week} — just ${worstWk.pts.toFixed(2)} points, a ${(worstWk.oppPts - worstWk.pts).toFixed(2)}-point loss to ${worstWk.opp}. `;
+            perfText += `Worst showing: Week ${worstWk.week} — just ${worstWk.pts.toFixed(1)} pts in a loss to ${worstWk.opp}. `;
         } else {
-            perfText += `Even in their lowest-scoring week (Week ${worstWk.week}, ${worstWk.pts.toFixed(2)} pts), they scraped out a win against ${worstWk.opp}. `;
+            perfText += `Even their low-water mark (Week ${worstWk.week}, ${worstWk.pts.toFixed(1)} pts) still produced a win against ${worstWk.opp}. `;
         }
     }
     if (biggestWin) {
-        perfText += `Most dominant performance: Week ${biggestWin.week}, where they blew out ${biggestWin.opp} by ${(biggestWin.pts - biggestWin.oppPts).toFixed(2)} points. `;
+        perfText += `Biggest blowout: Week ${biggestWin.week}, a ${(biggestWin.pts - biggestWin.oppPts).toFixed(1)}-pt demolition of ${biggestWin.opp}. `;
     }
     if (heartbreaks.length > 0) {
         const hb = heartbreaks[0];
-        perfText += `Toughest loss: Week ${hb.week}, dropped a razor-thin game to ${hb.opp} by just ${(hb.oppPts - hb.pts).toFixed(2)} points. `;
+        perfText += `Toughest gut-punch: Week ${hb.week}, lost to ${hb.opp} by just ${(hb.oppPts - hb.pts).toFixed(1)} pts. `;
+    } else if (worstLoss) {
+        perfText += `Worst defeat: Week ${worstLoss.week}, blown out by ${worstLoss.opp} by ${(worstLoss.oppPts - worstLoss.pts).toFixed(1)} pts. `;
     }
-    if (closestWin && closestWin !== biggestWin && (!heartbreaks.length || heartbreaks[0].week !== closestWin.week)) {
-        perfText += `They also pulled off a nail-biter in Week ${closestWin.week}, edging ${closestWin.opp} by ${(closestWin.pts - closestWin.oppPts).toFixed(2)} points. `;
-    }
-    if (worstLoss && heartbreaks.length === 0) {
-        perfText += `Worst defeat: Week ${worstLoss.week}, a ${(worstLoss.oppPts - worstLoss.pts).toFixed(2)}-point blowout loss to ${worstLoss.opp}. `;
+    if (closestWin) {
+        perfText += `Closest win: Week ${closestWin.week}, edged ${closestWin.opp} by ${(closestWin.pts - closestWin.oppPts).toFixed(1)} pts. `;
     }
 
-    if (perfText) sections.push({ title: "Key Performances", text: perfText });
-
-    // ── Transactions ────────────────────────────────────────────────────────
-    if (myTrades.length > 0) {
-        let txText = "";
-
-        if (preSeason.length > 0) {
-            txText += `Before the season even started, ${teamName} were already active. `;
-            for (const tx of preSeason.slice(0, 2)) {
-                const other = tx.teams.find(t => t !== teamName);
-                const iGet  = (tx.assets_received[teamName] || []);
-                const gotPlayers = iGet.filter(a => a.position !== "PICK").map(a => `<strong>${a.name}</strong>`);
-                const gotPicks   = iGet.filter(a => a.position === "PICK").map(a => `<em>${a.name}</em>`);
-                const got = [...gotPlayers, ...gotPicks].join(", ");
-                if (got) txText += `They brought in ${got} from ${other} in a pre-season deal. `;
-            }
-        }
-
-        for (const tx of inSeason.slice(0, 4)) {
-            const other = tx.teams.find(t => t !== teamName);
-            const iGet  = (tx.assets_received[teamName] || []);
-            const iGive = (tx.assets_received[other] || []);
-            const gotPlayers  = iGet.filter(a => a.position !== "PICK").map(a => `<strong>${a.name}</strong>`);
-            const gotPicks    = iGet.filter(a => a.position === "PICK").map(a => `<em>${a.name}</em>`);
-            const gavePlayers = iGive.filter(a => a.position !== "PICK").map(a => `<strong>${a.name}</strong>`);
-            const gavePicks   = iGive.filter(a => a.position === "PICK").map(a => `<em>${a.name}</em>`);
-            const got  = [...gotPlayers, ...gotPicks].join(", ");
-            const gave = [...gavePlayers, ...gavePicks].join(", ");
-            if (got && gave) {
-                txText += `Week ${tx.week}: acquired ${got} from ${other} in exchange for ${gave}. `;
-            } else if (got) {
-                txText += `Week ${tx.week}: received ${got} from ${other}. `;
-            }
-        }
-
-        if (myTrades.length > 4) {
-            txText += `In total, ${teamName} made ${myTrades.length} trades this season — one of the most active rosters in the league. `;
-        } else if (myTrades.length === 1) {
-            txText += `That was their only trade of the season. `;
-        }
-
-        sections.push({ title: "Transactions", text: txText });
-    } else {
-        sections.push({ title: "Transactions", text: `${teamName} made no trades this season, riding their draft through the entire year.` });
-    }
+    if (perfText) sections.push({ title: "Key Moments", text: perfText });
 
     return sections.map(sec => `
         <div style="margin-bottom:16px;">
