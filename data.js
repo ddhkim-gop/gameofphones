@@ -5563,6 +5563,22 @@ window.__STATIC_DATA__ = {
           "search_rank": 38
         },
         {
+          "player_id": "8188",
+          "espn_id": null,
+          "name": "Tyquan Thornton",
+          "position": "WR",
+          "team": "KC",
+          "age": 25,
+          "birth_date": "2000-08-07",
+          "college": "Baylor",
+          "height": "74",
+          "weight": "185",
+          "years_exp": 4,
+          "status": "Active",
+          "injury_status": null,
+          "search_rank": 999
+        },
+        {
           "player_id": "9758",
           "espn_id": 4432577,
           "name": "C.J. Stroud",
@@ -7192,7 +7208,7 @@ window.__STATIC_DATA__ = {
           "name": "Raheim Sanders",
           "position": "RB",
           "team": "CLE",
-          "age": 23,
+          "age": 24,
           "birth_date": "2002-06-08",
           "college": "South Carolina",
           "height": "72",
@@ -7368,7 +7384,7 @@ window.__STATIC_DATA__ = {
           "name": "David Montgomery",
           "position": "RB",
           "team": "HOU",
-          "age": 28,
+          "age": 29,
           "birth_date": "1997-06-07",
           "college": "Iowa State",
           "height": "71",
@@ -8228,7 +8244,7 @@ window.__STATIC_DATA__ = {
           "name": "Chris Bell",
           "position": "WR",
           "team": "MIA",
-          "age": 21,
+          "age": 22,
           "birth_date": "2004-06-07",
           "college": "Louisville",
           "height": "74",
@@ -10834,7 +10850,7 @@ window.__STATIC_DATA__ = {
           "name": "Christian McCaffrey",
           "position": "RB",
           "team": "SF",
-          "age": 29,
+          "age": 30,
           "birth_date": "1996-06-07",
           "college": "Stanford",
           "height": "71",
@@ -11417,109 +11433,151 @@ window.__STATIC_DATA__ = {
       "user_id": "1241952885734899712"
     }
   ],
-  "league_users":   [
+  "league_users": [
     {
       "user_id": "444998067259699200",
       "username": "ddhk",
-      "avatar_url": "https://sleepercdn.com/avatars/thumbs/f129554ea7b77076b18ba12a6a3186d9"
+      "avatar_url": "https://sleepercdn.com/avatars/thumbs/f129554ea7b77076b18ba12a6a3186d9",
+      "is_active": true
     },
     {
       "user_id": "467460096968880128",
       "username": "Paul_Yoon",
-      "avatar_url": "https://sleepercdn.com/images/v4/avatars/avatar_default_blue.webp"
+      "avatar_url": "https://sleepercdn.com/images/v4/avatars/avatar_default_blue.webp",
+      "is_active": true
     },
     {
       "user_id": "603691074287898624",
       "username": "andyxia124",
-      "avatar_url": "https://sleepercdn.com/avatars/thumbs/608075f398ac0269defee79911f6934c"
+      "avatar_url": "https://sleepercdn.com/avatars/thumbs/608075f398ac0269defee79911f6934c",
+      "is_active": true
     },
     {
       "user_id": "604551786463838208",
       "username": "jonsung",
-      "avatar_url": "https://sleepercdn.com/avatars/thumbs/efc9c2257712db114a28584bff9beff5"
+      "avatar_url": "https://sleepercdn.com/avatars/thumbs/efc9c2257712db114a28584bff9beff5",
+      "is_active": true
     },
     {
       "user_id": "604571782049001472",
       "username": "spiffster",
-      "avatar_url": "https://sleepercdn.com/avatars/thumbs/762b0a00afa766a8e4919a6b0bf13efe"
+      "avatar_url": "https://sleepercdn.com/avatars/thumbs/762b0a00afa766a8e4919a6b0bf13efe",
+      "is_active": true
     },
     {
       "user_id": "605379154468200448",
       "username": "edgxrjiang",
-      "avatar_url": "https://sleepercdn.com/avatars/thumbs/b1c63f4f24573d74efbb374e6f617c04"
+      "avatar_url": null,
+      "is_active": false
     },
     {
       "user_id": "608472883282378752",
       "username": "ericdang",
-      "avatar_url": "https://sleepercdn.com/avatars/thumbs/00c60af588f23afbc094f0d7ebe70650"
+      "avatar_url": "https://sleepercdn.com/avatars/thumbs/00c60af588f23afbc094f0d7ebe70650",
+      "is_active": true
     },
     {
       "user_id": "783829554916651008",
       "username": "RichaleeMVP",
-      "avatar_url": "https://sleepercdn.com/avatars/thumbs/cbdacfe48312bfe71899d8707649631d"
+      "avatar_url": "https://sleepercdn.com/avatars/thumbs/cbdacfe48312bfe71899d8707649631d",
+      "is_active": true
     },
     {
       "user_id": "853064035690713088",
       "username": "IconicJH",
-      "avatar_url": "https://sleepercdn.com/avatars/thumbs/c3d69631f7f478ccc52604c2d19ce22c"
+      "avatar_url": "https://sleepercdn.com/avatars/thumbs/c3d69631f7f478ccc52604c2d19ce22c",
+      "is_active": true
     },
     {
       "user_id": "862912273105174528",
       "username": "ganathan",
-      "avatar_url": "https://sleepercdn.com/avatars/thumbs/cb99028c1124521db44c93824cf7c2fc"
+      "avatar_url": "https://sleepercdn.com/avatars/thumbs/cb99028c1124521db44c93824cf7c2fc",
+      "is_active": true
     },
     {
       "user_id": "964263197861568512",
       "username": "eikichii952",
-      "avatar_url": "https://sleepercdn.com/avatars/thumbs/4f4090e5e9c3941414db40a871e3e909"
+      "avatar_url": "https://sleepercdn.com/avatars/thumbs/4f4090e5e9c3941414db40a871e3e909",
+      "is_active": true
     },
     {
       "user_id": "965358563533156352",
       "username": "shmyung",
-      "avatar_url": "https://sleepercdn.com/avatars/thumbs/8eb8f8bf999945d523f2c4033f70473e"
+      "avatar_url": null,
+      "is_active": false
     },
     {
       "user_id": "966422938096332800",
       "username": "riqi",
-      "avatar_url": "https://sleepercdn.com/avatars/thumbs/e7af4deab0289b4f5505646424895246"
+      "avatar_url": null,
+      "is_active": false
     },
     {
       "user_id": "994342133354029056",
       "username": "JUNNNNAY",
-      "avatar_url": "https://sleepercdn.com/avatars/thumbs/e7af4deab0289b4f5505646424895246"
+      "avatar_url": null,
+      "is_active": false
     },
     {
       "user_id": "994709442740457472",
       "username": "NoSkilzPak",
-      "avatar_url": "https://sleepercdn.com/avatars/thumbs/e499e4f49a4900cf141313ebe3c69cf9"
+      "avatar_url": "https://sleepercdn.com/avatars/thumbs/e499e4f49a4900cf141313ebe3c69cf9",
+      "is_active": true
     },
     {
       "user_id": "865098089516621824",
       "username": "ngman",
-      "avatar_url": "https://sleepercdn.com/avatars/thumbs/c04fc8d62f7682975853e0a61db64f18"
+      "avatar_url": "https://sleepercdn.com/avatars/thumbs/c04fc8d62f7682975853e0a61db64f18",
+      "is_active": true
     },
     {
       "user_id": "1091462372469907456",
       "username": "urmummma",
-      "avatar_url": "https://sleepercdn.com/avatars/thumbs/b319fdf8b7b5b0359d3c78622ba4d70c"
+      "avatar_url": null,
+      "is_active": false
     },
     {
       "user_id": "1124796770866909184",
       "username": "paddleham",
-      "avatar_url": "https://sleepercdn.com/avatars/thumbs/15d7cf259bc30eab8f6120f45f652fb6"
+      "avatar_url": "https://sleepercdn.com/avatars/thumbs/15d7cf259bc30eab8f6120f45f652fb6",
+      "is_active": true
     },
     {
       "user_id": "1241946358257045504",
       "username": "velmixon",
-      "avatar_url": "https://sleepercdn.com/avatars/thumbs/2e6ce5a7584ad3edb16cac3853ac62bf"
+      "avatar_url": "https://sleepercdn.com/avatars/thumbs/2e6ce5a7584ad3edb16cac3853ac62bf",
+      "is_active": true
     },
     {
       "user_id": "1241952885734899712",
       "username": "victordhe",
-      "avatar_url": "https://sleepercdn.com/avatars/thumbs/7572250c2fb084c434fed0e82229e183"
+      "avatar_url": "https://sleepercdn.com/avatars/thumbs/7572250c2fb084c434fed0e82229e183",
+      "is_active": true
     }
   ],
   "transactions": [
+    {
+      "season": "2026",
+      "week": 0,
+      "created": "Jun 07, 2026 \u2022 11:45 PM PT",
+      "transaction_id": "1369602352973115392",
+      "type": "free_agent",
+      "status": "complete",
+      "teams": [
+        "ddhk"
+      ],
+      "added": [
+        {
+          "name": "Tyquan Thornton",
+          "position": "WR",
+          "team": "KC"
+        }
+      ],
+      "dropped": [],
+      "faab": 0,
+      "waiver_bid": 0,
+      "notes": null
+    },
     {
       "season": "2026",
       "week": 0,
@@ -62334,6 +62392,15 @@ window.__STATIC_DATA__ = {
     {
       "season": "2027",
       "round": 1,
+      "roster_id": "1",
+      "owner_id": "2",
+      "previous_owner_id": "1",
+      "owner_name": "spiffster",
+      "original_owner_name": "ddhk"
+    },
+    {
+      "season": "2027",
+      "round": 1,
       "roster_id": "2",
       "owner_id": "1",
       "previous_owner_id": "2",
@@ -62396,12 +62463,30 @@ window.__STATIC_DATA__ = {
     },
     {
       "season": "2027",
+      "round": 1,
+      "roster_id": "12",
+      "owner_id": "1",
+      "previous_owner_id": "12",
+      "owner_name": "ddhk",
+      "original_owner_name": "ganathan"
+    },
+    {
+      "season": "2027",
       "round": 2,
       "roster_id": "1",
       "owner_id": "5",
       "previous_owner_id": "1",
       "owner_name": "andyxia124",
       "original_owner_name": "ddhk"
+    },
+    {
+      "season": "2027",
+      "round": 2,
+      "roster_id": "2",
+      "owner_id": "1",
+      "previous_owner_id": "2",
+      "owner_name": "ddhk",
+      "original_owner_name": "spiffster"
     },
     {
       "season": "2027",
@@ -62429,6 +62514,24 @@ window.__STATIC_DATA__ = {
       "previous_owner_id": "6",
       "owner_name": "Paul_Yoon",
       "original_owner_name": "IconicJH"
+    },
+    {
+      "season": "2027",
+      "round": 2,
+      "roster_id": "7",
+      "owner_id": "1",
+      "previous_owner_id": "7",
+      "owner_name": "ddhk",
+      "original_owner_name": "Paul_Yoon"
+    },
+    {
+      "season": "2027",
+      "round": 2,
+      "roster_id": "8",
+      "owner_id": "1",
+      "previous_owner_id": "8",
+      "owner_name": "ddhk",
+      "original_owner_name": "eikichii952"
     },
     {
       "season": "2027",
@@ -62469,11 +62572,29 @@ window.__STATIC_DATA__ = {
     {
       "season": "2027",
       "round": 3,
+      "roster_id": "4",
+      "owner_id": "1",
+      "previous_owner_id": "4",
+      "owner_name": "ddhk",
+      "original_owner_name": "jonsung"
+    },
+    {
+      "season": "2027",
+      "round": 3,
       "roster_id": "6",
       "owner_id": "8",
       "previous_owner_id": "1",
       "owner_name": "eikichii952",
       "original_owner_name": "IconicJH"
+    },
+    {
+      "season": "2027",
+      "round": 3,
+      "roster_id": "8",
+      "owner_id": "1",
+      "previous_owner_id": "8",
+      "owner_name": "ddhk",
+      "original_owner_name": "eikichii952"
     },
     {
       "season": "2027",
