@@ -479,8 +479,16 @@ function generateTeamRecap(teamName, year, s) {
         movesText += `${teamName} made no trades this season, riding their original roster through the entire year. `;
     }
 
-    // Key waiver/FA pickups
-    const pickups = yearMoves.filter(tx => (tx.added || []).length > 0)
+    // Key waiver/FA pickups — exclude players who were subsequently dropped by this team same season
+    const droppedNames = new Set(
+        allTransactions
+            .filter(tx => tx.season === year && (tx.teams || []).includes(teamName) && tx.status === "complete")
+            .flatMap(tx => (tx.dropped || []).map(p => p.name))
+    );
+    const pickups = yearMoves
+        .filter(tx => (tx.added || []).length > 0)
+        .map(tx => ({ ...tx, added: (tx.added || []).filter(p => !droppedNames.has(p.name)) }))
+        .filter(tx => tx.added.length > 0)
         .sort((a,b) => a.week - b.week);
     if (pickups.length > 0) {
         // Show up to 3 most notable pickups (prefer non-K/DEF, prefer earlier weeks)
