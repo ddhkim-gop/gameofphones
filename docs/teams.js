@@ -790,7 +790,7 @@ function renderStatsForYear() {
         <div style="overflow-x:auto;">
             <table class="pc-stats-table">
                 <thead><tr>${yearCol}<th>Rank</th>${labels.map(l => `<th>${l}</th>`).join("")}</tr></thead>
-                <tbody>${rows}${showCareer ? `<tr><td>Career</td><td>—</td><td>${totals}</td></tr>` : ""}</tbody>
+                <tbody>${rows}</tbody>
             </table>
         </div>`;
 }
