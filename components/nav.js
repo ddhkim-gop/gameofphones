@@ -74,7 +74,7 @@ export function renderNav() {
                 <a href="matchups.html"${cur("matchups.html")}>Matchups</a>
                 <a href="head_to_head.html"${cur("head_to_head.html")}>H2H</a>
                 <a href="season_history.html"${cur("season_history.html")}>History</a>
-                <a href="news.html"${cur("news.html")}>News</a>
+                <a href="clips.html"${cur("clips.html")}>Clips</a>
             </div>
         </nav>
     `;
