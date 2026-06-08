@@ -144,59 +144,21 @@ function bestPlayerForTeam(teamName, year) {
     const allStatYears = ["2023", "2024", "2025", "2026"];
 
     if (isAllTime) {
-        // Dynasty league: no per-year roster snapshots exist in data.
-        // Strategy:
-        //   2026 → use current roster (accurate, includes trade acquisitions)
-        //   2023-2025 → reconstruct from draft archive: player is eligible for year Y
-        //               only if they were drafted by teamName in year ≤ Y.
-        //               This avoids crediting a player to a team before they were acquired.
-        const nameMap = window.__STATIC_DATA__?.player_name_map || {};
-        const draftArchive = window.__STATIC_DATA__?.draft || {};
-
-        // Build map: player_id → { name, position, team, firstDraftedYear }
-        const draftedByTeam = {}; // pid → { obj, firstYear }
-        Object.entries(draftArchive).forEach(([dYear, picks]) => {
-            (picks || []).forEach(p => {
-                if (p.picked_by === teamName && p.player) {
-                    const pid = nameMap[p.player];
-                    if (pid && (!draftedByTeam[pid] || dYear < draftedByTeam[pid].firstYear)) {
-                        draftedByTeam[pid] = {
-                            obj: { player_id: pid, name: p.player, position: p.position, team: p.team },
-                            firstYear: dYear
-                        };
-                    }
-                }
-            });
-        });
-
+        // Use end-of-season roster for each year (fetched from data/YEAR/rosters.json).
+        // This ensures we only credit players to a team if they were on the roster at
+        // season's end — correctly handles mid-season trades (acquired or lost).
         let best = null, bestScore = -1, bestYear = null;
 
         for (const y of allStatYears) {
-            let playerIds; // Set of player_id strings eligible for year Y
-
-            if (y === "2026") {
-                // Use current roster for 2026 — most accurate
-                const roster = (rostersData?.["2026"] || []).find(r => r.owner === teamName);
-                playerIds = new Map(); // pid → player obj
-                (roster?.players || []).forEach(p => { if (p?.player_id) playerIds.set(p.player_id, p); });
-                // Supplement with draft picks in case roster data is incomplete
-                Object.entries(draftedByTeam).forEach(([pid, { obj }]) => {
-                    if (!playerIds.has(pid)) playerIds.set(pid, obj);
-                });
-            } else {
-                // Historical years: only players drafted by this team in year ≤ y
-                playerIds = new Map();
-                Object.entries(draftedByTeam).forEach(([pid, { obj, firstYear }]) => {
-                    if (firstYear <= y) playerIds.set(pid, obj);
-                });
-            }
-
-            for (const [pid, playerObj] of playerIds) {
-                const s = statsCache[y]?.[pid]?.pts_half_ppr;
+            const roster = (rostersData?.[y] || []).find(r => r.owner === teamName);
+            if (!roster) continue;
+            (roster.players || []).forEach(p => {
+                if (!p?.player_id) return;
+                const s = statsCache[y]?.[p.player_id]?.pts_half_ppr;
                 if (s > 0 && s > bestScore) {
-                    bestScore = s; bestYear = y; best = playerObj;
+                    bestScore = s; bestYear = y; best = p;
                 }
-            }
+            });
         }
 
         return best ? { player: best, score: bestScore, year: bestYear } : null;

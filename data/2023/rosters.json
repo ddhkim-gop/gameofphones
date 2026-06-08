@@ -1,0 +1,3734 @@
+[
+  {
+    "owner": "ddhk",
+    "roster_id": 1,
+    "players": [
+      {
+        "player_id": "11311",
+        "espn_id": null,
+        "name": "Jason Brownlee",
+        "position": "WR",
+        "team": "KC",
+        "age": 27,
+        "birth_date": "1999-01-30",
+        "college": "Southern Miss"
+      },
+      {
+        "player_id": "11370",
+        "espn_id": null,
+        "name": "Chris Brooks",
+        "position": "RB",
+        "team": "GB",
+        "age": 26,
+        "birth_date": "2000-01-11",
+        "college": "BYU"
+      },
+      {
+        "player_id": "11533",
+        "espn_id": null,
+        "name": "Brandon Aubrey",
+        "position": "K",
+        "team": "DAL",
+        "age": 31,
+        "birth_date": "1995-03-14",
+        "college": "Notre Dame"
+      },
+      {
+        "player_id": "1166",
+        "espn_id": 14880,
+        "name": "Kirk Cousins",
+        "position": "QB",
+        "team": "LV",
+        "age": 37,
+        "birth_date": "1988-08-19",
+        "college": "Michigan State"
+      },
+      {
+        "player_id": "1373",
+        "espn_id": 15864,
+        "name": "Geno Smith",
+        "position": "QB",
+        "team": "NYJ",
+        "age": 35,
+        "birth_date": "1990-10-10",
+        "college": "West Virginia"
+      },
+      {
+        "player_id": "1479",
+        "espn_id": 15818,
+        "name": "Keenan Allen",
+        "position": "WR",
+        "team": null,
+        "age": 33,
+        "birth_date": "1992-04-27",
+        "college": "California"
+      },
+      {
+        "player_id": "2161",
+        "espn_id": 16782,
+        "name": "Jerick McKinnon",
+        "position": "RB",
+        "team": null,
+        "age": 32,
+        "birth_date": "1992-05-03",
+        "college": "Georgia Southern"
+      },
+      {
+        "player_id": "2309",
+        "espn_id": 2976499,
+        "name": "Amari Cooper",
+        "position": "WR",
+        "team": null,
+        "age": 31,
+        "birth_date": "1994-06-17",
+        "college": "Alabama"
+      },
+      {
+        "player_id": "2374",
+        "espn_id": 2577327,
+        "name": "Tyler Lockett",
+        "position": "WR",
+        "team": null,
+        "age": 33,
+        "birth_date": "1992-09-28",
+        "college": "Kansas State"
+      },
+      {
+        "player_id": "3225",
+        "espn_id": 3045144,
+        "name": "Tyler Boyd",
+        "position": "WR",
+        "team": null,
+        "age": 30,
+        "birth_date": "1994-11-15",
+        "college": "Pittsburgh"
+      },
+      {
+        "player_id": "4039",
+        "espn_id": 2977187,
+        "name": "Cooper Kupp",
+        "position": "WR",
+        "team": "SEA",
+        "age": 32,
+        "birth_date": "1993-06-15",
+        "college": "Eastern Washington"
+      },
+      {
+        "player_id": "4046",
+        "espn_id": 3139477,
+        "name": "Patrick Mahomes",
+        "position": "QB",
+        "team": "KC",
+        "age": 30,
+        "birth_date": "1995-09-17",
+        "college": "Texas Tech"
+      },
+      {
+        "player_id": "4179",
+        "espn_id": 3044720,
+        "name": "Joshua Dobbs",
+        "position": "QB",
+        "team": null,
+        "age": 31,
+        "birth_date": "1995-01-26",
+        "college": "Tennessee"
+      },
+      {
+        "player_id": "4199",
+        "espn_id": 3042519,
+        "name": "Aaron Jones",
+        "position": "RB",
+        "team": "MIN",
+        "age": 31,
+        "birth_date": "1994-12-02",
+        "college": "UTEP"
+      },
+      {
+        "player_id": "4227",
+        "espn_id": 3055899,
+        "name": "Harrison Butker",
+        "position": "K",
+        "team": "KC",
+        "age": 30,
+        "birth_date": "1995-07-14",
+        "college": "Georgia Tech"
+      },
+      {
+        "player_id": "4381",
+        "espn_id": 2468609,
+        "name": "Taysom Hill",
+        "position": "TE",
+        "team": null,
+        "age": 35,
+        "birth_date": "1990-08-23",
+        "college": "BYU"
+      },
+      {
+        "player_id": "4981",
+        "espn_id": 3925357,
+        "name": "Calvin Ridley",
+        "position": "WR",
+        "team": "TEN",
+        "age": 31,
+        "birth_date": "1994-12-20",
+        "college": "Alabama"
+      },
+      {
+        "player_id": "4985",
+        "espn_id": 3139925,
+        "name": "Rashaad Penny",
+        "position": "RB",
+        "team": null,
+        "age": 28,
+        "birth_date": "1996-02-02",
+        "college": "San Diego State"
+      },
+      {
+        "player_id": "5012",
+        "espn_id": 3116365,
+        "name": "Mark Andrews",
+        "position": "TE",
+        "team": "BAL",
+        "age": 30,
+        "birth_date": "1995-09-06",
+        "college": "Oklahoma"
+      },
+      {
+        "player_id": "5937",
+        "espn_id": 3932905,
+        "name": "Diontae Johnson",
+        "position": "WR",
+        "team": null,
+        "age": 29,
+        "birth_date": "1996-07-05",
+        "college": "Toledo"
+      },
+      {
+        "player_id": "6136",
+        "espn_id": 3892775,
+        "name": "Jarrett Stidham",
+        "position": "QB",
+        "team": "DEN",
+        "age": 29,
+        "birth_date": "1996-08-08",
+        "college": "Auburn"
+      },
+      {
+        "player_id": "6813",
+        "espn_id": 4242335,
+        "name": "Jonathan Taylor",
+        "position": "RB",
+        "team": "IND",
+        "age": 27,
+        "birth_date": "1999-01-19",
+        "college": "Wisconsin"
+      },
+      {
+        "player_id": "6820",
+        "espn_id": 4242214,
+        "name": "Clyde Edwards-Helaire",
+        "position": "RB",
+        "team": null,
+        "age": 26,
+        "birth_date": "1999-04-11",
+        "college": "LSU"
+      },
+      {
+        "player_id": "7528",
+        "espn_id": null,
+        "name": "Najee Harris",
+        "position": "RB",
+        "team": null,
+        "age": 27,
+        "birth_date": "1998-03-09",
+        "college": "Alabama"
+      },
+      {
+        "player_id": "7588",
+        "espn_id": null,
+        "name": "Javonte Williams",
+        "position": "RB",
+        "team": "DAL",
+        "age": 26,
+        "birth_date": "2000-04-25",
+        "college": "North Carolina"
+      },
+      {
+        "player_id": "7608",
+        "espn_id": null,
+        "name": "Khalil Herbert",
+        "position": "RB",
+        "team": null,
+        "age": 27,
+        "birth_date": "1998-04-21",
+        "college": "Virginia Tech"
+      },
+      {
+        "player_id": "8117",
+        "espn_id": null,
+        "name": "Jalen Tolbert",
+        "position": "WR",
+        "team": "MIA",
+        "age": 27,
+        "birth_date": "1999-02-27",
+        "college": "South Alabama"
+      },
+      {
+        "player_id": "8131",
+        "espn_id": null,
+        "name": "Isaiah Likely",
+        "position": "TE",
+        "team": "NYG",
+        "age": 26,
+        "birth_date": "2000-04-18",
+        "college": "Coastal Carolina"
+      },
+      {
+        "player_id": "8146",
+        "espn_id": null,
+        "name": "Garrett Wilson",
+        "position": "WR",
+        "team": "NYJ",
+        "age": 25,
+        "birth_date": "2000-07-22",
+        "college": "Ohio State"
+      },
+      {
+        "player_id": "8168",
+        "espn_id": null,
+        "name": "Skyy Moore",
+        "position": "WR",
+        "team": "GB",
+        "age": 25,
+        "birth_date": "2000-09-10",
+        "college": "Western Michigan"
+      },
+      {
+        "player_id": "9494",
+        "espn_id": null,
+        "name": "Marvin Mims",
+        "position": "WR",
+        "team": "DEN",
+        "age": 24,
+        "birth_date": "2002-03-19",
+        "college": "Oklahoma"
+      },
+      {
+        "player_id": "9502",
+        "espn_id": null,
+        "name": "Tank Dell",
+        "position": "WR",
+        "team": "HOU",
+        "age": 26,
+        "birth_date": "1999-10-29",
+        "college": "Houston"
+      }
+    ]
+  },
+  {
+    "owner": "spiffster",
+    "roster_id": 2,
+    "players": [
+      {
+        "player_id": "11439",
+        "espn_id": null,
+        "name": "Jaleel McLaughlin",
+        "position": "RB",
+        "team": "DEN",
+        "age": 25,
+        "birth_date": "2000-09-13",
+        "college": "Youngstown State"
+      },
+      {
+        "player_id": "1426",
+        "espn_id": 15795,
+        "name": "DeAndre Hopkins",
+        "position": "WR",
+        "team": null,
+        "age": 33,
+        "birth_date": "1992-06-06",
+        "college": "Clemson"
+      },
+      {
+        "player_id": "1689",
+        "espn_id": 16460,
+        "name": "Adam Thielen",
+        "position": "WR",
+        "team": null,
+        "age": 35,
+        "birth_date": "1990-08-22",
+        "college": "Minnesota State"
+      },
+      {
+        "player_id": "1737",
+        "espn_id": 15168,
+        "name": "Case Keenum",
+        "position": "QB",
+        "team": "CHI",
+        "age": 38,
+        "birth_date": "1988-02-17",
+        "college": "Houston"
+      },
+      {
+        "player_id": "19",
+        "espn_id": 11252,
+        "name": "Joe Flacco",
+        "position": "QB",
+        "team": "CIN",
+        "age": 41,
+        "birth_date": "1985-01-16",
+        "college": "Delaware"
+      },
+      {
+        "player_id": "2133",
+        "espn_id": 16800,
+        "name": "Davante Adams",
+        "position": "WR",
+        "team": "LAR",
+        "age": 33,
+        "birth_date": "1992-12-24",
+        "college": "Fresno State"
+      },
+      {
+        "player_id": "2325",
+        "espn_id": 2971618,
+        "name": "Nelson Agholor",
+        "position": "WR",
+        "team": null,
+        "age": 31,
+        "birth_date": "1993-05-24",
+        "college": "USC"
+      },
+      {
+        "player_id": "2449",
+        "espn_id": 2976212,
+        "name": "Stefon Diggs",
+        "position": "WR",
+        "team": null,
+        "age": 32,
+        "birth_date": "1993-11-29",
+        "college": "Maryland"
+      },
+      {
+        "player_id": "3164",
+        "espn_id": 3051392,
+        "name": "Ezekiel Elliott",
+        "position": "RB",
+        "team": null,
+        "age": 29,
+        "birth_date": "1995-07-22",
+        "college": "Ohio State"
+      },
+      {
+        "player_id": "3678",
+        "espn_id": 2985659,
+        "name": "Wil Lutz",
+        "position": "K",
+        "team": "DEN",
+        "age": 31,
+        "birth_date": "1994-07-07",
+        "college": "Georgia State"
+      },
+      {
+        "player_id": "4034",
+        "espn_id": 3117251,
+        "name": "Christian McCaffrey",
+        "position": "RB",
+        "team": "SF",
+        "age": 30,
+        "birth_date": "1996-06-07",
+        "college": "Stanford"
+      },
+      {
+        "player_id": "4035",
+        "espn_id": 3054850,
+        "name": "Alvin Kamara",
+        "position": "RB",
+        "team": "NO",
+        "age": 30,
+        "birth_date": "1995-07-25",
+        "college": "Tennessee"
+      },
+      {
+        "player_id": "4066",
+        "espn_id": 3051876,
+        "name": "Evan Engram",
+        "position": "TE",
+        "team": "DEN",
+        "age": 31,
+        "birth_date": "1994-09-02",
+        "college": "Ole Miss"
+      },
+      {
+        "player_id": "4098",
+        "espn_id": 3059915,
+        "name": "Kareem Hunt",
+        "position": "RB",
+        "team": null,
+        "age": 30,
+        "birth_date": "1995-08-06",
+        "college": "Toledo"
+      },
+      {
+        "player_id": "4137",
+        "espn_id": 3045147,
+        "name": "James Conner",
+        "position": "RB",
+        "team": "ARI",
+        "age": 31,
+        "birth_date": "1995-05-05",
+        "college": "Pittsburgh"
+      },
+      {
+        "player_id": "421",
+        "espn_id": 12483,
+        "name": "Matthew Stafford",
+        "position": "QB",
+        "team": "LAR",
+        "age": 38,
+        "birth_date": "1988-02-07",
+        "college": "Georgia"
+      },
+      {
+        "player_id": "4950",
+        "espn_id": 3895856,
+        "name": "Christian Kirk",
+        "position": "WR",
+        "team": "SF",
+        "age": 29,
+        "birth_date": "1996-11-18",
+        "college": "Texas A&M"
+      },
+      {
+        "player_id": "4951",
+        "espn_id": 3115394,
+        "name": "DJ Chark",
+        "position": "WR",
+        "team": null,
+        "age": 28,
+        "birth_date": "1996-09-23",
+        "college": "LSU"
+      },
+      {
+        "player_id": "5001",
+        "espn_id": 3117256,
+        "name": "Dalton Schultz",
+        "position": "TE",
+        "team": "HOU",
+        "age": 29,
+        "birth_date": "1996-07-11",
+        "college": "Stanford"
+      },
+      {
+        "player_id": "5248",
+        "espn_id": 3051926,
+        "name": "Gus Edwards",
+        "position": "RB",
+        "team": null,
+        "age": 29,
+        "birth_date": "1995-04-13",
+        "college": "Rutgers"
+      },
+      {
+        "player_id": "5870",
+        "espn_id": 3917792,
+        "name": "Daniel Jones",
+        "position": "QB",
+        "team": "IND",
+        "age": 29,
+        "birth_date": "1997-05-27",
+        "college": "Duke"
+      },
+      {
+        "player_id": "5890",
+        "espn_id": 3925347,
+        "name": "Damien Harris",
+        "position": "RB",
+        "team": null,
+        "age": 27,
+        "birth_date": "1997-02-11",
+        "college": "Alabama"
+      },
+      {
+        "player_id": "5970",
+        "espn_id": 4037235,
+        "name": "Greg Dortch",
+        "position": "WR",
+        "team": "DET",
+        "age": 28,
+        "birth_date": "1998-05-29",
+        "college": "Wake Forest"
+      },
+      {
+        "player_id": "6011",
+        "espn_id": 4038524,
+        "name": "Gardner Minshew",
+        "position": "QB",
+        "team": "ARI",
+        "age": 30,
+        "birth_date": "1996-05-16",
+        "college": "Washington State"
+      },
+      {
+        "player_id": "6945",
+        "espn_id": 4360294,
+        "name": "Antonio Gibson",
+        "position": "RB",
+        "team": null,
+        "age": 27,
+        "birth_date": "1998-06-23",
+        "college": "Memphis"
+      },
+      {
+        "player_id": "7045",
+        "espn_id": 3910544,
+        "name": "Joshua Kelley",
+        "position": "RB",
+        "team": null,
+        "age": 27,
+        "birth_date": "1997-11-20",
+        "college": "UCLA"
+      },
+      {
+        "player_id": "8143",
+        "espn_id": null,
+        "name": "Jerome Ford",
+        "position": "RB",
+        "team": "WAS",
+        "age": 26,
+        "birth_date": "1999-09-12",
+        "college": "Cincinnati"
+      },
+      {
+        "player_id": "8207",
+        "espn_id": null,
+        "name": "Tyler Goodson",
+        "position": "RB",
+        "team": "ATL",
+        "age": 25,
+        "birth_date": "2000-11-10",
+        "college": "Iowa"
+      }
+    ]
+  },
+  {
+    "owner": "NoSkilzPak",
+    "roster_id": 3,
+    "players": [
+      {
+        "player_id": "10232",
+        "espn_id": null,
+        "name": "Michael Wilson",
+        "position": "WR",
+        "team": "ARI",
+        "age": 26,
+        "birth_date": "2000-02-23",
+        "college": "Stanford"
+      },
+      {
+        "player_id": "10235",
+        "espn_id": null,
+        "name": "Roschon Johnson",
+        "position": "RB",
+        "team": "CHI",
+        "age": 25,
+        "birth_date": "2001-01-31",
+        "college": "Texas"
+      },
+      {
+        "player_id": "10236",
+        "espn_id": null,
+        "name": "Dalton Kincaid",
+        "position": "TE",
+        "team": "BUF",
+        "age": 26,
+        "birth_date": "1999-10-18",
+        "college": "Utah"
+      },
+      {
+        "player_id": "10857",
+        "espn_id": null,
+        "name": "Stetson Bennett",
+        "position": "QB",
+        "team": "LAR",
+        "age": 28,
+        "birth_date": "1997-10-28",
+        "college": "Georgia"
+      },
+      {
+        "player_id": "11306",
+        "espn_id": null,
+        "name": "Xavier Gipson",
+        "position": "WR",
+        "team": "NYG",
+        "age": 25,
+        "birth_date": "2001-03-08",
+        "college": "Stephen F. Austin"
+      },
+      {
+        "player_id": "1433",
+        "espn_id": 16339,
+        "name": "Brandon McManus",
+        "position": "K",
+        "team": null,
+        "age": 34,
+        "birth_date": "1991-07-25",
+        "college": "Temple"
+      },
+      {
+        "player_id": "2197",
+        "espn_id": 16731,
+        "name": "Brandin Cooks",
+        "position": "WR",
+        "team": null,
+        "age": 32,
+        "birth_date": "1993-09-25",
+        "college": "Oregon State"
+      },
+      {
+        "player_id": "2307",
+        "espn_id": 2576980,
+        "name": "Marcus Mariota",
+        "position": "QB",
+        "team": "WAS",
+        "age": 32,
+        "birth_date": "1993-10-30",
+        "college": "Oregon"
+      },
+      {
+        "player_id": "3321",
+        "espn_id": 3116406,
+        "name": "Tyreek Hill",
+        "position": "WR",
+        "team": null,
+        "age": 31,
+        "birth_date": "1994-03-01",
+        "college": "West Alabama"
+      },
+      {
+        "player_id": "4029",
+        "espn_id": 3116593,
+        "name": "Dalvin Cook",
+        "position": "RB",
+        "team": null,
+        "age": 29,
+        "birth_date": "1995-08-10",
+        "college": "Florida State"
+      },
+      {
+        "player_id": "4111",
+        "espn_id": 3125116,
+        "name": "D'Onta Foreman",
+        "position": "RB",
+        "team": null,
+        "age": 28,
+        "birth_date": "1996-04-24",
+        "college": "Texas"
+      },
+      {
+        "player_id": "5038",
+        "espn_id": 4036348,
+        "name": "Michael Gallup",
+        "position": "WR",
+        "team": null,
+        "age": 29,
+        "birth_date": "1996-03-04",
+        "college": "Colorado State"
+      },
+      {
+        "player_id": "6803",
+        "espn_id": 4360438,
+        "name": "Brandon Aiyuk",
+        "position": "WR",
+        "team": "SF",
+        "age": 28,
+        "birth_date": "1998-03-17",
+        "college": "Arizona State"
+      },
+      {
+        "player_id": "7605",
+        "espn_id": null,
+        "name": "Kyle Trask",
+        "position": "QB",
+        "team": null,
+        "age": 27,
+        "birth_date": "1998-03-06",
+        "college": "Florida"
+      },
+      {
+        "player_id": "7610",
+        "espn_id": null,
+        "name": "Trey Lance",
+        "position": "QB",
+        "team": "LAC",
+        "age": 26,
+        "birth_date": "2000-05-09",
+        "college": "North Dakota State"
+      },
+      {
+        "player_id": "8132",
+        "espn_id": null,
+        "name": "Tyler Allgeier",
+        "position": "RB",
+        "team": "ARI",
+        "age": 26,
+        "birth_date": "2000-04-15",
+        "college": "BYU"
+      },
+      {
+        "player_id": "8136",
+        "espn_id": null,
+        "name": "Rachaad White",
+        "position": "RB",
+        "team": "WAS",
+        "age": 27,
+        "birth_date": "1999-01-12",
+        "college": "Arizona State"
+      },
+      {
+        "player_id": "8160",
+        "espn_id": null,
+        "name": "Kenny Pickett",
+        "position": "QB",
+        "team": "CAR",
+        "age": 28,
+        "birth_date": "1998-06-06",
+        "college": "Pittsburgh"
+      },
+      {
+        "player_id": "8183",
+        "espn_id": null,
+        "name": "Brock Purdy",
+        "position": "QB",
+        "team": "SF",
+        "age": 26,
+        "birth_date": "1999-12-27",
+        "college": "Iowa State"
+      },
+      {
+        "player_id": "8188",
+        "espn_id": null,
+        "name": "Tyquan Thornton",
+        "position": "WR",
+        "team": "KC",
+        "age": 25,
+        "birth_date": "2000-08-07",
+        "college": "Baylor"
+      },
+      {
+        "player_id": "8205",
+        "espn_id": null,
+        "name": "Isiah Pacheco",
+        "position": "RB",
+        "team": "DET",
+        "age": 27,
+        "birth_date": "1999-03-02",
+        "college": "Rutgers"
+      },
+      {
+        "player_id": "8219",
+        "espn_id": null,
+        "name": "Jelani Woods",
+        "position": "TE",
+        "team": "NYJ",
+        "age": 27,
+        "birth_date": "1998-10-09",
+        "college": "Virginia"
+      },
+      {
+        "player_id": "8228",
+        "espn_id": null,
+        "name": "Jaylen Warren",
+        "position": "RB",
+        "team": "PIT",
+        "age": 27,
+        "birth_date": "1998-11-01",
+        "college": "Oklahoma State"
+      },
+      {
+        "player_id": "9222",
+        "espn_id": null,
+        "name": "Zach Evans",
+        "position": "RB",
+        "team": null,
+        "age": 24,
+        "birth_date": "2001-05-30",
+        "college": "Ole Miss"
+      },
+      {
+        "player_id": "9228",
+        "espn_id": null,
+        "name": "Bryce Young",
+        "position": "QB",
+        "team": "CAR",
+        "age": 24,
+        "birth_date": "2001-07-25",
+        "college": "Alabama"
+      },
+      {
+        "player_id": "9482",
+        "espn_id": null,
+        "name": "Michael Mayer",
+        "position": "TE",
+        "team": "LV",
+        "age": 24,
+        "birth_date": "2001-07-06",
+        "college": "Notre Dame"
+      },
+      {
+        "player_id": "9484",
+        "espn_id": null,
+        "name": "Tucker Kraft",
+        "position": "TE",
+        "team": "GB",
+        "age": 25,
+        "birth_date": "2000-11-03",
+        "college": "South Dakota State"
+      },
+      {
+        "player_id": "9497",
+        "espn_id": null,
+        "name": "Jalin Hyatt",
+        "position": "WR",
+        "team": "NYG",
+        "age": 24,
+        "birth_date": "2001-09-25",
+        "college": "Tennessee"
+      },
+      {
+        "player_id": "9999",
+        "espn_id": null,
+        "name": "Will Levis",
+        "position": "QB",
+        "team": "TEN",
+        "age": 26,
+        "birth_date": "1999-06-27",
+        "college": "Kentucky"
+      }
+    ]
+  },
+  {
+    "owner": "jonsung",
+    "roster_id": 4,
+    "players": [
+      {
+        "player_id": "10862",
+        "espn_id": null,
+        "name": "Dorian Thompson-Robinson",
+        "position": "QB",
+        "team": null,
+        "age": 25,
+        "birth_date": "1999-11-14",
+        "college": "UCLA"
+      },
+      {
+        "player_id": "10863",
+        "espn_id": null,
+        "name": "A.T. Perry",
+        "position": "WR",
+        "team": "PIT",
+        "age": 26,
+        "birth_date": "1999-10-26",
+        "college": "Wake Forest"
+      },
+      {
+        "player_id": "1234",
+        "espn_id": 14881,
+        "name": "Russell Wilson",
+        "position": "QB",
+        "team": null,
+        "age": 37,
+        "birth_date": "1988-11-29",
+        "college": "Wisconsin"
+      },
+      {
+        "player_id": "2216",
+        "espn_id": 16737,
+        "name": "Mike Evans",
+        "position": "WR",
+        "team": "SF",
+        "age": 32,
+        "birth_date": "1993-08-21",
+        "college": "Texas A&M"
+      },
+      {
+        "player_id": "2251",
+        "espn_id": 16813,
+        "name": "Logan Thomas",
+        "position": "TE",
+        "team": null,
+        "age": 33,
+        "birth_date": "1991-07-01",
+        "college": "Virginia Tech"
+      },
+      {
+        "player_id": "3198",
+        "espn_id": 3043078,
+        "name": "Derrick Henry",
+        "position": "RB",
+        "team": "BAL",
+        "age": 32,
+        "birth_date": "1994-01-04",
+        "college": "Alabama"
+      },
+      {
+        "player_id": "4018",
+        "espn_id": 3116385,
+        "name": "Joe Mixon",
+        "position": "RB",
+        "team": null,
+        "age": 29,
+        "birth_date": "1996-07-24",
+        "college": "Oklahoma"
+      },
+      {
+        "player_id": "4082",
+        "espn_id": 3121427,
+        "name": "Curtis Samuel",
+        "position": "WR",
+        "team": null,
+        "age": 29,
+        "birth_date": "1996-08-11",
+        "college": "Ohio State"
+      },
+      {
+        "player_id": "4217",
+        "espn_id": 3040151,
+        "name": "George Kittle",
+        "position": "TE",
+        "team": "SF",
+        "age": 32,
+        "birth_date": "1993-10-09",
+        "college": "Iowa"
+      },
+      {
+        "player_id": "4464",
+        "espn_id": 3059989,
+        "name": "Nick Mullens",
+        "position": "QB",
+        "team": "JAX",
+        "age": 31,
+        "birth_date": "1995-03-21",
+        "college": "Southern Miss"
+      },
+      {
+        "player_id": "4663",
+        "espn_id": 3068267,
+        "name": "Austin Ekeler",
+        "position": "RB",
+        "team": null,
+        "age": 30,
+        "birth_date": "1995-05-17",
+        "college": "Western Colorado"
+      },
+      {
+        "player_id": "4866",
+        "espn_id": 3929630,
+        "name": "Saquon Barkley",
+        "position": "RB",
+        "team": "PHI",
+        "age": 29,
+        "birth_date": "1997-02-09",
+        "college": "Penn State"
+      },
+      {
+        "player_id": "5113",
+        "espn_id": 4036335,
+        "name": "Cedrick Wilson",
+        "position": "WR",
+        "team": "DET",
+        "age": 30,
+        "birth_date": "1995-11-20",
+        "college": "Boise State"
+      },
+      {
+        "player_id": "6783",
+        "espn_id": 4241463,
+        "name": "Jerry Jeudy",
+        "position": "WR",
+        "team": "CLE",
+        "age": 27,
+        "birth_date": "1999-04-24",
+        "college": "Alabama"
+      },
+      {
+        "player_id": "6786",
+        "espn_id": 4241389,
+        "name": "CeeDee Lamb",
+        "position": "WR",
+        "team": "DAL",
+        "age": 27,
+        "birth_date": "1999-04-08",
+        "college": "Oklahoma"
+      },
+      {
+        "player_id": "6794",
+        "espn_id": 4262921,
+        "name": "Justin Jefferson",
+        "position": "WR",
+        "team": "MIN",
+        "age": 26,
+        "birth_date": "1999-06-16",
+        "college": "LSU"
+      },
+      {
+        "player_id": "6804",
+        "espn_id": 4036378,
+        "name": "Jordan Love",
+        "position": "QB",
+        "team": "GB",
+        "age": 27,
+        "birth_date": "1998-11-02",
+        "college": "Utah State"
+      },
+      {
+        "player_id": "6845",
+        "espn_id": 4035676,
+        "name": "Zack Moss",
+        "position": "RB",
+        "team": null,
+        "age": 27,
+        "birth_date": "1997-12-15",
+        "college": "Utah"
+      },
+      {
+        "player_id": "7021",
+        "espn_id": 4038815,
+        "name": "Rico Dowdle",
+        "position": "RB",
+        "team": "PIT",
+        "age": 27,
+        "birth_date": "1998-06-14",
+        "college": "South Carolina"
+      },
+      {
+        "player_id": "7083",
+        "espn_id": 4035671,
+        "name": "Tyler Huntley",
+        "position": "QB",
+        "team": "BAL",
+        "age": 28,
+        "birth_date": "1998-02-03",
+        "college": "Utah"
+      },
+      {
+        "player_id": "7090",
+        "espn_id": 4040655,
+        "name": "Darnell Mooney",
+        "position": "WR",
+        "team": "NYG",
+        "age": 28,
+        "birth_date": "1997-10-29",
+        "college": "Tulane"
+      },
+      {
+        "player_id": "7567",
+        "espn_id": null,
+        "name": "Kenneth Gainwell",
+        "position": "RB",
+        "team": "TB",
+        "age": 27,
+        "birth_date": "1999-03-14",
+        "college": "Memphis"
+      },
+      {
+        "player_id": "7593",
+        "espn_id": null,
+        "name": "Trey Sermon",
+        "position": "RB",
+        "team": null,
+        "age": 26,
+        "birth_date": "1999-01-30",
+        "college": "Ohio State"
+      },
+      {
+        "player_id": "7601",
+        "espn_id": null,
+        "name": "Rondale Moore",
+        "position": "WR",
+        "team": null,
+        "age": 25,
+        "birth_date": "2000-06-09",
+        "college": "Purdue"
+      },
+      {
+        "player_id": "8134",
+        "espn_id": null,
+        "name": "Khalil Shakir",
+        "position": "WR",
+        "team": "BUF",
+        "age": 26,
+        "birth_date": "2000-02-03",
+        "college": "Boise State"
+      },
+      {
+        "player_id": "8154",
+        "espn_id": null,
+        "name": "Brian Robinson",
+        "position": "RB",
+        "team": "ATL",
+        "age": 27,
+        "birth_date": "1999-03-22",
+        "college": "Alabama"
+      },
+      {
+        "player_id": "8157",
+        "espn_id": null,
+        "name": "Bailey Zappe",
+        "position": "QB",
+        "team": "NYJ",
+        "age": 27,
+        "birth_date": "1999-04-26",
+        "college": "Western Kentucky"
+      },
+      {
+        "player_id": "8195",
+        "espn_id": null,
+        "name": "Ronnie Rivers",
+        "position": "RB",
+        "team": "LAR",
+        "age": 27,
+        "birth_date": "1999-01-31",
+        "college": "Fresno State"
+      },
+      {
+        "player_id": "8259",
+        "espn_id": null,
+        "name": "Cameron Dicker",
+        "position": "K",
+        "team": "LAC",
+        "age": 26,
+        "birth_date": "2000-05-06",
+        "college": "Texas"
+      },
+      {
+        "player_id": "9224",
+        "espn_id": null,
+        "name": "Chase Brown",
+        "position": "RB",
+        "team": "CIN",
+        "age": 26,
+        "birth_date": "2000-03-21",
+        "college": "Illinois"
+      },
+      {
+        "player_id": "9483",
+        "espn_id": null,
+        "name": "Zack Kuntz",
+        "position": "TE",
+        "team": null,
+        "age": 26,
+        "birth_date": "1999-06-06",
+        "college": "Old Dominion"
+      }
+    ]
+  },
+  {
+    "owner": "andyxia124",
+    "roster_id": 5,
+    "players": [
+      {
+        "player_id": "10221",
+        "espn_id": null,
+        "name": "Ronnie Bell",
+        "position": "WR",
+        "team": "NO",
+        "age": 26,
+        "birth_date": "2000-01-28",
+        "college": "Michigan"
+      },
+      {
+        "player_id": "10861",
+        "espn_id": null,
+        "name": "Xazavian Valladay",
+        "position": "RB",
+        "team": null,
+        "age": 27,
+        "birth_date": "1998-07-03",
+        "college": "Arizona State"
+      },
+      {
+        "player_id": "1264",
+        "espn_id": 15683,
+        "name": "Justin Tucker",
+        "position": "K",
+        "team": null,
+        "age": 35,
+        "birth_date": "1989-11-21",
+        "college": "Texas"
+      },
+      {
+        "player_id": "2319",
+        "espn_id": 2576623,
+        "name": "DeVante Parker",
+        "position": "WR",
+        "team": null,
+        "age": 31,
+        "birth_date": "1993-01-20",
+        "college": "Louisville"
+      },
+      {
+        "player_id": "3161",
+        "espn_id": 2573079,
+        "name": "Carson Wentz",
+        "position": "QB",
+        "team": "MIN",
+        "age": 33,
+        "birth_date": "1992-12-30",
+        "college": "North Dakota State"
+      },
+      {
+        "player_id": "3214",
+        "espn_id": 3046439,
+        "name": "Hunter Henry",
+        "position": "TE",
+        "team": "NE",
+        "age": 31,
+        "birth_date": "1994-12-07",
+        "college": "Arkansas"
+      },
+      {
+        "player_id": "5849",
+        "espn_id": 3917315,
+        "name": "Kyler Murray",
+        "position": "QB",
+        "team": "MIN",
+        "age": 28,
+        "birth_date": "1997-08-07",
+        "college": "Oklahoma"
+      },
+      {
+        "player_id": "6083",
+        "espn_id": 4249087,
+        "name": "Matt Gay",
+        "position": "K",
+        "team": "LV",
+        "age": 32,
+        "birth_date": "1994-03-15",
+        "college": "Utah"
+      },
+      {
+        "player_id": "6659",
+        "espn_id": 4421446,
+        "name": "Craig Reynolds",
+        "position": "RB",
+        "team": null,
+        "age": 29,
+        "birth_date": "1996-06-15",
+        "college": "Kutztown"
+      },
+      {
+        "player_id": "6865",
+        "espn_id": 4242557,
+        "name": "Colby Parkinson",
+        "position": "TE",
+        "team": "LAR",
+        "age": 27,
+        "birth_date": "1999-01-08",
+        "college": "Stanford"
+      },
+      {
+        "player_id": "6927",
+        "espn_id": 4050373,
+        "name": "Quez Watkins",
+        "position": "WR",
+        "team": "PHI",
+        "age": 27,
+        "birth_date": "1998-06-09",
+        "college": "Southern Miss"
+      },
+      {
+        "player_id": "6943",
+        "espn_id": 4243537,
+        "name": "Gabe Davis",
+        "position": "WR",
+        "team": null,
+        "age": 26,
+        "birth_date": "1999-04-01",
+        "college": "UCF"
+      },
+      {
+        "player_id": "7523",
+        "espn_id": null,
+        "name": "Trevor Lawrence",
+        "position": "QB",
+        "team": "JAX",
+        "age": 26,
+        "birth_date": "1999-10-06",
+        "college": "Clemson"
+      },
+      {
+        "player_id": "7538",
+        "espn_id": null,
+        "name": "Zach Wilson",
+        "position": "QB",
+        "team": "NO",
+        "age": 26,
+        "birth_date": "1999-08-03",
+        "college": "BYU"
+      },
+      {
+        "player_id": "7553",
+        "espn_id": null,
+        "name": "Kyle Pitts",
+        "position": "TE",
+        "team": "ATL",
+        "age": 25,
+        "birth_date": "2000-10-06",
+        "college": "Florida"
+      },
+      {
+        "player_id": "7565",
+        "espn_id": null,
+        "name": "Terrace Marshall",
+        "position": "WR",
+        "team": "MIA",
+        "age": 25,
+        "birth_date": "2000-06-09",
+        "college": "LSU"
+      },
+      {
+        "player_id": "8112",
+        "espn_id": null,
+        "name": "Drake London",
+        "position": "WR",
+        "team": "ATL",
+        "age": 24,
+        "birth_date": "2001-07-24",
+        "college": "USC"
+      },
+      {
+        "player_id": "8121",
+        "espn_id": null,
+        "name": "Romeo Doubs",
+        "position": "WR",
+        "team": "NE",
+        "age": 26,
+        "birth_date": "2000-04-13",
+        "college": "Nevada"
+      },
+      {
+        "player_id": "8123",
+        "espn_id": null,
+        "name": "Hassan Haskins",
+        "position": "RB",
+        "team": null,
+        "age": 26,
+        "birth_date": "1999-11-26",
+        "college": "Michigan"
+      },
+      {
+        "player_id": "8137",
+        "espn_id": null,
+        "name": "George Pickens",
+        "position": "WR",
+        "team": "DAL",
+        "age": 25,
+        "birth_date": "2001-03-04",
+        "college": "Georgia"
+      },
+      {
+        "player_id": "8148",
+        "espn_id": null,
+        "name": "Jameson Williams",
+        "position": "WR",
+        "team": "DET",
+        "age": 25,
+        "birth_date": "2001-03-26",
+        "college": "Alabama"
+      },
+      {
+        "player_id": "8153",
+        "espn_id": null,
+        "name": "Isaiah Spiller",
+        "position": "RB",
+        "team": null,
+        "age": 23,
+        "birth_date": "2001-08-09",
+        "college": "Texas A&M"
+      },
+      {
+        "player_id": "8159",
+        "espn_id": null,
+        "name": "Desmond Ridder",
+        "position": "QB",
+        "team": null,
+        "age": 26,
+        "birth_date": "1999-08-31",
+        "college": "Cincinnati"
+      },
+      {
+        "player_id": "8214",
+        "espn_id": null,
+        "name": "Cole Turner",
+        "position": "TE",
+        "team": "MIA",
+        "age": 26,
+        "birth_date": "2000-03-16",
+        "college": "Nevada"
+      },
+      {
+        "player_id": "8230",
+        "espn_id": null,
+        "name": "Ty Chandler",
+        "position": "RB",
+        "team": "NO",
+        "age": 28,
+        "birth_date": "1998-05-12",
+        "college": "North Carolina"
+      },
+      {
+        "player_id": "8756",
+        "espn_id": null,
+        "name": "Brandon Johnson",
+        "position": "WR",
+        "team": "PIT",
+        "age": 27,
+        "birth_date": "1998-07-26",
+        "college": "UCF"
+      },
+      {
+        "player_id": "9221",
+        "espn_id": null,
+        "name": "Jahmyr Gibbs",
+        "position": "RB",
+        "team": "DET",
+        "age": 24,
+        "birth_date": "2002-03-20",
+        "college": "Alabama"
+      },
+      {
+        "player_id": "9479",
+        "espn_id": null,
+        "name": "Darnell Washington",
+        "position": "TE",
+        "team": "PIT",
+        "age": 24,
+        "birth_date": "2001-08-17",
+        "college": "Georgia"
+      },
+      {
+        "player_id": "9480",
+        "espn_id": null,
+        "name": "Brenton Strange",
+        "position": "TE",
+        "team": "JAX",
+        "age": 25,
+        "birth_date": "2000-12-27",
+        "college": "Penn State"
+      },
+      {
+        "player_id": "9997",
+        "espn_id": null,
+        "name": "Zay Flowers",
+        "position": "WR",
+        "team": "BAL",
+        "age": 25,
+        "birth_date": "2000-09-11",
+        "college": "Boston College"
+      },
+      {
+        "player_id": "9998",
+        "espn_id": null,
+        "name": "Hendon Hooker",
+        "position": "QB",
+        "team": "TEN",
+        "age": 28,
+        "birth_date": "1998-01-13",
+        "college": "Tennessee"
+      }
+    ]
+  },
+  {
+    "owner": "IconicJH",
+    "roster_id": 6,
+    "players": [
+      {
+        "player_id": "10213",
+        "espn_id": null,
+        "name": "Tre Tucker",
+        "position": "WR",
+        "team": "LV",
+        "age": 25,
+        "birth_date": "2001-03-08",
+        "college": "Cincinnati"
+      },
+      {
+        "player_id": "10219",
+        "espn_id": null,
+        "name": "Chris Rodriguez",
+        "position": "RB",
+        "team": "JAX",
+        "age": 26,
+        "birth_date": "1999-09-26",
+        "college": "Kentucky"
+      },
+      {
+        "player_id": "10226",
+        "espn_id": null,
+        "name": "Andrei Iosivas",
+        "position": "WR",
+        "team": "CIN",
+        "age": 26,
+        "birth_date": "1999-10-15",
+        "college": "Princeton"
+      },
+      {
+        "player_id": "10866",
+        "espn_id": null,
+        "name": "Aidan O'Connell",
+        "position": "QB",
+        "team": "LV",
+        "age": 27,
+        "birth_date": "1998-09-01",
+        "college": "Purdue"
+      },
+      {
+        "player_id": "10867",
+        "espn_id": null,
+        "name": "Jake Bobo",
+        "position": "WR",
+        "team": "SEA",
+        "age": 27,
+        "birth_date": "1998-08-04",
+        "college": "UCLA"
+      },
+      {
+        "player_id": "1339",
+        "espn_id": 15835,
+        "name": "Zach Ertz",
+        "position": "TE",
+        "team": null,
+        "age": 35,
+        "birth_date": "1990-11-10",
+        "college": "Stanford"
+      },
+      {
+        "player_id": "2028",
+        "espn_id": 16757,
+        "name": "Derek Carr",
+        "position": "QB",
+        "team": null,
+        "age": 34,
+        "birth_date": "1991-03-28",
+        "college": "Fresno State"
+      },
+      {
+        "player_id": "2505",
+        "espn_id": 2576925,
+        "name": "Darren Waller",
+        "position": "TE",
+        "team": null,
+        "age": 33,
+        "birth_date": "1992-09-13",
+        "college": "Georgia Tech"
+      },
+      {
+        "player_id": "5850",
+        "espn_id": 4047365,
+        "name": "Josh Jacobs",
+        "position": "RB",
+        "team": "GB",
+        "age": 28,
+        "birth_date": "1998-02-11",
+        "college": "Alabama"
+      },
+      {
+        "player_id": "5859",
+        "espn_id": 4047646,
+        "name": "A.J. Brown",
+        "position": "WR",
+        "team": "NE",
+        "age": 28,
+        "birth_date": "1997-06-30",
+        "college": "Ole Miss"
+      },
+      {
+        "player_id": "5917",
+        "espn_id": 4035004,
+        "name": "Mecole Hardman",
+        "position": "WR",
+        "team": "BUF",
+        "age": 28,
+        "birth_date": "1998-03-12",
+        "college": "Georgia"
+      },
+      {
+        "player_id": "5927",
+        "espn_id": 3121422,
+        "name": "Terry McLaurin",
+        "position": "WR",
+        "team": "WAS",
+        "age": 30,
+        "birth_date": "1995-09-15",
+        "college": "Ohio State"
+      },
+      {
+        "player_id": "5987",
+        "espn_id": 4048244,
+        "name": "Alexander Mattison",
+        "position": "RB",
+        "team": null,
+        "age": 27,
+        "birth_date": "1998-06-19",
+        "college": "Boise State"
+      },
+      {
+        "player_id": "6853",
+        "espn_id": 3930066,
+        "name": "Van Jefferson",
+        "position": "WR",
+        "team": "WAS",
+        "age": 29,
+        "birth_date": "1996-07-26",
+        "college": "Florida"
+      },
+      {
+        "player_id": "7042",
+        "espn_id": 3917232,
+        "name": "Tyler Bass",
+        "position": "K",
+        "team": "BUF",
+        "age": 29,
+        "birth_date": "1997-02-14",
+        "college": "Georgia Southern"
+      },
+      {
+        "player_id": "7561",
+        "espn_id": null,
+        "name": "Elijah Mitchell",
+        "position": "RB",
+        "team": "PHI",
+        "age": 28,
+        "birth_date": "1998-05-02",
+        "college": "Louisiana"
+      },
+      {
+        "player_id": "7591",
+        "espn_id": null,
+        "name": "Justin Fields",
+        "position": "QB",
+        "team": "KC",
+        "age": 27,
+        "birth_date": "1999-03-05",
+        "college": "Ohio State"
+      },
+      {
+        "player_id": "7596",
+        "espn_id": null,
+        "name": "Elijah Moore",
+        "position": "WR",
+        "team": "PHI",
+        "age": 26,
+        "birth_date": "2000-03-27",
+        "college": "Ole Miss"
+      },
+      {
+        "player_id": "7600",
+        "espn_id": null,
+        "name": "Pat Freiermuth",
+        "position": "TE",
+        "team": "PIT",
+        "age": 27,
+        "birth_date": "1998-10-25",
+        "college": "Penn State"
+      },
+      {
+        "player_id": "7606",
+        "espn_id": null,
+        "name": "Kadarius Toney",
+        "position": "WR",
+        "team": null,
+        "age": 25,
+        "birth_date": "1999-01-27",
+        "college": "Florida"
+      },
+      {
+        "player_id": "8119",
+        "espn_id": null,
+        "name": "Jahan Dotson",
+        "position": "WR",
+        "team": "ATL",
+        "age": 26,
+        "birth_date": "2000-03-22",
+        "college": "Penn State"
+      },
+      {
+        "player_id": "8125",
+        "espn_id": null,
+        "name": "Calvin Austin",
+        "position": "WR",
+        "team": "NYG",
+        "age": 27,
+        "birth_date": "1999-03-24",
+        "college": "Memphis"
+      },
+      {
+        "player_id": "8126",
+        "espn_id": null,
+        "name": "Wan'Dale Robinson",
+        "position": "WR",
+        "team": "TEN",
+        "age": 25,
+        "birth_date": "2001-01-05",
+        "college": "Kentucky"
+      },
+      {
+        "player_id": "8129",
+        "espn_id": null,
+        "name": "Dameon Pierce",
+        "position": "RB",
+        "team": "PHI",
+        "age": 26,
+        "birth_date": "2000-02-19",
+        "college": "Florida"
+      },
+      {
+        "player_id": "8130",
+        "espn_id": null,
+        "name": "Trey McBride",
+        "position": "TE",
+        "team": "ARI",
+        "age": 26,
+        "birth_date": "1999-11-22",
+        "college": "Colorado State"
+      },
+      {
+        "player_id": "8135",
+        "espn_id": null,
+        "name": "Treylon Burks",
+        "position": "WR",
+        "team": "WAS",
+        "age": 26,
+        "birth_date": "2000-03-23",
+        "college": "Arkansas"
+      },
+      {
+        "player_id": "8161",
+        "espn_id": null,
+        "name": "Malik Willis",
+        "position": "QB",
+        "team": "MIA",
+        "age": 27,
+        "birth_date": "1999-05-25",
+        "college": "Liberty"
+      },
+      {
+        "player_id": "8225",
+        "espn_id": null,
+        "name": "Daniel Bellinger",
+        "position": "TE",
+        "team": "TEN",
+        "age": 25,
+        "birth_date": "2000-09-22",
+        "college": "San Diego State"
+      },
+      {
+        "player_id": "9501",
+        "espn_id": null,
+        "name": "DeMario Douglas",
+        "position": "WR",
+        "team": "NE",
+        "age": 25,
+        "birth_date": "2000-12-08",
+        "college": "Liberty"
+      },
+      {
+        "player_id": "9504",
+        "espn_id": null,
+        "name": "Kayshon Boutte",
+        "position": "WR",
+        "team": "NE",
+        "age": 24,
+        "birth_date": "2002-05-07",
+        "college": "LSU"
+      },
+      {
+        "player_id": "9509",
+        "espn_id": null,
+        "name": "Bijan Robinson",
+        "position": "RB",
+        "team": "ATL",
+        "age": 24,
+        "birth_date": "2002-01-30",
+        "college": "Texas"
+      },
+      {
+        "player_id": "9511",
+        "espn_id": null,
+        "name": "Keaton Mitchell",
+        "position": "RB",
+        "team": "LAC",
+        "age": 24,
+        "birth_date": "2002-01-17",
+        "college": "East Carolina"
+      }
+    ]
+  },
+  {
+    "owner": "Paul_Yoon",
+    "roster_id": 7,
+    "players": [
+      {
+        "player_id": "10210",
+        "espn_id": null,
+        "name": "Cameron Latu",
+        "position": "TE",
+        "team": "PHI",
+        "age": 26,
+        "birth_date": "2000-02-24",
+        "college": "Alabama"
+      },
+      {
+        "player_id": "1352",
+        "espn_id": 15880,
+        "name": "Robert Woods",
+        "position": "WR",
+        "team": null,
+        "age": 33,
+        "birth_date": "1992-04-10",
+        "college": "USC"
+      },
+      {
+        "player_id": "1837",
+        "espn_id": 16760,
+        "name": "Jimmy Garoppolo",
+        "position": "QB",
+        "team": null,
+        "age": 34,
+        "birth_date": "1991-11-02",
+        "college": "Eastern Illinois"
+      },
+      {
+        "player_id": "2320",
+        "espn_id": 2576434,
+        "name": "Melvin Gordon",
+        "position": "RB",
+        "team": null,
+        "age": 30,
+        "birth_date": "1993-04-13",
+        "college": "Wisconsin"
+      },
+      {
+        "player_id": "3976",
+        "espn_id": 3039707,
+        "name": "Mitchell Trubisky",
+        "position": "QB",
+        "team": "TEN",
+        "age": 31,
+        "birth_date": "1994-08-20",
+        "college": "North Carolina"
+      },
+      {
+        "player_id": "4017",
+        "espn_id": 3122840,
+        "name": "Deshaun Watson",
+        "position": "QB",
+        "team": "CLE",
+        "age": 30,
+        "birth_date": "1995-09-14",
+        "college": "Clemson"
+      },
+      {
+        "player_id": "4068",
+        "espn_id": 3045138,
+        "name": "Mike Williams",
+        "position": "WR",
+        "team": null,
+        "age": 30,
+        "birth_date": "1994-10-04",
+        "college": "Clemson"
+      },
+      {
+        "player_id": "4454",
+        "espn_id": 3045523,
+        "name": "Kendrick Bourne",
+        "position": "WR",
+        "team": "ARI",
+        "age": 30,
+        "birth_date": "1995-08-04",
+        "college": "Eastern Washington"
+      },
+      {
+        "player_id": "5119",
+        "espn_id": 3124679,
+        "name": "Jason Sanders",
+        "position": "K",
+        "team": "NYJ",
+        "age": 30,
+        "birth_date": "1995-11-16",
+        "college": "New Mexico"
+      },
+      {
+        "player_id": "5133",
+        "espn_id": 3122920,
+        "name": "Tyler Conklin",
+        "position": "TE",
+        "team": "DET",
+        "age": 30,
+        "birth_date": "1995-07-30",
+        "college": "Central Michigan"
+      },
+      {
+        "player_id": "5185",
+        "espn_id": 3128390,
+        "name": "Allen Lazard",
+        "position": "WR",
+        "team": null,
+        "age": 30,
+        "birth_date": "1995-12-11",
+        "college": "Iowa State"
+      },
+      {
+        "player_id": "5284",
+        "espn_id": 3122976,
+        "name": "Jeff Wilson",
+        "position": "RB",
+        "team": null,
+        "age": 30,
+        "birth_date": "1995-11-16",
+        "college": "North Texas"
+      },
+      {
+        "player_id": "5880",
+        "espn_id": 3121410,
+        "name": "Parris Campbell",
+        "position": "WR",
+        "team": null,
+        "age": 28,
+        "birth_date": "1997-07-16",
+        "college": "Ohio State"
+      },
+      {
+        "player_id": "5947",
+        "espn_id": 3916433,
+        "name": "Jakobi Meyers",
+        "position": "WR",
+        "team": "JAX",
+        "age": 29,
+        "birth_date": "1996-11-09",
+        "college": "North Carolina State"
+      },
+      {
+        "player_id": "5995",
+        "espn_id": 4038441,
+        "name": "Justice Hill",
+        "position": "RB",
+        "team": "BAL",
+        "age": 28,
+        "birth_date": "1997-11-14",
+        "college": "Oklahoma State"
+      },
+      {
+        "player_id": "6144",
+        "espn_id": 4035222,
+        "name": "Trayveon Williams",
+        "position": "RB",
+        "team": null,
+        "age": 28,
+        "birth_date": "1997-10-18",
+        "college": "Texas A&M"
+      },
+      {
+        "player_id": "6151",
+        "espn_id": 4045163,
+        "name": "Miles Sanders",
+        "position": "RB",
+        "team": null,
+        "age": 28,
+        "birth_date": "1997-05-01",
+        "college": "Penn State"
+      },
+      {
+        "player_id": "650",
+        "espn_id": 10621,
+        "name": "Nick Folk",
+        "position": "K",
+        "team": "ATL",
+        "age": 41,
+        "birth_date": "1984-11-05",
+        "college": "Arizona"
+      },
+      {
+        "player_id": "6801",
+        "espn_id": 4239993,
+        "name": "Tee Higgins",
+        "position": "WR",
+        "team": "CIN",
+        "age": 27,
+        "birth_date": "1999-01-18",
+        "college": "Clemson"
+      },
+      {
+        "player_id": "6955",
+        "espn_id": 4052042,
+        "name": "James Robinson",
+        "position": "RB",
+        "team": null,
+        "age": 26,
+        "birth_date": "1998-08-09",
+        "college": "Illinois State"
+      },
+      {
+        "player_id": "6963",
+        "espn_id": 4039358,
+        "name": "Patrick Taylor",
+        "position": "RB",
+        "team": "SF",
+        "age": 28,
+        "birth_date": "1998-04-29",
+        "college": "Memphis"
+      },
+      {
+        "player_id": "7002",
+        "espn_id": 3929645,
+        "name": "Juwan Johnson",
+        "position": "TE",
+        "team": "NO",
+        "age": 29,
+        "birth_date": "1996-09-13",
+        "college": "Oregon"
+      },
+      {
+        "player_id": "7594",
+        "espn_id": null,
+        "name": "Chuba Hubbard",
+        "position": "RB",
+        "team": "CAR",
+        "age": 26,
+        "birth_date": "1999-06-11",
+        "college": "Oklahoma State"
+      },
+      {
+        "player_id": "8116",
+        "espn_id": null,
+        "name": "Pierre Strong",
+        "position": "RB",
+        "team": "GB",
+        "age": 27,
+        "birth_date": "1998-12-10",
+        "college": "South Dakota State"
+      },
+      {
+        "player_id": "8118",
+        "espn_id": null,
+        "name": "David Bell",
+        "position": "WR",
+        "team": null,
+        "age": 24,
+        "birth_date": "2000-12-14",
+        "college": "Purdue"
+      },
+      {
+        "player_id": "8138",
+        "espn_id": null,
+        "name": "James Cook",
+        "position": "RB",
+        "team": "BUF",
+        "age": 26,
+        "birth_date": "1999-09-25",
+        "college": "Georgia"
+      },
+      {
+        "player_id": "8181",
+        "espn_id": null,
+        "name": "Connor Heyward",
+        "position": "TE",
+        "team": "LV",
+        "age": 27,
+        "birth_date": "1999-01-22",
+        "college": "Michigan State"
+      },
+      {
+        "player_id": "8210",
+        "espn_id": null,
+        "name": "Chig Okonkwo",
+        "position": "TE",
+        "team": "WAS",
+        "age": 26,
+        "birth_date": "1999-09-08",
+        "college": "Maryland"
+      },
+      {
+        "player_id": "9229",
+        "espn_id": null,
+        "name": "Anthony Richardson",
+        "position": "QB",
+        "team": "IND",
+        "age": 24,
+        "birth_date": "2002-05-22",
+        "college": "Florida"
+      },
+      {
+        "player_id": "9489",
+        "espn_id": null,
+        "name": "Justin Shorter",
+        "position": "WR",
+        "team": "LV",
+        "age": 26,
+        "birth_date": "2000-04-17",
+        "college": "Florida"
+      },
+      {
+        "player_id": "9754",
+        "espn_id": null,
+        "name": "Quentin Johnston",
+        "position": "WR",
+        "team": "LAC",
+        "age": 24,
+        "birth_date": "2001-09-06",
+        "college": "TCU"
+      },
+      {
+        "player_id": "9758",
+        "espn_id": null,
+        "name": "C.J. Stroud",
+        "position": "QB",
+        "team": "HOU",
+        "age": 24,
+        "birth_date": "2001-10-03",
+        "college": "Ohio State"
+      }
+    ]
+  },
+  {
+    "owner": "eikichii952",
+    "roster_id": 8,
+    "players": [
+      {
+        "player_id": "10220",
+        "espn_id": null,
+        "name": "Will Mallory",
+        "position": "TE",
+        "team": "IND",
+        "age": 26,
+        "birth_date": "1999-06-22",
+        "college": "Miami (FL)"
+      },
+      {
+        "player_id": "10227",
+        "espn_id": null,
+        "name": "Payne Durham",
+        "position": "TE",
+        "team": "TB",
+        "age": 25,
+        "birth_date": "2000-06-15",
+        "college": "Purdue"
+      },
+      {
+        "player_id": "10937",
+        "espn_id": null,
+        "name": "Jake Moody",
+        "position": "K",
+        "team": "WAS",
+        "age": 26,
+        "birth_date": "1999-11-23",
+        "college": "Michigan"
+      },
+      {
+        "player_id": "11435",
+        "espn_id": null,
+        "name": "Emanuel Wilson",
+        "position": "RB",
+        "team": "SEA",
+        "age": 27,
+        "birth_date": "1999-05-08",
+        "college": "Fort Valley State"
+      },
+      {
+        "player_id": "17",
+        "espn_id": 11122,
+        "name": "Matt Prater",
+        "position": "K",
+        "team": null,
+        "age": 41,
+        "birth_date": "1984-08-10",
+        "college": "UCF"
+      },
+      {
+        "player_id": "3199",
+        "espn_id": 2976316,
+        "name": "Michael Thomas",
+        "position": "WR",
+        "team": null,
+        "age": 31,
+        "birth_date": "1993-03-03",
+        "college": "Ohio State"
+      },
+      {
+        "player_id": "4080",
+        "espn_id": 3059722,
+        "name": "Zay Jones",
+        "position": "WR",
+        "team": null,
+        "age": 30,
+        "birth_date": "1995-03-30",
+        "college": "East Carolina"
+      },
+      {
+        "player_id": "4089",
+        "espn_id": 3918639,
+        "name": "Gerald Everett",
+        "position": "TE",
+        "team": null,
+        "age": 30,
+        "birth_date": "1994-06-25",
+        "college": "South Alabama"
+      },
+      {
+        "player_id": "4147",
+        "espn_id": 3116389,
+        "name": "Samaje Perine",
+        "position": "RB",
+        "team": "CIN",
+        "age": 30,
+        "birth_date": "1995-09-16",
+        "college": "Oklahoma"
+      },
+      {
+        "player_id": "4171",
+        "espn_id": 3115306,
+        "name": "Josh Reynolds",
+        "position": "WR",
+        "team": null,
+        "age": 31,
+        "birth_date": "1995-02-16",
+        "college": "Texas A&M"
+      },
+      {
+        "player_id": "4234",
+        "espn_id": 3121409,
+        "name": "Noah Brown",
+        "position": "WR",
+        "team": null,
+        "age": 30,
+        "birth_date": "1996-01-06",
+        "college": "Ohio State"
+      },
+      {
+        "player_id": "4455",
+        "espn_id": 3049916,
+        "name": "Matt Breida",
+        "position": "RB",
+        "team": null,
+        "age": 29,
+        "birth_date": "1995-02-28",
+        "college": "Georgia Southern"
+      },
+      {
+        "player_id": "4666",
+        "espn_id": 3049899,
+        "name": "Younghoe Koo",
+        "position": "K",
+        "team": null,
+        "age": 31,
+        "birth_date": "1994-08-03",
+        "college": "Georgia Southern"
+      },
+      {
+        "player_id": "4892",
+        "espn_id": 3052587,
+        "name": "Baker Mayfield",
+        "position": "QB",
+        "team": "TB",
+        "age": 31,
+        "birth_date": "1995-04-14",
+        "college": "Oklahoma"
+      },
+      {
+        "player_id": "4972",
+        "espn_id": 3116407,
+        "name": "Mason Rudolph",
+        "position": "QB",
+        "team": "PIT",
+        "age": 30,
+        "birth_date": "1995-07-17",
+        "college": "Oklahoma State"
+      },
+      {
+        "player_id": "5000",
+        "espn_id": 3119195,
+        "name": "Chase Edmonds",
+        "position": "RB",
+        "team": null,
+        "age": 29,
+        "birth_date": "1996-04-13",
+        "college": "Fordham"
+      },
+      {
+        "player_id": "5022",
+        "espn_id": 3121023,
+        "name": "Dallas Goedert",
+        "position": "TE",
+        "team": "PHI",
+        "age": 31,
+        "birth_date": "1995-01-03",
+        "college": "South Dakota State"
+      },
+      {
+        "player_id": "5347",
+        "espn_id": 3916430,
+        "name": "Nyheim Miller-Hines",
+        "position": "RB",
+        "team": null,
+        "age": 29,
+        "birth_date": "1996-11-12",
+        "college": "North Carolina State"
+      },
+      {
+        "player_id": "5857",
+        "espn_id": 4036131,
+        "name": "Noah Fant",
+        "position": "TE",
+        "team": "NO",
+        "age": 28,
+        "birth_date": "1997-11-20",
+        "college": "Iowa"
+      },
+      {
+        "player_id": "6074",
+        "espn_id": 3912092,
+        "name": "Donald Parham",
+        "position": "TE",
+        "team": null,
+        "age": 28,
+        "birth_date": "1997-08-16",
+        "college": "Stetson"
+      },
+      {
+        "player_id": "6185",
+        "espn_id": 3120590,
+        "name": "Easton Stick",
+        "position": "QB",
+        "team": "IND",
+        "age": 30,
+        "birth_date": "1995-09-15",
+        "college": "North Dakota State"
+      },
+      {
+        "player_id": "6797",
+        "espn_id": 4038941,
+        "name": "Justin Herbert",
+        "position": "QB",
+        "team": "LAC",
+        "age": 28,
+        "birth_date": "1998-03-10",
+        "college": "Oregon"
+      },
+      {
+        "player_id": "6806",
+        "espn_id": 4241985,
+        "name": "J.K. Dobbins",
+        "position": "RB",
+        "team": "DEN",
+        "age": 27,
+        "birth_date": "1998-12-17",
+        "college": "Ohio State"
+      },
+      {
+        "player_id": "7066",
+        "espn_id": 3916566,
+        "name": "K.J. Osborn",
+        "position": "WR",
+        "team": "TEN",
+        "age": 28,
+        "birth_date": "1997-06-10",
+        "college": "Miami (FL)"
+      },
+      {
+        "player_id": "7496",
+        "espn_id": 3929785,
+        "name": "Nick Westbrook-Ikhine",
+        "position": "WR",
+        "team": "IND",
+        "age": 29,
+        "birth_date": "1997-03-21",
+        "college": "Indiana"
+      },
+      {
+        "player_id": "7562",
+        "espn_id": null,
+        "name": "Tutu Atwell",
+        "position": "WR",
+        "team": "MIA",
+        "age": 26,
+        "birth_date": "1999-10-07",
+        "college": "Louisville"
+      },
+      {
+        "player_id": "8155",
+        "espn_id": null,
+        "name": "Breece Hall",
+        "position": "RB",
+        "team": "NYJ",
+        "age": 25,
+        "birth_date": "2001-05-31",
+        "college": "Iowa State"
+      },
+      {
+        "player_id": "8162",
+        "espn_id": null,
+        "name": "Sam Howell",
+        "position": "QB",
+        "team": "DAL",
+        "age": 25,
+        "birth_date": "2000-09-16",
+        "college": "North Carolina"
+      },
+      {
+        "player_id": "9220",
+        "espn_id": null,
+        "name": "Evan Hull",
+        "position": "RB",
+        "team": "HOU",
+        "age": 25,
+        "birth_date": "2000-10-26",
+        "college": "Northwestern"
+      },
+      {
+        "player_id": "9488",
+        "espn_id": null,
+        "name": "Jaxon Smith-Njigba",
+        "position": "WR",
+        "team": "SEA",
+        "age": 24,
+        "birth_date": "2002-02-14",
+        "college": "Ohio State"
+      },
+      {
+        "player_id": "9756",
+        "espn_id": null,
+        "name": "Jordan Addison",
+        "position": "WR",
+        "team": "MIN",
+        "age": 24,
+        "birth_date": "2002-01-27",
+        "college": "USC"
+      }
+    ]
+  },
+  {
+    "owner": "riqi",
+    "roster_id": 9,
+    "players": [
+      {
+        "player_id": "10218",
+        "espn_id": null,
+        "name": "Xavier Hutchinson",
+        "position": "WR",
+        "team": "HOU",
+        "age": 26,
+        "birth_date": "2000-06-01",
+        "college": "Iowa State"
+      },
+      {
+        "player_id": "1476",
+        "espn_id": 15920,
+        "name": "Latavius Murray",
+        "position": "RB",
+        "team": null,
+        "age": 34,
+        "birth_date": "1990-01-18",
+        "college": "UCF"
+      },
+      {
+        "player_id": "2020",
+        "espn_id": 17427,
+        "name": "Cairo Santos",
+        "position": "K",
+        "team": "CHI",
+        "age": 34,
+        "birth_date": "1991-11-12",
+        "college": "Tulane"
+      },
+      {
+        "player_id": "2078",
+        "espn_id": 16733,
+        "name": "Odell Beckham",
+        "position": "WR",
+        "team": "NYG",
+        "age": 33,
+        "birth_date": "1992-11-05",
+        "college": "LSU"
+      },
+      {
+        "player_id": "3163",
+        "espn_id": 3046779,
+        "name": "Jared Goff",
+        "position": "QB",
+        "team": "DET",
+        "age": 31,
+        "birth_date": "1994-10-14",
+        "college": "California"
+      },
+      {
+        "player_id": "3271",
+        "espn_id": 2573401,
+        "name": "Tyler Higbee",
+        "position": "TE",
+        "team": "LAR",
+        "age": 33,
+        "birth_date": "1993-01-01",
+        "college": "Western Kentucky"
+      },
+      {
+        "player_id": "4037",
+        "espn_id": 3116165,
+        "name": "Chris Godwin",
+        "position": "WR",
+        "team": "TB",
+        "age": 30,
+        "birth_date": "1996-02-27",
+        "college": "Penn State"
+      },
+      {
+        "player_id": "4040",
+        "espn_id": 3120348,
+        "name": "JuJu Smith-Schuster",
+        "position": "WR",
+        "team": "NYG",
+        "age": 29,
+        "birth_date": "1996-11-22",
+        "college": "USC"
+      },
+      {
+        "player_id": "4881",
+        "espn_id": 3916387,
+        "name": "Lamar Jackson",
+        "position": "QB",
+        "team": "BAL",
+        "age": 29,
+        "birth_date": "1997-01-07",
+        "college": "Louisville"
+      },
+      {
+        "player_id": "5045",
+        "espn_id": 3128429,
+        "name": "Courtland Sutton",
+        "position": "WR",
+        "team": "DEN",
+        "age": 30,
+        "birth_date": "1995-10-10",
+        "college": "SMU"
+      },
+      {
+        "player_id": "5046",
+        "espn_id": 3122672,
+        "name": "Royce Freeman",
+        "position": "RB",
+        "team": null,
+        "age": 29,
+        "birth_date": "1996-02-24",
+        "college": "Oregon"
+      },
+      {
+        "player_id": "5086",
+        "espn_id": 3051738,
+        "name": "Marquez Valdes-Scantling",
+        "position": "WR",
+        "team": "DAL",
+        "age": 31,
+        "birth_date": "1994-10-10",
+        "college": "South Florida"
+      },
+      {
+        "player_id": "5409",
+        "espn_id": 3050481,
+        "name": "Tanner Hudson",
+        "position": "TE",
+        "team": "CIN",
+        "age": 31,
+        "birth_date": "1994-11-12",
+        "college": "Southern Arkansas"
+      },
+      {
+        "player_id": "5844",
+        "espn_id": 4036133,
+        "name": "T.J. Hockenson",
+        "position": "TE",
+        "team": "MIN",
+        "age": 28,
+        "birth_date": "1997-07-03",
+        "college": "Iowa"
+      },
+      {
+        "player_id": "6111",
+        "espn_id": 3886812,
+        "name": "Jake Browning",
+        "position": "QB",
+        "team": "TB",
+        "age": 30,
+        "birth_date": "1996-04-11",
+        "college": "Washington"
+      },
+      {
+        "player_id": "6130",
+        "espn_id": 4040761,
+        "name": "Devin Singletary",
+        "position": "RB",
+        "team": "NYG",
+        "age": 28,
+        "birth_date": "1997-09-03",
+        "college": "Florida Atlantic"
+      },
+      {
+        "player_id": "6149",
+        "espn_id": 3916945,
+        "name": "Darius Slayton",
+        "position": "WR",
+        "team": "NYG",
+        "age": 29,
+        "birth_date": "1997-01-12",
+        "college": "Auburn"
+      },
+      {
+        "player_id": "7525",
+        "espn_id": null,
+        "name": "DeVonta Smith",
+        "position": "WR",
+        "team": "PHI",
+        "age": 27,
+        "birth_date": "1998-11-14",
+        "college": "Alabama"
+      },
+      {
+        "player_id": "7543",
+        "espn_id": null,
+        "name": "Travis Etienne",
+        "position": "RB",
+        "team": "NO",
+        "age": 27,
+        "birth_date": "1999-01-26",
+        "college": "Clemson"
+      },
+      {
+        "player_id": "7547",
+        "espn_id": null,
+        "name": "Amon-Ra St. Brown",
+        "position": "WR",
+        "team": "DET",
+        "age": 26,
+        "birth_date": "1999-10-24",
+        "college": "USC"
+      },
+      {
+        "player_id": "7607",
+        "espn_id": null,
+        "name": "Michael Carter",
+        "position": "RB",
+        "team": "TEN",
+        "age": 27,
+        "birth_date": "1999-05-07",
+        "college": "North Carolina"
+      },
+      {
+        "player_id": "7828",
+        "espn_id": null,
+        "name": "Noah Gray",
+        "position": "TE",
+        "team": "KC",
+        "age": 27,
+        "birth_date": "1999-04-30",
+        "college": "Duke"
+      },
+      {
+        "player_id": "8110",
+        "espn_id": null,
+        "name": "Jake Ferguson",
+        "position": "TE",
+        "team": "DAL",
+        "age": 27,
+        "birth_date": "1999-01-18",
+        "college": "Wisconsin"
+      },
+      {
+        "player_id": "8111",
+        "espn_id": null,
+        "name": "Cade Otton",
+        "position": "TE",
+        "team": "TB",
+        "age": 27,
+        "birth_date": "1999-04-15",
+        "college": "Washington"
+      },
+      {
+        "player_id": "8142",
+        "espn_id": null,
+        "name": "Alec Pierce",
+        "position": "WR",
+        "team": "IND",
+        "age": 26,
+        "birth_date": "2000-05-02",
+        "college": "Cincinnati"
+      },
+      {
+        "player_id": "8151",
+        "espn_id": null,
+        "name": "Kenneth Walker",
+        "position": "RB",
+        "team": "KC",
+        "age": 25,
+        "birth_date": "2000-10-20",
+        "college": "Michigan State"
+      },
+      {
+        "player_id": "8676",
+        "espn_id": null,
+        "name": "Rashid Shaheed",
+        "position": "WR",
+        "team": "SEA",
+        "age": 27,
+        "birth_date": "1998-08-31",
+        "college": "Weber State"
+      },
+      {
+        "player_id": "9481",
+        "espn_id": null,
+        "name": "Luke Musgrave",
+        "position": "TE",
+        "team": "GB",
+        "age": 25,
+        "birth_date": "2000-09-02",
+        "college": "Oregon State"
+      },
+      {
+        "player_id": "9486",
+        "espn_id": null,
+        "name": "Dontayvion Wicks",
+        "position": "WR",
+        "team": "PHI",
+        "age": 24,
+        "birth_date": "2001-06-16",
+        "college": "Virginia"
+      },
+      {
+        "player_id": "9757",
+        "espn_id": null,
+        "name": "Kendre Miller",
+        "position": "RB",
+        "team": "NO",
+        "age": 23,
+        "birth_date": "2002-06-11",
+        "college": "TCU"
+      }
+    ]
+  },
+  {
+    "owner": "shmyung",
+    "roster_id": 10,
+    "players": [
+      {
+        "player_id": "10222",
+        "espn_id": null,
+        "name": "Jayden Reed",
+        "position": "WR",
+        "team": "GB",
+        "age": 26,
+        "birth_date": "2000-04-28",
+        "college": "Michigan State"
+      },
+      {
+        "player_id": "10223",
+        "espn_id": null,
+        "name": "Eric Gray",
+        "position": "RB",
+        "team": "NYG",
+        "age": 26,
+        "birth_date": "1999-11-04",
+        "college": "Oklahoma"
+      },
+      {
+        "player_id": "10228",
+        "espn_id": null,
+        "name": "Charlie Jones",
+        "position": "WR",
+        "team": "CIN",
+        "age": 27,
+        "birth_date": "1998-10-29",
+        "college": "Purdue"
+      },
+      {
+        "player_id": "1049",
+        "espn_id": 14876,
+        "name": "Ryan Tannehill",
+        "position": "QB",
+        "team": null,
+        "age": 35,
+        "birth_date": "1988-07-27",
+        "college": "Texas A&M"
+      },
+      {
+        "player_id": "10860",
+        "espn_id": null,
+        "name": "Malik Cunningham",
+        "position": "WR",
+        "team": "DET",
+        "age": 27,
+        "birth_date": "1998-10-06",
+        "college": "Louisville"
+      },
+      {
+        "player_id": "10870",
+        "espn_id": null,
+        "name": "Deneric Prince",
+        "position": "RB",
+        "team": null,
+        "age": 25,
+        "birth_date": "2000-04-11",
+        "college": "Tulsa"
+      },
+      {
+        "player_id": "10955",
+        "espn_id": null,
+        "name": "Chad Ryland",
+        "position": "K",
+        "team": "ARI",
+        "age": 26,
+        "birth_date": "1999-10-15",
+        "college": "Maryland"
+      },
+      {
+        "player_id": "4351",
+        "espn_id": 3134353,
+        "name": "Tim Patrick",
+        "position": "WR",
+        "team": "NYJ",
+        "age": 32,
+        "birth_date": "1993-11-23",
+        "college": "Utah"
+      },
+      {
+        "player_id": "4973",
+        "espn_id": 3924365,
+        "name": "Hayden Hurst",
+        "position": "TE",
+        "team": null,
+        "age": 31,
+        "birth_date": "1993-08-24",
+        "college": "South Carolina"
+      },
+      {
+        "player_id": "4988",
+        "espn_id": 3128720,
+        "name": "Nick Chubb",
+        "position": "RB",
+        "team": null,
+        "age": 30,
+        "birth_date": "1995-12-27",
+        "college": "Georgia"
+      },
+      {
+        "player_id": "5110",
+        "espn_id": 3115378,
+        "name": "Russell Gage",
+        "position": "WR",
+        "team": null,
+        "age": 29,
+        "birth_date": "1996-01-22",
+        "college": "LSU"
+      },
+      {
+        "player_id": "5374",
+        "espn_id": 3118892,
+        "name": "Justin Watson",
+        "position": "WR",
+        "team": "HOU",
+        "age": 30,
+        "birth_date": "1996-04-04",
+        "college": "Pennsylvania"
+      },
+      {
+        "player_id": "5848",
+        "espn_id": 4241372,
+        "name": "Marquise Brown",
+        "position": "WR",
+        "team": "PHI",
+        "age": 29,
+        "birth_date": "1997-06-04",
+        "college": "Oklahoma"
+      },
+      {
+        "player_id": "6770",
+        "espn_id": 3915511,
+        "name": "Joe Burrow",
+        "position": "QB",
+        "team": "CIN",
+        "age": 29,
+        "birth_date": "1996-12-10",
+        "college": "LSU"
+      },
+      {
+        "player_id": "6918",
+        "espn_id": 4243315,
+        "name": "Salvon Ahmed",
+        "position": "RB",
+        "team": "CHI",
+        "age": 27,
+        "birth_date": "1998-12-30",
+        "college": "Washington"
+      },
+      {
+        "player_id": "7564",
+        "espn_id": null,
+        "name": "Ja'Marr Chase",
+        "position": "WR",
+        "team": "CIN",
+        "age": 26,
+        "birth_date": "2000-03-01",
+        "college": "LSU"
+      },
+      {
+        "player_id": "7602",
+        "espn_id": null,
+        "name": "Kylen Granson",
+        "position": "TE",
+        "team": "TEN",
+        "age": 28,
+        "birth_date": "1998-03-27",
+        "college": "SMU"
+      },
+      {
+        "player_id": "8122",
+        "espn_id": null,
+        "name": "Zonovan Knight",
+        "position": "RB",
+        "team": "ARI",
+        "age": 25,
+        "birth_date": "2001-04-11",
+        "college": "North Carolina State"
+      },
+      {
+        "player_id": "8139",
+        "espn_id": null,
+        "name": "Zamir White",
+        "position": "RB",
+        "team": null,
+        "age": 26,
+        "birth_date": "1999-09-18",
+        "college": "Georgia"
+      },
+      {
+        "player_id": "8144",
+        "espn_id": null,
+        "name": "Chris Olave",
+        "position": "WR",
+        "team": "NO",
+        "age": 25,
+        "birth_date": "2000-06-27",
+        "college": "Ohio State"
+      },
+      {
+        "player_id": "8172",
+        "espn_id": null,
+        "name": "Greg Dulcich",
+        "position": "TE",
+        "team": "MIA",
+        "age": 26,
+        "birth_date": "2000-03-26",
+        "college": "UCLA"
+      },
+      {
+        "player_id": "8221",
+        "espn_id": null,
+        "name": "Keaontay Ingram",
+        "position": "RB",
+        "team": null,
+        "age": 26,
+        "birth_date": "1999-10-26",
+        "college": "USC"
+      },
+      {
+        "player_id": "9490",
+        "espn_id": null,
+        "name": "Tyler Scott",
+        "position": "WR",
+        "team": "LAR",
+        "age": 24,
+        "birth_date": "2001-10-12",
+        "college": "Cincinnati"
+      },
+      {
+        "player_id": "9493",
+        "espn_id": null,
+        "name": "Puka Nacua",
+        "position": "WR",
+        "team": "LAR",
+        "age": 25,
+        "birth_date": "2001-05-29",
+        "college": "BYU"
+      },
+      {
+        "player_id": "9499",
+        "espn_id": null,
+        "name": "Bryce Ford-Wheaton",
+        "position": "WR",
+        "team": null,
+        "age": 26,
+        "birth_date": "2000-03-09",
+        "college": "West Virginia"
+      },
+      {
+        "player_id": "9500",
+        "espn_id": null,
+        "name": "Josh Downs",
+        "position": "WR",
+        "team": "IND",
+        "age": 24,
+        "birth_date": "2001-08-12",
+        "college": "North Carolina"
+      },
+      {
+        "player_id": "9505",
+        "espn_id": null,
+        "name": "Deuce Vaughn",
+        "position": "RB",
+        "team": null,
+        "age": 24,
+        "birth_date": "2001-11-02",
+        "college": "Kansas State"
+      },
+      {
+        "player_id": "96",
+        "espn_id": 8439,
+        "name": "Aaron Rodgers",
+        "position": "QB",
+        "team": "PIT",
+        "age": 42,
+        "birth_date": "1983-12-02",
+        "college": "California"
+      },
+      {
+        "player_id": "9753",
+        "espn_id": null,
+        "name": "Zach Charbonnet",
+        "position": "RB",
+        "team": "SEA",
+        "age": 25,
+        "birth_date": "2001-01-08",
+        "college": "UCLA"
+      }
+    ]
+  },
+  {
+    "owner": "edgxrjiang",
+    "roster_id": 11,
+    "players": [
+      {
+        "player_id": "10216",
+        "espn_id": null,
+        "name": "Kenny McIntosh",
+        "position": "RB",
+        "team": "SEA",
+        "age": 26,
+        "birth_date": "2000-03-03",
+        "college": "Georgia"
+      },
+      {
+        "player_id": "10225",
+        "espn_id": null,
+        "name": "Jonathan Mingo",
+        "position": "WR",
+        "team": "DAL",
+        "age": 25,
+        "birth_date": "2001-04-20",
+        "college": "Ole Miss"
+      },
+      {
+        "player_id": "10444",
+        "espn_id": null,
+        "name": "Cedric Tillman",
+        "position": "WR",
+        "team": "CLE",
+        "age": 26,
+        "birth_date": "2000-04-19",
+        "college": "Tennessee"
+      },
+      {
+        "player_id": "10859",
+        "espn_id": null,
+        "name": "Sam LaPorta",
+        "position": "TE",
+        "team": "DET",
+        "age": 25,
+        "birth_date": "2001-01-12",
+        "college": "Iowa"
+      },
+      {
+        "player_id": "1466",
+        "espn_id": 15847,
+        "name": "Travis Kelce",
+        "position": "TE",
+        "team": "KC",
+        "age": 36,
+        "birth_date": "1989-10-05",
+        "college": "Cincinnati"
+      },
+      {
+        "player_id": "2711",
+        "espn_id": 2565969,
+        "name": "Taylor Heinicke",
+        "position": "QB",
+        "team": null,
+        "age": 32,
+        "birth_date": "1993-03-15",
+        "college": "Old Dominion"
+      },
+      {
+        "player_id": "2747",
+        "espn_id": 2473037,
+        "name": "Jason Myers",
+        "position": "K",
+        "team": "SEA",
+        "age": 35,
+        "birth_date": "1991-05-12",
+        "college": "Marist"
+      },
+      {
+        "player_id": "3257",
+        "espn_id": 2578570,
+        "name": "Jacoby Brissett",
+        "position": "QB",
+        "team": "ARI",
+        "age": 33,
+        "birth_date": "1992-12-11",
+        "college": "North Carolina State"
+      },
+      {
+        "player_id": "4144",
+        "espn_id": 3054212,
+        "name": "Jonnu Smith",
+        "position": "TE",
+        "team": null,
+        "age": 30,
+        "birth_date": "1995-08-22",
+        "college": "Florida International"
+      },
+      {
+        "player_id": "5892",
+        "espn_id": 4035538,
+        "name": "David Montgomery",
+        "position": "RB",
+        "team": "HOU",
+        "age": 29,
+        "birth_date": "1997-06-07",
+        "college": "Iowa State"
+      },
+      {
+        "player_id": "5906",
+        "espn_id": 3930086,
+        "name": "Dawson Knox",
+        "position": "TE",
+        "team": "BUF",
+        "age": 29,
+        "birth_date": "1996-11-14",
+        "college": "Ole Miss"
+      },
+      {
+        "player_id": "5955",
+        "espn_id": 3135321,
+        "name": "Hunter Renfrow",
+        "position": "WR",
+        "team": null,
+        "age": 30,
+        "birth_date": "1995-12-21",
+        "college": "Clemson"
+      },
+      {
+        "player_id": "5967",
+        "espn_id": 3916148,
+        "name": "Tony Pollard",
+        "position": "RB",
+        "team": "TEN",
+        "age": 29,
+        "birth_date": "1997-04-30",
+        "college": "Memphis"
+      },
+      {
+        "player_id": "6694",
+        "espn_id": 3139602,
+        "name": "D'Ernest Johnson",
+        "position": "RB",
+        "team": null,
+        "age": 29,
+        "birth_date": "1996-02-27",
+        "college": "South Florida"
+      },
+      {
+        "player_id": "6768",
+        "espn_id": 4241479,
+        "name": "Tua Tagovailoa",
+        "position": "QB",
+        "team": "ATL",
+        "age": 28,
+        "birth_date": "1998-03-02",
+        "college": "Alabama"
+      },
+      {
+        "player_id": "6790",
+        "espn_id": 4259545,
+        "name": "D'Andre Swift",
+        "position": "RB",
+        "team": "CHI",
+        "age": 27,
+        "birth_date": "1999-01-14",
+        "college": "Georgia"
+      },
+      {
+        "player_id": "6819",
+        "espn_id": 4035687,
+        "name": "Michael Pittman",
+        "position": "WR",
+        "team": "PIT",
+        "age": 28,
+        "birth_date": "1997-10-05",
+        "college": "USC"
+      },
+      {
+        "player_id": "6824",
+        "espn_id": 4258195,
+        "name": "Donovan Peoples-Jones",
+        "position": "WR",
+        "team": null,
+        "age": 26,
+        "birth_date": "1999-02-19",
+        "college": "Michigan"
+      },
+      {
+        "player_id": "6826",
+        "espn_id": 4258595,
+        "name": "Cole Kmet",
+        "position": "TE",
+        "team": "CHI",
+        "age": 27,
+        "birth_date": "1999-03-10",
+        "college": "Notre Dame"
+      },
+      {
+        "player_id": "6828",
+        "espn_id": 4239934,
+        "name": "AJ Dillon",
+        "position": "RB",
+        "team": "CAR",
+        "age": 28,
+        "birth_date": "1998-05-02",
+        "college": "Boston College"
+      },
+      {
+        "player_id": "6904",
+        "espn_id": 4040715,
+        "name": "Jalen Hurts",
+        "position": "QB",
+        "team": "PHI",
+        "age": 27,
+        "birth_date": "1998-08-07",
+        "college": "Oklahoma"
+      },
+      {
+        "player_id": "7049",
+        "espn_id": 3886598,
+        "name": "Jauan Jennings",
+        "position": "WR",
+        "team": "MIN",
+        "age": 28,
+        "birth_date": "1997-07-10",
+        "college": "Tennessee"
+      },
+      {
+        "player_id": "7670",
+        "espn_id": null,
+        "name": "Joshua Palmer",
+        "position": "WR",
+        "team": "BUF",
+        "age": 26,
+        "birth_date": "1999-09-22",
+        "college": "Tennessee"
+      },
+      {
+        "player_id": "7839",
+        "espn_id": null,
+        "name": "Evan McPherson",
+        "position": "K",
+        "team": "CIN",
+        "age": 26,
+        "birth_date": "1999-07-21",
+        "college": "Florida"
+      },
+      {
+        "player_id": "8167",
+        "espn_id": null,
+        "name": "Christian Watson",
+        "position": "WR",
+        "team": "GB",
+        "age": 27,
+        "birth_date": "1999-05-12",
+        "college": "North Dakota State"
+      },
+      {
+        "player_id": "9225",
+        "espn_id": null,
+        "name": "Tank Bigsby",
+        "position": "RB",
+        "team": "PHI",
+        "age": 23,
+        "birth_date": "2002-08-30",
+        "college": "Auburn"
+      },
+      {
+        "player_id": "9226",
+        "espn_id": null,
+        "name": "De'Von Achane",
+        "position": "RB",
+        "team": "MIA",
+        "age": 24,
+        "birth_date": "2001-10-13",
+        "college": "Texas A&M"
+      },
+      {
+        "player_id": "9227",
+        "espn_id": null,
+        "name": "Israel Abanikanda",
+        "position": "RB",
+        "team": "DAL",
+        "age": 23,
+        "birth_date": "2002-10-05",
+        "college": "Pittsburgh"
+      },
+      {
+        "player_id": "9506",
+        "espn_id": null,
+        "name": "Sean Tucker",
+        "position": "RB",
+        "team": "TB",
+        "age": 24,
+        "birth_date": "2001-10-25",
+        "college": "Syracuse"
+      },
+      {
+        "player_id": "9512",
+        "espn_id": null,
+        "name": "DeWayne McBride",
+        "position": "RB",
+        "team": null,
+        "age": 23,
+        "birth_date": "2001-07-08",
+        "college": "UAB"
+      }
+    ]
+  },
+  {
+    "owner": "ganathan",
+    "roster_id": 12,
+    "players": [
+      {
+        "player_id": "10229",
+        "espn_id": null,
+        "name": "Rashee Rice",
+        "position": "WR",
+        "team": "KC",
+        "age": 26,
+        "birth_date": "2000-04-22",
+        "college": "SMU"
+      },
+      {
+        "player_id": "10871",
+        "espn_id": null,
+        "name": "Luke Schoonmaker",
+        "position": "TE",
+        "team": "DAL",
+        "age": 27,
+        "birth_date": "1998-09-28",
+        "college": "Michigan"
+      },
+      {
+        "player_id": "11114",
+        "espn_id": null,
+        "name": "Elijah Dotson",
+        "position": "RB",
+        "team": null,
+        "age": 26,
+        "birth_date": "1999-01-19",
+        "college": "Northern Colorado"
+      },
+      {
+        "player_id": "11199",
+        "espn_id": null,
+        "name": "Emari Demercado",
+        "position": "RB",
+        "team": "KC",
+        "age": 27,
+        "birth_date": "1999-01-20",
+        "college": "TCU"
+      },
+      {
+        "player_id": "11292",
+        "espn_id": null,
+        "name": "Tommy DeVito",
+        "position": "QB",
+        "team": "NE",
+        "age": 27,
+        "birth_date": "1998-08-07",
+        "college": "Illinois"
+      },
+      {
+        "player_id": "2749",
+        "espn_id": 2576414,
+        "name": "Raheem Mostert",
+        "position": "RB",
+        "team": null,
+        "age": 33,
+        "birth_date": "1992-04-09",
+        "college": "Purdue"
+      },
+      {
+        "player_id": "3286",
+        "espn_id": 3043116,
+        "name": "Demarcus Robinson",
+        "position": "WR",
+        "team": "SF",
+        "age": 31,
+        "birth_date": "1994-09-21",
+        "college": "Florida"
+      },
+      {
+        "player_id": "3294",
+        "espn_id": 2577417,
+        "name": "Dak Prescott",
+        "position": "QB",
+        "team": "DAL",
+        "age": 32,
+        "birth_date": "1993-07-29",
+        "college": "Mississippi State"
+      },
+      {
+        "player_id": "3433",
+        "espn_id": 2977800,
+        "name": "Alex Erickson",
+        "position": "WR",
+        "team": null,
+        "age": 32,
+        "birth_date": "1992-11-06",
+        "college": "Wisconsin"
+      },
+      {
+        "player_id": "4033",
+        "espn_id": 3123076,
+        "name": "David Njoku",
+        "position": "TE",
+        "team": "LAC",
+        "age": 29,
+        "birth_date": "1996-07-10",
+        "college": "Miami (FL)"
+      },
+      {
+        "player_id": "4149",
+        "espn_id": 2980453,
+        "name": "Jamaal Williams",
+        "position": "RB",
+        "team": null,
+        "age": 29,
+        "birth_date": "1995-04-03",
+        "college": "BYU"
+      },
+      {
+        "player_id": "4195",
+        "espn_id": 3050478,
+        "name": "Jake Elliott",
+        "position": "K",
+        "team": "PHI",
+        "age": 31,
+        "birth_date": "1995-01-21",
+        "college": "Memphis"
+      },
+      {
+        "player_id": "4943",
+        "espn_id": 3912547,
+        "name": "Sam Darnold",
+        "position": "QB",
+        "team": "SEA",
+        "age": 29,
+        "birth_date": "1997-06-05",
+        "college": "USC"
+      },
+      {
+        "player_id": "4983",
+        "espn_id": 3915416,
+        "name": "DJ Moore",
+        "position": "WR",
+        "team": "BUF",
+        "age": 29,
+        "birth_date": "1997-04-14",
+        "college": "Maryland"
+      },
+      {
+        "player_id": "4984",
+        "espn_id": 3918298,
+        "name": "Josh Allen",
+        "position": "QB",
+        "team": "BUF",
+        "age": 30,
+        "birth_date": "1996-05-21",
+        "college": "Wyoming"
+      },
+      {
+        "player_id": "5846",
+        "espn_id": 4047650,
+        "name": "DK Metcalf",
+        "position": "WR",
+        "team": "PIT",
+        "age": 28,
+        "birth_date": "1997-12-14",
+        "college": "Ole Miss"
+      },
+      {
+        "player_id": "5872",
+        "espn_id": 3126486,
+        "name": "Deebo Samuel",
+        "position": "WR",
+        "team": null,
+        "age": 30,
+        "birth_date": "1996-01-15",
+        "college": "South Carolina"
+      },
+      {
+        "player_id": "6938",
+        "espn_id": 4240021,
+        "name": "Cam Akers",
+        "position": "RB",
+        "team": null,
+        "age": 26,
+        "birth_date": "1999-06-22",
+        "college": "Florida State"
+      },
+      {
+        "player_id": "7526",
+        "espn_id": null,
+        "name": "Jaylen Waddle",
+        "position": "WR",
+        "team": "DEN",
+        "age": 27,
+        "birth_date": "1998-11-25",
+        "college": "Alabama"
+      },
+      {
+        "player_id": "7527",
+        "espn_id": null,
+        "name": "Mac Jones",
+        "position": "QB",
+        "team": "SF",
+        "age": 27,
+        "birth_date": "1998-09-05",
+        "college": "Alabama"
+      },
+      {
+        "player_id": "7569",
+        "espn_id": null,
+        "name": "Nico Collins",
+        "position": "WR",
+        "team": "HOU",
+        "age": 27,
+        "birth_date": "1999-03-19",
+        "college": "Michigan"
+      },
+      {
+        "player_id": "7571",
+        "espn_id": null,
+        "name": "Rashod Bateman",
+        "position": "WR",
+        "team": "BAL",
+        "age": 26,
+        "birth_date": "1999-11-29",
+        "college": "Minnesota"
+      },
+      {
+        "player_id": "7611",
+        "espn_id": null,
+        "name": "Rhamondre Stevenson",
+        "position": "RB",
+        "team": "NE",
+        "age": 28,
+        "birth_date": "1998-02-23",
+        "college": "Oklahoma"
+      },
+      {
+        "player_id": "8140",
+        "espn_id": null,
+        "name": "Justyn Ross",
+        "position": "WR",
+        "team": null,
+        "age": 25,
+        "birth_date": "1999-12-15",
+        "college": "Clemson"
+      },
+      {
+        "player_id": "8147",
+        "espn_id": null,
+        "name": "John Metchie",
+        "position": "WR",
+        "team": "CAR",
+        "age": 25,
+        "birth_date": "2000-07-18",
+        "college": "Alabama"
+      },
+      {
+        "player_id": "8150",
+        "espn_id": null,
+        "name": "Kyren Williams",
+        "position": "RB",
+        "team": "LAR",
+        "age": 25,
+        "birth_date": "2000-08-26",
+        "college": "Notre Dame"
+      },
+      {
+        "player_id": "8408",
+        "espn_id": null,
+        "name": "Jordan Mason",
+        "position": "RB",
+        "team": "MIN",
+        "age": 27,
+        "birth_date": "1999-05-24",
+        "college": "Georgia Tech"
+      },
+      {
+        "player_id": "9231",
+        "espn_id": null,
+        "name": "Jaren Hall",
+        "position": "QB",
+        "team": null,
+        "age": 27,
+        "birth_date": "1998-03-24",
+        "college": "BYU"
+      },
+      {
+        "player_id": "9487",
+        "espn_id": null,
+        "name": "Parker Washington",
+        "position": "WR",
+        "team": "JAX",
+        "age": 24,
+        "birth_date": "2002-03-21",
+        "college": "Penn State"
+      },
+      {
+        "player_id": "9492",
+        "espn_id": null,
+        "name": "Trey Palmer",
+        "position": "WR",
+        "team": "NO",
+        "age": 25,
+        "birth_date": "2001-04-02",
+        "college": "Nebraska"
+      },
+      {
+        "player_id": "9508",
+        "espn_id": null,
+        "name": "Tyjae Spears",
+        "position": "RB",
+        "team": "TEN",
+        "age": 24,
+        "birth_date": "2001-06-15",
+        "college": "Tulane"
+      }
+    ]
+  }
+]

@@ -10,7 +10,7 @@ async function fetchJSON(url) {
 }
 export const api = {
     async getDraft(year)       { return D.draft[year] || []; },
-    async getRosters(year)     { return D.rosters || []; },
+    async getRosters(year)     { return year ? fetchJSON(`data/${year}/rosters.json`).catch(() => D.rosters || []) : D.rosters || []; },
     async getUsers(year)       { return D.users || []; },
     async getLeagueUsers()     {
         // Filter out co-managers (in league but never a roster owner)
