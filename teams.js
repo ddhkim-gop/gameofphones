@@ -25,6 +25,19 @@ let statsCache = {};
 let usersMap = {};
 const espnIdCache = {};
 
+// Global NFL news cache — fetched once, shared across all player card opens.
+// We pull a large batch from ESPN's general feed so even depth players get coverage.
+let _nflNewsPromise = null;
+function getNflNews() {
+    if (!_nflNewsPromise) {
+        _nflNewsPromise = Promise.all([
+            fetch("https://site.api.espn.com/apis/site/v2/sports/football/nfl/news?limit=150").then(r => r.json()).catch(() => ({})),
+            fetch("https://site.api.espn.com/apis/site/v2/sports/football/nfl/news?limit=150&offset=150").then(r => r.json()).catch(() => ({})),
+        ]).then(([a, b]) => [...(a.articles || []), ...(b.articles || [])]);
+    }
+    return _nflNewsPromise;
+}
+
 const POS_COLORS = {
     QB:  "#e74c82",
     RB:  "#3ecf8e",
@@ -308,15 +321,27 @@ async function lookupEspnId(name) {
     }
 }
 
+function filterArticlesForPlayer(articles, playerName) {
+    if (!playerName || !articles.length) return [];
+    const full = playerName.toLowerCase();
+    const parts = playerName.split(" ");
+    const last = parts[parts.length - 1].toLowerCase();
+    const first = parts[0].toLowerCase();
+    // Prefer full-name matches; fall back to last+first initial to reduce false positives
+    const fullMatches = articles.filter(a => {
+        const text = ((a.headline || "") + " " + (a.description || "")).toLowerCase();
+        return text.includes(full);
+    });
+    if (fullMatches.length) return fullMatches;
+    // Fall back: last name + first initial (e.g. "J. Allen" or "Josh Allen")
+    return articles.filter(a => {
+        const text = ((a.headline || "") + " " + (a.description || "")).toLowerCase();
+        return text.includes(last) && text.includes(first[0]);
+    });
+}
+
 function renderNews(articles, injuries, playerName) {
-    // Filter articles to only those mentioning the player by (last) name
-    const lastName = playerName ? playerName.split(" ").slice(-1)[0].toLowerCase() : null;
-    const relevant = lastName
-        ? articles.filter(a => {
-            const text = ((a.headline || "") + " " + (a.description || "")).toLowerCase();
-            return text.includes(lastName);
-          })
-        : articles;
+    const relevant = filterArticlesForPlayer(articles, playerName);
     // Only show articles that mention the player — no fallback to unrelated content
     const filtered = relevant;
     let html = "";
@@ -518,15 +543,10 @@ async function openPopover(element, player) {
     popover.style.display = "flex";
     positionPopover(popover, element);
 
-    const espnId = player.espn_id || await lookupEspnId(player.name);
+    // Kick off global NFL news fetch immediately (cached after first call)
+    const globalNewsPromise = getNflNews();
 
-    if (!espnId) {
-        const rp = document.getElementById("espn-stats-rank-placeholder");
-        if (rp) rp.remove();
-        document.getElementById("espn-stats").innerHTML = `<div class="pc-section-title">Career Stats</div><div style="color:#5a6070;font-size:12px;">Not available</div>`;
-        document.getElementById("espn-news").innerHTML = `<div class="pc-section-title">Latest News</div><div style="color:#5a6070;font-size:12px;">Not available</div>`;
-        return;
-    }
+    const espnId = player.espn_id || await lookupEspnId(player.name);
 
     if (!player.espn_id && espnId) {
         const img = popover.querySelector(".pc-headshot");
@@ -534,58 +554,73 @@ async function openPopover(element, player) {
     }
 
     try {
-        const [statsData, newsData, athleteData] = await Promise.all([
-            fetch(`https://site.api.espn.com/apis/common/v3/sports/football/nfl/athletes/${espnId}/stats`).then(r => r.json()),
-            fetch(`https://site.api.espn.com/apis/site/v2/sports/football/nfl/news?athlete=${espnId}`).then(r => r.json()),
-            fetch(`https://site.api.espn.com/apis/common/v3/sports/football/nfl/athletes/${espnId}`).then(r => r.json()),
+        // Fetch ESPN data — stats & athlete-specific news require espnId; global news always runs
+        const [statsData, athleteNewsData, athleteData, globalArticles] = await Promise.all([
+            espnId ? fetch(`https://site.api.espn.com/apis/common/v3/sports/football/nfl/athletes/${espnId}/stats`).then(r => r.json()).catch(() => ({})) : Promise.resolve({}),
+            espnId ? fetch(`https://site.api.espn.com/apis/site/v2/sports/football/nfl/news?athlete=${espnId}&limit=20`).then(r => r.json()).catch(() => ({})) : Promise.resolve({}),
+            espnId ? fetch(`https://site.api.espn.com/apis/common/v3/sports/football/nfl/athletes/${espnId}`).then(r => r.json()).catch(() => ({})) : Promise.resolve({}),
+            globalNewsPromise,
         ]);
 
         const statsEl = document.getElementById("espn-stats");
-        const categories = statsData.categories || [];
-        const catPriority = { QB:"Passing", RB:"Rushing", WR:"Receiving", TE:"Receiving", K:"Scoring" };
-        const cat = categories.find(c => c.displayName === catPriority[pos]) || categories[0];
 
-        // Build a map of season year → position rank from local statsCache
-        const rankByYear = {};
-        for (const yr of YEARS) {
-            const stat = statsCache?.[yr]?.[pid];
-            if (stat?.rank > 0) rankByYear[yr] = `${stat.position || p.position}${stat.rank}`;
-        }
+        if (espnId) {
+            const categories = statsData.categories || [];
+            const catPriority = { QB:"Passing", RB:"Rushing", WR:"Receiving", TE:"Receiving", K:"Scoring" };
+            const cat = categories.find(c => c.displayName === catPriority[pos]) || categories[0];
 
-        // Remove the rank placeholder div now that we have data
-        const rankPlaceholder = document.getElementById("espn-stats-rank-placeholder");
-        if (rankPlaceholder) rankPlaceholder.remove();
+            // Build a map of season year → position rank from local statsCache
+            const rankByYear = {};
+            for (const yr of YEARS) {
+                const stat = statsCache?.[yr]?.[pid];
+                if (stat?.rank > 0) rankByYear[yr] = `${stat.position || p.position}${stat.rank}`;
+            }
 
-        if (cat && cat.statistics?.length) {
-            const keyStats = { QB:[0,2,4,6,7,10], RB:[0,1,2,4,5,6], WR:[0,1,2,3,4,5], TE:[0,1,2,3,4,5], K:[0,1,2,3] };
-            const indices = keyStats[pos] || [0,1,2,3,4];
-            const labels = indices.map(i => cat.labels?.[i]).filter(Boolean);
-            const seasons = [...cat.statistics].reverse().slice(0, 8);
-            const rows = seasons.map(s => {
-                const yr = s.season?.year ? String(s.season.year) : "";
-                const rank = rankByYear[yr] ? `<td style="font-weight:700;color:#f0f1f3;">${rankByYear[yr]}</td>` : `<td style="color:#5a6070;">—</td>`;
-                const vals = indices.map(i => s.stats?.[i] ?? "—").join("</td><td>");
-                return `<tr><td>${s.season?.displayName ?? ""}</td>${rank}<td>${vals}</td></tr>`;
-            }).join("");
-            const totals = indices.map(i => cat.totals?.[i] ?? "—").join("</td><td>");
+            // Remove the rank placeholder div now that we have data
+            const rankPlaceholder = document.getElementById("espn-stats-rank-placeholder");
+            if (rankPlaceholder) rankPlaceholder.remove();
 
-            statsEl.innerHTML = `
-                <div class="pc-section-title">${cat.displayName} — Career</div>
-                <div style="overflow-x:auto;">
-                    <table class="pc-stats-table">
-                        <thead><tr><th style="text-align:left;">Year</th><th>Rank</th>${labels.map(l => `<th>${l}</th>`).join("")}</tr></thead>
-                        <tbody>${rows}<tr><td>Career</td><td>—</td><td>${totals}</td></tr></tbody>
-                    </table>
-                </div>`;
+            if (cat && cat.statistics?.length) {
+                const keyStats = { QB:[0,2,4,6,7,10], RB:[0,1,2,4,5,6], WR:[0,1,2,3,4,5], TE:[0,1,2,3,4,5], K:[0,1,2,3] };
+                const indices = keyStats[pos] || [0,1,2,3,4];
+                const labels = indices.map(i => cat.labels?.[i]).filter(Boolean);
+                const seasons = [...cat.statistics].reverse().slice(0, 8);
+                const rows = seasons.map(s => {
+                    const yr = s.season?.year ? String(s.season.year) : "";
+                    const rank = rankByYear[yr] ? `<td style="font-weight:700;color:#f0f1f3;">${rankByYear[yr]}</td>` : `<td style="color:#5a6070;">—</td>`;
+                    const vals = indices.map(i => s.stats?.[i] ?? "—").join("</td><td>");
+                    return `<tr><td>${s.season?.displayName ?? ""}</td>${rank}<td>${vals}</td></tr>`;
+                }).join("");
+                const totals = indices.map(i => cat.totals?.[i] ?? "—").join("</td><td>");
+
+                statsEl.innerHTML = `
+                    <div class="pc-section-title">${cat.displayName} — Career</div>
+                    <div style="overflow-x:auto;">
+                        <table class="pc-stats-table">
+                            <thead><tr><th style="text-align:left;">Year</th><th>Rank</th>${labels.map(l => `<th>${l}</th>`).join("")}</tr></thead>
+                            <tbody>${rows}<tr><td>Career</td><td>—</td><td>${totals}</td></tr></tbody>
+                        </table>
+                    </div>`;
+            } else {
+                statsEl.innerHTML = `<div class="pc-section-title">Career Stats</div><div style="color:#5a6070;font-size:12px;">No stats available</div>`;
+            }
         } else {
-            statsEl.innerHTML = `<div class="pc-section-title">Career Stats</div><div style="color:#5a6070;font-size:12px;">No stats available</div>`;
+            const rp = document.getElementById("espn-stats-rank-placeholder");
+            if (rp) rp.remove();
+            statsEl.innerHTML = `<div class="pc-section-title">Career Stats</div><div style="color:#5a6070;font-size:12px;">Not available</div>`;
         }
 
-        const articles = newsData.articles || [];
+        // Merge athlete-specific + global news, deduplicate by headline, filter by player name
+        const athleteArticles = athleteNewsData.articles || [];
+        const seen = new Set(athleteArticles.map(a => a.headline));
+        const merged = [
+            ...athleteArticles,
+            ...globalArticles.filter(a => !seen.has(a.headline)),
+        ];
         const injuries = athleteData.athlete?.injuries || [];
         document.getElementById("espn-news").innerHTML = `
             <div class="pc-section-title">Latest News</div>
-            ${renderNews(articles, injuries, player.name)}`;
+            ${renderNews(merged, injuries, player.name)}`;
 
         // Re-clamp position after content loaded (height changed)
         positionPopover(popover, element);
