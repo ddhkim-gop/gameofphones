@@ -78,15 +78,17 @@ function recordStr(weekStr, owner) {
     return `${rec.w}-${rec.l}`;
 }
 
-function renderLineup(starters) {
+function renderLineup(starters, weekStats) {
     if (!starters || !starters.length) return `<div style="color:#5a6070;font-size:12px;padding:8px 0;">No lineup data</div>`;
     return starters.map(s => {
         const pts = s.points != null ? s.points.toFixed(1) : "—";
         const clr = posColor(s.position);
+        // Use team from weekly stats (historically accurate for that week) with fallbacks
+        const nflTeam = weekStats?.[s.player_id]?.team || s.nfl_team || "";
         return `<div class="mu-player-row">
             <span class="mu-pos-badge" style="background:${clr};">${s.position||"?"}</span>
             <span class="mu-player-name">${s.name||"Unknown"}</span>
-            ${s.nfl_team ? `<img src="https://a.espncdn.com/i/teamlogos/nfl/500-dark/${s.nfl_team.toLowerCase()}.png" style="width:13px;height:13px;object-fit:contain;flex-shrink:0;" onerror="this.style.display='none'">` : ""}
+            ${nflTeam ? `<img src="https://a.espncdn.com/i/teamlogos/nfl/500-dark/${nflTeam.toLowerCase()}.png" style="width:13px;height:13px;object-fit:contain;flex-shrink:0;" onerror="this.style.display='none'">` : ""}
             <span class="mu-player-pts" style="color:${+pts > 0 ? '#f0f1f3' : '#5a6070'};">${pts}</span>
         </div>`;
     }).join("");
@@ -297,7 +299,7 @@ function renderMatchup(matchup, weekStr, weekStats) {
                     : `<span style="font-size:9px;font-weight:800;color:#f87171;background:#2b0d0d;border-radius:4px;padding:2px 5px;flex-shrink:0;">L</span>`}
             </div>
             <div style="font-size:10px;font-weight:700;text-transform:uppercase;letter-spacing:.06em;color:#5a6070;margin:8px 0 4px;">Starters</div>
-            ${renderLineup(team.starters)}
+            ${renderLineup(team.starters, weekStats)}
             <div style="text-align:right;margin-top:6px;font-size:11px;color:#5a6070;">Total: <strong style="color:#c9cdd4;">${(team.points||0).toFixed(2)}</strong></div>
         </div>`;
     };
