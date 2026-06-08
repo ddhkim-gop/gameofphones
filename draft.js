@@ -227,9 +227,14 @@ function renderDraft(picks) {
             </div>`;
     }).join("");
 
+    const boardWidth = 40 + nTeams * (COL_W + 5);
+    // Cap the top bar (year select + position stats) to the same width as the draft board
+    const topBar = document.querySelector("#draft-container")?.previousElementSibling;
+    if (topBar) topBar.style.maxWidth = boardWidth + "px";
+
     container.innerHTML = `
         <div style="overflow-x:auto;-webkit-overflow-scrolling:touch;padding-bottom:8px;">
-            <div style="min-width:${40 + nTeams * (COL_W + 5)}px;">
+            <div style="min-width:${boardWidth}px;">
                 <div style="display:grid;grid-template-columns:40px repeat(${nTeams},${COL_W}px);gap:5px;margin-bottom:2px;">
                     <div></div>
                     ${headerCells}

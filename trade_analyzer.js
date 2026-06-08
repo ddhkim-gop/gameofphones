@@ -532,7 +532,7 @@ async function init() {
     <div class="filter-bar" style="margin-bottom:8px;display:flex;gap:10px;flex-wrap:wrap;align-items:center;">
         <select id="ta-year">${YEARS.map(y => `<option value="${y}"${y===selectedYear?" selected":""}>${y}</option>`).join("")}</select>
         <div id="taUserFilterWrap"></div>
-        <label style="display:flex;align-items:center;gap:6px;font-size:13px;color:#8b9099;cursor:pointer;margin-left:auto;">
+        <label style="display:flex;align-items:center;gap:6px;font-size:13px;color:#8b9099;cursor:pointer;">
             <input type="checkbox" id="ta-preseason"> Show pre-season trades
         </label>
     </div>
