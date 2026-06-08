@@ -349,9 +349,6 @@ main {
     /* Filter bar wraps and uses smaller text */
     .filter-bar { gap: 6px; margin-bottom: 14px; }
     .filter-bar select { font-size: 12px; padding: 6px 26px 6px 10px; }
-
-    /* Draft select at top of draft page */
-    #yearSelect { width: 100%; }
 }
 
 /* ── Small mobile ≤ 400px ──────────────────────────────────── */

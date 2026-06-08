@@ -4,14 +4,30 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Draft</title>
-    <link rel="stylesheet" href="style.css?v=20260608a">
+    <link rel="stylesheet" href="style.css?v=20260608b">
+    <style>
+        #draft-top-bar { display:flex; align-items:flex-start; gap:16px; margin-bottom:10px; }
+        /* Position stat boxes */
+        #position-stats > div > div {
+            padding: 8px 6px;
+        }
+        @media (max-width: 600px) {
+            #draft-top-bar { gap: 8px; align-items: center; }
+            #yearSelect { flex-shrink: 0; }
+            #position-stats > div { gap: 3px !important; }
+            #position-stats > div > div { padding: 6px 3px !important; border-radius: 6px !important; }
+            #position-stats > div > div > div:first-child { font-size: 7px !important; margin-bottom: 1px !important; }
+            #position-stats > div > div > div:nth-child(2) { font-size: 14px !important; line-height: 1 !important; }
+            #position-stats > div > div > div:nth-child(3) { display: none; }
+        }
+    </style>
 </head>
 <body>
 <div id="nav"></div>
 <main>
     <h1>Draft</h1>
 
-    <div style="display:flex;align-items:flex-start;gap:16px;margin-bottom:10px;">
+    <div id="draft-top-bar">
         <select id="yearSelect">
             <option value="2026">2026</option>
             <option value="2025">2025</option>
