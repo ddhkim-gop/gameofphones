@@ -36,7 +36,7 @@ async function init() {
 
     try {
         const [rosters, leagueUsers, tradedPicks, allTransactions, seasonHistory,
-               draft2023, draft2024, draft2025, draft2026] = await Promise.all([
+               draft2023, draft2024, draft2025, draft2026, playerValues] = await Promise.all([
             api.getRosters("2026"),
             api.getLeagueUsers(),
             api.getTradedPicks(),
@@ -46,6 +46,7 @@ async function init() {
             api.getDraft("2024"),
             api.getDraft("2025"),
             api.getDraft("2026"),
+            api.getPlayerValues(),
         ]);
         const draftByYear = { "2023": draft2023, "2024": draft2024, "2025": draft2025, "2026": draft2026 };
 
@@ -146,7 +147,12 @@ async function init() {
             grouped[pos].push(p);
         });
         Object.keys(grouped).forEach(pos => {
-            grouped[pos].sort((a,b) => ((a.search_rank??999999)-(b.search_rank??999999)));
+            grouped[pos].sort((a,b) => {
+                const av = (playerValues[a.name]?.ktc ?? 0);
+                const bv = (playerValues[b.name]?.ktc ?? 0);
+                if (av !== bv) return bv - av; // KTC descending
+                return (a.search_rank??999999) - (b.search_rank??999999);
+            });
         });
         const sortedPos = POS_ORDER.filter(p => grouped[p])
             .concat(Object.keys(grouped).filter(p => !POS_ORDER.includes(p)));
@@ -264,17 +270,40 @@ async function init() {
             </div>`;
         }).join("");
 
+        // KTC value color helper
+        function ktcColor(v) {
+            if (v >= 8000) return "#3ecf8e";
+            if (v >= 6000) return "#4299e1";
+            if (v >= 4000) return "#a78bfa";
+            if (v >= 2000) return "#f6ad55";
+            return "#5a6070";
+        }
+        function fmtApy(apy) {
+            if (!apy) return null;
+            if (apy >= 1000000) return `$${(apy/1000000).toFixed(1).replace(/\.0$/,'')}M`;
+            if (apy >= 1000) return `$${Math.round(apy/1000)}K`;
+            return `$${apy}`;
+        }
+
         // Roster rows
         const rosterHtml = sortedPos.map(pos => {
             const header = `<div style="font-size:10px;font-weight:700;text-transform:uppercase;letter-spacing:.07em;color:#5a6070;margin:12px 0 4px;">${pos}</div>`;
             const rows = grouped[pos].map(p => {
+                const pv = playerValues[p.name] || {};
                 const badge = `<span style="background:${posColor(p.position)};color:#fff;font-size:10px;font-weight:800;padding:2px 0;border-radius:4px;width:30px;text-align:center;flex-shrink:0;">${p.position||'?'}</span>`;
                 const rookieBadge = p.years_exp === 0 ? `<span style="font-size:9px;font-weight:700;color:#f6ad55;background:rgba(246,173,85,.15);padding:1px 5px;border-radius:3px;">R</span>` : '';
                 const teamLogo = p.team ? `<img src="https://sleepercdn.com/images/team_logos/nfl/${p.team.toLowerCase()}.jpg" style="width:18px;height:18px;object-fit:contain;opacity:.8;" onerror="this.style.display='none'">` : '';
+                // KTC badge
+                const ktcBadge = pv.ktc ? `<span style="font-size:10px;font-weight:700;color:${ktcColor(pv.ktc)};min-width:34px;text-align:right;flex-shrink:0;">${pv.ktc.toLocaleString()}</span>` : '';
+                // Contract
+                const apyFmt = fmtApy(pv.apy);
+                const contractStr = apyFmt ? `<span style="font-size:10px;color:#5a6070;flex-shrink:0;">${apyFmt}${pv.years ? `·${pv.years}yr` : ''}</span>` : '';
                 return `<div style="display:flex;align-items:center;gap:8px;padding:6px 8px;background:#252830;border-radius:8px;margin-bottom:3px;">
                     ${badge}
-                    <span style="font-size:13px;font-weight:600;color:#f0f1f3;flex:1;">${p.name}${rookieBadge}</span>
+                    <span style="font-size:13px;font-weight:600;color:#f0f1f3;flex:1;min-width:0;overflow:hidden;text-overflow:ellipsis;white-space:nowrap;">${p.name}${rookieBadge}</span>
                     ${teamLogo}
+                    ${contractStr}
+                    ${ktcBadge}
                 </div>`;
             }).join("");
             return header + rows;

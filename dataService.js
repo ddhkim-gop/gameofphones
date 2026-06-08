@@ -2,21 +2,16 @@ const D = window.__STATIC_DATA__;
 const _cache = {};
 async function fetchJSON(url) {
     if (_cache[url]) return _cache[url];
-    const r = await fetch(url, { cache: 'no-cache' });
-    if (!r.ok) throw new Error(`HTTP ${r.status} fetching ${url}`);
+    const r = await fetch(url);
     const j = await r.json();
     _cache[url] = j;
     return j;
 }
 export const api = {
     async getDraft(year)       { return D.draft[year] || []; },
-    async getRosters(year)     { return year ? fetchJSON(`data/${year}/rosters.json`).catch(() => D.rosters || []) : D.rosters || []; },
+    async getRosters(year)     { return D.rosters || []; },
     async getUsers(year)       { return D.users || []; },
-    async getLeagueUsers()     {
-        // Filter out co-managers (in league but never a roster owner)
-        const rosterOwners = new Set((D.rosters || []).map(r => r.owner).filter(Boolean));
-        return (D.league_users || []).filter(u => rosterOwners.has(u.username));
-    },
+    async getLeagueUsers()     { return D.league_users || []; },
     async getTransactions()    { return D.transactions || []; },
     async getStandings()       { return D.standings || []; },
     async getHeadToHead()      { return D.head_to_head || []; },
@@ -26,4 +21,5 @@ export const api = {
     async getTradedPicks()     { return D.traded_picks || []; },
     async getDivisions()       { return D.divisions || {}; },
     async getPlayerNameMap()   { return D.player_name_map || {}; },
+    async getPlayerValues()    { return D.player_values || {}; },
 };

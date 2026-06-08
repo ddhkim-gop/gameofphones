@@ -67,11 +67,12 @@ async function init() {
     const container = document.getElementById("teams-container");
     container.innerHTML = `<div style="color:#8b9099;padding:20px;">Loading...</div>`;
 
-    const [rosters, tradedPicks, leagueUsers, txData] = await Promise.all([
+    const [rosters, tradedPicks, leagueUsers, txData, playerValues] = await Promise.all([
         api.getRosters("2026"),
         api.getTradedPicks(),
         api.getLeagueUsers(),
         api.getTransactions(),
+        api.getPlayerValues(),
     ]);
     allTransactions = txData || [];
     await loadPlayerStats();
@@ -193,13 +194,13 @@ async function init() {
             grouped[pos].push(p);
         });
 
-        // Sort within each position by search_rank (ADP proxy), fallback to value score
+        // Sort within each position by KTC dynasty value desc, fallback to search_rank
         Object.keys(grouped).forEach(pos => {
             grouped[pos].sort((a, b) => {
-                const ra = a.search_rank ?? 999999;
-                const rb = b.search_rank ?? 999999;
-                if (ra !== rb) return ra - rb;
-                return playerValueScore(b) - playerValueScore(a);
+                const av = (playerValues[a.name]?.ktc ?? 0);
+                const bv = (playerValues[b.name]?.ktc ?? 0);
+                if (av !== bv) return bv - av;
+                return (a.search_rank ?? 999999) - (b.search_rank ?? 999999);
             });
         });
 
@@ -237,6 +238,8 @@ async function init() {
                     nameSpan.appendChild(rookie);
                 }
 
+                const pv = playerValues[p.name] || {};
+
                 const metaSpan = document.createElement("span");
                 metaSpan.style.cssText = "font-size:11px;color:#5a6070;flex-shrink:0;white-space:nowrap;display:flex;align-items:center;gap:4px;";
                 const ageDecimal = calcAgeDecimal(p.birth_date);
@@ -250,6 +253,24 @@ async function init() {
                     metaSpan.appendChild(logoEl);
                 }
                 if (ageStr) metaSpan.appendChild(document.createTextNode(ageStr));
+
+                // Contract APY
+                if (pv.apy) {
+                    const apy = pv.apy >= 1000000 ? `${(pv.apy/1000000).toFixed(1).replace(/\.0$/,'')}M` : pv.apy >= 1000 ? `${Math.round(pv.apy/1000)}K` : `${pv.apy}`;
+                    const contractEl = document.createElement("span");
+                    contractEl.style.cssText = "font-size:10px;color:#5a6070;flex-shrink:0;";
+                    contractEl.textContent = `${apy}${pv.years ? `·${pv.years}yr` : ''}`;
+                    metaSpan.appendChild(contractEl);
+                }
+
+                // KTC value badge
+                if (pv.ktc) {
+                    const ktcColor = pv.ktc >= 8000 ? "#3ecf8e" : pv.ktc >= 6000 ? "#4299e1" : pv.ktc >= 4000 ? "#a78bfa" : pv.ktc >= 2000 ? "#f6ad55" : "#5a6070";
+                    const ktcEl = document.createElement("span");
+                    ktcEl.style.cssText = `font-size:10px;font-weight:700;color:${ktcColor};min-width:34px;text-align:right;flex-shrink:0;`;
+                    ktcEl.textContent = pv.ktc.toLocaleString();
+                    metaSpan.appendChild(ktcEl);
+                }
 
                 row.appendChild(badge);
                 row.appendChild(nameSpan);

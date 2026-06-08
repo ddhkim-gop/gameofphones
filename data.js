@@ -64221,5 +64221,18605 @@ window.__STATIC_DATA__ = {
     "Brady Cook": "12538",
     "Shedeur Sanders": "12524",
     "Charlie Smyth": "11653"
+  },
+  "player_values": {
+    "Evan Anderson": {
+      "apy": 1005000,
+      "years": 1,
+      "guaranteed": 0,
+      "total_value": 1005000
+    },
+    "Samori Toure": {
+      "apy": 1075000,
+      "years": 1,
+      "guaranteed": 0,
+      "total_value": 1075000
+    },
+    "Wayne Matthews": {
+      "apy": 1033333,
+      "years": 3,
+      "guaranteed": 0,
+      "total_value": 3100000
+    },
+    "Jalon Daniels": {
+      "apy": 1041667,
+      "years": 3,
+      "guaranteed": 272500,
+      "total_value": 3125000
+    },
+    "Chris Stoll": {
+      "apy": 1452500,
+      "years": 2,
+      "guaranteed": 1200000,
+      "total_value": 2905000
+    },
+    "Malik Verdon": {
+      "apy": 991667,
+      "years": 3,
+      "guaranteed": 244000,
+      "total_value": 2975000
+    },
+    "Quincy Williams": {
+      "apy": 6500000,
+      "years": 2,
+      "guaranteed": 9000000,
+      "total_value": 13000000
+    },
+    "Cameron Heyward": {
+      "apy": 18000000,
+      "years": 1,
+      "guaranteed": 16250000,
+      "total_value": 18000000
+    },
+    "Seydou Traore": {
+      "apy": 1189869,
+      "years": 4,
+      "guaranteed": 379476,
+      "total_value": 4759476
+    },
+    "Mohamed Kamara": {
+      "apy": 1132500,
+      "years": 2,
+      "guaranteed": 0,
+      "total_value": 2265000
+    },
+    "Mazi Smith": {
+      "apy": 3318674,
+      "years": 4,
+      "guaranteed": 13274694,
+      "total_value": 13274694
+    },
+    "Bryson Green": {
+      "apy": 885000,
+      "years": 1,
+      "guaranteed": 0,
+      "total_value": 885000
+    },
+    "Kaden Elliss": {
+      "apy": 11000000,
+      "years": 3,
+      "guaranteed": 23000000,
+      "total_value": 33000000
+    },
+    "Derrick Nnadi": {
+      "apy": 1487500,
+      "years": 1,
+      "guaranteed": 537500,
+      "total_value": 1487500
+    },
+    "Harrison Mevis": {
+      "apy": 1005000,
+      "years": 1,
+      "guaranteed": 0,
+      "total_value": 1005000
+    },
+    "D.J. Reader": {
+      "apy": 6250000,
+      "years": 2,
+      "guaranteed": 5250000,
+      "total_value": 12500000
+    },
+    "John Simpson": {
+      "apy": 10000000,
+      "years": 3,
+      "guaranteed": 17500000,
+      "total_value": 30000000
+    },
+    "Trevor Penning": {
+      "apy": 3500000,
+      "years": 1,
+      "guaranteed": 3500000,
+      "total_value": 3500000
+    },
+    "Skylar Thompson": {
+      "apy": 1145000,
+      "years": 1,
+      "guaranteed": 0,
+      "total_value": 1145000
+    },
+    "Tommy Dunn": {
+      "apy": 1035000,
+      "years": 3,
+      "guaranteed": 50000,
+      "total_value": 3105000
+    },
+    "Ashtyn Davis": {
+      "apy": 1750000,
+      "years": 1,
+      "guaranteed": 285000,
+      "total_value": 1750000
+    },
+    "Jarrick Bernard-Converse": {
+      "apy": 1087500,
+      "years": 2,
+      "guaranteed": 0,
+      "total_value": 2175000
+    },
+    "Sean Clifford": {
+      "apy": 1075000,
+      "years": 1,
+      "guaranteed": 0,
+      "total_value": 1075000
+    },
+    "Kenyon Sadiq": {
+      "ktc": 4789,
+      "ktc_rank": 90,
+      "apy": 5586076,
+      "years": 4,
+      "guaranteed": 22344304,
+      "total_value": 22344304
+    },
+    "Demetrius Flannigan-Fowles": {
+      "apy": 1215000,
+      "years": 1,
+      "guaranteed": 0,
+      "total_value": 1215000
+    },
+    "Oronde Gadsden": {
+      "ktc": 4536,
+      "ktc_rank": 109
+    },
+    "Donovan Ezeiruaku": {
+      "apy": 2538773,
+      "years": 4,
+      "guaranteed": 8775723,
+      "total_value": 10155090
+    },
+    "Malik Mustapha": {
+      "apy": 1189734,
+      "years": 4,
+      "guaranteed": 738936,
+      "total_value": 4758936
+    },
+    "Decamerion Richardson": {
+      "apy": 1205254,
+      "years": 4,
+      "guaranteed": 801016,
+      "total_value": 4821016
+    },
+    "Keionte Scott": {
+      "apy": 1387164,
+      "years": 4,
+      "guaranteed": 1168656,
+      "total_value": 5548656
+    },
+    "Jaxson Moi": {
+      "apy": 1035167,
+      "years": 3,
+      "guaranteed": 5500,
+      "total_value": 3105500
+    },
+    "Bobby Brown III": {
+      "apy": 7000000,
+      "years": 3,
+      "guaranteed": 6800000,
+      "total_value": 21000000
+    },
+    "Denzel Boston": {
+      "ktc": 4317,
+      "ktc_rank": 120,
+      "apy": 3096399,
+      "years": 4,
+      "guaranteed": 12385596,
+      "total_value": 12385596
+    },
+    "Anderson Castle": {
+      "apy": 1033333,
+      "years": 3,
+      "guaranteed": 0,
+      "total_value": 3100000
+    },
+    "Tyler Miller": {
+      "apy": 1040000,
+      "years": 3,
+      "guaranteed": 265000,
+      "total_value": 3120000
+    },
+    "Mason Rudolph": {
+      "ktc": 414,
+      "ktc_rank": 482,
+      "apy": 3750000,
+      "years": 2,
+      "guaranteed": 3000000,
+      "total_value": 7500000
+    },
+    "Adin Huntington": {
+      "apy": 995000,
+      "years": 3,
+      "guaranteed": 180000,
+      "total_value": 2985000
+    },
+    "James Mitchell": {
+      "apy": 1655000,
+      "years": 1,
+      "guaranteed": 590000,
+      "total_value": 1655000
+    },
+    "Mark Perry": {
+      "apy": 885000,
+      "years": 1,
+      "guaranteed": 0,
+      "total_value": 885000
+    },
+    "Jacob Parrish": {
+      "apy": 1587162,
+      "years": 4,
+      "guaranteed": 1257196,
+      "total_value": 6348646
+    },
+    "2026 Early 4th": {
+      "ktc": 2044,
+      "ktc_rank": 314
+    },
+    "Lane Johnson": {
+      "apy": 25000000,
+      "years": 1,
+      "guaranteed": 25000000,
+      "total_value": 25000000
+    },
+    "Demond Claiborne": {
+      "ktc": 2142,
+      "ktc_rank": 293,
+      "apy": 1163395,
+      "years": 4,
+      "guaranteed": 273580,
+      "total_value": 4653580
+    },
+    "Oronde Gadsden II": {
+      "apy": 1143509,
+      "years": 4,
+      "guaranteed": 374036,
+      "total_value": 4574036
+    },
+    "Christian Rozeboom": {
+      "apy": 1550000,
+      "years": 1,
+      "guaranteed": 950000,
+      "total_value": 1550000
+    },
+    "Drake Jackson": {
+      "apy": 1402500,
+      "years": 1,
+      "guaranteed": 500000,
+      "total_value": 1402500
+    },
+    "Jeshaun Jones": {
+      "apy": 885000,
+      "years": 1,
+      "guaranteed": 0,
+      "total_value": 885000
+    },
+    "Kerby Joseph": {
+      "apy": 21250000,
+      "years": 4,
+      "guaranteed": 23121000,
+      "total_value": 85000000
+    },
+    "Austin Corbett": {
+      "apy": 1487500,
+      "years": 1,
+      "guaranteed": 1262500,
+      "total_value": 1487500
+    },
+    "Caleb Etienne": {
+      "apy": 885000,
+      "years": 1,
+      "guaranteed": 0,
+      "total_value": 885000
+    },
+    "Tavius Robinson": {
+      "apy": 1140141,
+      "years": 4,
+      "guaranteed": 720564,
+      "total_value": 4560564
+    },
+    "Marvin Harrison Jr.": {
+      "ktc": 5663,
+      "ktc_rank": 61,
+      "apy": 8843686,
+      "years": 4,
+      "guaranteed": 35374742,
+      "total_value": 35374742
+    },
+    "2028 Early 4th": {
+      "ktc": 1879,
+      "ktc_rank": 332
+    },
+    "Ty Okada": {
+      "apy": 1145000,
+      "years": 1,
+      "guaranteed": 0,
+      "total_value": 1145000
+    },
+    "Dan Villari": {
+      "apy": 1048333,
+      "years": 3,
+      "guaranteed": 45000,
+      "total_value": 3145000
+    },
+    "2028 Mid 3rd": {
+      "ktc": 2454,
+      "ktc_rank": 259
+    },
+    "Andrew Stueber": {
+      "apy": 1005000,
+      "years": 1,
+      "guaranteed": 0,
+      "total_value": 1005000
+    },
+    "Jaylin Lane": {
+      "ktc": 2380,
+      "ktc_rank": 282,
+      "apy": 1278460,
+      "years": 4,
+      "guaranteed": 913840,
+      "total_value": 5113840
+    },
+    "Matt Orzech": {
+      "apy": 1610000,
+      "years": 3,
+      "guaranteed": 750000,
+      "total_value": 4830000
+    },
+    "Liam Fornadel": {
+      "apy": 967500,
+      "years": 2,
+      "guaranteed": 0,
+      "total_value": 1935000
+    },
+    "Sean McKeon": {
+      "apy": 1215000,
+      "years": 1,
+      "guaranteed": 0,
+      "total_value": 1215000
+    },
+    "Xavier Watts": {
+      "apy": 1547139,
+      "years": 4,
+      "guaranteed": 1140768,
+      "total_value": 6188556
+    },
+    "Miles Davis": {
+      "apy": 1033333,
+      "years": 3,
+      "guaranteed": 0,
+      "total_value": 3100000
+    },
+    "Kameron Johnson": {
+      "ktc": 1436,
+      "ktc_rank": 395,
+      "apy": 946667,
+      "years": 3,
+      "guaranteed": 10000,
+      "total_value": 2840000
+    },
+    "Cody Simon": {
+      "apy": 1301190,
+      "years": 4,
+      "guaranteed": 1004760,
+      "total_value": 5204760
+    },
+    "Ty Chandler": {
+      "ktc": 861,
+      "ktc_rank": 476,
+      "apy": 1215000,
+      "years": 1,
+      "guaranteed": 0,
+      "total_value": 1215000
+    },
+    "Jack Fox": {
+      "apy": 3491250,
+      "years": 4,
+      "guaranteed": 5895000,
+      "total_value": 13965000
+    },
+    "Olisaemeka Udoh": {
+      "apy": 1402500,
+      "years": 1,
+      "guaranteed": 350000,
+      "total_value": 1402500
+    },
+    "Joe Andreessen": {
+      "apy": 944167,
+      "years": 3,
+      "guaranteed": 2500,
+      "total_value": 2832500
+    },
+    "Mohamoud Diabate": {
+      "apy": 1363000,
+      "years": 1,
+      "guaranteed": 350000,
+      "total_value": 1363000
+    },
+    "Eric Saubert": {
+      "apy": 2500000,
+      "years": 1,
+      "guaranteed": 788888,
+      "total_value": 2500000
+    },
+    "Josh Hayes": {
+      "apy": 1011094,
+      "years": 4,
+      "guaranteed": 204376,
+      "total_value": 4044376
+    },
+    "Cole Burgess": {
+      "apy": 885000,
+      "years": 1,
+      "guaranteed": 0,
+      "total_value": 885000
+    },
+    "Tim Patrick": {
+      "apy": 2000000,
+      "years": 1,
+      "guaranteed": 1000000,
+      "total_value": 2000000
+    },
+    "Danny Striggow": {
+      "apy": 995000,
+      "years": 3,
+      "guaranteed": 254000,
+      "total_value": 2985000
+    },
+    "Caleb Lohner": {
+      "apy": 967500,
+      "years": 2,
+      "guaranteed": 0,
+      "total_value": 1935000
+    },
+    "Keon Coleman": {
+      "ktc": 2957,
+      "ktc_rank": 218,
+      "apy": 2518565,
+      "years": 4,
+      "guaranteed": 9640495,
+      "total_value": 10074258
+    },
+    "Tucker Kraft": {
+      "ktc": 5497,
+      "ktc_rank": 69,
+      "apy": 1384483,
+      "years": 4,
+      "guaranteed": 1027588,
+      "total_value": 5537932
+    },
+    "Ryan Rehkow": {
+      "apy": 1017500,
+      "years": 2,
+      "guaranteed": 0,
+      "total_value": 2035000
+    },
+    "Dylan Barrett": {
+      "apy": 1038333,
+      "years": 3,
+      "guaranteed": 15000,
+      "total_value": 3115000
+    },
+    "Azeez Ojulari": {
+      "apy": 1402500,
+      "years": 1,
+      "guaranteed": 387500,
+      "total_value": 1402500
+    },
+    "Evan McPherson": {
+      "apy": 5500000,
+      "years": 3,
+      "guaranteed": 5000000,
+      "total_value": 16500000
+    },
+    "Josh Sills": {
+      "apy": 1145000,
+      "years": 1,
+      "guaranteed": 0,
+      "total_value": 1145000
+    },
+    "Chase Brown": {
+      "ktc": 5776,
+      "ktc_rank": 57,
+      "apy": 1031539,
+      "years": 4,
+      "guaranteed": 286156,
+      "total_value": 4126156
+    },
+    "Sean Brown": {
+      "apy": 1040000,
+      "years": 3,
+      "guaranteed": 120000,
+      "total_value": 3120000
+    },
+    "Mario Williams": {
+      "apy": 967500,
+      "years": 2,
+      "guaranteed": 0,
+      "total_value": 1935000
+    },
+    "J.J. Jansen": {
+      "apy": 1487500,
+      "years": 1,
+      "guaranteed": 1262500,
+      "total_value": 1487500
+    },
+    "Chris Oladokun": {
+      "apy": 922500,
+      "years": 2,
+      "guaranteed": 0,
+      "total_value": 1845000
+    },
+    "Matt Henningsen": {
+      "apy": 1145000,
+      "years": 1,
+      "guaranteed": 0,
+      "total_value": 1145000
+    },
+    "Jack Kelly": {
+      "apy": 1165662,
+      "years": 4,
+      "guaranteed": 282648,
+      "total_value": 4662648
+    },
+    "Evan Brown": {
+      "apy": 2500000,
+      "years": 1,
+      "guaranteed": 1000000,
+      "total_value": 2500000
+    },
+    "Mac McWilliams": {
+      "apy": 1161030,
+      "years": 4,
+      "guaranteed": 444120,
+      "total_value": 4644120
+    },
+    "Foyesade Oluokun": {
+      "apy": 10000000,
+      "years": 3,
+      "guaranteed": 21500000,
+      "total_value": 30000000
+    },
+    "Swayze Bozeman": {
+      "apy": 1075000,
+      "years": 1,
+      "guaranteed": 0,
+      "total_value": 1075000
+    },
+    "Foster Moreau": {
+      "apy": 3150000,
+      "years": 2,
+      "guaranteed": 3000000,
+      "total_value": 6300000
+    },
+    "Christian Mahogany": {
+      "apy": 1039597,
+      "years": 4,
+      "guaranteed": 138388,
+      "total_value": 4158388
+    },
+    "Alim McNeill": {
+      "apy": 24250000,
+      "years": 4,
+      "guaranteed": 28060667,
+      "total_value": 97000000
+    },
+    "C.J. Donaldson": {
+      "apy": 1040000,
+      "years": 3,
+      "guaranteed": 90000,
+      "total_value": 3120000
+    },
+    "Tristin McCollum": {
+      "apy": 1145000,
+      "years": 1,
+      "guaranteed": 0,
+      "total_value": 1145000
+    },
+    "Andre Fuller": {
+      "apy": 1130183,
+      "years": 4,
+      "guaranteed": 140732,
+      "total_value": 4520732
+    },
+    "Alijah Clark": {
+      "apy": 922500,
+      "years": 2,
+      "guaranteed": 0,
+      "total_value": 1845000
+    },
+    "Dylan Fairchild": {
+      "apy": 1605295,
+      "years": 4,
+      "guaranteed": 1309948,
+      "total_value": 6421180
+    },
+    "Fadil Diggs": {
+      "apy": 1050000,
+      "years": 4,
+      "guaranteed": 0,
+      "total_value": 4200000
+    },
+    "Michael Onwenu": {
+      "apy": 10000000,
+      "years": 1,
+      "guaranteed": 8950000,
+      "total_value": 10000000
+    },
+    "Malcolm Roach": {
+      "apy": 8766667,
+      "years": 3,
+      "guaranteed": 9746667,
+      "total_value": 26300000
+    },
+    "Tre Tucker": {
+      "ktc": 2999,
+      "ktc_rank": 217,
+      "apy": 1326021,
+      "years": 4,
+      "guaranteed": 857512,
+      "total_value": 5304082
+    },
+    "Jack Cochrane": {
+      "apy": 1415000,
+      "years": 1,
+      "guaranteed": 650000,
+      "total_value": 1415000
+    },
+    "Miles Kitselman": {
+      "apy": 1036667,
+      "years": 3,
+      "guaranteed": 115000,
+      "total_value": 3110000
+    },
+    "Harold Fannin Jr.": {
+      "apy": 1685722,
+      "years": 4,
+      "guaranteed": 1543916,
+      "total_value": 6742886
+    },
+    "Mike McGlinchey": {
+      "apy": 17500000,
+      "years": 5,
+      "guaranteed": 35000000,
+      "total_value": 87500000
+    },
+    "Jordan Hancock": {
+      "apy": 1130054,
+      "years": 4,
+      "guaranteed": 320216,
+      "total_value": 4520216
+    },
+    "Upton Stout": {
+      "apy": 1540296,
+      "years": 4,
+      "guaranteed": 1120860,
+      "total_value": 6161184
+    },
+    "Eric Johnson": {
+      "apy": 1402500,
+      "years": 1,
+      "guaranteed": 93750,
+      "total_value": 1402500
+    },
+    "Danny Pinter": {
+      "apy": 2750000,
+      "years": 1,
+      "guaranteed": 1500000,
+      "total_value": 2750000
+    },
+    "Jeremy McNichols": {
+      "ktc": 668,
+      "ktc_rank": 489,
+      "apy": 1487500,
+      "years": 1,
+      "guaranteed": 562500,
+      "total_value": 1487500
+    },
+    "Kenny Fletcher Jr.": {
+      "apy": 1034333,
+      "years": 3,
+      "guaranteed": 3000,
+      "total_value": 3103000
+    },
+    "Tyleik Williams": {
+      "apy": 4120023,
+      "years": 4,
+      "guaranteed": 16480090,
+      "total_value": 16480090
+    },
+    "DeMonte Capehart": {
+      "apy": 1220540,
+      "years": 4,
+      "guaranteed": 502160,
+      "total_value": 4882160
+    },
+    "Nick Emmanwori": {
+      "apy": 2900315,
+      "years": 4,
+      "guaranteed": 11601260,
+      "total_value": 11601260
+    },
+    "Reed Blankenship": {
+      "apy": 8250000,
+      "years": 3,
+      "guaranteed": 16500000,
+      "total_value": 24750000
+    },
+    "Charlie Heck": {
+      "apy": 1402500,
+      "years": 1,
+      "guaranteed": 187500,
+      "total_value": 1402500
+    },
+    "Kendall Milton": {
+      "ktc": 962,
+      "ktc_rank": 467,
+      "apy": 1005000,
+      "years": 1,
+      "guaranteed": 0,
+      "total_value": 1005000
+    },
+    "Nico Collins": {
+      "ktc": 6331,
+      "ktc_rank": 44,
+      "apy": 30000000,
+      "years": 2,
+      "guaranteed": 57000000,
+      "total_value": 60000000
+    },
+    "Luke Elzinga": {
+      "apy": 1033333,
+      "years": 3,
+      "guaranteed": 0,
+      "total_value": 3100000
+    },
+    "Jimto Obidegwu": {
+      "apy": 1036667,
+      "years": 3,
+      "guaranteed": 210000,
+      "total_value": 3110000
+    },
+    "Bryson Nesbit": {
+      "apy": 885000,
+      "years": 1,
+      "guaranteed": 0,
+      "total_value": 885000
+    },
+    "Nick Gargiulo": {
+      "apy": 1046500,
+      "years": 2,
+      "guaranteed": 58000,
+      "total_value": 2093000
+    },
+    "Lewis Bond": {
+      "apy": 1161720,
+      "years": 4,
+      "guaranteed": 266880,
+      "total_value": 4646880
+    },
+    "Kejon Owens": {
+      "apy": 1033333,
+      "years": 3,
+      "guaranteed": 0,
+      "total_value": 3100000
+    },
+    "Tua Tagovailoa": {
+      "ktc": 2248,
+      "ktc_rank": 177,
+      "apy": 1215000,
+      "years": 1,
+      "guaranteed": 0,
+      "total_value": 1215000
+    },
+    "Deebo Samuel": {
+      "ktc": 2550,
+      "ktc_rank": 268
+    },
+    "Colton Hood": {
+      "apy": 3202591,
+      "years": 4,
+      "guaranteed": 12810362,
+      "total_value": 12810362
+    },
+    "Sahmir Hagans": {
+      "apy": 1038333,
+      "years": 3,
+      "guaranteed": 15000,
+      "total_value": 3115000
+    },
+    "Jonathan Brady": {
+      "apy": 1033333,
+      "years": 3,
+      "guaranteed": 0,
+      "total_value": 3100000
+    },
+    "Cal Adomitis": {
+      "apy": 1240000,
+      "years": 1,
+      "guaranteed": 0,
+      "total_value": 1240000
+    },
+    "Dontayvion Wicks": {
+      "ktc": 2905,
+      "ktc_rank": 228,
+      "apy": 10250000,
+      "years": 1,
+      "guaranteed": 9000000,
+      "total_value": 10250000
+    },
+    "Devin Singletary": {
+      "ktc": 1727,
+      "ktc_rank": 384,
+      "apy": 1300000,
+      "years": 1,
+      "guaranteed": 0,
+      "total_value": 1300000
+    },
+    "Trikweze Bridges": {
+      "apy": 1075418,
+      "years": 4,
+      "guaranteed": 101672,
+      "total_value": 4301672
+    },
+    "Riley Mahlman": {
+      "apy": 1038333,
+      "years": 3,
+      "guaranteed": 115000,
+      "total_value": 3115000
+    },
+    "Christian Haynes": {
+      "apy": 1450692,
+      "years": 4,
+      "guaranteed": 1040192,
+      "total_value": 5802764
+    },
+    "Xavier Truss": {
+      "apy": 995000,
+      "years": 3,
+      "guaranteed": 170000,
+      "total_value": 2985000
+    },
+    "Doug Nester": {
+      "apy": 885000,
+      "years": 1,
+      "guaranteed": 0,
+      "total_value": 885000
+    },
+    "Dylan Sampson": {
+      "ktc": 3388,
+      "ktc_rank": 182,
+      "apy": 1282641,
+      "years": 4,
+      "guaranteed": 930564,
+      "total_value": 5130564
+    },
+    "Barion Brown": {
+      "ktc": 865,
+      "ktc_rank": 477,
+      "apy": 1168504,
+      "years": 4,
+      "guaranteed": 294016,
+      "total_value": 4674016
+    },
+    "Davon Hamilton": {
+      "apy": 11500000,
+      "years": 3,
+      "guaranteed": 20000000,
+      "total_value": 34500000
+    },
+    "Jacob Cowing": {
+      "ktc": 1306,
+      "ktc_rank": 419,
+      "apy": 1137177,
+      "years": 4,
+      "guaranteed": 528708,
+      "total_value": 4548716
+    },
+    "Nakobe Dean": {
+      "apy": 12010000,
+      "years": 3,
+      "guaranteed": 20000000,
+      "total_value": 36030000
+    },
+    "Jacob Roberts": {
+      "apy": 1033333,
+      "years": 3,
+      "guaranteed": 0,
+      "total_value": 3100000
+    },
+    "Derius Davis": {
+      "ktc": 755,
+      "ktc_rank": 490,
+      "apy": 1137982,
+      "years": 4,
+      "guaranteed": 711928,
+      "total_value": 4551928
+    },
+    "James Brockermeyer": {
+      "apy": 1043333,
+      "years": 3,
+      "guaranteed": 230000,
+      "total_value": 3130000
+    },
+    "Aaron Rodgers": {
+      "ktc": 1452,
+      "ktc_rank": 288,
+      "apy": 22500000,
+      "years": 1,
+      "guaranteed": 22000000,
+      "total_value": 22500000
+    },
+    "Karl Brooks": {
+      "apy": 1013007,
+      "years": 4,
+      "guaranteed": 212028,
+      "total_value": 4052028
+    },
+    "Trey McBride": {
+      "ktc": 7717,
+      "ktc_rank": 17,
+      "apy": 19000000,
+      "years": 4,
+      "guaranteed": 32500000,
+      "total_value": 76000000
+    },
+    "Juanyeh Thomas": {
+      "apy": 1332500,
+      "years": 1,
+      "guaranteed": 437500,
+      "total_value": 1332500
+    },
+    "Jared Harrison-Hunte": {
+      "apy": 922500,
+      "years": 2,
+      "guaranteed": 0,
+      "total_value": 1845000
+    },
+    "Bobby Jamison-Travis": {
+      "apy": 1172394,
+      "years": 4,
+      "guaranteed": 309576,
+      "total_value": 4689576
+    },
+    "Connor Bazelak": {
+      "apy": 1005000,
+      "years": 1,
+      "guaranteed": 0,
+      "total_value": 1005000
+    },
+    "Alexander Mattison": {
+      "ktc": 934,
+      "ktc_rank": 466
+    },
+    "Billy Bowman Jr.": {
+      "apy": 1296538,
+      "years": 4,
+      "guaranteed": 986152,
+      "total_value": 5186152
+    },
+    "Benito Jones": {
+      "apy": 1602500,
+      "years": 1,
+      "guaranteed": 630000,
+      "total_value": 1602500
+    },
+    "Albert Regis": {
+      "apy": 1750503,
+      "years": 4,
+      "guaranteed": 1552372,
+      "total_value": 7002010
+    },
+    "Cam Taylor-Britt": {
+      "apy": 1402500,
+      "years": 1,
+      "guaranteed": 687500,
+      "total_value": 1402500
+    },
+    "Chase Curtis": {
+      "apy": 1035000,
+      "years": 3,
+      "guaranteed": 5000,
+      "total_value": 3105000
+    },
+    "Giovanni Manu": {
+      "apy": 1186414,
+      "years": 4,
+      "guaranteed": 725656,
+      "total_value": 4745656
+    },
+    "D'Angelo Ross": {
+      "apy": 1215000,
+      "years": 1,
+      "guaranteed": 0,
+      "total_value": 1215000
+    },
+    "Cyrus Allen": {
+      "ktc": 831,
+      "ktc_rank": 469,
+      "apy": 1189869,
+      "years": 4,
+      "guaranteed": 379476,
+      "total_value": 4759476
+    },
+    "Elijah Williams": {
+      "apy": 988333,
+      "years": 3,
+      "guaranteed": 0,
+      "total_value": 2965000
+    },
+    "Ricky Barber": {
+      "apy": 885000,
+      "years": 1,
+      "guaranteed": 0,
+      "total_value": 885000
+    },
+    "Pierre Strong Jr.": {
+      "apy": 1215000,
+      "years": 1,
+      "guaranteed": 0,
+      "total_value": 1215000
+    },
+    "Dominic DeLuca": {
+      "apy": 1038333,
+      "years": 3,
+      "guaranteed": 15000,
+      "total_value": 3115000
+    },
+    "A.J. Green": {
+      "apy": 1215000,
+      "years": 1,
+      "guaranteed": 0,
+      "total_value": 1215000
+    },
+    "Chris Rodriguez Jr.": {
+      "apy": 5000000,
+      "years": 2,
+      "guaranteed": 6200000,
+      "total_value": 10000000
+    },
+    "Tanner McKee": {
+      "ktc": 469,
+      "ktc_rank": 392,
+      "apy": 1006630,
+      "years": 4,
+      "guaranteed": 186520,
+      "total_value": 4026520
+    },
+    "Jai'Onte McMillan": {
+      "apy": 1033333,
+      "years": 3,
+      "guaranteed": 0,
+      "total_value": 3100000
+    },
+    "Amari Gainer": {
+      "apy": 1005000,
+      "years": 1,
+      "guaranteed": 0,
+      "total_value": 1005000
+    },
+    "Ted Hurst": {
+      "ktc": 2719,
+      "ktc_rank": 220,
+      "apy": 1729014,
+      "years": 4,
+      "guaranteed": 1489860,
+      "total_value": 6916056
+    },
+    "Marvin Jones Jr.": {
+      "apy": 1038333,
+      "years": 3,
+      "guaranteed": 65000,
+      "total_value": 3115000
+    },
+    "Byron Murphy": {
+      "apy": 4020781,
+      "years": 4,
+      "guaranteed": 16083122,
+      "total_value": 16083122
+    },
+    "Benjamin St-Juste": {
+      "apy": 5000000,
+      "years": 2,
+      "guaranteed": 3000000,
+      "total_value": 10000000
+    },
+    "Cam Lampkin": {
+      "apy": 1062500,
+      "years": 2,
+      "guaranteed": 0,
+      "total_value": 2125000
+    },
+    "Tyrell Shavers": {
+      "ktc": 1301,
+      "ktc_rank": 431,
+      "apy": 1021000,
+      "years": 2,
+      "guaranteed": 7000,
+      "total_value": 2042000
+    },
+    "Montez Sweat": {
+      "apy": 24500000,
+      "years": 4,
+      "guaranteed": 41965000,
+      "total_value": 98000000
+    },
+    "Damar Hamlin": {
+      "apy": 1265000,
+      "years": 1,
+      "guaranteed": 25000,
+      "total_value": 1265000
+    },
+    "Skyy Moore": {
+      "ktc": 1136,
+      "ktc_rank": 442,
+      "apy": 2500000,
+      "years": 1,
+      "guaranteed": 1000000,
+      "total_value": 2500000
+    },
+    "Coleman Bennett": {
+      "apy": 1040000,
+      "years": 3,
+      "guaranteed": 145000,
+      "total_value": 3120000
+    },
+    "Warren Brinson": {
+      "apy": 1106596,
+      "years": 4,
+      "guaranteed": 226384,
+      "total_value": 4426384
+    },
+    "Andy Dalton": {
+      "apy": 3500000,
+      "years": 1,
+      "guaranteed": 3500000,
+      "total_value": 3500000
+    },
+    "Brian Thomas Jr.": {
+      "ktc": 5562,
+      "ktc_rank": 73,
+      "apy": 3664995,
+      "years": 4,
+      "guaranteed": 14659978,
+      "total_value": 14659978
+    },
+    "Gabriel Rubio": {
+      "apy": 1156725,
+      "years": 4,
+      "guaranteed": 246900,
+      "total_value": 4626900
+    },
+    "Travis Kelce": {
+      "ktc": 2982,
+      "ktc_rank": 212,
+      "apy": 12000000,
+      "years": 1,
+      "guaranteed": 12000000,
+      "total_value": 12000000
+    },
+    "Austin Hooper": {
+      "apy": 3250000,
+      "years": 1,
+      "guaranteed": 2740000,
+      "total_value": 3250000
+    },
+    "Josh Conerly Jr.": {
+      "apy": 3920274,
+      "years": 4,
+      "guaranteed": 15681094,
+      "total_value": 15681094
+    },
+    "Patrick McMorris": {
+      "apy": 1005000,
+      "years": 1,
+      "guaranteed": 0,
+      "total_value": 1005000
+    },
+    "Tre Brown": {
+      "apy": 1192500,
+      "years": 2,
+      "guaranteed": 0,
+      "total_value": 2385000
+    },
+    "Keagen Trost": {
+      "apy": 1698367,
+      "years": 4,
+      "guaranteed": 1400704,
+      "total_value": 6793468
+    },
+    "2027 Early 4th": {
+      "ktc": 2124,
+      "ktc_rank": 286
+    },
+    "Alec Ingold": {
+      "apy": 3750000,
+      "years": 2,
+      "guaranteed": 3560000,
+      "total_value": 7500000
+    },
+    "YaYa Diaby": {
+      "apy": 1366353,
+      "years": 4,
+      "guaranteed": 974844,
+      "total_value": 5465412
+    },
+    "J.T. Tuimoloau": {
+      "apy": 2485616,
+      "years": 4,
+      "guaranteed": 8405411,
+      "total_value": 9942464
+    },
+    "DJ Withers": {
+      "apy": 1034333,
+      "years": 3,
+      "guaranteed": 3000,
+      "total_value": 3103000
+    },
+    "Anthony Tyus III": {
+      "apy": 885000,
+      "years": 1,
+      "guaranteed": 0,
+      "total_value": 885000
+    },
+    "Jonah Elliss": {
+      "apy": 1467679,
+      "years": 4,
+      "guaranteed": 1089608,
+      "total_value": 5870714
+    },
+    "Dominique Robinson": {
+      "apy": 3000000,
+      "years": 1,
+      "guaranteed": 1500000,
+      "total_value": 3000000
+    },
+    "Tanner Conner": {
+      "apy": 1215000,
+      "years": 1,
+      "guaranteed": 0,
+      "total_value": 1215000
+    },
+    "Geno Stone": {
+      "apy": 1402500,
+      "years": 1,
+      "guaranteed": 187500,
+      "total_value": 1402500
+    },
+    "Miles Scott": {
+      "apy": 1125942,
+      "years": 4,
+      "guaranteed": 123768,
+      "total_value": 4503768
+    },
+    "Princeton Fant": {
+      "apy": 1062500,
+      "years": 2,
+      "guaranteed": 0,
+      "total_value": 2125000
+    },
+    "Jaquan Brisker": {
+      "apy": 5500000,
+      "years": 1,
+      "guaranteed": 4285000,
+      "total_value": 5500000
+    },
+    "Corey Rucker": {
+      "apy": 1041667,
+      "years": 3,
+      "guaranteed": 272500,
+      "total_value": 3125000
+    },
+    "Junior Bergen": {
+      "apy": 885000,
+      "years": 1,
+      "guaranteed": 0,
+      "total_value": 885000
+    },
+    "Ashton Gillotte": {
+      "apy": 1686156,
+      "years": 4,
+      "guaranteed": 1545180,
+      "total_value": 6744624
+    },
+    "Beaux Limmer": {
+      "apy": 1039597,
+      "years": 4,
+      "guaranteed": 138388,
+      "total_value": 4158388
+    },
+    "Tyler Booker": {
+      "apy": 5638430,
+      "years": 4,
+      "guaranteed": 22553718,
+      "total_value": 22553718
+    },
+    "Ty'Ron Hopper": {
+      "apy": 1419506,
+      "years": 4,
+      "guaranteed": 949472,
+      "total_value": 5678024
+    },
+    "Greg Newsome II": {
+      "apy": 8000000,
+      "years": 1,
+      "guaranteed": 3000000,
+      "total_value": 8000000
+    },
+    "Xavier Weaver": {
+      "apy": 953333,
+      "years": 3,
+      "guaranteed": 255000,
+      "total_value": 2860000
+    },
+    "Chamarri Conner": {
+      "apy": 1147841,
+      "years": 4,
+      "guaranteed": 751364,
+      "total_value": 4591364
+    },
+    "Chris Boswell": {
+      "apy": 7000000,
+      "years": 4,
+      "guaranteed": 10500000,
+      "total_value": 28000000
+    },
+    "Jameson Geers": {
+      "apy": 1038333,
+      "years": 3,
+      "guaranteed": 125000,
+      "total_value": 3115000
+    },
+    "Jalen Travis": {
+      "apy": 1280317,
+      "years": 4,
+      "guaranteed": 921268,
+      "total_value": 5121268
+    },
+    "Carrington Valentine": {
+      "apy": 985165,
+      "years": 4,
+      "guaranteed": 100660,
+      "total_value": 3940660
+    },
+    "Pat Coogan": {
+      "apy": 1164695,
+      "years": 4,
+      "guaranteed": 278780,
+      "total_value": 4658780
+    },
+    "Cade Stover": {
+      "ktc": 1683,
+      "ktc_rank": 358,
+      "apy": 1189734,
+      "years": 4,
+      "guaranteed": 738936,
+      "total_value": 4758936
+    },
+    "Jordan Phillips": {
+      "apy": 1164576,
+      "years": 4,
+      "guaranteed": 458304,
+      "total_value": 4658304
+    },
+    "Theo Wease Jr.": {
+      "apy": 922500,
+      "years": 2,
+      "guaranteed": 0,
+      "total_value": 1845000
+    },
+    "Kendrick Green": {
+      "apy": 1192500,
+      "years": 2,
+      "guaranteed": 0,
+      "total_value": 2385000
+    },
+    "Ryan Van Demark": {
+      "apy": 4270000,
+      "years": 1,
+      "guaranteed": 4145000,
+      "total_value": 4270000
+    },
+    "Otito Ogbonnia": {
+      "apy": 2750000,
+      "years": 1,
+      "guaranteed": 2000000,
+      "total_value": 2750000
+    },
+    "Trent Sherfield": {
+      "apy": 1300000,
+      "years": 1,
+      "guaranteed": 0,
+      "total_value": 1300000
+    },
+    "Jack Kiser": {
+      "apy": 1314149,
+      "years": 4,
+      "guaranteed": 1056596,
+      "total_value": 5256596
+    },
+    "Cam Skattebo": {
+      "ktc": 5493,
+      "ktc_rank": 77,
+      "apy": 1318260,
+      "years": 4,
+      "guaranteed": 1073040,
+      "total_value": 5273040
+    },
+    "Xavier Worthy": {
+      "ktc": 4137,
+      "ktc_rank": 134,
+      "apy": 3447566,
+      "years": 4,
+      "guaranteed": 13790264,
+      "total_value": 13790264
+    },
+    "Dylan Parham": {
+      "apy": 8000000,
+      "years": 2,
+      "guaranteed": 7490000,
+      "total_value": 16000000
+    },
+    "Julius Wood": {
+      "apy": 1062500,
+      "years": 2,
+      "guaranteed": 0,
+      "total_value": 2125000
+    },
+    "Brevin Jordan": {
+      "ktc": 1161,
+      "ktc_rank": 445,
+      "apy": 1720000,
+      "years": 1,
+      "guaranteed": 200000,
+      "total_value": 1720000
+    },
+    "Jaishawn Barham": {
+      "apy": 1703962,
+      "years": 4,
+      "guaranteed": 1416980,
+      "total_value": 6815846
+    },
+    "Michael Taaffe": {
+      "apy": 1218953,
+      "years": 4,
+      "guaranteed": 495812,
+      "total_value": 4875812
+    },
+    "Payton Page": {
+      "apy": 988333,
+      "years": 3,
+      "guaranteed": 0,
+      "total_value": 2965000
+    },
+    "Jack Sawyer": {
+      "apy": 1287733,
+      "years": 4,
+      "guaranteed": 950932,
+      "total_value": 5150932
+    },
+    "Stephen Gosnell": {
+      "apy": 971750,
+      "years": 2,
+      "guaranteed": 8500,
+      "total_value": 1943500
+    },
+    "Matt Peart": {
+      "apy": 2000000,
+      "years": 1,
+      "guaranteed": 755000,
+      "total_value": 2000000
+    },
+    "Dadrion Taylor-Demerson": {
+      "apy": 1216711,
+      "years": 4,
+      "guaranteed": 846844,
+      "total_value": 4866844
+    },
+    "Jeremiah Byers": {
+      "apy": 922500,
+      "years": 2,
+      "guaranteed": 0,
+      "total_value": 1845000
+    },
+    "Marist Liufau": {
+      "apy": 1422879,
+      "years": 4,
+      "guaranteed": 959284,
+      "total_value": 5691514
+    },
+    "D'Anthony Bell": {
+      "apy": 1485000,
+      "years": 1,
+      "guaranteed": 225000,
+      "total_value": 1485000
+    },
+    "Austen Pleasants": {
+      "apy": 1075000,
+      "years": 1,
+      "guaranteed": 0,
+      "total_value": 1075000
+    },
+    "Jacardia Wright": {
+      "apy": 885000,
+      "years": 1,
+      "guaranteed": 0,
+      "total_value": 885000
+    },
+    "Kayode Awosika": {
+      "apy": 2000000,
+      "years": 1,
+      "guaranteed": 300000,
+      "total_value": 2000000
+    },
+    "Kahlil Benson": {
+      "apy": 1033333,
+      "years": 3,
+      "guaranteed": 0,
+      "total_value": 3100000
+    },
+    "Jayden Loving": {
+      "apy": 1040000,
+      "years": 3,
+      "guaranteed": 245000,
+      "total_value": 3120000
+    },
+    "Corey Bullock": {
+      "apy": 1005000,
+      "years": 1,
+      "guaranteed": 0,
+      "total_value": 1005000
+    },
+    "Ed Oliver": {
+      "apy": 17000000,
+      "years": 4,
+      "guaranteed": 24528000,
+      "total_value": 68000000
+    },
+    "Barrett Carter": {
+      "apy": 1295529,
+      "years": 4,
+      "guaranteed": 982116,
+      "total_value": 5182116
+    },
+    "Nephi Sewell": {
+      "apy": 1215000,
+      "years": 1,
+      "guaranteed": 0,
+      "total_value": 1215000
+    },
+    "Quinn Meinerz": {
+      "apy": 18000000,
+      "years": 4,
+      "guaranteed": 24000000,
+      "total_value": 72000000
+    },
+    "Ben Scott": {
+      "apy": 967500,
+      "years": 2,
+      "guaranteed": 0,
+      "total_value": 1935000
+    },
+    "Jaheim Bell": {
+      "apy": 1005000,
+      "years": 1,
+      "guaranteed": 0,
+      "total_value": 1005000
+    },
+    "Chase Bisontis": {
+      "apy": 3314683,
+      "years": 4,
+      "guaranteed": 13258732,
+      "total_value": 13258732
+    },
+    "Devon Witherspoon": {
+      "apy": 7965288,
+      "years": 4,
+      "guaranteed": 31861152,
+      "total_value": 31861152
+    },
+    "Logan Hall": {
+      "apy": 6875000,
+      "years": 2,
+      "guaranteed": 9000000,
+      "total_value": 13750000
+    },
+    "Austin Schlottmann": {
+      "apy": 3500000,
+      "years": 2,
+      "guaranteed": 2990000,
+      "total_value": 7000000
+    },
+    "Andrew DePaola": {
+      "apy": 1725000,
+      "years": 1,
+      "guaranteed": 1725000,
+      "total_value": 1725000
+    },
+    "Scott Daly": {
+      "apy": 1240000,
+      "years": 1,
+      "guaranteed": 0,
+      "total_value": 1240000
+    },
+    "Jaxson Dart": {
+      "ktc": 5498,
+      "ktc_rank": 26,
+      "apy": 4244486,
+      "years": 4,
+      "guaranteed": 16977942,
+      "total_value": 16977942
+    },
+    "Drew Kendall": {
+      "apy": 1138769,
+      "years": 4,
+      "guaranteed": 355076,
+      "total_value": 4555076
+    },
+    "Kenny Pickett": {
+      "ktc": 611,
+      "ktc_rank": 424,
+      "apy": 4000000,
+      "years": 1,
+      "guaranteed": 4000000,
+      "total_value": 4000000
+    },
+    "Colton Dowell": {
+      "apy": 1075000,
+      "years": 1,
+      "guaranteed": 0,
+      "total_value": 1075000
+    },
+    "Rashan Gary": {
+      "apy": 16000000,
+      "years": 2,
+      "guaranteed": 16000000,
+      "total_value": 32000000
+    },
+    "Nohl Williams": {
+      "apy": 1583878,
+      "years": 4,
+      "guaranteed": 1247644,
+      "total_value": 6335512
+    },
+    "Anquin Barnes": {
+      "apy": 1043333,
+      "years": 3,
+      "guaranteed": 130000,
+      "total_value": 3130000
+    },
+    "Ja'Qurious Conley": {
+      "apy": 1043333,
+      "years": 3,
+      "guaranteed": 180000,
+      "total_value": 3130000
+    },
+    "Andrew Coker": {
+      "apy": 885000,
+      "years": 1,
+      "guaranteed": 0,
+      "total_value": 885000
+    },
+    "Amarius Mims": {
+      "apy": 3842890,
+      "years": 4,
+      "guaranteed": 15371558,
+      "total_value": 15371558
+    },
+    "E.J. Horton": {
+      "apy": 1033333,
+      "years": 3,
+      "guaranteed": 0,
+      "total_value": 3100000
+    },
+    "Derrick Harmon": {
+      "apy": 4493401,
+      "years": 4,
+      "guaranteed": 17973604,
+      "total_value": 17973604
+    },
+    "Paschal Ekeji": {
+      "apy": 1033333,
+      "years": 3,
+      "guaranteed": 0,
+      "total_value": 3100000
+    },
+    "D.J. Reed": {
+      "apy": 16000000,
+      "years": 3,
+      "guaranteed": 32000000,
+      "total_value": 48000000
+    },
+    "Alex Austin": {
+      "apy": 1220000,
+      "years": 1,
+      "guaranteed": 0,
+      "total_value": 1220000
+    },
+    "Kendal Daniels": {
+      "apy": 1292259,
+      "years": 4,
+      "guaranteed": 789036,
+      "total_value": 5169036
+    },
+    "Donovan Jennings": {
+      "apy": 1005000,
+      "years": 1,
+      "guaranteed": 0,
+      "total_value": 1005000
+    },
+    "Gage Larvadain": {
+      "apy": 922500,
+      "years": 2,
+      "guaranteed": 0,
+      "total_value": 1845000
+    },
+    "Markquese Bell": {
+      "apy": 3000000,
+      "years": 3,
+      "guaranteed": 6200000,
+      "total_value": 9000000
+    },
+    "M.J. Devonshire": {
+      "apy": 968250,
+      "years": 2,
+      "guaranteed": 1500,
+      "total_value": 1936500
+    },
+    "Desjuan Johnson": {
+      "apy": 979446,
+      "years": 4,
+      "guaranteed": 77784,
+      "total_value": 3917784
+    },
+    "Melvin Priestly": {
+      "apy": 1040000,
+      "years": 3,
+      "guaranteed": 220000,
+      "total_value": 3120000
+    },
+    "Payne Durham": {
+      "apy": 1021245,
+      "years": 4,
+      "guaranteed": 244980,
+      "total_value": 4084980
+    },
+    "Corey Robinson II": {
+      "apy": 1040000,
+      "years": 3,
+      "guaranteed": 20000,
+      "total_value": 3120000
+    },
+    "Kelvin Gilliam": {
+      "apy": 1035000,
+      "years": 3,
+      "guaranteed": 50000,
+      "total_value": 3105000
+    },
+    "Le'Veon Moss": {
+      "ktc": 1133,
+      "ktc_rank": 454
+    },
+    "Connor Lew": {
+      "apy": 1361089,
+      "years": 4,
+      "guaranteed": 1064356,
+      "total_value": 5444356
+    },
+    "Malik McClain": {
+      "apy": 1035000,
+      "years": 3,
+      "guaranteed": 18750,
+      "total_value": 3105000
+    },
+    "Demarcus Robinson": {
+      "ktc": 972,
+      "ktc_rank": 461,
+      "apy": 4000000,
+      "years": 2,
+      "guaranteed": 6000000,
+      "total_value": 8000000
+    },
+    "Justin Pickett": {
+      "apy": 1040000,
+      "years": 3,
+      "guaranteed": 170000,
+      "total_value": 3120000
+    },
+    "Luke Floriea": {
+      "apy": 885000,
+      "years": 1,
+      "guaranteed": 0,
+      "total_value": 885000
+    },
+    "Alec Pierce": {
+      "ktc": 4894,
+      "ktc_rank": 93,
+      "apy": 28500000,
+      "years": 4,
+      "guaranteed": 60000000,
+      "total_value": 114000000
+    },
+    "Jalen Coker": {
+      "ktc": 3807,
+      "ktc_rank": 149,
+      "apy": 1075000,
+      "years": 1,
+      "guaranteed": 0,
+      "total_value": 1075000
+    },
+    "Malik Benson": {
+      "apy": 1164433,
+      "years": 4,
+      "guaranteed": 277732,
+      "total_value": 4657732
+    },
+    "Phil Mafah": {
+      "ktc": 1464,
+      "ktc_rank": 399,
+      "apy": 1077883,
+      "years": 4,
+      "guaranteed": 111532,
+      "total_value": 4311532
+    },
+    "Isaiah Simmons": {
+      "apy": 1402500,
+      "years": 1,
+      "guaranteed": 187500,
+      "total_value": 1402500
+    },
+    "Cooper Kupp": {
+      "ktc": 2031,
+      "ktc_rank": 308,
+      "apy": 15000000,
+      "years": 3,
+      "guaranteed": 17500000,
+      "total_value": 45000000
+    },
+    "Kevin Winston Jr.": {
+      "apy": 1601248,
+      "years": 4,
+      "guaranteed": 1298176,
+      "total_value": 6404992
+    },
+    "Jeremiah Owusu-Koramoah": {
+      "apy": 12500000,
+      "years": 3,
+      "guaranteed": 20000000,
+      "total_value": 37500000
+    },
+    "Jalen Graham": {
+      "apy": 1145000,
+      "years": 1,
+      "guaranteed": 0,
+      "total_value": 1145000
+    },
+    "Jerrick Reed": {
+      "apy": 1145000,
+      "years": 1,
+      "guaranteed": 0,
+      "total_value": 1145000
+    },
+    "Wesley Grimes": {
+      "apy": 1036667,
+      "years": 3,
+      "guaranteed": 200000,
+      "total_value": 3110000
+    },
+    "Javon Baker": {
+      "ktc": 1315,
+      "ktc_rank": 418
+    },
+    "Rayshaun Benny": {
+      "apy": 1125122,
+      "years": 4,
+      "guaranteed": 120488,
+      "total_value": 4500488
+    },
+    "Raheim Sanders": {
+      "ktc": 1677,
+      "ktc_rank": 372,
+      "apy": 990000,
+      "years": 3,
+      "guaranteed": 60000,
+      "total_value": 2970000
+    },
+    "Alex Palczewski": {
+      "apy": 4750000,
+      "years": 2,
+      "guaranteed": 5575000,
+      "total_value": 9500000
+    },
+    "2027 Late 2nd": {
+      "ktc": 3801,
+      "ktc_rank": 142
+    },
+    "Blake Grupe": {
+      "apy": 1195000,
+      "years": 1,
+      "guaranteed": 0,
+      "total_value": 1195000
+    },
+    "Keisean Nixon": {
+      "apy": 6000000,
+      "years": 3,
+      "guaranteed": 6500000,
+      "total_value": 18000000
+    },
+    "West Weeks": {
+      "apy": 1046333,
+      "years": 3,
+      "guaranteed": 286500,
+      "total_value": 3139000
+    },
+    "Jevon Holland": {
+      "apy": 15100000,
+      "years": 3,
+      "guaranteed": 27400000,
+      "total_value": 45300000
+    },
+    "Theron Gaines": {
+      "apy": 1040000,
+      "years": 3,
+      "guaranteed": 20000,
+      "total_value": 3120000
+    },
+    "T.J. Sanders": {
+      "apy": 2661352,
+      "years": 4,
+      "guaranteed": 10072496,
+      "total_value": 10645408
+    },
+    "Julius Brents": {
+      "apy": 2049234,
+      "years": 4,
+      "guaranteed": 5975996,
+      "total_value": 8196936
+    },
+    "Mitchell Evans": {
+      "ktc": 1338,
+      "ktc_rank": 406,
+      "apy": 1147742,
+      "years": 4,
+      "guaranteed": 390968,
+      "total_value": 4590968
+    },
+    "John Franklin-Myers": {
+      "apy": 21000000,
+      "years": 3,
+      "guaranteed": 42000000,
+      "total_value": 63000000
+    },
+    "Devin Lafayette": {
+      "apy": 1035000,
+      "years": 3,
+      "guaranteed": 16000,
+      "total_value": 3105000
+    },
+    "Trayvon Rudolph": {
+      "apy": 885000,
+      "years": 1,
+      "guaranteed": 0,
+      "total_value": 885000
+    },
+    "Jacory Croskey-Merritt": {
+      "ktc": 3616,
+      "ktc_rank": 159,
+      "apy": 1076357,
+      "years": 4,
+      "guaranteed": 105428,
+      "total_value": 4305428
+    },
+    "Jayden Daniels": {
+      "ktc": 6257,
+      "ktc_rank": 11,
+      "apy": 9436663,
+      "years": 4,
+      "guaranteed": 37746650,
+      "total_value": 37746650
+    },
+    "Alec Anderson": {
+      "apy": 2500000,
+      "years": 1,
+      "guaranteed": 1800000,
+      "total_value": 2500000
+    },
+    "Steven Jones": {
+      "apy": 885000,
+      "years": 1,
+      "guaranteed": 0,
+      "total_value": 885000
+    },
+    "Darian Kinnard": {
+      "apy": 2750000,
+      "years": 1,
+      "guaranteed": 1000000,
+      "total_value": 2750000
+    },
+    "Noah Avinger": {
+      "apy": 1036000,
+      "years": 3,
+      "guaranteed": 8000,
+      "total_value": 3108000
+    },
+    "Jonathan Mingo": {
+      "ktc": 1377,
+      "ktc_rank": 421,
+      "apy": 1145000,
+      "years": 1,
+      "guaranteed": 0,
+      "total_value": 1145000
+    },
+    "Kaevon Merriweather": {
+      "apy": 1145000,
+      "years": 1,
+      "guaranteed": 0,
+      "total_value": 1145000
+    },
+    "Malik Davis": {
+      "ktc": 1584,
+      "ktc_rank": 374,
+      "apy": 1087500,
+      "years": 2,
+      "guaranteed": 0,
+      "total_value": 2175000
+    },
+    "Benjamin Morrison": {
+      "apy": 2053991,
+      "years": 4,
+      "guaranteed": 6192127,
+      "total_value": 8215962
+    },
+    "Kalel Mullings": {
+      "ktc": 1408,
+      "ktc_rank": 422,
+      "apy": 1109627,
+      "years": 4,
+      "guaranteed": 238508,
+      "total_value": 4438508
+    },
+    "Byron Young": {
+      "apy": 1388810,
+      "years": 4,
+      "guaranteed": 1040172,
+      "total_value": 5555238
+    },
+    "Christian Braswell": {
+      "apy": 1145000,
+      "years": 1,
+      "guaranteed": 0,
+      "total_value": 1145000
+    },
+    "Antoine Winfield, Jr.": {
+      "apy": 21025000,
+      "years": 4,
+      "guaranteed": 45000000,
+      "total_value": 84100000
+    },
+    "Nnamdi Madubuike": {
+      "apy": 24500000,
+      "years": 4,
+      "guaranteed": 53500000,
+      "total_value": 98000000
+    },
+    "Haggai Chisom Ndubuisi": {
+      "apy": 885000,
+      "years": 1,
+      "guaranteed": 0,
+      "total_value": 885000
+    },
+    "Austin Barber": {
+      "apy": 1718531,
+      "years": 4,
+      "guaranteed": 1459364,
+      "total_value": 6874124
+    },
+    "Blake Corum": {
+      "ktc": 4074,
+      "ktc_rank": 133,
+      "apy": 1440941,
+      "years": 4,
+      "guaranteed": 1011828,
+      "total_value": 5763762
+    },
+    "Tru Edwards": {
+      "apy": 967500,
+      "years": 2,
+      "guaranteed": 0,
+      "total_value": 1935000
+    },
+    "George Holani": {
+      "ktc": 1563,
+      "ktc_rank": 380,
+      "apy": 1075000,
+      "years": 1,
+      "guaranteed": 0,
+      "total_value": 1075000
+    },
+    "Dominic Bailey": {
+      "apy": 1036667,
+      "years": 3,
+      "guaranteed": 160000,
+      "total_value": 3110000
+    },
+    "Traeshon Holden": {
+      "apy": 967500,
+      "years": 2,
+      "guaranteed": 0,
+      "total_value": 1935000
+    },
+    "Ameer Abdullah": {
+      "apy": 1300000,
+      "years": 1,
+      "guaranteed": 0,
+      "total_value": 1300000
+    },
+    "Thomas Hennessy": {
+      "apy": 1492500,
+      "years": 4,
+      "guaranteed": 1955000,
+      "total_value": 5970000
+    },
+    "Zach Frazier": {
+      "apy": 1886054,
+      "years": 4,
+      "guaranteed": 5039272,
+      "total_value": 7544214
+    },
+    "Marcus Allen": {
+      "apy": 1038333,
+      "years": 3,
+      "guaranteed": 65000,
+      "total_value": 3115000
+    },
+    "Garmon Randolph": {
+      "apy": 885000,
+      "years": 1,
+      "guaranteed": 0,
+      "total_value": 885000
+    },
+    "Tyrone Broden": {
+      "apy": 885000,
+      "years": 1,
+      "guaranteed": 0,
+      "total_value": 885000
+    },
+    "Storm Duck": {
+      "apy": 950000,
+      "years": 3,
+      "guaranteed": 170000,
+      "total_value": 2850000
+    },
+    "Jager Burton": {
+      "apy": 1221000,
+      "years": 4,
+      "guaranteed": 504000,
+      "total_value": 4884000
+    },
+    "Kyle Hamilton": {
+      "apy": 25100000,
+      "years": 4,
+      "guaranteed": 48022604,
+      "total_value": 100400000
+    },
+    "Grant Delpit": {
+      "apy": 12000000,
+      "years": 3,
+      "guaranteed": 14909558,
+      "total_value": 36000000
+    },
+    "Michael Coats Jr.": {
+      "apy": 1038333,
+      "years": 3,
+      "guaranteed": 115000,
+      "total_value": 3115000
+    },
+    "Jim Bonifas": {
+      "apy": 1036667,
+      "years": 3,
+      "guaranteed": 35000,
+      "total_value": 3110000
+    },
+    "Ja'Tyre Carter": {
+      "apy": 1075000,
+      "years": 1,
+      "guaranteed": 0,
+      "total_value": 1075000
+    },
+    "Evan Engram": {
+      "ktc": 2144,
+      "ktc_rank": 297,
+      "apy": 11500000,
+      "years": 2,
+      "guaranteed": 16500000,
+      "total_value": 23000000
+    },
+    "Travis Jones": {
+      "apy": 13500000,
+      "years": 3,
+      "guaranteed": 16756889,
+      "total_value": 40500000
+    },
+    "Trevian Thomas": {
+      "apy": 885000,
+      "years": 1,
+      "guaranteed": 0,
+      "total_value": 885000
+    },
+    "Stefon Diggs": {
+      "ktc": 2758,
+      "ktc_rank": 255
+    },
+    "Jake Hummel": {
+      "apy": 2375000,
+      "years": 2,
+      "guaranteed": 2150000,
+      "total_value": 4750000
+    },
+    "Nick Mullens": {
+      "apy": 2250000,
+      "years": 2,
+      "guaranteed": 3000000,
+      "total_value": 4500000
+    },
+    "Monkell Goodwine": {
+      "apy": 1036667,
+      "years": 3,
+      "guaranteed": 257500,
+      "total_value": 3110000
+    },
+    "Daron Payne": {
+      "apy": 22500000,
+      "years": 4,
+      "guaranteed": 46010000,
+      "total_value": 90000000
+    },
+    "Grant Calcaterra": {
+      "ktc": 679,
+      "ktc_rank": 488,
+      "apy": 2000000,
+      "years": 1,
+      "guaranteed": 700000,
+      "total_value": 2000000
+    },
+    "Luke McCaffrey": {
+      "ktc": 2119,
+      "ktc_rank": 315,
+      "apy": 1399078,
+      "years": 4,
+      "guaranteed": 890044,
+      "total_value": 5596312
+    },
+    "Deion Burks": {
+      "ktc": 1273,
+      "ktc_rank": 412,
+      "apy": 1125122,
+      "years": 4,
+      "guaranteed": 120488,
+      "total_value": 4500488
+    },
+    "Josh Thompson": {
+      "apy": 1040000,
+      "years": 3,
+      "guaranteed": 267500,
+      "total_value": 3120000
+    },
+    "Kadyn Proctor": {
+      "apy": 6530029,
+      "years": 4,
+      "guaranteed": 26120116,
+      "total_value": 26120116
+    },
+    "Raylen Sharpe": {
+      "apy": 1036667,
+      "years": 3,
+      "guaranteed": 10000,
+      "total_value": 3110000
+    },
+    "Dennis Gardeck": {
+      "apy": 3250000,
+      "years": 2,
+      "guaranteed": 3150000,
+      "total_value": 6500000
+    },
+    "Taliese Fuaga": {
+      "apy": 4337040,
+      "years": 4,
+      "guaranteed": 17348158,
+      "total_value": 17348158
+    },
+    "P.J. Jules": {
+      "apy": 1005000,
+      "years": 1,
+      "guaranteed": 0,
+      "total_value": 1005000
+    },
+    "Austin McNamara": {
+      "apy": 922500,
+      "years": 2,
+      "guaranteed": 0,
+      "total_value": 1845000
+    },
+    "Andrew Farmer": {
+      "apy": 1005000,
+      "years": 1,
+      "guaranteed": 0,
+      "total_value": 1005000
+    },
+    "Kyler Gordon": {
+      "apy": 13333333,
+      "years": 3,
+      "guaranteed": 21256000,
+      "total_value": 40000000
+    },
+    "Calen Bullock": {
+      "apy": 1464250,
+      "years": 4,
+      "guaranteed": 1079636,
+      "total_value": 5856998
+    },
+    "Tyrus Wheat": {
+      "apy": 1245000,
+      "years": 1,
+      "guaranteed": 100000,
+      "total_value": 1245000
+    },
+    "Kamren Curl": {
+      "apy": 12000000,
+      "years": 3,
+      "guaranteed": 18750000,
+      "total_value": 36000000
+    },
+    "Dawand Jones": {
+      "apy": 1500000,
+      "years": 1,
+      "guaranteed": 1245000,
+      "total_value": 1500000
+    },
+    "Donaven McCulley": {
+      "apy": 1036667,
+      "years": 3,
+      "guaranteed": 60000,
+      "total_value": 3110000
+    },
+    "Colton McKivitz": {
+      "apy": 15000000,
+      "years": 3,
+      "guaranteed": 18710000,
+      "total_value": 45000000
+    },
+    "Haynes King": {
+      "apy": 1036667,
+      "years": 3,
+      "guaranteed": 210000,
+      "total_value": 3110000
+    },
+    "Damon Bankston": {
+      "apy": 1038333,
+      "years": 3,
+      "guaranteed": 115000,
+      "total_value": 3115000
+    },
+    "Kalen King": {
+      "apy": 922500,
+      "years": 2,
+      "guaranteed": 0,
+      "total_value": 1845000
+    },
+    "Jordan Davis": {
+      "apy": 26000000,
+      "years": 3,
+      "guaranteed": 38938000,
+      "total_value": 78000000
+    },
+    "Gervon Dexter": {
+      "apy": 1680933,
+      "years": 4,
+      "guaranteed": 3695612,
+      "total_value": 6723732
+    },
+    "J. Michael Sturdivant": {
+      "apy": 1038333,
+      "years": 3,
+      "guaranteed": 215000,
+      "total_value": 3115000
+    },
+    "Ian Thomas": {
+      "apy": 1615000,
+      "years": 1,
+      "guaranteed": 612500,
+      "total_value": 1615000
+    },
+    "Tylan Grable": {
+      "apy": 1047478,
+      "years": 4,
+      "guaranteed": 169912,
+      "total_value": 4189912
+    },
+    "Jared Ivey": {
+      "apy": 993333,
+      "years": 3,
+      "guaranteed": 95000,
+      "total_value": 2980000
+    },
+    "Courtland Sutton": {
+      "ktc": 3848,
+      "ktc_rank": 147,
+      "apy": 23000000,
+      "years": 4,
+      "guaranteed": 40000000,
+      "total_value": 92000000
+    },
+    "Devin Bush": {
+      "apy": 10000000,
+      "years": 3,
+      "guaranteed": 21000000,
+      "total_value": 30000000
+    },
+    "Rayuan Lane III": {
+      "apy": 1105544,
+      "years": 4,
+      "guaranteed": 222176,
+      "total_value": 4422176
+    },
+    "Devin Lloyd": {
+      "apy": 15000000,
+      "years": 3,
+      "guaranteed": 25000000,
+      "total_value": 45000000
+    },
+    "Travis Clayton": {
+      "apy": 971750,
+      "years": 2,
+      "guaranteed": 8500,
+      "total_value": 1943500
+    },
+    "Josh Johnson": {
+      "apy": 1500000,
+      "years": 1,
+      "guaranteed": 200000,
+      "total_value": 1500000
+    },
+    "Kaleb Elarms-Orr": {
+      "apy": 1365740,
+      "years": 4,
+      "guaranteed": 1082960,
+      "total_value": 5462960
+    },
+    "Basil Okoye": {
+      "apy": 1005000,
+      "years": 1,
+      "guaranteed": 0,
+      "total_value": 1005000
+    },
+    "Will Pauling": {
+      "apy": 1043333,
+      "years": 3,
+      "guaranteed": 277500,
+      "total_value": 3130000
+    },
+    "Troy Dye": {
+      "apy": 2750000,
+      "years": 2,
+      "guaranteed": 3000000,
+      "total_value": 5500000
+    },
+    "Raheem Layne": {
+      "apy": 1087500,
+      "years": 2,
+      "guaranteed": 0,
+      "total_value": 2175000
+    },
+    "Devan Boykin": {
+      "apy": 1041667,
+      "years": 3,
+      "guaranteed": 25000,
+      "total_value": 3125000
+    },
+    "Zay Flowers": {
+      "ktc": 5523,
+      "ktc_rank": 72,
+      "apy": 3509110,
+      "years": 4,
+      "guaranteed": 14036440,
+      "total_value": 14036440
+    },
+    "Robbie Ouzts": {
+      "apy": 1130054,
+      "years": 4,
+      "guaranteed": 320216,
+      "total_value": 4520216
+    },
+    "Jacob Saylors": {
+      "apy": 1005000,
+      "years": 1,
+      "guaranteed": 0,
+      "total_value": 1005000
+    },
+    "Khalil Dinkins": {
+      "apy": 1042500,
+      "years": 3,
+      "guaranteed": 275000,
+      "total_value": 3127500
+    },
+    "A.J. Terrell": {
+      "apy": 20250000,
+      "years": 4,
+      "guaranteed": 42344000,
+      "total_value": 81000000
+    },
+    "Sincere Brown": {
+      "apy": 1036667,
+      "years": 3,
+      "guaranteed": 30000,
+      "total_value": 3110000
+    },
+    "Nate Wiggins": {
+      "apy": 3204956,
+      "years": 4,
+      "guaranteed": 12819822,
+      "total_value": 12819822
+    },
+    "Barry Wesley": {
+      "apy": 967500,
+      "years": 2,
+      "guaranteed": 0,
+      "total_value": 1935000
+    },
+    "Keenan Allen": {
+      "ktc": 1704,
+      "ktc_rank": 371
+    },
+    "James Winchester": {
+      "apy": 1700000,
+      "years": 1,
+      "guaranteed": 1700000,
+      "total_value": 1700000
+    },
+    "Andrew Van Ginkel": {
+      "apy": 23000000,
+      "years": 1,
+      "guaranteed": 22440000,
+      "total_value": 23000000
+    },
+    "Tyler Lacy": {
+      "apy": 1131780,
+      "years": 4,
+      "guaranteed": 687120,
+      "total_value": 4527120
+    },
+    "D.J. Turner": {
+      "apy": 1540010,
+      "years": 4,
+      "guaranteed": 3260030,
+      "total_value": 6160040
+    },
+    "Dalen Cambre": {
+      "apy": 922500,
+      "years": 2,
+      "guaranteed": 0,
+      "total_value": 1845000
+    },
+    "Amar Johnson": {
+      "apy": 885000,
+      "years": 1,
+      "guaranteed": 0,
+      "total_value": 885000
+    },
+    "Darrell Luter Jr.": {
+      "apy": 1038378,
+      "years": 4,
+      "guaranteed": 313512,
+      "total_value": 4153512
+    },
+    "Chuck Clark": {
+      "apy": 1487500,
+      "years": 1,
+      "guaranteed": 50000,
+      "total_value": 1487500
+    },
+    "Pete Werner": {
+      "apy": 7500000,
+      "years": 3,
+      "guaranteed": 11185185,
+      "total_value": 22500000
+    },
+    "Harrison Butker": {
+      "apy": 6400000,
+      "years": 4,
+      "guaranteed": 15000000,
+      "total_value": 25600000
+    },
+    "JahQuez Robinson": {
+      "apy": 1033333,
+      "years": 3,
+      "guaranteed": 0,
+      "total_value": 3100000
+    },
+    "Jacob Monk": {
+      "apy": 1080404,
+      "years": 4,
+      "guaranteed": 301616,
+      "total_value": 4321616
+    },
+    "Jovaughn Gwyn": {
+      "apy": 1195000,
+      "years": 1,
+      "guaranteed": 0,
+      "total_value": 1195000
+    },
+    "Kevin Cline": {
+      "apy": 1034000,
+      "years": 3,
+      "guaranteed": 2000,
+      "total_value": 3102000
+    },
+    "Jalen Milroe": {
+      "ktc": 2303,
+      "ktc_rank": 247,
+      "apy": 1566022,
+      "years": 4,
+      "guaranteed": 1195700,
+      "total_value": 6264086
+    },
+    "Josh Harris": {
+      "apy": 1815000,
+      "years": 1,
+      "guaranteed": 1815000,
+      "total_value": 1815000
+    },
+    "Kyle Louis": {
+      "apy": 1292259,
+      "years": 4,
+      "guaranteed": 789036,
+      "total_value": 5169036
+    },
+    "Garrett Dellinger": {
+      "apy": 1005000,
+      "years": 1,
+      "guaranteed": 0,
+      "total_value": 1005000
+    },
+    "Amik Robertson": {
+      "apy": 7510000,
+      "years": 2,
+      "guaranteed": 7350000,
+      "total_value": 15020000
+    },
+    "Bruno Fina": {
+      "apy": 1038333,
+      "years": 3,
+      "guaranteed": 50000,
+      "total_value": 3115000
+    },
+    "Logan Lee": {
+      "apy": 1060018,
+      "years": 4,
+      "guaranteed": 220072,
+      "total_value": 4240072
+    },
+    "Luke Newman": {
+      "apy": 1107515,
+      "years": 4,
+      "guaranteed": 230060,
+      "total_value": 4430060
+    },
+    "Lucas Patrick": {
+      "apy": 1487500,
+      "years": 1,
+      "guaranteed": 262500,
+      "total_value": 1487500
+    },
+    "Colson Yankoff": {
+      "apy": 946667,
+      "years": 3,
+      "guaranteed": 50000,
+      "total_value": 2840000
+    },
+    "Omar Cooper Jr.": {
+      "ktc": 4689,
+      "ktc_rank": 102
+    },
+    "Dallas Turner": {
+      "apy": 3941716,
+      "years": 4,
+      "guaranteed": 15766862,
+      "total_value": 15766862
+    },
+    "Shad Banks Jr.": {
+      "apy": 1036667,
+      "years": 3,
+      "guaranteed": 90000,
+      "total_value": 3110000
+    },
+    "Trevor Nowaske": {
+      "apy": 1350000,
+      "years": 1,
+      "guaranteed": 550000,
+      "total_value": 1350000
+    },
+    "Amani Hooker": {
+      "apy": 13500000,
+      "years": 3,
+      "guaranteed": 24860000,
+      "total_value": 40500000
+    },
+    "DeMarcco Hellams": {
+      "apy": 986575,
+      "years": 4,
+      "guaranteed": 106300,
+      "total_value": 3946300
+    },
+    "Shemar Turner": {
+      "apy": 1805072,
+      "years": 4,
+      "guaranteed": 4423048,
+      "total_value": 7220286
+    },
+    "Zaire Mitchell-Paden": {
+      "apy": 1062500,
+      "years": 2,
+      "guaranteed": 0,
+      "total_value": 2125000
+    },
+    "Carson Wentz": {
+      "apy": 3000000,
+      "years": 1,
+      "guaranteed": 2645000,
+      "total_value": 3000000
+    },
+    "Jamaree Salyer": {
+      "apy": 1487500,
+      "years": 1,
+      "guaranteed": 187500,
+      "total_value": 1487500
+    },
+    "Hezekiah Masses": {
+      "apy": 1189869,
+      "years": 4,
+      "guaranteed": 379476,
+      "total_value": 4759476
+    },
+    "Devin Grant": {
+      "apy": 1036667,
+      "years": 3,
+      "guaranteed": 10000,
+      "total_value": 3110000
+    },
+    "Jaylon Johnson": {
+      "apy": 19000000,
+      "years": 4,
+      "guaranteed": 43800000,
+      "total_value": 76000000
+    },
+    "Jake Tonges": {
+      "ktc": 2680,
+      "ktc_rank": 236,
+      "apy": 4000000,
+      "years": 2,
+      "guaranteed": 5500000,
+      "total_value": 8000000
+    },
+    "Cade York": {
+      "apy": 1145000,
+      "years": 1,
+      "guaranteed": 0,
+      "total_value": 1145000
+    },
+    "Divine Deablo": {
+      "apy": 7000000,
+      "years": 2,
+      "guaranteed": 6660000,
+      "total_value": 14000000
+    },
+    "Langston Patterson": {
+      "apy": 1035000,
+      "years": 3,
+      "guaranteed": 50000,
+      "total_value": 3105000
+    },
+    "Davante Adams": {
+      "ktc": 4223,
+      "ktc_rank": 130,
+      "apy": 22000000,
+      "years": 2,
+      "guaranteed": 26000000,
+      "total_value": 44000000
+    },
+    "Jack Gibbens": {
+      "apy": 3750000,
+      "years": 2,
+      "guaranteed": 4000000,
+      "total_value": 7500000
+    },
+    "Mike Brown": {
+      "apy": 1315000,
+      "years": 1,
+      "guaranteed": 50000,
+      "total_value": 1315000
+    },
+    "Hunter Nourzad": {
+      "apy": 1084879,
+      "years": 4,
+      "guaranteed": 319516,
+      "total_value": 4339516
+    },
+    "Nik Constantinou": {
+      "apy": 885000,
+      "years": 1,
+      "guaranteed": 0,
+      "total_value": 885000
+    },
+    "Roman Wilson": {
+      "ktc": 1992,
+      "ktc_rank": 335,
+      "apy": 1436292,
+      "years": 4,
+      "guaranteed": 998304,
+      "total_value": 5745168
+    },
+    "K.J. Osborn": {
+      "apy": 1215000,
+      "years": 1,
+      "guaranteed": 0,
+      "total_value": 1215000
+    },
+    "Micah Robinson": {
+      "apy": 922500,
+      "years": 2,
+      "guaranteed": 0,
+      "total_value": 1845000
+    },
+    "Kayvon Thibodeaux": {
+      "apy": 7834760,
+      "years": 4,
+      "guaranteed": 31339040,
+      "total_value": 31339040
+    },
+    "Quintin Morris": {
+      "apy": 2000000,
+      "years": 1,
+      "guaranteed": 1700000,
+      "total_value": 2000000
+    },
+    "Luke Fortner": {
+      "apy": 2750000,
+      "years": 1,
+      "guaranteed": 1325000,
+      "total_value": 2750000
+    },
+    "Lincoln Pare": {
+      "apy": 1036667,
+      "years": 3,
+      "guaranteed": 10000,
+      "total_value": 3110000
+    },
+    "Jayden Price": {
+      "apy": 967500,
+      "years": 2,
+      "guaranteed": 0,
+      "total_value": 1935000
+    },
+    "Nate Boerkircher": {
+      "apy": 2134749,
+      "years": 4,
+      "guaranteed": 6737771,
+      "total_value": 8538996
+    },
+    "Dennis Houston": {
+      "apy": 967500,
+      "years": 2,
+      "guaranteed": 0,
+      "total_value": 1935000
+    },
+    "D.J. Campbell": {
+      "apy": 1163159,
+      "years": 4,
+      "guaranteed": 272636,
+      "total_value": 4652636
+    },
+    "Jordyn Brooks": {
+      "apy": 8750000,
+      "years": 3,
+      "guaranteed": 9500000,
+      "total_value": 26250000
+    },
+    "Adedayo Odeleye": {
+      "apy": 967500,
+      "years": 2,
+      "guaranteed": 0,
+      "total_value": 1935000
+    },
+    "Justin Fields": {
+      "ktc": 2146,
+      "ktc_rank": 270,
+      "apy": 11000000,
+      "years": 1,
+      "guaranteed": 11000000,
+      "total_value": 11000000
+    },
+    "Tank Dell": {
+      "ktc": 3137,
+      "ktc_rank": 205,
+      "apy": 1422276,
+      "years": 4,
+      "guaranteed": 1137528,
+      "total_value": 5689104
+    },
+    "Zaven Collins": {
+      "apy": 7000000,
+      "years": 2,
+      "guaranteed": 11250000,
+      "total_value": 14000000
+    },
+    "Trey Smith": {
+      "apy": 23500000,
+      "years": 4,
+      "guaranteed": 46750000,
+      "total_value": 94000000
+    },
+    "Chris McClellan": {
+      "apy": 1774018,
+      "years": 4,
+      "guaranteed": 1620776,
+      "total_value": 7096070
+    },
+    "Ben Sims": {
+      "apy": 1332500,
+      "years": 1,
+      "guaranteed": 187500,
+      "total_value": 1332500
+    },
+    "Austin Ajiake": {
+      "apy": 1005000,
+      "years": 1,
+      "guaranteed": 0,
+      "total_value": 1005000
+    },
+    "Jake Matthews": {
+      "apy": 22500000,
+      "years": 2,
+      "guaranteed": 38000000,
+      "total_value": 45000000
+    },
+    "Keith Taylor": {
+      "apy": 1240000,
+      "years": 1,
+      "guaranteed": 0,
+      "total_value": 1240000
+    },
+    "Carnell Tate": {
+      "ktc": 6449,
+      "ktc_rank": 37,
+      "apy": 12783728,
+      "years": 4,
+      "guaranteed": 51134912,
+      "total_value": 51134912
+    },
+    "Joe Cardona": {
+      "apy": 1725000,
+      "years": 2,
+      "guaranteed": 2050000,
+      "total_value": 3450000
+    },
+    "D.J. Johnson": {
+      "apy": 1145000,
+      "years": 1,
+      "guaranteed": 0,
+      "total_value": 1145000
+    },
+    "Chandler Brayboy": {
+      "apy": 885000,
+      "years": 1,
+      "guaranteed": 0,
+      "total_value": 885000
+    },
+    "Isaiah Rodgers": {
+      "apy": 5522500,
+      "years": 2,
+      "guaranteed": 7995000,
+      "total_value": 11045000
+    },
+    "Samson Ebukam": {
+      "apy": 2765000,
+      "years": 1,
+      "guaranteed": 700000,
+      "total_value": 2765000
+    },
+    "Kyle Monangai": {
+      "ktc": 4524,
+      "ktc_rank": 113,
+      "apy": 1082035,
+      "years": 4,
+      "guaranteed": 128140,
+      "total_value": 4328140
+    },
+    "Jonah Savaiinaea": {
+      "apy": 2830618,
+      "years": 4,
+      "guaranteed": 11322472,
+      "total_value": 11322472
+    },
+    "Roger Rosengarten": {
+      "apy": 1609329,
+      "years": 4,
+      "guaranteed": 3384289,
+      "total_value": 6437314
+    },
+    "Akeem Davis-Gaither": {
+      "apy": 2725000,
+      "years": 1,
+      "guaranteed": 1500000,
+      "total_value": 2725000
+    },
+    "Kareem Hunt": {
+      "ktc": 1022,
+      "ktc_rank": 464
+    },
+    "Zach Durfee": {
+      "apy": 1132964,
+      "years": 4,
+      "guaranteed": 151856,
+      "total_value": 4531856
+    },
+    "Nadame Tucker": {
+      "apy": 1046667,
+      "years": 3,
+      "guaranteed": 287500,
+      "total_value": 3140000
+    },
+    "Brenden Bates": {
+      "apy": 1075000,
+      "years": 1,
+      "guaranteed": 0,
+      "total_value": 1075000
+    },
+    "Adam Butler": {
+      "apy": 5500000,
+      "years": 3,
+      "guaranteed": 8000000,
+      "total_value": 16500000
+    },
+    "Fernando Carmona": {
+      "apy": 1235180,
+      "years": 4,
+      "guaranteed": 560720,
+      "total_value": 4940720
+    },
+    "Leki Fotu": {
+      "apy": 1290000,
+      "years": 1,
+      "guaranteed": 25000,
+      "total_value": 1290000
+    },
+    "Zaire Franklin": {
+      "apy": 9005000,
+      "years": 2,
+      "guaranteed": 3750000,
+      "total_value": 18010000
+    },
+    "James Conner": {
+      "ktc": 2326,
+      "ktc_rank": 304,
+      "apy": 3000000,
+      "years": 1,
+      "guaranteed": 2100000,
+      "total_value": 3000000
+    },
+    "Dorian Mausi": {
+      "apy": 990000,
+      "years": 3,
+      "guaranteed": 50000,
+      "total_value": 2970000
+    },
+    "Josh Whyle": {
+      "apy": 2000000,
+      "years": 1,
+      "guaranteed": 370000,
+      "total_value": 2000000
+    },
+    "Rob Carter": {
+      "apy": 1033333,
+      "years": 3,
+      "guaranteed": 0,
+      "total_value": 3100000
+    },
+    "Zach Sieler": {
+      "apy": 21333333,
+      "years": 3,
+      "guaranteed": 34000000,
+      "total_value": 64000000
+    },
+    "Isaiah Neyor": {
+      "apy": 885000,
+      "years": 1,
+      "guaranteed": 0,
+      "total_value": 885000
+    },
+    "Doneiko Slaughter": {
+      "apy": 885000,
+      "years": 1,
+      "guaranteed": 0,
+      "total_value": 885000
+    },
+    "Ben Sinnott": {
+      "ktc": 2212,
+      "ktc_rank": 307,
+      "apy": 1806988,
+      "years": 4,
+      "guaranteed": 4597851,
+      "total_value": 7227950
+    },
+    "Jeadyn Lukus": {
+      "apy": 1035000,
+      "years": 3,
+      "guaranteed": 30000,
+      "total_value": 3105000
+    },
+    "Azareye'h Thomas": {
+      "apy": 1648412,
+      "years": 4,
+      "guaranteed": 1435380,
+      "total_value": 6593646
+    },
+    "Cooper Beebe": {
+      "apy": 1484930,
+      "years": 4,
+      "guaranteed": 1139796,
+      "total_value": 5939718
+    },
+    "Zach Wood": {
+      "apy": 1577500,
+      "years": 4,
+      "guaranteed": 2300000,
+      "total_value": 6310000
+    },
+    "Harrison Phillips": {
+      "apy": 7500000,
+      "years": 2,
+      "guaranteed": 10266667,
+      "total_value": 15000000
+    },
+    "RJ Harvey": {
+      "ktc": 4320,
+      "ktc_rank": 121
+    },
+    "Dillon Bell": {
+      "apy": 1041667,
+      "years": 3,
+      "guaranteed": 272500,
+      "total_value": 3125000
+    },
+    "Nick Zakelj": {
+      "apy": 1215000,
+      "years": 1,
+      "guaranteed": 0,
+      "total_value": 1215000
+    },
+    "Maurice Alexander": {
+      "apy": 1075000,
+      "years": 1,
+      "guaranteed": 0,
+      "total_value": 1075000
+    },
+    "Nick Andersen": {
+      "apy": 1040000,
+      "years": 3,
+      "guaranteed": 20000,
+      "total_value": 3120000
+    },
+    "Nick DeGennaro": {
+      "apy": 1036667,
+      "years": 3,
+      "guaranteed": 35000,
+      "total_value": 3110000
+    },
+    "Keivie Rose": {
+      "apy": 885000,
+      "years": 1,
+      "guaranteed": 0,
+      "total_value": 885000
+    },
+    "Troy Franklin": {
+      "ktc": 3401,
+      "ktc_rank": 193,
+      "apy": 1222459,
+      "years": 4,
+      "guaranteed": 854836,
+      "total_value": 4889836
+    },
+    "Odafe Oweh": {
+      "apy": 24000000,
+      "years": 4,
+      "guaranteed": 50600000,
+      "total_value": 96000000
+    },
+    "Cedrick Wilson Jr.": {
+      "apy": 1300000,
+      "years": 1,
+      "guaranteed": 0,
+      "total_value": 1300000
+    },
+    "2028 Mid 1st": {
+      "ktc": 5200,
+      "ktc_rank": 86
+    },
+    "James Neal III": {
+      "apy": 1043333,
+      "years": 3,
+      "guaranteed": 277500,
+      "total_value": 3130000
+    },
+    "Kedon Slovis": {
+      "apy": 922500,
+      "years": 2,
+      "guaranteed": 0,
+      "total_value": 1845000
+    },
+    "Isaac Yiadom": {
+      "apy": 3000000,
+      "years": 3,
+      "guaranteed": 4860000,
+      "total_value": 9000000
+    },
+    "Wydett Williams Jr.": {
+      "apy": 1036667,
+      "years": 3,
+      "guaranteed": 110000,
+      "total_value": 3110000
+    },
+    "Christian Harris": {
+      "apy": 2750000,
+      "years": 1,
+      "guaranteed": 1985000,
+      "total_value": 2750000
+    },
+    "Jaylin Simpson": {
+      "apy": 1017500,
+      "years": 2,
+      "guaranteed": 0,
+      "total_value": 2035000
+    },
+    "Paul Manning": {
+      "apy": 1033333,
+      "years": 3,
+      "guaranteed": 0,
+      "total_value": 3100000
+    },
+    "Dalton Schultz": {
+      "ktc": 2590,
+      "ktc_rank": 244,
+      "apy": 12600000,
+      "years": 1,
+      "guaranteed": 17600000,
+      "total_value": 12600000
+    },
+    "A.J. Brown": {
+      "ktc": 5718,
+      "ktc_rank": 60,
+      "apy": 32000000,
+      "years": 3,
+      "guaranteed": 51000000,
+      "total_value": 96000000
+    },
+    "Jakobi Meyers": {
+      "ktc": 3865,
+      "ktc_rank": 148,
+      "apy": 20000000,
+      "years": 3,
+      "guaranteed": 30000000,
+      "total_value": 60000000
+    },
+    "Devaughn Vele": {
+      "ktc": 1826,
+      "ktc_rank": 354
+    },
+    "Tyre West": {
+      "apy": 1136823,
+      "years": 4,
+      "guaranteed": 167292,
+      "total_value": 4547292
+    },
+    "Jack Westover": {
+      "apy": 1075000,
+      "years": 1,
+      "guaranteed": 0,
+      "total_value": 1075000
+    },
+    "Matthew Golden": {
+      "ktc": 4587,
+      "ktc_rank": 105,
+      "apy": 4393835,
+      "years": 4,
+      "guaranteed": 17575338,
+      "total_value": 17575338
+    },
+    "Jay Higgins": {
+      "apy": 995000,
+      "years": 3,
+      "guaranteed": 30000,
+      "total_value": 2985000
+    },
+    "Tip Reiman": {
+      "apy": 1447478,
+      "years": 4,
+      "guaranteed": 1030844,
+      "total_value": 5789912
+    },
+    "Arik Armstead": {
+      "apy": 14500000,
+      "years": 3,
+      "guaranteed": 28000000,
+      "total_value": 43500000
+    },
+    "Abdul Carter": {
+      "apy": 11313795,
+      "years": 4,
+      "guaranteed": 45255180,
+      "total_value": 45255180
+    },
+    "Caden Barnett": {
+      "apy": 1043333,
+      "years": 3,
+      "guaranteed": 277500,
+      "total_value": 3130000
+    },
+    "MarShawn Lloyd": {
+      "ktc": 2424,
+      "ktc_rank": 266,
+      "apy": 1422130,
+      "years": 4,
+      "guaranteed": 957104,
+      "total_value": 5688518
+    },
+    "Zach Tom": {
+      "apy": 22000000,
+      "years": 4,
+      "guaranteed": 30200000,
+      "total_value": 88000000
+    },
+    "Paris Johnson Jr.": {
+      "apy": 7013115,
+      "years": 4,
+      "guaranteed": 28052460,
+      "total_value": 28052460
+    },
+    "Kemon Hall": {
+      "apy": 1215000,
+      "years": 1,
+      "guaranteed": 0,
+      "total_value": 1215000
+    },
+    "Anthony Bradford": {
+      "apy": 1160997,
+      "years": 4,
+      "guaranteed": 803988,
+      "total_value": 4643988
+    },
+    "Robert Rochell": {
+      "apy": 1215000,
+      "years": 1,
+      "guaranteed": 0,
+      "total_value": 1215000
+    },
+    "Johnathan Baldwin": {
+      "apy": 922500,
+      "years": 2,
+      "guaranteed": 0,
+      "total_value": 1845000
+    },
+    "Trenton Simpson": {
+      "apy": 1351126,
+      "years": 4,
+      "guaranteed": 930548,
+      "total_value": 5404502
+    },
+    "Jaden Crumedy": {
+      "apy": 1075000,
+      "years": 1,
+      "guaranteed": 0,
+      "total_value": 1075000
+    },
+    "Andre' Sam": {
+      "apy": 1062500,
+      "years": 2,
+      "guaranteed": 0,
+      "total_value": 2125000
+    },
+    "Trent McDuffie": {
+      "apy": 31000000,
+      "years": 4,
+      "guaranteed": 50000000,
+      "total_value": 124000000
+    },
+    "DeAngelo Malone": {
+      "apy": 1500000,
+      "years": 1,
+      "guaranteed": 215000,
+      "total_value": 1500000
+    },
+    "Jon Weeks": {
+      "apy": 1487500,
+      "years": 1,
+      "guaranteed": 1212500,
+      "total_value": 1487500
+    },
+    "Brandon Parker": {
+      "apy": 1215000,
+      "years": 1,
+      "guaranteed": 0,
+      "total_value": 1215000
+    },
+    "Roschon Johnson": {
+      "ktc": 1758,
+      "ktc_rank": 349,
+      "apy": 1152172,
+      "years": 4,
+      "guaranteed": 768688,
+      "total_value": 4608688
+    },
+    "Jackson Kuwatch": {
+      "apy": 1134770,
+      "years": 4,
+      "guaranteed": 159080,
+      "total_value": 4539080
+    },
+    "Ka'imi Fairbairn": {
+      "apy": 6500000,
+      "years": 2,
+      "guaranteed": 11660000,
+      "total_value": 13000000
+    },
+    "Jordan Morgan": {
+      "apy": 3546399,
+      "years": 4,
+      "guaranteed": 14185596,
+      "total_value": 14185596
+    },
+    "Jay'Viar Suggs": {
+      "apy": 1040000,
+      "years": 3,
+      "guaranteed": 30000,
+      "total_value": 3120000
+    },
+    "Skyler Gill-Howard": {
+      "apy": 1160823,
+      "years": 4,
+      "guaranteed": 263292,
+      "total_value": 4643292
+    },
+    "Devon Key": {
+      "apy": 1075000,
+      "years": 1,
+      "guaranteed": 0,
+      "total_value": 1075000
+    },
+    "Jakorian Bennett": {
+      "apy": 1165897,
+      "years": 4,
+      "guaranteed": 823588,
+      "total_value": 4663588
+    },
+    "Xavian Sorey Jr.": {
+      "apy": 1036667,
+      "years": 3,
+      "guaranteed": 70000,
+      "total_value": 3110000
+    },
+    "Christian Elliss": {
+      "apy": 6754000,
+      "years": 2,
+      "guaranteed": 7750000,
+      "total_value": 13508000
+    },
+    "Jake Golday": {
+      "apy": 2400233,
+      "years": 4,
+      "guaranteed": 8394113,
+      "total_value": 9600932
+    },
+    "David Ojabo": {
+      "apy": 1402500,
+      "years": 1,
+      "guaranteed": 0,
+      "total_value": 1402500
+    },
+    "Landon Young": {
+      "apy": 1215000,
+      "years": 1,
+      "guaranteed": 0,
+      "total_value": 1215000
+    },
+    "Darrell Baker Jr.": {
+      "apy": 1402500,
+      "years": 1,
+      "guaranteed": 1262500,
+      "total_value": 1402500
+    },
+    "Javon Foster": {
+      "apy": 1005000,
+      "years": 1,
+      "guaranteed": 0,
+      "total_value": 1005000
+    },
+    "Wanya Morris": {
+      "apy": 1342088,
+      "years": 4,
+      "guaranteed": 904256,
+      "total_value": 5368352
+    },
+    "Nate Carter": {
+      "apy": 993333,
+      "years": 3,
+      "guaranteed": 171000,
+      "total_value": 2980000
+    },
+    "Kamari Lassiter": {
+      "apy": 2253698,
+      "years": 4,
+      "guaranteed": 7090508,
+      "total_value": 9014800
+    },
+    "Drew Sanders": {
+      "apy": 1433683,
+      "years": 4,
+      "guaranteed": 1170712,
+      "total_value": 5734732
+    },
+    "T.J. Watt": {
+      "apy": 41000000,
+      "years": 3,
+      "guaranteed": 108000000,
+      "total_value": 123000000
+    },
+    "Christian McCaffrey": {
+      "ktc": 5737,
+      "ktc_rank": 59,
+      "apy": 19000000,
+      "years": 2,
+      "guaranteed": 24000000,
+      "total_value": 38000000
+    },
+    "Tate Ratledge": {
+      "apy": 1914595,
+      "years": 4,
+      "guaranteed": 5251742,
+      "total_value": 7658380
+    },
+    "Dean Patterson": {
+      "apy": 1033667,
+      "years": 3,
+      "guaranteed": 1000,
+      "total_value": 3101000
+    },
+    "Nikko Reed": {
+      "apy": 993333,
+      "years": 3,
+      "guaranteed": 40000,
+      "total_value": 2980000
+    },
+    "Marcus Harris": {
+      "apy": 885000,
+      "years": 1,
+      "guaranteed": 0,
+      "total_value": 885000
+    },
+    "Trey Moore": {
+      "apy": 1355592,
+      "years": 4,
+      "guaranteed": 1042368,
+      "total_value": 5422368
+    },
+    "Darius Slayton": {
+      "ktc": 1830,
+      "ktc_rank": 341,
+      "apy": 12000000,
+      "years": 3,
+      "guaranteed": 22000000,
+      "total_value": 36000000
+    },
+    "Tremon Smith": {
+      "apy": 3250000,
+      "years": 2,
+      "guaranteed": 4500000,
+      "total_value": 6500000
+    },
+    "Jermaine Eluemunor": {
+      "apy": 13000000,
+      "years": 3,
+      "guaranteed": 25450000,
+      "total_value": 39000000
+    },
+    "Ethan Bonner": {
+      "apy": 1145000,
+      "years": 1,
+      "guaranteed": 0,
+      "total_value": 1145000
+    },
+    "Malik Willis": {
+      "ktc": 3711,
+      "ktc_rank": 97,
+      "apy": 22500000,
+      "years": 3,
+      "guaranteed": 45000000,
+      "total_value": 67500000
+    },
+    "Ruben Hyppolite II": {
+      "apy": 1269897,
+      "years": 4,
+      "guaranteed": 879588,
+      "total_value": 5079588
+    },
+    "2026 Mid 1st": {
+      "ktc": 5343,
+      "ktc_rank": 82
+    },
+    "Jaden Robinson": {
+      "apy": 885000,
+      "years": 1,
+      "guaranteed": 0,
+      "total_value": 885000
+    },
+    "Scott Miller": {
+      "apy": 1300000,
+      "years": 1,
+      "guaranteed": 0,
+      "total_value": 1300000
+    },
+    "Kimani Vidal": {
+      "ktc": 2741,
+      "ktc_rank": 250,
+      "apy": 1075000,
+      "years": 1,
+      "guaranteed": 0,
+      "total_value": 1075000
+    },
+    "Jaylen Warren": {
+      "ktc": 3989,
+      "ktc_rank": 139,
+      "apy": 5952000,
+      "years": 2,
+      "guaranteed": 11765000,
+      "total_value": 11904000
+    },
+    "J.K. Dobbins": {
+      "ktc": 3658,
+      "ktc_rank": 158,
+      "apy": 8000000,
+      "years": 2,
+      "guaranteed": 0,
+      "total_value": 16000000
+    },
+    "Jaxon Smith-Njigba": {
+      "ktc": 9953,
+      "ktc_rank": 5,
+      "apy": 42150000,
+      "years": 4,
+      "guaranteed": 69130996,
+      "total_value": 168600000
+    },
+    "Andrew Rupcich": {
+      "apy": 1075000,
+      "years": 1,
+      "guaranteed": 0,
+      "total_value": 1075000
+    },
+    "Brandon Allen": {
+      "apy": 1450000,
+      "years": 1,
+      "guaranteed": 250000,
+      "total_value": 1450000
+    },
+    "Levi Drake Rodriguez": {
+      "apy": 1031497,
+      "years": 4,
+      "guaranteed": 105988,
+      "total_value": 4125988
+    },
+    "Marquis Hayes": {
+      "apy": 988333,
+      "years": 3,
+      "guaranteed": 0,
+      "total_value": 2965000
+    },
+    "Carson Schwesinger": {
+      "apy": 2950100,
+      "years": 4,
+      "guaranteed": 11800400,
+      "total_value": 11800400
+    },
+    "Carsen Ryan": {
+      "apy": 1125122,
+      "years": 4,
+      "guaranteed": 120488,
+      "total_value": 4500488
+    },
+    "Dre Greenlaw": {
+      "apy": 6000000,
+      "years": 1,
+      "guaranteed": 6000000,
+      "total_value": 6000000
+    },
+    "Jake Briningstool": {
+      "apy": 998333,
+      "years": 3,
+      "guaranteed": 264000,
+      "total_value": 2995000
+    },
+    "Xavier Guillory": {
+      "apy": 885000,
+      "years": 1,
+      "guaranteed": 0,
+      "total_value": 885000
+    },
+    "Tim McKay": {
+      "apy": 885000,
+      "years": 1,
+      "guaranteed": 0,
+      "total_value": 885000
+    },
+    "Garrett Bradbury": {
+      "apy": 4700000,
+      "years": 1,
+      "guaranteed": 3700000,
+      "total_value": 4700000
+    },
+    "Aiden Fisher": {
+      "apy": 1126892,
+      "years": 4,
+      "guaranteed": 127568,
+      "total_value": 4507568
+    },
+    "Dominique Hampton": {
+      "apy": 1005000,
+      "years": 1,
+      "guaranteed": 0,
+      "total_value": 1005000
+    },
+    "Marco Wilson": {
+      "apy": 1315000,
+      "years": 1,
+      "guaranteed": 0,
+      "total_value": 1315000
+    },
+    "E.J. Speed": {
+      "apy": 5000000,
+      "years": 2,
+      "guaranteed": 7500000,
+      "total_value": 10000000
+    },
+    "Chris Olave": {
+      "ktc": 6300,
+      "ktc_rank": 45,
+      "apy": 4817968,
+      "years": 4,
+      "guaranteed": 19271872,
+      "total_value": 19271872
+    },
+    "Jordan Whittington": {
+      "ktc": 1899,
+      "ktc_rank": 337,
+      "apy": 1039597,
+      "years": 4,
+      "guaranteed": 138388,
+      "total_value": 4158388
+    },
+    "Tytus Howard": {
+      "apy": 22500000,
+      "years": 2,
+      "guaranteed": 34500000,
+      "total_value": 45000000
+    },
+    "Jalen Sundell": {
+      "apy": 943333,
+      "years": 3,
+      "guaranteed": 0,
+      "total_value": 2830000
+    },
+    "Arnold Ebiketie": {
+      "apy": 4300000,
+      "years": 1,
+      "guaranteed": 4300000,
+      "total_value": 4300000
+    },
+    "Nyjalik Kelly": {
+      "apy": 1038333,
+      "years": 3,
+      "guaranteed": 262500,
+      "total_value": 3115000
+    },
+    "Louie Hansen": {
+      "apy": 1033333,
+      "years": 3,
+      "guaranteed": 0,
+      "total_value": 3100000
+    },
+    "Anthony Hankerson": {
+      "apy": 1035000,
+      "years": 3,
+      "guaranteed": 5000,
+      "total_value": 3105000
+    },
+    "Aidan Keanaaina": {
+      "apy": 1040000,
+      "years": 3,
+      "guaranteed": 267500,
+      "total_value": 3120000
+    },
+    "Rome Odunze": {
+      "ktc": 6156,
+      "ktc_rank": 55,
+      "apy": 5681125,
+      "years": 4,
+      "guaranteed": 22724500,
+      "total_value": 22724500
+    },
+    "Josh Ross": {
+      "apy": 1075000,
+      "years": 1,
+      "guaranteed": 0,
+      "total_value": 1075000
+    },
+    "Carter Bradley": {
+      "apy": 1005000,
+      "years": 1,
+      "guaranteed": 0,
+      "total_value": 1005000
+    },
+    "Elijah Molden": {
+      "apy": 6250000,
+      "years": 3,
+      "guaranteed": 11625000,
+      "total_value": 18750000
+    },
+    "Jerry Jeudy": {
+      "ktc": 3201,
+      "ktc_rank": 197,
+      "apy": 17500000,
+      "years": 3,
+      "guaranteed": 41000000,
+      "total_value": 52500000
+    },
+    "Jayden Higgins": {
+      "ktc": 4307,
+      "ktc_rank": 123,
+      "apy": 2925206,
+      "years": 4,
+      "guaranteed": 11700824,
+      "total_value": 11700824
+    },
+    "Aaron Graves": {
+      "apy": 1045000,
+      "years": 3,
+      "guaranteed": 60000,
+      "total_value": 3135000
+    },
+    "Greg Crippen": {
+      "apy": 1034000,
+      "years": 3,
+      "guaranteed": 2000,
+      "total_value": 3102000
+    },
+    "Zach Charbonnet": {
+      "ktc": 4211,
+      "ktc_rank": 128,
+      "apy": 1719020,
+      "years": 4,
+      "guaranteed": 3813333,
+      "total_value": 6876078
+    },
+    "Segun Olubi": {
+      "apy": 1145000,
+      "years": 1,
+      "guaranteed": 0,
+      "total_value": 1145000
+    },
+    "Eli Raridon": {
+      "ktc": 1472,
+      "ktc_rank": 376,
+      "apy": 1687178,
+      "years": 4,
+      "guaranteed": 1368152,
+      "total_value": 6748712
+    },
+    "Keith Cooper": {
+      "apy": 967500,
+      "years": 2,
+      "guaranteed": 0,
+      "total_value": 1935000
+    },
+    "Smael Mondon Jr.": {
+      "apy": 1148865,
+      "years": 4,
+      "guaranteed": 395460,
+      "total_value": 4595460
+    },
+    "Jacob Martin": {
+      "apy": 9000000,
+      "years": 1,
+      "guaranteed": 4500000,
+      "total_value": 9000000
+    },
+    "Tanoa Togiai": {
+      "apy": 1038333,
+      "years": 3,
+      "guaranteed": 140000,
+      "total_value": 3115000
+    },
+    "Ben Yurosek": {
+      "apy": 995000,
+      "years": 3,
+      "guaranteed": 254000,
+      "total_value": 2985000
+    },
+    "Mitchell Fraboni": {
+      "apy": 1391667,
+      "years": 3,
+      "guaranteed": 1700000,
+      "total_value": 4175000
+    },
+    "Cam Ward": {
+      "ktc": 4398,
+      "ktc_rank": 52,
+      "apy": 12209901,
+      "years": 4,
+      "guaranteed": 48839604,
+      "total_value": 48839604
+    },
+    "Jawaan Taylor": {
+      "apy": 5000000,
+      "years": 1,
+      "guaranteed": 0,
+      "total_value": 5000000
+    },
+    "Rashee Rice": {
+      "ktc": 5401,
+      "ktc_rank": 81,
+      "apy": 1623805,
+      "years": 4,
+      "guaranteed": 3519033,
+      "total_value": 6495218
+    },
+    "Ethan Downs": {
+      "apy": 922500,
+      "years": 2,
+      "guaranteed": 0,
+      "total_value": 1845000
+    },
+    "Aidan Hutchinson": {
+      "apy": 45000000,
+      "years": 4,
+      "guaranteed": 55722000,
+      "total_value": 180000000
+    },
+    "Henry To'oTo'o": {
+      "apy": 1021245,
+      "years": 4,
+      "guaranteed": 244980,
+      "total_value": 4084980
+    },
+    "John Ridgeway": {
+      "apy": 2857500,
+      "years": 2,
+      "guaranteed": 1650000,
+      "total_value": 5715000
+    },
+    "Brian Robinson Jr.": {
+      "apy": 2500000,
+      "years": 1,
+      "guaranteed": 775000,
+      "total_value": 2500000
+    },
+    "Dondrea Tillman": {
+      "apy": 1075000,
+      "years": 1,
+      "guaranteed": 0,
+      "total_value": 1075000
+    },
+    "Jalan Gaines": {
+      "apy": 885000,
+      "years": 1,
+      "guaranteed": 0,
+      "total_value": 885000
+    },
+    "Phidarian Mathis": {
+      "apy": 1195000,
+      "years": 1,
+      "guaranteed": 25000,
+      "total_value": 1195000
+    },
+    "Noah Whittington": {
+      "apy": 1040000,
+      "years": 3,
+      "guaranteed": 267500,
+      "total_value": 3120000
+    },
+    "Jahfari Harvey": {
+      "apy": 922500,
+      "years": 2,
+      "guaranteed": 0,
+      "total_value": 1845000
+    },
+    "David Onyemata": {
+      "apy": 10500000,
+      "years": 1,
+      "guaranteed": 9650000,
+      "total_value": 10500000
+    },
+    "Chase Young": {
+      "apy": 17000000,
+      "years": 3,
+      "guaranteed": 27170000,
+      "total_value": 51000000
+    },
+    "Ale Kaho": {
+      "apy": 991667,
+      "years": 3,
+      "guaranteed": 75000,
+      "total_value": 2975000
+    },
+    "Ryan Flournoy": {
+      "ktc": 2201,
+      "ktc_rank": 306,
+      "apy": 1017500,
+      "years": 2,
+      "guaranteed": 0,
+      "total_value": 2035000
+    },
+    "Cam Miller": {
+      "apy": 922500,
+      "years": 2,
+      "guaranteed": 0,
+      "total_value": 1845000
+    },
+    "Mitchell Melton": {
+      "apy": 1040000,
+      "years": 3,
+      "guaranteed": 130000,
+      "total_value": 3120000
+    },
+    "David Edwards": {
+      "apy": 15250000,
+      "years": 4,
+      "guaranteed": 30000000,
+      "total_value": 61000000
+    },
+    "Chad Lindberg": {
+      "apy": 1038333,
+      "years": 3,
+      "guaranteed": 15000,
+      "total_value": 3115000
+    },
+    "Chance Campbell": {
+      "apy": 1030000,
+      "years": 1,
+      "guaranteed": 25000,
+      "total_value": 1030000
+    },
+    "De'Von Achane": {
+      "ktc": 7392,
+      "ktc_rank": 23
+    },
+    "Mike Morris": {
+      "apy": 1040519,
+      "years": 4,
+      "guaranteed": 322076,
+      "total_value": 4162076
+    },
+    "Logan Taylor": {
+      "apy": 1162692,
+      "years": 4,
+      "guaranteed": 0,
+      "total_value": 4650768
+    },
+    "Emmanuel Pregnon": {
+      "apy": 1708997,
+      "years": 4,
+      "guaranteed": 1431624,
+      "total_value": 6835986
+    },
+    "Ronnie Stanley": {
+      "apy": 20000000,
+      "years": 3,
+      "guaranteed": 44000000,
+      "total_value": 60000000
+    },
+    "Elgton Jenkins": {
+      "apy": 12000000,
+      "years": 2,
+      "guaranteed": 15000000,
+      "total_value": 24000000
+    },
+    "Branson Combs": {
+      "apy": 922500,
+      "years": 2,
+      "guaranteed": 0,
+      "total_value": 1845000
+    },
+    "Taylor Moton": {
+      "apy": 22000000,
+      "years": 2,
+      "guaranteed": 36800000,
+      "total_value": 44000000
+    },
+    "Zach Harrison": {
+      "apy": 1392112,
+      "years": 4,
+      "guaranteed": 1049780,
+      "total_value": 5568446
+    },
+    "Josh Kelly": {
+      "apy": 885000,
+      "years": 1,
+      "guaranteed": 0,
+      "total_value": 885000
+    },
+    "Bilhal Kone": {
+      "apy": 1119286,
+      "years": 4,
+      "guaranteed": 277144,
+      "total_value": 4477144
+    },
+    "Christian Kirk": {
+      "ktc": 2444,
+      "ktc_rank": 279,
+      "apy": 3000000,
+      "years": 1,
+      "guaranteed": 2780000,
+      "total_value": 3000000
+    },
+    "Amari McNeill": {
+      "apy": 1033333,
+      "years": 3,
+      "guaranteed": 0,
+      "total_value": 3100000
+    },
+    "Drake Maye": {
+      "ktc": 6654,
+      "ktc_rank": 6,
+      "apy": 9159941,
+      "years": 4,
+      "guaranteed": 36639764,
+      "total_value": 36639764
+    },
+    "Devin Cochran": {
+      "apy": 1005000,
+      "years": 1,
+      "guaranteed": 0,
+      "total_value": 1005000
+    },
+    "Jarrett Stidham": {
+      "apy": 6000000,
+      "years": 2,
+      "guaranteed": 6990000,
+      "total_value": 12000000
+    },
+    "Jordan Clark": {
+      "apy": 922500,
+      "years": 2,
+      "guaranteed": 0,
+      "total_value": 1845000
+    },
+    "2027 Late 3rd": {
+      "ktc": 2658,
+      "ktc_rank": 243
+    },
+    "Gerad Christian-Lichtenhan": {
+      "apy": 885000,
+      "years": 1,
+      "guaranteed": 0,
+      "total_value": 885000
+    },
+    "Stephen Dix": {
+      "apy": 1033333,
+      "years": 3,
+      "guaranteed": 0,
+      "total_value": 3100000
+    },
+    "Jarquez Hunter": {
+      "ktc": 2035,
+      "ktc_rank": 324,
+      "apy": 1299695,
+      "years": 4,
+      "guaranteed": 998784,
+      "total_value": 5198780
+    },
+    "Myles Purchase": {
+      "apy": 885000,
+      "years": 1,
+      "guaranteed": 0,
+      "total_value": 885000
+    },
+    "Riley Patterson": {
+      "apy": 1402500,
+      "years": 1,
+      "guaranteed": 0,
+      "total_value": 1402500
+    },
+    "Trey Hendrickson": {
+      "apy": 28000000,
+      "years": 4,
+      "guaranteed": 60000000,
+      "total_value": 112000000
+    },
+    "Quay Walker": {
+      "apy": 13500000,
+      "years": 3,
+      "guaranteed": 28000000,
+      "total_value": 40500000
+    },
+    "Sam Howell": {
+      "ktc": 623,
+      "ktc_rank": 426,
+      "apy": 2500000,
+      "years": 1,
+      "guaranteed": 2500000,
+      "total_value": 2500000
+    },
+    "Dwight McGlothern": {
+      "apy": 1017500,
+      "years": 2,
+      "guaranteed": 0,
+      "total_value": 2035000
+    },
+    "Nick Bellore": {
+      "apy": 2100000,
+      "years": 2,
+      "guaranteed": 1750000,
+      "total_value": 4200000
+    },
+    "Sean Rhyan": {
+      "apy": 11000000,
+      "years": 3,
+      "guaranteed": 11000000,
+      "total_value": 33000000
+    },
+    "Evan Hull": {
+      "apy": 1080000,
+      "years": 1,
+      "guaranteed": 5000,
+      "total_value": 1080000
+    },
+    "Davon Booth": {
+      "apy": 1038333,
+      "years": 3,
+      "guaranteed": 165000,
+      "total_value": 3115000
+    },
+    "Laiatu Latu": {
+      "apy": 4257974,
+      "years": 4,
+      "guaranteed": 17031894,
+      "total_value": 17031894
+    },
+    "Shaka Heyward": {
+      "apy": 1095000,
+      "years": 1,
+      "guaranteed": 0,
+      "total_value": 1095000
+    },
+    "Jimmy Ciarlo": {
+      "apy": 969250,
+      "years": 2,
+      "guaranteed": 3500,
+      "total_value": 1938500
+    },
+    "Lew Nichols III": {
+      "apy": 885000,
+      "years": 1,
+      "guaranteed": 0,
+      "total_value": 885000
+    },
+    "Cobee Bryant": {
+      "apy": 988333,
+      "years": 3,
+      "guaranteed": 0,
+      "total_value": 2965000
+    },
+    "Grover Stewart": {
+      "apy": 13000000,
+      "years": 3,
+      "guaranteed": 17990000,
+      "total_value": 39000000
+    },
+    "Naquan Jones": {
+      "apy": 2000000,
+      "years": 1,
+      "guaranteed": 300000,
+      "total_value": 2000000
+    },
+    "Kobee Minor": {
+      "apy": 922500,
+      "years": 2,
+      "guaranteed": 0,
+      "total_value": 1845000
+    },
+    "Daniel Thomas": {
+      "apy": 1500000,
+      "years": 2,
+      "guaranteed": 1085000,
+      "total_value": 3000000
+    },
+    "AJ Barner": {
+      "ktc": 3433,
+      "ktc_rank": 171
+    },
+    "Trey Benson": {
+      "ktc": 2826,
+      "ktc_rank": 237,
+      "apy": 1514902,
+      "years": 4,
+      "guaranteed": 1226984,
+      "total_value": 6059606
+    },
+    "Peter Skoronski": {
+      "apy": 4918330,
+      "years": 4,
+      "guaranteed": 19673320,
+      "total_value": 19673320
+    },
+    "Lonnie Johnson Jr.": {
+      "apy": 1487500,
+      "years": 1,
+      "guaranteed": 187500,
+      "total_value": 1487500
+    },
+    "Tyquan Thornton": {
+      "ktc": 2199,
+      "ktc_rank": 295,
+      "apy": 5500000,
+      "years": 2,
+      "guaranteed": 7400000,
+      "total_value": 11000000
+    },
+    "Nicholas Singleton": {
+      "ktc": 3608,
+      "ktc_rank": 156
+    },
+    "Carl Granderson": {
+      "apy": 13000000,
+      "years": 4,
+      "guaranteed": 22130000,
+      "total_value": 52000000
+    },
+    "Keyshaun Elliott": {
+      "apy": 1211885,
+      "years": 4,
+      "guaranteed": 467540,
+      "total_value": 4847540
+    },
+    "DaShawn Jones": {
+      "apy": 1038333,
+      "years": 3,
+      "guaranteed": 30000,
+      "total_value": 3115000
+    },
+    "Eric Gregory": {
+      "apy": 998333,
+      "years": 3,
+      "guaranteed": 30000,
+      "total_value": 2995000
+    },
+    "Barryn Sorrell": {
+      "apy": 1285463,
+      "years": 4,
+      "guaranteed": 941852,
+      "total_value": 5141852
+    },
+    "Andrew Mukuba": {
+      "apy": 1790135,
+      "years": 4,
+      "guaranteed": 4196063,
+      "total_value": 7160538
+    },
+    "Brock Purdy": {
+      "ktc": 4747,
+      "ktc_rank": 36,
+      "apy": 53000000,
+      "years": 5,
+      "guaranteed": 100000000,
+      "total_value": 265000000
+    },
+    "Chris Godwin": {
+      "ktc": 3614,
+      "ktc_rank": 162,
+      "apy": 22000000,
+      "years": 3,
+      "guaranteed": 44000000,
+      "total_value": 66000000
+    },
+    "Nick Samac": {
+      "apy": 1017500,
+      "years": 2,
+      "guaranteed": 0,
+      "total_value": 2035000
+    },
+    "Branson Taylor": {
+      "apy": 885000,
+      "years": 1,
+      "guaranteed": 0,
+      "total_value": 885000
+    },
+    "Nick Moore": {
+      "apy": 1603750,
+      "years": 4,
+      "guaranteed": 2776111,
+      "total_value": 6415000
+    },
+    "Justin Strnad": {
+      "apy": 6000000,
+      "years": 3,
+      "guaranteed": 10000000,
+      "total_value": 18000000
+    },
+    "Darien Porter": {
+      "apy": 1681024,
+      "years": 4,
+      "guaranteed": 1530248,
+      "total_value": 6724094
+    },
+    "Darius Muasau": {
+      "apy": 1055228,
+      "years": 4,
+      "guaranteed": 200912,
+      "total_value": 4220912
+    },
+    "Julian Okwara": {
+      "apy": 1215000,
+      "years": 1,
+      "guaranteed": 0,
+      "total_value": 1215000
+    },
+    "Isaiah Bond": {
+      "ktc": 2479,
+      "ktc_rank": 275,
+      "apy": 1006000,
+      "years": 3,
+      "guaranteed": 3018000,
+      "total_value": 3018000
+    },
+    "Colby Wooden": {
+      "apy": 1151982,
+      "years": 4,
+      "guaranteed": 767928,
+      "total_value": 4607928
+    },
+    "Kyle Dugger": {
+      "apy": 1402500,
+      "years": 1,
+      "guaranteed": 75000,
+      "total_value": 1402500
+    },
+    "Chukwuma Okorafor": {
+      "apy": 1487500,
+      "years": 1,
+      "guaranteed": 1100000,
+      "total_value": 1487500
+    },
+    "Jack Nelson": {
+      "apy": 1088154,
+      "years": 4,
+      "guaranteed": 152616,
+      "total_value": 4352616
+    },
+    "Garrett Greene": {
+      "apy": 985000,
+      "years": 2,
+      "guaranteed": 35000,
+      "total_value": 1970000
+    },
+    "Phil Florenzo": {
+      "apy": 1033667,
+      "years": 3,
+      "guaranteed": 1000,
+      "total_value": 3101000
+    },
+    "Josh Cuevas": {
+      "apy": 1189869,
+      "years": 4,
+      "guaranteed": 379476,
+      "total_value": 4759476
+    },
+    "Darren Waller": {
+      "ktc": 873,
+      "ktc_rank": 481
+    },
+    "Milton Williams": {
+      "apy": 26000000,
+      "years": 4,
+      "guaranteed": 51000000,
+      "total_value": 104000000
+    },
+    "Quinshon Judkins": {
+      "ktc": 6388,
+      "ktc_rank": 46,
+      "apy": 2850529,
+      "years": 4,
+      "guaranteed": 11402116,
+      "total_value": 11402116
+    },
+    "Gardner Minshew": {
+      "ktc": 391,
+      "ktc_rank": 409,
+      "apy": 5750000,
+      "years": 1,
+      "guaranteed": 5140000,
+      "total_value": 5750000
+    },
+    "Corey Bojorquez": {
+      "apy": 2000000,
+      "years": 1,
+      "guaranteed": 937500,
+      "total_value": 2000000
+    },
+    "Isaiah Adams": {
+      "apy": 1493695,
+      "years": 4,
+      "guaranteed": 1165292,
+      "total_value": 5974778
+    },
+    "Aaron Stinnie": {
+      "apy": 1487500,
+      "years": 1,
+      "guaranteed": 62500,
+      "total_value": 1487500
+    },
+    "R.J. Harvey": {
+      "apy": 1839919,
+      "years": 4,
+      "guaranteed": 4727294,
+      "total_value": 7359674
+    },
+    "Kurtis Rourke": {
+      "apy": 1083559,
+      "years": 4,
+      "guaranteed": 134236,
+      "total_value": 4334236
+    },
+    "Dylan Drummond": {
+      "apy": 922500,
+      "years": 2,
+      "guaranteed": 0,
+      "total_value": 1845000
+    },
+    "Ja'Markis Weston": {
+      "apy": 1005000,
+      "years": 1,
+      "guaranteed": 0,
+      "total_value": 1005000
+    },
+    "Nate Valcarcel": {
+      "apy": 967500,
+      "years": 2,
+      "guaranteed": 0,
+      "total_value": 1935000
+    },
+    "Devin Duvernay": {
+      "apy": 1850000,
+      "years": 1,
+      "guaranteed": 550000,
+      "total_value": 1850000
+    },
+    "Rocco Underwood": {
+      "apy": 1040000,
+      "years": 3,
+      "guaranteed": 20000,
+      "total_value": 3120000
+    },
+    "Malik Washington": {
+      "ktc": 3073,
+      "ktc_rank": 210,
+      "apy": 1054890,
+      "years": 4,
+      "guaranteed": 199560,
+      "total_value": 4219560
+    },
+    "Matthew Stafford": {
+      "ktc": 3571,
+      "ktc_rank": 103
+    },
+    "Velus Jones Jr.": {
+      "apy": 1215000,
+      "years": 1,
+      "guaranteed": 0,
+      "total_value": 1215000
+    },
+    "Wesley Bailey": {
+      "apy": 1045000,
+      "years": 3,
+      "guaranteed": 35000,
+      "total_value": 3135000
+    },
+    "Brenden Rice": {
+      "ktc": 958,
+      "ktc_rank": 472,
+      "apy": 1005000,
+      "years": 1,
+      "guaranteed": 0,
+      "total_value": 1005000
+    },
+    "Chris Smith": {
+      "apy": 1075000,
+      "years": 1,
+      "guaranteed": 0,
+      "total_value": 1075000
+    },
+    "Durham Smythe": {
+      "apy": 3000000,
+      "years": 1,
+      "guaranteed": 2000000,
+      "total_value": 3000000
+    },
+    "DJ Uiagalelei": {
+      "apy": 885000,
+      "years": 1,
+      "guaranteed": 0,
+      "total_value": 885000
+    },
+    "Efton Chism": {
+      "ktc": 1549,
+      "ktc_rank": 388
+    },
+    "Mike Danna": {
+      "apy": 1402500,
+      "years": 1,
+      "guaranteed": 1262500,
+      "total_value": 1402500
+    },
+    "Tahj Chambers": {
+      "apy": 1036667,
+      "years": 3,
+      "guaranteed": 20000,
+      "total_value": 3110000
+    },
+    "Zonovan Knight": {
+      "apy": 1195000,
+      "years": 1,
+      "guaranteed": 25000,
+      "total_value": 1195000
+    },
+    "Carson Towt": {
+      "apy": 1036667,
+      "years": 3,
+      "guaranteed": 120000,
+      "total_value": 3110000
+    },
+    "Antonio Williams": {
+      "ktc": 3422,
+      "ktc_rank": 151,
+      "apy": 1814680,
+      "years": 4,
+      "guaranteed": 1739068,
+      "total_value": 7258720
+    },
+    "Isaiah Land": {
+      "apy": 1132500,
+      "years": 2,
+      "guaranteed": 0,
+      "total_value": 2265000
+    },
+    "Justin Shorter": {
+      "apy": 1075000,
+      "years": 1,
+      "guaranteed": 0,
+      "total_value": 1075000
+    },
+    "Jonathan Greenard": {
+      "apy": 30000000,
+      "years": 2,
+      "guaranteed": 50000000,
+      "total_value": 60000000
+    },
+    "Kendall Williamson": {
+      "apy": 1075000,
+      "years": 1,
+      "guaranteed": 0,
+      "total_value": 1075000
+    },
+    "Bryce Henderson": {
+      "apy": 1033333,
+      "years": 3,
+      "guaranteed": 0,
+      "total_value": 3100000
+    },
+    "Elijah Higgins": {
+      "ktc": 1432,
+      "ktc_rank": 396,
+      "apy": 1003970,
+      "years": 4,
+      "guaranteed": 175880,
+      "total_value": 4015880
+    },
+    "Davon Godchaux": {
+      "apy": 5500000,
+      "years": 2,
+      "guaranteed": 7450000,
+      "total_value": 11000000
+    },
+    "Henry Lutovsky": {
+      "apy": 1038333,
+      "years": 3,
+      "guaranteed": 262500,
+      "total_value": 3115000
+    },
+    "Lacale London": {
+      "apy": 2750000,
+      "years": 1,
+      "guaranteed": 750000,
+      "total_value": 2750000
+    },
+    "Darrick Forrest": {
+      "apy": 1215000,
+      "years": 1,
+      "guaranteed": 0,
+      "total_value": 1215000
+    },
+    "James Williams": {
+      "apy": 1027373,
+      "years": 4,
+      "guaranteed": 89492,
+      "total_value": 4109492
+    },
+    "Matt Gay": {
+      "apy": 1600000,
+      "years": 1,
+      "guaranteed": 1350000,
+      "total_value": 1600000
+    },
+    "Zacch Pickens": {
+      "apy": 1087500,
+      "years": 2,
+      "guaranteed": 0,
+      "total_value": 2175000
+    },
+    "Caleb Tiernan": {
+      "apy": 1673475,
+      "years": 4,
+      "guaranteed": 1328292,
+      "total_value": 6693900
+    },
+    "T'Vondre Sweat": {
+      "apy": 2388110,
+      "years": 4,
+      "guaranteed": 7926795,
+      "total_value": 9552440
+    },
+    "Dalton Johnson": {
+      "apy": 1224939,
+      "years": 4,
+      "guaranteed": 519756,
+      "total_value": 4899756
+    },
+    "Jaleel McLaughlin": {
+      "ktc": 1835,
+      "ktc_rank": 350,
+      "apy": 1430000,
+      "years": 1,
+      "guaranteed": 125000,
+      "total_value": 1430000
+    },
+    "Bayron Matos": {
+      "apy": 885000,
+      "years": 1,
+      "guaranteed": 0,
+      "total_value": 885000
+    },
+    "Christian Jones": {
+      "apy": 1050000,
+      "years": 3,
+      "guaranteed": 50000,
+      "total_value": 3150000
+    },
+    "Spencer Rattler": {
+      "ktc": 1293,
+      "ktc_rank": 326,
+      "apy": 1089120,
+      "years": 4,
+      "guaranteed": 336480,
+      "total_value": 4356480
+    },
+    "Jalen Kimber": {
+      "apy": 885000,
+      "years": 1,
+      "guaranteed": 0,
+      "total_value": 885000
+    },
+    "Marcellas Dial": {
+      "apy": 1058032,
+      "years": 4,
+      "guaranteed": 212128,
+      "total_value": 4232128
+    },
+    "Jude Bowry": {
+      "apy": 1413936,
+      "years": 4,
+      "guaranteed": 0,
+      "total_value": 5655744
+    },
+    "Kyle Juszczyk": {
+      "apy": 3750000,
+      "years": 2,
+      "guaranteed": 7000000,
+      "total_value": 7500000
+    },
+    "Isaiah Oliver": {
+      "apy": 1487500,
+      "years": 1,
+      "guaranteed": 287500,
+      "total_value": 1487500
+    },
+    "AJ Dillon": {
+      "ktc": 748,
+      "ktc_rank": 487
+    },
+    "Tanner Arkin": {
+      "apy": 1039167,
+      "years": 3,
+      "guaranteed": 162500,
+      "total_value": 3117500
+    },
+    "Jacob Rizy": {
+      "apy": 1036667,
+      "years": 3,
+      "guaranteed": 85000,
+      "total_value": 3110000
+    },
+    "Damone Clark": {
+      "apy": 1402500,
+      "years": 1,
+      "guaranteed": 75000,
+      "total_value": 1402500
+    },
+    "Adonai Mitchell": {
+      "ktc": 3046,
+      "ktc_rank": 213,
+      "apy": 1846522,
+      "years": 4,
+      "guaranteed": 4817431,
+      "total_value": 7386086
+    },
+    "Jordan Battle": {
+      "apy": 1331254,
+      "years": 4,
+      "guaranteed": 872740,
+      "total_value": 5325016
+    },
+    "Josh Palmer": {
+      "apy": 10000000,
+      "years": 3,
+      "guaranteed": 15000000,
+      "total_value": 30000000
+    },
+    "Matt Stafford": {
+      "apy": 55000000,
+      "years": 1,
+      "guaranteed": 90000000,
+      "total_value": 55000000
+    },
+    "Demario Davis": {
+      "apy": 11000000,
+      "years": 2,
+      "guaranteed": 15000000,
+      "total_value": 22000000
+    },
+    "Logan Cooke": {
+      "apy": 4000000,
+      "years": 4,
+      "guaranteed": 9000000,
+      "total_value": 16000000
+    },
+    "Jacob Thomas": {
+      "apy": 1036667,
+      "years": 3,
+      "guaranteed": 160000,
+      "total_value": 3110000
+    },
+    "Darnell Washington": {
+      "ktc": 2190,
+      "ktc_rank": 296,
+      "apy": 10500000,
+      "years": 4,
+      "guaranteed": 11250000,
+      "total_value": 42000000
+    },
+    "Ricky White": {
+      "apy": 885000,
+      "years": 1,
+      "guaranteed": 0,
+      "total_value": 885000
+    },
+    "Art Green": {
+      "apy": 1075000,
+      "years": 1,
+      "guaranteed": 0,
+      "total_value": 1075000
+    },
+    "Neville Gallimore": {
+      "apy": 5000000,
+      "years": 2,
+      "guaranteed": 5000000,
+      "total_value": 10000000
+    },
+    "Jordan Mims": {
+      "apy": 1005000,
+      "years": 1,
+      "guaranteed": 0,
+      "total_value": 1005000
+    },
+    "Jamie Sheriff": {
+      "apy": 885000,
+      "years": 1,
+      "guaranteed": 0,
+      "total_value": 885000
+    },
+    "Chandler Rivers": {
+      "apy": 1215878,
+      "years": 4,
+      "guaranteed": 483512,
+      "total_value": 4863512
+    },
+    "Quintayvious Hutchins": {
+      "apy": 1125523,
+      "years": 4,
+      "guaranteed": 122092,
+      "total_value": 4502092
+    },
+    "D.J. Jones": {
+      "apy": 13000000,
+      "years": 3,
+      "guaranteed": 26000000,
+      "total_value": 39000000
+    },
+    "Jelani Woods": {
+      "apy": 1175000,
+      "years": 1,
+      "guaranteed": 0,
+      "total_value": 1175000
+    },
+    "Max Mitchell": {
+      "apy": 2000000,
+      "years": 1,
+      "guaranteed": 1000000,
+      "total_value": 2000000
+    },
+    "Kyron Drones": {
+      "apy": 1035000,
+      "years": 3,
+      "guaranteed": 5000,
+      "total_value": 3105000
+    },
+    "Colbie Young": {
+      "apy": 1292259,
+      "years": 4,
+      "guaranteed": 789036,
+      "total_value": 5169036
+    },
+    "Hank Beatty": {
+      "apy": 1041667,
+      "years": 3,
+      "guaranteed": 272500,
+      "total_value": 3125000
+    },
+    "Michael Penix Jr.": {
+      "ktc": 3016,
+      "ktc_rank": 146,
+      "apy": 5720659,
+      "years": 4,
+      "guaranteed": 22882636,
+      "total_value": 22882636
+    },
+    "Kayden McDonald": {
+      "apy": 3226189,
+      "years": 4,
+      "guaranteed": 12904756,
+      "total_value": 12904756
+    },
+    "Luke Musgrave": {
+      "ktc": 2181,
+      "ktc_rank": 298,
+      "apy": 2118936,
+      "years": 4,
+      "guaranteed": 6348437,
+      "total_value": 8475742
+    },
+    "Kamren Kinchens": {
+      "apy": 1399078,
+      "years": 4,
+      "guaranteed": 890044,
+      "total_value": 5596312
+    },
+    "KaVontae Turpin": {
+      "ktc": 1426,
+      "ktc_rank": 403
+    },
+    "John Jenkins": {
+      "apy": 2000000,
+      "years": 1,
+      "guaranteed": 345000,
+      "total_value": 2000000
+    },
+    "Adam Prentice": {
+      "apy": 1402500,
+      "years": 1,
+      "guaranteed": 587500,
+      "total_value": 1402500
+    },
+    "Minkah Fitzpatrick": {
+      "apy": 13333333,
+      "years": 3,
+      "guaranteed": 20500000,
+      "total_value": 40000000
+    },
+    "Marquise Robinson": {
+      "apy": 885000,
+      "years": 1,
+      "guaranteed": 0,
+      "total_value": 885000
+    },
+    "Jordan Jackson": {
+      "apy": 1075000,
+      "years": 1,
+      "guaranteed": 0,
+      "total_value": 1075000
+    },
+    "Ennis Rakestraw": {
+      "apy": 1621187,
+      "years": 4,
+      "guaranteed": 3420941,
+      "total_value": 6484746
+    },
+    "L.T. Overton": {
+      "apy": 1292259,
+      "years": 4,
+      "guaranteed": 789036,
+      "total_value": 5169036
+    },
+    "Jerome Ford": {
+      "ktc": 1883,
+      "ktc_rank": 344,
+      "apy": 1402500,
+      "years": 1,
+      "guaranteed": 437500,
+      "total_value": 1402500
+    },
+    "Kaleb Proctor": {
+      "apy": 1410955,
+      "years": 4,
+      "guaranteed": 0,
+      "total_value": 5643820
+    },
+    "L.J. Collier": {
+      "apy": 2000000,
+      "years": 1,
+      "guaranteed": 750000,
+      "total_value": 2000000
+    },
+    "Ko Kieft": {
+      "apy": 1650000,
+      "years": 1,
+      "guaranteed": 600000,
+      "total_value": 1650000
+    },
+    "Blake Fisher": {
+      "apy": 1648860,
+      "years": 4,
+      "guaranteed": 3562252,
+      "total_value": 6595438
+    },
+    "Saquon Barkley": {
+      "ktc": 5627,
+      "ktc_rank": 65,
+      "apy": 20600000,
+      "years": 2,
+      "guaranteed": 36000000,
+      "total_value": 41200000
+    },
+    "Charlie Woerner": {
+      "apy": 4000000,
+      "years": 3,
+      "guaranteed": 4160000,
+      "total_value": 12000000
+    },
+    "Patrick Gurd": {
+      "apy": 1033333,
+      "years": 3,
+      "guaranteed": 0,
+      "total_value": 3100000
+    },
+    "Darius Robinson": {
+      "apy": 3467332,
+      "years": 4,
+      "guaranteed": 13869328,
+      "total_value": 13869328
+    },
+    "Jamaal Pritchett": {
+      "apy": 967500,
+      "years": 2,
+      "guaranteed": 0,
+      "total_value": 1935000
+    },
+    "Isaac Guerendo": {
+      "ktc": 1967,
+      "ktc_rank": 338,
+      "apy": 1181132,
+      "years": 4,
+      "guaranteed": 704525,
+      "total_value": 4724528
+    },
+    "Marcus Bryant": {
+      "apy": 1087082,
+      "years": 4,
+      "guaranteed": 148328,
+      "total_value": 4348328
+    },
+    "Brian Robinson": {
+      "ktc": 2851,
+      "ktc_rank": 227
+    },
+    "Reggie Virgil": {
+      "apy": 1234125,
+      "years": 4,
+      "guaranteed": 556500,
+      "total_value": 4936500
+    },
+    "De'Shawn Rucker": {
+      "apy": 1038333,
+      "years": 3,
+      "guaranteed": 175000,
+      "total_value": 3115000
+    },
+    "Spencer Fano": {
+      "apy": 8063957,
+      "years": 4,
+      "guaranteed": 32255828,
+      "total_value": 32255828
+    },
+    "Jackson Woodard": {
+      "apy": 922500,
+      "years": 2,
+      "guaranteed": 0,
+      "total_value": 1845000
+    },
+    "Chris Braswell": {
+      "apy": 1696299,
+      "years": 4,
+      "guaranteed": 3885353,
+      "total_value": 6785196
+    },
+    "Mason Kinsey": {
+      "apy": 1087500,
+      "years": 2,
+      "guaranteed": 0,
+      "total_value": 2175000
+    },
+    "Sam Ehlinger": {
+      "apy": 2000000,
+      "years": 1,
+      "guaranteed": 1000000,
+      "total_value": 2000000
+    },
+    "Sam Kamara": {
+      "apy": 1215000,
+      "years": 1,
+      "guaranteed": 0,
+      "total_value": 1215000
+    },
+    "Michael Burton": {
+      "apy": 1400000,
+      "years": 1,
+      "guaranteed": 60000,
+      "total_value": 1400000
+    },
+    "Jha'Quan Jackson": {
+      "apy": 1005000,
+      "years": 1,
+      "guaranteed": 0,
+      "total_value": 1005000
+    },
+    "T.J. Quinn": {
+      "apy": 1038333,
+      "years": 3,
+      "guaranteed": 165000,
+      "total_value": 3115000
+    },
+    "Carson Steele": {
+      "apy": 1062500,
+      "years": 2,
+      "guaranteed": 0,
+      "total_value": 2125000
+    },
+    "Jonathan Taylor": {
+      "ktc": 6650,
+      "ktc_rank": 33,
+      "apy": 14000000,
+      "years": 3,
+      "guaranteed": 19347556,
+      "total_value": 42000000
+    },
+    "Jaelan Phillips": {
+      "apy": 30000000,
+      "years": 4,
+      "guaranteed": 60000000,
+      "total_value": 120000000
+    },
+    "Trent Williams": {
+      "apy": 25000000,
+      "years": 2,
+      "guaranteed": 37000000,
+      "total_value": 50000000
+    },
+    "Sam Okuayinonu": {
+      "apy": 2300000,
+      "years": 1,
+      "guaranteed": 1800000,
+      "total_value": 2300000
+    },
+    "Isaiah McDuffie": {
+      "apy": 4000000,
+      "years": 2,
+      "guaranteed": 2550000,
+      "total_value": 8000000
+    },
+    "Athan Kaliakmanis": {
+      "apy": 1136164,
+      "years": 4,
+      "guaranteed": 164656,
+      "total_value": 4544656
+    },
+    "Wesley Williams": {
+      "apy": 1380380,
+      "years": 4,
+      "guaranteed": 1141520,
+      "total_value": 5521520
+    },
+    "John Metchie": {
+      "ktc": 1920,
+      "ktc_rank": 346
+    },
+    "Kenneth Grant": {
+      "apy": 5489078,
+      "years": 4,
+      "guaranteed": 21956312,
+      "total_value": 21956312
+    },
+    "Cole Christiansen": {
+      "apy": 1215000,
+      "years": 1,
+      "guaranteed": 247500,
+      "total_value": 1215000
+    },
+    "Justin Eboigbe": {
+      "apy": 1214753,
+      "years": 4,
+      "guaranteed": 839012,
+      "total_value": 4859012
+    },
+    "Damien Alford": {
+      "apy": 1036667,
+      "years": 3,
+      "guaranteed": 10000,
+      "total_value": 3110000
+    },
+    "Roger McCreary": {
+      "apy": 1402500,
+      "years": 1,
+      "guaranteed": 987500,
+      "total_value": 1402500
+    },
+    "Timmy Horne": {
+      "apy": 1075000,
+      "years": 1,
+      "guaranteed": 0,
+      "total_value": 1075000
+    },
+    "Robert McDaniel": {
+      "apy": 885000,
+      "years": 1,
+      "guaranteed": 0,
+      "total_value": 885000
+    },
+    "Kaytron Allen": {
+      "ktc": 3145,
+      "ktc_rank": 202,
+      "apy": 1170988,
+      "years": 4,
+      "guaranteed": 303952,
+      "total_value": 4683952
+    },
+    "Troy Andersen": {
+      "apy": 1215000,
+      "years": 1,
+      "guaranteed": 0,
+      "total_value": 1215000
+    },
+    "Bo Nix": {
+      "ktc": 4968,
+      "ktc_rank": 32,
+      "apy": 4653292,
+      "years": 4,
+      "guaranteed": 18613166,
+      "total_value": 18613166
+    },
+    "Micah McFadden": {
+      "apy": 3750000,
+      "years": 1,
+      "guaranteed": 2900000,
+      "total_value": 3750000
+    },
+    "Jourdan Lewis": {
+      "apy": 10000000,
+      "years": 3,
+      "guaranteed": 20000000,
+      "total_value": 30000000
+    },
+    "Tutu Atwell": {
+      "ktc": 1931,
+      "ktc_rank": 331,
+      "apy": 1402500,
+      "years": 1,
+      "guaranteed": 1075000,
+      "total_value": 1402500
+    },
+    "Logan Jones": {
+      "apy": 2117045,
+      "years": 4,
+      "guaranteed": 0,
+      "total_value": 8468178
+    },
+    "Steve Avila": {
+      "apy": 2313177,
+      "years": 4,
+      "guaranteed": 7442147,
+      "total_value": 9252708
+    },
+    "Nic Jones": {
+      "apy": 1075000,
+      "years": 1,
+      "guaranteed": 0,
+      "total_value": 1075000
+    },
+    "Jake Slaughter": {
+      "apy": 1981353,
+      "years": 4,
+      "guaranteed": 5614493,
+      "total_value": 7925412
+    },
+    "Ryan Wright": {
+      "apy": 3500000,
+      "years": 4,
+      "guaranteed": 7000000,
+      "total_value": 14000000
+    },
+    "Ricky Lee": {
+      "apy": 1005000,
+      "years": 1,
+      "guaranteed": 0,
+      "total_value": 1005000
+    },
+    "Sebastian Castro": {
+      "apy": 922500,
+      "years": 2,
+      "guaranteed": 0,
+      "total_value": 1845000
+    },
+    "DeShon Elliott": {
+      "apy": 6250000,
+      "years": 2,
+      "guaranteed": 7170000,
+      "total_value": 12500000
+    },
+    "Carver Willis": {
+      "apy": 1362498,
+      "years": 4,
+      "guaranteed": 1066992,
+      "total_value": 5449992
+    },
+    "Bryce Young": {
+      "ktc": 3634,
+      "ktc_rank": 89,
+      "apy": 9488769,
+      "years": 4,
+      "guaranteed": 37955074,
+      "total_value": 37955074
+    },
+    "Febechi Nwaiwu": {
+      "apy": 1406346,
+      "years": 4,
+      "guaranteed": 0,
+      "total_value": 5625384
+    },
+    "A'Shawn Robinson": {
+      "apy": 10000000,
+      "years": 1,
+      "guaranteed": 9150000,
+      "total_value": 10000000
+    },
+    "Jaylon Jones": {
+      "apy": 988370,
+      "years": 4,
+      "guaranteed": 113480,
+      "total_value": 3953480
+    },
+    "Marcelino McCrary-Ball": {
+      "apy": 1145000,
+      "years": 1,
+      "guaranteed": 0,
+      "total_value": 1145000
+    },
+    "Evan Deckers": {
+      "apy": 1075000,
+      "years": 1,
+      "guaranteed": 0,
+      "total_value": 1075000
+    },
+    "Adrian Martinez": {
+      "apy": 1005000,
+      "years": 1,
+      "guaranteed": 0,
+      "total_value": 1005000
+    },
+    "Devin Veresuk": {
+      "apy": 1036667,
+      "years": 3,
+      "guaranteed": 185000,
+      "total_value": 3110000
+    },
+    "James Pierre": {
+      "apy": 4250000,
+      "years": 2,
+      "guaranteed": 3715000,
+      "total_value": 8500000
+    },
+    "Tyler Higbee": {
+      "ktc": 1580,
+      "ktc_rank": 369,
+      "apy": 3000000,
+      "years": 2,
+      "guaranteed": 4000000,
+      "total_value": 6000000
+    },
+    "Dominic Richardson": {
+      "apy": 1035000,
+      "years": 3,
+      "guaranteed": 50000,
+      "total_value": 3105000
+    },
+    "Ronnie Bell": {
+      "apy": 1052500,
+      "years": 2,
+      "guaranteed": 0,
+      "total_value": 2105000
+    },
+    "Parker Petersen": {
+      "apy": 1036667,
+      "years": 3,
+      "guaranteed": 10000,
+      "total_value": 3110000
+    },
+    "Channing Tindall": {
+      "apy": 1215000,
+      "years": 1,
+      "guaranteed": 0,
+      "total_value": 1215000
+    },
+    "Lukas Van Ness": {
+      "apy": 4347024,
+      "years": 4,
+      "guaranteed": 17388096,
+      "total_value": 17388096
+    },
+    "Brycen Tremayne": {
+      "apy": 1005000,
+      "years": 1,
+      "guaranteed": 0,
+      "total_value": 1005000
+    },
+    "Cornelius Johnson": {
+      "apy": 885000,
+      "years": 1,
+      "guaranteed": 0,
+      "total_value": 885000
+    },
+    "Cole Brevard": {
+      "apy": 1036667,
+      "years": 3,
+      "guaranteed": 60000,
+      "total_value": 3110000
+    },
+    "Chris Blair": {
+      "apy": 1075000,
+      "years": 1,
+      "guaranteed": 0,
+      "total_value": 1075000
+    },
+    "Andrew Meyer": {
+      "apy": 948333,
+      "years": 3,
+      "guaranteed": 90000,
+      "total_value": 2845000
+    },
+    "Josaiah Stewart": {
+      "apy": 1568853,
+      "years": 4,
+      "guaranteed": 1203936,
+      "total_value": 6275412
+    },
+    "Keldric Faulk": {
+      "apy": 4263551,
+      "years": 4,
+      "guaranteed": 17054202,
+      "total_value": 17054202
+    },
+    "Daniel Scott": {
+      "apy": 1036959,
+      "years": 4,
+      "guaranteed": 307836,
+      "total_value": 4147836
+    },
+    "Jason Sanders": {
+      "apy": 1300000,
+      "years": 1,
+      "guaranteed": 0,
+      "total_value": 1300000
+    },
+    "P.J. Locke": {
+      "apy": 4000000,
+      "years": 1,
+      "guaranteed": 3500000,
+      "total_value": 4000000
+    },
+    "A.J. Henning": {
+      "apy": 967500,
+      "years": 2,
+      "guaranteed": 0,
+      "total_value": 1935000
+    },
+    "Jaylen McCollough": {
+      "apy": 948333,
+      "years": 3,
+      "guaranteed": 15000,
+      "total_value": 2845000
+    },
+    "Reid Ferguson": {
+      "apy": 1625000,
+      "years": 4,
+      "guaranteed": 2365000,
+      "total_value": 6500000
+    },
+    "Josh Butler": {
+      "apy": 1075000,
+      "years": 1,
+      "guaranteed": 0,
+      "total_value": 1075000
+    },
+    "Riley Nowakowski": {
+      "apy": 1205814,
+      "years": 4,
+      "guaranteed": 443256,
+      "total_value": 4823256
+    },
+    "C.J. Allen": {
+      "apy": 2282236,
+      "years": 4,
+      "guaranteed": 7638045,
+      "total_value": 9128944
+    },
+    "Luke Haggard": {
+      "apy": 922500,
+      "years": 2,
+      "guaranteed": 0,
+      "total_value": 1845000
+    },
+    "Jarrod Gray": {
+      "apy": 1033333,
+      "years": 3,
+      "guaranteed": 0,
+      "total_value": 3100000
+    },
+    "Chris Collier": {
+      "apy": 1005000,
+      "years": 1,
+      "guaranteed": 0,
+      "total_value": 1005000
+    },
+    "Zion Childress": {
+      "apy": 1062500,
+      "years": 2,
+      "guaranteed": 0,
+      "total_value": 2125000
+    },
+    "Rueben Bain": {
+      "apy": 5940061,
+      "years": 4,
+      "guaranteed": 23760242,
+      "total_value": 23760242
+    },
+    "O'Cyrus Torrence": {
+      "apy": 1555245,
+      "years": 4,
+      "guaranteed": 3307120,
+      "total_value": 6220980
+    },
+    "Jake Andrews": {
+      "apy": 1162086,
+      "years": 4,
+      "guaranteed": 808344,
+      "total_value": 4648344
+    },
+    "Benton Whitley": {
+      "apy": 1145000,
+      "years": 1,
+      "guaranteed": 0,
+      "total_value": 1145000
+    },
+    "Dawson Knox": {
+      "ktc": 2135,
+      "ktc_rank": 312,
+      "apy": 6666667,
+      "years": 3,
+      "guaranteed": 10000000,
+      "total_value": 20000000
+    },
+    "TreVeyon Henderson": {
+      "ktc": 6186,
+      "ktc_rank": 53,
+      "apy": 2785815,
+      "years": 4,
+      "guaranteed": 11143260,
+      "total_value": 11143260
+    },
+    "M.J. Stewart": {
+      "apy": 2700000,
+      "years": 1,
+      "guaranteed": 500000,
+      "total_value": 2700000
+    },
+    "Francisco Mauigoa": {
+      "apy": 1148632,
+      "years": 4,
+      "guaranteed": 394528,
+      "total_value": 4594528
+    },
+    "Noah Thomas": {
+      "apy": 1036667,
+      "years": 3,
+      "guaranteed": 10000,
+      "total_value": 3110000
+    },
+    "Irvin Charles": {
+      "apy": 1030000,
+      "years": 1,
+      "guaranteed": 0,
+      "total_value": 1030000
+    },
+    "Antonio Hamilton": {
+      "apy": 1300000,
+      "years": 1,
+      "guaranteed": 0,
+      "total_value": 1300000
+    },
+    "Collin Wright": {
+      "apy": 1041667,
+      "years": 3,
+      "guaranteed": 262500,
+      "total_value": 3125000
+    },
+    "Devin Culp": {
+      "apy": 1026546,
+      "years": 4,
+      "guaranteed": 86184,
+      "total_value": 4106184
+    },
+    "Albert Reese IV": {
+      "apy": 1040000,
+      "years": 3,
+      "guaranteed": 145000,
+      "total_value": 3120000
+    },
+    "Tony Jefferson": {
+      "apy": 1500000,
+      "years": 1,
+      "guaranteed": 1400000,
+      "total_value": 1500000
+    },
+    "Jeremy Chinn": {
+      "apy": 8129000,
+      "years": 2,
+      "guaranteed": 12250000,
+      "total_value": 16258000
+    },
+    "Hunter Luepke": {
+      "apy": 3500000,
+      "years": 2,
+      "guaranteed": 5030000,
+      "total_value": 7000000
+    },
+    "Jack Velling": {
+      "apy": 1036667,
+      "years": 3,
+      "guaranteed": 10000,
+      "total_value": 3110000
+    },
+    "Dante Miller": {
+      "apy": 1017500,
+      "years": 2,
+      "guaranteed": 0,
+      "total_value": 2035000
+    },
+    "Corey Levin": {
+      "apy": 1485000,
+      "years": 1,
+      "guaranteed": 0,
+      "total_value": 1485000
+    },
+    "Corey Kiner": {
+      "apy": 922500,
+      "years": 2,
+      "guaranteed": 0,
+      "total_value": 1845000
+    },
+    "Cam Horsley": {
+      "apy": 922500,
+      "years": 2,
+      "guaranteed": 0,
+      "total_value": 1845000
+    },
+    "Silas Walters": {
+      "apy": 1041667,
+      "years": 3,
+      "guaranteed": 50000,
+      "total_value": 3125000
+    },
+    "Jack Heflin": {
+      "apy": 1062500,
+      "years": 2,
+      "guaranteed": 0,
+      "total_value": 2125000
+    },
+    "Laith Marjan": {
+      "apy": 1038333,
+      "years": 3,
+      "guaranteed": 15000,
+      "total_value": 3115000
+    },
+    "Jalen McLeod": {
+      "apy": 1107632,
+      "years": 4,
+      "guaranteed": 230528,
+      "total_value": 4430528
+    },
+    "DeForest Buckner": {
+      "apy": 23000000,
+      "years": 2,
+      "guaranteed": 43250000,
+      "total_value": 46000000
+    },
+    "Cade Klubnik": {
+      "ktc": 1162,
+      "ktc_rank": 302,
+      "apy": 1399669,
+      "years": 4,
+      "guaranteed": 1218676,
+      "total_value": 5598676
+    },
+    "Keith Abney II": {
+      "apy": 1219725,
+      "years": 4,
+      "guaranteed": 498900,
+      "total_value": 4878900
+    },
+    "Elijah Roberts": {
+      "apy": 1152449,
+      "years": 4,
+      "guaranteed": 409796,
+      "total_value": 4609796
+    },
+    "D.J. Rogers": {
+      "apy": 1041667,
+      "years": 3,
+      "guaranteed": 200000,
+      "total_value": 3125000
+    },
+    "Octavian Smith": {
+      "apy": 1035833,
+      "years": 3,
+      "guaranteed": 7500,
+      "total_value": 3107500
+    },
+    "Travis Glover": {
+      "apy": 1047845,
+      "years": 4,
+      "guaranteed": 171380,
+      "total_value": 4191380
+    },
+    "Rachaad White": {
+      "ktc": 3404,
+      "ktc_rank": 176,
+      "apy": 2000000,
+      "years": 1,
+      "guaranteed": 1715000,
+      "total_value": 2000000
+    },
+    "Shedeur Sanders": {
+      "ktc": 2344,
+      "ktc_rank": 178,
+      "apy": 1161845,
+      "years": 4,
+      "guaranteed": 447380,
+      "total_value": 4647380
+    },
+    "Jordan Turner": {
+      "apy": 988333,
+      "years": 3,
+      "guaranteed": 0,
+      "total_value": 2965000
+    },
+    "Michael Briscoe": {
+      "apy": 885000,
+      "years": 1,
+      "guaranteed": 0,
+      "total_value": 885000
+    },
+    "Fernando Mendoza": {
+      "ktc": 4735,
+      "ktc_rank": 42,
+      "apy": 14317650,
+      "years": 4,
+      "guaranteed": 0,
+      "total_value": 57270598
+    },
+    "Marshall Foerner": {
+      "apy": 967500,
+      "years": 2,
+      "guaranteed": 0,
+      "total_value": 1935000
+    },
+    "2028 Early 3rd": {
+      "ktc": 2609,
+      "ktc_rank": 253
+    },
+    "Luke Farrell": {
+      "apy": 4000000,
+      "years": 2,
+      "guaranteed": 3590000,
+      "total_value": 8000000
+    },
+    "Hunter Henry": {
+      "ktc": 2746,
+      "ktc_rank": 238,
+      "apy": 9000000,
+      "years": 3,
+      "guaranteed": 15800000,
+      "total_value": 27000000
+    },
+    "Elliott Davison": {
+      "apy": 967500,
+      "years": 2,
+      "guaranteed": 0,
+      "total_value": 1935000
+    },
+    "Chris Rodriguez": {
+      "ktc": 3192,
+      "ktc_rank": 198
+    },
+    "Cashius Howell": {
+      "apy": 3002000,
+      "years": 4,
+      "guaranteed": 0,
+      "total_value": 12008000
+    },
+    "Joe Tippmann": {
+      "apy": 2089901,
+      "years": 4,
+      "guaranteed": 6167665,
+      "total_value": 8359604
+    },
+    "Christian Watson": {
+      "ktc": 4711,
+      "ktc_rank": 101,
+      "apy": 11000000,
+      "years": 1,
+      "guaranteed": 6067078,
+      "total_value": 11000000
+    },
+    "Braelon Allen": {
+      "ktc": 3320,
+      "ktc_rank": 188,
+      "apy": 1137177,
+      "years": 4,
+      "guaranteed": 528708,
+      "total_value": 4548708
+    },
+    "Teair Tart": {
+      "apy": 10000000,
+      "years": 3,
+      "guaranteed": 15000000,
+      "total_value": 30000000
+    },
+    "Thomas Harper": {
+      "apy": 946667,
+      "years": 3,
+      "guaranteed": 30000,
+      "total_value": 2840000
+    },
+    "Armand Membou": {
+      "apy": 7978276,
+      "years": 4,
+      "guaranteed": 31913104,
+      "total_value": 31913104
+    },
+    "Ty Johnson": {
+      "ktc": 1585,
+      "ktc_rank": 382,
+      "apy": 2500000,
+      "years": 2,
+      "guaranteed": 2490000,
+      "total_value": 5000000
+    },
+    "Chuba Hubbard": {
+      "ktc": 4121,
+      "ktc_rank": 132,
+      "apy": 8300000,
+      "years": 4,
+      "guaranteed": 12058000,
+      "total_value": 33200000
+    },
+    "Caleb Douglas": {
+      "ktc": 1302,
+      "ktc_rank": 398,
+      "apy": 1792125,
+      "years": 4,
+      "guaranteed": 1673452,
+      "total_value": 7168498
+    },
+    "Brevyn Spann-Ford": {
+      "apy": 950000,
+      "years": 3,
+      "guaranteed": 245000,
+      "total_value": 2850000
+    },
+    "Khalil Jacobs": {
+      "apy": 1033333,
+      "years": 3,
+      "guaranteed": 0,
+      "total_value": 3100000
+    },
+    "Gavin Gerhardt": {
+      "apy": 1131719,
+      "years": 4,
+      "guaranteed": 146876,
+      "total_value": 4526876
+    },
+    "Jam Miller": {
+      "ktc": 1006,
+      "ktc_rank": 468,
+      "apy": 1126235,
+      "years": 4,
+      "guaranteed": 124940,
+      "total_value": 4504940
+    },
+    "Chip Trayanum": {
+      "apy": 1040000,
+      "years": 3,
+      "guaranteed": 195000,
+      "total_value": 3120000
+    },
+    "Demario Douglas": {
+      "ktc": 2448,
+      "ktc_rank": 274,
+      "apy": 993333,
+      "years": 4,
+      "guaranteed": 133332,
+      "total_value": 3973332
+    },
+    "Davison Igbinosun": {
+      "apy": 1987253,
+      "years": 4,
+      "guaranteed": 5738907,
+      "total_value": 7949010
+    },
+    "Tucker Addington": {
+      "apy": 1145000,
+      "years": 1,
+      "guaranteed": 0,
+      "total_value": 1145000
+    },
+    "Braden Mann": {
+      "apy": 3500000,
+      "years": 4,
+      "guaranteed": 7000000,
+      "total_value": 14000000
+    },
+    "Zaire Barnes": {
+      "apy": 1150000,
+      "years": 1,
+      "guaranteed": 250000,
+      "total_value": 1150000
+    },
+    "Cole Holcomb": {
+      "apy": 2500000,
+      "years": 2,
+      "guaranteed": 625000,
+      "total_value": 5000000
+    },
+    "Travis Shaw": {
+      "apy": 1033333,
+      "years": 3,
+      "guaranteed": 0,
+      "total_value": 3100000
+    },
+    "Keelan Marion": {
+      "apy": 1035000,
+      "years": 3,
+      "guaranteed": 5000,
+      "total_value": 3105000
+    },
+    "Reese Taylor": {
+      "apy": 922500,
+      "years": 2,
+      "guaranteed": 0,
+      "total_value": 1845000
+    },
+    "Ronnie Hickman": {
+      "apy": 3520000,
+      "years": 1,
+      "guaranteed": 0,
+      "total_value": 3520000
+    },
+    "Jaden Smith": {
+      "apy": 967500,
+      "years": 2,
+      "guaranteed": 0,
+      "total_value": 1935000
+    },
+    "Jeremiah Martin": {
+      "apy": 885000,
+      "years": 1,
+      "guaranteed": 0,
+      "total_value": 885000
+    },
+    "Rylie Mills": {
+      "apy": 1166875,
+      "years": 4,
+      "guaranteed": 467500,
+      "total_value": 4667500
+    },
+    "Harold Landry": {
+      "apy": 14500000,
+      "years": 3,
+      "guaranteed": 26000000,
+      "total_value": 43500000
+    },
+    "Sebastian Joseph-Day": {
+      "apy": 5500000,
+      "years": 2,
+      "guaranteed": 4700000,
+      "total_value": 11000000
+    },
+    "Austin Booker": {
+      "apy": 1092285,
+      "years": 4,
+      "guaranteed": 349136,
+      "total_value": 4369140
+    },
+    "Brock Wright": {
+      "ktc": 967,
+      "ktc_rank": 452,
+      "apy": 4000000,
+      "years": 3,
+      "guaranteed": 4600000,
+      "total_value": 12000000
+    },
+    "Quinton Bohanna": {
+      "apy": 1215000,
+      "years": 1,
+      "guaranteed": 0,
+      "total_value": 1215000
+    },
+    "Isaiah Stalbird": {
+      "apy": 1075000,
+      "years": 1,
+      "guaranteed": 0,
+      "total_value": 1075000
+    },
+    "Kingsley Suamataia": {
+      "apy": 1605377,
+      "years": 4,
+      "guaranteed": 3372071,
+      "total_value": 6421506
+    },
+    "B.J. Hill": {
+      "apy": 11000000,
+      "years": 3,
+      "guaranteed": 11000000,
+      "total_value": 33000000
+    },
+    "Alex Wollschlaeger": {
+      "apy": 1043333,
+      "years": 3,
+      "guaranteed": 277500,
+      "total_value": 3130000
+    },
+    "Will Fries": {
+      "apy": 17544000,
+      "years": 5,
+      "guaranteed": 34000000,
+      "total_value": 87720000
+    },
+    "Tyler Shough": {
+      "ktc": 3743,
+      "ktc_rank": 70,
+      "apy": 2701182,
+      "years": 4,
+      "guaranteed": 10804728,
+      "total_value": 10804728
+    },
+    "Dillon Thieneman": {
+      "apy": 4878115,
+      "years": 4,
+      "guaranteed": 19512460,
+      "total_value": 19512460
+    },
+    "Brennan Presley": {
+      "apy": 967500,
+      "years": 2,
+      "guaranteed": 0,
+      "total_value": 1935000
+    },
+    "Chigozie Anusiem": {
+      "apy": 1017500,
+      "years": 2,
+      "guaranteed": 0,
+      "total_value": 2035000
+    },
+    "Daveren Rayner": {
+      "apy": 1033333,
+      "years": 3,
+      "guaranteed": 0,
+      "total_value": 3100000
+    },
+    "Isaac Seumalo": {
+      "apy": 10500000,
+      "years": 3,
+      "guaranteed": 15000000,
+      "total_value": 31500000
+    },
+    "Derrick Barnes": {
+      "apy": 8000000,
+      "years": 3,
+      "guaranteed": 16000000,
+      "total_value": 24000000
+    },
+    "TeRah Edwards": {
+      "apy": 885000,
+      "years": 1,
+      "guaranteed": 0,
+      "total_value": 885000
+    },
+    "Jimmy Holiday": {
+      "apy": 885000,
+      "years": 1,
+      "guaranteed": 0,
+      "total_value": 885000
+    },
+    "Anez Cooper": {
+      "apy": 1169960,
+      "years": 4,
+      "guaranteed": 299840,
+      "total_value": 4679840
+    },
+    "Patrick Ricard": {
+      "apy": 3815000,
+      "years": 2,
+      "guaranteed": 3540000,
+      "total_value": 7630000
+    },
+    "Kaleb Johnson": {
+      "ktc": 2976,
+      "ktc_rank": 221,
+      "apy": 1593016,
+      "years": 4,
+      "guaranteed": 1274228,
+      "total_value": 6372062
+    },
+    "Blake Whiteheart": {
+      "apy": 1145000,
+      "years": 1,
+      "guaranteed": 0,
+      "total_value": 1145000
+    },
+    "Trent Brown": {
+      "apy": 5500000,
+      "years": 1,
+      "guaranteed": 1750000,
+      "total_value": 5500000
+    },
+    "Anthony Firkser": {
+      "apy": 1300000,
+      "years": 1,
+      "guaranteed": 0,
+      "total_value": 1300000
+    },
+    "Nick Cross": {
+      "apy": 6500000,
+      "years": 2,
+      "guaranteed": 6050000,
+      "total_value": 13000000
+    },
+    "Tai Felton": {
+      "ktc": 1527,
+      "ktc_rank": 387,
+      "apy": 1540296,
+      "years": 4,
+      "guaranteed": 1120860,
+      "total_value": 6161184
+    },
+    "Christian Benford": {
+      "apy": 17250000,
+      "years": 4,
+      "guaranteed": 18850000,
+      "total_value": 69000000
+    },
+    "2028 Mid 2nd": {
+      "ktc": 3588,
+      "ktc_rank": 153
+    },
+    "Julius Chestnut": {
+      "ktc": 609,
+      "ktc_rank": 493,
+      "apy": 1402500,
+      "years": 1,
+      "guaranteed": 102500,
+      "total_value": 1402500
+    },
+    "Alex Ward": {
+      "apy": 1145000,
+      "years": 1,
+      "guaranteed": 0,
+      "total_value": 1145000
+    },
+    "Joshua Pitsenberger": {
+      "apy": 1037333,
+      "years": 3,
+      "guaranteed": 62000,
+      "total_value": 3112000
+    },
+    "Gavin Bartholomew": {
+      "apy": 1103956,
+      "years": 4,
+      "guaranteed": 215824,
+      "total_value": 4415824
+    },
+    "D.J. Wingfield": {
+      "apy": 1033333,
+      "years": 3,
+      "guaranteed": 0,
+      "total_value": 3100000
+    },
+    "Dontae Fleming": {
+      "apy": 885000,
+      "years": 1,
+      "guaranteed": 0,
+      "total_value": 885000
+    },
+    "Clark Phillips III": {
+      "apy": 1153383,
+      "years": 4,
+      "guaranteed": 773532,
+      "total_value": 4613532
+    },
+    "Luke Gifford": {
+      "apy": 2500000,
+      "years": 2,
+      "guaranteed": 2010000,
+      "total_value": 5000000
+    },
+    "Wade Woodaz": {
+      "apy": 1370695,
+      "years": 4,
+      "guaranteed": 1102780,
+      "total_value": 5482780
+    },
+    "Daequan Hardy": {
+      "apy": 885000,
+      "years": 1,
+      "guaranteed": 0,
+      "total_value": 885000
+    },
+    "Will McDonald IV": {
+      "apy": 4080416,
+      "years": 4,
+      "guaranteed": 16321664,
+      "total_value": 16321664
+    },
+    "Eric Wilson": {
+      "apy": 7500000,
+      "years": 3,
+      "guaranteed": 12500000,
+      "total_value": 22500000
+    },
+    "Miles Killebrew": {
+      "apy": 1790000,
+      "years": 1,
+      "guaranteed": 490000,
+      "total_value": 1790000
+    },
+    "Kingsley Enagbare": {
+      "apy": 9000000,
+      "years": 1,
+      "guaranteed": 8490000,
+      "total_value": 9000000
+    },
+    "Brandon Hayes": {
+      "apy": 1033333,
+      "years": 3,
+      "guaranteed": 0,
+      "total_value": 3100000
+    },
+    "K'Lavon Chaisson": {
+      "apy": 11000000,
+      "years": 1,
+      "guaranteed": 10300000,
+      "total_value": 11000000
+    },
+    "Kris Jenkins Jr.": {
+      "apy": 1965116,
+      "years": 4,
+      "guaranteed": 5480322,
+      "total_value": 7860464
+    },
+    "Brian Parker II": {
+      "apy": 1169455,
+      "years": 4,
+      "guaranteed": 297820,
+      "total_value": 4677820
+    },
+    "Tanner Hudson": {
+      "apy": 1350000,
+      "years": 1,
+      "guaranteed": 50000,
+      "total_value": 1350000
+    },
+    "Johnny Pascuzzi": {
+      "apy": 1033333,
+      "years": 3,
+      "guaranteed": 0,
+      "total_value": 3100000
+    },
+    "Billy Schrauth": {
+      "apy": 1217551,
+      "years": 4,
+      "guaranteed": 490204,
+      "total_value": 4870204
+    },
+    "Joshua Ezeudu": {
+      "apy": 1300000,
+      "years": 1,
+      "guaranteed": 410300,
+      "total_value": 1300000
+    },
+    "Toriano Pride Jr.": {
+      "apy": 1138945,
+      "years": 4,
+      "guaranteed": 175780,
+      "total_value": 4555780
+    },
+    "Kitan Oladapo": {
+      "apy": 1068569,
+      "years": 4,
+      "guaranteed": 254276,
+      "total_value": 4274276
+    },
+    "Chris Paul": {
+      "apy": 3000000,
+      "years": 1,
+      "guaranteed": 2475000,
+      "total_value": 3000000
+    },
+    "Chris Manhertz": {
+      "apy": 1487500,
+      "years": 1,
+      "guaranteed": 262500,
+      "total_value": 1487500
+    },
+    "Jalen Davis": {
+      "apy": 1575000,
+      "years": 1,
+      "guaranteed": 100000,
+      "total_value": 1575000
+    },
+    "Jay Ward": {
+      "apy": 1123386,
+      "years": 4,
+      "guaranteed": 653544,
+      "total_value": 4493544
+    },
+    "Jalon Kilgore": {
+      "apy": 1210831,
+      "years": 4,
+      "guaranteed": 463324,
+      "total_value": 4843324
+    },
+    "Ar'Maj Reed-Adams": {
+      "apy": 1127438,
+      "years": 4,
+      "guaranteed": 129752,
+      "total_value": 4509752
+    },
+    "Chukwuebuka Godrick": {
+      "apy": 922500,
+      "years": 2,
+      "guaranteed": 0,
+      "total_value": 1845000
+    },
+    "Nick Jackson": {
+      "apy": 1062500,
+      "years": 2,
+      "guaranteed": 0,
+      "total_value": 2125000
+    },
+    "Kader Kohou": {
+      "apy": 1810000,
+      "years": 1,
+      "guaranteed": 1810000,
+      "total_value": 1810000
+    },
+    "Cole Kmet": {
+      "ktc": 2398,
+      "ktc_rank": 280,
+      "apy": 12500000,
+      "years": 4,
+      "guaranteed": 22893000,
+      "total_value": 50000000
+    },
+    "Joey Slye": {
+      "apy": 2000000,
+      "years": 1,
+      "guaranteed": 750000,
+      "total_value": 2000000
+    },
+    "Olusegun Oluwatimi": {
+      "apy": 1039115,
+      "years": 4,
+      "guaranteed": 316460,
+      "total_value": 4156460
+    },
+    "Drake Nugent": {
+      "apy": 885000,
+      "years": 1,
+      "guaranteed": 0,
+      "total_value": 885000
+    },
+    "Danny Gray": {
+      "apy": 1062500,
+      "years": 2,
+      "guaranteed": 0,
+      "total_value": 2125000
+    },
+    "Paul Rubelt": {
+      "apy": 1043333,
+      "years": 3,
+      "guaranteed": 277500,
+      "total_value": 3130000
+    },
+    "Jalen Hunt": {
+      "apy": 1038333,
+      "years": 3,
+      "guaranteed": 215000,
+      "total_value": 3115000
+    },
+    "Robert Henry Jr.": {
+      "apy": 1040000,
+      "years": 3,
+      "guaranteed": 220000,
+      "total_value": 3120000
+    },
+    "Elijah Ponder": {
+      "apy": 993333,
+      "years": 3,
+      "guaranteed": 115000,
+      "total_value": 2980000
+    },
+    "Noah Igbinoghene": {
+      "apy": 1810000,
+      "years": 1,
+      "guaranteed": 750000,
+      "total_value": 1810000
+    },
+    "Brandon Cleveland": {
+      "apy": 1134537,
+      "years": 4,
+      "guaranteed": 158148,
+      "total_value": 4538148
+    },
+    "DK Metcalf": {
+      "ktc": 4392,
+      "ktc_rank": 115
+    },
+    "Will Putnam": {
+      "apy": 1005000,
+      "years": 1,
+      "guaranteed": 0,
+      "total_value": 1005000
+    },
+    "Eric Rogers": {
+      "apy": 995000,
+      "years": 3,
+      "guaranteed": 20000,
+      "total_value": 2985000
+    },
+    "Sam Darnold": {
+      "ktc": 3859,
+      "ktc_rank": 80,
+      "apy": 33500000,
+      "years": 3,
+      "guaranteed": 37500000,
+      "total_value": 100500000
+    },
+    "Baron Browning": {
+      "apy": 7500000,
+      "years": 2,
+      "guaranteed": 10000000,
+      "total_value": 15000000
+    },
+    "Ulysses Bentley IV": {
+      "apy": 885000,
+      "years": 1,
+      "guaranteed": 0,
+      "total_value": 885000
+    },
+    "Landon Jackson": {
+      "apy": 1654746,
+      "years": 4,
+      "guaranteed": 1453804,
+      "total_value": 6618982
+    },
+    "C.J. Stroud": {
+      "ktc": 3996,
+      "ktc_rank": 71,
+      "apy": 9069811,
+      "years": 4,
+      "guaranteed": 36279244,
+      "total_value": 36279244
+    },
+    "Kyle Kennard": {
+      "apy": 1282641,
+      "years": 4,
+      "guaranteed": 930564,
+      "total_value": 5130564
+    },
+    "Earnest Brown IV": {
+      "apy": 1202500,
+      "years": 2,
+      "guaranteed": 0,
+      "total_value": 2405000
+    },
+    "Rex Sunahara": {
+      "apy": 1075000,
+      "years": 1,
+      "guaranteed": 0,
+      "total_value": 1075000
+    },
+    "Chimere Dike": {
+      "ktc": 2957,
+      "ktc_rank": 224,
+      "apy": 1350238,
+      "years": 4,
+      "guaranteed": 1100952,
+      "total_value": 5400952
+    },
+    "Johnny Mundt": {
+      "apy": 1500000,
+      "years": 1,
+      "guaranteed": 750000,
+      "total_value": 1500000
+    },
+    "Yasir Holmes": {
+      "apy": 1033667,
+      "years": 3,
+      "guaranteed": 1000,
+      "total_value": 3101000
+    },
+    "Cam'Ron Silmon-Craig": {
+      "apy": 1005000,
+      "years": 1,
+      "guaranteed": 0,
+      "total_value": 1005000
+    },
+    "Kain Medrano": {
+      "apy": 1102086,
+      "years": 4,
+      "guaranteed": 208344,
+      "total_value": 4408344
+    },
+    "Jonah Monheim": {
+      "apy": 1086077,
+      "years": 4,
+      "guaranteed": 144308,
+      "total_value": 4344308
+    },
+    "Karsen Barnhart": {
+      "apy": 885000,
+      "years": 1,
+      "guaranteed": 0,
+      "total_value": 885000
+    },
+    "Kolton Miller": {
+      "apy": 22000000,
+      "years": 3,
+      "guaranteed": 36500000,
+      "total_value": 66000000
+    },
+    "Luke Tenuta": {
+      "apy": 1415000,
+      "years": 1,
+      "guaranteed": 300000,
+      "total_value": 1415000
+    },
+    "Kyren Williams": {
+      "ktc": 5633,
+      "ktc_rank": 68,
+      "apy": 11000000,
+      "years": 3,
+      "guaranteed": 15145000,
+      "total_value": 33000000
+    },
+    "Trevor Siemian": {
+      "apy": 1300000,
+      "years": 1,
+      "guaranteed": 0,
+      "total_value": 1300000
+    },
+    "CJ Nunnally": {
+      "apy": 1034667,
+      "years": 3,
+      "guaranteed": 4000,
+      "total_value": 3104000
+    },
+    "Davis Allen": {
+      "ktc": 1207,
+      "ktc_rank": 453,
+      "apy": 1021245,
+      "years": 4,
+      "guaranteed": 244980,
+      "total_value": 4084980
+    },
+    "Diego Pavia": {
+      "apy": 1033333,
+      "years": 3,
+      "guaranteed": 0,
+      "total_value": 3100000
+    },
+    "Jonah Laulu": {
+      "apy": 1031130,
+      "years": 4,
+      "guaranteed": 104520,
+      "total_value": 4124520
+    },
+    "Elijah Simmons": {
+      "apy": 922500,
+      "years": 2,
+      "guaranteed": 0,
+      "total_value": 1845000
+    },
+    "Quenton Nelson": {
+      "apy": 20000000,
+      "years": 4,
+      "guaranteed": 41000000,
+      "total_value": 80000000
+    },
+    "Bryce Pierre": {
+      "apy": 885000,
+      "years": 1,
+      "guaranteed": 0,
+      "total_value": 885000
+    },
+    "Ashton Dulin": {
+      "apy": 3250000,
+      "years": 2,
+      "guaranteed": 2940000,
+      "total_value": 6500000
+    },
+    "Max Iheanachor": {
+      "apy": 5173097,
+      "years": 4,
+      "guaranteed": 20692386,
+      "total_value": 20692386
+    },
+    "Cam'Ron Stewart": {
+      "apy": 1033667,
+      "years": 3,
+      "guaranteed": 1000,
+      "total_value": 3101000
+    },
+    "Blake Brandel": {
+      "apy": 3166667,
+      "years": 3,
+      "guaranteed": 3100000,
+      "total_value": 9500000
+    },
+    "Easton Kilty": {
+      "apy": 967500,
+      "years": 2,
+      "guaranteed": 0,
+      "total_value": 1935000
+    },
+    "Kyonte Hamilton": {
+      "apy": 1084582,
+      "years": 4,
+      "guaranteed": 138328,
+      "total_value": 4338328
+    },
+    "Maximus Pulley": {
+      "apy": 1041667,
+      "years": 3,
+      "guaranteed": 50000,
+      "total_value": 3125000
+    },
+    "Jaden Bradley": {
+      "apy": 1036667,
+      "years": 3,
+      "guaranteed": 55000,
+      "total_value": 3110000
+    },
+    "Dalton Kincaid": {
+      "ktc": 3917,
+      "ktc_rank": 140,
+      "apy": 3356760,
+      "years": 4,
+      "guaranteed": 13427040,
+      "total_value": 13427040
+    },
+    "Matthew Hibner": {
+      "ktc": 718,
+      "ktc_rank": 473,
+      "apy": 1292259,
+      "years": 4,
+      "guaranteed": 789036,
+      "total_value": 5169036
+    },
+    "Cooper DeJean": {
+      "apy": 2320906,
+      "years": 4,
+      "guaranteed": 7469987,
+      "total_value": 9283622
+    },
+    "Frank Crum": {
+      "apy": 951667,
+      "years": 3,
+      "guaranteed": 275000,
+      "total_value": 2855000
+    },
+    "Matt Hennessy": {
+      "apy": 1402500,
+      "years": 1,
+      "guaranteed": 1262500,
+      "total_value": 1402500
+    },
+    "Dylan Laube": {
+      "apy": 1043798,
+      "years": 4,
+      "guaranteed": 155192,
+      "total_value": 4175192
+    },
+    "Treyvhon Saunders": {
+      "apy": 1035000,
+      "years": 3,
+      "guaranteed": 10000,
+      "total_value": 3105000
+    },
+    "Jalen Rivers": {
+      "apy": 1155247,
+      "years": 4,
+      "guaranteed": 420988,
+      "total_value": 4620988
+    },
+    "Roman Hemby": {
+      "apy": 1040000,
+      "years": 3,
+      "guaranteed": 220000,
+      "total_value": 3120000
+    },
+    "Darryl Peterson": {
+      "apy": 1036667,
+      "years": 3,
+      "guaranteed": 10000,
+      "total_value": 3110000
+    },
+    "Erick Hallett": {
+      "apy": 922500,
+      "years": 2,
+      "guaranteed": 0,
+      "total_value": 1845000
+    },
+    "Wande Owens": {
+      "apy": 996667,
+      "years": 3,
+      "guaranteed": 60000,
+      "total_value": 2990000
+    },
+    "Nick Hampton": {
+      "apy": 1145000,
+      "years": 1,
+      "guaranteed": 0,
+      "total_value": 1145000
+    },
+    "Lan Larison": {
+      "apy": 996667,
+      "years": 3,
+      "guaranteed": 175000,
+      "total_value": 2990000
+    },
+    "Micah Parsons": {
+      "apy": 46500000,
+      "years": 4,
+      "guaranteed": 120000000,
+      "total_value": 186000000
+    },
+    "Jalen Thompson": {
+      "apy": 11000000,
+      "years": 3,
+      "guaranteed": 22000000,
+      "total_value": 33000000
+    },
+    "Tyreak Sapp": {
+      "apy": 1041667,
+      "years": 3,
+      "guaranteed": 60000,
+      "total_value": 3125000
+    },
+    "Colby Parkinson": {
+      "ktc": 2303,
+      "ktc_rank": 291,
+      "apy": 7500000,
+      "years": 3,
+      "guaranteed": 10250000,
+      "total_value": 22500000
+    },
+    "Justin Skule": {
+      "apy": 1402500,
+      "years": 1,
+      "guaranteed": 500000,
+      "total_value": 1402500
+    },
+    "Trent Sieg": {
+      "apy": 1483333,
+      "years": 3,
+      "guaranteed": 1805000,
+      "total_value": 4450000
+    },
+    "Marcus Mbow": {
+      "apy": 1154596,
+      "years": 4,
+      "guaranteed": 418384,
+      "total_value": 4618384
+    },
+    "Avieon Terrell": {
+      "apy": 2577224,
+      "years": 4,
+      "guaranteed": 10308896,
+      "total_value": 10308896
+    },
+    "Jalen McMillan": {
+      "ktc": 3736,
+      "ktc_rank": 150,
+      "apy": 1415756,
+      "years": 4,
+      "guaranteed": 938564,
+      "total_value": 5663024
+    },
+    "Jameis Winston": {
+      "ktc": 1075,
+      "ktc_rank": 366,
+      "apy": 4000000,
+      "years": 2,
+      "guaranteed": 5250000,
+      "total_value": 8000000
+    },
+    "Miles Battle": {
+      "apy": 1062500,
+      "years": 2,
+      "guaranteed": 0,
+      "total_value": 2125000
+    },
+    "Efton Chism III": {
+      "apy": 996667,
+      "years": 3,
+      "guaranteed": 259000,
+      "total_value": 2990000
+    },
+    "Montorie Foster": {
+      "apy": 885000,
+      "years": 1,
+      "guaranteed": 0,
+      "total_value": 885000
+    },
+    "Cody Mauch": {
+      "apy": 1871368,
+      "years": 4,
+      "guaranteed": 4613240,
+      "total_value": 7485470
+    },
+    "Caleb Murphy": {
+      "apy": 1145000,
+      "years": 1,
+      "guaranteed": 0,
+      "total_value": 1145000
+    },
+    "Jimmy Horn Jr.": {
+      "apy": 1098860,
+      "years": 4,
+      "guaranteed": 195440,
+      "total_value": 4395440
+    },
+    "Dom Jones": {
+      "apy": 922500,
+      "years": 2,
+      "guaranteed": 0,
+      "total_value": 1845000
+    },
+    "Mark Andrews": {
+      "ktc": 3374,
+      "ktc_rank": 180,
+      "apy": 13089000,
+      "years": 3,
+      "guaranteed": 20944444,
+      "total_value": 39267000
+    },
+    "Collin Oliver": {
+      "apy": 1151021,
+      "years": 4,
+      "guaranteed": 404084,
+      "total_value": 4604084
+    },
+    "Mekhi Blackmon": {
+      "apy": 1326021,
+      "years": 4,
+      "guaranteed": 857512,
+      "total_value": 5304082
+    },
+    "Tyrique Stevenson": {
+      "apy": 1612376,
+      "years": 4,
+      "guaranteed": 3483707,
+      "total_value": 6449502
+    },
+    "Jacob Spomer": {
+      "apy": 1036667,
+      "years": 3,
+      "guaranteed": 10000,
+      "total_value": 3110000
+    },
+    "Joel Wilson": {
+      "apy": 967500,
+      "years": 2,
+      "guaranteed": 0,
+      "total_value": 1935000
+    },
+    "Terell Smith": {
+      "apy": 1028971,
+      "years": 4,
+      "guaranteed": 275884,
+      "total_value": 4115884
+    },
+    "Hayden Large": {
+      "apy": 1035833,
+      "years": 3,
+      "guaranteed": 67500,
+      "total_value": 3107500
+    },
+    "Andru Phillips": {
+      "apy": 1498986,
+      "years": 4,
+      "guaranteed": 1180684,
+      "total_value": 5995942
+    },
+    "Jamel Dean": {
+      "apy": 12250000,
+      "years": 3,
+      "guaranteed": 13500000,
+      "total_value": 36750000
+    },
+    "Domonique Orange": {
+      "apy": 1745709,
+      "years": 4,
+      "guaranteed": 1538424,
+      "total_value": 6982836
+    },
+    "Brandon Stephens": {
+      "apy": 12000000,
+      "years": 3,
+      "guaranteed": 22980000,
+      "total_value": 36000000
+    },
+    "Namdi Obiazor": {
+      "apy": 1154718,
+      "years": 4,
+      "guaranteed": 238872,
+      "total_value": 4618872
+    },
+    "Theo Johnson": {
+      "ktc": 2686,
+      "ktc_rank": 245,
+      "apy": 1212859,
+      "years": 4,
+      "guaranteed": 831436,
+      "total_value": 4851436
+    },
+    "Adisa Isaac": {
+      "apy": 1412009,
+      "years": 4,
+      "guaranteed": 927660,
+      "total_value": 5648034
+    },
+    "Will Grier": {
+      "apy": 1215000,
+      "years": 1,
+      "guaranteed": 0,
+      "total_value": 1215000
+    },
+    "CJ Daniels": {
+      "ktc": 1119,
+      "ktc_rank": 456
+    },
+    "Cameron Robertson": {
+      "apy": 1040000,
+      "years": 3,
+      "guaranteed": 265000,
+      "total_value": 3120000
+    },
+    "Penei Sewell": {
+      "apy": 28000000,
+      "years": 4,
+      "guaranteed": 42986236,
+      "total_value": 112000000
+    },
+    "Cam Little": {
+      "apy": 1039597,
+      "years": 4,
+      "guaranteed": 138388,
+      "total_value": 4158388
+    },
+    "Shemar Stewart": {
+      "apy": 4742319,
+      "years": 4,
+      "guaranteed": 18969276,
+      "total_value": 18969276
+    },
+    "James Lynch": {
+      "apy": 1315000,
+      "years": 1,
+      "guaranteed": 100000,
+      "total_value": 1315000
+    },
+    "C.J. Henderson": {
+      "apy": 1192500,
+      "years": 2,
+      "guaranteed": 0,
+      "total_value": 2385000
+    },
+    "Tacario Davis": {
+      "apy": 1809105,
+      "years": 4,
+      "guaranteed": 1722852,
+      "total_value": 7236420
+    },
+    "DeVonta Smith": {
+      "ktc": 6132,
+      "ktc_rank": 49,
+      "apy": 1041667,
+      "years": 3,
+      "guaranteed": 272500,
+      "total_value": 3125000
+    },
+    "Taylen Green": {
+      "ktc": 167,
+      "ktc_rank": 451,
+      "apy": 1179541,
+      "years": 4,
+      "guaranteed": 338164,
+      "total_value": 4718164
+    },
+    "Nick Bolton": {
+      "apy": 15000000,
+      "years": 3,
+      "guaranteed": 30000000,
+      "total_value": 45000000
+    },
+    "Jordan Elliott": {
+      "apy": 4000000,
+      "years": 2,
+      "guaranteed": 3240000,
+      "total_value": 8000000
+    },
+    "Theo Jackson": {
+      "apy": 3105000,
+      "years": 3,
+      "guaranteed": 5380000,
+      "total_value": 9315000
+    },
+    "Josh Priebe": {
+      "apy": 967500,
+      "years": 2,
+      "guaranteed": 0,
+      "total_value": 1935000
+    },
+    "Charles Grant": {
+      "apy": 1540296,
+      "years": 4,
+      "guaranteed": 1120860,
+      "total_value": 6161184
+    },
+    "Delmar Glaze": {
+      "apy": 1466448,
+      "years": 4,
+      "guaranteed": 1086028,
+      "total_value": 5865790
+    },
+    "Jaylen Harrell": {
+      "apy": 1025184,
+      "years": 4,
+      "guaranteed": 80736,
+      "total_value": 4100736
+    },
+    "Kobe King": {
+      "apy": 1104767,
+      "years": 4,
+      "guaranteed": 219068,
+      "total_value": 4419068
+    },
+    "Isaiah Nwokobia": {
+      "apy": 1040000,
+      "years": 3,
+      "guaranteed": 20000,
+      "total_value": 3120000
+    },
+    "Jesse Luketa": {
+      "apy": 1145000,
+      "years": 1,
+      "guaranteed": 0,
+      "total_value": 1145000
+    },
+    "Will Johnson": {
+      "apy": 2352692,
+      "years": 4,
+      "guaranteed": 8046753,
+      "total_value": 9410768
+    },
+    "Nash Hutmacher": {
+      "apy": 967500,
+      "years": 2,
+      "guaranteed": 0,
+      "total_value": 1935000
+    },
+    "Jack Dingle": {
+      "apy": 1038333,
+      "years": 3,
+      "guaranteed": 15000,
+      "total_value": 3115000
+    },
+    "Hollin Pierce": {
+      "apy": 967500,
+      "years": 2,
+      "guaranteed": 0,
+      "total_value": 1935000
+    },
+    "Mason Tipton": {
+      "ktc": 1147,
+      "ktc_rank": 447,
+      "apy": 946667,
+      "years": 3,
+      "guaranteed": 110000,
+      "total_value": 2840000
+    },
+    "Cian Slone": {
+      "apy": 1041667,
+      "years": 3,
+      "guaranteed": 272500,
+      "total_value": 3125000
+    },
+    "Michael Wilson": {
+      "ktc": 4522,
+      "ktc_rank": 112,
+      "apy": 1334866,
+      "years": 4,
+      "guaranteed": 883244,
+      "total_value": 5339462
+    },
+    "Geno VanDeMark": {
+      "apy": 1043333,
+      "years": 3,
+      "guaranteed": 240000,
+      "total_value": 3130000
+    },
+    "Jay Tufele": {
+      "apy": 1215000,
+      "years": 1,
+      "guaranteed": 0,
+      "total_value": 1215000
+    },
+    "Smith Vilbert": {
+      "apy": 1033333,
+      "years": 3,
+      "guaranteed": 0,
+      "total_value": 3100000
+    },
+    "2028 Late 2nd": {
+      "ktc": 3373,
+      "ktc_rank": 170
+    },
+    "Erick All": {
+      "ktc": 1530,
+      "ktc_rank": 389,
+      "apy": 1203276,
+      "years": 4,
+      "guaranteed": 793104,
+      "total_value": 4813104
+    },
+    "Dalvin Tomlinson": {
+      "apy": 6200000,
+      "years": 1,
+      "guaranteed": 5690000,
+      "total_value": 6200000
+    },
+    "E.J. Smith": {
+      "apy": 1033333,
+      "years": 3,
+      "guaranteed": 100000,
+      "total_value": 3100000
+    },
+    "DeVaughn Vele": {
+      "apy": 1031120,
+      "years": 4,
+      "guaranteed": 104480,
+      "total_value": 4124480
+    },
+    "Germie Bernard": {
+      "ktc": 3603,
+      "ktc_rank": 161,
+      "apy": 2636220,
+      "years": 4,
+      "guaranteed": 10544878,
+      "total_value": 10544878
+    },
+    "Jonathan Allen": {
+      "apy": 12500000,
+      "years": 2,
+      "guaranteed": 7500000,
+      "total_value": 25000000
+    },
+    "Evan Williams": {
+      "apy": 1205720,
+      "years": 4,
+      "guaranteed": 802880,
+      "total_value": 4822880
+    },
+    "Tanner McCalister": {
+      "apy": 1075000,
+      "years": 1,
+      "guaranteed": 0,
+      "total_value": 1075000
+    },
+    "Damien Lewis": {
+      "apy": 13250000,
+      "years": 4,
+      "guaranteed": 26215000,
+      "total_value": 53000000
+    },
+    "Avery Smith": {
+      "apy": 1040000,
+      "years": 3,
+      "guaranteed": 267500,
+      "total_value": 3120000
+    },
+    "Bryce Phillips": {
+      "apy": 1040000,
+      "years": 3,
+      "guaranteed": 267500,
+      "total_value": 3120000
+    },
+    "Tyreek Hill": {
+      "ktc": 2523,
+      "ktc_rank": 281
+    },
+    "Vita Vea": {
+      "apy": 17750000,
+      "years": 4,
+      "guaranteed": 14734440,
+      "total_value": 71000000
+    },
+    "John Michael Gyllenborg": {
+      "apy": 1040000,
+      "years": 3,
+      "guaranteed": 267500,
+      "total_value": 3120000
+    },
+    "Cam Grandy": {
+      "apy": 1075000,
+      "years": 1,
+      "guaranteed": 0,
+      "total_value": 1075000
+    },
+    "Ted Karras": {
+      "apy": 5000000,
+      "years": 1,
+      "guaranteed": 1000000,
+      "total_value": 5000000
+    },
+    "James Houston": {
+      "apy": 1087500,
+      "years": 2,
+      "guaranteed": 0,
+      "total_value": 2175000
+    },
+    "Jackson Acker": {
+      "apy": 1039000,
+      "years": 3,
+      "guaranteed": 17000,
+      "total_value": 3117000
+    },
+    "Jack Driscoll": {
+      "apy": 1402500,
+      "years": 1,
+      "guaranteed": 187500,
+      "total_value": 1402500
+    },
+    "Christian Izien": {
+      "apy": 2000000,
+      "years": 1,
+      "guaranteed": 1000000,
+      "total_value": 2000000
+    },
+    "Jordan Jefferson": {
+      "apy": 1200769,
+      "years": 4,
+      "guaranteed": 783076,
+      "total_value": 4803076
+    },
+    "Grady Jarrett": {
+      "apy": 14500000,
+      "years": 3,
+      "guaranteed": 27250000,
+      "total_value": 43500000
+    },
+    "Elijah Klein": {
+      "apy": 1039597,
+      "years": 4,
+      "guaranteed": 138388,
+      "total_value": 4158388
+    },
+    "Tory Horton": {
+      "ktc": 3378,
+      "ktc_rank": 184,
+      "apy": 1141260,
+      "years": 4,
+      "guaranteed": 365040,
+      "total_value": 4565040
+    },
+    "John Ojukwu": {
+      "apy": 1227500,
+      "years": 2,
+      "guaranteed": 25000,
+      "total_value": 2455000
+    },
+    "Khristian Boyd": {
+      "apy": 1049707,
+      "years": 4,
+      "guaranteed": 178828,
+      "total_value": 4198828
+    },
+    "Ollie Gordon II": {
+      "apy": 1118166,
+      "years": 4,
+      "guaranteed": 272664,
+      "total_value": 4472664
+    },
+    "Theo Benedet": {
+      "apy": 1005000,
+      "years": 1,
+      "guaranteed": 0,
+      "total_value": 1005000
+    },
+    "Jadarian Price": {
+      "ktc": 5598,
+      "ktc_rank": 67,
+      "apy": 4195937,
+      "years": 4,
+      "guaranteed": 16783748,
+      "total_value": 16783748
+    },
+    "Khalil Mack": {
+      "apy": 18000000,
+      "years": 1,
+      "guaranteed": 18000000,
+      "total_value": 18000000
+    },
+    "Charles Demmings": {
+      "apy": 1214716,
+      "years": 4,
+      "guaranteed": 478864,
+      "total_value": 4858864
+    },
+    "Myles Bryant": {
+      "apy": 1402500,
+      "years": 1,
+      "guaranteed": 517500,
+      "total_value": 1402500
+    },
+    "Julian Blackmon": {
+      "apy": 2535000,
+      "years": 1,
+      "guaranteed": 1000000,
+      "total_value": 2535000
+    },
+    "Chidobe Awuzie": {
+      "apy": 5000000,
+      "years": 1,
+      "guaranteed": 5000000,
+      "total_value": 5000000
+    },
+    "Shane Buechele": {
+      "apy": 1150000,
+      "years": 1,
+      "guaranteed": 50000,
+      "total_value": 1150000
+    },
+    "Jake Moody": {
+      "apy": 1500000,
+      "years": 1,
+      "guaranteed": 125000,
+      "total_value": 1500000
+    },
+    "Cameron Sample": {
+      "apy": 1402500,
+      "years": 1,
+      "guaranteed": 225000,
+      "total_value": 1402500
+    },
+    "Jake Bates": {
+      "apy": 1075000,
+      "years": 1,
+      "guaranteed": 0,
+      "total_value": 1075000
+    },
+    "Darius Rush": {
+      "apy": 1075000,
+      "years": 1,
+      "guaranteed": 0,
+      "total_value": 1075000
+    },
+    "Kentavius Street": {
+      "apy": 1480000,
+      "years": 1,
+      "guaranteed": 100000,
+      "total_value": 1480000
+    },
+    "Jake Hansen": {
+      "apy": 2675000,
+      "years": 1,
+      "guaranteed": 1650000,
+      "total_value": 2675000
+    },
+    "Xavier Nwankpa": {
+      "apy": 1040000,
+      "years": 3,
+      "guaranteed": 267500,
+      "total_value": 3120000
+    },
+    "Mason Shipley": {
+      "apy": 1040000,
+      "years": 3,
+      "guaranteed": 20000,
+      "total_value": 3120000
+    },
+    "Jonathan Ford": {
+      "apy": 1500000,
+      "years": 1,
+      "guaranteed": 100000,
+      "total_value": 1500000
+    },
+    "Matthew Butler": {
+      "apy": 1145000,
+      "years": 1,
+      "guaranteed": 0,
+      "total_value": 1145000
+    },
+    "Jared Wayne": {
+      "apy": 1005000,
+      "years": 1,
+      "guaranteed": 0,
+      "total_value": 1005000
+    },
+    "Audric Estime": {
+      "ktc": 1915,
+      "ktc_rank": 343,
+      "apy": 1017500,
+      "years": 2,
+      "guaranteed": 0,
+      "total_value": 2035000
+    },
+    "CeeDee Lamb": {
+      "ktc": 7678,
+      "ktc_rank": 19,
+      "apy": 34000000,
+      "years": 4,
+      "guaranteed": 67000000,
+      "total_value": 136000000
+    },
+    "Jeremiah Wright": {
+      "apy": 1348087,
+      "years": 4,
+      "guaranteed": 1012348,
+      "total_value": 5392348
+    },
+    "Jalen Redmond": {
+      "apy": 1075000,
+      "years": 1,
+      "guaranteed": 0,
+      "total_value": 1075000
+    },
+    "Luke Elkin": {
+      "apy": 885000,
+      "years": 1,
+      "guaranteed": 0,
+      "total_value": 885000
+    },
+    "Skyler Thomas": {
+      "apy": 1040000,
+      "years": 3,
+      "guaranteed": 220000,
+      "total_value": 3120000
+    },
+    "Braden Smith": {
+      "apy": 10000000,
+      "years": 2,
+      "guaranteed": 13500000,
+      "total_value": 20000000
+    },
+    "Jarrian Jones": {
+      "apy": 1399078,
+      "years": 4,
+      "guaranteed": 890044,
+      "total_value": 5596312
+    },
+    "Elijah Arroyo": {
+      "ktc": 2994,
+      "ktc_rank": 216,
+      "apy": 2203343,
+      "years": 4,
+      "guaranteed": 6872548,
+      "total_value": 8813372
+    },
+    "Tyler Huntley": {
+      "ktc": 595,
+      "ktc_rank": 404,
+      "apy": 2500000,
+      "years": 2,
+      "guaranteed": 3500000,
+      "total_value": 5000000
+    },
+    "LaBryan Ray": {
+      "apy": 1145000,
+      "years": 1,
+      "guaranteed": 0,
+      "total_value": 1145000
+    },
+    "Stone Smartt": {
+      "apy": 1290000,
+      "years": 1,
+      "guaranteed": 225000,
+      "total_value": 1290000
+    },
+    "Mac Jones": {
+      "ktc": 2291,
+      "ktc_rank": 186,
+      "apy": 3500000,
+      "years": 2,
+      "guaranteed": 4750000,
+      "total_value": 7000000
+    },
+    "Quez Watkins": {
+      "apy": 1215000,
+      "years": 1,
+      "guaranteed": 0,
+      "total_value": 1215000
+    },
+    "Cedric Johnson": {
+      "apy": 1039597,
+      "years": 4,
+      "guaranteed": 138388,
+      "total_value": 4158388
+    },
+    "David Sills": {
+      "apy": 1215000,
+      "years": 1,
+      "guaranteed": 0,
+      "total_value": 1215000
+    },
+    "Ethan Conner": {
+      "apy": 1037333,
+      "years": 3,
+      "guaranteed": 12000,
+      "total_value": 3112000
+    },
+    "Shy Tuttle": {
+      "apy": 1400000,
+      "years": 1,
+      "guaranteed": 50000,
+      "total_value": 1400000
+    },
+    "DeeJay Dallas": {
+      "apy": 1265000,
+      "years": 1,
+      "guaranteed": 200000,
+      "total_value": 1265000
+    },
+    "Kahlil Saunders": {
+      "apy": 1035000,
+      "years": 3,
+      "guaranteed": 5000,
+      "total_value": 3105000
+    },
+    "Jeremy Reaves": {
+      "apy": 3500000,
+      "years": 1,
+      "guaranteed": 4150000,
+      "total_value": 3500000
+    },
+    "Ar'Darius Washington": {
+      "apy": 3000000,
+      "years": 1,
+      "guaranteed": 1500000,
+      "total_value": 3000000
+    },
+    "Kaiir Elam": {
+      "apy": 1810000,
+      "years": 1,
+      "guaranteed": 500000,
+      "total_value": 1810000
+    },
+    "Laki Tasi": {
+      "apy": 885000,
+      "years": 1,
+      "guaranteed": 0,
+      "total_value": 885000
+    },
+    "Seth McLaughlin": {
+      "apy": 885000,
+      "years": 1,
+      "guaranteed": 0,
+      "total_value": 885000
+    },
+    "Jaycee Horn": {
+      "apy": 25000000,
+      "years": 4,
+      "guaranteed": 46707000,
+      "total_value": 100000000
+    },
+    "Terrace Marshall Jr.": {
+      "apy": 1215000,
+      "years": 1,
+      "guaranteed": 0,
+      "total_value": 1215000
+    },
+    "Loren Strickland": {
+      "apy": 1075000,
+      "years": 1,
+      "guaranteed": 0,
+      "total_value": 1075000
+    },
+    "Chris Johnson": {
+      "apy": 4760117,
+      "years": 4,
+      "guaranteed": 0,
+      "total_value": 19040468
+    },
+    "Landon Robinson": {
+      "apy": 1135571,
+      "years": 4,
+      "guaranteed": 162284,
+      "total_value": 4542284
+    },
+    "J.D. Bertrand": {
+      "apy": 1092506,
+      "years": 4,
+      "guaranteed": 350024,
+      "total_value": 4370024
+    },
+    "Nick Nash": {
+      "apy": 885000,
+      "years": 1,
+      "guaranteed": 0,
+      "total_value": 885000
+    },
+    "Ben Bredeson": {
+      "apy": 7333333,
+      "years": 3,
+      "guaranteed": 12500000,
+      "total_value": 22000000
+    },
+    "Damien Martinez": {
+      "ktc": 1780,
+      "ktc_rank": 353,
+      "apy": 885000,
+      "years": 1,
+      "guaranteed": 0,
+      "total_value": 885000
+    },
+    "Marlowe Wax": {
+      "apy": 989333,
+      "years": 3,
+      "guaranteed": 3000,
+      "total_value": 2968000
+    },
+    "A.T. Perry": {
+      "apy": 1075000,
+      "years": 1,
+      "guaranteed": 0,
+      "total_value": 1075000
+    },
+    "Matt Araiza": {
+      "apy": 1075000,
+      "years": 1,
+      "guaranteed": 0,
+      "total_value": 1075000
+    },
+    "Quentin Johnston": {
+      "ktc": 4261,
+      "ktc_rank": 124,
+      "apy": 3547197,
+      "years": 4,
+      "guaranteed": 14188786,
+      "total_value": 14188786
+    },
+    "Justin Dedich": {
+      "apy": 1075000,
+      "years": 1,
+      "guaranteed": 0,
+      "total_value": 1075000
+    },
+    "Jonathon Brooks": {
+      "ktc": 3981,
+      "ktc_rank": 138,
+      "apy": 2104271,
+      "years": 4,
+      "guaranteed": 6240268,
+      "total_value": 8417082
+    },
+    "Demontrey Jacobs": {
+      "apy": 1017500,
+      "years": 2,
+      "guaranteed": 0,
+      "total_value": 2035000
+    },
+    "Juwan Johnson": {
+      "ktc": 2799,
+      "ktc_rank": 230,
+      "apy": 10250000,
+      "years": 3,
+      "guaranteed": 21250000,
+      "total_value": 30750000
+    },
+    "Yahya Black": {
+      "apy": 1144959,
+      "years": 4,
+      "guaranteed": 379836,
+      "total_value": 4579836
+    },
+    "Deommodore Lenoir": {
+      "apy": 17960000,
+      "years": 5,
+      "guaranteed": 15468889,
+      "total_value": 89800000
+    },
+    "Evan Beerntsen": {
+      "apy": 1125122,
+      "years": 4,
+      "guaranteed": 120488,
+      "total_value": 4500488
+    },
+    "T.J. Harden": {
+      "apy": 1033333,
+      "years": 3,
+      "guaranteed": 25000,
+      "total_value": 3100000
+    },
+    "Derion Kendrick": {
+      "apy": 1315000,
+      "years": 1,
+      "guaranteed": 0,
+      "total_value": 1315000
+    },
+    "Zion Young": {
+      "apy": 2793742,
+      "years": 4,
+      "guaranteed": 11174966,
+      "total_value": 11174966
+    },
+    "Tommy Togiai": {
+      "apy": 2680000,
+      "years": 1,
+      "guaranteed": 2295000,
+      "total_value": 2680000
+    },
+    "Josh Newton": {
+      "apy": 1089319,
+      "years": 4,
+      "guaranteed": 337276,
+      "total_value": 4357276
+    },
+    "Ronnie Rivers": {
+      "apy": 1251000,
+      "years": 1,
+      "guaranteed": 330300,
+      "total_value": 1251000
+    },
+    "Marlin Klein": {
+      "apy": 2046246,
+      "years": 4,
+      "guaranteed": 6243882,
+      "total_value": 8184982
+    },
+    "Nikko Remigio": {
+      "apy": 1075000,
+      "years": 1,
+      "guaranteed": 0,
+      "total_value": 1075000
+    },
+    "Isaiahh Loudermilk": {
+      "apy": 1215000,
+      "years": 1,
+      "guaranteed": 0,
+      "total_value": 1215000
+    },
+    "Vernon Broughton": {
+      "apy": 1659449,
+      "years": 4,
+      "guaranteed": 1467488,
+      "total_value": 6637796
+    },
+    "Karene Reid": {
+      "apy": 993333,
+      "years": 3,
+      "guaranteed": 249000,
+      "total_value": 2980000
+    },
+    "Kohl Levao": {
+      "apy": 988333,
+      "years": 3,
+      "guaranteed": 0,
+      "total_value": 2965000
+    },
+    "Fred Davis II": {
+      "apy": 1038333,
+      "years": 3,
+      "guaranteed": 15000,
+      "total_value": 3115000
+    },
+    "Talanoa Hufanga": {
+      "apy": 13000000,
+      "years": 3,
+      "guaranteed": 20000000,
+      "total_value": 39000000
+    },
+    "Zxavian Harris": {
+      "apy": 1033333,
+      "years": 3,
+      "guaranteed": 0,
+      "total_value": 3100000
+    },
+    "Brandon Smith": {
+      "apy": 885000,
+      "years": 1,
+      "guaranteed": 0,
+      "total_value": 885000
+    },
+    "2027 Mid 3rd": {
+      "ktc": 2836,
+      "ktc_rank": 211
+    },
+    "Malik Hooker": {
+      "apy": 5000000,
+      "years": 1,
+      "guaranteed": 3500000,
+      "total_value": 5000000
+    },
+    "Trevon Moehrig": {
+      "apy": 17000000,
+      "years": 3,
+      "guaranteed": 34500000,
+      "total_value": 51000000
+    },
+    "Kobe Prentice": {
+      "apy": 1038333,
+      "years": 3,
+      "guaranteed": 15000,
+      "total_value": 3115000
+    },
+    "Malachi Moore": {
+      "apy": 1274535,
+      "years": 4,
+      "guaranteed": 898140,
+      "total_value": 5098140
+    },
+    "Diego Pounds": {
+      "apy": 1041667,
+      "years": 3,
+      "guaranteed": 40000,
+      "total_value": 3125000
+    },
+    "Kolbe Katsis": {
+      "apy": 1035000,
+      "years": 3,
+      "guaranteed": 30000,
+      "total_value": 3105000
+    },
+    "Chris Lindstrom": {
+      "apy": 20500000,
+      "years": 5,
+      "guaranteed": 48202000,
+      "total_value": 102500000
+    },
+    "William Sherman": {
+      "apy": 922500,
+      "years": 2,
+      "guaranteed": 0,
+      "total_value": 1845000
+    },
+    "Travis Burke": {
+      "apy": 1385968,
+      "years": 4,
+      "guaranteed": 1163872,
+      "total_value": 5543872
+    },
+    "Dante Fowler Jr.": {
+      "apy": 2500000,
+      "years": 1,
+      "guaranteed": 500000,
+      "total_value": 2500000
+    },
+    "Jaydn Ott": {
+      "apy": 1033333,
+      "years": 3,
+      "guaranteed": 75000,
+      "total_value": 3100000
+    },
+    "Tahj Washington": {
+      "ktc": 1632,
+      "ktc_rank": 359,
+      "apy": 1027599,
+      "years": 4,
+      "guaranteed": 90396,
+      "total_value": 4110396
+    },
+    "Romello Brinson": {
+      "apy": 1033333,
+      "years": 3,
+      "guaranteed": 0,
+      "total_value": 3100000
+    },
+    "Shane Zylstra": {
+      "apy": 1215000,
+      "years": 1,
+      "guaranteed": 0,
+      "total_value": 1215000
+    },
+    "Gus Hartwig": {
+      "apy": 991667,
+      "years": 3,
+      "guaranteed": 190000,
+      "total_value": 2975000
+    },
+    "Eric Rivers": {
+      "apy": 1041667,
+      "years": 3,
+      "guaranteed": 250000,
+      "total_value": 3125000
+    },
+    "Austin Jackson": {
+      "apy": 7000000,
+      "years": 1,
+      "guaranteed": 5475000,
+      "total_value": 7000000
+    },
+    "Elijah Hicks": {
+      "apy": 2600000,
+      "years": 1,
+      "guaranteed": 1687500,
+      "total_value": 2600000
+    },
+    "Eli Stowers": {
+      "ktc": 4415,
+      "ktc_rank": 110,
+      "apy": 2223241,
+      "years": 4,
+      "guaranteed": 7277752,
+      "total_value": 8892964
+    },
+    "Aaron Banks": {
+      "apy": 19250000,
+      "years": 4,
+      "guaranteed": 27000000,
+      "total_value": 77000000
+    },
+    "Warren McClendon": {
+      "apy": 1021245,
+      "years": 4,
+      "guaranteed": 244980,
+      "total_value": 4084980
+    },
+    "Hendon Hooker": {
+      "apy": 1202500,
+      "years": 2,
+      "guaranteed": 0,
+      "total_value": 2405000
+    },
+    "Harold Perkins Jr.": {
+      "apy": 1146633,
+      "years": 4,
+      "guaranteed": 206532,
+      "total_value": 4586532
+    },
+    "Marlon Jones": {
+      "apy": 1033333,
+      "years": 3,
+      "guaranteed": 0,
+      "total_value": 3100000
+    },
+    "Abraham Lucas": {
+      "apy": 15333333,
+      "years": 3,
+      "guaranteed": 12790000,
+      "total_value": 46000000
+    },
+    "T.J. Bollers": {
+      "apy": 1036667,
+      "years": 3,
+      "guaranteed": 257500,
+      "total_value": 3110000
+    },
+    "Colby Sorsdal": {
+      "apy": 1040021,
+      "years": 4,
+      "guaranteed": 320084,
+      "total_value": 4160084
+    },
+    "Wyatt Bowles": {
+      "apy": 967500,
+      "years": 2,
+      "guaranteed": 0,
+      "total_value": 1935000
+    },
+    "Jordan Dunbar": {
+      "apy": 1038333,
+      "years": 3,
+      "guaranteed": 15000,
+      "total_value": 3115000
+    },
+    "Alijah Vera-Tucker": {
+      "apy": 14000000,
+      "years": 3,
+      "guaranteed": 21000000,
+      "total_value": 42000000
+    },
+    "2026 Late 4th": {
+      "ktc": 1800,
+      "ktc_rank": 340
+    },
+    "Dontae Manning": {
+      "apy": 885000,
+      "years": 1,
+      "guaranteed": 0,
+      "total_value": 885000
+    },
+    "Wan'Dale Robinson": {
+      "ktc": 4450,
+      "ktc_rank": 116,
+      "apy": 17500000,
+      "years": 4,
+      "guaranteed": 38000000,
+      "total_value": 70000000
+    },
+    "Thaddeus Dixon": {
+      "apy": 1045000,
+      "years": 3,
+      "guaranteed": 282500,
+      "total_value": 3135000
+    },
+    "Darnell Wright": {
+      "apy": 5242068,
+      "years": 4,
+      "guaranteed": 20968270,
+      "total_value": 20968270
+    },
+    "Brandon Crossley": {
+      "apy": 885000,
+      "years": 1,
+      "guaranteed": 0,
+      "total_value": 885000
+    },
+    "Jalen McMurray": {
+      "apy": 1040000,
+      "years": 3,
+      "guaranteed": 150000,
+      "total_value": 3120000
+    },
+    "Curtis Robinson": {
+      "apy": 1215000,
+      "years": 1,
+      "guaranteed": 0,
+      "total_value": 1215000
+    },
+    "Ja'Marcus Ingram": {
+      "apy": 1145000,
+      "years": 1,
+      "guaranteed": 0,
+      "total_value": 1145000
+    },
+    "Jedrick Wills": {
+      "apy": 1215000,
+      "years": 1,
+      "guaranteed": 0,
+      "total_value": 1215000
+    },
+    "Alohi Gilman": {
+      "apy": 8000000,
+      "years": 3,
+      "guaranteed": 15000000,
+      "total_value": 24000000
+    },
+    "Drew Stevens": {
+      "apy": 1034167,
+      "years": 3,
+      "guaranteed": 2500,
+      "total_value": 3102500
+    },
+    "Easton Mascarenas-Arnold": {
+      "apy": 991667,
+      "years": 3,
+      "guaranteed": 110000,
+      "total_value": 2975000
+    },
+    "Geno Smith": {
+      "ktc": 1443,
+      "ktc_rank": 248,
+      "apy": 3300000,
+      "years": 1,
+      "guaranteed": 3300000,
+      "total_value": 3300000
+    },
+    "Jack Stoll": {
+      "apy": 1315000,
+      "years": 1,
+      "guaranteed": 0,
+      "total_value": 1315000
+    },
+    "Jaeden Roberts": {
+      "apy": 1040000,
+      "years": 3,
+      "guaranteed": 20000,
+      "total_value": 3120000
+    },
+    "Terrill Davis": {
+      "apy": 1033333,
+      "years": 3,
+      "guaranteed": 0,
+      "total_value": 3100000
+    },
+    "Harold Fannin": {
+      "ktc": 5545,
+      "ktc_rank": 66
+    },
+    "Chris Brooks": {
+      "ktc": 1542,
+      "ktc_rank": 377
+    },
+    "Nick Scott": {
+      "apy": 2000000,
+      "years": 1,
+      "guaranteed": 1100000,
+      "total_value": 2000000
+    },
+    "Jawhar Jordan": {
+      "ktc": 965,
+      "ktc_rank": 459,
+      "apy": 925000,
+      "years": 2,
+      "guaranteed": 0,
+      "total_value": 1850000
+    },
+    "Vinny Anthony II": {
+      "apy": 1038333,
+      "years": 3,
+      "guaranteed": 262500,
+      "total_value": 3115000
+    },
+    "Ahmari Harvey": {
+      "apy": 1036667,
+      "years": 3,
+      "guaranteed": 110000,
+      "total_value": 3110000
+    },
+    "Christian Thomas": {
+      "apy": 1033333,
+      "years": 3,
+      "guaranteed": 0,
+      "total_value": 3100000
+    },
+    "C.J. West": {
+      "apy": 1302773,
+      "years": 4,
+      "guaranteed": 1011092,
+      "total_value": 5211092
+    },
+    "Emmanuel Forbes": {
+      "apy": 3851892,
+      "years": 4,
+      "guaranteed": 15407568,
+      "total_value": 15407568
+    },
+    "DJ Giddens": {
+      "ktc": 2510,
+      "ktc_rank": 273,
+      "apy": 1156186,
+      "years": 4,
+      "guaranteed": 424744,
+      "total_value": 4624744
+    },
+    "Xavier Restrepo": {
+      "ktc": 1568,
+      "ktc_rank": 385,
+      "apy": 967500,
+      "years": 2,
+      "guaranteed": 0,
+      "total_value": 1935000
+    },
+    "Cameron Johnston": {
+      "apy": 1300000,
+      "years": 1,
+      "guaranteed": 0,
+      "total_value": 1300000
+    },
+    "Rasheen Ali": {
+      "ktc": 1467,
+      "ktc_rank": 393,
+      "apy": 1077467,
+      "years": 4,
+      "guaranteed": 289868,
+      "total_value": 4309868
+    },
+    "Arian Smith": {
+      "ktc": 1251,
+      "ktc_rank": 440,
+      "apy": 1310413,
+      "years": 4,
+      "guaranteed": 1041652,
+      "total_value": 5241652
+    },
+    "Chandler Martin": {
+      "apy": 1062500,
+      "years": 2,
+      "guaranteed": 0,
+      "total_value": 2125000
+    },
+    "Aamil Wagner": {
+      "apy": 1040000,
+      "years": 3,
+      "guaranteed": 267500,
+      "total_value": 3120000
+    },
+    "Rock Ya-Sin": {
+      "apy": 3200000,
+      "years": 1,
+      "guaranteed": 2640000,
+      "total_value": 3200000
+    },
+    "Cameron Dorner": {
+      "apy": 1036667,
+      "years": 3,
+      "guaranteed": 40000,
+      "total_value": 3110000
+    },
+    "Max Llewellyn": {
+      "apy": 1128389,
+      "years": 4,
+      "guaranteed": 133556,
+      "total_value": 4513556
+    },
+    "Elijah Tau-Tolliver": {
+      "apy": 1036667,
+      "years": 3,
+      "guaranteed": 10000,
+      "total_value": 3110000
+    },
+    "Joe Giles-Harris": {
+      "apy": 1235000,
+      "years": 1,
+      "guaranteed": 0,
+      "total_value": 1235000
+    },
+    "Cam'Ron Jackson": {
+      "apy": 1168289,
+      "years": 4,
+      "guaranteed": 473156,
+      "total_value": 4673156
+    },
+    "Drew Sample": {
+      "apy": 3500000,
+      "years": 3,
+      "guaranteed": 2350000,
+      "total_value": 10500000
+    },
+    "Jon Gaines": {
+      "apy": 1143060,
+      "years": 4,
+      "guaranteed": 732240,
+      "total_value": 4572240
+    },
+    "Kitan Crawford": {
+      "apy": 1084473,
+      "years": 4,
+      "guaranteed": 137892,
+      "total_value": 4337892
+    },
+    "Jonas Sanker": {
+      "apy": 1561301,
+      "years": 4,
+      "guaranteed": 1181964,
+      "total_value": 6245202
+    },
+    "Ezra Cleveland": {
+      "apy": 8000000,
+      "years": 3,
+      "guaranteed": 14250000,
+      "total_value": 24000000
+    },
+    "Tim Jones": {
+      "apy": 1215000,
+      "years": 1,
+      "guaranteed": 0,
+      "total_value": 1215000
+    },
+    "Jarius Monroe": {
+      "apy": 1017500,
+      "years": 2,
+      "guaranteed": 0,
+      "total_value": 2035000
+    },
+    "Isaiah World": {
+      "apy": 1039667,
+      "years": 3,
+      "guaranteed": 534000,
+      "total_value": 3119000
+    },
+    "Pat Bryant": {
+      "ktc": 3144,
+      "ktc_rank": 209,
+      "apy": 1645270,
+      "years": 4,
+      "guaranteed": 1426240,
+      "total_value": 6581080
+    },
+    "Matt Gulbin": {
+      "apy": 1158394,
+      "years": 4,
+      "guaranteed": 253576,
+      "total_value": 4633576
+    },
+    "Qadir Ismail": {
+      "apy": 885000,
+      "years": 1,
+      "guaranteed": 0,
+      "total_value": 885000
+    },
+    "Enrique Cruz Jr.": {
+      "apy": 1189869,
+      "years": 4,
+      "guaranteed": 379476,
+      "total_value": 4759476
+    },
+    "Dan Feeney": {
+      "apy": 1487500,
+      "years": 1,
+      "guaranteed": 1000000,
+      "total_value": 1487500
+    },
+    "Austin Trammell": {
+      "apy": 1155000,
+      "years": 1,
+      "guaranteed": 10000,
+      "total_value": 1155000
+    },
+    "Tyler Goodson": {
+      "ktc": 1348,
+      "ktc_rank": 415,
+      "apy": 1145000,
+      "years": 1,
+      "guaranteed": 0,
+      "total_value": 1145000
+    },
+    "Samaje Perine": {
+      "ktc": 778,
+      "ktc_rank": 480,
+      "apy": 1800000,
+      "years": 2,
+      "guaranteed": 400000,
+      "total_value": 3600000
+    },
+    "Trystan Colon": {
+      "apy": 1215000,
+      "years": 1,
+      "guaranteed": 0,
+      "total_value": 1215000
+    },
+    "Bub Means": {
+      "ktc": 1015,
+      "ktc_rank": 465,
+      "apy": 1068569,
+      "years": 4,
+      "guaranteed": 254276,
+      "total_value": 4274276
+    },
+    "Devon Achane": {
+      "apy": 16000000,
+      "years": 4,
+      "guaranteed": 17378000,
+      "total_value": 64000000
+    },
+    "Dalton Cooper": {
+      "apy": 885000,
+      "years": 1,
+      "guaranteed": 0,
+      "total_value": 885000
+    },
+    "Kevin Byard": {
+      "apy": 7000000,
+      "years": 1,
+      "guaranteed": 6170000,
+      "total_value": 7000000
+    },
+    "Keonta Jenkins": {
+      "apy": 1065500,
+      "years": 2,
+      "guaranteed": 6000,
+      "total_value": 2131000
+    },
+    "Jon Runyan, Jr.": {
+      "apy": 10000000,
+      "years": 3,
+      "guaranteed": 17000000,
+      "total_value": 30000000
+    },
+    "Mike Sainristil": {
+      "apy": 1925584,
+      "years": 4,
+      "guaranteed": 5258934,
+      "total_value": 7702336
+    },
+    "Jack Henderson": {
+      "apy": 885000,
+      "years": 1,
+      "guaranteed": 0,
+      "total_value": 885000
+    },
+    "Tyler Biadasz": {
+      "apy": 10000000,
+      "years": 3,
+      "guaranteed": 15000000,
+      "total_value": 30000000
+    },
+    "Jared Verse": {
+      "apy": 3783587,
+      "years": 4,
+      "guaranteed": 15134346,
+      "total_value": 15134346
+    },
+    "J.T. Gray": {
+      "apy": 1487500,
+      "years": 1,
+      "guaranteed": 350000,
+      "total_value": 1487500
+    },
+    "Andrew Billings": {
+      "apy": 2400000,
+      "years": 1,
+      "guaranteed": 700000,
+      "total_value": 2400000
+    },
+    "Jalen Stroman": {
+      "apy": 1036667,
+      "years": 3,
+      "guaranteed": 60000,
+      "total_value": 3110000
+    },
+    "Joe Thuney": {
+      "apy": 17500000,
+      "years": 2,
+      "guaranteed": 33500000,
+      "total_value": 35000000
+    },
+    "Ryan Eckley": {
+      "apy": 1155712,
+      "years": 4,
+      "guaranteed": 242848,
+      "total_value": 4622848
+    },
+    "Eric Watts": {
+      "apy": 1017500,
+      "years": 2,
+      "guaranteed": 0,
+      "total_value": 2035000
+    },
+    "Messiah Swinson": {
+      "apy": 1005000,
+      "years": 1,
+      "guaranteed": 0,
+      "total_value": 1005000
+    },
+    "Trace Ford": {
+      "apy": 885000,
+      "years": 1,
+      "guaranteed": 0,
+      "total_value": 885000
+    },
+    "Zack Baun": {
+      "apy": 17000000,
+      "years": 3,
+      "guaranteed": 34000000,
+      "total_value": 51000000
+    },
+    "B.J. Ojulari": {
+      "apy": 2149404,
+      "years": 4,
+      "guaranteed": 6532849,
+      "total_value": 8597614
+    },
+    "Samuel Womack": {
+      "apy": 1215000,
+      "years": 1,
+      "guaranteed": 0,
+      "total_value": 1215000
+    },
+    "Khordae Sydnor": {
+      "apy": 1042500,
+      "years": 3,
+      "guaranteed": 275000,
+      "total_value": 3127500
+    },
+    "Josh Blackwell": {
+      "apy": 2500000,
+      "years": 2,
+      "guaranteed": 2450000,
+      "total_value": 5000000
+    },
+    "Rasheed Walker": {
+      "apy": 4000000,
+      "years": 1,
+      "guaranteed": 3215000,
+      "total_value": 4000000
+    },
+    "Alex Forsyth": {
+      "apy": 979446,
+      "years": 4,
+      "guaranteed": 77784,
+      "total_value": 3917784
+    },
+    "Brandon Aiyuk": {
+      "ktc": 2719,
+      "ktc_rank": 241,
+      "apy": 30000000,
+      "years": 4,
+      "guaranteed": 45000000,
+      "total_value": 120000000
+    },
+    "Kalif Raymond": {
+      "apy": 3500000,
+      "years": 1,
+      "guaranteed": 3000000,
+      "total_value": 3500000
+    },
+    "Tremaine Edmunds": {
+      "apy": 12000000,
+      "years": 3,
+      "guaranteed": 23700000,
+      "total_value": 36000000
+    },
+    "David Martin-Robinson": {
+      "apy": 945833,
+      "years": 3,
+      "guaranteed": 17500,
+      "total_value": 2837500
+    },
+    "Mansoor Delane": {
+      "apy": 10482841,
+      "years": 4,
+      "guaranteed": 0,
+      "total_value": 41931362
+    },
+    "Zachariah Branch": {
+      "ktc": 3358,
+      "ktc_rank": 181,
+      "apy": 1764036,
+      "years": 4,
+      "guaranteed": 1591740,
+      "total_value": 7056144
+    },
+    "Patrick Mahomes": {
+      "ktc": 5450,
+      "ktc_rank": 25,
+      "apy": 45000000,
+      "years": 10,
+      "guaranteed": 63081905,
+      "total_value": 450000000
+    },
+    "Braxton Jones": {
+      "apy": 5000000,
+      "years": 1,
+      "guaranteed": 3000000,
+      "total_value": 5000000
+    },
+    "Greg Dulcich": {
+      "ktc": 2135,
+      "ktc_rank": 292,
+      "apy": 3250000,
+      "years": 1,
+      "guaranteed": 2910000,
+      "total_value": 3250000
+    },
+    "Ben Brown": {
+      "apy": 2500000,
+      "years": 2,
+      "guaranteed": 2300000,
+      "total_value": 5000000
+    },
+    "Car'lin Vigers": {
+      "apy": 885000,
+      "years": 1,
+      "guaranteed": 0,
+      "total_value": 885000
+    },
+    "Jordan Miller": {
+      "apy": 885000,
+      "years": 1,
+      "guaranteed": 0,
+      "total_value": 885000
+    },
+    "Dayton Wade": {
+      "apy": 885000,
+      "years": 1,
+      "guaranteed": 0,
+      "total_value": 885000
+    },
+    "Cameron Latu": {
+      "apy": 922500,
+      "years": 2,
+      "guaranteed": 0,
+      "total_value": 1845000
+    },
+    "Jalen Pitre": {
+      "apy": 13000000,
+      "years": 3,
+      "guaranteed": 20656000,
+      "total_value": 39000000
+    },
+    "Andre Cisco": {
+      "apy": 2500000,
+      "years": 1,
+      "guaranteed": 1250000,
+      "total_value": 2500000
+    },
+    "Jaylon Carlies": {
+      "apy": 1090310,
+      "years": 4,
+      "guaranteed": 336240,
+      "total_value": 4361240
+    },
+    "Aaron Anderson": {
+      "apy": 1033333,
+      "years": 3,
+      "guaranteed": 0,
+      "total_value": 3100000
+    },
+    "J.J. McCarthy": {
+      "ktc": 2713,
+      "ktc_rank": 168,
+      "apy": 5463699,
+      "years": 4,
+      "guaranteed": 21854796,
+      "total_value": 21854796
+    },
+    "Tyrod Taylor": {
+      "ktc": 244,
+      "ktc_rank": 499,
+      "apy": 2500000,
+      "years": 1,
+      "guaranteed": 700000,
+      "total_value": 2500000
+    },
+    "Andrew Wingard": {
+      "apy": 3000000,
+      "years": 1,
+      "guaranteed": 1850000,
+      "total_value": 3000000
+    },
+    "Johnathan Edwards": {
+      "apy": 998333,
+      "years": 3,
+      "guaranteed": 280000,
+      "total_value": 2995000
+    },
+    "Isas Waxter": {
+      "apy": 885000,
+      "years": 1,
+      "guaranteed": 0,
+      "total_value": 885000
+    },
+    "Dak Prescott": {
+      "ktc": 4400,
+      "ktc_rank": 62,
+      "apy": 60000000,
+      "years": 4,
+      "guaranteed": 129000000,
+      "total_value": 240000000
+    },
+    "Sam Roberts": {
+      "apy": 1215000,
+      "years": 1,
+      "guaranteed": 0,
+      "total_value": 1215000
+    },
+    "Thomas Booker": {
+      "apy": 3674000,
+      "years": 1,
+      "guaranteed": 0,
+      "total_value": 3674000
+    },
+    "Aidan Hubbard": {
+      "apy": 1040000,
+      "years": 3,
+      "guaranteed": 267500,
+      "total_value": 3120000
+    },
+    "Blake Freeland": {
+      "apy": 1163972,
+      "years": 4,
+      "guaranteed": 815888,
+      "total_value": 4655888
+    },
+    "Zion Johnson": {
+      "apy": 16500000,
+      "years": 3,
+      "guaranteed": 32390000,
+      "total_value": 49500000
+    },
+    "Rohan Jones": {
+      "apy": 1036667,
+      "years": 3,
+      "guaranteed": 10000,
+      "total_value": 3110000
+    },
+    "Kaimon Rucker": {
+      "apy": 885000,
+      "years": 1,
+      "guaranteed": 0,
+      "total_value": 885000
+    },
+    "Brett Thorson": {
+      "apy": 1038333,
+      "years": 3,
+      "guaranteed": 90000,
+      "total_value": 3115000
+    },
+    "Jack Campbell": {
+      "apy": 20250000,
+      "years": 4,
+      "guaranteed": 23007549,
+      "total_value": 81000000
+    },
+    "Stephen Hall": {
+      "apy": 1038333,
+      "years": 3,
+      "guaranteed": 190000,
+      "total_value": 3115000
+    },
+    "Deven Eastern": {
+      "apy": 1127156,
+      "years": 4,
+      "guaranteed": 128624,
+      "total_value": 4508624
+    },
+    "Dani Dennis-Sutton": {
+      "apy": 1378561,
+      "years": 4,
+      "guaranteed": 1134244,
+      "total_value": 5514244
+    },
+    "Isaiah Pola-Mao": {
+      "apy": 3725000,
+      "years": 2,
+      "guaranteed": 3500000,
+      "total_value": 7450000
+    },
+    "Kevin Coleman Jr.": {
+      "apy": 1189869,
+      "years": 4,
+      "guaranteed": 379476,
+      "total_value": 4759476
+    },
+    "Malcolm DeWalt IV": {
+      "apy": 1040000,
+      "years": 3,
+      "guaranteed": 140000,
+      "total_value": 3120000
+    },
+    "Jamari Thrash": {
+      "ktc": 1034,
+      "ktc_rank": 455,
+      "apy": 1075000,
+      "years": 1,
+      "guaranteed": 0,
+      "total_value": 1075000
+    },
+    "Austin Brinkman": {
+      "apy": 991667,
+      "years": 3,
+      "guaranteed": 110000,
+      "total_value": 2975000
+    },
+    "Erick Hunter": {
+      "apy": 1041667,
+      "years": 3,
+      "guaranteed": 175000,
+      "total_value": 3125000
+    },
+    "Ben Patterson": {
+      "apy": 1038333,
+      "years": 3,
+      "guaranteed": 15000,
+      "total_value": 3115000
+    },
+    "Tamon Lynum": {
+      "apy": 1033333,
+      "years": 3,
+      "guaranteed": 0,
+      "total_value": 3100000
+    },
+    "Quan Martin": {
+      "apy": 1909456,
+      "years": 4,
+      "guaranteed": 5111995,
+      "total_value": 7637824
+    },
+    "A.J. Woods": {
+      "apy": 885000,
+      "years": 1,
+      "guaranteed": 0,
+      "total_value": 885000
+    },
+    "Myles Montgomery": {
+      "apy": 1041667,
+      "years": 3,
+      "guaranteed": 272500,
+      "total_value": 3125000
+    },
+    "Gee Scott Jr.": {
+      "apy": 885000,
+      "years": 1,
+      "guaranteed": 0,
+      "total_value": 885000
+    },
+    "2028 Early 1st": {
+      "ktc": 5681,
+      "ktc_rank": 58
+    },
+    "Ryan Hayes": {
+      "apy": 1062500,
+      "years": 2,
+      "guaranteed": 0,
+      "total_value": 2125000
+    },
+    "Omar Speights": {
+      "apy": 946333,
+      "years": 3,
+      "guaranteed": 9000,
+      "total_value": 2839000
+    },
+    "Hayden Conner": {
+      "apy": 1093570,
+      "years": 4,
+      "guaranteed": 174280,
+      "total_value": 4374280
+    },
+    "James Thompson Jr.": {
+      "apy": 1043333,
+      "years": 3,
+      "guaranteed": 277500,
+      "total_value": 3130000
+    },
+    "Teagan Quitoriano": {
+      "apy": 1240000,
+      "years": 1,
+      "guaranteed": 0,
+      "total_value": 1240000
+    },
+    "Luke Basso": {
+      "apy": 1035833,
+      "years": 3,
+      "guaranteed": 27500,
+      "total_value": 3107500
+    },
+    "Kendrick Law": {
+      "apy": 1207533,
+      "years": 4,
+      "guaranteed": 450132,
+      "total_value": 4830132
+    },
+    "Caden Fordham": {
+      "apy": 1034000,
+      "years": 3,
+      "guaranteed": 2000,
+      "total_value": 3102000
+    },
+    "Malik Cunningham": {
+      "apy": 1005000,
+      "years": 1,
+      "guaranteed": 0,
+      "total_value": 1005000
+    },
+    "Tyler Davis": {
+      "apy": 1050638,
+      "years": 4,
+      "guaranteed": 182552,
+      "total_value": 4202552
+    },
+    "Tariq Woolen": {
+      "apy": 12000000,
+      "years": 1,
+      "guaranteed": 12000000,
+      "total_value": 12000000
+    },
+    "Ozzy Trapilo": {
+      "apy": 1929536,
+      "years": 4,
+      "guaranteed": 5394005,
+      "total_value": 7718142
+    },
+    "Tuli Tuipulotu": {
+      "apy": 1642846,
+      "years": 4,
+      "guaranteed": 3577887,
+      "total_value": 6571382
+    },
+    "Elijah Jones": {
+      "apy": 1421380,
+      "years": 4,
+      "guaranteed": 954920,
+      "total_value": 5685518
+    },
+    "Salvon Ahmed": {
+      "apy": 1215000,
+      "years": 1,
+      "guaranteed": 0,
+      "total_value": 1215000
+    },
+    "Greg Desrosiers Jr.": {
+      "apy": 1036667,
+      "years": 3,
+      "guaranteed": 10000,
+      "total_value": 3110000
+    },
+    "Zeek Biggers": {
+      "apy": 1075418,
+      "years": 4,
+      "guaranteed": 101672,
+      "total_value": 4301672
+    },
+    "Jordan Meredith": {
+      "apy": 3520000,
+      "years": 1,
+      "guaranteed": 0,
+      "total_value": 3520000
+    },
+    "Camden Brown": {
+      "apy": 1038333,
+      "years": 3,
+      "guaranteed": 105000,
+      "total_value": 3115000
+    },
+    "J.L. Skinner": {
+      "apy": 1009056,
+      "years": 4,
+      "guaranteed": 196224,
+      "total_value": 4036224
+    },
+    "Gary Smith III": {
+      "apy": 1038333,
+      "years": 3,
+      "guaranteed": 115000,
+      "total_value": 3115000
+    },
+    "Uso Seumalo": {
+      "apy": 1036667,
+      "years": 3,
+      "guaranteed": 40000,
+      "total_value": 3110000
+    },
+    "Omar Brown": {
+      "apy": 1062500,
+      "years": 2,
+      "guaranteed": 0,
+      "total_value": 2125000
+    },
+    "Xavier Hutchinson": {
+      "ktc": 1992,
+      "ktc_rank": 323,
+      "apy": 1000925,
+      "years": 4,
+      "guaranteed": 163700,
+      "total_value": 4003700
+    },
+    "Kenny Clark": {
+      "apy": 21333333,
+      "years": 3,
+      "guaranteed": 17500000,
+      "total_value": 64000000
+    },
+    "Jalen Ramsey": {
+      "apy": 24100000,
+      "years": 3,
+      "guaranteed": 24235000,
+      "total_value": 72300000
+    },
+    "Cash Jones": {
+      "apy": 1038333,
+      "years": 3,
+      "guaranteed": 235000,
+      "total_value": 3115000
+    },
+    "Nikhai Hill-Green": {
+      "apy": 1035000,
+      "years": 3,
+      "guaranteed": 5000,
+      "total_value": 3105000
+    },
+    "Kamal Hadden": {
+      "apy": 1005000,
+      "years": 1,
+      "guaranteed": 0,
+      "total_value": 1005000
+    },
+    "Ben Chukwuma": {
+      "apy": 1006667,
+      "years": 3,
+      "guaranteed": 300000,
+      "total_value": 3020000
+    },
+    "Dane Jackson": {
+      "apy": 1215000,
+      "years": 1,
+      "guaranteed": 0,
+      "total_value": 1215000
+    },
+    "Emari Demercado": {
+      "ktc": 1455,
+      "ktc_rank": 405,
+      "apy": 1250000,
+      "years": 1,
+      "guaranteed": 550000,
+      "total_value": 1250000
+    },
+    "Jalen Virgil": {
+      "apy": 1075000,
+      "years": 1,
+      "guaranteed": 0,
+      "total_value": 1075000
+    },
+    "Valentin Senn": {
+      "apy": 1001667,
+      "years": 3,
+      "guaranteed": 274000,
+      "total_value": 3005000
+    },
+    "Jaren Kump": {
+      "apy": 1038333,
+      "years": 3,
+      "guaranteed": 115000,
+      "total_value": 3115000
+    },
+    "Avonte Maddox": {
+      "apy": 1487500,
+      "years": 1,
+      "guaranteed": 687500,
+      "total_value": 1487500
+    },
+    "Travis Etienne": {
+      "ktc": 5391,
+      "ktc_rank": 87,
+      "apy": 12000000,
+      "years": 4,
+      "guaranteed": 24000000,
+      "total_value": 48000000
+    },
+    "Josh Downs": {
+      "ktc": 4513,
+      "ktc_rank": 108,
+      "apy": 1380114,
+      "years": 4,
+      "guaranteed": 1014876,
+      "total_value": 5520456
+    },
+    "Dante Stills": {
+      "apy": 993333,
+      "years": 4,
+      "guaranteed": 133332,
+      "total_value": 3973332
+    },
+    "Gary Brightwell": {
+      "apy": 1145000,
+      "years": 1,
+      "guaranteed": 0,
+      "total_value": 1145000
+    },
+    "Jeremy Ruckert": {
+      "ktc": 610,
+      "ktc_rank": 496,
+      "apy": 5000000,
+      "years": 2,
+      "guaranteed": 4972157,
+      "total_value": 10000000
+    },
+    "Simi Fehoko": {
+      "apy": 1402500,
+      "years": 1,
+      "guaranteed": 1262500,
+      "total_value": 1402500
+    },
+    "Parker Robertson": {
+      "apy": 1036667,
+      "years": 3,
+      "guaranteed": 35000,
+      "total_value": 3110000
+    },
+    "Joshua Palmer": {
+      "ktc": 1940,
+      "ktc_rank": 334
+    },
+    "C.J. Ravenell": {
+      "apy": 1005000,
+      "years": 1,
+      "guaranteed": 0,
+      "total_value": 1005000
+    },
+    "Mack Hollins": {
+      "ktc": 1310,
+      "ktc_rank": 413,
+      "apy": 4200000,
+      "years": 2,
+      "guaranteed": 3500000,
+      "total_value": 8400000
+    },
+    "Larry Borom": {
+      "apy": 5000000,
+      "years": 1,
+      "guaranteed": 4900000,
+      "total_value": 5000000
+    },
+    "Kobie Turner": {
+      "apy": 1347868,
+      "years": 4,
+      "guaranteed": 921068,
+      "total_value": 5391470
+    },
+    "Bradley Chubb": {
+      "apy": 14500000,
+      "years": 3,
+      "guaranteed": 21750000,
+      "total_value": 43500000
+    },
+    "Payton Zdroik": {
+      "apy": 1036333,
+      "years": 3,
+      "guaranteed": 9000,
+      "total_value": 3109000
+    },
+    "Justin Herbert": {
+      "ktc": 5493,
+      "ktc_rank": 22,
+      "apy": 52500000,
+      "years": 5,
+      "guaranteed": 133738375,
+      "total_value": 262500000
+    },
+    "Shaun Dolac": {
+      "apy": 996667,
+      "years": 3,
+      "guaranteed": 25000,
+      "total_value": 2990000
+    },
+    "Shelby Harris": {
+      "apy": 3000000,
+      "years": 1,
+      "guaranteed": 2660000,
+      "total_value": 3000000
+    },
+    "Michael Wortham": {
+      "apy": 1036667,
+      "years": 3,
+      "guaranteed": 120000,
+      "total_value": 3110000
+    },
+    "Nick Singleton": {
+      "apy": 1212161,
+      "years": 4,
+      "guaranteed": 0,
+      "total_value": 4848644
+    },
+    "Javontae Jean-Baptiste": {
+      "apy": 1035297,
+      "years": 4,
+      "guaranteed": 121188,
+      "total_value": 4141188
+    },
+    "Nick Chubb": {
+      "ktc": 596,
+      "ktc_rank": 497
+    },
+    "Mani Powell": {
+      "apy": 1038333,
+      "years": 3,
+      "guaranteed": 140000,
+      "total_value": 3115000
+    },
+    "Eddie Walls III": {
+      "apy": 1033333,
+      "years": 3,
+      "guaranteed": 0,
+      "total_value": 3100000
+    },
+    "Gracen Halton": {
+      "apy": 1405206,
+      "years": 4,
+      "guaranteed": 0,
+      "total_value": 5620824
+    },
+    "Drue Tranquill": {
+      "apy": 3500000,
+      "years": 1,
+      "guaranteed": 2995000,
+      "total_value": 3500000
+    },
+    "Zavion Thomas": {
+      "ktc": 1400,
+      "ktc_rank": 375,
+      "apy": 1707878,
+      "years": 4,
+      "guaranteed": 1428372,
+      "total_value": 6831510
+    },
+    "Christian Roland-Wallace": {
+      "apy": 945000,
+      "years": 3,
+      "guaranteed": 155000,
+      "total_value": 2835000
+    },
+    "Olu Fashanu": {
+      "apy": 5127678,
+      "years": 4,
+      "guaranteed": 20510710,
+      "total_value": 20510710
+    },
+    "Cole Wisniewski": {
+      "apy": 1126633,
+      "years": 4,
+      "guaranteed": 126532,
+      "total_value": 4506532
+    },
+    "Graham Mertz": {
+      "apy": 1107121,
+      "years": 4,
+      "guaranteed": 228484,
+      "total_value": 4428484
+    },
+    "Kole Wilson": {
+      "apy": 1035000,
+      "years": 3,
+      "guaranteed": 55000,
+      "total_value": 3105000
+    },
+    "Taki Taimani": {
+      "apy": 1017500,
+      "years": 2,
+      "guaranteed": 0,
+      "total_value": 2035000
+    },
+    "Liam Brown": {
+      "apy": 1035000,
+      "years": 3,
+      "guaranteed": 5000,
+      "total_value": 3105000
+    },
+    "Bradley Pinion": {
+      "apy": 1487500,
+      "years": 1,
+      "guaranteed": 1262500,
+      "total_value": 1487500
+    },
+    "William Wagner": {
+      "apy": 991667,
+      "years": 3,
+      "guaranteed": 10000,
+      "total_value": 2975000
+    },
+    "Tre Watson": {
+      "apy": 885000,
+      "years": 1,
+      "guaranteed": 0,
+      "total_value": 885000
+    },
+    "Trenton Scott": {
+      "apy": 1487500,
+      "years": 1,
+      "guaranteed": 100000,
+      "total_value": 1487500
+    },
+    "Dominic Lovett": {
+      "apy": 1076693,
+      "years": 4,
+      "guaranteed": 106772,
+      "total_value": 4306772
+    },
+    "Sam Franklin": {
+      "apy": 2333333,
+      "years": 3,
+      "guaranteed": 2530000,
+      "total_value": 7000000
+    },
+    "Cade Mays": {
+      "apy": 8333333,
+      "years": 3,
+      "guaranteed": 14000000,
+      "total_value": 25000000
+    },
+    "Latrell McCutchin Sr.": {
+      "apy": 1038333,
+      "years": 3,
+      "guaranteed": 165000,
+      "total_value": 3115000
+    },
+    "Dalton Wagner": {
+      "apy": 885000,
+      "years": 1,
+      "guaranteed": 0,
+      "total_value": 885000
+    },
+    "Sam Martin": {
+      "apy": 1875000,
+      "years": 2,
+      "guaranteed": 2000000,
+      "total_value": 3750000
+    },
+    "Daniel Sobkowicz": {
+      "apy": 1036667,
+      "years": 3,
+      "guaranteed": 110000,
+      "total_value": 3110000
+    },
+    "Shemar Jean-Charles": {
+      "apy": 1240000,
+      "years": 1,
+      "guaranteed": 0,
+      "total_value": 1240000
+    },
+    "Aaron Jones": {
+      "ktc": 2688,
+      "ktc_rank": 234,
+      "apy": 5560000,
+      "years": 1,
+      "guaranteed": 5000000,
+      "total_value": 5560000
+    },
+    "Nahshon Wright": {
+      "apy": 3500000,
+      "years": 1,
+      "guaranteed": 3500000,
+      "total_value": 3500000
+    },
+    "Patrick O'Connell": {
+      "apy": 1087500,
+      "years": 2,
+      "guaranteed": 0,
+      "total_value": 2175000
+    },
+    "Noah Gray": {
+      "ktc": 1756,
+      "ktc_rank": 351,
+      "apy": 6000000,
+      "years": 3,
+      "guaranteed": 10016000,
+      "total_value": 18000000
+    },
+    "Dasan McCullough": {
+      "apy": 1040000,
+      "years": 3,
+      "guaranteed": 265000,
+      "total_value": 3120000
+    },
+    "Jack Jones": {
+      "apy": 1215000,
+      "years": 1,
+      "guaranteed": 0,
+      "total_value": 1215000
+    },
+    "Da'Shawn Hand": {
+      "apy": 3000000,
+      "years": 1,
+      "guaranteed": 1500000,
+      "total_value": 3000000
+    },
+    "Daniel Faalele": {
+      "apy": 1402500,
+      "years": 1,
+      "guaranteed": 687500,
+      "total_value": 1402500
+    },
+    "Braxton Berrios": {
+      "apy": 1300000,
+      "years": 1,
+      "guaranteed": 0,
+      "total_value": 1300000
+    },
+    "Jackie Marshall": {
+      "apy": 1175781,
+      "years": 4,
+      "guaranteed": 0,
+      "total_value": 4703124
+    },
+    "Walter Rouse": {
+      "apy": 1061648,
+      "years": 4,
+      "guaranteed": 226592,
+      "total_value": 4246592
+    },
+    "Jahdae Barron": {
+      "apy": 4518294,
+      "years": 4,
+      "guaranteed": 18073176,
+      "total_value": 18073176
+    },
+    "B.J. Green II": {
+      "apy": 989167,
+      "years": 3,
+      "guaranteed": 82500,
+      "total_value": 2967500
+    },
+    "Darnell Savage Jr.": {
+      "apy": 1487500,
+      "years": 1,
+      "guaranteed": 0,
+      "total_value": 1487500
+    },
+    "Joe Bachie": {
+      "apy": 1215000,
+      "years": 1,
+      "guaranteed": 0,
+      "total_value": 1215000
+    },
+    "Marvin Mims": {
+      "ktc": 2644,
+      "ktc_rank": 257,
+      "apy": 1517159,
+      "years": 4,
+      "guaranteed": 3189399,
+      "total_value": 6068634
+    },
+    "Jarran Reed": {
+      "apy": 7333333,
+      "years": 3,
+      "guaranteed": 8000000,
+      "total_value": 22000000
+    },
+    "D'Marco Jackson": {
+      "apy": 3750000,
+      "years": 2,
+      "guaranteed": 3625000,
+      "total_value": 7500000
+    },
+    "Kyle Allen": {
+      "apy": 2050000,
+      "years": 2,
+      "guaranteed": 1800000,
+      "total_value": 4100000
+    },
+    "Mike Green": {
+      "apy": 1854852,
+      "years": 4,
+      "guaranteed": 4871004,
+      "total_value": 7419408
+    },
+    "2028 Late 3rd": {
+      "ktc": 2317,
+      "ktc_rank": 277
+    },
+    "Bryan Anger": {
+      "apy": 3200000,
+      "years": 2,
+      "guaranteed": 3300000,
+      "total_value": 6400000
+    },
+    "Chris Williams": {
+      "apy": 2000000,
+      "years": 1,
+      "guaranteed": 500000,
+      "total_value": 2000000
+    },
+    "Trevin Wallace": {
+      "apy": 1489959,
+      "years": 4,
+      "guaranteed": 1154424,
+      "total_value": 5959836
+    },
+    "Dohnte Meyers": {
+      "apy": 1036667,
+      "years": 3,
+      "guaranteed": 10000,
+      "total_value": 3110000
+    },
+    "Isaiah Williams": {
+      "apy": 1017500,
+      "years": 2,
+      "guaranteed": 0,
+      "total_value": 2035000
+    },
+    "Tommy Tremble": {
+      "ktc": 1664,
+      "ktc_rank": 378,
+      "apy": 5250000,
+      "years": 2,
+      "guaranteed": 6000000,
+      "total_value": 10500000
+    },
+    "Dean Clark": {
+      "apy": 922500,
+      "years": 2,
+      "guaranteed": 0,
+      "total_value": 1845000
+    },
+    "George Pickens": {
+      "ktc": 6593,
+      "ktc_rank": 38,
+      "apy": 27298000,
+      "years": 1,
+      "guaranteed": 27298000,
+      "total_value": 27298000
+    },
+    "Tavierre Thomas": {
+      "apy": 2300000,
+      "years": 2,
+      "guaranteed": 1950000,
+      "total_value": 4600000
+    },
+    "James Pearce Jr.": {
+      "apy": 4194719,
+      "years": 4,
+      "guaranteed": 16778874,
+      "total_value": 16778874
+    },
+    "Donte Kent": {
+      "apy": 1083363,
+      "years": 4,
+      "guaranteed": 133452,
+      "total_value": 4333452
+    },
+    "Hassan Haskins": {
+      "ktc": 1080,
+      "ktc_rank": 457
+    },
+    "Myles Price": {
+      "apy": 988333,
+      "years": 3,
+      "guaranteed": 0,
+      "total_value": 2965000
+    },
+    "Josh Jacobs": {
+      "ktc": 4599,
+      "ktc_rank": 106,
+      "apy": 12000000,
+      "years": 4,
+      "guaranteed": 12500000,
+      "total_value": 48000000
+    },
+    "Dayo Odeyingbo": {
+      "apy": 16000000,
+      "years": 3,
+      "guaranteed": 29500000,
+      "total_value": 48000000
+    },
+    "Percy Butler": {
+      "apy": 2150000,
+      "years": 1,
+      "guaranteed": 3406000,
+      "total_value": 2150000
+    },
+    "Daiyan Henley": {
+      "apy": 1355107,
+      "years": 4,
+      "guaranteed": 942128,
+      "total_value": 5420426
+    },
+    "Isaiah Hodgins": {
+      "ktc": 1147,
+      "ktc_rank": 433,
+      "apy": 1240000,
+      "years": 1,
+      "guaranteed": 0,
+      "total_value": 1240000
+    },
+    "Peter Manuma": {
+      "apy": 1033333,
+      "years": 3,
+      "guaranteed": 0,
+      "total_value": 3100000
+    },
+    "Aidan Laros": {
+      "apy": 1035000,
+      "years": 3,
+      "guaranteed": 5000,
+      "total_value": 3105000
+    },
+    "Dorian Strong": {
+      "apy": 1121339,
+      "years": 4,
+      "guaranteed": 285356,
+      "total_value": 4485356
+    },
+    "Sam Hartman": {
+      "apy": 1017500,
+      "years": 2,
+      "guaranteed": 0,
+      "total_value": 2035000
+    },
+    "Nolan Rucci": {
+      "apy": 1040000,
+      "years": 3,
+      "guaranteed": 210000,
+      "total_value": 3120000
+    },
+    "Jonathan Bullard": {
+      "apy": 2000000,
+      "years": 1,
+      "guaranteed": 1500000,
+      "total_value": 2000000
+    },
+    "Leonard Taylor": {
+      "apy": 1075000,
+      "years": 1,
+      "guaranteed": 0,
+      "total_value": 1075000
+    },
+    "E.J. Williams Jr.": {
+      "apy": 1036667,
+      "years": 3,
+      "guaranteed": 20000,
+      "total_value": 3110000
+    },
+    "Will Reichard": {
+      "apy": 1047655,
+      "years": 4,
+      "guaranteed": 170620,
+      "total_value": 4190620
+    },
+    "Darnay Holmes": {
+      "apy": 1215000,
+      "years": 1,
+      "guaranteed": 0,
+      "total_value": 1215000
+    },
+    "Jordan Addison": {
+      "ktc": 4778,
+      "ktc_rank": 96,
+      "apy": 3432934,
+      "years": 4,
+      "guaranteed": 13731736,
+      "total_value": 13731736
+    },
+    "Ryan McCollum": {
+      "apy": 1332500,
+      "years": 1,
+      "guaranteed": 75000,
+      "total_value": 1332500
+    },
+    "2027 Early 3rd": {
+      "ktc": 3039,
+      "ktc_rank": 196
+    },
+    "Josh Kreutz": {
+      "apy": 1033333,
+      "years": 3,
+      "guaranteed": 0,
+      "total_value": 3100000
+    },
+    "Asante Samuel Jr.": {
+      "apy": 4000000,
+      "years": 1,
+      "guaranteed": 2785000,
+      "total_value": 4000000
+    },
+    "Jonah Jackson": {
+      "apy": 14833333,
+      "years": 3,
+      "guaranteed": 24500000,
+      "total_value": 44500000
+    },
+    "Tory Taylor": {
+      "apy": 1191975,
+      "years": 4,
+      "guaranteed": 747900,
+      "total_value": 4767900
+    },
+    "2026 Mid 4th": {
+      "ktc": 1889,
+      "ktc_rank": 329
+    },
+    "Carl Jones Jr.": {
+      "apy": 1005000,
+      "years": 1,
+      "guaranteed": 0,
+      "total_value": 1005000
+    },
+    "Dylan McMahon": {
+      "apy": 1062500,
+      "years": 2,
+      "guaranteed": 0,
+      "total_value": 2125000
+    },
+    "Chase McLaughlin": {
+      "apy": 4100000,
+      "years": 3,
+      "guaranteed": 5000000,
+      "total_value": 12300000
+    },
+    "Tyler Baron": {
+      "apy": 1130054,
+      "years": 4,
+      "guaranteed": 320216,
+      "total_value": 4520216
+    },
+    "Rhamondre Stevenson": {
+      "ktc": 3754,
+      "ktc_rank": 157,
+      "apy": 9000000,
+      "years": 4,
+      "guaranteed": 17116000,
+      "total_value": 36000000
+    },
+    "Devonte Wyatt": {
+      "apy": 3215296,
+      "years": 4,
+      "guaranteed": 12861182,
+      "total_value": 12861182
+    },
+    "Winston Reid": {
+      "apy": 1005000,
+      "years": 1,
+      "guaranteed": 0,
+      "total_value": 1005000
+    },
+    "Daniel Hardy": {
+      "apy": 2485000,
+      "years": 2,
+      "guaranteed": 2450000,
+      "total_value": 4970000
+    },
+    "Elic Ayomanor": {
+      "ktc": 3254,
+      "ktc_rank": 204,
+      "apy": 1216454,
+      "years": 4,
+      "guaranteed": 665816,
+      "total_value": 4865816
+    },
+    "Stone Forsythe": {
+      "apy": 2000000,
+      "years": 1,
+      "guaranteed": 1050000,
+      "total_value": 2000000
+    },
+    "Khalil Dorsey": {
+      "apy": 1650000,
+      "years": 2,
+      "guaranteed": 300000,
+      "total_value": 3300000
+    },
+    "William Bradley-King": {
+      "apy": 1005000,
+      "years": 1,
+      "guaranteed": 0,
+      "total_value": 1005000
+    },
+    "Roy Robertson-Harris": {
+      "apy": 4500000,
+      "years": 2,
+      "guaranteed": 5300000,
+      "total_value": 9000000
+    },
+    "T.J. Parker": {
+      "apy": 3285187,
+      "years": 4,
+      "guaranteed": 13140746,
+      "total_value": 13140746
+    },
+    "Emmett Johnson": {
+      "ktc": 3185,
+      "ktc_rank": 203,
+      "apy": 1216409,
+      "years": 4,
+      "guaranteed": 485636,
+      "total_value": 4865636
+    },
+    "D.T. Sheffield": {
+      "apy": 1035000,
+      "years": 3,
+      "guaranteed": 5000,
+      "total_value": 3105000
+    },
+    "Josh Sweat": {
+      "apy": 19100000,
+      "years": 4,
+      "guaranteed": 38000000,
+      "total_value": 76400000
+    },
+    "Deuce Vaughn": {
+      "ktc": 804,
+      "ktc_rank": 479
+    },
+    "A.J. Barner": {
+      "apy": 1193777,
+      "years": 4,
+      "guaranteed": 755108,
+      "total_value": 4775108
+    },
+    "Jalen Reagor": {
+      "apy": 1215000,
+      "years": 1,
+      "guaranteed": 0,
+      "total_value": 1215000
+    },
+    "Jonathon Cooper": {
+      "apy": 13500000,
+      "years": 4,
+      "guaranteed": 16731111,
+      "total_value": 54000000
+    },
+    "Ernest Jones": {
+      "apy": 9500000,
+      "years": 3,
+      "guaranteed": 10000000,
+      "total_value": 28500000
+    },
+    "2027 Early 2nd": {
+      "ktc": 4591,
+      "ktc_rank": 99
+    },
+    "2026 Early 1st": {
+      "ktc": 6296,
+      "ktc_rank": 40
+    },
+    "Trevor Etienne": {
+      "ktc": 2481,
+      "ktc_rank": 265,
+      "apy": 1302186,
+      "years": 4,
+      "guaranteed": 1008744,
+      "total_value": 5208744
+    },
+    "Malik Nabers": {
+      "ktc": 7811,
+      "ktc_rank": 16,
+      "apy": 7301938,
+      "years": 4,
+      "guaranteed": 29207750,
+      "total_value": 29207750
+    },
+    "George Gumbs": {
+      "apy": 1220450,
+      "years": 4,
+      "guaranteed": 501800,
+      "total_value": 4881800
+    },
+    "Jihaad Campbell": {
+      "apy": 3725894,
+      "years": 4,
+      "guaranteed": 14903574,
+      "total_value": 14903574
+    },
+    "Tyjae Spears": {
+      "ktc": 3208,
+      "ktc_rank": 195,
+      "apy": 1372651,
+      "years": 4,
+      "guaranteed": 993164,
+      "total_value": 5490602
+    },
+    "Jacobian Guillory": {
+      "apy": 1036667,
+      "years": 3,
+      "guaranteed": 10000,
+      "total_value": 3110000
+    },
+    "Odell Beckham Jr.": {
+      "apy": 1300000,
+      "years": 1,
+      "guaranteed": 0,
+      "total_value": 1300000
+    },
+    "Rivaldo Fairweather": {
+      "apy": 922500,
+      "years": 2,
+      "guaranteed": 0,
+      "total_value": 1845000
+    },
+    "Nick Folk": {
+      "apy": 4500000,
+      "years": 2,
+      "guaranteed": 4000000,
+      "total_value": 9000000
+    },
+    "Mecole Hardman": {
+      "apy": 1375000,
+      "years": 1,
+      "guaranteed": 0,
+      "total_value": 1375000
+    },
+    "Charvarius Ward": {
+      "apy": 18000000,
+      "years": 3,
+      "guaranteed": 27000000,
+      "total_value": 54000000
+    },
+    "Tre Avery": {
+      "apy": 1215000,
+      "years": 1,
+      "guaranteed": 0,
+      "total_value": 1215000
+    },
+    "Chauncey Golston": {
+      "apy": 6000000,
+      "years": 3,
+      "guaranteed": 12000000,
+      "total_value": 18000000
+    },
+    "Jauan Jennings": {
+      "ktc": 3257,
+      "ktc_rank": 192,
+      "apy": 8000000,
+      "years": 1,
+      "guaranteed": 6130000,
+      "total_value": 8000000
+    },
+    "Reid Williford": {
+      "apy": 1038333,
+      "years": 3,
+      "guaranteed": 15000,
+      "total_value": 3115000
+    },
+    "Junior Colson": {
+      "apy": 1506752,
+      "years": 4,
+      "guaranteed": 1203276,
+      "total_value": 6027006
+    },
+    "Will Lee III": {
+      "apy": 1357858,
+      "years": 4,
+      "guaranteed": 1051432,
+      "total_value": 5431432
+    },
+    "Dane Key": {
+      "apy": 1036667,
+      "years": 3,
+      "guaranteed": 30000,
+      "total_value": 3110000
+    },
+    "Anterio Thompson": {
+      "apy": 1158658,
+      "years": 4,
+      "guaranteed": 254632,
+      "total_value": 4634632
+    },
+    "Dee Winters": {
+      "apy": 993333,
+      "years": 4,
+      "guaranteed": 133332,
+      "total_value": 3973332
+    },
+    "Zach Horton": {
+      "apy": 885000,
+      "years": 1,
+      "guaranteed": 0,
+      "total_value": 885000
+    },
+    "Esa Pole": {
+      "apy": 922500,
+      "years": 2,
+      "guaranteed": 0,
+      "total_value": 1845000
+    },
+    "Elijah Mitchell": {
+      "ktc": 729,
+      "ktc_rank": 498,
+      "apy": 1215000,
+      "years": 1,
+      "guaranteed": 0,
+      "total_value": 1215000
+    },
+    "Javin Wright": {
+      "apy": 1038333,
+      "years": 3,
+      "guaranteed": 115000,
+      "total_value": 3115000
+    },
+    "Najee Harris": {
+      "ktc": 2028,
+      "ktc_rank": 330
+    },
+    "Amari Kight": {
+      "apy": 922500,
+      "years": 2,
+      "guaranteed": 0,
+      "total_value": 1845000
+    },
+    "Patrick Paul": {
+      "apy": 1727924,
+      "years": 4,
+      "guaranteed": 4163624,
+      "total_value": 6911696
+    },
+    "Chris Brazzell II": {
+      "ktc": 3197,
+      "ktc_rank": 200,
+      "apy": 1735953,
+      "years": 4,
+      "guaranteed": 1510044,
+      "total_value": 6943812
+    },
+    "Jalyx Hunt": {
+      "apy": 1408259,
+      "years": 4,
+      "guaranteed": 916752,
+      "total_value": 5633034
+    },
+    "Cam Jones": {
+      "apy": 1300000,
+      "years": 1,
+      "guaranteed": 225000,
+      "total_value": 1300000
+    },
+    "Kendric Pryor": {
+      "apy": 1075000,
+      "years": 1,
+      "guaranteed": 0,
+      "total_value": 1075000
+    },
+    "Jordan Mason": {
+      "ktc": 3334,
+      "ktc_rank": 187,
+      "apy": 5250000,
+      "years": 2,
+      "guaranteed": 7230000,
+      "total_value": 10500000
+    },
+    "Sonny Styles": {
+      "apy": 9302898,
+      "years": 4,
+      "guaranteed": 37211592,
+      "total_value": 37211592
+    },
+    "Kam Arnold": {
+      "apy": 885000,
+      "years": 1,
+      "guaranteed": 0,
+      "total_value": 885000
+    },
+    "Gabriel Benyard": {
+      "apy": 1034167,
+      "years": 3,
+      "guaranteed": 2500,
+      "total_value": 3102500
+    },
+    "Beanie Bishop": {
+      "apy": 1005000,
+      "years": 1,
+      "guaranteed": 0,
+      "total_value": 1005000
+    },
+    "Tyson Campbell": {
+      "apy": 19125000,
+      "years": 4,
+      "guaranteed": 31400000,
+      "total_value": 76500000
+    },
+    "LeQuint Allen": {
+      "ktc": 2591,
+      "ktc_rank": 272,
+      "apy": 1079689,
+      "years": 4,
+      "guaranteed": 118756,
+      "total_value": 4318756
+    },
+    "Justin Jefferson": {
+      "ktc": 8017,
+      "ktc_rank": 12,
+      "apy": 1225264,
+      "years": 4,
+      "guaranteed": 521056,
+      "total_value": 4901056
+    },
+    "Christian Kuntz": {
+      "apy": 1225000,
+      "years": 3,
+      "guaranteed": 325000,
+      "total_value": 3765000
+    },
+    "Darnell Mooney": {
+      "ktc": 2548,
+      "ktc_rank": 262,
+      "apy": 3000000,
+      "years": 1,
+      "guaranteed": 3000000,
+      "total_value": 3000000
+    },
+    "Teddye Buchanan": {
+      "apy": 1275724,
+      "years": 4,
+      "guaranteed": 902896,
+      "total_value": 5102896
+    },
+    "Teddy Bridgewater": {
+      "apy": 1800000,
+      "years": 1,
+      "guaranteed": 1587500,
+      "total_value": 1800000
+    },
+    "Zelmar Vedder": {
+      "apy": 1036667,
+      "years": 3,
+      "guaranteed": 185000,
+      "total_value": 3110000
+    },
+    "Josh Myers": {
+      "apy": 5500000,
+      "years": 2,
+      "guaranteed": 5200000,
+      "total_value": 11000000
+    },
+    "Caedan Wallace": {
+      "apy": 1510826,
+      "years": 4,
+      "guaranteed": 1215128,
+      "total_value": 6043304
+    },
+    "Travis Homer": {
+      "apy": 1300000,
+      "years": 1,
+      "guaranteed": 0,
+      "total_value": 1300000
+    },
+    "Payton Turner": {
+      "apy": 1145000,
+      "years": 1,
+      "guaranteed": 0,
+      "total_value": 1145000
+    },
+    "Julian Ashby": {
+      "apy": 1075418,
+      "years": 4,
+      "guaranteed": 101672,
+      "total_value": 4301672
+    },
+    "Cole Bishop": {
+      "apy": 1636999,
+      "years": 4,
+      "guaranteed": 3469816,
+      "total_value": 6547996
+    },
+    "Tim Keenan III": {
+      "apy": 1133831,
+      "years": 4,
+      "guaranteed": 155324,
+      "total_value": 4535324
+    },
+    "Ethan Evans": {
+      "apy": 987000,
+      "years": 4,
+      "guaranteed": 108000,
+      "total_value": 3948000
+    },
+    "Ahmad Gardner": {
+      "apy": 30100000,
+      "years": 4,
+      "guaranteed": 40500000,
+      "total_value": 120400000
+    },
+    "Elliott Brown": {
+      "apy": 885000,
+      "years": 1,
+      "guaranteed": 0,
+      "total_value": 885000
+    },
+    "T.J. Tampa": {
+      "apy": 1179614,
+      "years": 4,
+      "guaranteed": 698456,
+      "total_value": 4718456
+    },
+    "Orlando Brown Jr.": {
+      "apy": 16000000,
+      "years": 2,
+      "guaranteed": 14000000,
+      "total_value": 32000000
+    },
+    "Eric O'Neill": {
+      "apy": 1036667,
+      "years": 3,
+      "guaranteed": 60000,
+      "total_value": 3110000
+    },
+    "Jahdae Walker": {
+      "apy": 995000,
+      "years": 3,
+      "guaranteed": 170000,
+      "total_value": 2985000
+    },
+    "Jordan Watkins": {
+      "ktc": 1353,
+      "ktc_rank": 416,
+      "apy": 1216454,
+      "years": 4,
+      "guaranteed": 665816,
+      "total_value": 4865816
+    },
+    "Jack Bech": {
+      "ktc": 3134,
+      "ktc_rank": 207,
+      "apy": 1889706,
+      "years": 4,
+      "guaranteed": 5077207,
+      "total_value": 7558822
+    },
+    "Jammie Robinson": {
+      "apy": 1087500,
+      "years": 2,
+      "guaranteed": 0,
+      "total_value": 2175000
+    },
+    "Evan Neal": {
+      "apy": 1215000,
+      "years": 1,
+      "guaranteed": 0,
+      "total_value": 1215000
+    },
+    "Frank Gore Jr.": {
+      "ktc": 1096,
+      "ktc_rank": 463,
+      "apy": 967500,
+      "years": 2,
+      "guaranteed": 0,
+      "total_value": 1935000
+    },
+    "Omari Evans": {
+      "apy": 1035000,
+      "years": 3,
+      "guaranteed": 85000,
+      "total_value": 3105000
+    },
+    "Lucas Scott": {
+      "apy": 885000,
+      "years": 1,
+      "guaranteed": 0,
+      "total_value": 885000
+    },
+    "Evan Svoboda": {
+      "apy": 1037667,
+      "years": 3,
+      "guaranteed": 13000,
+      "total_value": 3113000
+    },
+    "Domani Jackson": {
+      "apy": 1163109,
+      "years": 4,
+      "guaranteed": 272436,
+      "total_value": 4652436
+    },
+    "Coleman Shelton": {
+      "apy": 6000000,
+      "years": 2,
+      "guaranteed": 9000000,
+      "total_value": 12000000
+    },
+    "Shemar James": {
+      "apy": 1155859,
+      "years": 4,
+      "guaranteed": 423436,
+      "total_value": 4623436
+    },
+    "Drew Moss": {
+      "apy": 995000,
+      "years": 3,
+      "guaranteed": 145000,
+      "total_value": 2985000
+    },
+    "Cortez Braham": {
+      "apy": 1035833,
+      "years": 3,
+      "guaranteed": 7500,
+      "total_value": 3107500
+    },
+    "Eric Murray": {
+      "apy": 6500000,
+      "years": 3,
+      "guaranteed": 10000000,
+      "total_value": 19500000
+    },
+    "Keylan Rutledge": {
+      "apy": 4819112,
+      "years": 4,
+      "guaranteed": 19276448,
+      "total_value": 19276448
+    },
+    "De'Zhaun Stribling": {
+      "ktc": 2535,
+      "ktc_rank": 208,
+      "apy": 3344185,
+      "years": 4,
+      "guaranteed": 13376740,
+      "total_value": 13376740
+    },
+    "Keir Thomas": {
+      "apy": 1075000,
+      "years": 1,
+      "guaranteed": 0,
+      "total_value": 1075000
+    },
+    "Will Shipley": {
+      "ktc": 1979,
+      "ktc_rank": 322,
+      "apy": 1184241,
+      "years": 4,
+      "guaranteed": 716964,
+      "total_value": 4736964
+    },
+    "Keyon Martin": {
+      "apy": 988333,
+      "years": 3,
+      "guaranteed": 0,
+      "total_value": 2965000
+    },
+    "Anthony Richardson": {
+      "ktc": 2147,
+      "ktc_rank": 239,
+      "apy": 8498508,
+      "years": 4,
+      "guaranteed": 33994030,
+      "total_value": 33994030
+    },
+    "Marcus Banks": {
+      "apy": 1062500,
+      "years": 2,
+      "guaranteed": 0,
+      "total_value": 2125000
+    },
+    "Christen Miller": {
+      "apy": 2948906,
+      "years": 4,
+      "guaranteed": 11795622,
+      "total_value": 11795622
+    },
+    "Jonnu Smith": {
+      "ktc": 1287,
+      "ktc_rank": 428
+    },
+    "Darius Cooper": {
+      "apy": 993333,
+      "years": 3,
+      "guaranteed": 90000,
+      "total_value": 2980000
+    },
+    "Mike Jerrell": {
+      "apy": 1045015,
+      "years": 4,
+      "guaranteed": 160060,
+      "total_value": 4180060
+    },
+    "Osa Odighizuwa": {
+      "apy": 20000000,
+      "years": 4,
+      "guaranteed": 39000000,
+      "total_value": 80000000
+    },
+    "Anfernee Jennings": {
+      "apy": 1402500,
+      "years": 1,
+      "guaranteed": 187500,
+      "total_value": 1402500
+    },
+    "Greedy Vance Jr.": {
+      "apy": 922500,
+      "years": 2,
+      "guaranteed": 0,
+      "total_value": 1845000
+    },
+    "Tyrel Dodson": {
+      "apy": 3125000,
+      "years": 2,
+      "guaranteed": 2605000,
+      "total_value": 6250000
+    },
+    "Breece Hall": {
+      "ktc": 6268,
+      "ktc_rank": 50,
+      "apy": 14500000,
+      "years": 3,
+      "guaranteed": 29000000,
+      "total_value": 43500000
+    },
+    "Atonio Mafi": {
+      "apy": 1087500,
+      "years": 2,
+      "guaranteed": 0,
+      "total_value": 2175000
+    },
+    "Levi Wentz": {
+      "apy": 1036667,
+      "years": 3,
+      "guaranteed": 10000,
+      "total_value": 3110000
+    },
+    "Tycen Anderson": {
+      "apy": 1500000,
+      "years": 1,
+      "guaranteed": 650000,
+      "total_value": 1500000
+    },
+    "Omarion Hampton": {
+      "ktc": 7289,
+      "ktc_rank": 24,
+      "apy": 4443616,
+      "years": 4,
+      "guaranteed": 17774464,
+      "total_value": 17774464
+    },
+    "Austin Brown": {
+      "apy": 1041667,
+      "years": 3,
+      "guaranteed": 272500,
+      "total_value": 3125000
+    },
+    "Donte Jackson": {
+      "apy": 6500000,
+      "years": 2,
+      "guaranteed": 7000000,
+      "total_value": 13000000
+    },
+    "Josh Simmons": {
+      "apy": 3668839,
+      "years": 4,
+      "guaranteed": 14675356,
+      "total_value": 14675356
+    },
+    "Levi Onwuzurike": {
+      "apy": 1215000,
+      "years": 1,
+      "guaranteed": 0,
+      "total_value": 1215000
+    },
+    "Edgerrin Cooper": {
+      "apy": 2149730,
+      "years": 4,
+      "guaranteed": 6568275,
+      "total_value": 8598920
+    },
+    "Tommy Eichenberg": {
+      "apy": 1089428,
+      "years": 4,
+      "guaranteed": 337712,
+      "total_value": 4357712
+    },
+    "Eli Heidenreich": {
+      "ktc": 1311,
+      "ktc_rank": 394,
+      "apy": 1133996,
+      "years": 4,
+      "guaranteed": 155984,
+      "total_value": 4535984
+    },
+    "Jeremy Crawshaw": {
+      "apy": 1093570,
+      "years": 4,
+      "guaranteed": 174280,
+      "total_value": 4374280
+    },
+    "Joseph Ossai": {
+      "apy": 11500000,
+      "years": 3,
+      "guaranteed": 22490000,
+      "total_value": 34500000
+    },
+    "Marlen Sewell": {
+      "apy": 1033333,
+      "years": 3,
+      "guaranteed": 0,
+      "total_value": 3100000
+    },
+    "Josh Jobe": {
+      "apy": 8000000,
+      "years": 3,
+      "guaranteed": 9500000,
+      "total_value": 24000000
+    },
+    "Beau Brade": {
+      "apy": 951667,
+      "years": 3,
+      "guaranteed": 45000,
+      "total_value": 2855000
+    },
+    "Zemaiah Vaughn": {
+      "apy": 922500,
+      "years": 2,
+      "guaranteed": 0,
+      "total_value": 1845000
+    },
+    "Korie Black": {
+      "apy": 922500,
+      "years": 2,
+      "guaranteed": 0,
+      "total_value": 1845000
+    },
+    "Alex Singleton": {
+      "apy": 7500000,
+      "years": 2,
+      "guaranteed": 11000000,
+      "total_value": 15000000
+    },
+    "Jalen Farmer": {
+      "apy": 1392676,
+      "years": 4,
+      "guaranteed": 1190704,
+      "total_value": 5570704
+    },
+    "Ahmani Marshall": {
+      "apy": 885000,
+      "years": 1,
+      "guaranteed": 0,
+      "total_value": 885000
+    },
+    "Jalen Carter": {
+      "apy": 5451546,
+      "years": 4,
+      "guaranteed": 21806184,
+      "total_value": 21806184
+    },
+    "Quinn Ewers": {
+      "ktc": 1575,
+      "ktc_rank": 305,
+      "apy": 1082894,
+      "years": 4,
+      "guaranteed": 131576,
+      "total_value": 4331576
+    },
+    "Brandon Codrington": {
+      "apy": 1100000,
+      "years": 1,
+      "guaranteed": 15000,
+      "total_value": 1100000
+    },
+    "Willie Gay, Jr.": {
+      "apy": 1402500,
+      "years": 1,
+      "guaranteed": 687500,
+      "total_value": 1402500
+    },
+    "James Cook": {
+      "ktc": 6658,
+      "ktc_rank": 34,
+      "apy": 11500000,
+      "years": 4,
+      "guaranteed": 15280000,
+      "total_value": 46000000
+    },
+    "Bud Clark": {
+      "apy": 1969550,
+      "years": 4,
+      "guaranteed": 5470564,
+      "total_value": 7878200
+    },
+    "Brady Russell": {
+      "apy": 2400000,
+      "years": 2,
+      "guaranteed": 2145000,
+      "total_value": 4800000
+    },
+    "Dominick Puni": {
+      "apy": 1425137,
+      "years": 4,
+      "guaranteed": 965852,
+      "total_value": 5700548
+    },
+    "Mark Gronowski": {
+      "apy": 1035000,
+      "years": 3,
+      "guaranteed": 15000,
+      "total_value": 3105000
+    },
+    "Tahj Brooks": {
+      "ktc": 2132,
+      "ktc_rank": 327,
+      "apy": 1107714,
+      "years": 4,
+      "guaranteed": 230856,
+      "total_value": 4430856
+    },
+    "Donovan Edwards": {
+      "ktc": 1354,
+      "ktc_rank": 402,
+      "apy": 988333,
+      "years": 3,
+      "guaranteed": 0,
+      "total_value": 2965000
+    },
+    "Jeff Caldwell": {
+      "apy": 1041667,
+      "years": 3,
+      "guaranteed": 272500,
+      "total_value": 3125000
+    },
+    "Tress Way": {
+      "apy": 3037500,
+      "years": 1,
+      "guaranteed": 3012500,
+      "total_value": 3037500
+    },
+    "Rejzohn Wright": {
+      "apy": 1005000,
+      "years": 1,
+      "guaranteed": 0,
+      "total_value": 1005000
+    },
+    "Carson Beck": {
+      "ktc": 109,
+      "ktc_rank": 284,
+      "apy": 1851498,
+      "years": 4,
+      "guaranteed": 0,
+      "total_value": 7405992
+    },
+    "Zachary Thomas": {
+      "apy": 1145000,
+      "years": 1,
+      "guaranteed": 0,
+      "total_value": 1145000
+    },
+    "Myles Harden": {
+      "apy": 1032583,
+      "years": 4,
+      "guaranteed": 110332,
+      "total_value": 4130332
+    },
+    "Mike Caliendo": {
+      "apy": 1350000,
+      "years": 1,
+      "guaranteed": 650000,
+      "total_value": 1350000
+    },
+    "Brock Bowers": {
+      "ktc": 8238,
+      "ktc_rank": 8,
+      "apy": 4534696,
+      "years": 4,
+      "guaranteed": 18138784,
+      "total_value": 18138784
+    },
+    "Trey Amos": {
+      "apy": 1820005,
+      "years": 4,
+      "guaranteed": 4568725,
+      "total_value": 7280020
+    },
+    "Karon Prunty": {
+      "apy": 1201837,
+      "years": 4,
+      "guaranteed": 427348,
+      "total_value": 4807348
+    },
+    "Johnny Wilson": {
+      "ktc": 764,
+      "ktc_rank": 486,
+      "apy": 1054252,
+      "years": 4,
+      "guaranteed": 197008,
+      "total_value": 4217008
+    },
+    "Jack Strand": {
+      "apy": 1038333,
+      "years": 3,
+      "guaranteed": 262500,
+      "total_value": 3115000
+    },
+    "Darius Alexander": {
+      "apy": 1690518,
+      "years": 4,
+      "guaranteed": 1557868,
+      "total_value": 6762070
+    },
+    "Cole Payton": {
+      "ktc": 161,
+      "ktc_rank": 471,
+      "apy": 1189869,
+      "years": 4,
+      "guaranteed": 379476,
+      "total_value": 4759476
+    },
+    "Eric Gray": {
+      "apy": 1021245,
+      "years": 4,
+      "guaranteed": 244980,
+      "total_value": 4084980
+    },
+    "Solomon Byrd": {
+      "apy": 1005000,
+      "years": 1,
+      "guaranteed": 0,
+      "total_value": 1005000
+    },
+    "2028 Late 1st": {
+      "ktc": 4787,
+      "ktc_rank": 92
+    },
+    "Kyle Hergel": {
+      "apy": 1005000,
+      "years": 1,
+      "guaranteed": 0,
+      "total_value": 1005000
+    },
+    "Sterling Shepard": {
+      "ktc": 635,
+      "ktc_rank": 491
+    },
+    "Treylon Burks": {
+      "ktc": 1810,
+      "ktc_rank": 345,
+      "apy": 2350000,
+      "years": 1,
+      "guaranteed": 400000,
+      "total_value": 2350000
+    },
+    "Ja'Mori Maclin": {
+      "apy": 1038333,
+      "years": 3,
+      "guaranteed": 15000,
+      "total_value": 3115000
+    },
+    "Mason Murphy": {
+      "apy": 1040000,
+      "years": 3,
+      "guaranteed": 267500,
+      "total_value": 3120000
+    },
+    "Mike Gesicki": {
+      "ktc": 1701,
+      "ktc_rank": 355,
+      "apy": 8500000,
+      "years": 3,
+      "guaranteed": 6500000,
+      "total_value": 25500000
+    },
+    "Devyn Perkins": {
+      "apy": 1033333,
+      "years": 3,
+      "guaranteed": 0,
+      "total_value": 3100000
+    },
+    "Deontae Lawson": {
+      "apy": 1036667,
+      "years": 3,
+      "guaranteed": 10000,
+      "total_value": 3110000
+    },
+    "Brenton Strange": {
+      "ktc": 3560,
+      "ktc_rank": 155,
+      "apy": 1528586,
+      "years": 4,
+      "guaranteed": 3224717,
+      "total_value": 6114342
+    },
+    "Josh Kaltenberger": {
+      "apy": 885000,
+      "years": 1,
+      "guaranteed": 0,
+      "total_value": 885000
+    },
+    "Ja'Marr Chase": {
+      "ktc": 9996,
+      "ktc_rank": 3,
+      "apy": 40250000,
+      "years": 4,
+      "guaranteed": 73900000,
+      "total_value": 161000000
+    },
+    "Jake Bailey": {
+      "apy": 3000000,
+      "years": 3,
+      "guaranteed": 5000000,
+      "total_value": 9000000
+    },
+    "Deshaun Watson": {
+      "ktc": 741,
+      "ktc_rank": 251,
+      "apy": 46000000,
+      "years": 5,
+      "guaranteed": 230000000,
+      "total_value": 230000000
+    },
+    "John Bates": {
+      "apy": 7000000,
+      "years": 3,
+      "guaranteed": 11520000,
+      "total_value": 21000000
+    },
+    "Joshua Farmer": {
+      "apy": 1216454,
+      "years": 4,
+      "guaranteed": 665816,
+      "total_value": 4865816
+    },
+    "Trey Zuhn III": {
+      "apy": 1706758,
+      "years": 4,
+      "guaranteed": 1425112,
+      "total_value": 6827032
+    },
+    "Cody Ford": {
+      "apy": 1300000,
+      "years": 1,
+      "guaranteed": 0,
+      "total_value": 1300000
+    },
+    "Cameron McGrone": {
+      "apy": 1215000,
+      "years": 1,
+      "guaranteed": 0,
+      "total_value": 1215000
+    },
+    "Jeremiah Pharms": {
+      "apy": 1145000,
+      "years": 1,
+      "guaranteed": 0,
+      "total_value": 1145000
+    },
+    "Eyioma Uwazurike": {
+      "apy": 1106468,
+      "years": 4,
+      "guaranteed": 765872,
+      "total_value": 4425872
+    },
+    "Terry Webb": {
+      "apy": 1036667,
+      "years": 3,
+      "guaranteed": 10000,
+      "total_value": 3110000
+    },
+    "TJ Maguranyanga": {
+      "apy": 885000,
+      "years": 1,
+      "guaranteed": 0,
+      "total_value": 885000
+    },
+    "Sebastian Valdez": {
+      "apy": 1005000,
+      "years": 1,
+      "guaranteed": 0,
+      "total_value": 1005000
+    },
+    "Jake Elliott": {
+      "apy": 5666667,
+      "years": 3,
+      "guaranteed": 5000000,
+      "total_value": 17000000
+    },
+    "Amon-Ra St. Brown": {
+      "ktc": 8013,
+      "ktc_rank": 10,
+      "apy": 30002500,
+      "years": 4,
+      "guaranteed": 34666000,
+      "total_value": 120010000
+    },
+    "Jabbar Muhammad": {
+      "apy": 885000,
+      "years": 1,
+      "guaranteed": 0,
+      "total_value": 885000
+    },
+    "Arden Walker": {
+      "apy": 1034000,
+      "years": 3,
+      "guaranteed": 2000,
+      "total_value": 3102000
+    },
+    "Max Melton": {
+      "apy": 2222077,
+      "years": 4,
+      "guaranteed": 6931266,
+      "total_value": 8888308
+    },
+    "Siran Neal": {
+      "apy": 2000000,
+      "years": 2,
+      "guaranteed": 2255000,
+      "total_value": 4000000
+    },
+    "Thomas Fidone II": {
+      "apy": 1087379,
+      "years": 4,
+      "guaranteed": 149516,
+      "total_value": 4349516
+    },
+    "Elijah Culp": {
+      "apy": 1041667,
+      "years": 3,
+      "guaranteed": 272500,
+      "total_value": 3125000
+    },
+    "Rene Konga": {
+      "apy": 1043333,
+      "years": 3,
+      "guaranteed": 277500,
+      "total_value": 3130000
+    },
+    "Jacob Clark": {
+      "apy": 1036667,
+      "years": 3,
+      "guaranteed": 10000,
+      "total_value": 3110000
+    },
+    "Dante Barnett": {
+      "apy": 885000,
+      "years": 1,
+      "guaranteed": 0,
+      "total_value": 885000
+    },
+    "Jon'Darius Morgan": {
+      "apy": 1036667,
+      "years": 3,
+      "guaranteed": 10000,
+      "total_value": 3110000
+    },
+    "Truman Jones": {
+      "apy": 922500,
+      "years": 2,
+      "guaranteed": 0,
+      "total_value": 1845000
+    },
+    "Uar Bernard": {
+      "apy": 1125122,
+      "years": 4,
+      "guaranteed": 120488,
+      "total_value": 4500488
+    },
+    "Robert Hunt": {
+      "apy": 20000000,
+      "years": 5,
+      "guaranteed": 44000000,
+      "total_value": 100000000
+    },
+    "2026 Late 1st": {
+      "ktc": 4793,
+      "ktc_rank": 98
+    },
+    "Ambry Thomas": {
+      "apy": 1162500,
+      "years": 1,
+      "guaranteed": 17500,
+      "total_value": 1162500
+    },
+    "Jack Conley": {
+      "apy": 885000,
+      "years": 1,
+      "guaranteed": 0,
+      "total_value": 885000
+    },
+    "Coziah Izzard": {
+      "apy": 967500,
+      "years": 2,
+      "guaranteed": 0,
+      "total_value": 1935000
+    },
+    "Fred Warner": {
+      "apy": 21000000,
+      "years": 3,
+      "guaranteed": 18150000,
+      "total_value": 63000000
+    },
+    "Scott Matlock": {
+      "apy": 1003073,
+      "years": 4,
+      "guaranteed": 172292,
+      "total_value": 4012292
+    },
+    "Rico Dowdle": {
+      "ktc": 3929,
+      "ktc_rank": 144,
+      "apy": 6125000,
+      "years": 2,
+      "guaranteed": 5000000,
+      "total_value": 12250000
+    },
+    "Case Keenum": {
+      "apy": 2750000,
+      "years": 2,
+      "guaranteed": 2900000,
+      "total_value": 5500000
+    },
+    "Anthony Goodlow": {
+      "apy": 1005000,
+      "years": 1,
+      "guaranteed": 0,
+      "total_value": 1005000
+    },
+    "Jalen Brooks": {
+      "apy": 1087500,
+      "years": 2,
+      "guaranteed": 0,
+      "total_value": 2175000
+    },
+    "Channing Canada": {
+      "apy": 1040000,
+      "years": 3,
+      "guaranteed": 267500,
+      "total_value": 3120000
+    },
+    "Sam Roush": {
+      "ktc": 995,
+      "ktc_rank": 458,
+      "apy": 1834167,
+      "years": 4,
+      "guaranteed": 0,
+      "total_value": 7336666
+    },
+    "Gregory Rousseau": {
+      "apy": 20000000,
+      "years": 4,
+      "guaranteed": 49000000,
+      "total_value": 80000000
+    },
+    "Donovan Jackson": {
+      "apy": 4294264,
+      "years": 4,
+      "guaranteed": 17177054,
+      "total_value": 17177054
+    },
+    "Jalen Nailor": {
+      "ktc": 2855,
+      "ktc_rank": 225,
+      "apy": 11676667,
+      "years": 3,
+      "guaranteed": 18000000,
+      "total_value": 35030000
+    },
+    "Rodney McGraw": {
+      "apy": 1036667,
+      "years": 3,
+      "guaranteed": 10000,
+      "total_value": 3110000
+    },
+    "Bucky Irving": {
+      "ktc": 5665,
+      "ktc_rank": 75,
+      "apy": 1187888,
+      "years": 4,
+      "guaranteed": 731552,
+      "total_value": 4751552
+    },
+    "Alex Wright": {
+      "apy": 11000000,
+      "years": 3,
+      "guaranteed": 12305110,
+      "total_value": 33000000
+    },
+    "Joe Huber": {
+      "apy": 991667,
+      "years": 3,
+      "guaranteed": 210000,
+      "total_value": 2975000
+    },
+    "Preston Hodge": {
+      "apy": 1036667,
+      "years": 3,
+      "guaranteed": 67500,
+      "total_value": 3110000
+    },
+    "Hunter Long": {
+      "apy": 2500000,
+      "years": 2,
+      "guaranteed": 3000000,
+      "total_value": 5000000
+    },
+    "Rashod Bateman": {
+      "ktc": 2591,
+      "ktc_rank": 260,
+      "apy": 12250000,
+      "years": 3,
+      "guaranteed": 16500000,
+      "total_value": 36750000
+    },
+    "Quindarius Dunnigan": {
+      "apy": 1033333,
+      "years": 3,
+      "guaranteed": 0,
+      "total_value": 3100000
+    },
+    "Josh Allen": {
+      "ktc": 7682,
+      "ktc_rank": 1,
+      "apy": 55000000,
+      "years": 6,
+      "guaranteed": 147000000,
+      "total_value": 330000000
+    },
+    "Boye Mafe": {
+      "apy": 20000000,
+      "years": 3,
+      "guaranteed": 19000000,
+      "total_value": 60000000
+    },
+    "Antonio Johnson": {
+      "apy": 1035458,
+      "years": 4,
+      "guaranteed": 301832,
+      "total_value": 4141832
+    },
+    "Tyler Onyedim": {
+      "apy": 1846329,
+      "years": 4,
+      "guaranteed": 0,
+      "total_value": 7385316
+    },
+    "Jack Sanborn": {
+      "apy": 1215000,
+      "years": 1,
+      "guaranteed": 0,
+      "total_value": 1215000
+    },
+    "Jared Wiley": {
+      "ktc": 1113,
+      "ktc_rank": 437,
+      "apy": 1177155,
+      "years": 4,
+      "guaranteed": 688620,
+      "total_value": 4708620
+    },
+    "Stetson Bennett": {
+      "apy": 1134783,
+      "years": 4,
+      "guaranteed": 699132,
+      "total_value": 4539132
+    },
+    "Mikail Kamara": {
+      "apy": 1033333,
+      "years": 3,
+      "guaranteed": 50000,
+      "total_value": 3100000
+    },
+    "Jahmeer Carter": {
+      "apy": 1033333,
+      "years": 3,
+      "guaranteed": 10000,
+      "total_value": 3100000
+    },
+    "Ethan Onianwa": {
+      "apy": 1133982,
+      "years": 4,
+      "guaranteed": 155928,
+      "total_value": 4535928
+    },
+    "Nick Martin": {
+      "apy": 1640417,
+      "years": 4,
+      "guaranteed": 1412120,
+      "total_value": 6561668
+    },
+    "P.J. Mustipher": {
+      "apy": 1075000,
+      "years": 1,
+      "guaranteed": 0,
+      "total_value": 1075000
+    },
+    "Tyreke Smith": {
+      "apy": 1017500,
+      "years": 2,
+      "guaranteed": 0,
+      "total_value": 2035000
+    },
+    "Cole Turner": {
+      "apy": 1075000,
+      "years": 1,
+      "guaranteed": 0,
+      "total_value": 1075000
+    },
+    "Jacob De Jesus": {
+      "apy": 1033333,
+      "years": 3,
+      "guaranteed": 0,
+      "total_value": 3100000
+    },
+    "Wesley Bissainthe": {
+      "apy": 1036667,
+      "years": 3,
+      "guaranteed": 160000,
+      "total_value": 3110000
+    },
+    "Kani Walker": {
+      "apy": 1036667,
+      "years": 3,
+      "guaranteed": 10000,
+      "total_value": 3110000
+    },
+    "Michael Deiter": {
+      "apy": 1215000,
+      "years": 1,
+      "guaranteed": 0,
+      "total_value": 1215000
+    },
+    "Felix Anudike-Uzomah": {
+      "apy": 2954455,
+      "years": 4,
+      "guaranteed": 11817820,
+      "total_value": 11817820
+    },
+    "Dee Alford": {
+      "apy": 5250000,
+      "years": 3,
+      "guaranteed": 7875000,
+      "total_value": 15750000
+    },
+    "Otis Reese": {
+      "apy": 1075000,
+      "years": 1,
+      "guaranteed": 0,
+      "total_value": 1075000
+    },
+    "Bryce Baringer": {
+      "apy": 1004614,
+      "years": 4,
+      "guaranteed": 178456,
+      "total_value": 4018456
+    },
+    "Chaz Chambliss": {
+      "apy": 995000,
+      "years": 3,
+      "guaranteed": 220000,
+      "total_value": 2985000
+    },
+    "Danielle Hunter": {
+      "apy": 40100000,
+      "years": 1,
+      "guaranteed": 39600000,
+      "total_value": 40100000
+    },
+    "John Bullock": {
+      "apy": 994167,
+      "years": 3,
+      "guaranteed": 17500,
+      "total_value": 2982500
+    },
+    "Emanuel Wilson": {
+      "ktc": 2538,
+      "ktc_rank": 261,
+      "apy": 1595000,
+      "years": 1,
+      "guaranteed": 550000,
+      "total_value": 1595000
+    },
+    "Sheldon Rankins": {
+      "apy": 8500000,
+      "years": 2,
+      "guaranteed": 12000000,
+      "total_value": 17000000
+    },
+    "Maxwell Hairston": {
+      "apy": 3814496,
+      "years": 4,
+      "guaranteed": 15257982,
+      "total_value": 15257982
+    },
+    "Mo Alie-Cox": {
+      "apy": 2687500,
+      "years": 1,
+      "guaranteed": 2187500,
+      "total_value": 2687500
+    },
+    "V.J. Payne": {
+      "apy": 1134544,
+      "years": 4,
+      "guaranteed": 158176,
+      "total_value": 4538176
+    },
+    "Malik Spencer": {
+      "apy": 1041667,
+      "years": 3,
+      "guaranteed": 150000,
+      "total_value": 3125000
+    },
+    "Ben Cleveland": {
+      "apy": 1215000,
+      "years": 1,
+      "guaranteed": 0,
+      "total_value": 1215000
+    },
+    "Jason Brownlee": {
+      "apy": 1075000,
+      "years": 1,
+      "guaranteed": 0,
+      "total_value": 1075000
+    },
+    "Matt Waletzko": {
+      "apy": 1075000,
+      "years": 1,
+      "guaranteed": 0,
+      "total_value": 1075000
+    },
+    "Derrick Graham": {
+      "apy": 1033333,
+      "years": 3,
+      "guaranteed": 0,
+      "total_value": 3100000
+    },
+    "Ja'Tavion Sanders": {
+      "ktc": 2608,
+      "ktc_rank": 264,
+      "apy": 1261059,
+      "years": 4,
+      "guaranteed": 874236,
+      "total_value": 5044236
+    },
+    "Kai Kroeger": {
+      "apy": 1062500,
+      "years": 2,
+      "guaranteed": 0,
+      "total_value": 2125000
+    },
+    "Bryce Cabeldue": {
+      "apy": 1108065,
+      "years": 4,
+      "guaranteed": 232260,
+      "total_value": 4432260
+    },
+    "Patrick Mekari": {
+      "apy": 12500000,
+      "years": 3,
+      "guaranteed": 20000000,
+      "total_value": 37500000
+    },
+    "Mike Washington Jr.": {
+      "ktc": 2875,
+      "ktc_rank": 231,
+      "apy": 1374039,
+      "years": 4,
+      "guaranteed": 1116156,
+      "total_value": 5496156
+    },
+    "Dametrious Crownover": {
+      "apy": 1164108,
+      "years": 4,
+      "guaranteed": 276432,
+      "total_value": 4656432
+    },
+    "Omarr Norman-Lott": {
+      "apy": 1800094,
+      "years": 4,
+      "guaranteed": 4317355,
+      "total_value": 7200376
+    },
+    "Kansei Matsuzawa": {
+      "apy": 1036667,
+      "years": 3,
+      "guaranteed": 25000,
+      "total_value": 3110000
+    },
+    "Carlos Washington Jr.": {
+      "apy": 1005000,
+      "years": 1,
+      "guaranteed": 0,
+      "total_value": 1005000
+    },
+    "Bauer Sharp": {
+      "apy": 1174145,
+      "years": 4,
+      "guaranteed": 316580,
+      "total_value": 4696580
+    },
+    "Josh Kattus": {
+      "apy": 1038333,
+      "years": 3,
+      "guaranteed": 15000,
+      "total_value": 3115000
+    },
+    "Saahdiq Charles": {
+      "apy": 1215000,
+      "years": 1,
+      "guaranteed": 0,
+      "total_value": 1215000
+    },
+    "Brandon Coleman": {
+      "apy": 1514556,
+      "years": 4,
+      "guaranteed": 1225980,
+      "total_value": 6058224
+    },
+    "Broderick Washington": {
+      "apy": 5250000,
+      "years": 3,
+      "guaranteed": 10000000,
+      "total_value": 15750000
+    },
+    "Karson Sharar": {
+      "apy": 1177108,
+      "years": 4,
+      "guaranteed": 328432,
+      "total_value": 4708432
+    },
+    "Drake London": {
+      "ktc": 7438,
+      "ktc_rank": 21,
+      "apy": 5383618,
+      "years": 4,
+      "guaranteed": 21534472,
+      "total_value": 21534472
+    },
+    "Jowon Briggs": {
+      "apy": 1075000,
+      "years": 1,
+      "guaranteed": 0,
+      "total_value": 1075000
+    },
+    "Gabe Hall": {
+      "apy": 967500,
+      "years": 2,
+      "guaranteed": 0,
+      "total_value": 1935000
+    },
+    "David Blay Jr.": {
+      "apy": 1036667,
+      "years": 3,
+      "guaranteed": 60000,
+      "total_value": 3110000
+    },
+    "Lathan Ransom": {
+      "apy": 1289279,
+      "years": 4,
+      "guaranteed": 957116,
+      "total_value": 5157116
+    },
+    "Jaydon Blue": {
+      "ktc": 2544,
+      "ktc_rank": 263,
+      "apy": 1156767,
+      "years": 4,
+      "guaranteed": 427068,
+      "total_value": 4627068
+    },
+    "Brittain Brown": {
+      "apy": 1075000,
+      "years": 1,
+      "guaranteed": 0,
+      "total_value": 1075000
+    },
+    "Laremy Tunsil": {
+      "apy": 30100000,
+      "years": 2,
+      "guaranteed": 52665000,
+      "total_value": 60200000
+    },
+    "Kamari Ramsey": {
+      "apy": 1236430,
+      "years": 4,
+      "guaranteed": 565720,
+      "total_value": 4945720
+    },
+    "Yasir Abdullah": {
+      "apy": 1051304,
+      "years": 4,
+      "guaranteed": 365216,
+      "total_value": 4205216
+    },
+    "Oscar Delp": {
+      "ktc": 1426,
+      "ktc_rank": 356,
+      "apy": 1801601,
+      "years": 4,
+      "guaranteed": 1701020,
+      "total_value": 7206404
+    },
+    "Logan Fano": {
+      "apy": 1045000,
+      "years": 3,
+      "guaranteed": 310000,
+      "total_value": 3135000
+    },
+    "Terrel Bernard": {
+      "apy": 10500000,
+      "years": 4,
+      "guaranteed": 14100000,
+      "total_value": 42000000
+    },
+    "Trevis Gipson": {
+      "apy": 1402500,
+      "years": 1,
+      "guaranteed": 598800,
+      "total_value": 1402500
+    },
+    "Joshua Josephs": {
+      "apy": 1226578,
+      "years": 4,
+      "guaranteed": 526312,
+      "total_value": 4906312
+    },
+    "Derrick Henry": {
+      "ktc": 4907,
+      "ktc_rank": 95,
+      "apy": 15000000,
+      "years": 2,
+      "guaranteed": 25000000,
+      "total_value": 30000000
+    },
+    "Jordan Waters": {
+      "apy": 967500,
+      "years": 2,
+      "guaranteed": 0,
+      "total_value": 1935000
+    },
+    "Andres Borregales": {
+      "apy": 1114121,
+      "years": 4,
+      "guaranteed": 256484,
+      "total_value": 4456484
+    },
+    "Jadon Canady": {
+      "apy": 1401833,
+      "years": 4,
+      "guaranteed": 1227332,
+      "total_value": 5607332
+    },
+    "Patrick Taylor": {
+      "apy": 1215000,
+      "years": 1,
+      "guaranteed": 0,
+      "total_value": 1215000
+    },
+    "J.K. Scott": {
+      "apy": 3000000,
+      "years": 2,
+      "guaranteed": 3150000,
+      "total_value": 6000000
+    },
+    "Delby Lemieux": {
+      "apy": 1035833,
+      "years": 3,
+      "guaranteed": 82500,
+      "total_value": 3107500
+    },
+    "Olaivavega Ioane": {
+      "apy": 6058058,
+      "years": 4,
+      "guaranteed": 24232230,
+      "total_value": 24232230
+    },
+    "DaRon Bland": {
+      "apy": 22500000,
+      "years": 4,
+      "guaranteed": 36346000,
+      "total_value": 90000000
+    },
+    "Caleb Williams": {
+      "ktc": 5719,
+      "ktc_rank": 9,
+      "apy": 9871515,
+      "years": 4,
+      "guaranteed": 39486058,
+      "total_value": 39486058
+    },
+    "Tony Pollard": {
+      "ktc": 3503,
+      "ktc_rank": 166,
+      "apy": 7250000,
+      "years": 3,
+      "guaranteed": 10490000,
+      "total_value": 21750000
+    },
+    "Blake Cashman": {
+      "apy": 7500000,
+      "years": 3,
+      "guaranteed": 9475000,
+      "total_value": 22500000
+    },
+    "Spencer Shrader": {
+      "apy": 1255000,
+      "years": 2,
+      "guaranteed": 750000,
+      "total_value": 2510000
+    },
+    "Brandon Walton": {
+      "apy": 1145000,
+      "years": 1,
+      "guaranteed": 0,
+      "total_value": 1145000
+    },
+    "Zach Wilson": {
+      "ktc": 623,
+      "ktc_rank": 438,
+      "apy": 1402500,
+      "years": 1,
+      "guaranteed": 598800,
+      "total_value": 1402500
+    },
+    "Javon Solomon": {
+      "apy": 1068569,
+      "years": 4,
+      "guaranteed": 254276,
+      "total_value": 4274276
+    },
+    "Dont'e Thornton": {
+      "ktc": 2505,
+      "ktc_rank": 278
+    },
+    "Puka Nacua": {
+      "ktc": 8850,
+      "ktc_rank": 7,
+      "apy": 1021245,
+      "years": 4,
+      "guaranteed": 244980,
+      "total_value": 4084980
+    },
+    "Max Brosmer": {
+      "apy": 991667,
+      "years": 3,
+      "guaranteed": 244000,
+      "total_value": 2975000
+    },
+    "Harrison Wallace III": {
+      "apy": 1046667,
+      "years": 3,
+      "guaranteed": 287500,
+      "total_value": 3140000
+    },
+    "Frankie Luvu": {
+      "apy": 10333333,
+      "years": 3,
+      "guaranteed": 14625000,
+      "total_value": 31000000
+    },
+    "Vederian Lowe": {
+      "apy": 4625000,
+      "years": 2,
+      "guaranteed": 5750000,
+      "total_value": 9250000
+    },
+    "Julius Welschof": {
+      "apy": 885000,
+      "years": 1,
+      "guaranteed": 0,
+      "total_value": 885000
+    },
+    "Aiden Williams": {
+      "apy": 885000,
+      "years": 1,
+      "guaranteed": 0,
+      "total_value": 885000
+    },
+    "Dallis Flowers": {
+      "apy": 1215000,
+      "years": 1,
+      "guaranteed": 0,
+      "total_value": 1215000
+    },
+    "Blake Gillikin": {
+      "apy": 1905000,
+      "years": 1,
+      "guaranteed": 450000,
+      "total_value": 1905000
+    },
+    "Kenneth Gainwell": {
+      "ktc": 3583,
+      "ktc_rank": 163,
+      "apy": 7000000,
+      "years": 2,
+      "guaranteed": 9830000,
+      "total_value": 14000000
+    },
+    "2028 Late 4th": {
+      "ktc": 1428,
+      "ktc_rank": 379
+    },
+    "Jeremiah Webb": {
+      "apy": 885000,
+      "years": 1,
+      "guaranteed": 0,
+      "total_value": 885000
+    },
+    "Micheal Clemons": {
+      "apy": 5666667,
+      "years": 3,
+      "guaranteed": 5990000,
+      "total_value": 17000000
+    },
+    "David Ebuka Agoha": {
+      "apy": 967500,
+      "years": 2,
+      "guaranteed": 0,
+      "total_value": 1935000
+    },
+    "Daniel Bellinger": {
+      "ktc": 1816,
+      "ktc_rank": 347,
+      "apy": 7000000,
+      "years": 3,
+      "guaranteed": 14010000,
+      "total_value": 21000000
+    },
+    "Jack Endries": {
+      "ktc": 856,
+      "ktc_rank": 474,
+      "apy": 1137754,
+      "years": 4,
+      "guaranteed": 171016,
+      "total_value": 4551016
+    },
+    "Bryce Boettcher": {
+      "apy": 1292259,
+      "years": 4,
+      "guaranteed": 789036,
+      "total_value": 5169036
+    },
+    "Tyler Scott": {
+      "ktc": 1115,
+      "ktc_rank": 448,
+      "apy": 1132500,
+      "years": 2,
+      "guaranteed": 0,
+      "total_value": 2265000
+    },
+    "Garett Bolles": {
+      "apy": 20500000,
+      "years": 4,
+      "guaranteed": 23735000,
+      "total_value": 82000000
+    },
+    "Dell Pettus": {
+      "apy": 946333,
+      "years": 3,
+      "guaranteed": 9000,
+      "total_value": 2839000
+    },
+    "Lloyd Cushenberry": {
+      "apy": 1402500,
+      "years": 1,
+      "guaranteed": 1262500,
+      "total_value": 1402500
+    },
+    "Kalia Davis": {
+      "apy": 2000000,
+      "years": 1,
+      "guaranteed": 1745000,
+      "total_value": 2000000
+    },
+    "Brandon Johnson": {
+      "apy": 1062500,
+      "years": 2,
+      "guaranteed": 0,
+      "total_value": 2125000
+    },
+    "Justice Hill": {
+      "ktc": 1708,
+      "ktc_rank": 367,
+      "apy": 3000000,
+      "years": 2,
+      "guaranteed": 4441176,
+      "total_value": 6000000
+    },
+    "Cedric Gray": {
+      "apy": 1213623,
+      "years": 4,
+      "guaranteed": 834492,
+      "total_value": 4854492
+    },
+    "Emmanuel McNeil-Warren": {
+      "apy": 2087548,
+      "years": 4,
+      "guaranteed": 6526632,
+      "total_value": 8350192
+    },
+    "Xavier Johnson": {
+      "apy": 885000,
+      "years": 1,
+      "guaranteed": 0,
+      "total_value": 885000
+    },
+    "Michael Heldman": {
+      "apy": 1040000,
+      "years": 3,
+      "guaranteed": 267500,
+      "total_value": 3120000
+    },
+    "Anthony Hill Jr.": {
+      "apy": 2028548,
+      "years": 4,
+      "guaranteed": 6122709,
+      "total_value": 8114190
+    },
+    "Khalid Kareem": {
+      "apy": 1215000,
+      "years": 1,
+      "guaranteed": 0,
+      "total_value": 1215000
+    },
+    "Fred Johnson": {
+      "apy": 2100000,
+      "years": 1,
+      "guaranteed": 800000,
+      "total_value": 2100000
+    },
+    "J'Mari Taylor": {
+      "ktc": 1024,
+      "ktc_rank": 460,
+      "apy": 1043333,
+      "years": 3,
+      "guaranteed": 277500,
+      "total_value": 3130000
+    },
+    "Princely Umanmielen": {
+      "apy": 1625136,
+      "years": 4,
+      "guaranteed": 1367668,
+      "total_value": 6500542
+    },
+    "Matt Pryor": {
+      "apy": 1487500,
+      "years": 1,
+      "guaranteed": 187500,
+      "total_value": 1487500
+    },
+    "Durell Nchami": {
+      "apy": 1005000,
+      "years": 1,
+      "guaranteed": 0,
+      "total_value": 1005000
+    },
+    "Mykal Walker": {
+      "apy": 1402500,
+      "years": 1,
+      "guaranteed": 187500,
+      "total_value": 1402500
+    },
+    "Chris Paul Jr.": {
+      "apy": 885000,
+      "years": 1,
+      "guaranteed": 0,
+      "total_value": 885000
+    },
+    "Aireontae Ersery": {
+      "apy": 2302912,
+      "years": 4,
+      "guaranteed": 7369317,
+      "total_value": 9211646
+    },
+    "Isaiah Foskey": {
+      "apy": 1145000,
+      "years": 1,
+      "guaranteed": 0,
+      "total_value": 1145000
+    },
+    "Esezi Otomewo": {
+      "apy": 1750000,
+      "years": 1,
+      "guaranteed": 187500,
+      "total_value": 1750000
+    },
+    "Bailey Zappe": {
+      "apy": 1215000,
+      "years": 1,
+      "guaranteed": 0,
+      "total_value": 1215000
+    },
+    "Dominic Zvada": {
+      "apy": 1041667,
+      "years": 3,
+      "guaranteed": 145000,
+      "total_value": 3125000
+    },
+    "Logan Brown": {
+      "apy": 885000,
+      "years": 1,
+      "guaranteed": 0,
+      "total_value": 885000
+    },
+    "Tyler Owens": {
+      "apy": 950000,
+      "years": 3,
+      "guaranteed": 245000,
+      "total_value": 2850000
+    },
+    "Laekin Vakalahi": {
+      "apy": 885000,
+      "years": 1,
+      "guaranteed": 0,
+      "total_value": 885000
+    },
+    "Dante Trader Jr.": {
+      "apy": 1153696,
+      "years": 4,
+      "guaranteed": 0,
+      "total_value": 4614784
+    },
+    "Mitchell Trubisky": {
+      "apy": 5250000,
+      "years": 2,
+      "guaranteed": 6825000,
+      "total_value": 10500000
+    },
+    "Chase Roberts": {
+      "apy": 1040000,
+      "years": 3,
+      "guaranteed": 267500,
+      "total_value": 3120000
+    },
+    "Drew Allar": {
+      "ktc": 153,
+      "ktc_rank": 318,
+      "apy": 1775852,
+      "years": 4,
+      "guaranteed": 0,
+      "total_value": 7103408
+    },
+    "Lance Mason": {
+      "apy": 1040000,
+      "years": 3,
+      "guaranteed": 20000,
+      "total_value": 3120000
+    },
+    "Tyler Nubin": {
+      "apy": 2044180,
+      "years": 4,
+      "guaranteed": 5935968,
+      "total_value": 8176718
+    },
+    "Xavier Hill": {
+      "apy": 1035000,
+      "years": 3,
+      "guaranteed": 5000,
+      "total_value": 3105000
+    },
+    "Andrew Vorhees": {
+      "apy": 985528,
+      "years": 4,
+      "guaranteed": 102112,
+      "total_value": 3942112
+    },
+    "Ephesians Prysock": {
+      "apy": 1292259,
+      "years": 4,
+      "guaranteed": 789036,
+      "total_value": 5169036
+    },
+    "Chris Bell": {
+      "ktc": 3663,
+      "ktc_rank": 152,
+      "apy": 1692774,
+      "years": 4,
+      "guaranteed": 1384432,
+      "total_value": 6771094
+    },
+    "Josiah Trotter": {
+      "apy": 2725898,
+      "years": 4,
+      "guaranteed": 10903592,
+      "total_value": 10903592
+    },
+    "Jaden Keller": {
+      "apy": 1033333,
+      "years": 3,
+      "guaranteed": 0,
+      "total_value": 3100000
+    },
+    "Laquon Treadwell": {
+      "apy": 1487500,
+      "years": 1,
+      "guaranteed": 437500,
+      "total_value": 1487500
+    },
+    "Carter Warren": {
+      "apy": 1075000,
+      "years": 1,
+      "guaranteed": 0,
+      "total_value": 1075000
+    },
+    "R.J. Mickens": {
+      "apy": 1093570,
+      "years": 4,
+      "guaranteed": 174280,
+      "total_value": 4374280
+    },
+    "Ben Barten": {
+      "apy": 1034167,
+      "years": 3,
+      "guaranteed": 2500,
+      "total_value": 3102500
+    },
+    "Jackson Powers-Johnson": {
+      "apy": 2191941,
+      "years": 4,
+      "guaranteed": 6777157,
+      "total_value": 8767762
+    },
+    "Cameron Goode": {
+      "apy": 1340000,
+      "years": 1,
+      "guaranteed": 50000,
+      "total_value": 1340000
+    },
+    "Malik Muhammad": {
+      "apy": 1370695,
+      "years": 4,
+      "guaranteed": 1102780,
+      "total_value": 5482780
+    },
+    "Corliss Waitman": {
+      "apy": 1290000,
+      "years": 1,
+      "guaranteed": 475000,
+      "total_value": 1290000
+    },
+    "D.J. Ivey": {
+      "apy": 980164,
+      "years": 4,
+      "guaranteed": 80656,
+      "total_value": 3920656
+    },
+    "Teven Jenkins": {
+      "apy": 4000000,
+      "years": 1,
+      "guaranteed": 3960000,
+      "total_value": 4000000
+    },
+    "Tyler Conklin": {
+      "apy": 1300000,
+      "years": 1,
+      "guaranteed": 0,
+      "total_value": 1300000
+    },
+    "Michael Woods": {
+      "apy": 1075000,
+      "years": 1,
+      "guaranteed": 0,
+      "total_value": 1075000
+    },
+    "Damon Payne Jr.": {
+      "apy": 1035000,
+      "years": 3,
+      "guaranteed": 80000,
+      "total_value": 3105000
+    },
+    "Daylan Carnell": {
+      "apy": 1035000,
+      "years": 3,
+      "guaranteed": 5000,
+      "total_value": 3105000
+    },
+    "Khalil Shakir": {
+      "ktc": 3640,
+      "ktc_rank": 160,
+      "apy": 13250000,
+      "years": 4,
+      "guaranteed": 18100000,
+      "total_value": 53000000
+    },
+    "Dallas Goedert": {
+      "ktc": 3160,
+      "ktc_rank": 201,
+      "apy": 7000000,
+      "years": 1,
+      "guaranteed": 7000000,
+      "total_value": 7000000
+    },
+    "Nathan Shepherd": {
+      "apy": 4260000,
+      "years": 2,
+      "guaranteed": 4551000,
+      "total_value": 8520000
+    },
+    "Damarion Williams": {
+      "apy": 1075000,
+      "years": 1,
+      "guaranteed": 0,
+      "total_value": 1075000
+    },
+    "Malcolm Koonce": {
+      "apy": 11010000,
+      "years": 1,
+      "guaranteed": 10500000,
+      "total_value": 11010000
+    },
+    "Joshua Uche": {
+      "apy": 1402500,
+      "years": 1,
+      "guaranteed": 1262500,
+      "total_value": 1402500
+    },
+    "Desmond Reid": {
+      "apy": 1038333,
+      "years": 3,
+      "guaranteed": 15000,
+      "total_value": 3115000
+    },
+    "Ashton Jeanty": {
+      "ktc": 7939,
+      "ktc_rank": 14,
+      "apy": 8973953,
+      "years": 4,
+      "guaranteed": 35895812,
+      "total_value": 35895812
+    },
+    "Jordan Stout": {
+      "apy": 4100000,
+      "years": 3,
+      "guaranteed": 6320000,
+      "total_value": 12300000
+    },
+    "Torricelli Simpkins III": {
+      "apy": 996667,
+      "years": 3,
+      "guaranteed": 259000,
+      "total_value": 2990000
+    },
+    "Morgan Cox": {
+      "apy": 1487500,
+      "years": 1,
+      "guaranteed": 1262500,
+      "total_value": 1487500
+    },
+    "Bryce Oliver": {
+      "apy": 1075000,
+      "years": 1,
+      "guaranteed": 0,
+      "total_value": 1075000
+    },
+    "Dorance Armstrong Jr.": {
+      "apy": 11000000,
+      "years": 3,
+      "guaranteed": 16125000,
+      "total_value": 33000000
+    },
+    "Jaden Davis": {
+      "apy": 1005000,
+      "years": 1,
+      "guaranteed": 0,
+      "total_value": 1005000
+    },
+    "Hogan Hatten": {
+      "apy": 943667,
+      "years": 3,
+      "guaranteed": 1000,
+      "total_value": 2831000
+    },
+    "Demani Richardson": {
+      "apy": 1075000,
+      "years": 1,
+      "guaranteed": 0,
+      "total_value": 1075000
+    },
+    "J.J. Roberts": {
+      "apy": 998333,
+      "years": 3,
+      "guaranteed": 300000,
+      "total_value": 2995000
+    },
+    "Tarheeb Still": {
+      "apy": 1098930,
+      "years": 4,
+      "guaranteed": 375720,
+      "total_value": 4395720
+    },
+    "Kindle Vildor": {
+      "apy": 1402500,
+      "years": 1,
+      "guaranteed": 437500,
+      "total_value": 1402500
+    },
+    "Zion Washington": {
+      "apy": 1035000,
+      "years": 3,
+      "guaranteed": 5000,
+      "total_value": 3105000
+    },
+    "Ryan Schernecke": {
+      "apy": 1045000,
+      "years": 3,
+      "guaranteed": 282500,
+      "total_value": 3135000
+    },
+    "Hjalte Froholdt": {
+      "apy": 6000000,
+      "years": 2,
+      "guaranteed": 7250000,
+      "total_value": 12000000
+    },
+    "Kelee Ringo": {
+      "apy": 1165232,
+      "years": 4,
+      "guaranteed": 820928,
+      "total_value": 4660928
+    },
+    "Kyle Dixon": {
+      "apy": 1039167,
+      "years": 3,
+      "guaranteed": 252500,
+      "total_value": 3117500
+    },
+    "Tyron Herring": {
+      "apy": 885000,
+      "years": 1,
+      "guaranteed": 0,
+      "total_value": 885000
+    },
+    "Bam Knight": {
+      "ktc": 1444,
+      "ktc_rank": 423
+    },
+    "Garrett Williams": {
+      "apy": 1408733,
+      "years": 4,
+      "guaranteed": 1098132,
+      "total_value": 5634930
+    },
+    "Kody Huisman": {
+      "apy": 1040000,
+      "years": 3,
+      "guaranteed": 45000,
+      "total_value": 3120000
+    },
+    "Sydney Brown": {
+      "apy": 1437277,
+      "years": 4,
+      "guaranteed": 1181168,
+      "total_value": 5749106
+    },
+    "Dareke Young": {
+      "apy": 1802000,
+      "years": 1,
+      "guaranteed": 800000,
+      "total_value": 1802000
+    },
+    "Joshua Simon": {
+      "apy": 885000,
+      "years": 1,
+      "guaranteed": 0,
+      "total_value": 885000
+    },
+    "Mitch Wishnowsky": {
+      "apy": 1475000,
+      "years": 1,
+      "guaranteed": 150000,
+      "total_value": 1475000
+    },
+    "Terrell Burgess": {
+      "apy": 1402500,
+      "years": 1,
+      "guaranteed": 25000,
+      "total_value": 1402500
+    },
+    "Dalton Tucker": {
+      "apy": 956667,
+      "years": 3,
+      "guaranteed": 240000,
+      "total_value": 2870000
+    },
+    "Tedarrell Slaton": {
+      "apy": 7050000,
+      "years": 2,
+      "guaranteed": 5000000,
+      "total_value": 14100000
+    },
+    "Trey Lance": {
+      "ktc": 621,
+      "ktc_rank": 411,
+      "apy": 2500000,
+      "years": 1,
+      "guaranteed": 2000000,
+      "total_value": 2500000
+    },
+    "Michael Pittman, Jr.": {
+      "apy": 17500000,
+      "years": 2,
+      "guaranteed": 24000000,
+      "total_value": 35000000
+    },
+    "Tershawn Wharton": {
+      "apy": 15016667,
+      "years": 3,
+      "guaranteed": 30250000,
+      "total_value": 45050000
+    },
+    "McKinnley Jackson": {
+      "apy": 1399078,
+      "years": 4,
+      "guaranteed": 890044,
+      "total_value": 5596312
+    },
+    "Kristian Welch": {
+      "apy": 1310000,
+      "years": 1,
+      "guaranteed": 10000,
+      "total_value": 1310000
+    },
+    "Kapena Gushiken": {
+      "apy": 1041667,
+      "years": 3,
+      "guaranteed": 272500,
+      "total_value": 3125000
+    },
+    "Ollie Gordon": {
+      "ktc": 2955,
+      "ktc_rank": 226
+    },
+    "Keyshawn James-Newby": {
+      "apy": 1125122,
+      "years": 4,
+      "guaranteed": 120488,
+      "total_value": 4500488
+    },
+    "Te'Cory Couch": {
+      "apy": 969750,
+      "years": 2,
+      "guaranteed": 4500,
+      "total_value": 1939500
+    },
+    "Malachi Corley": {
+      "ktc": 1435,
+      "ktc_rank": 390,
+      "apy": 1075000,
+      "years": 1,
+      "guaranteed": 0,
+      "total_value": 1075000
+    },
+    "Andrew Ogletree": {
+      "apy": 2250000,
+      "years": 1,
+      "guaranteed": 1500000,
+      "total_value": 2250000
+    },
+    "Denzel Burke": {
+      "apy": 1130054,
+      "years": 4,
+      "guaranteed": 320216,
+      "total_value": 4520216
+    },
+    "Howard Cross III": {
+      "apy": 1005000,
+      "years": 1,
+      "guaranteed": 0,
+      "total_value": 1005000
+    },
+    "Charles Cross": {
+      "apy": 26100000,
+      "years": 4,
+      "guaranteed": 43060000,
+      "total_value": 104400000
+    },
+    "Aeneas Peebles": {
+      "apy": 1093570,
+      "years": 4,
+      "guaranteed": 174280,
+      "total_value": 4374280
+    },
+    "Jakobie Keeney-James": {
+      "apy": 922500,
+      "years": 2,
+      "guaranteed": 0,
+      "total_value": 1845000
+    },
+    "Walter Nolen": {
+      "apy": 4841888,
+      "years": 4,
+      "guaranteed": 19367550,
+      "total_value": 19367550
+    },
+    "Trey Pipkins": {
+      "apy": 5000000,
+      "years": 2,
+      "guaranteed": 4575000,
+      "total_value": 10000000
+    },
+    "Connor Heyward": {
+      "apy": 2250000,
+      "years": 2,
+      "guaranteed": 2000000,
+      "total_value": 4500000
+    },
+    "Jeremiyah Love": {
+      "ktc": 7906,
+      "ktc_rank": 15,
+      "apy": 13255704,
+      "years": 4,
+      "guaranteed": 53022816,
+      "total_value": 53022816
+    },
+    "Ikem Ekwonu": {
+      "apy": 6892013,
+      "years": 4,
+      "guaranteed": 27568050,
+      "total_value": 27568050
+    },
+    "Matthew Bergeron": {
+      "apy": 2244621,
+      "years": 4,
+      "guaranteed": 7014143,
+      "total_value": 8978482
+    },
+    "E.J. Jenkins": {
+      "apy": 1082667,
+      "years": 2,
+      "guaranteed": 40333,
+      "total_value": 2165333
+    },
+    "Jared Goff": {
+      "ktc": 3836,
+      "ktc_rank": 79,
+      "apy": 53000000,
+      "years": 4,
+      "guaranteed": 113611832,
+      "total_value": 212000000
+    },
+    "Kirk Cousins": {
+      "ktc": 1160,
+      "ktc_rank": 285,
+      "apy": 11300000,
+      "years": 1,
+      "guaranteed": 11300000,
+      "total_value": 11300000
+    },
+    "Jonathan Jones": {
+      "apy": 2000000,
+      "years": 1,
+      "guaranteed": 2000000,
+      "total_value": 2000000
+    },
+    "Thomas Incoom": {
+      "apy": 2000000,
+      "years": 1,
+      "guaranteed": 1100000,
+      "total_value": 2000000
+    },
+    "Myles Murphy": {
+      "apy": 3146814,
+      "years": 4,
+      "guaranteed": 12587256,
+      "total_value": 12587256
+    },
+    "Tatum Bethune": {
+      "apy": 1025452,
+      "years": 4,
+      "guaranteed": 81808,
+      "total_value": 4101808
+    },
+    "Adam Trautman": {
+      "apy": 5666667,
+      "years": 3,
+      "guaranteed": 9500000,
+      "total_value": 17000000
+    },
+    "Jonathan Garvin": {
+      "apy": 1145000,
+      "years": 1,
+      "guaranteed": 0,
+      "total_value": 1145000
+    },
+    "Kelvin Banks Jr.": {
+      "apy": 6932812,
+      "years": 4,
+      "guaranteed": 27731246,
+      "total_value": 27731246
+    },
+    "Tyler Loop": {
+      "apy": 1111193,
+      "years": 4,
+      "guaranteed": 244772,
+      "total_value": 4444772
+    },
+    "Kingsley Jonathan": {
+      "apy": 1087500,
+      "years": 2,
+      "guaranteed": 0,
+      "total_value": 2175000
+    },
+    "Melvin Smith": {
+      "apy": 922500,
+      "years": 2,
+      "guaranteed": 0,
+      "total_value": 1845000
+    },
+    "Coby Bryant": {
+      "apy": 13333333,
+      "years": 3,
+      "guaranteed": 25750000,
+      "total_value": 40000000
+    },
+    "Tyre Phillips": {
+      "apy": 1215000,
+      "years": 1,
+      "guaranteed": 0,
+      "total_value": 1215000
+    },
+    "Dontae McMillan": {
+      "apy": 1035833,
+      "years": 3,
+      "guaranteed": 7500,
+      "total_value": 3107500
+    },
+    "Dan Moore Jr.": {
+      "apy": 20500000,
+      "years": 4,
+      "guaranteed": 42510000,
+      "total_value": 82000000
+    },
+    "Tristan Leigh": {
+      "apy": 1038333,
+      "years": 3,
+      "guaranteed": 262500,
+      "total_value": 3115000
+    },
+    "Omari Kelly": {
+      "apy": 1036667,
+      "years": 3,
+      "guaranteed": 135000,
+      "total_value": 3110000
+    },
+    "Matt Dickerson": {
+      "apy": 1450000,
+      "years": 1,
+      "guaranteed": 100000,
+      "total_value": 1450000
+    },
+    "Isiah King": {
+      "apy": 1035000,
+      "years": 3,
+      "guaranteed": 5000,
+      "total_value": 3105000
+    },
+    "Luke Wysong": {
+      "apy": 1036667,
+      "years": 3,
+      "guaranteed": 60000,
+      "total_value": 3110000
+    },
+    "Mitchell Tinsley": {
+      "apy": 1075000,
+      "years": 1,
+      "guaranteed": 0,
+      "total_value": 1075000
+    },
+    "Bo Richter": {
+      "apy": 1075000,
+      "years": 1,
+      "guaranteed": 0,
+      "total_value": 1075000
+    },
+    "Anthony Nelson": {
+      "apy": 5000000,
+      "years": 2,
+      "guaranteed": 5500000,
+      "total_value": 10000000
+    },
+    "Brashard Smith": {
+      "ktc": 2349,
+      "ktc_rank": 299,
+      "apy": 1083369,
+      "years": 4,
+      "guaranteed": 133476,
+      "total_value": 4333476
+    },
+    "T.J. Hall": {
+      "apy": 1139297,
+      "years": 4,
+      "guaranteed": 177188,
+      "total_value": 4557188
+    },
+    "Marquise Brown": {
+      "ktc": 2099,
+      "ktc_rank": 320,
+      "apy": 5000000,
+      "years": 1,
+      "guaranteed": 5000000,
+      "total_value": 5000000
+    },
+    "Dillon Radunz": {
+      "apy": 3500000,
+      "years": 2,
+      "guaranteed": 4200000,
+      "total_value": 7000000
+    },
+    "Jake Bobo": {
+      "ktc": 1332,
+      "ktc_rank": 420,
+      "apy": 2750000,
+      "years": 2,
+      "guaranteed": 4500000,
+      "total_value": 5500000
+    },
+    "Carlos Allen Jr.": {
+      "apy": 1036667,
+      "years": 3,
+      "guaranteed": 133750,
+      "total_value": 3110000
+    },
+    "Josh Metellus": {
+      "apy": 12000000,
+      "years": 3,
+      "guaranteed": 14605000,
+      "total_value": 36000000
+    },
+    "Alex Anzalone": {
+      "apy": 8500000,
+      "years": 2,
+      "guaranteed": 12000000,
+      "total_value": 17000000
+    },
+    "Jimmy Horn": {
+      "ktc": 1897,
+      "ktc_rank": 342
+    },
+    "Xavier McKinney": {
+      "apy": 16750000,
+      "years": 4,
+      "guaranteed": 23000000,
+      "total_value": 67000000
+    },
+    "Jalen Huskey": {
+      "apy": 1673475,
+      "years": 4,
+      "guaranteed": 1328292,
+      "total_value": 6693900
+    },
+    "Joe Burrow": {
+      "ktc": 5731,
+      "ktc_rank": 18,
+      "apy": 55000000,
+      "years": 5,
+      "guaranteed": 146510000,
+      "total_value": 275000000
+    },
+    "Jason Marshall Jr.": {
+      "apy": 1156323,
+      "years": 4,
+      "guaranteed": 425292,
+      "total_value": 4625292
+    },
+    "Lamar Jackson": {
+      "ktc": 6261,
+      "ktc_rank": 13,
+      "apy": 52000000,
+      "years": 5,
+      "guaranteed": 135000000,
+      "total_value": 260000000
+    },
+    "Maason Smith": {
+      "apy": 2004650,
+      "years": 4,
+      "guaranteed": 5703444,
+      "total_value": 8018600
+    },
+    "A.J. Arcuri": {
+      "apy": 1062500,
+      "years": 2,
+      "guaranteed": 0,
+      "total_value": 2125000
+    },
+    "Jay Toia": {
+      "apy": 1088279,
+      "years": 4,
+      "guaranteed": 153116,
+      "total_value": 4353116
+    },
+    "Jackson Meeks": {
+      "apy": 885000,
+      "years": 1,
+      "guaranteed": 0,
+      "total_value": 885000
+    },
+    "Zak Zinter": {
+      "apy": 1433685,
+      "years": 4,
+      "guaranteed": 990720,
+      "total_value": 5734740
+    },
+    "Nick Dawkins": {
+      "apy": 1036667,
+      "years": 3,
+      "guaranteed": 10000,
+      "total_value": 3110000
+    },
+    "David Njoku": {
+      "ktc": 2977,
+      "ktc_rank": 215,
+      "apy": 3000000,
+      "years": 1,
+      "guaranteed": 850000,
+      "total_value": 3000000
+    },
+    "Brandon Dorlus": {
+      "apy": 1210599,
+      "years": 4,
+      "guaranteed": 822396,
+      "total_value": 4842396
+    },
+    "Ahmed Hassanein": {
+      "apy": 985000,
+      "years": 1,
+      "guaranteed": 25000,
+      "total_value": 985000
+    },
+    "Arvell Reese": {
+      "apy": 11957766,
+      "years": 4,
+      "guaranteed": 47831062,
+      "total_value": 47831062
+    },
+    "Akheem Mesidor": {
+      "apy": 5114098,
+      "years": 4,
+      "guaranteed": 0,
+      "total_value": 20456392
+    },
+    "Zane Durant": {
+      "apy": 1189869,
+      "years": 4,
+      "guaranteed": 379476,
+      "total_value": 4759476
+    },
+    "Luke Altmyer": {
+      "apy": 1036667,
+      "years": 3,
+      "guaranteed": 257500,
+      "total_value": 3110000
+    },
+    "Jaylin Noel": {
+      "ktc": 3404,
+      "ktc_rank": 183,
+      "apy": 1616714,
+      "years": 4,
+      "guaranteed": 1343168,
+      "total_value": 6466856
+    },
+    "Zane Gonzalez": {
+      "apy": 1487500,
+      "years": 1,
+      "guaranteed": 100000,
+      "total_value": 1487500
+    },
+    "Zach Ertz": {
+      "ktc": 1240,
+      "ktc_rank": 429
+    },
+    "Javon Kinlaw": {
+      "apy": 15000000,
+      "years": 3,
+      "guaranteed": 30000000,
+      "total_value": 45000000
+    },
+    "Terence Steele": {
+      "apy": 11000000,
+      "years": 3,
+      "guaranteed": 10500000,
+      "total_value": 33000000
+    },
+    "Jayden Williams": {
+      "apy": 1140363,
+      "years": 4,
+      "guaranteed": 181452,
+      "total_value": 4561452
+    },
+    "Josh Cameron": {
+      "apy": 1167518,
+      "years": 4,
+      "guaranteed": 290072,
+      "total_value": 4670072
+    },
+    "Zyon McCollum": {
+      "apy": 16000000,
+      "years": 3,
+      "guaranteed": 20000000,
+      "total_value": 48000000
+    },
+    "Keion White": {
+      "apy": 1947543,
+      "years": 4,
+      "guaranteed": 5321683,
+      "total_value": 7790170
+    },
+    "Jared Bartlett": {
+      "apy": 885000,
+      "years": 1,
+      "guaranteed": 0,
+      "total_value": 885000
+    },
+    "Bud Dupree": {
+      "apy": 4005000,
+      "years": 1,
+      "guaranteed": 2495000,
+      "total_value": 4005000
+    },
+    "Easton Stick": {
+      "apy": 1300000,
+      "years": 1,
+      "guaranteed": 0,
+      "total_value": 1300000
+    },
+    "Kendre Miller": {
+      "ktc": 2316,
+      "ktc_rank": 300,
+      "apy": 1413578,
+      "years": 4,
+      "guaranteed": 1112228,
+      "total_value": 5654312
+    },
+    "Spencer Anderson": {
+      "apy": 979446,
+      "years": 4,
+      "guaranteed": 77784,
+      "total_value": 3917784
+    },
+    "Jahan Dotson": {
+      "ktc": 2036,
+      "ktc_rank": 325,
+      "apy": 7500000,
+      "years": 2,
+      "guaranteed": 10000000,
+      "total_value": 15000000
+    },
+    "Kenneth Harris": {
+      "apy": 1035833,
+      "years": 3,
+      "guaranteed": 7500,
+      "total_value": 3107500
+    },
+    "Jerome Carvin": {
+      "apy": 885000,
+      "years": 1,
+      "guaranteed": 0,
+      "total_value": 885000
+    },
+    "Azeez Al-Shaair": {
+      "apy": 18000000,
+      "years": 3,
+      "guaranteed": 38750000,
+      "total_value": 54000000
+    },
+    "Eric Stokes": {
+      "apy": 10000000,
+      "years": 3,
+      "guaranteed": 20000000,
+      "total_value": 30000000
+    },
+    "Kam Dewberry": {
+      "apy": 1038333,
+      "years": 3,
+      "guaranteed": 262500,
+      "total_value": 3115000
+    },
+    "Tyson Bagent": {
+      "ktc": 279,
+      "ktc_rank": 357,
+      "apy": 5000000,
+      "years": 2,
+      "guaranteed": 2530000,
+      "total_value": 10000000
+    },
+    "Xavier Smith": {
+      "apy": 1075000,
+      "years": 1,
+      "guaranteed": 0,
+      "total_value": 1075000
+    },
+    "Mory Bamba": {
+      "apy": 1035833,
+      "years": 3,
+      "guaranteed": 21250,
+      "total_value": 3107500
+    },
+    "Da'Veawn Armstead": {
+      "apy": 1034500,
+      "years": 3,
+      "guaranteed": 3500,
+      "total_value": 3103500
+    },
+    "Joe Milton": {
+      "ktc": 1448,
+      "ktc_rank": 313
+    },
+    "Josiah Green": {
+      "apy": 1036667,
+      "years": 3,
+      "guaranteed": 40000,
+      "total_value": 3110000
+    },
+    "Larry Worth III": {
+      "apy": 1033333,
+      "years": 3,
+      "guaranteed": 0,
+      "total_value": 3100000
+    },
+    "Liam Anderson": {
+      "apy": 1005000,
+      "years": 1,
+      "guaranteed": 0,
+      "total_value": 1005000
+    },
+    "Noah Fant": {
+      "ktc": 1725,
+      "ktc_rank": 365,
+      "apy": 4375000,
+      "years": 2,
+      "guaranteed": 4500000,
+      "total_value": 8750000
+    },
+    "Larrell Murchison": {
+      "apy": 1215000,
+      "years": 1,
+      "guaranteed": 330300,
+      "total_value": 1215000
+    },
+    "Jayden Reed": {
+      "ktc": 4372,
+      "ktc_rank": 118,
+      "apy": 16750000,
+      "years": 3,
+      "guaranteed": 20000000,
+      "total_value": 50250000
+    },
+    "Roquan Smith": {
+      "apy": 20000000,
+      "years": 5,
+      "guaranteed": 45000000,
+      "total_value": 100000000
+    },
+    "Casey Washington": {
+      "apy": 1053399,
+      "years": 4,
+      "guaranteed": 193596,
+      "total_value": 4213596
+    },
+    "Joe Milton III": {
+      "apy": 1050829,
+      "years": 4,
+      "guaranteed": 183316,
+      "total_value": 4203316
+    },
+    "Joey Aguilar": {
+      "apy": 1033333,
+      "years": 3,
+      "guaranteed": 247500,
+      "total_value": 3100000
+    },
+    "C.J. Williams": {
+      "apy": 1162070,
+      "years": 4,
+      "guaranteed": 268280,
+      "total_value": 4648280
+    },
+    "D.J. Moore": {
+      "ktc": 4601,
+      "ktc_rank": 104,
+      "apy": 27500000,
+      "years": 4,
+      "guaranteed": 43650000,
+      "total_value": 110000000
+    },
+    "Robert Longerbeam": {
+      "apy": 1093570,
+      "years": 4,
+      "guaranteed": 174280,
+      "total_value": 4374280
+    },
+    "Sean Tucker": {
+      "ktc": 2760,
+      "ktc_rank": 246,
+      "apy": 3520000,
+      "years": 1,
+      "guaranteed": 0,
+      "total_value": 3520000
+    },
+    "Kendrick Bourne": {
+      "ktc": 1665,
+      "ktc_rank": 363,
+      "apy": 5000000,
+      "years": 2,
+      "guaranteed": 6500000,
+      "total_value": 10000000
+    },
+    "Jamree Kromah": {
+      "apy": 1005000,
+      "years": 1,
+      "guaranteed": 0,
+      "total_value": 1005000
+    },
+    "JuJu Smith-Schuster": {
+      "apy": 1300000,
+      "years": 1,
+      "guaranteed": 0,
+      "total_value": 1300000
+    },
+    "Derrick Moore": {
+      "apy": 2856737,
+      "years": 4,
+      "guaranteed": 11426946,
+      "total_value": 11426946
+    },
+    "Eli Cox": {
+      "apy": 885000,
+      "years": 1,
+      "guaranteed": 0,
+      "total_value": 885000
+    },
+    "Demetrius Knight": {
+      "apy": 2253125,
+      "years": 4,
+      "guaranteed": 7114211,
+      "total_value": 9012498
+    },
+    "Luke Rhodes": {
+      "apy": 1616250,
+      "years": 4,
+      "guaranteed": 2500000,
+      "total_value": 6465000
+    },
+    "D.J. Herman": {
+      "apy": 1033333,
+      "years": 3,
+      "guaranteed": 0,
+      "total_value": 3100000
+    },
+    "Travon Walker": {
+      "apy": 27500000,
+      "years": 4,
+      "guaranteed": 50000000,
+      "total_value": 110000000
+    },
+    "Robert Jones": {
+      "apy": 1750000,
+      "years": 1,
+      "guaranteed": 1640000,
+      "total_value": 1750000
+    },
+    "Treydan Stukes": {
+      "apy": 3149497,
+      "years": 4,
+      "guaranteed": 12597988,
+      "total_value": 12597988
+    },
+    "Chase Wilson": {
+      "apy": 1033333,
+      "years": 3,
+      "guaranteed": 0,
+      "total_value": 3100000
+    },
+    "Alontae Taylor": {
+      "apy": 19333333,
+      "years": 3,
+      "guaranteed": 42000000,
+      "total_value": 58000000
+    },
+    "Trevor Keegan": {
+      "apy": 1068569,
+      "years": 4,
+      "guaranteed": 254276,
+      "total_value": 4274276
+    },
+    "Michael Hoecht": {
+      "apy": 7000000,
+      "years": 3,
+      "guaranteed": 12430000,
+      "total_value": 21000000
+    },
+    "Dion Wilson, Jr.": {
+      "apy": 1035000,
+      "years": 3,
+      "guaranteed": 5000,
+      "total_value": 3105000
+    },
+    "Xavier Holmes": {
+      "apy": 1033333,
+      "years": 3,
+      "guaranteed": 0,
+      "total_value": 3100000
+    },
+    "Gunnar Helm": {
+      "ktc": 3218,
+      "ktc_rank": 190,
+      "apy": 1293227,
+      "years": 4,
+      "guaranteed": 972908,
+      "total_value": 5172908
+    },
+    "Feleipe Franks": {
+      "apy": 1265000,
+      "years": 1,
+      "guaranteed": 0,
+      "total_value": 1265000
+    },
+    "Cairo Santos": {
+      "apy": 3900000,
+      "years": 4,
+      "guaranteed": 3383333,
+      "total_value": 15600000
+    },
+    "Chandler Zavala": {
+      "apy": 1152934,
+      "years": 4,
+      "guaranteed": 771736,
+      "total_value": 4611736
+    },
+    "Keidron Smith": {
+      "apy": 1017500,
+      "years": 2,
+      "guaranteed": 0,
+      "total_value": 2035000
+    },
+    "David Bell": {
+      "ktc": 1169,
+      "ktc_rank": 435
+    },
+    "T.J. Edwards": {
+      "apy": 10000000,
+      "years": 2,
+      "guaranteed": 16650000,
+      "total_value": 20000000
+    },
+    "Layden Robinson": {
+      "apy": 1005000,
+      "years": 1,
+      "guaranteed": 0,
+      "total_value": 1005000
+    },
+    "Wyatt Milum": {
+      "apy": 1569326,
+      "years": 4,
+      "guaranteed": 1205312,
+      "total_value": 6277304
+    },
+    "Bishop Fitzgerald": {
+      "apy": 1040000,
+      "years": 3,
+      "guaranteed": 267500,
+      "total_value": 3120000
+    },
+    "Calvin Ridley": {
+      "ktc": 2306,
+      "ktc_rank": 289,
+      "apy": 17625000,
+      "years": 2,
+      "guaranteed": 12490000,
+      "total_value": 35250000
+    },
+    "Jessie Bates III": {
+      "apy": 16005000,
+      "years": 4,
+      "guaranteed": 36000000,
+      "total_value": 64020000
+    },
+    "Rodney Shelley": {
+      "apy": 1035000,
+      "years": 3,
+      "guaranteed": 5000,
+      "total_value": 3105000
+    },
+    "Caullin Lacy": {
+      "apy": 1038333,
+      "years": 3,
+      "guaranteed": 262500,
+      "total_value": 3115000
+    },
+    "Kiran Amegadjie": {
+      "apy": 1478581,
+      "years": 4,
+      "guaranteed": 1121324,
+      "total_value": 5914322
+    },
+    "Charles Woods": {
+      "apy": 1017500,
+      "years": 2,
+      "guaranteed": 0,
+      "total_value": 2035000
+    },
+    "Elijah Moore": {
+      "ktc": 1443,
+      "ktc_rank": 397,
+      "apy": 1315000,
+      "years": 1,
+      "guaranteed": 0,
+      "total_value": 1315000
+    },
+    "James Ester": {
+      "apy": 885000,
+      "years": 1,
+      "guaranteed": 0,
+      "total_value": 885000
+    },
+    "Lorenzo Thompson": {
+      "apy": 885000,
+      "years": 1,
+      "guaranteed": 0,
+      "total_value": 885000
+    },
+    "Sai'vion Jones": {
+      "apy": 1540296,
+      "years": 4,
+      "guaranteed": 1120860,
+      "total_value": 6161184
+    },
+    "Kilian Zierer": {
+      "apy": 885000,
+      "years": 1,
+      "guaranteed": 0,
+      "total_value": 885000
+    },
+    "Sam Hecht": {
+      "apy": 1233504,
+      "years": 4,
+      "guaranteed": 554016,
+      "total_value": 4934016
+    },
+    "Cameron Lewis": {
+      "apy": 3000000,
+      "years": 2,
+      "guaranteed": 2750000,
+      "total_value": 6000000
+    },
+    "Ethan Driskell": {
+      "apy": 956667,
+      "years": 3,
+      "guaranteed": 265000,
+      "total_value": 2870000
+    },
+    "Malik Harrison": {
+      "apy": 5000000,
+      "years": 2,
+      "guaranteed": 4080000,
+      "total_value": 10000000
+    },
+    "Alijah Huzzie": {
+      "apy": 947500,
+      "years": 2,
+      "guaranteed": 40000,
+      "total_value": 1895000
+    },
+    "Nick Bosa": {
+      "apy": 34000000,
+      "years": 5,
+      "guaranteed": 88000000,
+      "total_value": 170000000
+    },
+    "Nik Bonitto": {
+      "apy": 26500000,
+      "years": 4,
+      "guaranteed": 38346000,
+      "total_value": 106000000
+    },
+    "Chigoziem Okonkwo": {
+      "ktc": 3422,
+      "ktc_rank": 172,
+      "apy": 9000000,
+      "years": 3,
+      "guaranteed": 16700000,
+      "total_value": 27000000
+    },
+    "J.P. Richardson": {
+      "apy": 885000,
+      "years": 1,
+      "guaranteed": 0,
+      "total_value": 885000
+    },
+    "Kylen Granson": {
+      "apy": 1402500,
+      "years": 1,
+      "guaranteed": 625000,
+      "total_value": 1402500
+    },
+    "Jamal Hill": {
+      "apy": 1052348,
+      "years": 4,
+      "guaranteed": 189392,
+      "total_value": 4209392
+    },
+    "Courtney Jackson": {
+      "apy": 885000,
+      "years": 1,
+      "guaranteed": 0,
+      "total_value": 885000
+    },
+    "Romeo Doubs": {
+      "ktc": 3982,
+      "ktc_rank": 143,
+      "apy": 17000000,
+      "years": 4,
+      "guaranteed": 35000000,
+      "total_value": 68000000
+    },
+    "Will Anderson Jr.": {
+      "apy": 50000000,
+      "years": 3,
+      "guaranteed": 100063749,
+      "total_value": 150000000
+    },
+    "Darren Hall": {
+      "apy": 1215000,
+      "years": 1,
+      "guaranteed": 0,
+      "total_value": 1215000
+    },
+    "Dallen Bentley": {
+      "apy": 1125122,
+      "years": 4,
+      "guaranteed": 120488,
+      "total_value": 4500488
+    },
+    "Jayson Jones": {
+      "apy": 967500,
+      "years": 2,
+      "guaranteed": 0,
+      "total_value": 1935000
+    },
+    "Moro Ojomo": {
+      "apy": 979446,
+      "years": 4,
+      "guaranteed": 77784,
+      "total_value": 3917784
+    },
+    "Junior Tafuna": {
+      "apy": 885000,
+      "years": 1,
+      "guaranteed": 0,
+      "total_value": 885000
+    },
+    "DeWayne Carter": {
+      "apy": 1404512,
+      "years": 4,
+      "guaranteed": 905852,
+      "total_value": 5618048
+    },
+    "J.C. Davis": {
+      "apy": 1167230,
+      "years": 4,
+      "guaranteed": 288920,
+      "total_value": 4668920
+    },
+    "2027 Late 1st": {
+      "ktc": 5545,
+      "ktc_rank": 63
+    },
+    "George Karlaftis": {
+      "apy": 22000000,
+      "years": 4,
+      "guaranteed": 32000000,
+      "total_value": 88000000
+    },
+    "Dreyden Norwood": {
+      "apy": 1038333,
+      "years": 3,
+      "guaranteed": 15000,
+      "total_value": 3115000
+    },
+    "Quincy Riley": {
+      "apy": 1271809,
+      "years": 4,
+      "guaranteed": 887236,
+      "total_value": 5087236
+    },
+    "Owen Pappoe": {
+      "apy": 1021245,
+      "years": 4,
+      "guaranteed": 244980,
+      "total_value": 4084980
+    },
+    "Cody Barton": {
+      "apy": 7000000,
+      "years": 3,
+      "guaranteed": 13300000,
+      "total_value": 21000000
+    },
+    "Gavin Ortega": {
+      "apy": 1035833,
+      "years": 3,
+      "guaranteed": 142500,
+      "total_value": 3107500
+    },
+    "Joshua Weru": {
+      "apy": 1041667,
+      "years": 3,
+      "guaranteed": 272500,
+      "total_value": 3125000
+    },
+    "Seth McGowan": {
+      "ktc": 1164,
+      "ktc_rank": 449,
+      "apy": 1128727,
+      "years": 4,
+      "guaranteed": 134908,
+      "total_value": 4514908
+    },
+    "Cade Denhoff": {
+      "apy": 1040000,
+      "years": 3,
+      "guaranteed": 20000,
+      "total_value": 3120000
+    },
+    "Roy Lopez": {
+      "apy": 5250000,
+      "years": 2,
+      "guaranteed": 6000000,
+      "total_value": 10500000
+    },
+    "D.J. Wonnum": {
+      "apy": 3000000,
+      "years": 1,
+      "guaranteed": 2270000,
+      "total_value": 3000000
+    },
+    "Deone Walker": {
+      "apy": 1311763,
+      "years": 4,
+      "guaranteed": 1047052,
+      "total_value": 5247052
+    },
+    "Jaseem Reed": {
+      "apy": 885000,
+      "years": 1,
+      "guaranteed": 0,
+      "total_value": 885000
+    },
+    "Josh Hines-Allen": {
+      "apy": 28250000,
+      "years": 5,
+      "guaranteed": 76500000,
+      "total_value": 141250000
+    },
+    "Kyler Baugh": {
+      "apy": 885000,
+      "years": 1,
+      "guaranteed": 0,
+      "total_value": 885000
+    },
+    "Noah Sewell": {
+      "apy": 1041237,
+      "years": 4,
+      "guaranteed": 324948,
+      "total_value": 4164948
+    },
+    "Tyrek Funderburk": {
+      "apy": 1005000,
+      "years": 1,
+      "guaranteed": 0,
+      "total_value": 1005000
+    },
+    "Rigoberto Sanchez": {
+      "apy": 2500000,
+      "years": 3,
+      "guaranteed": 2500000,
+      "total_value": 7500000
+    },
+    "Calvin Throckmorton": {
+      "apy": 1215000,
+      "years": 1,
+      "guaranteed": 0,
+      "total_value": 1215000
+    },
+    "Ja'Kobi Lane": {
+      "ktc": 2865,
+      "ktc_rank": 223,
+      "apy": 1757270,
+      "years": 4,
+      "guaranteed": 1572056,
+      "total_value": 7029080
+    },
+    "Nyzier Fourqurean": {
+      "apy": 1036667,
+      "years": 3,
+      "guaranteed": 10000,
+      "total_value": 3110000
+    },
+    "Eddy Pineiro": {
+      "apy": 4250000,
+      "years": 4,
+      "guaranteed": 8000000,
+      "total_value": 17000000
+    },
+    "Joe Tryon-Shoyinka": {
+      "apy": 1402500,
+      "years": 1,
+      "guaranteed": 662500,
+      "total_value": 1402500
+    },
+    "Jaden Dugger": {
+      "apy": 1220837,
+      "years": 4,
+      "guaranteed": 503348,
+      "total_value": 4883348
+    },
+    "Andrew Thomas": {
+      "apy": 23500000,
+      "years": 5,
+      "guaranteed": 67000000,
+      "total_value": 117500000
+    },
+    "Kye Robichaux": {
+      "apy": 990000,
+      "years": 3,
+      "guaranteed": 50000,
+      "total_value": 2970000
+    },
+    "Rakeem Nunez-Roches": {
+      "apy": 1300000,
+      "years": 1,
+      "guaranteed": 300000,
+      "total_value": 1300000
+    },
+    "Kristian Williams": {
+      "apy": 885000,
+      "years": 1,
+      "guaranteed": 0,
+      "total_value": 885000
+    },
+    "Ayden Garnes": {
+      "apy": 1040000,
+      "years": 3,
+      "guaranteed": 120000,
+      "total_value": 3120000
+    },
+    "Justin Reid": {
+      "apy": 10500000,
+      "years": 3,
+      "guaranteed": 22250000,
+      "total_value": 31500000
+    },
+    "Treven Ma'ae": {
+      "apy": 885000,
+      "years": 1,
+      "guaranteed": 0,
+      "total_value": 885000
+    },
+    "2027 Mid 4th": {
+      "ktc": 2003,
+      "ktc_rank": 310
+    },
+    "Christian Gonzalez": {
+      "apy": 3775717,
+      "years": 4,
+      "guaranteed": 15102868,
+      "total_value": 15102868
+    },
+    "Marquez Valdes-Scantling": {
+      "apy": 1487500,
+      "years": 1,
+      "guaranteed": 187500,
+      "total_value": 1487500
+    },
+    "Kristian Fulton": {
+      "apy": 10000000,
+      "years": 2,
+      "guaranteed": 15000000,
+      "total_value": 20000000
+    },
+    "Isaac TeSlaa": {
+      "ktc": 3385,
+      "ktc_rank": 175,
+      "apy": 1666113,
+      "years": 4,
+      "guaranteed": 1486872,
+      "total_value": 6664452
+    },
+    "Brian O'Neill": {
+      "apy": 18500000,
+      "years": 5,
+      "guaranteed": 22576118,
+      "total_value": 92500000
+    },
+    "John Williams": {
+      "apy": 1075418,
+      "years": 4,
+      "guaranteed": 101672,
+      "total_value": 4301672
+    },
+    "Jordyn Tyson": {
+      "ktc": 6125,
+      "ktc_rank": 54,
+      "apy": 8122956,
+      "years": 4,
+      "guaranteed": 32491822,
+      "total_value": 32491822
+    },
+    "Joshua Gray": {
+      "apy": 885000,
+      "years": 1,
+      "guaranteed": 0,
+      "total_value": 885000
+    },
+    "Drew Shelton": {
+      "apy": 1393857,
+      "years": 4,
+      "guaranteed": 1195428,
+      "total_value": 5575428
+    },
+    "Bubba Thomas": {
+      "apy": 885000,
+      "years": 1,
+      "guaranteed": 0,
+      "total_value": 885000
+    },
+    "Nazir Stackhouse": {
+      "apy": 993333,
+      "years": 3,
+      "guaranteed": 165000,
+      "total_value": 2980000
+    },
+    "Daniel Whelan": {
+      "apy": 3100000,
+      "years": 2,
+      "guaranteed": 2100000,
+      "total_value": 6200000
+    },
+    "Lucas Krull": {
+      "apy": 1430000,
+      "years": 1,
+      "guaranteed": 100000,
+      "total_value": 1430000
+    },
+    "C.J. Hanson": {
+      "apy": 1017500,
+      "years": 2,
+      "guaranteed": 0,
+      "total_value": 2035000
+    },
+    "2028 Mid 4th": {
+      "ktc": 1732,
+      "ktc_rank": 339
+    },
+    "Will Kacmarek": {
+      "apy": 1712366,
+      "years": 4,
+      "guaranteed": 1441428,
+      "total_value": 6849462
+    },
+    "Jaylen Reed": {
+      "apy": 1110950,
+      "years": 4,
+      "guaranteed": 243800,
+      "total_value": 4443800
+    },
+    "Andrei Iosivas": {
+      "ktc": 2028,
+      "ktc_rank": 321,
+      "apy": 999848,
+      "years": 4,
+      "guaranteed": 159392,
+      "total_value": 3999392
+    },
+    "Hunter Wohler": {
+      "apy": 1082767,
+      "years": 4,
+      "guaranteed": 131068,
+      "total_value": 4331068
+    },
+    "A.J. Dillon": {
+      "apy": 1402500,
+      "years": 1,
+      "guaranteed": 100000,
+      "total_value": 1402500
+    },
+    "Bralen Trice": {
+      "apy": 1482435,
+      "years": 4,
+      "guaranteed": 1132536,
+      "total_value": 5929739
+    },
+    "Wil Lutz": {
+      "apy": 5366667,
+      "years": 3,
+      "guaranteed": 7711666,
+      "total_value": 16100000
+    },
+    "Elijah Sarratt": {
+      "ktc": 3389,
+      "ktc_rank": 169,
+      "apy": 1390905,
+      "years": 4,
+      "guaranteed": 1183620,
+      "total_value": 5563620
+    },
+    "Ben Mann": {
+      "apy": 1036667,
+      "years": 3,
+      "guaranteed": 10000,
+      "total_value": 3110000
+    },
+    "Cordale Flott": {
+      "apy": 15000000,
+      "years": 3,
+      "guaranteed": 32000000,
+      "total_value": 45000000
+    },
+    "Bijan Robinson": {
+      "ktc": 9999,
+      "ktc_rank": 2,
+      "apy": 5489636,
+      "years": 4,
+      "guaranteed": 21958544,
+      "total_value": 21958544
+    },
+    "Tyler Pezza": {
+      "apy": 1035833,
+      "years": 3,
+      "guaranteed": 7500,
+      "total_value": 3107500
+    },
+    "Natrone Brooks": {
+      "apy": 1075000,
+      "years": 1,
+      "guaranteed": 0,
+      "total_value": 1075000
+    },
+    "Kavontae Turpin": {
+      "apy": 4500000,
+      "years": 3,
+      "guaranteed": 5000000,
+      "total_value": 13500000
+    },
+    "Francis Mauigoa": {
+      "apy": 7739474,
+      "years": 4,
+      "guaranteed": 30957894,
+      "total_value": 30957894
+    },
+    "Johnny Walker Jr.": {
+      "apy": 995000,
+      "years": 3,
+      "guaranteed": 254000,
+      "total_value": 2985000
+    },
+    "Ben Powers": {
+      "apy": 13000000,
+      "years": 4,
+      "guaranteed": 27000000,
+      "total_value": 52000000
+    },
+    "Andrew Beck": {
+      "apy": 1487500,
+      "years": 1,
+      "guaranteed": 1262500,
+      "total_value": 1487500
+    },
+    "Ceyair Wright": {
+      "apy": 1038333,
+      "years": 3,
+      "guaranteed": 15000,
+      "total_value": 3115000
+    },
+    "K'Von Wallace": {
+      "apy": 1215000,
+      "years": 1,
+      "guaranteed": 0,
+      "total_value": 1215000
+    },
+    "Parker Washington": {
+      "ktc": 4511,
+      "ktc_rank": 111,
+      "apy": 1008066,
+      "years": 4,
+      "guaranteed": 192264,
+      "total_value": 4032264
+    },
+    "Cade Otton": {
+      "ktc": 2830,
+      "ktc_rank": 232,
+      "apy": 10000000,
+      "years": 3,
+      "guaranteed": 20000000,
+      "total_value": 30000000
+    },
+    "Xavier Gipson": {
+      "ktc": 985,
+      "ktc_rank": 462,
+      "apy": 1087500,
+      "years": 2,
+      "guaranteed": 0,
+      "total_value": 2175000
+    },
+    "Patrick Queen": {
+      "apy": 13666666,
+      "years": 3,
+      "guaranteed": 13840000,
+      "total_value": 41000000
+    },
+    "Will Levis": {
+      "ktc": 526,
+      "ktc_rank": 373,
+      "apy": 2385541,
+      "years": 4,
+      "guaranteed": 8730957,
+      "total_value": 9542162
+    },
+    "Bryan Bresee": {
+      "apy": 3065888,
+      "years": 4,
+      "guaranteed": 12263552,
+      "total_value": 12263552
+    },
+    "Tyler Batty": {
+      "apy": 996667,
+      "years": 3,
+      "guaranteed": 259000,
+      "total_value": 2990000
+    },
+    "2027 Late 4th": {
+      "ktc": 1919,
+      "ktc_rank": 317
+    },
+    "Brian Branch": {
+      "apy": 2005436,
+      "years": 4,
+      "guaranteed": 5623617,
+      "total_value": 8021742
+    },
+    "Kene Nwangwu": {
+      "apy": 2000000,
+      "years": 1,
+      "guaranteed": 1000000,
+      "total_value": 2000000
+    },
+    "Isaiah McGuire": {
+      "apy": 1137982,
+      "years": 4,
+      "guaranteed": 711928,
+      "total_value": 4551928
+    },
+    "Derrick Canteen": {
+      "apy": 885000,
+      "years": 1,
+      "guaranteed": 0,
+      "total_value": 885000
+    },
+    "Cameron Dicker": {
+      "apy": 5501000,
+      "years": 4,
+      "guaranteed": 8735000,
+      "total_value": 22004000
+    },
+    "Dorian Williams": {
+      "apy": 1345702,
+      "years": 4,
+      "guaranteed": 914768,
+      "total_value": 5382806
+    },
+    "Michael Jurgens": {
+      "apy": 1032185,
+      "years": 4,
+      "guaranteed": 108740,
+      "total_value": 4128740
+    },
+    "Chad Muma": {
+      "apy": 1170000,
+      "years": 2,
+      "guaranteed": 0,
+      "total_value": 2340000
+    },
+    "Jermod McCoy": {
+      "apy": 1421175,
+      "years": 4,
+      "guaranteed": 0,
+      "total_value": 5684700
+    },
+    "Leo Chenal": {
+      "apy": 8250000,
+      "years": 3,
+      "guaranteed": 12400000,
+      "total_value": 24750000
+    },
+    "Daxton Hill": {
+      "apy": 2916755,
+      "years": 4,
+      "guaranteed": 11667018,
+      "total_value": 11667018
+    },
+    "Konata Mumpfield": {
+      "ktc": 1695,
+      "ktc_rank": 370,
+      "apy": 1077134,
+      "years": 4,
+      "guaranteed": 108536,
+      "total_value": 4308536
+    },
+    "Charles Omenihu": {
+      "apy": 4000000,
+      "years": 1,
+      "guaranteed": 3300000,
+      "total_value": 4000000
+    },
+    "Israel Abanikanda": {
+      "ktc": 1146,
+      "ktc_rank": 439,
+      "apy": 1132500,
+      "years": 2,
+      "guaranteed": 0,
+      "total_value": 2265000
+    },
+    "Jerry Tillery": {
+      "apy": 1487500,
+      "years": 1,
+      "guaranteed": 937500,
+      "total_value": 1487500
+    },
+    "Keleki Latu": {
+      "apy": 988333,
+      "years": 3,
+      "guaranteed": 0,
+      "total_value": 2965000
+    },
+    "Nathaniel Watson": {
+      "apy": 1005000,
+      "years": 4,
+      "guaranteed": 0,
+      "total_value": 4020000
+    },
+    "Kyler Murray": {
+      "ktc": 3830,
+      "ktc_rank": 91,
+      "apy": 1300000,
+      "years": 1,
+      "guaranteed": 0,
+      "total_value": 1300000
+    },
+    "Skyler Bell": {
+      "ktc": 3032,
+      "ktc_rank": 206,
+      "apy": 1367941,
+      "years": 4,
+      "guaranteed": 1091764,
+      "total_value": 5471764
+    },
+    "Connor McGovern": {
+      "apy": 13100000,
+      "years": 4,
+      "guaranteed": 26200000,
+      "total_value": 52400000
+    },
+    "Adam Randall": {
+      "ktc": 1071,
+      "ktc_rank": 425,
+      "apy": 1189869,
+      "years": 4,
+      "guaranteed": 379476,
+      "total_value": 4759476
+    },
+    "Anthony Belton": {
+      "apy": 2004207,
+      "years": 4,
+      "guaranteed": 5848303,
+      "total_value": 8016826
+    },
+    "Sebastian Gutierrez": {
+      "apy": 1075000,
+      "years": 1,
+      "guaranteed": 0,
+      "total_value": 1075000
+    },
+    "Jalin Hyatt": {
+      "ktc": 1534,
+      "ktc_rank": 391,
+      "apy": 1406329,
+      "years": 4,
+      "guaranteed": 1091140,
+      "total_value": 5625316
+    },
+    "Paulson Adebo": {
+      "apy": 18000000,
+      "years": 3,
+      "guaranteed": 34750000,
+      "total_value": 54000000
+    },
+    "Martin Emerson": {
+      "apy": 1515000,
+      "years": 1,
+      "guaranteed": 650000,
+      "total_value": 1515000
+    },
+    "Deonte Banks": {
+      "apy": 3394851,
+      "years": 4,
+      "guaranteed": 13579404,
+      "total_value": 13579404
+    },
+    "Dion Dawkins": {
+      "apy": 20020000,
+      "years": 3,
+      "guaranteed": 30205000,
+      "total_value": 60060000
+    },
+    "Reggie Gilliam": {
+      "apy": 3600000,
+      "years": 3,
+      "guaranteed": 6000000,
+      "total_value": 10800000
+    },
+    "Foster Sarell": {
+      "apy": 1215000,
+      "years": 1,
+      "guaranteed": 0,
+      "total_value": 1215000
+    },
+    "Mason Reiger": {
+      "apy": 1041667,
+      "years": 3,
+      "guaranteed": 175000,
+      "total_value": 3125000
+    },
+    "Robert Tonyan": {
+      "apy": 1300000,
+      "years": 1,
+      "guaranteed": 0,
+      "total_value": 1300000
+    },
+    "Ke'Shawn Williams": {
+      "apy": 922500,
+      "years": 2,
+      "guaranteed": 0,
+      "total_value": 1845000
+    },
+    "Anton Harrison": {
+      "apy": 3299631,
+      "years": 4,
+      "guaranteed": 13198522,
+      "total_value": 13198522
+    },
+    "Tyree Wilson": {
+      "apy": 6251375,
+      "years": 4,
+      "guaranteed": 25005500,
+      "total_value": 25005500
+    },
+    "Derick Hall": {
+      "apy": 14000000,
+      "years": 3,
+      "guaranteed": 15270000,
+      "total_value": 42000000
+    },
+    "Layne Pryor": {
+      "apy": 1033333,
+      "years": 3,
+      "guaranteed": 0,
+      "total_value": 3100000
+    },
+    "Reuben Lowery": {
+      "apy": 988333,
+      "years": 3,
+      "guaranteed": 0,
+      "total_value": 2965000
+    },
+    "Lorenz Metz": {
+      "apy": 885000,
+      "years": 1,
+      "guaranteed": 0,
+      "total_value": 885000
+    },
+    "Brett Toth": {
+      "apy": 2500000,
+      "years": 1,
+      "guaranteed": 2215000,
+      "total_value": 2500000
+    },
+    "Elijah Wilkinson": {
+      "apy": 3125000,
+      "years": 2,
+      "guaranteed": 3080000,
+      "total_value": 6250000
+    },
+    "Bryan Cook": {
+      "apy": 13416667,
+      "years": 3,
+      "guaranteed": 14000000,
+      "total_value": 40250000
+    },
+    "Michael Dickson": {
+      "apy": 4050000,
+      "years": 4,
+      "guaranteed": 7500000,
+      "total_value": 16200000
+    },
+    "Austin Deculus": {
+      "apy": 1200000,
+      "years": 1,
+      "guaranteed": 25000,
+      "total_value": 1200000
+    },
+    "Alex Huntley": {
+      "apy": 967500,
+      "years": 2,
+      "guaranteed": 0,
+      "total_value": 1935000
+    },
+    "Luke Schoonmaker": {
+      "ktc": 1437,
+      "ktc_rank": 400,
+      "apy": 1566670,
+      "years": 4,
+      "guaranteed": 3342433,
+      "total_value": 6266678
+    },
+    "Jordan Burch": {
+      "apy": 1622369,
+      "years": 4,
+      "guaranteed": 1359620,
+      "total_value": 6489476
+    },
+    "Nikola Kalinic": {
+      "apy": 1005000,
+      "years": 1,
+      "guaranteed": 0,
+      "total_value": 1005000
+    },
+    "Cam Bynum": {
+      "apy": 15000000,
+      "years": 4,
+      "guaranteed": 26000000,
+      "total_value": 60000000
+    },
+    "Caden Curry": {
+      "apy": 1146633,
+      "years": 4,
+      "guaranteed": 206532,
+      "total_value": 4586532
+    },
+    "2026 Mid 2nd": {
+      "ktc": 3694,
+      "ktc_rank": 154
+    },
+    "Jonah Williams": {
+      "apy": 1402500,
+      "years": 1,
+      "guaranteed": 187500,
+      "total_value": 1402500
+    },
+    "Kyle Williams": {
+      "ktc": 2941,
+      "ktc_rank": 222,
+      "apy": 1675893,
+      "years": 4,
+      "guaranteed": 1515324,
+      "total_value": 6703572
+    },
+    "Tony Adams": {
+      "apy": 2140000,
+      "years": 1,
+      "guaranteed": 1000000,
+      "total_value": 2140000
+    },
+    "Matthew McDoom": {
+      "apy": 1035000,
+      "years": 3,
+      "guaranteed": 5000,
+      "total_value": 3105000
+    },
+    "2026 Early 2nd": {
+      "ktc": 4072,
+      "ktc_rank": 135
+    },
+    "Ja'Quan McMillian": {
+      "apy": 5767000,
+      "years": 1,
+      "guaranteed": 0,
+      "total_value": 5767000
+    },
+    "Eli Apple": {
+      "apy": 1300000,
+      "years": 1,
+      "guaranteed": 0,
+      "total_value": 1300000
+    },
+    "Dalys Beanum": {
+      "apy": 967500,
+      "years": 2,
+      "guaranteed": 0,
+      "total_value": 1935000
+    },
+    "Bradyn Swinson": {
+      "apy": 1050000,
+      "years": 4,
+      "guaranteed": 0,
+      "total_value": 4200000
+    },
+    "2026 Late 2nd": {
+      "ktc": 3521,
+      "ktc_rank": 165
+    },
+    "Trey Smack": {
+      "apy": 1146633,
+      "years": 4,
+      "guaranteed": 206532,
+      "total_value": 4586532
+    },
+    "Isiah Pacheco": {
+      "ktc": 2837,
+      "ktc_rank": 233,
+      "apy": 1810000,
+      "years": 1,
+      "guaranteed": 1810000,
+      "total_value": 1810000
+    },
+    "Maxen Hook": {
+      "apy": 885000,
+      "years": 1,
+      "guaranteed": 0,
+      "total_value": 885000
+    },
+    "Kris Abrams-Draine": {
+      "apy": 1092068,
+      "years": 4,
+      "guaranteed": 348272,
+      "total_value": 4368272
+    },
+    "Cameron Mitchell": {
+      "apy": 1220000,
+      "years": 1,
+      "guaranteed": 25000,
+      "total_value": 1220000
+    },
+    "Julian Love": {
+      "apy": 11000000,
+      "years": 3,
+      "guaranteed": 11965000,
+      "total_value": 33000000
+    },
+    "Caleb Banks": {
+      "apy": 5320595,
+      "years": 4,
+      "guaranteed": 21282378,
+      "total_value": 21282378
+    },
+    "Ross Matiscik": {
+      "apy": 1267500,
+      "years": 4,
+      "guaranteed": 800000,
+      "total_value": 5070000
+    },
+    "R Mason Thomas": {
+      "apy": 3049201,
+      "years": 4,
+      "guaranteed": 12196804,
+      "total_value": 12196804
+    },
+    "CJ Dippre": {
+      "apy": 922500,
+      "years": 2,
+      "guaranteed": 0,
+      "total_value": 1845000
+    },
+    "Dyami Brown": {
+      "ktc": 1704,
+      "ktc_rank": 364,
+      "apy": 1750000,
+      "years": 1,
+      "guaranteed": 250000,
+      "total_value": 1750000
+    },
+    "Matthew Caldwell": {
+      "apy": 1035333,
+      "years": 3,
+      "guaranteed": 6000,
+      "total_value": 3106000
+    },
+    "Javonte Williams": {
+      "ktc": 5358,
+      "ktc_rank": 83,
+      "apy": 8000000,
+      "years": 3,
+      "guaranteed": 16000000,
+      "total_value": 24000000
+    },
+    "Caleb Ransaw": {
+      "apy": 1570270,
+      "years": 4,
+      "guaranteed": 1208056,
+      "total_value": 6281080
+    },
+    "Marcus Jones": {
+      "apy": 12000000,
+      "years": 3,
+      "guaranteed": 17500000,
+      "total_value": 36000000
+    },
+    "Jaylon Moore": {
+      "apy": 15000000,
+      "years": 2,
+      "guaranteed": 21240000,
+      "total_value": 30000000
+    },
+    "Russ Yeast": {
+      "apy": 1145000,
+      "years": 1,
+      "guaranteed": 0,
+      "total_value": 1145000
+    },
+    "Justin Barron": {
+      "apy": 988333,
+      "years": 3,
+      "guaranteed": 0,
+      "total_value": 2965000
+    },
+    "Nick Barrett": {
+      "apy": 1230780,
+      "years": 4,
+      "guaranteed": 543120,
+      "total_value": 4923120
+    },
+    "Chuma Edoga": {
+      "apy": 3500000,
+      "years": 2,
+      "guaranteed": 3200000,
+      "total_value": 7000000
+    },
+    "Michael Pittman": {
+      "ktc": 4146,
+      "ktc_rank": 129
+    },
+    "Wyatt Teller": {
+      "apy": 8000000,
+      "years": 2,
+      "guaranteed": 8500000,
+      "total_value": 16000000
+    },
+    "Moliki Matavao": {
+      "apy": 922500,
+      "years": 2,
+      "guaranteed": 0,
+      "total_value": 1845000
+    },
+    "Zachary Carter": {
+      "apy": 1157500,
+      "years": 2,
+      "guaranteed": 0,
+      "total_value": 2315000
+    },
+    "2026 Mid 3rd": {
+      "ktc": 2629,
+      "ktc_rank": 252
+    },
+    "Tim Settle": {
+      "apy": 8000000,
+      "years": 3,
+      "guaranteed": 7300000,
+      "total_value": 24000000
+    },
+    "LaJohntay Wester": {
+      "ktc": 639,
+      "ktc_rank": 494,
+      "apy": 1103717,
+      "years": 4,
+      "guaranteed": 214868,
+      "total_value": 4414868
+    },
+    "Tyler Smith": {
+      "apy": 24000000,
+      "years": 4,
+      "guaranteed": 41661189,
+      "total_value": 96000000
+    },
+    "Chau Smith-Wade": {
+      "apy": 1085996,
+      "years": 4,
+      "guaranteed": 323984,
+      "total_value": 4343984
+    },
+    "Tyler Guyton": {
+      "apy": 3288952,
+      "years": 4,
+      "guaranteed": 13155806,
+      "total_value": 13155806
+    },
+    "SirVocea Dennis": {
+      "apy": 1039332,
+      "years": 4,
+      "guaranteed": 317328,
+      "total_value": 4157328
+    },
+    "Connor O'Toole": {
+      "apy": 998333,
+      "years": 3,
+      "guaranteed": 264000,
+      "total_value": 2995000
+    },
+    "Jared Wilson": {
+      "apy": 1551858,
+      "years": 4,
+      "guaranteed": 1154496,
+      "total_value": 6207432
+    },
+    "Nic Scourton": {
+      "apy": 2153559,
+      "years": 4,
+      "guaranteed": 6660008,
+      "total_value": 8614236
+    },
+    "Brenden Schooler": {
+      "apy": 3000000,
+      "years": 3,
+      "guaranteed": 2600000,
+      "total_value": 9000000
+    },
+    "Tyrion Ingram-Dawkins": {
+      "apy": 1169344,
+      "years": 4,
+      "guaranteed": 477376,
+      "total_value": 4677376
+    },
+    "Eli Pancol": {
+      "apy": 885000,
+      "years": 1,
+      "guaranteed": 0,
+      "total_value": 885000
+    },
+    "George Kittle": {
+      "ktc": 4001,
+      "ktc_rank": 136,
+      "apy": 19100000,
+      "years": 4,
+      "guaranteed": 35000000,
+      "total_value": 76400000
+    },
+    "Joshua Williams": {
+      "apy": 4000000,
+      "years": 2,
+      "guaranteed": 3240000,
+      "total_value": 8000000
+    },
+    "Tee Higgins": {
+      "ktc": 5577,
+      "ktc_rank": 64,
+      "apy": 28750000,
+      "years": 4,
+      "guaranteed": 30000000,
+      "total_value": 115000000
+    },
+    "Jakobe Thomas": {
+      "apy": 1673475,
+      "years": 4,
+      "guaranteed": 1328292,
+      "total_value": 6693900
+    },
+    "Nash Jones": {
+      "apy": 885000,
+      "years": 1,
+      "guaranteed": 0,
+      "total_value": 885000
+    },
+    "Ladd McConkey": {
+      "ktc": 6268,
+      "ktc_rank": 47,
+      "apy": 2498797,
+      "years": 4,
+      "guaranteed": 9185943,
+      "total_value": 9995186
+    },
+    "Qwan'Tez Stiggers": {
+      "apy": 1068569,
+      "years": 4,
+      "guaranteed": 254276,
+      "total_value": 4274276
+    },
+    "Luther Burden": {
+      "ktc": 6131,
+      "ktc_rank": 51,
+      "apy": 2741009,
+      "years": 4,
+      "guaranteed": 10964034,
+      "total_value": 10964034
+    },
+    "Trebor Pena": {
+      "apy": 1040000,
+      "years": 3,
+      "guaranteed": 120000,
+      "total_value": 3120000
+    },
+    "Nick Allegretti": {
+      "apy": 3792500,
+      "years": 2,
+      "guaranteed": 3925000,
+      "total_value": 7585000
+    },
+    "Quentin Moore": {
+      "apy": 1040000,
+      "years": 3,
+      "guaranteed": 270000,
+      "total_value": 3120000
+    },
+    "Tyler Badie": {
+      "ktc": 1219,
+      "ktc_rank": 436,
+      "apy": 1075000,
+      "years": 1,
+      "guaranteed": 0,
+      "total_value": 1075000
+    },
+    "Jacob Bayer": {
+      "apy": 885000,
+      "years": 1,
+      "guaranteed": 0,
+      "total_value": 885000
+    },
+    "Lardarius Webb Jr.": {
+      "apy": 1036667,
+      "years": 3,
+      "guaranteed": 15000,
+      "total_value": 3110000
+    },
+    "Daniel Jones": {
+      "ktc": 3513,
+      "ktc_rank": 100,
+      "apy": 44000000,
+      "years": 2,
+      "guaranteed": 49490000,
+      "total_value": 88000000
+    },
+    "Walker Little": {
+      "apy": 13500000,
+      "years": 3,
+      "guaranteed": 25944256,
+      "total_value": 40500000
+    },
+    "Ajani Cornelius": {
+      "apy": 1103494,
+      "years": 4,
+      "guaranteed": 213976,
+      "total_value": 4413976
+    },
+    "Jalen Tolbert": {
+      "ktc": 2214,
+      "ktc_rank": 303,
+      "apy": 1402500,
+      "years": 1,
+      "guaranteed": 1262500,
+      "total_value": 1402500
+    },
+    "Kenny McIntosh": {
+      "ktc": 1207,
+      "ktc_rank": 427,
+      "apy": 982646,
+      "years": 4,
+      "guaranteed": 90852,
+      "total_value": 3930852
+    },
+    "Sam Hagen": {
+      "apy": 1040000,
+      "years": 3,
+      "guaranteed": 195000,
+      "total_value": 3120000
+    },
+    "Jaden Nixon": {
+      "apy": 1038333,
+      "years": 3,
+      "guaranteed": 15000,
+      "total_value": 3115000
+    },
+    "Nathan Voorhis": {
+      "apy": 1035000,
+      "years": 3,
+      "guaranteed": 70000,
+      "total_value": 3105000
+    },
+    "Dae'Quan Wright": {
+      "apy": 1041667,
+      "years": 3,
+      "guaranteed": 50000,
+      "total_value": 3125000
+    },
+    "Ed Ingram": {
+      "apy": 12500000,
+      "years": 3,
+      "guaranteed": 20000000,
+      "total_value": 37500000
+    },
+    "Jaylinn Hawkins": {
+      "apy": 5000000,
+      "years": 2,
+      "guaranteed": 5000000,
+      "total_value": 10000000
+    },
+    "Luke Goedeke": {
+      "apy": 22500000,
+      "years": 4,
+      "guaranteed": 27406000,
+      "total_value": 90000000
+    },
+    "Cam Jurgens": {
+      "apy": 17000000,
+      "years": 4,
+      "guaranteed": 23346000,
+      "total_value": 68000000
+    },
+    "Caleb Lomu": {
+      "apy": 4730620,
+      "years": 4,
+      "guaranteed": 0,
+      "total_value": 18922478
+    },
+    "Tanner Wall": {
+      "apy": 1039333,
+      "years": 3,
+      "guaranteed": 88000,
+      "total_value": 3118000
+    },
+    "Mac Dalena": {
+      "apy": 885000,
+      "years": 1,
+      "guaranteed": 0,
+      "total_value": 885000
+    },
+    "Derek Stingley Jr.": {
+      "apy": 30000000,
+      "years": 3,
+      "guaranteed": 48026026,
+      "total_value": 90000000
+    },
+    "Joe Royer": {
+      "apy": 1203149,
+      "years": 4,
+      "guaranteed": 432596,
+      "total_value": 4812596
+    },
+    "Mason McCormick": {
+      "apy": 1196224,
+      "years": 4,
+      "guaranteed": 764896,
+      "total_value": 4784896
+    },
+    "Dexter Lawrence": {
+      "apy": 28000000,
+      "years": 1,
+      "guaranteed": 10000000,
+      "total_value": 28000000
+    },
+    "Brandon Cisse": {
+      "apy": 2341236,
+      "years": 4,
+      "guaranteed": 8024479,
+      "total_value": 9364942
+    },
+    "Ji'Ayir Brown": {
+      "apy": 1348951,
+      "years": 4,
+      "guaranteed": 924220,
+      "total_value": 5395804
+    },
+    "Alan Herron": {
+      "apy": 1041667,
+      "years": 3,
+      "guaranteed": 272500,
+      "total_value": 3125000
+    },
+    "Antwaun Powell-Ryland": {
+      "apy": 885000,
+      "years": 1,
+      "guaranteed": 0,
+      "total_value": 885000
+    },
+    "Ricky Pearsall": {
+      "ktc": 4273,
+      "ktc_rank": 122,
+      "apy": 3134600,
+      "years": 4,
+      "guaranteed": 12538398,
+      "total_value": 12538398
+    },
+    "Grant Stuard": {
+      "apy": 2225000,
+      "years": 2,
+      "guaranteed": 1800000,
+      "total_value": 4450000
+    },
+    "Tyler Linderbaum": {
+      "apy": 27000000,
+      "years": 3,
+      "guaranteed": 60000000,
+      "total_value": 81000000
+    },
+    "Alfred Collins": {
+      "apy": 2576726,
+      "years": 4,
+      "guaranteed": 9071886,
+      "total_value": 10306904
+    },
+    "Bryan Thomas Jr.": {
+      "apy": 1043333,
+      "years": 3,
+      "guaranteed": 277500,
+      "total_value": 3130000
+    },
+    "Xavier Newman-Johnson": {
+      "apy": 1402500,
+      "years": 1,
+      "guaranteed": 0,
+      "total_value": 1402500
+    },
+    "Max Hurleman": {
+      "apy": 885000,
+      "years": 1,
+      "guaranteed": 0,
+      "total_value": 885000
+    },
+    "Jamien Sherwood": {
+      "apy": 15000000,
+      "years": 3,
+      "guaranteed": 30000000,
+      "total_value": 45000000
+    },
+    "Charlie Smyth": {
+      "apy": 988333,
+      "years": 3,
+      "guaranteed": 0,
+      "total_value": 2965000
+    },
+    "Austin Blaske": {
+      "apy": 1038333,
+      "years": 3,
+      "guaranteed": 15000,
+      "total_value": 3115000
+    },
+    "Robert Beal Jr.": {
+      "apy": 1195000,
+      "years": 1,
+      "guaranteed": 50000,
+      "total_value": 1195000
+    },
+    "Kevin Jobity Jr.": {
+      "apy": 1043333,
+      "years": 3,
+      "guaranteed": 30000,
+      "total_value": 3130000
+    },
+    "Jermaine Johnson II": {
+      "apy": 3271861,
+      "years": 4,
+      "guaranteed": 13087444,
+      "total_value": 13087444
+    },
+    "Jack Stonehouse": {
+      "apy": 1038333,
+      "years": 3,
+      "guaranteed": 75000,
+      "total_value": 3115000
+    },
+    "Bryce Lance": {
+      "ktc": 1375,
+      "ktc_rank": 383,
+      "apy": 1292259,
+      "years": 4,
+      "guaranteed": 789036,
+      "total_value": 5169036
+    },
+    "Al-Quadin Muhammad": {
+      "apy": 4000000,
+      "years": 1,
+      "guaranteed": 2500000,
+      "total_value": 4000000
+    },
+    "Mark Redman": {
+      "apy": 967500,
+      "years": 2,
+      "guaranteed": 0,
+      "total_value": 1935000
+    },
+    "Tucker Large": {
+      "apy": 1033333,
+      "years": 3,
+      "guaranteed": 80000,
+      "total_value": 3100000
+    },
+    "Caleb Offord": {
+      "apy": 1035667,
+      "years": 3,
+      "guaranteed": 19000,
+      "total_value": 3107000
+    },
+    "Derwin James": {
+      "apy": 25200000,
+      "years": 3,
+      "guaranteed": 41000000,
+      "total_value": 75600000
+    },
+    "Joe Mixon": {
+      "ktc": 1358,
+      "ktc_rank": 417
+    },
+    "Jake Kubas": {
+      "apy": 1005000,
+      "years": 1,
+      "guaranteed": 0,
+      "total_value": 1005000
+    },
+    "Dean Lowry": {
+      "apy": 1400000,
+      "years": 1,
+      "guaranteed": 0,
+      "total_value": 1400000
+    },
+    "Garrison Grimes": {
+      "apy": 1033667,
+      "years": 3,
+      "guaranteed": 1000,
+      "total_value": 3101000
+    },
+    "Louis Moore": {
+      "apy": 1035000,
+      "years": 3,
+      "guaranteed": 5000,
+      "total_value": 3105000
+    },
+    "Jaylen Watson": {
+      "apy": 17000000,
+      "years": 3,
+      "guaranteed": 26500000,
+      "total_value": 51000000
+    },
+    "Brenton Cox Jr.": {
+      "apy": 1695000,
+      "years": 1,
+      "guaranteed": 250000,
+      "total_value": 1695000
+    },
+    "D.K. Metcalf": {
+      "apy": 32999882,
+      "years": 4,
+      "guaranteed": 60000471,
+      "total_value": 131999529
+    },
+    "Nathan Thomas": {
+      "apy": 1031493,
+      "years": 4,
+      "guaranteed": 105972,
+      "total_value": 4125972
+    },
+    "Jaren Kanak": {
+      "apy": 1135853,
+      "years": 4,
+      "guaranteed": 1634,
+      "total_value": 4543412
+    },
+    "Ross Blacklock": {
+      "apy": 1215000,
+      "years": 1,
+      "guaranteed": 0,
+      "total_value": 1215000
+    },
+    "Shavon Revel": {
+      "apy": 1626689,
+      "years": 4,
+      "guaranteed": 1372176,
+      "total_value": 6506756
+    },
+    "Ethan Burke": {
+      "apy": 1040000,
+      "years": 3,
+      "guaranteed": 20000,
+      "total_value": 3120000
+    },
+    "Cam Hart": {
+      "apy": 1095982,
+      "years": 4,
+      "guaranteed": 363928,
+      "total_value": 4383928
+    },
+    "Kei'Trel Clark": {
+      "apy": 1012150,
+      "years": 4,
+      "guaranteed": 208600,
+      "total_value": 4048600
+    },
+    "Makai Lemon": {
+      "ktc": 5731,
+      "ktc_rank": 56,
+      "apy": 5202597,
+      "years": 4,
+      "guaranteed": 20810386,
+      "total_value": 20810386
+    },
+    "Le'Meke Brockington": {
+      "apy": 1038333,
+      "years": 3,
+      "guaranteed": 115000,
+      "total_value": 3115000
+    },
+    "Ja'Lynn Polk": {
+      "ktc": 1875,
+      "ktc_rank": 348,
+      "apy": 2423686,
+      "years": 4,
+      "guaranteed": 8214275,
+      "total_value": 9694744
+    },
+    "D'Shawn Jamison": {
+      "apy": 1075000,
+      "years": 1,
+      "guaranteed": 0,
+      "total_value": 1075000
+    },
+    "Grey Zabel": {
+      "apy": 4617865,
+      "years": 4,
+      "guaranteed": 18471460,
+      "total_value": 18471460
+    },
+    "Jordan van den Berg": {
+      "apy": 1152902,
+      "years": 4,
+      "guaranteed": 231608,
+      "total_value": 4611608
+    },
+    "Jackson Hawes": {
+      "apy": 1130054,
+      "years": 4,
+      "guaranteed": 320216,
+      "total_value": 4520216
+    },
+    "Josh Fryar": {
+      "apy": 1000000,
+      "years": 3,
+      "guaranteed": 269000,
+      "total_value": 3000000
+    },
+    "Chris Rumph II": {
+      "apy": 2000000,
+      "years": 1,
+      "guaranteed": 2000000,
+      "total_value": 2000000
+    },
+    "Isaiah Smith": {
+      "apy": 1036667,
+      "years": 3,
+      "guaranteed": 10000,
+      "total_value": 3110000
+    },
+    "Levelle Bailey": {
+      "apy": 1075000,
+      "years": 1,
+      "guaranteed": 0,
+      "total_value": 1075000
+    },
+    "Ben Sauls": {
+      "apy": 922500,
+      "years": 2,
+      "guaranteed": 0,
+      "total_value": 1845000
+    },
+    "Malaki Starks": {
+      "apy": 4144915,
+      "years": 4,
+      "guaranteed": 16579658,
+      "total_value": 16579658
+    },
+    "Gabriel Davis": {
+      "ktc": 1298,
+      "ktc_rank": 410
+    },
+    "Ethan Robinson": {
+      "apy": 922500,
+      "years": 2,
+      "guaranteed": 0,
+      "total_value": 1845000
+    },
+    "Monroe Freeling": {
+      "apy": 5232091,
+      "years": 4,
+      "guaranteed": 20928362,
+      "total_value": 20928362
+    },
+    "Jake Brendel": {
+      "apy": 4125000,
+      "years": 4,
+      "guaranteed": 5000000,
+      "total_value": 16500000
+    },
+    "Tyreek Chappell": {
+      "apy": 1035500,
+      "years": 3,
+      "guaranteed": 56500,
+      "total_value": 3106500
+    },
+    "Dylan Cook": {
+      "apy": 1017500,
+      "years": 2,
+      "guaranteed": 0,
+      "total_value": 2035000
+    },
+    "Arden Key": {
+      "apy": 8000000,
+      "years": 2,
+      "guaranteed": 11000000,
+      "total_value": 16000000
+    },
+    "Ruke Orhorhoro": {
+      "apy": 2479032,
+      "years": 4,
+      "guaranteed": 8735167,
+      "total_value": 9916126
+    },
+    "Keaton Mitchell": {
+      "ktc": 2990,
+      "ktc_rank": 219,
+      "apy": 4625000,
+      "years": 2,
+      "guaranteed": 5000000,
+      "total_value": 9250000
+    },
+    "Baker Mayfield": {
+      "ktc": 4106,
+      "ktc_rank": 76,
+      "apy": 33333333,
+      "years": 3,
+      "guaranteed": 40000000,
+      "total_value": 100000000
+    },
+    "2028 Early 2nd": {
+      "ktc": 3857,
+      "ktc_rank": 141
+    },
+    "Chase Lucas": {
+      "apy": 1145000,
+      "years": 1,
+      "guaranteed": 0,
+      "total_value": 1145000
+    },
+    "Keli Lawson": {
+      "apy": 1036667,
+      "years": 3,
+      "guaranteed": 50000,
+      "total_value": 3110000
+    },
+    "Marques Cox": {
+      "apy": 885000,
+      "years": 1,
+      "guaranteed": 0,
+      "total_value": 885000
+    },
+    "Nate Adkins": {
+      "apy": 1635000,
+      "years": 1,
+      "guaranteed": 300000,
+      "total_value": 1635000
+    },
+    "Julian Neal": {
+      "apy": 1673475,
+      "years": 4,
+      "guaranteed": 1328292,
+      "total_value": 6693900
+    },
+    "Cody Hardy": {
+      "apy": 1040000,
+      "years": 3,
+      "guaranteed": 170000,
+      "total_value": 3120000
+    },
+    "Nate Evans": {
+      "apy": 1038333,
+      "years": 3,
+      "guaranteed": 130000,
+      "total_value": 3115000
+    },
+    "Jaylen Waddle": {
+      "ktc": 5499,
+      "ktc_rank": 74,
+      "apy": 28250000,
+      "years": 3,
+      "guaranteed": 35978546,
+      "total_value": 84750000
+    },
+    "David Walker": {
+      "apy": 1290814,
+      "years": 4,
+      "guaranteed": 963256,
+      "total_value": 5163256
+    },
+    "Dillon Wade": {
+      "apy": 1038333,
+      "years": 3,
+      "guaranteed": 215000,
+      "total_value": 3115000
+    },
+    "Ihmir Smith-Marsette": {
+      "apy": 1215000,
+      "years": 1,
+      "guaranteed": 0,
+      "total_value": 1215000
+    },
+    "Sanoussi Kane": {
+      "apy": 1017500,
+      "years": 2,
+      "guaranteed": 0,
+      "total_value": 2035000
+    },
+    "Jacoby Brissett": {
+      "ktc": 1903,
+      "ktc_rank": 194,
+      "apy": 6250000,
+      "years": 2,
+      "guaranteed": 6500000,
+      "total_value": 12500000
+    },
+    "2026 Early 3rd": {
+      "ktc": 2844,
+      "ktc_rank": 242
+    },
+    "Sam Williams": {
+      "apy": 2500000,
+      "years": 1,
+      "guaranteed": 2000000,
+      "total_value": 2500000
+    },
+    "Quentin Skinner": {
+      "apy": 988333,
+      "years": 3,
+      "guaranteed": 0,
+      "total_value": 2965000
+    },
+    "Brandon Crenshaw-Dickson": {
+      "apy": 922500,
+      "years": 2,
+      "guaranteed": 0,
+      "total_value": 1845000
+    },
+    "Malcolm Rodriguez": {
+      "apy": 2750000,
+      "years": 1,
+      "guaranteed": 2700000,
+      "total_value": 2750000
+    },
+    "Matt Goncalves": {
+      "apy": 1459760,
+      "years": 4,
+      "guaranteed": 1066572,
+      "total_value": 5839038
+    },
+    "Tomas Rimac": {
+      "apy": 1035000,
+      "years": 3,
+      "guaranteed": 55000,
+      "total_value": 3105000
+    },
+    "Justin Joly": {
+      "ktc": 1695,
+      "ktc_rank": 333,
+      "apy": 1221526,
+      "years": 4,
+      "guaranteed": 506104,
+      "total_value": 4886104
+    },
+    "Isaac Alarcon": {
+      "apy": 885000,
+      "years": 1,
+      "guaranteed": 0,
+      "total_value": 885000
+    },
+    "Terry McLaurin": {
+      "ktc": 4376,
+      "ktc_rank": 117,
+      "apy": 29000000,
+      "years": 3,
+      "guaranteed": 44650000,
+      "total_value": 87000000
+    },
+    "Alvin Kamara": {
+      "ktc": 2606,
+      "ktc_rank": 267,
+      "apy": 12250000,
+      "years": 2,
+      "guaranteed": 19233333,
+      "total_value": 24500000
+    },
+    "Zavier Scott": {
+      "ktc": 942,
+      "ktc_rank": 470,
+      "apy": 1005000,
+      "years": 1,
+      "guaranteed": 0,
+      "total_value": 1005000
+    },
+    "Jordan James": {
+      "ktc": 2657,
+      "ktc_rank": 258,
+      "apy": 1159921,
+      "years": 4,
+      "guaranteed": 439684,
+      "total_value": 4639684
+    },
+    "Terrell Jennings": {
+      "ktc": 730,
+      "ktc_rank": 492,
+      "apy": 1017500,
+      "years": 2,
+      "guaranteed": 0,
+      "total_value": 2035000
+    },
+    "Mason Miller": {
+      "apy": 885000,
+      "years": 1,
+      "guaranteed": 0,
+      "total_value": 885000
+    },
+    "Javon Bullard": {
+      "apy": 1676533,
+      "years": 4,
+      "guaranteed": 3735287,
+      "total_value": 6706132
+    },
+    "Elijah Garcia": {
+      "apy": 1215000,
+      "years": 1,
+      "guaranteed": 0,
+      "total_value": 1215000
+    },
+    "Gabriel Plascencia": {
+      "apy": 1035000,
+      "years": 3,
+      "guaranteed": 5000,
+      "total_value": 3105000
+    },
+    "Marte Mapu": {
+      "apy": 1390927,
+      "years": 4,
+      "guaranteed": 1046332,
+      "total_value": 5563708
+    },
+    "Broderick Jones": {
+      "apy": 4156591,
+      "years": 4,
+      "guaranteed": 16626364,
+      "total_value": 16626364
+    },
+    "Michael Carter II": {
+      "apy": 2765000,
+      "years": 1,
+      "guaranteed": 1450000,
+      "total_value": 2765000
+    },
+    "David Moore": {
+      "apy": 1487500,
+      "years": 1,
+      "guaranteed": 0,
+      "total_value": 1487500
+    },
+    "Calais Campbell": {
+      "apy": 5500000,
+      "years": 1,
+      "guaranteed": 4750000,
+      "total_value": 5500000
+    },
+    "Jarrett Patterson": {
+      "apy": 1002494,
+      "years": 4,
+      "guaranteed": 169976,
+      "total_value": 4009976
+    },
+    "Jarrett Kingston": {
+      "apy": 1100000,
+      "years": 1,
+      "guaranteed": 15000,
+      "total_value": 1100000
+    },
+    "Maema Njongmeta": {
+      "apy": 1017500,
+      "years": 2,
+      "guaranteed": 0,
+      "total_value": 2035000
+    },
+    "Chad Ryland": {
+      "apy": 1850000,
+      "years": 1,
+      "guaranteed": 475000,
+      "total_value": 1850000
+    },
+    "Justin Watson": {
+      "apy": 2500000,
+      "years": 2,
+      "guaranteed": 3000000,
+      "total_value": 5000000
+    },
+    "Ja'Sir Taylor": {
+      "apy": 1215000,
+      "years": 1,
+      "guaranteed": 0,
+      "total_value": 1215000
+    },
+    "Jaylen Wright": {
+      "ktc": 2716,
+      "ktc_rank": 249,
+      "apy": 1195005,
+      "years": 4,
+      "guaranteed": 760020,
+      "total_value": 4780020
+    },
+    "Max Bredeson": {
+      "apy": 1217886,
+      "years": 4,
+      "guaranteed": 491544,
+      "total_value": 4871544
+    },
+    "Cameron Williams": {
+      "apy": 1112892,
+      "years": 4,
+      "guaranteed": 676568,
+      "total_value": 4451568
+    },
+    "Mapalo Mwansa": {
+      "apy": 885000,
+      "years": 1,
+      "guaranteed": 0,
+      "total_value": 885000
+    },
+    "Anthony Campbell": {
+      "apy": 885000,
+      "years": 1,
+      "guaranteed": 0,
+      "total_value": 885000
+    },
+    "Michael Mayer": {
+      "ktc": 2566,
+      "ktc_rank": 254,
+      "apy": 2328410,
+      "years": 4,
+      "guaranteed": 7596697,
+      "total_value": 9313638
+    },
+    "Vershon Lee": {
+      "apy": 885000,
+      "years": 1,
+      "guaranteed": 0,
+      "total_value": 885000
+    },
+    "Kayshon Boutte": {
+      "ktc": 3371,
+      "ktc_rank": 199,
+      "apy": 1006816,
+      "years": 4,
+      "guaranteed": 187264,
+      "total_value": 4027264
+    },
+    "Kevin Austin Jr.": {
+      "apy": 1017500,
+      "years": 2,
+      "guaranteed": 0,
+      "total_value": 2035000
+    },
+    "Mike Evans": {
+      "ktc": 4113,
+      "ktc_rank": 131,
+      "apy": 14166667,
+      "years": 3,
+      "guaranteed": 14300000,
+      "total_value": 42500000
+    },
+    "Kyle Hinton": {
+      "apy": 2875000,
+      "years": 2,
+      "guaranteed": 2575000,
+      "total_value": 5750000
+    },
+    "Rico Payton": {
+      "apy": 948333,
+      "years": 3,
+      "guaranteed": 45000,
+      "total_value": 2845000
+    },
+    "Alex Highsmith": {
+      "apy": 17000000,
+      "years": 4,
+      "guaranteed": 17010000,
+      "total_value": 68000000
+    },
+    "Kion Smith": {
+      "apy": 1145000,
+      "years": 1,
+      "guaranteed": 0,
+      "total_value": 1145000
+    },
+    "Chop Robinson": {
+      "apy": 3744057,
+      "years": 4,
+      "guaranteed": 14976228,
+      "total_value": 14976228
+    },
+    "Jeffrey M'ba": {
+      "apy": 1040000,
+      "years": 3,
+      "guaranteed": 265000,
+      "total_value": 3120000
+    },
+    "Kaelon Black": {
+      "ktc": 1753,
+      "ktc_rank": 328,
+      "apy": 1707319,
+      "years": 4,
+      "guaranteed": 1426744,
+      "total_value": 6829276
+    },
+    "Corey Ballentine": {
+      "apy": 1300000,
+      "years": 1,
+      "guaranteed": 0,
+      "total_value": 1300000
+    },
+    "Lander Barton": {
+      "apy": 1039000,
+      "years": 3,
+      "guaranteed": 264500,
+      "total_value": 3117000
+    },
+    "Dre'Mont Jones": {
+      "apy": 12166667,
+      "years": 3,
+      "guaranteed": 23280000,
+      "total_value": 36500000
+    },
+    "Chris Hilton Jr.": {
+      "apy": 1038333,
+      "years": 3,
+      "guaranteed": 15000,
+      "total_value": 3115000
+    },
+    "Bo Melton": {
+      "ktc": 1252,
+      "ktc_rank": 441,
+      "apy": 1145000,
+      "years": 1,
+      "guaranteed": 0,
+      "total_value": 1145000
+    },
+    "Tyler Johnson": {
+      "ktc": 892,
+      "ktc_rank": 475,
+      "apy": 1215000,
+      "years": 1,
+      "guaranteed": 0,
+      "total_value": 1215000
+    },
+    "Ty Hamilton": {
+      "apy": 1159647,
+      "years": 4,
+      "guaranteed": 438588,
+      "total_value": 4638588
+    },
+    "Trey Washington": {
+      "apy": 1005000,
+      "years": 1,
+      "guaranteed": 0,
+      "total_value": 1005000
+    },
+    "Calijah Kancey": {
+      "apy": 3623368,
+      "years": 4,
+      "guaranteed": 14493472,
+      "total_value": 14493472
+    },
+    "Parker Brailsford": {
+      "apy": 1227544,
+      "years": 4,
+      "guaranteed": 530176,
+      "total_value": 4910176
+    },
+    "Brant Banks": {
+      "apy": 1005000,
+      "years": 1,
+      "guaranteed": 0,
+      "total_value": 1005000
+    },
+    "Olamide Zaccheaus": {
+      "ktc": 1549,
+      "ktc_rank": 386,
+      "apy": 2250000,
+      "years": 2,
+      "guaranteed": 2300000,
+      "total_value": 4500000
+    },
+    "Blake Miller": {
+      "apy": 5468079,
+      "years": 4,
+      "guaranteed": 21872316,
+      "total_value": 21872316
+    },
+    "Michael Jackson Sr.": {
+      "apy": 5250000,
+      "years": 2,
+      "guaranteed": 5700000,
+      "total_value": 10500000
+    },
+    "Kyle McCord": {
+      "ktc": 257,
+      "ktc_rank": 485,
+      "apy": 885000,
+      "years": 1,
+      "guaranteed": 0,
+      "total_value": 885000
+    },
+    "John Metchie III": {
+      "apy": 1900000,
+      "years": 1,
+      "guaranteed": 1000000,
+      "total_value": 1900000
+    },
+    "K.C. Ossai": {
+      "apy": 885000,
+      "years": 1,
+      "guaranteed": 0,
+      "total_value": 885000
+    },
+    "Devon Marshall": {
+      "apy": 1036667,
+      "years": 3,
+      "guaranteed": 160000,
+      "total_value": 3110000
+    },
+    "Jaden Hicks": {
+      "apy": 1137177,
+      "years": 4,
+      "guaranteed": 528708,
+      "total_value": 4548708
+    },
+    "Ben VanSumeren": {
+      "apy": 1075000,
+      "years": 1,
+      "guaranteed": 0,
+      "total_value": 1075000
+    },
+    "James Hudson": {
+      "apy": 1402500,
+      "years": 1,
+      "guaranteed": 537500,
+      "total_value": 1402500
+    },
+    "Garrett Wilson": {
+      "ktc": 6399,
+      "ktc_rank": 39,
+      "apy": 32500000,
+      "years": 4,
+      "guaranteed": 38324819,
+      "total_value": 130000000
+    },
+    "Troy Fautanu": {
+      "apy": 3763824,
+      "years": 4,
+      "guaranteed": 15055296,
+      "total_value": 15055296
+    },
+    "Jordan Mailata": {
+      "apy": 22000000,
+      "years": 3,
+      "guaranteed": 41000000,
+      "total_value": 66000000
+    },
+    "Khyiris Tonga": {
+      "apy": 7000000,
+      "years": 3,
+      "guaranteed": 14000000,
+      "total_value": 21000000
+    },
+    "Anthony Gould": {
+      "apy": 1093166,
+      "years": 4,
+      "guaranteed": 352664,
+      "total_value": 4372664
+    },
+    "Rashawn Slater": {
+      "apy": 28500000,
+      "years": 4,
+      "guaranteed": 56000000,
+      "total_value": 114000000
+    },
+    "Jalen Royals": {
+      "ktc": 2236,
+      "ktc_rank": 290,
+      "apy": 1266800,
+      "years": 4,
+      "guaranteed": 867200,
+      "total_value": 5067200
+    },
+    "Kendell Brooks": {
+      "apy": 882500,
+      "years": 2,
+      "guaranteed": 0,
+      "total_value": 1765000
+    },
+    "Travis Hunter": {
+      "ktc": 4082,
+      "ktc_rank": 127,
+      "apy": 11662278,
+      "years": 4,
+      "guaranteed": 46649112,
+      "total_value": 46649112
+    },
+    "Riley Moss": {
+      "apy": 1361873,
+      "years": 4,
+      "guaranteed": 961812,
+      "total_value": 5447490
+    },
+    "Quentin Lake": {
+      "apy": 12750000,
+      "years": 3,
+      "guaranteed": 8500000,
+      "total_value": 38250000
+    },
+    "Oren Burks": {
+      "apy": 2500000,
+      "years": 2,
+      "guaranteed": 750000,
+      "total_value": 5000000
+    },
+    "Aidan O'Connell": {
+      "ktc": 544,
+      "ktc_rank": 483,
+      "apy": 1087345,
+      "years": 4,
+      "guaranteed": 509380,
+      "total_value": 4349380
+    },
+    "Isaiah Jatta": {
+      "apy": 1040000,
+      "years": 3,
+      "guaranteed": 120000,
+      "total_value": 3120000
+    },
+    "Da'Metrius Weatherspoon": {
+      "apy": 1037333,
+      "years": 3,
+      "guaranteed": 12000,
+      "total_value": 3112000
+    },
+    "Rashad Wisdom": {
+      "apy": 922500,
+      "years": 2,
+      "guaranteed": 0,
+      "total_value": 1845000
+    },
+    "2026 Late 3rd": {
+      "ktc": 2497,
+      "ktc_rank": 271
+    },
+    "Jimmy Morrissey": {
+      "apy": 1075000,
+      "years": 1,
+      "guaranteed": 0,
+      "total_value": 1075000
+    },
+    "Will Campbell": {
+      "apy": 10915525,
+      "years": 4,
+      "guaranteed": 43662098,
+      "total_value": 43662098
+    },
+    "Cordell Volson": {
+      "apy": 3215000,
+      "years": 1,
+      "guaranteed": 2000000,
+      "total_value": 3215000
+    },
+    "Tyler Warren": {
+      "ktc": 6407,
+      "ktc_rank": 35,
+      "apy": 5240163,
+      "years": 4,
+      "guaranteed": 20960650,
+      "total_value": 20960650
+    },
+    "Xavier Thomas": {
+      "apy": 1075000,
+      "years": 1,
+      "guaranteed": 0,
+      "total_value": 1075000
+    },
+    "Sabastian Harsh": {
+      "apy": 1038333,
+      "years": 3,
+      "guaranteed": 165000,
+      "total_value": 3115000
+    },
+    "Nick Westbrook-Ikhine": {
+      "ktc": 1128,
+      "ktc_rank": 443,
+      "apy": 1402500,
+      "years": 1,
+      "guaranteed": 437500,
+      "total_value": 1402500
+    },
+    "Trevor Lawrence": {
+      "ktc": 4895,
+      "ktc_rank": 28,
+      "apy": 55000000,
+      "years": 5,
+      "guaranteed": 142000000,
+      "total_value": 275000000
+    },
+    "Dillon Gabriel": {
+      "ktc": 1411,
+      "ktc_rank": 362,
+      "apy": 1556581,
+      "years": 4,
+      "guaranteed": 1168232,
+      "total_value": 6226322
+    },
+    "Tommy Townsend": {
+      "apy": 2500000,
+      "years": 2,
+      "guaranteed": 2000000,
+      "total_value": 5000000
+    },
+    "Starling Thomas V": {
+      "apy": 1475000,
+      "years": 1,
+      "guaranteed": 325000,
+      "total_value": 1475000
+    },
+    "Taron Johnson": {
+      "apy": 10250000,
+      "years": 3,
+      "guaranteed": 16650000,
+      "total_value": 30750000
+    },
+    "2027 Mid 1st": {
+      "ktc": 6011,
+      "ktc_rank": 41
+    },
+    "Xavier Legette": {
+      "ktc": 2438,
+      "ktc_rank": 287,
+      "apy": 3089294,
+      "years": 4,
+      "guaranteed": 12357176,
+      "total_value": 12357176
+    },
+    "Casey Kreiter": {
+      "apy": 1487500,
+      "years": 1,
+      "guaranteed": 1262500,
+      "total_value": 1487500
+    },
+    "Taurean York": {
+      "apy": 1041667,
+      "years": 3,
+      "guaranteed": 325000,
+      "total_value": 3125000
+    },
+    "Dylan Horton": {
+      "apy": 1160261,
+      "years": 4,
+      "guaranteed": 801044,
+      "total_value": 4641044
+    },
+    "Drake Dabney": {
+      "apy": 885000,
+      "years": 1,
+      "guaranteed": 0,
+      "total_value": 885000
+    },
+    "Emery Jones Jr.": {
+      "apy": 1568380,
+      "years": 4,
+      "guaranteed": 1202560,
+      "total_value": 6273520
+    },
+    "Jacob Rodriguez": {
+      "apy": 2901712,
+      "years": 4,
+      "guaranteed": 11606848,
+      "total_value": 11606848
+    },
+    "Jalen Hurts": {
+      "ktc": 5512,
+      "ktc_rank": 30,
+      "apy": 51000000,
+      "years": 5,
+      "guaranteed": 110000000,
+      "total_value": 255000000
+    },
+    "Coleman Owen": {
+      "apy": 885000,
+      "years": 1,
+      "guaranteed": 0,
+      "total_value": 885000
+    },
+    "Joe Flacco": {
+      "ktc": 970,
+      "ktc_rank": 414,
+      "apy": 6000000,
+      "years": 1,
+      "guaranteed": 4000000,
+      "total_value": 6000000
+    },
+    "Demarcus Lawrence": {
+      "apy": 10833333,
+      "years": 3,
+      "guaranteed": 13000000,
+      "total_value": 32500000
+    },
+    "Christian Barmore": {
+      "apy": 21000000,
+      "years": 4,
+      "guaranteed": 31822128,
+      "total_value": 84000000
+    },
+    "Caleb Rogers": {
+      "apy": 1540296,
+      "years": 4,
+      "guaranteed": 1120860,
+      "total_value": 6161184
+    },
+    "Tyrone Tracy Jr.": {
+      "apy": 1076588,
+      "years": 4,
+      "guaranteed": 286352,
+      "total_value": 4306352
+    },
+    "Dameon Pierce": {
+      "ktc": 1238,
+      "ktc_rank": 434,
+      "apy": 1290000,
+      "years": 1,
+      "guaranteed": 250000,
+      "total_value": 1290000
+    },
+    "Damonic Williams": {
+      "apy": 1046667,
+      "years": 3,
+      "guaranteed": 215000,
+      "total_value": 3140000
+    },
+    "Mykel Williams": {
+      "apy": 6235839,
+      "years": 4,
+      "guaranteed": 24943354,
+      "total_value": 24943354
+    },
+    "Stephen Carlson": {
+      "apy": 1145000,
+      "years": 1,
+      "guaranteed": 0,
+      "total_value": 1145000
+    },
+    "Pete Nygra": {
+      "apy": 1040000,
+      "years": 3,
+      "guaranteed": 267500,
+      "total_value": 3120000
+    },
+    "Wes Pahl": {
+      "apy": 1035000,
+      "years": 3,
+      "guaranteed": 55000,
+      "total_value": 3105000
+    },
+    "Garrett DiGiorgio": {
+      "apy": 1033333,
+      "years": 3,
+      "guaranteed": 247500,
+      "total_value": 3100000
+    },
+    "Carlton Davis": {
+      "apy": 18000000,
+      "years": 3,
+      "guaranteed": 34500000,
+      "total_value": 54000000
+    },
+    "Tanor Bortolini": {
+      "apy": 1199968,
+      "years": 4,
+      "guaranteed": 779872,
+      "total_value": 4799872
+    },
+    "Edefuan Ulofoshio": {
+      "apy": 1017500,
+      "years": 2,
+      "guaranteed": 0,
+      "total_value": 2035000
+    },
+    "Will Harris": {
+      "apy": 4000000,
+      "years": 2,
+      "guaranteed": 3390000,
+      "total_value": 8000000
+    },
+    "Murvin Kenion II": {
+      "apy": 1036667,
+      "years": 3,
+      "guaranteed": 10000,
+      "total_value": 3110000
+    },
+    "Asim Richards": {
+      "apy": 1021245,
+      "years": 4,
+      "guaranteed": 244980,
+      "total_value": 4084980
+    },
+    "Myles Garrett": {
+      "apy": 40000000,
+      "years": 4,
+      "guaranteed": 88800000,
+      "total_value": 160000000
+    },
+    "Jeffery Simmons": {
+      "apy": 23500000,
+      "years": 4,
+      "guaranteed": 47830000,
+      "total_value": 94000000
+    },
+    "Joseph Manjack": {
+      "apy": 1036667,
+      "years": 3,
+      "guaranteed": 80000,
+      "total_value": 3110000
+    },
+    "Marcellus Johnson": {
+      "apy": 967500,
+      "years": 2,
+      "guaranteed": 0,
+      "total_value": 1935000
+    },
+    "Tyren Montgomery": {
+      "apy": 1038333,
+      "years": 3,
+      "guaranteed": 175000,
+      "total_value": 3115000
+    },
+    "Trey Palmer": {
+      "ktc": 1431,
+      "ktc_rank": 407,
+      "apy": 1004824,
+      "years": 4,
+      "guaranteed": 179296,
+      "total_value": 4019296
+    },
+    "Jeffrey Bassa": {
+      "apy": 1153413,
+      "years": 4,
+      "guaranteed": 413652,
+      "total_value": 4613652
+    },
+    "Woody Marks": {
+      "ktc": 3476,
+      "ktc_rank": 173,
+      "apy": 1300942,
+      "years": 4,
+      "guaranteed": 1003768,
+      "total_value": 5203768
+    },
+    "Marques Sigle": {
+      "apy": 1150594,
+      "years": 4,
+      "guaranteed": 402376,
+      "total_value": 4602376
+    },
+    "Dane Belton": {
+      "apy": 4000000,
+      "years": 1,
+      "guaranteed": 2000000,
+      "total_value": 4000000
+    },
+    "Mehki Butler": {
+      "apy": 885000,
+      "years": 1,
+      "guaranteed": 0,
+      "total_value": 885000
+    },
+    "Lance McCutcheon": {
+      "apy": 1062500,
+      "years": 2,
+      "guaranteed": 0,
+      "total_value": 2125000
+    },
+    "Brock Hoffman": {
+      "apy": 2500000,
+      "years": 1,
+      "guaranteed": 750000,
+      "total_value": 2500000
+    },
+    "Jamaree Caldwell": {
+      "apy": 1578317,
+      "years": 4,
+      "guaranteed": 1231464,
+      "total_value": 6313266
+    },
+    "Ben Nikkel": {
+      "apy": 885000,
+      "years": 1,
+      "guaranteed": 0,
+      "total_value": 885000
+    },
+    "Keeshawn Silver": {
+      "apy": 1041667,
+      "years": 3,
+      "guaranteed": 55000,
+      "total_value": 3125000
+    },
+    "Dalevon Campbell": {
+      "apy": 1005000,
+      "years": 1,
+      "guaranteed": 0,
+      "total_value": 1005000
+    },
+    "Jakob Robinson": {
+      "apy": 995000,
+      "years": 3,
+      "guaranteed": 120000,
+      "total_value": 2985000
+    },
+    "Bhayshul Tuten": {
+      "ktc": 4933,
+      "ktc_rank": 94,
+      "apy": 1329063,
+      "years": 4,
+      "guaranteed": 1076520,
+      "total_value": 5316250
+    },
+    "Shiyazh Pete": {
+      "apy": 1034333,
+      "years": 3,
+      "guaranteed": 3000,
+      "total_value": 3103000
+    },
+    "Lee Hunter": {
+      "apy": 2518224,
+      "years": 4,
+      "guaranteed": 9507805,
+      "total_value": 10072894
+    },
+    "Jaret Patterson": {
+      "apy": 1145000,
+      "years": 1,
+      "guaranteed": 0,
+      "total_value": 1145000
+    },
+    "Bryson Eason": {
+      "apy": 1041667,
+      "years": 3,
+      "guaranteed": 272500,
+      "total_value": 3125000
+    },
+    "Josh Jones": {
+      "apy": 4000000,
+      "years": 1,
+      "guaranteed": 3000000,
+      "total_value": 4000000
+    },
+    "Ahkello Witherspoon": {
+      "apy": 1412500,
+      "years": 1,
+      "guaranteed": 125000,
+      "total_value": 1412500
+    },
+    "Jameson Williams": {
+      "ktc": 5489,
+      "ktc_rank": 78,
+      "apy": 26666667,
+      "years": 3,
+      "guaranteed": 30579154,
+      "total_value": 80000000
+    },
+    "Denzel Ward": {
+      "apy": 20100000,
+      "years": 5,
+      "guaranteed": 44500000,
+      "total_value": 100500000
+    },
+    "Tanner Ingle": {
+      "apy": 1062500,
+      "years": 2,
+      "guaranteed": 0,
+      "total_value": 2125000
+    },
+    "Brent Austin": {
+      "apy": 1040000,
+      "years": 3,
+      "guaranteed": 100000,
+      "total_value": 3120000
+    },
+    "D'Andre Swift": {
+      "ktc": 4542,
+      "ktc_rank": 114,
+      "apy": 8000000,
+      "years": 3,
+      "guaranteed": 14000000,
+      "total_value": 24000000
+    },
+    "Ka'ena Decambra": {
+      "apy": 1035000,
+      "years": 3,
+      "guaranteed": 55000,
+      "total_value": 3105000
+    },
+    "Mike Reid": {
+      "apy": 885000,
+      "years": 1,
+      "guaranteed": 0,
+      "total_value": 885000
+    },
+    "Al'Zillion Hamilton": {
+      "apy": 1035000,
+      "years": 3,
+      "guaranteed": 5000,
+      "total_value": 3105000
+    },
+    "Tommy Doman": {
+      "apy": 1128043,
+      "years": 4,
+      "guaranteed": 132172,
+      "total_value": 4512172
+    },
+    "Cameron Thomas": {
+      "apy": 3095000,
+      "years": 1,
+      "guaranteed": 2500000,
+      "total_value": 3095000
+    },
+    "Thomas Fidone": {
+      "ktc": 592,
+      "ktc_rank": 495
+    },
+    "Tariq Castro-Fields": {
+      "apy": 1145000,
+      "years": 1,
+      "guaranteed": 0,
+      "total_value": 1145000
+    },
+    "Savion Williams": {
+      "ktc": 2090,
+      "ktc_rank": 316,
+      "apy": 1573114,
+      "years": 4,
+      "guaranteed": 1216328,
+      "total_value": 6292454
+    },
+    "Tyler Bass": {
+      "apy": 3375000,
+      "years": 2,
+      "guaranteed": 1000000,
+      "total_value": 6750000
+    },
+    "Maxx Crosby": {
+      "apy": 35500000,
+      "years": 3,
+      "guaranteed": 62500000,
+      "total_value": 106500000
+    },
+    "Patrick Jones II": {
+      "apy": 7500000,
+      "years": 2,
+      "guaranteed": 10250000,
+      "total_value": 15000000
+    },
+    "Nate Hobbs": {
+      "apy": 3500000,
+      "years": 1,
+      "guaranteed": 3110000,
+      "total_value": 3500000
+    },
+    "DeMarvion Overshown": {
+      "apy": 1347506,
+      "years": 4,
+      "guaranteed": 920016,
+      "total_value": 5390022
+    },
+    "Nick Leverett": {
+      "apy": 1215000,
+      "years": 1,
+      "guaranteed": 0,
+      "total_value": 1215000
+    },
+    "Miles Frazier": {
+      "apy": 1130054,
+      "years": 4,
+      "guaranteed": 320216,
+      "total_value": 4520216
+    },
+    "2027 Mid 2nd": {
+      "ktc": 4166,
+      "ktc_rank": 119
+    },
+    "Beau Gardner": {
+      "apy": 1036667,
+      "years": 3,
+      "guaranteed": 110000,
+      "total_value": 3110000
+    },
+    "Jabari Small": {
+      "apy": 885000,
+      "years": 1,
+      "guaranteed": 0,
+      "total_value": 885000
+    },
+    "Tonka Hemingway": {
+      "apy": 1216454,
+      "years": 4,
+      "guaranteed": 665816,
+      "total_value": 4865816
+    },
+    "Greg Dortch": {
+      "ktc": 1344,
+      "ktc_rank": 408,
+      "apy": 1402500,
+      "years": 1,
+      "guaranteed": 1075000,
+      "total_value": 1402500
+    },
+    "Andre Jones Jr.": {
+      "apy": 1132500,
+      "years": 2,
+      "guaranteed": 0,
+      "total_value": 2265000
+    },
+    "Cooper McDonald": {
+      "apy": 988333,
+      "years": 3,
+      "guaranteed": 0,
+      "total_value": 2965000
+    },
+    "Chauncey Gardner-Johnson, Jr.": {
+      "apy": 3500000,
+      "years": 1,
+      "guaranteed": 3015000,
+      "total_value": 3500000
+    },
+    "Cameron Ball": {
+      "apy": 1041667,
+      "years": 3,
+      "guaranteed": 272500,
+      "total_value": 3125000
+    },
+    "Izavion Miller": {
+      "apy": 1035000,
+      "years": 3,
+      "guaranteed": 55000,
+      "total_value": 3105000
+    },
+    "Derrick Brown": {
+      "apy": 24000000,
+      "years": 4,
+      "guaranteed": 41165000,
+      "total_value": 96000000
+    },
+    "Jerand Bradley": {
+      "apy": 1037333,
+      "years": 3,
+      "guaranteed": 12000,
+      "total_value": 3112000
+    },
+    "Marcus Sanders Jr.": {
+      "apy": 1033333,
+      "years": 3,
+      "guaranteed": 25000,
+      "total_value": 3100000
+    },
+    "K.J. Henry": {
+      "apy": 1075000,
+      "years": 1,
+      "guaranteed": 0,
+      "total_value": 1075000
+    },
+    "Darrell Jackson Jr.": {
+      "apy": 1412905,
+      "years": 4,
+      "guaranteed": 0,
+      "total_value": 5651620
+    },
+    "Dan Jackson": {
+      "apy": 1082906,
+      "years": 4,
+      "guaranteed": 131624,
+      "total_value": 4331624
+    },
+    "Maliek Collins": {
+      "apy": 10000000,
+      "years": 2,
+      "guaranteed": 13000000,
+      "total_value": 20000000
+    },
+    "Ty Simpson": {
+      "ktc": 3217,
+      "ktc_rank": 107,
+      "apy": 6353039,
+      "years": 4,
+      "guaranteed": 0,
+      "total_value": 25412156
+    },
+    "Josh Wallace": {
+      "apy": 963333,
+      "years": 3,
+      "guaranteed": 60000,
+      "total_value": 2890000
+    },
+    "Isaia Glass": {
+      "apy": 1038333,
+      "years": 3,
+      "guaranteed": 262500,
+      "total_value": 3115000
+    },
+    "Donovan McMillon": {
+      "apy": 991667,
+      "years": 3,
+      "guaranteed": 210000,
+      "total_value": 2975000
+    },
+    "Nick Kallerup": {
+      "apy": 996667,
+      "years": 3,
+      "guaranteed": 259000,
+      "total_value": 2990000
+    },
+    "Ryan Fitzgerald": {
+      "apy": 993333,
+      "years": 3,
+      "guaranteed": 145000,
+      "total_value": 2980000
+    },
+    "Jose Ramirez": {
+      "apy": 1062500,
+      "years": 2,
+      "guaranteed": 0,
+      "total_value": 2125000
+    },
+    "Gervarrius Owens": {
+      "apy": 1005000,
+      "years": 1,
+      "guaranteed": 0,
+      "total_value": 1005000
+    },
+    "Red Murdock": {
+      "apy": 1125122,
+      "years": 4,
+      "guaranteed": 120488,
+      "total_value": 4500488
+    },
+    "Keyron Crawford": {
+      "apy": 1845815,
+      "years": 4,
+      "guaranteed": 0,
+      "total_value": 7383258
+    },
+    "Caelen Carson": {
+      "apy": 1068569,
+      "years": 4,
+      "guaranteed": 254276,
+      "total_value": 4274276
+    },
+    "Miller Moss": {
+      "apy": 1036667,
+      "years": 3,
+      "guaranteed": 210000,
+      "total_value": 3110000
+    },
+    "Keydrain Calligan": {
+      "apy": 967500,
+      "years": 2,
+      "guaranteed": 0,
+      "total_value": 1935000
+    },
+    "Brenen Thompson": {
+      "ktc": 1548,
+      "ktc_rank": 360,
+      "apy": 1408034,
+      "years": 4,
+      "guaranteed": 0,
+      "total_value": 5632136
+    },
+    "Heinrich Haarberg": {
+      "apy": 1033333,
+      "years": 3,
+      "guaranteed": 0,
+      "total_value": 3100000
+    },
+    "Jackson Slater": {
+      "apy": 1140153,
+      "years": 4,
+      "guaranteed": 360612,
+      "total_value": 4560612
+    },
+    "Quinnen Williams": {
+      "apy": 24000000,
+      "years": 4,
+      "guaranteed": 47835000,
+      "total_value": 96000000
+    },
+    "Daijahn Anthony": {
+      "apy": 1034446,
+      "years": 4,
+      "guaranteed": 117784,
+      "total_value": 4137784
+    },
+    "Jordan Moore": {
+      "apy": 885000,
+      "years": 1,
+      "guaranteed": 0,
+      "total_value": 885000
+    },
+    "Jer'Zhan Newton": {
+      "apy": 2439498,
+      "years": 4,
+      "guaranteed": 8432355,
+      "total_value": 9757990
+    },
+    "Ta'Quon Graham": {
+      "apy": 1265000,
+      "years": 1,
+      "guaranteed": 125000,
+      "total_value": 1265000
+    },
+    "Micah Morris": {
+      "apy": 1158941,
+      "years": 4,
+      "guaranteed": 255764,
+      "total_value": 4635764
+    },
+    "Shemar Bartholomew": {
+      "apy": 1017500,
+      "years": 2,
+      "guaranteed": 0,
+      "total_value": 2035000
+    },
+    "Payton Wilson": {
+      "apy": 1399078,
+      "years": 4,
+      "guaranteed": 890044,
+      "total_value": 5596312
+    },
+    "D'Angelo Ponds": {
+      "apy": 2459230,
+      "years": 4,
+      "guaranteed": 8946358,
+      "total_value": 9836918
+    },
+    "Treyton Welch": {
+      "apy": 988333,
+      "years": 3,
+      "guaranteed": 0,
+      "total_value": 2965000
+    },
+    "Kool-Aid McKinstry": {
+      "apy": 2289277,
+      "years": 4,
+      "guaranteed": 7282112,
+      "total_value": 9157108
+    },
+    "Jake Browning": {
+      "apy": 1332500,
+      "years": 1,
+      "guaranteed": 400000,
+      "total_value": 1332500
+    },
+    "KC Concepcion": {
+      "ktc": 5284,
+      "ktc_rank": 85,
+      "apy": 4937107,
+      "years": 4,
+      "guaranteed": 0,
+      "total_value": 19748428
+    },
+    "Michael Dansby": {
+      "apy": 1125122,
+      "years": 4,
+      "guaranteed": 120488,
+      "total_value": 4500488
+    },
+    "Seth Coleman": {
+      "apy": 967500,
+      "years": 2,
+      "guaranteed": 0,
+      "total_value": 1935000
+    },
+    "Amani Oruwariye": {
+      "apy": 1215000,
+      "years": 1,
+      "guaranteed": 0,
+      "total_value": 1215000
+    },
+    "Jordan Love": {
+      "ktc": 4623,
+      "ktc_rank": 43,
+      "apy": 55000000,
+      "years": 4,
+      "guaranteed": 100800000,
+      "total_value": 220000000
+    },
+    "Claudin Cherelus": {
+      "apy": 1295000,
+      "years": 1,
+      "guaranteed": 461300,
+      "total_value": 1295000
+    },
+    "Jonathan Owens": {
+      "apy": 1402500,
+      "years": 1,
+      "guaranteed": 187500,
+      "total_value": 1402500
+    },
+    "Tetairoa McMillan": {
+      "ktc": 7161,
+      "ktc_rank": 27,
+      "apy": 6982598,
+      "years": 4,
+      "guaranteed": 27930390,
+      "total_value": 27930390
+    },
+    "Carter Runyon": {
+      "apy": 922500,
+      "years": 2,
+      "guaranteed": 0,
+      "total_value": 1845000
+    },
+    "Anthony Lucas": {
+      "apy": 1038333,
+      "years": 3,
+      "guaranteed": 115000,
+      "total_value": 3115000
+    },
+    "Cody Schrader": {
+      "apy": 1075000,
+      "years": 1,
+      "guaranteed": 0,
+      "total_value": 1075000
+    },
+    "Calvin Austin III": {
+      "ktc": 1790,
+      "ktc_rank": 352,
+      "apy": 1500000,
+      "years": 1,
+      "guaranteed": 450000,
+      "total_value": 1500000
+    },
+    "Tyler Steen": {
+      "apy": 1437610,
+      "years": 4,
+      "guaranteed": 1182136,
+      "total_value": 5750440
+    },
+    "Lawrence Cager": {
+      "apy": 1145000,
+      "years": 1,
+      "guaranteed": 0,
+      "total_value": 1145000
+    },
+    "David Olajiga": {
+      "apy": 885000,
+      "years": 1,
+      "guaranteed": 0,
+      "total_value": 885000
+    },
+    "A.J. Cole": {
+      "apy": 3950000,
+      "years": 4,
+      "guaranteed": 10000000,
+      "total_value": 15800000
+    },
+    "Sam LaPorta": {
+      "ktc": 5175,
+      "ktc_rank": 84,
+      "apy": 2366500,
+      "years": 4,
+      "guaranteed": 7825179,
+      "total_value": 9465998
+    },
+    "Kevin Knowles II": {
+      "apy": 922500,
+      "years": 2,
+      "guaranteed": 0,
+      "total_value": 1845000
+    },
+    "Mekhi Wingo": {
+      "apy": 1051700,
+      "years": 4,
+      "guaranteed": 186800,
+      "total_value": 4206800
+    },
+    "Kage Casey": {
+      "apy": 1394552,
+      "years": 4,
+      "guaranteed": 1198208,
+      "total_value": 5578208
+    },
+    "Thomas Gordon": {
+      "apy": 885000,
+      "years": 1,
+      "guaranteed": 0,
+      "total_value": 885000
+    },
+    "Jack Pyburn": {
+      "apy": 1038333,
+      "years": 3,
+      "guaranteed": 115000,
+      "total_value": 3115000
+    },
+    "Bryan Hudson": {
+      "apy": 922500,
+      "years": 2,
+      "guaranteed": 0,
+      "total_value": 1845000
+    },
+    "Jeremiah Trotter Jr.": {
+      "apy": 1087117,
+      "years": 4,
+      "guaranteed": 328468,
+      "total_value": 4348468
+    },
+    "Quinyon Mitchell": {
+      "apy": 3704524,
+      "years": 4,
+      "guaranteed": 14818096,
+      "total_value": 14818096
+    },
+    "Brady Boyd": {
+      "apy": 1036667,
+      "years": 3,
+      "guaranteed": 10000,
+      "total_value": 3110000
+    },
+    "Parker Hughes": {
+      "apy": 1127698,
+      "years": 4,
+      "guaranteed": 130792,
+      "total_value": 4510792
+    },
+    "Chris Jones": {
+      "apy": 31750000,
+      "years": 5,
+      "guaranteed": 60000000,
+      "total_value": 158750000
+    },
+    "Michael Hall Jr.": {
+      "apy": 1767457,
+      "years": 4,
+      "guaranteed": 4379410,
+      "total_value": 7069828
+    },
+    "Que Robinson": {
+      "apy": 1263564,
+      "years": 4,
+      "guaranteed": 854256,
+      "total_value": 5054256
+    },
+    "Keni-H Lovely": {
+      "apy": 885000,
+      "years": 1,
+      "guaranteed": 0,
+      "total_value": 885000
+    },
+    "Denzel Perryman": {
+      "apy": 2790000,
+      "years": 1,
+      "guaranteed": 500000,
+      "total_value": 2790000
+    },
+    "Malik Herring": {
+      "apy": 1215000,
+      "years": 1,
+      "guaranteed": 0,
+      "total_value": 1215000
+    },
+    "Jordan Hudson": {
+      "apy": 1038333,
+      "years": 3,
+      "guaranteed": 105000,
+      "total_value": 3115000
+    },
+    "Braiden McGregor": {
+      "apy": 950000,
+      "years": 3,
+      "guaranteed": 220000,
+      "total_value": 2850000
+    },
+    "Jahmyr Gibbs": {
+      "ktc": 9996,
+      "ktc_rank": 4,
+      "apy": 4461285,
+      "years": 4,
+      "guaranteed": 17845138,
+      "total_value": 17845138
+    },
+    "Ventrell Miller": {
+      "apy": 1144234,
+      "years": 4,
+      "guaranteed": 736936,
+      "total_value": 4576936
+    },
+    "Jalon Walker": {
+      "apy": 5140593,
+      "years": 4,
+      "guaranteed": 20562370,
+      "total_value": 20562370
+    },
+    "Zakee Wheatley": {
+      "apy": 1222613,
+      "years": 4,
+      "guaranteed": 510452,
+      "total_value": 4890452
+    },
+    "Tre Hawkins": {
+      "apy": 1075000,
+      "years": 1,
+      "guaranteed": 0,
+      "total_value": 1075000
+    },
+    "Malachi Fields": {
+      "ktc": 3272,
+      "ktc_rank": 185,
+      "apy": 1797878,
+      "years": 4,
+      "guaranteed": 1690188,
+      "total_value": 7191510
+    },
+    "Joey Porter Jr.": {
+      "apy": 2404587,
+      "years": 4,
+      "guaranteed": 8999870,
+      "total_value": 9618348
+    },
+    "Ty Robinson": {
+      "apy": 1308917,
+      "years": 4,
+      "guaranteed": 1035668,
+      "total_value": 5235668
+    },
+    "Devontez Walker": {
+      "ktc": 1694,
+      "ktc_rank": 361,
+      "apy": 1204463,
+      "years": 4,
+      "guaranteed": 797852,
+      "total_value": 4817852
+    },
+    "Nate Landman": {
+      "apy": 7500000,
+      "years": 3,
+      "guaranteed": 10277777,
+      "total_value": 22500000
+    },
+    "Marcus Epps": {
+      "apy": 1550000,
+      "years": 1,
+      "guaranteed": 125000,
+      "total_value": 1550000
+    },
+    "Nick Broeker": {
+      "apy": 1080000,
+      "years": 1,
+      "guaranteed": 5000,
+      "total_value": 1080000
+    },
+    "Corey Thornton": {
+      "apy": 991667,
+      "years": 3,
+      "guaranteed": 150000,
+      "total_value": 2975000
+    },
+    "Braden Fiske": {
+      "apy": 2352531,
+      "years": 4,
+      "guaranteed": 7643653,
+      "total_value": 9410122
+    },
+    "Tom Kennedy": {
+      "apy": 1235000,
+      "years": 1,
+      "guaranteed": 20000,
+      "total_value": 1235000
+    },
+    "Joe Fagnano": {
+      "apy": 1033333,
+      "years": 3,
+      "guaranteed": 0,
+      "total_value": 3100000
+    },
+    "Zach Allen": {
+      "apy": 25500000,
+      "years": 4,
+      "guaranteed": 44250000,
+      "total_value": 102000000
+    },
+    "Tommy Akingbesote": {
+      "apy": 970000,
+      "years": 2,
+      "guaranteed": 5000,
+      "total_value": 1940000
+    },
+    "Brady Cook": {
+      "apy": 922500,
+      "years": 2,
+      "guaranteed": 0,
+      "total_value": 1845000
+    },
+    "Jamal Haynes": {
+      "apy": 1033667,
+      "years": 3,
+      "guaranteed": 1000,
+      "total_value": 3101000
+    },
+    "Tykee Smith": {
+      "apy": 1421755,
+      "years": 4,
+      "guaranteed": 956012,
+      "total_value": 5687018
+    },
+    "Mike Hughes": {
+      "apy": 6000000,
+      "years": 3,
+      "guaranteed": 9640000,
+      "total_value": 18000000
+    },
+    "Spencer Burford": {
+      "apy": 3255000,
+      "years": 1,
+      "guaranteed": 2745000,
+      "total_value": 3255000
+    },
+    "Anthony Dunn": {
+      "apy": 1033333,
+      "years": 3,
+      "guaranteed": 15000,
+      "total_value": 3100000
+    },
+    "Zayne Anderson": {
+      "apy": 1402500,
+      "years": 1,
+      "guaranteed": 752500,
+      "total_value": 1402500
+    },
+    "David Bailey": {
+      "apy": 13668682,
+      "years": 4,
+      "guaranteed": 54674726,
+      "total_value": 54674726
+    },
+    "Mason Graham": {
+      "apy": 10218548,
+      "years": 4,
+      "guaranteed": 40874192,
+      "total_value": 40874192
+    },
+    "Devonte Ross": {
+      "apy": 1036667,
+      "years": 3,
+      "guaranteed": 35000,
+      "total_value": 3110000
+    },
+    "Michael Niese": {
+      "apy": 1075000,
+      "years": 1,
+      "guaranteed": 0,
+      "total_value": 1075000
+    },
+    "Kingsley Eguakun": {
+      "apy": 922500,
+      "years": 2,
+      "guaranteed": 0,
+      "total_value": 1845000
+    },
+    "Mante Morrow": {
+      "apy": 1033333,
+      "years": 3,
+      "guaranteed": 0,
+      "total_value": 3100000
+    },
+    "Kwity Paye": {
+      "apy": 16000000,
+      "years": 3,
+      "guaranteed": 25738000,
+      "total_value": 48000000
+    },
+    "Dean Connors": {
+      "apy": 1040000,
+      "years": 3,
+      "guaranteed": 20000,
+      "total_value": 3120000
+    },
+    "Alaric Jackson": {
+      "apy": 19250000,
+      "years": 3,
+      "guaranteed": 30000000,
+      "total_value": 57750000
+    },
+    "Michael Trigg": {
+      "ktc": 1548,
+      "ktc_rank": 401,
+      "apy": 1044167,
+      "years": 3,
+      "guaranteed": 280000,
+      "total_value": 3132500
+    },
+    "Hayden Rucci": {
+      "apy": 1005000,
+      "years": 1,
+      "guaranteed": 0,
+      "total_value": 1005000
+    },
+    "Patrick Surtain II": {
+      "apy": 24000000,
+      "years": 4,
+      "guaranteed": 40688565,
+      "total_value": 96000000
+    },
+    "Malik Turner": {
+      "apy": 1215000,
+      "years": 1,
+      "guaranteed": 0,
+      "total_value": 1215000
+    },
+    "Tylan Wallace": {
+      "apy": 1402500,
+      "years": 1,
+      "guaranteed": 125000,
+      "total_value": 1402500
+    },
+    "Jimmy Rolder": {
+      "apy": 1383240,
+      "years": 4,
+      "guaranteed": 1152960,
+      "total_value": 5532960
+    },
+    "Carson Vinson": {
+      "apy": 1167399,
+      "years": 4,
+      "guaranteed": 469596,
+      "total_value": 4669596
+    },
+    "Chase Lundt": {
+      "apy": 1101231,
+      "years": 4,
+      "guaranteed": 204924,
+      "total_value": 4404924
+    },
+    "Riley Dixon": {
+      "apy": 3000000,
+      "years": 2,
+      "guaranteed": 3000000,
+      "total_value": 6000000
+    },
+    "Emeka Egbuka": {
+      "ktc": 6698,
+      "ktc_rank": 31,
+      "apy": 4543183,
+      "years": 4,
+      "guaranteed": 18172730,
+      "total_value": 18172730
+    },
+    "Tyler Allgeier": {
+      "ktc": 3471,
+      "ktc_rank": 174,
+      "apy": 6125000,
+      "years": 2,
+      "guaranteed": 8000000,
+      "total_value": 12250000
+    },
+    "Deane Leonard": {
+      "apy": 2000000,
+      "years": 1,
+      "guaranteed": 1215000,
+      "total_value": 2000000
+    },
+    "Austin Keys": {
+      "apy": 993333,
+      "years": 3,
+      "guaranteed": 249000,
+      "total_value": 2980000
+    },
+    "Drake Thomas": {
+      "apy": 4000000,
+      "years": 2,
+      "guaranteed": 3000000,
+      "total_value": 8000000
+    },
+    "Oluwafemi Oladejo": {
+      "apy": 2103777,
+      "years": 4,
+      "guaranteed": 6427591,
+      "total_value": 8415106
+    },
+    "Liam McCullough": {
+      "apy": 1445000,
+      "years": 4,
+      "guaranteed": 1900000,
+      "total_value": 5780000
+    },
+    "Willie Lampkin": {
+      "apy": 998333,
+      "years": 3,
+      "guaranteed": 30000,
+      "total_value": 2995000
+    },
+    "Andre Carter II": {
+      "apy": 1145000,
+      "years": 1,
+      "guaranteed": 0,
+      "total_value": 1145000
+    },
+    "Aaron Hall": {
+      "apy": 1041667,
+      "years": 3,
+      "guaranteed": 272500,
+      "total_value": 3125000
+    },
+    "Brock Lampe": {
+      "apy": 993333,
+      "years": 3,
+      "guaranteed": 55000,
+      "total_value": 2980000
+    },
+    "Lake McRee": {
+      "apy": 1041667,
+      "years": 3,
+      "guaranteed": 25000,
+      "total_value": 3125000
+    },
+    "Tywone Malone": {
+      "apy": 1033333,
+      "years": 3,
+      "guaranteed": 0,
+      "total_value": 3100000
+    },
+    "Julian Good-Jones": {
+      "apy": 1017500,
+      "years": 2,
+      "guaranteed": 0,
+      "total_value": 2035000
+    },
+    "Jacoby Jones": {
+      "apy": 885000,
+      "years": 1,
+      "guaranteed": 0,
+      "total_value": 885000
+    },
+    "Niklas Henning": {
+      "apy": 1033333,
+      "years": 3,
+      "guaranteed": 0,
+      "total_value": 3100000
+    },
+    "Terrance Ferguson": {
+      "ktc": 3296,
+      "ktc_rank": 191,
+      "apy": 2428367,
+      "years": 4,
+      "guaranteed": 8046753,
+      "total_value": 9713466
+    },
+    "Alex Johnson": {
+      "apy": 967500,
+      "years": 2,
+      "guaranteed": 0,
+      "total_value": 1935000
+    },
+    "Robert Hainsey": {
+      "apy": 7000000,
+      "years": 3,
+      "guaranteed": 10000000,
+      "total_value": 21000000
+    },
+    "Chazz Surratt": {
+      "apy": 1400000,
+      "years": 1,
+      "guaranteed": 350000,
+      "total_value": 1400000
+    },
+    "Cesar Ruiz": {
+      "apy": 11000000,
+      "years": 4,
+      "guaranteed": 18188981,
+      "total_value": 44000000
+    },
+    "Bennett Skowronek": {
+      "apy": 2250000,
+      "years": 2,
+      "guaranteed": 1080000,
+      "total_value": 4500000
+    },
+    "Jon Rhattigan": {
+      "apy": 1215000,
+      "years": 1,
+      "guaranteed": 0,
+      "total_value": 1215000
+    },
+    "Jason Pinnock": {
+      "apy": 1402500,
+      "years": 1,
+      "guaranteed": 200000,
+      "total_value": 1402500
+    },
+    "Tez Johnson": {
+      "ktc": 2758,
+      "ktc_rank": 256,
+      "apy": 1080985,
+      "years": 4,
+      "guaranteed": 123940,
+      "total_value": 4323940
+    },
+    "Budda Baker": {
+      "apy": 18000000,
+      "years": 3,
+      "guaranteed": 17441666,
+      "total_value": 54000000
+    },
+    "Courtland Ford": {
+      "apy": 1033333,
+      "years": 3,
+      "guaranteed": 0,
+      "total_value": 3100000
+    },
+    "Kyle Pitts": {
+      "ktc": 5140,
+      "ktc_rank": 88,
+      "apy": 15045000,
+      "years": 1,
+      "guaranteed": 15045000,
+      "total_value": 15045000
+    },
+    "Tank Bigsby": {
+      "ktc": 2961,
+      "ktc_rank": 214,
+      "apy": 1348230,
+      "years": 4,
+      "guaranteed": 922120,
+      "total_value": 5392918
+    },
+    "Uchenna Nwosu": {
+      "apy": 9755000,
+      "years": 2,
+      "guaranteed": 6980000,
+      "total_value": 19510000
+    },
+    "R.J. Maryland": {
+      "apy": 1038333,
+      "years": 3,
+      "guaranteed": 15000,
+      "total_value": 3115000
+    },
+    "Luke Wypler": {
+      "apy": 1004993,
+      "years": 4,
+      "guaranteed": 179972,
+      "total_value": 4019972
+    },
+    "Poona Ford": {
+      "apy": 9200000,
+      "years": 3,
+      "guaranteed": 15600000,
+      "total_value": 27600000
+    },
+    "Gunner Olszewski": {
+      "apy": 1402500,
+      "years": 1,
+      "guaranteed": 300000,
+      "total_value": 1402500
+    },
+    "Cory Durden": {
+      "apy": 1087500,
+      "years": 2,
+      "guaranteed": 0,
+      "total_value": 2175000
+    },
+    "Rasheed Miller": {
+      "apy": 1036667,
+      "years": 3,
+      "guaranteed": 140000,
+      "total_value": 3110000
+    },
+    "Chris Edmonds": {
+      "apy": 922500,
+      "years": 2,
+      "guaranteed": 0,
+      "total_value": 1845000
+    },
+    "Kaden Wetjen": {
+      "apy": 1376729,
+      "years": 4,
+      "guaranteed": 1126916,
+      "total_value": 5506916
+    },
+    "Zay Jones": {
+      "ktc": 588,
+      "ktc_rank": 500
+    },
+    "Malachi Lawrence": {
+      "apy": 5055104,
+      "years": 4,
+      "guaranteed": 0,
+      "total_value": 20220416
+    },
+    "Colston Loveland": {
+      "ktc": 6671,
+      "ktc_rank": 29,
+      "apy": 6659002,
+      "years": 4,
+      "guaranteed": 26636008,
+      "total_value": 26636008
+    },
+    "Trey Hill": {
+      "apy": 1145000,
+      "years": 1,
+      "guaranteed": 0,
+      "total_value": 1145000
+    },
+    "Cobie Durant": {
+      "apy": 4000000,
+      "years": 1,
+      "guaranteed": 1500000,
+      "total_value": 4000000
+    },
+    "Sedrick Van Pran-Granger": {
+      "apy": 1093813,
+      "years": 4,
+      "guaranteed": 355252,
+      "total_value": 4375252
+    },
+    "Anthony Johnson Jr.": {
+      "apy": 1145000,
+      "years": 1,
+      "guaranteed": 0,
+      "total_value": 1145000
+    },
+    "Jared Penning": {
+      "apy": 885000,
+      "years": 1,
+      "guaranteed": 0,
+      "total_value": 885000
+    },
+    "Marcus Mariota": {
+      "ktc": 952,
+      "ktc_rank": 381,
+      "apy": 7000000,
+      "years": 1,
+      "guaranteed": 6390000,
+      "total_value": 7000000
+    },
+    "C.J. Daniels": {
+      "apy": 1163811,
+      "years": 4,
+      "guaranteed": 275244,
+      "total_value": 4655244
+    },
+    "D'Arco Perkins-McAllister": {
+      "apy": 1033333,
+      "years": 3,
+      "guaranteed": 175000,
+      "total_value": 3100000
+    },
+    "Eku Leota": {
+      "apy": 1145000,
+      "years": 1,
+      "guaranteed": 0,
+      "total_value": 1145000
+    },
+    "Josh Williams": {
+      "apy": 1062500,
+      "years": 2,
+      "guaranteed": 0,
+      "total_value": 2125000
+    },
+    "Peter Woods": {
+      "apy": 4493903,
+      "years": 4,
+      "guaranteed": 0,
+      "total_value": 17975610
+    },
+    "Bam Martin-Scott": {
+      "apy": 993333,
+      "years": 3,
+      "guaranteed": 290000,
+      "total_value": 2980000
+    },
+    "John Michael Schmitz": {
+      "apy": 1593334,
+      "years": 4,
+      "guaranteed": 3424849,
+      "total_value": 6373334
+    },
+    "Jaylin Smith": {
+      "apy": 1540296,
+      "years": 4,
+      "guaranteed": 1120860,
+      "total_value": 6161184
+    },
+    "Reid Carrico": {
+      "apy": 1033333,
+      "years": 3,
+      "guaranteed": 0,
+      "total_value": 3100000
+    },
+    "Keondre Jackson": {
+      "apy": 922500,
+      "years": 2,
+      "guaranteed": 0,
+      "total_value": 1845000
+    },
+    "Juice Scruggs": {
+      "apy": 1524777,
+      "years": 4,
+      "guaranteed": 3212948,
+      "total_value": 6099108
+    },
+    "Patrick Herbert": {
+      "apy": 918667,
+      "years": 1,
+      "guaranteed": 33667,
+      "total_value": 918667
+    },
+    "Elijah Campbell": {
+      "apy": 1402500,
+      "years": 1,
+      "guaranteed": 50000,
+      "total_value": 1402500
+    },
+    "Creed Humphrey": {
+      "apy": 18000000,
+      "years": 4,
+      "guaranteed": 35000000,
+      "total_value": 72000000
+    },
+    "KeAndre Lambert-Smith": {
+      "ktc": 1914,
+      "ktc_rank": 336,
+      "apy": 1152001,
+      "years": 4,
+      "guaranteed": 408004,
+      "total_value": 4608004
+    },
+    "Brennan Jackson": {
+      "apy": 1087342,
+      "years": 4,
+      "guaranteed": 329368,
+      "total_value": 4349368
+    },
+    "Will Mallory": {
+      "apy": 1032648,
+      "years": 4,
+      "guaranteed": 290592,
+      "total_value": 4130592
+    },
+    "Kentrel Bullock": {
+      "apy": 1038333,
+      "years": 3,
+      "guaranteed": 15000,
+      "total_value": 3115000
+    },
+    "Daylen Everette": {
+      "apy": 1725124,
+      "years": 4,
+      "guaranteed": 1478540,
+      "total_value": 6900494
+    },
+    "Britain Covey": {
+      "apy": 1157500,
+      "years": 2,
+      "guaranteed": 0,
+      "total_value": 2315000
+    },
+    "Robert Spillane": {
+      "apy": 11000000,
+      "years": 3,
+      "guaranteed": 20600000,
+      "total_value": 33000000
+    },
+    "Akayleb Evans": {
+      "apy": 1402500,
+      "years": 1,
+      "guaranteed": 598800,
+      "total_value": 1402500
+    },
+    "Ryan Neuzil": {
+      "apy": 4750000,
+      "years": 2,
+      "guaranteed": 6250000,
+      "total_value": 9500000
+    },
+    "Tyrice Knight": {
+      "apy": 1198140,
+      "years": 4,
+      "guaranteed": 772560,
+      "total_value": 4792560
+    },
+    "Behren Morton": {
+      "apy": 1132307,
+      "years": 4,
+      "guaranteed": 149228,
+      "total_value": 4529228
+    },
+    "Mason Richman": {
+      "apy": 1081481,
+      "years": 4,
+      "guaranteed": 125924,
+      "total_value": 4325924
+    },
+    "Sam Scott": {
+      "apy": 1035000,
+      "years": 3,
+      "guaranteed": 5000,
+      "total_value": 3105000
+    },
+    "Jake Majors": {
+      "apy": 967500,
+      "years": 2,
+      "guaranteed": 0,
+      "total_value": 1935000
+    },
+    "Luke Grimm": {
+      "apy": 885000,
+      "years": 1,
+      "guaranteed": 0,
+      "total_value": 885000
+    },
+    "Cam Ross": {
+      "apy": 1036667,
+      "years": 3,
+      "guaranteed": 50000,
+      "total_value": 3110000
+    },
+    "Sione Vaki": {
+      "ktc": 1097,
+      "ktc_rank": 446,
+      "apy": 1137177,
+      "years": 4,
+      "guaranteed": 528708,
+      "total_value": 4548708
+    },
+    "Romello Height": {
+      "apy": 1822577,
+      "years": 4,
+      "guaranteed": 0,
+      "total_value": 7290308
+    },
+    "K.J. Britt": {
+      "apy": 1402500,
+      "years": 1,
+      "guaranteed": 687500,
+      "total_value": 1402500
+    },
+    "Jordan Magee": {
+      "apy": 1097807,
+      "years": 4,
+      "guaranteed": 371228,
+      "total_value": 4391228
+    },
+    "Jarvis Brownlee": {
+      "apy": 1090509,
+      "years": 4,
+      "guaranteed": 342036,
+      "total_value": 4362036
+    },
+    "Michael Bandy": {
+      "apy": 1085000,
+      "years": 1,
+      "guaranteed": 10000,
+      "total_value": 1085000
+    },
+    "Jaylan Ford": {
+      "apy": 1068569,
+      "years": 4,
+      "guaranteed": 254276,
+      "total_value": 4274276
+    },
+    "Ivan Pace Jr.": {
+      "apy": 3520000,
+      "years": 1,
+      "guaranteed": 0,
+      "total_value": 3520000
+    },
+    "Kevin Dotson": {
+      "apy": 16000000,
+      "years": 3,
+      "guaranteed": 24000000,
+      "total_value": 48000000
+    },
+    "Ainias Smith": {
+      "ktc": 797,
+      "ktc_rank": 478,
+      "apy": 1005000,
+      "years": 1,
+      "guaranteed": 0,
+      "total_value": 1005000
+    },
+    "D.J. Davidson": {
+      "apy": 1325000,
+      "years": 1,
+      "guaranteed": 20000,
+      "total_value": 1325000
+    },
+    "Vincent Anthony": {
+      "apy": 1040000,
+      "years": 3,
+      "guaranteed": 267500,
+      "total_value": 3120000
+    },
+    "Kadarius Calloway": {
+      "apy": 1033667,
+      "years": 3,
+      "guaranteed": 1000,
+      "total_value": 3101000
+    },
+    "Kevin Coleman": {
+      "ktc": 2012,
+      "ktc_rank": 309
+    },
+    "Myles Adams": {
+      "apy": 1145000,
+      "years": 1,
+      "guaranteed": 0,
+      "total_value": 1145000
+    },
+    "Robert Spears-Jennings": {
+      "apy": 1135982,
+      "years": 4,
+      "guaranteed": 163928,
+      "total_value": 4543928
+    },
+    "Sean Murphy-Bunting": {
+      "apy": 3000000,
+      "years": 1,
+      "guaranteed": 1750000,
+      "total_value": 3000000
+    },
+    "Erik McCoy": {
+      "apy": 12000000,
+      "years": 5,
+      "guaranteed": 20090000,
+      "total_value": 60000000
+    },
+    "Jordon Riley": {
+      "apy": 1087500,
+      "years": 2,
+      "guaranteed": 0,
+      "total_value": 2175000
+    },
+    "Aaron Brewer": {
+      "apy": 7000000,
+      "years": 3,
+      "guaranteed": 10215000,
+      "total_value": 21000000
+    },
+    "Jackson Sirmon": {
+      "apy": 885000,
+      "years": 1,
+      "guaranteed": 0,
+      "total_value": 885000
+    },
+    "Nehemiah Pritchett": {
+      "apy": 1099768,
+      "years": 4,
+      "guaranteed": 379072,
+      "total_value": 4399072
+    },
+    "Zion Logue": {
+      "apy": 1136000,
+      "years": 2,
+      "guaranteed": 7000,
+      "total_value": 2272000
+    },
+    "Jason Myers": {
+      "apy": 5275000,
+      "years": 4,
+      "guaranteed": 8665000,
+      "total_value": 21100000
+    },
+    "Cole Strange": {
+      "apy": 6500000,
+      "years": 2,
+      "guaranteed": 7000000,
+      "total_value": 13000000
+    },
+    "Lucas Havrisik": {
+      "apy": 1075000,
+      "years": 1,
+      "guaranteed": 0,
+      "total_value": 1075000
+    },
+    "Jonah Coleman": {
+      "ktc": 3883,
+      "ktc_rank": 145,
+      "apy": 1403606,
+      "years": 4,
+      "guaranteed": 1234424,
+      "total_value": 5614424
+    },
+    "Danny Stutsman": {
+      "apy": 1307091,
+      "years": 4,
+      "guaranteed": 1028364,
+      "total_value": 5228364
+    },
+    "Xavier Loyd": {
+      "apy": 1033333,
+      "years": 3,
+      "guaranteed": 0,
+      "total_value": 3100000
+    },
+    "Tyrone Tracy": {
+      "ktc": 3345,
+      "ktc_rank": 189
+    },
+    "Justin Walley": {
+      "apy": 1611004,
+      "years": 4,
+      "guaranteed": 1326556,
+      "total_value": 6444016
+    },
+    "Jamin Davis": {
+      "apy": 1215000,
+      "years": 1,
+      "guaranteed": 0,
+      "total_value": 1215000
+    },
+    "J.J. Galbreath": {
+      "apy": 885000,
+      "years": 1,
+      "guaranteed": 0,
+      "total_value": 885000
+    },
+    "Mason Taylor": {
+      "ktc": 2887,
+      "ktc_rank": 229,
+      "apy": 2616548,
+      "years": 4,
+      "guaranteed": 9559309,
+      "total_value": 10466192
+    },
+    "T.J. Hockenson": {
+      "ktc": 3374,
+      "ktc_rank": 167,
+      "apy": 10250000,
+      "years": 1,
+      "guaranteed": 10150000,
+      "total_value": 10250000
+    },
+    "Omar Cooper": {
+      "apy": 4368549,
+      "years": 4,
+      "guaranteed": 17474196,
+      "total_value": 17474196
+    },
+    "DeShon Singleton": {
+      "apy": 1040000,
+      "years": 3,
+      "guaranteed": 267500,
+      "total_value": 3120000
+    },
+    "Cedric Tillman": {
+      "ktc": 2410,
+      "ktc_rank": 294,
+      "apy": 1402616,
+      "years": 4,
+      "guaranteed": 1080336,
+      "total_value": 5610462
+    },
+    "Ali Gaye": {
+      "apy": 1017500,
+      "years": 2,
+      "guaranteed": 0,
+      "total_value": 2035000
+    },
+    "Dont'e Thornton Jr.": {
+      "apy": 1312725,
+      "years": 4,
+      "guaranteed": 1050900,
+      "total_value": 5250900
+    },
+    "JaQuae Jackson": {
+      "apy": 885000,
+      "years": 1,
+      "guaranteed": 0,
+      "total_value": 885000
+    },
+    "Rashid Shaheed": {
+      "ktc": 3477,
+      "ktc_rank": 164,
+      "apy": 17000000,
+      "years": 3,
+      "guaranteed": 23000000,
+      "total_value": 51000000
+    },
+    "Tyler Ott": {
+      "apy": 1463333,
+      "years": 3,
+      "guaranteed": 1610000,
+      "total_value": 4390000
+    },
+    "Elijah Chatman": {
+      "apy": 1017500,
+      "years": 2,
+      "guaranteed": 0,
+      "total_value": 2035000
+    },
+    "Tanner Koziol": {
+      "apy": 1214210,
+      "years": 4,
+      "guaranteed": 476840,
+      "total_value": 4856840
+    },
+    "Myles Hinton": {
+      "apy": 1108316,
+      "years": 4,
+      "guaranteed": 233264,
+      "total_value": 4433264
+    },
+    "Ryan Miller": {
+      "apy": 1075000,
+      "years": 1,
+      "guaranteed": 0,
+      "total_value": 1075000
+    },
+    "Van Jefferson": {
+      "ktc": 815,
+      "ktc_rank": 484,
+      "apy": 1402500,
+      "years": 1,
+      "guaranteed": 527500,
+      "total_value": 1402500
+    },
+    "Henry Byrd": {
+      "apy": 922500,
+      "years": 2,
+      "guaranteed": 0,
+      "total_value": 1845000
+    },
+    "Max Klare": {
+      "ktc": 2524,
+      "ktc_rank": 235,
+      "apy": 2004949,
+      "years": 4,
+      "guaranteed": 5977339,
+      "total_value": 8019796
+    },
+    "Brandon Jones": {
+      "apy": 6666667,
+      "years": 3,
+      "guaranteed": 11000000,
+      "total_value": 20000000
+    },
+    "Genesis Smith": {
+      "apy": 1351922,
+      "years": 4,
+      "guaranteed": 1027688,
+      "total_value": 5407688
+    },
+    "Garret Wallow": {
+      "apy": 1240000,
+      "years": 1,
+      "guaranteed": 330300,
+      "total_value": 1240000
+    },
+    "Emany Johnson": {
+      "apy": 885000,
+      "years": 1,
+      "guaranteed": 0,
+      "total_value": 885000
+    },
+    "Pat Freiermuth": {
+      "ktc": 2726,
+      "ktc_rank": 240,
+      "apy": 12100000,
+      "years": 4,
+      "guaranteed": 11600000,
+      "total_value": 48400000
+    },
+    "Deshawn McKnight": {
+      "apy": 1036667,
+      "years": 3,
+      "guaranteed": 257500,
+      "total_value": 3110000
+    },
+    "Federico Maranges": {
+      "apy": 885000,
+      "years": 1,
+      "guaranteed": 0,
+      "total_value": 885000
+    },
+    "Will Sheppard": {
+      "apy": 885000,
+      "years": 1,
+      "guaranteed": 0,
+      "total_value": 885000
+    },
+    "Michael Carter": {
+      "ktc": 1260,
+      "ktc_rank": 432,
+      "apy": 1215000,
+      "years": 1,
+      "guaranteed": 0,
+      "total_value": 1215000
+    },
+    "Andrew Wylie": {
+      "apy": 3750000,
+      "years": 2,
+      "guaranteed": 3700000,
+      "total_value": 7500000
+    },
+    "Mike Ford": {
+      "apy": 4000000,
+      "years": 1,
+      "guaranteed": 1140000,
+      "total_value": 4000000
+    },
+    "K.T. Leveston": {
+      "apy": 1025184,
+      "years": 4,
+      "guaranteed": 80736,
+      "total_value": 4100736
+    },
+    "Julian Hill": {
+      "apy": 5000000,
+      "years": 3,
+      "guaranteed": 7500000,
+      "total_value": 15000000
+    },
+    "Javon Hargrave": {
+      "apy": 11500000,
+      "years": 2,
+      "guaranteed": 10500000,
+      "total_value": 23000000
+    },
+    "Beau Stephens": {
+      "apy": 1225593,
+      "years": 4,
+      "guaranteed": 522372,
+      "total_value": 4902372
+    },
+    "Andre Szmyt": {
+      "apy": 1005000,
+      "years": 1,
+      "guaranteed": 0,
+      "total_value": 1005000
+    },
+    "Luke Wattenberg": {
+      "apy": 12000000,
+      "years": 4,
+      "guaranteed": 13366667,
+      "total_value": 48000000
+    },
+    "Lorenzo Styles Jr.": {
+      "apy": 1200197,
+      "years": 4,
+      "guaranteed": 420788,
+      "total_value": 4800788
+    },
+    "Davis Mills": {
+      "ktc": 259,
+      "ktc_rank": 368,
+      "apy": 7000000,
+      "years": 1,
+      "guaranteed": 10250000,
+      "total_value": 7000000
+    },
+    "Bralyn Lux": {
+      "apy": 1005000,
+      "years": 1,
+      "guaranteed": 0,
+      "total_value": 1005000
+    },
+    "Joey Blount": {
+      "apy": 1875000,
+      "years": 2,
+      "guaranteed": 400000,
+      "total_value": 3750000
+    },
+    "Josh Gesky": {
+      "apy": 1038333,
+      "years": 3,
+      "guaranteed": 215000,
+      "total_value": 3115000
+    },
+    "Joe Alt": {
+      "apy": 8290236,
+      "years": 4,
+      "guaranteed": 33160944,
+      "total_value": 33160944
+    },
+    "Eli Neal": {
+      "apy": 1062500,
+      "years": 2,
+      "guaranteed": 0,
+      "total_value": 2125000
+    },
+    "Beaux Collins": {
+      "apy": 1000333,
+      "years": 3,
+      "guaranteed": 270000,
+      "total_value": 3001000
+    },
+    "Garrett Nussmeier": {
+      "ktc": 1613,
+      "ktc_rank": 319,
+      "apy": 1125122,
+      "years": 4,
+      "guaranteed": 120488,
+      "total_value": 4500488
+    },
+    "Riley Leonard": {
+      "ktc": 1148,
+      "ktc_rank": 311,
+      "apy": 1108811,
+      "years": 4,
+      "guaranteed": 235244,
+      "total_value": 4435244
+    },
+    "Johnny Hekker": {
+      "apy": 1487500,
+      "years": 1,
+      "guaranteed": 1262500,
+      "total_value": 1487500
+    },
+    "Charlie Kolar": {
+      "ktc": 1099,
+      "ktc_rank": 430,
+      "apy": 8100000,
+      "years": 3,
+      "guaranteed": 17000000,
+      "total_value": 24300000
+    },
+    "Jordan McFadden": {
+      "apy": 1300000,
+      "years": 1,
+      "guaranteed": 25000,
+      "total_value": 1300000
+    },
+    "Lil'Jordan Humphrey": {
+      "ktc": 1135,
+      "ktc_rank": 444,
+      "apy": 1487500,
+      "years": 1,
+      "guaranteed": 87500,
+      "total_value": 1487500
+    },
+    "Christopher Brooks": {
+      "apy": 2425000,
+      "years": 2,
+      "guaranteed": 650000,
+      "total_value": 4850000
+    },
+    "Landon Dickerson": {
+      "apy": 21000000,
+      "years": 4,
+      "guaranteed": 28890000,
+      "total_value": 84000000
+    },
+    "Christian Darrisaw": {
+      "apy": 26000000,
+      "years": 4,
+      "guaranteed": 43725000,
+      "total_value": 104000000
+    },
+    "Graham Barton": {
+      "apy": 3506864,
+      "years": 4,
+      "guaranteed": 14027456,
+      "total_value": 14027456
+    },
+    "Nolan Smith": {
+      "apy": 2998104,
+      "years": 4,
+      "guaranteed": 11992416,
+      "total_value": 11992416
+    },
+    "Nick Niemann": {
+      "apy": 2250000,
+      "years": 1,
+      "guaranteed": 500000,
+      "total_value": 2250000
+    },
+    "Brock Rechsteiner": {
+      "apy": 1033333,
+      "years": 3,
+      "guaranteed": 0,
+      "total_value": 3100000
+    },
+    "Harrison Bryant": {
+      "apy": 1265000,
+      "years": 1,
+      "guaranteed": 50000,
+      "total_value": 1265000
+    },
+    "T.J. Bass": {
+      "apy": 5767000,
+      "years": 1,
+      "guaranteed": 0,
+      "total_value": 5767000
+    },
+    "British Brooks": {
+      "apy": 948333,
+      "years": 3,
+      "guaranteed": 240000,
+      "total_value": 2845000
+    },
+    "Tommy DeVito": {
+      "apy": 2200000,
+      "years": 2,
+      "guaranteed": 2000000,
+      "total_value": 4400000
+    },
+    "Cole Van Lanen": {
+      "apy": 17000000,
+      "years": 3,
+      "guaranteed": 25000000,
+      "total_value": 51000000
+    },
+    "Caleb Downs": {
+      "apy": 7237998,
+      "years": 4,
+      "guaranteed": 28951992,
+      "total_value": 28951992
+    },
+    "Del'Shawn Phillips": {
+      "apy": 3750000,
+      "years": 2,
+      "guaranteed": 4000000,
+      "total_value": 7500000
+    },
+    "Bill Norton": {
+      "apy": 967500,
+      "years": 2,
+      "guaranteed": 0,
+      "total_value": 1935000
+    },
+    "A.J. Finley": {
+      "apy": 1075000,
+      "years": 1,
+      "guaranteed": 0,
+      "total_value": 1075000
+    },
+    "Tre Harris": {
+      "ktc": 3457,
+      "ktc_rank": 179,
+      "apy": 1954423,
+      "years": 4,
+      "guaranteed": 5578241,
+      "total_value": 7817692
+    },
+    "Gabe Jacas": {
+      "apy": 2164243,
+      "years": 4,
+      "guaranteed": 0,
+      "total_value": 8656970
+    },
+    "Kamar Missouri": {
+      "apy": 1033333,
+      "years": 3,
+      "guaranteed": 0,
+      "total_value": 3100000
+    },
+    "Aamaris Brown": {
+      "apy": 1038333,
+      "years": 3,
+      "guaranteed": 105000,
+      "total_value": 3115000
+    },
+    "Keeanu Benton": {
+      "apy": 1833281,
+      "years": 4,
+      "guaranteed": 4279836,
+      "total_value": 7333124
+    },
+    "Will Howard": {
+      "ktc": 1606,
+      "ktc_rank": 276,
+      "apy": 1112025,
+      "years": 4,
+      "guaranteed": 248100,
+      "total_value": 4448100
+    },
+    "Jimmy Kibble": {
+      "apy": 1033333,
+      "years": 3,
+      "guaranteed": 0,
+      "total_value": 3100000
+    },
+    "Reddy Steward": {
+      "apy": 1005000,
+      "years": 1,
+      "guaranteed": 0,
+      "total_value": 1005000
+    },
+    "Devin Neal": {
+      "ktc": 2631,
+      "ktc_rank": 269,
+      "apy": 1040333,
+      "years": 3,
+      "guaranteed": 231000,
+      "total_value": 3121000
+    },
+    "Qwuantrezz Knight": {
+      "apy": 1005000,
+      "years": 1,
+      "guaranteed": 0,
+      "total_value": 1005000
+    },
+    "Tristan Wirfs": {
+      "apy": 28125000,
+      "years": 5,
+      "guaranteed": 52244000,
+      "total_value": 140625000
+    },
+    "Deatrich Wise": {
+      "apy": 1450000,
+      "years": 1,
+      "guaranteed": 75000,
+      "total_value": 1450000
+    },
+    "Charlie Jones": {
+      "apy": 1129694,
+      "years": 4,
+      "guaranteed": 678776,
+      "total_value": 4518776
+    },
+    "Carson Bruener": {
+      "apy": 1084235,
+      "years": 4,
+      "guaranteed": 136940,
+      "total_value": 4336940
+    },
+    "Tyler Duzansky": {
+      "apy": 1036667,
+      "years": 3,
+      "guaranteed": 110000,
+      "total_value": 3110000
+    },
+    "Kyron Hudson": {
+      "apy": 1033333,
+      "years": 3,
+      "guaranteed": 0,
+      "total_value": 3100000
+    },
+    "Dalton Risner": {
+      "apy": 3250000,
+      "years": 1,
+      "guaranteed": 1000000,
+      "total_value": 3250000
+    },
+    "Brandon Aubrey": {
+      "apy": 7000000,
+      "years": 4,
+      "guaranteed": 15000000,
+      "total_value": 28000000
+    },
+    "Ronnie Harrison": {
+      "apy": 1400000,
+      "years": 1,
+      "guaranteed": 0,
+      "total_value": 1400000
+    },
+    "Markel Bell": {
+      "apy": 1840246,
+      "years": 4,
+      "guaranteed": 0,
+      "total_value": 7360984
+    },
+    "David Quessenberry": {
+      "apy": 1487500,
+      "years": 1,
+      "guaranteed": 1262500,
+      "total_value": 1487500
+    },
+    "Bernhard Raimann": {
+      "apy": 25000000,
+      "years": 4,
+      "guaranteed": 45000000,
+      "total_value": 100000000
+    },
+    "Eric Gentry": {
+      "apy": 1038333,
+      "years": 3,
+      "guaranteed": 15000,
+      "total_value": 3115000
+    },
+    "KC Eziomume": {
+      "apy": 1036333,
+      "years": 3,
+      "guaranteed": 9000,
+      "total_value": 3109000
+    },
+    "Montaric Brown": {
+      "apy": 10600000,
+      "years": 3,
+      "guaranteed": 20650000,
+      "total_value": 31800000
+    },
+    "Brandin Echols": {
+      "apy": 3000000,
+      "years": 2,
+      "guaranteed": 1830000,
+      "total_value": 6000000
+    },
+    "Terrion Arnold": {
+      "apy": 3585928,
+      "years": 4,
+      "guaranteed": 14343710,
+      "total_value": 14343710
+    },
+    "JJ Pegues": {
+      "apy": 1116785,
+      "years": 4,
+      "guaranteed": 267140,
+      "total_value": 4467140
+    },
+    "Craig Woodson": {
+      "apy": 1316614,
+      "years": 4,
+      "guaranteed": 1066448,
+      "total_value": 5266456
+    },
+    "Cody White": {
+      "apy": 1145000,
+      "years": 1,
+      "guaranteed": 0,
+      "total_value": 1145000
+    },
+    "Rodney Thomas": {
+      "apy": 1402500,
+      "years": 1,
+      "guaranteed": 187500,
+      "total_value": 1402500
+    },
+    "Connor Colby": {
+      "apy": 1075418,
+      "years": 4,
+      "guaranteed": 101672,
+      "total_value": 4301672
+    },
+    "Brandon Pili": {
+      "apy": 1765000,
+      "years": 1,
+      "guaranteed": 750000,
+      "total_value": 1765000
+    },
+    "Albert Okwuegbunam": {
+      "apy": 1215000,
+      "years": 1,
+      "guaranteed": 0,
+      "total_value": 1215000
+    },
+    "Alex Harkey": {
+      "apy": 1159902,
+      "years": 4,
+      "guaranteed": 259608,
+      "total_value": 4639608
+    },
+    "2027 Early 1st": {
+      "ktc": 7313,
+      "ktc_rank": 20
+    },
+    "Marlon Humphrey": {
+      "apy": 19500000,
+      "years": 5,
+      "guaranteed": 39957407,
+      "total_value": 97500000
+    },
+    "Renardo Green": {
+      "apy": 1597469,
+      "years": 4,
+      "guaranteed": 3347629,
+      "total_value": 6389874
+    },
+    "Sala Aumavae-Laulu": {
+      "apy": 1075000,
+      "years": 1,
+      "guaranteed": 0,
+      "total_value": 1075000
+    },
+    "Ajani Carter": {
+      "apy": 925000,
+      "years": 2,
+      "guaranteed": 0,
+      "total_value": 1850000
+    },
+    "Jake Ferguson": {
+      "ktc": 3977,
+      "ktc_rank": 137,
+      "apy": 12500000,
+      "years": 4,
+      "guaranteed": 20656000,
+      "total_value": 50000000
+    },
+    "Drew Lock": {
+      "ktc": 408,
+      "ktc_rank": 450,
+      "apy": 2500000,
+      "years": 2,
+      "guaranteed": 2250000,
+      "total_value": 5000000
+    },
+    "Tyler Cooper": {
+      "apy": 885000,
+      "years": 1,
+      "guaranteed": 0,
+      "total_value": 885000
+    },
+    "John Saunders": {
+      "apy": 1005000,
+      "years": 1,
+      "guaranteed": 0,
+      "total_value": 1005000
+    },
+    "Brayden Willis": {
+      "apy": 1087500,
+      "years": 2,
+      "guaranteed": 0,
+      "total_value": 2175000
+    },
+    "David Montgomery": {
+      "ktc": 4194,
+      "ktc_rank": 126,
+      "apy": 8250000,
+      "years": 2,
+      "guaranteed": 1000000,
+      "total_value": 16500000
+    },
+    "Nick Whiteside": {
+      "apy": 1005000,
+      "years": 1,
+      "guaranteed": 0,
+      "total_value": 1005000
+    },
+    "Leonard Williams": {
+      "apy": 21500000,
+      "years": 3,
+      "guaranteed": 26150000,
+      "total_value": 64500000
+    },
+    "Morgan Moses": {
+      "apy": 8000000,
+      "years": 3,
+      "guaranteed": 11000000,
+      "total_value": 24000000
+    },
+    "Josh Tupou": {
+      "apy": 1300000,
+      "years": 1,
+      "guaranteed": 0,
+      "total_value": 1300000
+    },
+    "Jaylon Guilbeau": {
+      "apy": 1038333,
+      "years": 3,
+      "guaranteed": 115000,
+      "total_value": 3115000
+    },
+    "Tejhaun Palmer": {
+      "apy": 922500,
+      "years": 2,
+      "guaranteed": 0,
+      "total_value": 1845000
+    },
+    "Solomon Thomas": {
+      "apy": 3000000,
+      "years": 2,
+      "guaranteed": 3000000,
+      "total_value": 6000000
+    },
+    "Dan Chisena": {
+      "apy": 1215000,
+      "years": 1,
+      "guaranteed": 0,
+      "total_value": 1215000
+    },
+    "Emmanuel Henderson": {
+      "apy": 1163298,
+      "years": 4,
+      "guaranteed": 273192,
+      "total_value": 4653192
+    },
+    "Isaiah Davis": {
+      "ktc": 2336,
+      "ktc_rank": 301,
+      "apy": 1068569,
+      "years": 4,
+      "guaranteed": 254276,
+      "total_value": 4274276
+    },
+    "Gennings Dunker": {
+      "apy": 1681586,
+      "years": 4,
+      "guaranteed": 1351884,
+      "total_value": 6726342
+    },
+    "J.R. Singleton": {
+      "apy": 885000,
+      "years": 1,
+      "guaranteed": 0,
+      "total_value": 885000
+    },
+    "Storm Norton": {
+      "apy": 1500000,
+      "years": 2,
+      "guaranteed": 500000,
+      "total_value": 3000000
+    },
+    "Myles Cole": {
+      "apy": 1005000,
+      "years": 1,
+      "guaranteed": 0,
+      "total_value": 1005000
+    },
+    "Kahlef Hailassie": {
+      "apy": 1145000,
+      "years": 1,
+      "guaranteed": 0,
+      "total_value": 1145000
+    },
+    "Anthony Smith": {
+      "apy": 1140215,
+      "years": 4,
+      "guaranteed": 180860,
+      "total_value": 4560860
+    },
+    "Samuel Cosmi": {
+      "apy": 18500000,
+      "years": 4,
+      "guaranteed": 26616000,
+      "total_value": 74000000
+    },
+    "A.J. Haulcy": {
+      "apy": 1770737,
+      "years": 4,
+      "guaranteed": 1611236,
+      "total_value": 7082948
+    },
+    "Spencer Brown": {
+      "apy": 18000000,
+      "years": 4,
+      "guaranteed": 19855000,
+      "total_value": 72000000
+    },
+    "Bangally Kamara": {
+      "apy": 1033333,
+      "years": 3,
+      "guaranteed": 0,
+      "total_value": 3100000
+    },
+    "Jordan Howden": {
+      "apy": 1041682,
+      "years": 4,
+      "guaranteed": 326728,
+      "total_value": 4166728
+    },
+    "Josh Oliver": {
+      "apy": 7750000,
+      "years": 3,
+      "guaranteed": 15645000,
+      "total_value": 23250000
+    },
+    "Shedrick Jackson": {
+      "apy": 1017500,
+      "years": 2,
+      "guaranteed": 0,
+      "total_value": 2035000
+    },
+    "Nick Herbig": {
+      "apy": 25000000,
+      "years": 4,
+      "guaranteed": 21000000,
+      "total_value": 100000000
+    },
+    "Ray Davis": {
+      "ktc": 2453,
+      "ktc_rank": 283,
+      "apy": 1183297,
+      "years": 4,
+      "guaranteed": 713188,
+      "total_value": 4733188
+    },
+    "Arron Mosby": {
+      "apy": 1145000,
+      "years": 1,
+      "guaranteed": 0,
+      "total_value": 1145000
+    },
+    "Rashad Rochelle": {
+      "apy": 1033333,
+      "years": 3,
+      "guaranteed": 0,
+      "total_value": 3100000
+    },
+    "J.C. Latham": {
+      "apy": 6511297,
+      "years": 4,
+      "guaranteed": 26045188,
+      "total_value": 26045188
+    },
+    "Isaiah Likely": {
+      "ktc": 4219,
+      "ktc_rank": 125,
+      "apy": 13333333,
+      "years": 3,
+      "guaranteed": 20500000,
+      "total_value": 40000000
+    },
+    "Ben Bartch": {
+      "apy": 1215000,
+      "years": 1,
+      "guaranteed": 330300,
+      "total_value": 1215000
+    },
+    "Adetomiwa Adebawore": {
+      "apy": 1159228,
+      "years": 4,
+      "guaranteed": 796912,
+      "total_value": 4636912
+    },
+    "Phillip Dorsett": {
+      "apy": 1300000,
+      "years": 1,
+      "guaranteed": 0,
+      "total_value": 1300000
+    },
+    "Kenneth Walker III": {
+      "ktc": 6219,
+      "ktc_rank": 48,
+      "apy": 14350000,
+      "years": 3,
+      "guaranteed": 28700000,
+      "total_value": 43050000
+    },
+    "Tim Smith": {
+      "apy": 885000,
+      "years": 1,
+      "guaranteed": 0,
+      "total_value": 885000
+    },
+    "Andrew Armstrong": {
+      "apy": 885000,
+      "years": 1,
+      "guaranteed": 0,
+      "total_value": 885000
+    },
+    "Brian Burns": {
+      "apy": 28200000,
+      "years": 5,
+      "guaranteed": 76000000,
+      "total_value": 141000000
+    },
+    "Devin Moore": {
+      "apy": 1392383,
+      "years": 4,
+      "guaranteed": 1189532,
+      "total_value": 5569532
+    },
+    "Mack Wilson": {
+      "apy": 4250000,
+      "years": 3,
+      "guaranteed": 6445000,
+      "total_value": 12750000
+    },
+    "Cody Lindenberg": {
+      "apy": 1085292,
+      "years": 4,
+      "guaranteed": 141168,
+      "total_value": 4341168
+    }
   }
 };

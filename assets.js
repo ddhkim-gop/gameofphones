@@ -11,10 +11,11 @@ async function init() {
     if (!container) return;
 
     try {
-        const [rosters, tradedPicks, leagueUsers] = await Promise.all([
+        const [rosters, tradedPicks, leagueUsers, playerValues] = await Promise.all([
             api.getRosters("2026"),
             api.getTradedPicks(),
             api.getLeagueUsers(),
+            api.getPlayerValues(),
         ]);
 
         const PAUL_YOON_AVATAR = "https://sleepercdn.com/images/v4/avatars/avatar_default_blue.webp";
