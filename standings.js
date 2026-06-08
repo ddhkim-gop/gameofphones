@@ -32,17 +32,22 @@ function computeFaabRemaining(year) {
     return result;
 }
 
+const INACTIVE = new Set(['edgxrjiang', 'riqi', 'shmyung', 'urmummma', 'JUNNNNAY']);
 function avatarEl(name, size) {
     const sz = size || 24;
+    const letter = (name||"?")[0].toUpperCase();
+    if (INACTIVE.has(name)) {
+        return `<span style="width:${sz}px;height:${sz}px;border-radius:50%;background:#3a3f4a;display:inline-flex;align-items:center;justify-content:center;font-size:${Math.round(sz*0.45)}px;font-weight:700;color:#5a6070;flex-shrink:0;">${letter}</span>`;
+    }
     const u = leagueUsers.find(u => u.username === name);
-    const url = name === "Paul_Yoon" ? "https://sleepercdn.com/images/v4/avatars/avatar_default_blue.webp" : u?.avatar_url;
+    const url = u?.avatar_url;
     if (url) {
         const color = ["#5a5be6","#e74c82","#3ecf8e","#f6ad55","#4299e1","#9f7aea","#ed64a6","#38b2ac"][(name||"?").split("").reduce((s,c)=>s+c.charCodeAt(0),0) % 8];
-     const fb = `<span style="width:${sz}px;height:${sz}px;border-radius:50%;background:${color};display:inline-flex;align-items:center;justify-content:center;font-size:${Math.round(sz*0.45)}px;font-weight:700;color:#fff;flex-shrink:0;">${(name||"?")[0].toUpperCase()}</span>`.replace(/'/g,"&#39;").replace(/"/g,"&quot;");
-     return `<img src="${url}" style="width:${sz}px;height:${sz}px;border-radius:50%;object-fit:cover;flex-shrink:0;" onerror="this.outerHTML='${fb}'">`;
+        const fb = `<span style="width:${sz}px;height:${sz}px;border-radius:50%;background:${color};display:inline-flex;align-items:center;justify-content:center;font-size:${Math.round(sz*0.45)}px;font-weight:700;color:#fff;flex-shrink:0;">${letter}</span>`.replace(/'/g,"&#39;").replace(/"/g,"&quot;");
+        return `<img src="${url}" style="width:${sz}px;height:${sz}px;border-radius:50%;object-fit:cover;flex-shrink:0;" onerror="this.outerHTML='${fb}'">`;
     }
     const clr = ["#5a5be6","#e74c82","#3ecf8e","#f6ad55","#4299e1","#9f7aea","#ed64a6","#38b2ac"][(name||"?").split("").reduce((s,c)=>s+c.charCodeAt(0),0) % 8];
-    return `<span style="width:${sz}px;height:${sz}px;border-radius:50%;background:${clr};display:inline-flex;align-items:center;justify-content:center;font-size:${Math.round(sz*0.45)}px;font-weight:700;color:#fff;flex-shrink:0;">${(name||"?")[0].toUpperCase()}</span>`;
+    return `<span style="width:${sz}px;height:${sz}px;border-radius:50%;background:${clr};display:inline-flex;align-items:center;justify-content:center;font-size:${Math.round(sz*0.45)}px;font-weight:700;color:#fff;flex-shrink:0;">${letter}</span>`;
 }
 
 function buildTxStats(txData) {

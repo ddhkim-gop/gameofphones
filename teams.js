@@ -199,7 +199,7 @@ async function init() {
                 badge.textContent = p.position || "?";
                 badge.style.background = posColor(p.position);
                 badge.style.color = "#fff";
-                badge.style.cssText = `background:${posColor(p.position)};color:#fff;font-size:10px;font-weight:800;padding:2px 6px;border-radius:4px;flex-shrink:0;letter-spacing:.02em;`;
+                badge.style.cssText = `background:${posColor(p.position)};color:#fff;font-size:10px;font-weight:800;padding:2px 0;border-radius:4px;flex-shrink:0;letter-spacing:.02em;width:30px;text-align:center;`;
 
                 const nameSpan = document.createElement("span");
                 nameSpan.style.cssText = "font-size:13px;font-weight:600;color:#f0f1f3;flex:1;text-align:left;overflow:hidden;text-overflow:ellipsis;white-space:nowrap;display:flex;align-items:center;gap:5px;";
@@ -311,8 +311,8 @@ function renderNews(articles, injuries, playerName) {
             return text.includes(lastName);
           })
         : articles;
-    // Fall back to all articles if filtering leaves nothing
-    const filtered = relevant.length > 0 ? relevant : articles;
+    // Only show articles that mention the player — no fallback to unrelated content
+    const filtered = relevant;
     let html = "";
 
     injuries.forEach(inj => {
@@ -392,34 +392,51 @@ async function openPopover(element, player) {
 
     // Transaction history for this player
     const playerTxRows = [];
+    const playerName = player.name;
+
+    // Check draft history
+    const draftArchive = window.__STATIC_DATA__?.draft || {};
+    Object.entries(draftArchive).forEach(([dYear, picks]) => {
+        (picks || []).forEach(pk => {
+            if (pk.player === playerName) {
+                const rd = pk.round ? `R${pk.round}` : "";
+                playerTxRows.push({ date: `${dYear} Draft`, label: "Draft", detail: `${pk.picked_by}${rd ? " · " + rd : ""}`, season: dYear, sortKey: dYear });
+            }
+        });
+    });
+
+    // Check waiver/FA/trade transactions
     (allTransactions || []).forEach(t => {
+        if (t.status === "failed") return;
         if (t.type !== "waiver" && t.type !== "free_agent" && t.type !== "trade") return;
-        const playerName = player.name;
-        let action = "", team = "";
+        let label = "", detail = "";
         if (t.type === "trade") {
             Object.entries(t.assets_received || {}).forEach(([rcvTeam, assets]) => {
                 if ((assets || []).some(a => a.name === playerName)) {
-                    action = "trade → "; team = rcvTeam;
+                    label = "Trade"; detail = rcvTeam;
                 }
             });
         } else {
             if ((t.added || []).some(a => a.name === playerName)) {
-                action = t.type === "waiver" ? "waiver ↑" : "FA ↑";
-                team = (t.teams || [])[0] || "";
+                label = t.type === "waiver" ? "Waiver" : "Add";
+                detail = (t.teams || [])[0] || "";
             } else if ((t.dropped || []).some(a => a.name === playerName)) {
-                action = "dropped ↓";
-                team = (t.teams || [])[0] || "";
+                label = "Released"; detail = (t.teams || [])[0] || "";
             }
         }
-        if (action) playerTxRows.push({ date: t.created || "", action, team, season: t.season || "" });
+        if (label) playerTxRows.push({ date: t.created || "", label, detail, season: t.season || "", sortKey: t.created || "" });
     });
-    playerTxRows.sort((a, b) => a.date.localeCompare(b.date));
+    playerTxRows.sort((a, b) => a.sortKey.localeCompare(b.sortKey));
 
+    const labelColor = { Draft: "#a78bfa", Trade: "#4299e1", Waiver: "#3ecf8e", Add: "#3ecf8e", Released: "#e74c82" };
     const txHistoryHtml = playerTxRows.length
         ? playerTxRows.map(r => `
-            <div style="display:flex;justify-content:space-between;align-items:center;padding:4px 0;border-bottom:1px solid #2d3139;font-size:11px;">
-                <span style="color:#f0f1f3;font-weight:600;">${r.action} <span style="color:#8b9099;font-weight:400;">${r.team}</span></span>
-                <span style="color:#5a6070;">${r.date}</span>
+            <div style="display:flex;justify-content:space-between;align-items:center;padding:5px 0;border-bottom:1px solid #2d3139;font-size:11px;">
+                <div style="display:flex;align-items:center;gap:7px;">
+                    <span style="background:${labelColor[r.label]||'#5a6070'}22;color:${labelColor[r.label]||'#8b9099'};font-weight:700;font-size:10px;padding:2px 6px;border-radius:4px;flex-shrink:0;">${r.label}</span>
+                    <span style="color:#8b9099;">${r.detail}</span>
+                </div>
+                <span style="color:#5a6070;white-space:nowrap;margin-left:8px;">${r.date}</span>
             </div>`).join("")
         : `<div style="color:#5a6070;font-size:12px;">No transaction history</div>`;
 

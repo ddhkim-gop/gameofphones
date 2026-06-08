@@ -12,13 +12,17 @@ let matchupsData = {};   // year → { week: [matchup] }
 let selectedYear = "all_time";
 
 const AVATAR_COLORS = ["#5a5be6","#e74c82","#3ecf8e","#f6ad55","#4299e1","#9f7aea","#ed64a6","#38b2ac"];
+const INACTIVE = new Set(['edgxrjiang', 'riqi', 'shmyung', 'urmummma', 'JUNNNNAY']);
 function accentColor(name) {
     return AVATAR_COLORS[(name||"?").split("").reduce((s,c)=>s+c.charCodeAt(0),0) % AVATAR_COLORS.length];
 }
 function avatarEl(url, name, size) {
     const sz = size || 24;
-    const color = accentColor(name);
     const letter = (name||"?")[0].toUpperCase();
+    if (INACTIVE.has(name)) {
+        return `<span style="width:${sz}px;height:${sz}px;border-radius:50%;background:#3a3f4a;display:inline-flex;align-items:center;justify-content:center;font-size:${Math.round(sz*0.45)}px;font-weight:700;color:#5a6070;flex-shrink:0;">${letter}</span>`;
+    }
+    const color = accentColor(name);
     const fallback = `<span style="width:${sz}px;height:${sz}px;border-radius:50%;background:${color};display:inline-flex;align-items:center;justify-content:center;font-size:${Math.round(sz*0.45)}px;font-weight:700;color:#fff;flex-shrink:0;">${letter}</span>`;
     if (url) {
         const fb = fallback.replace(/'/g,"&#39;").replace(/"/g,"&quot;");
@@ -137,74 +141,66 @@ function teamLogoHome(abbrev) {
 function bestPlayerForTeam(teamName, year) {
     const isAllTime = !year || year === "all_time";
 
+    const allStatYears = ["2023", "2024", "2025", "2026"];
+
     if (isAllTime) {
-        // Collect all unique players across every year this team had a roster
-        const allStatYears = ["2025", "2024", "2023", "2026"];
-        const playerMap = {}; // player_id → player object
+        // For each year, use ONLY that year's roster vs that year's stats
+        // This ensures the player was actually on the team in the year they scored.
+        let best = null, bestScore = -1, bestYear = null;
+        let hasAnyRoster = false;
+
         for (const y of allStatYears) {
             const roster = (rostersData?.[y] || []).find(r => r.owner === teamName);
             if (!roster) continue;
+            hasAnyRoster = true;
             (roster.players || []).forEach(p => {
-                if (p?.player_id && !playerMap[p.player_id]) playerMap[p.player_id] = p;
+                if (!p?.player_id) return;
+                const s = statsCache[y]?.[p.player_id]?.pts_half_ppr;
+                if (s > 0 && s > bestScore) {
+                    bestScore = s; bestYear = y; best = p;
+                }
             });
         }
 
-        // Fallback for historical/inactive managers not in current rosters:
+        // Fallback for historical/inactive managers with no roster data:
         // use their draft picks (via player_name_map) to find player_ids
-        if (Object.keys(playerMap).length === 0) {
+        if (!hasAnyRoster) {
             const nameMap = window.__STATIC_DATA__?.player_name_map || {};
             const draftArchive = window.__STATIC_DATA__?.draft || {};
+            const draftedPlayers = {}; // pid → { player obj, draftYear }
             Object.entries(draftArchive).forEach(([dYear, picks]) => {
                 (picks || []).forEach(p => {
                     if (p.picked_by === teamName && p.player) {
                         const pid = nameMap[p.player];
-                        if (pid && !playerMap[pid]) {
-                            playerMap[pid] = { player_id: pid, name: p.player, position: p.position, team: p.team };
+                        if (pid && !draftedPlayers[pid]) {
+                            draftedPlayers[pid] = { obj: { player_id: pid, name: p.player, position: p.position, team: p.team }, dYear };
                         }
                     }
                 });
             });
+            // Use draft-year stats for each drafted player
+            Object.values(draftedPlayers).forEach(({ obj, dYear }) => {
+                for (const y of allStatYears) {
+                    const s = statsCache[y]?.[obj.player_id]?.pts_half_ppr;
+                    if (s > 0 && s > bestScore) {
+                        bestScore = s; bestYear = y; best = obj; break;
+                    }
+                }
+            });
         }
 
-        // For each unique player, find best score across all stat years
-        let best = null, bestScore = -1, bestYear = null;
-        Object.values(playerMap).forEach(p => {
-            for (const y of allStatYears) {
-                const s = statsCache[y]?.[p.player_id]?.pts_half_ppr;
-                if (s > 0 && s > bestScore) {
-                    bestScore = s; bestYear = y;
-                    // Use the player object from that year's roster so team reflects that season
-                    const yRoster = (rostersData?.[y] || []).find(r => r.owner === teamName);
-                    const yPlayer = yRoster?.players?.find(pl => pl?.player_id === p.player_id);
-                    best = yPlayer || p;
-                }
-            }
-        });
         return best ? { player: best, score: bestScore, year: bestYear } : null;
     }
 
-    // Specific year: use that year's roster, fall back to adjacent years' stats
-    const tryRosterYears = [year, "2025", "2024", "2023", "2026"];
-    let roster = null, rosterYear = null;
-    for (const ry of tryRosterYears) {
-        const found = (rostersData?.[ry] || []).find(r => r.owner === teamName);
-        if (found) { roster = found; rosterYear = ry; break; }
-    }
+    // Specific year: use ONLY that year's roster + that year's stats (no cross-year fallback for roster)
+    const roster = (rostersData?.[year] || []).find(r => r.owner === teamName);
     if (!roster) return null;
 
-    // For stats, prefer the selected year but fall back
-    const tryStatYears = [year, "2025", "2024", "2023"];
     let best = null, bestScore = -1, bestYear = null;
     (roster.players || []).forEach(p => {
         if (!p?.player_id) return;
-        const pid = p.player_id;
-        for (const y of tryStatYears) {
-            const s = statsCache[y]?.[pid]?.pts_half_ppr;
-            if (s > 0) {
-                if (s > bestScore) { bestScore = s; best = p; bestYear = y; }
-                break;
-            }
-        }
+        const s = statsCache[year]?.[p.player_id]?.pts_half_ppr;
+        if (s > 0 && s > bestScore) { bestScore = s; best = p; bestYear = year; }
     });
     return best ? { player: best, score: bestScore, year: bestYear } : null;
 }

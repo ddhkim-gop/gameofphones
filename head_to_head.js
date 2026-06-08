@@ -64,7 +64,9 @@ function renderMatrix(dataset) {
         html += `<tr class="${INACTIVE.has(a) ? 'inactive-row' : ''}">`;
         const avatarUrl = usersMap[a];
         const _h2hColor = accentColorH2H(a);
-        const avatarHtml = avatarUrl
+        const avatarHtml = INACTIVE.has(a)
+            ? `<span style="width:22px;height:22px;border-radius:50%;background:#3a3f4a;display:inline-flex;align-items:center;justify-content:center;font-size:9px;font-weight:700;color:#5a6070;flex-shrink:0;">${a[0].toUpperCase()}</span>`
+            : avatarUrl
             ? `<img src="${avatarUrl}" style="width:22px;height:22px;border-radius:50%;object-fit:cover;flex-shrink:0;" onerror="this.outerHTML='<span style=\'width:22px;height:22px;border-radius:50%;background:${_h2hColor};display:inline-flex;align-items:center;justify-content:center;font-size:9px;font-weight:700;color:#fff;flex-shrink:0;\'>${a[0].toUpperCase()}</span>'">`
             : `<span style="width:22px;height:22px;border-radius:50%;background:${_h2hColor};display:inline-flex;align-items:center;justify-content:center;font-size:9px;font-weight:700;color:#fff;flex-shrink:0;">${a[0].toUpperCase()}</span>`;
         html += `<td class="row-head">
