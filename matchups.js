@@ -378,7 +378,7 @@ async function renderAll(data) {
 function buildWeekSelect(data) {
     const el = document.getElementById("mu-week-select");
     if (!el) return;
-    const weeks = Object.keys(data).sort((a, b) => parseInt(a) - parseInt(b));
+    const weeks = Object.keys(data).filter(w => parseInt(w) !== 18).sort((a, b) => parseInt(a) - parseInt(b));
     el.innerHTML = [`<option value="">All Weeks</option>`, ...weeks.map(w => `<option value="${w}">${getWeekLabel(w)}</option>`)].join("");
     el.value = selectedWeek || "";
 }
