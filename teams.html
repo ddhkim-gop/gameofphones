@@ -4,7 +4,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Teams</title>
-    <link rel="stylesheet" href="style.css?v=20260607">
+    <link rel="stylesheet" href="style.css?v=20260608a">
     <style>
         .teams-tab-bar {
             display: flex;
@@ -37,18 +37,20 @@
     <button class="teams-tab" id="tab-picks" onclick="teamsTab('picks')">Picks</button>
 </div>
 
+<div class="filter-bar">
+    <div id="teams-dropdown-wrap"></div>
+</div>
+
 <div id="rosters-section">
-    <h1>Rosters</h1>
     <div id="teams-container">Loading...</div>
 </div>
 
 <div id="picks-section" style="display:none">
-    <h1>Picks</h1>
     <div id="content">Loading...</div>
 </div>
 
-<script src="data.js?v=20260609a"></script>
-<script type="module" src="teams.js?v=20260608i"></script>
+<script src="data.js?v=20260608a"></script>
+<script type="module" src="teams.js?v=20260609c"></script>
 <script type="module" src="assets.js?v=20260608c"></script>
 <script>
     function teamsTab(tab) {

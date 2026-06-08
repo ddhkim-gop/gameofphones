@@ -79,6 +79,21 @@ async function init() {
     const PAUL_YOON_AVATAR = "https://sleepercdn.com/images/v4/avatars/avatar_default_blue.webp";
         (leagueUsers || []).forEach(u => { usersMap[u.username] = u.username === "Paul_Yoon" ? PAUL_YOON_AVATAR : u.avatar_url; });
 
+    // Team dropdown
+    const INACTIVE_USERS_SET = new Set(['edgxrjiang', 'riqi', 'shmyung', 'urmummma', 'JUNNNNAY']);
+    const activeRosters = (rosters || []).filter(r => r.owner && !INACTIVE_USERS_SET.has(r.owner))
+        .sort((a,b) => a.owner.localeCompare(b.owner));
+    const dropdownWrap = document.getElementById("teams-dropdown-wrap");
+    if (dropdownWrap) {
+        const sel = document.createElement("select");
+        sel.innerHTML = `<option value="">View a team…</option>` +
+            activeRosters.map(r => `<option value="${r.owner}">${r.owner}</option>`).join("");
+        sel.addEventListener("change", e => {
+            if (e.target.value) window.location.href = `team.html?team=${encodeURIComponent(e.target.value)}`;
+        });
+        dropdownWrap.appendChild(sel);
+    }
+
     // Compute picks ownership per team
     const ownership = {};
     FUTURE_YEARS.forEach(year => {
@@ -162,7 +177,7 @@ async function init() {
 
         header.innerHTML = `
             <div style="flex:1;min-width:0;">
-                <div style="font-size:14px;font-weight:700;color:#f0f1f3;white-space:nowrap;overflow:hidden;text-overflow:ellipsis;">${ownerName}</div>
+                <a href="team.html?team=${encodeURIComponent(ownerName)}" style="font-size:14px;font-weight:700;color:#f0f1f3;white-space:nowrap;overflow:hidden;text-overflow:ellipsis;text-decoration:none;display:block;" onmouseover="this.style.color='#818cf8'" onmouseout="this.style.color='#f0f1f3'">${ownerName}</a>
                 <div style="font-size:11px;color:#5a6070;margin-top:2px;">${playerCount} players · ${pickCount} picks</div>
                 ${avgAge ? `<div style="font-size:11px;color:#5a6070;margin-top:1px;">avg age ${avgAge}</div>` : ""}
             </div>`;

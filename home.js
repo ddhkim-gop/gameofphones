@@ -337,15 +337,15 @@ function updateStandings() {
 // ── League Rules ──────────────────────────────────────────────
 
 const PAYOUTS = [
-    { bracket:"Playoff",     rank:"1st",  prize:"$250", pick:"12th (1st overall)" },
+    { bracket:"Playoff",     rank:"1st",  prize:"$250", pick:"12th" },
     { bracket:"Playoff",     rank:"2nd",  prize:"$100", pick:"11th" },
     { bracket:"Playoff",     rank:"3rd",  prize:"$50",  pick:"10th" },
     { bracket:"Playoff",     rank:"4th",  prize:"—",    pick:"9th" },
-    { bracket:"Playoff",     rank:"5th–8th", prize:"—", pick:"5–8*" },
+    { bracket:"Playoff",     rank:"5th–8th", prize:"—", pick:"5th–8th" },
     { bracket:"Consolation", rank:"9th",  prize:"—",    pick:"4th" },
     { bracket:"Consolation", rank:"10th", prize:"—",    pick:"3rd" },
     { bracket:"Consolation", rank:"11th", prize:"—",    pick:"2nd" },
-    { bracket:"Consolation", rank:"12th", prize:"—",    pick:"1st (last overall)" },
+    { bracket:"Consolation", rank:"12th", prize:"—",    pick:"1st" },
 ];
 
 function buildFeesTable() {

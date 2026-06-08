@@ -318,7 +318,7 @@ main {
     nav a { font-size: 13px; padding: 10px 8px; white-space: nowrap; }
 
     .card { padding: 12px; border-radius: var(--radius-sm); }
-    #teams-container { grid-template-columns: 1fr; }
+    #teams-container { grid-template-columns: repeat(2, 1fr); }
     .draft-board { gap: 10px; }
     .draft-round { min-width: 190px; }
     .trade-grid { flex-direction: column; }
@@ -345,12 +345,25 @@ main {
     #content { grid-template-columns: 1fr !important; }
     #transactions-container { padding: 0; }
     .waiver-grid { flex-direction: column; gap: 10px; }
+
+    /* Filter bar wraps and uses smaller text */
+    .filter-bar { gap: 6px; margin-bottom: 14px; }
+    .filter-bar select { font-size: 12px; padding: 6px 26px 6px 10px; }
+
+    /* Draft select at top of draft page */
+    #yearSelect { width: 100%; }
+}
+
+/* ── Small mobile ≤ 400px ──────────────────────────────────── */
+@media (max-width: 400px) {
+    #teams-container { grid-template-columns: 1fr; }
+    #content { grid-template-columns: 1fr !important; }
 }
 
 /* ── Tablet 601–900px ──────────────────────────────────────── */
 @media (min-width: 601px) and (max-width: 900px) {
     :root { --page-pad: 16px; }
-    #teams-container { grid-template-columns: repeat(2, 1fr); }
+    #teams-container { grid-template-columns: repeat(3, 1fr); }
     #content { grid-template-columns: repeat(2, 1fr) !important; }
 }
 

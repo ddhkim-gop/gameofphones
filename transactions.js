@@ -171,22 +171,19 @@ function renderTrade(t) {
 
     const cols = entries.map(([team, assets]) => `
         <div class="tx-trade-col">
-            <div class="tx-col-header">
+            <div style="display:flex;align-items:center;gap:6px;margin-bottom:6px;">
                 ${avatarEl(team)}
                 <span class="tx-col-name">@${team}</span>
-                <span class="tx-in-label">→ IN</span>
             </div>
+            <div class="tx-verb added" style="margin-bottom:4px;">↑ IN</div>
             <div class="tx-assets">${(assets || []).map(a => assetRow(a, team, pickConsumers, t.created, retradeConsumers, draftConsumers)).join("")}</div>
         </div>`
     ).join('<div class="tx-swap">⇄</div>');
 
-    const counts = entries.map(([, a]) => (a || []).length);
-    const countBadge = counts.join(" ↔ ");
-
     return `<div class="tx-card">
         <div class="tx-card-header">
             <span class="tx-meta-date">${t.created || ""}</span>
-            <span class="tx-count-badge">${countBadge}</span>
+            <span style="background:#1a1040;color:#a78bfa;border-radius:999px;padding:2px 10px;font-size:11px;font-weight:700;flex-shrink:0;">Trade</span>
         </div>
         <div class="tx-trade-body">${cols}</div>
     </div>`;
@@ -211,15 +208,17 @@ function renderWaiverFA(t) {
 
     return `<div class="tx-card ${failed ? "tx-failed" : ""}">
         <div class="tx-card-header">
-            <div style="display:flex;align-items:center;gap:8px;flex-wrap:wrap;">
-                ${avatarEl(team)}
-                <span style="font-size:13px;font-weight:700;color:#f0f1f3;">@${team}</span>
+            <div style="display:flex;flex-direction:column;gap:4px;">
                 ${t.created ? `<span style="font-size:11px;color:#8b9099;">${t.created}</span>` : ""}
-                ${faab > 0 ? (() => {
-                    const remaining = faabRemainingMap[t.transaction_id];
-                    const remStr = remaining !== undefined ? ` ($${remaining} left)` : "";
-                    return `<span style="background:#292202;color:#fbbf24;border-radius:4px;padding:1px 8px;font-size:11px;font-weight:700;">$${faab}${remStr}</span>`;
-                })() : ""}
+                <div style="display:flex;align-items:center;gap:8px;flex-wrap:wrap;">
+                    ${avatarEl(team)}
+                    <span style="font-size:13px;font-weight:700;color:#f0f1f3;">@${team}</span>
+                    ${faab > 0 ? (() => {
+                        const remaining = faabRemainingMap[t.transaction_id];
+                        const remStr = remaining !== undefined ? ` ($${remaining} left)` : "";
+                        return `<span style="background:#292202;color:#fbbf24;border-radius:4px;padding:1px 8px;font-size:11px;font-weight:700;">$${faab}${remStr}</span>`;
+                    })() : ""}
+                </div>
             </div>
             <span style="background:${typeBg};color:${typeColor};border-radius:999px;padding:2px 10px;font-size:11px;font-weight:700;flex-shrink:0;">${typeLabel}</span>
         </div>
@@ -571,6 +570,20 @@ async function init() {
         .tx-notes { font-size: 11px; color: #5a6070; font-style: italic; margin-top: 6px; }
         .tx-none { color: #3d4350; font-size: 12px; }
         .tx-empty { color: #5a6070; padding: 20px 0; text-align: center; }
+
+        @media (max-width: 600px) {
+            .tx-card { padding: 12px; }
+            .tx-trade-body { flex-wrap: wrap; }
+            .tx-trade-col { flex: 1 1 45%; min-width: 140px; }
+            .tx-swap { align-self: flex-start; padding-top: 28px; }
+            .tx-waiver-body { flex-direction: column; gap: 10px; }
+            .tx-waiver-col { flex: unset; }
+        }
+        @media (max-width: 400px) {
+            .tx-trade-body { flex-direction: column; }
+            .tx-trade-col { flex: unset; }
+            .tx-swap { display: none; }
+        }
     </style>
 
     <div class="filter-bar">

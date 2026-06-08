@@ -2,7 +2,7 @@ const D = window.__STATIC_DATA__;
 const _cache = {};
 async function fetchJSON(url) {
     if (_cache[url]) return _cache[url];
-    const r = await fetch(url);
+    const r = await fetch(url, { cache: 'no-cache' });
     if (!r.ok) throw new Error(`HTTP ${r.status} fetching ${url}`);
     const j = await r.json();
     _cache[url] = j;

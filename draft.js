@@ -347,6 +347,172 @@ function openPickPopover(el, data) {
 
 // ── Load ──────────────────────────────────────────────────────────────────────
 
+function posColorDA(pos) {
+    return {QB:"#e74c82",RB:"#3ecf8e",WR:"#4299e1",TE:"#f6ad55",K:"#9f7aea",DEF:"#38b2ac"}[pos] || "#5a6070";
+}
+
+async function renderDraftAnalysis(picks, year) {
+    const el = document.getElementById("draft-analysis");
+    if (!el) return;
+    el.innerHTML = `<div style="color:#5a6070;font-size:13px;">Loading analysis…</div>`;
+
+    const isStartup = year === "2023";
+    const revisitYear = parseInt(year) + 2;
+    const canRevisit = revisitYear <= 2026;
+    const totalTeams = 12;
+
+    // Get current rosters for retention check
+    let rosters = [];
+    try { rosters = await api.getRosters("2026"); } catch {}
+    const rosterByOwner = {};
+    (rosters||[]).forEach(r => {
+        rosterByOwner[r.owner || ""] = new Set((r.players||[]).map(p => p.name));
+    });
+
+    // Build traded-away names per team from transactions
+    const tradedAwayByTeam = {};
+    (allTransactions||[]).forEach(tx => {
+        if (tx.type !== "trade") return;
+        Object.entries(tx.assets_received || {}).forEach(([rcv, assets]) => {
+            (tx.teams||[]).forEach(t => {
+                if (t !== rcv) {
+                    if (!tradedAwayByTeam[t]) tradedAwayByTeam[t] = new Set();
+                    (assets||[]).forEach(a => { if (a.name) tradedAwayByTeam[t].add(a.name); });
+                }
+            });
+        });
+    });
+
+    function playerStatus(name, owner) {
+        if ((rosterByOwner[owner]||new Set()).has(name)) return "roster";
+        if ((tradedAwayByTeam[owner]||new Set()).has(name)) return "traded";
+        return "dropped";
+    }
+
+    // Group picks by team, preserving draft order
+    const teamOrder = [];
+    const byTeam = {};
+    picks.forEach(p => {
+        if (!byTeam[p.picked_by]) { byTeam[p.picked_by] = []; teamOrder.push(p.picked_by); }
+        byTeam[p.picked_by].push(p);
+    });
+    const teams = [...new Set(teamOrder)];
+
+    function startupTier(round) {
+        if (round <= 3)  return {label:"Franchise Core", color:"#f6ad55"};
+        if (round <= 8)  return {label:"Starter",        color:"#3ecf8e"};
+        if (round <= 15) return {label:"Depth",           color:"#4299e1"};
+        return                  {label:"Late Flier",      color:"#5a6070"};
+    }
+    function rookieTier(round, pickInRound) {
+        if (round === 1 && pickInRound <= 4)  return {label:"Top Pick",   color:"#f6ad55"};
+        if (round === 1 && pickInRound <= 8)  return {label:"Mid 1st",    color:"#a78bfa"};
+        if (round === 1)                      return {label:"Late 1st",   color:"#4299e1"};
+        if (round === 2)                      return {label:"2nd Round",  color:"#3ecf8e"};
+        return                                       {label:"3rd Round",  color:"#8b9099"};
+    }
+
+    const cards = teams.map(team => {
+        const teamPicks = byTeam[team] || [];
+        const onRoster  = teamPicks.filter(p => playerStatus(p.player, team) === "roster").length;
+        const traded    = teamPicks.filter(p => playerStatus(p.player, team) === "traded").length;
+        const dropped   = teamPicks.filter(p => playerStatus(p.player, team) === "dropped").length;
+        const hitRate   = teamPicks.length ? Math.round(onRoster / teamPicks.length * 100) : 0;
+
+        // Score: 60% retention, 40% avg pick position value
+        let pickVal = 0;
+        teamPicks.forEach(p => {
+            const pir = ((p.pick_no - 1) % totalTeams) + 1;
+            pickVal += 1 - (pir - 1) / totalTeams;
+        });
+        pickVal = teamPicks.length ? pickVal / teamPicks.length : 0;
+        const retPct = teamPicks.length ? onRoster / teamPicks.length : 0;
+        const score = Math.round((retPct * 0.6 + pickVal * 0.4) * 100) / 10;
+        const scoreColor = score >= 7 ? "#3ecf8e" : score >= 5 ? "#f6ad55" : "#e74c82";
+
+        // Grade
+        const gradePct = teamPicks.length ? onRoster / teamPicks.length : 0;
+        const grade = gradePct >= 0.75 ? {g:"A",c:"#3ecf8e"} : gradePct >= 0.5 ? {g:"B",c:"#a78bfa"} : gradePct >= 0.25 ? {g:"C",c:"#f6ad55"} : {g:"D",c:"#e74c82"};
+
+        // Top picks for recap text
+        const topPicks = isStartup ? teamPicks.filter(p => p.round <= 3) : teamPicks.filter(p => p.round === 1);
+        const topOnRoster = topPicks.filter(p => playerStatus(p.player, team) === "roster");
+        const recapText = isStartup
+            ? `Selected ${teamPicks.length} players. Early picks (R1–R3): ${topPicks.map(p=>p.player).join(", ")||"none"}. ${topOnRoster.length}/${topPicks.length} top picks remain.`
+            : `Drafted ${teamPicks.length} rookie${teamPicks.length!==1?"s":""}: ${teamPicks.map(p=>`${p.player} (${p.position})`).join(", ")}. ${onRoster}/${teamPicks.length} still on roster.`;
+
+        // Pick rows (compact)
+        const byRound = {};
+        teamPicks.forEach(p => { if (!byRound[p.round]) byRound[p.round] = []; byRound[p.round].push(p); });
+        const pickRows = Object.keys(byRound).sort((a,b)=>+a-+b).map(rd => {
+            const rPicks = byRound[rd];
+            const tier = isStartup ? startupTier(+rd) : rookieTier(+rd, ((rPicks[0].pick_no-1)%totalTeams)+1);
+            const header = `<div style="display:flex;align-items:center;gap:6px;margin:10px 0 4px;">
+                <span style="font-size:10px;font-weight:700;color:#5a6070;text-transform:uppercase;">R${rd}</span>
+                <span style="font-size:10px;font-weight:700;padding:1px 6px;border-radius:4px;background:${tier.color}22;color:${tier.color};">${tier.label}</span>
+            </div>`;
+            const rows = rPicks.map(p => {
+                const pir = ((p.pick_no-1)%totalTeams)+1;
+                const st = playerStatus(p.player, team);
+                const badge = st==="roster"
+                    ? `<span style="font-size:10px;font-weight:700;color:#3ecf8e;background:#3ecf8e18;padding:1px 6px;border-radius:4px;">On Roster</span>`
+                    : st==="traded"
+                    ? `<span style="font-size:10px;font-weight:700;color:#4299e1;background:#4299e118;padding:1px 6px;border-radius:4px;">Traded</span>`
+                    : `<span style="font-size:10px;font-weight:700;color:#5a6070;background:#2d3139;padding:1px 6px;border-radius:4px;">Released</span>`;
+                return `<div style="display:flex;align-items:center;gap:6px;padding:5px 8px;background:#1e2027;border-radius:7px;margin-bottom:2px;">
+                    <span style="background:${posColorDA(p.position)};color:#fff;font-size:9px;font-weight:800;padding:1px 0;border-radius:3px;width:26px;text-align:center;flex-shrink:0;">${p.position||"?"}</span>
+                    <span style="font-size:12px;font-weight:600;color:#f0f1f3;flex:1;white-space:nowrap;overflow:hidden;text-overflow:ellipsis;">${p.player}</span>
+                    <span style="font-size:10px;color:#5a6070;flex-shrink:0;">${year.slice(2)}.${String(pir).padStart(2,"0")}</span>
+                    ${badge}
+                </div>`;
+            }).join("");
+            return header + rows;
+        }).join("");
+
+        const revisitedHtml = canRevisit ? `
+            <div style="border-top:1px solid #2d3139;margin-top:14px;padding-top:14px;">
+                <div style="display:flex;align-items:center;justify-content:space-between;margin-bottom:10px;">
+                    <span style="font-size:11px;font-weight:700;text-transform:uppercase;letter-spacing:.06em;color:#5a6070;">Revisited · ${revisitYear}</span>
+                    <span style="font-size:22px;font-weight:900;color:${grade.c};">${grade.g}</span>
+                </div>
+                <div style="display:flex;gap:16px;margin-bottom:10px;">
+                    <div><div style="font-size:16px;font-weight:800;color:#3ecf8e;">${onRoster}</div><div style="font-size:9px;color:#5a6070;text-transform:uppercase;margin-top:1px;">Roster</div></div>
+                    <div><div style="font-size:16px;font-weight:800;color:#4299e1;">${traded}</div><div style="font-size:9px;color:#5a6070;text-transform:uppercase;margin-top:1px;">Traded</div></div>
+                    <div><div style="font-size:16px;font-weight:800;color:#5a6070;">${dropped}</div><div style="font-size:9px;color:#5a6070;text-transform:uppercase;margin-top:1px;">Released</div></div>
+                    <div><div style="font-size:16px;font-weight:800;color:#f0f1f3;">${hitRate}%</div><div style="font-size:9px;color:#5a6070;text-transform:uppercase;margin-top:1px;">Kept</div></div>
+                </div>
+            </div>` : "";
+
+        const recapCard = `
+            <div style="background:#252830;border:1px solid #2d3139;border-radius:10px;padding:14px;margin-bottom:12px;">
+                <div style="display:flex;align-items:center;justify-content:space-between;margin-bottom:8px;">
+                    <span style="font-size:11px;font-weight:700;text-transform:uppercase;letter-spacing:.06em;color:#5a6070;">Draft Recap</span>
+                    <div style="display:flex;align-items:baseline;gap:3px;">
+                        <span style="font-size:22px;font-weight:900;color:${scoreColor};">${score}</span>
+                        <span style="font-size:11px;color:#5a6070;font-weight:600;">/10</span>
+                    </div>
+                </div>
+                <div style="font-size:12px;color:#c9cdd4;line-height:1.6;">${recapText}</div>
+            </div>`;
+
+        const avatar = avatarEl(team, 28);
+        return `
+        <div style="background:#1e2027;border:1px solid #2d3139;border-radius:12px;padding:16px;">
+            <div style="display:flex;align-items:center;gap:10px;margin-bottom:14px;padding-bottom:12px;border-bottom:1px solid #2d3139;">
+                ${avatar}
+                <a href="team.html?team=${encodeURIComponent(team)}" style="font-size:14px;font-weight:700;color:#f0f1f3;text-decoration:none;" onmouseover="this.style.color='#818cf8'" onmouseout="this.style.color='#f0f1f3'">${team}</a>
+            </div>
+            ${isStartup ? recapCard + pickRows + revisitedHtml : pickRows + recapCard + revisitedHtml}
+        </div>`;
+    });
+
+    el.innerHTML = `
+        <div style="font-size:16px;font-weight:700;color:#f0f1f3;margin-bottom:16px;">${year} Draft Analysis</div>
+        <div style="display:grid;grid-template-columns:repeat(auto-fill,minmax(280px,1fr));gap:16px;">
+            ${cards.join("")}
+        </div>`;
+}
+
 async function load(year) {
     document.getElementById("draft-container").innerHTML = `<div class="card" style="color:var(--text-3);">Loading ${year} draft...</div>`;
     document.getElementById("position-stats").innerHTML = "";
@@ -369,6 +535,7 @@ async function load(year) {
 
         renderPositions(picks, year);
         renderDraft(picks);
+        renderDraftAnalysis(picks, year);
     } catch(err) {
         console.error("Draft load error:", err);
         document.getElementById("draft-container").innerHTML = `<div class="card">Failed to load draft data for ${year}.</div>`;

@@ -96,15 +96,13 @@ function renderMatrix(dataset) {
 
 function render() {
     const board = document.getElementById("h2h-board");
-    const label = document.getElementById("view-label");
+
 
     let dataset;
     if (currentView === "all_time") {
         dataset = data.all_time || {};
-        label.textContent = "All-Time Records";
     } else {
         dataset = data.seasons?.[currentView] || {};
-        label.textContent = `${currentView} Season`;
     }
 
     board.innerHTML = renderMatrix(dataset);
@@ -124,20 +122,14 @@ async function init() {
     container.innerHTML = `
     <style>
         #h2h-container { max-width: 100%; overflow-x: auto; }
+        #h2h-controls .filter-bar { margin-bottom: 0; }
 
-        .view-label {
-            font-size: 18px;
-            font-weight: 700;
-            margin-bottom: 16px;
-            color: #f0f1f3;
-        }
-
-        .matrix-wrap { overflow-x: auto; -webkit-overflow-scrolling: touch; }
+.matrix-wrap { overflow-x: auto; -webkit-overflow-scrolling: touch; }
 
         .matrix {
             border-collapse: separate;
             border-spacing: 0;
-            font-size: 12px;
+            font-size: 13px;
             white-space: nowrap;
         }
         .matrix th, .matrix td {
@@ -148,48 +140,58 @@ async function init() {
             text-align: left !important;
         }
 
-        .corner { width: 200px; }
+        .corner {
+            width: 300px;
+            position: sticky;
+            left: 0;
+            z-index: 2;
+            background: #161820;
+        }
 
         .col-head {
-            height: 80px;
+            height: 120px;
             vertical-align: bottom;
-            padding-bottom: 4px;
+            padding-bottom: 6px;
         }
         .col-head div {
             writing-mode: vertical-rl;
             transform: rotate(180deg);
-            font-size: 11px;
+            font-size: 13px;
             font-weight: 700;
             color: #f0f1f3;
-            padding: 4px 6px;
+            padding: 4px 8px;
         }
         .col-head.col-inactive div { opacity: 0.35; }
 
         .row-head {
             text-align: left;
-            padding: 3px 16px 3px 0;
-            min-width: 190px;
+            padding: 4px 20px 4px 0;
+            min-width: 285px;
+            position: sticky;
+            left: 0;
+            z-index: 1;
+            background: #161820;
         }
         .row-name {
-            font-size: 13px;
+            font-size: 15px;
             font-weight: 700;
             color: #f0f1f3;
             line-height: 1.2;
         }
         .row-record {
-            font-size: 10px;
+            font-size: 11px;
             color: #8b9099;
             margin-top: 1px;
         }
 
-        .cell-pad { padding: 4px 3px; }
+        .cell-pad { padding: 5px 4px; }
 
         .cell-record {
-            width: 34px;
-            height: 20px;
-            font-size: 9.5px;
+            width: 51px;
+            height: 30px;
+            font-size: 11px;
             font-weight: 700;
-            border-radius: 4px;
+            border-radius: 5px;
             cursor: default;
             display: flex;
             align-items: center;
@@ -197,17 +199,17 @@ async function init() {
         }
         .cell-self {
             color: #2d3139;
-            font-size: 14px;
-            padding: 4px 3px;
+            font-size: 18px;
+            padding: 5px 4px;
         }
         .cell-empty {
             color: #2d3139;
-            width: 34px;
-            height: 20px;
+            width: 51px;
+            height: 30px;
             display: flex;
             align-items: center;
             justify-content: center;
-            font-size: 12px;
+            font-size: 14px;
         }
         .col-inactive-cell { opacity: 0.35; }
 
@@ -223,7 +225,6 @@ async function init() {
     </style>
 
     <div class="h2h-controls" id="h2h-controls"></div>
-    <div class="view-label" id="view-label"></div>
     <div id="h2h-board">Loading...</div>
     `;
 

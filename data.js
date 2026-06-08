@@ -62393,9 +62393,9 @@ window.__STATIC_DATA__ = {
       "season": "2027",
       "round": 1,
       "roster_id": "1",
-      "owner_id": "2",
-      "previous_owner_id": "1",
-      "owner_name": "spiffster",
+      "owner_id": "1",
+      "previous_owner_id": "2",
+      "owner_name": "ddhk",
       "original_owner_name": "ddhk"
     },
     {
@@ -62438,9 +62438,9 @@ window.__STATIC_DATA__ = {
       "season": "2027",
       "round": 1,
       "roster_id": "7",
-      "owner_id": "6",
-      "previous_owner_id": "7",
-      "owner_name": "IconicJH",
+      "owner_id": "7",
+      "previous_owner_id": "6",
+      "owner_name": "Paul_Yoon",
       "original_owner_name": "Paul_Yoon"
     },
     {
@@ -62465,9 +62465,9 @@ window.__STATIC_DATA__ = {
       "season": "2027",
       "round": 1,
       "roster_id": "12",
-      "owner_id": "1",
-      "previous_owner_id": "12",
-      "owner_name": "ddhk",
+      "owner_id": "9",
+      "previous_owner_id": "1",
+      "owner_name": "paddleham",
       "original_owner_name": "ganathan"
     },
     {
@@ -62483,9 +62483,9 @@ window.__STATIC_DATA__ = {
       "season": "2027",
       "round": 2,
       "roster_id": "2",
-      "owner_id": "1",
-      "previous_owner_id": "2",
-      "owner_name": "ddhk",
+      "owner_id": "8",
+      "previous_owner_id": "1",
+      "owner_name": "eikichii952",
       "original_owner_name": "spiffster"
     },
     {
@@ -62519,18 +62519,18 @@ window.__STATIC_DATA__ = {
       "season": "2027",
       "round": 2,
       "roster_id": "7",
-      "owner_id": "1",
-      "previous_owner_id": "7",
-      "owner_name": "ddhk",
+      "owner_id": "8",
+      "previous_owner_id": "1",
+      "owner_name": "eikichii952",
       "original_owner_name": "Paul_Yoon"
     },
     {
       "season": "2027",
       "round": 2,
       "roster_id": "8",
-      "owner_id": "1",
-      "previous_owner_id": "8",
-      "owner_name": "ddhk",
+      "owner_id": "8",
+      "previous_owner_id": "1",
+      "owner_name": "eikichii952",
       "original_owner_name": "eikichii952"
     },
     {
@@ -62538,7 +62538,7 @@ window.__STATIC_DATA__ = {
       "round": 2,
       "roster_id": "9",
       "owner_id": "1",
-      "previous_owner_id": "9",
+      "previous_owner_id": "2",
       "owner_name": "ddhk",
       "original_owner_name": "paddleham"
     },
@@ -62573,9 +62573,9 @@ window.__STATIC_DATA__ = {
       "season": "2027",
       "round": 3,
       "roster_id": "4",
-      "owner_id": "1",
-      "previous_owner_id": "4",
-      "owner_name": "ddhk",
+      "owner_id": "8",
+      "previous_owner_id": "1",
+      "owner_name": "eikichii952",
       "original_owner_name": "jonsung"
     },
     {
@@ -62591,9 +62591,9 @@ window.__STATIC_DATA__ = {
       "season": "2027",
       "round": 3,
       "roster_id": "8",
-      "owner_id": "1",
-      "previous_owner_id": "8",
-      "owner_name": "ddhk",
+      "owner_id": "2",
+      "previous_owner_id": "1",
+      "owner_name": "spiffster",
       "original_owner_name": "eikichii952"
     },
     {
