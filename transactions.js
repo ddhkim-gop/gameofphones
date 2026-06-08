@@ -58,23 +58,23 @@ function avatarEl(name) {
 }
 
 // Build the full retrade chain for a pick received by `team`, returning HTML lines.
-// Follows the chain: if team later re-traded it, show who they sent it to,
-// then whether THAT team re-traded it, until we reach the final drafter.
-function buildPickChainHtml(year, round, team, afterDate, depth) {
+// retradeConsumers tracks which entry to use when a team received multiple same-round picks.
+function buildPickChainHtml(year, round, team, afterDate, depth, retradeConsumers, draftConsumers) {
     if (depth > 6) return ""; // guard against infinite loops
     const key = `${year}-${round}-${team}`;
-    const retradeIdx = `_idx_${key}_${afterDate}`;
     const retradeArr = pickRetradeMap[key] || [];
-    // Find the first re-trade that happened AFTER afterDate
     const parseTxDate = s => s ? new Date(s.replace(' •', ',').replace(/\s+PT$/, '')).getTime() : 0;
     const afterTs = parseTxDate(afterDate);
-    const retrade = retradeArr.find(r => parseTxDate(r.date) > afterTs);
+    // Use a consumer index so multiple same-round picks in one trade each get their own chain entry
+    const consumerKey = `${key}-${afterDate}`;
+    const cidx = retradeConsumers[consumerKey] || 0;
+    const matching = retradeArr.filter(r => parseTxDate(r.date) > afterTs);
+    const retrade = matching[cidx];
     if (!retrade) {
-        // No re-trade — check if this team actually drafted with it
-        const draftKey = `${year}-${round}-${team}`;
-        // (Caller will handle showing "Drafted" for the final holder)
+        // No re-trade — caller will handle showing "Drafted" for the final holder
         return null;
     }
+    retradeConsumers[consumerKey] = cidx + 1;
     // This team re-traded the pick. Show the next hop, then recurse.
     let html = `<div style="display:flex;align-items:center;gap:5px;margin-top:3px;">
         <span style="font-size:9px;color:#5a6070;">↓ traded to</span>
@@ -82,12 +82,15 @@ function buildPickChainHtml(year, round, team, afterDate, depth) {
         <span style="font-size:10px;color:#5a6070;">${retrade.date.split('•')[0].trim()}</span>
     </div>`;
     // Recurse: did THAT team also re-trade it?
-    const nextChain = buildPickChainHtml(year, round, retrade.toTeam, retrade.date, depth + 1);
+    const nextChain = buildPickChainHtml(year, round, retrade.toTeam, retrade.date, depth + 1, retradeConsumers, draftConsumers);
     if (nextChain === null) {
         // retrade.toTeam kept it — find what they drafted
-        const dpArr = pickMap[`${year}-${round}-${retrade.toTeam}`] || [];
-        if (dpArr.length) {
-            const dp = dpArr[0];
+        const dpKey = `${year}-${round}-${retrade.toTeam}`;
+        const dpArr = pickMap[dpKey] || [];
+        const didx = draftConsumers[dpKey] || 0;
+        const dp = dpArr[didx];
+        if (dp) {
+            draftConsumers[dpKey] = didx + 1;
             const pickInRound = dp.pick_no - (round - 1) * NUM_TEAMS;
             html += `<div style="display:flex;align-items:center;gap:5px;margin-top:3px;">
                 <span style="font-size:9px;color:#5a6070;">→ drafted</span>
@@ -102,7 +105,7 @@ function buildPickChainHtml(year, round, team, afterDate, depth) {
     return html;
 }
 
-function assetRow(asset, receivedBy, pickConsumers, tradeDate) {
+function assetRow(asset, receivedBy, pickConsumers, tradeDate, retradeConsumers, draftConsumers) {
     if ((asset.position || "").toUpperCase() === "PICK") {
         // name format: "2025 Round 2" → year=2025, round=2
         const m = (asset.name || "").match(/(\d{4})\s+Round\s+(\d+)/i);
@@ -115,7 +118,7 @@ function assetRow(asset, receivedBy, pickConsumers, tradeDate) {
             const idx = pickConsumers[key] || 0;
 
             // Check if receivedBy later re-traded this pick
-            const chainHtml = buildPickChainHtml(year, round, receivedBy, tradeDate || "", 0);
+            const chainHtml = buildPickChainHtml(year, round, receivedBy, tradeDate || "", 0, retradeConsumers, draftConsumers);
 
             if (chainHtml !== null) {
                 // Pick was re-traded — show the chain instead of drafted player
@@ -160,9 +163,11 @@ function renderTrade(t) {
     const entries = Object.entries(t.assets_received || {});
     if (entries.length < 2) return "";
 
-    // Per-trade consumption index for pick arrays (supports same manager
-    // receiving multiple picks in the same round/year in one deal).
+    // Per-trade consumption indexes — shared across all columns so multiple
+    // same-round picks each get their own unique chain / drafted player.
     const pickConsumers = {};
+    const retradeConsumers = {};
+    const draftConsumers = {};
 
     const cols = entries.map(([team, assets]) => `
         <div class="tx-trade-col">
@@ -171,7 +176,7 @@ function renderTrade(t) {
                 <span class="tx-col-name">@${team}</span>
                 <span class="tx-in-label">→ IN</span>
             </div>
-            <div class="tx-assets">${(assets || []).map(a => assetRow(a, team, pickConsumers, t.created)).join("")}</div>
+            <div class="tx-assets">${(assets || []).map(a => assetRow(a, team, pickConsumers, t.created, retradeConsumers, draftConsumers)).join("")}</div>
         </div>`
     ).join('<div class="tx-swap">⇄</div>');
 
