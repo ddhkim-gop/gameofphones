@@ -62334,15 +62334,6 @@ window.__STATIC_DATA__ = {
     {
       "season": "2027",
       "round": 1,
-      "roster_id": "1",
-      "owner_id": "2",
-      "previous_owner_id": "1",
-      "owner_name": "spiffster",
-      "original_owner_name": "ddhk"
-    },
-    {
-      "season": "2027",
-      "round": 1,
       "roster_id": "2",
       "owner_id": "1",
       "previous_owner_id": "2",
@@ -62405,30 +62396,12 @@ window.__STATIC_DATA__ = {
     },
     {
       "season": "2027",
-      "round": 1,
-      "roster_id": "12",
-      "owner_id": "1",
-      "previous_owner_id": "12",
-      "owner_name": "ddhk",
-      "original_owner_name": "ganathan"
-    },
-    {
-      "season": "2027",
       "round": 2,
       "roster_id": "1",
       "owner_id": "5",
       "previous_owner_id": "1",
       "owner_name": "andyxia124",
       "original_owner_name": "ddhk"
-    },
-    {
-      "season": "2027",
-      "round": 2,
-      "roster_id": "2",
-      "owner_id": "1",
-      "previous_owner_id": "2",
-      "owner_name": "ddhk",
-      "original_owner_name": "spiffster"
     },
     {
       "season": "2027",
@@ -62456,24 +62429,6 @@ window.__STATIC_DATA__ = {
       "previous_owner_id": "6",
       "owner_name": "Paul_Yoon",
       "original_owner_name": "IconicJH"
-    },
-    {
-      "season": "2027",
-      "round": 2,
-      "roster_id": "7",
-      "owner_id": "1",
-      "previous_owner_id": "7",
-      "owner_name": "ddhk",
-      "original_owner_name": "Paul_Yoon"
-    },
-    {
-      "season": "2027",
-      "round": 2,
-      "roster_id": "8",
-      "owner_id": "1",
-      "previous_owner_id": "8",
-      "owner_name": "ddhk",
-      "original_owner_name": "eikichii952"
     },
     {
       "season": "2027",
@@ -62514,29 +62469,11 @@ window.__STATIC_DATA__ = {
     {
       "season": "2027",
       "round": 3,
-      "roster_id": "4",
-      "owner_id": "1",
-      "previous_owner_id": "4",
-      "owner_name": "ddhk",
-      "original_owner_name": "jonsung"
-    },
-    {
-      "season": "2027",
-      "round": 3,
       "roster_id": "6",
       "owner_id": "8",
       "previous_owner_id": "1",
       "owner_name": "eikichii952",
       "original_owner_name": "IconicJH"
-    },
-    {
-      "season": "2027",
-      "round": 3,
-      "roster_id": "8",
-      "owner_id": "1",
-      "previous_owner_id": "8",
-      "owner_name": "ddhk",
-      "original_owner_name": "eikichii952"
     },
     {
       "season": "2027",
@@ -62610,7 +62547,7 @@ window.__STATIC_DATA__ = {
       "owner_name": "ddhk",
       "original_owner_name": "spiffster"
     }
-  ],
+  ]],
   "season_history": {
     "2023": {
       "champion": "ganathan",
