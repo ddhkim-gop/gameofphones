@@ -305,16 +305,36 @@ function formatDate(str) {
     return new Date(str).toLocaleDateString("en-US", { month: "short", day: "numeric", year: "numeric" });
 }
 
-async function lookupEspnId(name) {
+async function lookupEspnId(name, teamAbbrev) {
     if (espnIdCache[name] !== undefined) return espnIdCache[name];
     try {
+        // Try ESPN search first
         const r = await fetch(`https://site.api.espn.com/apis/common/v3/search?query=${encodeURIComponent(name)}&limit=5&type=athlete&sport=football`);
         const d = await r.json();
         const items = d.items || [];
         const match = items.find(i => i.displayName?.toLowerCase() === name.toLowerCase()) || items[0];
-        const id = match?.id ? Number(match.id) : null;
-        espnIdCache[name] = id;
-        return id;
+        if (match?.id) {
+            espnIdCache[name] = Number(match.id);
+            return espnIdCache[name];
+        }
+        // Search returned nothing — fall back to fetching the NFL team roster.
+        // Newer rookies often aren't in the ESPN search index yet.
+        if (teamAbbrev) {
+            const rr = await fetch(`https://site.api.espn.com/apis/site/v2/sports/football/nfl/teams/${teamAbbrev.toLowerCase()}/roster`);
+            const rd = await rr.json();
+            const allAthletes = (rd.athletes || []).flatMap(g => g.items || []);
+            const nameLower = name.toLowerCase();
+            const found = allAthletes.find(a =>
+                (a.displayName || "").toLowerCase() === nameLower ||
+                (a.fullName || "").toLowerCase() === nameLower
+            );
+            if (found?.id) {
+                espnIdCache[name] = Number(found.id);
+                return espnIdCache[name];
+            }
+        }
+        espnIdCache[name] = null;
+        return null;
     } catch {
         espnIdCache[name] = null;
         return null;
@@ -330,17 +350,16 @@ function filterArticlesForPlayer(articles, playerName, espnId) {
     const first = parts[0].toLowerCase();
 
     return articles.filter(a => {
-        // Primary: check ESPN categories metadata — most reliable, works even
-        // when the player name isn't in the headline (e.g. "Cowboys activate WR")
+        const text = ((a.headline || "") + " " + (a.description || "")).toLowerCase();
+        // Category match (ESPN athlete tag): ESPN sometimes tags roundup articles with
+        // many athletes. Require the player's last name also appears in text to avoid
+        // false positives from sloppy ESPN metadata (e.g. Evans tagged on Achane article).
         if (espnIdNum) {
             const cats = a.categories || [];
-            if (cats.some(c => c.type === "athlete" && Number(c.athleteId) === espnIdNum)) return true;
+            if (cats.some(c => c.type === "athlete" && Number(c.athleteId) === espnIdNum) && text.includes(last)) return true;
         }
-        // Secondary: full name match in headline + description text
-        const text = ((a.headline || "") + " " + (a.description || "")).toLowerCase();
+        // Full name match in headline + description
         if (text.includes(full)) return true;
-        // Tertiary: last name + first initial (catches "C. Lamb" style references)
-        if (last.length > 3 && text.includes(last) && (text.includes(first + " ") || text.includes(first[0] + "."))) return true;
         return false;
     });
 }
@@ -462,7 +481,14 @@ async function openPopover(element, player) {
         }
         if (label) playerTxRows.push({ date: t.created || "", label, detail, season: t.season || "", sortKey: t.created || "" });
     });
-    playerTxRows.sort((a, b) => b.sortKey.localeCompare(a.sortKey)); // newest first
+    // Convert date strings like "Jun 04, 2026 • 12:14 PM PT" or year strings "2023"
+    // to timestamps for proper chronological sort (localeCompare sorts month names alphabetically)
+    function toTimestamp(key) {
+        if (!key) return 0;
+        if (/^\d{4}$/.test(key)) return new Date(key + '-01-01').getTime(); // just a year
+        return new Date(key.replace(' •', ',').replace(/\s+PT$/, '')) || 0;
+    }
+    playerTxRows.sort((a, b) => toTimestamp(b.sortKey) - toTimestamp(a.sortKey)); // newest first
 
     const labelColor = { Draft: "#a78bfa", Trade: "#4299e1", Waiver: "#3ecf8e", Add: "#3ecf8e", Released: "#e74c82" };
     const txHistoryHtml = playerTxRows.length
@@ -551,7 +577,7 @@ async function openPopover(element, player) {
     // Kick off global NFL news fetch immediately (cached after first call)
     const globalNewsPromise = getNflNews();
 
-    const espnId = player.espn_id || await lookupEspnId(player.name);
+    const espnId = player.espn_id || await lookupEspnId(player.name, player.team);
 
     if (!player.espn_id && espnId) {
         const img = popover.querySelector(".pc-headshot");
