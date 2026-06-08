@@ -388,7 +388,30 @@ async function loadYear(year) {
     if (board) board.innerHTML = `<div style="color:#5a6070;padding:20px 0;">Loading ${year}…</div>`;
     try {
         if (!matchupsCache[year]) {
-            matchupsCache[year] = await api.getMatchups(year);
+            const [matchupData, rosters] = await Promise.all([
+                api.getMatchups(year),
+                api.getRosters(year).catch(() => []),
+            ]);
+            // Build player_id → team lookup from end-of-season rosters
+            const teamByPlayer = {};
+            (rosters || []).forEach(r => {
+                (r.players || []).forEach(p => {
+                    if (p.player_id && p.team) teamByPlayer[p.player_id] = p.team;
+                });
+            });
+            // Backfill missing nfl_team on starters
+            Object.values(matchupData || {}).forEach(week => {
+                (week || []).forEach(m => {
+                    (m.teams || []).forEach(t => {
+                        (t.starters || []).forEach(s => {
+                            if (!s.nfl_team && s.player_id && teamByPlayer[s.player_id]) {
+                                s.nfl_team = teamByPlayer[s.player_id];
+                            }
+                        });
+                    });
+                });
+            });
+            matchupsCache[year] = matchupData;
         }
         const data = matchupsCache[year] || {};
         if (!recordsCache[year]) {
