@@ -25,18 +25,7 @@ let statsCache = {};
 let usersMap = {};
 const espnIdCache = {};
 
-// Global NFL news cache — fetched once, shared across all player card opens.
-// We pull a large batch from ESPN's general feed so even depth players get coverage.
-let _nflNewsPromise = null;
-function getNflNews() {
-    if (!_nflNewsPromise) {
-        _nflNewsPromise = Promise.all([
-            fetch("https://site.api.espn.com/apis/site/v2/sports/football/nfl/news?limit=150").then(r => r.json()).catch(() => ({})),
-            fetch("https://site.api.espn.com/apis/site/v2/sports/football/nfl/news?limit=150&offset=150").then(r => r.json()).catch(() => ({})),
-        ]).then(([a, b]) => [...(a.articles || []), ...(b.articles || [])]);
-    }
-    return _nflNewsPromise;
-}
+
 
 const POS_COLORS = {
     QB:  "#e74c82",
@@ -366,8 +355,6 @@ function filterArticlesForPlayer(articles, playerName, espnId) {
 
 function renderNews(articles, injuries, playerName, espnId) {
     const relevant = filterArticlesForPlayer(articles, playerName, espnId);
-    // Only show articles that mention the player — no fallback to unrelated content
-    const filtered = relevant;
     let html = "";
 
     injuries.forEach(inj => {
@@ -378,15 +365,57 @@ function renderNews(articles, injuries, playerName, espnId) {
         </div>`;
     });
 
-    if (injuries.length && articles.length) {
+    if (injuries.length && relevant.length) {
         html += `<hr style="border:none;border-top:1px solid #2d3139;margin:10px 0;">`;
     }
 
-    filtered.slice(0, 5).forEach(a => {
+    relevant.slice(0, 5).forEach(a => {
         html += `<div class="pc-news-item">
             <div class="pc-news-headline">${a.headline || ""}</div>
             ${a.description ? `<div class="pc-news-impact"><span class="pc-impact-label">Impact:</span> ${a.description}</div>` : ""}
             <div class="pc-news-date">${formatDate(a.published)}</div>
+        </div>`;
+    });
+
+    if (!html) return `<div style="color:#5a6070;font-size:12px;">No recent news</div>`;
+    return html;
+}
+
+const SOURCE_LABEL = { rotoballer: "RotoBaller", rotowire: "RotoWire", fantasy_pros: "FantasyPros" };
+
+function renderSleeperNews(newsItems, injuries) {
+    let html = "";
+
+    // ESPN injury banner (from athleteData) takes precedence as an alert
+    injuries.forEach(inj => {
+        html += `<div class="pc-news-item">
+            <div class="pc-news-headline" style="color:#fbbf24;">⚠ ${inj.shortComment || "Injury Update"}</div>
+            ${inj.longComment ? `<div class="pc-news-impact"><span class="pc-impact-label">Impact:</span> ${inj.longComment}</div>` : ""}
+            <div class="pc-news-date">${formatDate(inj.date)}</div>
+        </div>`;
+    });
+
+    if (injuries.length && newsItems.length) {
+        html += `<hr style="border:none;border-top:1px solid #2d3139;margin:10px 0;">`;
+    }
+
+    // Show top 5 Sleeper news items (already player-specific, no filtering needed)
+    newsItems.slice(0, 5).forEach(item => {
+        const m = item.metadata || {};
+        const title = m.title || "";
+        const desc = m.description || "";
+        const analysis = m.analysis || "";
+        const src = SOURCE_LABEL[item.source] || item.source || "";
+        const date = item.published ? new Date(item.published).toLocaleDateString("en-US", { month:"short", day:"numeric", year:"numeric" }) : "";
+        const url = m.url || "";
+        const headlineHtml = url
+            ? `<a href="${url}" target="_blank" rel="noopener" style="color:#f0f1f3;text-decoration:none;">${title}</a>`
+            : title;
+        html += `<div class="pc-news-item">
+            <div class="pc-news-headline">${headlineHtml}</div>
+            ${desc ? `<div class="pc-news-impact">${desc}</div>` : ""}
+            ${analysis ? `<div class="pc-news-impact" style="color:#5a6070;margin-top:3px;">${analysis}</div>` : ""}
+            <div class="pc-news-date">${src ? `<span style="color:#4299e1;font-weight:600;">${src}</span> · ` : ""}${date}</div>
         </div>`;
     });
 
@@ -575,8 +604,6 @@ async function openPopover(element, player) {
     positionPopover(popover, element);
 
     // Kick off global NFL news fetch immediately (cached after first call)
-    const globalNewsPromise = getNflNews();
-
     const espnId = player.espn_id || await lookupEspnId(player.name, player.team);
 
     if (!player.espn_id && espnId) {
@@ -585,12 +612,14 @@ async function openPopover(element, player) {
     }
 
     try {
-        // Fetch ESPN data — stats & athlete-specific news require espnId; global news always runs
-        const [statsData, athleteNewsData, athleteData, globalArticles] = await Promise.all([
+        // Fetch ESPN stats + injury data, and Sleeper news in parallel.
+        // Sleeper's news endpoint is player-specific (Rotoballer/RotoWire/FantasyPros aggregated)
+        // and CORS-enabled — far better coverage than ESPN's general news feed.
+        const sleeperId = player.player_id;
+        const [statsData, athleteData, sleeperNews] = await Promise.all([
             espnId ? fetch(`https://site.api.espn.com/apis/common/v3/sports/football/nfl/athletes/${espnId}/stats`).then(r => r.json()).catch(() => ({})) : Promise.resolve({}),
-            espnId ? fetch(`https://site.api.espn.com/apis/site/v2/sports/football/nfl/news?athlete=${espnId}&limit=20`).then(r => r.json()).catch(() => ({})) : Promise.resolve({}),
             espnId ? fetch(`https://site.api.espn.com/apis/common/v3/sports/football/nfl/athletes/${espnId}`).then(r => r.json()).catch(() => ({})) : Promise.resolve({}),
-            globalNewsPromise,
+            sleeperId ? fetch(`https://api.sleeper.com/players/nfl/${sleeperId}/news`).then(r => r.json()).catch(() => []) : Promise.resolve([]),
         ]);
 
         const statsEl = document.getElementById("espn-stats");
@@ -641,24 +670,16 @@ async function openPopover(element, player) {
             statsEl.innerHTML = `<div class="pc-section-title">Career Stats</div><div style="color:#5a6070;font-size:12px;">Not available</div>`;
         }
 
-        // Merge athlete-specific + global news, deduplicate by headline, filter by player name
-        // Categories-based matching (athleteId in article metadata) is the primary signal
-        const athleteArticles = athleteNewsData.articles || [];
-        const seen = new Set(athleteArticles.map(a => a.headline));
-        const merged = [
-            ...athleteArticles,
-            ...globalArticles.filter(a => !seen.has(a.headline)),
-        ];
         const injuries = athleteData.athlete?.injuries || [];
         document.getElementById("espn-news").innerHTML = `
             <div class="pc-section-title">Latest News</div>
-            ${renderNews(merged, injuries, player.name, espnId)}`;
+            ${renderSleeperNews(sleeperNews, injuries)}`;
 
         // Re-clamp position after content loaded (height changed)
         positionPopover(popover, element);
 
     } catch (e) {
-        console.error("ESPN fetch error:", e);
+        console.error("Player card fetch error:", e);
         document.getElementById("espn-stats").innerHTML = `<div class="pc-section-title">Career Stats</div><div style="color:#5a6070;font-size:12px;">Failed to load</div>`;
         document.getElementById("espn-news").innerHTML = `<div class="pc-section-title">Latest News</div><div style="color:#5a6070;font-size:12px;">Failed to load</div>`;
     }
