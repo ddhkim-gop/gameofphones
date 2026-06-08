@@ -630,7 +630,7 @@ async function openPopover(element, player) {
             </div>
             <div id="espn-stats">
                 <div style="display:flex;align-items:center;gap:8px;margin-bottom:10px;">
-                    <div style="font-size:10px;text-transform:uppercase;letter-spacing:.06em;color:#5a6070;font-weight:700;">Season</div>
+                    <div style="font-size:10px;text-transform:uppercase;letter-spacing:.06em;color:#5a6070;font-weight:700;">Career</div>
                     <select id="pc-stats-year" style="background:#252830;border:1px solid #2d3139;border-radius:6px;color:#f0f1f3;font-size:12px;padding:3px 8px;cursor:pointer;">
                         <option value="all">All</option>
                         <option value="2025">2025</option>
