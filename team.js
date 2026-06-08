@@ -289,21 +289,15 @@ async function init() {
         const rosterHtml = sortedPos.map(pos => {
             const header = `<div style="font-size:10px;font-weight:700;text-transform:uppercase;letter-spacing:.07em;color:#5a6070;margin:12px 0 4px;">${pos}</div>`;
             const rows = grouped[pos].map(p => {
-                const pv = playerValues[p.name] || {};
                 const badge = `<span style="background:${posColor(p.position)};color:#fff;font-size:10px;font-weight:800;padding:2px 0;border-radius:4px;width:30px;text-align:center;flex-shrink:0;">${p.position||'?'}</span>`;
                 const rookieBadge = p.years_exp === 0 ? `<span style="font-size:9px;font-weight:700;color:#f6ad55;background:rgba(246,173,85,.15);padding:1px 5px;border-radius:3px;">R</span>` : '';
                 const teamLogo = p.team ? `<img src="https://sleepercdn.com/images/team_logos/nfl/${p.team.toLowerCase()}.jpg" style="width:18px;height:18px;object-fit:contain;opacity:.8;" onerror="this.style.display='none'">` : '';
-                // KTC badge
-                const ktcBadge = pv.ktc ? `<span style="font-size:10px;font-weight:700;color:${ktcColor(pv.ktc)};min-width:34px;text-align:right;flex-shrink:0;">${pv.ktc.toLocaleString()}</span>` : '';
-                // Contract
-                const apyFmt = fmtApy(pv.apy);
-                const contractStr = apyFmt ? `<span style="font-size:10px;color:#5a6070;flex-shrink:0;">${apyFmt}${pv.years ? `·${pv.years}yr` : ''}</span>` : '';
+                const ageStr = p.birth_date ? (() => { const b = new Date(p.birth_date); return ((Date.now()-b)/(365.25*24*60*60*1000)).toFixed(1); })() : (p.age || '');
                 return `<div style="display:flex;align-items:center;gap:8px;padding:6px 8px;background:#252830;border-radius:8px;margin-bottom:3px;">
                     ${badge}
                     <span style="font-size:13px;font-weight:600;color:#f0f1f3;flex:1;min-width:0;overflow:hidden;text-overflow:ellipsis;white-space:nowrap;">${p.name}${rookieBadge}</span>
                     ${teamLogo}
-                    ${contractStr}
-                    ${ktcBadge}
+                    ${ageStr ? `<span style="font-size:11px;color:#5a6070;flex-shrink:0;">${ageStr}</span>` : ''}
                 </div>`;
             }).join("");
             return header + rows;

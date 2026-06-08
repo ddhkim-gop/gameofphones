@@ -7,6 +7,7 @@ const ROUNDS = [1, 2, 3];
 const POS_ORDER = ["QB", "RB", "WR", "TE", "K", "DEF"];
 
 let allTransactions = [];
+let playerValuesCache = {};
 
 // ESPN team logo URL
 function teamLogoUrl(abbrev) {
@@ -75,6 +76,7 @@ async function init() {
         api.getPlayerValues(),
     ]);
     allTransactions = txData || [];
+    playerValuesCache = playerValues || {};
     await loadPlayerStats();
 
     const PAUL_YOON_AVATAR = "https://sleepercdn.com/images/v4/avatars/avatar_default_blue.webp";
@@ -238,8 +240,6 @@ async function init() {
                     nameSpan.appendChild(rookie);
                 }
 
-                const pv = playerValues[p.name] || {};
-
                 const metaSpan = document.createElement("span");
                 metaSpan.style.cssText = "font-size:11px;color:#5a6070;flex-shrink:0;white-space:nowrap;display:flex;align-items:center;gap:4px;";
                 const ageDecimal = calcAgeDecimal(p.birth_date);
@@ -253,24 +253,6 @@ async function init() {
                     metaSpan.appendChild(logoEl);
                 }
                 if (ageStr) metaSpan.appendChild(document.createTextNode(ageStr));
-
-                // Contract APY
-                if (pv.apy) {
-                    const apy = pv.apy >= 1000000 ? `${(pv.apy/1000000).toFixed(1).replace(/\.0$/,'')}M` : pv.apy >= 1000 ? `${Math.round(pv.apy/1000)}K` : `${pv.apy}`;
-                    const contractEl = document.createElement("span");
-                    contractEl.style.cssText = "font-size:10px;color:#5a6070;flex-shrink:0;";
-                    contractEl.textContent = `${apy}${pv.years ? `·${pv.years}yr` : ''}`;
-                    metaSpan.appendChild(contractEl);
-                }
-
-                // KTC value badge
-                if (pv.ktc) {
-                    const ktcColor = pv.ktc >= 8000 ? "#3ecf8e" : pv.ktc >= 6000 ? "#4299e1" : pv.ktc >= 4000 ? "#a78bfa" : pv.ktc >= 2000 ? "#f6ad55" : "#5a6070";
-                    const ktcEl = document.createElement("span");
-                    ktcEl.style.cssText = `font-size:10px;font-weight:700;color:${ktcColor};min-width:34px;text-align:right;flex-shrink:0;`;
-                    ktcEl.textContent = pv.ktc.toLocaleString();
-                    metaSpan.appendChild(ktcEl);
-                }
 
                 row.appendChild(badge);
                 row.appendChild(nameSpan);
@@ -502,6 +484,7 @@ async function openPopover(element, player) {
     const pid = player.player_id;
     const pos = player.position || "";
     const posClr = posColor(pos);
+    const pv = playerValuesCache[player.name] || {};
     const heightStr = player.height
         ? `${Math.floor(Number(player.height) / 12)}'${Number(player.height) % 12}"`
         : "—";
@@ -618,25 +601,40 @@ async function openPopover(element, player) {
             <div class="pc-bio-item"><div class="pc-bio-label">Weight</div><div class="pc-bio-val">${player.weight ? player.weight + " lbs" : "—"}</div></div>
         </div>
 
+        ${pv.apy ? (() => {
+            const fmt = v => v >= 1e9 ? `$${(v/1e9).toFixed(2)}B` : v >= 1e6 ? `$${(v/1e6).toFixed(1).replace(/\.0$/,'')}M` : `$${Math.round(v/1000)}K`;
+            const gtdPct = pv.total_value ? Math.round((pv.guaranteed / pv.total_value) * 100) : null;
+            const yrs = pv.years || '?';
+            return `<div class="pc-section">
+                <div class="pc-section-title">Contract</div>
+                <div style="display:grid;grid-template-columns:1fr 1fr;gap:8px 16px;">
+                    <div><div style="font-size:10px;color:#5a6070;margin-bottom:2px;">APY</div><div style="font-size:15px;font-weight:800;color:#f0f1f3;">${fmt(pv.apy)}</div></div>
+                    <div><div style="font-size:10px;color:#5a6070;margin-bottom:2px;">Length</div><div style="font-size:15px;font-weight:800;color:#f0f1f3;">${yrs} yr</div></div>
+                    <div><div style="font-size:10px;color:#5a6070;margin-bottom:2px;">Total Value</div><div style="font-size:13px;font-weight:700;color:#c9cdd4;">${fmt(pv.total_value)}</div></div>
+                    <div><div style="font-size:10px;color:#5a6070;margin-bottom:2px;">Guaranteed</div><div style="font-size:13px;font-weight:700;color:#c9cdd4;">${fmt(pv.guaranteed)}${gtdPct !== null ? `<span style="font-size:10px;color:#5a6070;font-weight:400;margin-left:4px;">(${gtdPct}%)</span>` : ''}</div></div>
+                </div>
+            </div>`;
+        })() : ''}
+
         <div class="pc-section" id="espn-stats-rank-placeholder"></div>
 
         <div class="pc-section" id="espn-stats-section">
             <div style="display:flex;gap:6px;margin-bottom:10px;">
-                <button id="pc-tab-stats" onclick="switchPcTab('stats')" style="background:#252830;border:1px solid #3d4350;color:#f0f1f3;font-size:11px;font-weight:700;padding:4px 12px;border-radius:6px;cursor:pointer;font-family:inherit;">Career Stats</button>
-                <button id="pc-tab-gamelogs" onclick="switchPcTab('gamelogs')" style="background:none;border:1px solid #2d3139;color:#5a6070;font-size:11px;font-weight:700;padding:4px 12px;border-radius:6px;cursor:pointer;font-family:inherit;">Game Logs</button>
+                <button id="pc-tab-stats" style="background:#252830;border:1px solid #3d4350;color:#f0f1f3;font-size:11px;font-weight:700;padding:4px 12px;border-radius:6px;cursor:pointer;font-family:inherit;">Career Stats</button>
+                <button id="pc-tab-gamelogs" style="background:none;border:1px solid #2d3139;color:#5a6070;font-size:11px;font-weight:700;padding:4px 12px;border-radius:6px;cursor:pointer;font-family:inherit;">Game Logs</button>
             </div>
             <div id="espn-stats"><div style="color:#5a6070;font-size:12px;">Loading...</div></div>
             <div id="espn-gamelogs" style="display:none;">
                 <div style="display:flex;align-items:center;gap:8px;margin-bottom:10px;">
                     <div style="font-size:10px;text-transform:uppercase;letter-spacing:.06em;color:#5a6070;font-weight:700;">Season</div>
-                    <select id="pc-gamelog-year" onchange="loadGameLog()" style="background:#252830;border:1px solid #2d3139;border-radius:6px;color:#f0f1f3;font-size:12px;padding:3px 8px;cursor:pointer;">
+                    <select id="pc-gamelog-year" style="background:#252830;border:1px solid #2d3139;border-radius:6px;color:#f0f1f3;font-size:12px;padding:3px 8px;cursor:pointer;">
                         <option value="2025">2025</option>
                         <option value="2024">2024</option>
                         <option value="2023">2023</option>
                         <option value="2022">2022</option>
                     </select>
                 </div>
-                <div id="pc-gamelog-body"><div style="color:#5a6070;font-size:12px;">Select a season above.</div></div>
+                <div id="pc-gamelog-body"><div style="color:#5a6070;font-size:12px;">Loading...</div></div>
             </div>
         </div>
 
@@ -654,9 +652,15 @@ async function openPopover(element, player) {
     popover.style.display = "flex";
     positionPopover(popover, element);
 
-    // Store pos on popover immediately (espnId stored after lookup below)
+    // Wire up tab buttons (module scope — can't use onclick attributes)
+    document.getElementById("pc-tab-stats")?.addEventListener("click", () => switchPcTab("stats"));
+    document.getElementById("pc-tab-gamelogs")?.addEventListener("click", () => switchPcTab("gamelogs"));
+    document.getElementById("pc-gamelog-year")?.addEventListener("change", () => loadGameLog());
+
+    // Store identifiers on popover for async tab handlers
     popover.dataset.pos = pos;
     popover.dataset.espnId = player.espn_id || "";
+    popover.dataset.playerId = pid || "";
 
     // Kick off global NFL news fetch immediately (cached after first call)
     const espnId = player.espn_id || await lookupEspnId(player.name, player.team);
@@ -756,37 +760,122 @@ function switchPcTab(tab) {
 }
 
 async function loadGameLog() {
-    const body  = document.getElementById("pc-gamelog-body");
+    const body    = document.getElementById("pc-gamelog-body");
     const yearSel = document.getElementById("pc-gamelog-year");
-    const pop   = document.getElementById("player-popover");
+    const pop     = document.getElementById("player-popover");
     if (!body || !yearSel || !pop) return;
-    const espnId = pop.dataset.espnId;
-    const pos    = pop.dataset.pos || "";
-    const year   = yearSel.value;
-    if (!espnId) { body.innerHTML = `<div style="color:#5a6070;font-size:12px;">No ESPN ID for this player.</div>`; return; }
+
+    const playerId = pop.dataset.playerId;
+    const pos      = pop.dataset.pos || "";
+    const year     = yearSel.value;
+
+    if (!playerId) { body.innerHTML = `<div style="color:#5a6070;font-size:12px;">No player ID available.</div>`; return; }
     body.innerHTML = `<div style="color:#5a6070;font-size:12px;">Loading...</div>`;
+
+    // Columns per position — Cmp/Att combined to save space, rank appended
+    const STAT_COLS = {
+        QB: [
+            { key: "_cmp_att",   label: "Cmp/Att", combo: ["pass_cmp","pass_att"] },
+            { key: "pass_yd",    label: "Yds"  },
+            { key: "pass_td",    label: "TD"   },
+            { key: "pass_int",   label: "INT"  },
+            { key: "rush_yd",    label: "Ru"   },
+            { key: "pts_half_ppr", label: "Pts" },
+            { key: "pos_rank_half_ppr", label: "Rnk", isRank: true },
+        ],
+        RB: [
+            { key: "rush_att",   label: "Car"  },
+            { key: "rush_yd",    label: "RuYd" },
+            { key: "rec_tgt",    label: "Tgt"  },
+            { key: "rec",        label: "Rec"  },
+            { key: "rec_yd",     label: "ReYd" },
+            { key: "pts_half_ppr", label: "Pts" },
+            { key: "pos_rank_half_ppr", label: "Rnk", isRank: true },
+        ],
+        WR: [
+            { key: "rec_tgt",    label: "Tgt"  },
+            { key: "rec",        label: "Rec"  },
+            { key: "rec_yd",     label: "Yds"  },
+            { key: "rec_td",     label: "TD"   },
+            { key: "pts_half_ppr", label: "Pts" },
+            { key: "pos_rank_half_ppr", label: "Rnk", isRank: true },
+        ],
+        TE: [
+            { key: "rec_tgt",    label: "Tgt"  },
+            { key: "rec",        label: "Rec"  },
+            { key: "rec_yd",     label: "Yds"  },
+            { key: "rec_td",     label: "TD"   },
+            { key: "pts_half_ppr", label: "Pts" },
+            { key: "pos_rank_half_ppr", label: "Rnk", isRank: true },
+        ],
+        K: [
+            { key: "_fg",        label: "FG",  combo: ["fgm","fga"] },
+            { key: "xpm",        label: "XPM"  },
+            { key: "pts_std",    label: "Pts"  },
+            { key: "pos_rank_std", label: "Rnk", isRank: true },
+        ],
+    };
+    const cols = STAT_COLS[pos] || STAT_COLS.WR;
+
     try {
-        const data = await fetch(`https://site.api.espn.com/apis/common/v3/sports/football/nfl/athletes/${espnId}/gamelog?season=${year}`).then(r => r.json()).catch(() => ({}));
-        const catPriority = { QB:"Passing", RB:"Rushing", WR:"Receiving", TE:"Receiving", K:"Scoring" };
-        const categories = data.categories || [];
-        const cat = categories.find(c => c.displayName === catPriority[pos]) || categories[0];
-        if (!cat || !cat.events?.length) {
-            body.innerHTML = `<div style="color:#5a6070;font-size:12px;">No game log available for ${year}.</div>`; return;
+        const fetches = Array.from({ length: 18 }, (_, i) => {
+            const wk = i + 1;
+            return fetch(`https://api.sleeper.app/v1/stats/nfl/regular/${year}/${wk}`)
+                .then(r => r.json())
+                .then(d => ({ week: wk, stats: d[playerId] || null }))
+                .catch(() => ({ week: wk, stats: null }));
+        });
+        const weeks = await Promise.all(fetches);
+        const played = weeks.filter(w => w.stats && (w.stats.gp > 0 || w.stats.gms_active > 0));
+
+        if (!played.length) {
+            body.innerHTML = `<div style="color:#5a6070;font-size:12px;">No game data for ${year}.</div>`;
+        } else {
+            const fmt = v => v == null ? "—" : Number.isInteger(v) ? v : parseFloat(v.toFixed(1));
+            const cellVal = (col, stats) => {
+                if (col.combo) return `${fmt(stats[col.combo[0]] ?? null)}/${fmt(stats[col.combo[1]] ?? null)}`;
+                const v = stats[col.key];
+                return v != null ? fmt(v) : "—";
+            };
+            const rankColor = v => {
+                if (!v) return "#5a6070";
+                if (v <= 5)  return "#3ecf8e";
+                if (v <= 12) return "#4299e1";
+                if (v <= 24) return "#f6ad55";
+                return "#e74c82";
+            };
+            const headers = cols.map(c => `<th style="white-space:nowrap;">${c.label}</th>`).join("");
+            const rows = played.map(({ week, stats }) => {
+                const vals = cols.map(c => {
+                    if (c.isRank) {
+                        const v = stats[c.key];
+                        return `<td style="font-weight:700;color:${rankColor(v)};">${v != null ? v : "—"}</td>`;
+                    }
+                    return `<td>${cellVal(c, stats)}</td>`;
+                }).join("");
+                return `<tr><td style="font-weight:600;color:#f0f1f3;white-space:nowrap;">Wk ${week}</td>${vals}</tr>`;
+            }).join("");
+            // Totals (skip rank col)
+            const totals = cols.map(c => {
+                if (c.isRank) return `<td>—</td>`;
+                if (c.combo) {
+                    const s0 = played.reduce((s,w)=>s+(w.stats[c.combo[0]]||0),0);
+                    const s1 = played.reduce((s,w)=>s+(w.stats[c.combo[1]]||0),0);
+                    return `<td style="font-weight:700;">${fmt(s0)}/${fmt(s1)}</td>`;
+                }
+                const sum = played.reduce((s,w)=>s+(w.stats[c.key]||0),0);
+                return `<td style="font-weight:700;">${fmt(sum)}</td>`;
+            }).join("");
+            body.innerHTML = `<div style="overflow-x:auto;">
+                <style>
+                    #pc-gamelog-body table { font-size:11px; }
+                    #pc-gamelog-body th, #pc-gamelog-body td { padding:4px 5px; }
+                </style>
+                <table class="pc-stats-table">
+                    <thead><tr><th style="text-align:left;">Wk</th>${headers}</tr></thead>
+                    <tbody>${rows}<tr><td style="font-weight:700;color:#f0f1f3;">Tot</td>${totals}</tr></tbody>
+                </table></div>`;
         }
-        const keyStats = { QB:[0,2,4,6,7,10], RB:[0,1,2,4], WR:[0,1,2,3,4], TE:[0,1,2,3,4], K:[0,1,2] };
-        const indices = keyStats[pos] || [0,1,2,3];
-        const labels = indices.map(i => cat.labels?.[i]).filter(Boolean);
-        const events = data.events?.items || {};
-        const rows = cat.events.map(ev => {
-            const evData = events[ev.eventId] || {};
-            const opp = evData.opponent?.abbreviation || "vs?";
-            const result = evData.home !== undefined ? (evData.home ? "vs" : "@") : "";
-            const score = evData.score || "";
-            const vals = indices.map(i => ev.stats?.[i] ?? "—").join("</td><td>");
-            const pts = ev.stats?.find ? "" : "";
-            return `<tr><td style="white-space:nowrap;">${evData.weekText || ev.eventId || ""}</td><td style="white-space:nowrap;color:#8b9099;">${result} ${opp}</td><td>${vals}</td></tr>`;
-        }).join("");
-        body.innerHTML = `<div style="overflow-x:auto;"><table class="pc-stats-table"><thead><tr><th style="text-align:left;">Wk</th><th style="text-align:left;">Opp</th>${labels.map(l=>`<th>${l}</th>`).join("")}</tr></thead><tbody>${rows}</tbody></table></div>`;
     } catch(e) {
         body.innerHTML = `<div style="color:#5a6070;font-size:12px;">Failed to load game log.</div>`;
     }
