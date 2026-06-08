@@ -321,27 +321,32 @@ async function lookupEspnId(name) {
     }
 }
 
-function filterArticlesForPlayer(articles, playerName) {
+function filterArticlesForPlayer(articles, playerName, espnId) {
     if (!playerName || !articles.length) return [];
+    const espnIdNum = espnId ? Number(espnId) : null;
     const full = playerName.toLowerCase();
     const parts = playerName.split(" ");
     const last = parts[parts.length - 1].toLowerCase();
     const first = parts[0].toLowerCase();
-    // Prefer full-name matches; fall back to last+first initial to reduce false positives
-    const fullMatches = articles.filter(a => {
-        const text = ((a.headline || "") + " " + (a.description || "")).toLowerCase();
-        return text.includes(full);
-    });
-    if (fullMatches.length) return fullMatches;
-    // Fall back: last name + first initial (e.g. "J. Allen" or "Josh Allen")
+
     return articles.filter(a => {
+        // Primary: check ESPN categories metadata — most reliable, works even
+        // when the player name isn't in the headline (e.g. "Cowboys activate WR")
+        if (espnIdNum) {
+            const cats = a.categories || [];
+            if (cats.some(c => c.type === "athlete" && Number(c.athleteId) === espnIdNum)) return true;
+        }
+        // Secondary: full name match in headline + description text
         const text = ((a.headline || "") + " " + (a.description || "")).toLowerCase();
-        return text.includes(last) && text.includes(first[0]);
+        if (text.includes(full)) return true;
+        // Tertiary: last name + first initial (catches "C. Lamb" style references)
+        if (last.length > 3 && text.includes(last) && (text.includes(first + " ") || text.includes(first[0] + "."))) return true;
+        return false;
     });
 }
 
-function renderNews(articles, injuries, playerName) {
-    const relevant = filterArticlesForPlayer(articles, playerName);
+function renderNews(articles, injuries, playerName, espnId) {
+    const relevant = filterArticlesForPlayer(articles, playerName, espnId);
     // Only show articles that mention the player — no fallback to unrelated content
     const filtered = relevant;
     let html = "";
@@ -457,7 +462,7 @@ async function openPopover(element, player) {
         }
         if (label) playerTxRows.push({ date: t.created || "", label, detail, season: t.season || "", sortKey: t.created || "" });
     });
-    playerTxRows.sort((a, b) => a.sortKey.localeCompare(b.sortKey));
+    playerTxRows.sort((a, b) => b.sortKey.localeCompare(a.sortKey)); // newest first
 
     const labelColor = { Draft: "#a78bfa", Trade: "#4299e1", Waiver: "#3ecf8e", Add: "#3ecf8e", Released: "#e74c82" };
     const txHistoryHtml = playerTxRows.length
@@ -611,6 +616,7 @@ async function openPopover(element, player) {
         }
 
         // Merge athlete-specific + global news, deduplicate by headline, filter by player name
+        // Categories-based matching (athleteId in article metadata) is the primary signal
         const athleteArticles = athleteNewsData.articles || [];
         const seen = new Set(athleteArticles.map(a => a.headline));
         const merged = [
@@ -620,7 +626,7 @@ async function openPopover(element, player) {
         const injuries = athleteData.athlete?.injuries || [];
         document.getElementById("espn-news").innerHTML = `
             <div class="pc-section-title">Latest News</div>
-            ${renderNews(merged, injuries, player.name)}`;
+            ${renderNews(merged, injuries, player.name, espnId)}`;
 
         // Re-clamp position after content loaded (height changed)
         positionPopover(popover, element);
