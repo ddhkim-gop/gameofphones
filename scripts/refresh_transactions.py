@@ -1,0 +1,332 @@
+#!/usr/bin/env python3
+"""
+Auto-refresh script for Game of Phones fantasy site.
+Fetches current transactions and rosters from Sleeper API,
+updates data.js if anything changed.
+Exit code 0 = changes written; exit code 1 = no changes.
+"""
+
+import json, re, sys, time
+from datetime import datetime, timezone, timedelta
+from urllib.request import urlopen, Request
+from urllib.error import URLError
+
+# ── League IDs ────────────────────────────────────────────────────────────────
+LEAGUES = {
+    "2023": "961534259393581056",
+    "2024": "1048330675767648256",
+    "2025": "1180125390714953728",
+    "2026": "1313903635586899968",
+}
+CURRENT_YEAR = "2026"
+CURRENT_LEAGUE = LEAGUES[CURRENT_YEAR]
+
+DATA_JS = "data.js"          # relative to repo root (script runs from there)
+PLAYERS_CACHE = "scripts/players_cache.json"
+
+PT = timezone(timedelta(hours=-8))   # Pacific Standard; close enough for display
+
+# ── Helpers ───────────────────────────────────────────────────────────────────
+def fetch(url, retries=3):
+    for attempt in range(retries):
+        try:
+            req = Request(url, headers={"User-Agent": "gameofphones-refresh/1.0"})
+            with urlopen(req, timeout=20) as r:
+                return json.loads(r.read())
+        except Exception as e:
+            if attempt == retries - 1:
+                print(f"  WARN: failed to fetch {url}: {e}", file=sys.stderr)
+                return None
+            time.sleep(2 ** attempt)
+
+def fmt_ts(ms):
+    """Convert Sleeper ms timestamp to 'Jun 07, 2026 • 11:45 PM PT'"""
+    dt = datetime.fromtimestamp(ms / 1000, tz=PT)
+    hour = dt.hour % 12 or 12
+    ampm = "AM" if dt.hour < 12 else "PM"
+    return dt.strftime(f"%b %d, %Y • {hour}:%M {ampm} PT").replace(" 0", " ")
+
+def ordinal_round(n):
+    suffix = {1: "1st", 2: "2nd", 3: "3rd"}.get(n, f"{n}th")
+    return suffix
+
+# ── Load players cache (fetch from Sleeper if stale / missing) ────────────────
+def load_players():
+    import os
+    try:
+        with open(PLAYERS_CACHE) as f:
+            cached = json.load(f)
+        fetched_dt = datetime.fromisoformat(cached.get("fetched", "2000-01-01"))
+        age_hours = (datetime.now() - fetched_dt).total_seconds() / 3600
+        if age_hours < 24:
+            print(f"  Using cached players ({age_hours:.1f}h old)")
+            return cached["players"]
+    except (FileNotFoundError, KeyError, ValueError):
+        pass
+
+    print("  Fetching Sleeper players (~20MB)...")
+    players = fetch("https://api.sleeper.app/v1/players/nfl")
+    if not players:
+        # Fall back to stale cache
+        try:
+            with open(PLAYERS_CACHE) as f:
+                return json.load(f)["players"]
+        except Exception:
+            return {}
+
+    os.makedirs(os.path.dirname(PLAYERS_CACHE), exist_ok=True)
+    with open(PLAYERS_CACHE, "w") as f:
+        json.dump({"fetched": datetime.now().isoformat(), "players": players}, f)
+    print(f"  Cached {len(players)} players")
+    return players
+
+# ── Build roster_id → username map ───────────────────────────────────────────
+def build_roster_map(league_id):
+    users_raw  = fetch(f"https://api.sleeper.app/v1/league/{league_id}/users") or []
+    rosters_raw = fetch(f"https://api.sleeper.app/v1/league/{league_id}/rosters") or []
+
+    uid_to_name = {u["user_id"]: u["display_name"] for u in users_raw}
+    rid_to_name = {}
+    for r in rosters_raw:
+        name = uid_to_name.get(r.get("owner_id"), "Unknown")
+        rid_to_name[r["roster_id"]] = name
+
+    return rid_to_name, rosters_raw, uid_to_name
+
+# ── Fetch + format transactions ───────────────────────────────────────────────
+def fetch_transactions(league_id, season, rid_to_name, players):
+    txns = []
+    for week in range(0, 19):
+        raw = fetch(f"https://api.sleeper.app/v1/league/{league_id}/transactions/{week}")
+        if not raw:
+            continue
+        for t in raw:
+            if t.get("status") not in ("complete", "failed"):
+                continue
+            tx_type = t.get("type", "free_agent")
+            rids = t.get("roster_ids") or []
+            teams = [rid_to_name.get(r, "Unknown") for r in rids]
+
+            adds_raw  = t.get("adds") or {}
+            drops_raw = t.get("drops") or {}
+
+            added   = []
+            dropped = []
+
+            if tx_type == "trade":
+                # Build per-team assets received
+                # adds: {player_id: receiving_roster_id}
+                assets_received = {}
+                for pid, rid in adds_raw.items():
+                    owner = rid_to_name.get(rid, "Unknown")
+                    p = players.get(str(pid), {})
+                    assets_received.setdefault(owner, []).append({
+                        "name": p.get("full_name") or p.get("first_name", "") + " " + p.get("last_name", ""),
+                        "position": p.get("fantasy_positions", [None])[0] or p.get("position", "?"),
+                        "team": p.get("team"),
+                    })
+                # Draft picks traded
+                for pick in (t.get("draft_picks") or []):
+                    receiver_owner = rid_to_name.get(pick.get("owner_id"), "Unknown")
+                    round_label = f"{pick.get('season','?')} Round {pick.get('round','?')}"
+                    assets_received.setdefault(receiver_owner, []).append({
+                        "name": round_label,
+                        "position": "PICK",
+                        "team": None,
+                    })
+                # FAAB exchanged
+                for wb in (t.get("waiver_budget") or []):
+                    receiver_owner = rid_to_name.get(wb.get("receiver"), "Unknown")
+                    assets_received.setdefault(receiver_owner, []).append({
+                        "name": f"${wb['amount']} FAAB",
+                        "position": "FAAB",
+                        "team": None,
+                    })
+                txns.append({
+                    "season": season,
+                    "week": t.get("leg", 0),
+                    "created": fmt_ts(t["created"]),
+                    "transaction_id": t["transaction_id"],
+                    "type": "trade",
+                    "status": t.get("status", "complete"),
+                    "teams": teams,
+                    "assets_received": assets_received,
+                })
+            else:
+                for pid in adds_raw:
+                    p = players.get(str(pid), {})
+                    added.append({
+                        "name": p.get("full_name") or (p.get("first_name","") + " " + p.get("last_name","")).strip() or str(pid),
+                        "position": (p.get("fantasy_positions") or [None])[0] or p.get("position", "?"),
+                        "team": p.get("team"),
+                    })
+                for pid in drops_raw:
+                    p = players.get(str(pid), {})
+                    dropped.append({
+                        "name": p.get("full_name") or (p.get("first_name","") + " " + p.get("last_name","")).strip() or str(pid),
+                        "position": (p.get("fantasy_positions") or [None])[0] or p.get("position", "?"),
+                        "team": p.get("team"),
+                    })
+                settings = t.get("settings") or {}
+                wb = t.get("waiver_budget") or []
+                faab_spent = wb[0]["amount"] if wb else 0
+                txns.append({
+                    "season": season,
+                    "week": t.get("leg", 0),
+                    "created": fmt_ts(t["created"]),
+                    "transaction_id": t["transaction_id"],
+                    "type": tx_type,
+                    "status": t.get("status", "complete"),
+                    "teams": [rid_to_name.get(rids[0], "Unknown")] if rids else teams,
+                    "added": added,
+                    "dropped": dropped,
+                    "faab": faab_spent,
+                    "waiver_bid": settings.get("waiver_bid", 0),
+                    "notes": (t.get("metadata") or {}).get("notes"),
+                })
+
+    # Sort newest first (by transaction_id descending — they're snowflake IDs)
+    txns.sort(key=lambda x: int(x["transaction_id"]), reverse=True)
+    return txns
+
+# ── Build enriched rosters ────────────────────────────────────────────────────
+def build_rosters(rosters_raw, rid_to_name, players):
+    result = []
+    for r in rosters_raw:
+        owner = rid_to_name.get(r["roster_id"], "Unknown")
+        player_list = []
+        for pid in (r.get("players") or []):
+            p = players.get(str(pid), {})
+            if not p:
+                continue
+            full_name = p.get("full_name") or (p.get("first_name","") + " " + p.get("last_name","")).strip()
+            positions = p.get("fantasy_positions") or []
+            pos = positions[0] if positions else p.get("position", "?")
+            birth = p.get("birth_date")
+            age = None
+            if birth:
+                try:
+                    bd = datetime.strptime(birth, "%Y-%m-%d")
+                    today = datetime.now()
+                    age = today.year - bd.year - ((today.month, today.day) < (bd.month, bd.day))
+                except ValueError:
+                    pass
+            player_list.append({
+                "player_id": str(pid),
+                "espn_id": p.get("espn_id"),
+                "name": full_name,
+                "position": pos,
+                "team": p.get("team"),
+                "age": age,
+                "birth_date": birth,
+                "college": p.get("college"),
+                "height": p.get("height"),
+                "weight": p.get("weight"),
+                "years_exp": p.get("years_exp"),
+                "status": p.get("status"),
+                "injury_status": p.get("injury_status"),
+                "search_rank": p.get("search_rank"),
+            })
+        result.append({
+            "owner": owner,
+            "roster_id": r["roster_id"],
+            "players": player_list,
+        })
+    return result
+
+# ── Inject a section into data.js ─────────────────────────────────────────────
+def inject_section(content, key, new_json):
+    """Replace the value of "key": ... in data.js using brace/bracket balancing."""
+    pattern = f'"{key}":'
+    idx = content.find(pattern)
+    if idx < 0:
+        return content, False
+
+    val_start = idx + len(pattern)
+    # Skip whitespace
+    while val_start < len(content) and content[val_start] in " \t\n\r":
+        val_start += 1
+
+    opener = content[val_start]
+    if opener not in ("{", "["):
+        return content, False
+
+    closer = "}" if opener == "{" else "]"
+    depth = 0
+    for i in range(val_start, len(content)):
+        if content[i] == opener:
+            depth += 1
+        elif content[i] == closer:
+            depth -= 1
+            if depth == 0:
+                val_end = i + 1
+                break
+    else:
+        return content, False
+
+    new_content = content[:val_start] + new_json + content[val_end:]
+    changed = new_content != content
+    return new_content, changed
+
+# ── Main ──────────────────────────────────────────────────────────────────────
+def main():
+    print("Loading players...")
+    players = load_players()
+    if not players:
+        print("ERROR: could not load player data", file=sys.stderr)
+        sys.exit(2)
+
+    print("Fetching league data for", CURRENT_YEAR)
+    rid_to_name, rosters_raw, uid_to_name = build_roster_map(CURRENT_LEAGUE)
+    print(f"  {len(rid_to_name)} rosters, {len(uid_to_name)} users")
+
+    print("Fetching transactions...")
+    txns_2026 = fetch_transactions(CURRENT_LEAGUE, CURRENT_YEAR, rid_to_name, players)
+
+    # For older years, include transactions already in data.js (don't re-fetch)
+    # Read existing data.js
+    with open(DATA_JS) as f:
+        content = f.read()
+
+    # Extract existing transactions for older years
+    idx = content.find('"transactions"')
+    tx_start = content.index('[', idx)
+    depth = 0
+    for i in range(tx_start, len(content)):
+        if content[i] == '[': depth += 1
+        elif content[i] == ']':
+            depth -= 1
+            if depth == 0: tx_end = i + 1; break
+
+    existing_txns = json.loads(content[tx_start:tx_end])
+    old_txns = [t for t in existing_txns if t.get("season") != CURRENT_YEAR]
+
+    all_txns = txns_2026 + old_txns
+
+    print(f"  {len(txns_2026)} {CURRENT_YEAR} transactions, {len(old_txns)} prior")
+
+    print("Building enriched rosters...")
+    rosters = build_rosters(rosters_raw, rid_to_name, players)
+
+    # Inject into data.js
+    txns_json = json.dumps(all_txns, indent=4, ensure_ascii=False)
+    rosters_json = json.dumps(rosters, indent=4, ensure_ascii=False)
+
+    content, tx_changed   = inject_section(content, "transactions", txns_json)
+    content, ros_changed  = inject_section(content, "rosters",      rosters_json)
+
+    if not tx_changed and not ros_changed:
+        print("No changes detected.")
+        sys.exit(1)   # signal to workflow: nothing to commit
+
+    with open(DATA_JS, "w") as f:
+        f.write(content)
+
+    changes = []
+    if tx_changed:  changes.append(f"transactions ({len(txns_2026)} in {CURRENT_YEAR})")
+    if ros_changed: changes.append("rosters")
+    print("Updated:", ", ".join(changes))
+    sys.exit(0)   # signal to workflow: commit needed
+
+if __name__ == "__main__":
+    main()
