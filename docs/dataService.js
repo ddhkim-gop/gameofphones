@@ -9,7 +9,7 @@ async function fetchJSON(url) {
 }
 export const api = {
     async getDraft(year)       { return D.draft[year] || []; },
-    async getRosters(year)     { return D.rosters || []; },
+    async getRosters(year)     { return fetchJSON(`data/${year}/rosters.json`).catch(() => D.rosters || []); },
     async getUsers(year)       { return D.users || []; },
     async getLeagueUsers()     { return D.league_users || []; },
     async getTransactions()    { return D.transactions || []; },

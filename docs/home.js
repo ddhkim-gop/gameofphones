@@ -273,6 +273,7 @@ function renderStandingsTable(rows, playoffRec, isAllTime, faabRemaining, sosMap
             <th style="${TH};text-align:left;min-width:140px;">Team</th>
             <th style="${TH}">RS W</th>
             <th style="${TH}">RS L</th>
+            <th style="${TH}">Win%</th>
             <th style="${TH}">PF</th>
             <th style="${TH}">PA</th>
             <th style="${TH}">+/-</th>
@@ -281,7 +282,7 @@ function renderStandingsTable(rows, playoffRec, isAllTime, faabRemaining, sosMap
             <th style="${TH}">PO W-L</th>
             ${faabHeader}
             <th style="${TH}">Top Player</th>
-            <th style="${TH}">Best Game</th>
+            <th style="${TH}">Top Score</th>
         </tr>`;
 
     const body = rows.map((r, i) => {
@@ -304,11 +305,11 @@ function renderStandingsTable(rows, playoffRec, isAllTime, faabRemaining, sosMap
                 <div style="display:flex;align-items:center;gap:5px;min-width:0;">
                     ${bp.team ? `<img src="${teamLogoHome(bp.team)}" style="width:14px;height:14px;object-fit:contain;flex-shrink:0;" onerror="this.style.display='none'">` : ""}
                     <span style="background:${posColorHome(bp.position)};color:#fff;font-size:9px;font-weight:800;padding:1px 5px;border-radius:3px;flex-shrink:0;">${bp.position||"?"}</span>
-                    <span style="font-size:11px;font-weight:600;color:#f0f1f3;overflow:hidden;text-overflow:ellipsis;white-space:nowrap;flex:1;" title="${bp.name}">${bp.name}</span>
-                    <span style="display:flex;align-items:center;gap:4px;flex-shrink:0;margin-left:auto;padding-left:6px;">
-                        ${isAllTime && bpResult.year ? `<span style="font-size:10px;color:#5a6070;">${bpResult.year}</span>` : ""}
-                        ${bpResult.score > 0 ? `<span style="font-size:10px;font-weight:700;color:#8b9099;">${bpResult.score.toFixed(1)}</span>` : ""}
-                    </span>
+                    <span style="font-weight:600;color:#f0f1f3;overflow:hidden;text-overflow:ellipsis;white-space:nowrap;flex:1;" title="${bp.name}">${bp.name}</span>
+                    ${bpResult.score > 0 ? `<div style="text-align:center;flex-shrink:0;margin-left:auto;padding-left:6px;">
+                        ${isAllTime && bpResult.year ? `<div style="font-size:10px;color:#5a6070;">${bpResult.year}</div>` : ""}
+                        <div style="font-weight:700;color:#f0f1f3;">${bpResult.score.toFixed(1)}</div>
+                    </div>` : ""}
                 </div>
               </td>`
             : `<td style="${TD}">—</td>`;
@@ -327,6 +328,7 @@ function renderStandingsTable(rows, playoffRec, isAllTime, faabRemaining, sosMap
             </td>
             <td style="${TD};color:#3ecf8e;font-weight:700;">${r.wins}</td>
             <td style="${TD};color:#f87171;font-weight:700;">${r.losses}</td>
+            <td style="${TD}">${(r.wins + r.losses) > 0 ? ((r.wins / (r.wins + r.losses)) * 100).toFixed(1) + "%" : "—"}</td>
             <td style="${TD}">${r.pf.toFixed(1)}</td>
             <td style="${TD}">${r.pa.toFixed(1)}</td>
             <td style="${TD};color:${diffColor};font-weight:700;">${diff > 0 ? "+" : ""}${diff}</td>
@@ -546,7 +548,7 @@ async function init() {
         }
     </style>
     <div id="home-rules"><div style="color:#5a6070;padding:20px 0;">Loading...</div></div>
-    <div style="display:flex;align-items:center;justify-content:space-between;flex-wrap:wrap;gap:12px;margin-bottom:14px;">
+    <div style="display:flex;align-items:center;justify-content:space-between;flex-wrap:wrap;gap:8px;margin-bottom:6px;margin-top:4px;">
         <div style="font-size:10px;text-transform:uppercase;letter-spacing:.08em;color:#5a6070;font-weight:700;">Standings</div>
         <select id="home-year-select">
             <option value="all_time" selected>All Years</option>
