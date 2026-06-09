@@ -575,7 +575,8 @@ function renderReportCard() {
                     ${avatarEl(m.name, 40)}
                     <div style="flex:1;min-width:0;">
                         <div style="font-size:15px;font-weight:700;color:#f0f1f3;">${m.name}</div>
-                        <div style="font-size:11px;color:#5a6070;">${m.seasons} season${m.seasons !== 1 ? "s" : ""} · ${m.totalWins}W-${m.totalLosses}L</div>
+                        <div style="font-size:11px;color:#5a6070;">${m.seasons} season${m.seasons !== 1 ? "s" : ""}</div>
+                        <div style="font-size:11px;color:#5a6070;">${m.totalWins}W-${m.totalLosses}L</div>
                     </div>
                     <div style="text-align:center;background:${gc}1a;border:1.5px solid ${gc};border-radius:10px;padding:6px 14px;flex-shrink:0;">
                         <div style="font-size:10px;font-weight:700;text-transform:uppercase;letter-spacing:.05em;color:${gc};opacity:0.8;margin-bottom:2px;">Overall</div>
@@ -674,6 +675,7 @@ function renderTable(rows, txStats, year, playoffRecords, isAllTime) {
                     <th class="left">Team</th>
                     <th>RS W</th>
                     <th>RS L</th>
+                    <th>Win%</th>
                     <th>PF</th>
                     <th>PA</th>
                     <th>+/-</th>
@@ -712,6 +714,7 @@ function renderTable(rows, txStats, year, playoffRecords, isAllTime) {
                 </td>
                 <td class="num wins">${r.wins}</td>
                 <td class="num losses">${r.losses}</td>
+                <td class="num">${(r.wins + r.losses) > 0 ? ((r.wins / (r.wins + r.losses)) * 100).toFixed(1) + "%" : "—"}</td>
                 <td class="num">${r.pf.toFixed(1)}</td>
                 <td class="num">${r.pa.toFixed(1)}</td>
                 <td class="num" style="color:${diffColor};font-weight:700;">${diff > 0 ? "+" : ""}${diff}</td>

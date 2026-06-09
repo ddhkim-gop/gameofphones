@@ -177,6 +177,29 @@ function bestPlayerForTeam(teamName, year) {
     return best ? { player: best, score: bestScore, year: bestYear } : null;
 }
 
+// Best single-game score for a team: { score, year, week } or null
+function bestSingleGameScore(teamName, year) {
+    const years = (!year || year === "all_time") ? YEARS : [year];
+    let best = null;
+    for (const y of years) {
+        const mu = matchupsData[y] || {};
+        for (const [wk, weekMatchups] of Object.entries(mu)) {
+            const wkNum = Number(wk);
+            if (wkNum > 14) continue; // regular season only
+            (weekMatchups || []).forEach(m => {
+                (m.teams || []).forEach(t => {
+                    if (t.owner === teamName && t.points > 0) {
+                        if (!best || t.points > best.score) {
+                            best = { score: t.points, year: y, week: wkNum };
+                        }
+                    }
+                });
+            });
+        }
+    }
+    return best;
+}
+
 // SOS = average points scored by each team's opponents across regular-season weeks
 function computeSOS(yearMatchups) {
     // yearMatchups: { "1": [{matchup_id, teams:[{owner,points},...]}, ...], "2": [...], ... }
@@ -258,6 +281,7 @@ function renderStandingsTable(rows, playoffRec, isAllTime, faabRemaining, sosMap
             <th style="${TH}">PO W-L</th>
             ${faabHeader}
             <th style="${TH}">Top Player</th>
+            <th style="${TH}">Best Game</th>
         </tr>`;
 
     const body = rows.map((r, i) => {
@@ -311,6 +335,12 @@ function renderStandingsTable(rows, playoffRec, isAllTime, faabRemaining, sosMap
             <td style="${TD}">${poStr}</td>
             ${faabCell}
             ${bpCell}
+            ${(() => {
+                const bg = bestSingleGameScore(r.name, isAllTime ? null : selectedYear);
+                if (!bg) return `<td style="${TD}">—</td>`;
+                const label = isAllTime ? `<div style="font-size:10px;color:#5a6070;">${bg.year} Wk${bg.week}</div>` : `<div style="font-size:10px;color:#5a6070;">Wk ${bg.week}</div>`;
+                return `<td style="${TD};text-align:center;">${label}<div style="font-weight:700;color:#f0f1f3;">${bg.score.toFixed(2)}</div></td>`;
+            })()}
         </tr>`;
     }).join("");
 
