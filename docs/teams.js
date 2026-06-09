@@ -1,4 +1,4 @@
-import { api } from "./dataService.js";
+import { api } from "./dataService.js?v=20260609a";
 import { renderNav } from "./components/nav.js";
 
 const YEARS = ["2018", "2019", "2020", "2021", "2022", "2023", "2024", "2025", "2026"];
@@ -8,6 +8,21 @@ const POS_ORDER = ["QB", "RB", "WR", "TE", "K", "DEF"];
 
 let allTransactions = [];
 let playerValuesCache = {};
+let playerValuesCacheNorm = {}; // normalized name → key for fuzzy lookup
+
+function normName(n) {
+    return n.toLowerCase()
+        .replace(/\s+(jr\.?|sr\.?|ii|iii|iv)$/i, '')
+        .replace(/[^a-z\s]/g, '')
+        .trim();
+}
+
+function pvLookup(name) {
+    if (playerValuesCache[name]) return playerValuesCache[name];
+    const norm = normName(name);
+    const key = playerValuesCacheNorm[norm];
+    return key ? playerValuesCache[key] : {};
+}
 
 // ESPN team logo URL
 function teamLogoUrl(abbrev) {
@@ -77,6 +92,10 @@ async function init() {
     ]);
     allTransactions = txData || [];
     playerValuesCache = playerValues || {};
+    playerValuesCacheNorm = {};
+    for (const key of Object.keys(playerValuesCache)) {
+        playerValuesCacheNorm[normName(key)] = key;
+    }
     await loadPlayerStats();
 
     const PAUL_YOON_AVATAR = "https://sleepercdn.com/images/v4/avatars/avatar_default_blue.webp";
@@ -199,8 +218,8 @@ async function init() {
         // Sort within each position by KTC dynasty value desc, fallback to search_rank
         Object.keys(grouped).forEach(pos => {
             grouped[pos].sort((a, b) => {
-                const av = (playerValues[a.name]?.ktc ?? 0);
-                const bv = (playerValues[b.name]?.ktc ?? 0);
+                const av = (pvLookup(a.name)?.ktc ?? 0);
+                const bv = (pvLookup(b.name)?.ktc ?? 0);
                 if (av !== bv) return bv - av;
                 return (a.search_rank ?? 999999) - (b.search_rank ?? 999999);
             });
@@ -484,7 +503,7 @@ async function openPopover(element, player) {
     const pid = player.player_id;
     const pos = player.position || "";
     const posClr = posColor(pos);
-    const pv = playerValuesCache[player.name] || {};
+    const pv = pvLookup(player.name);
     const heightStr = player.height
         ? `${Math.floor(Number(player.height) / 12)}'${Number(player.height) % 12}"`
         : "—";
