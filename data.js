@@ -5227,6 +5227,22 @@ window.__STATIC_DATA__ = {
                 "search_rank": 300
             },
             {
+                "player_id": "11834",
+                "espn_id": null,
+                "name": "Devaughn Vele",
+                "position": "WR",
+                "team": "NO",
+                "age": 28,
+                "birth_date": "1997-12-12",
+                "college": "Utah",
+                "height": "77",
+                "weight": "210",
+                "years_exp": 2,
+                "status": "Active",
+                "injury_status": null,
+                "search_rank": 209
+            },
+            {
                 "player_id": "12518",
                 "espn_id": null,
                 "name": "Tyler Warren",
@@ -5317,6 +5333,22 @@ window.__STATIC_DATA__ = {
                 "college": "Arkansas",
                 "height": "78",
                 "weight": "230",
+                "years_exp": 0,
+                "status": "Active",
+                "injury_status": null,
+                "search_rank": 999
+            },
+            {
+                "player_id": "13329",
+                "espn_id": null,
+                "name": "Malik Benson",
+                "position": "WR",
+                "team": "LV",
+                "age": 23,
+                "birth_date": "2002-10-17",
+                "college": "Oregon",
+                "height": "73",
+                "weight": "195",
                 "years_exp": 0,
                 "status": "Active",
                 "injury_status": null,
@@ -11556,6 +11588,50 @@ window.__STATIC_DATA__ = {
     }
   ],
   "transactions": [
+    {
+        "season": "2026",
+        "week": 1,
+        "created": "Jun 11, 2026 • 7:46 PM PT",
+        "transaction_id": "1371006818561589248",
+        "type": "free_agent",
+        "status": "complete",
+        "teams": [
+            "ddhk"
+        ],
+        "added": [
+            {
+                "name": "Devaughn Vele",
+                "position": "WR",
+                "team": "NO"
+            }
+        ],
+        "dropped": [],
+        "faab": 0,
+        "waiver_bid": 0,
+        "notes": null
+    },
+    {
+        "season": "2026",
+        "week": 1,
+        "created": "Jun 11, 2026 • 7:46 PM PT",
+        "transaction_id": "1371006806960144384",
+        "type": "free_agent",
+        "status": "complete",
+        "teams": [
+            "ddhk"
+        ],
+        "added": [
+            {
+                "name": "Malik Benson",
+                "position": "WR",
+                "team": "LV"
+            }
+        ],
+        "dropped": [],
+        "faab": 0,
+        "waiver_bid": 0,
+        "notes": null
+    },
     {
         "season": "2026",
         "week": 1,
