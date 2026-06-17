@@ -11669,17 +11669,20 @@ window.__STATIC_DATA__ = {
                 {
                     "name": "2027 Round 3",
                     "position": "PICK",
-                    "team": null
+                    "team": null,
+                    "original_owner": "velmixon"
                 },
                 {
                     "name": "2028 Round 1",
                     "position": "PICK",
-                    "team": null
+                    "team": null,
+                    "original_owner": "NoSkilzPak"
                 },
                 {
                     "name": "2028 Round 2",
                     "position": "PICK",
-                    "team": null
+                    "team": null,
+                    "original_owner": "jonsung"
                 }
             ]
         }
@@ -11769,7 +11772,8 @@ window.__STATIC_DATA__ = {
                 {
                     "name": "2028 Round 3",
                     "position": "PICK",
-                    "team": null
+                    "team": null,
+                    "original_owner": "Paul_Yoon"
                 }
             ],
             "Paul_Yoon": [
@@ -11796,7 +11800,8 @@ window.__STATIC_DATA__ = {
                 {
                     "name": "2028 Round 2",
                     "position": "PICK",
-                    "team": null
+                    "team": null,
+                    "original_owner": "spiffster"
                 }
             ]
         }
@@ -11849,14 +11854,16 @@ window.__STATIC_DATA__ = {
                 {
                     "name": "2028 Round 3",
                     "position": "PICK",
-                    "team": null
+                    "team": null,
+                    "original_owner": "ddhk"
                 }
             ],
             "ddhk": [
                 {
                     "name": "2028 Round 1",
                     "position": "PICK",
-                    "team": null
+                    "team": null,
+                    "original_owner": "spiffster"
                 }
             ]
         }
@@ -12176,12 +12183,14 @@ window.__STATIC_DATA__ = {
                 {
                     "name": "2027 Round 1",
                     "position": "PICK",
-                    "team": null
+                    "team": null,
+                    "original_owner": "NoSkilzPak"
                 },
                 {
                     "name": "2028 Round 1",
                     "position": "PICK",
-                    "team": null
+                    "team": null,
+                    "original_owner": "NoSkilzPak"
                 }
             ]
         }
@@ -12261,7 +12270,8 @@ window.__STATIC_DATA__ = {
                 {
                     "name": "2029 Round 1",
                     "position": "PICK",
-                    "team": null
+                    "team": null,
+                    "original_owner": "spiffster"
                 }
             ],
             "spiffster": [
@@ -13739,37 +13749,44 @@ window.__STATIC_DATA__ = {
                 {
                     "name": "2026 Round 2",
                     "position": "PICK",
-                    "team": null
+                    "team": null,
+                    "original_owner": "ddhk"
                 },
                 {
                     "name": "2026 Round 2",
                     "position": "PICK",
-                    "team": null
+                    "team": null,
+                    "original_owner": "velmixon"
                 },
                 {
                     "name": "2026 Round 1",
                     "position": "PICK",
-                    "team": null
+                    "team": null,
+                    "original_owner": "IconicJH"
                 },
                 {
                     "name": "2027 Round 2",
                     "position": "PICK",
-                    "team": null
+                    "team": null,
+                    "original_owner": "IconicJH"
                 },
                 {
                     "name": "2028 Round 1",
                     "position": "PICK",
-                    "team": null
+                    "team": null,
+                    "original_owner": "IconicJH"
                 },
                 {
                     "name": "2026 Round 2",
                     "position": "PICK",
-                    "team": null
+                    "team": null,
+                    "original_owner": "Paul_Yoon"
                 },
                 {
                     "name": "2027 Round 1",
                     "position": "PICK",
-                    "team": null
+                    "team": null,
+                    "original_owner": "Paul_Yoon"
                 }
             ]
         }
@@ -14323,12 +14340,14 @@ window.__STATIC_DATA__ = {
                 {
                     "name": "2026 Round 3",
                     "position": "PICK",
-                    "team": null
+                    "team": null,
+                    "original_owner": "ganathan"
                 },
                 {
                     "name": "2027 Round 2",
                     "position": "PICK",
-                    "team": null
+                    "team": null,
+                    "original_owner": "paddleham"
                 }
             ]
         }

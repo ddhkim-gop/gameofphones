@@ -128,11 +128,13 @@ def fetch_transactions(league_id, season, rid_to_name, players):
                 # Draft picks traded
                 for pick in (t.get("draft_picks") or []):
                     receiver_owner = rid_to_name.get(pick.get("owner_id"), "Unknown")
+                    original_owner = rid_to_name.get(pick.get("roster_id"), None)
                     round_label = f"{pick.get('season','?')} Round {pick.get('round','?')}"
                     assets_received.setdefault(receiver_owner, []).append({
                         "name": round_label,
                         "position": "PICK",
                         "team": None,
+                        "original_owner": original_owner,
                     })
                 # FAAB exchanged
                 for wb in (t.get("waiver_budget") or []):

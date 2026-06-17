@@ -361,9 +361,9 @@ function renderTradeCard(tx) {
 
     const usedPickKeys = new Set(); // prevent same draft pick resolving twice in one trade
     const itemsA = sideValue(assetsA, teamA, tx.season, teamB, usedPickKeys).map(i =>
-        i.isPick ? { ...i, fromTeam: i.origOwner || teamB } : i);
+        i.isPick ? { ...i, fromTeam: i.origOwner || i.original_owner || teamB } : i);
     const itemsB = sideValue(assetsB, teamB, tx.season, teamA, usedPickKeys).map(i =>
-        i.isPick ? { ...i, fromTeam: i.origOwner || teamA } : i);
+        i.isPick ? { ...i, fromTeam: i.origOwner || i.original_owner || teamA } : i);
     const valA   = totalValue(itemsA);
     const valB   = totalValue(itemsB);
     const ptYears = postTradeYears(tx.season);
