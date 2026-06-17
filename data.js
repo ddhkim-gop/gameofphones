@@ -6745,7 +6745,7 @@ window.__STATIC_DATA__ = {
                 "weight": "208",
                 "years_exp": 1,
                 "status": "Active",
-                "injury_status": "Questionable",
+                "injury_status": null,
                 "search_rank": 95
             },
             {
@@ -7535,7 +7535,7 @@ window.__STATIC_DATA__ = {
                 "weight": "215",
                 "years_exp": 4,
                 "status": "Active",
-                "injury_status": null,
+                "injury_status": "Questionable",
                 "search_rank": 14
             },
             {
@@ -8203,7 +8203,7 @@ window.__STATIC_DATA__ = {
                 "weight": "180",
                 "years_exp": 2,
                 "status": "Active",
-                "injury_status": "Questionable",
+                "injury_status": null,
                 "search_rank": 171
             },
             {
@@ -10576,7 +10576,7 @@ window.__STATIC_DATA__ = {
                 "birth_date": "1999-05-12",
                 "college": "North Dakota State",
                 "height": "76",
-                "weight": "208",
+                "weight": "215",
                 "years_exp": 4,
                 "status": "Active",
                 "injury_status": null,
