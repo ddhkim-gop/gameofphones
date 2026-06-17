@@ -26,7 +26,7 @@ let nameToId = {};
 let statsCache = {};
 let draftCache = {};
 let usersMap = {};
-let selectedYear = "2025";
+let selectedYear = "2026";
 let selectedTAUser = "all";
 
 // ── Value system ──────────────────────────────────────────────────────────────
@@ -482,7 +482,7 @@ function renderAll(year, showPreseason) {
     const board = document.getElementById("ta-board");
     if (!board) return;
 
-    const yearTrades = allTransactions.filter(tx => tx.type === "trade" && tx.season === year
+    const yearTrades = allTransactions.filter(tx => tx.type === "trade" && String(tx.season) === year
         && (selectedTAUser === "all" || (tx.teams || []).includes(selectedTAUser)));
     const inSeason   = yearTrades.filter(tx => tx.week >= 1).sort((a,b) => a.week - b.week);
     const preseason  = yearTrades.filter(tx => tx.week === 0);
