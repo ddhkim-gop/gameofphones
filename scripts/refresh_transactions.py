@@ -318,14 +318,35 @@ def main():
     print("Building enriched rosters...")
     rosters = build_rosters(rosters_raw, rid_to_name, players)
 
+    print("Fetching traded picks...")
+    traded_picks_raw = fetch(f"https://api.sleeper.app/v1/league/{CURRENT_LEAGUE}/traded_picks") or []
+    traded_picks = []
+    for p in traded_picks_raw:
+        owner_name    = rid_to_name.get(p.get("owner_id"),          "Unknown")
+        orig_name     = rid_to_name.get(p.get("roster_id"),         "Unknown")
+        prev_name     = rid_to_name.get(p.get("previous_owner_id"), "Unknown")
+        traded_picks.append({
+            "season":              str(p.get("season", "?")),
+            "round":               p.get("round"),
+            "roster_id":           str(p.get("roster_id")),
+            "owner_id":            str(p.get("owner_id")),
+            "previous_owner_id":   str(p.get("previous_owner_id")),
+            "owner_name":          owner_name,
+            "original_owner_name": orig_name,
+            "previous_owner_name": prev_name,
+        })
+    print(f"  {len(traded_picks)} traded picks")
+
     # Inject into data.js
-    txns_json = json.dumps(all_txns, indent=4, ensure_ascii=False)
-    rosters_json = json.dumps(rosters, indent=4, ensure_ascii=False)
+    txns_json   = json.dumps(all_txns,    indent=4, ensure_ascii=False)
+    rosters_json = json.dumps(rosters,    indent=4, ensure_ascii=False)
+    picks_json   = json.dumps(traded_picks, indent=4, ensure_ascii=False)
 
-    content, tx_changed   = inject_section(content, "transactions", txns_json)
-    content, ros_changed  = inject_section(content, "rosters",      rosters_json)
+    content, tx_changed    = inject_section(content, "transactions",  txns_json)
+    content, ros_changed   = inject_section(content, "rosters",       rosters_json)
+    content, picks_changed = inject_section(content, "traded_picks",  picks_json)
 
-    if not tx_changed and not ros_changed:
+    if not tx_changed and not ros_changed and not picks_changed:
         print("No changes detected.")
         sys.exit(1)   # signal to workflow: nothing to commit
 
@@ -348,8 +369,9 @@ def main():
         print(f"  Bumped data.js version to {new_ver} in: {', '.join(sorted(bumped))}")
 
     changes = []
-    if tx_changed:  changes.append(f"transactions ({len(txns_2026)} in {CURRENT_YEAR})")
-    if ros_changed: changes.append("rosters")
+    if tx_changed:    changes.append(f"transactions ({len(txns_2026)} in {CURRENT_YEAR})")
+    if ros_changed:   changes.append("rosters")
+    if picks_changed: changes.append(f"traded_picks ({len(traded_picks)})")
     print("Updated:", ", ".join(changes))
     sys.exit(0)   # signal to workflow: commit needed
 
