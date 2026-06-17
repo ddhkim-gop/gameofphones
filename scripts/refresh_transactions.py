@@ -39,6 +39,14 @@ def fetch(url, retries=3):
                 return None
             time.sleep(2 ** attempt)
 
+_OFF_ORDER = ["QB", "RB", "WR", "TE", "K", "FB"]
+def fmt_pos(p):
+    positions = (p.get("fantasy_positions") or [])[:2]
+    if not positions:
+        return p.get("position", "?")
+    sorted_pos = sorted(positions, key=lambda x: _OFF_ORDER.index(x) if x in _OFF_ORDER else 99)
+    return "/".join(sorted_pos)
+
 def fmt_ts(ms):
     """Convert Sleeper ms timestamp to 'Jun 07, 2026 • 11:45 PM PT'"""
     dt = datetime.fromtimestamp(ms / 1000, tz=PT)
@@ -122,7 +130,7 @@ def fetch_transactions(league_id, season, rid_to_name, players):
                     p = players.get(str(pid), {})
                     assets_received.setdefault(owner, []).append({
                         "name": p.get("full_name") or p.get("first_name", "") + " " + p.get("last_name", ""),
-                        "position": p.get("fantasy_positions", [None])[0] or p.get("position", "?"),
+                        "position": fmt_pos(p),
                         "team": p.get("team"),
                     })
                 # Draft picks traded
@@ -159,14 +167,14 @@ def fetch_transactions(league_id, season, rid_to_name, players):
                     p = players.get(str(pid), {})
                     added.append({
                         "name": p.get("full_name") or (p.get("first_name","") + " " + p.get("last_name","")).strip() or str(pid),
-                        "position": (p.get("fantasy_positions") or [None])[0] or p.get("position", "?"),
+                        "position": fmt_pos(p),
                         "team": p.get("team"),
                     })
                 for pid in drops_raw:
                     p = players.get(str(pid), {})
                     dropped.append({
                         "name": p.get("full_name") or (p.get("first_name","") + " " + p.get("last_name","")).strip() or str(pid),
-                        "position": (p.get("fantasy_positions") or [None])[0] or p.get("position", "?"),
+                        "position": fmt_pos(p),
                         "team": p.get("team"),
                     })
                 settings = t.get("settings") or {}
@@ -203,7 +211,7 @@ def build_rosters(rosters_raw, rid_to_name, players):
                 continue
             full_name = p.get("full_name") or (p.get("first_name","") + " " + p.get("last_name","")).strip()
             positions = p.get("fantasy_positions") or []
-            pos = positions[0] if positions else p.get("position", "?")
+            pos = fmt_pos(p)
             birth = p.get("birth_date")
             age = None
             if birth:

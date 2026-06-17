@@ -5310,7 +5310,7 @@ window.__STATIC_DATA__ = {
                 "player_id": "12530",
                 "espn_id": null,
                 "name": "Travis Hunter",
-                "position": "DB",
+                "position": "WR/DB",
                 "team": "JAX",
                 "age": 23,
                 "birth_date": "2003-05-18",
@@ -11641,7 +11641,7 @@ window.__STATIC_DATA__ = {
                 },
                 {
                     "name": "Travis Hunter",
-                    "position": "DB",
+                    "position": "WR/DB",
                     "team": "JAX"
                 },
                 {

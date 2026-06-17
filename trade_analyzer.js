@@ -252,7 +252,7 @@ function posTag(pos, small = false) {
     if (p === "PICK") {
         return `<span style="${base}background:#1e2027;color:#a78bfa;border:1px solid #3d3560;">PICK</span>`;
     }
-    const color = POS_COLORS[p] || "#5a6070";
+    const color = POS_COLORS[p] || POS_COLORS[p.split("/")[0]] || "#5a6070";
     return `<span style="${base}background:${color};color:#fff;">${pos || "?"}</span>`;
 }
 
