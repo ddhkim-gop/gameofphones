@@ -1,4 +1,4 @@
-import { api } from "./dataService.js";
+import { api } from "./dataService.js?v=20260609a";
 import { renderNav } from "./components/nav.js";
 
 const YEARS = ["2018", "2019", "2020", "2021", "2022", "2023", "2024", "2025", "2026"];
@@ -8,6 +8,21 @@ const POS_ORDER = ["QB", "RB", "WR", "TE", "K", "DEF"];
 
 let allTransactions = [];
 let playerValuesCache = {};
+let playerValuesCacheNorm = {}; // normalized name → key for fuzzy lookup
+
+function normName(n) {
+    return n.toLowerCase()
+        .replace(/\s+(jr\.?|sr\.?|ii|iii|iv)$/i, '')
+        .replace(/[^a-z\s]/g, '')
+        .trim();
+}
+
+function pvLookup(name) {
+    if (playerValuesCache[name]) return playerValuesCache[name];
+    const norm = normName(name);
+    const key = playerValuesCacheNorm[norm];
+    return key ? playerValuesCache[key] : {};
+}
 
 // ESPN team logo URL
 function teamLogoUrl(abbrev) {
@@ -77,6 +92,10 @@ async function init() {
     ]);
     allTransactions = txData || [];
     playerValuesCache = playerValues || {};
+    playerValuesCacheNorm = {};
+    for (const key of Object.keys(playerValuesCache)) {
+        playerValuesCacheNorm[normName(key)] = key;
+    }
     await loadPlayerStats();
 
     const PAUL_YOON_AVATAR = "https://sleepercdn.com/images/v4/avatars/avatar_default_blue.webp";
@@ -199,8 +218,8 @@ async function init() {
         // Sort within each position by KTC dynasty value desc, fallback to search_rank
         Object.keys(grouped).forEach(pos => {
             grouped[pos].sort((a, b) => {
-                const av = (playerValues[a.name]?.ktc ?? 0);
-                const bv = (playerValues[b.name]?.ktc ?? 0);
+                const av = (pvLookup(a.name)?.ktc ?? 0);
+                const bv = (pvLookup(b.name)?.ktc ?? 0);
                 if (av !== bv) return bv - av;
                 return (a.search_rank ?? 999999) - (b.search_rank ?? 999999);
             });
@@ -484,7 +503,7 @@ async function openPopover(element, player) {
     const pid = player.player_id;
     const pos = player.position || "";
     const posClr = posColor(pos);
-    const pv = playerValuesCache[player.name] || {};
+    const pv = pvLookup(player.name);
     const heightStr = player.height
         ? `${Math.floor(Number(player.height) / 12)}'${Number(player.height) % 12}"`
         : "—";
@@ -605,13 +624,18 @@ async function openPopover(element, player) {
             const fmt = v => v >= 1e9 ? `$${(v/1e9).toFixed(2)}B` : v >= 1e6 ? `$${(v/1e6).toFixed(1).replace(/\.0$/,'')}M` : `$${Math.round(v/1000)}K`;
             const gtdPct = pv.total_value ? Math.round((pv.guaranteed / pv.total_value) * 100) : null;
             const yrs = pv.years || '?';
+            const span = pv.year_signed ? `${yrs} yr (${pv.year_signed}–${pv.year_end})` : `${yrs} yr`;
+            const curYear = 2026;
+            const remYrs = pv.year_end ? Math.max(0, pv.year_end - curYear + 1) : null;
+            const remMoney = (remYrs !== null && pv.apy) ? pv.apy * remYrs : null;
+            const remStr = remMoney !== null ? `${fmt(remMoney)}<span style="font-size:10px;color:#5a6070;font-weight:400;margin-left:4px;">(${remYrs} yr${remYrs !== 1 ? 's' : ''})</span>` : '—';
             return `<div class="pc-section">
                 <div class="pc-section-title">Contract</div>
                 <div style="display:grid;grid-template-columns:1fr 1fr;gap:8px 16px;">
-                    <div><div style="font-size:10px;color:#5a6070;margin-bottom:2px;">APY</div><div style="font-size:15px;font-weight:800;color:#f0f1f3;">${fmt(pv.apy)}</div></div>
-                    <div><div style="font-size:10px;color:#5a6070;margin-bottom:2px;">Length</div><div style="font-size:15px;font-weight:800;color:#f0f1f3;">${yrs} yr</div></div>
                     <div><div style="font-size:10px;color:#5a6070;margin-bottom:2px;">Total Value</div><div style="font-size:13px;font-weight:700;color:#c9cdd4;">${fmt(pv.total_value)}</div></div>
-                    <div><div style="font-size:10px;color:#5a6070;margin-bottom:2px;">Guaranteed</div><div style="font-size:13px;font-weight:700;color:#c9cdd4;">${fmt(pv.guaranteed)}${gtdPct !== null ? `<span style="font-size:10px;color:#5a6070;font-weight:400;margin-left:4px;">(${gtdPct}%)</span>` : ''}</div></div>
+                    <div><div style="font-size:10px;color:#5a6070;margin-bottom:2px;">Years</div><div style="font-size:13px;font-weight:700;color:#c9cdd4;">${span}</div></div>
+                    <div><div style="font-size:10px;color:#5a6070;margin-bottom:2px;">Guaranteed</div><div style="font-size:13px;font-weight:700;color:#c9cdd4;">${fmt(pv.guaranteed)}</div></div>
+                    <div><div style="font-size:10px;color:#5a6070;margin-bottom:2px;">Remaining</div><div style="font-size:13px;font-weight:700;color:#c9cdd4;">${remStr}</div></div>
                 </div>
             </div>`;
         })() : ''}
@@ -623,7 +647,20 @@ async function openPopover(element, player) {
                 <button id="pc-tab-stats" style="background:#252830;border:1px solid #3d4350;color:#f0f1f3;font-size:11px;font-weight:700;padding:4px 12px;border-radius:6px;cursor:pointer;font-family:inherit;">Career Stats</button>
                 <button id="pc-tab-gamelogs" style="background:none;border:1px solid #2d3139;color:#5a6070;font-size:11px;font-weight:700;padding:4px 12px;border-radius:6px;cursor:pointer;font-family:inherit;">Game Logs</button>
             </div>
-            <div id="espn-stats"><div style="color:#5a6070;font-size:12px;">Loading...</div></div>
+            <div id="espn-stats">
+                <div style="display:flex;align-items:center;gap:8px;margin-bottom:10px;">
+                    <div style="font-size:10px;text-transform:uppercase;letter-spacing:.06em;color:#5a6070;font-weight:700;">Career</div>
+                    <select id="pc-stats-year" style="background:#252830;border:1px solid #2d3139;border-radius:6px;color:#f0f1f3;font-size:12px;padding:3px 8px;cursor:pointer;">
+                        <option value="all">All</option>
+                        <option value="2025">2025</option>
+                        <option value="2024">2024</option>
+                        <option value="2023">2023</option>
+                        <option value="2022">2022</option>
+                        <option value="2021">2021</option>
+                    </select>
+                </div>
+                <div id="pc-stats-body"><div style="color:#5a6070;font-size:12px;">Loading...</div></div>
+            </div>
             <div id="espn-gamelogs" style="display:none;">
                 <div style="display:flex;align-items:center;gap:8px;margin-bottom:10px;">
                     <div style="font-size:10px;text-transform:uppercase;letter-spacing:.06em;color:#5a6070;font-weight:700;">Season</div>
@@ -656,6 +693,7 @@ async function openPopover(element, player) {
     document.getElementById("pc-tab-stats")?.addEventListener("click", () => switchPcTab("stats"));
     document.getElementById("pc-tab-gamelogs")?.addEventListener("click", () => switchPcTab("gamelogs"));
     document.getElementById("pc-gamelog-year")?.addEventListener("change", () => loadGameLog());
+    document.getElementById("pc-stats-year")?.addEventListener("change", () => renderStatsForYear());
 
     // Store identifiers on popover for async tab handlers
     popover.dataset.pos = pos;
@@ -682,7 +720,7 @@ async function openPopover(element, player) {
             sleeperId ? fetch(`https://api.sleeper.com/players/nfl/${sleeperId}/news`).then(r => r.json()).catch(() => []) : Promise.resolve([]),
         ]);
 
-        const statsEl = document.getElementById("espn-stats");
+        const statsBodyEl = document.getElementById("pc-stats-body");
 
         if (espnId) {
             const categories = statsData.categories || [];
@@ -704,30 +742,34 @@ async function openPopover(element, player) {
                 const keyStats = { QB:[0,2,4,6,7,10], RB:[0,1,2,4,5,6], WR:[0,1,2,3,4,5], TE:[0,1,2,3,4,5], K:[0,1,2,3] };
                 const indices = keyStats[pos] || [0,1,2,3,4];
                 const labels = indices.map(i => cat.labels?.[i]).filter(Boolean);
-                const seasons = [...cat.statistics].reverse().slice(0, 8);
-                const rows = seasons.map(s => {
-                    const yr = s.season?.year ? String(s.season.year) : "";
-                    const rank = rankByYear[yr] ? `<td style="font-weight:700;color:#f0f1f3;">${rankByYear[yr]}</td>` : `<td style="color:#5a6070;">—</td>`;
-                    const vals = indices.map(i => s.stats?.[i] ?? "—").join("</td><td>");
-                    return `<tr><td>${s.season?.displayName ?? ""}</td>${rank}<td>${vals}</td></tr>`;
-                }).join("");
+                const allSeasons = [...cat.statistics].reverse().slice(0, 8);
                 const totals = indices.map(i => cat.totals?.[i] ?? "—").join("</td><td>");
 
-                statsEl.innerHTML = `
-                    <div class="pc-section-title">${cat.displayName} — Career</div>
-                    <div style="overflow-x:auto;">
-                        <table class="pc-stats-table">
-                            <thead><tr><th style="text-align:left;">Year</th><th>Rank</th>${labels.map(l => `<th>${l}</th>`).join("")}</tr></thead>
-                            <tbody>${rows}<tr><td>Career</td><td>—</td><td>${totals}</td></tr></tbody>
-                        </table>
-                    </div>`;
+                // Store on popover for year filter re-render
+                popover._statsData = { cat, indices, labels, allSeasons, totals, rankByYear };
+
+                // Populate year dropdown options based on available seasons
+                const yearSel = document.getElementById("pc-stats-year");
+                if (yearSel) {
+                    const existingYears = new Set([...yearSel.options].map(o => o.value));
+                    allSeasons.forEach(s => {
+                        const yr = s.season?.year ? String(s.season.year) : "";
+                        if (yr && !existingYears.has(yr)) {
+                            const opt = document.createElement("option");
+                            opt.value = yr; opt.textContent = yr;
+                            yearSel.appendChild(opt);
+                        }
+                    });
+                }
+
+                renderStatsForYear();
             } else {
-                statsEl.innerHTML = `<div class="pc-section-title">Career Stats</div><div style="color:#5a6070;font-size:12px;">No stats available</div>`;
+                if (statsBodyEl) statsBodyEl.innerHTML = `<div style="color:#5a6070;font-size:12px;">No stats available</div>`;
             }
         } else {
             const rp = document.getElementById("espn-stats-rank-placeholder");
             if (rp) rp.remove();
-            statsEl.innerHTML = `<div class="pc-section-title">Career Stats</div><div style="color:#5a6070;font-size:12px;">Not available</div>`;
+            if (statsBodyEl) statsBodyEl.innerHTML = `<div style="color:#5a6070;font-size:12px;">Not available</div>`;
         }
 
         const injuries = athleteData.athlete?.injuries || [];
@@ -740,9 +782,47 @@ async function openPopover(element, player) {
 
     } catch (e) {
         console.error("Player card fetch error:", e);
-        document.getElementById("espn-stats").innerHTML = `<div style="color:#5a6070;font-size:12px;">Failed to load</div>`;
+        const sb = document.getElementById("pc-stats-body");
+        if (sb) sb.innerHTML = `<div style="color:#5a6070;font-size:12px;">Failed to load</div>`;
         document.getElementById("espn-news").innerHTML = `<div class="pc-section-title">Latest News</div><div style="color:#5a6070;font-size:12px;">Failed to load</div>`;
     }
+}
+
+function renderStatsForYear() {
+    const popover = document.getElementById("player-popover");
+    const statsBodyEl = document.getElementById("pc-stats-body");
+    if (!popover || !statsBodyEl || !popover._statsData) return;
+
+    const { cat, indices, labels, allSeasons, totals, rankByYear } = popover._statsData;
+    const yearSel = document.getElementById("pc-stats-year");
+    const selectedYear = yearSel ? yearSel.value : "all";
+
+    let seasons = allSeasons;
+    if (selectedYear !== "all") {
+        seasons = allSeasons.filter(s => s.season?.year ? String(s.season.year) === selectedYear : false);
+    }
+
+    if (!seasons.length) {
+        statsBodyEl.innerHTML = `<div style="color:#5a6070;font-size:12px;">No data for ${selectedYear}</div>`;
+        return;
+    }
+
+    const showCareer = selectedYear === "all";
+    const rows = seasons.map(s => {
+        const yr = s.season?.year ? String(s.season.year) : "";
+        const rank = rankByYear[yr] ? `<td style="font-weight:700;color:#f0f1f3;">${rankByYear[yr]}</td>` : `<td style="color:#5a6070;">—</td>`;
+        const vals = indices.map(i => s.stats?.[i] ?? "—").join("</td><td>");
+        return `<tr><td>${s.season?.displayName ?? ""}</td>${rank}<td>${vals}</td></tr>`;
+    }).join("");
+
+    const yearCol = showCareer ? `<th style="text-align:left;">Year</th>` : `<th style="text-align:left;">Year</th>`;
+    statsBodyEl.innerHTML = `
+        <div style="overflow-x:auto;">
+            <table class="pc-stats-table">
+                <thead><tr>${yearCol}<th>Rank</th>${labels.map(l => `<th>${l}</th>`).join("")}</tr></thead>
+                <tbody>${rows}</tbody>
+            </table>
+        </div>`;
 }
 
 function switchPcTab(tab) {
@@ -772,47 +852,47 @@ async function loadGameLog() {
     if (!playerId) { body.innerHTML = `<div style="color:#5a6070;font-size:12px;">No player ID available.</div>`; return; }
     body.innerHTML = `<div style="color:#5a6070;font-size:12px;">Loading...</div>`;
 
-    // Columns per position — Cmp/Att combined to save space, rank appended
+    // Columns per position — Pts + Rank first, then stats
     const STAT_COLS = {
         QB: [
-            { key: "_cmp_att",   label: "Cmp/Att", combo: ["pass_cmp","pass_att"] },
-            { key: "pass_yd",    label: "Yds"  },
-            { key: "pass_td",    label: "TD"   },
-            { key: "pass_int",   label: "INT"  },
-            { key: "rush_yd",    label: "Ru"   },
-            { key: "pts_half_ppr", label: "Pts" },
+            { key: "pts_half_ppr",      label: "Pts" },
             { key: "pos_rank_half_ppr", label: "Rnk", isRank: true },
+            { key: "_cmp_att",          label: "Cmp/Att", combo: ["pass_cmp","pass_att"] },
+            { key: "pass_yd",           label: "Yds"  },
+            { key: "pass_td",           label: "TD"   },
+            { key: "pass_int",          label: "INT"  },
+            { key: "rush_yd",           label: "Ru"   },
         ],
         RB: [
-            { key: "rush_att",   label: "Car"  },
-            { key: "rush_yd",    label: "RuYd" },
-            { key: "rec_tgt",    label: "Tgt"  },
-            { key: "rec",        label: "Rec"  },
-            { key: "rec_yd",     label: "ReYd" },
-            { key: "pts_half_ppr", label: "Pts" },
+            { key: "pts_half_ppr",      label: "Pts" },
             { key: "pos_rank_half_ppr", label: "Rnk", isRank: true },
+            { key: "rush_att",          label: "Car"  },
+            { key: "rush_yd",           label: "RuYd" },
+            { key: "rec_tgt",           label: "Tgt"  },
+            { key: "rec",               label: "Rec"  },
+            { key: "rec_yd",            label: "ReYd" },
         ],
         WR: [
-            { key: "rec_tgt",    label: "Tgt"  },
-            { key: "rec",        label: "Rec"  },
-            { key: "rec_yd",     label: "Yds"  },
-            { key: "rec_td",     label: "TD"   },
-            { key: "pts_half_ppr", label: "Pts" },
+            { key: "pts_half_ppr",      label: "Pts" },
             { key: "pos_rank_half_ppr", label: "Rnk", isRank: true },
+            { key: "rec_tgt",           label: "Tgt"  },
+            { key: "rec",               label: "Rec"  },
+            { key: "rec_yd",            label: "Yds"  },
+            { key: "rec_td",            label: "TD"   },
         ],
         TE: [
-            { key: "rec_tgt",    label: "Tgt"  },
-            { key: "rec",        label: "Rec"  },
-            { key: "rec_yd",     label: "Yds"  },
-            { key: "rec_td",     label: "TD"   },
-            { key: "pts_half_ppr", label: "Pts" },
+            { key: "pts_half_ppr",      label: "Pts" },
             { key: "pos_rank_half_ppr", label: "Rnk", isRank: true },
+            { key: "rec_tgt",           label: "Tgt"  },
+            { key: "rec",               label: "Rec"  },
+            { key: "rec_yd",            label: "Yds"  },
+            { key: "rec_td",            label: "TD"   },
         ],
         K: [
-            { key: "_fg",        label: "FG",  combo: ["fgm","fga"] },
-            { key: "xpm",        label: "XPM"  },
-            { key: "pts_std",    label: "Pts"  },
-            { key: "pos_rank_std", label: "Rnk", isRank: true },
+            { key: "pts_std",           label: "Pts"  },
+            { key: "pos_rank_std",      label: "Rnk", isRank: true },
+            { key: "_fg",               label: "FG",  combo: ["fgm","fga"] },
+            { key: "xpm",               label: "XPM"  },
         ],
     };
     const cols = STAT_COLS[pos] || STAT_COLS.WR;

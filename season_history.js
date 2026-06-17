@@ -1,4 +1,4 @@
-import { api } from "./dataService.js";
+import { api } from "./dataService.js?v=20260609a";
 import { renderNav } from "./components/nav.js";
 
 renderNav();
@@ -815,8 +815,7 @@ function renderSeason(year) {
     const standingsHtml = `
         <div class="card" style="padding:14px;background:#1e2027;border-color:#2d3139;">
             <div class="sh-section-title">Regular Season</div>
-            <div style="overflow-x:auto;-webkit-overflow-scrolling:touch;">
-            <table class="sh-table" style="min-width:260px;">
+            <table class="sh-table" style="width:100%;">
                 <thead><tr>
                     <th style="width:20px;text-align:left;">#</th>
                     <th style="text-align:left;">Team</th>
@@ -833,7 +832,6 @@ function renderSeason(year) {
                     `).join("")}
                 </tbody>
             </table>
-            </div>
         </div>
     `;
 
