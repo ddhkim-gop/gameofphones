@@ -462,7 +462,7 @@ async function renderDraftAnalysis(picks, year) {
                 return `<div style="display:flex;align-items:center;gap:6px;padding:5px 8px;background:#1e2027;border-radius:7px;margin-bottom:2px;">
                     <span style="background:${posColorDA(p.position)};color:#fff;font-size:9px;font-weight:800;padding:1px 0;border-radius:3px;width:26px;text-align:center;flex-shrink:0;">${p.position||"?"}</span>
                     <span style="font-size:12px;font-weight:600;color:#f0f1f3;flex:1;white-space:nowrap;overflow:hidden;text-overflow:ellipsis;">${p.player}</span>
-                    <span style="font-size:10px;color:#5a6070;flex-shrink:0;">${year.slice(2)}.${String(pir).padStart(2,"0")}</span>
+                    <span style="font-size:10px;color:#5a6070;flex-shrink:0;">${rd}.${String(pir).padStart(2,"0")}</span>
                     ${badge}
                 </div>`;
             }).join("");
