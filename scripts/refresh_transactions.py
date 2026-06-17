@@ -322,6 +322,21 @@ def main():
     with open(DATA_JS, "w") as f:
         f.write(content)
 
+    # Bump data.js version string in all HTML files so browsers re-fetch
+    import glob, re as _re
+    new_ver = datetime.now().strftime("%Y%m%d%H%M")
+    bumped = []
+    for html_path in glob.glob("*.html"):
+        with open(html_path) as f:
+            html = f.read()
+        new_html = _re.sub(r'data\.js\?v=[^"\']+', f'data.js?v={new_ver}', html)
+        if new_html != html:
+            with open(html_path, "w") as f:
+                f.write(new_html)
+            bumped.append(html_path)
+    if bumped:
+        print(f"  Bumped data.js version to {new_ver} in: {', '.join(sorted(bumped))}")
+
     changes = []
     if tx_changed:  changes.append(f"transactions ({len(txns_2026)} in {CURRENT_YEAR})")
     if ros_changed: changes.append("rosters")
