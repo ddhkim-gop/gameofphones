@@ -1,6 +1,67 @@
 import { api } from "./dataService.js?v=20260609a";
 import { renderNav } from "./components/nav.js";
 
+const PLAYER_PROFILES = {
+  // 2026
+  "Jeremiyah Love": { college:"Notre Dame", profile:"A powerful, compact back at 6'0\" with a low pad level, relentless contact balance, and surprising receiving ability (27 catches in his final season). The 1.01 of the 2026 class — drafted 3rd overall by Arizona to be their feature back immediately. A true cornerstone dynasty piece." },
+  "Carnell Tate": { college:"Ohio State", profile:"A polished, pro-ready route runner with strong hands and the body control of a true alpha WR. Went 4th overall to the Titans, projecting as their WR1 from day one. His technique and immediate opportunity make him one of the safest dynasty investments in this class." },
+  "Jordyn Tyson": { college:"Arizona State", profile:"An explosive separation specialist who posted 75 catches, 1,101 yards, and 10 TDs in 2024 — a sharp, decisive route runner who creates YAC after the catch. Selected 8th by New Orleans into a pass-heavy scheme. Dynasty consensus places him 1.02–1.04; a high-floor, high-ceiling WR1 prospect." },
+  "Fernando Mendoza": { college:"California / Illinois", profile:"A Heisman-winning pocket processor who draws Cousins/Ryan comps — accuracy-first rather than dual-threat. Went 1st overall to the Raiders and inherits Brock Bowers and Ashton Jeanty as weapons. The clear dynasty 1.01 at QB; his supporting cast gives him an immediate floor that most rookie QBs can't match." },
+  "Makai Lemon": { college:"Indiana", profile:"The Biletnikoff Award winner — a contested-catch specialist and dual-alignment weapon who posted 79-1,156-11. Traded up for by the Eagles, who have a loaded receiver room that may limit his near-term role. An elite ceiling pick who needs time to develop into his target share." },
+  "Jadarian Price": { college:"TCU", profile:"A complementary workhorse back (113-674-11 at Notre Dame) who went 32nd overall to Seattle — a run-leaning organization looking for a featured back. A reliable between-the-tackles runner with a strong floor as a potential bell cow. Dynasty mid-R1 with immediate opportunity." },
+  "Omar Cooper": { college:"Alabama", profile:"A slot weapon with elite YAC ability who posted 69-937-13 with 2.55 yards per route run — a late bloomer who hit his stride at Alabama. Drafted 30th by the Jets as an immediate depth-starter. His after-catch ability and volume in New York's pass offense make him a reliable dynasty flex." },
+  "KC Concepcion": { college:"Texas A&M", profile:"A versatile slot/outside hybrid (61-919-9 in 2025) selected 24th by Cleveland as their projected WR1 under new HC Todd Monken. His target-share ownership is immediate in a pass-hungry offense. One of the safest dynasty picks in the class based on role clarity alone." },
+  "Kenyon Sadiq": { college:"Oregon", profile:"An elite athletic TE — 4.39 forty, 43.5\" vertical — who posted 51-560-8 as a mismatch slot threat. Selected 16th by the Jets; TE development is slow but his rare athleticism and top-16 draft capital give him a Travis Kelce-ceiling in dynasty." },
+  "Denzel Boston": { college:"Colorado", profile:"A physical 'X' receiver at 6'4\" who posted 62-881-11 in 2025 — a jump-ball threat who wins with size and timing. Drafted by the Browns to complement KC Concepcion, which caps his immediate share. A massive upside play who needs target separation to reach his ceiling." },
+  "Ty Simpson": { college:"Western Kentucky", profile:"A developmental QB who led Alabama to the CFP before transferring and becoming a 1st-round pick (13th, Rams) as the eventual Stafford successor. Won't produce immediately but holds strong long-term franchise QB value in LA's winning system. A dynasty stash in 1QB, high-end SF pick." },
+  "Eli Stowers": { college:"Vanderbilt", profile:"A former QB turned TE whose pass-catcher instincts give him unusually clean routes and ball-plucking hands. Selected 54th by the Eagles as Goedert's heir — his blocking limitations are a concern but his receiving upside is legitimate. A dynasty late-R1 TE with a clear succession plan in Philly." },
+  "Nicholas Singleton": { college:"Penn State", profile:"An explosive, finesse-style cutter with elite burst and underrated receiving ability. Fell to the 5th round (142nd overall) to the Titans — significantly lower draft capital than his talent suggested. A dynasty R2 pick purely on athletic upside despite the late landing spot." },
+  "Carson Beck": { college:"Georgia", profile:"A multi-year Georgia starter with NFL size and a strong arm, but inconsistent decision-making caused him to fall on boards. Backing up Fernando Mendoza in Arizona — a dart throw in deep superflex leagues but unlikely to see the field soon." },
+  "Zachariah Branch": { college:"USC", profile:"A sub-4.3 speed demon with flashy big-play ability but inconsistent college production — the classic boom-or-bust speed archetype. Drafted 79th by the Falcons as a gadget/deep threat. His speed gives him a high ceiling but spotty route running creates real dynasty risk." },
+  "Germie Bernard": { college:"Michigan", profile:"A route runner drafted by Pittsburgh who profiles as a reliable intermediate target in their evolving offense. Dynasty R1–2 range in formats where his path to targets is clear." },
+  "Emmett Johnson": { college:"Nebraska", profile:"A zone-scheme back with vision and receiving upside, but drafted 161st by the Chiefs — historically one of the worst dynastyRB landing spots due to their pass-first system. A low-priority late flier despite good traits." },
+  // 2025
+  "Ashton Jeanty": { college:"Boise State", profile:"A generational workhorse who rushed for 2,601 yards in 2024 (second-most in FBS history) — compact at 5'8\" with elite quickness, vision, and three-down ability. The consensus 1.01 of the 2025 dynasty class; drafted 6th overall by the Raiders alongside Brock Bowers. His ceiling in Vegas is sky-high." },
+  "Tetairoa McMillan": { college:"Arizona", profile:"A polished X-receiver at 6'5\" with elite catch radius, fluid route running, and the ability to win at all three levels — not just on jump balls. The WR1 of his class, selected by Carolina as their immediate WR1 target hog. Dynasty 1.02–1.03 with a rare combination of size, technique, and opportunity." },
+  "Omarion Hampton": { college:"North Carolina", profile:"A downhill workhorse at 6'0\", 221 lbs who posted 1,660 yards and 15 TDs in 2024 while adding 38 receptions. The surest bell-cow back in the class behind Jeanty, drafted by the Chargers into a strong passing offense that boosts his receiving floor. Dynasty 1.02 RB with elite floor and upside." },
+  "Quinshon Judkins": { college:"Ohio State", profile:"A physical, downhill runner with relentless pad level and elite contact balance — a high-volume ball-carrier who starred at both Ole Miss and Ohio State. Landed in Cleveland where Nick Chubb's departure opens an immediate path to carries. A workhorse archetype with a legitimate starting role and strong dynasty floor." },
+  "Travis Hunter": { college:"Colorado", profile:"A once-in-a-generation two-way WR/CB at 6'1\" with elite athleticism, route savvy, and big-play ability — a legitimate WR1 profile regardless of his two-way role. Drafted 2nd overall by Jacksonville, who will feature him heavily on offense. A top-5 dynasty superflex pick whose usage uncertainty is the only caveat." },
+  "TreVeyon Henderson": { college:"Ohio State", profile:"A compact, explosive cutter at 5'10\" with elite one-cut agility and strong PPR receiving versatility — a finesse/receiving back rather than a pure workhorse. Selected by the Patriots as an early-down and pass-catching weapon. Dynasty 1.06 with high PPR ceiling once he earns a featured role." },
+  "Cam Skattebo": { college:"Arizona State", profile:"A battering ram workhorse who led his class in receiving yards, ranked 2nd in rushing yards, and forced 105 missed tackles (tied for the PFF-era record). Drafted by the Giants (1.04 pick) as their lead back under Brian Daboll — his workload and pass-catching make him a reliable weekly dynasty producer despite a lower big-play ceiling than Jeanty/Hampton." },
+  "Cam Ward": { college:"Miami", profile:"A dual-threat franchise QB selected 1st overall by the Titans — prototypical size with a strong arm and experience across multiple programs. A clear Day 1 starter, though Tennessee's supporting cast creates weekly volatility. Dynasty R1 SF asset with long-term franchise QB ceiling." },
+  "Emeka Egbuka": { college:"Ohio State", profile:"A complete receiver with elite route running, reliable hands, and the IQ to line up inside and outside — a football-intelligence-first prospect. Drafted by the Buccaneers behind veteran depth, limiting his immediate role. Dynasty 1.09 range; his long-term outlook is elite once Tampa's target share opens up." },
+  "Jaxson Dart": { college:"Ole Miss", profile:"An accurate pocket passer with strong processing ability and pro-ready mechanics — the Giants traded significant capital to move up for him. Faces a murky early starting timeline, making him a dynasty stash rather than immediate contributor. SF mid-round; the long-term QB of the Giants franchise once he locks in the job." },
+  "Luther Burden": { college:"Missouri", profile:"A YAC specialist with elite yards-after-contact and quickness in the short/intermediate game — Curtis Samuel comps are common. Drafted by the Chicago Bears under Ben Johnson, known for unlocking WR talent, giving him one of the best offensive situations in the class. Dynasty 1.08 with genuine scheme-elevated upside." },
+  "RJ Harvey": { college:"UCF", profile:"An explosive, high-motor back who posted 1,577 yards and 22 TDs in 2024 — a speed/burst archetype who excels in space. Drafted by the Broncos into a messy backfield situation analysts flagged. Elite athleticism but the committee situation muddies his dynasty value; high upside if he wins the job." },
+  "Tyler Warren": { college:"Penn State", profile:"An elite receiving TE who was a consensus top-10 overall prospect — a versatile inline/move TE with the route running and athleticism to be a weekly fantasy weapon. Drafted inside the top 10 with a clear featured receiving role. Dynasty TE1 of his class with immediate impact potential." },
+  "Colston Loveland": { college:"Michigan", profile:"A receiving TE with elite production (top-6 in yards per route run) drafted 10th overall by the Bears alongside Luther Burden. Ben Johnson's pass-first offense from day one gives him rare TE1 opportunity as a mover. Dynasty 2.01 TE; top-10 capital plus a pass-first offense makes him one of the safest TE investments in the class." },
+  "Jayden Higgins": { college:"Iowa State", profile:"A big-bodied possession receiver with reliable hands and intermediate-route efficiency — a size/catch-radius receiver who projects as a boundary WR1. Drafted by the Texans into a strong passing attack with a clear role need. Higher floor than his draft position suggested." },
+  "Kyle Williams": { college:"Washington State", profile:"A speed/YAC receiver projected to start immediately for the Patriots as a rookie — rare immediate-starter upside for a Day 2 pick. A quickness-first archetype who creates separation with burst and sharp route breaks. Dynasty 2.08 with a higher floor than most Day 2 picks due to immediate role clarity." },
+  "Matthew Golden": { college:"Texas", profile:"An explosive speed receiver with separation ability and YAC talent — a first-round pick by Green Bay who projects as an immediate contributor in their WR-friendly offense. A quickness-and-catch-after-the-catch type more than a big-body 'X.' Dynasty 1.10; Green Bay's system has a strong track record of producing fantasy WRs." },
+  "Kaleb Johnson": { college:"Iowa", profile:"A zone-scheme specialist with elite vision and patience — a one-cut-and-go style that translates well to the NFL. Drafted by Pittsburgh, who run a physical rushing attack that suits his skill set. Younger than his peers and well-suited to Pittsburgh's scheme; a dynasty sleeper with significant upside." },
+  "Shedeur Sanders": { college:"Colorado", profile:"A polished pocket passer with elite accuracy and anticipation — his father Deion Sanders' coaching helped develop a pro-ready ball placement artist. Fell further than expected in the draft but landed with a team that wants to develop him. A dynasty SF stash with long-term QB upside." },
+  "Jalen Milroe": { college:"Alabama", profile:"A dual-threat QB with elite rushing ability and a live arm — more athletic upside than Dart or Dart's class peers. A dynasty SF late-round flier with Lamar Jackson-esque rushing upside if the passing game develops." },
+  // 2024
+  "Caleb Williams": { college:"USC", profile:"A Mahomes-level dual-threat talent with elite arm improvisation and plus rushing upside — the consensus 1.01 pick, drafted by the Bears into an offense with DJ Moore, Rome Odunze, and Cole Kmet. A generational QB prospect already emerging as one of dynasty's most valuable overall players." },
+  "Marvin Harrison": { college:"Ohio State", profile:"Son of HOF receiver Marvin Harrison Sr. — a polished route runner at 6'4\" with elite hands and separation ability that mirrors his father's precision. Drafted 4th overall by Arizona as Kyler Murray's WR1 in an offense starved for reliable weapons. Already producing as an elite dynasty WR with a locked-in alpha role." },
+  "Jayden Daniels": { college:"LSU", profile:"A dynamic dual-threat QB whose rushing ability (1,100+ college rush yards) gives him a weekly floor independent of his passing. Selected 2nd overall by Washington, where he immediately became one of fantasy's top-scoring QBs. Dynasty top-3 SF — his rushing floor makes him a weekly top-5 fantasy QB regardless of efficiency." },
+  "Malik Nabers": { college:"LSU", profile:"The best slot WR prospect in years — elite separation, route diversity, and YAC ability at 5'11\" with plus athleticism. Selected by the Giants, where he immediately led all 2024 WR rookies in receiving yards. Dynasty 1.01–1.03 WR; already established as an elite dynasty asset with a massive target share." },
+  "Rome Odunze": { college:"Washington", profile:"An elite route runner and contested-catch specialist at 6'3\" — described as 'the next Mike Evans iteration' with plus athleticism across all three route depths. Selected by the Bears alongside Caleb Williams, giving him one of the best QB/WR pairings in the draft. Dynasty top-5 WR; ceiling is a perennial top-10 dynasty producer." },
+  "Ladd McConkey": { college:"Georgia", profile:"A next-level route runner and YAC machine with elite short-area separation — a pure slot technician who dominated in the Chargers' offense under Jim Harbaugh. His precision routes and catch-in-traffic ability make him a plus PPR asset despite lacking elite size. Dynasty WR2/flex stud already producing as one of fantasy's most reliable PPR assets." },
+  "Brock Bowers": { college:"Georgia", profile:"A generational TE talent with wide receiver-level route running — his yards per route run and separation metrics exceeded all TEs in recent memory. Selected by the Raiders where he broke TE rookie receiving records. Dynasty 1.01 TE and one of the most valuable overall dynasty assets regardless of position." },
+  "Brian Thomas": { college:"LSU", profile:"An elite speed-size combo at 6'3\" with explosive deep-ball ability and the physicality to win at all levels — a vertical threat who also routes crisply. Drafted by Jacksonville, where he led all 2024 WR rookies and emerged as a proven dynasty star. Already one of the highest-ceiling dynasty WRs in the entire player pool." },
+  "JJ McCarthy": { college:"Michigan", profile:"An accurate, system-efficient pocket passer with strong poise and solid athleticism — selected 10th overall by Minnesota, who traded up for him. Missed his entire 2024 rookie season to injury, making him a dynasty stash. SF 1.03–1.07; franchise QB ceiling in a Vikings offense built to win once healthy." },
+  "Drake Maye": { college:"North Carolina", profile:"A prototypical 6'4\" frame with special arm talent and plus athleticism (1,147 rush yards across two seasons) — strong deep-ball mechanics with room to develop his pocket processing. Selected 3rd overall by New England as their franchise QB of the future. Dynasty SF top-5; elite arm/athletic combo in a wide-open starting role." },
+  "Xavier Worthy": { college:"Texas", profile:"The fastest player in 2024 draft history at 4.21 seconds — a true burner who turns short passes into home runs and stretches defenses vertically. Drafted by Kansas City (who traded up) as a complement to the Chiefs' offense under Andy Reid. Dynasty WR2/flex; Chiefs' volume is spread thin but Worthy's speed creates consistent TD upside in one of the league's best offenses." },
+  "Jonathon Brooks": { college:"Texas", profile:"Described as arguably the best RB prospect in his class before a torn ACL late in 2023 — a three-down back with elite vision, receiving ability, and passing-down skills. Drafted by the Panthers, who traded up specifically for him. Dynasty high-upside RB; ACL recovery is the primary concern, but his talent level is top-5 RB dynasty upside if healthy." },
+  "Bucky Irving": { college:"Oregon", profile:"A zone-scheme specialist with excellent vision, burst, and receiving ability — a versatile two-phase back in the Christian McCaffrey mold at a smaller scale. Drafted by Tampa Bay into Todd Bowles' offense. Dynasty RB2/flex sleeper; receiving versatility and a clear path to touches in Tampa give him a higher PPR floor than his draft position suggested." },
+  "Keon Coleman": { college:"Florida State", profile:"A physical jump-ball WR at 6'4\", 215 lbs with elite size and athleticism — a contested-catch specialist who wins in the red zone and on back-shoulder throws. Drafted by the Bills into a premier offense with Josh Allen. Dynasty WR2/upside play; his red zone role and Josh Allen's arm give him consistent TD upside." },
+  "Adonai Mitchell": { college:"Texas", profile:"A long, athletic boundary receiver with plus size and strong hands — a possession/contested-catch receiver with vertical speed. Drafted by Indianapolis alongside Anthony Richardson, whose big arm could unlock Mitchell as a deep-ball target. A high-ceiling stash in dynasty." },
+  "Ricky Pearsall": { college:"Florida", profile:"A route-running technician with crisp separation and strong hands, drafted by the 49ers into Kyle Shanahan's elite offensive system. Shanahan's track record of developing WRs gives him an elevated ceiling relative to his draft position. Dynasty 'draft and stash' with scheme-backed upside." },
+  "Jermaine Burton": { college:"Alabama", profile:"An explosive speed receiver with elite burst and big-play ability — a boom-or-bust downfield threat who struggled with consistency at Alabama despite elite physical tools. A Day 2 developmental pick with a murky starting role. Dynasty late-round dart; elite speed creates TD upside but inconsistent route running limits his floor." },
+  "Trey Benson": { college:"Florida State", profile:"A long-striding power back at 6'0\", 216 lbs with excellent size and deceptive speed — a workhorse archetype with underrated receiving ability. A Day 2 pick with a path to starting carries. Dynasty RB2/flex; his physical workhorse profile fits an NFL offense well, with value hinged on winning the starting job." },
+};
+
 const PICK_BG = { QB:"#fda4af", RB:"#86efac", WR:"#93c5fd", TE:"#fdba74", K:"#c4b5fd", DEF:"#94a3b8" };
 const PICK_FG = { QB:"#e74c82", RB:"#16a34a", WR:"#2563eb", TE:"#d97706", K:"#7c3aed", DEF:"#475569" };
 
@@ -450,70 +511,85 @@ async function renderDraftAnalysis(picks, year) {
             teamPicks.forEach(p => { const base = (p.position||"").split("/")[0]; posCounts[base] = (posCounts[base]||0)+1; });
             const parts = [];
 
+            const pickDesc = (p) => {
+                const pir = ((p.pick_no-1)%totalTeams)+1;
+                return `${p.round}.${String(pir).padStart(2,"0")}`;
+            };
+            const profile = (name) => PLAYER_PROFILES[name] || null;
+            const st = (p) => playerStatus(p.player, team);
+            const statusNote = (p) => {
+                const s = st(p);
+                if (s === "traded") return " (since traded away)";
+                if (s === "dropped") return " (since released)";
+                return "";
+            };
+
             if (isStartup) {
-                const r1picks = teamPicks.filter(p => p.round === 1).sort((a,b) => a.pick_no - b.pick_no);
-                const r1 = r1picks[0];
-                const pir1 = r1 ? ((r1.pick_no-1)%totalTeams)+1 : null;
-                if (r1 && pir1 <= 3) parts.push(`Landed a top-3 overall pick to anchor the roster.`);
-                else if (r1 && pir1 <= 6) parts.push(`Selected in the top half of round 1, building around a strong core.`);
-                else if (r1) parts.push(`Picked late in round 1, relying on value deeper in the draft.`);
+                const r1 = teamPicks.filter(p => p.round === 1).sort((a,b) => a.pick_no - b.pick_no);
+                const r2 = teamPicks.filter(p => p.round === 2).sort((a,b) => a.pick_no - b.pick_no);
+                const topPick = r1[0];
 
-                const dominant = Object.entries(posCounts).sort((a,b)=>b[1]-a[1]);
-                const top = dominant[0];
-                if (top && top[1] >= 4) parts.push(`Went heavy on ${top[0]} with ${top[1]} selections — a clear positional commitment.`);
-                else if (dominant.length >= 3) parts.push(`Spread picks across multiple positions, building balanced depth.`);
-
-                const qbCount = posCounts["QB"] || 0;
-                if (qbCount >= 2) parts.push(`Invested early in QB — a high-risk, high-reward strategy in dynasty.`);
-                else if (qbCount === 0 && depth.QB <= 1) parts.push(`Neglected QB entirely, leaving the position thin long-term.`);
-
-            } else {
-                // Rookie draft
-                const r1 = teamPicks.filter(p => p.round === 1).sort((a,b) => a.pick_no - b.pick_no)[0];
-                if (!r1) {
-                    parts.push(`Entered without a first-round pick, having traded it for veteran talent.`);
-                } else {
-                    const pir = ((r1.pick_no-1)%totalTeams)+1;
-                    const slot = pir <= 4 ? "top-4" : pir <= 8 ? "mid-first" : "late-first";
-                    const pos = (r1.position||"").split("/")[0];
-                    const isScarcity = pos === "QB" || pos === "TE";
-                    const needThresholds = {QB:2, RB:5, WR:6, TE:2};
-                    const currentCount = depth[pos] || 0;
-                    const isNeed = currentCount <= (needThresholds[pos] || 3);
-
-                    if (slot === "top-4" && isScarcity) {
-                        parts.push(`Used a ${slot} pick on ${pos} — prioritizing a scarce position over positional value.`);
-                    } else if (slot === "top-4") {
-                        parts.push(`Spent their ${slot} selection at ${pos}${isNeed ? ", filling a clear positional need" : ", adding to an already solid corps"}.`);
-                    } else if (isNeed) {
-                        parts.push(`Used their ${slot} pick to address a thin ${pos} room.`);
+                if (topPick) {
+                    const pr = profile(topPick.player);
+                    const pir = ((topPick.pick_no-1)%totalTeams)+1;
+                    const slotNote = pir <= 3 ? "top-3 overall" : pir <= 6 ? "top half of round 1" : "late first round";
+                    if (pr) {
+                        parts.push(`Anchored the draft with <strong>${topPick.player}</strong> (${pr.college}) at ${pickDesc(topPick)} — ${pr.profile}${statusNote(topPick)}`);
                     } else {
-                        parts.push(`Took ${pos} with their ${slot} pick${depth[pos] >= (needThresholds[pos]||3)+2 ? ", adding depth to an already stacked position" : ""}.`);
+                        parts.push(`Opened with a ${slotNote} pick in <strong>${topPick.player}</strong> (${topPick.position})${statusNote(topPick)}.`);
                     }
                 }
 
-                // Multi-pick patterns
-                const draftedPositions = Object.keys(posCounts);
-                const doublePos = draftedPositions.filter(p => posCounts[p] >= 2);
-                if (doublePos.length) parts.push(`Double-dipped at ${doublePos.join(" and ")}, making it a clear priority.`);
-                else if (draftedPositions.length >= 3) parts.push(`Spread picks across ${draftedPositions.join(", ")}, building across the board.`);
+                // Highlight notable early picks beyond r1[0]
+                const notableEarly = [...r1.slice(1), ...r2.slice(0,1)].filter(p => profile(p.player));
+                notableEarly.slice(0,2).forEach(p => {
+                    const pr = profile(p.player);
+                    parts.push(`Also added <strong>${p.player}</strong> (${pr.college}) at ${pickDesc(p)} — ${pr.profile.split(".")[0]}.${statusNote(p)}`);
+                });
 
-                // QB/TE scarcity note (if not already mentioned)
-                if (!r1 && (posCounts["QB"] || posCounts["TE"])) {
-                    const scarce = ["QB","TE"].filter(p => posCounts[p]);
-                    parts.push(`Still prioritized ${scarce.join("/")} despite having no first-round pick.`);
+                const dominant = Object.entries(posCounts).sort((a,b)=>b[1]-a[1])[0];
+                if (dominant && dominant[1] >= 4) parts.push(`Heavily invested in ${dominant[0]} with ${dominant[1]} selections — a clear positional identity.`);
+                else if (Object.keys(posCounts).length >= 4) parts.push(`Spread picks broadly across positions, building balanced depth from the ground up.`);
+
+            } else {
+                // Rookie draft — walk through each pick with full context
+                const sortedPicks = [...teamPicks].sort((a,b) => a.pick_no - b.pick_no);
+                const r1picks = sortedPicks.filter(p => p.round === 1);
+                const r2picks = sortedPicks.filter(p => p.round === 2);
+                const r3picks = sortedPicks.filter(p => p.round === 3);
+
+                if (!r1picks.length) {
+                    parts.push(`Entered without a first-round pick, having dealt it away for veteran talent or future capital.`);
                 }
+
+                sortedPicks.forEach(p => {
+                    const pr = profile(p.player);
+                    const pir = ((p.pick_no-1)%totalTeams)+1;
+                    const pos = (p.position||"").split("/")[0];
+                    const needThresholds = {QB:2, RB:5, WR:6, TE:2};
+                    const isNeed = (depth[pos]||0) <= (needThresholds[pos]||3);
+                    const slotLabel = p.round === 1
+                        ? (pir <= 4 ? "top-4 pick" : pir <= 8 ? "mid-first" : "late first-rounder")
+                        : p.round === 2 ? `2nd-round pick` : `3rd-round pick`;
+
+                    if (pr) {
+                        parts.push(`With their ${slotLabel} (${pickDesc(p)}), they selected <strong>${p.player}</strong> out of ${pr.college}${statusNote(p)} — ${pr.profile}`);
+                    } else {
+                        const needContext = isNeed ? `, addressing a thin ${pos} room` : ``;
+                        parts.push(`Took <strong>${p.player}</strong> (${pos}) with their ${slotLabel}${needContext}${statusNote(p)}.`);
+                    }
+                });
             }
 
-            // Retention narrative
+            // Retention summary
             if (onRoster === teamPicks.length && teamPicks.length >= 2) {
-                parts.push(`Has held onto every pick from this class — a strong hit rate.`);
-            } else if (traded >= 2 && dropped === 0) {
-                parts.push(`Flipped multiple picks for future capital rather than developing the class.`);
+                parts.push(`<em>Every pick from this class is still on the roster — a clean hit rate.</em>`);
+            } else if (traded >= 2 && onRoster === 0) {
+                parts.push(`<em>Flipped the entire class for future capital — treating this draft as a trade-up fund rather than a development class.</em>`);
+            } else if (traded >= 1 && dropped === 0 && onRoster > 0) {
+                parts.push(`<em>${onRoster} of ${teamPicks.length} picks remain; ${traded} were traded away.</em>`);
             } else if (dropped >= 2) {
-                parts.push(`Several picks didn't pan out — a tough class in hindsight.`);
-            } else if (onRoster === 0 && teamPicks.length >= 2) {
-                parts.push(`None of these picks remain on the roster.`);
+                parts.push(`<em>Several picks didn't stick — a tough class in hindsight with ${dropped} released and ${onRoster} still on the roster.</em>`);
             }
 
             return parts.join(" ") || `Selected ${teamPicks.length} player${teamPicks.length!==1?"s":""} in this draft.`;
