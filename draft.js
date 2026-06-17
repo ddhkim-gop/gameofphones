@@ -361,12 +361,20 @@ async function renderDraftAnalysis(picks, year) {
     const canRevisit = revisitYear <= 2026;
     const totalTeams = 12;
 
-    // Get current rosters for retention check
+    // Get current rosters for retention check + positional depth
     let rosters = [];
     try { rosters = await api.getRosters("2026"); } catch {}
     const rosterByOwner = {};
+    const rosterDepth = {}; // team → {QB:n, RB:n, WR:n, TE:n}
     (rosters||[]).forEach(r => {
-        rosterByOwner[r.owner || ""] = new Set((r.players||[]).map(p => p.name));
+        const owner = r.owner || "";
+        rosterByOwner[owner] = new Set((r.players||[]).map(p => p.name));
+        const depth = {QB:0, RB:0, WR:0, TE:0};
+        (r.players||[]).forEach(p => {
+            const pos = (p.position||"").split("/")[0];
+            if (depth[pos] !== undefined) depth[pos]++;
+        });
+        rosterDepth[owner] = depth;
     });
 
     // Build traded-away names per team from transactions
@@ -434,12 +442,82 @@ async function renderDraftAnalysis(picks, year) {
         const gradePct = teamPicks.length ? onRoster / teamPicks.length : 0;
         const grade = gradePct >= 0.75 ? {g:"A",c:"#3ecf8e"} : gradePct >= 0.5 ? {g:"B",c:"#a78bfa"} : gradePct >= 0.25 ? {g:"C",c:"#f6ad55"} : {g:"D",c:"#e74c82"};
 
-        // Top picks for recap text
-        const topPicks = isStartup ? teamPicks.filter(p => p.round <= 3) : teamPicks.filter(p => p.round === 1);
-        const topOnRoster = topPicks.filter(p => playerStatus(p.player, team) === "roster");
-        const recapText = isStartup
-            ? `Selected ${teamPicks.length} players. Early picks (R1–R3): ${topPicks.map(p=>p.player).join(", ")||"none"}. ${topOnRoster.length}/${topPicks.length} top picks remain.`
-            : `Drafted ${teamPicks.length} rookie${teamPicks.length!==1?"s":""}: ${teamPicks.map(p=>`${p.player} (${p.position})`).join(", ")}. ${onRoster}/${teamPicks.length} still on roster.`;
+        // Contextual recap analysis
+        const recapText = (() => {
+            if (!teamPicks.length) return "Did not make any picks in this draft.";
+            const depth = rosterDepth[team] || {QB:0,RB:0,WR:0,TE:0};
+            const posCounts = {};
+            teamPicks.forEach(p => { const base = (p.position||"").split("/")[0]; posCounts[base] = (posCounts[base]||0)+1; });
+            const parts = [];
+
+            if (isStartup) {
+                const r1picks = teamPicks.filter(p => p.round === 1).sort((a,b) => a.pick_no - b.pick_no);
+                const r1 = r1picks[0];
+                const pir1 = r1 ? ((r1.pick_no-1)%totalTeams)+1 : null;
+                if (r1 && pir1 <= 3) parts.push(`Landed a top-3 overall pick to anchor the roster.`);
+                else if (r1 && pir1 <= 6) parts.push(`Selected in the top half of round 1, building around a strong core.`);
+                else if (r1) parts.push(`Picked late in round 1, relying on value deeper in the draft.`);
+
+                const dominant = Object.entries(posCounts).sort((a,b)=>b[1]-a[1]);
+                const top = dominant[0];
+                if (top && top[1] >= 4) parts.push(`Went heavy on ${top[0]} with ${top[1]} selections — a clear positional commitment.`);
+                else if (dominant.length >= 3) parts.push(`Spread picks across multiple positions, building balanced depth.`);
+
+                const qbCount = posCounts["QB"] || 0;
+                if (qbCount >= 2) parts.push(`Invested early in QB — a high-risk, high-reward strategy in dynasty.`);
+                else if (qbCount === 0 && depth.QB <= 1) parts.push(`Neglected QB entirely, leaving the position thin long-term.`);
+
+            } else {
+                // Rookie draft
+                const r1 = teamPicks.filter(p => p.round === 1).sort((a,b) => a.pick_no - b.pick_no)[0];
+                if (!r1) {
+                    parts.push(`Entered without a first-round pick, having traded it for veteran talent.`);
+                } else {
+                    const pir = ((r1.pick_no-1)%totalTeams)+1;
+                    const slot = pir <= 4 ? "top-4" : pir <= 8 ? "mid-first" : "late-first";
+                    const pos = (r1.position||"").split("/")[0];
+                    const isScarcity = pos === "QB" || pos === "TE";
+                    const needThresholds = {QB:2, RB:5, WR:6, TE:2};
+                    const currentCount = depth[pos] || 0;
+                    const isNeed = currentCount <= (needThresholds[pos] || 3);
+
+                    if (slot === "top-4" && isScarcity) {
+                        parts.push(`Used a ${slot} pick on ${pos} — prioritizing a scarce position over positional value.`);
+                    } else if (slot === "top-4") {
+                        parts.push(`Spent their ${slot} selection at ${pos}${isNeed ? ", filling a clear positional need" : ", adding to an already solid corps"}.`);
+                    } else if (isNeed) {
+                        parts.push(`Used their ${slot} pick to address a thin ${pos} room.`);
+                    } else {
+                        parts.push(`Took ${pos} with their ${slot} pick${depth[pos] >= (needThresholds[pos]||3)+2 ? ", adding depth to an already stacked position" : ""}.`);
+                    }
+                }
+
+                // Multi-pick patterns
+                const draftedPositions = Object.keys(posCounts);
+                const doublePos = draftedPositions.filter(p => posCounts[p] >= 2);
+                if (doublePos.length) parts.push(`Double-dipped at ${doublePos.join(" and ")}, making it a clear priority.`);
+                else if (draftedPositions.length >= 3) parts.push(`Spread picks across ${draftedPositions.join(", ")}, building across the board.`);
+
+                // QB/TE scarcity note (if not already mentioned)
+                if (!r1 && (posCounts["QB"] || posCounts["TE"])) {
+                    const scarce = ["QB","TE"].filter(p => posCounts[p]);
+                    parts.push(`Still prioritized ${scarce.join("/")} despite having no first-round pick.`);
+                }
+            }
+
+            // Retention narrative
+            if (onRoster === teamPicks.length && teamPicks.length >= 2) {
+                parts.push(`Has held onto every pick from this class — a strong hit rate.`);
+            } else if (traded >= 2 && dropped === 0) {
+                parts.push(`Flipped multiple picks for future capital rather than developing the class.`);
+            } else if (dropped >= 2) {
+                parts.push(`Several picks didn't pan out — a tough class in hindsight.`);
+            } else if (onRoster === 0 && teamPicks.length >= 2) {
+                parts.push(`None of these picks remain on the roster.`);
+            }
+
+            return parts.join(" ") || `Selected ${teamPicks.length} player${teamPicks.length!==1?"s":""} in this draft.`;
+        })();
 
         // Pick rows (compact)
         const byRound = {};
