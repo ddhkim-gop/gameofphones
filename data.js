@@ -6770,7 +6770,7 @@ window.__STATIC_DATA__ = {
                 "name": "Cam Miller",
                 "position": "QB",
                 "team": "MIA",
-                "age": 24,
+                "age": 25,
                 "birth_date": "2001-06-18",
                 "college": "North Dakota State",
                 "height": "73",
