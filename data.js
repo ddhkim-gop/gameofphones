@@ -7196,7 +7196,7 @@ window.__STATIC_DATA__ = {
                 "birth_date": "2002-07-23",
                 "college": "Florida State",
                 "height": "72",
-                "weight": "220",
+                "weight": "225",
                 "years_exp": 2,
                 "status": "Active",
                 "injury_status": "Questionable",
