@@ -9697,6 +9697,38 @@ window.__STATIC_DATA__ = {
                 "search_rank": 119
             },
             {
+                "player_id": "11370",
+                "espn_id": null,
+                "name": "Chris Brooks",
+                "position": "RB",
+                "team": "GB",
+                "age": 26,
+                "birth_date": "2000-01-11",
+                "college": "BYU",
+                "height": "73",
+                "weight": "219",
+                "years_exp": 3,
+                "status": "Active",
+                "injury_status": null,
+                "search_rank": 999
+            },
+            {
+                "player_id": "11592",
+                "espn_id": null,
+                "name": "Erick All",
+                "position": "TE",
+                "team": "CIN",
+                "age": 25,
+                "birth_date": "2000-09-13",
+                "college": "Iowa",
+                "height": "77",
+                "weight": "255",
+                "years_exp": 2,
+                "status": "Active",
+                "injury_status": "Questionable",
+                "search_rank": 999
+            },
+            {
                 "player_id": "11603",
                 "espn_id": null,
                 "name": "AJ Barner",
@@ -9775,22 +9807,6 @@ window.__STATIC_DATA__ = {
                 "status": "Active",
                 "injury_status": null,
                 "search_rank": 86
-            },
-            {
-                "player_id": "11651",
-                "espn_id": null,
-                "name": "Isaac Guerendo",
-                "position": "RB",
-                "team": "SF",
-                "age": 25,
-                "birth_date": "2000-06-28",
-                "college": "Louisville",
-                "height": "72",
-                "weight": "221",
-                "years_exp": 2,
-                "status": "Active",
-                "injury_status": "Questionable",
-                "search_rank": 999
             },
             {
                 "player_id": "12048",
@@ -9999,22 +10015,6 @@ window.__STATIC_DATA__ = {
                 "status": "Active",
                 "injury_status": null,
                 "search_rank": 92
-            },
-            {
-                "player_id": "3678",
-                "espn_id": 2985659,
-                "name": "Wil Lutz",
-                "position": "K",
-                "team": "DEN",
-                "age": 31,
-                "birth_date": "1994-07-07",
-                "college": "Georgia State",
-                "height": "71",
-                "weight": "184",
-                "years_exp": 10,
-                "status": "Active",
-                "injury_status": null,
-                "search_rank": 999
             },
             {
                 "player_id": "6768",
@@ -11588,6 +11588,78 @@ window.__STATIC_DATA__ = {
     }
   ],
   "transactions": [
+    {
+        "season": "2026",
+        "week": 1,
+        "created": "Jun 22, 2026 • 1:42 PM PT",
+        "transaction_id": "1374901464618520576",
+        "type": "free_agent",
+        "status": "complete",
+        "teams": [
+            "velmixon"
+        ],
+        "added": [
+            {
+                "name": "Erick All",
+                "position": "TE",
+                "team": "CIN"
+            }
+        ],
+        "dropped": [
+            {
+                "name": "Isaac Guerendo",
+                "position": "RB",
+                "team": "SF"
+            }
+        ],
+        "faab": 0,
+        "waiver_bid": 0,
+        "notes": null
+    },
+    {
+        "season": "2026",
+        "week": 1,
+        "created": "Jun 22, 2026 • 1:36 PM PT",
+        "transaction_id": "1374899947278733312",
+        "type": "free_agent",
+        "status": "complete",
+        "teams": [
+            "velmixon"
+        ],
+        "added": [
+            {
+                "name": "Chris Brooks",
+                "position": "RB",
+                "team": "GB"
+            }
+        ],
+        "dropped": [],
+        "faab": 0,
+        "waiver_bid": 0,
+        "notes": null
+    },
+    {
+        "season": "2026",
+        "week": 1,
+        "created": "Jun 22, 2026 • 1:36 PM PT",
+        "transaction_id": "1374899831817932800",
+        "type": "free_agent",
+        "status": "complete",
+        "teams": [
+            "velmixon"
+        ],
+        "added": [],
+        "dropped": [
+            {
+                "name": "Wil Lutz",
+                "position": "K",
+                "team": "DEN"
+            }
+        ],
+        "faab": 0,
+        "waiver_bid": 0,
+        "notes": null
+    },
     {
         "season": "2026",
         "week": 1,
