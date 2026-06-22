@@ -706,6 +706,21 @@ document.addEventListener("DOMContentLoaded", async () => {
     try { leagueUsers     = await api.getLeagueUsers()  || []; } catch { leagueUsers = []; }
 
     const select = document.getElementById("yearSelect");
+    const validYears = new Set(Array.from(select.options).map(o => o.value));
+    const hashYear = location.hash.replace("#", "");
+    if (validYears.has(hashYear)) select.value = hashYear;
+
     load(select.value);
-    select.addEventListener("change", () => load(select.value));
+    select.addEventListener("change", () => {
+        location.hash = select.value;
+        load(select.value);
+    });
+
+    window.addEventListener("hashchange", () => {
+        const y = location.hash.replace("#", "");
+        if (validYears.has(y) && y !== select.value) {
+            select.value = y;
+            load(y);
+        }
+    });
 });
