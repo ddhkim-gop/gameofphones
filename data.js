@@ -4433,7 +4433,7 @@ window.__STATIC_DATA__ = {
         "player": "Cam Skattebo",
         "position": "RB",
         "team": "NYG",
-        "picked_by": "ddhk",
+        "picked_by": "velmixon",
         "original_owner": "paddleham",
         "traded": true,
         "birth_date": "2002-02-05"
