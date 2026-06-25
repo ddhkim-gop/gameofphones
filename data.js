@@ -6300,7 +6300,7 @@ window.__STATIC_DATA__ = {
                 "name": "Oronde Gadsden",
                 "position": "TE",
                 "team": "LAC",
-                "age": 22,
+                "age": 23,
                 "birth_date": "2003-06-25",
                 "college": "Syracuse",
                 "height": "77",
