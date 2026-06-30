@@ -7432,7 +7432,7 @@ window.__STATIC_DATA__ = {
                 "name": "A.J. Brown",
                 "position": "WR",
                 "team": "NE",
-                "age": 28,
+                "age": 29,
                 "birth_date": "1997-06-30",
                 "college": "Ole Miss",
                 "height": "73",
