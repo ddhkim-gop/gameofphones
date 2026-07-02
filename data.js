@@ -9168,7 +9168,7 @@ window.__STATIC_DATA__ = {
                 "name": "Ted Hurst",
                 "position": "WR",
                 "team": "TB",
-                "age": 21,
+                "age": 22,
                 "birth_date": "2004-07-02",
                 "college": "Georgia State",
                 "height": "75",
