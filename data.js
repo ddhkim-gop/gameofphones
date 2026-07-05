@@ -10850,7 +10850,7 @@ window.__STATIC_DATA__ = {
                 "name": "Skyler Bell",
                 "position": "WR",
                 "team": "BUF",
-                "age": 23,
+                "age": 24,
                 "birth_date": "2002-07-05",
                 "college": "UConn",
                 "height": "71",
