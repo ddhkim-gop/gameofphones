@@ -7171,22 +7171,6 @@ window.__STATIC_DATA__ = {
         "roster_id": 5,
         "players": [
             {
-                "player_id": "11562",
-                "espn_id": null,
-                "name": "Spencer Rattler",
-                "position": "QB",
-                "team": "NO",
-                "age": 25,
-                "birth_date": "2000-09-28",
-                "college": "South Carolina",
-                "height": "72",
-                "weight": "211",
-                "years_exp": 2,
-                "status": "Active",
-                "injury_status": null,
-                "search_rank": 999
-            },
-            {
                 "player_id": "11589",
                 "espn_id": null,
                 "name": "Trey Benson",
@@ -7473,22 +7457,6 @@ window.__STATIC_DATA__ = {
                 "status": "Active",
                 "injury_status": null,
                 "search_rank": 31
-            },
-            {
-                "player_id": "7538",
-                "espn_id": null,
-                "name": "Zach Wilson",
-                "position": "QB",
-                "team": "NO",
-                "age": 26,
-                "birth_date": "1999-08-03",
-                "college": "BYU",
-                "height": "74",
-                "weight": "214",
-                "years_exp": 5,
-                "status": "Active",
-                "injury_status": null,
-                "search_rank": 999
             },
             {
                 "player_id": "7553",
@@ -11588,6 +11556,50 @@ window.__STATIC_DATA__ = {
     }
   ],
   "transactions": [
+    {
+        "season": "2026",
+        "week": 1,
+        "created": "Jul 5, 2026 • 8:36 AM PT",
+        "transaction_id": "1379535420039127040",
+        "type": "free_agent",
+        "status": "complete",
+        "teams": [
+            "andyxia124"
+        ],
+        "added": [],
+        "dropped": [
+            {
+                "name": "Zach Wilson",
+                "position": "QB",
+                "team": "NO"
+            }
+        ],
+        "faab": 0,
+        "waiver_bid": 0,
+        "notes": null
+    },
+    {
+        "season": "2026",
+        "week": 1,
+        "created": "Jul 5, 2026 • 8:36 AM PT",
+        "transaction_id": "1379535372790300672",
+        "type": "free_agent",
+        "status": "complete",
+        "teams": [
+            "andyxia124"
+        ],
+        "added": [],
+        "dropped": [
+            {
+                "name": "Spencer Rattler",
+                "position": "QB",
+                "team": "NO"
+            }
+        ],
+        "faab": 0,
+        "waiver_bid": 0,
+        "notes": null
+    },
     {
         "season": "2026",
         "week": 1,
