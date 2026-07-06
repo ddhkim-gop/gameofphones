@@ -6620,7 +6620,7 @@ window.__STATIC_DATA__ = {
                 "name": "Michael Mayer",
                 "position": "TE",
                 "team": "LV",
-                "age": 24,
+                "age": 25,
                 "birth_date": "2001-07-06",
                 "college": "Notre Dame",
                 "height": "76",
