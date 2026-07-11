@@ -6022,7 +6022,7 @@ window.__STATIC_DATA__ = {
                 "name": "Dalton Schultz",
                 "position": "TE",
                 "team": "HOU",
-                "age": 29,
+                "age": 30,
                 "birth_date": "1996-07-11",
                 "college": "Stanford",
                 "height": "77",
