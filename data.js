@@ -7491,6 +7491,22 @@ window.__STATIC_DATA__ = {
                 "search_rank": 86
             },
             {
+                "player_id": "7839",
+                "espn_id": null,
+                "name": "Evan McPherson",
+                "position": "K",
+                "team": "CIN",
+                "age": 26,
+                "birth_date": "1999-07-21",
+                "college": "Florida",
+                "height": "71",
+                "weight": "185",
+                "years_exp": 5,
+                "status": "Active",
+                "injury_status": null,
+                "search_rank": 999
+            },
+            {
                 "player_id": "8112",
                 "espn_id": null,
                 "name": "Drake London",
@@ -11556,6 +11572,28 @@ window.__STATIC_DATA__ = {
     }
   ],
   "transactions": [
+    {
+        "season": "2026",
+        "week": 1,
+        "created": "Jul 14, 2026 • 11:59 AM PT",
+        "transaction_id": "1382848082328162304",
+        "type": "free_agent",
+        "status": "complete",
+        "teams": [
+            "andyxia124"
+        ],
+        "added": [
+            {
+                "name": "Evan McPherson",
+                "position": "K",
+                "team": "CIN"
+            }
+        ],
+        "dropped": [],
+        "faab": 0,
+        "waiver_bid": 0,
+        "notes": null
+    },
     {
         "season": "2026",
         "week": 1,
