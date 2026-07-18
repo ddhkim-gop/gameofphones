@@ -9552,7 +9552,7 @@ window.__STATIC_DATA__ = {
                 "name": "John Metchie",
                 "position": "WR",
                 "team": "CAR",
-                "age": 25,
+                "age": 26,
                 "birth_date": "2000-07-18",
                 "college": "Alabama",
                 "height": "71",
