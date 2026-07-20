@@ -8228,7 +8228,7 @@ window.__STATIC_DATA__ = {
                 "name": "Harold Fannin",
                 "position": "TE",
                 "team": "CLE",
-                "age": 21,
+                "age": 22,
                 "birth_date": "2004-07-20",
                 "college": "Bowling Green",
                 "height": "76",
