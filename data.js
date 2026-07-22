@@ -5616,7 +5616,7 @@ window.__STATIC_DATA__ = {
                 "name": "Garrett Wilson",
                 "position": "WR",
                 "team": "NYJ",
-                "age": 25,
+                "age": 26,
                 "birth_date": "2000-07-22",
                 "college": "Ohio State",
                 "height": "72",
