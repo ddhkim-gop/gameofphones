@@ -7176,7 +7176,7 @@ window.__STATIC_DATA__ = {
                 "name": "Trey Benson",
                 "position": "RB",
                 "team": "ARI",
-                "age": 23,
+                "age": 24,
                 "birth_date": "2002-07-23",
                 "college": "Florida State",
                 "height": "72",
