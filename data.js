@@ -5729,6 +5729,22 @@ window.__STATIC_DATA__ = {
                 "search_rank": 110
             },
             {
+                "player_id": "12015",
+                "espn_id": null,
+                "name": "Harrison Mevis",
+                "position": "K",
+                "team": "LAR",
+                "age": 24,
+                "birth_date": "2002-03-27",
+                "college": "Missouri",
+                "height": "72",
+                "weight": "245",
+                "years_exp": 2,
+                "status": "Active",
+                "injury_status": null,
+                "search_rank": 999
+            },
+            {
                 "player_id": "12484",
                 "espn_id": null,
                 "name": "Jayden Higgins",
@@ -6001,22 +6017,6 @@ window.__STATIC_DATA__ = {
                 "search_rank": 210
             },
             {
-                "player_id": "4988",
-                "espn_id": 3128720,
-                "name": "Nick Chubb",
-                "position": "RB",
-                "team": null,
-                "age": 30,
-                "birth_date": "1995-12-27",
-                "college": "Georgia",
-                "height": "71",
-                "weight": "227",
-                "years_exp": 8,
-                "status": "Active",
-                "injury_status": null,
-                "search_rank": 244
-            },
-            {
                 "player_id": "5001",
                 "espn_id": 3117256,
                 "name": "Dalton Schultz",
@@ -6081,22 +6081,6 @@ window.__STATIC_DATA__ = {
                 "search_rank": 77
             },
             {
-                "player_id": "6011",
-                "espn_id": 4038524,
-                "name": "Gardner Minshew",
-                "position": "QB",
-                "team": "ARI",
-                "age": 30,
-                "birth_date": "1996-05-16",
-                "college": "Washington State",
-                "height": "73",
-                "weight": "225",
-                "years_exp": 7,
-                "status": "Active",
-                "injury_status": null,
-                "search_rank": 999
-            },
-            {
                 "player_id": "6806",
                 "espn_id": 4241985,
                 "name": "J.K. Dobbins",
@@ -6159,22 +6143,6 @@ window.__STATIC_DATA__ = {
                 "status": "Active",
                 "injury_status": null,
                 "search_rank": 112
-            },
-            {
-                "player_id": "8800",
-                "espn_id": null,
-                "name": "Malik Davis",
-                "position": "RB",
-                "team": "DAL",
-                "age": 27,
-                "birth_date": "1998-11-26",
-                "college": "Florida",
-                "height": "70",
-                "weight": "205",
-                "years_exp": 4,
-                "status": "Active",
-                "injury_status": null,
-                "search_rank": 999
             }
         ]
     },
@@ -11572,6 +11540,94 @@ window.__STATIC_DATA__ = {
     }
   ],
   "transactions": [
+    {
+        "season": "2026",
+        "week": 1,
+        "created": "Jul 26, 2026 • 4:22 PM PT",
+        "transaction_id": "1387262809796022272",
+        "type": "free_agent",
+        "status": "complete",
+        "teams": [
+            "spiffster"
+        ],
+        "added": [
+            {
+                "name": "Harrison Mevis",
+                "position": "K",
+                "team": "LAR"
+            }
+        ],
+        "dropped": [],
+        "faab": 0,
+        "waiver_bid": 0,
+        "notes": null
+    },
+    {
+        "season": "2026",
+        "week": 1,
+        "created": "Jul 26, 2026 • 4:22 PM PT",
+        "transaction_id": "1387262755580448768",
+        "type": "free_agent",
+        "status": "complete",
+        "teams": [
+            "spiffster"
+        ],
+        "added": [],
+        "dropped": [
+            {
+                "name": "Nick Chubb",
+                "position": "RB",
+                "team": null
+            }
+        ],
+        "faab": 0,
+        "waiver_bid": 0,
+        "notes": null
+    },
+    {
+        "season": "2026",
+        "week": 1,
+        "created": "Jul 26, 2026 • 4:21 PM PT",
+        "transaction_id": "1387262719962390528",
+        "type": "free_agent",
+        "status": "complete",
+        "teams": [
+            "spiffster"
+        ],
+        "added": [],
+        "dropped": [
+            {
+                "name": "Malik Davis",
+                "position": "RB",
+                "team": "DAL"
+            }
+        ],
+        "faab": 0,
+        "waiver_bid": 0,
+        "notes": null
+    },
+    {
+        "season": "2026",
+        "week": 1,
+        "created": "Jul 26, 2026 • 4:21 PM PT",
+        "transaction_id": "1387262631215136768",
+        "type": "free_agent",
+        "status": "complete",
+        "teams": [
+            "spiffster"
+        ],
+        "added": [],
+        "dropped": [
+            {
+                "name": "Gardner Minshew",
+                "position": "QB",
+                "team": "ARI"
+            }
+        ],
+        "faab": 0,
+        "waiver_bid": 0,
+        "notes": null
+    },
     {
         "season": "2026",
         "week": 1,
