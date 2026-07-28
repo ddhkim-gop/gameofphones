@@ -5207,7 +5207,7 @@ window.__STATIC_DATA__ = {
                 "weight": "220",
                 "years_exp": 2,
                 "status": "Active",
-                "injury_status": null,
+                "injury_status": "Questionable",
                 "search_rank": 76
             },
             {
@@ -5463,7 +5463,7 @@ window.__STATIC_DATA__ = {
                 "weight": "230",
                 "years_exp": 7,
                 "status": "Active",
-                "injury_status": "Questionable",
+                "injury_status": null,
                 "search_rank": 109
             },
             {
@@ -5607,7 +5607,7 @@ window.__STATIC_DATA__ = {
                 "weight": "211",
                 "years_exp": 4,
                 "status": "Active",
-                "injury_status": "Questionable",
+                "injury_status": "PUP",
                 "search_rank": 82
             },
             {
@@ -6611,7 +6611,7 @@ window.__STATIC_DATA__ = {
                 "weight": "259",
                 "years_exp": 3,
                 "status": "Active",
-                "injury_status": "Questionable",
+                "injury_status": "PUP",
                 "search_rank": 67
             },
             {
@@ -7129,7 +7129,7 @@ window.__STATIC_DATA__ = {
                 "weight": "240",
                 "years_exp": 4,
                 "status": "Active",
-                "injury_status": "Questionable",
+                "injury_status": null,
                 "search_rank": 178
             }
         ]
@@ -8455,7 +8455,7 @@ window.__STATIC_DATA__ = {
                 "age": 24,
                 "birth_date": "2001-10-17",
                 "college": "Indiana",
-                "height": "69",
+                "height": "70",
                 "weight": "208",
                 "years_exp": 0,
                 "status": "Active",
@@ -9661,7 +9661,7 @@ window.__STATIC_DATA__ = {
                 "weight": "219",
                 "years_exp": 3,
                 "status": "Active",
-                "injury_status": null,
+                "injury_status": "PUP",
                 "search_rank": 999
             },
             {
@@ -9693,7 +9693,7 @@ window.__STATIC_DATA__ = {
                 "weight": "251",
                 "years_exp": 2,
                 "status": "Active",
-                "injury_status": "Questionable",
+                "injury_status": null,
                 "search_rank": 126
             },
             {
@@ -10275,7 +10275,7 @@ window.__STATIC_DATA__ = {
                 "weight": "196",
                 "years_exp": 1,
                 "status": "Active",
-                "injury_status": "Questionable",
+                "injury_status": null,
                 "search_rank": 199
             },
             {
@@ -11094,7 +11094,7 @@ window.__STATIC_DATA__ = {
                 "birth_date": "2001-06-15",
                 "college": "Tulane",
                 "height": "71",
-                "weight": "195",
+                "weight": "200",
                 "years_exp": 3,
                 "status": "Active",
                 "injury_status": null,
