@@ -9793,22 +9793,6 @@ window.__STATIC_DATA__ = {
                 "search_rank": 182
             },
             {
-                "player_id": "12462",
-                "espn_id": null,
-                "name": "Damien Martinez",
-                "position": "RB",
-                "team": "GB",
-                "age": 22,
-                "birth_date": "2004-01-31",
-                "college": "Miami (FL)",
-                "height": "72",
-                "weight": "217",
-                "years_exp": 1,
-                "status": "Active",
-                "injury_status": null,
-                "search_rank": 999
-            },
-            {
                 "player_id": "12481",
                 "espn_id": null,
                 "name": "Cam Skattebo",
@@ -9887,6 +9871,22 @@ window.__STATIC_DATA__ = {
                 "status": "Active",
                 "injury_status": null,
                 "search_rank": 39
+            },
+            {
+                "player_id": "13270",
+                "espn_id": null,
+                "name": "CJ Daniels",
+                "position": "WR",
+                "team": "LAR",
+                "age": 24,
+                "birth_date": "2002-01-04",
+                "college": "Miami (FL)",
+                "height": "74",
+                "weight": "202",
+                "years_exp": 0,
+                "status": "Active",
+                "injury_status": null,
+                "search_rank": 999
             },
             {
                 "player_id": "13294",
@@ -11540,6 +11540,50 @@ window.__STATIC_DATA__ = {
     }
   ],
   "transactions": [
+    {
+        "season": "2026",
+        "week": 1,
+        "created": "Jul 28, 2026 • 5:15 AM PT",
+        "transaction_id": "1387819685516427264",
+        "type": "free_agent",
+        "status": "complete",
+        "teams": [
+            "velmixon"
+        ],
+        "added": [
+            {
+                "name": "CJ Daniels",
+                "position": "WR",
+                "team": "LAR"
+            }
+        ],
+        "dropped": [],
+        "faab": 0,
+        "waiver_bid": 0,
+        "notes": null
+    },
+    {
+        "season": "2026",
+        "week": 1,
+        "created": "Jul 28, 2026 • 5:14 AM PT",
+        "transaction_id": "1387819605992427520",
+        "type": "free_agent",
+        "status": "complete",
+        "teams": [
+            "velmixon"
+        ],
+        "added": [],
+        "dropped": [
+            {
+                "name": "Damien Martinez",
+                "position": "RB",
+                "team": "GB"
+            }
+        ],
+        "faab": 0,
+        "waiver_bid": 0,
+        "notes": null
+    },
     {
         "season": "2026",
         "week": 1,
