@@ -7535,7 +7535,7 @@ window.__STATIC_DATA__ = {
                 "weight": "191",
                 "years_exp": 3,
                 "status": "Active",
-                "injury_status": "Questionable",
+                "injury_status": null,
                 "search_rank": 10
             },
             {
@@ -7845,7 +7845,7 @@ window.__STATIC_DATA__ = {
                 "weight": "205",
                 "years_exp": 0,
                 "status": "Active",
-                "injury_status": "Questionable",
+                "injury_status": null,
                 "search_rank": 999
             },
             {
@@ -12718,7 +12718,7 @@ window.__STATIC_DATA__ = {
             {
                 "name": "Kenny McIntosh",
                 "position": "RB",
-                "team": "SEA"
+                "team": null
             }
         ],
         "faab": 0,
@@ -14854,7 +14854,7 @@ window.__STATIC_DATA__ = {
             {
                 "name": "Kenny McIntosh",
                 "position": "RB",
-                "team": "SEA"
+                "team": null
             }
         ],
         "dropped": [
