@@ -7710,7 +7710,7 @@ window.__STATIC_DATA__ = {
                 "name": "Malik Nabers",
                 "position": "WR",
                 "team": "NYG",
-                "age": 22,
+                "age": 23,
                 "birth_date": "2003-07-28",
                 "college": "LSU",
                 "height": "72",
