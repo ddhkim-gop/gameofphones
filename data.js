@@ -10444,7 +10444,7 @@ window.__STATIC_DATA__ = {
                 "name": "Dak Prescott",
                 "position": "QB",
                 "team": "DAL",
-                "age": 32,
+                "age": 33,
                 "birth_date": "1993-07-29",
                 "college": "Mississippi State",
                 "height": "74",
