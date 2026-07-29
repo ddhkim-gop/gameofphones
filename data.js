@@ -5211,20 +5211,20 @@ window.__STATIC_DATA__ = {
                 "search_rank": 76
             },
             {
-                "player_id": "11640",
+                "player_id": "11630",
                 "espn_id": null,
-                "name": "Jermaine Burton",
+                "name": "Roman Wilson",
                 "position": "WR",
-                "team": null,
+                "team": "PIT",
                 "age": 25,
-                "birth_date": "2001-06-28",
-                "college": "Alabama",
-                "height": "72",
-                "weight": "204",
-                "years_exp": 1,
+                "birth_date": "2001-06-19",
+                "college": "Michigan",
+                "height": "70",
+                "weight": "186",
+                "years_exp": 2,
                 "status": "Active",
                 "injury_status": null,
-                "search_rank": 300
+                "search_rank": 999
             },
             {
                 "player_id": "11834",
@@ -11540,6 +11540,34 @@ window.__STATIC_DATA__ = {
     }
   ],
   "transactions": [
+    {
+        "season": "2026",
+        "week": 1,
+        "created": "Jul 29, 2026 • 6:56 AM PT",
+        "transaction_id": "1388207656153403392",
+        "type": "free_agent",
+        "status": "complete",
+        "teams": [
+            "ddhk"
+        ],
+        "added": [
+            {
+                "name": "Roman Wilson",
+                "position": "WR",
+                "team": "PIT"
+            }
+        ],
+        "dropped": [
+            {
+                "name": "Jermaine Burton",
+                "position": "WR",
+                "team": null
+            }
+        ],
+        "faab": 0,
+        "waiver_bid": 0,
+        "notes": null
+    },
     {
         "season": "2026",
         "week": 1,
