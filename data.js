@@ -5447,7 +5447,7 @@ window.__STATIC_DATA__ = {
                 "weight": "233",
                 "years_exp": 9,
                 "status": "Active",
-                "injury_status": null,
+                "injury_status": "Questionable",
                 "search_rank": 92
             },
             {
@@ -5853,7 +5853,7 @@ window.__STATIC_DATA__ = {
                 "weight": "198",
                 "years_exp": 0,
                 "status": "Active",
-                "injury_status": "Questionable",
+                "injury_status": "Out",
                 "search_rank": 202
             },
             {
@@ -6143,6 +6143,22 @@ window.__STATIC_DATA__ = {
                 "status": "Active",
                 "injury_status": null,
                 "search_rank": 112
+            },
+            {
+                "player_id": "8800",
+                "espn_id": null,
+                "name": "Malik Davis",
+                "position": "RB",
+                "team": "DAL",
+                "age": 27,
+                "birth_date": "1998-11-26",
+                "college": "Florida",
+                "height": "70",
+                "weight": "205",
+                "years_exp": 4,
+                "status": "Active",
+                "injury_status": null,
+                "search_rank": 999
             }
         ]
     },
@@ -10131,7 +10147,7 @@ window.__STATIC_DATA__ = {
                 "weight": "217",
                 "years_exp": 2,
                 "status": "Active",
-                "injury_status": "Questionable",
+                "injury_status": null,
                 "search_rank": 34
             },
             {
@@ -11540,6 +11556,28 @@ window.__STATIC_DATA__ = {
     }
   ],
   "transactions": [
+    {
+        "season": "2026",
+        "week": 1,
+        "created": "Jul 29, 2026 • 10:17 AM PT",
+        "transaction_id": "1388258077601443840",
+        "type": "free_agent",
+        "status": "complete",
+        "teams": [
+            "spiffster"
+        ],
+        "added": [
+            {
+                "name": "Malik Davis",
+                "position": "RB",
+                "team": "DAL"
+            }
+        ],
+        "dropped": [],
+        "faab": 0,
+        "waiver_bid": 0,
+        "notes": null
+    },
     {
         "season": "2026",
         "week": 1,
