@@ -6065,6 +6065,22 @@ window.__STATIC_DATA__ = {
                 "search_rank": 45
             },
             {
+                "player_id": "5937",
+                "espn_id": 3932905,
+                "name": "Diontae Johnson",
+                "position": "WR",
+                "team": null,
+                "age": 30,
+                "birth_date": "1996-07-05",
+                "college": "Toledo",
+                "height": "70",
+                "weight": "183",
+                "years_exp": 6,
+                "status": "Active",
+                "injury_status": null,
+                "search_rank": 250
+            },
+            {
                 "player_id": "5947",
                 "espn_id": 3916433,
                 "name": "Jakobi Meyers",
@@ -6143,22 +6159,6 @@ window.__STATIC_DATA__ = {
                 "status": "Active",
                 "injury_status": null,
                 "search_rank": 112
-            },
-            {
-                "player_id": "8800",
-                "espn_id": null,
-                "name": "Malik Davis",
-                "position": "RB",
-                "team": "DAL",
-                "age": 27,
-                "birth_date": "1998-11-26",
-                "college": "Florida",
-                "height": "70",
-                "weight": "205",
-                "years_exp": 4,
-                "status": "Active",
-                "injury_status": null,
-                "search_rank": 999
             }
         ]
     },
@@ -11556,6 +11556,34 @@ window.__STATIC_DATA__ = {
     }
   ],
   "transactions": [
+    {
+        "season": "2026",
+        "week": 1,
+        "created": "Jul 29, 2026 • 2:01 PM PT",
+        "transaction_id": "1388314516630040576",
+        "type": "free_agent",
+        "status": "complete",
+        "teams": [
+            "spiffster"
+        ],
+        "added": [
+            {
+                "name": "Diontae Johnson",
+                "position": "WR",
+                "team": null
+            }
+        ],
+        "dropped": [
+            {
+                "name": "Malik Davis",
+                "position": "RB",
+                "team": "DAL"
+            }
+        ],
+        "faab": 0,
+        "waiver_bid": 0,
+        "notes": null
+    },
     {
         "season": "2026",
         "week": 1,
