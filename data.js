@@ -7208,7 +7208,7 @@ window.__STATIC_DATA__ = {
                 "name": "Sione Vaki",
                 "position": "RB",
                 "team": "DET",
-                "age": 24,
+                "age": 25,
                 "birth_date": "2001-07-30",
                 "college": "Utah",
                 "height": "71",
