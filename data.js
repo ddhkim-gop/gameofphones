@@ -10471,6 +10471,22 @@ window.__STATIC_DATA__ = {
                 "search_rank": 45
             },
             {
+                "player_id": "4993",
+                "espn_id": 3116164,
+                "name": "Mike Gesicki",
+                "position": "TE",
+                "team": "CIN",
+                "age": 30,
+                "birth_date": "1995-10-03",
+                "college": "Penn State",
+                "height": "78",
+                "weight": "245",
+                "years_exp": 8,
+                "status": "Active",
+                "injury_status": null,
+                "search_rank": 999
+            },
+            {
                 "player_id": "5967",
                 "espn_id": 3916148,
                 "name": "Tony Pollard",
@@ -11556,6 +11572,28 @@ window.__STATIC_DATA__ = {
     }
   ],
   "transactions": [
+    {
+        "season": "2026",
+        "week": 1,
+        "created": "Jul 31, 2026 • 10:12 AM PT",
+        "transaction_id": "1388981700431724544",
+        "type": "free_agent",
+        "status": "complete",
+        "teams": [
+            "ngman"
+        ],
+        "added": [
+            {
+                "name": "Mike Gesicki",
+                "position": "TE",
+                "team": "CIN"
+            }
+        ],
+        "dropped": [],
+        "faab": 0,
+        "waiver_bid": 0,
+        "notes": null
+    },
     {
         "season": "2026",
         "week": 1,
