@@ -5192,7 +5192,7 @@ window.__STATIC_DATA__ = {
                 "years_exp": 3,
                 "status": "Active",
                 "injury_status": null,
-                "search_rank": 999
+                "search_rank": 110
             },
             {
                 "player_id": "11628",
@@ -5319,7 +5319,7 @@ window.__STATIC_DATA__ = {
                 "weight": "185",
                 "years_exp": 1,
                 "status": "Active",
-                "injury_status": "Questionable",
+                "injury_status": null,
                 "search_rank": 145
             },
             {
@@ -5332,7 +5332,7 @@ window.__STATIC_DATA__ = {
                 "birth_date": "2004-07-14",
                 "college": "Clemson",
                 "height": "75",
-                "weight": "232",
+                "weight": "240",
                 "years_exp": 0,
                 "status": "Active",
                 "injury_status": null,
@@ -5742,7 +5742,7 @@ window.__STATIC_DATA__ = {
                 "years_exp": 2,
                 "status": "Active",
                 "injury_status": null,
-                "search_rank": 999
+                "search_rank": 150
             },
             {
                 "player_id": "12484",
@@ -5852,8 +5852,8 @@ window.__STATIC_DATA__ = {
                 "height": "76",
                 "weight": "198",
                 "years_exp": 0,
-                "status": "Active",
-                "injury_status": "Out",
+                "status": "Inactive",
+                "injury_status": "IR",
                 "search_rank": 202
             },
             {
@@ -6404,7 +6404,7 @@ window.__STATIC_DATA__ = {
                 "years_exp": 11,
                 "status": "Active",
                 "injury_status": null,
-                "search_rank": 999
+                "search_rank": 132
             },
             {
                 "player_id": "3321",
@@ -6436,7 +6436,7 @@ window.__STATIC_DATA__ = {
                 "years_exp": 10,
                 "status": "Active",
                 "injury_status": null,
-                "search_rank": 999
+                "search_rank": 155
             },
             {
                 "player_id": "4066",
@@ -6627,7 +6627,7 @@ window.__STATIC_DATA__ = {
                 "weight": "259",
                 "years_exp": 3,
                 "status": "Active",
-                "injury_status": "PUP",
+                "injury_status": "Questionable",
                 "search_rank": 67
             },
             {
@@ -6745,7 +6745,7 @@ window.__STATIC_DATA__ = {
                 "weight": "207",
                 "years_exp": 1,
                 "status": "Active",
-                "injury_status": null,
+                "injury_status": "Questionable",
                 "search_rank": 61
             },
             {
@@ -6837,7 +6837,7 @@ window.__STATIC_DATA__ = {
                 "age": 32,
                 "birth_date": "1994-01-04",
                 "college": "Alabama",
-                "height": "74",
+                "height": "75",
                 "weight": "252",
                 "years_exp": 10,
                 "status": "Active",
@@ -7130,7 +7130,7 @@ window.__STATIC_DATA__ = {
                 "years_exp": 4,
                 "status": "Active",
                 "injury_status": null,
-                "search_rank": 999
+                "search_rank": 129
             },
             {
                 "player_id": "8698",
@@ -7488,7 +7488,7 @@ window.__STATIC_DATA__ = {
                 "years_exp": 5,
                 "status": "Active",
                 "injury_status": null,
-                "search_rank": 999
+                "search_rank": 206
             },
             {
                 "player_id": "8112",
@@ -7654,7 +7654,7 @@ window.__STATIC_DATA__ = {
                 "years_exp": 3,
                 "status": "Active",
                 "injury_status": null,
-                "search_rank": 999
+                "search_rank": 173
             },
             {
                 "player_id": "11564",
@@ -7766,7 +7766,7 @@ window.__STATIC_DATA__ = {
                 "years_exp": 2,
                 "status": "Active",
                 "injury_status": null,
-                "search_rank": 999
+                "search_rank": 174
             },
             {
                 "player_id": "12490",
@@ -8508,7 +8508,7 @@ window.__STATIC_DATA__ = {
                 "years_exp": 12,
                 "status": "Active",
                 "injury_status": null,
-                "search_rank": 999
+                "search_rank": 151
             },
             {
                 "player_id": "4039",
@@ -8552,7 +8552,7 @@ window.__STATIC_DATA__ = {
                 "birth_date": "1997-11-14",
                 "college": "Oklahoma State",
                 "height": "70",
-                "weight": "205",
+                "weight": "195",
                 "years_exp": 7,
                 "status": "Active",
                 "injury_status": null,
@@ -8850,7 +8850,7 @@ window.__STATIC_DATA__ = {
                 "years_exp": 1,
                 "status": "Active",
                 "injury_status": null,
-                "search_rank": 999
+                "search_rank": 150
             },
             {
                 "player_id": "13274",
@@ -9464,7 +9464,7 @@ window.__STATIC_DATA__ = {
                 "years_exp": 7,
                 "status": "Active",
                 "injury_status": null,
-                "search_rank": 999
+                "search_rank": 198
             },
             {
                 "player_id": "9486",
@@ -9556,7 +9556,7 @@ window.__STATIC_DATA__ = {
                 "birth_date": "2003-05-28",
                 "college": "Indiana",
                 "height": "74",
-                "weight": "210",
+                "weight": "215",
                 "years_exp": 0,
                 "status": "Active",
                 "injury_status": null,
@@ -10212,7 +10212,7 @@ window.__STATIC_DATA__ = {
                 "years_exp": 2,
                 "status": "Active",
                 "injury_status": null,
-                "search_rank": 999
+                "search_rank": 153
             },
             {
                 "player_id": "12474",
@@ -10384,7 +10384,7 @@ window.__STATIC_DATA__ = {
                 "birth_date": "2004-05-05",
                 "college": "USC",
                 "height": "76",
-                "weight": "200",
+                "weight": "205",
                 "years_exp": 0,
                 "status": "Active",
                 "injury_status": null,
@@ -10452,7 +10452,7 @@ window.__STATIC_DATA__ = {
                 "years_exp": 0,
                 "status": "Active",
                 "injury_status": null,
-                "search_rank": 202
+                "search_rank": 150
             },
             {
                 "player_id": "3294",
@@ -10794,7 +10794,7 @@ window.__STATIC_DATA__ = {
                 "years_exp": 1,
                 "status": "Active",
                 "injury_status": null,
-                "search_rank": 999
+                "search_rank": 154
             },
             {
                 "player_id": "13278",
@@ -13870,7 +13870,7 @@ window.__STATIC_DATA__ = {
             {
                 "name": "Kaden Prather",
                 "position": "WR",
-                "team": null
+                "team": "GB"
             }
         ],
         "faab": 0,
