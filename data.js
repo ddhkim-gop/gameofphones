@@ -10738,7 +10738,7 @@ window.__STATIC_DATA__ = {
                 "name": "Matthew Golden",
                 "position": "WR",
                 "team": "GB",
-                "age": 22,
+                "age": 23,
                 "birth_date": "2003-08-01",
                 "college": "Texas",
                 "height": "71",
