@@ -5227,6 +5227,22 @@ window.__STATIC_DATA__ = {
                 "search_rank": 999
             },
             {
+                "player_id": "11651",
+                "espn_id": null,
+                "name": "Isaac Guerendo",
+                "position": "RB",
+                "team": "SF",
+                "age": 26,
+                "birth_date": "2000-06-28",
+                "college": "Louisville",
+                "height": "72",
+                "weight": "221",
+                "years_exp": 2,
+                "status": "Active",
+                "injury_status": "PUP",
+                "search_rank": 999
+            },
+            {
                 "player_id": "11834",
                 "espn_id": null,
                 "name": "Devaughn Vele",
@@ -5625,22 +5641,6 @@ window.__STATIC_DATA__ = {
                 "status": "Active",
                 "injury_status": null,
                 "search_rank": 38
-            },
-            {
-                "player_id": "8188",
-                "espn_id": null,
-                "name": "Tyquan Thornton",
-                "position": "WR",
-                "team": "KC",
-                "age": 25,
-                "birth_date": "2000-08-07",
-                "college": "Baylor",
-                "height": "74",
-                "weight": "185",
-                "years_exp": 4,
-                "status": "Active",
-                "injury_status": null,
-                "search_rank": 999
             },
             {
                 "player_id": "9758",
@@ -11588,6 +11588,34 @@ window.__STATIC_DATA__ = {
     }
   ],
   "transactions": [
+    {
+        "season": "2026",
+        "week": 1,
+        "created": "Aug 1, 2026 • 10:20 PM PT",
+        "transaction_id": "1389527299841351680",
+        "type": "free_agent",
+        "status": "complete",
+        "teams": [
+            "ddhk"
+        ],
+        "added": [
+            {
+                "name": "Isaac Guerendo",
+                "position": "RB",
+                "team": "SF"
+            }
+        ],
+        "dropped": [
+            {
+                "name": "Tyquan Thornton",
+                "position": "WR",
+                "team": "KC"
+            }
+        ],
+        "faab": 0,
+        "waiver_bid": 0,
+        "notes": null
+    },
     {
         "season": "2026",
         "week": 1,
