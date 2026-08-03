@@ -9127,7 +9127,7 @@ window.__STATIC_DATA__ = {
                 "weight": "203",
                 "years_exp": 2,
                 "status": "Active",
-                "injury_status": null,
+                "injury_status": "NA",
                 "search_rank": 999
             },
             {
@@ -11085,6 +11085,22 @@ window.__STATIC_DATA__ = {
                 "search_rank": 203
             },
             {
+                "player_id": "7608",
+                "espn_id": null,
+                "name": "Khalil Herbert",
+                "position": "RB",
+                "team": "SF",
+                "age": 28,
+                "birth_date": "1998-04-21",
+                "college": "Virginia Tech",
+                "height": "69",
+                "weight": "212",
+                "years_exp": 5,
+                "status": "Active",
+                "injury_status": null,
+                "search_rank": 999
+            },
+            {
                 "player_id": "7611",
                 "espn_id": null,
                 "name": "Rhamondre Stevenson",
@@ -11115,22 +11131,6 @@ window.__STATIC_DATA__ = {
                 "status": "Active",
                 "injury_status": null,
                 "search_rank": 13
-            },
-            {
-                "player_id": "9479",
-                "espn_id": null,
-                "name": "Darnell Washington",
-                "position": "TE",
-                "team": "PIT",
-                "age": 24,
-                "birth_date": "2001-08-17",
-                "college": "Georgia",
-                "height": "79",
-                "weight": "264",
-                "years_exp": 3,
-                "status": "Active",
-                "injury_status": null,
-                "search_rank": 999
             },
             {
                 "player_id": "9508",
@@ -11588,6 +11588,34 @@ window.__STATIC_DATA__ = {
     }
   ],
   "transactions": [
+    {
+        "season": "2026",
+        "week": 1,
+        "created": "Aug 3, 2026 • 2:40 AM PT",
+        "transaction_id": "1389955092626563072",
+        "type": "free_agent",
+        "status": "complete",
+        "teams": [
+            "ganathan"
+        ],
+        "added": [
+            {
+                "name": "Khalil Herbert",
+                "position": "RB",
+                "team": "SF"
+            }
+        ],
+        "dropped": [
+            {
+                "name": "Darnell Washington",
+                "position": "TE",
+                "team": "PIT"
+            }
+        ],
+        "faab": 0,
+        "waiver_bid": 0,
+        "notes": null
+    },
     {
         "season": "2026",
         "week": 1,
