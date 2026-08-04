@@ -5175,7 +5175,7 @@ window.__STATIC_DATA__ = {
                 "weight": "224",
                 "years_exp": 3,
                 "status": "Active",
-                "injury_status": "Questionable",
+                "injury_status": null,
                 "search_rank": 141
             },
             {
@@ -5854,7 +5854,7 @@ window.__STATIC_DATA__ = {
                 "years_exp": 0,
                 "status": "Inactive",
                 "injury_status": "IR",
-                "search_rank": 202
+                "search_rank": 371
             },
             {
                 "player_id": "13420",
@@ -6611,7 +6611,7 @@ window.__STATIC_DATA__ = {
                 "weight": "256",
                 "years_exp": 3,
                 "status": "Active",
-                "injury_status": null,
+                "injury_status": "Questionable",
                 "search_rank": 999
             },
             {
@@ -6745,7 +6745,7 @@ window.__STATIC_DATA__ = {
                 "weight": "207",
                 "years_exp": 1,
                 "status": "Active",
-                "injury_status": "Questionable",
+                "injury_status": null,
                 "search_rank": 61
             },
             {
@@ -6825,7 +6825,7 @@ window.__STATIC_DATA__ = {
                 "weight": "231",
                 "years_exp": 12,
                 "status": "Active",
-                "injury_status": null,
+                "injury_status": "Questionable",
                 "search_rank": 57
             },
             {
@@ -7167,7 +7167,7 @@ window.__STATIC_DATA__ = {
                 "weight": "225",
                 "years_exp": 2,
                 "status": "Active",
-                "injury_status": null,
+                "injury_status": "Questionable",
                 "search_rank": 114
             },
             {
@@ -7215,7 +7215,7 @@ window.__STATIC_DATA__ = {
                 "weight": "216",
                 "years_exp": 2,
                 "status": "Active",
-                "injury_status": null,
+                "injury_status": "Questionable",
                 "search_rank": 999
             },
             {
@@ -7989,7 +7989,7 @@ window.__STATIC_DATA__ = {
                 "weight": "225",
                 "years_exp": 4,
                 "status": "Active",
-                "injury_status": "Questionable",
+                "injury_status": null,
                 "search_rank": 999
             },
             {
@@ -8475,7 +8475,7 @@ window.__STATIC_DATA__ = {
                 "weight": "208",
                 "years_exp": 0,
                 "status": "Active",
-                "injury_status": null,
+                "injury_status": "Questionable",
                 "search_rank": 999
             },
             {
@@ -9119,7 +9119,7 @@ window.__STATIC_DATA__ = {
                 "espn_id": null,
                 "name": "Ja'Lynn Polk",
                 "position": "WR",
-                "team": "NO",
+                "team": null,
                 "age": 24,
                 "birth_date": "2002-04-11",
                 "college": "Washington",
@@ -9774,7 +9774,7 @@ window.__STATIC_DATA__ = {
                 "years_exp": 2,
                 "status": "Inactive",
                 "injury_status": "IR",
-                "search_rank": 86
+                "search_rank": 400
             },
             {
                 "player_id": "12048",
@@ -9917,7 +9917,7 @@ window.__STATIC_DATA__ = {
                 "weight": "192",
                 "years_exp": 0,
                 "status": "Active",
-                "injury_status": null,
+                "injury_status": "Questionable",
                 "search_rank": 77
             },
             {
@@ -9933,7 +9933,7 @@ window.__STATIC_DATA__ = {
                 "weight": "190",
                 "years_exp": 0,
                 "status": "Active",
-                "injury_status": null,
+                "injury_status": "Questionable",
                 "search_rank": 116
             },
             {
@@ -9997,7 +9997,7 @@ window.__STATIC_DATA__ = {
                 "weight": "225",
                 "years_exp": 6,
                 "status": "Active",
-                "injury_status": "Questionable",
+                "injury_status": null,
                 "search_rank": 183
             },
             {
@@ -10126,7 +10126,7 @@ window.__STATIC_DATA__ = {
                 "years_exp": 3,
                 "status": "Active",
                 "injury_status": null,
-                "search_rank": 87
+                "search_rank": 81
             },
             {
                 "player_id": "9500",
@@ -15259,7 +15259,7 @@ window.__STATIC_DATA__ = {
             {
                 "name": "Evan Hull",
                 "position": "RB",
-                "team": "HOU"
+                "team": "ARI"
             }
         ],
         "faab": 0,
