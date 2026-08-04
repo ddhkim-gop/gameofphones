@@ -5854,7 +5854,7 @@ window.__STATIC_DATA__ = {
                 "years_exp": 0,
                 "status": "Inactive",
                 "injury_status": "IR",
-                "search_rank": 371
+                "search_rank": 400
             },
             {
                 "player_id": "13420",
