@@ -2,6 +2,7 @@ name: Deploy to GitHub Pages
 on:
   push:
     branches: [main]
+  workflow_dispatch:   # manual redeploy; auto_refresh pushes can't trigger this # edited-by: obi | 2026-08-04
 jobs:
   deploy:
     runs-on: ubuntu-latest
