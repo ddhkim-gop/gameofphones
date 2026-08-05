@@ -10,3 +10,4 @@ __pycache__/
 .DS_Store
 static_site/
 docs/
+gameofphones-cross-talk.md
