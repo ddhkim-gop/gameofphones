@@ -9,6 +9,9 @@ jobs:
     permissions:
       pages: write
       id-token: write
+    concurrency:            # shared with auto_refresh's deploy job # edited-by: obi | 2026-08-04
+      group: pages
+      cancel-in-progress: false
     environment:
       name: github-pages
       url: ${{ steps.deployment.outputs.page_url }}
