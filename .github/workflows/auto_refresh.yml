@@ -71,7 +71,12 @@ jobs:
       name: github-pages
       url: ${{ steps.deployment.outputs.page_url }}
     steps:
+      # Must be `ref: main`, not the default: checkout would otherwise grab the
+      # SHA that triggered this run, which predates the refresh job's own push,
+      # and publish the pre-refresh tree. # edited-by: obi | 2026-08-04
       - uses: actions/checkout@v4
+        with:
+          ref: main
       - uses: actions/configure-pages@v4
       - uses: actions/upload-pages-artifact@v3
         with:
