@@ -6471,22 +6471,6 @@ window.__STATIC_DATA__ = {
                 "search_rank": 84
             },
             {
-                "player_id": "5848",
-                "espn_id": 4241372,
-                "name": "Marquise Brown",
-                "position": "WR",
-                "team": "PHI",
-                "age": 29,
-                "birth_date": "1997-06-04",
-                "college": "Oklahoma",
-                "height": "69",
-                "weight": "170",
-                "years_exp": 7,
-                "status": "Active",
-                "injury_status": null,
-                "search_rank": 999
-            },
-            {
                 "player_id": "6813",
                 "espn_id": 4242335,
                 "name": "Jonathan Taylor",
@@ -6581,6 +6565,22 @@ window.__STATIC_DATA__ = {
                 "status": "Active",
                 "injury_status": null,
                 "search_rank": 37
+            },
+            {
+                "player_id": "8188",
+                "espn_id": null,
+                "name": "Tyquan Thornton",
+                "position": "WR",
+                "team": "KC",
+                "age": 25,
+                "birth_date": "2000-08-07",
+                "college": "Baylor",
+                "height": "74",
+                "weight": "185",
+                "years_exp": 4,
+                "status": "Active",
+                "injury_status": null,
+                "search_rank": 999
             },
             {
                 "player_id": "8228",
@@ -11588,6 +11588,34 @@ window.__STATIC_DATA__ = {
     }
   ],
   "transactions": [
+    {
+        "season": "2026",
+        "week": 1,
+        "created": "Aug 4, 2026 • 6:22 PM PT",
+        "transaction_id": "1390554622166302720",
+        "type": "free_agent",
+        "status": "complete",
+        "teams": [
+            "NoSkilzPak"
+        ],
+        "added": [
+            {
+                "name": "Tyquan Thornton",
+                "position": "WR",
+                "team": "KC"
+            }
+        ],
+        "dropped": [
+            {
+                "name": "Marquise Brown",
+                "position": "WR",
+                "team": "PHI"
+            }
+        ],
+        "faab": 0,
+        "waiver_bid": 0,
+        "notes": null
+    },
     {
         "season": "2026",
         "week": 1,
