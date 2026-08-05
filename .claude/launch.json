@@ -4,8 +4,12 @@
     {
       "name": "frontend",
       "runtimeExecutable": "python3",
-      "runtimeArgs": ["-m", "http.server", "3000"],
-      "cwd": "/Users/david/gameofphones",
+      "runtimeArgs": [
+        "-m",
+        "http.server",
+        "3000"
+      ],
+      "cwd": "/Users/david/Desktop/Skyler/personal/fantasy football/gameofphones",
       "port": 3000
     }
   ]
