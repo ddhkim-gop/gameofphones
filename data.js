@@ -9862,7 +9862,7 @@ window.__STATIC_DATA__ = {
                 "name": "LeQuint Allen",
                 "position": "RB",
                 "team": "JAX",
-                "age": 21,
+                "age": 22,
                 "birth_date": "2004-08-05",
                 "college": "Syracuse",
                 "height": "72",
