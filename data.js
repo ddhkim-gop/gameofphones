@@ -5219,8 +5219,8 @@ window.__STATIC_DATA__ = {
                 "age": 25,
                 "birth_date": "2001-06-19",
                 "college": "Michigan",
-                "height": "70",
-                "weight": "186",
+                "height": "72",
+                "weight": "192",
                 "years_exp": 2,
                 "status": "Active",
                 "injury_status": null,
@@ -5709,7 +5709,7 @@ window.__STATIC_DATA__ = {
                 "weight": "192",
                 "years_exp": 2,
                 "status": "Active",
-                "injury_status": null,
+                "injury_status": "Questionable",
                 "search_rank": 162
             },
             {
@@ -6982,7 +6982,7 @@ window.__STATIC_DATA__ = {
                 "birth_date": "1998-06-14",
                 "college": "South Carolina",
                 "height": "71",
-                "weight": "215",
+                "weight": "218",
                 "years_exp": 6,
                 "status": "Active",
                 "injury_status": null,
@@ -7001,7 +7001,7 @@ window.__STATIC_DATA__ = {
                 "weight": "170",
                 "years_exp": 5,
                 "status": "Active",
-                "injury_status": null,
+                "injury_status": "Questionable",
                 "search_rank": 39
             },
             {
@@ -7167,7 +7167,7 @@ window.__STATIC_DATA__ = {
                 "weight": "225",
                 "years_exp": 2,
                 "status": "Active",
-                "injury_status": "Questionable",
+                "injury_status": null,
                 "search_rank": 114
             },
             {
@@ -7183,7 +7183,7 @@ window.__STATIC_DATA__ = {
                 "weight": "252",
                 "years_exp": 2,
                 "status": "Active",
-                "injury_status": null,
+                "injury_status": "Questionable",
                 "search_rank": 999
             },
             {
@@ -8232,7 +8232,7 @@ window.__STATIC_DATA__ = {
                 "birth_date": "2001-09-24",
                 "college": "Ohio State",
                 "height": "76",
-                "weight": "236",
+                "weight": "235",
                 "years_exp": 1,
                 "status": "Active",
                 "injury_status": null,
@@ -8673,7 +8673,7 @@ window.__STATIC_DATA__ = {
                 "weight": "227",
                 "years_exp": 2,
                 "status": "Active",
-                "injury_status": null,
+                "injury_status": "Questionable",
                 "search_rank": 999
             },
             {
@@ -9447,7 +9447,7 @@ window.__STATIC_DATA__ = {
                 "weight": "241",
                 "years_exp": 0,
                 "status": "Active",
-                "injury_status": null,
+                "injury_status": "Questionable",
                 "search_rank": 109
             },
             {
@@ -9997,7 +9997,7 @@ window.__STATIC_DATA__ = {
                 "weight": "225",
                 "years_exp": 6,
                 "status": "Active",
-                "injury_status": null,
+                "injury_status": "Questionable",
                 "search_rank": 183
             },
             {
@@ -10077,7 +10077,7 @@ window.__STATIC_DATA__ = {
                 "weight": "245",
                 "years_exp": 4,
                 "status": "Active",
-                "injury_status": null,
+                "injury_status": "Questionable",
                 "search_rank": 9999999
             },
             {
@@ -10934,7 +10934,7 @@ window.__STATIC_DATA__ = {
                 "birth_date": "1997-12-14",
                 "college": "Ole Miss",
                 "height": "76",
-                "weight": "229",
+                "weight": "235",
                 "years_exp": 7,
                 "status": "Active",
                 "injury_status": null,
