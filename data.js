@@ -6049,6 +6049,22 @@ window.__STATIC_DATA__ = {
                 "search_rank": 94
             },
             {
+                "player_id": "5848",
+                "espn_id": 4241372,
+                "name": "Marquise Brown",
+                "position": "WR",
+                "team": "PHI",
+                "age": 29,
+                "birth_date": "1997-06-04",
+                "college": "Oklahoma",
+                "height": "69",
+                "weight": "170",
+                "years_exp": 7,
+                "status": "Active",
+                "injury_status": null,
+                "search_rank": 999
+            },
+            {
                 "player_id": "5927",
                 "espn_id": 3121422,
                 "name": "Terry McLaurin",
@@ -6063,22 +6079,6 @@ window.__STATIC_DATA__ = {
                 "status": "Active",
                 "injury_status": null,
                 "search_rank": 45
-            },
-            {
-                "player_id": "5937",
-                "espn_id": 3932905,
-                "name": "Diontae Johnson",
-                "position": "WR",
-                "team": null,
-                "age": 30,
-                "birth_date": "1996-07-05",
-                "college": "Toledo",
-                "height": "70",
-                "weight": "183",
-                "years_exp": 6,
-                "status": "Active",
-                "injury_status": null,
-                "search_rank": 250
             },
             {
                 "player_id": "5947",
@@ -11588,6 +11588,56 @@ window.__STATIC_DATA__ = {
     }
   ],
   "transactions": [
+    {
+        "season": "2026",
+        "week": 1,
+        "created": "Aug 5, 2026 • 6:43 AM PT",
+        "transaction_id": "1390741054646394880",
+        "type": "waiver",
+        "status": "failed",
+        "teams": [
+            "ddhk"
+        ],
+        "added": [
+            {
+                "name": "Marquise Brown",
+                "position": "WR",
+                "team": "PHI"
+            }
+        ],
+        "dropped": [],
+        "faab": 0,
+        "waiver_bid": 6,
+        "notes": "This player was claimed by another owner."
+    },
+    {
+        "season": "2026",
+        "week": 1,
+        "created": "Aug 4, 2026 • 6:42 PM PT",
+        "transaction_id": "1390559474829234176",
+        "type": "waiver",
+        "status": "complete",
+        "teams": [
+            "spiffster"
+        ],
+        "added": [
+            {
+                "name": "Marquise Brown",
+                "position": "WR",
+                "team": "PHI"
+            }
+        ],
+        "dropped": [
+            {
+                "name": "Diontae Johnson",
+                "position": "WR",
+                "team": null
+            }
+        ],
+        "faab": 0,
+        "waiver_bid": 16,
+        "notes": "Your waiver claim was processed successfully!"
+    },
     {
         "season": "2026",
         "week": 1,
