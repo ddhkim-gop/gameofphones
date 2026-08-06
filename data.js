@@ -5893,7 +5893,7 @@ window.__STATIC_DATA__ = {
                 "espn_id": 2976212,
                 "name": "Stefon Diggs",
                 "position": "WR",
-                "team": null,
+                "team": "WAS",
                 "age": 32,
                 "birth_date": "1993-11-29",
                 "college": "Maryland",
@@ -5902,7 +5902,7 @@ window.__STATIC_DATA__ = {
                 "years_exp": 11,
                 "status": "Active",
                 "injury_status": null,
-                "search_rank": 121
+                "search_rank": 116
             },
             {
                 "player_id": "3257",
@@ -8737,7 +8737,7 @@ window.__STATIC_DATA__ = {
                 "weight": "205",
                 "years_exp": 1,
                 "status": "Active",
-                "injury_status": null,
+                "injury_status": "Questionable",
                 "search_rank": 43
             },
             {
@@ -9073,7 +9073,7 @@ window.__STATIC_DATA__ = {
                 "weight": "179",
                 "years_exp": 3,
                 "status": "Active",
-                "injury_status": null,
+                "injury_status": "Questionable",
                 "search_rank": 98
             }
         ]
@@ -9239,7 +9239,7 @@ window.__STATIC_DATA__ = {
                 "weight": "220",
                 "years_exp": 3,
                 "status": "Active",
-                "injury_status": null,
+                "injury_status": "Questionable",
                 "search_rank": 180
             },
             {
@@ -9933,7 +9933,7 @@ window.__STATIC_DATA__ = {
                 "weight": "190",
                 "years_exp": 0,
                 "status": "Active",
-                "injury_status": "Questionable",
+                "injury_status": null,
                 "search_rank": 116
             },
             {
@@ -11033,7 +11033,7 @@ window.__STATIC_DATA__ = {
                 "weight": "185",
                 "years_exp": 5,
                 "status": "Active",
-                "injury_status": null,
+                "injury_status": "Questionable",
                 "search_rank": 42
             },
             {
@@ -12278,7 +12278,7 @@ window.__STATIC_DATA__ = {
                 {
                     "name": "Stefon Diggs",
                     "position": "WR",
-                    "team": null
+                    "team": "WAS"
                 },
                 {
                     "name": "Deshaun Watson",
@@ -14020,7 +14020,7 @@ window.__STATIC_DATA__ = {
             {
                 "name": "Ainias Smith",
                 "position": "WR",
-                "team": "CAR"
+                "team": null
             }
         ],
         "faab": 0,
