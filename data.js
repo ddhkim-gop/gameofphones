@@ -14020,7 +14020,7 @@ window.__STATIC_DATA__ = {
             {
                 "name": "Ainias Smith",
                 "position": "WR",
-                "team": "CAR"
+                "team": null
             }
         ],
         "faab": 0,
