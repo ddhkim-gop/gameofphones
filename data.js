@@ -5524,7 +5524,7 @@ window.__STATIC_DATA__ = {
                 "birth_date": "1996-09-13",
                 "college": "Oregon",
                 "height": "76",
-                "weight": "231",
+                "weight": "245",
                 "years_exp": 6,
                 "status": "Active",
                 "injury_status": null,
@@ -5805,7 +5805,7 @@ window.__STATIC_DATA__ = {
                 "weight": "206",
                 "years_exp": 1,
                 "status": "Active",
-                "injury_status": null,
+                "injury_status": "Questionable",
                 "search_rank": 185
             },
             {
@@ -6515,7 +6515,7 @@ window.__STATIC_DATA__ = {
                 "weight": "210",
                 "years_exp": 4,
                 "status": "Active",
-                "injury_status": null,
+                "injury_status": "Questionable",
                 "search_rank": 113
             },
             {
@@ -6611,7 +6611,7 @@ window.__STATIC_DATA__ = {
                 "weight": "256",
                 "years_exp": 3,
                 "status": "Active",
-                "injury_status": "Questionable",
+                "injury_status": null,
                 "search_rank": 999
             },
             {
@@ -7391,7 +7391,7 @@ window.__STATIC_DATA__ = {
                 "weight": "223",
                 "years_exp": 7,
                 "status": "Active",
-                "injury_status": null,
+                "injury_status": "Questionable",
                 "search_rank": 20
             },
             {
@@ -8139,7 +8139,7 @@ window.__STATIC_DATA__ = {
                 "weight": "220",
                 "years_exp": 2,
                 "status": "Active",
-                "injury_status": null,
+                "injury_status": "Questionable",
                 "search_rank": 999
             },
             {
@@ -8737,7 +8737,7 @@ window.__STATIC_DATA__ = {
                 "weight": "205",
                 "years_exp": 1,
                 "status": "Active",
-                "injury_status": "Questionable",
+                "injury_status": null,
                 "search_rank": 43
             },
             {
@@ -15093,7 +15093,7 @@ window.__STATIC_DATA__ = {
             {
                 "name": "Beaux Collins",
                 "position": "WR",
-                "team": "NYG"
+                "team": null
             }
         ],
         "faab": 0,
