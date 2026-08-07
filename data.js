@@ -7183,7 +7183,7 @@ window.__STATIC_DATA__ = {
                 "weight": "252",
                 "years_exp": 2,
                 "status": "Active",
-                "injury_status": "Questionable",
+                "injury_status": null,
                 "search_rank": 999
             },
             {
@@ -8673,7 +8673,7 @@ window.__STATIC_DATA__ = {
                 "weight": "227",
                 "years_exp": 2,
                 "status": "Active",
-                "injury_status": "Questionable",
+                "injury_status": null,
                 "search_rank": 999
             },
             {
@@ -15093,7 +15093,7 @@ window.__STATIC_DATA__ = {
             {
                 "name": "Beaux Collins",
                 "position": "WR",
-                "team": null
+                "team": "DAL"
             }
         ],
         "faab": 0,
