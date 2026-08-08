@@ -5287,7 +5287,7 @@ window.__STATIC_DATA__ = {
                 "weight": "210",
                 "years_exp": 1,
                 "status": "Active",
-                "injury_status": null,
+                "injury_status": "Questionable",
                 "search_rank": 40
             },
             {
@@ -5805,7 +5805,7 @@ window.__STATIC_DATA__ = {
                 "weight": "206",
                 "years_exp": 1,
                 "status": "Active",
-                "injury_status": "Questionable",
+                "injury_status": null,
                 "search_rank": 185
             },
             {
@@ -7599,7 +7599,7 @@ window.__STATIC_DATA__ = {
                 "weight": "183",
                 "years_exp": 3,
                 "status": "Active",
-                "injury_status": null,
+                "injury_status": "Questionable",
                 "search_rank": 44
             }
         ]
@@ -8021,7 +8021,7 @@ window.__STATIC_DATA__ = {
                 "weight": "182",
                 "years_exp": 3,
                 "status": "Active",
-                "injury_status": null,
+                "injury_status": "Questionable",
                 "search_rank": 192
             },
             {
@@ -8267,7 +8267,7 @@ window.__STATIC_DATA__ = {
                 "weight": "205",
                 "years_exp": 1,
                 "status": "Active",
-                "injury_status": null,
+                "injury_status": "Questionable",
                 "search_rank": 999
             },
             {
@@ -9969,6 +9969,22 @@ window.__STATIC_DATA__ = {
                 "search_rank": 999
             },
             {
+                "player_id": "13533",
+                "espn_id": null,
+                "name": "Barion Brown",
+                "position": "WR",
+                "team": "NO",
+                "age": 22,
+                "birth_date": "2003-12-12",
+                "college": "LSU",
+                "height": "71",
+                "weight": "177",
+                "years_exp": 0,
+                "status": "Active",
+                "injury_status": null,
+                "search_rank": 9999999
+            },
+            {
                 "player_id": "3214",
                 "espn_id": 3046439,
                 "name": "Hunter Henry",
@@ -10081,22 +10097,6 @@ window.__STATIC_DATA__ = {
                 "search_rank": 9999999
             },
             {
-                "player_id": "8800",
-                "espn_id": null,
-                "name": "Malik Davis",
-                "position": "RB",
-                "team": "DAL",
-                "age": 27,
-                "birth_date": "1998-11-26",
-                "college": "Florida",
-                "height": "70",
-                "weight": "205",
-                "years_exp": 4,
-                "status": "Active",
-                "injury_status": null,
-                "search_rank": 999
-            },
-            {
                 "player_id": "9228",
                 "espn_id": null,
                 "name": "Bryce Young",
@@ -10141,7 +10141,7 @@ window.__STATIC_DATA__ = {
                 "weight": "171",
                 "years_exp": 3,
                 "status": "Active",
-                "injury_status": null,
+                "injury_status": "Questionable",
                 "search_rank": 121
             }
         ]
@@ -10729,7 +10729,7 @@ window.__STATIC_DATA__ = {
                 "weight": "213",
                 "years_exp": 1,
                 "status": "Active",
-                "injury_status": null,
+                "injury_status": "Questionable",
                 "search_rank": 169
             },
             {
@@ -11145,7 +11145,7 @@ window.__STATIC_DATA__ = {
                 "weight": "200",
                 "years_exp": 3,
                 "status": "Active",
-                "injury_status": null,
+                "injury_status": "Questionable",
                 "search_rank": 122
             }
         ]
@@ -11588,6 +11588,34 @@ window.__STATIC_DATA__ = {
     }
   ],
   "transactions": [
+    {
+        "season": "2026",
+        "week": 1,
+        "created": "Aug 8, 2026 • 9:33 AM PT",
+        "transaction_id": "1391870877800337408",
+        "type": "free_agent",
+        "status": "complete",
+        "teams": [
+            "velmixon"
+        ],
+        "added": [
+            {
+                "name": "Barion Brown",
+                "position": "WR",
+                "team": "NO"
+            }
+        ],
+        "dropped": [
+            {
+                "name": "Malik Davis",
+                "position": "RB",
+                "team": "DAL"
+            }
+        ],
+        "faab": 0,
+        "waiver_bid": 0,
+        "notes": null
+    },
     {
         "season": "2026",
         "week": 1,
