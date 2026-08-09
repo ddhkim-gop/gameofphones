@@ -10001,6 +10001,22 @@ window.__STATIC_DATA__ = {
                 "search_rank": 92
             },
             {
+                "player_id": "4147",
+                "espn_id": 3116389,
+                "name": "Samaje Perine",
+                "position": "RB",
+                "team": "CIN",
+                "age": 30,
+                "birth_date": "1995-09-16",
+                "college": "Oklahoma",
+                "height": "71",
+                "weight": "240",
+                "years_exp": 9,
+                "status": "Active",
+                "injury_status": null,
+                "search_rank": 999
+            },
+            {
                 "player_id": "6768",
                 "espn_id": 4241479,
                 "name": "Tua Tagovailoa",
@@ -11588,6 +11604,28 @@ window.__STATIC_DATA__ = {
     }
   ],
   "transactions": [
+    {
+        "season": "2026",
+        "week": 1,
+        "created": "Aug 9, 2026 • 4:51 AM PT",
+        "transaction_id": "1392162350542393344",
+        "type": "free_agent",
+        "status": "complete",
+        "teams": [
+            "velmixon"
+        ],
+        "added": [
+            {
+                "name": "Samaje Perine",
+                "position": "RB",
+                "team": "CIN"
+            }
+        ],
+        "dropped": [],
+        "faab": 0,
+        "waiver_bid": 0,
+        "notes": null
+    },
     {
         "season": "2026",
         "week": 1,
