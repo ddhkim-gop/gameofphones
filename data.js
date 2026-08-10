@@ -12533,13 +12533,7 @@ window.__STATIC_DATA__ = {
                 "team": "TEN"
             }
         ],
-        "dropped": [
-            {
-                "name": "Rashod Bateman",
-                "position": "WR",
-                "team": "BAL"
-            }
-        ],
+        "dropped": [],
         "faab": 0,
         "waiver_bid": 0,
         "notes": "This player was claimed by another owner."
