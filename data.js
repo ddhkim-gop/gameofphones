@@ -5200,7 +5200,7 @@ window.__STATIC_DATA__ = {
                 "name": "Marvin Harrison",
                 "position": "WR",
                 "team": "ARI",
-                "age": 23,
+                "age": 24,
                 "birth_date": "2002-08-11",
                 "college": "Ohio State",
                 "height": "75",
