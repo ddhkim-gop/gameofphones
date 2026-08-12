@@ -8392,7 +8392,7 @@ window.__STATIC_DATA__ = {
                 "birth_date": "2002-03-15",
                 "college": "Virginia",
                 "height": "69",
-                "weight": "199",
+                "weight": "204",
                 "years_exp": 0,
                 "status": "Active",
                 "injury_status": null,
@@ -9661,7 +9661,7 @@ window.__STATIC_DATA__ = {
                 "weight": "187",
                 "years_exp": 3,
                 "status": "Active",
-                "injury_status": "Questionable",
+                "injury_status": null,
                 "search_rank": 111
             },
             {
@@ -10627,7 +10627,7 @@ window.__STATIC_DATA__ = {
                 "weight": "216",
                 "years_exp": 3,
                 "status": "Active",
-                "injury_status": null,
+                "injury_status": "Questionable",
                 "search_rank": 5
             },
             {
@@ -10777,7 +10777,7 @@ window.__STATIC_DATA__ = {
                 "weight": "191",
                 "years_exp": 1,
                 "status": "Active",
-                "injury_status": "Questionable",
+                "injury_status": null,
                 "search_rank": 132
             },
             {
@@ -10953,7 +10953,7 @@ window.__STATIC_DATA__ = {
                 "weight": "235",
                 "years_exp": 7,
                 "status": "Active",
-                "injury_status": null,
+                "injury_status": "Questionable",
                 "search_rank": 73
             },
             {
