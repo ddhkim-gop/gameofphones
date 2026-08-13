@@ -5439,7 +5439,7 @@ window.__STATIC_DATA__ = {
                 "espn_id": 2576925,
                 "name": "Darren Waller",
                 "position": "TE",
-                "team": null,
+                "team": "CAR",
                 "age": 33,
                 "birth_date": "1992-09-13",
                 "college": "Georgia Tech",
@@ -5447,8 +5447,8 @@ window.__STATIC_DATA__ = {
                 "weight": "238",
                 "years_exp": 11,
                 "status": "Active",
-                "injury_status": "Questionable",
-                "search_rank": 249
+                "injury_status": null,
+                "search_rank": 999
             },
             {
                 "player_id": "4046",
@@ -8753,7 +8753,7 @@ window.__STATIC_DATA__ = {
                 "weight": "205",
                 "years_exp": 1,
                 "status": "Active",
-                "injury_status": null,
+                "injury_status": "Questionable",
                 "search_rank": 43
             },
             {
@@ -11634,7 +11634,7 @@ window.__STATIC_DATA__ = {
             {
                 "name": "Darren Waller",
                 "position": "TE",
-                "team": null
+                "team": "CAR"
             }
         ],
         "dropped": [],
@@ -14338,7 +14338,7 @@ window.__STATIC_DATA__ = {
             {
                 "name": "Darren Waller",
                 "position": "TE",
-                "team": null
+                "team": "CAR"
             }
         ],
         "faab": 0,
@@ -14606,7 +14606,7 @@ window.__STATIC_DATA__ = {
             {
                 "name": "Hassan Haskins",
                 "position": "RB",
-                "team": null
+                "team": "NE"
             }
         ],
         "faab": 0,
