@@ -9905,22 +9905,6 @@ window.__STATIC_DATA__ = {
                 "search_rank": 39
             },
             {
-                "player_id": "13270",
-                "espn_id": null,
-                "name": "CJ Daniels",
-                "position": "WR",
-                "team": "LAR",
-                "age": 24,
-                "birth_date": "2002-01-04",
-                "college": "Miami (FL)",
-                "height": "74",
-                "weight": "202",
-                "years_exp": 0,
-                "status": "Active",
-                "injury_status": null,
-                "search_rank": 999
-            },
-            {
                 "player_id": "13294",
                 "espn_id": null,
                 "name": "Makai Lemon",
@@ -11620,6 +11604,28 @@ window.__STATIC_DATA__ = {
     }
   ],
   "transactions": [
+    {
+        "season": "2026",
+        "week": 1,
+        "created": "Aug 13, 2026 • 2:14 PM PT",
+        "transaction_id": "1393753522599628800",
+        "type": "free_agent",
+        "status": "complete",
+        "teams": [
+            "velmixon"
+        ],
+        "added": [],
+        "dropped": [
+            {
+                "name": "CJ Daniels",
+                "position": "WR",
+                "team": "LAR"
+            }
+        ],
+        "faab": 0,
+        "waiver_bid": 0,
+        "notes": null
+    },
     {
         "season": "2026",
         "week": 1,
