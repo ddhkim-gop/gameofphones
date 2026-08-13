@@ -5435,6 +5435,22 @@ window.__STATIC_DATA__ = {
                 "search_rank": 329
             },
             {
+                "player_id": "2505",
+                "espn_id": 2576925,
+                "name": "Darren Waller",
+                "position": "TE",
+                "team": null,
+                "age": 33,
+                "birth_date": "1992-09-13",
+                "college": "Georgia Tech",
+                "height": "78",
+                "weight": "238",
+                "years_exp": 11,
+                "status": "Active",
+                "injury_status": "Questionable",
+                "search_rank": 249
+            },
+            {
                 "player_id": "4046",
                 "espn_id": 3139477,
                 "name": "Patrick Mahomes",
@@ -11604,6 +11620,28 @@ window.__STATIC_DATA__ = {
     }
   ],
   "transactions": [
+    {
+        "season": "2026",
+        "week": 1,
+        "created": "Aug 12, 2026 • 4:24 PM PT",
+        "transaction_id": "1393423855602663424",
+        "type": "free_agent",
+        "status": "complete",
+        "teams": [
+            "ddhk"
+        ],
+        "added": [
+            {
+                "name": "Darren Waller",
+                "position": "TE",
+                "team": null
+            }
+        ],
+        "dropped": [],
+        "faab": 0,
+        "waiver_bid": 0,
+        "notes": null
+    },
     {
         "season": "2026",
         "week": 1,
