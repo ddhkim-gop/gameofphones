@@ -5387,6 +5387,22 @@ window.__STATIC_DATA__ = {
                 "search_rank": 507
             },
             {
+                "player_id": "13315",
+                "espn_id": null,
+                "name": "Dean Connors",
+                "position": "RB",
+                "team": "LAR",
+                "age": 22,
+                "birth_date": "2003-08-29",
+                "college": "Houston",
+                "height": "71",
+                "weight": "206",
+                "years_exp": 0,
+                "status": "Active",
+                "injury_status": null,
+                "search_rank": 999
+            },
+            {
                 "player_id": "13329",
                 "espn_id": null,
                 "name": "Malik Benson",
@@ -5401,22 +5417,6 @@ window.__STATIC_DATA__ = {
                 "status": "Active",
                 "injury_status": null,
                 "search_rank": 430
-            },
-            {
-                "player_id": "13392",
-                "espn_id": null,
-                "name": "Jeff Caldwell",
-                "position": "WR",
-                "team": "KC",
-                "age": 23,
-                "birth_date": "2003-03-02",
-                "college": "Cincinnati",
-                "height": "77",
-                "weight": "215",
-                "years_exp": 0,
-                "status": "Active",
-                "injury_status": null,
-                "search_rank": 553
             },
             {
                 "player_id": "13404",
@@ -11604,6 +11604,34 @@ window.__STATIC_DATA__ = {
     }
   ],
   "transactions": [
+    {
+        "season": "2026",
+        "week": 1,
+        "created": "Aug 16, 2026 • 11:00 AM PT",
+        "transaction_id": "1394791952527917056",
+        "type": "free_agent",
+        "status": "complete",
+        "teams": [
+            "ddhk"
+        ],
+        "added": [
+            {
+                "name": "Dean Connors",
+                "position": "RB",
+                "team": "LAR"
+            }
+        ],
+        "dropped": [
+            {
+                "name": "Jeff Caldwell",
+                "position": "WR",
+                "team": "KC"
+            }
+        ],
+        "faab": 0,
+        "waiver_bid": 0,
+        "notes": null
+    },
     {
         "season": "2026",
         "week": 1,
