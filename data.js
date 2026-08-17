@@ -5179,6 +5179,22 @@ window.__STATIC_DATA__ = {
                 "search_rank": 141
             },
             {
+                "player_id": "10235",
+                "espn_id": null,
+                "name": "Roschon Johnson",
+                "position": "RB",
+                "team": "CHI",
+                "age": 25,
+                "birth_date": "2001-01-31",
+                "college": "Texas",
+                "height": "72",
+                "weight": "227",
+                "years_exp": 3,
+                "status": "Active",
+                "injury_status": null,
+                "search_rank": 501
+            },
+            {
                 "player_id": "11533",
                 "espn_id": null,
                 "name": "Brandon Aubrey",
@@ -5497,22 +5513,6 @@ window.__STATIC_DATA__ = {
                 "status": "Active",
                 "injury_status": null,
                 "search_rank": 120
-            },
-            {
-                "player_id": "6130",
-                "espn_id": 4040761,
-                "name": "Devin Singletary",
-                "position": "RB",
-                "team": "NYG",
-                "age": 28,
-                "birth_date": "1997-09-03",
-                "college": "Florida Atlantic",
-                "height": "67",
-                "weight": "203",
-                "years_exp": 7,
-                "status": "Active",
-                "injury_status": null,
-                "search_rank": 621
             },
             {
                 "player_id": "6786",
@@ -11604,6 +11604,34 @@ window.__STATIC_DATA__ = {
     }
   ],
   "transactions": [
+    {
+        "season": "2026",
+        "week": 1,
+        "created": "Aug 17, 2026 • 2:12 PM PT",
+        "transaction_id": "1395202768825769984",
+        "type": "free_agent",
+        "status": "complete",
+        "teams": [
+            "ddhk"
+        ],
+        "added": [
+            {
+                "name": "Roschon Johnson",
+                "position": "RB",
+                "team": "CHI"
+            }
+        ],
+        "dropped": [
+            {
+                "name": "Devin Singletary",
+                "position": "RB",
+                "team": "NYG"
+            }
+        ],
+        "faab": 0,
+        "waiver_bid": 0,
+        "notes": null
+    },
     {
         "season": "2026",
         "week": 1,
