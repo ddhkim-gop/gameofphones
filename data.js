@@ -6761,7 +6761,7 @@ window.__STATIC_DATA__ = {
                 "weight": "207",
                 "years_exp": 1,
                 "status": "Active",
-                "injury_status": null,
+                "injury_status": "Questionable",
                 "search_rank": 61
             },
             {
@@ -9103,7 +9103,7 @@ window.__STATIC_DATA__ = {
                 "espn_id": 3121409,
                 "name": "Noah Brown",
                 "position": "WR",
-                "team": null,
+                "team": "LV",
                 "age": 30,
                 "birth_date": "1996-01-06",
                 "college": "Ohio State",
@@ -9111,8 +9111,8 @@ window.__STATIC_DATA__ = {
                 "weight": "225",
                 "years_exp": 9,
                 "status": "Active",
-                "injury_status": "Questionable",
-                "search_rank": 150
+                "injury_status": null,
+                "search_rank": 510
             },
             {
                 "player_id": "5849",
