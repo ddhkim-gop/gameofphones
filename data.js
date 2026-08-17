@@ -10236,7 +10236,7 @@ window.__STATIC_DATA__ = {
                 "name": "Cam Little",
                 "position": "K",
                 "team": "JAX",
-                "age": 22,
+                "age": 23,
                 "birth_date": "2003-08-17",
                 "college": "Arkansas",
                 "height": "73",
