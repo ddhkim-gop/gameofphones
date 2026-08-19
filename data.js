@@ -5460,7 +5460,7 @@ window.__STATIC_DATA__ = {
                 "birth_date": "1992-09-13",
                 "college": "Georgia Tech",
                 "height": "78",
-                "weight": "238",
+                "weight": "245",
                 "years_exp": 11,
                 "status": "Active",
                 "injury_status": null,
