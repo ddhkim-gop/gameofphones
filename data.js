@@ -6236,7 +6236,7 @@ window.__STATIC_DATA__ = {
                 "name": "Bucky Irving",
                 "position": "RB",
                 "team": "TB",
-                "age": 23,
+                "age": 24,
                 "birth_date": "2002-08-19",
                 "college": "Oregon",
                 "height": "70",
@@ -6706,7 +6706,7 @@ window.__STATIC_DATA__ = {
                 "name": "Kirk Cousins",
                 "position": "QB",
                 "team": "LV",
-                "age": 37,
+                "age": 38,
                 "birth_date": "1988-08-19",
                 "college": "Michigan State",
                 "height": "75",
@@ -10729,7 +10729,7 @@ window.__STATIC_DATA__ = {
                 "weight": "198",
                 "years_exp": 1,
                 "status": "Active",
-                "injury_status": null,
+                "injury_status": "Questionable",
                 "search_rank": 189
             },
             {
