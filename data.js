@@ -5873,6 +5873,22 @@ window.__STATIC_DATA__ = {
                 "search_rank": 400
             },
             {
+                "player_id": "13418",
+                "espn_id": null,
+                "name": "Robert Henry",
+                "position": "RB",
+                "team": "WAS",
+                "age": 24,
+                "birth_date": "2001-12-31",
+                "college": "UTSA",
+                "height": "69",
+                "weight": "196",
+                "years_exp": 0,
+                "status": "Active",
+                "injury_status": null,
+                "search_rank": 302
+            },
+            {
                 "player_id": "13420",
                 "espn_id": null,
                 "name": "Bryce Lance",
@@ -11604,6 +11620,28 @@ window.__STATIC_DATA__ = {
     }
   ],
   "transactions": [
+    {
+        "season": "2026",
+        "week": 1,
+        "created": "Aug 19, 2026 • 8:30 AM PT",
+        "transaction_id": "1395841274812063744",
+        "type": "free_agent",
+        "status": "complete",
+        "teams": [
+            "spiffster"
+        ],
+        "added": [
+            {
+                "name": "Robert Henry",
+                "position": "RB",
+                "team": "WAS"
+            }
+        ],
+        "dropped": [],
+        "faab": 0,
+        "waiver_bid": 0,
+        "notes": null
+    },
     {
         "season": "2026",
         "week": 1,
