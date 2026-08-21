@@ -591,6 +591,17 @@ async function init() {
           </div>
         </div>
 
+        <!-- Roster news -->
+        <div style="background:#1e2027;border:1px solid #2d3139;border-radius:12px;padding:16px 20px;margin-bottom:16px;">
+          <div style="display:flex;justify-content:space-between;align-items:center;margin-bottom:10px;">
+            <div style="font-size:14px;font-weight:700;color:#f0f1f3;">Latest Roster News</div>
+            <div id="team-news-count" style="font-size:12px;color:#5a6070;">Loading…</div>
+          </div>
+          <div id="team-news-body" style="max-height:240px;overflow-y:auto;padding-right:6px;">
+            <div style="color:#5a6070;font-size:12px;">Loading news…</div>
+          </div>
+        </div>
+
         <div class="team-page-wrap">
 
           <!-- COL 1: Roster -->
@@ -661,10 +672,55 @@ async function init() {
 
         </div><!-- /team-page-outer -->`;
 
+        loadTeamNews(players);
+
     } catch(err) {
         console.error(err);
         container.innerHTML = `<p style="color:#e74c82;padding:20px;">Error loading team: ${err.message}</p>`;
     }
+}
+
+// ── Roster news (Sleeper player news, aggregated + sorted newest-first) ──────
+const NEWS_SOURCE_LABEL = { rotoballer:"RotoBaller", rotowire:"RotoWire", fantasy_pros:"FantasyPros" };
+function newsDate(ts){ if(!ts) return ""; return new Date(ts).toLocaleDateString("en-US",{month:"short",day:"numeric",year:"numeric"}); }
+function esc(s){ return String(s==null?"":s).replace(/[&<>"]/g, c => ({'&':'&amp;','<':'&lt;','>':'&gt;','"':'&quot;'}[c])); }
+
+async function loadTeamNews(players){
+    const body = document.getElementById("team-news-body");
+    const countEl = document.getElementById("team-news-count");
+    if(!body) return;
+    const withId = (players||[]).filter(p => p && p.player_id && p.name);
+    const results = await Promise.all(withId.map(p =>
+        fetch(`https://api.sleeper.com/players/nfl/${p.player_id}/news`)
+            .then(r => r.ok ? r.json() : [])
+            .then(items => (Array.isArray(items)?items:[]).map(it => ({ ...it, _player: p })))
+            .catch(() => [])
+    ));
+    const all = results.flat().filter(it => it && it.published);
+    all.sort((a,b) => (b.published||0) - (a.published||0));
+    if(!all.length){
+        body.innerHTML = `<div style="color:#5a6070;font-size:12px;">No recent news.</div>`;
+        if(countEl) countEl.textContent = "";
+        return;
+    }
+    if(countEl) countEl.textContent = `${all.length} update${all.length===1?'':'s'}`;
+    body.innerHTML = all.map((it, i) => {
+        const p = it._player, m = it.metadata || {};
+        const src = NEWS_SOURCE_LABEL[it.source] || it.source || "";
+        const url = m.url || "";
+        const title = esc(m.title || "");
+        const headline = url ? `<a href="${url}" target="_blank" rel="noopener" style="color:#f0f1f3;text-decoration:none;">${title}</a>` : title;
+        const pill = `<span style="background:${posColor(p.position)};color:#fff;font-size:9px;font-weight:800;padding:1px 5px;border-radius:4px;flex-shrink:0;">${esc(p.position||'?')}</span>`;
+        return `<div style="padding:9px 0;${i?'border-top:1px solid #2d3139;':''}">
+            <div style="display:flex;align-items:center;gap:6px;margin-bottom:3px;">
+                ${pill}
+                <span style="font-size:12px;font-weight:700;color:#c7cbd1;">${esc(p.name)}</span>
+            </div>
+            <div style="font-size:13px;font-weight:600;line-height:1.4;color:#f0f1f3;">${headline}</div>
+            ${m.description ? `<div style="font-size:12px;color:#8b9099;margin-top:2px;line-height:1.4;">${esc(m.description)}</div>` : ""}
+            <div style="font-size:11px;color:#5a6070;margin-top:3px;">${src ? `<span style="color:#4299e1;font-weight:600;">${esc(src)}</span> · ` : ""}${newsDate(it.published)}</div>
+        </div>`;
+    }).join("");
 }
 
 init();
