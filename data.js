@@ -6850,7 +6850,7 @@ window.__STATIC_DATA__ = {
                 "name": "Mike Evans",
                 "position": "WR",
                 "team": "SF",
-                "age": 32,
+                "age": 33,
                 "birth_date": "1993-08-21",
                 "college": "Texas A&M",
                 "height": "77",
