@@ -1,7 +1,43 @@
 import { api } from "./dataService.js?v=20260609a";
 import { renderNav } from "./components/nav.js";
+import { ensurePlayerCardPopover, openPlayerCard } from "./playerCard.js?v=20260820a";
 
 renderNav();
+
+const PC_YEARS = ["2018","2019","2020","2021","2022","2023","2024","2025","2026"];
+const pcStatsCache = {};
+let pcPlayerValues = {};
+let pcTransactions = [];
+async function loadRosterStats() {
+    for (const y of PC_YEARS) {
+        try { pcStatsCache[y] = await api.getPlayerStats(y); }
+        catch { pcStatsCache[y] = {}; }
+    }
+}
+function pcCalcAge(birthDate) {
+    if (!birthDate) return null;
+    return ((Date.now() - new Date(birthDate)) / (365.25*24*60*60*1000)).toFixed(1);
+}
+function pcNormName(n) {
+    return n.toLowerCase().replace(/\s+(jr\.?|sr\.?|ii|iii|iv)$/i,'').replace(/[^a-z\s]/g,'').trim();
+}
+function pcPvLookup(name) {
+    if (pcPlayerValues[name]) return pcPlayerValues[name];
+    const norm = pcNormName(name);
+    for (const k of Object.keys(pcPlayerValues)) if (pcNormName(k) === norm) return pcPlayerValues[k];
+    return {};
+}
+function pcPosRankStr(p) {
+    const pid = p.player_id;
+    for (const yr of ["2025","2024","2023"]) {
+        const s = pcStatsCache[yr]?.[pid];
+        if (s?.rank > 0) return `${s.position || p.position}${s.rank}`;
+    }
+    return null;
+}
+function playerCardCtx() {
+    return { posColor, pvLookup: pcPvLookup, posRankStr: pcPosRankStr, calcAgeDecimal: pcCalcAge, statsCache: pcStatsCache, transactions: pcTransactions, YEARS: PC_YEARS };
+}
 
 const INACTIVE_USERS = new Set(['edgxrjiang', 'riqi', 'shmyung', 'urmummma', 'JUNNNNAY']);
 const FUTURE_YEARS = ["2027", "2028", "2029"];
@@ -293,7 +329,7 @@ async function init() {
                 const rookieBadge = p.years_exp === 0 ? `<span style="font-size:9px;font-weight:700;color:#f6ad55;background:rgba(246,173,85,.15);padding:1px 5px;border-radius:3px;">R</span>` : '';
                 const teamLogo = p.team ? `<img src="https://sleepercdn.com/images/team_logos/nfl/${p.team.toLowerCase()}.jpg" style="width:18px;height:18px;object-fit:contain;opacity:.8;" onerror="this.style.display='none'">` : '';
                 const ageStr = p.birth_date ? (() => { const b = new Date(p.birth_date); return ((Date.now()-b)/(365.25*24*60*60*1000)).toFixed(1); })() : (p.age || '');
-                return `<div style="display:flex;align-items:center;gap:8px;padding:6px 8px;background:#252830;border-radius:8px;margin-bottom:3px;">
+                return `<div class="roster-player-row" data-pid="${p.player_id||''}" style="display:flex;align-items:center;gap:8px;padding:6px 8px;background:#252830;border-radius:8px;margin-bottom:3px;cursor:pointer;border:1px solid transparent;transition:background .12s,border-color .12s;" onmouseover="this.style.background='#2d3139';this.style.borderColor='#3d4350'" onmouseout="this.style.background='#252830';this.style.borderColor='transparent'">
                     ${badge}
                     <span style="font-size:13px;font-weight:600;color:#f0f1f3;flex:1;min-width:0;overflow:hidden;text-overflow:ellipsis;white-space:nowrap;">${p.name}${rookieBadge}</span>
                     ${teamLogo}
@@ -673,6 +709,21 @@ async function init() {
         </div><!-- /team-page-outer -->`;
 
         loadTeamNews(players);
+
+        // Clickable roster → shared player card popover
+        pcPlayerValues = playerValues || {};
+        pcTransactions = allTransactions || [];
+        loadRosterStats();
+        ensurePlayerCardPopover();
+        const pidMap = {};
+        players.filter(p => p && p.player_id).forEach(p => { pidMap[p.player_id] = p; });
+        container.querySelectorAll(".roster-player-row").forEach(row => {
+            row.addEventListener("click", (e) => {
+                e.stopPropagation();
+                const p = pidMap[row.dataset.pid];
+                if (p) openPlayerCard(row, p, playerCardCtx());
+            });
+        });
 
     } catch(err) {
         console.error(err);
