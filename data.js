@@ -5809,22 +5809,6 @@ window.__STATIC_DATA__ = {
                 "search_rank": 56
             },
             {
-                "player_id": "12499",
-                "espn_id": null,
-                "name": "Elic Ayomanor",
-                "position": "WR",
-                "team": "TEN",
-                "age": 23,
-                "birth_date": "2003-06-03",
-                "college": "Stanford",
-                "height": "74",
-                "weight": "206",
-                "years_exp": 1,
-                "status": "Active",
-                "injury_status": null,
-                "search_rank": 185
-            },
-            {
                 "player_id": "12510",
                 "espn_id": null,
                 "name": "Jalen Milroe",
@@ -5903,6 +5887,22 @@ window.__STATIC_DATA__ = {
                 "status": "Active",
                 "injury_status": null,
                 "search_rank": 443
+            },
+            {
+                "player_id": "13602",
+                "espn_id": null,
+                "name": "Jack Strand",
+                "position": "QB",
+                "team": "ATL",
+                "age": 22,
+                "birth_date": "2004-06-23",
+                "college": "Minnesota State Moorhead",
+                "height": "77",
+                "weight": "240",
+                "years_exp": 0,
+                "status": "Active",
+                "injury_status": null,
+                "search_rank": 667
             },
             {
                 "player_id": "2133",
@@ -11620,6 +11620,34 @@ window.__STATIC_DATA__ = {
     }
   ],
   "transactions": [
+    {
+        "season": "2026",
+        "week": 1,
+        "created": "Aug 23, 2026 • 5:41 AM PT",
+        "transaction_id": "1397248530745155584",
+        "type": "free_agent",
+        "status": "complete",
+        "teams": [
+            "spiffster"
+        ],
+        "added": [
+            {
+                "name": "Jack Strand",
+                "position": "QB",
+                "team": "ATL"
+            }
+        ],
+        "dropped": [
+            {
+                "name": "Elic Ayomanor",
+                "position": "WR",
+                "team": "TEN"
+            }
+        ],
+        "faab": 0,
+        "waiver_bid": 0,
+        "notes": null
+    },
     {
         "season": "2026",
         "week": 1,
