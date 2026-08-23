@@ -9681,6 +9681,22 @@ window.__STATIC_DATA__ = {
         "roster_id": 10,
         "players": [
             {
+                "player_id": "10218",
+                "espn_id": null,
+                "name": "Xavier Hutchinson",
+                "position": "WR",
+                "team": "HOU",
+                "age": 26,
+                "birth_date": "2000-06-01",
+                "college": "Iowa State",
+                "height": "75",
+                "weight": "210",
+                "years_exp": 3,
+                "status": "Active",
+                "injury_status": null,
+                "search_rank": 343
+            },
+            {
                 "player_id": "10222",
                 "espn_id": null,
                 "name": "Jayden Reed",
@@ -9711,22 +9727,6 @@ window.__STATIC_DATA__ = {
                 "status": "Active",
                 "injury_status": null,
                 "search_rank": 559
-            },
-            {
-                "player_id": "11592",
-                "espn_id": null,
-                "name": "Erick All",
-                "position": "TE",
-                "team": "CIN",
-                "age": 25,
-                "birth_date": "2000-09-13",
-                "college": "Iowa",
-                "height": "77",
-                "weight": "255",
-                "years_exp": 2,
-                "status": "Active",
-                "injury_status": null,
-                "search_rank": 538
             },
             {
                 "player_id": "11603",
@@ -9825,22 +9825,6 @@ window.__STATIC_DATA__ = {
                 "search_rank": 443
             },
             {
-                "player_id": "12455",
-                "espn_id": null,
-                "name": "Brashard Smith",
-                "position": "RB",
-                "team": "KC",
-                "age": 23,
-                "birth_date": "2003-04-11",
-                "college": "SMU",
-                "height": "70",
-                "weight": "196",
-                "years_exp": 1,
-                "status": "Active",
-                "injury_status": null,
-                "search_rank": 182
-            },
-            {
                 "player_id": "12481",
                 "espn_id": null,
                 "name": "Cam Skattebo",
@@ -9919,6 +9903,22 @@ window.__STATIC_DATA__ = {
                 "status": "Active",
                 "injury_status": null,
                 "search_rank": 82
+            },
+            {
+                "player_id": "13270",
+                "espn_id": null,
+                "name": "CJ Daniels",
+                "position": "WR",
+                "team": "LAR",
+                "age": 24,
+                "birth_date": "2002-01-04",
+                "college": "Miami (FL)",
+                "height": "74",
+                "weight": "202",
+                "years_exp": 0,
+                "status": "Active",
+                "injury_status": null,
+                "search_rank": 592
             },
             {
                 "player_id": "13294",
@@ -11620,6 +11620,94 @@ window.__STATIC_DATA__ = {
     }
   ],
   "transactions": [
+    {
+        "season": "2026",
+        "week": 1,
+        "created": "Aug 22, 2026 • 5:37 PM PT",
+        "transaction_id": "1397066202219544576",
+        "type": "free_agent",
+        "status": "complete",
+        "teams": [
+            "velmixon"
+        ],
+        "added": [
+            {
+                "name": "Xavier Hutchinson",
+                "position": "WR",
+                "team": "HOU"
+            }
+        ],
+        "dropped": [],
+        "faab": 0,
+        "waiver_bid": 0,
+        "notes": null
+    },
+    {
+        "season": "2026",
+        "week": 1,
+        "created": "Aug 22, 2026 • 5:37 PM PT",
+        "transaction_id": "1397066141540593664",
+        "type": "free_agent",
+        "status": "complete",
+        "teams": [
+            "velmixon"
+        ],
+        "added": [],
+        "dropped": [
+            {
+                "name": "Brashard Smith",
+                "position": "RB",
+                "team": "KC"
+            }
+        ],
+        "faab": 0,
+        "waiver_bid": 0,
+        "notes": null
+    },
+    {
+        "season": "2026",
+        "week": 1,
+        "created": "Aug 22, 2026 • 5:32 PM PT",
+        "transaction_id": "1397064991617650688",
+        "type": "free_agent",
+        "status": "complete",
+        "teams": [
+            "velmixon"
+        ],
+        "added": [
+            {
+                "name": "CJ Daniels",
+                "position": "WR",
+                "team": "LAR"
+            }
+        ],
+        "dropped": [],
+        "faab": 0,
+        "waiver_bid": 0,
+        "notes": null
+    },
+    {
+        "season": "2026",
+        "week": 1,
+        "created": "Aug 22, 2026 • 5:32 PM PT",
+        "transaction_id": "1397064979957436416",
+        "type": "free_agent",
+        "status": "complete",
+        "teams": [
+            "velmixon"
+        ],
+        "added": [],
+        "dropped": [
+            {
+                "name": "Erick All",
+                "position": "TE",
+                "team": "CIN"
+            }
+        ],
+        "faab": 0,
+        "waiver_bid": 0,
+        "notes": null
+    },
     {
         "season": "2026",
         "week": 1,
