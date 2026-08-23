@@ -5163,22 +5163,6 @@ window.__STATIC_DATA__ = {
         "roster_id": 1,
         "players": [
             {
-                "player_id": "10219",
-                "espn_id": null,
-                "name": "Chris Rodriguez",
-                "position": "RB",
-                "team": "JAX",
-                "age": 26,
-                "birth_date": "1999-09-26",
-                "college": "Kentucky",
-                "height": "71",
-                "weight": "224",
-                "years_exp": 3,
-                "status": "Active",
-                "injury_status": null,
-                "search_rank": 130
-            },
-            {
                 "player_id": "10235",
                 "espn_id": null,
                 "name": "Roschon Johnson",
@@ -5273,6 +5257,22 @@ window.__STATIC_DATA__ = {
                 "status": "Active",
                 "injury_status": null,
                 "search_rank": 209
+            },
+            {
+                "player_id": "12487",
+                "espn_id": null,
+                "name": "Terrance Ferguson",
+                "position": "TE",
+                "team": "LAR",
+                "age": 23,
+                "birth_date": "2003-03-07",
+                "college": "Oregon",
+                "height": "77",
+                "weight": "252",
+                "years_exp": 1,
+                "status": "Active",
+                "injury_status": null,
+                "search_rank": 141
             },
             {
                 "player_id": "12518",
@@ -5451,6 +5451,22 @@ window.__STATIC_DATA__ = {
                 "search_rank": 488
             },
             {
+                "player_id": "2133",
+                "espn_id": 16800,
+                "name": "Davante Adams",
+                "position": "WR",
+                "team": "LAR",
+                "age": 33,
+                "birth_date": "1992-12-24",
+                "college": "Fresno State",
+                "height": "73",
+                "weight": "204",
+                "years_exp": 12,
+                "status": "Active",
+                "injury_status": null,
+                "search_rank": 46
+            },
+            {
                 "player_id": "2505",
                 "espn_id": 2576925,
                 "name": "Darren Waller",
@@ -5497,6 +5513,22 @@ window.__STATIC_DATA__ = {
                 "status": "Active",
                 "injury_status": "Questionable",
                 "search_rank": 92
+            },
+            {
+                "player_id": "421",
+                "espn_id": 12483,
+                "name": "Matthew Stafford",
+                "position": "QB",
+                "team": "LAR",
+                "age": 38,
+                "birth_date": "1988-02-07",
+                "college": "Georgia",
+                "height": "75",
+                "weight": "214",
+                "years_exp": 17,
+                "status": "Active",
+                "injury_status": null,
+                "search_rank": 76
             },
             {
                 "player_id": "5870",
@@ -5579,22 +5611,6 @@ window.__STATIC_DATA__ = {
                 "search_rank": 32
             },
             {
-                "player_id": "8111",
-                "espn_id": null,
-                "name": "Cade Otton",
-                "position": "TE",
-                "team": "TB",
-                "age": 27,
-                "birth_date": "1999-04-15",
-                "college": "Washington",
-                "height": "77",
-                "weight": "247",
-                "years_exp": 4,
-                "status": "Active",
-                "injury_status": "Questionable",
-                "search_rank": 148
-            },
-            {
                 "player_id": "8136",
                 "espn_id": null,
                 "name": "Rachaad White",
@@ -5657,22 +5673,6 @@ window.__STATIC_DATA__ = {
                 "status": "Active",
                 "injury_status": null,
                 "search_rank": 38
-            },
-            {
-                "player_id": "9758",
-                "espn_id": null,
-                "name": "C.J. Stroud",
-                "position": "QB",
-                "team": "HOU",
-                "age": 24,
-                "birth_date": "2001-10-03",
-                "college": "Ohio State",
-                "height": "75",
-                "weight": "218",
-                "years_exp": 3,
-                "status": "Active",
-                "injury_status": null,
-                "search_rank": 97
             }
         ]
     },
@@ -5680,6 +5680,22 @@ window.__STATIC_DATA__ = {
         "owner": "spiffster",
         "roster_id": 2,
         "players": [
+            {
+                "player_id": "10219",
+                "espn_id": null,
+                "name": "Chris Rodriguez",
+                "position": "RB",
+                "team": "JAX",
+                "age": 26,
+                "birth_date": "1999-09-26",
+                "college": "Kentucky",
+                "height": "71",
+                "weight": "224",
+                "years_exp": 3,
+                "status": "Active",
+                "injury_status": null,
+                "search_rank": 130
+            },
             {
                 "player_id": "10229",
                 "espn_id": null,
@@ -5775,22 +5791,6 @@ window.__STATIC_DATA__ = {
                 "status": "Inactive",
                 "injury_status": "IR",
                 "search_rank": 126
-            },
-            {
-                "player_id": "12487",
-                "espn_id": null,
-                "name": "Terrance Ferguson",
-                "position": "TE",
-                "team": "LAR",
-                "age": 23,
-                "birth_date": "2003-03-07",
-                "college": "Oregon",
-                "height": "77",
-                "weight": "252",
-                "years_exp": 1,
-                "status": "Active",
-                "injury_status": null,
-                "search_rank": 141
             },
             {
                 "player_id": "12489",
@@ -5905,22 +5905,6 @@ window.__STATIC_DATA__ = {
                 "search_rank": 667
             },
             {
-                "player_id": "2133",
-                "espn_id": 16800,
-                "name": "Davante Adams",
-                "position": "WR",
-                "team": "LAR",
-                "age": 33,
-                "birth_date": "1992-12-24",
-                "college": "Fresno State",
-                "height": "73",
-                "weight": "204",
-                "years_exp": 12,
-                "status": "Active",
-                "injury_status": null,
-                "search_rank": 46
-            },
-            {
                 "player_id": "2449",
                 "espn_id": 2976212,
                 "name": "Stefon Diggs",
@@ -6015,22 +5999,6 @@ window.__STATIC_DATA__ = {
                 "status": "Active",
                 "injury_status": null,
                 "search_rank": 85
-            },
-            {
-                "player_id": "421",
-                "espn_id": 12483,
-                "name": "Matthew Stafford",
-                "position": "QB",
-                "team": "LAR",
-                "age": 38,
-                "birth_date": "1988-02-07",
-                "college": "Georgia",
-                "height": "75",
-                "weight": "214",
-                "years_exp": 17,
-                "status": "Active",
-                "injury_status": null,
-                "search_rank": 76
             },
             {
                 "player_id": "4950",
@@ -6161,6 +6129,22 @@ window.__STATIC_DATA__ = {
                 "search_rank": 66
             },
             {
+                "player_id": "8111",
+                "espn_id": null,
+                "name": "Cade Otton",
+                "position": "TE",
+                "team": "TB",
+                "age": 27,
+                "birth_date": "1999-04-15",
+                "college": "Washington",
+                "height": "77",
+                "weight": "247",
+                "years_exp": 4,
+                "status": "Active",
+                "injury_status": "Questionable",
+                "search_rank": 148
+            },
+            {
                 "player_id": "8205",
                 "espn_id": null,
                 "name": "Isiah Pacheco",
@@ -6191,6 +6175,22 @@ window.__STATIC_DATA__ = {
                 "status": "Active",
                 "injury_status": null,
                 "search_rank": 100
+            },
+            {
+                "player_id": "9758",
+                "espn_id": null,
+                "name": "C.J. Stroud",
+                "position": "QB",
+                "team": "HOU",
+                "age": 24,
+                "birth_date": "2001-10-03",
+                "college": "Ohio State",
+                "height": "75",
+                "weight": "218",
+                "years_exp": 3,
+                "status": "Active",
+                "injury_status": null,
+                "search_rank": 97
             }
         ]
     },
@@ -11620,6 +11620,66 @@ window.__STATIC_DATA__ = {
     }
   ],
   "transactions": [
+    {
+        "season": "2026",
+        "week": 1,
+        "created": "Aug 23, 2026 • 11:35 AM PT",
+        "transaction_id": "1397337448941395968",
+        "type": "trade",
+        "status": "complete",
+        "teams": [
+            "ddhk",
+            "spiffster"
+        ],
+        "assets_received": {
+            "spiffster": [
+                {
+                    "name": "Chris Rodriguez",
+                    "position": "RB",
+                    "team": "JAX"
+                },
+                {
+                    "name": "Cade Otton",
+                    "position": "TE",
+                    "team": "TB"
+                },
+                {
+                    "name": "C.J. Stroud",
+                    "position": "QB",
+                    "team": "HOU"
+                },
+                {
+                    "name": "2028 Round 2",
+                    "position": "PICK",
+                    "team": null,
+                    "original_owner": "ddhk"
+                }
+            ],
+            "ddhk": [
+                {
+                    "name": "Terrance Ferguson",
+                    "position": "TE",
+                    "team": "LAR"
+                },
+                {
+                    "name": "Davante Adams",
+                    "position": "WR",
+                    "team": "LAR"
+                },
+                {
+                    "name": "Matthew Stafford",
+                    "position": "QB",
+                    "team": "LAR"
+                },
+                {
+                    "name": "2029 Round 2",
+                    "position": "PICK",
+                    "team": null,
+                    "original_owner": "spiffster"
+                }
+            ]
+        }
+    },
     {
         "season": "2026",
         "week": 1,
@@ -63555,6 +63615,16 @@ window.__STATIC_DATA__ = {
     },
     {
         "season": "2028",
+        "round": 2,
+        "roster_id": "1",
+        "owner_id": "2",
+        "previous_owner_id": "1",
+        "owner_name": "spiffster",
+        "original_owner_name": "ddhk",
+        "previous_owner_name": "ddhk"
+    },
+    {
+        "season": "2028",
         "round": 3,
         "roster_id": "1",
         "owner_id": "2",
@@ -63646,6 +63716,16 @@ window.__STATIC_DATA__ = {
     {
         "season": "2029",
         "round": 1,
+        "roster_id": "2",
+        "owner_id": "1",
+        "previous_owner_id": "2",
+        "owner_name": "ddhk",
+        "original_owner_name": "spiffster",
+        "previous_owner_name": "spiffster"
+    },
+    {
+        "season": "2029",
+        "round": 2,
         "roster_id": "2",
         "owner_id": "1",
         "previous_owner_id": "2",
