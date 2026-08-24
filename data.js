@@ -9403,22 +9403,6 @@ window.__STATIC_DATA__ = {
                 "search_rank": 697
             },
             {
-                "player_id": "4234",
-                "espn_id": 3121409,
-                "name": "Noah Brown",
-                "position": "WR",
-                "team": "LV",
-                "age": 30,
-                "birth_date": "1996-01-06",
-                "college": "Ohio State",
-                "height": "74",
-                "weight": "225",
-                "years_exp": 9,
-                "status": "Active",
-                "injury_status": null,
-                "search_rank": 634
-            },
-            {
                 "player_id": "5844",
                 "espn_id": 4036133,
                 "name": "T.J. Hockenson",
@@ -9561,22 +9545,6 @@ window.__STATIC_DATA__ = {
                 "status": "Active",
                 "injury_status": null,
                 "search_rank": 628
-            },
-            {
-                "player_id": "8208",
-                "espn_id": null,
-                "name": "Tyler Badie",
-                "position": "RB",
-                "team": "DEN",
-                "age": 26,
-                "birth_date": "2000-02-07",
-                "college": "Missouri",
-                "height": "68",
-                "weight": "197",
-                "years_exp": 4,
-                "status": "Active",
-                "injury_status": null,
-                "search_rank": 999
             },
             {
                 "player_id": "8676",
@@ -11572,6 +11540,50 @@ window.__STATIC_DATA__ = {
     }
   ],
   "transactions": [
+    {
+        "season": "2026",
+        "week": 1,
+        "created": "Aug 24, 2026 • 1:11 PM PT",
+        "transaction_id": "1397724132510040064",
+        "type": "free_agent",
+        "status": "complete",
+        "teams": [
+            "paddleham"
+        ],
+        "added": [],
+        "dropped": [
+            {
+                "name": "Tyler Badie",
+                "position": "RB",
+                "team": "DEN"
+            }
+        ],
+        "faab": 0,
+        "waiver_bid": 0,
+        "notes": null
+    },
+    {
+        "season": "2026",
+        "week": 1,
+        "created": "Aug 24, 2026 • 1:09 PM PT",
+        "transaction_id": "1397723644964188160",
+        "type": "free_agent",
+        "status": "complete",
+        "teams": [
+            "paddleham"
+        ],
+        "added": [],
+        "dropped": [
+            {
+                "name": "Noah Brown",
+                "position": "WR",
+                "team": "LV"
+            }
+        ],
+        "faab": 0,
+        "waiver_bid": 0,
+        "notes": null
+    },
     {
         "season": "2026",
         "week": 1,
