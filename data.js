@@ -5825,6 +5825,22 @@ window.__STATIC_DATA__ = {
                 "search_rank": 476
             },
             {
+                "player_id": "12542",
+                "espn_id": null,
+                "name": "Efton Chism",
+                "position": "WR",
+                "team": "NE",
+                "age": 24,
+                "birth_date": "2001-10-26",
+                "college": "Eastern Washington",
+                "height": "70",
+                "weight": "198",
+                "years_exp": 1,
+                "status": "Active",
+                "injury_status": null,
+                "search_rank": 572
+            },
+            {
                 "player_id": "13338",
                 "espn_id": null,
                 "name": "Kevin Coleman",
@@ -6127,22 +6143,6 @@ window.__STATIC_DATA__ = {
                 "status": "Active",
                 "injury_status": "Questionable",
                 "search_rank": 66
-            },
-            {
-                "player_id": "8111",
-                "espn_id": null,
-                "name": "Cade Otton",
-                "position": "TE",
-                "team": "TB",
-                "age": 27,
-                "birth_date": "1999-04-15",
-                "college": "Washington",
-                "height": "77",
-                "weight": "247",
-                "years_exp": 4,
-                "status": "Active",
-                "injury_status": "Questionable",
-                "search_rank": 148
             },
             {
                 "player_id": "8205",
@@ -11620,6 +11620,34 @@ window.__STATIC_DATA__ = {
     }
   ],
   "transactions": [
+    {
+        "season": "2026",
+        "week": 1,
+        "created": "Aug 24, 2026 • 11:00 AM PT",
+        "transaction_id": "1397690979862994944",
+        "type": "free_agent",
+        "status": "complete",
+        "teams": [
+            "spiffster"
+        ],
+        "added": [
+            {
+                "name": "Efton Chism",
+                "position": "WR",
+                "team": "NE"
+            }
+        ],
+        "dropped": [
+            {
+                "name": "Cade Otton",
+                "position": "TE",
+                "team": "TB"
+            }
+        ],
+        "faab": 0,
+        "waiver_bid": 0,
+        "notes": null
+    },
     {
         "season": "2026",
         "week": 1,
