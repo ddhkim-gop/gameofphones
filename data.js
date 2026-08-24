@@ -5195,6 +5195,22 @@ window.__STATIC_DATA__ = {
                 "search_rank": 95
             },
             {
+                "player_id": "11574",
+                "espn_id": null,
+                "name": "Dylan Laube",
+                "position": "RB",
+                "team": "LV",
+                "age": 26,
+                "birth_date": "1999-12-14",
+                "college": "New Hampshire",
+                "height": "69",
+                "weight": "204",
+                "years_exp": 2,
+                "status": "Active",
+                "injury_status": null,
+                "search_rank": 520
+            },
+            {
                 "player_id": "11628",
                 "espn_id": null,
                 "name": "Marvin Harrison",
@@ -5401,22 +5417,6 @@ window.__STATIC_DATA__ = {
                 "status": "Active",
                 "injury_status": null,
                 "search_rank": 553
-            },
-            {
-                "player_id": "13315",
-                "espn_id": null,
-                "name": "Dean Connors",
-                "position": "RB",
-                "team": "LAR",
-                "age": 22,
-                "birth_date": "2003-08-29",
-                "college": "Houston",
-                "height": "71",
-                "weight": "206",
-                "years_exp": 0,
-                "status": "Active",
-                "injury_status": null,
-                "search_rank": 416
             },
             {
                 "player_id": "13329",
@@ -11620,6 +11620,34 @@ window.__STATIC_DATA__ = {
     }
   ],
   "transactions": [
+    {
+        "season": "2026",
+        "week": 1,
+        "created": "Aug 23, 2026 • 3:56 PM PT",
+        "transaction_id": "1397403164973494272",
+        "type": "free_agent",
+        "status": "complete",
+        "teams": [
+            "ddhk"
+        ],
+        "added": [
+            {
+                "name": "Dylan Laube",
+                "position": "RB",
+                "team": "LV"
+            }
+        ],
+        "dropped": [
+            {
+                "name": "Dean Connors",
+                "position": "RB",
+                "team": "LAR"
+            }
+        ],
+        "faab": 0,
+        "waiver_bid": 0,
+        "notes": null
+    },
     {
         "season": "2026",
         "week": 1,
