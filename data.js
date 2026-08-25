@@ -5195,22 +5195,6 @@ window.__STATIC_DATA__ = {
                 "search_rank": 93
             },
             {
-                "player_id": "11574",
-                "espn_id": null,
-                "name": "Dylan Laube",
-                "position": "RB",
-                "team": "LV",
-                "age": 26,
-                "birth_date": "1999-12-14",
-                "college": "New Hampshire",
-                "height": "69",
-                "weight": "204",
-                "years_exp": 2,
-                "status": "Active",
-                "injury_status": null,
-                "search_rank": 407
-            },
-            {
                 "player_id": "11628",
                 "espn_id": null,
                 "name": "Marvin Harrison",
@@ -5241,22 +5225,6 @@ window.__STATIC_DATA__ = {
                 "status": "Active",
                 "injury_status": null,
                 "search_rank": 688
-            },
-            {
-                "player_id": "11651",
-                "espn_id": null,
-                "name": "Isaac Guerendo",
-                "position": "RB",
-                "team": "SF",
-                "age": 26,
-                "birth_date": "2000-06-28",
-                "college": "Louisville",
-                "height": "72",
-                "weight": "221",
-                "years_exp": 2,
-                "status": "Active",
-                "injury_status": "PUP",
-                "search_rank": 678
             },
             {
                 "player_id": "11834",
@@ -5417,6 +5385,22 @@ window.__STATIC_DATA__ = {
                 "status": "Active",
                 "injury_status": null,
                 "search_rank": 545
+            },
+            {
+                "player_id": "13315",
+                "espn_id": null,
+                "name": "Dean Connors",
+                "position": "RB",
+                "team": "LAR",
+                "age": 22,
+                "birth_date": "2003-08-29",
+                "college": "Houston",
+                "height": "71",
+                "weight": "206",
+                "years_exp": 0,
+                "status": "Active",
+                "injury_status": null,
+                "search_rank": 628
             },
             {
                 "player_id": "13329",
@@ -5609,6 +5593,22 @@ window.__STATIC_DATA__ = {
                 "status": "Active",
                 "injury_status": null,
                 "search_rank": 32
+            },
+            {
+                "player_id": "7610",
+                "espn_id": null,
+                "name": "Trey Lance",
+                "position": "QB",
+                "team": "LAC",
+                "age": 26,
+                "birth_date": "2000-05-09",
+                "college": "North Dakota State",
+                "height": "76",
+                "weight": "226",
+                "years_exp": 5,
+                "status": "Active",
+                "injury_status": null,
+                "search_rank": 640
             },
             {
                 "player_id": "8136",
@@ -11540,6 +11540,62 @@ window.__STATIC_DATA__ = {
     }
   ],
   "transactions": [
+    {
+        "season": "2026",
+        "week": 1,
+        "created": "Aug 25, 2026 • 7:54 AM PT",
+        "transaction_id": "1398006654116618240",
+        "type": "free_agent",
+        "status": "complete",
+        "teams": [
+            "ddhk"
+        ],
+        "added": [
+            {
+                "name": "Dean Connors",
+                "position": "RB",
+                "team": "LAR"
+            }
+        ],
+        "dropped": [
+            {
+                "name": "Dylan Laube",
+                "position": "RB",
+                "team": "LV"
+            }
+        ],
+        "faab": 0,
+        "waiver_bid": 0,
+        "notes": null
+    },
+    {
+        "season": "2026",
+        "week": 1,
+        "created": "Aug 25, 2026 • 7:53 AM PT",
+        "transaction_id": "1398006368958447616",
+        "type": "free_agent",
+        "status": "complete",
+        "teams": [
+            "ddhk"
+        ],
+        "added": [
+            {
+                "name": "Trey Lance",
+                "position": "QB",
+                "team": "LAC"
+            }
+        ],
+        "dropped": [
+            {
+                "name": "Isaac Guerendo",
+                "position": "RB",
+                "team": "SF"
+            }
+        ],
+        "faab": 0,
+        "waiver_bid": 0,
+        "notes": null
+    },
     {
         "season": "2026",
         "week": 1,
