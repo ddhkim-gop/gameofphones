@@ -5809,6 +5809,22 @@ window.__STATIC_DATA__ = {
                 "search_rank": 81
             },
             {
+                "player_id": "11573",
+                "espn_id": null,
+                "name": "Frank Gore",
+                "position": "RB",
+                "team": "BUF",
+                "age": 24,
+                "birth_date": "2002-03-13",
+                "college": "Southern Miss",
+                "height": "68",
+                "weight": "201",
+                "years_exp": 2,
+                "status": "Active",
+                "injury_status": null,
+                "search_rank": 493
+            },
+            {
                 "player_id": "11618",
                 "espn_id": null,
                 "name": "Jalen McMillan",
@@ -5951,22 +5967,6 @@ window.__STATIC_DATA__ = {
                 "status": "Inactive",
                 "injury_status": "IR",
                 "search_rank": 400
-            },
-            {
-                "player_id": "13418",
-                "espn_id": null,
-                "name": "Robert Henry",
-                "position": "RB",
-                "team": "WAS",
-                "age": 24,
-                "birth_date": "2001-12-31",
-                "college": "UTSA",
-                "height": "69",
-                "weight": "196",
-                "years_exp": 0,
-                "status": "Active",
-                "injury_status": null,
-                "search_rank": 534
             },
             {
                 "player_id": "13420",
@@ -11540,6 +11540,34 @@ window.__STATIC_DATA__ = {
     }
   ],
   "transactions": [
+    {
+        "season": "2026",
+        "week": 1,
+        "created": "Aug 26, 2026 • 4:59 AM PT",
+        "transaction_id": "1398325025819381760",
+        "type": "free_agent",
+        "status": "complete",
+        "teams": [
+            "spiffster"
+        ],
+        "added": [
+            {
+                "name": "Frank Gore",
+                "position": "RB",
+                "team": "BUF"
+            }
+        ],
+        "dropped": [
+            {
+                "name": "Robert Henry",
+                "position": "RB",
+                "team": "WAS"
+            }
+        ],
+        "faab": 0,
+        "waiver_bid": 0,
+        "notes": null
+    },
     {
         "season": "2026",
         "week": 1,
