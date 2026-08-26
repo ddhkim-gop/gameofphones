@@ -9601,6 +9601,22 @@ window.__STATIC_DATA__ = {
         "roster_id": 10,
         "players": [
             {
+                "player_id": "10218",
+                "espn_id": null,
+                "name": "Xavier Hutchinson",
+                "position": "WR",
+                "team": "HOU",
+                "age": 26,
+                "birth_date": "2000-06-01",
+                "college": "Iowa State",
+                "height": "75",
+                "weight": "210",
+                "years_exp": 3,
+                "status": "Active",
+                "injury_status": null,
+                "search_rank": 660
+            },
+            {
                 "player_id": "10222",
                 "espn_id": null,
                 "name": "Jayden Reed",
@@ -9919,22 +9935,6 @@ window.__STATIC_DATA__ = {
                 "status": "Active",
                 "injury_status": null,
                 "search_rank": 92
-            },
-            {
-                "player_id": "4147",
-                "espn_id": 3116389,
-                "name": "Samaje Perine",
-                "position": "RB",
-                "team": "CIN",
-                "age": 30,
-                "birth_date": "1995-09-16",
-                "college": "Oklahoma",
-                "height": "71",
-                "weight": "240",
-                "years_exp": 9,
-                "status": "Active",
-                "injury_status": null,
-                "search_rank": 426
             },
             {
                 "player_id": "6768",
@@ -11540,6 +11540,34 @@ window.__STATIC_DATA__ = {
     }
   ],
   "transactions": [
+    {
+        "season": "2026",
+        "week": 1,
+        "created": "Aug 26, 2026 • 10:19 AM PT",
+        "transaction_id": "1398405509681287168",
+        "type": "free_agent",
+        "status": "complete",
+        "teams": [
+            "velmixon"
+        ],
+        "added": [
+            {
+                "name": "Xavier Hutchinson",
+                "position": "WR",
+                "team": "HOU"
+            }
+        ],
+        "dropped": [
+            {
+                "name": "Samaje Perine",
+                "position": "RB",
+                "team": "CIN"
+            }
+        ],
+        "faab": 0,
+        "waiver_bid": 0,
+        "notes": null
+    },
     {
         "season": "2026",
         "week": 1,
