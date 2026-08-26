@@ -7711,7 +7711,7 @@ window.__STATIC_DATA__ = {
                 "weight": "183",
                 "years_exp": 3,
                 "status": "Active",
-                "injury_status": null,
+                "injury_status": "Questionable",
                 "search_rank": 42
             }
         ]
@@ -15652,7 +15652,7 @@ window.__STATIC_DATA__ = {
             {
                 "name": "Tahj Washington",
                 "position": "WR",
-                "team": "MIA"
+                "team": null
             }
         ],
         "faab": 0,
@@ -15795,7 +15795,7 @@ window.__STATIC_DATA__ = {
             {
                 "name": "Tahj Washington",
                 "position": "WR",
-                "team": "MIA"
+                "team": null
             }
         ],
         "dropped": [
