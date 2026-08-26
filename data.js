@@ -10749,22 +10749,6 @@ window.__STATIC_DATA__ = {
                 "search_rank": 690
             },
             {
-                "player_id": "12713",
-                "espn_id": null,
-                "name": "Andy Borregales",
-                "position": "K",
-                "team": "NE",
-                "age": 23,
-                "birth_date": "2003-01-02",
-                "college": "Miami (FL)",
-                "height": "71",
-                "weight": "202",
-                "years_exp": 1,
-                "status": "Active",
-                "injury_status": null,
-                "search_rank": 155
-            },
-            {
                 "player_id": "13278",
                 "espn_id": null,
                 "name": "Max Klare",
@@ -10843,6 +10827,22 @@ window.__STATIC_DATA__ = {
                 "status": "Active",
                 "injury_status": "Questionable",
                 "search_rank": 5
+            },
+            {
+                "player_id": "4227",
+                "espn_id": 3055899,
+                "name": "Harrison Butker",
+                "position": "K",
+                "team": "KC",
+                "age": 31,
+                "birth_date": "1995-07-14",
+                "college": "Georgia Tech",
+                "height": "76",
+                "weight": "205",
+                "years_exp": 9,
+                "status": "Active",
+                "injury_status": null,
+                "search_rank": 155
             },
             {
                 "player_id": "4983",
@@ -11540,6 +11540,34 @@ window.__STATIC_DATA__ = {
     }
   ],
   "transactions": [
+    {
+        "season": "2026",
+        "week": 1,
+        "created": "Aug 25, 2026 • 9:07 PM PT",
+        "transaction_id": "1398206113228300288",
+        "type": "free_agent",
+        "status": "complete",
+        "teams": [
+            "ganathan"
+        ],
+        "added": [
+            {
+                "name": "Harrison Butker",
+                "position": "K",
+                "team": "KC"
+            }
+        ],
+        "dropped": [
+            {
+                "name": "Andy Borregales",
+                "position": "K",
+                "team": "NE"
+            }
+        ],
+        "faab": 0,
+        "waiver_bid": 0,
+        "notes": null
+    },
     {
         "season": "2026",
         "week": 1,
