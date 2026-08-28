@@ -7805,7 +7805,7 @@ window.__STATIC_DATA__ = {
                 "espn_id": null,
                 "name": "Jarquez Hunter",
                 "position": "RB",
-                "team": "LAR",
+                "team": "MIA",
                 "age": 23,
                 "birth_date": "2002-12-29",
                 "college": "Auburn",
@@ -8069,7 +8069,7 @@ window.__STATIC_DATA__ = {
                 "weight": "185",
                 "years_exp": 4,
                 "status": "Active",
-                "injury_status": null,
+                "injury_status": "Questionable",
                 "search_rank": 105
             },
             {
@@ -8794,7 +8794,7 @@ window.__STATIC_DATA__ = {
                 "name": "Kimani Vidal",
                 "position": "RB",
                 "team": "LAC",
-                "age": 24,
+                "age": 25,
                 "birth_date": "2001-08-28",
                 "college": "Troy",
                 "height": "68",
@@ -15261,7 +15261,7 @@ window.__STATIC_DATA__ = {
             {
                 "name": "Jonnu Smith",
                 "position": "TE",
-                "team": null
+                "team": "GB"
             }
         ],
         "faab": 0,
