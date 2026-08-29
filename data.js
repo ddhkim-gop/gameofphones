@@ -6483,7 +6483,7 @@ window.__STATIC_DATA__ = {
                 "weight": "264",
                 "years_exp": 0,
                 "status": "Active",
-                "injury_status": null,
+                "injury_status": "Questionable",
                 "search_rank": 537
             },
             {
@@ -16708,7 +16708,7 @@ window.__STATIC_DATA__ = {
             {
                 "name": "Corey Kiner",
                 "position": "RB",
-                "team": "ARI"
+                "team": "NE"
             }
         ],
         "faab": 0,
