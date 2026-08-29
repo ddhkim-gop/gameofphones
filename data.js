@@ -7351,7 +7351,7 @@ window.__STATIC_DATA__ = {
                 "espn_id": null,
                 "name": "Quinn Ewers",
                 "position": "QB",
-                "team": "MIA",
+                "team": "JAX",
                 "age": 23,
                 "birth_date": "2003-03-15",
                 "college": "Texas",
