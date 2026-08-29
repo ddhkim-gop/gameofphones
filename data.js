@@ -5296,7 +5296,7 @@ window.__STATIC_DATA__ = {
                 "name": "Dean Connors",
                 "position": "RB",
                 "team": "LAR",
-                "age": 22,
+                "age": 23,
                 "birth_date": "2003-08-29",
                 "college": "Houston",
                 "height": "71",
@@ -5719,7 +5719,7 @@ window.__STATIC_DATA__ = {
                 "weight": "240",
                 "years_exp": 0,
                 "status": "Active",
-                "injury_status": "Questionable",
+                "injury_status": null,
                 "search_rank": 365
             },
             {
@@ -5853,7 +5853,7 @@ window.__STATIC_DATA__ = {
                 "weight": "210",
                 "years_exp": 2,
                 "status": "Active",
-                "injury_status": null,
+                "injury_status": "Out",
                 "search_rank": 110
             },
             {
@@ -6355,7 +6355,7 @@ window.__STATIC_DATA__ = {
                 "weight": "165",
                 "years_exp": 2,
                 "status": "Active",
-                "injury_status": "Questionable",
+                "injury_status": null,
                 "search_rank": 122
             },
             {
@@ -6531,7 +6531,7 @@ window.__STATIC_DATA__ = {
                 "weight": "191",
                 "years_exp": 10,
                 "status": "Active",
-                "injury_status": "Questionable",
+                "injury_status": "Out",
                 "search_rank": 145
             },
             {
@@ -8133,7 +8133,7 @@ window.__STATIC_DATA__ = {
                 "weight": "182",
                 "years_exp": 3,
                 "status": "Active",
-                "injury_status": null,
+                "injury_status": "Questionable",
                 "search_rank": 192
             },
             {
@@ -10243,7 +10243,7 @@ window.__STATIC_DATA__ = {
                 "weight": "165",
                 "years_exp": 1,
                 "status": "Active",
-                "injury_status": "Questionable",
+                "injury_status": null,
                 "search_rank": 674
             },
             {
@@ -10745,7 +10745,7 @@ window.__STATIC_DATA__ = {
                 "weight": "198",
                 "years_exp": 1,
                 "status": "Active",
-                "injury_status": null,
+                "injury_status": "Questionable",
                 "search_rank": 690
             },
             {
