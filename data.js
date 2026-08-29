@@ -6861,22 +6861,6 @@ window.__STATIC_DATA__ = {
                 "search_rank": 61
             },
             {
-                "player_id": "12688",
-                "espn_id": null,
-                "name": "Cam Miller",
-                "position": "QB",
-                "team": "MIA",
-                "age": 25,
-                "birth_date": "2001-06-18",
-                "college": "North Dakota State",
-                "height": "73",
-                "weight": "210",
-                "years_exp": 1,
-                "status": "Active",
-                "injury_status": null,
-                "search_rank": 666
-            },
-            {
                 "player_id": "13324",
                 "espn_id": null,
                 "name": "Matt Hibner",
@@ -6907,6 +6891,22 @@ window.__STATIC_DATA__ = {
                 "status": "Active",
                 "injury_status": "Questionable",
                 "search_rank": 458
+            },
+            {
+                "player_id": "13603",
+                "espn_id": null,
+                "name": "Gregory Desrosiers",
+                "position": "RB",
+                "team": "LAC",
+                "age": null,
+                "birth_date": null,
+                "college": "Memphis",
+                "height": "71",
+                "weight": "200",
+                "years_exp": 0,
+                "status": "Active",
+                "injury_status": null,
+                "search_rank": 300
             },
             {
                 "player_id": "1373",
@@ -6987,22 +6987,6 @@ window.__STATIC_DATA__ = {
                 "status": "Active",
                 "injury_status": "Questionable",
                 "search_rank": 87
-            },
-            {
-                "player_id": "4663",
-                "espn_id": 3068267,
-                "name": "Austin Ekeler",
-                "position": "RB",
-                "team": null,
-                "age": 31,
-                "birth_date": "1995-05-17",
-                "college": "Western Colorado",
-                "height": "70",
-                "weight": "200",
-                "years_exp": 9,
-                "status": "Active",
-                "injury_status": null,
-                "search_rank": 317
             },
             {
                 "player_id": "4866",
@@ -11540,6 +11524,56 @@ window.__STATIC_DATA__ = {
     }
   ],
   "transactions": [
+    {
+        "season": "2026",
+        "week": 1,
+        "created": "Aug 29, 2026 • 4:26 AM PT",
+        "transaction_id": "1399403868206428160",
+        "type": "free_agent",
+        "status": "complete",
+        "teams": [
+            "jonsung"
+        ],
+        "added": [
+            {
+                "name": "Gregory Desrosiers",
+                "position": "RB",
+                "team": "LAC"
+            }
+        ],
+        "dropped": [
+            {
+                "name": "Cam Miller",
+                "position": "QB",
+                "team": "MIA"
+            }
+        ],
+        "faab": 0,
+        "waiver_bid": 0,
+        "notes": null
+    },
+    {
+        "season": "2026",
+        "week": 1,
+        "created": "Aug 29, 2026 • 4:24 AM PT",
+        "transaction_id": "1399403461119856640",
+        "type": "free_agent",
+        "status": "complete",
+        "teams": [
+            "jonsung"
+        ],
+        "added": [],
+        "dropped": [
+            {
+                "name": "Austin Ekeler",
+                "position": "RB",
+                "team": null
+            }
+        ],
+        "faab": 0,
+        "waiver_bid": 0,
+        "notes": null
+    },
     {
         "season": "2026",
         "week": 1,
