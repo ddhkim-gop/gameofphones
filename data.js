@@ -7311,7 +7311,7 @@ window.__STATIC_DATA__ = {
                 "weight": "216",
                 "years_exp": 2,
                 "status": "Active",
-                "injury_status": "Questionable",
+                "injury_status": null,
                 "search_rank": 527
             },
             {
@@ -8507,7 +8507,7 @@ window.__STATIC_DATA__ = {
                 "weight": "240",
                 "years_exp": 0,
                 "status": "Active",
-                "injury_status": "Questionable",
+                "injury_status": null,
                 "search_rank": 212
             },
             {
@@ -11021,22 +11021,6 @@ window.__STATIC_DATA__ = {
                 "search_rank": 203
             },
             {
-                "player_id": "7608",
-                "espn_id": null,
-                "name": "Khalil Herbert",
-                "position": "RB",
-                "team": "SF",
-                "age": 28,
-                "birth_date": "1998-04-21",
-                "college": "Virginia Tech",
-                "height": "69",
-                "weight": "212",
-                "years_exp": 5,
-                "status": "Active",
-                "injury_status": null,
-                "search_rank": 690
-            },
-            {
                 "player_id": "7611",
                 "espn_id": null,
                 "name": "Rhamondre Stevenson",
@@ -11051,6 +11035,22 @@ window.__STATIC_DATA__ = {
                 "status": "Active",
                 "injury_status": null,
                 "search_rank": 58
+            },
+            {
+                "player_id": "8111",
+                "espn_id": null,
+                "name": "Cade Otton",
+                "position": "TE",
+                "team": "TB",
+                "age": 27,
+                "birth_date": "1999-04-15",
+                "college": "Washington",
+                "height": "77",
+                "weight": "247",
+                "years_exp": 4,
+                "status": "Active",
+                "injury_status": null,
+                "search_rank": 148
             },
             {
                 "player_id": "8150",
@@ -11524,6 +11524,34 @@ window.__STATIC_DATA__ = {
     }
   ],
   "transactions": [
+    {
+        "season": "2026",
+        "week": 1,
+        "created": "Aug 29, 2026 • 12:51 PM PT",
+        "transaction_id": "1399530898356985856",
+        "type": "free_agent",
+        "status": "complete",
+        "teams": [
+            "ganathan"
+        ],
+        "added": [
+            {
+                "name": "Cade Otton",
+                "position": "TE",
+                "team": "TB"
+            }
+        ],
+        "dropped": [
+            {
+                "name": "Khalil Herbert",
+                "position": "RB",
+                "team": "SF"
+            }
+        ],
+        "faab": 0,
+        "waiver_bid": 0,
+        "notes": null
+    },
     {
         "season": "2026",
         "week": 1,
