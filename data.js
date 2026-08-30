@@ -8515,7 +8515,7 @@ window.__STATIC_DATA__ = {
                 "espn_id": null,
                 "name": "Jam Miller",
                 "position": "RB",
-                "team": "NE",
+                "team": null,
                 "age": null,
                 "birth_date": null,
                 "college": "Alabama",
@@ -9617,6 +9617,22 @@ window.__STATIC_DATA__ = {
                 "search_rank": 102
             },
             {
+                "player_id": "11237",
+                "espn_id": null,
+                "name": "Jacob Saylors",
+                "position": "RB",
+                "team": "DET",
+                "age": 25,
+                "birth_date": "2001-03-08",
+                "college": "East Tennessee State",
+                "height": "71",
+                "weight": "195",
+                "years_exp": 3,
+                "status": "Active",
+                "injury_status": null,
+                "search_rank": 675
+            },
+            {
                 "player_id": "11370",
                 "espn_id": null,
                 "name": "Chris Brooks",
@@ -9745,20 +9761,20 @@ window.__STATIC_DATA__ = {
                 "search_rank": 37
             },
             {
-                "player_id": "12503",
+                "player_id": "12499",
                 "espn_id": null,
-                "name": "Isaiah Bond",
+                "name": "Elic Ayomanor",
                 "position": "WR",
-                "team": "CLE",
-                "age": 22,
-                "birth_date": "2004-03-15",
-                "college": "Texas",
-                "height": "71",
-                "weight": "180",
+                "team": "TEN",
+                "age": 23,
+                "birth_date": "2003-06-03",
+                "college": "Stanford",
+                "height": "74",
+                "weight": "206",
                 "years_exp": 1,
                 "status": "Active",
                 "injury_status": null,
-                "search_rank": 683
+                "search_rank": 185
             },
             {
                 "player_id": "12508",
@@ -9807,22 +9823,6 @@ window.__STATIC_DATA__ = {
                 "status": "Active",
                 "injury_status": null,
                 "search_rank": 90
-            },
-            {
-                "player_id": "13270",
-                "espn_id": null,
-                "name": "CJ Daniels",
-                "position": "WR",
-                "team": "LAR",
-                "age": 24,
-                "birth_date": "2002-01-04",
-                "college": "Miami (FL)",
-                "height": "74",
-                "weight": "202",
-                "years_exp": 0,
-                "status": "Active",
-                "injury_status": null,
-                "search_rank": 550
             },
             {
                 "player_id": "13294",
@@ -11524,6 +11524,78 @@ window.__STATIC_DATA__ = {
     }
   ],
   "transactions": [
+    {
+        "season": "2026",
+        "week": 1,
+        "created": "Aug 30, 2026 • 8:59 AM PT",
+        "transaction_id": "1399834985883512832",
+        "type": "free_agent",
+        "status": "complete",
+        "teams": [
+            "velmixon"
+        ],
+        "added": [
+            {
+                "name": "Elic Ayomanor",
+                "position": "WR",
+                "team": "TEN"
+            }
+        ],
+        "dropped": [
+            {
+                "name": "CJ Daniels",
+                "position": "WR",
+                "team": "LAR"
+            }
+        ],
+        "faab": 0,
+        "waiver_bid": 0,
+        "notes": null
+    },
+    {
+        "season": "2026",
+        "week": 1,
+        "created": "Aug 30, 2026 • 8:29 AM PT",
+        "transaction_id": "1399827390535888896",
+        "type": "free_agent",
+        "status": "complete",
+        "teams": [
+            "velmixon"
+        ],
+        "added": [
+            {
+                "name": "Jacob Saylors",
+                "position": "RB",
+                "team": "DET"
+            }
+        ],
+        "dropped": [],
+        "faab": 0,
+        "waiver_bid": 0,
+        "notes": null
+    },
+    {
+        "season": "2026",
+        "week": 1,
+        "created": "Aug 30, 2026 • 8:29 AM PT",
+        "transaction_id": "1399827306989555712",
+        "type": "free_agent",
+        "status": "complete",
+        "teams": [
+            "velmixon"
+        ],
+        "added": [],
+        "dropped": [
+            {
+                "name": "Isaiah Bond",
+                "position": "WR",
+                "team": "CLE"
+            }
+        ],
+        "faab": 0,
+        "waiver_bid": 0,
+        "notes": null
+    },
     {
         "season": "2026",
         "week": 1,
@@ -14143,7 +14215,7 @@ window.__STATIC_DATA__ = {
             {
                 "name": "Theo Wease",
                 "position": "WR",
-                "team": "MIA"
+                "team": null
             }
         ],
         "faab": 0,
@@ -14352,7 +14424,7 @@ window.__STATIC_DATA__ = {
             {
                 "name": "Jam Miller",
                 "position": "RB",
-                "team": "NE"
+                "team": null
             }
         ],
         "dropped": [
@@ -15329,7 +15401,7 @@ window.__STATIC_DATA__ = {
             {
                 "name": "Hassan Haskins",
                 "position": "RB",
-                "team": "NE"
+                "team": null
             }
         ],
         "faab": 0,
@@ -16529,7 +16601,7 @@ window.__STATIC_DATA__ = {
             {
                 "name": "Theo Wease",
                 "position": "WR",
-                "team": "MIA"
+                "team": null
             }
         ],
         "dropped": [
