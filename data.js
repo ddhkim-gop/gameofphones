@@ -5809,22 +5809,6 @@ window.__STATIC_DATA__ = {
                 "search_rank": 81
             },
             {
-                "player_id": "11573",
-                "espn_id": null,
-                "name": "Frank Gore",
-                "position": "RB",
-                "team": "BUF",
-                "age": 24,
-                "birth_date": "2002-03-13",
-                "college": "Southern Miss",
-                "height": "68",
-                "weight": "201",
-                "years_exp": 2,
-                "status": "Active",
-                "injury_status": null,
-                "search_rank": 672
-            },
-            {
                 "player_id": "11618",
                 "espn_id": null,
                 "name": "Jalen McMillan",
@@ -6095,6 +6079,22 @@ window.__STATIC_DATA__ = {
                 "status": "Active",
                 "injury_status": null,
                 "search_rank": 85
+            },
+            {
+                "player_id": "4663",
+                "espn_id": 3068267,
+                "name": "Austin Ekeler",
+                "position": "RB",
+                "team": null,
+                "age": 31,
+                "birth_date": "1995-05-17",
+                "college": "Western Colorado",
+                "height": "70",
+                "weight": "200",
+                "years_exp": 9,
+                "status": "Active",
+                "injury_status": null,
+                "search_rank": 317
             },
             {
                 "player_id": "4950",
@@ -6531,7 +6531,7 @@ window.__STATIC_DATA__ = {
                 "weight": "191",
                 "years_exp": 10,
                 "status": "Active",
-                "injury_status": "Out",
+                "injury_status": "Questionable",
                 "search_rank": 145
             },
             {
@@ -11551,6 +11551,34 @@ window.__STATIC_DATA__ = {
         "faab": 0,
         "waiver_bid": 0,
         "notes": null
+    },
+    {
+        "season": "2026",
+        "week": 1,
+        "created": "Aug 29, 2026 • 5:44 AM PT",
+        "transaction_id": "1399423542684094464",
+        "type": "waiver",
+        "status": "complete",
+        "teams": [
+            "spiffster"
+        ],
+        "added": [
+            {
+                "name": "Austin Ekeler",
+                "position": "RB",
+                "team": null
+            }
+        ],
+        "dropped": [
+            {
+                "name": "Frank Gore",
+                "position": "RB",
+                "team": "BUF"
+            }
+        ],
+        "faab": 0,
+        "waiver_bid": 0,
+        "notes": "Your waiver claim was processed successfully!"
     },
     {
         "season": "2026",
