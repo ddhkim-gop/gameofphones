@@ -5424,7 +5424,7 @@ window.__STATIC_DATA__ = {
                 "name": "Rashid Shaheed",
                 "position": "WR",
                 "team": "SEA",
-                "age": 27,
+                "age": 28,
                 "birth_date": "1998-08-31",
                 "college": "Weber State",
                 "height": "72",
@@ -6108,7 +6108,7 @@ window.__STATIC_DATA__ = {
                 "height": "71",
                 "weight": "200",
                 "years_exp": 8,
-                "status": "Active",
+                "status": "Inactive",
                 "injury_status": "Questionable",
                 "search_rank": 210
             },
@@ -6893,20 +6893,20 @@ window.__STATIC_DATA__ = {
                 "search_rank": 459
             },
             {
-                "player_id": "13603",
+                "player_id": "13425",
                 "espn_id": null,
-                "name": "Gregory Desrosiers",
-                "position": "RB",
-                "team": "LAC",
-                "age": null,
-                "birth_date": null,
-                "college": "Memphis",
-                "height": "71",
-                "weight": "200",
+                "name": "Jalon Daniels",
+                "position": "QB",
+                "team": "TB",
+                "age": 23,
+                "birth_date": "2002-10-29",
+                "college": "Kansas",
+                "height": "72",
+                "weight": "219",
                 "years_exp": 0,
                 "status": "Active",
                 "injury_status": null,
-                "search_rank": 525
+                "search_rank": 625
             },
             {
                 "player_id": "1373",
@@ -10665,7 +10665,7 @@ window.__STATIC_DATA__ = {
                 "weight": "213",
                 "years_exp": 1,
                 "status": "Active",
-                "injury_status": "Questionable",
+                "injury_status": "IR",
                 "search_rank": 169
             },
             {
@@ -10729,7 +10729,7 @@ window.__STATIC_DATA__ = {
                 "weight": "198",
                 "years_exp": 1,
                 "status": "Active",
-                "injury_status": "Questionable",
+                "injury_status": "IR",
                 "search_rank": 690
             },
             {
@@ -11524,6 +11524,34 @@ window.__STATIC_DATA__ = {
     }
   ],
   "transactions": [
+    {
+        "season": "2026",
+        "week": 1,
+        "created": "Aug 30, 2026 • 3:14 PM PT",
+        "transaction_id": "1399929265654374400",
+        "type": "free_agent",
+        "status": "complete",
+        "teams": [
+            "jonsung"
+        ],
+        "added": [
+            {
+                "name": "Jalon Daniels",
+                "position": "QB",
+                "team": "TB"
+            }
+        ],
+        "dropped": [
+            {
+                "name": "Gregory Desrosiers",
+                "position": "RB",
+                "team": "LAC"
+            }
+        ],
+        "faab": 0,
+        "waiver_bid": 0,
+        "notes": null
+    },
     {
         "season": "2026",
         "week": 1,
