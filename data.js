@@ -8737,7 +8737,7 @@ window.__STATIC_DATA__ = {
                 "weight": "207",
                 "years_exp": 2,
                 "status": "Active",
-                "injury_status": null,
+                "injury_status": "Questionable",
                 "search_rank": 87
             },
             {
@@ -9183,7 +9183,7 @@ window.__STATIC_DATA__ = {
                 "espn_id": null,
                 "name": "Jaleel McLaughlin",
                 "position": "RB",
-                "team": null,
+                "team": "CLE",
                 "age": 25,
                 "birth_date": "2000-09-13",
                 "college": "Youngstown State",
@@ -9575,7 +9575,7 @@ window.__STATIC_DATA__ = {
                 "weight": "220",
                 "years_exp": 3,
                 "status": "Active",
-                "injury_status": null,
+                "injury_status": "Questionable",
                 "search_rank": 180
             }
         ]
@@ -10905,7 +10905,7 @@ window.__STATIC_DATA__ = {
                 "weight": "220",
                 "years_exp": 6,
                 "status": "Active",
-                "injury_status": null,
+                "injury_status": "Questionable",
                 "search_rank": 34
             },
             {
@@ -16352,7 +16352,7 @@ window.__STATIC_DATA__ = {
             {
                 "name": "Jawhar Jordan",
                 "position": "RB",
-                "team": null
+                "team": "HOU"
             }
         ],
         "faab": 0,
