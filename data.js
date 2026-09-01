@@ -6236,8 +6236,8 @@ window.__STATIC_DATA__ = {
                 "height": "70",
                 "weight": "210",
                 "years_exp": 4,
-                "status": "Active",
-                "injury_status": "Questionable",
+                "status": "Inactive",
+                "injury_status": "IR",
                 "search_rank": 151
             },
             {
@@ -7941,7 +7941,7 @@ window.__STATIC_DATA__ = {
                 "weight": "192",
                 "years_exp": 0,
                 "status": "Active",
-                "injury_status": null,
+                "injury_status": "Questionable",
                 "search_rank": 61
             },
             {
@@ -13420,7 +13420,7 @@ window.__STATIC_DATA__ = {
             {
                 "name": "Cedric Tillman",
                 "position": "WR",
-                "team": null
+                "team": "NO"
             }
         ],
         "faab": 0,
@@ -15095,7 +15095,7 @@ window.__STATIC_DATA__ = {
             {
                 "name": "Tyler Conklin",
                 "position": "TE",
-                "team": null
+                "team": "DET"
             }
         ],
         "faab": 0,
@@ -16251,7 +16251,7 @@ window.__STATIC_DATA__ = {
             {
                 "name": "Cedric Tillman",
                 "position": "WR",
-                "team": null
+                "team": "NO"
             }
         ],
         "dropped": [
@@ -16402,7 +16402,7 @@ window.__STATIC_DATA__ = {
             {
                 "name": "Cedric Tillman",
                 "position": "WR",
-                "team": null
+                "team": "NO"
             }
         ],
         "faab": 0,
