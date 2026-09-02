@@ -6778,7 +6778,7 @@ window.__STATIC_DATA__ = {
                 "years_exp": 2,
                 "status": "Active",
                 "injury_status": null,
-                "search_rank": 504
+                "search_rank": 503
             },
             {
                 "player_id": "11643",
@@ -7193,7 +7193,7 @@ window.__STATIC_DATA__ = {
                 "weight": "211",
                 "years_exp": 4,
                 "status": "Active",
-                "injury_status": "Questionable",
+                "injury_status": null,
                 "search_rank": 18
             },
             {
@@ -7295,7 +7295,7 @@ window.__STATIC_DATA__ = {
                 "weight": "209",
                 "years_exp": 2,
                 "status": "Active",
-                "injury_status": "Questionable",
+                "injury_status": null,
                 "search_rank": 75
             },
             {
@@ -7781,7 +7781,7 @@ window.__STATIC_DATA__ = {
                 "weight": "219",
                 "years_exp": 2,
                 "status": "Active",
-                "injury_status": "Questionable",
+                "injury_status": null,
                 "search_rank": 224
             },
             {
@@ -7877,7 +7877,7 @@ window.__STATIC_DATA__ = {
                 "weight": "209",
                 "years_exp": 1,
                 "status": "Active",
-                "injury_status": null,
+                "injury_status": "Questionable",
                 "search_rank": 44
             },
             {
@@ -10563,7 +10563,7 @@ window.__STATIC_DATA__ = {
                 "weight": "205",
                 "years_exp": 3,
                 "status": "Active",
-                "injury_status": null,
+                "injury_status": "Questionable",
                 "search_rank": 155
             },
             {
@@ -14299,7 +14299,7 @@ window.__STATIC_DATA__ = {
             {
                 "name": "Theo Wease",
                 "position": "WR",
-                "team": null
+                "team": "LAC"
             }
         ],
         "faab": 0,
@@ -15397,7 +15397,7 @@ window.__STATIC_DATA__ = {
             {
                 "name": "Xavier Restrepo",
                 "position": "WR",
-                "team": null
+                "team": "TEN"
             }
         ],
         "faab": 0,
@@ -16685,7 +16685,7 @@ window.__STATIC_DATA__ = {
             {
                 "name": "Theo Wease",
                 "position": "WR",
-                "team": null
+                "team": "LAC"
             }
         ],
         "dropped": [
