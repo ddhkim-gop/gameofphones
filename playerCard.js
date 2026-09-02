@@ -290,17 +290,13 @@ export async function openPlayerCard(element, player, ctx) {
             const gtdPct = pv.total_value ? Math.round((pv.guaranteed / pv.total_value) * 100) : null;
             const yrs = pv.years || '?';
             const span = pv.year_signed ? `${yrs} yr (${pv.year_signed}–${pv.year_end})` : `${yrs} yr`;
-            const curYear = 2026;
-            const remYrs = pv.year_end ? Math.max(0, pv.year_end - curYear + 1) : null;
-            const remMoney = (remYrs !== null && pv.apy) ? pv.apy * remYrs : null;
-            const remStr = remMoney !== null ? `${fmt(remMoney)}<span style="font-size:10px;color:#5a6070;font-weight:400;margin-left:4px;">(${remYrs} yr${remYrs !== 1 ? 's' : ''})</span>` : '—';
             return `<div class="pc-section">
                 <div class="pc-section-title">Contract</div>
                 <div style="display:grid;grid-template-columns:1fr 1fr;gap:8px 16px;">
                     <div><div style="font-size:10px;color:#5a6070;margin-bottom:2px;">Total Value</div><div style="font-size:13px;font-weight:700;color:#c9cdd4;">${fmt(pv.total_value)}</div></div>
                     <div><div style="font-size:10px;color:#5a6070;margin-bottom:2px;">Years</div><div style="font-size:13px;font-weight:700;color:#c9cdd4;">${span}</div></div>
                     <div><div style="font-size:10px;color:#5a6070;margin-bottom:2px;">Guaranteed</div><div style="font-size:13px;font-weight:700;color:#c9cdd4;">${fmt(pv.guaranteed)}</div></div>
-                    <div><div style="font-size:10px;color:#5a6070;margin-bottom:2px;">Remaining</div><div style="font-size:13px;font-weight:700;color:#c9cdd4;">${remStr}</div></div>
+                    <div><div style="font-size:10px;color:#5a6070;margin-bottom:2px;">Avg / Year</div><div style="font-size:13px;font-weight:700;color:#c9cdd4;">${fmt(pv.apy)}</div></div>
                 </div>
             </div>`;
         })() : ''}
