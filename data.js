@@ -5889,6 +5889,22 @@ window.__STATIC_DATA__ = {
                 "search_rank": 56
             },
             {
+                "player_id": "12494",
+                "espn_id": null,
+                "name": "Kyle McCord",
+                "position": "QB",
+                "team": "MIA",
+                "age": 23,
+                "birth_date": "2002-09-19",
+                "college": "Syracuse",
+                "height": "75",
+                "weight": "218",
+                "years_exp": 1,
+                "status": "Active",
+                "injury_status": null,
+                "search_rank": 498
+            },
+            {
                 "player_id": "12510",
                 "espn_id": null,
                 "name": "Jalen Milroe",
@@ -6063,22 +6079,6 @@ window.__STATIC_DATA__ = {
                 "status": "Active",
                 "injury_status": null,
                 "search_rank": 88
-            },
-            {
-                "player_id": "4098",
-                "espn_id": 3059915,
-                "name": "Kareem Hunt",
-                "position": "RB",
-                "team": null,
-                "age": 31,
-                "birth_date": "1995-08-06",
-                "college": "Toledo",
-                "height": "71",
-                "weight": "216",
-                "years_exp": 9,
-                "status": "Active",
-                "injury_status": null,
-                "search_rank": 242
             },
             {
                 "player_id": "4199",
@@ -11524,6 +11524,34 @@ window.__STATIC_DATA__ = {
     }
   ],
   "transactions": [
+    {
+        "season": "2026",
+        "week": 1,
+        "created": "Sep 2, 2026 • 10:14 AM PT",
+        "transaction_id": "1400941101891735552",
+        "type": "free_agent",
+        "status": "complete",
+        "teams": [
+            "spiffster"
+        ],
+        "added": [
+            {
+                "name": "Kyle McCord",
+                "position": "QB",
+                "team": "MIA"
+            }
+        ],
+        "dropped": [
+            {
+                "name": "Kareem Hunt",
+                "position": "RB",
+                "team": null
+            }
+        ],
+        "faab": 0,
+        "waiver_bid": 0,
+        "notes": null
+    },
     {
         "season": "2026",
         "week": 1,
