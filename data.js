@@ -6556,7 +6556,7 @@ window.__STATIC_DATA__ = {
                 "name": "Evan Engram",
                 "position": "TE",
                 "team": "DEN",
-                "age": 31,
+                "age": 32,
                 "birth_date": "1994-09-02",
                 "college": "Ole Miss",
                 "height": "75",
@@ -8499,7 +8499,7 @@ window.__STATIC_DATA__ = {
                 "espn_id": null,
                 "name": "Michael Trigg",
                 "position": "TE",
-                "team": null,
+                "team": "DAL",
                 "age": 24,
                 "birth_date": "2002-06-27",
                 "college": "Baylor",
@@ -11545,7 +11545,7 @@ window.__STATIC_DATA__ = {
             {
                 "name": "Gregory Desrosiers",
                 "position": "RB",
-                "team": null
+                "team": "LAC"
             }
         ],
         "faab": 0,
@@ -11694,7 +11694,7 @@ window.__STATIC_DATA__ = {
             {
                 "name": "Gregory Desrosiers",
                 "position": "RB",
-                "team": null
+                "team": "LAC"
             }
         ],
         "dropped": [
@@ -13470,7 +13470,7 @@ window.__STATIC_DATA__ = {
             {
                 "name": "Emari Demercado",
                 "position": "RB",
-                "team": null
+                "team": "DAL"
             }
         ],
         "faab": 0,
@@ -14070,7 +14070,7 @@ window.__STATIC_DATA__ = {
             {
                 "name": "Michael Trigg",
                 "position": "TE",
-                "team": null
+                "team": "DAL"
             }
         ],
         "dropped": [],
@@ -14309,7 +14309,7 @@ window.__STATIC_DATA__ = {
             {
                 "name": "Michael Trigg",
                 "position": "TE",
-                "team": null
+                "team": "DAL"
             }
         ],
         "faab": 0,
@@ -14352,7 +14352,7 @@ window.__STATIC_DATA__ = {
             {
                 "name": "Michael Trigg",
                 "position": "TE",
-                "team": null
+                "team": "DAL"
             }
         ],
         "dropped": [],
@@ -16086,7 +16086,7 @@ window.__STATIC_DATA__ = {
             {
                 "name": "Nathan Carter",
                 "position": "RB",
-                "team": null
+                "team": "KC"
             }
         ],
         "faab": 0,
@@ -16773,7 +16773,7 @@ window.__STATIC_DATA__ = {
             {
                 "name": "Nathan Carter",
                 "position": "RB",
-                "team": null
+                "team": "KC"
             }
         ],
         "dropped": [
