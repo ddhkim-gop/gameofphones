@@ -5295,7 +5295,7 @@ window.__STATIC_DATA__ = {
                 "espn_id": null,
                 "name": "Dean Connors",
                 "position": "RB",
-                "team": null,
+                "team": "LAR",
                 "age": 23,
                 "birth_date": "2003-08-29",
                 "college": "Houston",
@@ -6065,6 +6065,22 @@ window.__STATIC_DATA__ = {
                 "search_rank": 88
             },
             {
+                "player_id": "4098",
+                "espn_id": 3059915,
+                "name": "Kareem Hunt",
+                "position": "RB",
+                "team": null,
+                "age": 31,
+                "birth_date": "1995-08-06",
+                "college": "Toledo",
+                "height": "71",
+                "weight": "216",
+                "years_exp": 9,
+                "status": "Active",
+                "injury_status": null,
+                "search_rank": 242
+            },
+            {
                 "player_id": "4199",
                 "espn_id": 3042519,
                 "name": "Aaron Jones",
@@ -6079,22 +6095,6 @@ window.__STATIC_DATA__ = {
                 "status": "Active",
                 "injury_status": null,
                 "search_rank": 85
-            },
-            {
-                "player_id": "4663",
-                "espn_id": 3068267,
-                "name": "Austin Ekeler",
-                "position": "RB",
-                "team": null,
-                "age": 31,
-                "birth_date": "1995-05-17",
-                "college": "Western Colorado",
-                "height": "70",
-                "weight": "200",
-                "years_exp": 9,
-                "status": "Active",
-                "injury_status": null,
-                "search_rank": 317
             },
             {
                 "player_id": "4950",
@@ -8483,7 +8483,7 @@ window.__STATIC_DATA__ = {
                 "espn_id": null,
                 "name": "J'Mari Taylor",
                 "position": "RB",
-                "team": null,
+                "team": "JAX",
                 "age": 24,
                 "birth_date": "2002-03-15",
                 "college": "Virginia",
@@ -8492,7 +8492,7 @@ window.__STATIC_DATA__ = {
                 "years_exp": 0,
                 "status": "Active",
                 "injury_status": null,
-                "search_rank": 509
+                "search_rank": 496
             },
             {
                 "player_id": "13401",
@@ -9391,7 +9391,7 @@ window.__STATIC_DATA__ = {
                 "espn_id": null,
                 "name": "Jaydn Ott",
                 "position": "RB",
-                "team": null,
+                "team": "KC",
                 "age": 23,
                 "birth_date": "2002-12-16",
                 "college": "Oklahoma",
@@ -11527,6 +11527,34 @@ window.__STATIC_DATA__ = {
     {
         "season": "2026",
         "week": 1,
+        "created": "Sep 1, 2026 • 7:33 PM PT",
+        "transaction_id": "1400719378089025536",
+        "type": "free_agent",
+        "status": "complete",
+        "teams": [
+            "spiffster"
+        ],
+        "added": [
+            {
+                "name": "Kareem Hunt",
+                "position": "RB",
+                "team": null
+            }
+        ],
+        "dropped": [
+            {
+                "name": "Austin Ekeler",
+                "position": "RB",
+                "team": null
+            }
+        ],
+        "faab": 0,
+        "waiver_bid": 0,
+        "notes": null
+    },
+    {
+        "season": "2026",
+        "week": 1,
         "created": "Aug 30, 2026 • 3:14 PM PT",
         "transaction_id": "1399929265654374400",
         "type": "free_agent",
@@ -11828,7 +11856,7 @@ window.__STATIC_DATA__ = {
             {
                 "name": "Dean Connors",
                 "position": "RB",
-                "team": null
+                "team": "LAR"
             }
         ],
         "dropped": [
@@ -12032,7 +12060,7 @@ window.__STATIC_DATA__ = {
             {
                 "name": "Jalin Hyatt",
                 "position": "WR",
-                "team": null
+                "team": "NYG"
             }
         ],
         "faab": 0,
@@ -12160,7 +12188,7 @@ window.__STATIC_DATA__ = {
             {
                 "name": "Dean Connors",
                 "position": "RB",
-                "team": null
+                "team": "LAR"
             }
         ],
         "faab": 0,
@@ -12407,7 +12435,7 @@ window.__STATIC_DATA__ = {
             {
                 "name": "Dean Connors",
                 "position": "RB",
-                "team": null
+                "team": "LAR"
             }
         ],
         "dropped": [
@@ -13112,7 +13140,7 @@ window.__STATIC_DATA__ = {
                 {
                     "name": "Jaydn Ott",
                     "position": "RB",
-                    "team": null
+                    "team": "KC"
                 },
                 {
                     "name": "Colbie Young",
@@ -13678,7 +13706,7 @@ window.__STATIC_DATA__ = {
             {
                 "name": "Jaydn Ott",
                 "position": "RB",
-                "team": null
+                "team": "KC"
             }
         ],
         "dropped": [],
@@ -14424,7 +14452,7 @@ window.__STATIC_DATA__ = {
             {
                 "name": "J'Mari Taylor",
                 "position": "RB",
-                "team": null
+                "team": "JAX"
             }
         ],
         "dropped": [
@@ -15429,7 +15457,7 @@ window.__STATIC_DATA__ = {
             {
                 "name": "Hassan Haskins",
                 "position": "RB",
-                "team": null
+                "team": "NE"
             }
         ],
         "faab": 0,
@@ -16380,7 +16408,7 @@ window.__STATIC_DATA__ = {
             {
                 "name": "Charlie Smyth",
                 "position": "K",
-                "team": null
+                "team": "NO"
             }
         ],
         "faab": 0,
@@ -16808,7 +16836,7 @@ window.__STATIC_DATA__ = {
             {
                 "name": "Chris Oladokun",
                 "position": "QB",
-                "team": null
+                "team": "KC"
             }
         ],
         "faab": 0,
