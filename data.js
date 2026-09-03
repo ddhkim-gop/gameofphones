@@ -9211,6 +9211,22 @@ window.__STATIC_DATA__ = {
                 "search_rank": 688
             },
             {
+                "player_id": "12185",
+                "espn_id": null,
+                "name": "Spencer Shrader",
+                "position": "K",
+                "team": "IND",
+                "age": 27,
+                "birth_date": "1999-05-19",
+                "college": "Notre Dame",
+                "height": "74",
+                "weight": "201",
+                "years_exp": 2,
+                "status": "Active",
+                "injury_status": null,
+                "search_rank": 355
+            },
+            {
                 "player_id": "12507",
                 "espn_id": null,
                 "name": "Omarion Hampton",
@@ -9241,6 +9257,22 @@ window.__STATIC_DATA__ = {
                 "status": "Active",
                 "injury_status": null,
                 "search_rank": 658
+            },
+            {
+                "player_id": "13264",
+                "espn_id": null,
+                "name": "Dohnte Meyers",
+                "position": "WR",
+                "team": "CIN",
+                "age": 26,
+                "birth_date": "2000-07-06",
+                "college": "Delta State",
+                "height": "71",
+                "weight": "186",
+                "years_exp": 0,
+                "status": "Active",
+                "injury_status": null,
+                "search_rank": 628
             },
             {
                 "player_id": "13268",
@@ -9321,6 +9353,22 @@ window.__STATIC_DATA__ = {
                 "status": "Active",
                 "injury_status": null,
                 "search_rank": 399
+            },
+            {
+                "player_id": "13307",
+                "espn_id": null,
+                "name": "Marlin Klein",
+                "position": "TE",
+                "team": "HOU",
+                "age": 23,
+                "birth_date": "2002-09-17",
+                "college": "Michigan",
+                "height": "78",
+                "weight": "250",
+                "years_exp": 0,
+                "status": "Active",
+                "injury_status": null,
+                "search_rank": 663
             },
             {
                 "player_id": "13317",
@@ -9561,6 +9609,22 @@ window.__STATIC_DATA__ = {
                 "status": "Active",
                 "injury_status": null,
                 "search_rank": 697
+            },
+            {
+                "player_id": "8225",
+                "espn_id": null,
+                "name": "Daniel Bellinger",
+                "position": "TE",
+                "team": "TEN",
+                "age": 25,
+                "birth_date": "2000-09-22",
+                "college": "San Diego State",
+                "height": "78",
+                "weight": "255",
+                "years_exp": 4,
+                "status": "Active",
+                "injury_status": null,
+                "search_rank": 681
             },
             {
                 "player_id": "9757",
@@ -11524,6 +11588,94 @@ window.__STATIC_DATA__ = {
     }
   ],
   "transactions": [
+    {
+        "season": "2026",
+        "week": 1,
+        "created": "Sep 3, 2026 • 11:36 AM PT",
+        "transaction_id": "1401323891464376320",
+        "type": "free_agent",
+        "status": "complete",
+        "teams": [
+            "paddleham"
+        ],
+        "added": [
+            {
+                "name": "Daniel Bellinger",
+                "position": "TE",
+                "team": "TEN"
+            }
+        ],
+        "dropped": [],
+        "faab": 0,
+        "waiver_bid": 0,
+        "notes": null
+    },
+    {
+        "season": "2026",
+        "week": 1,
+        "created": "Sep 3, 2026 • 11:35 AM PT",
+        "transaction_id": "1401323865744912384",
+        "type": "free_agent",
+        "status": "complete",
+        "teams": [
+            "paddleham"
+        ],
+        "added": [
+            {
+                "name": "Marlin Klein",
+                "position": "TE",
+                "team": "HOU"
+            }
+        ],
+        "dropped": [],
+        "faab": 0,
+        "waiver_bid": 0,
+        "notes": null
+    },
+    {
+        "season": "2026",
+        "week": 1,
+        "created": "Sep 3, 2026 • 11:35 AM PT",
+        "transaction_id": "1401323797021237248",
+        "type": "free_agent",
+        "status": "complete",
+        "teams": [
+            "paddleham"
+        ],
+        "added": [
+            {
+                "name": "Spencer Shrader",
+                "position": "K",
+                "team": "IND"
+            }
+        ],
+        "dropped": [],
+        "faab": 0,
+        "waiver_bid": 0,
+        "notes": null
+    },
+    {
+        "season": "2026",
+        "week": 1,
+        "created": "Sep 3, 2026 • 11:35 AM PT",
+        "transaction_id": "1401323679790436352",
+        "type": "free_agent",
+        "status": "complete",
+        "teams": [
+            "paddleham"
+        ],
+        "added": [
+            {
+                "name": "Dohnte Meyers",
+                "position": "WR",
+                "team": "CIN"
+            }
+        ],
+        "dropped": [],
+        "faab": 0,
+        "waiver_bid": 0,
+        "notes": null
+    },
     {
         "season": "2026",
         "week": 1,
