@@ -10348,7 +10348,7 @@ window.__STATIC_DATA__ = {
                 "name": "Jaylin Noel",
                 "position": "WR",
                 "team": "HOU",
-                "age": 23,
+                "age": 24,
                 "birth_date": "2002-09-04",
                 "college": "Iowa State",
                 "height": "71",
