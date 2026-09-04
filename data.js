@@ -10833,7 +10833,7 @@ window.__STATIC_DATA__ = {
                 "espn_id": null,
                 "name": "Justin Joly",
                 "position": "TE",
-                "team": null,
+                "team": "MIA",
                 "age": 22,
                 "birth_date": "2004-07-09",
                 "college": "North Carolina State",
@@ -10842,7 +10842,7 @@ window.__STATIC_DATA__ = {
                 "years_exp": 0,
                 "status": "Active",
                 "injury_status": null,
-                "search_rank": 432
+                "search_rank": 435
             },
             {
                 "player_id": "13402",
@@ -14460,7 +14460,7 @@ window.__STATIC_DATA__ = {
             {
                 "name": "Justin Joly",
                 "position": "TE",
-                "team": null
+                "team": "MIA"
             }
         ],
         "dropped": [
@@ -14983,7 +14983,7 @@ window.__STATIC_DATA__ = {
             {
                 "name": "Brady Cook",
                 "position": "QB",
-                "team": null
+                "team": "MIA"
             }
         ],
         "faab": 0,
