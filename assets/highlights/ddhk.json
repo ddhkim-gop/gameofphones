@@ -1,0 +1,49 @@
+{
+  "team": "ddhk",
+  "updated": "2026-09-05",
+  "note": "Curated: X has no public search API, so posts are collected by hand and matched to rosters by this script.",
+  "tweets": [
+    {
+      "url": "https://x.com/FantasyPros/status/2096204955757518865",
+      "player": "Tetairoa McMillan",
+      "meta": "WR \u00b7 CAR",
+      "date": "2026-09-05",
+      "author": "FantasyPros"
+    },
+    {
+      "url": "https://x.com/dawhitehousepod/status/2096011194247069748",
+      "player": "CeeDee Lamb",
+      "meta": "WR \u00b7 DAL",
+      "date": "2026-09-04",
+      "author": "The White House Pod"
+    },
+    {
+      "url": "https://x.com/ChiSportsTracks/status/2095307339750404405",
+      "player": "Luther Burden",
+      "meta": "WR \u00b7 CHI",
+      "date": "2026-09-03",
+      "author": "Chicago Sports Podcast"
+    },
+    {
+      "url": "https://x.com/UnderdogNFL/status/2095628236919021595",
+      "player": "Roschon Johnson",
+      "meta": "RB \u00b7 CHI",
+      "date": "2026-09-03",
+      "author": "Underdog NFL"
+    },
+    {
+      "url": "https://x.com/NFL_Talk_Sports/status/2093156629013233752",
+      "player": "Kyler Murray",
+      "meta": "QB \u00b7 MIN",
+      "date": "2026-08-28",
+      "author": "NFL Talk"
+    },
+    {
+      "url": "https://x.com/talktoemhavin/status/2092756082384941418",
+      "player": "CeeDee Lamb",
+      "meta": "WR \u00b7 DAL",
+      "date": "2026-08-26",
+      "author": "Ben Havin"
+    }
+  ]
+}

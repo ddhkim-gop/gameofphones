@@ -1,0 +1,35 @@
+{
+  "team": "velmixon",
+  "updated": "2026-09-05",
+  "note": "Curated: X has no public search API, so posts are collected by hand and matched to rosters by this script.",
+  "tweets": [
+    {
+      "url": "https://x.com/NFL_DovKleiman/status/2096024258753462314",
+      "player": "Joe Burrow",
+      "meta": "QB \u00b7 CIN",
+      "date": "2026-09-04",
+      "author": "Dov Kleiman"
+    },
+    {
+      "url": "https://x.com/FantasyPros/status/2095998691286958577",
+      "player": "Greg Dulcich",
+      "meta": "TE \u00b7 MIA",
+      "date": "2026-09-04",
+      "author": "FantasyPros"
+    },
+    {
+      "url": "https://x.com/FantasyPros/status/2095947312925233556",
+      "player": "KC Concepcion",
+      "meta": "WR \u00b7 CLE",
+      "date": "2026-09-04",
+      "author": "FantasyPros"
+    },
+    {
+      "url": "https://x.com/FFPhinest/status/2095346301269357032",
+      "player": "Josh Downs",
+      "meta": "WR \u00b7 IND",
+      "date": "2026-09-03",
+      "author": "The Fantasy's Phinest"
+    }
+  ]
+}

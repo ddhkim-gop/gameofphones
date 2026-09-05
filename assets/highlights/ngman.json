@@ -1,0 +1,42 @@
+{
+  "team": "ngman",
+  "updated": "2026-09-05",
+  "note": "Curated: X has no public search API, so posts are collected by hand and matched to rosters by this script.",
+  "tweets": [
+    {
+      "url": "https://x.com/balls_out_bets/status/2096092955010273406",
+      "player": "Ja'Kobi Lane",
+      "meta": "WR \u00b7 BAL",
+      "date": "2026-09-05",
+      "author": "Balls Out Sports Bets"
+    },
+    {
+      "url": "https://x.com/RapSheet/status/2096260488178880883",
+      "player": "Ja'Kobi Lane",
+      "meta": "WR \u00b7 BAL",
+      "date": "2026-09-05",
+      "author": "Ian Rapoport"
+    },
+    {
+      "url": "https://x.com/FantasyPros/status/2096045903811424673",
+      "player": "De'Zhaun Stribling",
+      "meta": "WR \u00b7 SF",
+      "date": "2026-09-05",
+      "author": "FantasyPros"
+    },
+    {
+      "url": "https://x.com/FantasyPros/status/2095947312925233556",
+      "player": "De'Zhaun Stribling",
+      "meta": "WR \u00b7 SF",
+      "date": "2026-09-04",
+      "author": "FantasyPros"
+    },
+    {
+      "url": "https://x.com/SleeperPackers/status/2091917085068706125",
+      "player": "MarShawn Lloyd",
+      "meta": "RB \u00b7 GB",
+      "date": "2026-08-24",
+      "author": "SleeperPackers"
+    }
+  ]
+}

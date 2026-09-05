@@ -1,0 +1,14 @@
+{
+  "team": "paddleham",
+  "updated": "2026-09-05",
+  "note": "Curated: X has no public search API, so posts are collected by hand and matched to rosters by this script.",
+  "tweets": [
+    {
+      "url": "https://x.com/NFL_DovKleiman/status/2096024258753462314",
+      "player": "Jaydn Ott",
+      "meta": "RB \u00b7 KC",
+      "date": "2026-09-04",
+      "author": "Dov Kleiman"
+    }
+  ]
+}

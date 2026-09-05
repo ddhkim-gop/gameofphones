@@ -1,0 +1,35 @@
+{
+  "team": "jonsung",
+  "updated": "2026-09-05",
+  "note": "Curated: X has no public search API, so posts are collected by hand and matched to rosters by this script.",
+  "tweets": [
+    {
+      "url": "https://x.com/MySportsUpdate/status/2095990222525735336",
+      "player": "Courtland Sutton",
+      "meta": "WR \u00b7 DEN",
+      "date": "2026-09-04",
+      "author": "Ari Meirov"
+    },
+    {
+      "url": "https://x.com/LosTalksPats/status/2095882928266031584",
+      "player": "Joe Milton",
+      "meta": "QB \u00b7 DAL",
+      "date": "2026-09-04",
+      "author": "Carlos A. Lopez"
+    },
+    {
+      "url": "https://x.com/dawhitehousepod/status/2096011194247069748",
+      "player": "George Pickens",
+      "meta": "WR \u00b7 DAL",
+      "date": "2026-09-04",
+      "author": "The White House Pod"
+    },
+    {
+      "url": "https://x.com/FantasyPros/status/2095998691286958577",
+      "player": "Malik Willis",
+      "meta": "QB \u00b7 MIA",
+      "date": "2026-09-04",
+      "author": "FantasyPros"
+    }
+  ]
+}

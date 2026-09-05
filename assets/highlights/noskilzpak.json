@@ -1,0 +1,35 @@
+{
+  "team": "NoSkilzPak",
+  "updated": "2026-09-05",
+  "note": "Curated: X has no public search API, so posts are collected by hand and matched to rosters by this script.",
+  "tweets": [
+    {
+      "url": "https://x.com/FantasyPros/status/2096045903811424673",
+      "player": "Brock Purdy",
+      "meta": "QB \u00b7 SF",
+      "date": "2026-09-05",
+      "author": "FantasyPros"
+    },
+    {
+      "url": "https://x.com/FantasyPros/status/2095972419873673527",
+      "player": "Bucky Irving",
+      "meta": "RB \u00b7 TB",
+      "date": "2026-09-04",
+      "author": "FantasyPros"
+    },
+    {
+      "url": "https://x.com/UnderdogNFL/status/2095628236919021595",
+      "player": "Xavier Worthy",
+      "meta": "WR \u00b7 KC",
+      "date": "2026-09-03",
+      "author": "Underdog NFL"
+    },
+    {
+      "url": "https://x.com/Schultz_Report/status/2090918231456301160",
+      "player": "Bucky Irving",
+      "meta": "RB \u00b7 TB",
+      "date": "2026-08-21",
+      "author": "Jordan Schultz"
+    }
+  ]
+}
