@@ -11058,7 +11058,7 @@ window.__STATIC_DATA__ = {
                 "name": "Mac Jones",
                 "position": "QB",
                 "team": "SF",
-                "age": 27,
+                "age": 28,
                 "birth_date": "1998-09-05",
                 "college": "Alabama",
                 "height": "75",
