@@ -1,0 +1,42 @@
+{
+  "team": "andyxia124",
+  "updated": "2026-09-05",
+  "note": "Curated: X has no public search API, so posts are collected by hand and matched to rosters by this script.",
+  "tweets": [
+    {
+      "url": "https://x.com/AdamSchefter/status/2096033493306286233",
+      "player": "Josh Jacobs",
+      "meta": "RB \u00b7 GB",
+      "date": "2026-09-05",
+      "author": "Adam Schefter"
+    },
+    {
+      "url": "https://x.com/LosTalksPats/status/2095882928266031584",
+      "player": "A.J. Brown",
+      "meta": "WR \u00b7 NE",
+      "date": "2026-09-04",
+      "author": "Carlos A. Lopez"
+    },
+    {
+      "url": "https://x.com/AdamSchefter/status/2095964161415196956",
+      "player": "Josh Jacobs",
+      "meta": "RB \u00b7 GB",
+      "date": "2026-09-04",
+      "author": "Adam Schefter"
+    },
+    {
+      "url": "https://x.com/SleeperPackers/status/2091917085068706125",
+      "player": "Josh Jacobs",
+      "meta": "RB \u00b7 GB",
+      "date": "2026-08-24",
+      "author": "SleeperPackers"
+    },
+    {
+      "url": "https://x.com/Schultz_Report/status/2090918231456301160",
+      "player": "Kyle Pitts",
+      "meta": "TE \u00b7 ATL",
+      "date": "2026-08-21",
+      "author": "Jordan Schultz"
+    }
+  ]
+}

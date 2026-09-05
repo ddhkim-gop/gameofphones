@@ -1,0 +1,28 @@
+{
+  "team": "spiffster",
+  "updated": "2026-09-05",
+  "note": "Curated: X has no public search API, so posts are collected by hand and matched to rosters by this script.",
+  "tweets": [
+    {
+      "url": "https://x.com/FantasyPros/status/2096204955757518865",
+      "player": "Jalen McMillan",
+      "meta": "WR \u00b7 TB",
+      "date": "2026-09-05",
+      "author": "FantasyPros"
+    },
+    {
+      "url": "https://x.com/FantasyPros/status/2095998691286958577",
+      "player": "Rashee Rice",
+      "meta": "WR \u00b7 KC",
+      "date": "2026-09-04",
+      "author": "FantasyPros"
+    },
+    {
+      "url": "https://x.com/Schultz_Report/status/2090918231456301160",
+      "player": "Dalton Schultz",
+      "meta": "TE \u00b7 HOU",
+      "date": "2026-08-21",
+      "author": "Jordan Schultz"
+    }
+  ]
+}

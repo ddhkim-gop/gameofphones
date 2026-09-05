@@ -1,0 +1,14 @@
+{
+  "team": "Paul_Yoon",
+  "updated": "2026-09-05",
+  "note": "Curated: X has no public search API, so posts are collected by hand and matched to rosters by this script.",
+  "tweets": [
+    {
+      "url": "https://x.com/FantasyPros/status/2095998691286958577",
+      "player": "Jadarian Price",
+      "meta": "RB \u00b7 SEA",
+      "date": "2026-09-04",
+      "author": "FantasyPros"
+    }
+  ]
+}

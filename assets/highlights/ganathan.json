@@ -1,0 +1,49 @@
+{
+  "team": "ganathan",
+  "updated": "2026-09-05",
+  "note": "Curated: X has no public search API, so posts are collected by hand and matched to rosters by this script.",
+  "tweets": [
+    {
+      "url": "https://x.com/MySportsUpdate/status/2095990222525735336",
+      "player": "Jaylen Waddle",
+      "meta": "WR \u00b7 DEN",
+      "date": "2026-09-04",
+      "author": "Ari Meirov"
+    },
+    {
+      "url": "https://x.com/FantasyPros/status/2095982989381358039",
+      "player": "Jaylen Waddle",
+      "meta": "WR \u00b7 DEN",
+      "date": "2026-09-04",
+      "author": "FantasyPros"
+    },
+    {
+      "url": "https://x.com/FFPhinest/status/2095346301269357032",
+      "player": "Christian McCaffrey",
+      "meta": "RB \u00b7 SF",
+      "date": "2026-09-03",
+      "author": "The Fantasy's Phinest"
+    },
+    {
+      "url": "https://x.com/UnderdogNFL/status/2094869543046795763",
+      "player": "Christian McCaffrey",
+      "meta": "RB \u00b7 SF",
+      "date": "2026-09-01",
+      "author": "Underdog NFL"
+    },
+    {
+      "url": "https://x.com/DreareaSports/status/2091624681573146837",
+      "player": "Christian McCaffrey",
+      "meta": "RB \u00b7 SF",
+      "date": "2026-08-23",
+      "author": "Dre Area Sports \ud83c\udf99\ufe0f"
+    },
+    {
+      "url": "https://x.com/Schultz_Report/status/2090918231456301160",
+      "player": "Pat Bryant",
+      "meta": "WR \u00b7 DEN",
+      "date": "2026-08-21",
+      "author": "Jordan Schultz"
+    }
+  ]
+}
