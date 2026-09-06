@@ -17054,7 +17054,7 @@ window.__STATIC_DATA__ = {
             {
                 "name": "Chris Oladokun",
                 "position": "QB",
-                "team": "KC"
+                "team": null
             }
         ],
         "faab": 0,
