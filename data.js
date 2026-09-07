@@ -6483,7 +6483,7 @@ window.__STATIC_DATA__ = {
                 "weight": "264",
                 "years_exp": 0,
                 "status": "Active",
-                "injury_status": "Questionable",
+                "injury_status": null,
                 "search_rank": 514
             },
             {
@@ -10531,7 +10531,7 @@ window.__STATIC_DATA__ = {
                 "weight": "204",
                 "years_exp": 6,
                 "status": "Active",
-                "injury_status": "Questionable",
+                "injury_status": null,
                 "search_rank": 46
             },
             {
@@ -10659,7 +10659,7 @@ window.__STATIC_DATA__ = {
                 "weight": "220",
                 "years_exp": 3,
                 "status": "Active",
-                "injury_status": "PUP",
+                "injury_status": "Out",
                 "search_rank": 101
             }
         ]
@@ -10777,7 +10777,7 @@ window.__STATIC_DATA__ = {
                 "weight": "180",
                 "years_exp": 1,
                 "status": "Active",
-                "injury_status": "Questionable",
+                "injury_status": null,
                 "search_rank": 683
             },
             {
@@ -15763,7 +15763,7 @@ window.__STATIC_DATA__ = {
             {
                 "name": "Van Jefferson",
                 "position": "WR",
-                "team": null
+                "team": "WAS"
             }
         ],
         "faab": 0,
