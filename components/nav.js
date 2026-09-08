@@ -62,6 +62,12 @@ export function renderNav() {
                     font-size: 13px;
                     padding: 7px 10px;
                 }
+                /* The strip scrolls but its scrollbar is hidden, so nothing said
+                   so. Fade the right edge while there is more to reach. */
+                .nav-card.nav-more {
+                    -webkit-mask-image: linear-gradient(to right, #000 calc(100% - 32px), transparent);
+                    mask-image: linear-gradient(to right, #000 calc(100% - 32px), transparent);
+                }
             }
         </style>
         <nav class="card nav-card" id="nav-card">
@@ -77,5 +83,18 @@ export function renderNav() {
             </div>
         </nav>
     `;
+
+    // Show the fade only while the strip has somewhere left to scroll.
+    const card = el.querySelector("#nav-card");
+    if (card) {
+        const update = () => card.classList.toggle(
+            "nav-more", card.scrollWidth - card.clientWidth - card.scrollLeft > 4);
+        card.addEventListener("scroll", update, { passive: true });
+        window.addEventListener("resize", update);
+        // Called straight after innerHTML the strip has not been laid out yet, so
+        // scrollWidth still equals clientWidth and the fade never appears.
+        requestAnimationFrame(update);
+        window.addEventListener("load", update);
+    }
 
 }
