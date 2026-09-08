@@ -7411,6 +7411,22 @@ window.__STATIC_DATA__ = {
                 "search_rank": 227
             },
             {
+                "player_id": "13270",
+                "espn_id": null,
+                "name": "CJ Daniels",
+                "position": "WR",
+                "team": "LAR",
+                "age": 24,
+                "birth_date": "2002-01-04",
+                "college": "Miami (FL)",
+                "height": "74",
+                "weight": "202",
+                "years_exp": 0,
+                "status": "Active",
+                "injury_status": null,
+                "search_rank": 550
+            },
+            {
                 "player_id": "1466",
                 "espn_id": 15847,
                 "name": "Travis Kelce",
@@ -7665,6 +7681,22 @@ window.__STATIC_DATA__ = {
                 "status": "Active",
                 "injury_status": null,
                 "search_rank": 476
+            },
+            {
+                "player_id": "9479",
+                "espn_id": null,
+                "name": "Darnell Washington",
+                "position": "TE",
+                "team": "PIT",
+                "age": 25,
+                "birth_date": "2001-08-17",
+                "college": "Georgia",
+                "height": "79",
+                "weight": "264",
+                "years_exp": 3,
+                "status": "Active",
+                "injury_status": null,
+                "search_rank": 480
             },
             {
                 "player_id": "9480",
@@ -11604,6 +11636,50 @@ window.__STATIC_DATA__ = {
     }
   ],
   "transactions": [
+    {
+        "season": "2026",
+        "week": 1,
+        "created": "Sep 8, 2026 • 11:45 AM PT",
+        "transaction_id": "1403138239547572224",
+        "type": "free_agent",
+        "status": "complete",
+        "teams": [
+            "andyxia124"
+        ],
+        "added": [
+            {
+                "name": "CJ Daniels",
+                "position": "WR",
+                "team": "LAR"
+            }
+        ],
+        "dropped": [],
+        "faab": 0,
+        "waiver_bid": 0,
+        "notes": null
+    },
+    {
+        "season": "2026",
+        "week": 1,
+        "created": "Sep 8, 2026 • 11:44 AM PT",
+        "transaction_id": "1403138033334652928",
+        "type": "free_agent",
+        "status": "complete",
+        "teams": [
+            "andyxia124"
+        ],
+        "added": [
+            {
+                "name": "Darnell Washington",
+                "position": "TE",
+                "team": "PIT"
+            }
+        ],
+        "dropped": [],
+        "faab": 0,
+        "waiver_bid": 0,
+        "notes": null
+    },
     {
         "season": "2026",
         "week": 1,
