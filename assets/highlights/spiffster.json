@@ -1,28 +1,46 @@
 {
   "team": "spiffster",
-  "updated": "2026-09-05",
+  "updated": "2026-09-08",
   "note": "Curated: X has no public search API, so posts are collected by hand and matched to rosters by this script.",
   "tweets": [
     {
-      "url": "https://x.com/FantasyPros/status/2096204955757518865",
-      "player": "Jalen McMillan",
-      "meta": "WR \u00b7 TB",
-      "date": "2026-09-05",
-      "author": "FantasyPros"
+      "url": "https://x.com/ActionSportsJax/status/2089348631216132568",
+      "player": "Chris Rodriguez",
+      "meta": "RB \u00b7 JAX",
+      "date": "2026-08-17",
+      "author": "ActionSportsJax",
+      "text": "Bhayshul Tuten and Chris Rodriguez trading reps at training camp. #Jaguars #DUUUVAL",
+      "verified": true,
+      "faves": 22,
+      "secs": 12,
+      "poster": "https://pbs.twimg.com/amplify_video_thumb/2089348571250184192/img/L7jCB-fyLiwrq_rE.jpg?name=orig",
+      "video": "https://video.twimg.com/amplify_video/2089348571250184192/vid/avc1/1080x1920/eVgqQgaiXIwZxWxo.mp4?tag=29"
     },
     {
-      "url": "https://x.com/FantasyPros/status/2095998691286958577",
-      "player": "Rashee Rice",
-      "meta": "WR \u00b7 KC",
-      "date": "2026-09-04",
-      "author": "FantasyPros"
+      "url": "https://x.com/ThFootballSuite/status/2087927935323779376",
+      "player": "Jakobi Meyers",
+      "meta": "WR \u00b7 JAX",
+      "date": "2026-08-13",
+      "author": "ThFootballSuite",
+      "text": "Jakobi Meyers coming down with the jump ball in Jaguars - Saints joint practice.",
+      "verified": true,
+      "faves": 12,
+      "secs": 23,
+      "poster": "https://pbs.twimg.com/amplify_video_thumb/2087926407271776256/img/5iwAG4ZMBNHgUlGT.jpg?name=orig",
+      "video": "https://video.twimg.com/amplify_video/2087926407271776256/vid/avc1/1080x1920/rx6mXE3GDlvnlwFL.mp4?tag=29"
     },
     {
-      "url": "https://x.com/Schultz_Report/status/2090918231456301160",
-      "player": "Dalton Schultz",
-      "meta": "TE \u00b7 HOU",
-      "date": "2026-08-21",
-      "author": "Jordan Schultz"
+      "url": "https://x.com/ActionSportsJax/status/2087173356810371288",
+      "player": "Jakobi Meyers",
+      "meta": "WR \u00b7 JAX",
+      "date": "2026-08-11",
+      "author": "ActionSportsJax",
+      "text": "Trevor Lawrence finds Jakobi Meyers \ud83c\udfaf Day 11 of #Jaguars Training Camp",
+      "verified": true,
+      "faves": 38,
+      "secs": 9,
+      "poster": "https://pbs.twimg.com/amplify_video_thumb/2087173317186777088/img/Fdr6v3DoWW3XU_O1.jpg?name=orig",
+      "video": "https://video.twimg.com/amplify_video/2087173317186777088/vid/avc1/1080x1920/hjlqtIfXYkAGIzf0.mp4?tag=29"
     }
   ]
 }

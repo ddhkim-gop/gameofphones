@@ -13,3 +13,5 @@ gameofphones-cross-talk.md
 
 # graft's local graph cache — regenerable, not committed (run `graft build`).
 graft/
+.highlights_video_cache.json
+.games_cache.csv

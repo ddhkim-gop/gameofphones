@@ -1,35 +1,29 @@
 {
   "team": "NoSkilzPak",
-  "updated": "2026-09-05",
+  "updated": "2026-09-08",
   "note": "Curated: X has no public search API, so posts are collected by hand and matched to rosters by this script.",
   "tweets": [
     {
-      "url": "https://x.com/FantasyPros/status/2096045903811424673",
+      "url": "https://x.com/Coach_Yac/status/2096806003903729822",
       "player": "Brock Purdy",
       "meta": "QB \u00b7 SF",
-      "date": "2026-09-05",
-      "author": "FantasyPros"
-    },
-    {
-      "url": "https://x.com/FantasyPros/status/2095972419873673527",
-      "player": "Bucky Irving",
-      "meta": "RB \u00b7 TB",
-      "date": "2026-09-04",
-      "author": "FantasyPros"
-    },
-    {
-      "url": "https://x.com/UnderdogNFL/status/2095628236919021595",
-      "player": "Xavier Worthy",
-      "meta": "WR \u00b7 KC",
-      "date": "2026-09-03",
-      "author": "Underdog NFL"
-    },
-    {
-      "url": "https://x.com/Schultz_Report/status/2090918231456301160",
-      "player": "Bucky Irving",
-      "meta": "RB \u00b7 TB",
-      "date": "2026-08-21",
-      "author": "Jordan Schultz"
+      "date": "2026-09-07",
+      "author": "Coach_Yac",
+      "text": "Brock Purdy getting loose at practice \ud83c\udfa5: @mattblively",
+      "verified": true,
+      "faves": 159,
+      "secs": 15,
+      "poster": "https://pbs.twimg.com/amplify_video_thumb/2096805913919438848/img/clfPlexE9Neib40D.jpg?name=orig",
+      "video": "https://video.twimg.com/amplify_video/2096805913919438848/vid/avc1/1320x1762/ER9-f0bzuaIMZVoy.mp4?tag=29",
+      "stats": {
+        "replies": 2,
+        "reposts": 15,
+        "likes": 218,
+        "views": 4713
+      },
+      "author_name": "Coach Yac \ud83d\udde3",
+      "avatar": "https://pbs.twimg.com/profile_images/1494334947590475794/G7PUys49_x96.jpg",
+      "author_verified": true
     }
   ]
 }
