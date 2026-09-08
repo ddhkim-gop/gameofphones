@@ -89,6 +89,12 @@ except ImportError:                       # running from another directory
 
 # Surnames common enough that a bare match is meaningless - these need the
 # first name too, or "Cook" pulls in every post about a coach named Cook.
+#
+# This hand-kept seed is a floor, not the whole answer: a blocklist cannot keep
+# up with the league. shared_surnames() below adds every surname two or more
+# active NFL players share, read off Sleeper's own roster of players, which is
+# what caught Ja'Kobi Lane being filed under Jaylin Lane and Tetairoa McMillan
+# under Jalen McMillan.
 AMBIGUOUS = {
     "cook", "brown", "smith", "johnson", "williams", "jones", "davis", "wilson",
     "moore", "hill", "bell", "young", "carter", "allen", "robinson", "white",
@@ -98,6 +104,36 @@ AMBIGUOUS = {
     "harrison", "pierce", "douglas", "washington", "mitchell", "little",
     "watson", "cook", "dell", "henry", "conner", "gibbs", "burden",
 }
+
+
+_SHARED: set[str] | None = None
+
+
+def shared_surnames(players: dict) -> set[str]:
+    """Surnames borne by two or more active NFL players.
+
+    A surname the league only uses once is safe to match bare - "Bhayshul" aside,
+    nobody else is Tuten. A surname two players share is not: the post says
+    "Lane" and means whichever one it means, so the first name has to appear.
+    Derived from the same player dump the rosters come from, so it tracks the
+    league instead of drifting behind a hand-kept list.
+    """
+    global _SHARED
+    if _SHARED is not None:
+        return _SHARED
+    seen: dict[str, set[str]] = {}
+    for p in players.values():
+        if not p or p.get("position") not in ("QB", "RB", "WR", "TE", "K"):
+            continue
+        if (p.get("status") or "") in ("Inactive",):
+            continue
+        first = (p.get("first_name") or "").strip().lower()
+        last = (p.get("last_name") or "").strip().lower()
+        if not first or not last:
+            continue
+        seen.setdefault(last, set()).add(first)
+    _SHARED = {k for k, v in seen.items() if len(v) > 1}
+    return _SHARED
 
 
 # A post can carry video and name a player without ever showing him. These
@@ -184,6 +220,7 @@ def rosters() -> dict[str, list[dict]]:
     users = {u["user_id"]: (u.get("display_name") or u.get("username") or "Unknown")
              for u in get_json(f"{SLEEPER}/league/{LEAGUE_ID}/users")}
     players = get_json(f"{SLEEPER}/players/nfl")
+    shared_surnames(players)          # arm the derived ambiguity set
     out: dict[str, list[dict]] = {}
     for r in get_json(f"{SLEEPER}/league/{LEAGUE_ID}/rosters"):
         owner = users.get(r.get("owner_id"), f"team {r['roster_id']}")
@@ -396,7 +433,7 @@ def mentions(text: str, player_name: str) -> bool:
         return True
     if not re.search(_word(last), t):
         return False
-    if last in AMBIGUOUS:
+    if last in AMBIGUOUS or last in (_SHARED or set()):
         return bool(re.search(_word(first), t)
                     or re.search(re.escape(f"{first[0]}. {last}"), t))
     return True
