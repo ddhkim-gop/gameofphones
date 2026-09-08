@@ -1,14 +1,29 @@
 {
   "team": "Paul_Yoon",
-  "updated": "2026-09-05",
+  "updated": "2026-09-08",
   "note": "Curated: X has no public search API, so posts are collected by hand and matched to rosters by this script.",
   "tweets": [
     {
-      "url": "https://x.com/FantasyPros/status/2095998691286958577",
-      "player": "Jadarian Price",
-      "meta": "RB \u00b7 SEA",
-      "date": "2026-09-04",
-      "author": "FantasyPros"
+      "url": "https://x.com/mattblively/status/2094548824522129910",
+      "player": "Kaelon Black",
+      "meta": "RB \u00b7 SF",
+      "date": "2026-08-31",
+      "author": "mattblively",
+      "text": "The RB2 spot is still up for grabs, according to Kyle Shanahan. Kaelon Black and Jordan James battling for that role.",
+      "verified": true,
+      "faves": 66,
+      "secs": 13,
+      "poster": "https://pbs.twimg.com/amplify_video_thumb/2094548715759607808/img/Bcl7bnLrMAwbKb3g.jpg?name=orig",
+      "video": "https://video.twimg.com/amplify_video/2094548715759607808/vid/avc1/2160x3840/Hyg_wxb04IZE6xcQ.mp4?tag=29",
+      "stats": {
+        "replies": 3,
+        "reposts": 10,
+        "likes": 66,
+        "views": 25087
+      },
+      "author_name": "Matt Lively",
+      "avatar": "https://pbs.twimg.com/profile_images/1696765700118073345/IAcnswCj_x96.jpg",
+      "author_verified": true
     }
   ]
 }

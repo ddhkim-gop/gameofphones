@@ -1,35 +1,29 @@
 {
   "team": "velmixon",
-  "updated": "2026-09-05",
+  "updated": "2026-09-08",
   "note": "Curated: X has no public search API, so posts are collected by hand and matched to rosters by this script.",
   "tweets": [
     {
-      "url": "https://x.com/NFL_DovKleiman/status/2096024258753462314",
-      "player": "Joe Burrow",
-      "meta": "QB \u00b7 CIN",
-      "date": "2026-09-04",
-      "author": "Dov Kleiman"
-    },
-    {
-      "url": "https://x.com/FantasyPros/status/2095998691286958577",
-      "player": "Greg Dulcich",
-      "meta": "TE \u00b7 MIA",
-      "date": "2026-09-04",
-      "author": "FantasyPros"
-    },
-    {
-      "url": "https://x.com/FantasyPros/status/2095947312925233556",
-      "player": "KC Concepcion",
-      "meta": "WR \u00b7 CLE",
-      "date": "2026-09-04",
-      "author": "FantasyPros"
-    },
-    {
-      "url": "https://x.com/FFPhinest/status/2095346301269357032",
-      "player": "Josh Downs",
-      "meta": "WR \u00b7 IND",
-      "date": "2026-09-03",
-      "author": "The Fantasy's Phinest"
+      "url": "https://x.com/firstroundmock/status/2096614385233854519",
+      "player": "Fernando Mendoza",
+      "meta": "QB \u00b7 LV",
+      "date": "2026-09-06",
+      "author": "firstroundmock",
+      "text": "Fernando Mendoza had a below average preseason time to throw against backups and vanilla pass coverages (PFF: 3.02 secon",
+      "verified": true,
+      "faves": 9,
+      "secs": 24,
+      "poster": "https://pbs.twimg.com/amplify_video_thumb/2096614347644751873/img/uykUyJjzU9NrYxJI.jpg?name=orig",
+      "video": "https://video.twimg.com/amplify_video/2096614347644751873/vid/avc1/1280x712/PkmbmyPapOAq3MPJ.mp4?tag=29",
+      "stats": {
+        "replies": 8,
+        "reposts": 0,
+        "likes": 9,
+        "views": 1464
+      },
+      "author_name": "FIRST ROUND MOCK",
+      "avatar": "https://pbs.twimg.com/profile_images/1487885489306841091/8cfK5kQC_x96.jpg",
+      "author_verified": true
     }
   ]
 }

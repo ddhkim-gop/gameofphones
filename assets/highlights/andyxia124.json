@@ -1,42 +1,108 @@
 {
   "team": "andyxia124",
-  "updated": "2026-09-05",
+  "updated": "2026-09-08",
   "note": "Curated: X has no public search API, so posts are collected by hand and matched to rosters by this script.",
   "tweets": [
     {
-      "url": "https://x.com/AdamSchefter/status/2096033493306286233",
-      "player": "Josh Jacobs",
-      "meta": "RB \u00b7 GB",
-      "date": "2026-09-05",
-      "author": "Adam Schefter"
+      "url": "https://x.com/NFL/status/2093491432569065932",
+      "player": "Travis Kelce",
+      "meta": "TE \u00b7 KC",
+      "date": "2026-08-29",
+      "author": "NFL",
+      "text": "Travis Kelce making guys miss in preseason \u203c\ufe0f Stream on @NFLPlus",
+      "verified": true,
+      "faves": 3426,
+      "secs": 12,
+      "poster": "https://pbs.twimg.com/amplify_video_thumb/2093491334808317952/img/molBiV2I3a0DvMpc.jpg?name=orig",
+      "video": "https://video.twimg.com/amplify_video/2093491334808317952/vid/avc1/1920x1080/ezy00JIorfPaTrWl.mp4?tag=29"
     },
     {
-      "url": "https://x.com/LosTalksPats/status/2095882928266031584",
-      "player": "A.J. Brown",
-      "meta": "WR \u00b7 NE",
-      "date": "2026-09-04",
-      "author": "Carlos A. Lopez"
-    },
-    {
-      "url": "https://x.com/AdamSchefter/status/2095964161415196956",
-      "player": "Josh Jacobs",
-      "meta": "RB \u00b7 GB",
-      "date": "2026-09-04",
-      "author": "Adam Schefter"
+      "url": "https://x.com/1010XL/status/2092616049245987257",
+      "player": "Brian Thomas",
+      "meta": "WR \u00b7 JAX",
+      "date": "2026-08-26",
+      "author": "1010XL",
+      "text": "Non-contact pinnies on today for Brian Thomas Jr. at Jaguars Training Camp\ud83d\udc06 #Jaguars | #DUUUVAL",
+      "verified": true,
+      "faves": 13,
+      "secs": 9,
+      "poster": "https://pbs.twimg.com/amplify_video_thumb/2092615949908094976/img/W1HSN16NR7tfB6LE.jpg?name=orig",
+      "video": "https://video.twimg.com/amplify_video/2092615949908094976/vid/avc1/1080x1920/RQ8-ZnjuaYsOK3PA.mp4?tag=29",
+      "stats": {
+        "replies": 0,
+        "reposts": 4,
+        "likes": 13,
+        "views": 6468
+      },
+      "author_name": "1010 XL / 92.5 FM",
+      "avatar": "https://pbs.twimg.com/profile_images/1831432168335130624/DIFGWYX8_x96.jpg",
+      "author_verified": true
     },
     {
       "url": "https://x.com/SleeperPackers/status/2091917085068706125",
       "player": "Josh Jacobs",
       "meta": "RB \u00b7 GB",
       "date": "2026-08-24",
-      "author": "SleeperPackers"
+      "author": "SleeperPackers",
+      "text": "Packers runningback duo Josh Jacobs and MarShawn Lloyd at practice",
+      "verified": true,
+      "faves": 300,
+      "secs": 12,
+      "poster": "https://pbs.twimg.com/amplify_video_thumb/2091916977459658752/img/S_naBW-ODVwsfQqh.jpg?name=orig",
+      "video": "https://video.twimg.com/amplify_video/2091916977459658752/vid/avc1/2160x2324/G2XkHmtjWvS3Swk7.mp4?tag=29",
+      "stats": {
+        "replies": 0,
+        "reposts": 11,
+        "likes": 359,
+        "views": 50718
+      },
+      "author_name": "SleeperPackers",
+      "avatar": "https://pbs.twimg.com/profile_images/1899528250533326848/ke26SJjL_x96.jpg",
+      "author_verified": true
     },
     {
-      "url": "https://x.com/Schultz_Report/status/2090918231456301160",
+      "url": "https://x.com/NoelleBlumel/status/2091977615858864578",
+      "player": "Evan McPherson",
+      "meta": "K \u00b7 CIN",
+      "date": "2026-08-24",
+      "author": "NoelleBlumel",
+      "text": "Evan McPherson ends practice on a 61 yarder #Bengals @WCPO",
+      "verified": true,
+      "faves": 36,
+      "secs": 17,
+      "poster": "https://pbs.twimg.com/amplify_video_thumb/2091977577996894208/img/HAAAlQWXq4yVOIOj.jpg?name=orig",
+      "video": "https://video.twimg.com/amplify_video/2091977577996894208/vid/avc1/720x1280/PlEIuvS90HFOLMXj.mp4?tag=29",
+      "stats": {
+        "replies": 3,
+        "reposts": 7,
+        "likes": 36,
+        "views": 4161
+      },
+      "author_name": "Noelle Blumel",
+      "avatar": "https://pbs.twimg.com/profile_images/1978749969063358464/lF0or7GM_x96.jpg",
+      "author_verified": false
+    },
+    {
+      "url": "https://x.com/AFantasyFormula/status/2090575974840561965",
       "player": "Kyle Pitts",
       "meta": "TE \u00b7 ATL",
-      "date": "2026-08-21",
-      "author": "Jordan Schultz"
+      "date": "2026-08-20",
+      "author": "AFantasyFormula",
+      "text": "Kyle Pitts Sr. route rep with the ball in the air at Falcons camp",
+      "verified": true,
+      "faves": 300,
+      "secs": 5,
+      "poster": "https://pbs.twimg.com/amplify_video_thumb/2090524817808056320/img/MDuzzeEnCI0yLrYT.jpg?name=orig",
+      "video": "https://video.twimg.com/amplify_video/2090524817808056320/vid/avc1/720x900/QRimv4v5eOMzcboQ.mp4?tag=29",
+      "stats": {
+        "replies": 2,
+        "reposts": 2,
+        "likes": 19,
+        "views": 6526
+      },
+      "author_name": "TheFantasyFormula",
+      "avatar": "https://pbs.twimg.com/profile_images/2089755499537244161/y6FyS-6w_x96.jpg",
+      "author_verified": true
     }
   ]
 }

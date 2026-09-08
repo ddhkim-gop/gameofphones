@@ -1,35 +1,45 @@
 {
   "team": "IconicJH",
-  "updated": "2026-09-05",
+  "updated": "2026-09-08",
   "note": "Curated: X has no public search API, so posts are collected by hand and matched to rosters by this script.",
   "tweets": [
     {
-      "url": "https://x.com/balls_out_bets/status/2096092955010273406",
-      "player": "Carnell Tate",
-      "meta": "WR \u00b7 TEN",
-      "date": "2026-09-05",
-      "author": "Balls Out Sports Bets"
+      "url": "https://x.com/B_Shousejr/status/2092704561018413417",
+      "player": "Caleb Douglas",
+      "meta": "WR \u00b7 MIA",
+      "date": "2026-08-26",
+      "author": "B_Shousejr",
+      "text": "Malik Willis hits Caleb Douglas in stride for the TOUCHDOWN \u203c\ufe0f\ud83c\udfaf(@MiamiDolphins) #PhinsUp",
+      "verified": true,
+      "faves": 858,
+      "secs": 7,
+      "poster": "https://pbs.twimg.com/amplify_video_thumb/2092704533352685568/img/mkTBNreKg00xKAxe.jpg?name=orig",
+      "video": "https://video.twimg.com/amplify_video/2092704533352685568/vid/avc1/1126x1398/pGjaDfkCCFRIHB5U.mp4?tag=29",
+      "stats": {
+        "replies": 4,
+        "reposts": 49,
+        "likes": 858,
+        "views": 67936
+      },
+      "author_name": "Bobby Shouse",
+      "avatar": "https://pbs.twimg.com/profile_images/2021302648415322113/VWGwfRq1_x96.jpg",
+      "author_verified": true
     },
     {
-      "url": "https://x.com/FantasyPros/status/2095998691286958577",
-      "player": "Rome Odunze",
-      "meta": "WR \u00b7 CHI",
-      "date": "2026-09-04",
-      "author": "FantasyPros"
-    },
-    {
-      "url": "https://x.com/FantasyPros/status/2095947312925233556",
-      "player": "Carnell Tate",
-      "meta": "WR \u00b7 TEN",
-      "date": "2026-09-04",
-      "author": "FantasyPros"
-    },
-    {
-      "url": "https://x.com/Schultz_Report/status/2090918231456301160",
-      "player": "Bijan Robinson",
-      "meta": "RB \u00b7 ATL",
-      "date": "2026-08-21",
-      "author": "Jordan Schultz"
+      "url": "https://x.com/1010XL/status/2082819811290104296",
+      "player": "Bhayshul Tuten",
+      "meta": "RB \u00b7 JAX",
+      "date": "2026-07-30",
+      "author": "1010XL",
+      "text": "Bhayshul Tuten getting the hands warm at Day 2 of Jaguars Training Camp\u203c\ufe0f\ud83d\udd25 #DUUUVAL | #Jaguars",
+      "verified": true,
+      "faves": 24,
+      "secs": 10,
+      "poster": "https://pbs.twimg.com/amplify_video_thumb/2082819746525786113/img/eMPENsUVgNpstTJ3.jpg?name=orig",
+      "video": "https://video.twimg.com/amplify_video/2082819746525786113/vid/avc1/1080x1920/XDeRxyL9usbJa_Mp.mp4?tag=29",
+      "author_name": "1010 XL / 92.5 FM",
+      "avatar": "https://pbs.twimg.com/profile_images/1831432168335130624/DIFGWYX8_x96.jpg",
+      "author_verified": true
     }
   ]
 }
