@@ -1,5 +1,5 @@
-import { api } from "./dataService.js?v=20260609a";
-import { renderNav } from "./components/nav.js?v=20260907a";
+import { api } from "./dataService.js?v=202609080002";
+import { renderNav } from "./components/nav.js?v=202609080002";
 
 renderNav();
 
@@ -938,7 +938,9 @@ async function init() {
         #history-container { max-width: 1100px; }
         .sh-year { margin-bottom: 52px; }
         .sh-year-header {
-            display:flex; align-items:center; gap:16px;
+            /* Title plus up to three podium badges: without the wrap they are
+               forced onto one line and push the page 16px past a 375px screen. */
+            display:flex; align-items:center; gap:16px; flex-wrap:wrap;
             margin-bottom:20px; padding-bottom:14px;
             border-bottom:2px solid #2d3139;
         }

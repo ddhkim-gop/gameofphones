@@ -1,5 +1,5 @@
-import { api } from "./dataService.js?v=20260609a";
-import { renderNav } from "./components/nav.js?v=20260907a";
+import { api } from "./dataService.js?v=202609080002";
+import { renderNav } from "./components/nav.js?v=202609080002";
 
 let standings = null;
 let transactions = null;
@@ -542,7 +542,7 @@ function renderReportCard() {
         m.isActive = active2026.has(m.name);
     });
 
-    let html = `<div style="display:grid;grid-template-columns:repeat(4,1fr);gap:16px;">`;
+    let html = `<div style="display:grid;grid-template-columns:repeat(auto-fill,minmax(240px,1fr));gap:16px;">`;
 
     allSorted.forEach(m => {
         const playoffPct   = (m.playoffRate * 100).toFixed(0) + "%";

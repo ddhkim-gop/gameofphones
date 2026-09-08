@@ -1,6 +1,6 @@
-import { api } from "./dataService.js?v=20260609a";
-import { renderNav } from "./components/nav.js?v=20260907a";
-import { ensurePlayerCardPopover, openPlayerCard } from "./playerCard.js?v=20260820c";
+import { api } from "./dataService.js?v=202609080002";
+import { renderNav } from "./components/nav.js?v=202609080002";
+import { ensurePlayerCardPopover, openPlayerCard } from "./playerCard.js?v=202609080002";
 
 renderNav();
 
@@ -582,7 +582,7 @@ async function init() {
         const draftHtml = draftTabButtons ? `
         <div style="background:#1e2027;border:1px solid #2d3139;border-radius:12px;padding:20px;margin-top:16px;">
             <div style="font-size:14px;font-weight:700;color:#f0f1f3;margin-bottom:14px;">Draft History</div>
-            <div style="display:flex;gap:4px;margin-bottom:16px;border-bottom:1px solid #2d3139;padding-bottom:12px;">
+            <div style="display:flex;flex-wrap:wrap;gap:4px;margin-bottom:16px;border-bottom:1px solid #2d3139;padding-bottom:12px;">
                 ${draftTabButtons}
             </div>
             <style>
