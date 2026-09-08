@@ -8676,7 +8676,7 @@ window.__STATIC_DATA__ = {
                 "name": "Chig Okonkwo",
                 "position": "TE",
                 "team": "WAS",
-                "age": 26,
+                "age": 27,
                 "birth_date": "1999-09-08",
                 "college": "Maryland",
                 "height": "75",
