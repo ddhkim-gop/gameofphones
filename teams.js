@@ -1,5 +1,5 @@
 import { api } from "./dataService.js?v=20260609a";
-import { renderNav } from "./components/nav.js";
+import { renderNav } from "./components/nav.js?v=20260907a";
 import { ensurePlayerCardPopover, openPlayerCard } from "./playerCard.js?v=20260820c";
 
 // Data/helpers the shared player card needs, resolved from this page's caches.

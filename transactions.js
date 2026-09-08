@@ -1,5 +1,5 @@
 import { api } from "./dataService.js?v=20260609a";
-import { renderNav } from "./components/nav.js";
+import { renderNav } from "./components/nav.js?v=20260907a";
 
 const POS_COLORS = { QB:"#e74c82", RB:"#3ecf8e", WR:"#4299e1", TE:"#f6ad55", K:"#9f7aea", DEF:"#94a3b8" };
 const FAAB_BUDGET = 100;

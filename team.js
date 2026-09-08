@@ -1,5 +1,5 @@
 import { api } from "./dataService.js?v=20260609a";
-import { renderNav } from "./components/nav.js";
+import { renderNav } from "./components/nav.js?v=20260907a";
 import { ensurePlayerCardPopover, openPlayerCard } from "./playerCard.js?v=20260820c";
 
 renderNav();
@@ -911,7 +911,7 @@ async function loadTeamReel(teamName) {
               <video class="reel-video" data-i="${i}" controls playsinline preload="none"
                      ${t.poster ? `poster="${esc(t.poster)}"` : ""}
                      style="width:100%;display:block;background:#000;
-                            aspect-ratio:16/9;object-fit:contain;">
+                            aspect-ratio:16/9;max-height:min(70vh,420px);object-fit:contain;">
                 <source src="${esc(t.video)}" type="video/mp4">
               </video>
             </div>
@@ -927,6 +927,24 @@ async function loadTeamReel(teamName) {
     // load and the player sat dead.
     body.querySelectorAll("video.reel-video").forEach((v) => {
         const t = tweets[Number(v.dataset.i)] || {};
+        // Most of these clips are shot on a phone - 1126x1398 is typical - so a
+        // fixed 16/9 box pillarboxes them into a sliver. The poster is the same
+        // shape as the video and loads without preloading the clip, so it can
+        // set the real ratio up front.
+        if (v.poster) {
+            const probe = new Image();
+            probe.onload = () => {
+                if (probe.naturalWidth && probe.naturalHeight) {
+                    v.style.aspectRatio = `${probe.naturalWidth} / ${probe.naturalHeight}`;
+                }
+            };
+            probe.src = v.poster;
+        }
+        v.addEventListener("loadedmetadata", () => {
+            if (v.videoWidth && v.videoHeight) {
+                v.style.aspectRatio = `${v.videoWidth} / ${v.videoHeight}`;
+            }
+        });
         v.addEventListener("play", () => {
             body.querySelectorAll("video.reel-video").forEach((o) => {
                 if (o !== v && !o.paused) o.pause();
