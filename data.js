@@ -9713,22 +9713,6 @@ window.__STATIC_DATA__ = {
         "roster_id": 10,
         "players": [
             {
-                "player_id": "10218",
-                "espn_id": null,
-                "name": "Xavier Hutchinson",
-                "position": "WR",
-                "team": "HOU",
-                "age": 26,
-                "birth_date": "2000-06-01",
-                "college": "Iowa State",
-                "height": "75",
-                "weight": "210",
-                "years_exp": 3,
-                "status": "Active",
-                "injury_status": null,
-                "search_rank": 679
-            },
-            {
                 "player_id": "10222",
                 "espn_id": null,
                 "name": "Jayden Reed",
@@ -10015,6 +9999,22 @@ window.__STATIC_DATA__ = {
                 "status": "Active",
                 "injury_status": null,
                 "search_rank": 453
+            },
+            {
+                "player_id": "13545",
+                "espn_id": null,
+                "name": "Trey Smack",
+                "position": "K",
+                "team": "GB",
+                "age": 23,
+                "birth_date": "2003-06-12",
+                "college": "Florida",
+                "height": "73",
+                "weight": "188",
+                "years_exp": 0,
+                "status": "Active",
+                "injury_status": null,
+                "search_rank": 195
             },
             {
                 "player_id": "3214",
@@ -11668,6 +11668,34 @@ window.__STATIC_DATA__ = {
     }
   ],
   "transactions": [
+    {
+        "season": "2026",
+        "week": 1,
+        "created": "Sep 9, 2026 • 3:40 AM PT",
+        "transaction_id": "1403378665655431168",
+        "type": "free_agent",
+        "status": "complete",
+        "teams": [
+            "velmixon"
+        ],
+        "added": [
+            {
+                "name": "Trey Smack",
+                "position": "K",
+                "team": "GB"
+            }
+        ],
+        "dropped": [
+            {
+                "name": "Xavier Hutchinson",
+                "position": "WR",
+                "team": "HOU"
+            }
+        ],
+        "faab": 0,
+        "waiver_bid": 0,
+        "notes": null
+    },
     {
         "season": "2026",
         "week": 1,
