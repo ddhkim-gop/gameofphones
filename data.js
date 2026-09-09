@@ -5419,22 +5419,6 @@ window.__STATIC_DATA__ = {
                 "search_rank": 105
             },
             {
-                "player_id": "8676",
-                "espn_id": null,
-                "name": "Rashid Shaheed",
-                "position": "WR",
-                "team": "SEA",
-                "age": 28,
-                "birth_date": "1998-08-31",
-                "college": "Weber State",
-                "height": "72",
-                "weight": "180",
-                "years_exp": 4,
-                "status": "Active",
-                "injury_status": null,
-                "search_rank": 150
-            },
-            {
                 "player_id": "8142",
                 "espn_id": null,
                 "name": "Alec Pierce",
@@ -6279,22 +6263,6 @@ window.__STATIC_DATA__ = {
         "roster_id": 3,
         "players": [
             {
-                "player_id": "11435",
-                "espn_id": null,
-                "name": "Emanuel Wilson",
-                "position": "RB",
-                "team": "SEA",
-                "age": 27,
-                "birth_date": "1999-05-08",
-                "college": "Fort Valley State",
-                "height": "70",
-                "weight": "226",
-                "years_exp": 3,
-                "status": "Active",
-                "injury_status": null,
-                "search_rank": 161
-            },
-            {
                 "player_id": "11566",
                 "espn_id": null,
                 "name": "Jayden Daniels",
@@ -6709,6 +6677,22 @@ window.__STATIC_DATA__ = {
                 "status": "Active",
                 "injury_status": null,
                 "search_rank": 52
+            },
+            {
+                "player_id": "8676",
+                "espn_id": null,
+                "name": "Rashid Shaheed",
+                "position": "WR",
+                "team": "SEA",
+                "age": 28,
+                "birth_date": "1998-08-31",
+                "college": "Weber State",
+                "height": "72",
+                "weight": "180",
+                "years_exp": 4,
+                "status": "Active",
+                "injury_status": null,
+                "search_rank": 150
             },
             {
                 "player_id": "9482",
@@ -7982,7 +7966,7 @@ window.__STATIC_DATA__ = {
                 "name": "Caleb Douglas",
                 "position": "WR",
                 "team": "MIA",
-                "age": 22,
+                "age": 23,
                 "birth_date": "2003-09-09",
                 "college": "Texas Tech",
                 "height": "76",
@@ -9061,6 +9045,38 @@ window.__STATIC_DATA__ = {
                 "search_rank": 157
             },
             {
+                "player_id": "13491",
+                "espn_id": null,
+                "name": "Kaden Wetjen",
+                "position": "WR",
+                "team": "PIT",
+                "age": 24,
+                "birth_date": "2002-03-09",
+                "college": "Iowa",
+                "height": "69",
+                "weight": "196",
+                "years_exp": 0,
+                "status": "Active",
+                "injury_status": null,
+                "search_rank": 636
+            },
+            {
+                "player_id": "13516",
+                "espn_id": null,
+                "name": "Max Bredeson",
+                "position": "RB",
+                "team": "MIN",
+                "age": 23,
+                "birth_date": "2002-10-04",
+                "college": "Michigan",
+                "height": "74",
+                "weight": "252",
+                "years_exp": 0,
+                "status": "Active",
+                "injury_status": null,
+                "search_rank": 549
+            },
+            {
                 "player_id": "4892",
                 "espn_id": 3052587,
                 "name": "Baker Mayfield",
@@ -9798,7 +9814,7 @@ window.__STATIC_DATA__ = {
                 "name": "Ricky Pearsall",
                 "position": "WR",
                 "team": "SF",
-                "age": 25,
+                "age": 26,
                 "birth_date": "2000-09-09",
                 "college": "Florida",
                 "height": "73",
@@ -11639,6 +11655,72 @@ window.__STATIC_DATA__ = {
     {
         "season": "2026",
         "week": 1,
+        "created": "Sep 8, 2026 • 5:31 PM PT",
+        "transaction_id": "1403225250463764480",
+        "type": "free_agent",
+        "status": "complete",
+        "teams": [
+            "NoSkilzPak"
+        ],
+        "added": [],
+        "dropped": [
+            {
+                "name": "Emanuel Wilson",
+                "position": "RB",
+                "team": "SEA"
+            }
+        ],
+        "faab": 0,
+        "waiver_bid": 0,
+        "notes": null
+    },
+    {
+        "season": "2026",
+        "week": 1,
+        "created": "Sep 8, 2026 • 5:11 PM PT",
+        "transaction_id": "1403220195895418880",
+        "type": "free_agent",
+        "status": "complete",
+        "teams": [
+            "eikichii952"
+        ],
+        "added": [
+            {
+                "name": "Kaden Wetjen",
+                "position": "WR",
+                "team": "PIT"
+            }
+        ],
+        "dropped": [],
+        "faab": 0,
+        "waiver_bid": 0,
+        "notes": null
+    },
+    {
+        "season": "2026",
+        "week": 1,
+        "created": "Sep 8, 2026 • 5:09 PM PT",
+        "transaction_id": "1403219866814545920",
+        "type": "free_agent",
+        "status": "complete",
+        "teams": [
+            "eikichii952"
+        ],
+        "added": [
+            {
+                "name": "Max Bredeson",
+                "position": "RB",
+                "team": "MIN"
+            }
+        ],
+        "dropped": [],
+        "faab": 0,
+        "waiver_bid": 0,
+        "notes": null
+    },
+    {
+        "season": "2026",
+        "week": 1,
         "created": "Sep 8, 2026 • 11:45 AM PT",
         "transaction_id": "1403138239547572224",
         "type": "free_agent",
@@ -11679,6 +11761,40 @@ window.__STATIC_DATA__ = {
         "faab": 0,
         "waiver_bid": 0,
         "notes": null
+    },
+    {
+        "season": "2026",
+        "week": 1,
+        "created": "Sep 8, 2026 • 7:31 AM PT",
+        "transaction_id": "1403074246166478848",
+        "type": "trade",
+        "status": "complete",
+        "teams": [
+            "ddhk",
+            "NoSkilzPak"
+        ],
+        "assets_received": {
+            "NoSkilzPak": [
+                {
+                    "name": "Rashid Shaheed",
+                    "position": "WR",
+                    "team": "SEA"
+                }
+            ],
+            "ddhk": [
+                {
+                    "name": "2029 Round 3",
+                    "position": "PICK",
+                    "team": null,
+                    "original_owner": "NoSkilzPak"
+                },
+                {
+                    "name": "$1 FAAB",
+                    "position": "FAAB",
+                    "team": null
+                }
+            ]
+        }
     },
     {
         "season": "2026",
@@ -64689,6 +64805,16 @@ window.__STATIC_DATA__ = {
         "owner_name": "paddleham",
         "original_owner_name": "NoSkilzPak",
         "previous_owner_name": "ddhk"
+    },
+    {
+        "season": "2029",
+        "round": 3,
+        "roster_id": "3",
+        "owner_id": "1",
+        "previous_owner_id": "3",
+        "owner_name": "ddhk",
+        "original_owner_name": "NoSkilzPak",
+        "previous_owner_name": "NoSkilzPak"
     },
     {
         "season": "2026",
