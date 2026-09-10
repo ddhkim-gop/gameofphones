@@ -10685,6 +10685,22 @@ window.__STATIC_DATA__ = {
         "roster_id": 12,
         "players": [
             {
+                "player_id": "10218",
+                "espn_id": null,
+                "name": "Xavier Hutchinson",
+                "position": "WR",
+                "team": "HOU",
+                "age": 26,
+                "birth_date": "2000-06-01",
+                "college": "Iowa State",
+                "height": "75",
+                "weight": "210",
+                "years_exp": 3,
+                "status": "Active",
+                "injury_status": null,
+                "search_rank": 679
+            },
+            {
                 "player_id": "10232",
                 "espn_id": null,
                 "name": "Michael Wilson",
@@ -10731,22 +10747,6 @@ window.__STATIC_DATA__ = {
                 "status": "Active",
                 "injury_status": null,
                 "search_rank": 189
-            },
-            {
-                "player_id": "12476",
-                "espn_id": null,
-                "name": "Devin Neal",
-                "position": "RB",
-                "team": null,
-                "age": 23,
-                "birth_date": "2003-08-12",
-                "college": "Kansas",
-                "height": "71",
-                "weight": "213",
-                "years_exp": 1,
-                "status": "Inactive",
-                "injury_status": "Questionable",
-                "search_rank": 169
             },
             {
                 "player_id": "12492",
@@ -11620,6 +11620,34 @@ window.__STATIC_DATA__ = {
     }
   ],
   "transactions": [
+    {
+        "season": "2026",
+        "week": 1,
+        "created": "Sep 10, 2026 • 11:39 AM PT",
+        "transaction_id": "1403861451940044800",
+        "type": "free_agent",
+        "status": "complete",
+        "teams": [
+            "ganathan"
+        ],
+        "added": [
+            {
+                "name": "Xavier Hutchinson",
+                "position": "WR",
+                "team": "HOU"
+            }
+        ],
+        "dropped": [
+            {
+                "name": "Devin Neal",
+                "position": "RB",
+                "team": null
+            }
+        ],
+        "faab": 0,
+        "waiver_bid": 0,
+        "notes": null
+    },
     {
         "season": "2026",
         "week": 1,
