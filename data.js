@@ -5447,7 +5447,7 @@ window.__STATIC_DATA__ = {
                 "weight": "225",
                 "years_exp": 9,
                 "status": "Active",
-                "injury_status": "Questionable",
+                "injury_status": null,
                 "search_rank": 40
             },
             {
@@ -7292,7 +7292,7 @@ window.__STATIC_DATA__ = {
                 "birth_date": "2003-03-15",
                 "college": "Texas",
                 "height": "74",
-                "weight": "211",
+                "weight": "209",
                 "years_exp": 1,
                 "status": "Active",
                 "injury_status": null,
@@ -7663,7 +7663,7 @@ window.__STATIC_DATA__ = {
                 "weight": "183",
                 "years_exp": 3,
                 "status": "Active",
-                "injury_status": "Questionable",
+                "injury_status": null,
                 "search_rank": 39
             }
         ]
@@ -7757,11 +7757,11 @@ window.__STATIC_DATA__ = {
                 "espn_id": null,
                 "name": "Jarquez Hunter",
                 "position": "RB",
-                "team": null,
+                "team": "MIA",
                 "age": 23,
                 "birth_date": "2002-12-29",
                 "college": "Auburn",
-                "height": "70",
+                "height": "71",
                 "weight": "211",
                 "years_exp": 1,
                 "status": "Active",
@@ -8085,7 +8085,7 @@ window.__STATIC_DATA__ = {
                 "weight": "182",
                 "years_exp": 3,
                 "status": "Active",
-                "injury_status": "Questionable",
+                "injury_status": null,
                 "search_rank": 192
             },
             {
@@ -9599,7 +9599,7 @@ window.__STATIC_DATA__ = {
                 "espn_id": null,
                 "name": "Jerome Ford",
                 "position": "RB",
-                "team": "WAS",
+                "team": null,
                 "age": 26,
                 "birth_date": "1999-09-12",
                 "college": "Cincinnati",
@@ -10013,7 +10013,7 @@ window.__STATIC_DATA__ = {
                 "weight": "225",
                 "years_exp": 6,
                 "status": "Active",
-                "injury_status": null,
+                "injury_status": "Questionable",
                 "search_rank": 237
             },
             {
@@ -16765,9 +16765,9 @@ window.__STATIC_DATA__ = {
         ],
         "dropped": [
             {
-                "name": "Nathan Carter",
+                "name": "Nate Carter",
                 "position": "RB",
-                "team": null
+                "team": "KC"
             }
         ],
         "faab": 0,
@@ -17452,9 +17452,9 @@ window.__STATIC_DATA__ = {
         ],
         "added": [
             {
-                "name": "Nathan Carter",
+                "name": "Nate Carter",
                 "position": "RB",
-                "team": null
+                "team": "KC"
             }
         ],
         "dropped": [
