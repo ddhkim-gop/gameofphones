@@ -2,5 +2,19 @@
   "team": "ganathan",
   "updated": "2026-09-11",
   "note": "Curated: X has no public search API, so posts are collected by hand and matched to rosters by this script.",
-  "tweets": []
+  "tweets": [
+    {
+      "url": "https://x.com/JDurham_FBall/status/2098220723357597783",
+      "player": "Kyren Williams",
+      "meta": "RB \u00b7 LAR",
+      "date": "2026-09-11",
+      "author": "Jackson Durham",
+      "text": "Kyren Williams scores the 1st TD of the Rams season! pic.twitter.com/A95TUESwsw \u2014 Jackson Durham (@JDurham_FBall) September 11, 2026",
+      "verified": true,
+      "faves": 0,
+      "secs": 0,
+      "video": "https://video.twimg.com/amplify_video/2098220659507961856/vid/avc1/1080x1920/TkMeBF-ouVv2AwKI.mp4?tag=29",
+      "poster": "https://pbs.twimg.com/amplify_video_thumb/2098220659507961856/img/Jl3SPFyI8iLBKY7z.jpg?name=orig"
+    }
+  ]
 }
