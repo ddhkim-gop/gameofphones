@@ -1,55 +1,33 @@
 {
   "team": "NoSkilzPak",
-  "updated": "2026-09-08",
+  "updated": "2026-09-11",
   "note": "Curated: X has no public search API, so posts are collected by hand and matched to rosters by this script.",
   "tweets": [
     {
-      "url": "https://x.com/Coach_Yac/status/2096806003903729822",
-      "player": "Brock Purdy",
-      "meta": "QB \u00b7 SF",
-      "date": "2026-09-07",
-      "author": "Coach_Yac",
-      "text": "Brock Purdy getting loose at practice \ud83c\udfa5: @mattblively",
+      "url": "https://x.com/NFL/status/2097878710779306133",
+      "player": "Jaxon Smith-Njigba",
+      "meta": "WR \u00b7 SEA",
+      "date": "2026-09-10",
+      "author": "NFL",
+      "text": "THERE GOES JSN NEvsSEA on NBC/Peacock Stream on @NFLPlus pic.twitter.com/SIt21pDRO8 \u2014 NFL (@NFL) September 10, 2026",
       "verified": true,
-      "faves": 159,
-      "secs": 15,
-      "poster": "https://pbs.twimg.com/amplify_video_thumb/2096805913919438848/img/clfPlexE9Neib40D.jpg?name=orig",
-      "video": "https://video.twimg.com/amplify_video/2096805913919438848/vid/avc1/1320x1762/ER9-f0bzuaIMZVoy.mp4?tag=29",
-      "stats": {
-        "replies": 2,
-        "reposts": 15,
-        "likes": 218,
-        "views": 4713
-      },
-      "author_name": "Coach Yac \ud83d\udde3",
-      "avatar": "https://pbs.twimg.com/profile_images/1494334947590475794/G7PUys49_x96.jpg",
-      "author_verified": true
+      "faves": 0,
+      "secs": 0,
+      "video": "https://video.twimg.com/amplify_video/2097878629698998282/vid/avc1/1920x1080/5vCcUBwrRovoG4oB.mp4?tag=29",
+      "poster": "https://pbs.twimg.com/amplify_video_thumb/2097878629698998282/img/CUAsbxasnxOWaXcT.jpg?name=orig"
     },
     {
-      "url": "https://x.com/Daily_Chiefs_/status/2095199421222838646",
-      "player": "Xavier Worthy",
-      "meta": "WR \u00b7 KC",
-      "date": "2026-09-02",
-      "author": "Daily_Chiefs_",
-      "text": "Travis Kelce, Xavier Worthy, and others running drills today at practice. \ud83d\udd25 \ud83c\udfa5 | @HaroldRKuntz3",
+      "url": "https://x.com/NFL/status/2098147658086912007",
+      "player": "Jaxon Smith-Njigba",
+      "meta": "WR \u00b7 SEA",
+      "date": "2026-09-10",
+      "author": "NFL",
+      "text": "Every time that JSN and Christian Gonzalez matched up last night \ud83c\udf7f @jaxon_smith1 @chrisgonzo28 pic.twitter.com/joH2p0wBPf \u2014 NFL (@NFL) September 10, 2026",
       "verified": true,
-      "faves": 339,
-      "secs": 28,
-      "poster": "https://pbs.twimg.com/amplify_video_thumb/2095199392005574656/img/Ay2aY-Y4azG8VKs9.jpg?name=orig",
-      "video": "https://video.twimg.com/amplify_video/2095199392005574656/vid/avc1/1280x720/56BifkC2_1slNeTK.mp4?tag=29"
-    },
-    {
-      "url": "https://x.com/JoshNorris/status/2089050185632452780",
-      "player": "Oronde Gadsden",
-      "meta": "TE \u00b7 LAC",
-      "date": "2026-08-16",
-      "author": "JoshNorris",
-      "text": "mixed bag for Oronde Gadsden in Preseason Week 1 while Charlie Kolar and David Njoku did not play certainly feels like \"",
-      "verified": true,
-      "faves": 190,
-      "secs": 35,
-      "poster": "https://pbs.twimg.com/amplify_video_thumb/2089050092649005056/img/oPJGLDmndpwqhO7D.jpg?name=orig",
-      "video": "https://video.twimg.com/amplify_video/2089050092649005056/vid/avc1/1920x1080/vwQ24JwCBzpemsWi.mp4?tag=29"
+      "faves": 0,
+      "secs": 0,
+      "video": "https://video.twimg.com/amplify_video/2098147145702375433/vid/avc1/1920x1080/GcKwc_WATnXGWqlo.mp4?tag=29",
+      "poster": "https://pbs.twimg.com/media/HR4eH8sWEAATqdP.jpg?name=orig"
     }
   ]
 }
