@@ -6275,7 +6275,7 @@ window.__STATIC_DATA__ = {
                 "weight": "208",
                 "years_exp": 1,
                 "status": "Active",
-                "injury_status": null,
+                "injury_status": "Out",
                 "search_rank": 222
             },
             {
@@ -6717,6 +6717,22 @@ window.__STATIC_DATA__ = {
                 "search_rank": 174
             },
             {
+                "player_id": "11651",
+                "espn_id": null,
+                "name": "Isaac Guerendo",
+                "position": "RB",
+                "team": "SF",
+                "age": 26,
+                "birth_date": "2000-06-28",
+                "college": "Louisville",
+                "height": "72",
+                "weight": "221",
+                "years_exp": 2,
+                "status": "Active",
+                "injury_status": "PUP",
+                "search_rank": 678
+            },
+            {
                 "player_id": "1166",
                 "espn_id": 14880,
                 "name": "Kirk Cousins",
@@ -6889,7 +6905,7 @@ window.__STATIC_DATA__ = {
                 "weight": "220",
                 "years_exp": 9,
                 "status": "Active",
-                "injury_status": "Out",
+                "injury_status": "",
                 "search_rank": 212
             },
             {
@@ -7051,6 +7067,22 @@ window.__STATIC_DATA__ = {
                 "status": "Active",
                 "injury_status": null,
                 "search_rank": 543
+            },
+            {
+                "player_id": "7610",
+                "espn_id": null,
+                "name": "Trey Lance",
+                "position": "QB",
+                "team": "LAC",
+                "age": 26,
+                "birth_date": "2000-05-09",
+                "college": "North Dakota State",
+                "height": "76",
+                "weight": "226",
+                "years_exp": 5,
+                "status": "Active",
+                "injury_status": null,
+                "search_rank": 640
             },
             {
                 "player_id": "8131",
@@ -7359,7 +7391,7 @@ window.__STATIC_DATA__ = {
                 "weight": "202",
                 "years_exp": 0,
                 "status": "Active",
-                "injury_status": null,
+                "injury_status": "Out",
                 "search_rank": 550
             },
             {
@@ -7656,7 +7688,7 @@ window.__STATIC_DATA__ = {
                 "name": "Zay Flowers",
                 "position": "WR",
                 "team": "BAL",
-                "age": 25,
+                "age": 26,
                 "birth_date": "2000-09-11",
                 "college": "Boston College",
                 "height": "69",
@@ -9319,7 +9351,7 @@ window.__STATIC_DATA__ = {
                 "weight": "211",
                 "years_exp": 0,
                 "status": "Active",
-                "injury_status": null,
+                "injury_status": "Out",
                 "search_rank": 242
             },
             {
@@ -9725,7 +9757,7 @@ window.__STATIC_DATA__ = {
                 "weight": "235",
                 "years_exp": 2,
                 "status": "Active",
-                "injury_status": "Doubtful",
+                "injury_status": "Out",
                 "search_rank": 23
             },
             {
@@ -10841,7 +10873,7 @@ window.__STATIC_DATA__ = {
                 "weight": "246",
                 "years_exp": 0,
                 "status": "Active",
-                "injury_status": null,
+                "injury_status": "Out",
                 "search_rank": 212
             },
             {
@@ -11620,6 +11652,78 @@ window.__STATIC_DATA__ = {
     }
   ],
   "transactions": [
+    {
+        "season": "2026",
+        "week": 1,
+        "created": "Sep 10, 2026 • 3:28 PM PT",
+        "transaction_id": "1403919200430428160",
+        "type": "free_agent",
+        "status": "complete",
+        "teams": [
+            "jonsung"
+        ],
+        "added": [
+            {
+                "name": "Trey Lance",
+                "position": "QB",
+                "team": "LAC"
+            }
+        ],
+        "dropped": [],
+        "faab": 0,
+        "waiver_bid": 0,
+        "notes": null
+    },
+    {
+        "season": "2026",
+        "week": 1,
+        "created": "Sep 10, 2026 • 3:28 PM PT",
+        "transaction_id": "1403919063352139776",
+        "type": "free_agent",
+        "status": "complete",
+        "teams": [
+            "jonsung"
+        ],
+        "added": [
+            {
+                "name": "Isaac Guerendo",
+                "position": "RB",
+                "team": "SF"
+            }
+        ],
+        "dropped": [
+            {
+                "name": "Trey Lance",
+                "position": "QB",
+                "team": "LAC"
+            }
+        ],
+        "faab": 0,
+        "waiver_bid": 0,
+        "notes": null
+    },
+    {
+        "season": "2026",
+        "week": 1,
+        "created": "Sep 10, 2026 • 3:14 PM PT",
+        "transaction_id": "1403915501452677120",
+        "type": "free_agent",
+        "status": "complete",
+        "teams": [
+            "jonsung"
+        ],
+        "added": [
+            {
+                "name": "Trey Lance",
+                "position": "QB",
+                "team": "LAC"
+            }
+        ],
+        "dropped": [],
+        "faab": 0,
+        "waiver_bid": 0,
+        "notes": null
+    },
     {
         "season": "2026",
         "week": 1,
