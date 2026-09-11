@@ -2,5 +2,19 @@
   "team": "paddleham",
   "updated": "2026-09-11",
   "note": "Curated: X has no public search API, so posts are collected by hand and matched to rosters by this script.",
-  "tweets": []
+  "tweets": [
+    {
+      "url": "https://x.com/Zane_Hancock21/status/2097887566355661057",
+      "player": "Mack Hollins",
+      "meta": "WR \u00b7 NE",
+      "date": "2026-09-10",
+      "author": "Zane Hancock",
+      "text": "Mack Hollins with a clutch grab on 4th and 9 What was a 10-0 game has turned into a last minute drive to potentially win in #NEvsSEA pic.twitter.com/AuNjEsiSzX \u2014 Zane Hancock (@Zane_Hancock21) September 10, 2026",
+      "verified": true,
+      "faves": 0,
+      "secs": 0,
+      "video": "https://video.twimg.com/amplify_video/2097886649485307905/vid/avc1/1920x1080/RqAXFzXNoxQVzK-M.mp4?tag=29",
+      "poster": "https://pbs.twimg.com/amplify_video_thumb/2097886649485307905/img/RFwFtVs_n6-w37f7.jpg?name=orig"
+    }
+  ]
 }
