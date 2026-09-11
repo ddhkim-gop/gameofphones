@@ -5207,7 +5207,7 @@ window.__STATIC_DATA__ = {
                 "weight": "216",
                 "years_exp": 2,
                 "status": "Active",
-                "injury_status": "Questionable",
+                "injury_status": null,
                 "search_rank": 88
             },
             {
@@ -6777,7 +6777,7 @@ window.__STATIC_DATA__ = {
                 "weight": "208",
                 "years_exp": 1,
                 "status": "Active",
-                "injury_status": "Questionable",
+                "injury_status": null,
                 "search_rank": 95
             },
             {
@@ -7486,7 +7486,7 @@ window.__STATIC_DATA__ = {
                 "height": "73",
                 "weight": "226",
                 "years_exp": 7,
-                "status": "Active",
+                "status": "Inactive",
                 "injury_status": "IR",
                 "search_rank": 17
             },
@@ -7847,22 +7847,6 @@ window.__STATIC_DATA__ = {
                 "status": "Active",
                 "injury_status": null,
                 "search_rank": 199
-            },
-            {
-                "player_id": "11792",
-                "espn_id": null,
-                "name": "Will Reichard",
-                "position": "K",
-                "team": "MIN",
-                "age": 25,
-                "birth_date": "2001-01-09",
-                "college": "Alabama",
-                "height": "73",
-                "weight": "190",
-                "years_exp": 2,
-                "status": "Active",
-                "injury_status": null,
-                "search_rank": 169
             },
             {
                 "player_id": "12490",
@@ -8443,7 +8427,7 @@ window.__STATIC_DATA__ = {
                 "weight": "245",
                 "years_exp": 0,
                 "status": "Active",
-                "injury_status": "Questionable",
+                "injury_status": "Out",
                 "search_rank": 459
             },
             {
@@ -8459,7 +8443,7 @@ window.__STATIC_DATA__ = {
                 "weight": "180",
                 "years_exp": 0,
                 "status": "Active",
-                "injury_status": "Questionable",
+                "injury_status": null,
                 "search_rank": 185
             },
             {
@@ -10045,7 +10029,7 @@ window.__STATIC_DATA__ = {
                 "weight": "225",
                 "years_exp": 6,
                 "status": "Active",
-                "injury_status": "Questionable",
+                "injury_status": "Out",
                 "search_rank": 237
             },
             {
@@ -10141,7 +10125,7 @@ window.__STATIC_DATA__ = {
                 "weight": "205",
                 "years_exp": 4,
                 "status": "Active",
-                "injury_status": null,
+                "injury_status": "Questionable",
                 "search_rank": 439
             },
             {
@@ -11652,6 +11636,28 @@ window.__STATIC_DATA__ = {
     }
   ],
   "transactions": [
+    {
+        "season": "2026",
+        "week": 1,
+        "created": "Sep 11, 2026 • 9:29 AM PT",
+        "transaction_id": "1404191232808222720",
+        "type": "free_agent",
+        "status": "complete",
+        "teams": [
+            "IconicJH"
+        ],
+        "added": [],
+        "dropped": [
+            {
+                "name": "Will Reichard",
+                "position": "K",
+                "team": "MIN"
+            }
+        ],
+        "faab": 0,
+        "waiver_bid": 0,
+        "notes": null
+    },
     {
         "season": "2026",
         "week": 1,
