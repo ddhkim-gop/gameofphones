@@ -4,6 +4,32 @@
   "note": "Curated: X has no public search API, so posts are collected by hand and matched to rosters by this script.",
   "tweets": [
     {
+      "url": "https://x.com/NFL/status/2098224339447656814",
+      "player": "Brock Purdy",
+      "meta": "QB \u00b7 SF",
+      "date": "2026-09-11",
+      "author": "NFL",
+      "text": "PURDY GOES DEEP FOR THE TOUCHDOWN!!! SFvsLAR on Netflix pic.twitter.com/SCggzxjqLo \u2014 NFL (@NFL) September 11, 2026",
+      "verified": true,
+      "faves": 0,
+      "secs": 0,
+      "video": "https://video.twimg.com/amplify_video/2098224056470573056/vid/avc1/1920x1080/4B5csyH6jNWJ011Z.mp4?tag=29",
+      "poster": "https://pbs.twimg.com/amplify_video_thumb/2098224056470573056/img/CpCIvwMunJrZCefr.jpg?name=orig"
+    },
+    {
+      "url": "https://x.com/NFL/status/2098242171513999386",
+      "player": "Brock Purdy",
+      "meta": "QB \u00b7 SF",
+      "date": "2026-09-11",
+      "author": "NFL",
+      "text": "Make that 3\ufe0f\u20e3 TDs for @brockpurdy13 SFvsLAR on Netflix pic.twitter.com/xYViXuraw0 \u2014 NFL (@NFL) September 11, 2026",
+      "verified": true,
+      "faves": 0,
+      "secs": 0,
+      "video": "https://video.twimg.com/amplify_video/2098241868857475072/vid/avc1/1920x1080/Ano6aszwe9xQLjsy.mp4?tag=29",
+      "poster": "https://pbs.twimg.com/amplify_video_thumb/2098241868857475072/img/_fT4JJ-V9LJnWru_.jpg?name=orig"
+    },
+    {
       "url": "https://x.com/NFL/status/2097878710779306133",
       "player": "Jaxon Smith-Njigba",
       "meta": "WR \u00b7 SEA",
