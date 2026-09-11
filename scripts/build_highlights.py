@@ -37,7 +37,8 @@ LEAGUE_ID = "1313903635586899968"          # Game of Phones 2026
 SLEEPER = "https://api.sleeper.app/v1"
 OEMBED = "https://publish.twitter.com/oembed"
 MAX_PER_TEAM = 12
-MAX_PER_PLAYER = 2      # the same play gets posted by a dozen accounts
+MAX_PER_PLAYER = 5      # a player can make several distinct plays in a game;
+                        # reposts of one play are collapsed by video id below
 # How far back a highlight may come from. In season this is the current game
 # week only - the panel is about what just happened. Before week 1 there are no
 # games, so it opens up to the whole camp/preseason run.
@@ -550,19 +551,36 @@ def fresh(date: str) -> bool:
     return bool(date) and date >= window_start()
 
 
-def dedupe(hits: list[dict]) -> list[dict]:
-    """Collapse re-posts of the same play, then cap per player.
+def _clip_id(url: str, cache: dict) -> str:
+    """Id of the actual video behind a post, or '' if unresolved.
 
-    A notable play is posted by many accounts within minutes, often with
-    near-identical wording. Keeping all of them fills a team's panel with one
-    catch. Grouping by (player, date, rounded clip length) catches the
-    re-uploads; the most-liked copy wins, which also favours the account that
-    posted the cleanest cut.
+    Every account reposting one play embeds the *same* monetized amplify clip,
+    so X serves them all the same video id - that id is the play's true
+    fingerprint. Two different plays get different ids even when they share a
+    player, a game and a clip length, which is exactly the case the old
+    length-bucket key merged by mistake.
+    """
+    v = (media(url, cache) or {}).get("video") or ""
+    m = re.search(r"/(?:amplify_video|ext_tw_video|tweet_video)/(\d+)", v)
+    return m.group(1) if m else ""
+
+
+def dedupe(hits: list[dict], media_cache: dict) -> list[dict]:
+    """Collapse re-posts of the same play, keep distinct plays, cap per player.
+
+    Grouped on the underlying video id (see _clip_id): reposts of one play
+    share it, distinct plays don't - so a player's several highlights in a
+    game all survive, while a dozen re-uploads of one catch fold into a single
+    card. Posts whose video can't be resolved (link-out cards) fall back to the
+    older (player, date, rounded length) heuristic. Most-liked copy in a group
+    wins, favouring the cleanest cut.
     """
     best: dict[tuple, dict] = {}
     for h in sorted([x for x in hits if fresh(x["date"])],
                     key=lambda x: -x.get("faves", 0)):
-        key = (h["player"], h["date"], round((h.get("secs") or 0) / 5))
+        cid = _clip_id(h["url"], media_cache)
+        key = ((h["player"], "vid", cid) if cid
+               else (h["player"], h["date"], round((h.get("secs") or 0) / 5)))
         best.setdefault(key, h)
     kept, per_player = [], {}
     for h in sorted(best.values(), key=lambda x: (x["date"] or "0", x.get("faves", 0)),
@@ -666,14 +684,21 @@ def build(pool: list[str], only_team: str | None, dry_run: bool,
             continue
         hits = []
         for post in resolved:
+            # A watched note ("Player - what the footage shows") is authoritative
+            # for *who* is in the clip - it was assigned by watching the video,
+            # not by reading the caption. So an approved post attaches to the
+            # player it names even when the tweet text never spells that name
+            # ("THERE GOES JSN" -> Jaxon Smith-Njigba). Unreviewed posts still
+            # fall back to naming the player in their text.
+            who = reviewed_players(approved.get(post["url"], ""))
             for p in roster:
-                if not mentions(post["text"], p["name"]):
+                named_by_review = p["name"] in who      # who is empty if unreviewed
+                if not named_by_review and not mentions(post["text"], p["name"]):
                     continue
                 if verified_only and post["url"] not in approved:
                     break
-                who = reviewed_players(approved.get(post["url"], ""))
                 if who and p["name"] not in who:
-                    continue        # watched, but it shows a different player
+                    continue        # watched note names a different player
                 if in_season():
                     v, detail = dated_by_scoreboard(post["url"], boards,
                                                     season_state)
@@ -697,7 +722,7 @@ def build(pool: list[str], only_team: str | None, dry_run: bool,
                              "faves": post.get("faves", 0),
                              "secs": post.get("secs", 0)})
                 break            # one post is filed under one player
-        hits = dedupe(hits)[:MAX_PER_TEAM]
+        hits = dedupe(hits, media_cache)[:MAX_PER_TEAM]
         for h in hits:                    # only for what actually ships
             h.update(media(h["url"], media_cache))
             st = stats.get(h["url"].rsplit("/", 1)[-1])
