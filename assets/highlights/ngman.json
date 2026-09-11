@@ -2,5 +2,19 @@
   "team": "ngman",
   "updated": "2026-09-11",
   "note": "Curated: X has no public search API, so posts are collected by hand and matched to rosters by this script.",
-  "tweets": []
+  "tweets": [
+    {
+      "url": "https://x.com/Philouimette_/status/2098217922950783404",
+      "player": "Puka Nacua",
+      "meta": "WR \u00b7 LAR",
+      "date": "2026-09-11",
+      "author": "Phil Ouimette",
+      "text": "Puka Nacua with a 41-yard catch putting the Rams in scoring position! What a catch and run by Puka! #FTTB #RamsHouse #SFvsLAR pic.twitter.com/POubiOUTs2 \u2014 Phil Ouimette (@Philouimette_) September 11, 2026",
+      "verified": true,
+      "faves": 0,
+      "secs": 0,
+      "video": "https://video.twimg.com/amplify_video/2098216643352825856/vid/avc1/1920x1080/88O6DT2kCaFhCs0v.mp4?tag=29",
+      "poster": "https://pbs.twimg.com/amplify_video_thumb/2098216643352825856/img/o8BeyMqfmS6L3a4B.jpg?name=orig"
+    }
+  ]
 }
