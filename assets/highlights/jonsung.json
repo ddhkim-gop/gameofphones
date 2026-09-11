@@ -2,5 +2,19 @@
   "team": "jonsung",
   "updated": "2026-09-11",
   "note": "Curated: X has no public search API, so posts are collected by hand and matched to rosters by this script.",
-  "tweets": []
+  "tweets": [
+    {
+      "url": "https://x.com/NFL/status/2098210866361671970",
+      "player": "Mike Evans",
+      "meta": "WR \u00b7 SF",
+      "date": "2026-09-11",
+      "author": "NFL",
+      "text": "Mike Evans first catch as a 49er results in a 1st down! SFvsLAR on Netflix pic.twitter.com/P6EOhdezyq \u2014 NFL (@NFL) September 11, 2026",
+      "verified": true,
+      "faves": 0,
+      "secs": 0,
+      "video": "https://video.twimg.com/amplify_video/2098210534789439488/vid/avc1/1920x1080/3fYLrh_VHSdJRgQh.mp4?tag=29",
+      "poster": "https://pbs.twimg.com/amplify_video_thumb/2098210534789439488/img/wOaofakx93k_7LDE.jpg?name=orig"
+    }
+  ]
 }
