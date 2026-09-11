@@ -15,3 +15,5 @@ gameofphones-cross-talk.md
 graft/
 .highlights_video_cache.json
 .games_cache.csv
+scripts/.poll_state.json
+scripts/highlights_events.jsonl
