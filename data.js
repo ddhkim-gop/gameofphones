@@ -10765,6 +10765,22 @@ window.__STATIC_DATA__ = {
                 "search_rank": 57
             },
             {
+                "player_id": "11792",
+                "espn_id": null,
+                "name": "Will Reichard",
+                "position": "K",
+                "team": "MIN",
+                "age": 25,
+                "birth_date": "2001-01-09",
+                "college": "Alabama",
+                "height": "73",
+                "weight": "190",
+                "years_exp": 2,
+                "status": "Active",
+                "injury_status": null,
+                "search_rank": 169
+            },
+            {
                 "player_id": "12457",
                 "espn_id": null,
                 "name": "Jaydon Blue",
@@ -10939,22 +10955,6 @@ window.__STATIC_DATA__ = {
                 "status": "Active",
                 "injury_status": null,
                 "search_rank": 5
-            },
-            {
-                "player_id": "4227",
-                "espn_id": 3055899,
-                "name": "Harrison Butker",
-                "position": "K",
-                "team": "KC",
-                "age": 31,
-                "birth_date": "1995-07-14",
-                "college": "Georgia Tech",
-                "height": "76",
-                "weight": "205",
-                "years_exp": 9,
-                "status": "Active",
-                "injury_status": null,
-                "search_rank": 155
             },
             {
                 "player_id": "4983",
@@ -11673,6 +11673,34 @@ window.__STATIC_DATA__ = {
         "faab": 0,
         "waiver_bid": 0,
         "notes": null
+    },
+    {
+        "season": "2026",
+        "week": 1,
+        "created": "Sep 11, 2026 • 10:37 AM PT",
+        "transaction_id": "1404208300324573184",
+        "type": "waiver",
+        "status": "complete",
+        "teams": [
+            "ganathan"
+        ],
+        "added": [
+            {
+                "name": "Will Reichard",
+                "position": "K",
+                "team": "MIN"
+            }
+        ],
+        "dropped": [
+            {
+                "name": "Harrison Butker",
+                "position": "K",
+                "team": "KC"
+            }
+        ],
+        "faab": 0,
+        "waiver_bid": 0,
+        "notes": "Your waiver claim was processed successfully!"
     },
     {
         "season": "2026",
