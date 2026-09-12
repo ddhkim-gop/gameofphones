@@ -9616,7 +9616,7 @@ window.__STATIC_DATA__ = {
                 "name": "Jerome Ford",
                 "position": "RB",
                 "team": null,
-                "age": 26,
+                "age": 27,
                 "birth_date": "1999-09-12",
                 "college": "Cincinnati",
                 "height": "70",
