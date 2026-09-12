@@ -9697,6 +9697,22 @@ window.__STATIC_DATA__ = {
                 "search_rank": 101
             },
             {
+                "player_id": "11199",
+                "espn_id": null,
+                "name": "Emari Demercado",
+                "position": "RB",
+                "team": "DAL",
+                "age": 27,
+                "birth_date": "1999-01-20",
+                "college": "TCU",
+                "height": "69",
+                "weight": "215",
+                "years_exp": 3,
+                "status": "Active",
+                "injury_status": null,
+                "search_rank": 502
+            },
+            {
                 "player_id": "11370",
                 "espn_id": null,
                 "name": "Chris Brooks",
@@ -11636,6 +11652,28 @@ window.__STATIC_DATA__ = {
     }
   ],
   "transactions": [
+    {
+        "season": "2026",
+        "week": 1,
+        "created": "Sep 11, 2026 • 9:02 PM PT",
+        "transaction_id": "1404365497838940160",
+        "type": "free_agent",
+        "status": "complete",
+        "teams": [
+            "velmixon"
+        ],
+        "added": [
+            {
+                "name": "Emari Demercado",
+                "position": "RB",
+                "team": "DAL"
+            }
+        ],
+        "dropped": [],
+        "faab": 0,
+        "waiver_bid": 0,
+        "notes": null
+    },
     {
         "season": "2026",
         "week": 1,
