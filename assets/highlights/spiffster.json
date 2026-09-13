@@ -2,5 +2,32 @@
   "team": "spiffster",
   "updated": "2026-09-13",
   "note": "Curated: X has no public search API, so posts are collected by hand and matched to rosters by this script.",
-  "tweets": []
+  "tweets": [
+    {
+      "url": "https://x.com/NFLonFOX/status/2099242241982156970",
+      "player": "Dallas Goedert",
+      "meta": "TE \u00b7 PHI",
+      "date": "2026-09-13",
+      "author": "FOX Sports: NFL",
+      "text": "Touchdown Eagles \ud83e\udd85 Dallas Goedert for six! \ud83d\udcfa: FOX pic.twitter.com/6c5Fadu55T \u2014 FOX Sports: NFL (@NFLonFOX) September 13, 2026",
+      "verified": true,
+      "faves": 0,
+      "secs": 0,
+      "video": "https://video.twimg.com/ext_tw_video/2099242207660175364/pu/vid/avc1/1280x720/JDK_IGRdiEYuHrYn.mp4?tag=12",
+      "poster": "https://pbs.twimg.com/ext_tw_video_thumb/2099242207660175364/pu/img/B5cuKSTdoB8mlsvt.jpg?name=orig"
+    },
+    {
+      "url": "https://x.com/NFL/status/2099205601394041343",
+      "player": "C.J. Stroud",
+      "meta": "QB \u00b7 HOU",
+      "date": "2026-09-13",
+      "author": "NFL",
+      "text": "CJ Stroud to Nico Collins for the TD \ud83d\udde3\ufe0f BUFvsHOU on CBS/Paramount+ Stream on @NFLPlus pic.twitter.com/o89KSvE7BM \u2014 NFL (@NFL) September 13, 2026",
+      "verified": true,
+      "faves": 0,
+      "secs": 0,
+      "video": "https://video.twimg.com/amplify_video/2099204105990475776/vid/avc1/1920x1080/Ya3URVmIkw9tiG7Q.mp4?tag=29",
+      "poster": "https://pbs.twimg.com/amplify_video_thumb/2099204105990475776/img/xMlEC3gpt_LIkapz.jpg?name=orig"
+    }
+  ]
 }

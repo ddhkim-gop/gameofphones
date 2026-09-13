@@ -2,5 +2,19 @@
   "team": "IconicJH",
   "updated": "2026-09-13",
   "note": "Curated: X has no public search API, so posts are collected by hand and matched to rosters by this script.",
-  "tweets": []
+  "tweets": [
+    {
+      "url": "https://x.com/NFLonFOX/status/2099191585690776056",
+      "player": "Bijan Robinson",
+      "meta": "RB \u00b7 ATL",
+      "date": "2026-09-13",
+      "author": "FOX Sports: NFL",
+      "text": "It was inevitable for Bijan Robinson! He scores the first TD of the season for the @AtlantaFalcons \ud83d\udcfa: FOX pic.twitter.com/gkLmGCvzsF \u2014 FOX Sports: NFL (@NFLonFOX) September 13, 2026",
+      "verified": true,
+      "faves": 0,
+      "secs": 0,
+      "video": "https://video.twimg.com/ext_tw_video/2099191550076960773/pu/vid/avc1/1280x720/EvpmKyD9WFocER-G.mp4?tag=12",
+      "poster": "https://pbs.twimg.com/ext_tw_video_thumb/2099191550076960773/pu/img/6dp6Qc1L88fhcup_.jpg?name=orig"
+    }
+  ]
 }
