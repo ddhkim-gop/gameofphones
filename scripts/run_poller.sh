@@ -19,7 +19,19 @@ esac
 cd "$REPO"
 echo "--- $(date '+%Y-%m-%d %H:%M:%S') poll ---" >> "$LOG"
 python3 scripts/poll_highlights.py >> "$LOG" 2>&1
-# NOTE: the ingest step (event -> clip) is NOT run here: it needs an
-# authenticated X session to find candidate clips, which a headless daemon
-# can't do. Run ingest_highlights.py from an interactive session (with the
-# logged-in browser producing candidates) to drain the queue this fills.
+
+# Ingest runs headless only when X cookies are configured (scripts/.x_cookies).
+# Without them this block is skipped and the queue is drained by an interactive
+# session instead. NOTE: the x_fetch authed path is UNTESTED until real cookies
+# exist - watch .poller.log the first live game.
+if [ -f scripts/.x_cookies ]; then
+  python3 scripts/ingest_highlights.py --fetch >> "$LOG" 2>&1 || true
+  # Publish only when an approval actually changed, so we don't spam commits.
+  if ! git diff --quiet scripts/highlights_reviewed.json assets/highlights 2>/dev/null; then
+    git add scripts/highlights_reviewed.json scripts/highlights_pool.txt \
+            scripts/.highlights_media_cache.json assets/highlights >> "$LOG" 2>&1
+    git commit -q -m "Highlights: auto-ingest live plays" >> "$LOG" 2>&1 \
+      && git pull --rebase -q >> "$LOG" 2>&1 \
+      && git push -q >> "$LOG" 2>&1
+  fi
+fi

@@ -30,9 +30,15 @@ import json
 import re
 import subprocess
 import sys
+import tempfile
+import time
 from pathlib import Path
 
 HERE = Path(__file__).parent
+XFETCH = HERE / "x_fetch.py"
+XCOOKIES = HERE / ".x_cookies"
+# search term added per event type when auto-fetching candidates
+EVENT_QUERY = {"TD": "touchdown", "FG": "field goal", "BIG_PLAY": ""}
 EVENTS = HERE / "highlights_events.jsonl"
 STATE = HERE / ".ingest_state.json"
 REVIEWED = HERE / "highlights_reviewed.json"
@@ -111,22 +117,72 @@ def already_have(url, reviewed):
     return url in reviewed.get("keep", {}) or url in reviewed.get("reject", {})
 
 
+def fetch_candidates(events):
+    """Query X (via x_fetch.py) for each distinct player+event, aggregate.
+
+    One query per (name, event-type) so a player's three TDs cost one search.
+    Requires .x_cookies; if absent, returns [] so the caller can fall back.
+    UNTESTED authed path - x_fetch's SearchTimeline call was written without
+    live cookies (see x_fetch.py header).
+    """
+    if not XCOOKIES.exists():
+        print(f"! {XCOOKIES.name} missing - cannot --fetch; supply cookies or use "
+              f"--candidates. See x_fetch.py SETUP.", file=sys.stderr)
+        return []
+    since = time.strftime("%Y-%m-%d",
+                          time.gmtime(min((e.get("ts") or time.time()) for e in events)))
+    seen_q, cands = set(), []
+    for ev in events:
+        q = f"{ev.get('name','')} {EVENT_QUERY.get(ev.get('event'), '')}".strip()
+        if not q or q in seen_q:
+            continue
+        seen_q.add(q)
+        with tempfile.NamedTemporaryFile("r", suffix=".json", delete=True) as tf:
+            r = subprocess.run(
+                [sys.executable, str(XFETCH), q, "--since", since,
+                 "--video-only", "--limit", "15", "--out", tf.name],
+                capture_output=True, text=True)
+            if r.returncode != 0:
+                print(f"  ! fetch failed for {q!r}: {r.stderr.strip()[:160]}",
+                      file=sys.stderr)
+                continue
+            try:
+                cands.extend(json.loads(Path(tf.name).read_text()))
+            except Exception:
+                pass
+    # de-dupe candidate posts by url
+    uniq = {c["url"]: c for c in cands if c.get("url")}
+    print(f"fetched {len(uniq)} unique candidate posts from {len(seen_q)} queries")
+    return list(uniq.values())
+
+
 def main():
     ap = argparse.ArgumentParser()
-    ap.add_argument("--candidates", required=True,
+    ap.add_argument("--candidates",
                     help="JSON list of {url,author,text,ts} posts to match against")
+    ap.add_argument("--fetch", action="store_true",
+                    help="auto-fetch candidates from X via x_fetch.py (needs .x_cookies)")
     ap.add_argument("--all", action="store_true", help="reprocess every event")
     ap.add_argument("--no-build", action="store_true")
     ap.add_argument("--min-score", type=float, default=4.0,
                     help="reject best matches below this (default 4.0)")
     args = ap.parse_args()
 
-    cands = json.loads(Path(args.candidates).read_text())
-    if not isinstance(cands, list):
-        sys.exit("candidates file must be a JSON list")
+    if not args.candidates and not args.fetch:
+        sys.exit("give --candidates <file> or --fetch")
     events, total = load_events(args.all)
     if not events:
         print("no new events to ingest.")
+        return
+
+    if args.fetch:
+        cands = fetch_candidates(events)
+    else:
+        cands = json.loads(Path(args.candidates).read_text())
+    if not isinstance(cands, list):
+        sys.exit("candidates must be a JSON list")
+    if not cands:
+        print("no candidates available; nothing to match.")
         return
 
     reviewed = json.loads(REVIEWED.read_text())
