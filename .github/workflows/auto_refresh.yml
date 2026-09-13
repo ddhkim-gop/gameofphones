@@ -56,7 +56,8 @@ jobs:
                   assets/highlights \
                   scripts/highlights_reviewed.json \
                   scripts/highlights_pool.txt \
-                  scripts/.highlights_media_cache.json
+                  scripts/.highlights_media_cache.json \
+                  scripts/.highlights_oembed_cache.json
           if git diff --cached --quiet; then
             echo "changed=false" >> "$GITHUB_OUTPUT"
           else

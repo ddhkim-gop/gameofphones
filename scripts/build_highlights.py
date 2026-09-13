@@ -67,6 +67,12 @@ VIDEO_CACHE = REPO / "scripts" / ".highlights_video_cache.json"
 # nothing is rehosted here. Resolution costs a yt-dlp call, so it is cached.
 MEDIA_CACHE = REPO / "scripts" / ".highlights_media_cache.json"
 
+# oembed (author/text/date) is cached and COMMITTED, so a clip that resolved
+# once keeps rendering even when X later 403s the oembed for it (transient
+# throttling was silently evicting already-shipped, watched clips).
+OEMBED_CACHE = REPO / "scripts" / ".highlights_oembed_cache.json"
+_OEMBED: dict | None = None
+
 # Display name, avatar and verified flag per handle, so the panel can render a
 # post the way X does instead of a bare handle. Harvested from X's own timeline
 # responses; committed because it changes rarely.
@@ -377,7 +383,37 @@ def media(url: str, cache: dict) -> dict:
     return out
 
 
+def _oembed_cache() -> dict:
+    global _OEMBED
+    if _OEMBED is None:
+        try:
+            _OEMBED = json.loads(OEMBED_CACHE.read_text())
+        except Exception:
+            _OEMBED = {}
+    return _OEMBED
+
+
+def _save_oembed_cache() -> None:
+    if _OEMBED is not None:
+        OEMBED_CACHE.write_text(json.dumps(_OEMBED, indent=1, sort_keys=True) + "\n")
+
+
+def synth_info(url: str, note: str) -> dict:
+    """Minimal card for an approved clip whose oembed never resolved (X 403).
+
+    A watched-and-approved clip must ship regardless of oembed availability, so
+    fall back to the reviewed note for text and the handle parsed from the URL.
+    Dated today to stay inside the freshness window.
+    """
+    handle = url.split("/status/")[0].rstrip("/").rsplit("/", 1)[-1]
+    return {"url": url, "author": handle, "author_url": f"https://x.com/{handle}",
+            "text": note, "date": datetime.now(timezone.utc).strftime("%Y-%m-%d")}
+
+
 def oembed(url: str) -> dict | None:
+    cache = _oembed_cache()
+    if url in cache:
+        return cache[url]           # persisted -> survives a later transient 403
     q = urllib.parse.urlencode({"url": url, "dnt": "true", "omit_script": "true"})
     try:
         data = get_json(f"{OEMBED}?{q}")
@@ -407,10 +443,12 @@ def oembed(url: str) -> dict | None:
                 date = datetime.strptime(" ".join(m.groups()), "%b %d %Y").strftime("%Y-%m-%d")
             except ValueError:
                 date = ""
-    return {"url": data.get("url") or url,
+    info = {"url": data.get("url") or url,
             "author": data.get("author_name") or "",
             "author_url": data.get("author_url") or "",
             "text": text, "date": date}
+    cache[url] = info               # persist so it survives future 403s
+    return info
 
 
 def _word(term: str) -> str:
@@ -637,6 +675,9 @@ def build(pool: list[str], only_team: str | None, dry_run: bool,
             skipped += 1
             continue
         info = oembed(url)
+        if not info and url in approved:
+            info = synth_info(url, approved[url])      # keep watched clips alive
+            print(f"  ~   approved (oembed unavailable) @{info['author']}")
         if info:
             handle = info["author_url"].rsplit("/", 1)[-1].lower()
             if highlights_only and url not in approved and handle in EXCLUDE_AUTHORS:
@@ -646,6 +687,7 @@ def build(pool: list[str], only_team: str | None, dry_run: bool,
             print(f"  ok  {info['date'] or '????-??-??'}  @{info['author_url'].rsplit('/',1)[-1]}"
                   f"  {info['text'][:58]}")
         time.sleep(0.4)          # be polite to a public endpoint
+    _save_oembed_cache()
     if video_only:
         VIDEO_CACHE.write_text(json.dumps(cache, indent=1, sort_keys=True) + "\n")
         print(f"\nskipped {skipped} posts with no video")
