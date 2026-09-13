@@ -17,3 +17,5 @@ graft/
 .games_cache.csv
 scripts/.poll_state.json
 scripts/highlights_events.jsonl
+scripts/.poller.log
+scripts/.ingest_state.json
