@@ -20,3 +20,4 @@ scripts/highlights_events.jsonl
 scripts/.poller.log
 scripts/.ingest_state.json
 scripts/.x_cookies
+scripts/.reddit_cred

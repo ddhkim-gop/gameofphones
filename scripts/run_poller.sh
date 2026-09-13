@@ -20,18 +20,15 @@ cd "$REPO"
 echo "--- $(date '+%Y-%m-%d %H:%M:%S') poll ---" >> "$LOG"
 python3 scripts/poll_highlights.py >> "$LOG" 2>&1
 
-# Ingest runs headless only when X cookies are configured (scripts/.x_cookies).
-# Without them this block is skipped and the queue is drained by an interactive
-# session instead. NOTE: the x_fetch authed path is UNTESTED until real cookies
-# exist - watch .poller.log the first live game.
-if [ -f scripts/.x_cookies ]; then
-  python3 scripts/ingest_highlights.py --fetch >> "$LOG" 2>&1 || true
-  # Publish only when an approval actually changed, so we don't spam commits.
-  if ! git diff --quiet scripts/highlights_reviewed.json assets/highlights 2>/dev/null; then
-    git add scripts/highlights_reviewed.json scripts/highlights_pool.txt \
-            scripts/.highlights_media_cache.json assets/highlights >> "$LOG" 2>&1
-    git commit -q -m "Highlights: auto-ingest live plays" >> "$LOG" 2>&1 \
-      && git pull --rebase -q >> "$LOG" 2>&1 \
-      && git push -q >> "$LOG" 2>&1
-  fi
+# Ingest headless via reddit_fetch (Reddit if scripts/.reddit_cred exists, else
+# YouTube - which needs no auth), then publish only when an approval changed so
+# we don't spam commits. Reddit gives near-real-time per-play clips; YouTube
+# gives per-game/player reels. Either runs unattended.
+python3 scripts/ingest_highlights.py --fetch >> "$LOG" 2>&1 || true
+if ! git diff --quiet scripts/highlights_reviewed.json assets/highlights 2>/dev/null; then
+  git add scripts/highlights_reviewed.json scripts/highlights_pool.txt \
+          scripts/.highlights_media_cache.json assets/highlights >> "$LOG" 2>&1
+  git commit -q -m "Highlights: auto-ingest live plays" >> "$LOG" 2>&1 \
+    && git pull --rebase -q >> "$LOG" 2>&1 \
+    && git push -q >> "$LOG" 2>&1
 fi

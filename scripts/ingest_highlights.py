@@ -35,8 +35,7 @@ import time
 from pathlib import Path
 
 HERE = Path(__file__).parent
-XFETCH = HERE / "x_fetch.py"
-XCOOKIES = HERE / ".x_cookies"
+FETCHER = HERE / "reddit_fetch.py"   # Reddit primary, YouTube fallback (no auth)
 # search term added per event type when auto-fetching candidates
 EVENT_QUERY = {"TD": "touchdown", "FG": "field goal", "BIG_PLAY": ""}
 EVENTS = HERE / "highlights_events.jsonl"
@@ -118,19 +117,12 @@ def already_have(url, reviewed):
 
 
 def fetch_candidates(events):
-    """Query X (via x_fetch.py) for each distinct player+event, aggregate.
+    """Fetch candidate clips for each distinct player+event via reddit_fetch.py.
 
     One query per (name, event-type) so a player's three TDs cost one search.
-    Requires .x_cookies; if absent, returns [] so the caller can fall back.
-    UNTESTED authed path - x_fetch's SearchTimeline call was written without
-    live cookies (see x_fetch.py header).
+    reddit_fetch tries Reddit (needs .reddit_cred) then falls back to YouTube,
+    which needs no auth - so this always returns something and never hard-gates.
     """
-    if not XCOOKIES.exists():
-        print(f"! {XCOOKIES.name} missing - cannot --fetch; supply cookies or use "
-              f"--candidates. See x_fetch.py SETUP.", file=sys.stderr)
-        return []
-    since = time.strftime("%Y-%m-%d",
-                          time.gmtime(min((e.get("ts") or time.time()) for e in events)))
     seen_q, cands = set(), []
     for ev in events:
         q = f"{ev.get('name','')} {EVENT_QUERY.get(ev.get('event'), '')}".strip()
@@ -139,8 +131,7 @@ def fetch_candidates(events):
         seen_q.add(q)
         with tempfile.NamedTemporaryFile("r", suffix=".json", delete=True) as tf:
             r = subprocess.run(
-                [sys.executable, str(XFETCH), q, "--since", since,
-                 "--video-only", "--limit", "15", "--out", tf.name],
+                [sys.executable, str(FETCHER), q, "--limit", "15", "--out", tf.name],
                 capture_output=True, text=True)
             if r.returncode != 0:
                 print(f"  ! fetch failed for {q!r}: {r.stderr.strip()[:160]}",
@@ -150,7 +141,6 @@ def fetch_candidates(events):
                 cands.extend(json.loads(Path(tf.name).read_text()))
             except Exception:
                 pass
-    # de-dupe candidate posts by url
     uniq = {c["url"]: c for c in cands if c.get("url")}
     print(f"fetched {len(uniq)} unique candidate posts from {len(seen_q)} queries")
     return list(uniq.values())
