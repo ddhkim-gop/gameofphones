@@ -1,0 +1,44 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!--
+  LaunchAgent template for the Sleeper highlight poller.
+  Fires run_poller.sh every 60s; the wrapper self-gates to NFL game windows,
+  so this is a near-noop outside them. No KeepAlive (no busy loop), no RunAtLoad.
+
+  Install (paths have spaces, so copy verbatim):
+    cp "scripts/com.gameofphones.highlights-poller.plist" ~/Library/LaunchAgents/
+    launchctl load ~/Library/LaunchAgents/com.gameofphones.highlights-poller.plist
+  Uninstall:
+    launchctl unload ~/Library/LaunchAgents/com.gameofphones.highlights-poller.plist
+    rm ~/Library/LaunchAgents/com.gameofphones.highlights-poller.plist
+
+  IMPORTANT: edit the ProgramArguments path below if the repo is not at
+  ~/Desktop/Skyler/personal/fantasy football/gameofphones.
+-->
+<plist version="1.0">
+<dict>
+  <key>Label</key>
+  <string>com.gameofphones.highlights-poller</string>
+
+  <key>ProgramArguments</key>
+  <array>
+    <string>/bin/bash</string>
+    <string>/Users/david/Desktop/Skyler/personal/fantasy football/gameofphones/scripts/run_poller.sh</string>
+  </array>
+
+  <key>StartInterval</key>
+  <integer>60</integer>
+
+  <key>RunAtLoad</key>
+  <false/>
+
+  <key>StandardOutPath</key>
+  <string>/Users/david/Desktop/Skyler/personal/fantasy football/gameofphones/scripts/.poller.log</string>
+  <key>StandardErrorPath</key>
+  <string>/Users/david/Desktop/Skyler/personal/fantasy football/gameofphones/scripts/.poller.log</string>
+
+  <key>ProcessType</key>
+  <string>Background</string>
+  <key>LowPriorityIO</key>
+  <true/>
+</dict>
+</plist>
