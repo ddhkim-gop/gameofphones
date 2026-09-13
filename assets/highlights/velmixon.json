@@ -2,17 +2,5 @@
   "team": "velmixon",
   "updated": "2026-09-13",
   "note": "Curated: X has no public search API, so posts are collected by hand and matched to rosters by this script.",
-  "tweets": [
-    {
-      "url": "https://x.com/PREMIUM_IPTV_60/status/2097884866348216770",
-      "player": "Eli Raridon",
-      "meta": "TE \u00b7 NE",
-      "date": "2026-09-10",
-      "author": "PREMIUM IPTV \ud83d\udcaf",
-      "text": "Rookie Eli Raridon scores the first TD of the season! NEvsSEA on NBC/Peacock Stream on @NFLPlus pic.twitter.com/fncstYSE8R \u2014 PREMIUM IPTV \ud83d\udcaf (@PREMIUM_IPTV_60) September 10, 2026",
-      "verified": false,
-      "faves": 0,
-      "secs": 0
-    }
-  ]
+  "tweets": []
 }

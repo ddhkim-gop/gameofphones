@@ -5495,7 +5495,7 @@ window.__STATIC_DATA__ = {
                 "weight": "207",
                 "years_exp": 7,
                 "status": "Active",
-                "injury_status": null,
+                "injury_status": "Out",
                 "search_rank": 88
             },
             {
@@ -6339,7 +6339,7 @@ window.__STATIC_DATA__ = {
                 "weight": "233",
                 "years_exp": 0,
                 "status": "Active",
-                "injury_status": null,
+                "injury_status": "Out",
                 "search_rank": 289
             },
             {
@@ -6355,7 +6355,7 @@ window.__STATIC_DATA__ = {
                 "weight": "188",
                 "years_exp": 0,
                 "status": "Active",
-                "injury_status": null,
+                "injury_status": "Out",
                 "search_rank": 176
             },
             {
@@ -7695,7 +7695,7 @@ window.__STATIC_DATA__ = {
                 "weight": "183",
                 "years_exp": 3,
                 "status": "Active",
-                "injury_status": "Questionable",
+                "injury_status": "Out",
                 "search_rank": 41
             }
         ]
@@ -7781,7 +7781,7 @@ window.__STATIC_DATA__ = {
                 "weight": "219",
                 "years_exp": 2,
                 "status": "Active",
-                "injury_status": null,
+                "injury_status": "Out",
                 "search_rank": 224
             },
             {
@@ -7961,6 +7961,38 @@ window.__STATIC_DATA__ = {
                 "search_rank": 670
             },
             {
+                "player_id": "2306",
+                "espn_id": 2969939,
+                "name": "Jameis Winston",
+                "position": "QB",
+                "team": "NYG",
+                "age": 32,
+                "birth_date": "1994-01-06",
+                "college": "Florida State",
+                "height": "76",
+                "weight": "231",
+                "years_exp": 11,
+                "status": "Active",
+                "injury_status": null,
+                "search_rank": 496
+            },
+            {
+                "player_id": "4227",
+                "espn_id": 3055899,
+                "name": "Harrison Butker",
+                "position": "K",
+                "team": "KC",
+                "age": 31,
+                "birth_date": "1995-07-14",
+                "college": "Georgia Tech",
+                "height": "76",
+                "weight": "205",
+                "years_exp": 9,
+                "status": "Active",
+                "injury_status": null,
+                "search_rank": 155
+            },
+            {
                 "player_id": "6783",
                 "espn_id": 4241463,
                 "name": "Jerry Jeudy",
@@ -8069,7 +8101,7 @@ window.__STATIC_DATA__ = {
                 "weight": "225",
                 "years_exp": 4,
                 "status": "Active",
-                "injury_status": null,
+                "injury_status": "Out",
                 "search_rank": 679
             },
             {
@@ -8459,7 +8491,7 @@ window.__STATIC_DATA__ = {
                 "weight": "232",
                 "years_exp": 0,
                 "status": "Active",
-                "injury_status": null,
+                "injury_status": "Out",
                 "search_rank": 643
             },
             {
@@ -8785,7 +8817,7 @@ window.__STATIC_DATA__ = {
                 "weight": "195",
                 "years_exp": 2,
                 "status": "Active",
-                "injury_status": null,
+                "injury_status": "Out",
                 "search_rank": 620
             },
             {
@@ -8977,7 +9009,7 @@ window.__STATIC_DATA__ = {
                 "weight": "212",
                 "years_exp": 0,
                 "status": "Active",
-                "injury_status": "Questionable",
+                "injury_status": null,
                 "search_rank": 15
             },
             {
@@ -9137,7 +9169,7 @@ window.__STATIC_DATA__ = {
                 "weight": "195",
                 "years_exp": 4,
                 "status": "Active",
-                "injury_status": null,
+                "injury_status": "Out",
                 "search_rank": 617
             },
             {
@@ -10387,7 +10419,7 @@ window.__STATIC_DATA__ = {
                 "weight": "199",
                 "years_exp": 0,
                 "status": "Active",
-                "injury_status": "Questionable",
+                "injury_status": "Out",
                 "search_rank": 151
             },
             {
@@ -10419,7 +10451,7 @@ window.__STATIC_DATA__ = {
                 "weight": "205",
                 "years_exp": 0,
                 "status": "Active",
-                "injury_status": null,
+                "injury_status": "Out",
                 "search_rank": 146
             },
             {
@@ -10873,7 +10905,7 @@ window.__STATIC_DATA__ = {
                 "weight": "241",
                 "years_exp": 0,
                 "status": "Active",
-                "injury_status": null,
+                "injury_status": "Out",
                 "search_rank": 478
             },
             {
@@ -11620,6 +11652,50 @@ window.__STATIC_DATA__ = {
     }
   ],
   "transactions": [
+    {
+        "season": "2026",
+        "week": 1,
+        "created": "Sep 13, 2026 • 11:15 AM PT",
+        "transaction_id": "1404942508466675712",
+        "type": "free_agent",
+        "status": "complete",
+        "teams": [
+            "IconicJH"
+        ],
+        "added": [
+            {
+                "name": "Jameis Winston",
+                "position": "QB",
+                "team": "NYG"
+            }
+        ],
+        "dropped": [],
+        "faab": 0,
+        "waiver_bid": 0,
+        "notes": null
+    },
+    {
+        "season": "2026",
+        "week": 1,
+        "created": "Sep 13, 2026 • 11:03 AM PT",
+        "transaction_id": "1404939534734565376",
+        "type": "free_agent",
+        "status": "complete",
+        "teams": [
+            "IconicJH"
+        ],
+        "added": [
+            {
+                "name": "Harrison Butker",
+                "position": "K",
+                "team": "KC"
+            }
+        ],
+        "dropped": [],
+        "faab": 0,
+        "waiver_bid": 0,
+        "notes": null
+    },
     {
         "season": "2026",
         "week": 1,
