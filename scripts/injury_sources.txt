@@ -1,0 +1,18 @@
+# Trusted NFL injury/insider X handles (lowercase, no @). Used as the trust
+# filter for injury clips: a caption from these confirms the injury without
+# watching. Footage still comes from clip accounts; these gate false positives.
+rapsheet
+adamschefter
+tompelissero
+mikegarafolo
+field_yates
+jfowleresp
+jfowlerespn
+cameronwolfe
+adamcaplan
+nfl
+nflnetwork
+profootballdoc
+rotoworldfb
+fantasyptsinj
+espnnfl
