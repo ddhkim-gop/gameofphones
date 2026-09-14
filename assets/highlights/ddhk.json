@@ -2,5 +2,32 @@
   "team": "ddhk",
   "updated": "2026-09-14",
   "note": "Curated: X has no public search API, so posts are collected by hand and matched to rosters by this script.",
-  "tweets": []
+  "tweets": [
+    {
+      "url": "https://x.com/NFLTDsVideos/status/2099256179083841949",
+      "player": "Jalen Coker",
+      "meta": "WR \u00b7 CAR",
+      "date": "2026-09-13",
+      "author": "NFL Touchdown Videos",
+      "text": "Bryce Young (4) to Jalen Coker (2) Carolina Panthers 8 yards pic.twitter.com/CYPDAg7vOu \u2014 NFL Touchdown Videos (@NFLTDsVideos) September 13, 2026",
+      "verified": true,
+      "faves": 0,
+      "secs": 0,
+      "video": "https://video.twimg.com/amplify_video/2099231312767000576/vid/avc1/1920x1080/nYPywGvkuUVAjXiI.mp4?tag=29",
+      "poster": "https://pbs.twimg.com/amplify_video_thumb/2099231312767000576/img/rYXwSDwVhtY_2xeM.jpg?name=orig"
+    },
+    {
+      "url": "https://x.com/NFLTDsVideos/status/2099256029565325645",
+      "player": "Juwan Johnson",
+      "meta": "TE \u00b7 NO",
+      "date": "2026-09-13",
+      "author": "NFL Touchdown Videos",
+      "text": "Tyler Shough (2) to Juwan Johnson (1) New Orleans Saints 9 yards pic.twitter.com/xxeFDdCaMu \u2014 NFL Touchdown Videos (@NFLTDsVideos) September 13, 2026",
+      "verified": true,
+      "faves": 0,
+      "secs": 0,
+      "video": "https://video.twimg.com/amplify_video/2099229278454075392/vid/avc1/1920x1080/zz0chq1pvvu9AZLb.mp4?tag=29",
+      "poster": "https://pbs.twimg.com/amplify_video_thumb/2099229278454075392/img/la7bVtCojLLturno.jpg?name=orig"
+    }
+  ]
 }
