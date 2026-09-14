@@ -4,6 +4,36 @@
   "note": "Curated: X has no public search API, so posts are collected by hand and matched to rosters by this script.",
   "tweets": [
     {
+      "url": "https://x.com/NFLTDsVideos/status/2099569745620083046",
+      "player": "Ashton Jeanty",
+      "meta": "RB \u00b7 LV",
+      "date": "2026-09-14",
+      "author": "NFL Touchdown Videos",
+      "text": "Kirk Cousins (3) to Ashton Jeanty (2) Las Vegas Raiders 13 yards pic.twitter.com/lOOTXLVcGL \u2014 NFL Touchdown Videos (@NFLTDsVideos) September 14, 2026",
+      "verified": true,
+      "faves": 0,
+      "secs": 0,
+      "video": "https://video.twimg.com/ext_tw_video/2099260922900393988/pu/vid/avc1/1280x720/fP-g6ysaiEoGSE8A.mp4?tag=12",
+      "poster": "https://pbs.twimg.com/ext_tw_video_thumb/2099260922900393988/pu/img/rHBLg-PNJh-UB65V.jpg?name=orig",
+      "game_time": "Q2 01:12",
+      "kickoff": "9/13/26, 16:25:35"
+    },
+    {
+      "url": "https://x.com/NFLTDsVideos/status/2099582188073164925",
+      "player": "Trey McBride",
+      "meta": "TE \u00b7 ARI",
+      "date": "2026-09-14",
+      "author": "NFL Touchdown Videos",
+      "text": "Jacoby Brissett (1) to Trey McBride (1) Arizona Cardinals 3 yards pic.twitter.com/6UbERGUNUU \u2014 NFL Touchdown Videos (@NFLTDsVideos) September 14, 2026",
+      "verified": true,
+      "faves": 0,
+      "secs": 0,
+      "video": "https://video.twimg.com/amplify_video/2099269966201843712/vid/avc1/1920x1080/4i0lijY_sm-rxf6Z.mp4?tag=29",
+      "poster": "https://pbs.twimg.com/amplify_video_thumb/2099269966201843712/img/QLbak6_DhhLeFAAj.jpg?name=orig",
+      "game_time": "Q4 11:48",
+      "kickoff": "9/13/26, 16:25:43"
+    },
+    {
       "url": "https://x.com/NFLonFOX/status/2099191585690776056",
       "player": "Bijan Robinson",
       "meta": "RB \u00b7 ATL",

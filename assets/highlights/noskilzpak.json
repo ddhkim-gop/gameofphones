@@ -4,6 +4,21 @@
   "note": "Curated: X has no public search API, so posts are collected by hand and matched to rosters by this script.",
   "tweets": [
     {
+      "url": "https://x.com/NFLTDsVideos/status/2099228405166198841",
+      "player": "Jonathan Taylor",
+      "meta": "RB \u00b7 IND",
+      "date": "2026-09-13",
+      "author": "NFL Touchdown Videos",
+      "text": "Jonathan Taylor (2) Indianapolis Colts 2 yards pic.twitter.com/lXBRCtlePT \u2014 NFL Touchdown Videos (@NFLTDsVideos) September 13, 2026",
+      "verified": true,
+      "faves": 0,
+      "secs": 0,
+      "video": "https://video.twimg.com/amplify_video/2099203745670414336/vid/avc1/1920x1080/TXaNcK3VR4FfeT9C.mp4?tag=29",
+      "poster": "https://pbs.twimg.com/amplify_video_thumb/2099203745670414336/img/HFS9o8UK12XcjjV0.jpg?name=orig",
+      "game_time": "Q1 10:36",
+      "kickoff": "9/13/26, 13:05:06"
+    },
+    {
       "url": "https://x.com/NFL/status/2098224339447656814",
       "player": "Brock Purdy",
       "meta": "QB \u00b7 SF",
