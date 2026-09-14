@@ -2,9 +2,14 @@
 # Wrapper the LaunchAgent fires every 60s. It polls Sleeper for highlight events
 # ONLY during NFL game windows, so it's a sub-50ms no-op the other ~23h/day -
 # no 24/7 polling, no busy loop. Widen the windows below if your slate differs.
-set -euo pipefail
+set -uo pipefail          # not -e: a failed fetch/push must not kill the run
+# launchd gives a minimal PATH - add Homebrew (yt-dlp) and system dirs explicitly.
+export PATH="/opt/homebrew/bin:/usr/local/bin:/usr/bin:/bin:/usr/sbin:/sbin"
+# git push over SSH from launchd (no ssh-agent): point at the passphrase-free key.
+export GIT_SSH_COMMAND="ssh -o BatchMode=yes -o IdentitiesOnly=yes -i ${HOME}/.ssh/id_ed25519"
 REPO="$(cd "$(dirname "$0")/.." && pwd)"
 LOG="$REPO/scripts/.poller.log"
+echo "--- $(date '+%Y-%m-%d %H:%M:%S') fire (dow=$(TZ=America/Los_Angeles date +%u) hh=$(TZ=America/Los_Angeles date +%H)) ---" >> "$LOG"
 
 # Game-window gate in America/Los_Angeles. dow: 1=Mon .. 7=Sun.
 dow=$(TZ=America/Los_Angeles date +%u)
