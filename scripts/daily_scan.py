@@ -30,20 +30,25 @@ from pathlib import Path
 
 HERE = Path(__file__).parent
 ROSTERS = HERE.parent / "data" / "2026" / "rosters.json"
+FEEDS = HERE.parent / "assets" / "highlights"
 EVENTS = HERE / "highlights_events.jsonl"
 SEEN = HERE / ".daily_seen.json"
 LEAGUE_IDS = ["1313903635586899968"]
 
-# Only IN-GAME injuries have a replay clip. Match the moment, not status/practice.
+# Any real injury (in-game OR practice). In-game gets a replay clip; practice
+# is news-only (no footage) - both captured, tagged by setting.
 INJURY_RE = re.compile(
-    r"\b(exit(s|ed)?|left the game|carted|cart off|went down|goes down|"
-    r"injured (on|during)|suffer(s|ed)? (an?|a)? ?\w+ (injury|strain|sprain|tear)|"
-    r"leaves? (with|the game)|ruled out (with|after)|knocked out of)\b", re.I)
-# Never treat these as replay-worthy (status/practice/roster notes).
+    r"\b(injur\w*|hurt|carted|strain|sprain|tear|torn|acl|mcl|concussion|"
+    r"hamstring|ankle|knee|hip|groin|shoulder|quad|calf|exit(s|ed)?|"
+    r"left the game|went down|placed on ir|ruled out)\b", re.I)
+# In-game language -> a replay exists; otherwise treat as practice/news-only.
+INGAME_RE = re.compile(
+    r"\b(exit(s|ed)?|left the game|carted|went down|goes down|injured (on|during)|"
+    r"leaves? (with|the game)|knocked out of|ruled out (with|after))\b", re.I)
+# Fantasy-advice / roster noise that isn't an injury report.
 SKIP_RE = re.compile(
-    r"\b(walking boot|return(ing|s)? to practice|could practice|practice this week|"
-    r"inactive|waiver|must-add|day-to-day|week 2|expected to (play|start|return)|"
-    r"undergo(es)? .* surgery|placed on ir|hauls in|scores?|touchdown|targets)\b", re.I)
+    r"\b(must-add|waiver|hauls in|scores?|touchdown|targets|sleeper|start[/ ]sit|"
+    r"fantasy (start|add|pickup)|snap count)\b", re.I)
 LOOKBACK_H = 36          # only news newer than this many hours
 
 
@@ -100,8 +105,26 @@ def main():
         last = re.sub(r"[^a-z0-9]", "", "".join(parts[1:]).lower())
         return f"{last}#{parts[0][:1].lower()}" in scored_keys
 
-    injuries, comps = [], []
+    # who already has a shipped clip (the gap check re-queues everyone else)
+    shipped = set()
+    for f in FEEDS.glob("*.json"):
+        try:
+            for t in json.loads(f.read_text()).get("tweets", []):
+                shipped.add(t.get("player"))
+        except Exception:
+            pass
+
+    injuries, comps, gaps = [], [], []
     for pid, (name, owners) in players.items():
+        # GAP CHECK: a rostered player who scored but has no shipped clip yet -
+        # the nightly net that catches highlights the live pass missed.
+        if scored(name) and name not in shipped:
+            gkey = f"gap:{pid}:{time.strftime('%Y-%m-%d')}"
+            if gkey not in seen:
+                gaps.append({"ts": now, "event": "SCORING_GAP", "player": name,
+                             "player_id": pid, "owners": owners,
+                             "query": f"{name} touchdown highlights"})
+                seen.add(gkey)
         # compilation task (one per rostered player per day)
         ckey = f"comp:{pid}:{time.strftime('%Y-%m-%d')}"
         if scored(name) and ckey not in seen:
@@ -121,19 +144,25 @@ def main():
             text = (m.get("title") or "") + " " + (m.get("description") or "")
             if pub and pub >= cutoff and INJURY_RE.search(text) and not SKIP_RE.search(text):
                 seen.add(f"inj:{pid}:{time.strftime('%Y-%m-%d')}")
+                setting = "in-game" if INGAME_RE.search(text) else "practice"
                 injuries.append({"ts": now, "event": "INJURY", "player": name,
-                                 "player_id": pid, "owners": owners,
+                                 "player_id": pid, "owners": owners, "setting": setting,
+                                 "clip": setting == "in-game",   # practice = news-only
                                  "detail": (m.get("title") or "")[:120],
                                  "source": it.get("source"), "article": m.get("url", "")})
                 break            # one injury per player
 
-    print(f"scan: {len(injuries)} new injuries, {len(comps)} compilation tasks "
-          f"across {len(players)} rostered players")
-    for e in injuries[:30]:
-        print(f"  INJURY  {e['player']:22} [{e.get('source')}] {e['detail'][:70]}")
+    print(f"scan: {len(gaps)} missed scoring, {len(injuries)} injuries "
+          f"({sum(1 for i in injuries if i['clip'])} in-game / "
+          f"{sum(1 for i in injuries if not i['clip'])} practice), "
+          f"{len(comps)} compilation tasks | {len(players)} rostered")
+    for e in gaps[:20]:
+        print(f"  MISSED  {e['player']:22} -> {', '.join(e['owners'])[:24]}")
+    for e in injuries[:20]:
+        print(f"  INJURY  {e['player']:22} [{e['setting']:7}] {e['detail'][:60]}")
     if not args.dry_run:
         with EVENTS.open("a") as f:
-            for e in injuries + comps:
+            for e in gaps + injuries + comps:
                 f.write(json.dumps(e) + "\n")
         SEEN.write_text(json.dumps(sorted(seen)))
 
