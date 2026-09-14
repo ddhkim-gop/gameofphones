@@ -36,7 +36,7 @@ OUT_DIR = REPO / "assets" / "highlights"
 LEAGUE_ID = "1313903635586899968"          # Game of Phones 2026
 SLEEPER = "https://api.sleeper.app/v1"
 OEMBED = "https://publish.twitter.com/oembed"
-MAX_PER_TEAM = 12
+MAX_PER_TEAM = 30
 MAX_PER_PLAYER = 5      # a player can make several distinct plays in a game;
                         # reposts of one play are collapsed by video id below
 # How far back a highlight may come from. In season this is the current game
@@ -790,8 +790,17 @@ def build(pool: list[str], only_team: str | None, dry_run: bool,
                              "secs": post.get("secs", 0)})
                 break            # one post is filed under one player
         hits = dedupe(hits, media_cache)[:MAX_PER_TEAM]
+        pos_of = {p["name"]: p.get("position") for p in roster}
         used_pt: dict = {}
         for h in hits:                    # only for what actually ships
+            # A shared clip ("QB to WR") credits both in its note; on a team that
+            # rosters both, label the card with both, skill player first, so the
+            # fantasy-relevant name leads instead of the QB burying the receiver.
+            who = [w for w in reviewed_players(approved.get(h["url"], ""))
+                   if w in pos_of]
+            if len(who) > 1:
+                who.sort(key=lambda n: (pos_of.get(n) == "QB", n))
+                h["player"] = " & ".join(who)
             h.update(media(h["url"], media_cache))
             # attach the real game timestamp (Q + clock) from nflverse; consume
             # per player so a player's multiple clips get successive plays.
