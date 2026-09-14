@@ -75,6 +75,7 @@ BUILD = HERE / "build_highlights.py"
 # Accounts whose game clips are trustworthy enough to ship on caption alone.
 KNOWN_ACCOUNTS = {
     "nfl", "nflonfox", "snfonnbc", "espn", "espnausnz", "nflplus", "nflnetwork",
+    "nfltdsvideos", "fantasyinjuryt",
     "seahawks", "patriots", "49ers", "ramsnfl", "sportscenter", "thecheckdown",
 }
 EVENT_WORDS = {
