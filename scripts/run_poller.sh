@@ -25,10 +25,15 @@ cd "$REPO"
 echo "--- $(date '+%Y-%m-%d %H:%M:%S') poll ---" >> "$LOG"
 python3 scripts/poll_highlights.py >> "$LOG" 2>&1
 
-# Ingest headless via reddit_fetch (Reddit if scripts/.reddit_cred exists, else
-# YouTube - which needs no auth), then publish only when an approval changed so
-# we don't spam commits. Reddit gives near-real-time per-play clips; YouTube
-# gives per-game/player reels. Either runs unattended.
+# Auto-publish only with a real Reddit cred. YouTube is gated OFF (reels don't
+# embed), and Reddit self-service API is dead (approval-only since Nov 2025), so
+# in practice this block is skipped: the daemon just detects + logs, and the
+# good per-play clips are hand-pulled from X in an interactive session. If a
+# Reddit cred is ever granted, drop it in scripts/.reddit_cred to re-enable.
+if [ ! -f scripts/.reddit_cred ]; then
+  echo "  (no reddit cred -> detect+log only; YouTube gated off)" >> "$LOG"
+  exit 0
+fi
 python3 scripts/ingest_highlights.py --fetch >> "$LOG" 2>&1 || true
 if ! git diff --quiet scripts/highlights_reviewed.json assets/highlights 2>/dev/null; then
   git add scripts/highlights_reviewed.json scripts/highlights_pool.txt \
