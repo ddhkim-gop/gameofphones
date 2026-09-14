@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!--
+  Nightly 11pm scan: injuries (Sleeper news) + per-player compilation tasks.
+  Detection only (0 tokens); it appends to highlights_events.jsonl - the clips
+  are found in a semi-auto X pass. No push from here.
+
+  Install:
+    cp "scripts/com.gameofphones.daily-scan.plist" ~/Library/LaunchAgents/
+    launchctl load ~/Library/LaunchAgents/com.gameofphones.daily-scan.plist
+-->
+<plist version="1.0">
+<dict>
+  <key>Label</key>
+  <string>com.gameofphones.daily-scan</string>
+  <key>ProgramArguments</key>
+  <array>
+    <string>/usr/bin/python3</string>
+    <string>/Users/david/Desktop/Skyler/personal/fantasy football/gameofphones/scripts/daily_scan.py</string>
+  </array>
+  <key>StartCalendarInterval</key>
+  <dict>
+    <key>Hour</key><integer>23</integer>
+    <key>Minute</key><integer>0</integer>
+  </dict>
+  <key>EnvironmentVariables</key>
+  <dict>
+    <key>PATH</key>
+    <string>/opt/homebrew/bin:/usr/local/bin:/usr/bin:/bin:/usr/sbin:/sbin</string>
+  </dict>
+  <key>StandardOutPath</key>
+  <string>/Users/david/Desktop/Skyler/personal/fantasy football/gameofphones/scripts/.daily-scan.log</string>
+  <key>StandardErrorPath</key>
+  <string>/Users/david/Desktop/Skyler/personal/fantasy football/gameofphones/scripts/.daily-scan.log</string>
+  <key>ProcessType</key><string>Background</string>
+</dict>
+</plist>
