@@ -13,8 +13,8 @@
       "verified": true,
       "faves": 0,
       "secs": 0,
-      "video": "https://video.twimg.com/ext_tw_video/2099275270783971340/pu/vid/avc1/1280x720/zE1jxgNQfKeqw8WB.mp4?tag=12",
       "poster": "https://pbs.twimg.com/ext_tw_video_thumb/2099275270783971340/pu/img/ga0Tp3LiJ2gw_-dm.jpg?name=orig",
+      "video": "https://video.twimg.com/ext_tw_video/2099275270783971340/pu/vid/avc1/1280x720/zE1jxgNQfKeqw8WB.mp4?tag=12",
       "game_time": "Q2 14:17",
       "kickoff": "9/13/26, 16:25:25"
     },
@@ -28,10 +28,25 @@
       "verified": true,
       "faves": 0,
       "secs": 0,
-      "video": "https://video.twimg.com/amplify_video/2099277389687926784/vid/avc1/1920x1080/PDT_D0L2szNOiU9N.mp4?tag=29",
       "poster": "https://pbs.twimg.com/amplify_video_thumb/2099277389687926784/img/8LMVwxXfZpAfKxtB.jpg?name=orig",
+      "video": "https://video.twimg.com/amplify_video/2099277389687926784/vid/avc1/1920x1080/PDT_D0L2szNOiU9N.mp4?tag=29",
       "game_time": "Q4 04:52",
       "kickoff": "9/13/26, 16:25:28"
+    },
+    {
+      "url": "https://x.com/NFLTDsVideos/status/2099582188073164925",
+      "player": "Jacoby Brissett",
+      "meta": "QB \u00b7 ARI",
+      "date": "2026-09-14",
+      "author": "NFL Touchdown Videos",
+      "text": "Jacoby Brissett (1) to Trey McBride (1) Arizona Cardinals 3 yards pic.twitter.com/6UbERGUNUU \u2014 NFL Touchdown Videos (@NFLTDsVideos) September 14, 2026",
+      "verified": true,
+      "faves": 0,
+      "secs": 0,
+      "poster": "https://pbs.twimg.com/amplify_video_thumb/2099269966201843712/img/QLbak6_DhhLeFAAj.jpg?name=orig",
+      "video": "https://video.twimg.com/amplify_video/2099269966201843712/vid/avc1/1920x1080/4i0lijY_sm-rxf6Z.mp4?tag=29",
+      "game_time": "Q4 11:48",
+      "kickoff": "9/13/26, 16:25:43"
     },
     {
       "url": "https://x.com/NFLonFOX/status/2099242241982156970",
@@ -88,8 +103,8 @@
       "verified": true,
       "faves": 0,
       "secs": 0,
-      "video": "https://video.twimg.com/amplify_video/2099216841055031297/vid/avc1/1920x1080/R08qrJotUDcqsc42.mp4?tag=29",
       "poster": "https://pbs.twimg.com/amplify_video_thumb/2099216841055031297/img/Nfzxzhh76XpFiic6.jpg?name=orig",
+      "video": "https://video.twimg.com/amplify_video/2099216841055031297/vid/avc1/1920x1080/R08qrJotUDcqsc42.mp4?tag=29",
       "game_time": "Q1 11:40",
       "kickoff": "9/13/26, 13:04:50"
     },
@@ -103,10 +118,25 @@
       "verified": true,
       "faves": 0,
       "secs": 0,
-      "video": "https://video.twimg.com/amplify_video/2099219103919607811/vid/avc1/1920x1080/ZrhI8nFiZWArKaB6.mp4?tag=29",
       "poster": "https://pbs.twimg.com/amplify_video_thumb/2099219103919607811/img/F_SoPydqlSJQZ6D2.jpg?name=orig",
+      "video": "https://video.twimg.com/amplify_video/2099219103919607811/vid/avc1/1920x1080/ZrhI8nFiZWArKaB6.mp4?tag=29",
       "game_time": "Q4 13:39",
       "kickoff": "9/13/26, 13:04:46"
+    },
+    {
+      "url": "https://x.com/NFLTDsVideos/status/2099255201609748615",
+      "player": "Deshaun Watson",
+      "meta": "QB \u00b7 CLE",
+      "date": "2026-09-13",
+      "author": "NFL Touchdown Videos",
+      "text": "Deshaun Watson (1) to Denzel Boston (1) Cleveland Browns 46 yards pic.twitter.com/dgttdr5pNV \u2014 NFL Touchdown Videos (@NFLTDsVideos) September 13, 2026",
+      "verified": true,
+      "faves": 0,
+      "secs": 0,
+      "poster": "https://pbs.twimg.com/amplify_video_thumb/2099222386080137216/img/CYdWM7l-yMfkaSj5.jpg?name=orig",
+      "video": "https://video.twimg.com/amplify_video/2099222386080137216/vid/avc1/1920x1080/mJUj3w6J2eCwfaer.mp4?tag=29",
+      "game_time": "Q4 02:00",
+      "kickoff": "9/13/26, 13:03:54"
     }
   ]
 }

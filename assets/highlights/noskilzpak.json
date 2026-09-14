@@ -4,6 +4,21 @@
   "note": "Curated: X has no public search API, so posts are collected by hand and matched to rosters by this script.",
   "tweets": [
     {
+      "url": "https://x.com/NFLTDsVideos/status/2099582800961618230",
+      "player": "Jayden Daniels",
+      "meta": "QB \u00b7 WAS",
+      "date": "2026-09-14",
+      "author": "NFL Touchdown Videos",
+      "text": "Jayden Daniels (2) to Antonio Williams (1) Washington Commanders 2 yards pic.twitter.com/ZMI2XoUxdV \u2014 NFL Touchdown Videos (@NFLTDsVideos) September 14, 2026",
+      "verified": true,
+      "faves": 0,
+      "secs": 0,
+      "poster": "https://pbs.twimg.com/amplify_video_thumb/2099279538626904064/img/YSOM27_lxmXuXq6S.jpg?name=orig",
+      "video": "https://video.twimg.com/amplify_video/2099279538626904064/vid/avc1/1920x1080/somaiFIPg2SEgBn8.mp4?tag=29",
+      "game_time": "Q4 10:04",
+      "kickoff": "9/13/26, 16:25:25"
+    },
+    {
       "url": "https://x.com/NFLTDsVideos/status/2099228405166198841",
       "player": "Jonathan Taylor",
       "meta": "RB \u00b7 IND",
@@ -13,8 +28,8 @@
       "verified": true,
       "faves": 0,
       "secs": 0,
-      "video": "https://video.twimg.com/amplify_video/2099203745670414336/vid/avc1/1920x1080/TXaNcK3VR4FfeT9C.mp4?tag=29",
       "poster": "https://pbs.twimg.com/amplify_video_thumb/2099203745670414336/img/HFS9o8UK12XcjjV0.jpg?name=orig",
+      "video": "https://video.twimg.com/amplify_video/2099203745670414336/vid/avc1/1920x1080/TXaNcK3VR4FfeT9C.mp4?tag=29",
       "game_time": "Q1 10:36",
       "kickoff": "9/13/26, 13:05:06"
     },

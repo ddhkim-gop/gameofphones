@@ -35,7 +35,35 @@ import time
 from pathlib import Path
 
 HERE = Path(__file__).parent
+ROSTERS = HERE.parent / "data" / "2026" / "rosters.json"
 FETCHER = HERE / "reddit_fetch.py"   # Reddit primary, YouTube fallback (no auth)
+
+
+def _roster_names():
+    names = set()
+    try:
+        for t in json.loads(ROSTERS.read_text()):
+            for p in t.get("players", []):
+                if p.get("name"):
+                    names.add(p["name"])
+    except Exception:
+        pass
+    return names
+
+
+def credited_players(text, event_name, roster):
+    """Every rostered player named in the caption (so a passer->receiver clip
+    credits both and ships to both teams via an 'A & B' note). The matched
+    event's own player is always included and listed first."""
+    out = [event_name]
+    low = _norm(text)
+    for n in roster:
+        if n == event_name:
+            continue
+        first, last = name_parts(n)
+        if last and last in low and (not first or first in low):
+            out.append(n)
+    return out
 # search term added per event type when auto-fetching candidates
 EVENT_QUERY = {"TD": "touchdown", "FG": "field goal", "BIG_PLAY": ""}
 EVENTS = HERE / "highlights_events.jsonl"
@@ -178,6 +206,7 @@ def main():
     reviewed = json.loads(REVIEWED.read_text())
     reviewed.setdefault("keep", {})
     pool_urls = set(POOL.read_text().split()) if POOL.exists() else set()
+    roster = _roster_names()
 
     matched, skipped = [], []
     for ev in events:
@@ -190,10 +219,13 @@ def main():
             skipped.append((ev, "no candidate matched"))
             continue
         url = best["url"]
-        if already_have(url, reviewed):
-            skipped.append((ev, "clip already reviewed"))
+        if url in reviewed.get("reject", {}):
+            skipped.append((ev, "clip rejected on review"))
             continue
-        note = (f"{ev['name']} - {ev.get('detail','')} "
+        # (keep-list URLs are allowed through so their note can be enriched with
+        #  a second credited player - a passer->receiver clip ships to both)
+        who = credited_players(best.get("text", ""), ev["name"], roster)
+        note = (f"{' & '.join(who)} - {ev.get('detail','')} "
                 f"(auto: caption-matched @{best.get('author','?')}, score {best_s:.1f})")
         reviewed["keep"][url] = note
         if url not in pool_urls:
