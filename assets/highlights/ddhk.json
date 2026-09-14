@@ -20,7 +20,7 @@
     },
     {
       "url": "https://x.com/NFLTDsVideos/status/2099556418319778062",
-      "player": "Jared Goff",
+      "player": "Amon-Ra St. Brown & Jared Goff",
       "meta": "QB \u00b7 DET",
       "date": "2026-09-14",
       "author": "NFL Touchdown Videos",
@@ -28,10 +28,8 @@
       "verified": true,
       "faves": 0,
       "secs": 0,
-      "video": "https://video.twimg.com/ext_tw_video/2099234765417115650/pu/vid/avc1/1280x720/UUHWma5CkRbFtpYz.mp4?tag=12",
       "poster": "https://pbs.twimg.com/ext_tw_video_thumb/2099234765417115650/pu/img/jd62lcglR-REu1Zx.jpg?name=orig",
-      "game_time": "Q3 08:59",
-      "kickoff": "9/13/26, 13:05:29"
+      "video": "https://video.twimg.com/ext_tw_video/2099234765417115650/pu/vid/avc1/1280x720/UUHWma5CkRbFtpYz.mp4?tag=12"
     },
     {
       "url": "https://x.com/NFLTDsVideos/status/2099581958590247402",
@@ -43,8 +41,8 @@
       "verified": true,
       "faves": 0,
       "secs": 0,
-      "video": "https://video.twimg.com/amplify_video/2099262491507433472/vid/avc1/1920x1080/UAMfvan4vj-1qGkd.mp4?tag=29",
       "poster": "https://pbs.twimg.com/media/HSIUamIakAATVP1.jpg?name=orig",
+      "video": "https://video.twimg.com/amplify_video/2099262491507433472/vid/avc1/1920x1080/UAMfvan4vj-1qGkd.mp4?tag=29",
       "game_time": "Q3 06:07",
       "kickoff": "9/13/26, 16:25:43"
     },
@@ -58,8 +56,8 @@
       "verified": true,
       "faves": 0,
       "secs": 0,
-      "video": "https://video.twimg.com/amplify_video/2099335144775843840/vid/avc1/1920x1080/I4T6paUlzQgMQJzA.mp4?tag=29",
       "poster": "https://pbs.twimg.com/amplify_video_thumb/2099335144775843840/img/m8RYjuKfLxelr46v.jpg?name=orig",
+      "video": "https://video.twimg.com/amplify_video/2099335144775843840/vid/avc1/1920x1080/I4T6paUlzQgMQJzA.mp4?tag=29",
       "game_time": "Q3 00:41",
       "kickoff": "9/13/26, 20:24:49"
     },
@@ -159,8 +157,8 @@
       "verified": true,
       "faves": 0,
       "secs": 0,
-      "video": "https://video.twimg.com/amplify_video/2099223509176401920/vid/avc1/1920x1080/VAVmWQ6DnDmNC3GO.mp4?tag=29",
       "poster": "https://pbs.twimg.com/amplify_video_thumb/2099223509176401920/img/x8zglbhrD3KuUeX1.jpg?name=orig",
+      "video": "https://video.twimg.com/amplify_video/2099223509176401920/vid/avc1/1920x1080/VAVmWQ6DnDmNC3GO.mp4?tag=29",
       "game_time": "Q4 10:32",
       "kickoff": "9/13/26, 13:05:06"
     }
