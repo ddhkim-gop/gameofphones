@@ -5639,7 +5639,7 @@ window.__STATIC_DATA__ = {
                 "weight": "211",
                 "years_exp": 4,
                 "status": "Active",
-                "injury_status": null,
+                "injury_status": "Questionable",
                 "search_rank": 94
             },
             {
@@ -5942,7 +5942,7 @@ window.__STATIC_DATA__ = {
                 "name": "Deshaun Watson",
                 "position": "QB",
                 "team": "CLE",
-                "age": 30,
+                "age": 31,
                 "birth_date": "1995-09-14",
                 "college": "Clemson",
                 "height": "75",
@@ -7288,7 +7288,7 @@ window.__STATIC_DATA__ = {
                 "name": "Dylan Sampson",
                 "position": "RB",
                 "team": "CLE",
-                "age": 21,
+                "age": 22,
                 "birth_date": "2004-09-14",
                 "college": "Tennessee",
                 "height": "68",
