@@ -4,6 +4,36 @@
   "note": "Curated: X has no public search API, so posts are collected by hand and matched to rosters by this script.",
   "tweets": [
     {
+      "url": "https://x.com/NFLTDsVideos/status/2099202668686160220",
+      "player": "Lamar Jackson",
+      "meta": "QB \u00b7 BAL",
+      "date": "2026-09-13",
+      "author": "NFL Touchdown Videos",
+      "text": "Lamar Jackson (2) to Zay Flowers (1) Baltimore Ravens 54 yards pic.twitter.com/qHjrUsWEDq \u2014 NFL Touchdown Videos (@NFLTDsVideos) September 13, 2026",
+      "verified": true,
+      "faves": 0,
+      "secs": 0,
+      "video": "https://video.twimg.com/amplify_video/2099199846142111744/vid/avc1/1920x1080/biH_pThHs_Y8EsGp.mp4?tag=29",
+      "poster": "https://pbs.twimg.com/amplify_video_thumb/2099199846142111744/img/Iw0iP0ekZcUna8xj.jpg?name=orig",
+      "game_time": "Q1 08:25",
+      "kickoff": "9/13/26, 13:05:06"
+    },
+    {
+      "url": "https://x.com/NFLTDsVideos/status/2099252945338400912",
+      "player": "Jahmyr Gibbs",
+      "meta": "RB \u00b7 DET",
+      "date": "2026-09-13",
+      "author": "NFL Touchdown Videos",
+      "text": "Jahmyr Gibbs (2) Detroit Lions 1 yard pic.twitter.com/uls2hez8xM \u2014 NFL Touchdown Videos (@NFLTDsVideos) September 13, 2026",
+      "verified": true,
+      "faves": 0,
+      "secs": 0,
+      "video": "https://video.twimg.com/ext_tw_video/2099211014143123456/pu/vid/avc1/1280x720/aSJnRnV6XrXneRnz.mp4?tag=12",
+      "poster": "https://pbs.twimg.com/ext_tw_video_thumb/2099211014143123456/pu/img/UXhRhZe8XOqrSl3Y.jpg?name=orig",
+      "game_time": "Q1 03:41",
+      "kickoff": "9/13/26, 13:05:29"
+    },
+    {
       "url": "https://x.com/thomasrp93/status/2098032737227505686",
       "player": "A.J. Brown",
       "meta": "WR \u00b7 NE",

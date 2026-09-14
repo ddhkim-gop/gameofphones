@@ -2,5 +2,21 @@
   "team": "eikichii952",
   "updated": "2026-09-14",
   "note": "Curated: X has no public search API, so posts are collected by hand and matched to rosters by this script.",
-  "tweets": []
+  "tweets": [
+    {
+      "url": "https://x.com/NFLTDsVideos/status/2099556438448201966",
+      "player": "Jeremiyah Love",
+      "meta": "RB \u00b7 ARI",
+      "date": "2026-09-14",
+      "author": "NFL Touchdown Videos",
+      "text": "Jeremiyah Love (1) Arizona Cardinals 5 yards pic.twitter.com/LuiZzJjGla \u2014 NFL Touchdown Videos (@NFLTDsVideos) September 14, 2026",
+      "verified": true,
+      "faves": 0,
+      "secs": 0,
+      "video": "https://video.twimg.com/amplify_video/2099235442482974720/vid/avc1/1920x1080/mRLIAw4HmG-ylcNh.mp4?tag=29",
+      "poster": "https://pbs.twimg.com/amplify_video_thumb/2099235442482974720/img/a2sZ6nlJr6QttlrY.jpg?name=orig",
+      "game_time": "Q1 07:54",
+      "kickoff": "9/13/26, 16:25:28"
+    }
+  ]
 }

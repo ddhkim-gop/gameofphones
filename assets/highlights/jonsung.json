@@ -4,6 +4,21 @@
   "note": "Curated: X has no public search API, so posts are collected by hand and matched to rosters by this script.",
   "tweets": [
     {
+      "url": "https://x.com/NFLTDsVideos/status/2099582637828432122",
+      "player": "Justin Jefferson",
+      "meta": "WR \u00b7 MIN",
+      "date": "2026-09-14",
+      "author": "NFL Touchdown Videos",
+      "text": "Carson Wentz (3) to Justin Jefferson (2) Minnesota Vikings 9 yards pic.twitter.com/7xKYTX2luG \u2014 NFL Touchdown Videos (@NFLTDsVideos) September 14, 2026",
+      "verified": true,
+      "faves": 0,
+      "secs": 0,
+      "video": "https://video.twimg.com/amplify_video/2099279228214951936/vid/avc1/1920x1080/qTrZGXB3k-vvgBJ2.mp4?tag=29",
+      "poster": "https://pbs.twimg.com/amplify_video_thumb/2099279228214951936/img/baebLTviPi3wsW5s.jpg?name=orig",
+      "game_time": "Q2 02:02",
+      "kickoff": "9/13/26, 16:25:28"
+    },
+    {
       "url": "https://x.com/SauceStatline/status/2099202201365164367",
       "player": "Derrick Henry",
       "meta": "RB \u00b7 BAL",
@@ -16,6 +31,36 @@
       "poster": "https://pbs.twimg.com/amplify_video_thumb/2099201301951209479/img/1Y8ATZ9fidHOR1F9.jpg?name=orig",
       "video": "https://video.twimg.com/amplify_video/2099201301951209479/vid/avc1/1920x1080/GJLOdPhK9J7v2Mxi.mp4?tag=29",
       "game_time": "Q1 04:08",
+      "kickoff": "9/13/26, 13:05:06"
+    },
+    {
+      "url": "https://x.com/NFLTDsVideos/status/2099255267405771235",
+      "player": "Kyle Monangai",
+      "meta": "RB \u00b7 CHI",
+      "date": "2026-09-13",
+      "author": "NFL Touchdown Videos",
+      "text": "Kyle Monangai (1) Chicago Bears 61 yards pic.twitter.com/kP5PHEDwfk \u2014 NFL Touchdown Videos (@NFLTDsVideos) September 13, 2026",
+      "verified": true,
+      "faves": 0,
+      "secs": 0,
+      "video": "https://video.twimg.com/amplify_video/2099223086205931520/vid/avc1/1920x1080/AfvEJJ2wiwLr9vY0.mp4?tag=29",
+      "poster": "https://pbs.twimg.com/amplify_video_thumb/2099223086205931520/img/BmEeAN7v1-8kTDxf.jpg?name=orig",
+      "game_time": "Q3 00:50",
+      "kickoff": "9/13/26, 13:04:50"
+    },
+    {
+      "url": "https://x.com/NFLTDsVideos/status/2099255107447586923",
+      "player": "Derrick Henry",
+      "meta": "RB \u00b7 BAL",
+      "date": "2026-09-13",
+      "author": "NFL Touchdown Videos",
+      "text": "Derrick Henry (3) Baltimore Ravens 3 yards pic.twitter.com/ORYZIlKE1W \u2014 NFL Touchdown Videos (@NFLTDsVideos) September 13, 2026",
+      "verified": true,
+      "faves": 0,
+      "secs": 0,
+      "video": "https://video.twimg.com/amplify_video/2099221961842774023/vid/avc1/1920x1080/BuB4wKDmWvwHbdP-.mp4?tag=29",
+      "poster": "https://pbs.twimg.com/amplify_video_thumb/2099221961842774023/img/-X0P-0jXqq4XCoee.jpg?name=orig",
+      "game_time": "Q2 05:12",
       "kickoff": "9/13/26, 13:05:06"
     },
     {
