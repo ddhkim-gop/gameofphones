@@ -145,9 +145,12 @@ def main():
             if pub and pub >= cutoff and INJURY_RE.search(text) and not SKIP_RE.search(text):
                 seen.add(f"inj:{pid}:{time.strftime('%Y-%m-%d')}")
                 setting = "in-game" if INGAME_RE.search(text) else "practice"
+                # Both settings can have footage - in-game replay, or a beat
+                # reporter's practice clip - so always attempt a clip; the
+                # trusted-source allowlist (injury_sources.txt) keeps it clean.
                 injuries.append({"ts": now, "event": "INJURY", "player": name,
                                  "player_id": pid, "owners": owners, "setting": setting,
-                                 "clip": setting == "in-game",   # practice = news-only
+                                 "clip": True,
                                  "detail": (m.get("title") or "")[:120],
                                  "source": it.get("source"), "article": m.get("url", "")})
                 break            # one injury per player
