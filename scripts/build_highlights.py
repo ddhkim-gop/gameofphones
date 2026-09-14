@@ -73,6 +73,30 @@ MEDIA_CACHE = REPO / "scripts" / ".highlights_media_cache.json"
 OEMBED_CACHE = REPO / "scripts" / ".highlights_oembed_cache.json"
 _OEMBED: dict | None = None
 
+# Real game timing per player (quarter + clock), built by gen_playtimes.py from
+# nflverse. Lets each clip show "Q1 8:34" and sort as it happened in real life.
+PLAYTIMES = REPO / "scripts" / ".playtimes.json"
+
+
+def _playtimes() -> dict:
+    try:
+        return json.loads(PLAYTIMES.read_text())
+    except Exception:
+        return {}
+
+
+def playtime_key(full_name: str) -> str:
+    """Roster 'First Last' -> 'last#f' to match the nflverse playtimes index."""
+    parts = [p for p in re.split(r"\s+", (full_name or "").strip()) if p]
+    if len(parts) < 2:
+        return ""
+    first = re.sub(r"[^a-z]", "", parts[0].lower())
+    last = re.sub(r"[^a-z0-9]", "", "".join(parts[1:]).lower())
+    for suf in ("jr", "sr", "ii", "iii", "iv", "v"):
+        if last.endswith(suf) and len(last) > len(suf):
+            last = last[:-len(suf)]
+    return f"{last}#{first[:1]}" if last and first else ""
+
 # Display name, avatar and verified flag per handle, so the panel can render a
 # post the way X does instead of a bare handle. Harvested from X's own timeline
 # responses; committed because it changes rarely.
@@ -716,6 +740,7 @@ def build(pool: list[str], only_team: str | None, dry_run: bool,
                      if not k.startswith("_")}
         except ValueError:
             print(f"  ! {STATS.name} is not valid JSON; ignoring", file=sys.stderr)
+    playtimes = _playtimes()
     OUT_DIR.mkdir(parents=True, exist_ok=True)
     written = 0
     rejects: dict[str, str] = {}
@@ -765,8 +790,18 @@ def build(pool: list[str], only_team: str | None, dry_run: bool,
                              "secs": post.get("secs", 0)})
                 break            # one post is filed under one player
         hits = dedupe(hits, media_cache)[:MAX_PER_TEAM]
+        used_pt: dict = {}
         for h in hits:                    # only for what actually ships
             h.update(media(h["url"], media_cache))
+            # attach the real game timestamp (Q + clock) from nflverse; consume
+            # per player so a player's multiple clips get successive plays.
+            lst = playtimes.get(playtime_key(h.get("player", "")), [])
+            i = used_pt.get(h["player"], 0)
+            if i < len(lst):
+                p = lst[i]
+                h["game_time"] = f"Q{p['q']} {p['clock']}"
+                h["kickoff"] = p.get("start", "")
+                used_pt[h["player"]] = i + 1
             st = stats.get(h["url"].rsplit("/", 1)[-1])
             if st:
                 h["stats"] = st

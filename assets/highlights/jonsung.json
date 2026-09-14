@@ -14,7 +14,9 @@
       "faves": 0,
       "secs": 0,
       "poster": "https://pbs.twimg.com/amplify_video_thumb/2099201301951209479/img/1Y8ATZ9fidHOR1F9.jpg?name=orig",
-      "video": "https://video.twimg.com/amplify_video/2099201301951209479/vid/avc1/1920x1080/GJLOdPhK9J7v2Mxi.mp4?tag=29"
+      "video": "https://video.twimg.com/amplify_video/2099201301951209479/vid/avc1/1920x1080/GJLOdPhK9J7v2Mxi.mp4?tag=29",
+      "game_time": "Q1 04:08",
+      "kickoff": "9/13/26, 13:05:06"
     },
     {
       "url": "https://x.com/NFL/status/2098210866361671970",
@@ -27,7 +29,9 @@
       "faves": 0,
       "secs": 0,
       "poster": "https://pbs.twimg.com/amplify_video_thumb/2098210534789439488/img/wOaofakx93k_7LDE.jpg?name=orig",
-      "video": "https://video.twimg.com/amplify_video/2098210534789439488/vid/avc1/1920x1080/3fYLrh_VHSdJRgQh.mp4?tag=29"
+      "video": "https://video.twimg.com/amplify_video/2098210534789439488/vid/avc1/1920x1080/3fYLrh_VHSdJRgQh.mp4?tag=29",
+      "game_time": "Q3 11:07",
+      "kickoff": "9/10/26, 20:37:25"
     }
   ]
 }

@@ -858,6 +858,7 @@ async function loadTeamReel(teamName) {
           <div style="display:flex;gap:7px;align-items:baseline;margin:0 2px 5px;">
             <span style="font-size:11px;font-weight:700;color:#8b919c;">${esc(t.player || "")}</span>
             <span style="font-size:11px;color:#5a6070;">${esc(t.meta || "")}</span>
+            ${t.game_time ? `<span style="font-size:11px;color:#4299e1;font-weight:600;">${esc(t.game_time)}</span>` : ""}
           </div>`;
         if (!t.video) {
             // No direct mp4 resolved. Rather than fall back to X's widget -
