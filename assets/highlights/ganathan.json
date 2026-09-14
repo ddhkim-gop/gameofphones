@@ -13,8 +13,10 @@
       "verified": true,
       "faves": 0,
       "secs": 0,
+      "poster": "https://pbs.twimg.com/amplify_video_thumb/2099228337155842048/img/9yuQi_zTW-SjMq61.jpg?name=orig",
       "video": "https://video.twimg.com/amplify_video/2099228337155842048/vid/avc1/1920x1080/EgaZhOfezGJw3RKd.mp4?tag=29",
-      "poster": "https://pbs.twimg.com/amplify_video_thumb/2099228337155842048/img/9yuQi_zTW-SjMq61.jpg?name=orig"
+      "game_time": "Q2 12:57",
+      "kickoff": "9/13/26, 13:04:46"
     },
     {
       "url": "https://x.com/JDurham_FBall/status/2098220723357597783",
@@ -27,7 +29,9 @@
       "faves": 0,
       "secs": 0,
       "poster": "https://pbs.twimg.com/amplify_video_thumb/2098220659507961856/img/Jl3SPFyI8iLBKY7z.jpg?name=orig",
-      "video": "https://video.twimg.com/amplify_video/2098220659507961856/vid/avc1/1080x1920/TkMeBF-ouVv2AwKI.mp4?tag=29"
+      "video": "https://video.twimg.com/amplify_video/2098220659507961856/vid/avc1/1080x1920/TkMeBF-ouVv2AwKI.mp4?tag=29",
+      "game_time": "Q2 15:00",
+      "kickoff": "9/10/26, 20:37:25"
     }
   ]
 }

@@ -27,7 +27,7 @@ python3 scripts/poll_highlights.py >> "$LOG" 2>&1
 python3 scripts/ingest_highlights.py --fetch >> "$LOG" 2>&1 || true
 if ! git diff --quiet scripts/highlights_reviewed.json assets/highlights 2>/dev/null; then
   git add scripts/highlights_reviewed.json scripts/highlights_pool.txt \
-          scripts/.highlights_media_cache.json scripts/.highlights_oembed_cache.json \
+          scripts/.highlights_media_cache.json scripts/.highlights_oembed_cache.json scripts/.playtimes.json \
           assets/highlights >> "$LOG" 2>&1
   git commit -q -m "Highlights: auto-ingest live plays" >> "$LOG" 2>&1 \
     && git pull --rebase -q >> "$LOG" 2>&1 \
