@@ -4,6 +4,19 @@
   "note": "Curated: X has no public search API, so posts are collected by hand and matched to rosters by this script.",
   "tweets": [
     {
+      "url": "https://x.com/NFLTDsVideos/status/2099255935113789558",
+      "player": "Josh Allen",
+      "meta": "QB \u00b7 BUF",
+      "date": "2026-09-13",
+      "author": "NFL Touchdown Videos",
+      "text": "Josh Allen (4) to Josh Palmer (1) Buffalo Bills 34 yards pic.twitter.com/Z3GUldaRwZ \u2014 NFL Touchdown Videos (@NFLTDsVideos) September 13, 2026",
+      "verified": true,
+      "faves": 0,
+      "secs": 0,
+      "video": "https://video.twimg.com/amplify_video/2099228337155842048/vid/avc1/1920x1080/EgaZhOfezGJw3RKd.mp4?tag=29",
+      "poster": "https://pbs.twimg.com/amplify_video_thumb/2099228337155842048/img/9yuQi_zTW-SjMq61.jpg?name=orig"
+    },
+    {
       "url": "https://x.com/JDurham_FBall/status/2098220723357597783",
       "player": "Kyren Williams",
       "meta": "RB \u00b7 LAR",
