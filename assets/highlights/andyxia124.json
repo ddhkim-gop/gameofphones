@@ -4,6 +4,21 @@
   "note": "Curated: X has no public search API, so posts are collected by hand and matched to rosters by this script.",
   "tweets": [
     {
+      "url": "https://x.com/NFLTDsVideos/status/2099252767906742759",
+      "player": "Trevor Lawrence",
+      "meta": "QB \u00b7 JAX",
+      "date": "2026-09-13",
+      "author": "NFL Touchdown Videos",
+      "text": "Trevor Lawrence (4) to Jakobi Meyers (1) Jacksonville Jaguars 32 yards pic.twitter.com/8PlEQsdeWb \u2014 NFL Touchdown Videos (@NFLTDsVideos) September 13, 2026",
+      "verified": true,
+      "faves": 0,
+      "secs": 0,
+      "poster": "https://pbs.twimg.com/amplify_video_thumb/2099207383038017536/img/1MrDoR2a1QqUT9eq.jpg?name=orig",
+      "video": "https://video.twimg.com/amplify_video/2099207383038017536/vid/avc1/1920x1080/r9lY1JvIPHASXWeY.mp4?tag=29",
+      "game_time": "Q1 08:18",
+      "kickoff": "9/13/26, 13:03:54"
+    },
+    {
       "url": "https://x.com/NFLTDsVideos/status/2099253577331966462",
       "player": "David Montgomery",
       "meta": "RB \u00b7 HOU",
@@ -47,6 +62,21 @@
       "video": "https://video.twimg.com/ext_tw_video/2099211014143123456/pu/vid/avc1/1280x720/aSJnRnV6XrXneRnz.mp4?tag=12",
       "game_time": "Q1 03:41",
       "kickoff": "9/13/26, 13:05:29"
+    },
+    {
+      "url": "https://x.com/NFLTDsVideos/status/2099189736858419294",
+      "player": "Trevor Lawrence",
+      "meta": "QB \u00b7 JAX",
+      "date": "2026-09-13",
+      "author": "NFL Touchdown Videos",
+      "text": "Trevor Lawrence (1) to Parker Washington (1) Jacksonville Jaguars 30 yards pic.twitter.com/ZAwtyacnOQ \u2014 NFL Touchdown Videos (@NFLTDsVideos) September 13, 2026",
+      "verified": true,
+      "faves": 0,
+      "secs": 0,
+      "poster": "https://pbs.twimg.com/amplify_video_thumb/2099185261737635840/img/FO213kMSOg-6eJ68.jpg?name=orig",
+      "video": "https://video.twimg.com/amplify_video/2099185261737635840/vid/avc1/1920x1080/XaT3PWwc1r5wNy82.mp4?tag=29",
+      "game_time": "Q1 01:47",
+      "kickoff": "9/13/26, 13:03:54"
     },
     {
       "url": "https://x.com/thomasrp93/status/2098032737227505686",
