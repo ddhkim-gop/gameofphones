@@ -6070,7 +6070,7 @@ window.__STATIC_DATA__ = {
                 "name": "Terry McLaurin",
                 "position": "WR",
                 "team": "WAS",
-                "age": 30,
+                "age": 31,
                 "birth_date": "1995-09-15",
                 "college": "Ohio State",
                 "height": "72",
