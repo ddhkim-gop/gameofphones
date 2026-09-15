@@ -1,10 +1,11 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <!--
-  Nightly 11pm scan: injuries (Sleeper news) + per-player compilation tasks.
-  Detection only (0 tokens); it appends to highlights_events.jsonl - the clips
-  are found in a semi-auto X pass. No push from here.
+  Nightly 11pm job (scripts/run_daily_scan.sh): (1) injury/gap/compilation
+  detection via daily_scan.py, then (2) ESPN highlight seed for the week's real
+  clips + rebuild + push. Runs from this Mac because ESPN's CDN 202-blocks
+  datacenter IPs (so not from CI).
 
-  Install:
+  Install / reload after editing:
     cp "scripts/com.gameofphones.daily-scan.plist" ~/Library/LaunchAgents/
     launchctl load ~/Library/LaunchAgents/com.gameofphones.daily-scan.plist
 -->
@@ -14,8 +15,8 @@
   <string>com.gameofphones.daily-scan</string>
   <key>ProgramArguments</key>
   <array>
-    <string>/usr/bin/python3</string>
-    <string>/Users/david/Desktop/Skyler/personal/fantasy football/gameofphones/scripts/daily_scan.py</string>
+    <string>/bin/bash</string>
+    <string>/Users/david/Desktop/Skyler/personal/fantasy football/gameofphones/scripts/run_daily_scan.sh</string>
   </array>
   <key>StartCalendarInterval</key>
   <dict>
