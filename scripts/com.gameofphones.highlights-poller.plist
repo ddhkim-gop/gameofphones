@@ -38,9 +38,9 @@
   <false/>
 
   <key>StandardOutPath</key>
-  <string>/Users/david/Desktop/Skyler/personal/fantasy football/gameofphones/scripts/.poller.log</string>
+  <string>/Users/david/Library/Logs/fantasy-football/highlights-poller.log</string>
   <key>StandardErrorPath</key>
-  <string>/Users/david/Desktop/Skyler/personal/fantasy football/gameofphones/scripts/.poller.log</string>
+  <string>/Users/david/Library/Logs/fantasy-football/highlights-poller.log</string>
 
   <key>ProcessType</key>
   <string>Background</string>

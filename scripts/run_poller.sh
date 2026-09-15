@@ -8,7 +8,11 @@ export PATH="/opt/homebrew/bin:/usr/local/bin:/usr/bin:/bin:/usr/sbin:/sbin"
 # git push over SSH from launchd (no ssh-agent): point at the passphrase-free key.
 export GIT_SSH_COMMAND="ssh -o BatchMode=yes -o IdentitiesOnly=yes -i ${HOME}/.ssh/id_ed25519"
 REPO="$(cd "$(dirname "$0")/.." && pwd)"
-LOG="$REPO/scripts/.poller.log"
+# Log lives outside the repo: ~/Desktop is TCC-protected, and launchd can only
+# open a StandardOutPath file it created itself (needs com.apple.macl). A log
+# rewritten in-repo by any other tool makes launchd abort with EX_CONFIG.
+LOG="$HOME/Library/Logs/fantasy-football/highlights-poller.log"
+mkdir -p "$(dirname "$LOG")"
 echo "--- $(date '+%Y-%m-%d %H:%M:%S') fire (dow=$(TZ=America/Los_Angeles date +%u) hh=$(TZ=America/Los_Angeles date +%H)) ---" >> "$LOG"
 
 # Game-window gate in America/Los_Angeles. dow: 1=Mon .. 7=Sun.

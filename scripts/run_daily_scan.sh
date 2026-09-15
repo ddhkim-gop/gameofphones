@@ -13,7 +13,10 @@ export PATH="/opt/homebrew/bin:/usr/local/bin:/usr/bin:/bin:/usr/sbin:/sbin"
 # git push over SSH from launchd (no ssh-agent): passphrase-free key.
 export GIT_SSH_COMMAND="ssh -o BatchMode=yes -o IdentitiesOnly=yes -i ${HOME}/.ssh/id_ed25519"
 REPO="$(cd "$(dirname "$0")/.." && pwd)"
-LOG="$REPO/scripts/.daily-scan.log"
+# Log lives outside the repo: ~/Desktop is TCC-protected and launchd can only
+# open a StandardOutPath it created itself (see run_poller.sh).
+LOG="$HOME/Library/Logs/fantasy-football/daily-scan.log"
+mkdir -p "$(dirname "$LOG")"
 cd "$REPO" || exit 1
 echo "--- $(date '+%Y-%m-%d %H:%M:%S') daily scan ---" >> "$LOG"
 

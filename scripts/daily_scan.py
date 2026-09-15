@@ -30,10 +30,13 @@ from pathlib import Path
 
 HERE = Path(__file__).parent
 ROSTERS = HERE.parent / "data" / "2026" / "rosters.json"
+# Names for players rostered only in a sibling league.
+SIBLING_ROSTERS = [HERE.parent.parent / "st" / "data" / "2026" / "rosters.json"]
 FEEDS = HERE.parent / "assets" / "highlights"
 EVENTS = HERE / "highlights_events.jsonl"
 SEEN = HERE / ".daily_seen.json"
-LEAGUE_IDS = ["1313903635586899968"]
+LEAGUE_IDS = ["1313903635586899968",                 # Game of Phones 2026
+              "1400268451699818496"]                 # ST 2026
 
 # Any real injury (in-game OR practice). In-game gets a replay clip; practice
 # is news-only (no footage) - both captured, tagged by setting.
@@ -63,6 +66,13 @@ def get(u, t=20):
 def rostered():
     """player_id -> (name, [owners]) from live Sleeper rosters + local names."""
     names = {}
+    for extra in SIBLING_ROSTERS:
+        try:
+            for t in json.loads(extra.read_text()):
+                for p in t.get("players", []):
+                    names[str(p.get("player_id"))] = p.get("name")
+        except Exception:
+            pass
     try:
         for t in json.loads(ROSTERS.read_text()):
             for p in t.get("players", []):
@@ -76,7 +86,7 @@ def rostered():
         for r in get(f"https://api.sleeper.app/v1/league/{lid}/rosters") or []:
             who = um.get(r.get("owner_id"), r.get("owner_id"))
             for pid in (r.get("players") or []):
-                owners.setdefault(str(pid), []).append(who)
+                owners.setdefault(str(pid), []).append({"league": lid, "owner": who})
     return {pid: (names.get(pid, pid), ow) for pid, ow in owners.items()}
 
 
@@ -160,7 +170,8 @@ def main():
           f"{sum(1 for i in injuries if not i['clip'])} practice), "
           f"{len(comps)} compilation tasks | {len(players)} rostered")
     for e in gaps[:20]:
-        print(f"  MISSED  {e['player']:22} -> {', '.join(e['owners'])[:24]}")
+        who = ', '.join(o['owner'] if isinstance(o, dict) else str(o) for o in e['owners'])
+        print(f"  MISSED  {e['player']:22} -> {who[:24]}")
     for e in injuries[:20]:
         print(f"  INJURY  {e['player']:22} [{e['setting']:7}] {e['detail'][:60]}")
     if not args.dry_run:
