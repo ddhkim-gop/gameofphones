@@ -37,8 +37,12 @@ HERE = Path(__file__).parent
 STATE = HERE / ".poll_state.json"
 EVENTS = HERE / "highlights_events.jsonl"
 ROSTERS = HERE.parent / "data" / "2026" / "rosters.json"
+# A player rostered only in another league still needs a name, so meta is read
+# from every league repo's snapshot, not just this one's.
+SIBLING_ROSTERS = [HERE.parent.parent / "st" / "data" / "2026" / "rosters.json"]
 
-LEAGUE_IDS = ["1313903635586899968"]     # Game of Phones 2026; add more here
+LEAGUE_IDS = ["1313903635586899968",                 # Game of Phones 2026
+              "1400268451699818496"]                 # ST 2026
 YEAR = 2026
 
 # Big single-poll yardage gain (no TD) that still counts as a highlight.
@@ -68,6 +72,14 @@ def current_week():
 def player_meta():
     """player_id -> {name, team, pos} from the local roster snapshot."""
     meta = {}
+    for extra in SIBLING_ROSTERS:
+        try:
+            for t in json.loads(extra.read_text()):
+                for p in t.get("players", []):
+                    meta[str(p.get("player_id"))] = {
+                        "name": p.get("name"), "team": p.get("team"), "pos": p.get("position")}
+        except Exception:
+            pass
     try:
         for t in json.loads(ROSTERS.read_text()):
             for p in t.get("players", []):

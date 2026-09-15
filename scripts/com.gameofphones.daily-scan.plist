@@ -29,9 +29,9 @@
     <string>/opt/homebrew/bin:/usr/local/bin:/usr/bin:/bin:/usr/sbin:/sbin</string>
   </dict>
   <key>StandardOutPath</key>
-  <string>/Users/david/Desktop/Skyler/personal/fantasy football/gameofphones/scripts/.daily-scan.log</string>
+  <string>/Users/david/Library/Logs/fantasy-football/daily-scan.log</string>
   <key>StandardErrorPath</key>
-  <string>/Users/david/Desktop/Skyler/personal/fantasy football/gameofphones/scripts/.daily-scan.log</string>
+  <string>/Users/david/Library/Logs/fantasy-football/daily-scan.log</string>
   <key>ProcessType</key><string>Background</string>
 </dict>
 </plist>
