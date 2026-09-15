@@ -1,6 +1,6 @@
 {
   "team": "ddhk",
-  "updated": "2026-09-14",
+  "updated": "2026-09-15",
   "note": "Curated: X has no public search API, so posts are collected by hand and matched to rosters by this script.",
   "tweets": [
     {
@@ -59,6 +59,21 @@
       "poster": "https://pbs.twimg.com/amplify_video_thumb/2099335144775843840/img/m8RYjuKfLxelr46v.jpg?name=orig",
       "video": "https://video.twimg.com/amplify_video/2099335144775843840/vid/avc1/1920x1080/I4T6paUlzQgMQJzA.mp4?tag=29",
       "game_time": "Q3 00:41",
+      "kickoff": "9/13/26, 20:24:49"
+    },
+    {
+      "url": "https://x.com/NFLTDsVideos/status/2099582962492666322",
+      "player": "CeeDee Lamb",
+      "meta": "WR \u00b7 DAL",
+      "date": "2026-09-14",
+      "author": "NFL Touchdown Videos",
+      "text": "Dak Prescott (1) to CeeDee Lamb (1) Dallas Cowboys 1 yard pic.twitter.com/iPJ3XzuJ0P \u2014 NFL Touchdown Videos (@NFLTDsVideos) September 14, 2026",
+      "verified": true,
+      "faves": 0,
+      "secs": 0,
+      "video": "https://video.twimg.com/amplify_video/2099307414025572353/vid/avc1/1920x1080/McBnw9tZ5YeczreF.mp4?tag=29",
+      "poster": "https://pbs.twimg.com/amplify_video_thumb/2099307414025572353/img/CTYp5yW7ejSMmQ2S.jpg?name=orig",
+      "game_time": "Q2 05:48",
       "kickoff": "9/13/26, 20:24:49"
     },
     {
