@@ -592,9 +592,17 @@ def window_start() -> str:
         wk_start = start + timedelta(days=7 * max(week - 1, 0))
         today = datetime.now(timezone.utc).replace(tzinfo=None)
         if today >= start:                     # games have been played
-            floor = wk_start.strftime("%Y-%m-%d")
+            # Sleeper can flip to the next week before that week's games are
+            # played (mid-week), pushing wk_start ahead of the football actually
+            # on the field. Floor to the earlier of the week start and 7 days
+            # ago, so a just-played game still shows instead of being hidden as
+            # "last week". Never reaches back past a week - still current, not
+            # archival.
+            floor_dt = min(wk_start, today - timedelta(days=7))
+            floor = floor_dt.strftime("%Y-%m-%d")
             _IN_SEASON = True
-            print(f"window: week {week} only, from {floor}; "
+            print(f"window: from {floor} (week {week} start "
+                  f"{wk_start:%Y-%m-%d}, 7-day floor applied); "
                   f"previous-season footage excluded")
         else:
             print(f"window: preseason, from {floor} "

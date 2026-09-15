@@ -874,6 +874,18 @@ async function loadTeamReel(teamName) {
         }
         const handle = esc(t.author || "");
         const name = esc(t.author_name || t.author || "");
+        // A clip can come from X or from a non-X source (ESPN's public feed).
+        // For X, keep the familiar post chrome (@handle · Follow, X mark). For
+        // anything else, drop the X-isms: link to the source, show its host, and
+        // use a neutral "watch at source" corner mark instead of the X logo.
+        const isX = !!t.url && /(?:^|\/\/|\.)(?:x|twitter)\.com\//i.test(t.url);
+        const srcHref = esc(t.url || "");
+        const profileHref = isX ? `https://x.com/${handle}` : srcHref;
+        const host = (t.url || "").replace(/^https?:\/\//, "").split("/")[0]
+                                  .replace(/^www\./, "") || name;
+        const extMark = `<svg viewBox="0 0 24 24" width="15" height="15" aria-hidden="true"
+            fill="none" stroke="${XS.dim}" stroke-width="2" stroke-linecap="round"
+            stroke-linejoin="round"><path d="M7 17L17 7M17 7H8M17 7v9"/></svg>`;
         const avatar = t.avatar
             ? `<img src="${esc(t.avatar)}" alt="" loading="lazy"
                     style="width:38px;height:38px;border-radius:50%;flex:0 0 38px;
@@ -884,11 +896,11 @@ async function loadTeamReel(teamName) {
           <div style="border:1px solid ${XS.line};border-radius:14px;background:${XS.bg};
                       font-family:${XS.font};padding:13px 14px 11px;">
             <div style="display:flex;gap:9px;align-items:flex-start;">
-              <a href="https://x.com/${handle}" target="_blank" rel="noopener"
+              <a href="${profileHref}" target="_blank" rel="noopener"
                  style="line-height:0;">${avatar}</a>
               <div style="min-width:0;flex:1;">
                 <div style="display:flex;align-items:center;gap:4px;">
-                  <a href="https://x.com/${handle}" target="_blank" rel="noopener"
+                  <a href="${profileHref}" target="_blank" rel="noopener"
                      style="font-size:13.5px;font-weight:700;color:${XS.text};
                             text-decoration:none;white-space:nowrap;overflow:hidden;
                             text-overflow:ellipsis;">${name}</a>
@@ -896,13 +908,16 @@ async function loadTeamReel(teamName) {
                 </div>
                 <div style="font-size:12.5px;color:${XS.dim};margin-top:1px;
                             white-space:nowrap;overflow:hidden;text-overflow:ellipsis;">
-                  @${handle} ·
-                  <a href="https://x.com/${handle}" target="_blank" rel="noopener"
-                     style="color:${XS.blue};text-decoration:none;font-weight:400;">Follow</a>
+                  ${isX
+                    ? `@${handle} · <a href="https://x.com/${handle}" target="_blank"
+                         rel="noopener" style="color:${XS.blue};text-decoration:none;
+                         font-weight:400;">Follow</a>`
+                    : esc(host)}
                 </div>
               </div>
-              <a href="${esc(t.url)}" target="_blank" rel="noopener" title="View on X"
-                 style="line-height:0;flex:0 0 15px;">${xmark}</a>
+              <a href="${srcHref}" target="_blank" rel="noopener"
+                 title="${isX ? 'View on X' : 'Watch at ' + esc(name)}"
+                 style="line-height:0;flex:0 0 15px;">${isX ? xmark : extMark}</a>
             </div>
             ${t.text ? `<div style="font-size:13px;line-height:1.45;color:${XS.text};
                                     margin:10px 0 0;white-space:pre-wrap;

@@ -23,3 +23,6 @@ scripts/.x_cookies
 scripts/.reddit_cred
 scripts/.daily_seen.json
 scripts/.daily-scan.log
+.highlightly_cred
+scripts/.highlightly_cred
+.reddit_cred
