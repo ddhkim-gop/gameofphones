@@ -5223,7 +5223,7 @@ window.__STATIC_DATA__ = {
                 "weight": "215",
                 "years_exp": 2,
                 "status": "Active",
-                "injury_status": null,
+                "injury_status": "Questionable",
                 "search_rank": 132
             },
             {
@@ -5288,7 +5288,7 @@ window.__STATIC_DATA__ = {
                 "years_exp": 1,
                 "status": "Active",
                 "injury_status": null,
-                "search_rank": 47
+                "search_rank": 49
             },
             {
                 "player_id": "12519",
@@ -5918,7 +5918,7 @@ window.__STATIC_DATA__ = {
                 "years_exp": 11,
                 "status": "Active",
                 "injury_status": null,
-                "search_rank": 104
+                "search_rank": 105
             },
             {
                 "player_id": "3257",
@@ -6078,7 +6078,7 @@ window.__STATIC_DATA__ = {
                 "years_exp": 7,
                 "status": "Active",
                 "injury_status": null,
-                "search_rank": 55
+                "search_rank": 56
             },
             {
                 "player_id": "5947",
@@ -6088,7 +6088,7 @@ window.__STATIC_DATA__ = {
                 "team": "JAX",
                 "age": 29,
                 "birth_date": "1996-11-09",
-                "college": "North Carolina State",
+                "college": "NC State",
                 "height": "74",
                 "weight": "200",
                 "years_exp": 7,
@@ -6157,7 +6157,7 @@ window.__STATIC_DATA__ = {
                 "weight": "230",
                 "years_exp": 4,
                 "status": "Active",
-                "injury_status": null,
+                "injury_status": "Questionable",
                 "search_rank": 91
             },
             {
@@ -7536,7 +7536,7 @@ window.__STATIC_DATA__ = {
                 "years_exp": 5,
                 "status": "Active",
                 "injury_status": null,
-                "search_rank": 67
+                "search_rank": 68
             },
             {
                 "player_id": "7567",
@@ -7942,7 +7942,7 @@ window.__STATIC_DATA__ = {
                 "years_exp": 0,
                 "status": "Active",
                 "injury_status": null,
-                "search_rank": 199
+                "search_rank": 198
             },
             {
                 "player_id": "13333",
@@ -8117,7 +8117,7 @@ window.__STATIC_DATA__ = {
                 "weight": "182",
                 "years_exp": 3,
                 "status": "Active",
-                "injury_status": null,
+                "injury_status": "Questionable",
                 "search_rank": 192
             },
             {
@@ -8636,7 +8636,7 @@ window.__STATIC_DATA__ = {
                 "years_exp": 9,
                 "status": "Active",
                 "injury_status": null,
-                "search_rank": 196
+                "search_rank": 195
             },
             {
                 "player_id": "4981",
@@ -9463,7 +9463,7 @@ window.__STATIC_DATA__ = {
                 "weight": "205",
                 "years_exp": 0,
                 "status": "Active",
-                "injury_status": null,
+                "injury_status": "Out",
                 "search_rank": 515
             },
             {
@@ -9998,7 +9998,7 @@ window.__STATIC_DATA__ = {
                 "years_exp": 0,
                 "status": "Active",
                 "injury_status": null,
-                "search_rank": 194
+                "search_rank": 195
             },
             {
                 "player_id": "3214",
@@ -10276,7 +10276,7 @@ window.__STATIC_DATA__ = {
                 "years_exp": 2,
                 "status": "Active",
                 "injury_status": null,
-                "search_rank": 132
+                "search_rank": 133
             },
             {
                 "player_id": "12474",
@@ -10762,7 +10762,7 @@ window.__STATIC_DATA__ = {
                 "years_exp": 3,
                 "status": "Active",
                 "injury_status": null,
-                "search_rank": 58
+                "search_rank": 57
             },
             {
                 "player_id": "11792",
@@ -10900,7 +10900,7 @@ window.__STATIC_DATA__ = {
                 "team": "MIA",
                 "age": 22,
                 "birth_date": "2004-07-09",
-                "college": "North Carolina State",
+                "college": "NC State",
                 "height": "75",
                 "weight": "241",
                 "years_exp": 0,
@@ -11034,7 +11034,7 @@ window.__STATIC_DATA__ = {
                 "years_exp": 6,
                 "status": "Active",
                 "injury_status": null,
-                "search_rank": 36
+                "search_rank": 35
             },
             {
                 "player_id": "6819",
@@ -11050,7 +11050,7 @@ window.__STATIC_DATA__ = {
                 "years_exp": 6,
                 "status": "Active",
                 "injury_status": null,
-                "search_rank": 105
+                "search_rank": 106
             },
             {
                 "player_id": "6904",
@@ -15448,7 +15448,7 @@ window.__STATIC_DATA__ = {
             {
                 "name": "Phil Mafah",
                 "position": "RB",
-                "team": null
+                "team": "NYG"
             }
         ],
         "faab": 0,
