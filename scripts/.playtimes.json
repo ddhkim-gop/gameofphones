@@ -48,6 +48,8 @@
    "game": "2026_01_NYJ_TEN",
    "gsr": 165,
    "kind": "rec TD",
+   "passer": "C.Ward",
+   "pos_team": "TEN",
    "q": "4",
    "start": "9/13/26, 13:04:39",
    "week": "1"
@@ -104,6 +106,8 @@
    "game": "2026_01_MIA_LV",
    "gsr": 2798,
    "kind": "rec TD",
+   "passer": "K.Cousins",
+   "pos_team": "LV",
    "q": "1",
    "start": "9/13/26, 16:25:35",
    "week": "1"
@@ -128,6 +132,8 @@
    "game": "2026_01_CLE_JAX",
    "gsr": 120,
    "kind": "rec TD",
+   "passer": "D.Watson",
+   "pos_team": "CLE",
    "q": "4",
    "start": "9/13/26, 13:03:54",
    "week": "1"
@@ -220,6 +226,8 @@
    "game": "2026_01_CLE_JAX",
    "gsr": 2807,
    "kind": "rec TD",
+   "passer": "T.Lawrence",
+   "pos_team": "JAX",
    "q": "1",
    "start": "9/13/26, 13:03:54",
    "week": "1"
@@ -244,6 +252,8 @@
    "game": "2026_01_CHI_CAR",
    "gsr": 2569,
    "kind": "rec TD",
+   "passer": "B.Young",
+   "pos_team": "CAR",
    "q": "2",
    "start": "9/13/26, 13:04:50",
    "week": "1"
@@ -254,6 +264,8 @@
    "game": "2026_01_CHI_CAR",
    "gsr": 245,
    "kind": "rec TD",
+   "passer": "B.Young",
+   "pos_team": "CAR",
    "q": "4",
    "start": "9/13/26, 13:04:50",
    "week": "1"
@@ -266,6 +278,8 @@
    "game": "2026_01_BUF_HOU",
    "gsr": 1831,
    "kind": "rec TD",
+   "passer": "C.Stroud",
+   "pos_team": "HOU",
    "q": "2",
    "start": "9/13/26, 13:04:46",
    "week": "1"
@@ -376,6 +390,8 @@
    "game": "2026_01_WAS_PHI",
    "gsr": 604,
    "kind": "rec TD",
+   "passer": "J.Daniels",
+   "pos_team": "WAS",
    "q": "4",
    "start": "9/13/26, 16:25:25",
    "week": "1"
@@ -400,6 +416,8 @@
    "game": "2026_01_DEN_KC",
    "gsr": 2933,
    "kind": "rec TD",
+   "passer": "B.Nix",
+   "pos_team": "DEN",
    "q": "1",
    "start": "9/14/26, 20:16:12",
    "week": "1"
@@ -412,6 +430,8 @@
    "game": "2026_01_SF_LA",
    "gsr": 1567,
    "kind": "rec TD",
+   "passer": "B.Purdy",
+   "pos_team": "SF",
    "q": "3",
    "start": "9/10/26, 20:37:25",
    "week": "1"
@@ -436,6 +456,8 @@
    "game": "2026_01_NO_DET",
    "gsr": 98,
    "kind": "rec TD",
+   "passer": "T.Shough",
+   "pos_team": "NO",
    "q": "5",
    "start": "9/13/26, 13:05:29",
    "week": "1"
@@ -460,6 +482,8 @@
    "game": "2026_01_BAL_IND",
    "gsr": 2224,
    "kind": "rec TD",
+   "passer": "L.Jackson",
+   "pos_team": "BAL",
    "q": "2",
    "start": "9/13/26, 13:05:06",
    "week": "1"
@@ -494,6 +518,8 @@
    "game": "2026_01_ATL_PIT",
    "gsr": 2444,
    "kind": "rec TD",
+   "passer": "A.Rodgers",
+   "pos_team": "PIT",
    "q": "2",
    "start": "9/13/26, 13:04:05",
    "week": "1"
@@ -528,6 +554,8 @@
    "game": "2026_01_TB_CIN",
    "gsr": 2811,
    "kind": "rec TD",
+   "passer": "J.Burrow",
+   "pos_team": "CIN",
    "q": "1",
    "start": "9/13/26, 13:03:57",
    "week": "1"
@@ -562,6 +590,8 @@
    "game": "2026_01_WAS_PHI",
    "gsr": 2657,
    "kind": "rec TD",
+   "passer": "J.Hurts",
+   "pos_team": "PHI",
    "q": "2",
    "start": "9/13/26, 16:25:25",
    "week": "1"
@@ -572,6 +602,8 @@
    "game": "2026_01_WAS_PHI",
    "gsr": 372,
    "kind": "rec TD",
+   "passer": "J.Hurts",
+   "pos_team": "PHI",
    "q": "4",
    "start": "9/13/26, 16:25:25",
    "week": "1"
@@ -674,6 +706,8 @@
    "game": "2026_01_GB_MIN",
    "gsr": 1031,
    "kind": "rec TD",
+   "passer": "C.Wentz",
+   "pos_team": "MIN",
    "q": "3",
    "start": "9/13/26, 16:25:28",
    "week": "1"
@@ -686,6 +720,8 @@
    "game": "2026_01_CHI_CAR",
    "gsr": 3400,
    "kind": "rec TD",
+   "passer": "B.Young",
+   "pos_team": "CAR",
    "q": "1",
    "start": "9/13/26, 13:04:50",
    "week": "1"
@@ -774,6 +810,8 @@
    "game": "2026_01_MIA_LV",
    "gsr": 1872,
    "kind": "rec TD",
+   "passer": "K.Cousins",
+   "pos_team": "LV",
    "q": "2",
    "start": "9/13/26, 16:25:35",
    "week": "1"
@@ -784,6 +822,8 @@
    "game": "2026_01_MIA_LV",
    "gsr": 1506,
    "kind": "rec TD",
+   "passer": "K.Cousins",
+   "pos_team": "LV",
    "q": "3",
    "start": "9/13/26, 16:25:35",
    "week": "1"
@@ -796,6 +836,8 @@
    "game": "2026_01_GB_MIN",
    "gsr": 1922,
    "kind": "rec TD",
+   "passer": "C.Wentz",
+   "pos_team": "MIN",
    "q": "2",
    "start": "9/13/26, 16:25:28",
    "week": "1"
@@ -806,6 +848,8 @@
    "game": "2026_01_GB_MIN",
    "gsr": 243,
    "kind": "rec TD",
+   "passer": "C.Wentz",
+   "pos_team": "MIN",
    "q": "4",
    "start": "9/13/26, 16:25:28",
    "week": "1"
@@ -818,6 +862,8 @@
    "game": "2026_01_NO_DET",
    "gsr": 73,
    "kind": "rec TD",
+   "passer": "T.Shough",
+   "pos_team": "NO",
    "q": "4",
    "start": "9/13/26, 13:05:29",
    "week": "1"
@@ -854,6 +900,8 @@
    "game": "2026_01_CHI_CAR",
    "gsr": 2645,
    "kind": "rec TD",
+   "passer": "C.Williams",
+   "pos_team": "CHI",
    "q": "2",
    "start": "9/13/26, 13:04:50",
    "week": "1"
@@ -866,6 +914,8 @@
    "game": "2026_01_TB_CIN",
    "gsr": 3089,
    "kind": "rec TD",
+   "passer": "B.Mayfield",
+   "pos_team": "TB",
    "q": "1",
    "start": "9/13/26, 13:03:57",
    "week": "1"
@@ -878,6 +928,8 @@
    "game": "2026_01_DAL_NYG",
    "gsr": 2148,
    "kind": "rec TD",
+   "passer": "D.Prescott",
+   "pos_team": "DAL",
    "q": "2",
    "start": "9/13/26, 20:24:49",
    "week": "1"
@@ -932,6 +984,8 @@
    "game": "2026_01_DAL_NYG",
    "gsr": 1825,
    "kind": "rec TD",
+   "passer": "J.Dart",
+   "pos_team": "NYG",
    "q": "2",
    "start": "9/13/26, 20:24:49",
    "week": "1"
@@ -942,6 +996,8 @@
    "game": "2026_01_DAL_NYG",
    "gsr": 1324,
    "kind": "rec TD",
+   "passer": "J.Dart",
+   "pos_team": "NYG",
    "q": "3",
    "start": "9/13/26, 20:24:49",
    "week": "1"
@@ -1132,6 +1188,8 @@
    "game": "2026_01_ARI_LAC",
    "gsr": 708,
    "kind": "rec TD",
+   "passer": "J.Brissett",
+   "pos_team": "ARI",
    "q": "4",
    "start": "9/13/26, 16:25:43",
    "week": "1"
@@ -1144,6 +1202,8 @@
    "game": "2026_01_ARI_LAC",
    "gsr": 1267,
    "kind": "rec TD",
+   "passer": "J.Herbert",
+   "pos_team": "LAC",
    "q": "3",
    "start": "9/13/26, 16:25:43",
    "week": "1"
@@ -1220,6 +1280,8 @@
    "game": "2026_01_CLE_JAX",
    "gsr": 1638,
    "kind": "rec TD",
+   "passer": "T.Lawrence",
+   "pos_team": "JAX",
    "q": "3",
    "start": "9/13/26, 13:03:54",
    "week": "1"
@@ -1276,6 +1338,8 @@
    "game": "2026_01_BUF_HOU",
    "gsr": 819,
    "kind": "rec TD",
+   "passer": "C.Stroud",
+   "pos_team": "HOU",
    "q": "4",
    "start": "9/13/26, 13:04:46",
    "week": "1"
@@ -1288,6 +1352,8 @@
    "game": "2026_01_BUF_HOU",
    "gsr": 1899,
    "kind": "rec TD",
+   "passer": "J.Allen",
+   "pos_team": "BUF",
    "q": "2",
    "start": "9/13/26, 13:04:46",
    "week": "1"
@@ -1334,6 +1400,8 @@
    "game": "2026_01_BUF_HOU",
    "gsr": 101,
    "kind": "rec TD",
+   "passer": "J.Allen",
+   "pos_team": "BUF",
    "q": "4",
    "start": "9/13/26, 13:04:46",
    "week": "1"
@@ -1444,6 +1512,8 @@
    "game": "2026_01_NE_SEA",
    "gsr": 2354,
    "kind": "rec TD",
+   "passer": "D.Maye",
+   "pos_team": "NE",
    "q": "2",
    "start": "9/9/26, 20:23:21",
    "week": "1"
@@ -1468,6 +1538,8 @@
    "game": "2026_01_DEN_KC",
    "gsr": 1906,
    "kind": "rec TD",
+   "passer": "P.Mahomes",
+   "pos_team": "KC",
    "q": "2",
    "start": "9/14/26, 20:16:12",
    "week": "1"
@@ -1480,6 +1552,8 @@
    "game": "2026_01_ATL_PIT",
    "gsr": 2779,
    "kind": "rec TD",
+   "passer": "C.Rush",
+   "pos_team": "ATL",
    "q": "1",
    "start": "9/13/26, 13:04:05",
    "week": "1"
@@ -1492,6 +1566,8 @@
    "game": "2026_01_SF_LA",
    "gsr": 2075,
    "kind": "rec TD",
+   "passer": "B.Purdy",
+   "pos_team": "SF",
    "q": "2",
    "start": "9/10/26, 20:37:25",
    "week": "1"
@@ -1592,6 +1668,8 @@
    "game": "2026_01_SF_LA",
    "gsr": 784,
    "kind": "rec TD",
+   "passer": "B.Purdy",
+   "pos_team": "SF",
    "q": "4",
    "start": "9/10/26, 20:37:25",
    "week": "1"
@@ -1692,6 +1770,8 @@
    "game": "2026_01_DAL_NYG",
    "gsr": 451,
    "kind": "rec TD",
+   "passer": "J.Dart",
+   "pos_team": "NYG",
    "q": "4",
    "start": "9/13/26, 20:24:49",
    "week": "1"
@@ -1760,6 +1840,8 @@
    "game": "2026_01_NE_SEA",
    "gsr": 698,
    "kind": "rec TD",
+   "passer": "D.Lock",
+   "pos_team": "SEA",
    "q": "4",
    "start": "9/9/26, 20:23:21",
    "week": "1"
@@ -1772,6 +1854,8 @@
    "game": "2026_01_NO_DET",
    "gsr": 1439,
    "kind": "rec TD",
+   "passer": "J.Goff",
+   "pos_team": "DET",
    "q": "3",
    "start": "9/13/26, 13:05:29",
    "week": "1"
@@ -1782,6 +1866,8 @@
    "game": "2026_01_NO_DET",
    "gsr": 307,
    "kind": "rec TD",
+   "passer": "J.Goff",
+   "pos_team": "DET",
    "q": "5",
    "start": "9/13/26, 13:05:29",
    "week": "1"
@@ -1806,6 +1892,8 @@
    "game": "2026_01_CLE_JAX",
    "gsr": 2184,
    "kind": "rec TD",
+   "passer": "T.Lawrence",
+   "pos_team": "JAX",
    "q": "2",
    "start": "9/13/26, 13:03:54",
    "week": "1"
@@ -1906,6 +1994,8 @@
    "game": "2026_01_TB_CIN",
    "gsr": 1044,
    "kind": "rec TD",
+   "passer": "J.Burrow",
+   "pos_team": "CIN",
    "q": "3",
    "start": "9/13/26, 13:03:57",
    "week": "1"
@@ -1918,6 +2008,8 @@
    "game": "2026_01_NO_DET",
    "gsr": 934,
    "kind": "rec TD",
+   "passer": "T.Shough",
+   "pos_team": "NO",
    "q": "3",
    "start": "9/13/26, 13:05:29",
    "week": "1"
@@ -1930,6 +2022,8 @@
    "game": "2026_01_CHI_CAR",
    "gsr": 392,
    "kind": "rec TD",
+   "passer": "C.Williams",
+   "pos_team": "CHI",
    "q": "4",
    "start": "9/13/26, 13:04:50",
    "week": "1"
@@ -1952,6 +2046,8 @@
    "game": "2026_01_DEN_KC",
    "gsr": 883,
    "kind": "rec TD",
+   "passer": "P.Mahomes",
+   "pos_team": "KC",
    "q": "4",
    "start": "9/14/26, 20:16:12",
    "week": "1"
@@ -1976,6 +2072,8 @@
    "game": "2026_01_BAL_IND",
    "gsr": 632,
    "kind": "rec TD",
+   "passer": "D.Jones",
+   "pos_team": "IND",
    "q": "4",
    "start": "9/13/26, 13:05:06",
    "week": "1"
@@ -1988,6 +2086,8 @@
    "game": "2026_01_CLE_JAX",
    "gsr": 3198,
    "kind": "rec TD",
+   "passer": "T.Lawrence",
+   "pos_team": "JAX",
    "q": "1",
    "start": "9/13/26, 13:03:54",
    "week": "1"
@@ -2000,6 +2100,8 @@
    "game": "2026_01_GB_MIN",
    "gsr": 3174,
    "kind": "rec TD",
+   "passer": "J.Love",
+   "pos_team": "GB",
    "q": "1",
    "start": "9/13/26, 16:25:28",
    "week": "1"
@@ -2010,6 +2112,8 @@
    "game": "2026_01_GB_MIN",
    "gsr": 1818,
    "kind": "rec TD",
+   "passer": "J.Love",
+   "pos_team": "GB",
    "q": "2",
    "start": "9/13/26, 16:25:28",
    "week": "1"
@@ -2034,6 +2138,8 @@
    "game": "2026_01_ATL_PIT",
    "gsr": 856,
    "kind": "rec TD",
+   "passer": "C.Rush",
+   "pos_team": "ATL",
    "q": "4",
    "start": "9/13/26, 13:04:05",
    "week": "1"
@@ -2078,6 +2184,8 @@
    "game": "2026_01_WAS_PHI",
    "gsr": 2195,
    "kind": "rec TD",
+   "passer": "J.Hurts",
+   "pos_team": "PHI",
    "q": "2",
    "start": "9/13/26, 16:25:25",
    "week": "1"
@@ -2090,6 +2198,8 @@
    "game": "2026_01_WAS_PHI",
    "gsr": 65,
    "kind": "rec TD",
+   "passer": "J.Daniels",
+   "pos_team": "WAS",
    "q": "4",
    "start": "9/13/26, 16:25:25",
    "week": "1"
@@ -2154,6 +2264,8 @@
    "game": "2026_01_DAL_NYG",
    "gsr": 326,
    "kind": "rec TD",
+   "passer": "D.Prescott",
+   "pos_team": "DAL",
    "q": "4",
    "start": "9/13/26, 20:24:49",
    "week": "1"

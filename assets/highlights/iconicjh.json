@@ -105,6 +105,19 @@
       "kickoff": "9/13/26, 16:25:35"
     },
     {
+      "url": "https://www.espn.com/video/clip/_/id/49933977/ashton-jeanty-flies-2nd-catch-run-td-game",
+      "player": "Ashton Jeanty",
+      "meta": "RB \u00b7 LV",
+      "date": "2026-09-13",
+      "author": "ESPN",
+      "text": "Ashton Jeanty flies in for his 2nd catch-and-run TD of the game",
+      "verified": true,
+      "faves": 0,
+      "secs": 0,
+      "poster": "https://espnmedia-cdn.akamaized.net/espn/media/common/wsc/2026/0913/2706fbb5-0319-4937-9758-10942f4104b1/2706fbb5-0319-4937-9758-10942f4104b1.jpg",
+      "video": "https://espnmedia-cdn.akamaized.net/espn/media/16x9/wsc/2026/0913/2706fbb5-0319-4937-9758-10942f4104b1/2706fbb5-0319-4937-9758-10942f4104b1.mp4"
+    },
+    {
       "url": "https://www.espn.com/video/clip/_/id/49934282/jacoby-brissett-tosses-trey-mcbride-cardinals-td",
       "player": "Trey McBride",
       "meta": "TE \u00b7 ARI",
@@ -157,21 +170,6 @@
       "video": "https://video.twimg.com/amplify_video/2099198562013712389/vid/avc1/1920x1080/Wzu4EMXIoHOoPbs4.mp4?tag=29",
       "game_time": "Q2 05:35",
       "kickoff": "9/13/26, 13:03:57"
-    },
-    {
-      "url": "https://www.espn.com/video/clip/_/id/49891300/orlovsky-slams-immature-drake-maye-patriots-loss",
-      "player": "Drake Maye",
-      "meta": "QB \u00b7 NE",
-      "date": "2026-09-10",
-      "author": "ESPN",
-      "text": "Orlovsky slams 'immature' Drake Maye in Patriots loss",
-      "verified": true,
-      "faves": 0,
-      "secs": 0,
-      "poster": "https://espnmedia-cdn.akamaized.net/espn/media/common/2026/0910/dm_260910_Drake_Maye_Patriots_loss_seahawks/dm_260910_Drake_Maye_Patriots_loss_seahawks.jpg",
-      "video": "https://espnmedia-cdn.akamaized.net/espn/media/16x9/2026/0910/dm_260910_Drake_Maye_Patriots_loss_seahawks/dm_260910_Drake_Maye_Patriots_loss_seahawks.mp4",
-      "game_time": "Q2 09:14",
-      "kickoff": "9/9/26, 20:23:21"
     }
   ]
 }

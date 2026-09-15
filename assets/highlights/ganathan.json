@@ -62,6 +62,21 @@
       "video": "https://espnmedia-cdn.akamaized.net/espn/media/16x9/wsc/2026/0913/eedd80e4-9d93-4580-adca-40dc46773c7c/eedd80e4-9d93-4580-adca-40dc46773c7c.mp4"
     },
     {
+      "url": "https://www.espn.com/video/clip/_/id/49931845/josh-allen-puts-bills-ahead-4th-34-yard-td-pass-joshua-palmer",
+      "player": "Josh Allen",
+      "meta": "QB \u00b7 BUF",
+      "date": "2026-09-13",
+      "author": "ESPN",
+      "text": "Josh Allen puts Bills ahead in 4th with 34-yard TD pass to Joshua Palmer",
+      "verified": true,
+      "faves": 0,
+      "secs": 0,
+      "poster": "https://espnmedia-cdn.akamaized.net/espn/media/common/2026/0913/792dc5a043e74a4286191ff386023b87995/792dc5a043e74a4286191ff386023b87995.jpg",
+      "video": "https://espnmedia-cdn.akamaized.net/espn/media/16x9/wsc/2026/0913/792dc5a0-43e7-4a42-8619-1ff386023b87/792dc5a0-43e7-4a42-8619-1ff386023b87.mp4",
+      "game_time": "Q2 04:02",
+      "kickoff": "9/13/26, 13:04:46"
+    },
+    {
       "url": "https://www.espn.com/video/clip/_/id/49933604/jalen-hurts-hits-dallas-goedert-eagles-first-td-season",
       "player": "Jalen Hurts",
       "meta": "QB \u00b7 PHI",
@@ -75,6 +90,32 @@
       "video": "https://espnmedia-cdn.akamaized.net/espn/media/16x9/2026/0913/dm_260913_eagles_td_1/dm_260913_eagles_td_1.mp4",
       "game_time": "Q4 06:12",
       "kickoff": "9/13/26, 16:25:25"
+    },
+    {
+      "url": "https://www.espn.com/video/clip/_/id/49933851/jalen-hurts-fires-dot-2nd-td-game",
+      "player": "Jalen Hurts",
+      "meta": "QB \u00b7 PHI",
+      "date": "2026-09-13",
+      "author": "ESPN",
+      "text": "Jalen Hurts fires a dot for his 2nd TD of the game",
+      "verified": true,
+      "faves": 0,
+      "secs": 0,
+      "poster": "https://espnmedia-cdn.akamaized.net/espn/media/common/2026/0913/dm_260913_eagles_td_2_pub2tag/dm_260913_eagles_td_2_pub2tag.jpg",
+      "video": "https://espnmedia-cdn.akamaized.net/espn/media/16x9/2026/0913/dm_260913_eagles_td_2_pub2tag/dm_260913_eagles_td_2_pub2tag.mp4"
+    },
+    {
+      "url": "https://www.espn.com/video/clip/_/id/49934558/dallas-goedert-takes-42-yards-house-eagles",
+      "player": "Jalen Hurts",
+      "meta": "QB \u00b7 PHI",
+      "date": "2026-09-13",
+      "author": "ESPN",
+      "text": "Dallas Goedert takes it 42 yards to the house for the Eagles. Dallas Goedert takes it 42 yards to the house for the Eagles ",
+      "verified": true,
+      "faves": 0,
+      "secs": 0,
+      "poster": "https://espnmedia-cdn.akamaized.net/espn/media/common/2026/0913/9690d4f6268c45c89cbb5ce0db25824d1199/9690d4f6268c45c89cbb5ce0db25824d1199.jpg",
+      "video": "https://espnmedia-cdn.akamaized.net/espn/media/16x9/wsc/2026/0913/9690d4f6-268c-45c8-9cbb-5ce0db25824d/9690d4f6-268c-45c8-9cbb-5ce0db25824d.mp4"
     },
     {
       "url": "https://x.com/NFLTDsVideos/status/2099202884696957344",
@@ -116,7 +157,7 @@
       "secs": 0,
       "poster": "https://pbs.twimg.com/amplify_video_thumb/2099228337155842048/img/9yuQi_zTW-SjMq61.jpg?name=orig",
       "video": "https://video.twimg.com/amplify_video/2099228337155842048/vid/avc1/1920x1080/EgaZhOfezGJw3RKd.mp4?tag=29",
-      "game_time": "Q2 04:02",
+      "game_time": "Q2 01:39",
       "kickoff": "9/13/26, 13:04:46"
     },
     {
