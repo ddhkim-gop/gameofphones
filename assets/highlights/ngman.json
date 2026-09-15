@@ -4,17 +4,17 @@
   "note": "Curated: X has no public search API, so posts are collected by hand and matched to rosters by this script.",
   "tweets": [
     {
-      "url": "https://www.espn.com/video/clip/_/id/49944792/bo-nix-picked-broncos-opening-drive",
+      "url": "https://www.espn.com/video/clip/_/id/49944961/bo-nix-dots-evan-engram-put-broncos-board",
       "player": "Bo Nix",
       "meta": "QB \u00b7 DEN",
       "date": "2026-09-15",
       "author": "ESPN",
-      "text": "Bo Nix picked off on Broncos' opening drive",
+      "text": "Bo Nix dots Evan Engram to put the Broncos on the board",
       "verified": true,
       "faves": 0,
       "secs": 0,
-      "poster": "https://espnmedia-cdn.akamaized.net/espn/media/common/2026/0914/97c0cd62580f4b0ca3cb068a506537e91390/97c0cd62580f4b0ca3cb068a506537e91390.jpg",
-      "video": "https://espnmedia-cdn.akamaized.net/espn/media/16x9/wsc/2026/0915/97c0cd62-580f-4b0c-a3cb-068a506537e9/97c0cd62-580f-4b0c-a3cb-068a506537e9.mp4",
+      "poster": "https://espnmedia-cdn.akamaized.net/espn/media/common/2026/0914/b1e3bda845164f5596f16ea897a8123b1395/b1e3bda845164f5596f16ea897a8123b1395.jpg",
+      "video": "https://espnmedia-cdn.akamaized.net/espn/media/16x9/wsc/2026/0915/b1e3bda8-4516-4f55-96f1-6ea897a8123b/b1e3bda8-4516-4f55-96f1-6ea897a8123b.mp4",
       "game_time": "Q1 03:53",
       "kickoff": "9/14/26, 20:16:12"
     },
@@ -47,6 +47,34 @@
       "video": "https://espnmedia-cdn.akamaized.net/espn/media/16x9/wsc/2026/0914/0a31419a-11e7-41e0-938a-b4b5f385baa6/0a31419a-11e7-41e0-938a-b4b5f385baa6.mp4",
       "game_time": "Q2 05:48",
       "kickoff": "9/13/26, 20:24:49"
+    },
+    {
+      "url": "https://www.espn.com/video/clip/_/id/49936495/javonte-williams-powers-goal-line-cowboys-td",
+      "player": "Dak Prescott",
+      "meta": "QB \u00b7 DAL",
+      "date": "2026-09-14",
+      "author": "ESPN",
+      "text": "Javonte Williams powers across the goal line for a Cowboys TD",
+      "verified": true,
+      "faves": 0,
+      "secs": 0,
+      "poster": "https://espnmedia-cdn.akamaized.net/espn/media/common/2026/0913/9d11fa8238724c0e818eedeeedf412cf1418/9d11fa8238724c0e818eedeeedf412cf1418.jpg",
+      "video": "https://espnmedia-cdn.akamaized.net/espn/media/16x9/wsc/2026/0914/9d11fa82-3872-4c0e-818e-edeeedf412cf/9d11fa82-3872-4c0e-818e-edeeedf412cf.mp4",
+      "game_time": "Q4 05:26",
+      "kickoff": "9/13/26, 20:24:49"
+    },
+    {
+      "url": "https://www.espn.com/video/clip/_/id/49936650/javonte-williams-trolls-giants-defender-walks-end-zone",
+      "player": "Dak Prescott",
+      "meta": "QB \u00b7 DAL",
+      "date": "2026-09-14",
+      "author": "ESPN",
+      "text": "Javonte Williams trolls Giants defender as he walks into the end zone",
+      "verified": true,
+      "faves": 0,
+      "secs": 0,
+      "poster": "https://espnmedia-cdn.akamaized.net/espn/media/common/2026/0913/de93ce5355fa423399e418d42c968bfd1413/de93ce5355fa423399e418d42c968bfd1413.jpg",
+      "video": "https://espnmedia-cdn.akamaized.net/espn/media/16x9/wsc/2026/0914/de93ce53-55fa-4233-99e4-18d42c968bfd/de93ce53-55fa-4233-99e4-18d42c968bfd.mp4"
     },
     {
       "url": "https://x.com/NFLTDsVideos/status/2099556401798393880",
@@ -104,9 +132,7 @@
       "faves": 0,
       "secs": 0,
       "poster": "https://pbs.twimg.com/amplify_video_thumb/2099307414025572353/img/CTYp5yW7ejSMmQ2S.jpg?name=orig",
-      "video": "https://video.twimg.com/amplify_video/2099307414025572353/vid/avc1/1920x1080/McBnw9tZ5YeczreF.mp4?tag=29",
-      "game_time": "Q4 05:26",
-      "kickoff": "9/13/26, 20:24:49"
+      "video": "https://video.twimg.com/amplify_video/2099307414025572353/vid/avc1/1920x1080/McBnw9tZ5YeczreF.mp4?tag=29"
     },
     {
       "url": "https://x.com/NFLTDsVideos/status/2099628952616681519",

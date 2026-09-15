@@ -632,6 +632,12 @@ def _clip_id(url: str, cache: dict) -> str:
     """
     v = (media(url, cache) or {}).get("video") or ""
     m = re.search(r"/(?:amplify_video|ext_tw_video|tweet_video)/(\d+)", v)
+    if m:
+        return m.group(1)
+    # Direct-mp4 sources (ESPN) have no amplify id; their filename is a stable
+    # per-clip id, so distinct plays by one player on one day keep distinct keys
+    # instead of collapsing under the (player, date, length) fallback below.
+    m = re.search(r"/([^/]+)\.mp4(?:[?#]|$)", v)
     return m.group(1) if m else ""
 
 

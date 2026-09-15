@@ -854,11 +854,28 @@ async function loadTeamReel(teamName) {
     };
 
     body.innerHTML = tweets.map((t, i) => {
+        const isX = !!t.url && /(?:^|\/\/|\.)(?:x|twitter)\.com\//i.test(t.url);
+        // Brief description of the play for the tag line. The source text (ESPN
+        // headline or tweet) already names the player, so strip a leading name so
+        // it reads as the action ("powers in for a Ravens TD"), and trim length.
+        const briefDesc = (() => {
+            let s = (t.text || "").replace(/\s+/g, " ").trim();
+            for (const nm of String(t.player || "").split("&").map(x => x.trim())) {
+                if (nm && s.toLowerCase().startsWith(nm.toLowerCase()))
+                    s = s.slice(nm.length).replace(/^[\s:.,–-]+/, "");
+            }
+            s = s.replace(/\s+#\w+/g, "").trim();      // drop trailing hashtags
+            return s.length > 100 ? s.slice(0, 98).replace(/\s+\S*$/, "") + "…" : s;
+        })();
         const tag = `
-          <div style="display:flex;gap:7px;align-items:baseline;margin:0 2px 5px;">
-            <span style="font-size:11px;font-weight:700;color:#8b919c;">${esc(t.player || "")}</span>
-            <span style="font-size:11px;color:#5a6070;">${esc(t.meta || "")}</span>
-            ${t.game_time ? `<span style="font-size:11px;color:#4299e1;font-weight:600;">${esc(t.game_time)}</span>` : ""}
+          <div style="margin:0 2px 5px;">
+            <div style="display:flex;gap:7px;align-items:baseline;">
+              <span style="font-size:11px;font-weight:700;color:#8b919c;">${esc(t.player || "")}</span>
+              <span style="font-size:11px;color:#5a6070;">${esc(t.meta || "")}</span>
+              ${t.game_time ? `<span style="font-size:11px;color:#4299e1;font-weight:600;">${esc(t.game_time)}</span>` : ""}
+            </div>
+            ${briefDesc ? `<div style="font-size:11.5px;color:#6b7280;line-height:1.35;
+                          margin-top:2px;">${esc(briefDesc)}</div>` : ""}
           </div>`;
         if (!t.video) {
             // No direct mp4 resolved. Rather than fall back to X's widget -
@@ -874,11 +891,9 @@ async function loadTeamReel(teamName) {
         }
         const handle = esc(t.author || "");
         const name = esc(t.author_name || t.author || "");
-        // A clip can come from X or from a non-X source (ESPN's public feed).
-        // For X, keep the familiar post chrome (@handle · Follow, X mark). For
-        // anything else, drop the X-isms: link to the source, show its host, and
-        // use a neutral "watch at source" corner mark instead of the X logo.
-        const isX = !!t.url && /(?:^|\/\/|\.)(?:x|twitter)\.com\//i.test(t.url);
+        // Card chrome depends on source (isX computed above): X keeps the post
+        // chrome (@handle · Follow, X mark); others link to the source, show its
+        // host, and use a neutral "watch at source" corner mark.
         const srcHref = esc(t.url || "");
         const profileHref = isX ? `https://x.com/${handle}` : srcHref;
         const host = (t.url || "").replace(/^https?:\/\//, "").split("/")[0]
@@ -919,7 +934,7 @@ async function loadTeamReel(teamName) {
                  title="${isX ? 'View on X' : 'Watch at ' + esc(name)}"
                  style="line-height:0;flex:0 0 15px;">${isX ? xmark : extMark}</a>
             </div>
-            ${t.text ? `<div style="font-size:13px;line-height:1.45;color:${XS.text};
+            ${(t.text && isX) ? `<div style="font-size:13px;line-height:1.45;color:${XS.text};
                                     margin:10px 0 0;white-space:pre-wrap;
                                     word-break:break-word;">${esc(t.text)}</div>` : ""}
             <div style="margin-top:10px;border:1px solid ${XS.line};border-radius:12px;

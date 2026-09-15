@@ -44,9 +44,17 @@ from pathlib import Path
 # Headlines that are recaps or negative plays, not a highlight of the named
 # player: "...win big over...", "takes 5 sacks in loss", full-game wraps.
 NEGATIVE_RE = re.compile(
-    r"\b(win big|wins big|in (a )?loss|takes? \d+ sacks?|"
-    r"shines as|recap|full (game )?highlights|reaction|breaks? down|"
-    r"press conference|highlights?$)\b", re.I)
+    r"\b(win big|wins big|\bloss\b|takes? \d+ sacks?|"
+    r"shines as|recap|full (game )?highlights|reaction|reacts?|breaks? down|"
+    r"press conference|interview|highlights?$|"
+    r"says?|talks?|discusses|weighs? in|reflects?|"
+    # studio/debate takes about a player, not footage of a play
+    r"slams|blasts|rips|rants?|calls out|stephen a|first take|get up|"
+    # turnovers / negative plays - not a highlight for the offensive player
+    r"picked off|intercept(ed|ion)?|rough (night|day|outing)|"
+    r"turnover|fumbles?( it| the| away)?|strip[- ]sack)\b"
+    # talking-head quotes: name + ": '...'" or a quoted span. Plays have neither.
+    r"|:\s*['\"]|'[^']{8,}'", re.I)
 
 HERE = Path(__file__).resolve().parent
 POOL = HERE / "highlights_pool.txt"
@@ -65,7 +73,71 @@ UA = ("Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) "
 # Reuse the X builder's roster load and name matcher verbatim, so ESPN clips are
 # attributed with the same ambiguity guard (shared surnames need a first name).
 sys.path.insert(0, str(HERE))
-from build_highlights import rosters, mentions  # noqa: E402
+from build_highlights import rosters, mentions, playtime_key  # noqa: E402
+PLAYTIMES = HERE / ".playtimes.json"
+
+
+_TEAM_ALIAS = {"LA": "LAR", "WAS": "WSH", "OAK": "LV", "SD": "LAC", "STL": "LAR"}
+
+
+def _team(t):
+    t = (t or "").upper()
+    return _TEAM_ALIAS.get(t, t)
+
+
+def _pbp_parts(nm):
+    """nflverse 'P.Mahomes' -> ('p','mahomes')."""
+    nm = (nm or "").strip()
+    first, last = (nm.split(".", 1) if "." in nm else
+                   ((nm.split()[0], nm.split()[-1]) if nm.split() else ("", "")))
+    return re.sub(r"[^a-z]", "", first.lower())[:1], re.sub(r"[^a-z]", "", last.lower())
+
+
+def passer_maps(teams):
+    """(playtimes, roster_players). roster_players is (initial, last, team, name)
+    so a nflverse passer name+team resolves to exactly one rostered QB - the
+    'last#f' key alone collides (Jordan vs Jeremiyah Love)."""
+    try:
+        pt = json.loads(PLAYTIMES.read_text())
+    except Exception:
+        pt = {}
+    roster_players = []
+    for r in teams.values():
+        for p in r:
+            i, l = _pbp_parts(p["name"])
+            roster_players.append((i, l, _team(p.get("team")), p["name"]))
+    return pt, roster_players
+
+
+def with_passers(who, pt, roster_players):
+    """Expand a receiver credit list with the QB(s) who threw their TDs.
+
+    ESPN titles a passing TD by the receiver, so the QB is never in the headline.
+    nflverse stamps each receiver's rec-TD with the passer's name+team; match that
+    to the roster so the QB is co-credited and the clip lands on his card too.
+
+    The 'last#f' playtimes key collides (two D. Moores, Jordan vs Jeremiyah Love),
+    so filter the receiver's own entries to his team (passer and receiver are
+    teammates, so the entry's pos_team is the receiver's team too), and resolve
+    the passer by name+team - never by key alone.
+    """
+    team_of = {fn: t for (_i, _l, t, fn) in roster_players}
+    out = list(who)
+    for r in who:
+        rteam = team_of.get(r)
+        for e in pt.get(playtime_key(r), []):
+            if e.get("kind") != "rec TD" or not e.get("passer"):
+                continue
+            eteam = _team(e.get("pos_team"))
+            if rteam and eteam and eteam != _team(rteam):
+                continue                       # a different same-key player's play
+            pi, pl = _pbp_parts(e["passer"])
+            cands = [fn for (i, l, t, fn) in roster_players
+                     if l == pl and i == pi and (not eteam or t == eteam)]
+            for qb in cands:
+                if qb not in out:
+                    out.append(qb)
+    return out
 
 
 def get(url: str, timeout: int = 25, tries: int = 3):
@@ -147,6 +219,7 @@ def main() -> int:
     teams = rosters()                      # arms the shared-surname guard
     roster_union = sorted({p["name"] for r in teams.values() for p in r})
     print(f"{len(roster_union)} rostered players to match against")
+    pt, roster_players = passer_maps(teams)
 
     oe = _load(OEMBED_CACHE)
     mc = _load(MEDIA_CACHE)
@@ -178,6 +251,7 @@ def main() -> int:
                 who = [n for n in roster_union if mentions(text, n)]
                 if not who:
                     continue
+                who = with_passers(who, pt, roster_players)  # QB gets his TD passes
                 url = ((v.get("links", {}) or {}).get("web", {}) or {}).get("href")
                 mp4 = mp4_of(v)
                 if not url or not mp4:

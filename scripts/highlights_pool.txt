@@ -24,8 +24,6 @@ do
 for
 from
 highlights_reviewed.json.
-https://www.espn.com/video/clip/_/id/49891300/orlovsky-slams-immature-drake-maye-patriots-loss
-https://www.espn.com/video/clip/_/id/49892255/pats-loss-totally-drake-maye
 https://www.espn.com/video/clip/_/id/49929656/derrick-henry-powers-ravens-td
 https://www.espn.com/video/clip/_/id/49929790/josh-allen-bulldozes-21-yards-td
 https://www.espn.com/video/clip/_/id/49929847/bijan-robinson-scores-first-falcons-td
@@ -57,10 +55,8 @@ https://www.espn.com/video/clip/_/id/49931705/adonai-mitchell-completes-40-yard-
 https://www.espn.com/video/clip/_/id/49931845/josh-allen-puts-bills-ahead-4th-34-yard-td-pass-joshua-palmer
 https://www.espn.com/video/clip/_/id/49932064/geno-smith-connects-garrett-wilson-31-yard-reception
 https://www.espn.com/video/clip/_/id/49932419/jordan-love-hooks-christian-watson-81-yard-packers-td
-https://www.espn.com/video/clip/_/id/49932606/deshaun-watson-takes-5-sacks-loss-jaguars
 https://www.espn.com/video/clip/_/id/49932735/jeremiyah-love-scores-first-nfl-td
 https://www.espn.com/video/clip/_/id/49932761/omarion-hampton-breaks-multiple-tackles-way-chargers-td
-https://www.espn.com/video/clip/_/id/49933029/derrick-henry-shines-ravens-win-big-colts-week-1
 https://www.espn.com/video/clip/_/id/49933338/carson-wentz-finds-justin-jefferson-deep-vikings-td
 https://www.espn.com/video/clip/_/id/49933582/jack-bech-barrels-15-yard-raiders-td
 https://www.espn.com/video/clip/_/id/49933604/jalen-hurts-hits-dallas-goedert-eagles-first-td-season
@@ -80,15 +76,12 @@ https://www.espn.com/video/clip/_/id/49936112/jaxson-dart-finds-wide-open-isaiah
 https://www.espn.com/video/clip/_/id/49936495/javonte-williams-powers-goal-line-cowboys-td
 https://www.espn.com/video/clip/_/id/49936650/javonte-williams-trolls-giants-defender-walks-end-zone
 https://www.espn.com/video/clip/_/id/49939719/how-heck-did-rome-odunze-make-jaw-dropping-catch
-https://www.espn.com/video/clip/_/id/49944792/bo-nix-picked-broncos-opening-drive
 https://www.espn.com/video/clip/_/id/49944852/pat-mahomes-fired-awesome-rushing-td
 https://www.espn.com/video/clip/_/id/49944961/bo-nix-dots-evan-engram-put-broncos-board
 https://www.espn.com/video/clip/_/id/49945388/rashee-rice-breaks-multiple-tackles-en-route-chiefs-td
 https://www.espn.com/video/clip/_/id/49945548/kenneth-walker-iii-breaks-free-electric-60-yard-chiefs-td
 https://www.espn.com/video/clip/_/id/49945880/chiefs-kingdom-taylor-swift-loving-travis-kelce-big-1st-down
 https://www.espn.com/video/clip/_/id/49946028/kenneth-walker-iii-finds-pay-dirt-2nd-td
-https://www.espn.com/video/clip/_/id/49946467/bo-nix-rough-night-broncos-return-injury
-https://www.espn.com/video/clip/_/id/49946471/planning-using-my-legs-early
 https://x.com/AFantasyFormula/status/2090575974840561965
 https://x.com/AdamSchefter/status/2095964161415196956
 https://x.com/AdamSchefter/status/2096016706699186554
@@ -134,10 +127,7 @@ https://x.com/JMichael_Smith/status/2095823418612457544
 https://x.com/Jack_Aylmer/status/2095950182378578007
 https://x.com/Jojo2008_lee/status/2096034892287221948
 https://x.com/Keepitonthedeck/status/2095792747437339027
-https://x.com/LOSeahawks/status/2098143767458951618
 https://x.com/LosTalksPats/status/2095882928266031584
-https://x.com/MattHarmon_BYB/status/2087908039374352574
-https://x.com/MySportsUpdate/status/2095990222525735336
 https://x.com/NFL/status/2097878710779306133
 https://x.com/NFL/status/2098147658086912007
 https://x.com/NFL/status/2098150037343629473
@@ -203,9 +193,7 @@ https://x.com/NFLTDsVideos/status/2099628858014155062
 https://x.com/NFLTDsVideos/status/2099628952616681519
 https://x.com/NFL_DovKleiman/status/2095628400337818075
 https://x.com/NFL_DovKleiman/status/2095649791598371314
-https://x.com/NFL_DovKleiman/status/2096024258753462314
 https://x.com/NFL_DovKleiman/status/2096043888280535536
-https://x.com/NFL_Talk_Sports/status/2093156629013233752
 https://x.com/NFLonFOX/status/2099191585690776056
 https://x.com/NFLonFOX/status/2099242241982156970
 https://x.com/Nate_Tice/status/2095691914121265331
@@ -261,7 +249,6 @@ https://x.com/gbellseattle/status/2095753484431933695
 https://x.com/iam_johnw/status/2097867238397051132
 https://x.com/newheightshow/status/2095920685457494043
 https://x.com/rannyxkmj/status/2097884866348216770
-https://x.com/talktoemhavin/status/2092756082384941418
 https://x.com/thescorechicago/status/2095861735408214076
 https://x.com/thomasrp93/status/2098032737227505686
 https://x.com/tomorrowsretro/status/2095987327738823036

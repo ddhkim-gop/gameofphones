@@ -78,13 +78,22 @@ def main():
                  "kind": kind, "game": row.get("game_id"),
                  "date": row.get("game_date"), "start": row.get("start_time") or "",
                  "gsr": gsr}
-        # scorer (receiver on a pass TD, rusher on a run, kicker on a FG)
+        is_pass_td = (row.get("touchdown") == "1"
+                      and (row.get("play_type") or "").lower() == "pass"
+                      and row.get("passer_player_name"))
+        # scorer (receiver on a pass TD, rusher on a run, kicker on a FG). On a
+        # pass TD, stamp the receiver's entry with the passer's name + team, so a
+        # consumer can credit the QB unambiguously (the "last#f" key collides,
+        # e.g. Jordan vs Jeremiyah Love - a name+team match does not).
+        recv_entry = dict(entry)
+        if is_pass_td:
+            recv_entry["passer"] = row["passer_player_name"]
+            recv_entry["pos_team"] = row.get("posteam") or ""
         k = key_from_pbp(who)
         if k:
-            idx.setdefault(k, []).append(entry)
-        # also credit the passer on a pass TD (nflverse td_player_name is the receiver)
-        if row.get("touchdown") == "1" and (row.get("play_type") or "").lower() == "pass" \
-                and row.get("passer_player_name"):
+            idx.setdefault(k, []).append(recv_entry)
+        # also credit the passer on his own card
+        if is_pass_td:
             pk = key_from_pbp(row["passer_player_name"])
             if pk and pk != k:
                 idx.setdefault(pk, []).append({**entry, "kind": "pass TD"})
