@@ -5387,22 +5387,6 @@ window.__STATIC_DATA__ = {
                 "search_rank": 502
             },
             {
-                "player_id": "13946",
-                "espn_id": null,
-                "name": "Jamal Haynes",
-                "position": "RB",
-                "team": null,
-                "age": 23,
-                "birth_date": "2002-10-05",
-                "college": "Georgia Tech",
-                "height": "67",
-                "weight": "195",
-                "years_exp": 0,
-                "status": "Active",
-                "injury_status": null,
-                "search_rank": 471
-            },
-            {
                 "player_id": "2133",
                 "espn_id": 16800,
                 "name": "Davante Adams",
@@ -5481,6 +5465,22 @@ window.__STATIC_DATA__ = {
                 "status": "Inactive",
                 "injury_status": "IR",
                 "search_rank": 210
+            },
+            {
+                "player_id": "5086",
+                "espn_id": 3051738,
+                "name": "Marquez Valdes-Scantling",
+                "position": "WR",
+                "team": "LAC",
+                "age": 31,
+                "birth_date": "1994-10-10",
+                "college": "South Florida",
+                "height": "76",
+                "weight": "206",
+                "years_exp": 8,
+                "status": "Active",
+                "injury_status": null,
+                "search_rank": 630
             },
             {
                 "player_id": "5849",
@@ -5757,7 +5757,7 @@ window.__STATIC_DATA__ = {
                 "weight": "192",
                 "years_exp": 2,
                 "status": "Active",
-                "injury_status": "Questionable",
+                "injury_status": null,
                 "search_rank": 165
             },
             {
@@ -5773,7 +5773,7 @@ window.__STATIC_DATA__ = {
                 "weight": "210",
                 "years_exp": 2,
                 "status": "Active",
-                "injury_status": null,
+                "injury_status": "Questionable",
                 "search_rank": 110
             },
             {
@@ -11005,6 +11005,22 @@ window.__STATIC_DATA__ = {
                 "search_rank": 4
             },
             {
+                "player_id": "5189",
+                "espn_id": 4034949,
+                "name": "Eddy Pineiro",
+                "position": "K",
+                "team": "SF",
+                "age": 31,
+                "birth_date": "1995-09-13",
+                "college": "Florida",
+                "height": "71",
+                "weight": "190",
+                "years_exp": 8,
+                "status": "Active",
+                "injury_status": null,
+                "search_rank": 173
+            },
+            {
                 "player_id": "5846",
                 "espn_id": 4047650,
                 "name": "DK Metcalf",
@@ -11684,6 +11700,56 @@ window.__STATIC_DATA__ = {
     }
   ],
   "transactions": [
+    {
+        "season": "2026",
+        "week": 2,
+        "created": "Sep 16, 2026 • 10:35 AM PT",
+        "transaction_id": "1406019698675478528",
+        "type": "free_agent",
+        "status": "complete",
+        "teams": [
+            "ddhk"
+        ],
+        "added": [
+            {
+                "name": "Marquez Valdes-Scantling",
+                "position": "WR",
+                "team": "LAC"
+            }
+        ],
+        "dropped": [
+            {
+                "name": "Jamal Haynes",
+                "position": "RB",
+                "team": null
+            }
+        ],
+        "faab": 0,
+        "waiver_bid": 0,
+        "notes": null
+    },
+    {
+        "season": "2026",
+        "week": 2,
+        "created": "Sep 16, 2026 • 9:02 AM PT",
+        "transaction_id": "1405996186015436800",
+        "type": "free_agent",
+        "status": "complete",
+        "teams": [
+            "ganathan"
+        ],
+        "added": [
+            {
+                "name": "Eddy Pineiro",
+                "position": "K",
+                "team": "SF"
+            }
+        ],
+        "dropped": [],
+        "faab": 0,
+        "waiver_bid": 0,
+        "notes": null
+    },
     {
         "season": "2026",
         "week": 2,
@@ -15174,7 +15240,7 @@ window.__STATIC_DATA__ = {
             {
                 "name": "Jimmy Horn",
                 "position": "WR",
-                "team": "CAR"
+                "team": null
             }
         ],
         "faab": 0,
