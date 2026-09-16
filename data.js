@@ -5387,6 +5387,22 @@ window.__STATIC_DATA__ = {
                 "search_rank": 502
             },
             {
+                "player_id": "19",
+                "espn_id": 11252,
+                "name": "Joe Flacco",
+                "position": "QB",
+                "team": "CIN",
+                "age": 41,
+                "birth_date": "1985-01-16",
+                "college": "Delaware",
+                "height": "78",
+                "weight": "245",
+                "years_exp": 18,
+                "status": "Active",
+                "injury_status": null,
+                "search_rank": 488
+            },
+            {
                 "player_id": "2133",
                 "espn_id": 16800,
                 "name": "Davante Adams",
@@ -5465,22 +5481,6 @@ window.__STATIC_DATA__ = {
                 "status": "Inactive",
                 "injury_status": "IR",
                 "search_rank": 210
-            },
-            {
-                "player_id": "5086",
-                "espn_id": 3051738,
-                "name": "Marquez Valdes-Scantling",
-                "position": "WR",
-                "team": "LAC",
-                "age": 31,
-                "birth_date": "1994-10-10",
-                "college": "South Florida",
-                "height": "76",
-                "weight": "206",
-                "years_exp": 8,
-                "status": "Active",
-                "injury_status": null,
-                "search_rank": 630
             },
             {
                 "player_id": "5849",
@@ -6156,7 +6156,7 @@ window.__STATIC_DATA__ = {
                 "height": "71",
                 "weight": "230",
                 "years_exp": 4,
-                "status": "Active",
+                "status": "Inactive",
                 "injury_status": "IR",
                 "search_rank": 91
             },
@@ -6985,7 +6985,7 @@ window.__STATIC_DATA__ = {
                 "weight": "250",
                 "years_exp": 9,
                 "status": "Active",
-                "injury_status": null,
+                "injury_status": "Questionable",
                 "search_rank": 81
             },
             {
@@ -9647,14 +9647,14 @@ window.__STATIC_DATA__ = {
                 "espn_id": null,
                 "name": "Jerome Ford",
                 "position": "RB",
-                "team": null,
+                "team": "MIN",
                 "age": 27,
                 "birth_date": "1999-09-12",
                 "college": "Cincinnati",
                 "height": "70",
                 "weight": "210",
                 "years_exp": 4,
-                "status": "Inactive",
+                "status": "Active",
                 "injury_status": null,
                 "search_rank": 637
             },
@@ -11017,7 +11017,7 @@ window.__STATIC_DATA__ = {
                 "weight": "190",
                 "years_exp": 8,
                 "status": "Active",
-                "injury_status": null,
+                "injury_status": "Questionable",
                 "search_rank": 173
             },
             {
@@ -11161,7 +11161,7 @@ window.__STATIC_DATA__ = {
                 "weight": "222",
                 "years_exp": 5,
                 "status": "Active",
-                "injury_status": null,
+                "injury_status": "Questionable",
                 "search_rank": 23
             },
             {
@@ -11700,6 +11700,34 @@ window.__STATIC_DATA__ = {
     }
   ],
   "transactions": [
+    {
+        "season": "2026",
+        "week": 2,
+        "created": "Sep 16, 2026 • 2:58 PM PT",
+        "transaction_id": "1406085825447415808",
+        "type": "free_agent",
+        "status": "complete",
+        "teams": [
+            "ddhk"
+        ],
+        "added": [
+            {
+                "name": "Joe Flacco",
+                "position": "QB",
+                "team": "CIN"
+            }
+        ],
+        "dropped": [
+            {
+                "name": "Marquez Valdes-Scantling",
+                "position": "WR",
+                "team": "LAC"
+            }
+        ],
+        "faab": 0,
+        "waiver_bid": 0,
+        "notes": null
+    },
     {
         "season": "2026",
         "week": 2,
