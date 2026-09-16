@@ -242,21 +242,6 @@
       "kickoff": "9/13/26, 16:25:28"
     },
     {
-      "url": "https://www.espn.com/video/clip/_/id/49933582/jack-bech-barrels-15-yard-raiders-td",
-      "player": "Kirk Cousins",
-      "meta": "QB \u00b7 LV",
-      "date": "2026-09-13",
-      "author": "ESPN",
-      "text": "Jack Bech barrels in a 15-yard Raiders TD",
-      "verified": true,
-      "faves": 0,
-      "secs": 0,
-      "poster": "https://espnmedia-cdn.akamaized.net/espn/media/common/wsc/2026/0913/f50363f8-a9c0-4149-8263-46332d617a4e/f50363f8-a9c0-4149-8263-46332d617a4e.jpg",
-      "video": "https://espnmedia-cdn.akamaized.net/espn/media/16x9/wsc/2026/0913/f50363f8-a9c0-4149-8263-46332d617a4e/f50363f8-a9c0-4149-8263-46332d617a4e.mp4",
-      "game_time": "Q3 10:06",
-      "kickoff": "9/13/26, 16:25:35"
-    },
-    {
       "url": "https://www.espn.com/video/clip/_/id/49933789/jacory-croskey-merritt-reaches-goal-line-commanders-td",
       "player": "Jacory Croskey-Merritt",
       "meta": "RB \u00b7 WAS",
@@ -272,19 +257,6 @@
       "kickoff": "9/13/26, 16:25:25"
     },
     {
-      "url": "https://www.espn.com/video/clip/_/id/49933790/ashton-jeanty-walks-endzone",
-      "player": "Kirk Cousins",
-      "meta": "QB \u00b7 LV",
-      "date": "2026-09-13",
-      "author": "ESPN",
-      "text": "Ashton Jeanty walks into the endzone",
-      "verified": true,
-      "faves": 0,
-      "secs": 0,
-      "poster": "https://espnmedia-cdn.akamaized.net/espn/media/common/wsc/2026/0913/46fbce62-2366-4c9d-9741-3ba22f1b2b0c/46fbce62-2366-4c9d-9741-3ba22f1b2b0c.jpg",
-      "video": "https://espnmedia-cdn.akamaized.net/espn/media/16x9/wsc/2026/0913/46fbce62-2366-4c9d-9741-3ba22f1b2b0c/46fbce62-2366-4c9d-9741-3ba22f1b2b0c.mp4"
-    },
-    {
       "url": "https://www.espn.com/video/clip/_/id/49933977/ashton-jeanty-flies-2nd-catch-run-td-game",
       "player": "Kirk Cousins",
       "meta": "QB \u00b7 LV",
@@ -295,7 +267,9 @@
       "faves": 0,
       "secs": 0,
       "poster": "https://espnmedia-cdn.akamaized.net/espn/media/common/wsc/2026/0913/2706fbb5-0319-4937-9758-10942f4104b1/2706fbb5-0319-4937-9758-10942f4104b1.jpg",
-      "video": "https://espnmedia-cdn.akamaized.net/espn/media/16x9/wsc/2026/0913/2706fbb5-0319-4937-9758-10942f4104b1/2706fbb5-0319-4937-9758-10942f4104b1.mp4"
+      "video": "https://espnmedia-cdn.akamaized.net/espn/media/16x9/wsc/2026/0913/2706fbb5-0319-4937-9758-10942f4104b1/2706fbb5-0319-4937-9758-10942f4104b1.mp4",
+      "game_time": "Q3 10:06",
+      "kickoff": "9/13/26, 16:25:35"
     },
     {
       "url": "https://www.espn.com/video/clip/_/id/49934604/jaylen-wright-takes-kick-return-78-yards-red-zone",
