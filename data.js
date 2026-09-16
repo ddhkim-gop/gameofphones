@@ -5192,7 +5192,7 @@ window.__STATIC_DATA__ = {
                 "years_exp": 3,
                 "status": "Active",
                 "injury_status": null,
-                "search_rank": 90
+                "search_rank": 89
             },
             {
                 "player_id": "11583",
@@ -5288,7 +5288,7 @@ window.__STATIC_DATA__ = {
                 "years_exp": 1,
                 "status": "Active",
                 "injury_status": null,
-                "search_rank": 49
+                "search_rank": 47
             },
             {
                 "player_id": "12519",
@@ -6420,7 +6420,7 @@ window.__STATIC_DATA__ = {
                 "years_exp": 11,
                 "status": "Active",
                 "injury_status": null,
-                "search_rank": 124
+                "search_rank": 125
             },
             {
                 "player_id": "3321",
@@ -6452,7 +6452,7 @@ window.__STATIC_DATA__ = {
                 "years_exp": 10,
                 "status": "Active",
                 "injury_status": null,
-                "search_rank": 128
+                "search_rank": 129
             },
             {
                 "player_id": "4066",
@@ -6922,7 +6922,7 @@ window.__STATIC_DATA__ = {
                 "years_exp": 9,
                 "status": "Active",
                 "injury_status": null,
-                "search_rank": 80
+                "search_rank": 81
             },
             {
                 "player_id": "4866",
@@ -6970,7 +6970,7 @@ window.__STATIC_DATA__ = {
                 "years_exp": 6,
                 "status": "Active",
                 "injury_status": null,
-                "search_rank": 12
+                "search_rank": 11
             },
             {
                 "player_id": "6804",
@@ -7179,22 +7179,6 @@ window.__STATIC_DATA__ = {
                 "status": "Active",
                 "injury_status": null,
                 "search_rank": 119
-            },
-            {
-                "player_id": "8698",
-                "espn_id": null,
-                "name": "Jake Tonges",
-                "position": "TE",
-                "team": "SF",
-                "age": 27,
-                "birth_date": "1999-07-08",
-                "college": "California",
-                "height": "76",
-                "weight": "240",
-                "years_exp": 4,
-                "status": "Active",
-                "injury_status": "Questionable",
-                "search_rank": 178
             }
         ]
     },
@@ -7264,7 +7248,7 @@ window.__STATIC_DATA__ = {
                 "years_exp": 2,
                 "status": "Active",
                 "injury_status": "Questionable",
-                "search_rank": 74
+                "search_rank": 75
             },
             {
                 "player_id": "11729",
@@ -7294,8 +7278,8 @@ window.__STATIC_DATA__ = {
                 "height": "68",
                 "weight": "200",
                 "years_exp": 1,
-                "status": "Active",
-                "injury_status": "Out",
+                "status": "Inactive",
+                "injury_status": "IR",
                 "search_rank": 129
             },
             {
@@ -7408,7 +7392,7 @@ window.__STATIC_DATA__ = {
                 "years_exp": 13,
                 "status": "Active",
                 "injury_status": null,
-                "search_rank": 90
+                "search_rank": 89
             },
             {
                 "player_id": "2078",
@@ -7750,7 +7734,7 @@ window.__STATIC_DATA__ = {
                 "years_exp": 3,
                 "status": "Active",
                 "injury_status": null,
-                "search_rank": 147
+                "search_rank": 146
             },
             {
                 "player_id": "11564",
@@ -8572,7 +8556,7 @@ window.__STATIC_DATA__ = {
                 "years_exp": 0,
                 "status": "Active",
                 "injury_status": null,
-                "search_rank": 180
+                "search_rank": 179
             },
             {
                 "player_id": "13414",
@@ -8636,7 +8620,7 @@ window.__STATIC_DATA__ = {
                 "years_exp": 9,
                 "status": "Active",
                 "injury_status": null,
-                "search_rank": 195
+                "search_rank": 196
             },
             {
                 "player_id": "4981",
@@ -8738,7 +8722,7 @@ window.__STATIC_DATA__ = {
                 "years_exp": 2,
                 "status": "Active",
                 "injury_status": null,
-                "search_rank": 178
+                "search_rank": 177
             },
             {
                 "player_id": "11625",
@@ -8850,7 +8834,7 @@ window.__STATIC_DATA__ = {
                 "years_exp": 1,
                 "status": "Active",
                 "injury_status": null,
-                "search_rank": 38
+                "search_rank": 39
             },
             {
                 "player_id": "12517",
@@ -9623,7 +9607,7 @@ window.__STATIC_DATA__ = {
                 "weight": "210",
                 "years_exp": 4,
                 "status": "Inactive",
-                "injury_status": "Questionable",
+                "injury_status": null,
                 "search_rank": 637
             },
             {
@@ -9998,7 +9982,7 @@ window.__STATIC_DATA__ = {
                 "years_exp": 0,
                 "status": "Active",
                 "injury_status": null,
-                "search_rank": 195
+                "search_rank": 194
             },
             {
                 "player_id": "3214",
@@ -10276,7 +10260,7 @@ window.__STATIC_DATA__ = {
                 "years_exp": 2,
                 "status": "Active",
                 "injury_status": null,
-                "search_rank": 133
+                "search_rank": 132
             },
             {
                 "player_id": "12474",
@@ -10778,7 +10762,7 @@ window.__STATIC_DATA__ = {
                 "years_exp": 2,
                 "status": "Active",
                 "injury_status": null,
-                "search_rank": 171
+                "search_rank": 170
             },
             {
                 "player_id": "12457",
@@ -11018,7 +11002,7 @@ window.__STATIC_DATA__ = {
                 "years_exp": 7,
                 "status": "Active",
                 "injury_status": null,
-                "search_rank": 131
+                "search_rank": 130
             },
             {
                 "player_id": "6801",
@@ -11652,6 +11636,28 @@ window.__STATIC_DATA__ = {
     }
   ],
   "transactions": [
+    {
+        "season": "2026",
+        "week": 1,
+        "created": "Sep 15, 2026 • 9:15 PM PT",
+        "transaction_id": "1405818355008434176",
+        "type": "free_agent",
+        "status": "complete",
+        "teams": [
+            "jonsung"
+        ],
+        "added": [],
+        "dropped": [
+            {
+                "name": "Jake Tonges",
+                "position": "TE",
+                "team": "SF"
+            }
+        ],
+        "faab": 0,
+        "waiver_bid": 0,
+        "notes": null
+    },
     {
         "season": "2026",
         "week": 1,
@@ -15420,7 +15426,7 @@ window.__STATIC_DATA__ = {
             {
                 "name": "Marquez Valdes-Scantling",
                 "position": "WR",
-                "team": null
+                "team": "LAC"
             }
         ],
         "faab": 0,
@@ -16402,7 +16408,7 @@ window.__STATIC_DATA__ = {
             {
                 "name": "Sterling Shepard",
                 "position": "WR",
-                "team": null
+                "team": "NYJ"
             }
         ],
         "faab": 0,
@@ -16446,7 +16452,7 @@ window.__STATIC_DATA__ = {
             {
                 "name": "Hassan Haskins",
                 "position": "RB",
-                "team": "NE"
+                "team": null
             }
         ],
         "faab": 0,
