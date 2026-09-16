@@ -1,6 +1,6 @@
 {
   "team": "NoSkilzPak",
-  "updated": "2026-09-15",
+  "updated": "2026-09-16",
   "note": "Curated: X has no public search API, so posts are collected by hand and matched to rosters by this script.",
   "tweets": [
     {
@@ -148,8 +148,8 @@
       "verified": true,
       "faves": 0,
       "secs": 0,
-      "video": "https://video.twimg.com/amplify_video/2098241229179981824/vid/avc1/1920x1080/Z9YA4l2bMWqkTm7Y.mp4?tag=29",
-      "poster": "https://pbs.twimg.com/amplify_video_thumb/2098241229179981824/img/2KDyL8xVMdAuIHf1.jpg?name=orig"
+      "poster": "https://pbs.twimg.com/amplify_video_thumb/2098241229179981824/img/2KDyL8xVMdAuIHf1.jpg?name=orig",
+      "video": "https://video.twimg.com/amplify_video/2098241229179981824/vid/avc1/1920x1080/Z9YA4l2bMWqkTm7Y.mp4?tag=29"
     },
     {
       "url": "https://x.com/NFL/status/2097878710779306133",
