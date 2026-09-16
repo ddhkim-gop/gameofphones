@@ -1,6 +1,6 @@
-import { api } from "./dataService.js?v=202609080002";
-import { renderNav } from "./components/nav.js?v=202609080002";
-import { ensurePlayerCardPopover, openPlayerCard } from "./playerCard.js?v=202609080002";
+import { api } from "./dataService.js?v=202609160140";
+import { renderNav } from "./components/nav.js?v=202609160140";
+import { ensurePlayerCardPopover, openPlayerCard } from "./playerCard.js?v=202609160140";
 
 renderNav();
 
@@ -773,7 +773,20 @@ async function loadTeamReel(teamName) {
         if (r.ok) feed = await r.json();
     } catch (e) { feed = null; }
 
-    const tweets = (feed && Array.isArray(feed.tweets)) ? feed.tweets : [];
+    // Newest on top. Feeds are written date-descending, but sort here too so a
+    // hand-edited or out-of-order file still renders most-recent-first. Within a
+    // day, game_time breaks the tie by when the play happened (later quarter, and
+    // lower clock inside a quarter, is more recent); then engagement.
+    const recency = (t) => {
+        const m = /Q(\d)\s+(\d+):(\d+)/.exec(String(t.game_time || ""));
+        if (!m) return -1;                       // no clock: sort below clocked plays
+        return (+m[1]) * 1000 - ((+m[2]) * 60 + (+m[3])) / 60;
+    };
+    const tweets = ((feed && Array.isArray(feed.tweets)) ? feed.tweets.slice() : [])
+        .sort((a, b) =>
+            String(b.date || "").localeCompare(String(a.date || "")) ||
+            recency(b) - recency(a) ||
+            (Number(b.faves || 0) - Number(a.faves || 0)));
     if (!tweets.length) {
         if (note) note.textContent = "";
         body.innerHTML = `<div style="color:#5a6070;font-size:12px;line-height:1.6;">
