@@ -5163,22 +5163,6 @@ window.__STATIC_DATA__ = {
         "roster_id": 1,
         "players": [
             {
-                "player_id": "10235",
-                "espn_id": null,
-                "name": "Roschon Johnson",
-                "position": "RB",
-                "team": "CHI",
-                "age": 25,
-                "birth_date": "2001-01-31",
-                "college": "Texas",
-                "height": "72",
-                "weight": "227",
-                "years_exp": 3,
-                "status": "Active",
-                "injury_status": null,
-                "search_rank": 681
-            },
-            {
                 "player_id": "11533",
                 "espn_id": null,
                 "name": "Brandon Aubrey",
@@ -5401,6 +5385,22 @@ window.__STATIC_DATA__ = {
                 "status": "Active",
                 "injury_status": null,
                 "search_rank": 502
+            },
+            {
+                "player_id": "13946",
+                "espn_id": null,
+                "name": "Jamal Haynes",
+                "position": "RB",
+                "team": null,
+                "age": 23,
+                "birth_date": "2002-10-05",
+                "college": "Georgia Tech",
+                "height": "67",
+                "weight": "195",
+                "years_exp": 0,
+                "status": "Active",
+                "injury_status": null,
+                "search_rank": 471
             },
             {
                 "player_id": "2133",
@@ -6451,7 +6451,7 @@ window.__STATIC_DATA__ = {
                 "weight": "191",
                 "years_exp": 10,
                 "status": "Active",
-                "injury_status": "Out",
+                "injury_status": "",
                 "search_rank": 145
             },
             {
@@ -11684,6 +11684,34 @@ window.__STATIC_DATA__ = {
     }
   ],
   "transactions": [
+    {
+        "season": "2026",
+        "week": 2,
+        "created": "Sep 16, 2026 • 2:40 AM PT",
+        "transaction_id": "1405900283128635392",
+        "type": "free_agent",
+        "status": "complete",
+        "teams": [
+            "ddhk"
+        ],
+        "added": [
+            {
+                "name": "Jamal Haynes",
+                "position": "RB",
+                "team": null
+            }
+        ],
+        "dropped": [
+            {
+                "name": "Roschon Johnson",
+                "position": "RB",
+                "team": "CHI"
+            }
+        ],
+        "faab": 0,
+        "waiver_bid": 0,
+        "notes": null
+    },
     {
         "season": "2026",
         "week": 2,
