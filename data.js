@@ -5440,7 +5440,7 @@ window.__STATIC_DATA__ = {
                 "name": "Patrick Mahomes",
                 "position": "QB",
                 "team": "KC",
-                "age": 30,
+                "age": 31,
                 "birth_date": "1995-09-17",
                 "college": "Texas Tech",
                 "height": "74",
@@ -8667,7 +8667,7 @@ window.__STATIC_DATA__ = {
                 "weight": "205",
                 "years_exp": 9,
                 "status": "Active",
-                "injury_status": null,
+                "injury_status": "Questionable",
                 "search_rank": 196
             },
             {
@@ -9424,7 +9424,7 @@ window.__STATIC_DATA__ = {
                 "name": "Marlin Klein",
                 "position": "TE",
                 "team": "HOU",
-                "age": 23,
+                "age": 24,
                 "birth_date": "2002-09-17",
                 "college": "Michigan",
                 "height": "78",
@@ -10387,7 +10387,7 @@ window.__STATIC_DATA__ = {
                 "weight": "196",
                 "years_exp": 1,
                 "status": "Active",
-                "injury_status": "Questionable",
+                "injury_status": null,
                 "search_rank": 199
             },
             {
