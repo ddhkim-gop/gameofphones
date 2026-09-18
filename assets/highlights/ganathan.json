@@ -1,8 +1,81 @@
 {
   "team": "ganathan",
-  "updated": "2026-09-17",
+  "updated": "2026-09-18",
   "note": "Curated: X has no public search API, so posts are collected by hand and matched to rosters by this script.",
   "tweets": [
+    {
+      "url": "https://www.espn.com/video/clip/_/id/49968745/bills-fans-erupt-josh-allen-enters-new-highmark-stadium",
+      "player": "Josh Allen",
+      "meta": "QB \u00b7 BUF",
+      "date": "2026-09-18",
+      "author": "ESPN",
+      "text": "Bills fans erupt as Josh Allen enters new Highmark Stadium",
+      "verified": true,
+      "faves": 0,
+      "secs": 0,
+      "poster": "https://espnmedia-cdn.akamaized.net/espn/media/common/2026/0917/89bdbf2dd3414083a47d5d4cc9b282c01434/89bdbf2dd3414083a47d5d4cc9b282c01434.jpg",
+      "video": "https://espnmedia-cdn.akamaized.net/espn/media/16x9/wsc/2026/0918/89bdbf2d-d341-4083-a47d-5d4cc9b282c0/89bdbf2d-d341-4083-a47d-5d4cc9b282c0.mp4",
+      "game_time": "Q2 12:57",
+      "kickoff": "9/13/26, 13:04:46"
+    },
+    {
+      "url": "https://www.espn.com/video/clip/_/id/49968773/josh-allen-scores-first-td-highmark-stadium",
+      "player": "Josh Allen",
+      "meta": "QB \u00b7 BUF",
+      "date": "2026-09-18",
+      "author": "ESPN",
+      "text": "Josh Allen scores the first TD in Highmark Stadium",
+      "verified": true,
+      "faves": 0,
+      "secs": 0,
+      "poster": "https://espnmedia-cdn.akamaized.net/espn/media/common/2026/0917/c69d074833104da8bfcb4c2f256002181437/c69d074833104da8bfcb4c2f256002181437.jpg",
+      "video": "https://espnmedia-cdn.akamaized.net/espn/media/16x9/wsc/2026/0918/c69d0748-3310-4da8-bfcb-4c2f25600218/c69d0748-3310-4da8-bfcb-4c2f25600218.mp4",
+      "game_time": "Q2 04:02",
+      "kickoff": "9/13/26, 13:04:46"
+    },
+    {
+      "url": "https://www.espn.com/video/clip/_/id/49968926/josh-allen-goes-deep-43-yard-td-joshua-palmer",
+      "player": "Josh Allen",
+      "meta": "QB \u00b7 BUF",
+      "date": "2026-09-18",
+      "author": "ESPN",
+      "text": "Josh Allen goes deep for 43-yard TD to Joshua Palmer",
+      "verified": true,
+      "faves": 0,
+      "secs": 0,
+      "poster": "https://espnmedia-cdn.akamaized.net/espn/media/common/2026/0917/9ed900c0c25a49cc95b39026ea12f8e61438/9ed900c0c25a49cc95b39026ea12f8e61438.jpg",
+      "video": "https://espnmedia-cdn.akamaized.net/espn/media/16x9/wsc/2026/0918/9ed900c0-c25a-49cc-95b3-9026ea12f8e6/9ed900c0-c25a-49cc-95b3-9026ea12f8e6.mp4",
+      "game_time": "Q2 01:39",
+      "kickoff": "9/13/26, 13:04:46"
+    },
+    {
+      "url": "https://www.espn.com/video/clip/_/id/49968983/josh-allen-throws-2nd-td-half-vs-lions",
+      "player": "Josh Allen",
+      "meta": "QB \u00b7 BUF",
+      "date": "2026-09-18",
+      "author": "ESPN",
+      "text": "Josh Allen throws his 2nd TD of the half vs. the Lions",
+      "verified": true,
+      "faves": 0,
+      "secs": 0,
+      "poster": "https://espnmedia-cdn.akamaized.net/espn/media/common/2026/0918/9dd0523ede6243dbb26e989cd39816d50/9dd0523ede6243dbb26e989cd39816d50.jpg",
+      "video": "https://espnmedia-cdn.akamaized.net/espn/media/16x9/wsc/2026/0918/9dd0523e-de62-43db-b26e-989cd39816d5/9dd0523e-de62-43db-b26e-989cd39816d5.mp4",
+      "game_time": "Q4 01:41",
+      "kickoff": "9/13/26, 13:04:46"
+    },
+    {
+      "url": "https://www.espn.com/video/clip/_/id/49969155/josh-allen-racks-4th-td-half-dart-dalton-kincaid",
+      "player": "Josh Allen",
+      "meta": "QB \u00b7 BUF",
+      "date": "2026-09-18",
+      "author": "ESPN",
+      "text": "Josh Allen racks up 4th TD of half with dart to Dalton Kincaid",
+      "verified": true,
+      "faves": 0,
+      "secs": 0,
+      "poster": "https://espnmedia-cdn.akamaized.net/espn/media/common/2026/0918/30ad4de3b0624cb1a4105450c7e2d8d94/30ad4de3b0624cb1a4105450c7e2d8d94.jpg",
+      "video": "https://espnmedia-cdn.akamaized.net/espn/media/16x9/wsc/2026/0918/30ad4de3-b062-4cb1-a410-5450c7e2d8d9/30ad4de3-b062-4cb1-a410-5450c7e2d8d9.mp4"
+    },
     {
       "url": "https://x.com/NFLTDsVideos/status/2099569556561838329",
       "player": "Jalen Hurts",
@@ -34,21 +107,6 @@
       "kickoff": "9/13/26, 16:25:25"
     },
     {
-      "url": "https://www.espn.com/video/clip/_/id/49929790/josh-allen-bulldozes-21-yards-td",
-      "player": "Josh Allen",
-      "meta": "QB \u00b7 BUF",
-      "date": "2026-09-13",
-      "author": "ESPN",
-      "text": "Josh Allen bulldozes 21 yards for a TD. Josh Allen bulldozes 21 yards for a TD ",
-      "verified": true,
-      "faves": 0,
-      "secs": 0,
-      "poster": "https://espnmedia-cdn.akamaized.net/espn/media/common/wsc/2026/0913/ca7aaa6c-fa3a-469b-8ace-dccbb4f550fb/ca7aaa6c-fa3a-469b-8ace-dccbb4f550fb.jpg",
-      "video": "https://espnmedia-cdn.akamaized.net/espn/media/16x9/wsc/2026/0913/ca7aaa6c-fa3a-469b-8ace-dccbb4f550fb/ca7aaa6c-fa3a-469b-8ace-dccbb4f550fb.mp4",
-      "game_time": "Q2 12:57",
-      "kickoff": "9/13/26, 13:04:46"
-    },
-    {
       "url": "https://www.espn.com/video/clip/_/id/49930626/josh-allen-dj-moore-link-td-late-1st-half",
       "player": "DJ Moore & Josh Allen",
       "meta": "WR \u00b7 BUF",
@@ -60,21 +118,6 @@
       "secs": 0,
       "poster": "https://espnmedia-cdn.akamaized.net/espn/media/common/2026/0913/eedd80e49d934580adca40dc46773c7c907/eedd80e49d934580adca40dc46773c7c907.jpg",
       "video": "https://espnmedia-cdn.akamaized.net/espn/media/16x9/wsc/2026/0913/eedd80e4-9d93-4580-adca-40dc46773c7c/eedd80e4-9d93-4580-adca-40dc46773c7c.mp4"
-    },
-    {
-      "url": "https://www.espn.com/video/clip/_/id/49931845/josh-allen-puts-bills-ahead-4th-34-yard-td-pass-joshua-palmer",
-      "player": "Josh Allen",
-      "meta": "QB \u00b7 BUF",
-      "date": "2026-09-13",
-      "author": "ESPN",
-      "text": "Josh Allen puts Bills ahead in 4th with 34-yard TD pass to Joshua Palmer",
-      "verified": true,
-      "faves": 0,
-      "secs": 0,
-      "poster": "https://espnmedia-cdn.akamaized.net/espn/media/common/2026/0913/792dc5a043e74a4286191ff386023b87995/792dc5a043e74a4286191ff386023b87995.jpg",
-      "video": "https://espnmedia-cdn.akamaized.net/espn/media/16x9/wsc/2026/0913/792dc5a0-43e7-4a42-8619-1ff386023b87/792dc5a0-43e7-4a42-8619-1ff386023b87.mp4",
-      "game_time": "Q2 04:02",
-      "kickoff": "9/13/26, 13:04:46"
     },
     {
       "url": "https://www.espn.com/video/clip/_/id/49933604/jalen-hurts-hits-dallas-goedert-eagles-first-td-season",
@@ -143,21 +186,6 @@
       "poster": "https://pbs.twimg.com/amplify_video_thumb/2099204105990475776/img/xMlEC3gpt_LIkapz.jpg?name=orig",
       "video": "https://video.twimg.com/amplify_video/2099204105990475776/vid/avc1/1920x1080/Ya3URVmIkw9tiG7Q.mp4?tag=29",
       "game_time": "Q2 00:31",
-      "kickoff": "9/13/26, 13:04:46"
-    },
-    {
-      "url": "https://x.com/NFLTDsVideos/status/2099255935113789558",
-      "player": "Josh Allen",
-      "meta": "QB \u00b7 BUF",
-      "date": "2026-09-13",
-      "author": "NFL Touchdown Videos",
-      "text": "Josh Allen (4) to Josh Palmer (1) Buffalo Bills 34 yards pic.twitter.com/Z3GUldaRwZ \u2014 NFL Touchdown Videos (@NFLTDsVideos) September 13, 2026",
-      "verified": true,
-      "faves": 0,
-      "secs": 0,
-      "poster": "https://pbs.twimg.com/amplify_video_thumb/2099228337155842048/img/9yuQi_zTW-SjMq61.jpg?name=orig",
-      "video": "https://video.twimg.com/amplify_video/2099228337155842048/vid/avc1/1920x1080/EgaZhOfezGJw3RKd.mp4?tag=29",
-      "game_time": "Q2 01:39",
       "kickoff": "9/13/26, 13:04:46"
     },
     {

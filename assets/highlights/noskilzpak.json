@@ -1,6 +1,6 @@
 {
   "team": "NoSkilzPak",
-  "updated": "2026-09-17",
+  "updated": "2026-09-18",
   "note": "Curated: X has no public search API, so posts are collected by hand and matched to rosters by this script.",
   "tweets": [
     {
@@ -165,34 +165,6 @@
       "secs": 0,
       "poster": "https://pbs.twimg.com/amplify_video_thumb/2098241229179981824/img/2KDyL8xVMdAuIHf1.jpg?name=orig",
       "video": "https://video.twimg.com/amplify_video/2098241229179981824/vid/avc1/1920x1080/Z9YA4l2bMWqkTm7Y.mp4?tag=29"
-    },
-    {
-      "url": "https://x.com/NFL/status/2097878710779306133",
-      "player": "Jaxon Smith-Njigba",
-      "meta": "WR \u00b7 SEA",
-      "date": "2026-09-10",
-      "author": "NFL",
-      "text": "THERE GOES JSN NEvsSEA on NBC/Peacock Stream on @NFLPlus pic.twitter.com/SIt21pDRO8 \u2014 NFL (@NFL) September 10, 2026",
-      "verified": true,
-      "faves": 0,
-      "secs": 0,
-      "poster": "https://pbs.twimg.com/amplify_video_thumb/2097878629698998282/img/CUAsbxasnxOWaXcT.jpg?name=orig",
-      "video": "https://video.twimg.com/amplify_video/2097878629698998282/vid/avc1/1920x1080/5vCcUBwrRovoG4oB.mp4?tag=29",
-      "game_time": "Q4 11:38",
-      "kickoff": "9/9/26, 20:23:21"
-    },
-    {
-      "url": "https://x.com/NFL/status/2098147658086912007",
-      "player": "Jaxon Smith-Njigba",
-      "meta": "WR \u00b7 SEA",
-      "date": "2026-09-10",
-      "author": "NFL",
-      "text": "Every time that JSN and Christian Gonzalez matched up last night \ud83c\udf7f @jaxon_smith1 @chrisgonzo28 pic.twitter.com/joH2p0wBPf \u2014 NFL (@NFL) September 10, 2026",
-      "verified": true,
-      "faves": 0,
-      "secs": 0,
-      "poster": "https://pbs.twimg.com/media/HR4eH8sWEAATqdP.jpg?name=orig",
-      "video": "https://video.twimg.com/amplify_video/2098147145702375433/vid/avc1/1920x1080/GcKwc_WATnXGWqlo.mp4?tag=29"
     }
   ]
 }
