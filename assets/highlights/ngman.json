@@ -1,8 +1,23 @@
 {
   "team": "ngman",
-  "updated": "2026-09-17",
+  "updated": "2026-09-18",
   "note": "Curated: X has no public search API, so posts are collected by hand and matched to rosters by this script.",
   "tweets": [
+    {
+      "url": "https://www.espn.com/video/clip/_/id/49968926/josh-allen-goes-deep-43-yard-td-joshua-palmer",
+      "player": "Joshua Palmer",
+      "meta": "WR \u00b7 BUF",
+      "date": "2026-09-18",
+      "author": "ESPN",
+      "text": "Josh Allen goes deep for 43-yard TD to Joshua Palmer",
+      "verified": true,
+      "faves": 0,
+      "secs": 0,
+      "poster": "https://espnmedia-cdn.akamaized.net/espn/media/common/2026/0917/9ed900c0c25a49cc95b39026ea12f8e61438/9ed900c0c25a49cc95b39026ea12f8e61438.jpg",
+      "video": "https://espnmedia-cdn.akamaized.net/espn/media/16x9/wsc/2026/0918/9ed900c0-c25a-49cc-95b3-9026ea12f8e6/9ed900c0-c25a-49cc-95b3-9026ea12f8e6.mp4",
+      "game_time": "Q4 01:41",
+      "kickoff": "9/13/26, 13:04:46"
+    },
     {
       "url": "https://www.espn.com/video/clip/_/id/49944961/bo-nix-dots-evan-engram-put-broncos-board",
       "player": "Bo Nix",
@@ -192,9 +207,7 @@
       "faves": 0,
       "secs": 0,
       "poster": "https://espnmedia-cdn.akamaized.net/espn/media/common/2026/0913/792dc5a043e74a4286191ff386023b87995/792dc5a043e74a4286191ff386023b87995.jpg",
-      "video": "https://espnmedia-cdn.akamaized.net/espn/media/16x9/wsc/2026/0913/792dc5a0-43e7-4a42-8619-1ff386023b87/792dc5a0-43e7-4a42-8619-1ff386023b87.mp4",
-      "game_time": "Q4 01:41",
-      "kickoff": "9/13/26, 13:04:46"
+      "video": "https://espnmedia-cdn.akamaized.net/espn/media/16x9/wsc/2026/0913/792dc5a0-43e7-4a42-8619-1ff386023b87/792dc5a0-43e7-4a42-8619-1ff386023b87.mp4"
     },
     {
       "url": "https://www.espn.com/video/clip/_/id/49932419/jordan-love-hooks-christian-watson-81-yard-packers-td",
