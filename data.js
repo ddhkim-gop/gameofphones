@@ -5830,7 +5830,7 @@ window.__STATIC_DATA__ = {
                 "name": "Kyle McCord",
                 "position": "QB",
                 "team": "MIA",
-                "age": 23,
+                "age": 24,
                 "birth_date": "2002-09-19",
                 "college": "Syracuse",
                 "height": "75",
