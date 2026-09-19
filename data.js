@@ -6615,22 +6615,6 @@ window.__STATIC_DATA__ = {
                 "search_rank": 55
             },
             {
-                "player_id": "8188",
-                "espn_id": null,
-                "name": "Tyquan Thornton",
-                "position": "WR",
-                "team": "KC",
-                "age": 26,
-                "birth_date": "2000-08-07",
-                "college": "Baylor",
-                "height": "74",
-                "weight": "185",
-                "years_exp": 4,
-                "status": "Active",
-                "injury_status": null,
-                "search_rank": 522
-            },
-            {
                 "player_id": "8228",
                 "espn_id": null,
                 "name": "Jaylen Warren",
@@ -11700,6 +11684,28 @@ window.__STATIC_DATA__ = {
     }
   ],
   "transactions": [
+    {
+        "season": "2026",
+        "week": 2,
+        "created": "Sep 19, 2026 • 1:12 PM PT",
+        "transaction_id": "1407146341603233792",
+        "type": "free_agent",
+        "status": "complete",
+        "teams": [
+            "NoSkilzPak"
+        ],
+        "added": [],
+        "dropped": [
+            {
+                "name": "Tyquan Thornton",
+                "position": "WR",
+                "team": "KC"
+            }
+        ],
+        "faab": 0,
+        "waiver_bid": 0,
+        "notes": null
+    },
     {
         "season": "2026",
         "week": 2,
