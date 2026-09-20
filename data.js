@@ -7037,22 +7037,6 @@ window.__STATIC_DATA__ = {
                 "search_rank": 69
             },
             {
-                "player_id": "6865",
-                "espn_id": 4242557,
-                "name": "Colby Parkinson",
-                "position": "TE",
-                "team": "LAR",
-                "age": 27,
-                "birth_date": "1999-01-08",
-                "college": "Stanford",
-                "height": "79",
-                "weight": "266",
-                "years_exp": 6,
-                "status": "Active",
-                "injury_status": null,
-                "search_rank": 136
-            },
-            {
                 "player_id": "7021",
                 "espn_id": 4038815,
                 "name": "Rico Dowdle",
@@ -11684,6 +11668,28 @@ window.__STATIC_DATA__ = {
     }
   ],
   "transactions": [
+    {
+        "season": "2026",
+        "week": 2,
+        "created": "Sep 19, 2026 • 10:32 PM PT",
+        "transaction_id": "1407287357589241856",
+        "type": "free_agent",
+        "status": "complete",
+        "teams": [
+            "jonsung"
+        ],
+        "added": [],
+        "dropped": [
+            {
+                "name": "Colby Parkinson",
+                "position": "TE",
+                "team": "LAR"
+            }
+        ],
+        "faab": 0,
+        "waiver_bid": 0,
+        "notes": null
+    },
     {
         "season": "2026",
         "week": 2,
