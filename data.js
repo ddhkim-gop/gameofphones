@@ -5191,7 +5191,7 @@ window.__STATIC_DATA__ = {
                 "weight": "216",
                 "years_exp": 2,
                 "status": "Active",
-                "injury_status": null,
+                "injury_status": "Questionable",
                 "search_rank": 88
             },
             {
@@ -5387,22 +5387,6 @@ window.__STATIC_DATA__ = {
                 "search_rank": 502
             },
             {
-                "player_id": "2020",
-                "espn_id": 17427,
-                "name": "Cairo Santos",
-                "position": "K",
-                "team": "CHI",
-                "age": 34,
-                "birth_date": "1991-11-12",
-                "college": "Tulane",
-                "height": "68",
-                "weight": "173",
-                "years_exp": 12,
-                "status": "Active",
-                "injury_status": null,
-                "search_rank": 190
-            },
-            {
                 "player_id": "2133",
                 "espn_id": 16800,
                 "name": "Davante Adams",
@@ -5561,6 +5545,22 @@ window.__STATIC_DATA__ = {
                 "status": "Active",
                 "injury_status": null,
                 "search_rank": 7
+            },
+            {
+                "player_id": "7562",
+                "espn_id": null,
+                "name": "Tutu Atwell",
+                "position": "WR",
+                "team": "LAR",
+                "age": 26,
+                "birth_date": "1999-10-07",
+                "college": "Louisville",
+                "height": "69",
+                "weight": "165",
+                "years_exp": 5,
+                "status": "Active",
+                "injury_status": null,
+                "search_rank": 691
             },
             {
                 "player_id": "7588",
@@ -5997,7 +5997,7 @@ window.__STATIC_DATA__ = {
                 "weight": "208",
                 "years_exp": 9,
                 "status": "Active",
-                "injury_status": null,
+                "injury_status": "Questionable",
                 "search_rank": 85
             },
             {
@@ -6339,7 +6339,7 @@ window.__STATIC_DATA__ = {
                 "weight": "233",
                 "years_exp": 0,
                 "status": "Active",
-                "injury_status": null,
+                "injury_status": "Out",
                 "search_rank": 285
             },
             {
@@ -6435,7 +6435,7 @@ window.__STATIC_DATA__ = {
                 "weight": "202",
                 "years_exp": 10,
                 "status": "Active",
-                "injury_status": null,
+                "injury_status": "Questionable",
                 "search_rank": 679
             },
             {
@@ -7049,7 +7049,7 @@ window.__STATIC_DATA__ = {
                 "weight": "218",
                 "years_exp": 6,
                 "status": "Active",
-                "injury_status": "Questionable",
+                "injury_status": "Out",
                 "search_rank": 65
             },
             {
@@ -8235,7 +8235,7 @@ window.__STATIC_DATA__ = {
                 "weight": "226",
                 "years_exp": 2,
                 "status": "Active",
-                "injury_status": null,
+                "injury_status": "Out",
                 "search_rank": 22
             },
             {
@@ -8587,7 +8587,7 @@ window.__STATIC_DATA__ = {
                 "weight": "208",
                 "years_exp": 0,
                 "status": "Active",
-                "injury_status": "Questionable",
+                "injury_status": null,
                 "search_rank": 161
             },
             {
@@ -8833,7 +8833,7 @@ window.__STATIC_DATA__ = {
                 "weight": "251",
                 "years_exp": 1,
                 "status": "Active",
-                "injury_status": null,
+                "injury_status": "Questionable",
                 "search_rank": 138
             },
             {
@@ -9169,7 +9169,7 @@ window.__STATIC_DATA__ = {
                 "weight": "195",
                 "years_exp": 4,
                 "status": "Active",
-                "injury_status": null,
+                "injury_status": "Out",
                 "search_rank": 617
             },
             {
@@ -10889,7 +10889,7 @@ window.__STATIC_DATA__ = {
                 "weight": "241",
                 "years_exp": 0,
                 "status": "Active",
-                "injury_status": null,
+                "injury_status": "Out",
                 "search_rank": 476
             },
             {
@@ -10921,7 +10921,7 @@ window.__STATIC_DATA__ = {
                 "weight": "246",
                 "years_exp": 9,
                 "status": "Active",
-                "injury_status": null,
+                "injury_status": "Questionable",
                 "search_rank": 131
             },
             {
@@ -10985,7 +10985,7 @@ window.__STATIC_DATA__ = {
                 "weight": "190",
                 "years_exp": 8,
                 "status": "Active",
-                "injury_status": "Questionable",
+                "injury_status": null,
                 "search_rank": 174
             },
             {
@@ -11668,6 +11668,34 @@ window.__STATIC_DATA__ = {
     }
   ],
   "transactions": [
+    {
+        "season": "2026",
+        "week": 2,
+        "created": "Sep 20, 2026 • 11:58 AM PT",
+        "transaction_id": "1407490022944378880",
+        "type": "free_agent",
+        "status": "complete",
+        "teams": [
+            "ddhk"
+        ],
+        "added": [
+            {
+                "name": "Tutu Atwell",
+                "position": "WR",
+                "team": "LAR"
+            }
+        ],
+        "dropped": [
+            {
+                "name": "Cairo Santos",
+                "position": "K",
+                "team": "CHI"
+            }
+        ],
+        "faab": 0,
+        "waiver_bid": 0,
+        "notes": null
+    },
     {
         "season": "2026",
         "week": 2,

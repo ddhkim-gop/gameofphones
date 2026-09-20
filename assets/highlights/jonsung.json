@@ -209,7 +209,9 @@
       "faves": 0,
       "secs": 0,
       "poster": "https://espnmedia-cdn.akamaized.net/espn/media/common/wsc/2026/0913/91ebd8d9-5bf0-405b-97c4-1f0aa3d4ba13/91ebd8d9-5bf0-405b-97c4-1f0aa3d4ba13.jpg",
-      "video": "https://espnmedia-cdn.akamaized.net/espn/media/16x9/wsc/2026/0913/91ebd8d9-5bf0-405b-97c4-1f0aa3d4ba13/91ebd8d9-5bf0-405b-97c4-1f0aa3d4ba13.mp4"
+      "video": "https://espnmedia-cdn.akamaized.net/espn/media/16x9/wsc/2026/0913/91ebd8d9-5bf0-405b-97c4-1f0aa3d4ba13/91ebd8d9-5bf0-405b-97c4-1f0aa3d4ba13.mp4",
+      "game_time": "Q3 02:35",
+      "kickoff": "9/20/26, 13:03:50"
     },
     {
       "url": "https://www.espn.com/video/clip/_/id/49932419/jordan-love-hooks-christian-watson-81-yard-packers-td",
@@ -306,7 +308,9 @@
       "faves": 0,
       "secs": 0,
       "poster": "https://pbs.twimg.com/amplify_video_thumb/2099221961842774023/img/-X0P-0jXqq4XCoee.jpg?name=orig",
-      "video": "https://video.twimg.com/amplify_video/2099221961842774023/vid/avc1/1920x1080/BuB4wKDmWvwHbdP-.mp4?tag=29"
+      "video": "https://video.twimg.com/amplify_video/2099221961842774023/vid/avc1/1920x1080/BuB4wKDmWvwHbdP-.mp4?tag=29",
+      "game_time": "Q1 02:57",
+      "kickoff": "9/20/26, 13:02:37"
     },
     {
       "url": "https://x.com/NFLTDsVideos/status/2099255267405771235",
