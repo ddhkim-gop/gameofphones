@@ -5367,7 +5367,7 @@ window.__STATIC_DATA__ = {
                 "weight": "230",
                 "years_exp": 0,
                 "status": "Active",
-                "injury_status": null,
+                "injury_status": "Out",
                 "search_rank": 523
             },
             {
@@ -5387,20 +5387,20 @@ window.__STATIC_DATA__ = {
                 "search_rank": 502
             },
             {
-                "player_id": "19",
-                "espn_id": 11252,
-                "name": "Joe Flacco",
-                "position": "QB",
-                "team": "CIN",
-                "age": 41,
-                "birth_date": "1985-01-16",
-                "college": "Delaware",
-                "height": "78",
-                "weight": "245",
-                "years_exp": 18,
+                "player_id": "2020",
+                "espn_id": 17427,
+                "name": "Cairo Santos",
+                "position": "K",
+                "team": "CHI",
+                "age": 34,
+                "birth_date": "1991-11-12",
+                "college": "Tulane",
+                "height": "68",
+                "weight": "173",
+                "years_exp": 12,
                 "status": "Active",
                 "injury_status": null,
-                "search_rank": 490
+                "search_rank": 190
             },
             {
                 "player_id": "2133",
@@ -5757,7 +5757,7 @@ window.__STATIC_DATA__ = {
                 "weight": "192",
                 "years_exp": 2,
                 "status": "Active",
-                "injury_status": "Questionable",
+                "injury_status": null,
                 "search_rank": 165
             },
             {
@@ -7247,7 +7247,7 @@ window.__STATIC_DATA__ = {
                 "weight": "243",
                 "years_exp": 2,
                 "status": "Active",
-                "injury_status": null,
+                "injury_status": "Out",
                 "search_rank": 576
             },
             {
@@ -8347,7 +8347,7 @@ window.__STATIC_DATA__ = {
                 "weight": "235",
                 "years_exp": 1,
                 "status": "Active",
-                "injury_status": null,
+                "injury_status": "Out",
                 "search_rank": 503
             },
             {
@@ -8427,7 +8427,7 @@ window.__STATIC_DATA__ = {
                 "weight": "228",
                 "years_exp": 0,
                 "status": "Active",
-                "injury_status": null,
+                "injury_status": "Out",
                 "search_rank": 359
             },
             {
@@ -8491,7 +8491,7 @@ window.__STATIC_DATA__ = {
                 "weight": "232",
                 "years_exp": 0,
                 "status": "Active",
-                "injury_status": null,
+                "injury_status": "Out",
                 "search_rank": 643
             },
             {
@@ -9671,7 +9671,7 @@ window.__STATIC_DATA__ = {
                 "weight": "220",
                 "years_exp": 3,
                 "status": "Active",
-                "injury_status": null,
+                "injury_status": "Out",
                 "search_rank": 180
             }
         ]
@@ -10045,7 +10045,7 @@ window.__STATIC_DATA__ = {
                 "weight": "225",
                 "years_exp": 6,
                 "status": "Active",
-                "injury_status": "Doubtful",
+                "injury_status": "Out",
                 "search_rank": 237
             },
             {
@@ -10061,7 +10061,7 @@ window.__STATIC_DATA__ = {
                 "weight": "215",
                 "years_exp": 6,
                 "status": "Active",
-                "injury_status": "Questionable",
+                "injury_status": null,
                 "search_rank": 15
             },
             {
@@ -10109,7 +10109,7 @@ window.__STATIC_DATA__ = {
                 "weight": "187",
                 "years_exp": 4,
                 "status": "Active",
-                "injury_status": "Questionable",
+                "injury_status": null,
                 "search_rank": 29
             },
             {
@@ -11668,6 +11668,34 @@ window.__STATIC_DATA__ = {
     }
   ],
   "transactions": [
+    {
+        "season": "2026",
+        "week": 2,
+        "created": "Sep 20, 2026 • 8:02 AM PT",
+        "transaction_id": "1407430787984277504",
+        "type": "free_agent",
+        "status": "complete",
+        "teams": [
+            "ddhk"
+        ],
+        "added": [
+            {
+                "name": "Cairo Santos",
+                "position": "K",
+                "team": "CHI"
+            }
+        ],
+        "dropped": [
+            {
+                "name": "Joe Flacco",
+                "position": "QB",
+                "team": "CIN"
+            }
+        ],
+        "faab": 0,
+        "waiver_bid": 0,
+        "notes": null
+    },
     {
         "season": "2026",
         "week": 2,
