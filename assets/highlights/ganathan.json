@@ -147,7 +147,9 @@
       "faves": 0,
       "secs": 0,
       "poster": "https://espnmedia-cdn.akamaized.net/espn/media/common/2026/0913/dm_260913_eagles_td_2_pub2tag/dm_260913_eagles_td_2_pub2tag.jpg",
-      "video": "https://espnmedia-cdn.akamaized.net/espn/media/16x9/2026/0913/dm_260913_eagles_td_2_pub2tag/dm_260913_eagles_td_2_pub2tag.mp4"
+      "video": "https://espnmedia-cdn.akamaized.net/espn/media/16x9/2026/0913/dm_260913_eagles_td_2_pub2tag/dm_260913_eagles_td_2_pub2tag.mp4",
+      "game_time": "Q2 01:55",
+      "kickoff": "9/20/26, 13:02:50"
     },
     {
       "url": "https://www.espn.com/video/clip/_/id/49934558/dallas-goedert-takes-42-yards-house-eagles",
@@ -160,7 +162,9 @@
       "faves": 0,
       "secs": 0,
       "poster": "https://espnmedia-cdn.akamaized.net/espn/media/common/2026/0913/9690d4f6268c45c89cbb5ce0db25824d1199/9690d4f6268c45c89cbb5ce0db25824d1199.jpg",
-      "video": "https://espnmedia-cdn.akamaized.net/espn/media/16x9/wsc/2026/0913/9690d4f6-268c-45c8-9cbb-5ce0db25824d/9690d4f6-268c-45c8-9cbb-5ce0db25824d.mp4"
+      "video": "https://espnmedia-cdn.akamaized.net/espn/media/16x9/wsc/2026/0913/9690d4f6-268c-45c8-9cbb-5ce0db25824d/9690d4f6-268c-45c8-9cbb-5ce0db25824d.mp4",
+      "game_time": "Q4 00:14",
+      "kickoff": "9/20/26, 13:02:50"
     },
     {
       "url": "https://x.com/NFLTDsVideos/status/2099202884696957344",
