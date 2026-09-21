@@ -29,7 +29,9 @@
       "faves": 0,
       "secs": 0,
       "poster": "https://espnmedia-cdn.akamaized.net/espn/media/common/2026/0914/3919aa7dcec94567b29eaeb27f73d5721394/3919aa7dcec94567b29eaeb27f73d5721394.jpg",
-      "video": "https://espnmedia-cdn.akamaized.net/espn/media/16x9/wsc/2026/0915/3919aa7d-cec9-4567-b29e-aeb27f73d572/3919aa7d-cec9-4567-b29e-aeb27f73d572.mp4"
+      "video": "https://espnmedia-cdn.akamaized.net/espn/media/16x9/wsc/2026/0915/3919aa7d-cec9-4567-b29e-aeb27f73d572/3919aa7d-cec9-4567-b29e-aeb27f73d572.mp4",
+      "game_time": "Q1 04:40",
+      "kickoff": "9/20/26, 20:22:42"
     }
   ]
 }
