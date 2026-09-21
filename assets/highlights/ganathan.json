@@ -1,6 +1,6 @@
 {
   "team": "ganathan",
-  "updated": "2026-09-20",
+  "updated": "2026-09-21",
   "note": "Curated: X has no public search API, so posts are collected by hand and matched to rosters by this script.",
   "tweets": [
     {
@@ -107,92 +107,6 @@
       "video": "https://video.twimg.com/ext_tw_video/2099275270783971340/pu/vid/avc1/1280x720/zE1jxgNQfKeqw8WB.mp4?tag=12",
       "game_time": "Q2 06:35",
       "kickoff": "9/13/26, 16:25:25"
-    },
-    {
-      "url": "https://www.espn.com/video/clip/_/id/49930626/josh-allen-dj-moore-link-td-late-1st-half",
-      "player": "DJ Moore & Josh Allen",
-      "meta": "WR \u00b7 BUF",
-      "date": "2026-09-13",
-      "author": "ESPN",
-      "text": "Josh Allen, DJ Moore link up for a TD late in the 1st half",
-      "verified": true,
-      "faves": 0,
-      "secs": 0,
-      "poster": "https://espnmedia-cdn.akamaized.net/espn/media/common/2026/0913/eedd80e49d934580adca40dc46773c7c907/eedd80e49d934580adca40dc46773c7c907.jpg",
-      "video": "https://espnmedia-cdn.akamaized.net/espn/media/16x9/wsc/2026/0913/eedd80e4-9d93-4580-adca-40dc46773c7c/eedd80e4-9d93-4580-adca-40dc46773c7c.mp4"
-    },
-    {
-      "url": "https://www.espn.com/video/clip/_/id/49933604/jalen-hurts-hits-dallas-goedert-eagles-first-td-season",
-      "player": "Jalen Hurts",
-      "meta": "QB \u00b7 PHI",
-      "date": "2026-09-13",
-      "author": "ESPN",
-      "text": "Jalen Hurts hits Dallas Goedert for Eagles first TD of season",
-      "verified": true,
-      "faves": 0,
-      "secs": 0,
-      "poster": "https://espnmedia-cdn.akamaized.net/espn/media/common/2026/0913/dm_260913_eagles_td_1/dm_260913_eagles_td_1.jpg",
-      "video": "https://espnmedia-cdn.akamaized.net/espn/media/16x9/2026/0913/dm_260913_eagles_td_1/dm_260913_eagles_td_1.mp4",
-      "game_time": "Q4 06:12",
-      "kickoff": "9/13/26, 16:25:25"
-    },
-    {
-      "url": "https://www.espn.com/video/clip/_/id/49933851/jalen-hurts-fires-dot-2nd-td-game",
-      "player": "Jalen Hurts",
-      "meta": "QB \u00b7 PHI",
-      "date": "2026-09-13",
-      "author": "ESPN",
-      "text": "Jalen Hurts fires a dot for his 2nd TD of the game",
-      "verified": true,
-      "faves": 0,
-      "secs": 0,
-      "poster": "https://espnmedia-cdn.akamaized.net/espn/media/common/2026/0913/dm_260913_eagles_td_2_pub2tag/dm_260913_eagles_td_2_pub2tag.jpg",
-      "video": "https://espnmedia-cdn.akamaized.net/espn/media/16x9/2026/0913/dm_260913_eagles_td_2_pub2tag/dm_260913_eagles_td_2_pub2tag.mp4",
-      "game_time": "Q2 01:55",
-      "kickoff": "9/20/26, 13:02:50"
-    },
-    {
-      "url": "https://www.espn.com/video/clip/_/id/49934558/dallas-goedert-takes-42-yards-house-eagles",
-      "player": "Jalen Hurts",
-      "meta": "QB \u00b7 PHI",
-      "date": "2026-09-13",
-      "author": "ESPN",
-      "text": "Dallas Goedert takes it 42 yards to the house for the Eagles. Dallas Goedert takes it 42 yards to the house for the Eagles ",
-      "verified": true,
-      "faves": 0,
-      "secs": 0,
-      "poster": "https://espnmedia-cdn.akamaized.net/espn/media/common/2026/0913/9690d4f6268c45c89cbb5ce0db25824d1199/9690d4f6268c45c89cbb5ce0db25824d1199.jpg",
-      "video": "https://espnmedia-cdn.akamaized.net/espn/media/16x9/wsc/2026/0913/9690d4f6-268c-45c8-9cbb-5ce0db25824d/9690d4f6-268c-45c8-9cbb-5ce0db25824d.mp4",
-      "game_time": "Q4 00:14",
-      "kickoff": "9/20/26, 13:02:50"
-    },
-    {
-      "url": "https://x.com/NFLTDsVideos/status/2099202884696957344",
-      "player": "DJ Moore & Josh Allen",
-      "meta": "WR \u00b7 BUF",
-      "date": "2026-09-13",
-      "author": "NFL Touchdown Videos",
-      "text": "Josh Allen (3) to DJ Moore (1) Buffalo Bills 43 yards pic.twitter.com/nQmAYuu7so \u2014 NFL Touchdown Videos (@NFLTDsVideos) September 13, 2026",
-      "verified": true,
-      "faves": 0,
-      "secs": 0,
-      "poster": "https://pbs.twimg.com/amplify_video_thumb/2099202238619295744/img/NBO3_nnM2dXDP8vG.jpg?name=orig",
-      "video": "https://video.twimg.com/amplify_video/2099202238619295744/vid/avc1/1920x1080/p0KPJCo4B4NAvNZb.mp4?tag=29"
-    },
-    {
-      "url": "https://x.com/NFLTDsVideos/status/2099228585068290406",
-      "player": "Nico Collins",
-      "meta": "WR \u00b7 HOU",
-      "date": "2026-09-13",
-      "author": "NFL Touchdown Videos",
-      "text": "CJ Stroud (1) to Nico Collins (1) Houston Texans 12 yards pic.twitter.com/63BKOjl5yq \u2014 NFL Touchdown Videos (@NFLTDsVideos) September 13, 2026",
-      "verified": true,
-      "faves": 0,
-      "secs": 0,
-      "poster": "https://pbs.twimg.com/amplify_video_thumb/2099204105990475776/img/xMlEC3gpt_LIkapz.jpg?name=orig",
-      "video": "https://video.twimg.com/amplify_video/2099204105990475776/vid/avc1/1920x1080/Ya3URVmIkw9tiG7Q.mp4?tag=29",
-      "game_time": "Q2 00:31",
-      "kickoff": "9/13/26, 13:04:46"
     }
   ]
 }
