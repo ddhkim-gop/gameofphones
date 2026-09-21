@@ -5639,7 +5639,7 @@ window.__STATIC_DATA__ = {
                 "weight": "211",
                 "years_exp": 4,
                 "status": "Active",
-                "injury_status": null,
+                "injury_status": "Out",
                 "search_rank": 94
             },
             {
@@ -6428,7 +6428,7 @@ window.__STATIC_DATA__ = {
                 "name": "Demarcus Robinson",
                 "position": "WR",
                 "team": "SF",
-                "age": 31,
+                "age": 32,
                 "birth_date": "1994-09-21",
                 "college": "Florida",
                 "height": "73",
