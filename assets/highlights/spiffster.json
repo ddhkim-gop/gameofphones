@@ -1,6 +1,50 @@
 {
   "team": "spiffster",
-  "updated": "2026-09-28",
+  "updated": "2026-09-22",
   "note": "Curated: X has no public search API, so posts are collected by hand and matched to rosters by this script.",
-  "tweets": []
+  "tweets": [
+    {
+      "url": "https://www.espn.com/video/clip/_/id/50000601/michael-penix-jr-start-falcons-vs-packers",
+      "player": "Michael Penix",
+      "meta": "QB \u00b7 ATL",
+      "date": "2026-09-21",
+      "author": "ESPN",
+      "text": "Adam Schefter: Michael Penix Jr. will start for the Falcons vs. the Packers",
+      "verified": true,
+      "faves": 0,
+      "secs": 0,
+      "poster": "https://espnmedia-cdn.akamaized.net/espn/media/common/2026/0921/ss_20260921_165921047_3670367/ss_20260921_165921047_3670367.jpg",
+      "video": "https://espnmedia-cdn.akamaized.net/espn/media/16x9/2026/0921/ss_20260921_165921047_3670367/ss_20260921_165921047_3670367.mp4"
+    },
+    {
+      "url": "https://www.espn.com/video/clip/_/id/49969155/josh-allen-racks-4th-td-half-dart-dalton-kincaid",
+      "player": "Dalton Kincaid",
+      "meta": "TE \u00b7 BUF",
+      "date": "2026-09-18",
+      "author": "ESPN",
+      "text": "Josh Allen racks up 4th TD of half with dart to Dalton Kincaid",
+      "verified": true,
+      "faves": 0,
+      "secs": 0,
+      "poster": "https://espnmedia-cdn.akamaized.net/espn/media/common/2026/0918/30ad4de3b0624cb1a4105450c7e2d8d94/30ad4de3b0624cb1a4105450c7e2d8d94.jpg",
+      "video": "https://espnmedia-cdn.akamaized.net/espn/media/16x9/wsc/2026/0918/30ad4de3-b062-4cb1-a410-5450c7e2d8d9/30ad4de3-b062-4cb1-a410-5450c7e2d8d9.mp4",
+      "game_time": "Q2 02:56",
+      "kickoff": "9/17/26, 20:17:35"
+    },
+    {
+      "url": "https://www.espn.com/video/clip/_/id/49945388/rashee-rice-breaks-multiple-tackles-en-route-chiefs-td",
+      "player": "Rashee Rice",
+      "meta": "WR \u00b7 KC",
+      "date": "2026-09-15",
+      "author": "ESPN",
+      "text": "Rashee Rice breaks multiple tackles en route to Chiefs TD",
+      "verified": true,
+      "faves": 0,
+      "secs": 0,
+      "poster": "https://espnmedia-cdn.akamaized.net/espn/media/common/2026/0914/41443ef7093647b7812736357855922f1406/41443ef7093647b7812736357855922f1406.jpg",
+      "video": "https://espnmedia-cdn.akamaized.net/espn/media/16x9/wsc/2026/0915/41443ef7-0936-47b7-8127-36357855922f/41443ef7-0936-47b7-8127-36357855922f.mp4",
+      "game_time": "Q2 01:46",
+      "kickoff": "9/14/26, 20:16:12"
+    }
+  ]
 }

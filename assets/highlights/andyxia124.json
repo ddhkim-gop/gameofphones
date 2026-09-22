@@ -1,6 +1,50 @@
 {
   "team": "andyxia124",
-  "updated": "2026-09-28",
+  "updated": "2026-09-22",
   "note": "Curated: X has no public search API, so posts are collected by hand and matched to rosters by this script.",
-  "tweets": []
+  "tweets": [
+    {
+      "url": "https://www.espn.com/video/clip/_/id/49991074/lamar-jackson-rashod-bateman-connect-ravens-td",
+      "player": "Lamar Jackson",
+      "meta": "QB \u00b7 BAL",
+      "date": "2026-09-20",
+      "author": "ESPN",
+      "text": "Lamar Jackson and Rashod Bateman connect for a Ravens TD",
+      "verified": true,
+      "faves": 0,
+      "secs": 0,
+      "poster": "https://espnmedia-cdn.akamaized.net/espn/media/common/wsc/2026/0920/f69b392c-2409-44ae-a584-ad600fb0d8e4/f69b392c-2409-44ae-a584-ad600fb0d8e4.jpg",
+      "video": "https://espnmedia-cdn.akamaized.net/espn/media/16x9/wsc/2026/0920/f69b392c-2409-44ae-a584-ad600fb0d8e4/f69b392c-2409-44ae-a584-ad600fb0d8e4.mp4",
+      "game_time": "Q1 08:25",
+      "kickoff": "9/13/26, 13:05:06"
+    },
+    {
+      "url": "https://www.espn.com/video/clip/_/id/49969078/jared-goff-connects-jahmyr-gibbs-11-yard-td",
+      "player": "Jahmyr Gibbs",
+      "meta": "RB \u00b7 DET",
+      "date": "2026-09-18",
+      "author": "ESPN",
+      "text": "Jared Goff connects with Jahmyr Gibbs for 11-yard TD",
+      "verified": true,
+      "faves": 0,
+      "secs": 0,
+      "poster": "https://espnmedia-cdn.akamaized.net/espn/media/common/2026/0918/51801c5d28964af795ae9752133c6e711/51801c5d28964af795ae9752133c6e711.jpg",
+      "video": "https://espnmedia-cdn.akamaized.net/espn/media/16x9/wsc/2026/0918/51801c5d-2896-4af7-95ae-9752133c6e71/51801c5d-2896-4af7-95ae-9752133c6e71.mp4",
+      "game_time": "Q1 03:41",
+      "kickoff": "9/13/26, 13:05:29"
+    },
+    {
+      "url": "https://www.espn.com/video/clip/_/id/49945880/chiefs-kingdom-taylor-swift-loving-travis-kelce-big-1st-down",
+      "player": "Travis Kelce",
+      "meta": "TE \u00b7 KC",
+      "date": "2026-09-15",
+      "author": "ESPN",
+      "text": "Chiefs Kingdom and Taylor Swift are loving Travis Kelce's big 1st down",
+      "verified": true,
+      "faves": 0,
+      "secs": 0,
+      "poster": "https://espnmedia-cdn.akamaized.net/espn/media/common/2026/0914/3919aa7dcec94567b29eaeb27f73d5721394/3919aa7dcec94567b29eaeb27f73d5721394.jpg",
+      "video": "https://espnmedia-cdn.akamaized.net/espn/media/16x9/wsc/2026/0915/3919aa7d-cec9-4567-b29e-aeb27f73d572/3919aa7d-cec9-4567-b29e-aeb27f73d572.mp4"
+    }
+  ]
 }
