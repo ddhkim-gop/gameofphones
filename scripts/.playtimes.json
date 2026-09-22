@@ -1,4 +1,30 @@
 {
+ "adams#d": [
+  {
+   "clock": "00:19",
+   "date": "2026-09-21",
+   "game": "2026_02_NYG_LA",
+   "gsr": 2719,
+   "kind": "rec TD",
+   "passer": "M.Stafford",
+   "pos_team": "LA",
+   "q": "1",
+   "start": "9/21/26, 20:16:38",
+   "week": "2"
+  },
+  {
+   "clock": "06:25",
+   "date": "2026-09-21",
+   "game": "2026_02_NYG_LA",
+   "gsr": 1285,
+   "kind": "rec TD",
+   "passer": "M.Stafford",
+   "pos_team": "LA",
+   "q": "3",
+   "start": "9/21/26, 20:16:38",
+   "week": "2"
+  }
+ ],
  "adkins#n": [
   {
    "clock": "11:53",
@@ -956,6 +982,20 @@
    "pos_team": "DAL",
    "q": "3",
    "start": "9/20/26, 16:25:36",
+   "week": "2"
+  }
+ ],
+ "ferguson#t": [
+  {
+   "clock": "09:02",
+   "date": "2026-09-21",
+   "game": "2026_02_NYG_LA",
+   "gsr": 542,
+   "kind": "rec TD",
+   "passer": "M.Stafford",
+   "pos_team": "LA",
+   "q": "4",
+   "start": "9/21/26, 20:16:38",
    "week": "2"
   }
  ],
@@ -3315,6 +3355,48 @@
    "week": "2"
   }
  ],
+ "stafford#m": [
+  {
+   "clock": "00:19",
+   "date": "2026-09-21",
+   "game": "2026_02_NYG_LA",
+   "gsr": 2719,
+   "kind": "pass TD",
+   "q": "1",
+   "start": "9/21/26, 20:16:38",
+   "week": "2"
+  },
+  {
+   "clock": "11:13",
+   "date": "2026-09-21",
+   "game": "2026_02_NYG_LA",
+   "gsr": 2473,
+   "kind": "pass TD",
+   "q": "2",
+   "start": "9/21/26, 20:16:38",
+   "week": "2"
+  },
+  {
+   "clock": "06:25",
+   "date": "2026-09-21",
+   "game": "2026_02_NYG_LA",
+   "gsr": 1285,
+   "kind": "pass TD",
+   "q": "3",
+   "start": "9/21/26, 20:16:38",
+   "week": "2"
+  },
+  {
+   "clock": "09:02",
+   "date": "2026-09-21",
+   "game": "2026_02_NYG_LA",
+   "gsr": 542,
+   "kind": "pass TD",
+   "q": "4",
+   "start": "9/21/26, 20:16:38",
+   "week": "2"
+  }
+ ],
  "stbrown#a": [
   {
    "clock": "08:59",
@@ -4011,6 +4093,18 @@
    "q": "2",
    "start": "9/10/26, 20:37:25",
    "week": "1"
+  },
+  {
+   "clock": "11:13",
+   "date": "2026-09-21",
+   "game": "2026_02_NYG_LA",
+   "gsr": 2473,
+   "kind": "rec TD",
+   "passer": "M.Stafford",
+   "pos_team": "LA",
+   "q": "2",
+   "start": "9/21/26, 20:16:38",
+   "week": "2"
   }
  ],
  "willis#m": [
@@ -4132,6 +4226,28 @@
    "kind": "pass TD",
    "q": "3",
    "start": "9/20/26, 13:02:57",
+   "week": "2"
+  }
+ ],
+ "zvada#d": [
+  {
+   "clock": "00:29",
+   "date": "2026-09-21",
+   "game": "2026_02_NYG_LA",
+   "gsr": 1829,
+   "kind": "FG 24yd",
+   "q": "2",
+   "start": "9/21/26, 20:16:38",
+   "week": "2"
+  },
+  {
+   "clock": "03:55",
+   "date": "2026-09-21",
+   "game": "2026_02_NYG_LA",
+   "gsr": 1135,
+   "kind": "FG 52yd",
+   "q": "3",
+   "start": "9/21/26, 20:16:38",
    "week": "2"
   }
  ]
