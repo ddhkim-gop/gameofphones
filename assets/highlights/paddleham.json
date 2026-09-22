@@ -1,37 +1,6 @@
 {
   "team": "paddleham",
-  "updated": "2026-09-21",
+  "updated": "2026-09-22",
   "note": "Curated: X has no public search API, so posts are collected by hand and matched to rosters by this script.",
-  "tweets": [
-    {
-      "url": "https://x.com/NFLTDsVideos/status/2099556452893429878",
-      "player": "Omarion Hampton",
-      "meta": "RB \u00b7 LAC",
-      "date": "2026-09-14",
-      "author": "NFL Touchdown Videos",
-      "text": "Omarion Hampton (1) Los Angeles Chargers 9 yards pic.twitter.com/au5xyd0Yi4 \u2014 NFL Touchdown Videos (@NFLTDsVideos) September 14, 2026",
-      "verified": true,
-      "faves": 0,
-      "secs": 0,
-      "poster": "https://pbs.twimg.com/media/HSH-f2JbUAAMZDu.jpg?name=orig",
-      "video": "https://video.twimg.com/amplify_video/2099238577544773632/vid/avc1/1920x1080/-q3sMr2YiRmuXKKD.mp4?tag=29",
-      "game_time": "Q1 04:29",
-      "kickoff": "9/13/26, 16:25:43"
-    },
-    {
-      "url": "https://x.com/NFLTDsVideos/status/2099582800961618230",
-      "player": "Antonio Williams",
-      "meta": "WR \u00b7 WAS",
-      "date": "2026-09-14",
-      "author": "NFL Touchdown Videos",
-      "text": "Jayden Daniels (2) to Antonio Williams (1) Washington Commanders 2 yards pic.twitter.com/ZMI2XoUxdV \u2014 NFL Touchdown Videos (@NFLTDsVideos) September 14, 2026",
-      "verified": true,
-      "faves": 0,
-      "secs": 0,
-      "poster": "https://pbs.twimg.com/amplify_video_thumb/2099279538626904064/img/YSOM27_lxmXuXq6S.jpg?name=orig",
-      "video": "https://video.twimg.com/amplify_video/2099279538626904064/vid/avc1/1920x1080/somaiFIPg2SEgBn8.mp4?tag=29",
-      "game_time": "Q4 01:05",
-      "kickoff": "9/13/26, 16:25:25"
-    }
-  ]
+  "tweets": []
 }

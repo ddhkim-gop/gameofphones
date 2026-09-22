@@ -1,6 +1,6 @@
 {
   "team": "ngman",
-  "updated": "2026-09-21",
+  "updated": "2026-09-22",
   "note": "Curated: X has no public search API, so posts are collected by hand and matched to rosters by this script.",
   "tweets": [
     {
@@ -47,96 +47,6 @@
       "video": "https://espnmedia-cdn.akamaized.net/espn/media/16x9/wsc/2026/0915/3919aa7d-cec9-4567-b29e-aeb27f73d572/3919aa7d-cec9-4567-b29e-aeb27f73d572.mp4",
       "game_time": "Q1 02:03",
       "kickoff": "9/13/26, 13:04:50"
-    },
-    {
-      "url": "https://www.espn.com/video/clip/_/id/49935777/dak-prescott-finds-ceedee-lamb-cowboys-td",
-      "player": "Dak Prescott",
-      "meta": "QB \u00b7 DAL",
-      "date": "2026-09-14",
-      "author": "ESPN",
-      "text": "Dak Prescott finds CeeDee Lamb for a Cowboys TD",
-      "verified": true,
-      "faves": 0,
-      "secs": 0,
-      "poster": "https://espnmedia-cdn.akamaized.net/espn/media/common/2026/0913/0a31419a11e741e0938ab4b5f385baa61419/0a31419a11e741e0938ab4b5f385baa61419.jpg",
-      "video": "https://espnmedia-cdn.akamaized.net/espn/media/16x9/wsc/2026/0914/0a31419a-11e7-41e0-938a-b4b5f385baa6/0a31419a-11e7-41e0-938a-b4b5f385baa6.mp4",
-      "game_time": "Q2 05:48",
-      "kickoff": "9/13/26, 20:24:49"
-    },
-    {
-      "url": "https://x.com/NFLTDsVideos/status/2099556401798393880",
-      "player": "D'Andre Swift",
-      "meta": "RB \u00b7 CHI",
-      "date": "2026-09-14",
-      "author": "NFL Touchdown Videos",
-      "text": "D\u2019Andre Swift (3) Chicago Bears 28 yards pic.twitter.com/9bUpaXGBEZ \u2014 NFL Touchdown Videos (@NFLTDsVideos) September 14, 2026",
-      "verified": true,
-      "faves": 0,
-      "secs": 0,
-      "poster": "https://pbs.twimg.com/amplify_video_thumb/2099233712085073920/img/6csJI616W5WTWDcL.jpg?name=orig",
-      "video": "https://video.twimg.com/amplify_video/2099233712085073920/vid/avc1/1920x1080/bDUCGMLNLIIbPhNK.mp4?tag=29",
-      "game_time": "Q3 03:08",
-      "kickoff": "9/13/26, 13:04:50"
-    },
-    {
-      "url": "https://x.com/NFLTDsVideos/status/2099569267490394462",
-      "player": "Jack Bech",
-      "meta": "WR \u00b7 LV",
-      "date": "2026-09-14",
-      "author": "NFL Touchdown Videos",
-      "text": "Kirk Cousins (1) to Jack Bech (1) Las Vegas Raiders 16 yards pic.twitter.com/hEq8w7Lbhu \u2014 NFL Touchdown Videos (@NFLTDsVideos) September 14, 2026",
-      "verified": true,
-      "faves": 0,
-      "secs": 0,
-      "poster": "https://pbs.twimg.com/amplify_video_thumb/2099238723888300032/img/U_hqI7oCnqVXWmgx.jpg?name=orig",
-      "video": "https://video.twimg.com/amplify_video/2099238723888300032/vid/avc1/1920x1080/rSjDsnks7lVloTSE.mp4?tag=29",
-      "game_time": "Q1 01:38",
-      "kickoff": "9/13/26, 16:25:35"
-    },
-    {
-      "url": "https://x.com/NFLTDsVideos/status/2099570031742869734",
-      "player": "Christian Watson",
-      "meta": "WR \u00b7 GB",
-      "date": "2026-09-14",
-      "author": "NFL Touchdown Videos",
-      "text": "Jordan Love (2) to Christian Watson (2) Green Bay Packers 2 yards pic.twitter.com/JRK7bR7WRj \u2014 NFL Touchdown Videos (@NFLTDsVideos) September 14, 2026",
-      "verified": true,
-      "faves": 0,
-      "secs": 0,
-      "poster": "https://pbs.twimg.com/amplify_video_thumb/2099256211145465856/img/sbFhyc9h1kdTW-tJ.jpg?name=orig",
-      "video": "https://video.twimg.com/amplify_video/2099256211145465856/vid/avc1/1920x1080/1nD0CKmmhq6uMUs6.mp4?tag=29",
-      "game_time": "Q1 07:54",
-      "kickoff": "9/13/26, 16:25:28"
-    },
-    {
-      "url": "https://x.com/NFLTDsVideos/status/2099582962492666322",
-      "player": "Dak Prescott",
-      "meta": "QB \u00b7 DAL",
-      "date": "2026-09-14",
-      "author": "NFL Touchdown Videos",
-      "text": "Dak Prescott (1) to CeeDee Lamb (1) Dallas Cowboys 1 yard pic.twitter.com/iPJ3XzuJ0P \u2014 NFL Touchdown Videos (@NFLTDsVideos) September 14, 2026",
-      "verified": true,
-      "faves": 0,
-      "secs": 0,
-      "poster": "https://pbs.twimg.com/amplify_video_thumb/2099307414025572353/img/CTYp5yW7ejSMmQ2S.jpg?name=orig",
-      "video": "https://video.twimg.com/amplify_video/2099307414025572353/vid/avc1/1920x1080/McBnw9tZ5YeczreF.mp4?tag=29",
-      "game_time": "Q4 05:26",
-      "kickoff": "9/13/26, 20:24:49"
-    },
-    {
-      "url": "https://x.com/NFLTDsVideos/status/2099628952616681519",
-      "player": "Dak Prescott",
-      "meta": "QB \u00b7 DAL",
-      "date": "2026-09-14",
-      "author": "NFL Touchdown Videos",
-      "text": "Dak Prescott (2) to Javonte Williams (2) Dallas Cowboys 17 yards pic.twitter.com/bUQ7L0ev4K \u2014 NFL Touchdown Videos (@NFLTDsVideos) September 14, 2026",
-      "verified": true,
-      "faves": 0,
-      "secs": 0,
-      "poster": "https://pbs.twimg.com/amplify_video_thumb/2099335144775843840/img/m8RYjuKfLxelr46v.jpg?name=orig",
-      "video": "https://video.twimg.com/amplify_video/2099335144775843840/vid/avc1/1920x1080/I4T6paUlzQgMQJzA.mp4?tag=29",
-      "game_time": "Q1 10:04",
-      "kickoff": "9/20/26, 16:25:36"
     }
   ]
 }

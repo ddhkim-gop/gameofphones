@@ -1,6 +1,6 @@
 {
   "team": "NoSkilzPak",
-  "updated": "2026-09-21",
+  "updated": "2026-09-22",
   "note": "Curated: X has no public search API, so posts are collected by hand and matched to rosters by this script.",
   "tweets": [
     {
@@ -17,51 +17,6 @@
       "video": "https://espnmedia-cdn.akamaized.net/espn/media/16x9/wsc/2026/0915/b1e3bda8-4516-4f55-96f1-6ea897a8123b/b1e3bda8-4516-4f55-96f1-6ea897a8123b.mp4",
       "game_time": "Q1 03:53",
       "kickoff": "9/14/26, 20:16:12"
-    },
-    {
-      "url": "https://x.com/NFLTDsVideos/status/2099582292024799292",
-      "player": "Jayden Daniels",
-      "meta": "QB \u00b7 WAS",
-      "date": "2026-09-14",
-      "author": "NFL Touchdown Videos",
-      "text": "Jayden Daniels (1) to Stefon Diggs (1) Washington Commanders 10 yards pic.twitter.com/bIxsdxm0mv \u2014 NFL Touchdown Videos (@NFLTDsVideos) September 14, 2026",
-      "verified": true,
-      "faves": 0,
-      "secs": 0,
-      "poster": "https://pbs.twimg.com/amplify_video_thumb/2099272326369927171/img/wARoQ9XOE2mZkp5H.jpg?name=orig",
-      "video": "https://video.twimg.com/amplify_video/2099272326369927171/vid/avc1/1920x1080/Kz4-BRWIJZymUxNh.mp4?tag=29",
-      "game_time": "Q4 10:04",
-      "kickoff": "9/13/26, 16:25:25"
-    },
-    {
-      "url": "https://x.com/NFLTDsVideos/status/2099582800961618230",
-      "player": "Jayden Daniels",
-      "meta": "QB \u00b7 WAS",
-      "date": "2026-09-14",
-      "author": "NFL Touchdown Videos",
-      "text": "Jayden Daniels (2) to Antonio Williams (1) Washington Commanders 2 yards pic.twitter.com/ZMI2XoUxdV \u2014 NFL Touchdown Videos (@NFLTDsVideos) September 14, 2026",
-      "verified": true,
-      "faves": 0,
-      "secs": 0,
-      "poster": "https://pbs.twimg.com/amplify_video_thumb/2099279538626904064/img/YSOM27_lxmXuXq6S.jpg?name=orig",
-      "video": "https://video.twimg.com/amplify_video/2099279538626904064/vid/avc1/1920x1080/somaiFIPg2SEgBn8.mp4?tag=29",
-      "game_time": "Q4 01:05",
-      "kickoff": "9/13/26, 16:25:25"
-    },
-    {
-      "url": "https://x.com/NFLTDsVideos/status/2099628858014155062",
-      "player": "Devin Singletary",
-      "meta": "RB \u00b7 NYG",
-      "date": "2026-09-14",
-      "author": "NFL Touchdown Videos",
-      "text": "Jaxson Dart (3) to Devin Singletary (1) New York Giants 9 yards pic.twitter.com/QNoiSNgNG8 \u2014 NFL Touchdown Videos (@NFLTDsVideos) September 14, 2026",
-      "verified": true,
-      "faves": 0,
-      "secs": 0,
-      "poster": "https://pbs.twimg.com/amplify_video_thumb/2099331739068121088/img/XGj19zpsd5m9Rjjn.jpg?name=orig",
-      "video": "https://video.twimg.com/amplify_video/2099331739068121088/vid/avc1/1920x1080/sa4aHp0qWmpIK8Wp.mp4?tag=29",
-      "game_time": "Q4 07:31",
-      "kickoff": "9/13/26, 20:24:49"
     }
   ]
 }

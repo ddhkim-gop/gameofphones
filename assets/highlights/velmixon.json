@@ -1,13 +1,13 @@
 {
   "team": "velmixon",
-  "updated": "2026-09-21",
+  "updated": "2026-09-22",
   "note": "Curated: X has no public search API, so posts are collected by hand and matched to rosters by this script.",
   "tweets": [
     {
       "url": "https://x.com/rannyxkmj/status/2097884866348216770",
       "player": "Eli Raridon",
       "meta": "TE \u00b7 NE",
-      "date": "2026-09-21",
+      "date": "2026-09-22",
       "author": "rannyxkmj",
       "text": "Eli Raridon & Drake Maye - 2-yard TD catch in NFL debut, first TD of the 2026 season vs SEA (NE #82, ref signals TD, NE 0-0 1st & Goal, NBC, watched)",
       "verified": true,
@@ -32,92 +32,6 @@
       "video": "https://espnmedia-cdn.akamaized.net/espn/media/16x9/wsc/2026/0918/30ad4de3-b062-4cb1-a410-5450c7e2d8d9/30ad4de3-b062-4cb1-a410-5450c7e2d8d9.mp4",
       "game_time": "Q2 00:25",
       "kickoff": "9/13/26, 20:24:49"
-    },
-    {
-      "url": "https://www.espn.com/video/clip/_/id/49935268/cam-skattebo-walks-end-zone-giants-td",
-      "player": "Cam Skattebo",
-      "meta": "RB \u00b7 NYG",
-      "date": "2026-09-14",
-      "author": "ESPN",
-      "text": "Cam Skattebo walks into the end zone for a Giants TD",
-      "verified": true,
-      "faves": 0,
-      "secs": 0,
-      "poster": "https://espnmedia-cdn.akamaized.net/espn/media/common/2026/0913/de90c39d0cf44607b0d440a2721233c11418/de90c39d0cf44607b0d440a2721233c11418.jpg",
-      "video": "https://espnmedia-cdn.akamaized.net/espn/media/16x9/wsc/2026/0914/de90c39d-0cf4-4607-b0d4-40a2721233c1/de90c39d-0cf4-4607-b0d4-40a2721233c1.mp4",
-      "game_time": "Q1 06:45",
-      "kickoff": "9/13/26, 20:24:49"
-    },
-    {
-      "url": "https://www.espn.com/video/clip/_/id/49936112/jaxson-dart-finds-wide-open-isaiah-likely-give-giants-lead",
-      "player": "Jaxson Dart",
-      "meta": "QB \u00b7 NYG",
-      "date": "2026-09-14",
-      "author": "ESPN",
-      "text": "Jaxson Dart finds a wide-open Isaiah Likely to give Giants a lead",
-      "verified": true,
-      "faves": 0,
-      "secs": 0,
-      "poster": "https://espnmedia-cdn.akamaized.net/espn/media/common/2026/0913/7cfbb70f89ad4dff8f0a62700d2f95471422/7cfbb70f89ad4dff8f0a62700d2f95471422.jpg",
-      "video": "https://espnmedia-cdn.akamaized.net/espn/media/16x9/wsc/2026/0914/7cfbb70f-89ad-4dff-8f0a-62700d2f9547/7cfbb70f-89ad-4dff-8f0a-62700d2f9547.mp4",
-      "game_time": "Q3 07:04",
-      "kickoff": "9/13/26, 20:24:49"
-    },
-    {
-      "url": "https://x.com/NFLTDsVideos/status/2099581958590247402",
-      "player": "Ladd McConkey",
-      "meta": "WR \u00b7 LAC",
-      "date": "2026-09-14",
-      "author": "NFL Touchdown Videos",
-      "text": "Justin Herbert (1) to Ladd McConkey (1) Los Angeles Chargers 9 yards pic.twitter.com/3xqocXiFCf \u2014 NFL Touchdown Videos (@NFLTDsVideos) September 14, 2026",
-      "verified": true,
-      "faves": 0,
-      "secs": 0,
-      "poster": "https://pbs.twimg.com/media/HSIUamIakAATVP1.jpg?name=orig",
-      "video": "https://video.twimg.com/amplify_video/2099262491507433472/vid/avc1/1920x1080/UAMfvan4vj-1qGkd.mp4?tag=29",
-      "game_time": "Q3 06:07",
-      "kickoff": "9/13/26, 16:25:43"
-    },
-    {
-      "url": "https://x.com/NFLTDsVideos/status/2099582877297971676",
-      "player": "Cam Skattebo",
-      "meta": "RB \u00b7 NYG",
-      "date": "2026-09-14",
-      "author": "NFL Touchdown Videos",
-      "text": "Cam Skattebo (1) New York Giants 3 yards pic.twitter.com/mrZM0SYgOb \u2014 NFL Touchdown Videos (@NFLTDsVideos) September 14, 2026",
-      "verified": true,
-      "faves": 0,
-      "secs": 0,
-      "poster": "https://pbs.twimg.com/amplify_video_thumb/2099297367342403584/img/fbusd5Xb5ovnAI_X.jpg?name=orig",
-      "video": "https://video.twimg.com/amplify_video/2099297367342403584/vid/avc1/1920x1080/yS94rwTGhcKXsnUX.mp4?tag=29"
-    },
-    {
-      "url": "https://x.com/NFLTDsVideos/status/2099598814940217381",
-      "player": "Jaxson Dart",
-      "meta": "QB \u00b7 NYG",
-      "date": "2026-09-14",
-      "author": "NFL Touchdown Videos",
-      "text": "Jaxson Dart (2) to Isaiah Likely (2) New York Giants 2 yards pic.twitter.com/GOvLG2DweM \u2014 NFL Touchdown Videos (@NFLTDsVideos) September 14, 2026",
-      "verified": true,
-      "faves": 0,
-      "secs": 0,
-      "poster": "https://pbs.twimg.com/amplify_video_thumb/2099321918243688448/img/dELx8WJj6DcQpmkI.jpg?name=orig",
-      "video": "https://video.twimg.com/amplify_video/2099321918243688448/vid/avc1/1920x1080/WiPLCah6rfxdedV0.mp4?tag=29",
-      "game_time": "Q4 07:31",
-      "kickoff": "9/13/26, 20:24:49"
-    },
-    {
-      "url": "https://x.com/NFLTDsVideos/status/2099628858014155062",
-      "player": "Jaxson Dart",
-      "meta": "QB \u00b7 NYG",
-      "date": "2026-09-14",
-      "author": "NFL Touchdown Videos",
-      "text": "Jaxson Dart (3) to Devin Singletary (1) New York Giants 9 yards pic.twitter.com/QNoiSNgNG8 \u2014 NFL Touchdown Videos (@NFLTDsVideos) September 14, 2026",
-      "verified": true,
-      "faves": 0,
-      "secs": 0,
-      "poster": "https://pbs.twimg.com/amplify_video_thumb/2099331739068121088/img/XGj19zpsd5m9Rjjn.jpg?name=orig",
-      "video": "https://video.twimg.com/amplify_video/2099331739068121088/vid/avc1/1920x1080/sa4aHp0qWmpIK8Wp.mp4?tag=29"
     }
   ]
 }

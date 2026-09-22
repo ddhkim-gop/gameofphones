@@ -1,6 +1,6 @@
 {
   "team": "ganathan",
-  "updated": "2026-09-21",
+  "updated": "2026-09-22",
   "note": "Curated: X has no public search API, so posts are collected by hand and matched to rosters by this script.",
   "tweets": [
     {
@@ -77,36 +77,6 @@
       "video": "https://espnmedia-cdn.akamaized.net/espn/media/16x9/wsc/2026/0918/30ad4de3-b062-4cb1-a410-5450c7e2d8d9/30ad4de3-b062-4cb1-a410-5450c7e2d8d9.mp4",
       "game_time": "Q1 09:13",
       "kickoff": "9/17/26, 20:17:35"
-    },
-    {
-      "url": "https://x.com/NFLTDsVideos/status/2099569556561838329",
-      "player": "Jalen Hurts",
-      "meta": "QB \u00b7 PHI",
-      "date": "2026-09-14",
-      "author": "NFL Touchdown Videos",
-      "text": "Jalen Hurts (2) to Dontayvion Wicks (1) Philadelphia Eagles 9 yards pic.twitter.com/FX43X6B3lp \u2014 NFL Touchdown Videos (@NFLTDsVideos) September 14, 2026",
-      "verified": true,
-      "faves": 0,
-      "secs": 0,
-      "poster": "https://pbs.twimg.com/amplify_video_thumb/2099248508138401792/img/t2jlTrHwmTrWkb3J.jpg?name=orig",
-      "video": "https://video.twimg.com/amplify_video/2099248508138401792/vid/avc1/1920x1080/HkGYlzi1s-JcYJP5.mp4?tag=29",
-      "game_time": "Q2 14:17",
-      "kickoff": "9/13/26, 16:25:25"
-    },
-    {
-      "url": "https://x.com/NFLTDsVideos/status/2099582377865445626",
-      "player": "Jalen Hurts",
-      "meta": "QB \u00b7 PHI",
-      "date": "2026-09-14",
-      "author": "NFL Touchdown Videos",
-      "text": "Jalen Hurts (3) to Dallas Goedert (1) Philadelphia Eagles 43 yards pic.twitter.com/40dMYJeNno \u2014 NFL Touchdown Videos (@NFLTDsVideos) September 14, 2026",
-      "verified": true,
-      "faves": 0,
-      "secs": 0,
-      "poster": "https://pbs.twimg.com/ext_tw_video_thumb/2099275270783971340/pu/img/ga0Tp3LiJ2gw_-dm.jpg?name=orig",
-      "video": "https://video.twimg.com/ext_tw_video/2099275270783971340/pu/vid/avc1/1280x720/zE1jxgNQfKeqw8WB.mp4?tag=12",
-      "game_time": "Q2 06:35",
-      "kickoff": "9/13/26, 16:25:25"
     }
   ]
 }
