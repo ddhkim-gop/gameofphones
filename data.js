@@ -9926,7 +9926,7 @@ window.__STATIC_DATA__ = {
                 "name": "KC Concepcion",
                 "position": "WR",
                 "team": "CLE",
-                "age": 21,
+                "age": 22,
                 "birth_date": "2004-09-23",
                 "college": "Texas A&M",
                 "height": "72",

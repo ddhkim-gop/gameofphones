@@ -1,22 +1,6 @@
 {
   "team": "NoSkilzPak",
-  "updated": "2026-09-22",
+  "updated": "2026-09-23",
   "note": "Curated: X has no public search API, so posts are collected by hand and matched to rosters by this script.",
-  "tweets": [
-    {
-      "url": "https://www.espn.com/video/clip/_/id/49944961/bo-nix-dots-evan-engram-put-broncos-board",
-      "player": "Evan Engram",
-      "meta": "TE \u00b7 DEN",
-      "date": "2026-09-15",
-      "author": "ESPN",
-      "text": "Bo Nix dots Evan Engram to put the Broncos on the board",
-      "verified": true,
-      "faves": 0,
-      "secs": 0,
-      "poster": "https://espnmedia-cdn.akamaized.net/espn/media/common/2026/0914/b1e3bda845164f5596f16ea897a8123b1395/b1e3bda845164f5596f16ea897a8123b1395.jpg",
-      "video": "https://espnmedia-cdn.akamaized.net/espn/media/16x9/wsc/2026/0915/b1e3bda8-4516-4f55-96f1-6ea897a8123b/b1e3bda8-4516-4f55-96f1-6ea897a8123b.mp4",
-      "game_time": "Q1 03:53",
-      "kickoff": "9/14/26, 20:16:12"
-    }
-  ]
+  "tweets": []
 }
