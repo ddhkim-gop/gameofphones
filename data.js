@@ -5190,8 +5190,8 @@ window.__STATIC_DATA__ = {
                 "height": "72",
                 "weight": "216",
                 "years_exp": 2,
-                "status": "Active",
-                "injury_status": "Doubtful",
+                "status": "Inactive",
+                "injury_status": "IR",
                 "search_rank": 87
             },
             {
@@ -5387,22 +5387,6 @@ window.__STATIC_DATA__ = {
                 "search_rank": 502
             },
             {
-                "player_id": "1737",
-                "espn_id": 15168,
-                "name": "Case Keenum",
-                "position": "QB",
-                "team": "CHI",
-                "age": 38,
-                "birth_date": "1988-02-17",
-                "college": "Houston",
-                "height": "73",
-                "weight": "220",
-                "years_exp": 14,
-                "status": "Active",
-                "injury_status": null,
-                "search_rank": 662
-            },
-            {
                 "player_id": "2133",
                 "espn_id": 16800,
                 "name": "Davante Adams",
@@ -5465,6 +5449,22 @@ window.__STATIC_DATA__ = {
                 "status": "Active",
                 "injury_status": null,
                 "search_rank": 65
+            },
+            {
+                "player_id": "4663",
+                "espn_id": 3068267,
+                "name": "Austin Ekeler",
+                "position": "RB",
+                "team": null,
+                "age": 31,
+                "birth_date": "1995-05-17",
+                "college": "Western Colorado",
+                "height": "70",
+                "weight": "200",
+                "years_exp": 9,
+                "status": "Active",
+                "injury_status": null,
+                "search_rank": 317
             },
             {
                 "player_id": "4950",
@@ -5639,7 +5639,7 @@ window.__STATIC_DATA__ = {
                 "weight": "211",
                 "years_exp": 4,
                 "status": "Active",
-                "injury_status": "Doubtful",
+                "injury_status": "Out",
                 "search_rank": 93
             },
             {
@@ -6227,7 +6227,7 @@ window.__STATIC_DATA__ = {
                 "weight": "210",
                 "years_exp": 2,
                 "status": "Active",
-                "injury_status": "Doubtful",
+                "injury_status": "Out",
                 "search_rank": 20
             },
             {
@@ -6451,7 +6451,7 @@ window.__STATIC_DATA__ = {
                 "weight": "191",
                 "years_exp": 10,
                 "status": "Active",
-                "injury_status": "Out",
+                "injury_status": "",
                 "search_rank": 145
             },
             {
@@ -6643,7 +6643,7 @@ window.__STATIC_DATA__ = {
                 "weight": "215",
                 "years_exp": 4,
                 "status": "Active",
-                "injury_status": null,
+                "injury_status": "Questionable",
                 "search_rank": 52
             },
             {
@@ -9901,7 +9901,7 @@ window.__STATIC_DATA__ = {
                 "weight": "223",
                 "years_exp": 1,
                 "status": "Active",
-                "injury_status": "Doubtful",
+                "injury_status": "Out",
                 "search_rank": 42
             },
             {
@@ -10563,7 +10563,7 @@ window.__STATIC_DATA__ = {
                 "weight": "209",
                 "years_exp": 7,
                 "status": "Active",
-                "injury_status": null,
+                "injury_status": "Questionable",
                 "search_rank": 63
             },
             {
@@ -11225,7 +11225,7 @@ window.__STATIC_DATA__ = {
                 "weight": "200",
                 "years_exp": 3,
                 "status": "Active",
-                "injury_status": null,
+                "injury_status": "Questionable",
                 "search_rank": 122
             }
         ]
@@ -11668,6 +11668,62 @@ window.__STATIC_DATA__ = {
     }
   ],
   "transactions": [
+    {
+        "season": "2026",
+        "week": 3,
+        "created": "Sep 23, 2026 • 7:09 AM PT",
+        "transaction_id": "1408504651610963968",
+        "type": "free_agent",
+        "status": "complete",
+        "teams": [
+            "ddhk"
+        ],
+        "added": [
+            {
+                "name": "Austin Ekeler",
+                "position": "RB",
+                "team": null
+            }
+        ],
+        "dropped": [
+            {
+                "name": "AJ Dillon",
+                "position": "RB",
+                "team": "CAR"
+            }
+        ],
+        "faab": 0,
+        "waiver_bid": 0,
+        "notes": null
+    },
+    {
+        "season": "2026",
+        "week": 3,
+        "created": "Sep 23, 2026 • 6:09 AM PT",
+        "transaction_id": "1408489452539580416",
+        "type": "free_agent",
+        "status": "complete",
+        "teams": [
+            "ddhk"
+        ],
+        "added": [
+            {
+                "name": "AJ Dillon",
+                "position": "RB",
+                "team": "CAR"
+            }
+        ],
+        "dropped": [
+            {
+                "name": "Case Keenum",
+                "position": "QB",
+                "team": "CHI"
+            }
+        ],
+        "faab": 0,
+        "waiver_bid": 0,
+        "notes": null
+    },
     {
         "season": "2026",
         "week": 3,
@@ -17376,7 +17432,7 @@ window.__STATIC_DATA__ = {
             {
                 "name": "Audric Estime",
                 "position": "RB",
-                "team": "NO"
+                "team": null
             }
         ],
         "faab": 0,
