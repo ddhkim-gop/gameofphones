@@ -1,6 +1,6 @@
 {
   "team": "spiffster",
-  "updated": "2026-09-22",
+  "updated": "2026-09-23",
   "note": "Curated: X has no public search API, so posts are collected by hand and matched to rosters by this script.",
   "tweets": [
     {
@@ -17,21 +17,6 @@
       "video": "https://espnmedia-cdn.akamaized.net/espn/media/16x9/wsc/2026/0918/30ad4de3-b062-4cb1-a410-5450c7e2d8d9/30ad4de3-b062-4cb1-a410-5450c7e2d8d9.mp4",
       "game_time": "Q2 02:56",
       "kickoff": "9/17/26, 20:17:35"
-    },
-    {
-      "url": "https://www.espn.com/video/clip/_/id/49945388/rashee-rice-breaks-multiple-tackles-en-route-chiefs-td",
-      "player": "Rashee Rice",
-      "meta": "WR \u00b7 KC",
-      "date": "2026-09-15",
-      "author": "ESPN",
-      "text": "Rashee Rice breaks multiple tackles en route to Chiefs TD",
-      "verified": true,
-      "faves": 0,
-      "secs": 0,
-      "poster": "https://espnmedia-cdn.akamaized.net/espn/media/common/2026/0914/41443ef7093647b7812736357855922f1406/41443ef7093647b7812736357855922f1406.jpg",
-      "video": "https://espnmedia-cdn.akamaized.net/espn/media/16x9/wsc/2026/0915/41443ef7-0936-47b7-8127-36357855922f/41443ef7-0936-47b7-8127-36357855922f.mp4",
-      "game_time": "Q2 01:46",
-      "kickoff": "9/14/26, 20:16:12"
     }
   ]
 }
