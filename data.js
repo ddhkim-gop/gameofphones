@@ -5239,7 +5239,7 @@ window.__STATIC_DATA__ = {
                 "weight": "252",
                 "years_exp": 1,
                 "status": "Active",
-                "injury_status": null,
+                "injury_status": "Questionable",
                 "search_rank": 141
             },
             {
@@ -6093,7 +6093,7 @@ window.__STATIC_DATA__ = {
                 "weight": "200",
                 "years_exp": 7,
                 "status": "Active",
-                "injury_status": null,
+                "injury_status": "Questionable",
                 "search_rank": 77
             },
             {
@@ -7097,7 +7097,7 @@ window.__STATIC_DATA__ = {
                 "weight": "215",
                 "years_exp": 5,
                 "status": "Active",
-                "injury_status": null,
+                "injury_status": "Questionable",
                 "search_rank": 34
             },
             {
@@ -8459,7 +8459,7 @@ window.__STATIC_DATA__ = {
                 "weight": "228",
                 "years_exp": 0,
                 "status": "Active",
-                "injury_status": null,
+                "injury_status": "Questionable",
                 "search_rank": 197
             },
             {
@@ -9821,7 +9821,7 @@ window.__STATIC_DATA__ = {
                 "weight": "213",
                 "years_exp": 2,
                 "status": "Active",
-                "injury_status": null,
+                "injury_status": "Questionable",
                 "search_rank": 206
             },
             {
@@ -9853,7 +9853,7 @@ window.__STATIC_DATA__ = {
                 "weight": "210",
                 "years_exp": 2,
                 "status": "Active",
-                "injury_status": null,
+                "injury_status": "Questionable",
                 "search_rank": 454
             },
             {
@@ -9917,7 +9917,7 @@ window.__STATIC_DATA__ = {
                 "weight": "201",
                 "years_exp": 1,
                 "status": "Active",
-                "injury_status": null,
+                "injury_status": "Questionable",
                 "search_rank": 501
             },
             {
@@ -11081,7 +11081,7 @@ window.__STATIC_DATA__ = {
                 "weight": "212",
                 "years_exp": 6,
                 "status": "Active",
-                "injury_status": "Questionable",
+                "injury_status": null,
                 "search_rank": 123
             },
             {
