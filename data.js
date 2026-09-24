@@ -5777,22 +5777,6 @@ window.__STATIC_DATA__ = {
                 "search_rank": 110
             },
             {
-                "player_id": "12015",
-                "espn_id": null,
-                "name": "Harrison Mevis",
-                "position": "K",
-                "team": "LAR",
-                "age": 24,
-                "birth_date": "2002-03-27",
-                "college": "Missouri",
-                "height": "71",
-                "weight": "243",
-                "years_exp": 2,
-                "status": "Active",
-                "injury_status": null,
-                "search_rank": 154
-            },
-            {
                 "player_id": "12484",
                 "espn_id": null,
                 "name": "Jayden Higgins",
@@ -6015,6 +5999,22 @@ window.__STATIC_DATA__ = {
                 "status": "Active",
                 "injury_status": "Questionable",
                 "search_rank": 85
+            },
+            {
+                "player_id": "4227",
+                "espn_id": 3055899,
+                "name": "Harrison Butker",
+                "position": "K",
+                "team": "KC",
+                "age": 31,
+                "birth_date": "1995-07-14",
+                "college": "Georgia Tech",
+                "height": "76",
+                "weight": "205",
+                "years_exp": 9,
+                "status": "Active",
+                "injury_status": null,
+                "search_rank": 155
             },
             {
                 "player_id": "4454",
@@ -11668,6 +11668,34 @@ window.__STATIC_DATA__ = {
     }
   ],
   "transactions": [
+    {
+        "season": "2026",
+        "week": 3,
+        "created": "Sep 24, 2026 • 6:41 AM PT",
+        "transaction_id": "1408860027380367360",
+        "type": "free_agent",
+        "status": "complete",
+        "teams": [
+            "spiffster"
+        ],
+        "added": [
+            {
+                "name": "Harrison Butker",
+                "position": "K",
+                "team": "KC"
+            }
+        ],
+        "dropped": [
+            {
+                "name": "Harrison Mevis",
+                "position": "K",
+                "team": "LAR"
+            }
+        ],
+        "faab": 0,
+        "waiver_bid": 0,
+        "notes": null
+    },
     {
         "season": "2026",
         "week": 3,
