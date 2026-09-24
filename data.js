@@ -8356,7 +8356,7 @@ window.__STATIC_DATA__ = {
                 "name": "Will Howard",
                 "position": "QB",
                 "team": "PIT",
-                "age": 24,
+                "age": 25,
                 "birth_date": "2001-09-24",
                 "college": "Ohio State",
                 "height": "76",
@@ -8651,7 +8651,7 @@ window.__STATIC_DATA__ = {
                 "weight": "205",
                 "years_exp": 9,
                 "status": "Active",
-                "injury_status": null,
+                "injury_status": "Questionable",
                 "search_rank": 197
             },
             {
@@ -8961,7 +8961,7 @@ window.__STATIC_DATA__ = {
                 "weight": "196",
                 "years_exp": 1,
                 "status": "Active",
-                "injury_status": null,
+                "injury_status": "Questionable",
                 "search_rank": 691
             },
             {
@@ -9073,7 +9073,7 @@ window.__STATIC_DATA__ = {
                 "weight": "217",
                 "years_exp": 0,
                 "status": "Active",
-                "injury_status": null,
+                "injury_status": "Questionable",
                 "search_rank": 157
             },
             {
