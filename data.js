@@ -8769,7 +8769,7 @@ window.__STATIC_DATA__ = {
                 "weight": "205",
                 "years_exp": 2,
                 "status": "Active",
-                "injury_status": null,
+                "injury_status": "Questionable",
                 "search_rank": 162
             },
             {
@@ -8785,7 +8785,7 @@ window.__STATIC_DATA__ = {
                 "weight": "218",
                 "years_exp": 2,
                 "status": "Active",
-                "injury_status": null,
+                "injury_status": "Questionable",
                 "search_rank": 527
             },
             {
@@ -10765,6 +10765,22 @@ window.__STATIC_DATA__ = {
                 "search_rank": 58
             },
             {
+                "player_id": "11256",
+                "espn_id": null,
+                "name": "Tyson Bagent",
+                "position": "QB",
+                "team": "CHI",
+                "age": 26,
+                "birth_date": "2000-06-08",
+                "college": "Shepherd (WV)",
+                "height": "75",
+                "weight": "212",
+                "years_exp": 3,
+                "status": "Active",
+                "injury_status": "Questionable",
+                "search_rank": 546
+            },
+            {
                 "player_id": "11792",
                 "espn_id": null,
                 "name": "Will Reichard",
@@ -10971,22 +10987,6 @@ window.__STATIC_DATA__ = {
                 "status": "Active",
                 "injury_status": null,
                 "search_rank": 3
-            },
-            {
-                "player_id": "5189",
-                "espn_id": 4034949,
-                "name": "Eddy Pineiro",
-                "position": "K",
-                "team": "SF",
-                "age": 31,
-                "birth_date": "1995-09-13",
-                "college": "Florida",
-                "height": "71",
-                "weight": "190",
-                "years_exp": 8,
-                "status": "Active",
-                "injury_status": null,
-                "search_rank": 174
             },
             {
                 "player_id": "5846",
@@ -11668,6 +11668,34 @@ window.__STATIC_DATA__ = {
     }
   ],
   "transactions": [
+    {
+        "season": "2026",
+        "week": 3,
+        "created": "Sep 24, 2026 • 12:22 PM PT",
+        "transaction_id": "1408945831700168704",
+        "type": "free_agent",
+        "status": "complete",
+        "teams": [
+            "ganathan"
+        ],
+        "added": [
+            {
+                "name": "Tyson Bagent",
+                "position": "QB",
+                "team": "CHI"
+            }
+        ],
+        "dropped": [
+            {
+                "name": "Eddy Pineiro",
+                "position": "K",
+                "team": "SF"
+            }
+        ],
+        "faab": 0,
+        "waiver_bid": 0,
+        "notes": null
+    },
     {
         "season": "2026",
         "week": 3,
