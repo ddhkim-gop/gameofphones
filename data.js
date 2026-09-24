@@ -5179,6 +5179,22 @@ window.__STATIC_DATA__ = {
                 "search_rank": 89
             },
             {
+                "player_id": "11577",
+                "espn_id": null,
+                "name": "Will Shipley",
+                "position": "RB",
+                "team": "PHI",
+                "age": 24,
+                "birth_date": "2002-08-29",
+                "college": "Clemson",
+                "height": "71",
+                "weight": "209",
+                "years_exp": 2,
+                "status": "Active",
+                "injury_status": "Questionable",
+                "search_rank": 686
+            },
+            {
                 "player_id": "11583",
                 "espn_id": null,
                 "name": "Jonathon Brooks",
@@ -5449,22 +5465,6 @@ window.__STATIC_DATA__ = {
                 "status": "Active",
                 "injury_status": null,
                 "search_rank": 66
-            },
-            {
-                "player_id": "4663",
-                "espn_id": 3068267,
-                "name": "Austin Ekeler",
-                "position": "RB",
-                "team": null,
-                "age": 31,
-                "birth_date": "1995-05-17",
-                "college": "Western Colorado",
-                "height": "70",
-                "weight": "200",
-                "years_exp": 9,
-                "status": "Active",
-                "injury_status": null,
-                "search_rank": 317
             },
             {
                 "player_id": "4950",
@@ -5805,7 +5805,7 @@ window.__STATIC_DATA__ = {
                 "weight": "205",
                 "years_exp": 1,
                 "status": "Active",
-                "injury_status": "Questionable",
+                "injury_status": null,
                 "search_rank": 56
             },
             {
@@ -5901,7 +5901,7 @@ window.__STATIC_DATA__ = {
                 "weight": "240",
                 "years_exp": 0,
                 "status": "Active",
-                "injury_status": null,
+                "injury_status": "Out",
                 "search_rank": 688
             },
             {
@@ -6109,7 +6109,7 @@ window.__STATIC_DATA__ = {
                 "weight": "212",
                 "years_exp": 6,
                 "status": "Active",
-                "injury_status": "Questionable",
+                "injury_status": null,
                 "search_rank": 68
             },
             {
@@ -6499,7 +6499,7 @@ window.__STATIC_DATA__ = {
                 "weight": "225",
                 "years_exp": 8,
                 "status": "Active",
-                "injury_status": "Questionable",
+                "injury_status": null,
                 "search_rank": 93
             },
             {
@@ -7081,7 +7081,7 @@ window.__STATIC_DATA__ = {
                 "weight": "170",
                 "years_exp": 5,
                 "status": "Active",
-                "injury_status": null,
+                "injury_status": "Questionable",
                 "search_rank": 33
             },
             {
@@ -7845,7 +7845,7 @@ window.__STATIC_DATA__ = {
                 "weight": "200",
                 "years_exp": 2,
                 "status": "Active",
-                "injury_status": "Questionable",
+                "injury_status": null,
                 "search_rank": 28
             },
             {
@@ -9671,7 +9671,7 @@ window.__STATIC_DATA__ = {
                 "weight": "255",
                 "years_exp": 4,
                 "status": "Active",
-                "injury_status": null,
+                "injury_status": "Questionable",
                 "search_rank": 681
             },
             {
@@ -9687,7 +9687,7 @@ window.__STATIC_DATA__ = {
                 "weight": "220",
                 "years_exp": 3,
                 "status": "Active",
-                "injury_status": null,
+                "injury_status": "Questionable",
                 "search_rank": 180
             }
         ]
@@ -9900,8 +9900,8 @@ window.__STATIC_DATA__ = {
                 "height": "74",
                 "weight": "223",
                 "years_exp": 1,
-                "status": "Active",
-                "injury_status": "Out",
+                "status": "Inactive",
+                "injury_status": "IR",
                 "search_rank": 42
             },
             {
@@ -10643,7 +10643,7 @@ window.__STATIC_DATA__ = {
                 "weight": "215",
                 "years_exp": 3,
                 "status": "Active",
-                "injury_status": null,
+                "injury_status": "Questionable",
                 "search_rank": 147
             },
             {
@@ -11668,6 +11668,34 @@ window.__STATIC_DATA__ = {
     }
   ],
   "transactions": [
+    {
+        "season": "2026",
+        "week": 3,
+        "created": "Sep 24, 2026 • 2:49 PM PT",
+        "transaction_id": "1408982812953948160",
+        "type": "free_agent",
+        "status": "complete",
+        "teams": [
+            "ddhk"
+        ],
+        "added": [
+            {
+                "name": "Will Shipley",
+                "position": "RB",
+                "team": "PHI"
+            }
+        ],
+        "dropped": [
+            {
+                "name": "Austin Ekeler",
+                "position": "RB",
+                "team": null
+            }
+        ],
+        "faab": 0,
+        "waiver_bid": 0,
+        "notes": null
+    },
     {
         "season": "2026",
         "week": 3,
