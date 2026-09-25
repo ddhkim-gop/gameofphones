@@ -5255,7 +5255,7 @@ window.__STATIC_DATA__ = {
                 "weight": "252",
                 "years_exp": 1,
                 "status": "Active",
-                "injury_status": "Questionable",
+                "injury_status": null,
                 "search_rank": 141
             },
             {
@@ -5616,7 +5616,7 @@ window.__STATIC_DATA__ = {
                 "name": "James Cook",
                 "position": "RB",
                 "team": "BUF",
-                "age": 26,
+                "age": 27,
                 "birth_date": "1999-09-25",
                 "college": "Georgia",
                 "height": "71",
@@ -8651,7 +8651,7 @@ window.__STATIC_DATA__ = {
                 "weight": "205",
                 "years_exp": 9,
                 "status": "Active",
-                "injury_status": "Questionable",
+                "injury_status": null,
                 "search_rank": 196
             },
             {
@@ -9073,7 +9073,7 @@ window.__STATIC_DATA__ = {
                 "weight": "217",
                 "years_exp": 0,
                 "status": "Active",
-                "injury_status": "Questionable",
+                "injury_status": null,
                 "search_rank": 157
             },
             {
@@ -9853,7 +9853,7 @@ window.__STATIC_DATA__ = {
                 "weight": "210",
                 "years_exp": 2,
                 "status": "Active",
-                "injury_status": "Questionable",
+                "injury_status": null,
                 "search_rank": 454
             },
             {
