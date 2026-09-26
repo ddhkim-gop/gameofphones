@@ -1,22 +1,6 @@
 {
   "team": "spiffster",
-  "updated": "2026-09-25",
+  "updated": "2026-09-26",
   "note": "Curated: X has no public search API, so posts are collected by hand and matched to rosters by this script.",
-  "tweets": [
-    {
-      "url": "https://www.espn.com/video/clip/_/id/49969155/josh-allen-racks-4th-td-half-dart-dalton-kincaid",
-      "player": "Dalton Kincaid",
-      "meta": "TE \u00b7 BUF",
-      "date": "2026-09-18",
-      "author": "ESPN",
-      "text": "Josh Allen racks up 4th TD of half with dart to Dalton Kincaid",
-      "verified": true,
-      "faves": 0,
-      "secs": 0,
-      "poster": "https://espnmedia-cdn.akamaized.net/espn/media/common/2026/0918/30ad4de3b0624cb1a4105450c7e2d8d94/30ad4de3b0624cb1a4105450c7e2d8d94.jpg",
-      "video": "https://espnmedia-cdn.akamaized.net/espn/media/16x9/wsc/2026/0918/30ad4de3-b062-4cb1-a410-5450c7e2d8d9/30ad4de3-b062-4cb1-a410-5450c7e2d8d9.mp4",
-      "game_time": "Q2 02:56",
-      "kickoff": "9/17/26, 20:17:35"
-    }
-  ]
+  "tweets": []
 }

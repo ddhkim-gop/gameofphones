@@ -5686,7 +5686,7 @@ window.__STATIC_DATA__ = {
                 "name": "Chris Rodriguez",
                 "position": "RB",
                 "team": "JAX",
-                "age": 26,
+                "age": 27,
                 "birth_date": "1999-09-26",
                 "college": "Kentucky",
                 "height": "71",
