@@ -5191,7 +5191,7 @@ window.__STATIC_DATA__ = {
                 "weight": "209",
                 "years_exp": 2,
                 "status": "Active",
-                "injury_status": "Questionable",
+                "injury_status": null,
                 "search_rank": 686
             },
             {
@@ -6061,7 +6061,7 @@ window.__STATIC_DATA__ = {
                 "weight": "256",
                 "years_exp": 8,
                 "status": "Active",
-                "injury_status": "Doubtful",
+                "injury_status": "Out",
                 "search_rank": 94
             },
             {
@@ -7081,7 +7081,7 @@ window.__STATIC_DATA__ = {
                 "weight": "170",
                 "years_exp": 5,
                 "status": "Active",
-                "injury_status": "Questionable",
+                "injury_status": null,
                 "search_rank": 33
             },
             {
@@ -7749,7 +7749,7 @@ window.__STATIC_DATA__ = {
                 "weight": "210",
                 "years_exp": 3,
                 "status": "Inactive",
-                "injury_status": "Out",
+                "injury_status": "IR",
                 "search_rank": 498
             },
             {
@@ -9462,8 +9462,8 @@ window.__STATIC_DATA__ = {
                 "height": "68",
                 "weight": "220",
                 "years_exp": 0,
-                "status": "Active",
-                "injury_status": "Out",
+                "status": "Inactive",
+                "injury_status": "IR",
                 "search_rank": 118
             },
             {
@@ -10567,6 +10567,22 @@ window.__STATIC_DATA__ = {
                 "search_rank": 63
             },
             {
+                "player_id": "6130",
+                "espn_id": 4040761,
+                "name": "Devin Singletary",
+                "position": "RB",
+                "team": "NYG",
+                "age": 29,
+                "birth_date": "1997-09-03",
+                "college": "Florida Atlantic",
+                "height": "67",
+                "weight": "203",
+                "years_exp": 7,
+                "status": "Active",
+                "injury_status": null,
+                "search_rank": 660
+            },
+            {
                 "player_id": "6790",
                 "espn_id": 4259545,
                 "name": "D'Andre Swift",
@@ -10643,7 +10659,7 @@ window.__STATIC_DATA__ = {
                 "weight": "215",
                 "years_exp": 3,
                 "status": "Active",
-                "injury_status": "Questionable",
+                "injury_status": null,
                 "search_rank": 147
             },
             {
@@ -10661,22 +10677,6 @@ window.__STATIC_DATA__ = {
                 "status": "Active",
                 "injury_status": "Doubtful",
                 "search_rank": 4
-            },
-            {
-                "player_id": "9506",
-                "espn_id": null,
-                "name": "Sean Tucker",
-                "position": "RB",
-                "team": "TB",
-                "age": 24,
-                "birth_date": "2001-10-25",
-                "college": "Syracuse",
-                "height": "70",
-                "weight": "205",
-                "years_exp": 3,
-                "status": "Active",
-                "injury_status": null,
-                "search_rank": 155
             },
             {
                 "player_id": "96",
@@ -11668,6 +11668,34 @@ window.__STATIC_DATA__ = {
     }
   ],
   "transactions": [
+    {
+        "season": "2026",
+        "week": 3,
+        "created": "Sep 26, 2026 • 1:33 PM PT",
+        "transaction_id": "1409688353347026944",
+        "type": "free_agent",
+        "status": "complete",
+        "teams": [
+            "ngman"
+        ],
+        "added": [
+            {
+                "name": "Devin Singletary",
+                "position": "RB",
+                "team": "NYG"
+            }
+        ],
+        "dropped": [
+            {
+                "name": "Sean Tucker",
+                "position": "RB",
+                "team": "TB"
+            }
+        ],
+        "faab": 0,
+        "waiver_bid": 0,
+        "notes": null
+    },
     {
         "season": "2026",
         "week": 3,
