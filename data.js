@@ -5745,6 +5745,22 @@ window.__STATIC_DATA__ = {
                 "search_rank": 228
             },
             {
+                "player_id": "11592",
+                "espn_id": null,
+                "name": "Erick All",
+                "position": "TE",
+                "team": "CIN",
+                "age": 26,
+                "birth_date": "2000-09-13",
+                "college": "Iowa",
+                "height": "77",
+                "weight": "255",
+                "years_exp": 2,
+                "status": "Active",
+                "injury_status": null,
+                "search_rank": 565
+            },
+            {
                 "player_id": "11618",
                 "espn_id": null,
                 "name": "Jalen McMillan",
@@ -6015,22 +6031,6 @@ window.__STATIC_DATA__ = {
                 "status": "Active",
                 "injury_status": null,
                 "search_rank": 155
-            },
-            {
-                "player_id": "4454",
-                "espn_id": 3045523,
-                "name": "Kendrick Bourne",
-                "position": "WR",
-                "team": "ARI",
-                "age": 31,
-                "birth_date": "1995-08-04",
-                "college": "Eastern Washington",
-                "height": "73",
-                "weight": "205",
-                "years_exp": 9,
-                "status": "Active",
-                "injury_status": null,
-                "search_rank": 673
             },
             {
                 "player_id": "5001",
@@ -11668,6 +11668,34 @@ window.__STATIC_DATA__ = {
     }
   ],
   "transactions": [
+    {
+        "season": "2026",
+        "week": 3,
+        "created": "Sep 26, 2026 • 4:18 AM PT",
+        "transaction_id": "1409548828998217728",
+        "type": "free_agent",
+        "status": "complete",
+        "teams": [
+            "spiffster"
+        ],
+        "added": [
+            {
+                "name": "Erick All",
+                "position": "TE",
+                "team": "CIN"
+            }
+        ],
+        "dropped": [
+            {
+                "name": "Kendrick Bourne",
+                "position": "WR",
+                "team": "ARI"
+            }
+        ],
+        "faab": 0,
+        "waiver_bid": 0,
+        "notes": null
+    },
     {
         "season": "2026",
         "week": 3,
