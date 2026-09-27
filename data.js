@@ -5179,22 +5179,6 @@ window.__STATIC_DATA__ = {
                 "search_rank": 91
             },
             {
-                "player_id": "11577",
-                "espn_id": null,
-                "name": "Will Shipley",
-                "position": "RB",
-                "team": "PHI",
-                "age": 24,
-                "birth_date": "2002-08-29",
-                "college": "Clemson",
-                "height": "71",
-                "weight": "209",
-                "years_exp": 2,
-                "status": "Active",
-                "injury_status": null,
-                "search_rank": 686
-            },
-            {
                 "player_id": "11583",
                 "espn_id": null,
                 "name": "Jonathon Brooks",
@@ -5657,6 +5641,22 @@ window.__STATIC_DATA__ = {
                 "status": "Active",
                 "injury_status": null,
                 "search_rank": 38
+            },
+            {
+                "player_id": "8208",
+                "espn_id": null,
+                "name": "Tyler Badie",
+                "position": "RB",
+                "team": "DEN",
+                "age": 26,
+                "birth_date": "2000-02-07",
+                "college": "Missouri",
+                "height": "68",
+                "weight": "197",
+                "years_exp": 4,
+                "status": "Active",
+                "injury_status": null,
+                "search_rank": 684
             },
             {
                 "player_id": "9486",
@@ -11668,6 +11668,34 @@ window.__STATIC_DATA__ = {
     }
   ],
   "transactions": [
+    {
+        "season": "2026",
+        "week": 3,
+        "created": "Sep 27, 2026 • 2:06 PM PT",
+        "transaction_id": "1410059013298610176",
+        "type": "free_agent",
+        "status": "complete",
+        "teams": [
+            "ddhk"
+        ],
+        "added": [
+            {
+                "name": "Tyler Badie",
+                "position": "RB",
+                "team": "DEN"
+            }
+        ],
+        "dropped": [
+            {
+                "name": "Will Shipley",
+                "position": "RB",
+                "team": "PHI"
+            }
+        ],
+        "faab": 0,
+        "waiver_bid": 0,
+        "notes": null
+    },
     {
         "season": "2026",
         "week": 3,
