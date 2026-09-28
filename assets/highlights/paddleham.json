@@ -2,5 +2,44 @@
   "team": "paddleham",
   "updated": "2026-09-28",
   "note": "Curated: X has no public search API, so posts are collected by hand and matched to rosters by this script.",
-  "tweets": []
+  "tweets": [
+    {
+      "url": "https://www.espn.com/video/clip/_/id/50045402/spencer-shrader-53-yard-fg-lifts-colts-texans",
+      "player": "Spencer Shrader",
+      "meta": "K \u00b7 IND",
+      "date": "2026-09-27",
+      "author": "ESPN",
+      "text": "Spencer Shrader's 53-yard FG lifts Colts past Texans",
+      "verified": true,
+      "faves": 0,
+      "secs": 0,
+      "espn_game": "401872951",
+      "game_id": "401872951",
+      "game_time": "Q4 0:16",
+      "play_key": "401872951:4018729513947",
+      "played_at": "2026-09-27T20:03:46Z",
+      "poster": "https://espnmedia-cdn.akamaized.net/espn/media/common/wsc/2026/0927/ff7740db-d370-4f18-ae41-82f4652b40c2/ff7740db-d370-4f18-ae41-82f4652b40c2.jpg",
+      "published": "2026-09-27T20:30:35Z",
+      "video": "https://espnmedia-cdn.akamaized.net/espn/media/16x9/wsc/2026/0927/ff7740db-d370-4f18-ae41-82f4652b40c2/ff7740db-d370-4f18-ae41-82f4652b40c2.mp4"
+    },
+    {
+      "url": "https://www.espn.com/video/clip/_/id/50043495/aaron-rodgers-airs-roman-wilson-38-yard-td",
+      "player": "Roman Wilson",
+      "meta": "WR \u00b7 PIT",
+      "date": "2026-09-27",
+      "author": "ESPN",
+      "text": "Aaron Rodgers airs it out to Roman Wilson for a 38-yard TD",
+      "verified": true,
+      "faves": 0,
+      "secs": 0,
+      "espn_game": "401872950",
+      "game_id": "401872950",
+      "game_time": "Q1 13:10",
+      "play_key": "401872950:401872950136",
+      "played_at": "2026-09-27T17:07:02Z",
+      "poster": "https://espnmedia-cdn.akamaized.net/espn/media/common/wsc/2026/0927/5a57fc42-6925-4506-928f-700fef78306e/5a57fc42-6925-4506-928f-700fef78306e.jpg",
+      "published": "2026-09-27T17:27:42Z",
+      "video": "https://espnmedia-cdn.akamaized.net/espn/media/16x9/wsc/2026/0927/5a57fc42-6925-4506-928f-700fef78306e/5a57fc42-6925-4506-928f-700fef78306e.mp4"
+    }
+  ]
 }
