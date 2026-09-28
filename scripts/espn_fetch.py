@@ -552,6 +552,30 @@ def match_play(text: str, names: list[str], summ: dict, published: str = "") -> 
     return _pick(_scored_plays(text, names, summ, published), bool(published))
 
 
+def rostered_passer(text: str, summ: dict, union: list[str]) -> list[str]:
+    """[QB] for a TD clip whose headline names only an unrostered receiver.
+
+    "Jeremy Ruckert hauls in 4-yard TD for Jets" names no rostered player, so
+    the clip was dropped - yet Geno Smith, who threw it, is rostered. Find the
+    TD pass whose receiver the headline names; if its passer is rostered, the
+    clip is his. More than one candidate passer and nobody is credited.
+    """
+    qbs = set()
+    for pl in (summ or {}).get("plays") or []:
+        if "touchdown" not in pl["text"].lower() or "nullified" in pl["text"].lower():
+            continue
+        main = pl["text"].split("TOUCHDOWN")[0]
+        m = re.search(r"([A-Z][a-z']{0,2}\.\s?[A-Z][\w'\-]+) pass\b.*?\bto "
+                      r"[A-Z][a-z']{0,2}\.\s?([A-Z][\w'\-]+(?:\s[A-Z][\w'\-]+)?)", main)
+        if not m or not re.search(rf"\b{re.escape(m.group(2).split()[-1])}\b", text, re.I):
+            continue
+        for n in union:
+            r = _pbp_name_re(n)
+            if r and r.fullmatch(m.group(1).strip()):
+                qbs.add(n)
+    return sorted(qbs) if len(qbs) == 1 else []
+
+
 def locate_play(text: str, names: list[str], team: str, date_iso: str,
                 week: int, year: int = 2026) -> dict:
     """match_play for a clip with no game attached (an X post).
@@ -645,6 +669,10 @@ def main() -> int:
                 if desc and desc != text:
                     text = f"{text}. {desc}"
                 who = [n for n in roster_union if mentions(text, n)]
+                if not who:
+                    if summ is None:
+                        summ = game_summary(gid)
+                    who = rostered_passer(text, summ, roster_union)
                 if not who:
                     continue
                 who = with_passers(who, pt, roster_players, text)  # QB gets his TD passes

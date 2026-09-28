@@ -225,6 +225,16 @@
   "published": "2026-09-27T19:41:39Z",
   "video": "https://espnmedia-cdn.akamaized.net/espn/media/16x9/wsc/2026/0927/d7d0e01a-0430-481f-adde-f408c9687dcf/d7d0e01a-0430-481f-adde-f408c9687dcf.mp4"
  },
+ "https://www.espn.com/video/clip/_/id/50044659/jeremy-ruckert-hauls-4-yard-td-jets": {
+  "espn_game": "401872954",
+  "game_id": "401872954",
+  "game_time": "Q4 11:17",
+  "play_key": "401872954:4018729543240",
+  "played_at": "2026-09-27T19:18:48Z",
+  "poster": "https://espnmedia-cdn.akamaized.net/espn/media/common/wsc/2026/0927/e83906a2-184c-4fb6-bbbc-6d759e695cd1/e83906a2-184c-4fb6-bbbc-6d759e695cd1.jpg",
+  "published": "2026-09-27T19:41:57Z",
+  "video": "https://espnmedia-cdn.akamaized.net/espn/media/16x9/wsc/2026/0927/e83906a2-184c-4fb6-bbbc-6d759e695cd1/e83906a2-184c-4fb6-bbbc-6d759e695cd1.mp4"
+ },
  "https://www.espn.com/video/clip/_/id/50044758/cam-ward-puts-titans-board-td-pass-wandale-robinson": {
   "espn_game": "401872956",
   "game_id": "401872956",
@@ -311,6 +321,16 @@
   "published": "2026-09-27T20:33:11Z",
   "video": "https://espnmedia-cdn.akamaized.net/espn/media/16x9/wsc/2026/0927/cc63c38f-80a5-42f8-8eb2-7ba9a914dde7/cc63c38f-80a5-42f8-8eb2-7ba9a914dde7.mp4"
  },
+ "https://www.espn.com/video/clip/_/id/50045971/evans-pulls-some-sweet-trickery-lateral-samuel-80-yard-td": {
+  "espn_game": "401872958",
+  "game_id": "401872958",
+  "game_time": "Q1 8:26",
+  "play_key": "401872958:401872958503",
+  "played_at": "2026-09-27T20:20:31Z",
+  "poster": "https://espnmedia-cdn.akamaized.net/espn/media/common/2026/0927/2d803eada4e44177aad3315c0152dcf71046/2d803eada4e44177aad3315c0152dcf71046.jpg",
+  "published": "2026-09-27T21:08:18Z",
+  "video": "https://espnmedia-cdn.akamaized.net/espn/media/16x9/wsc/2026/0927/2d803ead-a4e4-4177-aad3-315c0152dcf7/2d803ead-a4e4-4177-aad3-315c0152dcf7.mp4"
+ },
  "https://www.espn.com/video/clip/_/id/50045994/purdy-floats-evans-49ers-td": {
   "espn_game": "401872958",
   "game_id": "401872958",
@@ -324,9 +344,9 @@
  "https://www.espn.com/video/clip/_/id/50046001/javonte-williams-powers-goal-line-pad-cowboys-lead": {
   "espn_game": "401872960",
   "game_id": "401872960",
-  "game_time": "Q2 10:02",
-  "play_key": "401872960:4018729601414",
-  "played_at": "2026-09-27T21:16:24Z",
+  "game_time": "Q1 4:32",
+  "play_key": "401872960:401872960644",
+  "played_at": "2026-09-27T20:44:46Z",
   "poster": "https://espnmedia-cdn.akamaized.net/espn/media/common/2026/0927/f892a40a67894960bcd887c13863c0a71048/f892a40a67894960bcd887c13863c0a71048.jpg",
   "published": "2026-09-27T21:14:49Z",
   "video": "https://espnmedia-cdn.akamaized.net/espn/media/16x9/wsc/2026/0927/f892a40a-6789-4960-bcd8-87c13863c0a7/f892a40a-6789-4960-bcd8-87c13863c0a7.mp4"
@@ -462,6 +482,16 @@
   "poster": "https://espnmedia-cdn.akamaized.net/espn/media/common/2026/0927/ss_20260927_193141635_3677977/ss_20260927_193141635_3677977.jpg",
   "published": "2026-09-27T23:31:39Z",
   "video": "https://espnmedia-cdn.akamaized.net/espn/media/16x9/2026/0927/ss_20260927_193141635_3677977/ss_20260927_193141635_3677977.mp4"
+ },
+ "https://www.espn.com/video/clip/_/id/50047881/cody-white-td-puts-raiders-ahead-late": {
+  "espn_game": "401872961",
+  "game_id": "401872961",
+  "game_time": "Q4 9:21",
+  "play_key": "401872961:4018729613883",
+  "played_at": "2026-09-27T23:08:01Z",
+  "poster": "https://espnmedia-cdn.akamaized.net/espn/media/common/wsc/2026/0927/4148498f-cdff-49e7-8464-cd81906b1024/4148498f-cdff-49e7-8464-cd81906b1024.jpg",
+  "published": "2026-09-27T23:46:56Z",
+  "video": "https://espnmedia-cdn.akamaized.net/espn/media/16x9/wsc/2026/0927/4148498f-cdff-49e7-8464-cd81906b1024/4148498f-cdff-49e7-8464-cd81906b1024.mp4"
  },
  "https://www.espn.com/video/clip/_/id/50048200/jake-ferguson-hauls-dime-dak-prescott-cowboys-td": {
   "espn_game": "401872960",

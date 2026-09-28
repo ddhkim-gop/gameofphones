@@ -4,6 +4,25 @@
   "note": "Curated: X has no public search API, so posts are collected by hand and matched to rosters by this script.",
   "tweets": [
     {
+      "url": "https://www.espn.com/video/clip/_/id/50047881/cody-white-td-puts-raiders-ahead-late",
+      "player": "Kirk Cousins",
+      "meta": "QB \u00b7 LV",
+      "date": "2026-09-27",
+      "author": "ESPN",
+      "text": "Cody White's TD puts Raiders ahead late. Cody White's TD puts Raiders ahead late ",
+      "verified": true,
+      "faves": 0,
+      "secs": 0,
+      "espn_game": "401872961",
+      "game_id": "401872961",
+      "game_time": "Q4 9:21",
+      "play_key": "401872961:4018729613883",
+      "played_at": "2026-09-27T23:08:01Z",
+      "poster": "https://espnmedia-cdn.akamaized.net/espn/media/common/wsc/2026/0927/4148498f-cdff-49e7-8464-cd81906b1024/4148498f-cdff-49e7-8464-cd81906b1024.jpg",
+      "published": "2026-09-27T23:46:56Z",
+      "video": "https://espnmedia-cdn.akamaized.net/espn/media/16x9/wsc/2026/0927/4148498f-cdff-49e7-8464-cd81906b1024/4148498f-cdff-49e7-8464-cd81906b1024.mp4"
+    },
+    {
       "url": "https://www.espn.com/video/clip/_/id/50047725/george-kittle-cushions-49ers-lead-td-brock-purdy",
       "player": "George Kittle",
       "meta": "TE \u00b7 SF",
@@ -97,6 +116,25 @@
       "poster": "https://espnmedia-cdn.akamaized.net/espn/media/common/wsc/2026/0927/6d189b98-8770-4f02-b414-959ac52590c0/6d189b98-8770-4f02-b414-959ac52590c0.jpg",
       "published": "2026-09-27T20:17:57Z",
       "video": "https://espnmedia-cdn.akamaized.net/espn/media/16x9/wsc/2026/0927/6d189b98-8770-4f02-b414-959ac52590c0/6d189b98-8770-4f02-b414-959ac52590c0.mp4"
+    },
+    {
+      "url": "https://www.espn.com/video/clip/_/id/50044659/jeremy-ruckert-hauls-4-yard-td-jets",
+      "player": "Geno Smith",
+      "meta": "QB \u00b7 NYJ",
+      "date": "2026-09-27",
+      "author": "ESPN",
+      "text": "Jeremy Ruckert hauls in 4-yard TD for Jets",
+      "verified": true,
+      "faves": 0,
+      "secs": 0,
+      "espn_game": "401872954",
+      "game_id": "401872954",
+      "game_time": "Q4 11:17",
+      "play_key": "401872954:4018729543240",
+      "played_at": "2026-09-27T19:18:48Z",
+      "poster": "https://espnmedia-cdn.akamaized.net/espn/media/common/wsc/2026/0927/e83906a2-184c-4fb6-bbbc-6d759e695cd1/e83906a2-184c-4fb6-bbbc-6d759e695cd1.jpg",
+      "published": "2026-09-27T19:41:57Z",
+      "video": "https://espnmedia-cdn.akamaized.net/espn/media/16x9/wsc/2026/0927/e83906a2-184c-4fb6-bbbc-6d759e695cd1/e83906a2-184c-4fb6-bbbc-6d759e695cd1.mp4"
     },
     {
       "url": "https://www.espn.com/video/clip/_/id/50043719/patrick-mahomes-shovels-kenneth-walker-iii-2nd-td-game",
