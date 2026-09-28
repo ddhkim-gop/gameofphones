@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!--
+  Game-day X poller (scripts/x_poll.py), shared by all four leagues. Runs every
+  90s but exits immediately - no network - unless an NFL game is on (kickoff
+  -10 min to +4.5 h, from ESPN's scoreboard, re-read every 6 h). In a game it
+  asks X's public embed timeline for ONE account's newest posts: ~40 requests
+  an hour against X's 30-per-15-minute limit, backing off on a 429.
+
+  Install / reload after editing:
+    cp "scripts/com.gameofphones.x-poller.plist" ~/Library/LaunchAgents/
+    launchctl unload ~/Library/LaunchAgents/com.gameofphones.x-poller.plist 2>/dev/null
+    launchctl load   ~/Library/LaunchAgents/com.gameofphones.x-poller.plist
+-->
+<plist version="1.0">
+<dict>
+  <key>Label</key>
+  <string>com.gameofphones.x-poller</string>
+  <key>ProgramArguments</key>
+  <array>
+    <string>/usr/bin/python3</string>
+    <string>/Users/david/Desktop/Skyler/personal/fantasy football/gameofphones/scripts/x_poll.py</string>
+  </array>
+  <key>StartInterval</key><integer>90</integer>
+  <key>RunAtLoad</key><false/>
+  <key>ProcessType</key><string>Background</string>
+  <key>LowPriorityIO</key><true/>
+  <key>Nice</key><integer>10</integer>
+  <key>StandardOutPath</key>
+  <string>/Users/david/Library/Logs/fantasy-football/x-poller.out.log</string>
+  <key>StandardErrorPath</key>
+  <string>/Users/david/Library/Logs/fantasy-football/x-poller.out.log</string>
+</dict>
+</plist>

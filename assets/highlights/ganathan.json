@@ -4,6 +4,27 @@
   "note": "Curated: X has no public search API, so posts are collected by hand and matched to rosters by this script.",
   "tweets": [
     {
+      "url": "https://x.com/RamsNFL/status/2104398606543560801",
+      "player": "Kyren Williams",
+      "meta": "RB \u00b7 LAR",
+      "date": "2026-09-28",
+      "author": "RamsNFL",
+      "text": "Kyren Williams with the spin move for the first down!",
+      "verified": true,
+      "faves": 151,
+      "secs": 11,
+      "game_id": "401872962",
+      "game_time": "Q3 7:01",
+      "play_key": "401872962:4018729622981",
+      "played_at": "2026-09-28T02:30:54Z",
+      "poster": "https://pbs.twimg.com/media/HPx1FHnWEAA1zCP.jpg",
+      "published": "2026-09-28T02:31:40Z",
+      "video": "https://video.twimg.com/amplify_video/2088672930117115904/vid/avc1/1080x1080/ZJQTYWEGyZOz__Kn.mp4",
+      "author_name": "Los Angeles Rams",
+      "avatar": "https://pbs.twimg.com/profile_images/2104444829946298368/wtL-vYYo_normal.jpg",
+      "author_verified": true
+    },
+    {
       "url": "https://www.espn.com/video/clip/_/id/50046653/christian-mccaffrey-leaps-line-scrimmage-td",
       "player": "Christian McCaffrey",
       "meta": "RB \u00b7 SF",

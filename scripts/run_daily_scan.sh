@@ -18,6 +18,12 @@ REPO="$(cd "$(dirname "$0")/.." && pwd)"
 LOG="$HOME/Library/Logs/fantasy-football/daily-scan.log"
 mkdir -p "$(dirname "$LOG")"
 cd "$REPO" || exit 1
+
+# A stale rebase left this repo on a detached HEAD from 2026-09-21 to 09-27:
+# every nightly commit landed on no branch and none was pushed. Refuse instead.
+if ! git symbolic-ref -q HEAD >/dev/null; then
+  echo "  ABORT: detached HEAD, not on a branch" >> "$LOG"; exit 1
+fi
 echo "--- $(date '+%Y-%m-%d %H:%M:%S') daily scan ---" >> "$LOG"
 
 # 1) detection (existing behaviour)
@@ -34,6 +40,9 @@ for w in "$WEEK" "$((WEEK-1))"; do
   echo "  espn_fetch --week $w" >> "$LOG"
   python3 scripts/espn_fetch.py --week "$w" --no-build >> "$LOG" 2>&1 || true
 done
+# X posts collected during games by the shared poller (gameofphones/scripts/
+# x_poll.py): tie each to its play and file it for this league.
+python3 scripts/x_ingest.py >> "$LOG" 2>&1 || true
 python3 scripts/build_highlights.py scripts/highlights_pool.txt >> "$LOG" 2>&1 || true
 
 # 3) publish if anything changed
@@ -41,7 +50,8 @@ if ! git diff --quiet scripts/highlights_reviewed.json assets/highlights 2>/dev/
   git add assets/highlights \
           scripts/highlights_reviewed.json scripts/highlights_pool.txt \
           scripts/.highlights_media_cache.json scripts/.highlights_oembed_cache.json \
-          scripts/.playtimes.json >> "$LOG" 2>&1
+          scripts/.playtimes.json \
+          scripts/highlights_authors.json scripts/.highlights_video_cache.json >> "$LOG" 2>&1
   # --autostash: daily_scan.py mutates its own state files (.daily_seen.json,
   # highlights_events.jsonl) every run, leaving unstaged changes that would
   # otherwise abort the rebase.
