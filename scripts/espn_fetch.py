@@ -33,6 +33,7 @@ from __future__ import annotations
 
 import argparse
 import json
+import random
 import re
 import subprocess
 import sys
@@ -51,7 +52,8 @@ NEGATIVE_RE = re.compile(
     # studio/debate takes about a player, not footage of a play
     r"slams|blasts|rips|rants?|calls out|stephen a|first take|get up|"
     # turnovers / negative plays - not a highlight for the offensive player
-    r"picked off|intercept(ed|ion)?|rough (night|day|outing)|"
+    r"picked off|picks? off|pick[- ]?six|intercept(ed|ion|s)?|"
+    r"rough (night|day|outing)|"
     r"turnover|fumbles?( it| the| away)?|strip[- ]sack)\b"
     # talking-head quotes: name + ": '...'" or a quoted span. Plays have neither.
     r"|:\s*['\"]|'[^']{8,}'", re.I)
@@ -211,9 +213,12 @@ def with_passers(who, pt, roster_players, text=""):
     return out
 
 
-def get(url: str, timeout: int = 25, tries: int = 3):
-    """GET JSON with retries. ESPN's CDN intermittently answers a rapid burst
-    with an HTML challenge page (non-JSON); a short backoff clears it."""
+def get(url: str, timeout: int = 25, tries: int = 5):
+    """GET JSON with retries. ESPN's CDN answers a burst with a 202 and an empty
+    body - a bot challenge, not an outage: the same URL returns 200 moments
+    later. The old 3 tries at 1.5s steps (~9s) were not enough, and a whole
+    night's run could lose every game to it, so back off exponentially with
+    jitter and name the 202 instead of letting it surface as a JSON error."""
     last = None
     for i in range(tries):
         try:
@@ -221,10 +226,15 @@ def get(url: str, timeout: int = 25, tries: int = 3):
                 url, headers={"User-Agent": UA, "Accept": "application/json",
                               "Referer": "https://www.espn.com/"})
             with urllib.request.urlopen(req, timeout=timeout) as r:
-                return json.loads(r.read().decode("utf-8", "replace"))
+                body = r.read()
+                if r.status == 202 or not body.strip():
+                    raise RuntimeError(f"CDN challenge (HTTP {r.status}, "
+                                       f"{len(body)} bytes)")
+                return json.loads(body.decode("utf-8", "replace"))
         except Exception as e:
             last = e
-            time.sleep(1.5 * (i + 1))
+            if i < tries - 1:
+                time.sleep(min(2 ** (i + 1), 16) + random.uniform(0, 1.5))
     raise last
 
 
@@ -306,6 +316,7 @@ def main() -> int:
             continue
         seen_games.add(gid)
         time.sleep(0.4)                      # be polite to ESPN's CDN
+        time.sleep(random.uniform(0.6, 1.4))   # pace the burst past the CDN
         for v in game_videos(gid):
                 scanned += 1
                 cid = str(v.get("id") or "")

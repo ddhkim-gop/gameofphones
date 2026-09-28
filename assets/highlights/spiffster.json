@@ -1,50 +1,50 @@
 {
   "team": "spiffster",
-  "updated": "2026-09-22",
+  "updated": "2026-09-28",
   "note": "Curated: X has no public search API, so posts are collected by hand and matched to rosters by this script.",
   "tweets": [
     {
-      "url": "https://www.espn.com/video/clip/_/id/50000601/michael-penix-jr-start-falcons-vs-packers",
-      "player": "Michael Penix",
-      "meta": "QB \u00b7 ATL",
-      "date": "2026-09-21",
+      "url": "https://www.espn.com/video/clip/_/id/50043898/trevor-lawrence-slings-jakobi-meyers-jaguars-td",
+      "player": "Jakobi Meyers",
+      "meta": "WR \u00b7 JAX",
+      "date": "2026-09-27",
       "author": "ESPN",
-      "text": "Adam Schefter: Michael Penix Jr. will start for the Falcons vs. the Packers",
+      "text": "Trevor Lawrence slings it to Jakobi Meyers for a Jaguars TD",
       "verified": true,
       "faves": 0,
       "secs": 0,
-      "poster": "https://espnmedia-cdn.akamaized.net/espn/media/common/2026/0921/ss_20260921_165921047_3670367/ss_20260921_165921047_3670367.jpg",
-      "video": "https://espnmedia-cdn.akamaized.net/espn/media/16x9/2026/0921/ss_20260921_165921047_3670367/ss_20260921_165921047_3670367.mp4"
+      "poster": "https://espnmedia-cdn.akamaized.net/espn/media/common/wsc/2026/0927/47b10d87-8a12-4cd8-8b38-31d294e95a5e/47b10d87-8a12-4cd8-8b38-31d294e95a5e.jpg",
+      "video": "https://espnmedia-cdn.akamaized.net/espn/media/16x9/wsc/2026/0927/47b10d87-8a12-4cd8-8b38-31d294e95a5e/47b10d87-8a12-4cd8-8b38-31d294e95a5e.mp4",
+      "game_time": "Q3 12:18",
+      "kickoff": "9/13/26, 13:03:54"
     },
     {
-      "url": "https://www.espn.com/video/clip/_/id/49969155/josh-allen-racks-4th-td-half-dart-dalton-kincaid",
-      "player": "Dalton Kincaid",
-      "meta": "TE \u00b7 BUF",
-      "date": "2026-09-18",
+      "url": "https://www.espn.com/video/clip/_/id/50044393/marcus-mariota-lofts-td-pass-terry-mclaurin",
+      "player": "Terry McLaurin",
+      "meta": "WR \u00b7 WAS",
+      "date": "2026-09-27",
       "author": "ESPN",
-      "text": "Josh Allen racks up 4th TD of half with dart to Dalton Kincaid",
+      "text": "Marcus Mariota lofts a TD pass to Terry McLaurin",
       "verified": true,
       "faves": 0,
       "secs": 0,
-      "poster": "https://espnmedia-cdn.akamaized.net/espn/media/common/2026/0918/30ad4de3b0624cb1a4105450c7e2d8d94/30ad4de3b0624cb1a4105450c7e2d8d94.jpg",
-      "video": "https://espnmedia-cdn.akamaized.net/espn/media/16x9/wsc/2026/0918/30ad4de3-b062-4cb1-a410-5450c7e2d8d9/30ad4de3-b062-4cb1-a410-5450c7e2d8d9.mp4",
-      "game_time": "Q2 02:56",
-      "kickoff": "9/17/26, 20:17:35"
+      "poster": "https://espnmedia-cdn.akamaized.net/espn/media/common/2026/0927/1a204aa77bc6461b926fb0bd43a544641007/1a204aa77bc6461b926fb0bd43a544641007.jpg",
+      "video": "https://espnmedia-cdn.akamaized.net/espn/media/16x9/wsc/2026/0927/1a204aa7-7bc6-461b-926f-b0bd43a54464/1a204aa7-7bc6-461b-926f-b0bd43a54464.mp4"
     },
     {
-      "url": "https://www.espn.com/video/clip/_/id/49945388/rashee-rice-breaks-multiple-tackles-en-route-chiefs-td",
-      "player": "Rashee Rice",
-      "meta": "WR \u00b7 KC",
-      "date": "2026-09-15",
+      "url": "https://www.espn.com/video/clip/_/id/50047155/jacoby-brissett-tosses-jeremiyah-love-short-td",
+      "player": "Jacoby Brissett",
+      "meta": "QB \u00b7 ARI",
+      "date": "2026-09-27",
       "author": "ESPN",
-      "text": "Rashee Rice breaks multiple tackles en route to Chiefs TD",
+      "text": "Jacoby Brissett tosses it to Jeremiyah Love for a short TD",
       "verified": true,
       "faves": 0,
       "secs": 0,
-      "poster": "https://espnmedia-cdn.akamaized.net/espn/media/common/2026/0914/41443ef7093647b7812736357855922f1406/41443ef7093647b7812736357855922f1406.jpg",
-      "video": "https://espnmedia-cdn.akamaized.net/espn/media/16x9/wsc/2026/0915/41443ef7-0936-47b7-8127-36357855922f/41443ef7-0936-47b7-8127-36357855922f.mp4",
-      "game_time": "Q2 01:46",
-      "kickoff": "9/14/26, 20:16:12"
+      "poster": "https://espnmedia-cdn.akamaized.net/espn/media/common/2026/0927/1c623ace073a4a88a2211d630e3ba5c21140/1c623ace073a4a88a2211d630e3ba5c21140.jpg",
+      "video": "https://espnmedia-cdn.akamaized.net/espn/media/16x9/wsc/2026/0927/1c623ace-073a-4a88-a221-1d630e3ba5c2/1c623ace-073a-4a88-a221-1d630e3ba5c2.mp4",
+      "game_time": "Q4 11:48",
+      "kickoff": "9/13/26, 16:25:43"
     }
   ]
 }
