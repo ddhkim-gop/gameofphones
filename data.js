@@ -7251,22 +7251,6 @@ window.__STATIC_DATA__ = {
                 "search_rank": 114
             },
             {
-                "player_id": "11600",
-                "espn_id": null,
-                "name": "Ja'Tavion Sanders",
-                "position": "TE",
-                "team": "CAR",
-                "age": 23,
-                "birth_date": "2003-03-27",
-                "college": "Texas",
-                "height": "76",
-                "weight": "243",
-                "years_exp": 2,
-                "status": "Active",
-                "injury_status": "Out",
-                "search_rank": 576
-            },
-            {
                 "player_id": "11631",
                 "espn_id": null,
                 "name": "Brian Thomas",
@@ -7993,20 +7977,20 @@ window.__STATIC_DATA__ = {
                 "search_rank": 492
             },
             {
-                "player_id": "5854",
-                "espn_id": 3924327,
-                "name": "Drew Lock",
-                "position": "QB",
-                "team": "SEA",
-                "age": 29,
-                "birth_date": "1996-11-10",
-                "college": "Missouri",
-                "height": "76",
-                "weight": "228",
-                "years_exp": 7,
+                "player_id": "4663",
+                "espn_id": 3068267,
+                "name": "Austin Ekeler",
+                "position": "RB",
+                "team": null,
+                "age": 31,
+                "birth_date": "1995-05-17",
+                "college": "Western Colorado",
+                "height": "70",
+                "weight": "200",
+                "years_exp": 9,
                 "status": "Active",
                 "injury_status": null,
-                "search_rank": 691
+                "search_rank": 317
             },
             {
                 "player_id": "6783",
@@ -11668,6 +11652,56 @@ window.__STATIC_DATA__ = {
     }
   ],
   "transactions": [
+    {
+        "season": "2026",
+        "week": 3,
+        "created": "Sep 28, 2026 • 12:14 PM PT",
+        "transaction_id": "1410393190917275648",
+        "type": "free_agent",
+        "status": "complete",
+        "teams": [
+            "andyxia124"
+        ],
+        "added": [],
+        "dropped": [
+            {
+                "name": "Ja'Tavion Sanders",
+                "position": "TE",
+                "team": "CAR"
+            }
+        ],
+        "faab": 0,
+        "waiver_bid": 0,
+        "notes": null
+    },
+    {
+        "season": "2026",
+        "week": 3,
+        "created": "Sep 28, 2026 • 6:19 AM PT",
+        "transaction_id": "1410303936753102848",
+        "type": "free_agent",
+        "status": "complete",
+        "teams": [
+            "IconicJH"
+        ],
+        "added": [
+            {
+                "name": "Austin Ekeler",
+                "position": "RB",
+                "team": null
+            }
+        ],
+        "dropped": [
+            {
+                "name": "Drew Lock",
+                "position": "QB",
+                "team": "SEA"
+            }
+        ],
+        "faab": 0,
+        "waiver_bid": 0,
+        "notes": null
+    },
     {
         "season": "2026",
         "week": 3,
