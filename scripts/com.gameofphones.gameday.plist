@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!--
+  Game-day refresh (scripts/gameday.py) for all four leagues. Every 30 min;
+  exits at once - no network beyond a cached ESPN scoreboard read - unless an
+  NFL game is on (kickoff -10 min to +6 h). In a game window it runs each
+  league's run_daily_scan.sh (ESPN + YouTube + X ingest, rebuild, push) under
+  one shared lock, then health.py, which notifies only when something broke.
+
+  Install / reload after editing:
+    cp "scripts/com.gameofphones.gameday.plist" ~/Library/LaunchAgents/
+    launchctl unload ~/Library/LaunchAgents/com.gameofphones.gameday.plist 2>/dev/null
+    launchctl load   ~/Library/LaunchAgents/com.gameofphones.gameday.plist
+-->
+<plist version="1.0">
+<dict>
+  <key>Label</key>
+  <string>com.gameofphones.gameday</string>
+  <key>ProgramArguments</key>
+  <array>
+    <string>/usr/bin/python3</string>
+    <string>/Users/david/Desktop/Skyler/personal/fantasy football/gameofphones/scripts/gameday.py</string>
+  </array>
+  <key>StartInterval</key><integer>1800</integer>
+  <key>RunAtLoad</key><false/>
+  <key>EnvironmentVariables</key>
+  <dict>
+    <key>PATH</key>
+    <string>/opt/homebrew/bin:/usr/local/bin:/usr/bin:/bin:/usr/sbin:/sbin</string>
+  </dict>
+  <key>ProcessType</key><string>Background</string>
+  <key>LowPriorityIO</key><true/>
+  <key>Nice</key><integer>10</integer>
+  <key>StandardOutPath</key>
+  <string>/Users/david/Library/Logs/fantasy-football/gameday.out.log</string>
+  <key>StandardErrorPath</key>
+  <string>/Users/david/Library/Logs/fantasy-football/gameday.out.log</string>
+</dict>
+</plist>
