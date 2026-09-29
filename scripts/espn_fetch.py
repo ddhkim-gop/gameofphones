@@ -362,7 +362,12 @@ def game_videos(gid: str) -> list[dict]:
               file=sys.stderr)
         return stale or []
     vids = gp.get("videos") or []
-    _cache_write(f"game-{gid}", vids)
+    # Only a finished game's list is cached. PHI@CHI was cached empty at 9:44
+    # the morning of the game; that night ESPN challenged the refetch and the
+    # stale empty list was served, so the whole MNF game got no ESPN clips.
+    comp = ((gp.get("header") or {}).get("competitions") or [{}])[0]
+    if (((comp.get("status") or {}).get("type")) or {}).get("completed"):
+        _cache_write(f"game-{gid}", vids)
     return vids
 
 
@@ -378,7 +383,7 @@ def game_summary(gid: str) -> dict:
     cached; a live one would freeze its play list mid-game for six hours.
     """
     hit = _cache_read(f"summary-{gid}")
-    if hit is not None:
+    if hit is not None and all("off" in pl for pl in hit.get("plays") or []):
         return hit
     try:
         s = get(f"{SUMMARY}?event={gid}")
@@ -393,10 +398,11 @@ def game_summary(gid: str) -> dict:
     drives = list(dr.get("previous") or []) + ([dr["current"]] if dr.get("current") else [])
     plays = []
     for d in drives:
+        off = _team(((d.get("team") or {}).get("abbreviation")) or "")
         for pl in d.get("plays") or []:
             if not pl.get("wallclock"):
                 continue
-            plays.append({"id": str(pl.get("id") or ""),
+            plays.append({"id": str(pl.get("id") or ""), "off": off,
                           "wall": pl["wallclock"],
                           "q": (pl.get("period") or {}).get("number"),
                           "clock": (pl.get("clock") or {}).get("displayValue", ""),

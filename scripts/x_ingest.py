@@ -43,7 +43,7 @@ REVIEWED = HERE / "highlights_reviewed.json"
 POOL = HERE / "highlights_pool.txt"
 AUTHORS = HERE / "highlights_authors.json"
 DAYS = 8
-TD_CUE = re.compile(r"touchdown|\btd\b|end ?zone|pay ?dirt|six\b|6️⃣", re.I)
+TD_CUE = re.compile(r"touchdown|\btd\b|end ?zone|pay ?dirt|six\b|6️⃣|to the house|house call", re.I)
 
 
 def _load(p: Path, default):
@@ -97,15 +97,64 @@ def rostered_in_play(summ: dict, play_key: str, union: list[str],
             and (r := E._pbp_name_re(n)) and r.search(main)]
 
 
-def latest_td(summ: dict, at: datetime) -> dict | None:
-    """The last touchdown in the 15 minutes before `at` (a team's own post)."""
+def latest_td(summ: dict, at: datetime, team: str) -> dict | None:
+    """The team's last touchdown in the 15 minutes before its own post."""
     best = None
     for pl in summ.get("plays") or []:
         t = pl["text"].lower()
         if "touchdown" not in t or "nullified" in t or "no play" in t:
             continue
+        if pl.get("off") != E._team(team):
+            continue
         w = _ts(pl["wall"])
         if at - timedelta(minutes=15) <= w <= at + timedelta(minutes=1):
+            best = pl
+    return best
+
+
+def handle_names(text: str, union: list[str]) -> list[str]:
+    """Players tagged by X handle rather than named: "@lutherburden3" is
+    Luther Burden. A handle counts when it contains the player's full name
+    run together (8+ letters, so short names can't match by accident)."""
+    out = []
+    for h in re.findall(r"@(\w{4,})", text):
+        hl = h.lower()
+        for n in union:
+            key = re.sub(r"[^a-z]", "", " ".join(
+                x for x in n.lower().split() if x not in {"jr", "jr.", "sr", "ii", "iii", "iv"}))
+            if len(key) >= 8 and key in hl:
+                out.append(n)
+    return out
+
+
+def td_just_before(summ: dict, team: str, at: datetime) -> dict | None:
+    """A team's post with no name and no TD word ("Got 'emmmmmmm 😏"), made
+    within 2.5 minutes after that team scored, is that touchdown: between a TD
+    and the next snap come the PAT, the kickoff and a commercial break."""
+    best = None
+    for pl in summ.get("plays") or []:
+        t = pl["text"]
+        if "TOUCHDOWN" not in t or "NULLIFIED" in t or pl.get("off") != E._team(team):
+            continue
+        w = _ts(pl["wall"])
+        if timedelta(0) <= at - w <= timedelta(seconds=150):
+            best = pl
+    return best
+
+
+def named_td_before(summ: dict, names: list[str], at: datetime) -> dict | None:
+    """The named player's touchdown in the 15 minutes before a team post: a
+    shout-out ("Case Keenum, ladies and gentlemen") trails the score by a few
+    minutes, and his later snaps are rarely what gets posted."""
+    pats = [r for r in (E._pbp_name_re(n) for n in names) if r]
+    best = None
+    for pl in summ.get("plays") or []:
+        t = pl["text"]
+        if "TOUCHDOWN" not in t or "NULLIFIED" in t:
+            continue
+        w = _ts(pl["wall"])
+        if at - timedelta(minutes=15) <= w <= at + timedelta(minutes=1) and \
+                any(r.search(t.split("TOUCHDOWN")[0]) for r in pats):
             best = pl
     return best
 
@@ -150,7 +199,7 @@ def main() -> int:
         url, text, at = p["url"], p["text"], _ts(p["created"])
         if at < since or url in reject or E.NEGATIVE_RE.search(text):
             continue
-        who = [n for n in union if mentions(text, n)]
+        who = sorted(set(n for n in union if mentions(text, n)) | set(handle_names(text, union)))
         if p.get("team"):                   # a team account posts its own players
             who = [n for n in who if E._team(team_of.get(n)) == E._team(p["team"])]
         team = p.get("team") or (team_of.get(who[0]) if who else "")
@@ -159,12 +208,13 @@ def main() -> int:
         if summ and who:
             loc = E.match_play(text, who, summ, p["created"])
             if not loc.get("play_key") and p.get("team"):
-                pl = latest_play_naming(summ, who, at)
+                pl = named_td_before(summ, who, at) or latest_play_naming(summ, who, at)
                 if pl:
                     loc = {"played_at": pl["wall"], "game_time": f"Q{pl['q']} {pl['clock']}",
                            "play_key": f"{summ['id']}:{pl['id']}", "game_id": summ["id"]}
-        elif summ and p.get("team") and TD_CUE.search(text):
-            pl = latest_td(summ, at)
+        elif summ and p.get("team"):
+            pl = (latest_td(summ, at, p["team"]) if TD_CUE.search(text)
+                  else td_just_before(summ, p["team"], at))
             if pl:
                 loc = {"played_at": pl["wall"], "game_time": f"Q{pl['q']} {pl['clock']}",
                        "play_key": f"{summ['id']}:{pl['id']}", "game_id": summ["id"]}
