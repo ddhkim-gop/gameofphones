@@ -5773,7 +5773,7 @@ window.__STATIC_DATA__ = {
                 "weight": "192",
                 "years_exp": 2,
                 "status": "Active",
-                "injury_status": "Questionable",
+                "injury_status": "Out",
                 "search_rank": 165
             },
             {
@@ -7097,7 +7097,7 @@ window.__STATIC_DATA__ = {
                 "weight": "215",
                 "years_exp": 5,
                 "status": "Active",
-                "injury_status": "Questionable",
+                "injury_status": "Out",
                 "search_rank": 34
             },
             {
@@ -7630,8 +7630,8 @@ window.__STATIC_DATA__ = {
                 "height": "69",
                 "weight": "195",
                 "years_exp": 3,
-                "status": "Active",
-                "injury_status": "Out",
+                "status": "Inactive",
+                "injury_status": "IR",
                 "search_rank": 8
             },
             {
@@ -7773,7 +7773,7 @@ window.__STATIC_DATA__ = {
                 "espn_id": null,
                 "name": "J.J. McCarthy",
                 "position": "QB",
-                "team": "MIN",
+                "team": "NYG",
                 "age": 23,
                 "birth_date": "2003-01-20",
                 "college": "Michigan",
@@ -8491,7 +8491,7 @@ window.__STATIC_DATA__ = {
                 "weight": "232",
                 "years_exp": 0,
                 "status": "Active",
-                "injury_status": null,
+                "injury_status": "Out",
                 "search_rank": 473
             },
             {
@@ -9089,7 +9089,7 @@ window.__STATIC_DATA__ = {
                 "weight": "215",
                 "years_exp": 8,
                 "status": "Active",
-                "injury_status": "Questionable",
+                "injury_status": "Out",
                 "search_rank": 75
             },
             {
@@ -10749,22 +10749,6 @@ window.__STATIC_DATA__ = {
                 "search_rank": 57
             },
             {
-                "player_id": "11256",
-                "espn_id": null,
-                "name": "Tyson Bagent",
-                "position": "QB",
-                "team": "CHI",
-                "age": 26,
-                "birth_date": "2000-06-08",
-                "college": "Shepherd (WV)",
-                "height": "75",
-                "weight": "212",
-                "years_exp": 3,
-                "status": "Active",
-                "injury_status": null,
-                "search_rank": 546
-            },
-            {
                 "player_id": "11792",
                 "espn_id": null,
                 "name": "Will Reichard",
@@ -10909,6 +10893,22 @@ window.__STATIC_DATA__ = {
                 "search_rank": 384
             },
             {
+                "player_id": "1737",
+                "espn_id": 15168,
+                "name": "Case Keenum",
+                "position": "QB",
+                "team": "CHI",
+                "age": 38,
+                "birth_date": "1988-02-17",
+                "college": "Houston",
+                "height": "73",
+                "weight": "220",
+                "years_exp": 14,
+                "status": "Active",
+                "injury_status": null,
+                "search_rank": 550
+            },
+            {
                 "player_id": "4033",
                 "espn_id": 3123076,
                 "name": "David Njoku",
@@ -10969,7 +10969,7 @@ window.__STATIC_DATA__ = {
                 "weight": "237",
                 "years_exp": 8,
                 "status": "Active",
-                "injury_status": null,
+                "injury_status": "Questionable",
                 "search_rank": 4
             },
             {
@@ -11652,6 +11652,34 @@ window.__STATIC_DATA__ = {
     }
   ],
   "transactions": [
+    {
+        "season": "2026",
+        "week": 3,
+        "created": "Sep 28, 2026 • 1:09 PM PT",
+        "transaction_id": "1410407182326849536",
+        "type": "free_agent",
+        "status": "complete",
+        "teams": [
+            "ganathan"
+        ],
+        "added": [
+            {
+                "name": "Case Keenum",
+                "position": "QB",
+                "team": "CHI"
+            }
+        ],
+        "dropped": [
+            {
+                "name": "Tyson Bagent",
+                "position": "QB",
+                "team": "CHI"
+            }
+        ],
+        "faab": 0,
+        "waiver_bid": 0,
+        "notes": null
+    },
     {
         "season": "2026",
         "week": 3,
