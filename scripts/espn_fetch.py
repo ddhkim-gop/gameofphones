@@ -340,6 +340,20 @@ def game_videos(gid: str) -> list[dict]:
     hit = _cache_read(f"game-{gid}")
     if hit is not None:
         return hit
+    # First choice: the same clip list from ESPN's site.web.api host, which -
+    # with the parameters ESPN's own game page sends - carries `videos` and
+    # has not been challenging this Mac. cdn.espn.com's 202 wall cost every
+    # ESPN clip from 2026-09-28 on (MNF PHI@CHI: 0 clips; this host: 12).
+    try:
+        sw = get(f"{SUMMARY}?event={gid}&region=us&lang=en&contentorigin=espn&xhr=1")
+        if "videos" in sw:
+            vids = sw.get("videos") or []
+            comp = ((sw.get("header") or {}).get("competitions") or [{}])[0]
+            if (((comp.get("status") or {}).get("type")) or {}).get("completed"):
+                _cache_write(f"game-{gid}", vids)
+            return vids
+    except Exception as e:
+        print(f"  ! summary videos {gid}: {e}", file=sys.stderr)
     if _cdn_blocked():
         return _cache_read(f"game-{gid}", max_age=None) or []
     try:
@@ -506,8 +520,11 @@ def _scored_plays(text: str, names: list[str], summ: dict, published: str = ""):
         # The headline often names the other half of the play, rostered or
         # not ("Lamar Jackson finds Chris Moore"): that surname in the play's
         # text pins which of his passes it was.
+        # Parenthesised names are tacklers: "(A.Winfield)" on an Aaron Jones
+        # run is not the partner a "Jones 🤝 Winfield" post is about.
         others = {m.lower() for m in re.findall(
-            r"\b[A-Z][a-z']{0,2}\.\s?([A-Z][A-Za-z'\-]{2,})", main)}
+            r"\b[A-Z][a-z']{0,2}\.\s?([A-Z][A-Za-z'\-]{2,})",
+            re.sub(r"\([^)]*\)|\[[^\]]*\]", " ", main))}
         others -= {n.split()[-1].lower() for n in names}
         if any(re.search(rf"\b{re.escape(o)}\b", text, re.I) for o in others):
             sc += 3

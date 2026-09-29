@@ -42,6 +42,9 @@ for w in "$WEEK" "$((WEEK-1))"; do
 done
 # X posts collected during games by the shared poller (gameofphones/scripts/
 # x_poll.py): tie each to its play and file it for this league.
+# Team YouTube Shorts (shared store; this 23:00 run goes first, the other
+# leagues read it): fills what the live X poller missed.
+python3 scripts/yt_fetch.py >> "$LOG" 2>&1 || true
 python3 scripts/x_ingest.py >> "$LOG" 2>&1 || true
 python3 scripts/build_highlights.py scripts/highlights_pool.txt >> "$LOG" 2>&1 || true
 
