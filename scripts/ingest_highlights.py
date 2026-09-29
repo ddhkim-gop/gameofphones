@@ -206,7 +206,8 @@ def main():
 
     reviewed = json.loads(REVIEWED.read_text())
     reviewed.setdefault("keep", {})
-    pool_urls = set(POOL.read_text().split()) if POOL.exists() else set()
+    pool_urls = {u for u in POOL.read_text().split() if u.startswith("http")} \
+        if POOL.exists() else set()     # URLs only, never stray words
     roster = _roster_names()
 
     matched, skipped = [], []
