@@ -5756,8 +5756,8 @@ window.__STATIC_DATA__ = {
                 "height": "73",
                 "weight": "192",
                 "years_exp": 2,
-                "status": "Active",
-                "injury_status": "Out",
+                "status": "Inactive",
+                "injury_status": "IR",
                 "search_rank": 165
             },
             {
@@ -7065,7 +7065,7 @@ window.__STATIC_DATA__ = {
                 "weight": "218",
                 "years_exp": 6,
                 "status": "Active",
-                "injury_status": "Questionable",
+                "injury_status": "Out",
                 "search_rank": 65
             },
             {
@@ -7395,6 +7395,22 @@ window.__STATIC_DATA__ = {
                 "search_rank": 550
             },
             {
+                "player_id": "13533",
+                "espn_id": null,
+                "name": "Barion Brown",
+                "position": "WR",
+                "team": "NO",
+                "age": 22,
+                "birth_date": "2003-12-12",
+                "college": "LSU",
+                "height": "71",
+                "weight": "177",
+                "years_exp": 0,
+                "status": "Active",
+                "injury_status": "Questionable",
+                "search_rank": 462
+            },
+            {
                 "player_id": "1466",
                 "espn_id": 15847,
                 "name": "Travis Kelce",
@@ -7409,22 +7425,6 @@ window.__STATIC_DATA__ = {
                 "status": "Active",
                 "injury_status": null,
                 "search_rank": 90
-            },
-            {
-                "player_id": "2078",
-                "espn_id": 16733,
-                "name": "Odell Beckham",
-                "position": "WR",
-                "team": "NYG",
-                "age": 33,
-                "birth_date": "1992-11-05",
-                "college": "LSU",
-                "height": "71",
-                "weight": "198",
-                "years_exp": 12,
-                "status": "Active",
-                "injury_status": null,
-                "search_rank": 443
             },
             {
                 "player_id": "4881",
@@ -7681,6 +7681,22 @@ window.__STATIC_DATA__ = {
                 "status": "Active",
                 "injury_status": null,
                 "search_rank": 104
+            },
+            {
+                "player_id": "9506",
+                "espn_id": null,
+                "name": "Sean Tucker",
+                "position": "RB",
+                "team": "TB",
+                "age": 24,
+                "birth_date": "2001-10-25",
+                "college": "Syracuse",
+                "height": "70",
+                "weight": "205",
+                "years_exp": 3,
+                "status": "Active",
+                "injury_status": null,
+                "search_rank": 155
             },
             {
                 "player_id": "9997",
@@ -8753,7 +8769,7 @@ window.__STATIC_DATA__ = {
                 "weight": "205",
                 "years_exp": 2,
                 "status": "Active",
-                "injury_status": "Questionable",
+                "injury_status": "Doubtful",
                 "search_rank": 162
             },
             {
@@ -8833,7 +8849,7 @@ window.__STATIC_DATA__ = {
                 "weight": "251",
                 "years_exp": 1,
                 "status": "Active",
-                "injury_status": "Questionable",
+                "injury_status": "Doubtful",
                 "search_rank": 138
             },
             {
@@ -9431,7 +9447,7 @@ window.__STATIC_DATA__ = {
                 "weight": "241",
                 "years_exp": 0,
                 "status": "Active",
-                "injury_status": null,
+                "injury_status": "Questionable",
                 "search_rank": 109
             },
             {
@@ -9615,7 +9631,7 @@ window.__STATIC_DATA__ = {
                 "espn_id": null,
                 "name": "Jerome Ford",
                 "position": "RB",
-                "team": "MIN",
+                "team": null,
                 "age": 27,
                 "birth_date": "1999-09-12",
                 "college": "Cincinnati",
@@ -9692,8 +9708,8 @@ window.__STATIC_DATA__ = {
                 "height": "71",
                 "weight": "187",
                 "years_exp": 3,
-                "status": "Active",
-                "injury_status": "Doubtful",
+                "status": "Inactive",
+                "injury_status": "Out",
                 "search_rank": 99
             },
             {
@@ -10109,7 +10125,7 @@ window.__STATIC_DATA__ = {
                 "weight": "217",
                 "years_exp": 4,
                 "status": "Active",
-                "injury_status": "Questionable",
+                "injury_status": "Doubtful",
                 "search_rank": 27
             },
             {
@@ -10563,7 +10579,7 @@ window.__STATIC_DATA__ = {
                 "weight": "209",
                 "years_exp": 7,
                 "status": "Active",
-                "injury_status": null,
+                "injury_status": "Questionable",
                 "search_rank": 63
             },
             {
@@ -11209,7 +11225,7 @@ window.__STATIC_DATA__ = {
                 "weight": "200",
                 "years_exp": 3,
                 "status": "Active",
-                "injury_status": null,
+                "injury_status": "Questionable",
                 "search_rank": 122
             }
         ]
@@ -11652,6 +11668,72 @@ window.__STATIC_DATA__ = {
     }
   ],
   "transactions": [
+    {
+        "season": "2026",
+        "week": 4,
+        "created": "Sep 30, 2026 • 9:42 AM PT",
+        "transaction_id": "1411079810934919168",
+        "type": "free_agent",
+        "status": "complete",
+        "teams": [
+            "andyxia124"
+        ],
+        "added": [],
+        "dropped": [
+            {
+                "name": "Odell Beckham",
+                "position": "WR",
+                "team": null
+            }
+        ],
+        "faab": 0,
+        "waiver_bid": 0,
+        "notes": null
+    },
+    {
+        "season": "2026",
+        "week": 4,
+        "created": "Sep 30, 2026 • 9:42 AM PT",
+        "transaction_id": "1411079774511624192",
+        "type": "free_agent",
+        "status": "complete",
+        "teams": [
+            "andyxia124"
+        ],
+        "added": [
+            {
+                "name": "Sean Tucker",
+                "position": "RB",
+                "team": "TB"
+            }
+        ],
+        "dropped": [],
+        "faab": 0,
+        "waiver_bid": 0,
+        "notes": null
+    },
+    {
+        "season": "2026",
+        "week": 4,
+        "created": "Sep 30, 2026 • 9:41 AM PT",
+        "transaction_id": "1411079612431126528",
+        "type": "free_agent",
+        "status": "complete",
+        "teams": [
+            "andyxia124"
+        ],
+        "added": [
+            {
+                "name": "Barion Brown",
+                "position": "WR",
+                "team": "NO"
+            }
+        ],
+        "dropped": [],
+        "faab": 0,
+        "waiver_bid": 0,
+        "notes": null
+    },
     {
         "season": "2026",
         "week": 4,
@@ -17846,7 +17928,7 @@ window.__STATIC_DATA__ = {
             {
                 "name": "Audric Estime",
                 "position": "RB",
-                "team": null
+                "team": "MIN"
             }
         ],
         "faab": 0,
@@ -18192,7 +18274,7 @@ window.__STATIC_DATA__ = {
             {
                 "name": "Odell Beckham",
                 "position": "WR",
-                "team": "NYG"
+                "team": null
             }
         ],
         "dropped": [
