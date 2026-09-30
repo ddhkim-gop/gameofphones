@@ -10519,6 +10519,22 @@ window.__STATIC_DATA__ = {
                 "search_rank": 39
             },
             {
+                "player_id": "4454",
+                "espn_id": 3045523,
+                "name": "Kendrick Bourne",
+                "position": "WR",
+                "team": "ARI",
+                "age": 31,
+                "birth_date": "1995-08-04",
+                "college": "Eastern Washington",
+                "height": "73",
+                "weight": "205",
+                "years_exp": 9,
+                "status": "Active",
+                "injury_status": null,
+                "search_rank": 673
+            },
+            {
                 "player_id": "4993",
                 "espn_id": 3116164,
                 "name": "Mike Gesicki",
@@ -10551,20 +10567,20 @@ window.__STATIC_DATA__ = {
                 "search_rank": 63
             },
             {
-                "player_id": "6130",
-                "espn_id": 4040761,
-                "name": "Devin Singletary",
+                "player_id": "6039",
+                "espn_id": 3915411,
+                "name": "Ty Johnson",
                 "position": "RB",
-                "team": "NYG",
+                "team": "BUF",
                 "age": 29,
-                "birth_date": "1997-09-03",
-                "college": "Florida Atlantic",
-                "height": "67",
-                "weight": "203",
+                "birth_date": "1997-09-17",
+                "college": "Maryland",
+                "height": "70",
+                "weight": "210",
                 "years_exp": 7,
                 "status": "Active",
-                "injury_status": "Out",
-                "search_rank": 660
+                "injury_status": null,
+                "search_rank": 534
             },
             {
                 "player_id": "6790",
@@ -10597,22 +10613,6 @@ window.__STATIC_DATA__ = {
                 "status": "Active",
                 "injury_status": null,
                 "search_rank": 488
-            },
-            {
-                "player_id": "7670",
-                "espn_id": null,
-                "name": "Joshua Palmer",
-                "position": "WR",
-                "team": "BUF",
-                "age": 27,
-                "birth_date": "1999-09-22",
-                "college": "Tennessee",
-                "height": "73",
-                "weight": "210",
-                "years_exp": 5,
-                "status": "Active",
-                "injury_status": null,
-                "search_rank": 624
             },
             {
                 "player_id": "8167",
@@ -11652,6 +11652,62 @@ window.__STATIC_DATA__ = {
     }
   ],
   "transactions": [
+    {
+        "season": "2026",
+        "week": 3,
+        "created": "Sep 29, 2026 • 2:11 PM PT",
+        "transaction_id": "1410785151624974336",
+        "type": "waiver",
+        "status": "complete",
+        "teams": [
+            "ngman"
+        ],
+        "added": [
+            {
+                "name": "Kendrick Bourne",
+                "position": "WR",
+                "team": "ARI"
+            }
+        ],
+        "dropped": [
+            {
+                "name": "Joshua Palmer",
+                "position": "WR",
+                "team": "BUF"
+            }
+        ],
+        "faab": 0,
+        "waiver_bid": 0,
+        "notes": "Your waiver claim was processed successfully!"
+    },
+    {
+        "season": "2026",
+        "week": 3,
+        "created": "Sep 29, 2026 • 2:10 PM PT",
+        "transaction_id": "1410784963376205824",
+        "type": "waiver",
+        "status": "complete",
+        "teams": [
+            "ngman"
+        ],
+        "added": [
+            {
+                "name": "Ty Johnson",
+                "position": "RB",
+                "team": "BUF"
+            }
+        ],
+        "dropped": [
+            {
+                "name": "Devin Singletary",
+                "position": "RB",
+                "team": "NYG"
+            }
+        ],
+        "faab": 0,
+        "waiver_bid": 0,
+        "notes": "Your waiver claim was processed successfully!"
+    },
     {
         "season": "2026",
         "week": 3,
