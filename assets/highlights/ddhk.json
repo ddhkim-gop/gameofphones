@@ -1,6 +1,6 @@
 {
   "team": "ddhk",
-  "updated": "2026-09-29",
+  "updated": "2026-09-30",
   "note": "Curated: X has no public search API, so posts are collected by hand and matched to rosters by this script.",
   "tweets": [
     {
@@ -287,23 +287,6 @@
       "poster": "https://espnmedia-cdn.akamaized.net/espn/media/common/wsc/2026/0927/64d96666-a5fc-4baf-85e1-04503bac919c/64d96666-a5fc-4baf-85e1-04503bac919c.jpg",
       "published": "2026-09-27T22:31:03Z",
       "video": "https://espnmedia-cdn.akamaized.net/espn/media/16x9/wsc/2026/0927/64d96666-a5fc-4baf-85e1-04503bac919c/64d96666-a5fc-4baf-85e1-04503bac919c.mp4"
-    },
-    {
-      "url": "https://www.youtube.com/shorts/vvYODT-DUZM",
-      "player": "Patrick Mahomes",
-      "meta": "QB \u00b7 KC",
-      "date": "2026-09-22",
-      "author": "KansasCityChiefs",
-      "text": "A 382-yard, 3 touchdown performance from Patrick Mahomes \ud83d\ude2e\u200d\ud83d\udca8",
-      "verified": false,
-      "faves": 2084,
-      "secs": 47,
-      "poster": "https://i.ytimg.com/vi/vvYODT-DUZM/hqdefault.jpg",
-      "published": "2026-09-22T21:00:14Z",
-      "youtube": "vvYODT-DUZM",
-      "author_name": "Kansas City Chiefs",
-      "avatar": "",
-      "author_verified": true
     }
   ]
 }
