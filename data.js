@@ -5339,22 +5339,6 @@ window.__STATIC_DATA__ = {
                 "search_rank": 104
             },
             {
-                "player_id": "13277",
-                "espn_id": null,
-                "name": "CJ Donaldson",
-                "position": "RB",
-                "team": "NO",
-                "age": 22,
-                "birth_date": "2004-07-09",
-                "college": "Ohio State",
-                "height": "73",
-                "weight": "230",
-                "years_exp": 0,
-                "status": "Active",
-                "injury_status": null,
-                "search_rank": 466
-            },
-            {
                 "player_id": "13302",
                 "espn_id": null,
                 "name": "Adam Randall",
@@ -5497,6 +5481,22 @@ window.__STATIC_DATA__ = {
                 "status": "Active",
                 "injury_status": null,
                 "search_rank": 87
+            },
+            {
+                "player_id": "6012",
+                "espn_id": 4037457,
+                "name": "Travis Homer",
+                "position": "RB",
+                "team": "PIT",
+                "age": 28,
+                "birth_date": "1998-08-07",
+                "college": "Miami (FL)",
+                "height": "70",
+                "weight": "211",
+                "years_exp": 7,
+                "status": "Active",
+                "injury_status": null,
+                "search_rank": 410
             },
             {
                 "player_id": "6786",
@@ -7081,7 +7081,7 @@ window.__STATIC_DATA__ = {
                 "weight": "170",
                 "years_exp": 5,
                 "status": "Active",
-                "injury_status": null,
+                "injury_status": "Questionable",
                 "search_rank": 33
             },
             {
@@ -8213,7 +8213,7 @@ window.__STATIC_DATA__ = {
                 "weight": "191",
                 "years_exp": 3,
                 "status": "Active",
-                "injury_status": null,
+                "injury_status": "Questionable",
                 "search_rank": 148
             },
             {
@@ -8411,7 +8411,7 @@ window.__STATIC_DATA__ = {
                 "weight": "209",
                 "years_exp": 0,
                 "status": "Active",
-                "injury_status": null,
+                "injury_status": "Questionable",
                 "search_rank": 52
             },
             {
@@ -8507,7 +8507,7 @@ window.__STATIC_DATA__ = {
                 "weight": "232",
                 "years_exp": 0,
                 "status": "Active",
-                "injury_status": "Out",
+                "injury_status": null,
                 "search_rank": 471
             },
             {
@@ -9853,7 +9853,7 @@ window.__STATIC_DATA__ = {
                 "weight": "210",
                 "years_exp": 2,
                 "status": "Active",
-                "injury_status": null,
+                "injury_status": "Questionable",
                 "search_rank": 460
             },
             {
@@ -9926,7 +9926,7 @@ window.__STATIC_DATA__ = {
                 "name": "Fernando Mendoza",
                 "position": "QB",
                 "team": "LV",
-                "age": 22,
+                "age": 23,
                 "birth_date": "2003-10-01",
                 "college": "Indiana",
                 "height": "77",
@@ -11668,6 +11668,34 @@ window.__STATIC_DATA__ = {
     }
   ],
   "transactions": [
+    {
+        "season": "2026",
+        "week": 4,
+        "created": "Sep 30, 2026 • 4:45 PM PT",
+        "transaction_id": "1411186229004808192",
+        "type": "free_agent",
+        "status": "complete",
+        "teams": [
+            "ddhk"
+        ],
+        "added": [
+            {
+                "name": "Travis Homer",
+                "position": "RB",
+                "team": "PIT"
+            }
+        ],
+        "dropped": [
+            {
+                "name": "CJ Donaldson",
+                "position": "RB",
+                "team": "NO"
+            }
+        ],
+        "faab": 0,
+        "waiver_bid": 0,
+        "notes": null
+    },
     {
         "season": "2026",
         "week": 4,
