@@ -6519,22 +6519,6 @@ window.__STATIC_DATA__ = {
                 "search_rank": 4
             },
             {
-                "player_id": "7090",
-                "espn_id": 4040655,
-                "name": "Darnell Mooney",
-                "position": "WR",
-                "team": "NYG",
-                "age": 28,
-                "birth_date": "1997-10-29",
-                "college": "Tulane",
-                "height": "71",
-                "weight": "177",
-                "years_exp": 6,
-                "status": "Active",
-                "injury_status": null,
-                "search_rank": 194
-            },
-            {
                 "player_id": "8121",
                 "espn_id": null,
                 "name": "Romeo Doubs",
@@ -11668,6 +11652,28 @@ window.__STATIC_DATA__ = {
     }
   ],
   "transactions": [
+    {
+        "season": "2026",
+        "week": 4,
+        "created": "Oct 1, 2026 • 7:46 AM PT",
+        "transaction_id": "1411413049616642048",
+        "type": "free_agent",
+        "status": "complete",
+        "teams": [
+            "NoSkilzPak"
+        ],
+        "added": [],
+        "dropped": [
+            {
+                "name": "Darnell Mooney",
+                "position": "WR",
+                "team": "NYG"
+            }
+        ],
+        "faab": 0,
+        "waiver_bid": 0,
+        "notes": null
+    },
     {
         "season": "2026",
         "week": 4,
