@@ -5981,7 +5981,7 @@ window.__STATIC_DATA__ = {
                 "weight": "209",
                 "years_exp": 9,
                 "status": "Active",
-                "injury_status": "Questionable",
+                "injury_status": null,
                 "search_rank": 88
             },
             {
@@ -6937,7 +6937,7 @@ window.__STATIC_DATA__ = {
                 "weight": "220",
                 "years_exp": 9,
                 "status": "Active",
-                "injury_status": "Out",
+                "injury_status": "",
                 "search_rank": 212
             },
             {
@@ -7080,8 +7080,8 @@ window.__STATIC_DATA__ = {
                 "height": "70",
                 "weight": "215",
                 "years_exp": 5,
-                "status": "Active",
-                "injury_status": "Out",
+                "status": "Inactive",
+                "injury_status": "IR",
                 "search_rank": 34
             },
             {
@@ -7423,7 +7423,7 @@ window.__STATIC_DATA__ = {
                 "weight": "205",
                 "years_exp": 8,
                 "status": "Active",
-                "injury_status": "Questionable",
+                "injury_status": null,
                 "search_rank": 10
             },
             {
@@ -7695,7 +7695,7 @@ window.__STATIC_DATA__ = {
                 "weight": "183",
                 "years_exp": 3,
                 "status": "Active",
-                "injury_status": "Questionable",
+                "injury_status": null,
                 "search_rank": 40
             }
         ]
@@ -8603,7 +8603,7 @@ window.__STATIC_DATA__ = {
                 "weight": "211",
                 "years_exp": 13,
                 "status": "Active",
-                "injury_status": null,
+                "injury_status": "Questionable",
                 "search_rank": 185
             },
             {
@@ -9121,7 +9121,7 @@ window.__STATIC_DATA__ = {
                 "weight": "249",
                 "years_exp": 7,
                 "status": "Active",
-                "injury_status": null,
+                "injury_status": "Questionable",
                 "search_rank": 642
             },
             {
@@ -9921,6 +9921,22 @@ window.__STATIC_DATA__ = {
                 "search_rank": 108
             },
             {
+                "player_id": "13277",
+                "espn_id": null,
+                "name": "CJ Donaldson",
+                "position": "RB",
+                "team": "NO",
+                "age": 22,
+                "birth_date": "2004-07-09",
+                "college": "Ohio State",
+                "height": "73",
+                "weight": "230",
+                "years_exp": 0,
+                "status": "Active",
+                "injury_status": null,
+                "search_rank": 466
+            },
+            {
                 "player_id": "13294",
                 "espn_id": null,
                 "name": "Makai Lemon",
@@ -10563,7 +10579,7 @@ window.__STATIC_DATA__ = {
                 "weight": "209",
                 "years_exp": 7,
                 "status": "Active",
-                "injury_status": "Questionable",
+                "injury_status": null,
                 "search_rank": 63
             },
             {
@@ -10595,7 +10611,7 @@ window.__STATIC_DATA__ = {
                 "weight": "204",
                 "years_exp": 6,
                 "status": "Active",
-                "injury_status": null,
+                "injury_status": "Questionable",
                 "search_rank": 45
             },
             {
@@ -10690,7 +10706,7 @@ window.__STATIC_DATA__ = {
                 "height": "73",
                 "weight": "220",
                 "years_exp": 3,
-                "status": "Active",
+                "status": "Inactive",
                 "injury_status": "PUP",
                 "search_rank": 101
             }
@@ -11652,6 +11668,28 @@ window.__STATIC_DATA__ = {
     }
   ],
   "transactions": [
+    {
+        "season": "2026",
+        "week": 4,
+        "created": "Oct 1, 2026 • 12:35 PM PT",
+        "transaction_id": "1411485627010052096",
+        "type": "free_agent",
+        "status": "complete",
+        "teams": [
+            "velmixon"
+        ],
+        "added": [
+            {
+                "name": "CJ Donaldson",
+                "position": "RB",
+                "team": "NO"
+            }
+        ],
+        "dropped": [],
+        "faab": 0,
+        "waiver_bid": 0,
+        "notes": null
+    },
     {
         "season": "2026",
         "week": 4,
