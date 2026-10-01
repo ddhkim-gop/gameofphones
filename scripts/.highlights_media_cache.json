@@ -591,6 +591,12 @@
   "published": "2026-09-29T03:30:01Z",
   "video": "https://espnmedia-cdn.akamaized.net/espn/media/16x9/wsc/2026/0929/adf8a02a-0fb9-4999-a56c-723cd4de0824/adf8a02a-0fb9-4999-a56c-723cd4de0824.mp4"
  },
+ "https://www.espn.com/video/clip/_/id/50066989/feel-idiot-doubting-mahomes-chiefs": {
+  "espn_game": "401872976",
+  "poster": "https://espnmedia-cdn.akamaized.net/espn/media/common/2026/0930/ss_20260930_091422435_3679817563/ss_20260930_091422435_3679817563.jpg",
+  "published": "2026-09-30T13:14:21Z",
+  "video": "https://espnmedia-cdn.akamaized.net/espn/media/16x9/2026/0930/ss_20260930_091422435_3679817/ss_20260930_091422435_3679817.mp4"
+ },
  "https://www.youtube.com/shorts/-9mLHMkLMRw": {
   "poster": "https://i.ytimg.com/vi/-9mLHMkLMRw/hqdefault.jpg",
   "published": "2026-09-21T18:33:52Z",
@@ -619,6 +625,11 @@
   "poster": "https://i.ytimg.com/vi/12MQhEkhI3M/hqdefault.jpg",
   "published": "2026-09-28T20:07:42Z",
   "youtube": "12MQhEkhI3M"
+ },
+ "https://www.youtube.com/shorts/1X1a1EBiPFg": {
+  "poster": "https://i.ytimg.com/vi/1X1a1EBiPFg/hqdefault.jpg",
+  "published": "2026-09-30T22:31:44Z",
+  "youtube": "1X1a1EBiPFg"
  },
  "https://www.youtube.com/shorts/1yliH_TIzGk": {
   "poster": "https://i.ytimg.com/vi/1yliH_TIzGk/hqdefault.jpg",
@@ -777,6 +788,11 @@
   "published": "2026-09-27T17:34:58Z",
   "youtube": "GgM3b9b0F34"
  },
+ "https://www.youtube.com/shorts/Gwx9Da9gDpg": {
+  "poster": "https://i.ytimg.com/vi/Gwx9Da9gDpg/hqdefault.jpg",
+  "published": "2026-09-30T16:03:50Z",
+  "youtube": "Gwx9Da9gDpg"
+ },
  "https://www.youtube.com/shorts/IbGJzj5Ni9U": {
   "poster": "https://i.ytimg.com/vi/IbGJzj5Ni9U/hqdefault.jpg",
   "published": "2026-09-24T22:58:19Z",
@@ -795,6 +811,11 @@
   "poster": "https://i.ytimg.com/vi/JJZD7dYz4co/hqdefault.jpg",
   "published": "2026-09-28T22:00:36Z",
   "youtube": "JJZD7dYz4co"
+ },
+ "https://www.youtube.com/shorts/JsqqTtItNXo": {
+  "poster": "https://i.ytimg.com/vi/JsqqTtItNXo/hqdefault.jpg",
+  "published": "2026-09-30T22:37:47Z",
+  "youtube": "JsqqTtItNXo"
  },
  "https://www.youtube.com/shorts/KLUdgloP1Fo": {
   "poster": "https://i.ytimg.com/vi/KLUdgloP1Fo/hqdefault.jpg",
@@ -915,6 +936,11 @@
   "published": "2026-09-25T02:41:37Z",
   "youtube": "SrpzZCDD0Qk"
  },
+ "https://www.youtube.com/shorts/TFHXZeZbUZE": {
+  "poster": "https://i.ytimg.com/vi/TFHXZeZbUZE/hqdefault.jpg",
+  "published": "2026-09-30T14:00:26Z",
+  "youtube": "TFHXZeZbUZE"
+ },
  "https://www.youtube.com/shorts/TIhawww_G_c": {
   "poster": "https://i.ytimg.com/vi/TIhawww_G_c/hqdefault.jpg",
   "published": "2026-09-28T22:50:05Z",
@@ -928,6 +954,11 @@
   "poster": "https://i.ytimg.com/vi/TZt459ijcWo/hqdefault.jpg",
   "published": "2026-09-29T02:24:39Z",
   "youtube": "TZt459ijcWo"
+ },
+ "https://www.youtube.com/shorts/TtgKV2xtf6Q": {
+  "poster": "https://i.ytimg.com/vi/TtgKV2xtf6Q/hqdefault.jpg",
+  "published": "2026-09-30T21:28:58Z",
+  "youtube": "TtgKV2xtf6Q"
  },
  "https://www.youtube.com/shorts/UBi_ue1cxnQ": {
   "poster": "https://i.ytimg.com/vi/UBi_ue1cxnQ/hqdefault.jpg",
@@ -1002,6 +1033,21 @@
   "published": "2026-09-23T14:26:27Z",
   "youtube": "blI5PZWCF0s"
  },
+ "https://www.youtube.com/shorts/csmdgIJLu64": {
+  "poster": "https://i.ytimg.com/vi/csmdgIJLu64/hqdefault.jpg",
+  "published": "2026-09-30T18:16:53Z",
+  "youtube": "csmdgIJLu64"
+ },
+ "https://www.youtube.com/shorts/d6Mq1cdDthI": {
+  "poster": "https://i.ytimg.com/vi/d6Mq1cdDthI/hqdefault.jpg",
+  "published": "2026-09-30T22:32:32Z",
+  "youtube": "d6Mq1cdDthI"
+ },
+ "https://www.youtube.com/shorts/dAZXIQ5qFlg": {
+  "poster": "https://i.ytimg.com/vi/dAZXIQ5qFlg/hqdefault.jpg",
+  "published": "2026-09-30T20:55:50Z",
+  "youtube": "dAZXIQ5qFlg"
+ },
  "https://www.youtube.com/shorts/dBYouCsOO4A": {
   "poster": "https://i.ytimg.com/vi/dBYouCsOO4A/hqdefault.jpg",
   "published": "2026-09-24T19:16:59Z",
@@ -1055,6 +1101,11 @@
   "published": "2026-09-27T15:43:50Z",
   "youtube": "ig_Z-bIXwFk"
  },
+ "https://www.youtube.com/shorts/jeMeiMfdJOo": {
+  "poster": "https://i.ytimg.com/vi/jeMeiMfdJOo/hqdefault.jpg",
+  "published": "2026-09-30T21:00:08Z",
+  "youtube": "jeMeiMfdJOo"
+ },
  "https://www.youtube.com/shorts/kJmscR81y9U": {
   "poster": "https://i.ytimg.com/vi/kJmscR81y9U/hqdefault.jpg",
   "published": "2026-09-27T19:49:11Z",
@@ -1097,6 +1148,11 @@
   "poster": "https://i.ytimg.com/vi/nKtUzMOTabA/hqdefault.jpg",
   "published": "2026-09-27T21:29:41Z",
   "youtube": "nKtUzMOTabA"
+ },
+ "https://www.youtube.com/shorts/oDBsyYF-L54": {
+  "poster": "https://i.ytimg.com/vi/oDBsyYF-L54/hqdefault.jpg",
+  "published": "2026-09-30T21:45:07Z",
+  "youtube": "oDBsyYF-L54"
  },
  "https://www.youtube.com/shorts/oYKXmy32wcw": {
   "poster": "https://i.ytimg.com/vi/oYKXmy32wcw/hqdefault.jpg",
