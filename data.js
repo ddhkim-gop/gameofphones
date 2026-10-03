@@ -6182,7 +6182,7 @@ window.__STATIC_DATA__ = {
                 "name": "C.J. Stroud",
                 "position": "QB",
                 "team": "HOU",
-                "age": 24,
+                "age": 25,
                 "birth_date": "2001-10-03",
                 "college": "Ohio State",
                 "height": "75",
@@ -10540,7 +10540,7 @@ window.__STATIC_DATA__ = {
                 "name": "Mike Gesicki",
                 "position": "TE",
                 "team": "CIN",
-                "age": 30,
+                "age": 31,
                 "birth_date": "1995-10-03",
                 "college": "Penn State",
                 "height": "78",
@@ -10749,6 +10749,22 @@ window.__STATIC_DATA__ = {
                 "search_rank": 57
             },
             {
+                "player_id": "11256",
+                "espn_id": null,
+                "name": "Tyson Bagent",
+                "position": "QB",
+                "team": "CHI",
+                "age": 26,
+                "birth_date": "2000-06-08",
+                "college": "Shepherd (WV)",
+                "height": "75",
+                "weight": "212",
+                "years_exp": 3,
+                "status": "Active",
+                "injury_status": null,
+                "search_rank": 546
+            },
+            {
                 "player_id": "11792",
                 "espn_id": null,
                 "name": "Will Reichard",
@@ -10891,22 +10907,6 @@ window.__STATIC_DATA__ = {
                 "status": "Active",
                 "injury_status": null,
                 "search_rank": 386
-            },
-            {
-                "player_id": "1737",
-                "espn_id": 15168,
-                "name": "Case Keenum",
-                "position": "QB",
-                "team": "CHI",
-                "age": 38,
-                "birth_date": "1988-02-17",
-                "college": "Houston",
-                "height": "73",
-                "weight": "220",
-                "years_exp": 14,
-                "status": "Active",
-                "injury_status": null,
-                "search_rank": 527
             },
             {
                 "player_id": "4033",
@@ -11652,6 +11652,34 @@ window.__STATIC_DATA__ = {
     }
   ],
   "transactions": [
+    {
+        "season": "2026",
+        "week": 4,
+        "created": "Oct 2, 2026 • 4:10 PM PT",
+        "transaction_id": "1411902143064965120",
+        "type": "free_agent",
+        "status": "complete",
+        "teams": [
+            "ganathan"
+        ],
+        "added": [
+            {
+                "name": "Tyson Bagent",
+                "position": "QB",
+                "team": "CHI"
+            }
+        ],
+        "dropped": [
+            {
+                "name": "Case Keenum",
+                "position": "QB",
+                "team": "CHI"
+            }
+        ],
+        "faab": 0,
+        "waiver_bid": 0,
+        "notes": null
+    },
     {
         "season": "2026",
         "week": 4,
