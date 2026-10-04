@@ -9681,22 +9681,6 @@ window.__STATIC_DATA__ = {
                 "search_rank": 99
             },
             {
-                "player_id": "11199",
-                "espn_id": null,
-                "name": "Emari Demercado",
-                "position": "RB",
-                "team": "DAL",
-                "age": 27,
-                "birth_date": "1999-01-20",
-                "college": "TCU",
-                "height": "69",
-                "weight": "215",
-                "years_exp": 3,
-                "status": "Active",
-                "injury_status": null,
-                "search_rank": 502
-            },
-            {
                 "player_id": "11370",
                 "espn_id": null,
                 "name": "Chris Brooks",
@@ -9887,6 +9871,22 @@ window.__STATIC_DATA__ = {
                 "status": "Active",
                 "injury_status": null,
                 "search_rank": 507
+            },
+            {
+                "player_id": "12634",
+                "espn_id": null,
+                "name": "Jordan Watkins",
+                "position": "WR",
+                "team": "SF",
+                "age": 24,
+                "birth_date": "2002-02-15",
+                "college": "Ole Miss",
+                "height": "71",
+                "weight": "196",
+                "years_exp": 1,
+                "status": "Active",
+                "injury_status": null,
+                "search_rank": 999
             },
             {
                 "player_id": "13269",
@@ -11652,6 +11652,34 @@ window.__STATIC_DATA__ = {
     }
   ],
   "transactions": [
+    {
+        "season": "2026",
+        "week": 4,
+        "created": "Oct 3, 2026 • 5:00 PM PT",
+        "transaction_id": "1412277106485805056",
+        "type": "free_agent",
+        "status": "complete",
+        "teams": [
+            "velmixon"
+        ],
+        "added": [
+            {
+                "name": "Jordan Watkins",
+                "position": "WR",
+                "team": "SF"
+            }
+        ],
+        "dropped": [
+            {
+                "name": "Emari Demercado",
+                "position": "RB",
+                "team": "DAL"
+            }
+        ],
+        "faab": 0,
+        "waiver_bid": 0,
+        "notes": null
+    },
     {
         "season": "2026",
         "week": 4,
