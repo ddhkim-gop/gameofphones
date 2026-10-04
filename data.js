@@ -5163,6 +5163,22 @@ window.__STATIC_DATA__ = {
         "roster_id": 1,
         "players": [
             {
+                "player_id": "11157",
+                "espn_id": null,
+                "name": "Brycen Tremayne",
+                "position": "WR",
+                "team": "CAR",
+                "age": 26,
+                "birth_date": "1999-11-18",
+                "college": "Stanford",
+                "height": "76",
+                "weight": "212",
+                "years_exp": 3,
+                "status": "Active",
+                "injury_status": null,
+                "search_rank": 542
+            },
+            {
                 "player_id": "11533",
                 "espn_id": null,
                 "name": "Brandon Aubrey",
@@ -5255,7 +5271,7 @@ window.__STATIC_DATA__ = {
                 "weight": "216",
                 "years_exp": 1,
                 "status": "Active",
-                "injury_status": null,
+                "injury_status": "Out",
                 "search_rank": 500
             },
             {
@@ -5641,22 +5657,6 @@ window.__STATIC_DATA__ = {
                 "status": "Active",
                 "injury_status": null,
                 "search_rank": 38
-            },
-            {
-                "player_id": "8207",
-                "espn_id": null,
-                "name": "Tyler Goodson",
-                "position": "RB",
-                "team": "DAL",
-                "age": 25,
-                "birth_date": "2000-11-10",
-                "college": "Iowa",
-                "height": "69",
-                "weight": "197",
-                "years_exp": 4,
-                "status": "Active",
-                "injury_status": null,
-                "search_rank": 480
             },
             {
                 "player_id": "9486",
@@ -6291,7 +6291,7 @@ window.__STATIC_DATA__ = {
                 "weight": "208",
                 "years_exp": 1,
                 "status": "Active",
-                "injury_status": null,
+                "injury_status": "Out",
                 "search_rank": 222
             },
             {
@@ -6339,7 +6339,7 @@ window.__STATIC_DATA__ = {
                 "weight": "188",
                 "years_exp": 1,
                 "status": "Active",
-                "injury_status": null,
+                "injury_status": "Questionable",
                 "search_rank": 678
             },
             {
@@ -6889,7 +6889,7 @@ window.__STATIC_DATA__ = {
                 "weight": "231",
                 "years_exp": 12,
                 "status": "Active",
-                "injury_status": "Questionable",
+                "injury_status": null,
                 "search_rank": 60
             },
             {
@@ -6969,7 +6969,7 @@ window.__STATIC_DATA__ = {
                 "weight": "233",
                 "years_exp": 8,
                 "status": "Active",
-                "injury_status": "Questionable",
+                "injury_status": "Out",
                 "search_rank": 11
             },
             {
@@ -7423,7 +7423,7 @@ window.__STATIC_DATA__ = {
                 "weight": "205",
                 "years_exp": 8,
                 "status": "Active",
-                "injury_status": null,
+                "injury_status": "Questionable",
                 "search_rank": 9
             },
             {
@@ -9463,7 +9463,7 @@ window.__STATIC_DATA__ = {
                 "weight": "205",
                 "years_exp": 0,
                 "status": "Active",
-                "injury_status": null,
+                "injury_status": "Out",
                 "search_rank": 515
             },
             {
@@ -9543,7 +9543,7 @@ window.__STATIC_DATA__ = {
                 "weight": "221",
                 "years_exp": 9,
                 "status": "Active",
-                "injury_status": null,
+                "injury_status": "Questionable",
                 "search_rank": 697
             },
             {
@@ -9709,7 +9709,7 @@ window.__STATIC_DATA__ = {
                 "weight": "219",
                 "years_exp": 3,
                 "status": "Active",
-                "injury_status": null,
+                "injury_status": "Questionable",
                 "search_rank": 454
             },
             {
@@ -9773,7 +9773,7 @@ window.__STATIC_DATA__ = {
                 "weight": "185",
                 "years_exp": 2,
                 "status": "Active",
-                "injury_status": "Questionable",
+                "injury_status": null,
                 "search_rank": 35
             },
             {
@@ -9997,7 +9997,7 @@ window.__STATIC_DATA__ = {
                 "weight": "245",
                 "years_exp": 0,
                 "status": "Active",
-                "injury_status": null,
+                "injury_status": "Questionable",
                 "search_rank": 362
             },
             {
@@ -10093,7 +10093,7 @@ window.__STATIC_DATA__ = {
                 "weight": "205",
                 "years_exp": 5,
                 "status": "Active",
-                "injury_status": null,
+                "injury_status": "Out",
                 "search_rank": 3
             },
             {
@@ -10659,7 +10659,7 @@ window.__STATIC_DATA__ = {
                 "weight": "215",
                 "years_exp": 3,
                 "status": "Active",
-                "injury_status": null,
+                "injury_status": "Questionable",
                 "search_rank": 147
             },
             {
@@ -10905,7 +10905,7 @@ window.__STATIC_DATA__ = {
                 "weight": "241",
                 "years_exp": 0,
                 "status": "Active",
-                "injury_status": null,
+                "injury_status": "Out",
                 "search_rank": 475
             },
             {
@@ -10969,7 +10969,7 @@ window.__STATIC_DATA__ = {
                 "weight": "213",
                 "years_exp": 8,
                 "status": "Active",
-                "injury_status": null,
+                "injury_status": "Questionable",
                 "search_rank": 49
             },
             {
@@ -11668,6 +11668,34 @@ window.__STATIC_DATA__ = {
     }
   ],
   "transactions": [
+    {
+        "season": "2026",
+        "week": 4,
+        "created": "Oct 4, 2026 • 12:25 PM PT",
+        "transaction_id": "1412570446657773568",
+        "type": "free_agent",
+        "status": "complete",
+        "teams": [
+            "ddhk"
+        ],
+        "added": [
+            {
+                "name": "Brycen Tremayne",
+                "position": "WR",
+                "team": "CAR"
+            }
+        ],
+        "dropped": [
+            {
+                "name": "Tyler Goodson",
+                "position": "RB",
+                "team": "DAL"
+            }
+        ],
+        "faab": 0,
+        "waiver_bid": 0,
+        "notes": null
+    },
     {
         "season": "2026",
         "week": 4,
