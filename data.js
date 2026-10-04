@@ -5483,22 +5483,6 @@ window.__STATIC_DATA__ = {
                 "search_rank": 86
             },
             {
-                "player_id": "6012",
-                "espn_id": 4037457,
-                "name": "Travis Homer",
-                "position": "RB",
-                "team": "PIT",
-                "age": 28,
-                "birth_date": "1998-08-07",
-                "college": "Miami (FL)",
-                "height": "70",
-                "weight": "211",
-                "years_exp": 7,
-                "status": "Active",
-                "injury_status": null,
-                "search_rank": 411
-            },
-            {
                 "player_id": "6786",
                 "espn_id": 4241389,
                 "name": "CeeDee Lamb",
@@ -5657,6 +5641,22 @@ window.__STATIC_DATA__ = {
                 "status": "Active",
                 "injury_status": null,
                 "search_rank": 38
+            },
+            {
+                "player_id": "8207",
+                "espn_id": null,
+                "name": "Tyler Goodson",
+                "position": "RB",
+                "team": "DAL",
+                "age": 25,
+                "birth_date": "2000-11-10",
+                "college": "Iowa",
+                "height": "69",
+                "weight": "197",
+                "years_exp": 4,
+                "status": "Active",
+                "injury_status": null,
+                "search_rank": 480
             },
             {
                 "player_id": "9486",
@@ -6243,7 +6243,7 @@ window.__STATIC_DATA__ = {
                 "weight": "211",
                 "years_exp": 2,
                 "status": "Active",
-                "injury_status": "Questionable",
+                "injury_status": null,
                 "search_rank": 167
             },
             {
@@ -6355,7 +6355,7 @@ window.__STATIC_DATA__ = {
                 "weight": "233",
                 "years_exp": 0,
                 "status": "Active",
-                "injury_status": null,
+                "injury_status": "Out",
                 "search_rank": 286
             },
             {
@@ -6419,7 +6419,7 @@ window.__STATIC_DATA__ = {
                 "weight": "222",
                 "years_exp": 11,
                 "status": "Active",
-                "injury_status": null,
+                "injury_status": "Out",
                 "search_rank": 508
             },
             {
@@ -6937,7 +6937,7 @@ window.__STATIC_DATA__ = {
                 "weight": "220",
                 "years_exp": 9,
                 "status": "Active",
-                "injury_status": "",
+                "injury_status": "Active",
                 "search_rank": 212
             },
             {
@@ -6969,7 +6969,7 @@ window.__STATIC_DATA__ = {
                 "weight": "233",
                 "years_exp": 8,
                 "status": "Active",
-                "injury_status": null,
+                "injury_status": "Questionable",
                 "search_rank": 11
             },
             {
@@ -7375,7 +7375,7 @@ window.__STATIC_DATA__ = {
                 "weight": "205",
                 "years_exp": 0,
                 "status": "Active",
-                "injury_status": null,
+                "injury_status": "Out",
                 "search_rank": 550
             },
             {
@@ -7695,7 +7695,7 @@ window.__STATIC_DATA__ = {
                 "weight": "183",
                 "years_exp": 3,
                 "status": "Active",
-                "injury_status": "Questionable",
+                "injury_status": null,
                 "search_rank": 40
             }
         ]
@@ -8491,7 +8491,7 @@ window.__STATIC_DATA__ = {
                 "weight": "232",
                 "years_exp": 0,
                 "status": "Active",
-                "injury_status": null,
+                "injury_status": "Out",
                 "search_rank": 474
             },
             {
@@ -8945,7 +8945,7 @@ window.__STATIC_DATA__ = {
                 "weight": "196",
                 "years_exp": 1,
                 "status": "Active",
-                "injury_status": null,
+                "injury_status": "Out",
                 "search_rank": 691
             },
             {
@@ -9335,7 +9335,7 @@ window.__STATIC_DATA__ = {
                 "weight": "208",
                 "years_exp": 0,
                 "status": "Active",
-                "injury_status": null,
+                "injury_status": "Out",
                 "search_rank": 242
             },
             {
@@ -9399,7 +9399,7 @@ window.__STATIC_DATA__ = {
                 "weight": "250",
                 "years_exp": 0,
                 "status": "Active",
-                "injury_status": null,
+                "injury_status": "Out",
                 "search_rank": 663
             },
             {
@@ -9431,7 +9431,7 @@ window.__STATIC_DATA__ = {
                 "weight": "241",
                 "years_exp": 0,
                 "status": "Active",
-                "injury_status": "Questionable",
+                "injury_status": null,
                 "search_rank": 109
             },
             {
@@ -9997,7 +9997,7 @@ window.__STATIC_DATA__ = {
                 "weight": "245",
                 "years_exp": 0,
                 "status": "Active",
-                "injury_status": "Questionable",
+                "injury_status": null,
                 "search_rank": 362
             },
             {
@@ -10921,7 +10921,7 @@ window.__STATIC_DATA__ = {
                 "weight": "192",
                 "years_exp": 0,
                 "status": "Active",
-                "injury_status": null,
+                "injury_status": "Out",
                 "search_rank": 383
             },
             {
@@ -11225,7 +11225,7 @@ window.__STATIC_DATA__ = {
                 "weight": "200",
                 "years_exp": 3,
                 "status": "Active",
-                "injury_status": "Questionable",
+                "injury_status": null,
                 "search_rank": 122
             }
         ]
@@ -11668,6 +11668,34 @@ window.__STATIC_DATA__ = {
     }
   ],
   "transactions": [
+    {
+        "season": "2026",
+        "week": 4,
+        "created": "Oct 4, 2026 • 8:09 AM PT",
+        "transaction_id": "1412505969736343552",
+        "type": "free_agent",
+        "status": "complete",
+        "teams": [
+            "ddhk"
+        ],
+        "added": [
+            {
+                "name": "Tyler Goodson",
+                "position": "RB",
+                "team": "DAL"
+            }
+        ],
+        "dropped": [
+            {
+                "name": "Travis Homer",
+                "position": "RB",
+                "team": "PIT"
+            }
+        ],
+        "faab": 0,
+        "waiver_bid": 0,
+        "notes": null
+    },
     {
         "season": "2026",
         "week": 4,
