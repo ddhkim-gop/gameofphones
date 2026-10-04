@@ -5272,7 +5272,7 @@ window.__STATIC_DATA__ = {
                 "years_exp": 1,
                 "status": "Active",
                 "injury_status": null,
-                "search_rank": 49
+                "search_rank": 47
             },
             {
                 "player_id": "12519",
@@ -6077,7 +6077,7 @@ window.__STATIC_DATA__ = {
                 "weight": "210",
                 "years_exp": 7,
                 "status": "Active",
-                "injury_status": "Questionable",
+                "injury_status": "Doubtful",
                 "search_rank": 55
             },
             {
@@ -6439,6 +6439,22 @@ window.__STATIC_DATA__ = {
                 "search_rank": 125
             },
             {
+                "player_id": "3155",
+                "espn_id": 3051889,
+                "name": "Laquon Treadwell",
+                "position": "WR",
+                "team": "IND",
+                "age": 31,
+                "birth_date": "1995-06-14",
+                "college": "Ole Miss",
+                "height": "74",
+                "weight": "215",
+                "years_exp": 10,
+                "status": "Active",
+                "injury_status": null,
+                "search_rank": 674
+            },
+            {
                 "player_id": "3321",
                 "espn_id": 3116406,
                 "name": "Tyreek Hill",
@@ -6676,7 +6692,7 @@ window.__STATIC_DATA__ = {
                 "years_exp": 3,
                 "status": "Active",
                 "injury_status": null,
-                "search_rank": 7
+                "search_rank": 5
             }
         ]
     },
@@ -6858,7 +6874,7 @@ window.__STATIC_DATA__ = {
                 "years_exp": 13,
                 "status": "Active",
                 "injury_status": null,
-                "search_rank": 211
+                "search_rank": 209
             },
             {
                 "player_id": "2216",
@@ -6986,7 +7002,7 @@ window.__STATIC_DATA__ = {
                 "years_exp": 6,
                 "status": "Active",
                 "injury_status": "Out",
-                "search_rank": 12
+                "search_rank": 11
             },
             {
                 "player_id": "6804",
@@ -7003,22 +7019,6 @@ window.__STATIC_DATA__ = {
                 "status": "Active",
                 "injury_status": null,
                 "search_rank": 68
-            },
-            {
-                "player_id": "6828",
-                "espn_id": 4239934,
-                "name": "AJ Dillon",
-                "position": "RB",
-                "team": "CAR",
-                "age": 28,
-                "birth_date": "1998-05-02",
-                "college": "Boston College",
-                "height": "72",
-                "weight": "248",
-                "years_exp": 6,
-                "status": "Active",
-                "injury_status": null,
-                "search_rank": 688
             },
             {
                 "player_id": "7021",
@@ -7130,7 +7130,7 @@ window.__STATIC_DATA__ = {
                 "years_exp": 4,
                 "status": "Active",
                 "injury_status": null,
-                "search_rank": 22
+                "search_rank": 23
             },
             {
                 "player_id": "8151",
@@ -7165,6 +7165,22 @@ window.__STATIC_DATA__ = {
                 "search_rank": 119
             },
             {
+                "player_id": "8168",
+                "espn_id": null,
+                "name": "Skyy Moore",
+                "position": "WR",
+                "team": "GB",
+                "age": 26,
+                "birth_date": "2000-09-10",
+                "college": "Western Michigan",
+                "height": "70",
+                "weight": "195",
+                "years_exp": 4,
+                "status": "Active",
+                "injury_status": null,
+                "search_rank": 608
+            },
+            {
                 "player_id": "8259",
                 "espn_id": null,
                 "name": "Cameron Dicker",
@@ -7178,7 +7194,7 @@ window.__STATIC_DATA__ = {
                 "years_exp": 4,
                 "status": "Active",
                 "injury_status": null,
-                "search_rank": 119
+                "search_rank": 118
             }
         ]
     },
@@ -7375,7 +7391,7 @@ window.__STATIC_DATA__ = {
                 "weight": "177",
                 "years_exp": 0,
                 "status": "Active",
-                "injury_status": "Questionable",
+                "injury_status": null,
                 "search_rank": 461
             },
             {
@@ -7702,7 +7718,7 @@ window.__STATIC_DATA__ = {
                 "years_exp": 3,
                 "status": "Active",
                 "injury_status": null,
-                "search_rank": 187
+                "search_rank": 185
             },
             {
                 "player_id": "10226",
@@ -8378,8 +8394,8 @@ window.__STATIC_DATA__ = {
                 "height": "71",
                 "weight": "209",
                 "years_exp": 0,
-                "status": "Active",
-                "injury_status": "Out",
+                "status": "Inactive",
+                "injury_status": "IR",
                 "search_rank": 52
             },
             {
@@ -8587,7 +8603,7 @@ window.__STATIC_DATA__ = {
                 "weight": "211",
                 "years_exp": 13,
                 "status": "Active",
-                "injury_status": "Questionable",
+                "injury_status": "Out",
                 "search_rank": 185
             },
             {
@@ -8752,8 +8768,8 @@ window.__STATIC_DATA__ = {
                 "height": "75",
                 "weight": "218",
                 "years_exp": 2,
-                "status": "Active",
-                "injury_status": "Out",
+                "status": "Inactive",
+                "injury_status": "IR",
                 "search_rank": 527
             },
             {
@@ -9806,7 +9822,7 @@ window.__STATIC_DATA__ = {
                 "years_exp": 2,
                 "status": "Active",
                 "injury_status": null,
-                "search_rank": 457
+                "search_rank": 455
             },
             {
                 "player_id": "12481",
@@ -10372,7 +10388,7 @@ window.__STATIC_DATA__ = {
                 "years_exp": 1,
                 "status": "Active",
                 "injury_status": null,
-                "search_rank": 115
+                "search_rank": 114
             },
             {
                 "player_id": "12536",
@@ -10906,7 +10922,7 @@ window.__STATIC_DATA__ = {
                 "years_exp": 0,
                 "status": "Active",
                 "injury_status": null,
-                "search_rank": 385
+                "search_rank": 383
             },
             {
                 "player_id": "4033",
@@ -11034,7 +11050,7 @@ window.__STATIC_DATA__ = {
                 "years_exp": 6,
                 "status": "Active",
                 "injury_status": null,
-                "search_rank": 106
+                "search_rank": 107
             },
             {
                 "player_id": "6904",
@@ -11050,7 +11066,7 @@ window.__STATIC_DATA__ = {
                 "years_exp": 6,
                 "status": "Active",
                 "injury_status": null,
-                "search_rank": 26
+                "search_rank": 28
             },
             {
                 "player_id": "7049",
@@ -11098,7 +11114,7 @@ window.__STATIC_DATA__ = {
                 "years_exp": 5,
                 "status": "Active",
                 "injury_status": null,
-                "search_rank": 404
+                "search_rank": 406
             },
             {
                 "player_id": "7569",
@@ -11652,6 +11668,56 @@ window.__STATIC_DATA__ = {
     }
   ],
   "transactions": [
+    {
+        "season": "2026",
+        "week": 4,
+        "created": "Oct 3, 2026 • 11:25 PM PT",
+        "transaction_id": "1412374094971727872",
+        "type": "free_agent",
+        "status": "complete",
+        "teams": [
+            "jonsung"
+        ],
+        "added": [
+            {
+                "name": "Skyy Moore",
+                "position": "WR",
+                "team": "GB"
+            }
+        ],
+        "dropped": [
+            {
+                "name": "AJ Dillon",
+                "position": "RB",
+                "team": "CAR"
+            }
+        ],
+        "faab": 0,
+        "waiver_bid": 0,
+        "notes": null
+    },
+    {
+        "season": "2026",
+        "week": 4,
+        "created": "Oct 3, 2026 • 8:18 PM PT",
+        "transaction_id": "1412327001041174528",
+        "type": "free_agent",
+        "status": "complete",
+        "teams": [
+            "NoSkilzPak"
+        ],
+        "added": [
+            {
+                "name": "Laquon Treadwell",
+                "position": "WR",
+                "team": "IND"
+            }
+        ],
+        "dropped": [],
+        "faab": 0,
+        "waiver_bid": 0,
+        "notes": null
+    },
     {
         "season": "2026",
         "week": 4,
