@@ -17,8 +17,11 @@
   <string>com.gameofphones.gameday</string>
   <key>ProgramArguments</key>
   <array>
-    <string>/usr/bin/python3</string>
-    <string>/Users/david/Desktop/Skyler/personal/fantasy football/gameofphones/scripts/gameday.py</string>
+    <!-- Started through bash: macOS privacy blocks /usr/bin/python3 itself
+         from the Desktop when launchd runs it, but not a child of bash. -->
+    <string>/bin/bash</string>
+    <string>-c</string>
+    <string>exec /usr/bin/python3 "/Users/david/Desktop/Skyler/projects/fantasy football/gameofphones/scripts/gameday.py"</string>
   </array>
   <key>StartInterval</key><integer>1800</integer>
   <key>RunAtLoad</key><false/>
