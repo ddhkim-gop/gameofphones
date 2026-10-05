@@ -2,5 +2,42 @@
   "team": "Paul_Yoon",
   "updated": "2026-10-05",
   "note": "Curated: X has no public search API, so posts are collected by hand and matched to rosters by this script.",
-  "tweets": []
+  "tweets": [
+    {
+      "url": "https://www.youtube.com/shorts/xafut2NyiaY",
+      "player": "Harold Fannin",
+      "meta": "TE \u00b7 CLE",
+      "date": "2026-10-02",
+      "author": "Browns",
+      "text": "Fannin scores!",
+      "verified": true,
+      "faves": 629,
+      "secs": 12,
+      "game_id": "401872964",
+      "game_time": "Q2 1:22",
+      "play_key": "401872964:4018729641986",
+      "played_at": "2026-10-02T01:38:33Z",
+      "poster": "https://i.ytimg.com/vi/xafut2NyiaY/hqdefault.jpg",
+      "published": "2026-10-02T01:48:10Z",
+      "youtube": "xafut2NyiaY",
+      "author_name": "Cleveland Browns",
+      "avatar": "",
+      "author_verified": true
+    },
+    {
+      "url": "https://www.espn.com/video/clip/_/id/50107328/panthers-pounce-isaac-teslaa-game-sealing-fourth-stop",
+      "player": "Isaac TeSlaa",
+      "meta": "WR \u00b7 DET",
+      "date": "2026-10-05",
+      "author": "ESPN",
+      "text": "Panthers pounce on Isaac TeSlaa for game-sealing fourth-down stop",
+      "verified": true,
+      "faves": 0,
+      "secs": 0,
+      "espn_game": "401872978",
+      "poster": "https://espnmedia-cdn.akamaized.net/espn/media/common/wsc/2026/1005/c041a6d6-504f-4441-a16a-b122c5e2ae86/c041a6d6-504f-4441-a16a-b122c5e2ae86.jpg",
+      "published": "2026-10-05T03:57:21Z",
+      "video": "https://espnmedia-cdn.akamaized.net/espn/media/16x9/wsc/2026/1005/c041a6d6-504f-4441-a16a-b122c5e2ae86/c041a6d6-504f-4441-a16a-b122c5e2ae86.mp4"
+    }
+  ]
 }
