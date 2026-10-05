@@ -1,64 +1,6 @@
 {
   "team": "Paul_Yoon",
-  "updated": "2026-10-04",
+  "updated": "2026-10-05",
   "note": "Curated: X has no public search API, so posts are collected by hand and matched to rosters by this script.",
-  "tweets": [
-    {
-      "url": "https://www.espn.com/video/clip/_/id/50045467/deshaun-watson-finds-harold-fannin-jr-late-td-give-browns-lead",
-      "player": "Harold Fannin",
-      "meta": "TE \u00b7 CLE",
-      "date": "2026-09-27",
-      "author": "ESPN",
-      "text": "Deshaun Watson finds Harold Fannin Jr. for late TD to give Browns the lead",
-      "verified": true,
-      "faves": 0,
-      "secs": 0,
-      "espn_game": "401872949",
-      "game_id": "401872949",
-      "game_time": "Q4 1:48",
-      "play_key": "401872949:4018729494259",
-      "played_at": "2026-09-27T20:08:21Z",
-      "poster": "https://espnmedia-cdn.akamaized.net/espn/media/common/2026/0927/cc63c38f80a542f88eb27ba9a914dde71006/cc63c38f80a542f88eb27ba9a914dde71006.jpg",
-      "published": "2026-09-27T20:33:11Z",
-      "video": "https://espnmedia-cdn.akamaized.net/espn/media/16x9/wsc/2026/0927/cc63c38f-80a5-42f8-8eb2-7ba9a914dde7/cc63c38f-80a5-42f8-8eb2-7ba9a914dde7.mp4"
-    },
-    {
-      "url": "https://www.espn.com/video/clip/_/id/50043966/deshaun-watson-pads-browns-lead-td-pass-harold-fannin-jr",
-      "player": "Harold Fannin",
-      "meta": "TE \u00b7 CLE",
-      "date": "2026-09-27",
-      "author": "ESPN",
-      "text": "Deshaun Watson pads Browns' lead with TD pass to Harold Fannin Jr.",
-      "verified": true,
-      "faves": 0,
-      "secs": 0,
-      "espn_game": "401872949",
-      "game_id": "401872949",
-      "game_time": "Q2 1:37",
-      "play_key": "401872949:4018729491839",
-      "played_at": "2026-09-27T18:18:34Z",
-      "poster": "https://espnmedia-cdn.akamaized.net/espn/media/common/wsc/2026/0927/1fa47782-d216-42ce-84b7-a221485f14e4/1fa47782-d216-42ce-84b7-a221485f14e4.jpg",
-      "published": "2026-09-27T18:28:57Z",
-      "video": "https://espnmedia-cdn.akamaized.net/espn/media/16x9/wsc/2026/0927/1fa47782-d216-42ce-84b7-a221485f14e4/1fa47782-d216-42ce-84b7-a221485f14e4.mp4"
-    },
-    {
-      "url": "https://www.espn.com/video/clip/_/id/50043788/keenan-allen-scores-first-td-colt",
-      "player": "Keenan Allen",
-      "meta": "WR \u00b7 IND",
-      "date": "2026-09-27",
-      "author": "ESPN",
-      "text": "Keenan Allen scores his first TD as a Colt",
-      "verified": true,
-      "faves": 0,
-      "secs": 0,
-      "espn_game": "401872951",
-      "game_id": "401872951",
-      "game_time": "Q2 11:08",
-      "play_key": "401872951:4018729511263",
-      "played_at": "2026-09-27T17:49:49Z",
-      "poster": "https://espnmedia-cdn.akamaized.net/espn/media/common/wsc/2026/0927/320eadf0-48ef-4eb7-8323-16fecfd441e0/320eadf0-48ef-4eb7-8323-16fecfd441e0.jpg",
-      "published": "2026-09-27T18:03:08Z",
-      "video": "https://espnmedia-cdn.akamaized.net/espn/media/16x9/wsc/2026/0927/320eadf0-48ef-4eb7-8323-16fecfd441e0/320eadf0-48ef-4eb7-8323-16fecfd441e0.mp4"
-    }
-  ]
+  "tweets": []
 }

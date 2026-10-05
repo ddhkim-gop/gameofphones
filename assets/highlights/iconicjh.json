@@ -1,6 +1,6 @@
 {
   "team": "IconicJH",
-  "updated": "2026-10-04",
+  "updated": "2026-10-05",
   "note": "Curated: X has no public search API, so posts are collected by hand and matched to rosters by this script.",
   "tweets": [
     {
@@ -23,63 +23,6 @@
       "author_name": "NFL",
       "avatar": "https://pbs.twimg.com/profile_images/1619895559334273028/PHKS_mjX_normal.jpg",
       "author_verified": true
-    },
-    {
-      "url": "https://www.espn.com/video/clip/_/id/50044758/cam-ward-puts-titans-board-td-pass-wandale-robinson",
-      "player": "Wan'Dale Robinson",
-      "meta": "WR \u00b7 TEN",
-      "date": "2026-09-27",
-      "author": "ESPN",
-      "text": "Cam Ward puts Titans on the board with TD pass to Wan'Dale Robinson",
-      "verified": true,
-      "faves": 0,
-      "secs": 0,
-      "espn_game": "401872956",
-      "game_id": "401872956",
-      "game_time": "Q4 5:35",
-      "play_key": "401872956:4018729563412",
-      "played_at": "2026-09-27T19:30:53Z",
-      "poster": "https://espnmedia-cdn.akamaized.net/espn/media/common/wsc/2026/0927/88d16dec-8a1f-466f-bd9f-e5a9a6fda881/88d16dec-8a1f-466f-bd9f-e5a9a6fda881.jpg",
-      "published": "2026-09-27T19:45:23Z",
-      "video": "https://espnmedia-cdn.akamaized.net/espn/media/16x9/wsc/2026/0927/88d16dec-8a1f-466f-bd9f-e5a9a6fda881/88d16dec-8a1f-466f-bd9f-e5a9a6fda881.mp4"
-    },
-    {
-      "url": "https://www.espn.com/video/clip/_/id/50043903/marcus-mariota-fires-td-pass-treylon-burks",
-      "player": "Treylon Burks",
-      "meta": "WR \u00b7 WAS",
-      "date": "2026-09-27",
-      "author": "ESPN",
-      "text": "Marcus Mariota fires a TD pass to Treylon Burks",
-      "verified": true,
-      "faves": 0,
-      "secs": 0,
-      "espn_game": "401872955",
-      "game_id": "401872955",
-      "game_time": "Q2 6:47",
-      "play_key": "401872955:4018729551657",
-      "played_at": "2026-09-27T18:10:24Z",
-      "poster": "https://espnmedia-cdn.akamaized.net/espn/media/common/2026/0927/4f94a7f3d5cf44daae61831f7edda61a1002/4f94a7f3d5cf44daae61831f7edda61a1002.jpg",
-      "published": "2026-09-27T18:19:47Z",
-      "video": "https://espnmedia-cdn.akamaized.net/espn/media/16x9/wsc/2026/0927/4f94a7f3-d5cf-44da-ae61-831f7edda61a/4f94a7f3-d5cf-44da-ae61-831f7edda61a.mp4"
-    },
-    {
-      "url": "https://www.espn.com/video/clip/_/id/50043463/keaton-mitchell-puts-chargers-board-td-catch",
-      "player": "Keaton Mitchell",
-      "meta": "RB \u00b7 LAC",
-      "date": "2026-09-27",
-      "author": "ESPN",
-      "text": "Keaton Mitchell puts Chargers on the board with TD catch",
-      "verified": true,
-      "faves": 0,
-      "secs": 0,
-      "espn_game": "401872953",
-      "game_id": "401872953",
-      "game_time": "Q1 10:33",
-      "play_key": "401872953:401872953295",
-      "played_at": "2026-09-27T17:10:21Z",
-      "poster": "https://espnmedia-cdn.akamaized.net/espn/media/common/2026/0927/fbf58be313a74854a6c9fbeab19c23b5973/fbf58be313a74854a6c9fbeab19c23b5973.jpg",
-      "published": "2026-09-27T17:19:19Z",
-      "video": "https://espnmedia-cdn.akamaized.net/espn/media/16x9/wsc/2026/0927/fbf58be3-13a7-4854-a6c9-fbeab19c23b5/fbf58be3-13a7-4854-a6c9-fbeab19c23b5.mp4"
     }
   ]
 }
