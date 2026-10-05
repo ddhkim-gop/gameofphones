@@ -37,17 +37,12 @@ jobs:
         run: python3 scripts/refresh_transactions.py
         continue-on-error: true   # exit code 1 = no changes (not an error)
 
-      # Republish highlight feeds so they ride the same push as roster news.
-      # Runs off the committed media cache + reviewed.json, so it needs no X
-      # login and no yt-dlp: already-approved clips reproduce deterministically.
-      # Finding/watching new clips stays a local step (CI can't log into X);
-      # continue-on-error keeps a network hiccup from failing the refresh.
+      # nflverse play timings, read by the Mac's highlight runs. The feeds
+      # themselves are built and pushed only from the Mac: rebuilding them here
+      # too made both sides edit the same files, and the Mac's 2026-09-30 push
+      # hit a merge conflict that stopped its highlight runs for four days.
       - name: Refresh nflverse play timings
         run: python3 scripts/gen_playtimes.py
-        continue-on-error: true
-
-      - name: Rebuild highlight feeds
-        run: python3 scripts/build_highlights.py scripts/highlights_pool.txt
         continue-on-error: true
 
       - name: Commit and push if data changed
@@ -56,12 +51,7 @@ jobs:
         run: |
           git config user.name  "github-actions[bot]"
           git config user.email "github-actions[bot]@users.noreply.github.com"
-          git add data.js scripts/players_cache.json *.html \
-                  assets/highlights \
-                  scripts/highlights_reviewed.json \
-                  scripts/highlights_pool.txt \
-                  scripts/.highlights_media_cache.json \
-                  scripts/.highlights_oembed_cache.json \
+          git add data.js data scripts/players_cache.json *.html \
                   scripts/.playtimes.json
           if git diff --cached --quiet; then
             echo "changed=false" >> "$GITHUB_OUTPUT"
