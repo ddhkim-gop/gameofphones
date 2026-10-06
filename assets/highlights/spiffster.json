@@ -4,6 +4,27 @@
   "note": "Curated: X has no public search API, so posts are collected by hand and matched to rosters by this script.",
   "tweets": [
     {
+      "url": "https://x.com/Saints/status/2107278126069723348",
+      "player": "Alvin Kamara",
+      "meta": "RB \u00b7 NO",
+      "date": "2026-10-06",
+      "author": "Saints",
+      "text": "\"Kamara - TOUCHDOWN SAINTS!\"\n\n#Saints | \ud83d\udcfa: ESPN",
+      "verified": true,
+      "faves": 209,
+      "secs": 11,
+      "game_id": "401872979",
+      "game_time": "Q2 14:57",
+      "play_key": "401872979:4018729791286",
+      "played_at": "2026-10-06T01:12:20Z",
+      "poster": "https://pbs.twimg.com/amplify_video_thumb/2107277946016681984/img/_92V44gw695z2jqq.jpg",
+      "published": "2026-10-06T01:13:51Z",
+      "video": "https://video.twimg.com/amplify_video/2107277946016681984/vid/avc1/1920x1080/7RnZ7kMe6y6U4cPt.mp4",
+      "author_name": "New Orleans Saints",
+      "avatar": "https://pbs.twimg.com/profile_images/2056742674477035520/4azt0iTz_normal.jpg",
+      "author_verified": true
+    },
+    {
       "url": "https://www.espn.com/video/clip/_/id/50106882/chuba-hubbard-plows-carolina-td",
       "player": "Chuba Hubbard",
       "meta": "RB \u00b7 CAR",

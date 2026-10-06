@@ -1143,6 +1143,16 @@
   "published": "2026-10-05T03:57:21Z",
   "video": "https://espnmedia-cdn.akamaized.net/espn/media/16x9/wsc/2026/1005/c041a6d6-504f-4441-a16a-b122c5e2ae86/c041a6d6-504f-4441-a16a-b122c5e2ae86.mp4"
  },
+ "https://www.espn.com/video/clip/_/id/50113279/bijan-robinson-breaks-free-opening-drive-59-yard-falcons-td": {
+  "espn_game": "401872979",
+  "game_id": "401872979",
+  "game_time": "Q1 13:34",
+  "play_key": "401872979:401872979110",
+  "played_at": "2026-10-06T00:19:22Z",
+  "poster": "https://espnmedia-cdn.akamaized.net/espn/media/common/2026/1005/1c5ae591391b472f802a912543ef9bb71239/1c5ae591391b472f802a912543ef9bb71239.jpg",
+  "published": "2026-10-06T00:27:20Z",
+  "video": "https://espnmedia-cdn.akamaized.net/espn/media/16x9/wsc/2026/1006/1c5ae591-391b-472f-802a-912543ef9bb7/1c5ae591-391b-472f-802a-912543ef9bb7.mp4"
+ },
  "https://www.youtube.com/shorts/-9mLHMkLMRw": {
   "poster": "https://i.ytimg.com/vi/-9mLHMkLMRw/hqdefault.jpg",
   "published": "2026-09-21T18:33:52Z",
@@ -2718,6 +2728,15 @@
   "published": "2026-10-04T19:09:17Z",
   "video": "https://video.twimg.com/amplify_video/2106822367733288960/vid/avc1/1920x1080/HYHUYcCwAj92_Ia4.mp4"
  },
+ "https://x.com/AtlantaFalcons/status/2107265125799387517": {
+  "game_id": "401872979",
+  "game_time": "Q1 13:34",
+  "play_key": "401872979:401872979110",
+  "played_at": "2026-10-06T00:19:22Z",
+  "poster": "https://pbs.twimg.com/amplify_video_thumb/2107265106924961792/img/7eN5bKyxsY5r-4Sq.jpg",
+  "published": "2026-10-06T00:22:11Z",
+  "video": "https://video.twimg.com/amplify_video/2107265106924961792/vid/avc1/576x720/7gMXe1WCSUcu286-.mp4?tag=16"
+ },
  "https://x.com/Bengals/status/2106819603229786421": {
   "game_id": "401872969",
   "game_time": "Q3 8:44",
@@ -3621,6 +3640,15 @@
   "published": "2026-10-06T00:21:18Z",
   "video": "https://video.twimg.com/amplify_video/2107264733250564096/vid/avc1/1920x1080/QQtK40I9PZxE9S2e.mp4"
  },
+ "https://x.com/NFL/status/2107271235738673308": {
+  "game_id": "401872979",
+  "game_time": "Q1 9:19",
+  "play_key": "401872979:401872979599",
+  "played_at": "2026-10-06T00:45:13Z",
+  "poster": "https://pbs.twimg.com/amplify_video_thumb/2107271085972680704/img/X3Iw_A3RU3gOxC9u.jpg",
+  "published": "2026-10-06T00:46:28Z",
+  "video": "https://video.twimg.com/amplify_video/2107271085972680704/vid/avc1/1920x1080/lx1UbTxubl-HPuzp.mp4"
+ },
  "https://x.com/NFLTDsVideos/status/2098243863588540602": {
   "poster": "https://pbs.twimg.com/amplify_video_thumb/2098241229179981824/img/2KDyL8xVMdAuIHf1.jpg?name=orig",
   "video": "https://video.twimg.com/amplify_video/2098241229179981824/vid/avc1/1920x1080/Z9YA4l2bMWqkTm7Y.mp4?tag=29"
@@ -3988,6 +4016,38 @@
   "poster": "https://pbs.twimg.com/amplify_video_thumb/2106807574095892480/img/V-q2Yz2qp_-rGPlN.jpg",
   "published": "2026-10-04T18:04:48Z",
   "video": "https://video.twimg.com/amplify_video/2106807574095892480/vid/avc1/1920x1080/dQds1cLybfNYAay3.mp4"
+ },
+ "https://x.com/Saints/status/2107259327866081757": {
+  "poster": "https://pbs.twimg.com/media/HT59HGJWMAA5yLo.jpg",
+  "published": "2026-10-05T23:59:09Z",
+  "video": "https://video.twimg.com/amplify_video/2107258870812815360/vid/avc1/1920x1080/5YJQ432aJUbxuUpD.mp4"
+ },
+ "https://x.com/Saints/status/2107271160190681423": {
+  "game_id": "401872979",
+  "game_time": "Q1 9:19",
+  "play_key": "401872979:401872979599",
+  "played_at": "2026-10-06T00:45:13Z",
+  "poster": "https://pbs.twimg.com/amplify_video_thumb/2107271048206884864/img/Twy109zJNxKNr1qP.jpg",
+  "published": "2026-10-06T00:46:10Z",
+  "video": "https://video.twimg.com/amplify_video/2107271048206884864/vid/avc1/1920x1080/sxedTE7FvC1EE_DW.mp4"
+ },
+ "https://x.com/Saints/status/2107277081528680469": {
+  "game_id": "401872979",
+  "game_time": "Q1 0:44",
+  "play_key": "401872979:4018729791216",
+  "played_at": "2026-10-06T01:08:26Z",
+  "poster": "https://pbs.twimg.com/amplify_video_thumb/2107276936665862144/img/XJxkdmOcXFzea--K.jpg",
+  "published": "2026-10-06T01:09:42Z",
+  "video": "https://video.twimg.com/amplify_video/2107276936665862144/vid/avc1/1920x1080/bs9wCNylVeRZb7up.mp4"
+ },
+ "https://x.com/Saints/status/2107278126069723348": {
+  "game_id": "401872979",
+  "game_time": "Q2 14:57",
+  "play_key": "401872979:4018729791286",
+  "played_at": "2026-10-06T01:12:20Z",
+  "poster": "https://pbs.twimg.com/amplify_video_thumb/2107277946016681984/img/_92V44gw695z2jqq.jpg",
+  "published": "2026-10-06T01:13:51Z",
+  "video": "https://video.twimg.com/amplify_video/2107277946016681984/vid/avc1/1920x1080/7RnZ7kMe6y6U4cPt.mp4"
  },
  "https://x.com/Titans/status/2106795220092281013": {
   "game_id": "401872973",
