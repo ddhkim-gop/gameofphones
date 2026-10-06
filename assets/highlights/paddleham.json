@@ -1,6 +1,6 @@
 {
   "team": "paddleham",
-  "updated": "2026-10-05",
+  "updated": "2026-10-06",
   "note": "Curated: X has no public search API, so posts are collected by hand and matched to rosters by this script.",
   "tweets": [
     {
@@ -82,27 +82,6 @@
       "published": "2026-10-02T01:08:19Z",
       "youtube": "cG5XweLJcHc",
       "author_name": "Cleveland Browns",
-      "avatar": "",
-      "author_verified": true
-    },
-    {
-      "url": "https://www.youtube.com/shorts/SaAhntjLK94",
-      "player": "Tyler Higbee",
-      "meta": "TE \u00b7 LAR",
-      "date": "2026-09-28",
-      "author": "LARams",
-      "text": "BIG RIG HIGS TOUCHDOWN \u203c\ufe0f  #rams #nfl #shorts",
-      "verified": true,
-      "faves": 435,
-      "secs": 18,
-      "game_id": "401872962",
-      "game_time": "Q1 4:55",
-      "play_key": "401872962:401872962632",
-      "played_at": "2026-09-28T00:47:53Z",
-      "poster": "https://i.ytimg.com/vi/SaAhntjLK94/hqdefault.jpg",
-      "published": "2026-09-28T01:04:03Z",
-      "youtube": "SaAhntjLK94",
-      "author_name": "Los Angeles Rams",
       "avatar": "",
       "author_verified": true
     }

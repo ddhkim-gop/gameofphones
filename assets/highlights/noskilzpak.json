@@ -1,6 +1,6 @@
 {
   "team": "NoSkilzPak",
-  "updated": "2026-10-05",
+  "updated": "2026-10-06",
   "note": "Curated: X has no public search API, so posts are collected by hand and matched to rosters by this script.",
   "tweets": [
     {
@@ -301,25 +301,6 @@
       "author_name": "NFL",
       "avatar": "https://pbs.twimg.com/profile_images/1619895559334273028/PHKS_mjX_normal.jpg",
       "author_verified": true
-    },
-    {
-      "url": "https://www.espn.com/video/clip/_/id/50049686/matthew-stafford-airs-konata-mumpfield-48-yard-td",
-      "player": "Konata Mumpfield",
-      "meta": "WR \u00b7 LAR",
-      "date": "2026-09-28",
-      "author": "ESPN",
-      "text": "Matthew Stafford airs it out to Konata Mumpfield for a 48-yard TD",
-      "verified": true,
-      "faves": 0,
-      "secs": 0,
-      "espn_game": "401872962",
-      "game_id": "401872962",
-      "game_time": "Q4 3:38",
-      "play_key": "401872962:4018729624246",
-      "played_at": "2026-09-28T03:21:02Z",
-      "poster": "https://espnmedia-cdn.akamaized.net/espn/media/common/2026/0928/085762abb407446b8d00e3ed846a9d6b17/085762abb407446b8d00e3ed846a9d6b17.jpg",
-      "published": "2026-09-28T03:28:48Z",
-      "video": "https://espnmedia-cdn.akamaized.net/espn/media/16x9/wsc/2026/0928/085762ab-b407-446b-8d00-e3ed846a9d6b/085762ab-b407-446b-8d00-e3ed846a9d6b.mp4"
     },
     {
       "url": "https://www.espn.com/video/clip/_/id/50099630/marcus-mariota-exits-game-hard-hit-leg",
