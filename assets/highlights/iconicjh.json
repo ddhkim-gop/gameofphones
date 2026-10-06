@@ -4,6 +4,27 @@
   "note": "Curated: X has no public search API, so posts are collected by hand and matched to rosters by this script.",
   "tweets": [
     {
+      "url": "https://www.youtube.com/shorts/pUV0rxHKDqE",
+      "player": "Bijan Robinson",
+      "meta": "RB \u00b7 ATL",
+      "date": "2026-10-06",
+      "author": "AtlantaFalcons",
+      "text": "Bijan Robinson gets into the end zone AGAIN for 6\ufe0f\u20e3 ESPN | ANF #atlantafalcons #nfl",
+      "verified": true,
+      "faves": 82,
+      "secs": 23,
+      "game_id": "401872979",
+      "game_time": "Q1 0:48",
+      "play_key": "401872979:4018729791144",
+      "played_at": "2026-10-06T01:04:40Z",
+      "poster": "https://i.ytimg.com/vi/pUV0rxHKDqE/hqdefault.jpg",
+      "published": "2026-10-06T01:19:22Z",
+      "youtube": "pUV0rxHKDqE",
+      "author_name": "Atlanta Falcons",
+      "avatar": "",
+      "author_verified": true
+    },
+    {
       "url": "https://www.espn.com/video/clip/_/id/50113279/bijan-robinson-breaks-free-opening-drive-59-yard-falcons-td",
       "player": "Bijan Robinson",
       "meta": "RB \u00b7 ATL",
