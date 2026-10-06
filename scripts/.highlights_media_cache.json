@@ -1209,7 +1209,7 @@
   "game_time": "Q4 13:00",
   "play_key": "401872979:4018729793482",
   "played_at": "2026-10-06T02:49:29Z",
-  "poster": "https://espnmedia-cdn.akamaized.net/espn/media/common/wsc/2026/1006/a29190d5-8604-4f15-961a-ec05118cc8b2/a29190d5-8604-4f15-961a-ec05118cc8b2.jpg",
+  "poster": "https://espnmedia-cdn.akamaized.net/espn/media/common/2026/1005/a29190d586044f15961aec05118cc8b21430/a29190d586044f15961aec05118cc8b21430.jpg",
   "published": "2026-10-06T03:13:25Z",
   "video": "https://espnmedia-cdn.akamaized.net/espn/media/16x9/wsc/2026/1006/a29190d5-8604-4f15-961a-ec05118cc8b2/a29190d5-8604-4f15-961a-ec05118cc8b2.mp4"
  },
@@ -1218,6 +1218,26 @@
   "poster": "https://espnmedia-cdn.akamaized.net/espn/media/common/wsc/2026/1006/1190cf2d-ce93-4dcb-a76c-e8730ee0a2e4/1190cf2d-ce93-4dcb-a76c-e8730ee0a2e4.jpg",
   "published": "2026-10-06T03:19:30Z",
   "video": "https://espnmedia-cdn.akamaized.net/espn/media/16x9/wsc/2026/1006/1190cf2d-ce93-4dcb-a76c-e8730ee0a2e4/1190cf2d-ce93-4dcb-a76c-e8730ee0a2e4.mp4"
+ },
+ "https://www.espn.com/video/clip/_/id/50114582/michael-penix-jr-fires-strike-jahan-dotson-31-yard-falcons-td": {
+  "espn_game": "401872979",
+  "game_id": "401872979",
+  "game_time": "Q4 9:50",
+  "play_key": "401872979:4018729793648",
+  "played_at": "2026-10-06T02:59:34Z",
+  "poster": "https://espnmedia-cdn.akamaized.net/espn/media/common/2026/1005/ce0c0846a1f24840aa8e97ce22f7d7011434/ce0c0846a1f24840aa8e97ce22f7d7011434.jpg",
+  "published": "2026-10-06T03:26:31Z",
+  "video": "https://espnmedia-cdn.akamaized.net/espn/media/16x9/wsc/2026/1006/ce0c0846-a1f2-4840-aa8e-97ce22f7d701/ce0c0846-a1f2-4840-aa8e-97ce22f7d701.mp4"
+ },
+ "https://www.espn.com/video/clip/_/id/50114655/devaughn-vele-makes-incredible-grab-saints-td": {
+  "espn_game": "401872979",
+  "game_id": "401872979",
+  "game_time": "Q4 1:13",
+  "play_key": "401872979:4018729794308",
+  "played_at": "2026-10-06T03:25:18Z",
+  "poster": "https://espnmedia-cdn.akamaized.net/espn/media/common/wsc/2026/1006/0487b5d3-a3f3-42cb-864b-24a1c2fb6c5f/0487b5d3-a3f3-42cb-864b-24a1c2fb6c5f.jpg",
+  "published": "2026-10-06T03:39:09Z",
+  "video": "https://espnmedia-cdn.akamaized.net/espn/media/16x9/wsc/2026/1006/0487b5d3-a3f3-42cb-864b-24a1c2fb6c5f/0487b5d3-a3f3-42cb-864b-24a1c2fb6c5f.mp4"
  },
  "https://www.youtube.com/shorts/-9mLHMkLMRw": {
   "poster": "https://i.ytimg.com/vi/-9mLHMkLMRw/hqdefault.jpg",
