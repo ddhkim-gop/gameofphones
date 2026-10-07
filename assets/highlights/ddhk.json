@@ -1,6 +1,6 @@
 {
   "team": "ddhk",
-  "updated": "2026-10-06",
+  "updated": "2026-10-07",
   "note": "Curated: X has no public search API, so posts are collected by hand and matched to rosters by this script.",
   "tweets": [
     {
@@ -276,25 +276,6 @@
       "poster": "https://espnmedia-cdn.akamaized.net/espn/media/common/2026/1004/3c741edac1054922b5cea549041a4203988/3c741edac1054922b5cea549041a4203988.jpg",
       "published": "2026-10-04T17:44:26Z",
       "video": "https://espnmedia-cdn.akamaized.net/espn/media/16x9/wsc/2026/1004/3c741eda-c105-4922-b5ce-a549041a4203/3c741eda-c105-4922-b5ce-a549041a4203.mp4"
-    },
-    {
-      "url": "https://www.espn.com/video/clip/_/id/50055667/bears-strike-first-luther-burden-iii-pushes-pile-end-zone",
-      "player": "Luther Burden",
-      "meta": "WR \u00b7 CHI",
-      "date": "2026-09-29",
-      "author": "ESPN",
-      "text": "Bears strike first as Luther Burden III pushes pile into end zone",
-      "verified": true,
-      "faves": 0,
-      "secs": 0,
-      "espn_game": "401872963",
-      "game_id": "401872963",
-      "game_time": "Q1 8:47",
-      "play_key": "401872963:401872963315",
-      "played_at": "2026-09-29T00:23:47Z",
-      "poster": "https://espnmedia-cdn.akamaized.net/espn/media/common/2026/0928/6b4fe8cb4db747e4ba680086e36a75591243/6b4fe8cb4db747e4ba680086e36a75591243.jpg",
-      "published": "2026-09-29T00:36:48Z",
-      "video": "https://espnmedia-cdn.akamaized.net/espn/media/16x9/wsc/2026/0929/6b4fe8cb-4db7-47e4-ba68-0086e36a7559/6b4fe8cb-4db7-47e4-ba68-0086e36a7559.mp4"
     },
     {
       "url": "https://www.espn.com/video/clip/_/id/50103616/justin-herbert-sam-darnold-trade-ints-first-two-drives",
