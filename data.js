@@ -5163,22 +5163,6 @@ window.__STATIC_DATA__ = {
         "roster_id": 1,
         "players": [
             {
-                "player_id": "11157",
-                "espn_id": null,
-                "name": "Brycen Tremayne",
-                "position": "WR",
-                "team": "CAR",
-                "age": 26,
-                "birth_date": "1999-11-18",
-                "college": "Stanford",
-                "height": "76",
-                "weight": "212",
-                "years_exp": 3,
-                "status": "Active",
-                "injury_status": null,
-                "search_rank": 489
-            },
-            {
                 "player_id": "11533",
                 "espn_id": null,
                 "name": "Brandon Aubrey",
@@ -5545,6 +5529,22 @@ window.__STATIC_DATA__ = {
                 "status": "Active",
                 "injury_status": null,
                 "search_rank": 103
+            },
+            {
+                "player_id": "7083",
+                "espn_id": 4035671,
+                "name": "Tyler Huntley",
+                "position": "QB",
+                "team": "BAL",
+                "age": 28,
+                "birth_date": "1998-02-03",
+                "college": "Utah",
+                "height": "73",
+                "weight": "204",
+                "years_exp": 6,
+                "status": "Active",
+                "injury_status": null,
+                "search_rank": 690
             },
             {
                 "player_id": "7547",
@@ -6001,22 +6001,6 @@ window.__STATIC_DATA__ = {
                 "search_rank": 85
             },
             {
-                "player_id": "4227",
-                "espn_id": 3055899,
-                "name": "Harrison Butker",
-                "position": "K",
-                "team": "KC",
-                "age": 31,
-                "birth_date": "1995-07-14",
-                "college": "Georgia Tech",
-                "height": "76",
-                "weight": "205",
-                "years_exp": 9,
-                "status": "Active",
-                "injury_status": null,
-                "search_rank": 155
-            },
-            {
                 "player_id": "4992",
                 "espn_id": 3127306,
                 "name": "Dante Pettis",
@@ -6095,6 +6079,22 @@ window.__STATIC_DATA__ = {
                 "status": "Active",
                 "injury_status": null,
                 "search_rank": 77
+            },
+            {
+                "player_id": "6083",
+                "espn_id": 4249087,
+                "name": "Matt Gay",
+                "position": "K",
+                "team": "LV",
+                "age": 32,
+                "birth_date": "1994-03-15",
+                "college": "Utah",
+                "height": "72",
+                "weight": "232",
+                "years_exp": 7,
+                "status": "Active",
+                "injury_status": null,
+                "search_rank": 239
             },
             {
                 "player_id": "6806",
@@ -7037,6 +7037,22 @@ window.__STATIC_DATA__ = {
                 "search_rank": 65
             },
             {
+                "player_id": "7039",
+                "espn_id": 4241983,
+                "name": "Cody White",
+                "position": "WR",
+                "team": "LV",
+                "age": 27,
+                "birth_date": "1998-11-28",
+                "college": "Michigan State",
+                "height": "75",
+                "weight": "215",
+                "years_exp": 6,
+                "status": "Active",
+                "injury_status": null,
+                "search_rank": 336
+            },
+            {
                 "player_id": "7525",
                 "espn_id": null,
                 "name": "DeVonta Smith",
@@ -7163,22 +7179,6 @@ window.__STATIC_DATA__ = {
                 "status": "Active",
                 "injury_status": null,
                 "search_rank": 120
-            },
-            {
-                "player_id": "8168",
-                "espn_id": null,
-                "name": "Skyy Moore",
-                "position": "WR",
-                "team": "GB",
-                "age": 26,
-                "birth_date": "2000-09-10",
-                "college": "Western Michigan",
-                "height": "70",
-                "weight": "195",
-                "years_exp": 4,
-                "status": "Active",
-                "injury_status": null,
-                "search_rank": 608
             },
             {
                 "player_id": "8259",
@@ -10781,6 +10781,22 @@ window.__STATIC_DATA__ = {
                 "search_rank": 546
             },
             {
+                "player_id": "11577",
+                "espn_id": null,
+                "name": "Will Shipley",
+                "position": "RB",
+                "team": "PHI",
+                "age": 24,
+                "birth_date": "2002-08-29",
+                "college": "Clemson",
+                "height": "71",
+                "weight": "209",
+                "years_exp": 2,
+                "status": "Active",
+                "injury_status": null,
+                "search_rank": 686
+            },
+            {
                 "player_id": "11792",
                 "espn_id": null,
                 "name": "Will Reichard",
@@ -11195,22 +11211,6 @@ window.__STATIC_DATA__ = {
                 "status": "Active",
                 "injury_status": null,
                 "search_rank": 13
-            },
-            {
-                "player_id": "8800",
-                "espn_id": null,
-                "name": "Malik Davis",
-                "position": "RB",
-                "team": "DAL",
-                "age": 27,
-                "birth_date": "1998-11-26",
-                "college": "Florida",
-                "height": "70",
-                "weight": "205",
-                "years_exp": 4,
-                "status": "Inactive",
-                "injury_status": "IR",
-                "search_rank": 441
             },
             {
                 "player_id": "9508",
@@ -11668,6 +11668,184 @@ window.__STATIC_DATA__ = {
     }
   ],
   "transactions": [
+    {
+        "season": "2026",
+        "week": 5,
+        "created": "Oct 6, 2026 • 11:49 PM PT",
+        "transaction_id": "1413467277709385728",
+        "type": "free_agent",
+        "status": "complete",
+        "teams": [
+            "jonsung"
+        ],
+        "added": [
+            {
+                "name": "Cody White",
+                "position": "WR",
+                "team": "LV"
+            }
+        ],
+        "dropped": [
+            {
+                "name": "Skyy Moore",
+                "position": "WR",
+                "team": "GB"
+            }
+        ],
+        "faab": 0,
+        "waiver_bid": 0,
+        "notes": null
+    },
+    {
+        "season": "2026",
+        "week": 5,
+        "created": "Oct 6, 2026 • 11:45 PM PT",
+        "transaction_id": "1413466253351231488",
+        "type": "free_agent",
+        "status": "complete",
+        "teams": [
+            "ddhk"
+        ],
+        "added": [
+            {
+                "name": "Tyler Huntley",
+                "position": "QB",
+                "team": "BAL"
+            }
+        ],
+        "dropped": [
+            {
+                "name": "Brycen Tremayne",
+                "position": "WR",
+                "team": "CAR"
+            }
+        ],
+        "faab": 0,
+        "waiver_bid": 0,
+        "notes": null
+    },
+    {
+        "season": "2026",
+        "week": 4,
+        "created": "Oct 6, 2026 • 10:29 PM PT",
+        "transaction_id": "1413447251002478592",
+        "type": "waiver",
+        "status": "complete",
+        "teams": [
+            "ganathan"
+        ],
+        "added": [
+            {
+                "name": "Will Shipley",
+                "position": "RB",
+                "team": "PHI"
+            }
+        ],
+        "dropped": [
+            {
+                "name": "Malik Davis",
+                "position": "RB",
+                "team": "DAL"
+            }
+        ],
+        "faab": 0,
+        "waiver_bid": 100,
+        "notes": "Your waiver claim was processed successfully!"
+    },
+    {
+        "season": "2026",
+        "week": 4,
+        "created": "Oct 6, 2026 • 10:13 PM PT",
+        "transaction_id": "1413443233186435072",
+        "type": "waiver",
+        "status": "failed",
+        "teams": [
+            "jonsung"
+        ],
+        "added": [
+            {
+                "name": "Will Shipley",
+                "position": "RB",
+                "team": "PHI"
+            }
+        ],
+        "dropped": [],
+        "faab": 0,
+        "waiver_bid": 36,
+        "notes": "This player was claimed by another owner."
+    },
+    {
+        "season": "2026",
+        "week": 4,
+        "created": "Oct 6, 2026 • 12:26 PM PT",
+        "transaction_id": "1413295422759354368",
+        "type": "waiver",
+        "status": "complete",
+        "teams": [
+            "spiffster"
+        ],
+        "added": [
+            {
+                "name": "Matt Gay",
+                "position": "K",
+                "team": "LV"
+            }
+        ],
+        "dropped": [
+            {
+                "name": "Harrison Butker",
+                "position": "K",
+                "team": "KC"
+            }
+        ],
+        "faab": 0,
+        "waiver_bid": 0,
+        "notes": "Your waiver claim was processed successfully!"
+    },
+    {
+        "season": "2026",
+        "week": 4,
+        "created": "Oct 6, 2026 • 10:10 AM PT",
+        "transaction_id": "1413261184416694272",
+        "type": "waiver",
+        "status": "failed",
+        "teams": [
+            "ngman"
+        ],
+        "added": [
+            {
+                "name": "Will Shipley",
+                "position": "RB",
+                "team": "PHI"
+            }
+        ],
+        "dropped": [],
+        "faab": 0,
+        "waiver_bid": 10,
+        "notes": "This player was claimed by another owner."
+    },
+    {
+        "season": "2026",
+        "week": 4,
+        "created": "Oct 5, 2026 • 2:14 PM PT",
+        "transaction_id": "1412960312545509376",
+        "type": "waiver",
+        "status": "failed",
+        "teams": [
+            "spiffster"
+        ],
+        "added": [
+            {
+                "name": "Will Shipley",
+                "position": "RB",
+                "team": "PHI"
+            }
+        ],
+        "dropped": [],
+        "faab": 0,
+        "waiver_bid": 44,
+        "notes": "This player was claimed by another owner."
+    },
     {
         "season": "2026",
         "week": 4,
