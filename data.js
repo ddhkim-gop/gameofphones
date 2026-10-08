@@ -7240,7 +7240,7 @@ window.__STATIC_DATA__ = {
                 "name": "Brian Thomas",
                 "position": "WR",
                 "team": "JAX",
-                "age": 23,
+                "age": 24,
                 "birth_date": "2002-10-08",
                 "college": "LSU",
                 "height": "74",
@@ -7391,7 +7391,7 @@ window.__STATIC_DATA__ = {
                 "weight": "177",
                 "years_exp": 0,
                 "status": "Active",
-                "injury_status": null,
+                "injury_status": "Questionable",
                 "search_rank": 463
             },
             {
@@ -8229,7 +8229,7 @@ window.__STATIC_DATA__ = {
                 "weight": "208",
                 "years_exp": 3,
                 "status": "Active",
-                "injury_status": null,
+                "injury_status": "Questionable",
                 "search_rank": 103
             }
         ]
@@ -8603,7 +8603,7 @@ window.__STATIC_DATA__ = {
                 "weight": "208",
                 "years_exp": 0,
                 "status": "Active",
-                "injury_status": null,
+                "injury_status": "Questionable",
                 "search_rank": 161
             },
             {
@@ -8762,7 +8762,7 @@ window.__STATIC_DATA__ = {
                 "name": "Adonai Mitchell",
                 "position": "WR",
                 "team": "NYJ",
-                "age": 23,
+                "age": 24,
                 "birth_date": "2002-10-08",
                 "college": "Texas",
                 "height": "74",
@@ -9757,7 +9757,7 @@ window.__STATIC_DATA__ = {
                 "weight": "235",
                 "years_exp": 2,
                 "status": "Active",
-                "injury_status": null,
+                "injury_status": "Questionable",
                 "search_rank": 23
             },
             {
@@ -9837,7 +9837,7 @@ window.__STATIC_DATA__ = {
                 "weight": "210",
                 "years_exp": 2,
                 "status": "Active",
-                "injury_status": null,
+                "injury_status": "Questionable",
                 "search_rank": 459
             },
             {
@@ -9903,22 +9903,6 @@ window.__STATIC_DATA__ = {
                 "status": "Active",
                 "injury_status": null,
                 "search_rank": 507
-            },
-            {
-                "player_id": "12634",
-                "espn_id": null,
-                "name": "Jordan Watkins",
-                "position": "WR",
-                "team": "SF",
-                "age": 24,
-                "birth_date": "2002-02-15",
-                "college": "Ole Miss",
-                "height": "71",
-                "weight": "196",
-                "years_exp": 1,
-                "status": "Active",
-                "injury_status": null,
-                "search_rank": 999
             },
             {
                 "player_id": "13269",
@@ -10013,7 +9997,7 @@ window.__STATIC_DATA__ = {
                 "weight": "245",
                 "years_exp": 0,
                 "status": "Active",
-                "injury_status": "Questionable",
+                "injury_status": null,
                 "search_rank": 363
             },
             {
@@ -10063,6 +10047,22 @@ window.__STATIC_DATA__ = {
                 "status": "Active",
                 "injury_status": null,
                 "search_rank": 451
+            },
+            {
+                "player_id": "5854",
+                "espn_id": 3924327,
+                "name": "Drew Lock",
+                "position": "QB",
+                "team": "SEA",
+                "age": 29,
+                "birth_date": "1996-11-10",
+                "college": "Missouri",
+                "height": "76",
+                "weight": "228",
+                "years_exp": 7,
+                "status": "Active",
+                "injury_status": null,
+                "search_rank": 691
             },
             {
                 "player_id": "6768",
@@ -11684,6 +11684,34 @@ window.__STATIC_DATA__ = {
     }
   ],
   "transactions": [
+    {
+        "season": "2026",
+        "week": 5,
+        "created": "Oct 7, 2026 • 4:33 PM PT",
+        "transaction_id": "1413719841986138112",
+        "type": "free_agent",
+        "status": "complete",
+        "teams": [
+            "velmixon"
+        ],
+        "added": [
+            {
+                "name": "Drew Lock",
+                "position": "QB",
+                "team": "SEA"
+            }
+        ],
+        "dropped": [
+            {
+                "name": "Jordan Watkins",
+                "position": "WR",
+                "team": "SF"
+            }
+        ],
+        "faab": 0,
+        "waiver_bid": 0,
+        "notes": null
+    },
     {
         "season": "2026",
         "week": 5,
