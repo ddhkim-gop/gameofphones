@@ -1,6 +1,6 @@
 {
   "team": "spiffster",
-  "updated": "2026-10-07",
+  "updated": "2026-10-08",
   "note": "Curated: X has no public search API, so posts are collected by hand and matched to rosters by this script.",
   "tweets": [
     {
@@ -284,6 +284,21 @@
       "author_name": "Cleveland Browns",
       "avatar": "",
       "author_verified": true
+    },
+    {
+      "url": "https://www.espn.com/video/clip/_/id/50125078/can-michael-penix-jr-lead-falcons-nfc-south-title",
+      "player": "Michael Penix",
+      "meta": "QB \u00b7 ATL",
+      "date": "2026-10-07",
+      "author": "ESPN",
+      "text": "Can Michael Penix Jr. lead the Falcons to an NFC South title?",
+      "verified": true,
+      "faves": 0,
+      "secs": 0,
+      "espn_game": "401872993",
+      "poster": "https://espnmedia-cdn.akamaized.net/espn/media/common/2026/1007/ss_20261007_103043236_3687658637/ss_20261007_103043236_3687658637.jpg",
+      "published": "2026-10-07T14:30:41Z",
+      "video": "https://espnmedia-cdn.akamaized.net/espn/media/16x9/2026/1007/ss_20261007_103043236_3687658/ss_20261007_103043236_3687658.mp4"
     },
     {
       "url": "https://www.espn.com/video/clip/_/id/50107088/trey-mcbride-gets-a-ref",

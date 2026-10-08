@@ -1,6 +1,6 @@
 {
   "team": "paddleham",
-  "updated": "2026-10-07",
+  "updated": "2026-10-08",
   "note": "Curated: X has no public search API, so posts are collected by hand and matched to rosters by this script.",
   "tweets": [
     {
@@ -42,7 +42,7 @@
       "published": "2026-10-04T18:33:26Z",
       "video": "https://video.twimg.com/amplify_video/2106814797031305216/vid/avc1/1920x1080/vI-oltN99EYp2rlz.mp4",
       "author_name": "Philadelphia Eagles",
-      "avatar": "https://pbs.twimg.com/profile_images/2097678958909415424/CUZFsXqV_normal.jpg",
+      "avatar": "",
       "author_verified": true
     },
     {
