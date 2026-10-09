@@ -7037,6 +7037,22 @@ window.__STATIC_DATA__ = {
                 "search_rank": 65
             },
             {
+                "player_id": "7083",
+                "espn_id": 4035671,
+                "name": "Tyler Huntley",
+                "position": "QB",
+                "team": "BAL",
+                "age": 28,
+                "birth_date": "1998-02-03",
+                "college": "Utah",
+                "height": "73",
+                "weight": "204",
+                "years_exp": 6,
+                "status": "Active",
+                "injury_status": null,
+                "search_rank": 690
+            },
+            {
                 "player_id": "7525",
                 "espn_id": null,
                 "name": "DeVonta Smith",
@@ -7067,22 +7083,6 @@ window.__STATIC_DATA__ = {
                 "status": "Inactive",
                 "injury_status": "IR",
                 "search_rank": 34
-            },
-            {
-                "player_id": "7585",
-                "espn_id": null,
-                "name": "Davis Mills",
-                "position": "QB",
-                "team": "HOU",
-                "age": 27,
-                "birth_date": "1998-10-21",
-                "college": "Stanford",
-                "height": "76",
-                "weight": "225",
-                "years_exp": 5,
-                "status": "Active",
-                "injury_status": null,
-                "search_rank": 543
             },
             {
                 "player_id": "8129",
@@ -11684,6 +11684,34 @@ window.__STATIC_DATA__ = {
     }
   ],
   "transactions": [
+    {
+        "season": "2026",
+        "week": 5,
+        "created": "Oct 9, 2026 • 11:35 AM PT",
+        "transaction_id": "1414369742860341248",
+        "type": "free_agent",
+        "status": "complete",
+        "teams": [
+            "jonsung"
+        ],
+        "added": [
+            {
+                "name": "Tyler Huntley",
+                "position": "QB",
+                "team": "BAL"
+            }
+        ],
+        "dropped": [
+            {
+                "name": "Davis Mills",
+                "position": "QB",
+                "team": "HOU"
+            }
+        ],
+        "faab": 0,
+        "waiver_bid": 0,
+        "notes": null
+    },
     {
         "season": "2026",
         "week": 5,
