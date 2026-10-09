@@ -1,8 +1,29 @@
 {
   "team": "ngman",
-  "updated": "2026-10-08",
+  "updated": "2026-10-09",
   "note": "Curated: X has no public search API, so posts are collected by hand and matched to rosters by this script.",
   "tweets": [
+    {
+      "url": "https://x.com/dallascowboys/status/2108391839120187559",
+      "player": "Dak Prescott",
+      "meta": "QB \u00b7 DAL",
+      "date": "2026-10-09",
+      "author": "dallascowboys",
+      "text": "GP TD \u203c\ufe0f\n\n\ud83d\udcfa: #TBvsDAL\u00a0on Prime Video\n\ud83d\udcf2: Stream on NFL+",
+      "verified": true,
+      "faves": 281,
+      "secs": 14,
+      "game_id": "401872980",
+      "game_time": "Q4 5:26",
+      "play_key": "401872980:4018729803742",
+      "played_at": "2026-10-09T02:57:45Z",
+      "poster": "https://pbs.twimg.com/amplify_video_thumb/2108391588476960768/img/Gwvj-vgcFVCdHQ9m.jpg",
+      "published": "2026-10-09T02:59:21Z",
+      "video": "https://video.twimg.com/amplify_video/2108391588476960768/vid/avc1/1920x1080/lFX4xSGGrc0nMCmp.mp4",
+      "author_name": "Dallas Cowboys",
+      "avatar": "",
+      "author_verified": true
+    },
     {
       "url": "https://www.espn.com/video/clip/_/id/50105073/jaylen-waddle-dodges-defender-broncos-td",
       "player": "Bo Nix",

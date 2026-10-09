@@ -1,6 +1,6 @@
 {
   "team": "ganathan",
-  "updated": "2026-10-08",
+  "updated": "2026-10-09",
   "note": "Curated: X has no public search API, so posts are collected by hand and matched to rosters by this script.",
   "tweets": [
     {
@@ -279,6 +279,23 @@
       "video": "https://video.twimg.com/amplify_video/2106793899486265344/vid/avc1/1920x1080/bnZ87ISoHDdcSPSK.mp4",
       "author_name": "NFL",
       "avatar": "https://pbs.twimg.com/profile_images/1619895559334273028/PHKS_mjX_normal.jpg",
+      "author_verified": true
+    },
+    {
+      "url": "https://www.youtube.com/shorts/d4v5DF_Ht-c",
+      "player": "Will Reichard",
+      "meta": "K \u00b7 MIN",
+      "date": "2026-10-08",
+      "author": "Vikings",
+      "text": "Will Reichard is \"so nasty\" \ud83e\udd23 | Mic'd Up",
+      "verified": false,
+      "faves": 295,
+      "secs": 8,
+      "poster": "https://i.ytimg.com/vi/d4v5DF_Ht-c/hqdefault.jpg",
+      "published": "2026-10-08T22:00:14Z",
+      "youtube": "d4v5DF_Ht-c",
+      "author_name": "Minnesota Vikings",
+      "avatar": "",
       "author_verified": true
     }
   ]
