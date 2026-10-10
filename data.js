@@ -5288,7 +5288,7 @@ window.__STATIC_DATA__ = {
                 "years_exp": 1,
                 "status": "Active",
                 "injury_status": null,
-                "search_rank": 48
+                "search_rank": 47
             },
             {
                 "player_id": "12519",
@@ -5694,7 +5694,7 @@ window.__STATIC_DATA__ = {
                 "years_exp": 3,
                 "status": "Active",
                 "injury_status": null,
-                "search_rank": 125
+                "search_rank": 127
             },
             {
                 "player_id": "10229",
@@ -5934,7 +5934,7 @@ window.__STATIC_DATA__ = {
                 "years_exp": 11,
                 "status": "Active",
                 "injury_status": "Out",
-                "search_rank": 105
+                "search_rank": 103
             },
             {
                 "player_id": "3257",
@@ -5998,7 +5998,7 @@ window.__STATIC_DATA__ = {
                 "years_exp": 9,
                 "status": "Active",
                 "injury_status": null,
-                "search_rank": 88
+                "search_rank": 87
             },
             {
                 "player_id": "4199",
@@ -6158,7 +6158,7 @@ window.__STATIC_DATA__ = {
                 "years_exp": 4,
                 "status": "Inactive",
                 "injury_status": "IR",
-                "search_rank": 91
+                "search_rank": 92
             },
             {
                 "player_id": "9502",
@@ -6356,7 +6356,7 @@ window.__STATIC_DATA__ = {
                 "years_exp": 0,
                 "status": "Active",
                 "injury_status": null,
-                "search_rank": 289
+                "search_rank": 287
             },
             {
                 "player_id": "13347",
@@ -6533,6 +6533,22 @@ window.__STATIC_DATA__ = {
                 "status": "Active",
                 "injury_status": null,
                 "search_rank": 4
+            },
+            {
+                "player_id": "7039",
+                "espn_id": 4241983,
+                "name": "Cody White",
+                "position": "WR",
+                "team": "LV",
+                "age": 27,
+                "birth_date": "1998-11-28",
+                "college": "Michigan State",
+                "height": "75",
+                "weight": "215",
+                "years_exp": 6,
+                "status": "Active",
+                "injury_status": null,
+                "search_rank": 336
             },
             {
                 "player_id": "8121",
@@ -7114,7 +7130,7 @@ window.__STATIC_DATA__ = {
                 "years_exp": 4,
                 "status": "Active",
                 "injury_status": null,
-                "search_rank": 105
+                "search_rank": 106
             },
             {
                 "player_id": "8134",
@@ -7178,7 +7194,7 @@ window.__STATIC_DATA__ = {
                 "years_exp": 4,
                 "status": "Active",
                 "injury_status": null,
-                "search_rank": 119
+                "search_rank": 120
             },
             {
                 "player_id": "8259",
@@ -7830,7 +7846,7 @@ window.__STATIC_DATA__ = {
                 "years_exp": 2,
                 "status": "Active",
                 "injury_status": null,
-                "search_rank": 65
+                "search_rank": 63
             },
             {
                 "player_id": "11632",
@@ -8134,7 +8150,7 @@ window.__STATIC_DATA__ = {
                 "years_exp": 3,
                 "status": "Active",
                 "injury_status": null,
-                "search_rank": 14
+                "search_rank": 15
             },
             {
                 "player_id": "9494",
@@ -8252,7 +8268,7 @@ window.__STATIC_DATA__ = {
                 "years_exp": 2,
                 "status": "Active",
                 "injury_status": "Questionable",
-                "search_rank": 20
+                "search_rank": 22
             },
             {
                 "player_id": "11571",
@@ -8572,7 +8588,7 @@ window.__STATIC_DATA__ = {
                 "years_exp": 0,
                 "status": "Active",
                 "injury_status": null,
-                "search_rank": 377
+                "search_rank": 375
             },
             {
                 "player_id": "13413",
@@ -8652,7 +8668,7 @@ window.__STATIC_DATA__ = {
                 "years_exp": 9,
                 "status": "Active",
                 "injury_status": null,
-                "search_rank": 195
+                "search_rank": 197
             },
             {
                 "player_id": "4981",
@@ -8754,7 +8770,7 @@ window.__STATIC_DATA__ = {
                 "years_exp": 2,
                 "status": "Active",
                 "injury_status": null,
-                "search_rank": 177
+                "search_rank": 176
             },
             {
                 "player_id": "11625",
@@ -8898,7 +8914,7 @@ window.__STATIC_DATA__ = {
                 "years_exp": 1,
                 "status": "Active",
                 "injury_status": null,
-                "search_rank": 454
+                "search_rank": 456
             },
             {
                 "player_id": "12540",
@@ -9790,7 +9806,7 @@ window.__STATIC_DATA__ = {
                 "years_exp": 2,
                 "status": "Active",
                 "injury_status": "Questionable",
-                "search_rank": 34
+                "search_rank": 36
             },
             {
                 "player_id": "11637",
@@ -10468,7 +10484,7 @@ window.__STATIC_DATA__ = {
                 "years_exp": 0,
                 "status": "Inactive",
                 "injury_status": "IR",
-                "search_rank": 147
+                "search_rank": 148
             },
             {
                 "player_id": "13305",
@@ -10954,7 +10970,7 @@ window.__STATIC_DATA__ = {
                 "years_exp": 0,
                 "status": "Active",
                 "injury_status": null,
-                "search_rank": 384
+                "search_rank": 386
             },
             {
                 "player_id": "4033",
@@ -11002,7 +11018,7 @@ window.__STATIC_DATA__ = {
                 "years_exp": 8,
                 "status": "Active",
                 "injury_status": "Questionable",
-                "search_rank": 48
+                "search_rank": 50
             },
             {
                 "player_id": "4984",
@@ -11684,6 +11700,28 @@ window.__STATIC_DATA__ = {
     }
   ],
   "transactions": [
+    {
+        "season": "2026",
+        "week": 5,
+        "created": "Oct 9, 2026 • 6:39 PM PT",
+        "transaction_id": "1414476396629139456",
+        "type": "free_agent",
+        "status": "complete",
+        "teams": [
+            "NoSkilzPak"
+        ],
+        "added": [
+            {
+                "name": "Cody White",
+                "position": "WR",
+                "team": "LV"
+            }
+        ],
+        "dropped": [],
+        "faab": 0,
+        "waiver_bid": 0,
+        "notes": null
+    },
     {
         "season": "2026",
         "week": 5,
