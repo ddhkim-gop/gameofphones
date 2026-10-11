@@ -5271,7 +5271,7 @@ window.__STATIC_DATA__ = {
                 "weight": "216",
                 "years_exp": 1,
                 "status": "Active",
-                "injury_status": null,
+                "injury_status": "Out",
                 "search_rank": 497
             },
             {
@@ -5335,7 +5335,7 @@ window.__STATIC_DATA__ = {
                 "weight": "202",
                 "years_exp": 1,
                 "status": "Active",
-                "injury_status": "Questionable",
+                "injury_status": "Out",
                 "search_rank": 39
             },
             {
@@ -6339,7 +6339,7 @@ window.__STATIC_DATA__ = {
                 "weight": "233",
                 "years_exp": 0,
                 "status": "Active",
-                "injury_status": null,
+                "injury_status": "Out",
                 "search_rank": 287
             },
             {
@@ -6777,7 +6777,7 @@ window.__STATIC_DATA__ = {
                 "weight": "225",
                 "years_exp": 1,
                 "status": "Active",
-                "injury_status": null,
+                "injury_status": "Questionable",
                 "search_rank": 460
             },
             {
@@ -7295,7 +7295,7 @@ window.__STATIC_DATA__ = {
                 "weight": "230",
                 "years_exp": 1,
                 "status": "Active",
-                "injury_status": null,
+                "injury_status": "Questionable",
                 "search_rank": 690
             },
             {
@@ -7343,7 +7343,7 @@ window.__STATIC_DATA__ = {
                 "weight": "221",
                 "years_exp": 1,
                 "status": "Active",
-                "injury_status": null,
+                "injury_status": "Questionable",
                 "search_rank": 45
             },
             {
@@ -8793,7 +8793,7 @@ window.__STATIC_DATA__ = {
                 "espn_id": null,
                 "name": "Marvin Harrison",
                 "position": "WR",
-                "team": "ARI",
+                "team": "HOU",
                 "age": 24,
                 "birth_date": "2002-08-11",
                 "college": "Ohio State",
@@ -9447,7 +9447,7 @@ window.__STATIC_DATA__ = {
                 "weight": "241",
                 "years_exp": 0,
                 "status": "Active",
-                "injury_status": null,
+                "injury_status": "Out",
                 "search_rank": 109
             },
             {
@@ -9837,7 +9837,7 @@ window.__STATIC_DATA__ = {
                 "weight": "210",
                 "years_exp": 2,
                 "status": "Active",
-                "injury_status": "Questionable",
+                "injury_status": null,
                 "search_rank": 459
             },
             {
@@ -10889,7 +10889,7 @@ window.__STATIC_DATA__ = {
                 "weight": "210",
                 "years_exp": 1,
                 "status": "Active",
-                "injury_status": null,
+                "injury_status": "Questionable",
                 "search_rank": 179
             },
             {
@@ -14129,7 +14129,7 @@ window.__STATIC_DATA__ = {
                 {
                     "name": "Marvin Harrison",
                     "position": "WR",
-                    "team": "ARI"
+                    "team": "HOU"
                 },
                 {
                     "name": "Dean Connors",
@@ -16654,7 +16654,7 @@ window.__STATIC_DATA__ = {
                 {
                     "name": "Marvin Harrison",
                     "position": "WR",
-                    "team": "ARI"
+                    "team": "HOU"
                 },
                 {
                     "name": "2027 Round 1",
