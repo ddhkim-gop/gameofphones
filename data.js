@@ -7805,7 +7805,7 @@ window.__STATIC_DATA__ = {
                 "espn_id": null,
                 "name": "Jarquez Hunter",
                 "position": "RB",
-                "team": "MIA",
+                "team": null,
                 "age": 23,
                 "birth_date": "2002-12-29",
                 "college": "Auburn",
@@ -13989,7 +13989,7 @@ window.__STATIC_DATA__ = {
             {
                 "name": "Devin Neal",
                 "position": "RB",
-                "team": null
+                "team": "WAS"
             }
         ],
         "faab": 0,
@@ -17766,7 +17766,7 @@ window.__STATIC_DATA__ = {
             {
                 "name": "Brady Cook",
                 "position": "QB",
-                "team": null
+                "team": "MIA"
             }
         ],
         "faab": 0,
@@ -18612,7 +18612,7 @@ window.__STATIC_DATA__ = {
             {
                 "name": "Audric Estime",
                 "position": "RB",
-                "team": "MIN"
+                "team": "CLE"
             }
         ],
         "faab": 0,
