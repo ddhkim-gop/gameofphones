@@ -6691,7 +6691,7 @@ window.__STATIC_DATA__ = {
                 "weight": "197",
                 "years_exp": 3,
                 "status": "Active",
-                "injury_status": null,
+                "injury_status": "Questionable",
                 "search_rank": 5
             }
         ]
@@ -7375,7 +7375,7 @@ window.__STATIC_DATA__ = {
                 "weight": "205",
                 "years_exp": 0,
                 "status": "Active",
-                "injury_status": null,
+                "injury_status": "Out",
                 "search_rank": 550
             },
             {
@@ -7624,7 +7624,7 @@ window.__STATIC_DATA__ = {
                 "name": "De'Von Achane",
                 "position": "RB",
                 "team": "MIA",
-                "age": 24,
+                "age": 25,
                 "birth_date": "2001-10-13",
                 "college": "Texas A&M",
                 "height": "69",
@@ -9351,7 +9351,7 @@ window.__STATIC_DATA__ = {
                 "weight": "208",
                 "years_exp": 0,
                 "status": "Active",
-                "injury_status": null,
+                "injury_status": "Out",
                 "search_rank": 242
             },
             {
@@ -10061,7 +10061,7 @@ window.__STATIC_DATA__ = {
                 "weight": "228",
                 "years_exp": 7,
                 "status": "Active",
-                "injury_status": null,
+                "injury_status": "Questionable",
                 "search_rank": 691
             },
             {
@@ -10921,7 +10921,7 @@ window.__STATIC_DATA__ = {
                 "weight": "243",
                 "years_exp": 0,
                 "status": "Active",
-                "injury_status": null,
+                "injury_status": "Out",
                 "search_rank": 212
             },
             {
@@ -11001,7 +11001,7 @@ window.__STATIC_DATA__ = {
                 "weight": "213",
                 "years_exp": 8,
                 "status": "Active",
-                "injury_status": "Questionable",
+                "injury_status": "Out",
                 "search_rank": 50
             },
             {
