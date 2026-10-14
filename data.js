@@ -5857,22 +5857,6 @@ window.__STATIC_DATA__ = {
                 "search_rank": 523
             },
             {
-                "player_id": "1339",
-                "espn_id": 15835,
-                "name": "Zach Ertz",
-                "position": "TE",
-                "team": "PHI",
-                "age": 35,
-                "birth_date": "1990-11-10",
-                "college": "Stanford",
-                "height": "77",
-                "weight": "250",
-                "years_exp": 13,
-                "status": "Active",
-                "injury_status": null,
-                "search_rank": 646
-            },
-            {
                 "player_id": "13420",
                 "espn_id": null,
                 "name": "Bryce Lance",
@@ -5903,6 +5887,22 @@ window.__STATIC_DATA__ = {
                 "status": "Active",
                 "injury_status": null,
                 "search_rank": 688
+            },
+            {
+                "player_id": "2197",
+                "espn_id": 16731,
+                "name": "Brandin Cooks",
+                "position": "WR",
+                "team": "SF",
+                "age": 33,
+                "birth_date": "1993-09-25",
+                "college": "Oregon State",
+                "height": "70",
+                "weight": "189",
+                "years_exp": 12,
+                "status": "Active",
+                "injury_status": null,
+                "search_rank": 530
             },
             {
                 "player_id": "2449",
@@ -6517,22 +6517,6 @@ window.__STATIC_DATA__ = {
                 "status": "Active",
                 "injury_status": null,
                 "search_rank": 4
-            },
-            {
-                "player_id": "7039",
-                "espn_id": 4241983,
-                "name": "Cody White",
-                "position": "WR",
-                "team": "LV",
-                "age": 27,
-                "birth_date": "1998-11-28",
-                "college": "Michigan State",
-                "height": "75",
-                "weight": "215",
-                "years_exp": 6,
-                "status": "Active",
-                "injury_status": null,
-                "search_rank": 536
             },
             {
                 "player_id": "8121",
@@ -8619,7 +8603,7 @@ window.__STATIC_DATA__ = {
                 "weight": "211",
                 "years_exp": 13,
                 "status": "Active",
-                "injury_status": null,
+                "injury_status": "Questionable",
                 "search_rank": 180
             },
             {
@@ -8769,7 +8753,7 @@ window.__STATIC_DATA__ = {
                 "weight": "205",
                 "years_exp": 2,
                 "status": "Active",
-                "injury_status": "Questionable",
+                "injury_status": "Doubtful",
                 "search_rank": 162
             },
             {
@@ -9631,7 +9615,7 @@ window.__STATIC_DATA__ = {
                 "espn_id": null,
                 "name": "Jerome Ford",
                 "position": "RB",
-                "team": null,
+                "team": "ARI",
                 "age": 27,
                 "birth_date": "1999-09-12",
                 "college": "Cincinnati",
@@ -10141,7 +10125,7 @@ window.__STATIC_DATA__ = {
                 "weight": "217",
                 "years_exp": 4,
                 "status": "Active",
-                "injury_status": "Questionable",
+                "injury_status": "Doubtful",
                 "search_rank": 27
             },
             {
@@ -10595,7 +10579,7 @@ window.__STATIC_DATA__ = {
                 "weight": "209",
                 "years_exp": 7,
                 "status": "Active",
-                "injury_status": null,
+                "injury_status": "Questionable",
                 "search_rank": 63
             },
             {
@@ -11684,6 +11668,56 @@ window.__STATIC_DATA__ = {
     }
   ],
   "transactions": [
+    {
+        "season": "2026",
+        "week": 6,
+        "created": "Oct 14, 2026 • 11:45 AM PT",
+        "transaction_id": "1416184084668903424",
+        "type": "free_agent",
+        "status": "complete",
+        "teams": [
+            "spiffster"
+        ],
+        "added": [
+            {
+                "name": "Brandin Cooks",
+                "position": "WR",
+                "team": "SF"
+            }
+        ],
+        "dropped": [
+            {
+                "name": "Zach Ertz",
+                "position": "TE",
+                "team": "PHI"
+            }
+        ],
+        "faab": 0,
+        "waiver_bid": 0,
+        "notes": null
+    },
+    {
+        "season": "2026",
+        "week": 6,
+        "created": "Oct 14, 2026 • 11:06 AM PT",
+        "transaction_id": "1416174308379623424",
+        "type": "free_agent",
+        "status": "complete",
+        "teams": [
+            "NoSkilzPak"
+        ],
+        "added": [],
+        "dropped": [
+            {
+                "name": "Cody White",
+                "position": "WR",
+                "team": "LV"
+            }
+        ],
+        "faab": 0,
+        "waiver_bid": 0,
+        "notes": null
+    },
     {
         "season": "2026",
         "week": 6,
@@ -12881,7 +12915,7 @@ window.__STATIC_DATA__ = {
             {
                 "name": "Harrison Mevis",
                 "position": "K",
-                "team": "LAR"
+                "team": null
             }
         ],
         "faab": 0,
@@ -15942,7 +15976,7 @@ window.__STATIC_DATA__ = {
             {
                 "name": "Harrison Mevis",
                 "position": "K",
-                "team": "LAR"
+                "team": null
             }
         ],
         "dropped": [],
