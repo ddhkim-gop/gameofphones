@@ -6033,6 +6033,22 @@ window.__STATIC_DATA__ = {
                 "search_rank": 94
             },
             {
+                "player_id": "5189",
+                "espn_id": 4034949,
+                "name": "Eddy Pineiro",
+                "position": "K",
+                "team": "SF",
+                "age": 31,
+                "birth_date": "1995-09-13",
+                "college": "Florida",
+                "height": "71",
+                "weight": "190",
+                "years_exp": 8,
+                "status": "Active",
+                "injury_status": null,
+                "search_rank": 174
+            },
+            {
                 "player_id": "5927",
                 "espn_id": 3121422,
                 "name": "Terry McLaurin",
@@ -6063,22 +6079,6 @@ window.__STATIC_DATA__ = {
                 "status": "Active",
                 "injury_status": null,
                 "search_rank": 77
-            },
-            {
-                "player_id": "6083",
-                "espn_id": 4249087,
-                "name": "Matt Gay",
-                "position": "K",
-                "team": "LV",
-                "age": 32,
-                "birth_date": "1994-03-15",
-                "college": "Utah",
-                "height": "72",
-                "weight": "232",
-                "years_exp": 7,
-                "status": "Active",
-                "injury_status": null,
-                "search_rank": 239
             },
             {
                 "player_id": "6806",
@@ -9121,7 +9121,7 @@ window.__STATIC_DATA__ = {
                 "weight": "215",
                 "years_exp": 8,
                 "status": "Active",
-                "injury_status": "Out",
+                "injury_status": "Doubtful",
                 "search_rank": 74
             },
             {
@@ -11684,6 +11684,34 @@ window.__STATIC_DATA__ = {
     }
   ],
   "transactions": [
+    {
+        "season": "2026",
+        "week": 6,
+        "created": "Oct 14, 2026 • 4:09 AM PT",
+        "transaction_id": "1416069412032614400",
+        "type": "free_agent",
+        "status": "complete",
+        "teams": [
+            "spiffster"
+        ],
+        "added": [
+            {
+                "name": "Eddy Pineiro",
+                "position": "K",
+                "team": "SF"
+            }
+        ],
+        "dropped": [
+            {
+                "name": "Matt Gay",
+                "position": "K",
+                "team": "LV"
+            }
+        ],
+        "faab": 0,
+        "waiver_bid": 0,
+        "notes": null
+    },
     {
         "season": "2026",
         "week": 6,
