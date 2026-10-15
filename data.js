@@ -5176,7 +5176,7 @@ window.__STATIC_DATA__ = {
                 "years_exp": 3,
                 "status": "Active",
                 "injury_status": null,
-                "search_rank": 91
+                "search_rank": 90
             },
             {
                 "player_id": "11583",
@@ -5694,7 +5694,7 @@ window.__STATIC_DATA__ = {
                 "years_exp": 3,
                 "status": "Active",
                 "injury_status": null,
-                "search_rank": 127
+                "search_rank": 125
             },
             {
                 "player_id": "10229",
@@ -5918,7 +5918,7 @@ window.__STATIC_DATA__ = {
                 "years_exp": 11,
                 "status": "Active",
                 "injury_status": "Questionable",
-                "search_rank": 103
+                "search_rank": 105
             },
             {
                 "player_id": "3257",
@@ -6062,7 +6062,7 @@ window.__STATIC_DATA__ = {
                 "years_exp": 7,
                 "status": "Active",
                 "injury_status": null,
-                "search_rank": 56
+                "search_rank": 55
             },
             {
                 "player_id": "5947",
@@ -6423,22 +6423,6 @@ window.__STATIC_DATA__ = {
                 "search_rank": 125
             },
             {
-                "player_id": "3155",
-                "espn_id": 3051889,
-                "name": "Laquon Treadwell",
-                "position": "WR",
-                "team": "IND",
-                "age": 31,
-                "birth_date": "1995-06-14",
-                "college": "Ole Miss",
-                "height": "74",
-                "weight": "215",
-                "years_exp": 10,
-                "status": "Active",
-                "injury_status": null,
-                "search_rank": 674
-            },
-            {
                 "player_id": "3321",
                 "espn_id": 3116406,
                 "name": "Tyreek Hill",
@@ -6485,6 +6469,22 @@ window.__STATIC_DATA__ = {
                 "status": "Active",
                 "injury_status": null,
                 "search_rank": 461
+            },
+            {
+                "player_id": "4137",
+                "espn_id": 3045147,
+                "name": "James Conner",
+                "position": "RB",
+                "team": "ARI",
+                "age": 31,
+                "birth_date": "1995-05-05",
+                "college": "Pittsburgh",
+                "height": "73",
+                "weight": "233",
+                "years_exp": 9,
+                "status": "Inactive",
+                "injury_status": "IR",
+                "search_rank": 92
             },
             {
                 "player_id": "4943",
@@ -6938,7 +6938,7 @@ window.__STATIC_DATA__ = {
                 "years_exp": 9,
                 "status": "Active",
                 "injury_status": null,
-                "search_rank": 79
+                "search_rank": 80
             },
             {
                 "player_id": "4866",
@@ -7098,7 +7098,7 @@ window.__STATIC_DATA__ = {
                 "years_exp": 4,
                 "status": "Active",
                 "injury_status": null,
-                "search_rank": 105
+                "search_rank": 106
             },
             {
                 "player_id": "8134",
@@ -7146,7 +7146,7 @@ window.__STATIC_DATA__ = {
                 "years_exp": 4,
                 "status": "Active",
                 "injury_status": null,
-                "search_rank": 19
+                "search_rank": 17
             },
             {
                 "player_id": "8161",
@@ -7814,7 +7814,7 @@ window.__STATIC_DATA__ = {
                 "years_exp": 2,
                 "status": "Active",
                 "injury_status": null,
-                "search_rank": 64
+                "search_rank": 65
             },
             {
                 "player_id": "11632",
@@ -7830,7 +7830,7 @@ window.__STATIC_DATA__ = {
                 "years_exp": 2,
                 "status": "Active",
                 "injury_status": null,
-                "search_rank": 28
+                "search_rank": 26
             },
             {
                 "player_id": "11783",
@@ -7942,7 +7942,7 @@ window.__STATIC_DATA__ = {
                 "years_exp": 0,
                 "status": "Active",
                 "injury_status": "Out",
-                "search_rank": 199
+                "search_rank": 198
             },
             {
                 "player_id": "13333",
@@ -8396,7 +8396,7 @@ window.__STATIC_DATA__ = {
                 "years_exp": 0,
                 "status": "Inactive",
                 "injury_status": "IR",
-                "search_rank": 52
+                "search_rank": 53
             },
             {
                 "player_id": "13288",
@@ -8572,7 +8572,7 @@ window.__STATIC_DATA__ = {
                 "years_exp": 0,
                 "status": "Active",
                 "injury_status": null,
-                "search_rank": 181
+                "search_rank": 179
             },
             {
                 "player_id": "13414",
@@ -8738,7 +8738,7 @@ window.__STATIC_DATA__ = {
                 "years_exp": 2,
                 "status": "Active",
                 "injury_status": null,
-                "search_rank": 176
+                "search_rank": 177
             },
             {
                 "player_id": "11625",
@@ -8994,7 +8994,7 @@ window.__STATIC_DATA__ = {
                 "years_exp": 0,
                 "status": "Active",
                 "injury_status": null,
-                "search_rank": 199
+                "search_rank": 201
             },
             {
                 "player_id": "13287",
@@ -9934,7 +9934,7 @@ window.__STATIC_DATA__ = {
                 "years_exp": 0,
                 "status": "Active",
                 "injury_status": null,
-                "search_rank": 91
+                "search_rank": 89
             },
             {
                 "player_id": "13298",
@@ -10516,7 +10516,7 @@ window.__STATIC_DATA__ = {
                 "years_exp": 0,
                 "status": "Inactive",
                 "injury_status": "IR",
-                "search_rank": 111
+                "search_rank": 113
             },
             {
                 "player_id": "3294",
@@ -10612,7 +10612,7 @@ window.__STATIC_DATA__ = {
                 "years_exp": 6,
                 "status": "Active",
                 "injury_status": null,
-                "search_rank": 46
+                "search_rank": 44
             },
             {
                 "player_id": "6826",
@@ -10676,7 +10676,7 @@ window.__STATIC_DATA__ = {
                 "years_exp": 3,
                 "status": "Active",
                 "injury_status": null,
-                "search_rank": 4
+                "search_rank": 5
             },
             {
                 "player_id": "96",
@@ -11668,6 +11668,34 @@ window.__STATIC_DATA__ = {
     }
   ],
   "transactions": [
+    {
+        "season": "2026",
+        "week": 6,
+        "created": "Oct 14, 2026 • 9:38 PM PT",
+        "transaction_id": "1416333539313451008",
+        "type": "free_agent",
+        "status": "complete",
+        "teams": [
+            "NoSkilzPak"
+        ],
+        "added": [
+            {
+                "name": "James Conner",
+                "position": "RB",
+                "team": "ARI"
+            }
+        ],
+        "dropped": [
+            {
+                "name": "Laquon Treadwell",
+                "position": "WR",
+                "team": "IND"
+            }
+        ],
+        "faab": 0,
+        "waiver_bid": 0,
+        "notes": null
+    },
     {
         "season": "2026",
         "week": 6,
