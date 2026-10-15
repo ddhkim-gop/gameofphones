@@ -5889,22 +5889,6 @@ window.__STATIC_DATA__ = {
                 "search_rank": 688
             },
             {
-                "player_id": "2197",
-                "espn_id": 16731,
-                "name": "Brandin Cooks",
-                "position": "WR",
-                "team": "SF",
-                "age": 33,
-                "birth_date": "1993-09-25",
-                "college": "Oregon State",
-                "height": "70",
-                "weight": "189",
-                "years_exp": 12,
-                "status": "Active",
-                "injury_status": null,
-                "search_rank": 530
-            },
-            {
                 "player_id": "2449",
                 "espn_id": 2976212,
                 "name": "Stefon Diggs",
@@ -6143,6 +6127,22 @@ window.__STATIC_DATA__ = {
                 "status": "Inactive",
                 "injury_status": "IR",
                 "search_rank": 91
+            },
+            {
+                "player_id": "9230",
+                "espn_id": null,
+                "name": "Tanner McKee",
+                "position": "QB",
+                "team": "PHI",
+                "age": 26,
+                "birth_date": "2000-04-27",
+                "college": "Stanford",
+                "height": "78",
+                "weight": "231",
+                "years_exp": 3,
+                "status": "Active",
+                "injury_status": null,
+                "search_rank": 677
             },
             {
                 "player_id": "9502",
@@ -11668,6 +11668,34 @@ window.__STATIC_DATA__ = {
     }
   ],
   "transactions": [
+    {
+        "season": "2026",
+        "week": 6,
+        "created": "Oct 15, 2026 • 9:02 AM PT",
+        "transaction_id": "1416505594457726976",
+        "type": "free_agent",
+        "status": "complete",
+        "teams": [
+            "spiffster"
+        ],
+        "added": [
+            {
+                "name": "Tanner McKee",
+                "position": "QB",
+                "team": "PHI"
+            }
+        ],
+        "dropped": [
+            {
+                "name": "Brandin Cooks",
+                "position": "WR",
+                "team": "SF"
+            }
+        ],
+        "faab": 0,
+        "waiver_bid": 0,
+        "notes": null
+    },
     {
         "season": "2026",
         "week": 6,
