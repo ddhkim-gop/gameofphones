@@ -5671,7 +5671,7 @@ window.__STATIC_DATA__ = {
                 "weight": "206",
                 "years_exp": 3,
                 "status": "Active",
-                "injury_status": null,
+                "injury_status": "Questionable",
                 "search_rank": 203
             }
         ]
@@ -7726,7 +7726,7 @@ window.__STATIC_DATA__ = {
                 "name": "Andrei Iosivas",
                 "position": "WR",
                 "team": "CIN",
-                "age": 26,
+                "age": 27,
                 "birth_date": "1999-10-15",
                 "college": "Princeton",
                 "height": "75",
@@ -9741,7 +9741,7 @@ window.__STATIC_DATA__ = {
                 "weight": "235",
                 "years_exp": 2,
                 "status": "Active",
-                "injury_status": null,
+                "injury_status": "Questionable",
                 "search_rank": 20
             },
             {
@@ -10045,7 +10045,7 @@ window.__STATIC_DATA__ = {
                 "weight": "228",
                 "years_exp": 7,
                 "status": "Active",
-                "injury_status": "Questionable",
+                "injury_status": null,
                 "search_rank": 691
             },
             {
@@ -10595,7 +10595,7 @@ window.__STATIC_DATA__ = {
                 "weight": "210",
                 "years_exp": 7,
                 "status": "Active",
-                "injury_status": null,
+                "injury_status": "Questionable",
                 "search_rank": 534
             },
             {
