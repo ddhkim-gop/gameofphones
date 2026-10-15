@@ -6045,7 +6045,7 @@ window.__STATIC_DATA__ = {
                 "weight": "210",
                 "years_exp": 7,
                 "status": "Active",
-                "injury_status": null,
+                "injury_status": "Questionable",
                 "search_rank": 55
             },
             {
@@ -6777,7 +6777,7 @@ window.__STATIC_DATA__ = {
                 "weight": "208",
                 "years_exp": 1,
                 "status": "Active",
-                "injury_status": null,
+                "injury_status": "Questionable",
                 "search_rank": 95
             },
             {
@@ -6873,7 +6873,7 @@ window.__STATIC_DATA__ = {
                 "weight": "231",
                 "years_exp": 12,
                 "status": "Active",
-                "injury_status": null,
+                "injury_status": "Questionable",
                 "search_rank": 60
             },
             {
@@ -7017,7 +7017,7 @@ window.__STATIC_DATA__ = {
                 "weight": "218",
                 "years_exp": 6,
                 "status": "Active",
-                "injury_status": "Questionable",
+                "injury_status": null,
                 "search_rank": 65
             },
             {
@@ -7379,22 +7379,6 @@ window.__STATIC_DATA__ = {
                 "search_rank": 466
             },
             {
-                "player_id": "13557",
-                "espn_id": null,
-                "name": "Athan Kaliakmanis",
-                "position": "QB",
-                "team": "WAS",
-                "age": 23,
-                "birth_date": "2003-08-20",
-                "college": "Rutgers",
-                "height": "74",
-                "weight": "216",
-                "years_exp": 0,
-                "status": "Active",
-                "injury_status": null,
-                "search_rank": 637
-            },
-            {
                 "player_id": "1466",
                 "espn_id": 15847,
                 "name": "Travis Kelce",
@@ -7487,8 +7471,24 @@ window.__STATIC_DATA__ = {
                 "weight": "230",
                 "years_exp": 7,
                 "status": "Active",
-                "injury_status": "Doubtful",
+                "injury_status": "Out",
                 "search_rank": 43
+            },
+            {
+                "player_id": "6083",
+                "espn_id": 4249087,
+                "name": "Matt Gay",
+                "position": "K",
+                "team": "LV",
+                "age": 32,
+                "birth_date": "1994-03-15",
+                "college": "Utah",
+                "height": "72",
+                "weight": "232",
+                "years_exp": 7,
+                "status": "Active",
+                "injury_status": null,
+                "search_rank": 239
             },
             {
                 "player_id": "7523",
@@ -7569,6 +7569,22 @@ window.__STATIC_DATA__ = {
                 "status": "Active",
                 "injury_status": null,
                 "search_rank": 19
+            },
+            {
+                "player_id": "8116",
+                "espn_id": null,
+                "name": "Pierre Strong",
+                "position": "RB",
+                "team": "GB",
+                "age": 27,
+                "birth_date": "1998-12-10",
+                "college": "South Dakota State",
+                "height": "71",
+                "weight": "207",
+                "years_exp": 4,
+                "status": "Active",
+                "injury_status": null,
+                "search_rank": 631
             },
             {
                 "player_id": "8148",
@@ -7667,22 +7683,6 @@ window.__STATIC_DATA__ = {
                 "search_rank": 104
             },
             {
-                "player_id": "9506",
-                "espn_id": null,
-                "name": "Sean Tucker",
-                "position": "RB",
-                "team": "TB",
-                "age": 24,
-                "birth_date": "2001-10-25",
-                "college": "Syracuse",
-                "height": "70",
-                "weight": "205",
-                "years_exp": 3,
-                "status": "Active",
-                "injury_status": "Questionable",
-                "search_rank": 155
-            },
-            {
                 "player_id": "9997",
                 "espn_id": null,
                 "name": "Zay Flowers",
@@ -7695,7 +7695,7 @@ window.__STATIC_DATA__ = {
                 "weight": "183",
                 "years_exp": 3,
                 "status": "Active",
-                "injury_status": null,
+                "injury_status": "Questionable",
                 "search_rank": 40
             }
         ]
@@ -7989,7 +7989,7 @@ window.__STATIC_DATA__ = {
                 "weight": "200",
                 "years_exp": 9,
                 "status": "Active",
-                "injury_status": null,
+                "injury_status": "Questionable",
                 "search_rank": 632
             },
             {
@@ -8101,7 +8101,7 @@ window.__STATIC_DATA__ = {
                 "weight": "225",
                 "years_exp": 4,
                 "status": "Active",
-                "injury_status": null,
+                "injury_status": "Questionable",
                 "search_rank": 679
             },
             {
@@ -10189,7 +10189,7 @@ window.__STATIC_DATA__ = {
                 "weight": "171",
                 "years_exp": 3,
                 "status": "Active",
-                "injury_status": "Questionable",
+                "injury_status": null,
                 "search_rank": 111
             }
         ]
@@ -10717,22 +10717,6 @@ window.__STATIC_DATA__ = {
         "roster_id": 12,
         "players": [
             {
-                "player_id": "10218",
-                "espn_id": null,
-                "name": "Xavier Hutchinson",
-                "position": "WR",
-                "team": "HOU",
-                "age": 26,
-                "birth_date": "2000-06-01",
-                "college": "Iowa State",
-                "height": "75",
-                "weight": "210",
-                "years_exp": 3,
-                "status": "Active",
-                "injury_status": null,
-                "search_rank": 679
-            },
-            {
                 "player_id": "10232",
                 "espn_id": null,
                 "name": "Michael Wilson",
@@ -10747,6 +10731,22 @@ window.__STATIC_DATA__ = {
                 "status": "Active",
                 "injury_status": null,
                 "search_rank": 75
+            },
+            {
+                "player_id": "10235",
+                "espn_id": null,
+                "name": "Roschon Johnson",
+                "position": "RB",
+                "team": "CHI",
+                "age": 25,
+                "birth_date": "2001-01-31",
+                "college": "Texas",
+                "height": "72",
+                "weight": "227",
+                "years_exp": 3,
+                "status": "Active",
+                "injury_status": null,
+                "search_rank": 681
             },
             {
                 "player_id": "10859",
@@ -11081,7 +11081,7 @@ window.__STATIC_DATA__ = {
                 "weight": "223",
                 "years_exp": 6,
                 "status": "Active",
-                "injury_status": null,
+                "injury_status": "Out",
                 "search_rank": 26
             },
             {
@@ -11668,6 +11668,90 @@ window.__STATIC_DATA__ = {
     }
   ],
   "transactions": [
+    {
+        "season": "2026",
+        "week": 6,
+        "created": "Oct 15, 2026 • 2:11 PM PT",
+        "transaction_id": "1416583286217605120",
+        "type": "free_agent",
+        "status": "complete",
+        "teams": [
+            "andyxia124"
+        ],
+        "added": [
+            {
+                "name": "Matt Gay",
+                "position": "K",
+                "team": "LV"
+            }
+        ],
+        "dropped": [
+            {
+                "name": "Athan Kaliakmanis",
+                "position": "QB",
+                "team": "WAS"
+            }
+        ],
+        "faab": 0,
+        "waiver_bid": 0,
+        "notes": null
+    },
+    {
+        "season": "2026",
+        "week": 6,
+        "created": "Oct 15, 2026 • 2:10 PM PT",
+        "transaction_id": "1416583121163300865",
+        "type": "free_agent",
+        "status": "complete",
+        "teams": [
+            "andyxia124"
+        ],
+        "added": [
+            {
+                "name": "Pierre Strong",
+                "position": "RB",
+                "team": "GB"
+            }
+        ],
+        "dropped": [
+            {
+                "name": "Sean Tucker",
+                "position": "RB",
+                "team": "TB"
+            }
+        ],
+        "faab": 0,
+        "waiver_bid": 0,
+        "notes": null
+    },
+    {
+        "season": "2026",
+        "week": 6,
+        "created": "Oct 15, 2026 • 11:47 AM PT",
+        "transaction_id": "1416547081128001536",
+        "type": "free_agent",
+        "status": "complete",
+        "teams": [
+            "ganathan"
+        ],
+        "added": [
+            {
+                "name": "Roschon Johnson",
+                "position": "RB",
+                "team": "CHI"
+            }
+        ],
+        "dropped": [
+            {
+                "name": "Xavier Hutchinson",
+                "position": "WR",
+                "team": "HOU"
+            }
+        ],
+        "faab": 0,
+        "waiver_bid": 0,
+        "notes": null
+    },
     {
         "season": "2026",
         "week": 6,
