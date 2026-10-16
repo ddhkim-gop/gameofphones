@@ -1,6 +1,6 @@
 {
   "team": "ganathan",
-  "updated": "2026-10-15",
+  "updated": "2026-10-16",
   "note": "Curated: X has no public search API, so posts are collected by hand and matched to rosters by this script.",
   "tweets": [
     {
@@ -46,21 +46,23 @@
       "author_verified": true
     },
     {
-      "url": "https://www.youtube.com/shorts/d4v5DF_Ht-c",
-      "player": "Will Reichard",
-      "meta": "K \u00b7 MIN",
-      "date": "2026-10-08",
-      "author": "Vikings",
-      "text": "Will Reichard is \"so nasty\" \ud83e\udd23 | Mic'd Up",
-      "verified": false,
-      "faves": 295,
-      "secs": 8,
-      "poster": "https://i.ytimg.com/vi/d4v5DF_Ht-c/hqdefault.jpg",
-      "published": "2026-10-08T22:00:14Z",
-      "youtube": "d4v5DF_Ht-c",
-      "author_name": "Minnesota Vikings",
-      "avatar": "",
-      "author_verified": true
+      "url": "https://www.espn.com/video/clip/_/id/50157323/jalen-hurts-hits-darius-cooper-62-yard-eagles-td",
+      "player": "Jalen Hurts",
+      "meta": "QB \u00b7 PHI",
+      "date": "2026-10-11",
+      "author": "ESPN",
+      "text": "Jalen Hurts hits Darius Cooper for a 62-yard Eagles TD",
+      "verified": true,
+      "faves": 0,
+      "secs": 0,
+      "espn_game": "401872981",
+      "game_id": "401872981",
+      "game_time": "Q2 5:31",
+      "play_key": "401872981:4018729811619",
+      "played_at": "2026-10-11T14:42:29Z",
+      "poster": "https://espnmedia-cdn.akamaized.net/espn/media/common/wsc/2026/1011/896e88af-2671-49dd-84e4-6c065741472f/896e88af-2671-49dd-84e4-6c065741472f.jpg",
+      "published": "2026-10-11T14:53:06Z",
+      "video": "https://espnmedia-cdn.akamaized.net/espn/media/16x9/wsc/2026/1011/896e88af-2671-49dd-84e4-6c065741472f/896e88af-2671-49dd-84e4-6c065741472f.mp4"
     }
   ]
 }

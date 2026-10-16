@@ -1,8 +1,29 @@
 {
   "team": "velmixon",
-  "updated": "2026-10-15",
+  "updated": "2026-10-16",
   "note": "Curated: X has no public search API, so posts are collected by hand and matched to rosters by this script.",
   "tweets": [
+    {
+      "url": "https://x.com/Seahawks/status/2110927978482037149",
+      "player": "George Holani",
+      "meta": "RB \u00b7 SEA",
+      "date": "2026-10-16",
+      "author": "Seahawks",
+      "text": "6\ufe0f\u20e3 for 3\ufe0f\u20e36\ufe0f\u20e3\n\n\ud83d\udcfa: @NFLonPRIME",
+      "verified": true,
+      "faves": 378,
+      "secs": 13,
+      "game_id": "401872995",
+      "game_time": "Q4 5:41",
+      "play_key": "401872995:4018729953797",
+      "played_at": "2026-10-16T02:55:42Z",
+      "poster": "https://pbs.twimg.com/amplify_video_thumb/2110927759732350976/img/h2J_-8UuBBmziBGE.jpg",
+      "published": "2026-10-16T02:57:03Z",
+      "video": "https://video.twimg.com/amplify_video/2110927759732350976/vid/avc1/1920x1080/a7rmonA3Z6bXsDg0.mp4",
+      "author_name": "Seattle Seahawks",
+      "avatar": "https://pbs.twimg.com/profile_images/2110082485757652992/TivFxPcI_normal.jpg",
+      "author_verified": true
+    },
     {
       "url": "https://www.youtube.com/shorts/bJdXl77vRGc",
       "player": "Keon Coleman",
