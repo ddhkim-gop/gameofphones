@@ -7407,7 +7407,7 @@ window.__STATIC_DATA__ = {
                 "weight": "205",
                 "years_exp": 8,
                 "status": "Active",
-                "injury_status": "Questionable",
+                "injury_status": "Out",
                 "search_rank": 10
             },
             {
@@ -8753,7 +8753,7 @@ window.__STATIC_DATA__ = {
                 "weight": "205",
                 "years_exp": 2,
                 "status": "Active",
-                "injury_status": "Doubtful",
+                "injury_status": "Out",
                 "search_rank": 162
             },
             {
@@ -9073,7 +9073,7 @@ window.__STATIC_DATA__ = {
                 "weight": "238",
                 "years_exp": 11,
                 "status": "Active",
-                "injury_status": "Questionable",
+                "injury_status": null,
                 "search_rank": 358
             },
             {
@@ -9105,7 +9105,7 @@ window.__STATIC_DATA__ = {
                 "weight": "215",
                 "years_exp": 8,
                 "status": "Active",
-                "injury_status": "Doubtful",
+                "injury_status": "Out",
                 "search_rank": 74
             },
             {
@@ -9567,7 +9567,7 @@ window.__STATIC_DATA__ = {
                 "espn_id": 3916945,
                 "name": "Darius Slayton",
                 "position": "WR",
-                "team": "IND",
+                "team": null,
                 "age": 29,
                 "birth_date": "1997-01-12",
                 "college": "Auburn",
@@ -10125,7 +10125,7 @@ window.__STATIC_DATA__ = {
                 "weight": "217",
                 "years_exp": 4,
                 "status": "Active",
-                "injury_status": "Doubtful",
+                "injury_status": "Out",
                 "search_rank": 27
             },
             {
