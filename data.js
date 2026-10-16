@@ -9619,7 +9619,7 @@ window.__STATIC_DATA__ = {
                 "age": 27,
                 "birth_date": "1999-09-12",
                 "college": "Cincinnati",
-                "height": "71",
+                "height": "70",
                 "weight": "210",
                 "years_exp": 4,
                 "status": "Active",
