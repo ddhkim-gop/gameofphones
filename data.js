@@ -5227,6 +5227,22 @@ window.__STATIC_DATA__ = {
                 "search_rank": 209
             },
             {
+                "player_id": "12457",
+                "espn_id": null,
+                "name": "Jaydon Blue",
+                "position": "RB",
+                "team": "PHI",
+                "age": 22,
+                "birth_date": "2004-01-08",
+                "college": "Texas",
+                "height": "69",
+                "weight": "198",
+                "years_exp": 1,
+                "status": "Active",
+                "injury_status": null,
+                "search_rank": 189
+            },
+            {
                 "player_id": "12487",
                 "espn_id": null,
                 "name": "Terrance Ferguson",
@@ -5241,22 +5257,6 @@ window.__STATIC_DATA__ = {
                 "status": "Inactive",
                 "injury_status": "IR",
                 "search_rank": 141
-            },
-            {
-                "player_id": "12491",
-                "espn_id": null,
-                "name": "Corey Kiner",
-                "position": "RB",
-                "team": "NE",
-                "age": 24,
-                "birth_date": "2002-01-21",
-                "college": "Cincinnati",
-                "height": "69",
-                "weight": "209",
-                "years_exp": 1,
-                "status": "Active",
-                "injury_status": null,
-                "search_rank": 487
             },
             {
                 "player_id": "12510",
@@ -11684,6 +11684,34 @@ window.__STATIC_DATA__ = {
     }
   ],
   "transactions": [
+    {
+        "season": "2026",
+        "week": 6,
+        "created": "Oct 17, 2026 • 8:48 AM PT",
+        "transaction_id": "1417226828963143680",
+        "type": "free_agent",
+        "status": "complete",
+        "teams": [
+            "ddhk"
+        ],
+        "added": [
+            {
+                "name": "Jaydon Blue",
+                "position": "RB",
+                "team": "PHI"
+            }
+        ],
+        "dropped": [
+            {
+                "name": "Corey Kiner",
+                "position": "RB",
+                "team": "NE"
+            }
+        ],
+        "faab": 0,
+        "waiver_bid": 0,
+        "notes": null
+    },
     {
         "season": "2026",
         "week": 6,
