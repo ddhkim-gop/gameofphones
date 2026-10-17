@@ -6391,6 +6391,22 @@ window.__STATIC_DATA__ = {
                 "search_rank": 514
             },
             {
+                "player_id": "2197",
+                "espn_id": 16731,
+                "name": "Brandin Cooks",
+                "position": "WR",
+                "team": "SF",
+                "age": 33,
+                "birth_date": "1993-09-25",
+                "college": "Oregon State",
+                "height": "70",
+                "weight": "189",
+                "years_exp": 12,
+                "status": "Active",
+                "injury_status": null,
+                "search_rank": 529
+            },
+            {
                 "player_id": "2307",
                 "espn_id": 2576980,
                 "name": "Marcus Mariota",
@@ -11668,6 +11684,28 @@ window.__STATIC_DATA__ = {
     }
   ],
   "transactions": [
+    {
+        "season": "2026",
+        "week": 6,
+        "created": "Oct 17, 2026 • 12:45 AM PT",
+        "transaction_id": "1417105340431970304",
+        "type": "free_agent",
+        "status": "complete",
+        "teams": [
+            "NoSkilzPak"
+        ],
+        "added": [
+            {
+                "name": "Brandin Cooks",
+                "position": "WR",
+                "team": "SF"
+            }
+        ],
+        "dropped": [],
+        "faab": 0,
+        "waiver_bid": 0,
+        "notes": null
+    },
     {
         "season": "2026",
         "week": 6,
