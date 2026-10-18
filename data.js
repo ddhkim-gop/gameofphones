@@ -9713,22 +9713,6 @@ window.__STATIC_DATA__ = {
                 "search_rank": 99
             },
             {
-                "player_id": "11370",
-                "espn_id": null,
-                "name": "Chris Brooks",
-                "position": "RB",
-                "team": "GB",
-                "age": 26,
-                "birth_date": "2000-01-11",
-                "college": "BYU",
-                "height": "73",
-                "weight": "219",
-                "years_exp": 3,
-                "status": "Inactive",
-                "injury_status": "IR",
-                "search_rank": 451
-            },
-            {
                 "player_id": "11603",
                 "espn_id": null,
                 "name": "AJ Barner",
@@ -10095,6 +10079,22 @@ window.__STATIC_DATA__ = {
                 "status": "Active",
                 "injury_status": null,
                 "search_rank": 15
+            },
+            {
+                "player_id": "7039",
+                "espn_id": 4241983,
+                "name": "Cody White",
+                "position": "WR",
+                "team": "LV",
+                "age": 27,
+                "birth_date": "1998-11-28",
+                "college": "Michigan State",
+                "height": "75",
+                "weight": "215",
+                "years_exp": 6,
+                "status": "Active",
+                "injury_status": null,
+                "search_rank": 535
             },
             {
                 "player_id": "7564",
@@ -11684,6 +11684,50 @@ window.__STATIC_DATA__ = {
     }
   ],
   "transactions": [
+    {
+        "season": "2026",
+        "week": 6,
+        "created": "Oct 18, 2026 • 5:45 AM PT",
+        "transaction_id": "1417543104478687232",
+        "type": "free_agent",
+        "status": "complete",
+        "teams": [
+            "velmixon"
+        ],
+        "added": [
+            {
+                "name": "Cody White",
+                "position": "WR",
+                "team": "LV"
+            }
+        ],
+        "dropped": [],
+        "faab": 0,
+        "waiver_bid": 0,
+        "notes": null
+    },
+    {
+        "season": "2026",
+        "week": 6,
+        "created": "Oct 18, 2026 • 5:43 AM PT",
+        "transaction_id": "1417542665364385792",
+        "type": "free_agent",
+        "status": "complete",
+        "teams": [
+            "velmixon"
+        ],
+        "added": [],
+        "dropped": [
+            {
+                "name": "Chris Brooks",
+                "position": "RB",
+                "team": "GB"
+            }
+        ],
+        "faab": 0,
+        "waiver_bid": 0,
+        "notes": null
+    },
     {
         "season": "2026",
         "week": 6,
