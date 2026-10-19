@@ -6710,7 +6710,7 @@ window.__STATIC_DATA__ = {
                 "birth_date": "2000-03-06",
                 "college": "Tennessee",
                 "height": "77",
-                "weight": "236",
+                "weight": "246",
                 "years_exp": 2,
                 "status": "Active",
                 "injury_status": "Out",
