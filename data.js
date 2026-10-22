@@ -5328,7 +5328,7 @@ window.__STATIC_DATA__ = {
                 "name": "TreVeyon Henderson",
                 "position": "RB",
                 "team": "NE",
-                "age": 23,
+                "age": 24,
                 "birth_date": "2002-10-22",
                 "college": "Ohio State",
                 "height": "70",
