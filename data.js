@@ -6877,6 +6877,22 @@ window.__STATIC_DATA__ = {
                 "search_rank": 211
             },
             {
+                "player_id": "13833",
+                "espn_id": null,
+                "name": "Dominic Zvada",
+                "position": "K",
+                "team": "NYG",
+                "age": 22,
+                "birth_date": "2003-10-25",
+                "college": "Michigan",
+                "height": "75",
+                "weight": "187",
+                "years_exp": 0,
+                "status": "Active",
+                "injury_status": null,
+                "search_rank": 330
+            },
+            {
                 "player_id": "2216",
                 "espn_id": 16737,
                 "name": "Mike Evans",
@@ -7179,22 +7195,6 @@ window.__STATIC_DATA__ = {
                 "status": "Active",
                 "injury_status": null,
                 "search_rank": 122
-            },
-            {
-                "player_id": "8259",
-                "espn_id": null,
-                "name": "Cameron Dicker",
-                "position": "K",
-                "team": "LAC",
-                "age": 26,
-                "birth_date": "2000-05-06",
-                "college": "Texas",
-                "height": "73",
-                "weight": "216",
-                "years_exp": 4,
-                "status": "Active",
-                "injury_status": null,
-                "search_rank": 118
             }
         ]
     },
@@ -9504,7 +9504,7 @@ window.__STATIC_DATA__ = {
                 "name": "Seth McGowan",
                 "position": "RB",
                 "team": "IND",
-                "age": 24,
+                "age": 25,
                 "birth_date": "2001-10-23",
                 "college": "Kentucky",
                 "height": "72",
@@ -11684,6 +11684,34 @@ window.__STATIC_DATA__ = {
     }
   ],
   "transactions": [
+    {
+        "season": "2026",
+        "week": 7,
+        "created": "Oct 22, 2026 • 5:13 PM PT",
+        "transaction_id": "1419165831358631936",
+        "type": "free_agent",
+        "status": "complete",
+        "teams": [
+            "jonsung"
+        ],
+        "added": [
+            {
+                "name": "Dominic Zvada",
+                "position": "K",
+                "team": "NYG"
+            }
+        ],
+        "dropped": [
+            {
+                "name": "Cameron Dicker",
+                "position": "K",
+                "team": "LAC"
+            }
+        ],
+        "faab": 0,
+        "waiver_bid": 0,
+        "notes": null
+    },
     {
         "season": "2026",
         "week": 7,
