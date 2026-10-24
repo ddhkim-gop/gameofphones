@@ -5552,7 +5552,7 @@ window.__STATIC_DATA__ = {
                 "name": "Amon-Ra St. Brown",
                 "position": "WR",
                 "team": "DET",
-                "age": 26,
+                "age": 27,
                 "birth_date": "1999-10-24",
                 "college": "USC",
                 "height": "72",
@@ -6316,7 +6316,7 @@ window.__STATIC_DATA__ = {
                 "name": "Konata Mumpfield",
                 "position": "WR",
                 "team": "LAR",
-                "age": 23,
+                "age": 24,
                 "birth_date": "2002-10-24",
                 "college": "Pittsburgh",
                 "height": "73",
@@ -19752,7 +19752,7 @@ window.__STATIC_DATA__ = {
             {
                 "name": "Nate Carter",
                 "position": "RB",
-                "team": null
+                "team": "KC"
             }
         ],
         "faab": 0,
@@ -20439,7 +20439,7 @@ window.__STATIC_DATA__ = {
             {
                 "name": "Nate Carter",
                 "position": "RB",
-                "team": null
+                "team": "KC"
             }
         ],
         "dropped": [
