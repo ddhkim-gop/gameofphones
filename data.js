@@ -10925,22 +10925,6 @@ window.__STATIC_DATA__ = {
                 "search_rank": 387
             },
             {
-                "player_id": "3634",
-                "espn_id": 2973405,
-                "name": "Kalif Raymond",
-                "position": "WR",
-                "team": "CHI",
-                "age": 32,
-                "birth_date": "1994-08-08",
-                "college": "Holy Cross",
-                "height": "69",
-                "weight": "160",
-                "years_exp": 10,
-                "status": "Active",
-                "injury_status": null,
-                "search_rank": 645
-            },
-            {
                 "player_id": "4033",
                 "espn_id": 3123076,
                 "name": "David Njoku",
@@ -11211,6 +11195,22 @@ window.__STATIC_DATA__ = {
                 "status": "Active",
                 "injury_status": null,
                 "search_rank": 148
+            },
+            {
+                "player_id": "8122",
+                "espn_id": null,
+                "name": "Zonovan Knight",
+                "position": "RB",
+                "team": "ARI",
+                "age": 25,
+                "birth_date": "2001-04-11",
+                "college": "NC State",
+                "height": "71",
+                "weight": "210",
+                "years_exp": 4,
+                "status": "Active",
+                "injury_status": null,
+                "search_rank": 669
             },
             {
                 "player_id": "8150",
@@ -11684,6 +11684,34 @@ window.__STATIC_DATA__ = {
     }
   ],
   "transactions": [
+    {
+        "season": "2026",
+        "week": 7,
+        "created": "Oct 24, 2026 • 10:49 PM PT",
+        "transaction_id": "1419975167328751616",
+        "type": "free_agent",
+        "status": "complete",
+        "teams": [
+            "ganathan"
+        ],
+        "added": [
+            {
+                "name": "Zonovan Knight",
+                "position": "RB",
+                "team": "ARI"
+            }
+        ],
+        "dropped": [
+            {
+                "name": "Kalif Raymond",
+                "position": "WR",
+                "team": "CHI"
+            }
+        ],
+        "faab": 0,
+        "waiver_bid": 0,
+        "notes": null
+    },
     {
         "season": "2026",
         "week": 7,
