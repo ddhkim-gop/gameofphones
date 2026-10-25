@@ -6371,7 +6371,7 @@ window.__STATIC_DATA__ = {
                 "weight": "198",
                 "years_exp": 0,
                 "status": "Active",
-                "injury_status": null,
+                "injury_status": "Out",
                 "search_rank": 487
             },
             {
@@ -7033,7 +7033,7 @@ window.__STATIC_DATA__ = {
                 "weight": "218",
                 "years_exp": 6,
                 "status": "Active",
-                "injury_status": "Questionable",
+                "injury_status": null,
                 "search_rank": 65
             },
             {
@@ -7993,22 +7993,6 @@ window.__STATIC_DATA__ = {
                 "search_rank": 468
             },
             {
-                "player_id": "4663",
-                "espn_id": 3068267,
-                "name": "Austin Ekeler",
-                "position": "RB",
-                "team": "WAS",
-                "age": 31,
-                "birth_date": "1995-05-17",
-                "college": "Western Colorado",
-                "height": "70",
-                "weight": "200",
-                "years_exp": 9,
-                "status": "Active",
-                "injury_status": null,
-                "search_rank": 632
-            },
-            {
                 "player_id": "6783",
                 "espn_id": 4241463,
                 "name": "Jerry Jeudy",
@@ -8363,7 +8347,7 @@ window.__STATIC_DATA__ = {
                 "weight": "235",
                 "years_exp": 1,
                 "status": "Active",
-                "injury_status": null,
+                "injury_status": "Out",
                 "search_rank": 498
             },
             {
@@ -8443,7 +8427,7 @@ window.__STATIC_DATA__ = {
                 "weight": "228",
                 "years_exp": 0,
                 "status": "Active",
-                "injury_status": null,
+                "injury_status": "Out",
                 "search_rank": 360
             },
             {
@@ -9917,7 +9901,7 @@ window.__STATIC_DATA__ = {
                 "weight": "230",
                 "years_exp": 0,
                 "status": "Active",
-                "injury_status": null,
+                "injury_status": "Questionable",
                 "search_rank": 466
             },
             {
@@ -11684,6 +11668,28 @@ window.__STATIC_DATA__ = {
     }
   ],
   "transactions": [
+    {
+        "season": "2026",
+        "week": 7,
+        "created": "Oct 25, 2026 • 5:17 AM PT",
+        "transaction_id": "1420072820943134720",
+        "type": "free_agent",
+        "status": "complete",
+        "teams": [
+            "IconicJH"
+        ],
+        "added": [],
+        "dropped": [
+            {
+                "name": "Austin Ekeler",
+                "position": "RB",
+                "team": "WAS"
+            }
+        ],
+        "faab": 0,
+        "waiver_bid": 0,
+        "notes": null
+    },
     {
         "season": "2026",
         "week": 7,
