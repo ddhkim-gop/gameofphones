@@ -6717,22 +6717,6 @@ window.__STATIC_DATA__ = {
                 "search_rank": 503
             },
             {
-                "player_id": "11643",
-                "espn_id": null,
-                "name": "Jaylen Wright",
-                "position": "RB",
-                "team": "MIA",
-                "age": 23,
-                "birth_date": "2003-04-01",
-                "college": "Tennessee",
-                "height": "70",
-                "weight": "205",
-                "years_exp": 2,
-                "status": "Active",
-                "injury_status": "Questionable",
-                "search_rank": 174
-            },
-            {
                 "player_id": "11651",
                 "espn_id": null,
                 "name": "Isaac Guerendo",
@@ -6989,6 +6973,22 @@ window.__STATIC_DATA__ = {
                 "search_rank": 72
             },
             {
+                "player_id": "5848",
+                "espn_id": 4241372,
+                "name": "Marquise Brown",
+                "position": "WR",
+                "team": "PHI",
+                "age": 29,
+                "birth_date": "1997-06-04",
+                "college": "Oklahoma",
+                "height": "69",
+                "weight": "170",
+                "years_exp": 7,
+                "status": "Active",
+                "injury_status": null,
+                "search_rank": 685
+            },
+            {
                 "player_id": "6794",
                 "espn_id": 4262921,
                 "name": "Justin Jefferson",
@@ -7085,22 +7085,6 @@ window.__STATIC_DATA__ = {
                 "search_rank": 34
             },
             {
-                "player_id": "7694",
-                "espn_id": null,
-                "name": "Tommy Tremble",
-                "position": "TE",
-                "team": "CAR",
-                "age": 26,
-                "birth_date": "2000-06-02",
-                "college": "Notre Dame",
-                "height": "76",
-                "weight": "247",
-                "years_exp": 5,
-                "status": "Active",
-                "injury_status": null,
-                "search_rank": 597
-            },
-            {
                 "player_id": "8129",
                 "espn_id": null,
                 "name": "Dameon Pierce",
@@ -7195,6 +7179,22 @@ window.__STATIC_DATA__ = {
                 "status": "Active",
                 "injury_status": null,
                 "search_rank": 123
+            },
+            {
+                "player_id": "8207",
+                "espn_id": null,
+                "name": "Tyler Goodson",
+                "position": "RB",
+                "team": "DAL",
+                "age": 25,
+                "birth_date": "2000-11-10",
+                "college": "Iowa",
+                "height": "69",
+                "weight": "197",
+                "years_exp": 4,
+                "status": "Active",
+                "injury_status": null,
+                "search_rank": 480
             }
         ]
     },
@@ -11668,6 +11668,62 @@ window.__STATIC_DATA__ = {
     }
   ],
   "transactions": [
+    {
+        "season": "2026",
+        "week": 7,
+        "created": "Oct 26, 2026 • 3:29 AM PT",
+        "transaction_id": "1420408052925968384",
+        "type": "free_agent",
+        "status": "complete",
+        "teams": [
+            "jonsung"
+        ],
+        "added": [
+            {
+                "name": "Tyler Goodson",
+                "position": "RB",
+                "team": "DAL"
+            }
+        ],
+        "dropped": [
+            {
+                "name": "Jaylen Wright",
+                "position": "RB",
+                "team": "MIA"
+            }
+        ],
+        "faab": 0,
+        "waiver_bid": 0,
+        "notes": null
+    },
+    {
+        "season": "2026",
+        "week": 7,
+        "created": "Oct 26, 2026 • 3:23 AM PT",
+        "transaction_id": "1420406547825098752",
+        "type": "free_agent",
+        "status": "complete",
+        "teams": [
+            "jonsung"
+        ],
+        "added": [
+            {
+                "name": "Marquise Brown",
+                "position": "WR",
+                "team": "PHI"
+            }
+        ],
+        "dropped": [
+            {
+                "name": "Tommy Tremble",
+                "position": "TE",
+                "team": "CAR"
+            }
+        ],
+        "faab": 0,
+        "waiver_bid": 0,
+        "notes": null
+    },
     {
         "season": "2026",
         "week": 7,
