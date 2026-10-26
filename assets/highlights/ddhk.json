@@ -271,6 +271,27 @@
       "author_verified": true
     },
     {
+      "url": "https://x.com/BuffaloBills/status/2111957734488945056",
+      "player": "James Cook III",
+      "meta": "RB \u00b7 BUF",
+      "date": "2026-10-18",
+      "author": "BuffaloBills",
+      "text": "James Cook (and the entire offensive line) into the end zone!\n\n\ud83d\udcfa: CBS",
+      "verified": true,
+      "faves": 1137,
+      "secs": 18,
+      "game_id": "401873005",
+      "game_time": "Q4 4:43",
+      "play_key": "401873005:4018730053854",
+      "played_at": "2026-10-18T23:07:39Z",
+      "poster": "https://pbs.twimg.com/amplify_video_thumb/2111957569375961088/img/fcNIKv5q72PTsNy4.jpg",
+      "published": "2026-10-18T23:08:56Z",
+      "video": "https://video.twimg.com/amplify_video/2111957569375961088/vid/avc1/1920x1080/lKcVzfCKqgmLDWwN.mp4",
+      "author_name": "Buffalo Bills",
+      "avatar": "",
+      "author_verified": true
+    },
+    {
       "url": "https://x.com/NFL/status/2114526503212093747",
       "player": "Patrick Mahomes",
       "meta": "QB \u00b7 KC",
@@ -301,6 +322,23 @@
       "poster": "https://espnmedia-cdn.akamaized.net/espn/media/common/2026/1025/ss_20261025_201955396_3711587/ss_20261025_201955396_3711587.jpg",
       "published": "2026-10-26T00:19:54Z",
       "video": "https://espnmedia-cdn.akamaized.net/espn/media/16x9/2026/1025/ss_20261025_201955396_3711587/ss_20261025_201955396_3711587.mp4"
+    },
+    {
+      "url": "https://x.com/NFLonFOX/status/2111953084993671545",
+      "player": "Davante Adams",
+      "meta": "WR \u00b7 LAR",
+      "date": "2026-10-18",
+      "author": "NFLonFOX",
+      "text": "Davante Adams had to head to the sideline after that last play.\n\n\ud83d\udcfa: FOX/FOX One",
+      "verified": false,
+      "faves": 172,
+      "secs": 5,
+      "poster": "https://pbs.twimg.com/ext_tw_video_thumb/2111953059253215232/pu/img/zPu6zJKqHEiZaZvL.jpg",
+      "published": "2026-10-18T22:50:28Z",
+      "video": "https://video.twimg.com/ext_tw_video/2111953059253215232/pu/vid/avc1/1280x720/1MvRC-C0v-S8jOk_.mp4?tag=12",
+      "author_name": "FOX Sports: NFL",
+      "avatar": "https://pbs.twimg.com/profile_images/1889457774159167488/SooiqbNH_normal.jpg",
+      "author_verified": true
     }
   ]
 }

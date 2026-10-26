@@ -164,6 +164,23 @@
       "author_name": "Chicago Bears",
       "avatar": "",
       "author_verified": true
+    },
+    {
+      "url": "https://x.com/NFL/status/2110933034966958420",
+      "player": "Cooper Kupp",
+      "meta": "WR \u00b7 SEA",
+      "date": "2026-10-16",
+      "author": "NFL",
+      "text": "Huge catch from Kupp to get Seattle in field goal range...\n\nSEAvsDEN on Prime Video\nStream on @NFLPlus",
+      "verified": false,
+      "faves": 305,
+      "secs": 7,
+      "poster": "https://pbs.twimg.com/amplify_video_thumb/2110932937113735169/img/8hBLsQWkF2x3R2z5.jpg",
+      "published": "2026-10-16T03:17:09Z",
+      "video": "https://video.twimg.com/amplify_video/2110932937113735169/vid/avc1/1920x1080/cquUUzTXSvi8wGi7.mp4",
+      "author_name": "NFL",
+      "avatar": "https://pbs.twimg.com/profile_images/1619895559334273028/PHKS_mjX_normal.jpg",
+      "author_verified": true
     }
   ]
 }

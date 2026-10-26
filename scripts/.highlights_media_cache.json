@@ -1561,6 +1561,16 @@
   "published": "2026-10-25T19:21:25Z",
   "video": "https://espnmedia-cdn.akamaized.net/espn/media/16x9/wsc/2026/1025/2cddf1e4-d231-418d-a9d2-ccd23270e5ae/2cddf1e4-d231-418d-a9d2-ccd23270e5ae.mp4"
  },
+ "https://www.espn.com/video/clip/_/id/50279103/kyler-murray-connects-tj-hockenson-vikings-td": {
+  "espn_game": "401873014",
+  "game_id": "401873014",
+  "game_time": "Q4 14:36",
+  "play_key": "401873014:4018730142783",
+  "played_at": "2026-10-25T19:06:26Z",
+  "poster": "https://espnmedia-cdn.akamaized.net/espn/media/common/wsc/2026/1025/a89d6fcc-87cd-4f1c-89d2-1f1fc0d24653/a89d6fcc-87cd-4f1c-89d2-1f1fc0d24653.jpg",
+  "published": "2026-10-25T19:22:56Z",
+  "video": "https://espnmedia-cdn.akamaized.net/espn/media/16x9/wsc/2026/1025/a89d6fcc-87cd-4f1c-89d2-1f1fc0d24653/a89d6fcc-87cd-4f1c-89d2-1f1fc0d24653.mp4"
+ },
  "https://www.espn.com/video/clip/_/id/50279149/bengals-extend-lead-samaje-perine-1-yard-td": {
   "espn_game": "401873012",
   "game_id": "401873012",
@@ -1666,6 +1676,16 @@
   "poster": "https://espnmedia-cdn.akamaized.net/espn/media/common/2026/1025/f6a1ab15f0064556a1f21e8225cedf451098/f6a1ab15f0064556a1f21e8225cedf451098.jpg",
   "published": "2026-10-25T21:37:50Z",
   "video": "https://espnmedia-cdn.akamaized.net/espn/media/16x9/wsc/2026/1025/f6a1ab15-f006-4556-a1f2-1e8225cedf45/f6a1ab15-f006-4556-a1f2-1e8225cedf45.mp4"
+ },
+ "https://www.espn.com/video/clip/_/id/50280866/matthew-stafford-puka-nacua-connect-short-td": {
+  "espn_game": "401873021",
+  "game_id": "401873021",
+  "game_time": "Q2 4:15",
+  "play_key": "401873021:4018730211633",
+  "played_at": "2026-10-25T21:28:51Z",
+  "poster": "https://espnmedia-cdn.akamaized.net/espn/media/common/2026/1025/c5f3fdddf2c9406094f7e6e26c0c95401133/c5f3fdddf2c9406094f7e6e26c0c95401133.jpg",
+  "published": "2026-10-25T21:47:13Z",
+  "video": "https://espnmedia-cdn.akamaized.net/espn/media/16x9/wsc/2026/1025/c5f3fddd-f2c9-4060-94f7-e6e26c0c9540/c5f3fddd-f2c9-4060-94f7-e6e26c0c9540.mp4"
  },
  "https://www.espn.com/video/clip/_/id/50280925/kyren-williams-spins-free-another-rams-td": {
   "espn_game": "401873021",
@@ -3451,6 +3471,11 @@
   "published": "2026-10-12T19:30:39Z",
   "youtube": "Tpf-TajJEC0"
  },
+ "https://www.youtube.com/shorts/TsLePJqprUM": {
+  "poster": "https://i.ytimg.com/vi/TsLePJqprUM/hqdefault.jpg",
+  "published": "2026-10-26T18:00:27Z",
+  "youtube": "TsLePJqprUM"
+ },
  "https://www.youtube.com/shorts/TtgKV2xtf6Q": {
   "poster": "https://i.ytimg.com/vi/TtgKV2xtf6Q/hqdefault.jpg",
   "published": "2026-09-30T21:28:58Z",
@@ -4786,6 +4811,11 @@
   "poster": "https://i.ytimg.com/vi/qubp6jGfL7s/hqdefault.jpg",
   "published": "2026-09-27T22:52:05Z",
   "youtube": "qubp6jGfL7s"
+ },
+ "https://www.youtube.com/shorts/r0zpy8T5tSk": {
+  "poster": "https://i.ytimg.com/vi/r0zpy8T5tSk/hqdefault.jpg",
+  "published": "2026-10-26T15:13:30Z",
+  "youtube": "r0zpy8T5tSk"
  },
  "https://www.youtube.com/shorts/r1-PVe83IWQ": {
   "poster": "https://i.ytimg.com/vi/r1-PVe83IWQ/hqdefault.jpg",
