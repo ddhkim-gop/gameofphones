@@ -5830,7 +5830,7 @@ window.__STATIC_DATA__ = {
                 "name": "Efton Chism III",
                 "position": "WR",
                 "team": "NE",
-                "age": 24,
+                "age": 25,
                 "birth_date": "2001-10-26",
                 "college": "Eastern Washington",
                 "height": "70",
@@ -8484,7 +8484,7 @@ window.__STATIC_DATA__ = {
                 "name": "Cole Payton",
                 "position": "QB",
                 "team": "PHI",
-                "age": 23,
+                "age": 24,
                 "birth_date": "2002-10-26",
                 "college": "North Dakota State",
                 "height": "74",
@@ -11097,7 +11097,7 @@ window.__STATIC_DATA__ = {
                 "weight": "185",
                 "years_exp": 5,
                 "status": "Active",
-                "injury_status": null,
+                "injury_status": "Questionable",
                 "search_rank": 42
             },
             {
