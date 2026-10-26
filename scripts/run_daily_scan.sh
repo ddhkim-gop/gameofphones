@@ -19,6 +19,16 @@ LOG="$HOME/Library/Logs/fantasy-football/daily-scan.log"
 mkdir -p "$(dirname "$LOG")"
 cd "$REPO" || exit 1
 
+# A pull --rebase that dies midway (files changed underneath it, or the run was
+# killed) leaves a detached HEAD, and the check below then blocked every run -
+# all four leagues, 2026-10-08..10-26. Undo it first: --abort puts main and the
+# autostash back. Only rebases idle over an hour, so a hand-run one is left alone.
+for d in .git/rebase-merge .git/rebase-apply; do
+  if [ -d "$d" ] && [ $(( $(date +%s) - $(stat -f %m "$d") )) -gt 3600 ]; then
+    echo "  heal: aborting a rebase stuck since $(stat -f %Sm "$d")" >> "$LOG"
+    git rebase --abort >> "$LOG" 2>&1
+  fi
+done
 # A stale rebase left this repo on a detached HEAD from 2026-09-21 to 09-27:
 # every nightly commit landed on no branch and none was pushed. Refuse instead.
 if ! git symbolic-ref -q HEAD >/dev/null; then
@@ -73,10 +83,15 @@ if ! git diff --quiet scripts/highlights_reviewed.json assets/highlights 2>/dev/
   # --autostash: daily_scan.py mutates its own state files (.daily_seen.json,
   # highlights_events.jsonl) every run, leaving unstaged changes that would
   # otherwise abort the rebase.
-  git commit -q -m "Highlights: nightly ESPN auto-seed (week $WEEK)" >> "$LOG" 2>&1 \
-    && git pull --rebase --autostash -q >> "$LOG" 2>&1 \
-    && git push -q >> "$LOG" 2>&1 \
-    && echo "  pushed" >> "$LOG" 2>&1
+  if git commit -q -m "Highlights: nightly ESPN auto-seed (week $WEEK)" >> "$LOG" 2>&1; then
+    if git pull --rebase --autostash -q >> "$LOG" 2>&1; then
+      git push -q >> "$LOG" 2>&1 && echo "  pushed" >> "$LOG" 2>&1
+    else
+      # Never leave the repo mid-rebase: the commit stays on main for the next run.
+      { [ -d .git/rebase-merge ] || [ -d .git/rebase-apply ]; } && git rebase --abort >> "$LOG" 2>&1
+      echo "  PUSH SKIPPED: pull --rebase failed; rebase undone, next run retries" >> "$LOG"
+    fi
+  fi
 else
   echo "  no highlight changes; nothing pushed" >> "$LOG"
 fi

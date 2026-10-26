@@ -17,6 +17,7 @@ from __future__ import annotations
 
 import argparse
 import os
+import signal
 import subprocess
 import sys
 import time
@@ -86,11 +87,16 @@ def main() -> int:
         env = {**os.environ, "FF_LOCK_HELD": "1"}
         for lg in LEAGUES:
             runner = ROOT / lg / "scripts" / "run_daily_scan.sh"
+            # Own process group: a timeout must kill the runner's python children
+            # too. Killing only bash left them writing into the repo after the
+            # lock was released, under the next run's git pull --rebase.
+            p = subprocess.Popen(["/bin/bash", str(runner)], env=env,
+                                 stdin=subprocess.DEVNULL, start_new_session=True)
             try:
-                r = subprocess.run(["/bin/bash", str(runner)], env=env, timeout=1800,
-                                   stdin=subprocess.DEVNULL)
-                log(f"{lg}: exit {r.returncode}")
+                log(f"{lg}: exit {p.wait(timeout=1800)}")
             except subprocess.TimeoutExpired:
+                os.killpg(p.pid, signal.SIGKILL)
+                p.wait()
                 log(f"{lg}: TIMEOUT after 30 min")
         subprocess.run([sys.executable, str(HERE / "health.py"), "--source", "gameday"],
                        timeout=900, stdin=subprocess.DEVNULL)
