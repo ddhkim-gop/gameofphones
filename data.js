@@ -7854,7 +7854,7 @@ window.__STATIC_DATA__ = {
                 "name": "Ryan Flournoy",
                 "position": "WR",
                 "team": "DAL",
-                "age": 26,
+                "age": 27,
                 "birth_date": "1999-10-27",
                 "college": "Southeast Missouri State",
                 "height": "73",
