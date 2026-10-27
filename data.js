@@ -5773,7 +5773,7 @@ window.__STATIC_DATA__ = {
                 "weight": "210",
                 "years_exp": 2,
                 "status": "Inactive",
-                "injury_status": "Out",
+                "injury_status": "IR",
                 "search_rank": 110
             },
             {
@@ -8378,7 +8378,7 @@ window.__STATIC_DATA__ = {
                 "height": "77",
                 "weight": "205",
                 "years_exp": 1,
-                "status": "Inactive",
+                "status": "Active",
                 "injury_status": "IR",
                 "search_rank": 677
             },
@@ -15301,7 +15301,7 @@ window.__STATIC_DATA__ = {
             {
                 "name": "Gregory Desrosiers",
                 "position": "RB",
-                "team": "LAC"
+                "team": "NYG"
             }
         ],
         "faab": 0,
@@ -15450,7 +15450,7 @@ window.__STATIC_DATA__ = {
             {
                 "name": "Gregory Desrosiers",
                 "position": "RB",
-                "team": "LAC"
+                "team": "NYG"
             }
         ],
         "dropped": [
