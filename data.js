@@ -6028,8 +6028,8 @@ window.__STATIC_DATA__ = {
                 "height": "72",
                 "weight": "210",
                 "years_exp": 7,
-                "status": "Active",
-                "injury_status": "Out",
+                "status": "Inactive",
+                "injury_status": "IR",
                 "search_rank": 56
             },
             {
@@ -6045,7 +6045,7 @@ window.__STATIC_DATA__ = {
                 "weight": "200",
                 "years_exp": 7,
                 "status": "Active",
-                "injury_status": null,
+                "injury_status": "Questionable",
                 "search_rank": 77
             },
             {
@@ -6701,6 +6701,22 @@ window.__STATIC_DATA__ = {
         "roster_id": 4,
         "players": [
             {
+                "player_id": "10955",
+                "espn_id": null,
+                "name": "Chad Ryland",
+                "position": "K",
+                "team": "ARI",
+                "age": 27,
+                "birth_date": "1999-10-15",
+                "college": "Maryland",
+                "height": "72",
+                "weight": "195",
+                "years_exp": 3,
+                "status": "Active",
+                "injury_status": null,
+                "search_rank": 324
+            },
+            {
                 "player_id": "11557",
                 "espn_id": null,
                 "name": "Joe Milton",
@@ -6875,22 +6891,6 @@ window.__STATIC_DATA__ = {
                 "status": "Active",
                 "injury_status": null,
                 "search_rank": 211
-            },
-            {
-                "player_id": "13833",
-                "espn_id": null,
-                "name": "Dominic Zvada",
-                "position": "K",
-                "team": "NYG",
-                "age": 23,
-                "birth_date": "2003-10-25",
-                "college": "Michigan",
-                "height": "75",
-                "weight": "187",
-                "years_exp": 0,
-                "status": "Active",
-                "injury_status": null,
-                "search_rank": 330
             },
             {
                 "player_id": "2216",
@@ -7471,7 +7471,7 @@ window.__STATIC_DATA__ = {
                 "weight": "226",
                 "years_exp": 7,
                 "status": "Active",
-                "injury_status": null,
+                "injury_status": "Questionable",
                 "search_rank": 17
             },
             {
@@ -7551,7 +7551,7 @@ window.__STATIC_DATA__ = {
                 "weight": "200",
                 "years_exp": 5,
                 "status": "Active",
-                "injury_status": null,
+                "injury_status": "Questionable",
                 "search_rank": 86
             },
             {
@@ -7941,7 +7941,7 @@ window.__STATIC_DATA__ = {
                 "weight": "192",
                 "years_exp": 0,
                 "status": "Active",
-                "injury_status": null,
+                "injury_status": "Questionable",
                 "search_rank": 61
             },
             {
@@ -8721,7 +8721,7 @@ window.__STATIC_DATA__ = {
                 "weight": "235",
                 "years_exp": 2,
                 "status": "Active",
-                "injury_status": null,
+                "injury_status": "Questionable",
                 "search_rank": 135
             },
             {
@@ -10093,7 +10093,7 @@ window.__STATIC_DATA__ = {
                 "weight": "205",
                 "years_exp": 5,
                 "status": "Active",
-                "injury_status": null,
+                "injury_status": "Questionable",
                 "search_rank": 3
             },
             {
@@ -11671,6 +11671,34 @@ window.__STATIC_DATA__ = {
     {
         "season": "2026",
         "week": 8,
+        "created": "Oct 28, 2026 • 8:44 AM PT",
+        "transaction_id": "1421211943577903104",
+        "type": "free_agent",
+        "status": "complete",
+        "teams": [
+            "jonsung"
+        ],
+        "added": [
+            {
+                "name": "Chad Ryland",
+                "position": "K",
+                "team": "ARI"
+            }
+        ],
+        "dropped": [
+            {
+                "name": "Dominic Zvada",
+                "position": "K",
+                "team": "NYG"
+            }
+        ],
+        "faab": 0,
+        "waiver_bid": 0,
+        "notes": null
+    },
+    {
+        "season": "2026",
+        "week": 8,
         "created": "Oct 28, 2026 • 12:11 AM PT",
         "transaction_id": "1421082837133611008",
         "type": "free_agent",
@@ -13106,7 +13134,7 @@ window.__STATIC_DATA__ = {
             {
                 "name": "Emari Demercado",
                 "position": "RB",
-                "team": "DAL"
+                "team": null
             }
         ],
         "faab": 0,
@@ -14749,7 +14777,7 @@ window.__STATIC_DATA__ = {
             {
                 "name": "Emari Demercado",
                 "position": "RB",
-                "team": "DAL"
+                "team": null
             }
         ],
         "dropped": [],
@@ -17410,7 +17438,7 @@ window.__STATIC_DATA__ = {
             {
                 "name": "Emari Demercado",
                 "position": "RB",
-                "team": "DAL"
+                "team": null
             }
         ],
         "faab": 0,
