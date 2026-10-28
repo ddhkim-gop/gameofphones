@@ -5841,22 +5841,6 @@ window.__STATIC_DATA__ = {
                 "search_rank": 572
             },
             {
-                "player_id": "12961",
-                "espn_id": null,
-                "name": "Ryan Fitzgerald",
-                "position": "K",
-                "team": "CAR",
-                "age": 26,
-                "birth_date": "2000-08-13",
-                "college": "Florida State",
-                "height": "71",
-                "weight": "201",
-                "years_exp": 1,
-                "status": "Active",
-                "injury_status": null,
-                "search_rank": 327
-            },
-            {
                 "player_id": "13338",
                 "espn_id": null,
                 "name": "Kevin Coleman Jr.",
@@ -6081,6 +6065,22 @@ window.__STATIC_DATA__ = {
                 "search_rank": 68
             },
             {
+                "player_id": "7042",
+                "espn_id": 3917232,
+                "name": "Tyler Bass",
+                "position": "K",
+                "team": "BUF",
+                "age": 29,
+                "birth_date": "1997-02-14",
+                "college": "Georgia Southern",
+                "height": "70",
+                "weight": "183",
+                "years_exp": 6,
+                "status": "Active",
+                "injury_status": null,
+                "search_rank": 288
+            },
+            {
                 "player_id": "7594",
                 "espn_id": null,
                 "name": "Chuba Hubbard",
@@ -6263,6 +6263,22 @@ window.__STATIC_DATA__ = {
                 "search_rank": 122
             },
             {
+                "player_id": "11643",
+                "espn_id": null,
+                "name": "Jaylen Wright",
+                "position": "RB",
+                "team": "MIA",
+                "age": 23,
+                "birth_date": "2003-04-01",
+                "college": "Tennessee",
+                "height": "70",
+                "weight": "205",
+                "years_exp": 2,
+                "status": "Active",
+                "injury_status": "Questionable",
+                "search_rank": 174
+            },
+            {
                 "player_id": "12467",
                 "espn_id": null,
                 "name": "Jordan James",
@@ -6389,22 +6405,6 @@ window.__STATIC_DATA__ = {
                 "status": "Active",
                 "injury_status": null,
                 "search_rank": 514
-            },
-            {
-                "player_id": "2197",
-                "espn_id": 16731,
-                "name": "Brandin Cooks",
-                "position": "WR",
-                "team": "SF",
-                "age": 33,
-                "birth_date": "1993-09-25",
-                "college": "Oregon State",
-                "height": "70",
-                "weight": "189",
-                "years_exp": 12,
-                "status": "Active",
-                "injury_status": null,
-                "search_rank": 589
             },
             {
                 "player_id": "2307",
@@ -6797,6 +6797,22 @@ window.__STATIC_DATA__ = {
                 "search_rank": 61
             },
             {
+                "player_id": "12670",
+                "espn_id": null,
+                "name": "KeAndre Lambert-Smith",
+                "position": "WR",
+                "team": "LAC",
+                "age": 25,
+                "birth_date": "2001-10-16",
+                "college": "Auburn",
+                "height": "73",
+                "weight": "182",
+                "years_exp": 1,
+                "status": "Active",
+                "injury_status": null,
+                "search_rank": 649
+            },
+            {
                 "player_id": "13324",
                 "espn_id": null,
                 "name": "Matt Hibner",
@@ -6973,22 +6989,6 @@ window.__STATIC_DATA__ = {
                 "search_rank": 72
             },
             {
-                "player_id": "5848",
-                "espn_id": 4241372,
-                "name": "Marquise Brown",
-                "position": "WR",
-                "team": "PHI",
-                "age": 29,
-                "birth_date": "1997-06-04",
-                "college": "Oklahoma",
-                "height": "69",
-                "weight": "170",
-                "years_exp": 7,
-                "status": "Active",
-                "injury_status": null,
-                "search_rank": 685
-            },
-            {
                 "player_id": "6794",
                 "espn_id": 4262921,
                 "name": "Justin Jefferson",
@@ -7085,6 +7085,22 @@ window.__STATIC_DATA__ = {
                 "search_rank": 34
             },
             {
+                "player_id": "7828",
+                "espn_id": null,
+                "name": "Noah Gray",
+                "position": "TE",
+                "team": "KC",
+                "age": 27,
+                "birth_date": "1999-04-30",
+                "college": "Duke",
+                "height": "75",
+                "weight": "240",
+                "years_exp": 5,
+                "status": "Active",
+                "injury_status": null,
+                "search_rank": 683
+            },
+            {
                 "player_id": "8129",
                 "espn_id": null,
                 "name": "Dameon Pierce",
@@ -7179,22 +7195,6 @@ window.__STATIC_DATA__ = {
                 "status": "Active",
                 "injury_status": null,
                 "search_rank": 123
-            },
-            {
-                "player_id": "8207",
-                "espn_id": null,
-                "name": "Tyler Goodson",
-                "position": "RB",
-                "team": "DAL",
-                "age": 25,
-                "birth_date": "2000-11-10",
-                "college": "Iowa",
-                "height": "69",
-                "weight": "197",
-                "years_exp": 4,
-                "status": "Active",
-                "injury_status": null,
-                "search_rank": 480
             }
         ]
     },
@@ -10551,6 +10551,22 @@ window.__STATIC_DATA__ = {
                 "search_rank": 39
             },
             {
+                "player_id": "3634",
+                "espn_id": 2973405,
+                "name": "Kalif Raymond",
+                "position": "WR",
+                "team": "CHI",
+                "age": 32,
+                "birth_date": "1994-08-08",
+                "college": "Holy Cross",
+                "height": "69",
+                "weight": "160",
+                "years_exp": 10,
+                "status": "Active",
+                "injury_status": null,
+                "search_rank": 645
+            },
+            {
                 "player_id": "4454",
                 "espn_id": 3045523,
                 "name": "Kendrick Bourne",
@@ -10613,22 +10629,6 @@ window.__STATIC_DATA__ = {
                 "status": "Active",
                 "injury_status": null,
                 "search_rank": 44
-            },
-            {
-                "player_id": "6826",
-                "espn_id": 4258595,
-                "name": "Cole Kmet",
-                "position": "TE",
-                "team": "CHI",
-                "age": 27,
-                "birth_date": "1999-03-10",
-                "college": "Notre Dame",
-                "height": "78",
-                "weight": "257",
-                "years_exp": 6,
-                "status": "Inactive",
-                "injury_status": "IR",
-                "search_rank": 488
             },
             {
                 "player_id": "8167",
@@ -11668,6 +11668,190 @@ window.__STATIC_DATA__ = {
     }
   ],
   "transactions": [
+    {
+        "season": "2026",
+        "week": 8,
+        "created": "Oct 28, 2026 • 12:11 AM PT",
+        "transaction_id": "1421082837133611008",
+        "type": "free_agent",
+        "status": "complete",
+        "teams": [
+            "jonsung"
+        ],
+        "added": [
+            {
+                "name": "KeAndre Lambert-Smith",
+                "position": "WR",
+                "team": "LAC"
+            }
+        ],
+        "dropped": [
+            {
+                "name": "Marquise Brown",
+                "position": "WR",
+                "team": "PHI"
+            }
+        ],
+        "faab": 0,
+        "waiver_bid": 0,
+        "notes": null
+    },
+    {
+        "season": "2026",
+        "week": 8,
+        "created": "Oct 27, 2026 • 11:49 PM PT",
+        "transaction_id": "1421077414028517376",
+        "type": "free_agent",
+        "status": "complete",
+        "teams": [
+            "jonsung"
+        ],
+        "added": [
+            {
+                "name": "Noah Gray",
+                "position": "TE",
+                "team": "KC"
+            }
+        ],
+        "dropped": [
+            {
+                "name": "Devin Singletary",
+                "position": "RB",
+                "team": "NYG"
+            }
+        ],
+        "faab": 0,
+        "waiver_bid": 0,
+        "notes": null
+    },
+    {
+        "season": "2026",
+        "week": 8,
+        "created": "Oct 27, 2026 • 11:44 PM PT",
+        "transaction_id": "1421076186460626944",
+        "type": "free_agent",
+        "status": "complete",
+        "teams": [
+            "jonsung"
+        ],
+        "added": [
+            {
+                "name": "Devin Singletary",
+                "position": "RB",
+                "team": "NYG"
+            }
+        ],
+        "dropped": [
+            {
+                "name": "Tyler Goodson",
+                "position": "RB",
+                "team": "DAL"
+            }
+        ],
+        "faab": 0,
+        "waiver_bid": 0,
+        "notes": null
+    },
+    {
+        "season": "2026",
+        "week": 8,
+        "created": "Oct 27, 2026 • 11:10 PM PT",
+        "transaction_id": "1421067582634532864",
+        "type": "free_agent",
+        "status": "complete",
+        "teams": [
+            "NoSkilzPak"
+        ],
+        "added": [
+            {
+                "name": "Jaylen Wright",
+                "position": "RB",
+                "team": "MIA"
+            }
+        ],
+        "dropped": [],
+        "faab": 0,
+        "waiver_bid": 0,
+        "notes": null
+    },
+    {
+        "season": "2026",
+        "week": 8,
+        "created": "Oct 27, 2026 • 11:09 PM PT",
+        "transaction_id": "1421067351171858432",
+        "type": "free_agent",
+        "status": "complete",
+        "teams": [
+            "NoSkilzPak"
+        ],
+        "added": [],
+        "dropped": [
+            {
+                "name": "Brandin Cooks",
+                "position": "WR",
+                "team": "SF"
+            }
+        ],
+        "faab": 0,
+        "waiver_bid": 0,
+        "notes": null
+    },
+    {
+        "season": "2026",
+        "week": 7,
+        "created": "Oct 27, 2026 • 7:54 PM PT",
+        "transaction_id": "1421018360275054592",
+        "type": "waiver",
+        "status": "complete",
+        "teams": [
+            "spiffster"
+        ],
+        "added": [
+            {
+                "name": "Tyler Bass",
+                "position": "K",
+                "team": "BUF"
+            }
+        ],
+        "dropped": [
+            {
+                "name": "Ryan Fitzgerald",
+                "position": "K",
+                "team": "CAR"
+            }
+        ],
+        "faab": 0,
+        "waiver_bid": 0,
+        "notes": "Your waiver claim was processed successfully!"
+    },
+    {
+        "season": "2026",
+        "week": 7,
+        "created": "Oct 27, 2026 • 7:17 AM PT",
+        "transaction_id": "1420827683389976576",
+        "type": "waiver",
+        "status": "complete",
+        "teams": [
+            "ngman"
+        ],
+        "added": [
+            {
+                "name": "Kalif Raymond",
+                "position": "WR",
+                "team": "CHI"
+            }
+        ],
+        "dropped": [
+            {
+                "name": "Cole Kmet",
+                "position": "TE",
+                "team": "CHI"
+            }
+        ],
+        "faab": 0,
+        "waiver_bid": 0,
+        "notes": "Your waiver claim was processed successfully!"
+    },
     {
         "season": "2026",
         "week": 7,
