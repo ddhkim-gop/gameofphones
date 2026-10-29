@@ -1,6 +1,6 @@
 {
   "team": "IconicJH",
-  "updated": "2026-10-28",
+  "updated": "2026-10-29",
   "note": "Curated: X has no public search API, so posts are collected by hand and matched to rosters by this script.",
   "tweets": [
     {
@@ -141,7 +141,7 @@
       "published": "2026-10-25T19:41:23Z",
       "video": "https://video.twimg.com/amplify_video/2114441231853821952/vid/avc1/1920x1080/gr5noVd01ZUc4k1L.mp4",
       "author_name": "Miami Dolphins",
-      "avatar": "https://pbs.twimg.com/profile_images/2003476192737857536/3trK5_DF_normal.jpg",
+      "avatar": "",
       "author_verified": true
     },
     {
@@ -307,27 +307,6 @@
       "published": "2026-10-23T01:04:50Z",
       "video": "https://video.twimg.com/amplify_video/2113436031177359361/vid/avc1/1920x1080/vxVvtOj28cLZtsgq.mp4",
       "author_name": "New England Patriots",
-      "avatar": "",
-      "author_verified": true
-    },
-    {
-      "url": "https://www.youtube.com/shorts/qZ4spTBdyv0",
-      "player": "Jahan Dotson",
-      "meta": "WR \u00b7 ATL",
-      "date": "2026-10-20",
-      "author": "AtlantaFalcons",
-      "text": "Dotted to Jahan Dotson in the end zone \ud83d\udd25 NFL+ #nfl #highlights #atlanta #football",
-      "verified": false,
-      "faves": 506,
-      "secs": 19,
-      "poster": "https://i.ytimg.com/vi/qZ4spTBdyv0/hqdefault.jpg",
-      "published": "2026-10-20T19:40:29Z",
-      "youtube": "qZ4spTBdyv0",
-      "played_at": "2026-10-18T18:02:25Z",
-      "game_time": "Q2 5:45",
-      "play_key": "401872999:4018729991488",
-      "game_id": "401872999",
-      "author_name": "Atlanta Falcons",
       "avatar": "",
       "author_verified": true
     },
