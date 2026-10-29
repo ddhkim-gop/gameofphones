@@ -5725,7 +5725,7 @@ window.__STATIC_DATA__ = {
                 "weight": "246",
                 "years_exp": 3,
                 "status": "Active",
-                "injury_status": null,
+                "injury_status": "Questionable",
                 "search_rank": 81
             },
             {
@@ -5901,7 +5901,7 @@ window.__STATIC_DATA__ = {
                 "weight": "191",
                 "years_exp": 11,
                 "status": "Active",
-                "injury_status": null,
+                "injury_status": "Questionable",
                 "search_rank": 105
             },
             {
@@ -6150,7 +6150,7 @@ window.__STATIC_DATA__ = {
                 "name": "Tank Dell",
                 "position": "WR",
                 "team": "HOU",
-                "age": 26,
+                "age": 27,
                 "birth_date": "1999-10-29",
                 "college": "Houston",
                 "height": "70",
@@ -6275,7 +6275,7 @@ window.__STATIC_DATA__ = {
                 "weight": "205",
                 "years_exp": 2,
                 "status": "Active",
-                "injury_status": "Questionable",
+                "injury_status": null,
                 "search_rank": 174
             },
             {
@@ -6403,7 +6403,7 @@ window.__STATIC_DATA__ = {
                 "weight": "264",
                 "years_exp": 0,
                 "status": "Active",
-                "injury_status": null,
+                "injury_status": "Questionable",
                 "search_rank": 514
             },
             {
@@ -6419,7 +6419,7 @@ window.__STATIC_DATA__ = {
                 "weight": "222",
                 "years_exp": 11,
                 "status": "Active",
-                "injury_status": "Questionable",
+                "injury_status": null,
                 "search_rank": 508
             },
             {
@@ -6563,7 +6563,7 @@ window.__STATIC_DATA__ = {
                 "weight": "225",
                 "years_exp": 4,
                 "status": "Active",
-                "injury_status": null,
+                "injury_status": "Questionable",
                 "search_rank": 89
             },
             {
@@ -6866,7 +6866,7 @@ window.__STATIC_DATA__ = {
                 "name": "Jalon Daniels",
                 "position": "QB",
                 "team": "TB",
-                "age": 23,
+                "age": 24,
                 "birth_date": "2002-10-29",
                 "college": "Kansas",
                 "height": "72",
@@ -7112,8 +7112,8 @@ window.__STATIC_DATA__ = {
                 "height": "70",
                 "weight": "218",
                 "years_exp": 4,
-                "status": "Active",
-                "injury_status": "Questionable",
+                "status": "Inactive",
+                "injury_status": "IR",
                 "search_rank": 627
             },
             {
@@ -7161,7 +7161,7 @@ window.__STATIC_DATA__ = {
                 "weight": "205",
                 "years_exp": 4,
                 "status": "Active",
-                "injury_status": null,
+                "injury_status": "Questionable",
                 "search_rank": 22
             },
             {
@@ -7215,7 +7215,7 @@ window.__STATIC_DATA__ = {
                 "weight": "195",
                 "years_exp": 3,
                 "status": "Active",
-                "injury_status": null,
+                "injury_status": "Questionable",
                 "search_rank": 644
             },
             {
@@ -7279,7 +7279,7 @@ window.__STATIC_DATA__ = {
                 "weight": "200",
                 "years_exp": 1,
                 "status": "Active",
-                "injury_status": null,
+                "injury_status": "Questionable",
                 "search_rank": 129
             },
             {
@@ -7336,7 +7336,7 @@ window.__STATIC_DATA__ = {
                 "name": "Quinshon Judkins",
                 "position": "RB",
                 "team": "CLE",
-                "age": 22,
+                "age": 23,
                 "birth_date": "2003-10-29",
                 "college": "Ohio State",
                 "height": "72",
@@ -7631,7 +7631,7 @@ window.__STATIC_DATA__ = {
                 "weight": "202",
                 "years_exp": 3,
                 "status": "Active",
-                "injury_status": null,
+                "injury_status": "Questionable",
                 "search_rank": 1
             },
             {
@@ -8101,7 +8101,7 @@ window.__STATIC_DATA__ = {
                 "weight": "225",
                 "years_exp": 4,
                 "status": "Active",
-                "injury_status": null,
+                "injury_status": "Questionable",
                 "search_rank": 679
             },
             {
@@ -8133,7 +8133,7 @@ window.__STATIC_DATA__ = {
                 "weight": "182",
                 "years_exp": 3,
                 "status": "Active",
-                "injury_status": null,
+                "injury_status": "Questionable",
                 "search_rank": 192
             },
             {
@@ -8737,7 +8737,7 @@ window.__STATIC_DATA__ = {
                 "weight": "192",
                 "years_exp": 2,
                 "status": "Active",
-                "injury_status": null,
+                "injury_status": "Questionable",
                 "search_rank": 176
             },
             {
@@ -9725,7 +9725,7 @@ window.__STATIC_DATA__ = {
                 "weight": "235",
                 "years_exp": 2,
                 "status": "Active",
-                "injury_status": null,
+                "injury_status": "Questionable",
                 "search_rank": 21
             },
             {
@@ -10141,7 +10141,7 @@ window.__STATIC_DATA__ = {
                 "weight": "245",
                 "years_exp": 4,
                 "status": "Active",
-                "injury_status": null,
+                "injury_status": "Questionable",
                 "search_rank": 230
             },
             {
@@ -10402,8 +10402,8 @@ window.__STATIC_DATA__ = {
                 "height": "71",
                 "weight": "201",
                 "years_exp": 1,
-                "status": "Active",
-                "injury_status": "Questionable",
+                "status": "Inactive",
+                "injury_status": "IR",
                 "search_rank": 190
             },
             {
@@ -10729,7 +10729,7 @@ window.__STATIC_DATA__ = {
                 "weight": "213",
                 "years_exp": 3,
                 "status": "Active",
-                "injury_status": null,
+                "injury_status": "Questionable",
                 "search_rank": 75
             },
             {
@@ -11049,7 +11049,7 @@ window.__STATIC_DATA__ = {
                 "weight": "266",
                 "years_exp": 6,
                 "status": "Active",
-                "injury_status": null,
+                "injury_status": "Questionable",
                 "search_rank": 136
             },
             {
@@ -13134,7 +13134,7 @@ window.__STATIC_DATA__ = {
             {
                 "name": "Emari Demercado",
                 "position": "RB",
-                "team": null
+                "team": "HOU"
             }
         ],
         "faab": 0,
@@ -14777,7 +14777,7 @@ window.__STATIC_DATA__ = {
             {
                 "name": "Emari Demercado",
                 "position": "RB",
-                "team": null
+                "team": "HOU"
             }
         ],
         "dropped": [],
@@ -17438,7 +17438,7 @@ window.__STATIC_DATA__ = {
             {
                 "name": "Emari Demercado",
                 "position": "RB",
-                "team": null
+                "team": "HOU"
             }
         ],
         "faab": 0,
