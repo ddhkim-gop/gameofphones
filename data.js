@@ -7993,6 +7993,22 @@ window.__STATIC_DATA__ = {
                 "search_rank": 469
             },
             {
+                "player_id": "5848",
+                "espn_id": 4241372,
+                "name": "Marquise Brown",
+                "position": "WR",
+                "team": "PHI",
+                "age": 29,
+                "birth_date": "1997-06-04",
+                "college": "Oklahoma",
+                "height": "69",
+                "weight": "170",
+                "years_exp": 7,
+                "status": "Active",
+                "injury_status": null,
+                "search_rank": 685
+            },
+            {
                 "player_id": "6783",
                 "espn_id": 4241463,
                 "name": "Jerry Jeudy",
@@ -11668,6 +11684,28 @@ window.__STATIC_DATA__ = {
     }
   ],
   "transactions": [
+    {
+        "season": "2026",
+        "week": 8,
+        "created": "Oct 30, 2026 • 11:56 AM PT",
+        "transaction_id": "1421985161322487808",
+        "type": "free_agent",
+        "status": "complete",
+        "teams": [
+            "IconicJH"
+        ],
+        "added": [
+            {
+                "name": "Marquise Brown",
+                "position": "WR",
+                "team": "PHI"
+            }
+        ],
+        "dropped": [],
+        "faab": 0,
+        "waiver_bid": 0,
+        "notes": null
+    },
     {
         "season": "2026",
         "week": 8,
