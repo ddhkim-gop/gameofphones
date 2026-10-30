@@ -1,8 +1,29 @@
 {
   "team": "ganathan",
-  "updated": "2026-10-29",
+  "updated": "2026-10-30",
   "note": "Curated: X has no public search API, so posts are collected by hand and matched to rosters by this script.",
   "tweets": [
+    {
+      "url": "https://x.com/packers/status/2115980193550536714",
+      "player": "Matthew Golden",
+      "meta": "WR \u00b7 GB",
+      "date": "2026-10-30",
+      "author": "packers",
+      "text": "It's GOLDEN\n\n\ud83d\udcfa: Prime Video",
+      "verified": true,
+      "faves": 1708,
+      "secs": 16,
+      "game_id": "401873023",
+      "game_time": "Q2 1:46",
+      "play_key": "401873023:4018730231998",
+      "played_at": "2026-10-30T01:31:48Z",
+      "poster": "https://pbs.twimg.com/amplify_video_thumb/2115980100864798720/img/4GpqoubtSZitsB8f.jpg",
+      "published": "2026-10-30T01:32:45Z",
+      "video": "https://video.twimg.com/amplify_video/2115980100864798720/vid/avc1/1920x1080/mUSKo_34sMYSElSf.mp4",
+      "author_name": "Green Bay Packers",
+      "avatar": "",
+      "author_verified": true
+    },
     {
       "url": "https://www.espn.com/video/clip/_/id/50280925/kyren-williams-spins-free-another-rams-td",
       "player": "Kyren Williams",

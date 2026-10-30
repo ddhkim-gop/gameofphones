@@ -1,8 +1,27 @@
 {
   "team": "NoSkilzPak",
-  "updated": "2026-10-29",
+  "updated": "2026-10-30",
   "note": "Curated: X has no public search API, so posts are collected by hand and matched to rosters by this script.",
   "tweets": [
+    {
+      "url": "https://www.espn.com/video/clip/_/id/50323486/jordan-love-zips-tucker-kraft-packers-td",
+      "player": "Tucker Kraft",
+      "meta": "TE \u00b7 GB",
+      "date": "2026-10-30",
+      "author": "ESPN",
+      "text": "Jordan Love zips it to Tucker Kraft for a Packers TD",
+      "verified": true,
+      "faves": 0,
+      "secs": 0,
+      "espn_game": "401873023",
+      "game_id": "401873023",
+      "game_time": "Q1 5:08",
+      "play_key": "401873023:401873023666",
+      "played_at": "2026-10-30T00:37:40Z",
+      "poster": "https://espnmedia-cdn.akamaized.net/espn/media/common/2026/1029/76b4fe001dc04897b3a773bdc0eed4221254/76b4fe001dc04897b3a773bdc0eed4221254.jpg",
+      "published": "2026-10-30T00:47:11Z",
+      "video": "https://espnmedia-cdn.akamaized.net/espn/media/16x9/wsc/2026/1030/76b4fe00-1dc0-4897-b3a7-73bdc0eed422/76b4fe00-1dc0-4897-b3a7-73bdc0eed422.mp4"
+    },
     {
       "url": "https://www.espn.com/video/clip/_/id/50284269/emanuel-wilson-breaks-free-big-seahawks-td",
       "player": "Emanuel Wilson",
@@ -84,25 +103,6 @@
       "author_name": "NFL",
       "avatar": "https://pbs.twimg.com/profile_images/1619895559334273028/PHKS_mjX_normal.jpg",
       "author_verified": true
-    },
-    {
-      "url": "https://www.espn.com/video/clip/_/id/50280480/jordan-love-scrambles-slings-td-pass-tucker-kraft",
-      "player": "Tucker Kraft",
-      "meta": "TE \u00b7 GB",
-      "date": "2026-10-25",
-      "author": "ESPN",
-      "text": "Jordan Love scrambles, slings TD pass to Tucker Kraft",
-      "verified": true,
-      "faves": 0,
-      "secs": 0,
-      "espn_game": "401873020",
-      "game_id": "401873020",
-      "game_time": "Q1 0:58",
-      "play_key": "401873020:401873020837",
-      "played_at": "2026-10-25T20:52:58Z",
-      "poster": "https://espnmedia-cdn.akamaized.net/espn/media/common/wsc/2026/1025/0325b38d-fb4c-415a-92dc-5276edc7612d/0325b38d-fb4c-415a-92dc-5276edc7612d.jpg",
-      "published": "2026-10-25T21:03:30Z",
-      "video": "https://espnmedia-cdn.akamaized.net/espn/media/16x9/wsc/2026/1025/0325b38d-fb4c-415a-92dc-5276edc7612d/0325b38d-fb4c-415a-92dc-5276edc7612d.mp4"
     },
     {
       "url": "https://www.espn.com/video/clip/_/id/50278151/bucky-irving-gets-bucs-going-early-td",
