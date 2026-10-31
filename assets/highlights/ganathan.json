@@ -1,6 +1,6 @@
 {
   "team": "ganathan",
-  "updated": "2026-10-30",
+  "updated": "2026-10-31",
   "note": "Curated: X has no public search API, so posts are collected by hand and matched to rosters by this script.",
   "tweets": [
     {
@@ -122,27 +122,6 @@
       "poster": "https://espnmedia-cdn.akamaized.net/espn/media/common/2026/1025/8bf25adfa05a4042b1cae1be3085d4f8760/8bf25adfa05a4042b1cae1be3085d4f8760.jpg",
       "published": "2026-10-25T14:38:28Z",
       "video": "https://espnmedia-cdn.akamaized.net/espn/media/16x9/wsc/2026/1025/8bf25adf-a05a-4042-b1ca-e1be3085d4f8/8bf25adf-a05a-4042-b1ca-e1be3085d4f8.mp4"
-    },
-    {
-      "url": "https://x.com/Patriots/status/2113446816603570284",
-      "player": "Rhamondre Stevenson",
-      "meta": "RB \u00b7 NE",
-      "date": "2026-10-23",
-      "author": "Patriots",
-      "text": "RHAMONDRE STEVENSON\u203c\ufe0f\n\n\ud83d\udcfa Prime Video",
-      "verified": true,
-      "faves": 4197,
-      "secs": 16,
-      "game_id": "401873010",
-      "game_time": "Q2 0:00",
-      "play_key": "401873010:4018730102079",
-      "played_at": "2026-10-23T01:44:35Z",
-      "poster": "https://pbs.twimg.com/amplify_video_thumb/2113446624173174784/img/J-2KEYTAqJ7F1a6g.jpg",
-      "published": "2026-10-23T01:46:01Z",
-      "video": "https://video.twimg.com/amplify_video/2113446624173174784/vid/avc1/1920x1080/ybrVYklhrPL6vozK.mp4",
-      "author_name": "New England Patriots",
-      "avatar": "",
-      "author_verified": true
     },
     {
       "url": "https://x.com/NFLonFOX/status/2114518444267954613",

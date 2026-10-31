@@ -1,6 +1,6 @@
 {
   "team": "NoSkilzPak",
-  "updated": "2026-10-30",
+  "updated": "2026-10-31",
   "note": "Curated: X has no public search API, so posts are collected by hand and matched to rosters by this script.",
   "tweets": [
     {
@@ -102,6 +102,27 @@
       "video": "https://video.twimg.com/amplify_video/2114464998584135680/vid/avc1/1920x1080/tOF8cHgp2xlPeV4t.mp4",
       "author_name": "NFL",
       "avatar": "https://pbs.twimg.com/profile_images/1619895559334273028/PHKS_mjX_normal.jpg",
+      "author_verified": true
+    },
+    {
+      "url": "https://x.com/packers/status/2114460582497669420",
+      "player": "Tucker Kraft",
+      "meta": "TE \u00b7 GB",
+      "date": "2026-10-25",
+      "author": "packers",
+      "text": "ON NATIONAL TIGHT ENDS DAY\n\n\ud83d\udcfa: FOX",
+      "verified": true,
+      "faves": 2030,
+      "secs": 16,
+      "game_id": "401873020",
+      "game_time": "Q1 0:58",
+      "play_key": "401873020:401873020837",
+      "played_at": "2026-10-25T20:52:58Z",
+      "poster": "https://pbs.twimg.com/amplify_video_thumb/2114460456131649537/img/-uQAQtqR9Qsfh69j.jpg",
+      "published": "2026-10-25T20:54:22Z",
+      "video": "https://video.twimg.com/amplify_video/2114460456131649537/vid/avc1/1920x1080/-yPbXYEAh2GLXzc8.mp4",
+      "author_name": "Green Bay Packers",
+      "avatar": "",
       "author_verified": true
     },
     {
