@@ -5176,7 +5176,7 @@ window.__STATIC_DATA__ = {
                 "years_exp": 3,
                 "status": "Active",
                 "injury_status": null,
-                "search_rank": 91
+                "search_rank": 89
             },
             {
                 "player_id": "11583",
@@ -5694,7 +5694,7 @@ window.__STATIC_DATA__ = {
                 "years_exp": 3,
                 "status": "Active",
                 "injury_status": null,
-                "search_rank": 127
+                "search_rank": 125
             },
             {
                 "player_id": "10229",
@@ -5902,7 +5902,7 @@ window.__STATIC_DATA__ = {
                 "years_exp": 11,
                 "status": "Active",
                 "injury_status": null,
-                "search_rank": 104
+                "search_rank": 105
             },
             {
                 "player_id": "3257",
@@ -6129,22 +6129,6 @@ window.__STATIC_DATA__ = {
                 "search_rank": 91
             },
             {
-                "player_id": "9230",
-                "espn_id": null,
-                "name": "Tanner McKee",
-                "position": "QB",
-                "team": "PHI",
-                "age": 26,
-                "birth_date": "2000-04-27",
-                "college": "Stanford",
-                "height": "78",
-                "weight": "231",
-                "years_exp": 3,
-                "status": "Active",
-                "injury_status": null,
-                "search_rank": 677
-            },
-            {
                 "player_id": "9502",
                 "espn_id": null,
                 "name": "Tank Dell",
@@ -6159,6 +6143,22 @@ window.__STATIC_DATA__ = {
                 "status": "Active",
                 "injury_status": null,
                 "search_rank": 187
+            },
+            {
+                "player_id": "9506",
+                "espn_id": null,
+                "name": "Sean Tucker",
+                "position": "RB",
+                "team": "TB",
+                "age": 25,
+                "birth_date": "2001-10-25",
+                "college": "Syracuse",
+                "height": "70",
+                "weight": "205",
+                "years_exp": 3,
+                "status": "Active",
+                "injury_status": null,
+                "search_rank": 155
             },
             {
                 "player_id": "9758",
@@ -7178,7 +7178,7 @@ window.__STATIC_DATA__ = {
                 "years_exp": 4,
                 "status": "Active",
                 "injury_status": null,
-                "search_rank": 19
+                "search_rank": 17
             },
             {
                 "player_id": "8161",
@@ -7830,7 +7830,7 @@ window.__STATIC_DATA__ = {
                 "years_exp": 2,
                 "status": "Active",
                 "injury_status": null,
-                "search_rank": 64
+                "search_rank": 65
             },
             {
                 "player_id": "11632",
@@ -7846,7 +7846,7 @@ window.__STATIC_DATA__ = {
                 "years_exp": 2,
                 "status": "Active",
                 "injury_status": null,
-                "search_rank": 28
+                "search_rank": 26
             },
             {
                 "player_id": "11783",
@@ -7958,7 +7958,7 @@ window.__STATIC_DATA__ = {
                 "years_exp": 0,
                 "status": "Active",
                 "injury_status": null,
-                "search_rank": 199
+                "search_rank": 197
             },
             {
                 "player_id": "13333",
@@ -8588,7 +8588,7 @@ window.__STATIC_DATA__ = {
                 "years_exp": 0,
                 "status": "Active",
                 "injury_status": null,
-                "search_rank": 181
+                "search_rank": 179
             },
             {
                 "player_id": "13414",
@@ -9010,7 +9010,7 @@ window.__STATIC_DATA__ = {
                 "years_exp": 0,
                 "status": "Active",
                 "injury_status": null,
-                "search_rank": 199
+                "search_rank": 201
             },
             {
                 "player_id": "13287",
@@ -9934,7 +9934,7 @@ window.__STATIC_DATA__ = {
                 "years_exp": 0,
                 "status": "Active",
                 "injury_status": null,
-                "search_rank": 91
+                "search_rank": 89
             },
             {
                 "player_id": "13298",
@@ -10644,7 +10644,7 @@ window.__STATIC_DATA__ = {
                 "years_exp": 6,
                 "status": "Active",
                 "injury_status": null,
-                "search_rank": 46
+                "search_rank": 44
             },
             {
                 "player_id": "8167",
@@ -11684,6 +11684,34 @@ window.__STATIC_DATA__ = {
     }
   ],
   "transactions": [
+    {
+        "season": "2026",
+        "week": 8,
+        "created": "Oct 30, 2026 • 8:16 PM PT",
+        "transaction_id": "1422110953578704896",
+        "type": "free_agent",
+        "status": "complete",
+        "teams": [
+            "spiffster"
+        ],
+        "added": [
+            {
+                "name": "Sean Tucker",
+                "position": "RB",
+                "team": "TB"
+            }
+        ],
+        "dropped": [
+            {
+                "name": "Tanner McKee",
+                "position": "QB",
+                "team": "PHI"
+            }
+        ],
+        "faab": 0,
+        "waiver_bid": 0,
+        "notes": null
+    },
     {
         "season": "2026",
         "week": 8,
