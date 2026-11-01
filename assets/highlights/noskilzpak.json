@@ -4,6 +4,27 @@
   "note": "Curated: X has no public search API, so posts are collected by hand and matched to rosters by this script.",
   "tweets": [
     {
+      "url": "https://www.youtube.com/shorts/VqiYcia7qpI",
+      "player": "Jaylen Warren",
+      "meta": "RB \u00b7 PIT",
+      "date": "2026-11-01",
+      "author": "steelers",
+      "text": "JAYLEN WARREN 51YD RUN \ud83d\udca8 \ud83d\udcfa: CBS",
+      "verified": true,
+      "faves": 266,
+      "secs": 15,
+      "game_id": "401873027",
+      "game_time": "Q1 4:17",
+      "play_key": "401873027:401873027874",
+      "played_at": "2026-11-01T18:35:45Z",
+      "poster": "https://i.ytimg.com/vi/VqiYcia7qpI/hqdefault.jpg",
+      "published": "2026-11-01T18:51:57Z",
+      "youtube": "VqiYcia7qpI",
+      "author_name": "Pittsburgh Steelers",
+      "avatar": "",
+      "author_verified": true
+    },
+    {
       "url": "https://www.espn.com/video/clip/_/id/50323486/jordan-love-zips-tucker-kraft-packers-td",
       "player": "Tucker Kraft",
       "meta": "TE \u00b7 GB",

@@ -4,6 +4,27 @@
   "note": "Curated: X has no public search API, so posts are collected by hand and matched to rosters by this script.",
   "tweets": [
     {
+      "url": "https://www.youtube.com/shorts/Jz319a4-1Zc",
+      "player": "Ryan Flournoy",
+      "meta": "WR \u00b7 DAL",
+      "date": "2026-11-01",
+      "author": "dallascowboys",
+      "text": "Flo took it to the HOUSE \ud83c\udfe1 | \ud83d\udcfa: #AZvsDAL FOX #dallascowboys #nfl #touchdown #ryanflournoy #shorts",
+      "verified": true,
+      "faves": 49,
+      "secs": 10,
+      "game_id": "401873024",
+      "game_time": "Q2 5:16",
+      "play_key": "401873024:4018730241516",
+      "played_at": "2026-11-01T18:59:14Z",
+      "poster": "https://i.ytimg.com/vi/Jz319a4-1Zc/hqdefault.jpg",
+      "published": "2026-11-01T19:12:19Z",
+      "youtube": "Jz319a4-1Zc",
+      "author_name": "Dallas Cowboys",
+      "avatar": "",
+      "author_verified": true
+    },
+    {
       "url": "https://www.espn.com/video/clip/_/id/50282550/lions-walk-jake-bates-22-yard-field-goal",
       "player": "Jake Bates",
       "meta": "K \u00b7 DET",
