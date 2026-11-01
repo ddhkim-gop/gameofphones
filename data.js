@@ -6263,22 +6263,6 @@ window.__STATIC_DATA__ = {
                 "search_rank": 122
             },
             {
-                "player_id": "11643",
-                "espn_id": null,
-                "name": "Jaylen Wright",
-                "position": "RB",
-                "team": "MIA",
-                "age": 23,
-                "birth_date": "2003-04-01",
-                "college": "Tennessee",
-                "height": "70",
-                "weight": "205",
-                "years_exp": 2,
-                "status": "Active",
-                "injury_status": null,
-                "search_rank": 174
-            },
-            {
                 "player_id": "12467",
                 "espn_id": null,
                 "name": "Jordan James",
@@ -6309,6 +6293,22 @@ window.__STATIC_DATA__ = {
                 "status": "Active",
                 "injury_status": null,
                 "search_rank": 503
+            },
+            {
+                "player_id": "12491",
+                "espn_id": null,
+                "name": "Corey Kiner",
+                "position": "RB",
+                "team": "NE",
+                "age": 24,
+                "birth_date": "2002-01-21",
+                "college": "Cincinnati",
+                "height": "69",
+                "weight": "209",
+                "years_exp": 1,
+                "status": "Active",
+                "injury_status": null,
+                "search_rank": 487
             },
             {
                 "player_id": "12493",
@@ -6620,7 +6620,7 @@ window.__STATIC_DATA__ = {
                 "name": "Jaylen Warren",
                 "position": "RB",
                 "team": "PIT",
-                "age": 27,
+                "age": 28,
                 "birth_date": "1998-11-01",
                 "college": "Oklahoma State",
                 "height": "68",
@@ -11684,6 +11684,34 @@ window.__STATIC_DATA__ = {
     }
   ],
   "transactions": [
+    {
+        "season": "2026",
+        "week": 8,
+        "created": "Oct 31, 2026 • 4:18 PM PT",
+        "transaction_id": "1422413392542437376",
+        "type": "free_agent",
+        "status": "complete",
+        "teams": [
+            "NoSkilzPak"
+        ],
+        "added": [
+            {
+                "name": "Corey Kiner",
+                "position": "RB",
+                "team": "NE"
+            }
+        ],
+        "dropped": [
+            {
+                "name": "Jaylen Wright",
+                "position": "RB",
+                "team": "MIA"
+            }
+        ],
+        "faab": 0,
+        "waiver_bid": 0,
+        "notes": null
+    },
     {
         "season": "2026",
         "week": 8,
