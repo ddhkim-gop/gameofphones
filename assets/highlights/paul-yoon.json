@@ -2,5 +2,40 @@
   "team": "Paul_Yoon",
   "updated": "2026-11-02",
   "note": "Curated: X has no public search API, so posts are collected by hand and matched to rosters by this script.",
-  "tweets": []
+  "tweets": [
+    {
+      "url": "https://www.espn.com/video/clip/_/id/50355078/chig-okonkwo-fired-hauling-one-handed-catch",
+      "player": "Chig Okonkwo",
+      "meta": "TE \u00b7 WAS",
+      "date": "2026-11-02",
+      "author": "ESPN",
+      "text": "Chig Okonkwo's fired up after hauling in one-handed catch",
+      "verified": true,
+      "faves": 0,
+      "secs": 0,
+      "espn_game": "401873035",
+      "game_id": "401873035",
+      "game_time": "Q3 9:20",
+      "play_key": "401873035:4018730352714",
+      "played_at": "2026-11-02T03:21:04Z",
+      "poster": "https://espnmedia-cdn.akamaized.net/espn/media/common/wsc/2026/1102/b1f65b07-9a35-4fc1-8239-99b7938efa1d/b1f65b07-9a35-4fc1-8239-99b7938efa1d.jpg",
+      "published": "2026-11-02T03:33:25Z",
+      "video": "https://espnmedia-cdn.akamaized.net/espn/media/16x9/wsc/2026/1102/b1f65b07-9a35-4fc1-8239-99b7938efa1d/b1f65b07-9a35-4fc1-8239-99b7938efa1d.mp4"
+    },
+    {
+      "url": "https://www.espn.com/video/clip/_/id/50355259/chig-okonkwo-lands-bounds-another-unbelievable-one-handed-grab",
+      "player": "Chig Okonkwo",
+      "meta": "TE \u00b7 WAS",
+      "date": "2026-11-02",
+      "author": "ESPN",
+      "text": "Chig Okonkwo lands out of bounds on another unbelievable one-handed grab",
+      "verified": true,
+      "faves": 0,
+      "secs": 0,
+      "espn_game": "401873035",
+      "poster": "https://espnmedia-cdn.akamaized.net/espn/media/common/wsc/2026/1102/2b57d147-00c4-400a-b723-163f475c0128/2b57d147-00c4-400a-b723-163f475c0128.jpg",
+      "published": "2026-11-02T04:02:30Z",
+      "video": "https://espnmedia-cdn.akamaized.net/espn/media/16x9/wsc/2026/1102/2b57d147-00c4-400a-b723-163f475c0128/2b57d147-00c4-400a-b723-163f475c0128.mp4"
+    }
+  ]
 }
