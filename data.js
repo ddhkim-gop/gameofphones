@@ -8410,8 +8410,8 @@ window.__STATIC_DATA__ = {
                 "height": "71",
                 "weight": "209",
                 "years_exp": 0,
-                "status": "Inactive",
-                "injury_status": "IR",
+                "status": "Active",
+                "injury_status": null,
                 "search_rank": 52
             },
             {
@@ -20842,7 +20842,7 @@ window.__STATIC_DATA__ = {
             {
                 "name": "Terrell Jennings",
                 "position": "RB",
-                "team": null
+                "team": "NE"
             }
         ],
         "faab": 0,
