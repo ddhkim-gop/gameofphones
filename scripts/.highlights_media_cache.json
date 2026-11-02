@@ -2503,6 +2503,42 @@
   "published": "2026-11-02T00:16:17Z",
   "video": "https://espnmedia-cdn.akamaized.net/espn/media/16x9/wsc/2026/1102/21b82db1-ada4-4c2a-b7fe-849b42b64a4d/21b82db1-ada4-4c2a-b7fe-849b42b64a4d.mp4"
  },
+ "https://www.espn.com/video/clip/_/id/50353608/kevin-coleman-jr-scores-deep-td-make-1-possetion-game": {
+  "espn_game": "401873034",
+  "game_id": "401873034",
+  "game_time": "Q4 2:04",
+  "play_key": "401873034:4018730344021",
+  "played_at": "2026-11-02T00:17:21Z",
+  "poster": "https://espnmedia-cdn.akamaized.net/espn/media/common/2026/1101/64fb6e9b37fc4b888681eaead43e5d791181/64fb6e9b37fc4b888681eaead43e5d791181.jpg",
+  "published": "2026-11-02T00:35:19Z",
+  "video": "https://espnmedia-cdn.akamaized.net/espn/media/16x9/wsc/2026/1102/64fb6e9b-37fc-4b88-8681-eaead43e5d79/64fb6e9b-37fc-4b88-8681-eaead43e5d79.mp4"
+ },
+ "https://www.espn.com/video/clip/_/id/50353615/jonah-coleman-punches-go-ahead-td-put-broncos-top": {
+  "espn_game": "401873033",
+  "game_id": "401873033",
+  "game_time": "Q4 1:56",
+  "play_key": "401873033:4018730334260",
+  "played_at": "2026-11-02T00:24:46Z",
+  "poster": "https://espnmedia-cdn.akamaized.net/espn/media/common/2026/1101/0473bc20fda44862a94a7a974d599b2d1202/0473bc20fda44862a94a7a974d599b2d1202.jpg",
+  "published": "2026-11-02T00:36:14Z",
+  "video": "https://espnmedia-cdn.akamaized.net/espn/media/16x9/wsc/2026/1102/0473bc20-fda4-4862-a94a-7a974d599b2d/0473bc20-fda4-4862-a94a-7a974d599b2d.mp4"
+ },
+ "https://www.espn.com/video/clip/_/id/50353729/broncos-stop-mahomes-chiefs-goal-line-win": {
+  "espn_game": "401873033",
+  "game_id": "401873033",
+  "game_time": "Q1 6:04",
+  "play_key": "401873033:401873033599",
+  "played_at": "2026-11-01T21:43:04Z",
+  "poster": "https://espnmedia-cdn.akamaized.net/espn/media/common/2026/1101/d038f0ff7de54a7f91ea4e1a3b4c25d51193/d038f0ff7de54a7f91ea4e1a3b4c25d51193.jpg",
+  "published": "2026-11-02T00:48:46Z",
+  "video": "https://espnmedia-cdn.akamaized.net/espn/media/16x9/wsc/2026/1102/d038f0ff-7de5-4a7f-91ea-4e1a3b4c25d5/d038f0ff-7de5-4a7f-91ea-4e1a3b4c25d5.mp4"
+ },
+ "https://www.espn.com/video/clip/_/id/50353754/drake-maye-powers-patriots-win-miami": {
+  "espn_game": "401873034",
+  "poster": "https://espnmedia-cdn.akamaized.net/espn/media/common/wsc/2026/1102/56ed0a64-4b70-4a89-80a9-25104ab88052/56ed0a64-4b70-4a89-80a9-25104ab88052.jpg",
+  "published": "2026-11-02T00:53:16Z",
+  "video": "https://espnmedia-cdn.akamaized.net/espn/media/16x9/wsc/2026/1102/56ed0a64-4b70-4a89-80a9-25104ab88052/56ed0a64-4b70-4a89-80a9-25104ab88052.mp4"
+ },
  "https://www.espn.com/video/clip/_/id/50354769/jayden-daniels-fires-dart-stefon-diggs-commanders-td": {
   "espn_game": "401873035",
   "game_id": "401873035",
