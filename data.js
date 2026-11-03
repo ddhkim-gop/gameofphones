@@ -5693,7 +5693,7 @@ window.__STATIC_DATA__ = {
                 "weight": "224",
                 "years_exp": 3,
                 "status": "Active",
-                "injury_status": null,
+                "injury_status": "Questionable",
                 "search_rank": 127
             },
             {
@@ -6045,7 +6045,7 @@ window.__STATIC_DATA__ = {
                 "weight": "200",
                 "years_exp": 7,
                 "status": "Active",
-                "injury_status": null,
+                "injury_status": "Questionable",
                 "search_rank": 77
             },
             {
@@ -6668,7 +6668,7 @@ window.__STATIC_DATA__ = {
                 "name": "Tucker Kraft",
                 "position": "TE",
                 "team": "GB",
-                "age": 25,
+                "age": 26,
                 "birth_date": "2000-11-03",
                 "college": "South Dakota State",
                 "height": "77",
@@ -7877,7 +7877,7 @@ window.__STATIC_DATA__ = {
                 "weight": "209",
                 "years_exp": 1,
                 "status": "Active",
-                "injury_status": null,
+                "injury_status": "Questionable",
                 "search_rank": 44
             },
             {
@@ -8683,7 +8683,7 @@ window.__STATIC_DATA__ = {
                 "weight": "195",
                 "years_exp": 7,
                 "status": "Active",
-                "injury_status": null,
+                "injury_status": "Questionable",
                 "search_rank": 220
             },
             {
@@ -8977,7 +8977,7 @@ window.__STATIC_DATA__ = {
                 "weight": "191",
                 "years_exp": 1,
                 "status": "Active",
-                "injury_status": null,
+                "injury_status": "Questionable",
                 "search_rank": 150
             },
             {
@@ -10045,7 +10045,7 @@ window.__STATIC_DATA__ = {
                 "weight": "228",
                 "years_exp": 7,
                 "status": "Active",
-                "injury_status": "Questionable",
+                "injury_status": "Out",
                 "search_rank": 691
             },
             {
@@ -10953,7 +10953,7 @@ window.__STATIC_DATA__ = {
                 "weight": "214",
                 "years_exp": 17,
                 "status": "Active",
-                "injury_status": null,
+                "injury_status": "Questionable",
                 "search_rank": 64
             },
             {
