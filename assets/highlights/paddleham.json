@@ -1,6 +1,6 @@
 {
   "team": "paddleham",
-  "updated": "2026-11-02",
+  "updated": "2026-11-03",
   "note": "Curated: X has no public search API, so posts are collected by hand and matched to rosters by this script.",
   "tweets": [
     {
@@ -21,21 +21,6 @@
       "poster": "https://espnmedia-cdn.akamaized.net/espn/media/common/2026/1101/0473bc20fda44862a94a7a974d599b2d1202/0473bc20fda44862a94a7a974d599b2d1202.jpg",
       "published": "2026-11-02T00:36:14Z",
       "video": "https://espnmedia-cdn.akamaized.net/espn/media/16x9/wsc/2026/1102/0473bc20-fda4-4862-a94a-7a974d599b2d/0473bc20-fda4-4862-a94a-7a974d599b2d.mp4"
-    },
-    {
-      "url": "https://www.espn.com/video/clip/_/id/50284231/jonah-coleman-difference-maker-broncos-win",
-      "player": "Jonah Coleman",
-      "meta": "RB \u00b7 DEN",
-      "date": "2026-10-26",
-      "author": "ESPN",
-      "text": "Jonah Coleman a difference maker for Broncos in win. Jeff Legwold breaks down how big Jonah Coleman was for the Broncos in their win over the Cardinals.",
-      "verified": true,
-      "faves": 0,
-      "secs": 0,
-      "espn_game": "401873019",
-      "poster": "https://espnmedia-cdn.akamaized.net/espn/media/common/2026/1025/dm_261025_Broncos_Jonah_Coleman_IA/dm_261025_Broncos_Jonah_Coleman_IA.jpg",
-      "published": "2026-10-26T02:55:32Z",
-      "video": "https://espnmedia-cdn.akamaized.net/espn/media/16x9/2026/1025/dm_261025_Broncos_Jonah_Coleman_IA/dm_261025_Broncos_Jonah_Coleman_IA.mp4"
     }
   ]
 }

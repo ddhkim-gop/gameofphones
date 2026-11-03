@@ -1,6 +1,6 @@
 {
   "team": "andyxia124",
-  "updated": "2026-11-02",
+  "updated": "2026-11-03",
   "note": "Curated: X has no public search API, so posts are collected by hand and matched to rosters by this script.",
   "tweets": [
     {
@@ -162,25 +162,6 @@
       "poster": "https://espnmedia-cdn.akamaized.net/espn/media/common/2026/1029/ac9e24af5f954a5b9d497c11dff75a7c1307/ac9e24af5f954a5b9d497c11dff75a7c1307.jpg",
       "published": "2026-10-30T01:29:40Z",
       "video": "https://espnmedia-cdn.akamaized.net/espn/media/16x9/wsc/2026/1030/ac9e24af-5f95-4a5b-9d49-7c11dff75a7c/ac9e24af-5f95-4a5b-9d49-7c11dff75a7c.mp4"
-    },
-    {
-      "url": "https://www.espn.com/video/clip/_/id/50284234/travis-kelce-reaches-no-5-all-receptions-nfl-history",
-      "player": "Travis Kelce",
-      "meta": "TE \u00b7 KC",
-      "date": "2026-10-26",
-      "author": "ESPN",
-      "text": "Travis Kelce reaches No. 5 all-time in receptions in NFL history",
-      "verified": true,
-      "faves": 0,
-      "secs": 0,
-      "espn_game": "401873022",
-      "game_id": "401873022",
-      "game_time": "Q4 13:11",
-      "play_key": "401873022:4018730223184",
-      "played_at": "2026-10-26T02:40:58Z",
-      "poster": "https://espnmedia-cdn.akamaized.net/espn/media/common/2026/1025/48df1fae6315485abad7c4aaa03d34351410/48df1fae6315485abad7c4aaa03d34351410.jpg",
-      "published": "2026-10-26T02:56:57Z",
-      "video": "https://espnmedia-cdn.akamaized.net/espn/media/16x9/wsc/2026/1026/48df1fae-6315-485a-bad7-c4aaa03d3435/48df1fae-6315-485a-bad7-c4aaa03d3435.mp4"
     },
     {
       "url": "https://x.com/NFL/status/2116985532962259077",
