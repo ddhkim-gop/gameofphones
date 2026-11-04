@@ -1,6 +1,6 @@
 {
   "team": "ngman",
-  "updated": "2026-11-03",
+  "updated": "2026-11-04",
   "note": "Curated: X has no public search API, so posts are collected by hand and matched to rosters by this script.",
   "tweets": [
     {
@@ -18,7 +18,7 @@
       "game_time": "Q4 4:41",
       "play_key": "401873036:4018730363824",
       "played_at": "2026-11-03T04:07:08Z",
-      "poster": "https://espnmedia-cdn.akamaized.net/espn/media/common/wsc/2026/1103/098f4ef3-008c-4883-aec1-5d49fd46f0e3/098f4ef3-008c-4883-aec1-5d49fd46f0e3.jpg",
+      "poster": "https://espnmedia-cdn.akamaized.net/espn/media/common/2026/1102/098f4ef3008c4883aec15d49fd46f0e31405/098f4ef3008c4883aec15d49fd46f0e31405.jpg",
       "published": "2026-11-03T04:17:21Z",
       "video": "https://espnmedia-cdn.akamaized.net/espn/media/16x9/wsc/2026/1103/098f4ef3-008c-4883-aec1-5d49fd46f0e3/098f4ef3-008c-4883-aec1-5d49fd46f0e3.mp4"
     },

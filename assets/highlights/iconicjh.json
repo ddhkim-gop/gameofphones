@@ -1,6 +1,6 @@
 {
   "team": "IconicJH",
-  "updated": "2026-11-03",
+  "updated": "2026-11-04",
   "note": "Curated: X has no public search API, so posts are collected by hand and matched to rosters by this script.",
   "tweets": [
     {
@@ -299,40 +299,6 @@
       "poster": "https://espnmedia-cdn.akamaized.net/espn/media/common/wsc/2026/1102/56ed0a64-4b70-4a89-80a9-25104ab88052/56ed0a64-4b70-4a89-80a9-25104ab88052.jpg",
       "published": "2026-11-02T00:53:16Z",
       "video": "https://espnmedia-cdn.akamaized.net/espn/media/16x9/wsc/2026/1102/56ed0a64-4b70-4a89-80a9-25104ab88052/56ed0a64-4b70-4a89-80a9-25104ab88052.mp4"
-    },
-    {
-      "url": "https://www.youtube.com/shorts/fbLyKclLw_A",
-      "player": "Malik Nabers",
-      "meta": "WR \u00b7 NYG",
-      "date": "2026-10-27",
-      "author": "NYGiants",
-      "text": "H1M #giants #maliknabers #highlights #nabers #nfl #football #shorts #newyorkgiants",
-      "verified": false,
-      "faves": 930,
-      "secs": 113,
-      "poster": "https://i.ytimg.com/vi/fbLyKclLw_A/hqdefault.jpg",
-      "published": "2026-10-27T19:30:39Z",
-      "youtube": "fbLyKclLw_A",
-      "author_name": "New York Giants",
-      "avatar": "",
-      "author_verified": true
-    },
-    {
-      "url": "https://x.com/NFL/status/2114878647882633495",
-      "player": "Ryan Flournoy",
-      "meta": "WR \u00b7 DAL",
-      "date": "2026-10-27",
-      "author": "NFL",
-      "text": "Big pickup down the sideline for Ryan Flournoy \n\nDALvsPHI on ESPN\u2028Stream on @NFLPlus",
-      "verified": false,
-      "faves": 337,
-      "secs": 11,
-      "poster": "https://pbs.twimg.com/amplify_video_thumb/2114878525035646976/img/pZCPDMb5gNApjVw8.jpg",
-      "published": "2026-10-27T00:35:36Z",
-      "video": "https://video.twimg.com/amplify_video/2114878525035646976/vid/avc1/1920x1080/5ePO_bd7ygSdY6rb.mp4",
-      "author_name": "NFL",
-      "avatar": "https://pbs.twimg.com/profile_images/1619895559334273028/PHKS_mjX_normal.jpg",
-      "author_verified": true
     }
   ]
 }
