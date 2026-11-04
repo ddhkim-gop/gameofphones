@@ -7379,6 +7379,22 @@ window.__STATIC_DATA__ = {
                 "search_rank": 550
             },
             {
+                "player_id": "13350",
+                "espn_id": null,
+                "name": "Joe Fagnano",
+                "position": "QB",
+                "team": "BAL",
+                "age": 25,
+                "birth_date": "2001-03-31",
+                "college": "UConn",
+                "height": "75",
+                "weight": "230",
+                "years_exp": 0,
+                "status": "Active",
+                "injury_status": "Out",
+                "search_rank": 656
+            },
+            {
                 "player_id": "13533",
                 "espn_id": null,
                 "name": "Barion Brown",
@@ -7491,20 +7507,20 @@ window.__STATIC_DATA__ = {
                 "search_rank": 43
             },
             {
-                "player_id": "6083",
-                "espn_id": 4249087,
-                "name": "Matt Gay",
-                "position": "K",
-                "team": "LV",
-                "age": 32,
-                "birth_date": "1994-03-15",
-                "college": "Utah",
-                "height": "72",
-                "weight": "232",
+                "player_id": "6011",
+                "espn_id": 4038524,
+                "name": "Gardner Minshew II",
+                "position": "QB",
+                "team": "ARI",
+                "age": 30,
+                "birth_date": "1996-05-16",
+                "college": "Washington State",
+                "height": "73",
+                "weight": "225",
                 "years_exp": 7,
                 "status": "Active",
                 "injury_status": null,
-                "search_rank": 239
+                "search_rank": 650
             },
             {
                 "player_id": "7523",
@@ -7585,22 +7601,6 @@ window.__STATIC_DATA__ = {
                 "status": "Active",
                 "injury_status": "Questionable",
                 "search_rank": 19
-            },
-            {
-                "player_id": "8116",
-                "espn_id": null,
-                "name": "Pierre Strong Jr.",
-                "position": "RB",
-                "team": "GB",
-                "age": 27,
-                "birth_date": "1998-12-10",
-                "college": "South Dakota State",
-                "height": "71",
-                "weight": "207",
-                "years_exp": 4,
-                "status": "Active",
-                "injury_status": null,
-                "search_rank": 631
             },
             {
                 "player_id": "8148",
@@ -11684,6 +11684,106 @@ window.__STATIC_DATA__ = {
     }
   ],
   "transactions": [
+    {
+        "season": "2026",
+        "week": 8,
+        "created": "Nov 3, 2026 • 8:17 PM PT",
+        "transaction_id": "1423560902636048384",
+        "type": "waiver",
+        "status": "failed",
+        "teams": [
+            "spiffster"
+        ],
+        "added": [
+            {
+                "name": "Gardner Minshew II",
+                "position": "QB",
+                "team": "ARI"
+            }
+        ],
+        "dropped": [],
+        "faab": 0,
+        "waiver_bid": 0,
+        "notes": "This player was claimed by another owner."
+    },
+    {
+        "season": "2026",
+        "week": 8,
+        "created": "Nov 3, 2026 • 12:04 PM PT",
+        "transaction_id": "1423436693628862464",
+        "type": "waiver",
+        "status": "complete",
+        "teams": [
+            "andyxia124"
+        ],
+        "added": [
+            {
+                "name": "Joe Fagnano",
+                "position": "QB",
+                "team": "BAL"
+            }
+        ],
+        "dropped": [
+            {
+                "name": "Pierre Strong Jr.",
+                "position": "RB",
+                "team": "GB"
+            }
+        ],
+        "faab": 0,
+        "waiver_bid": 12,
+        "notes": "Your waiver claim was processed successfully!"
+    },
+    {
+        "season": "2026",
+        "week": 8,
+        "created": "Nov 3, 2026 • 12:04 PM PT",
+        "transaction_id": "1423436612540411904",
+        "type": "waiver",
+        "status": "complete",
+        "teams": [
+            "andyxia124"
+        ],
+        "added": [
+            {
+                "name": "Gardner Minshew II",
+                "position": "QB",
+                "team": "ARI"
+            }
+        ],
+        "dropped": [
+            {
+                "name": "Matt Gay",
+                "position": "K",
+                "team": "LV"
+            }
+        ],
+        "faab": 0,
+        "waiver_bid": 76,
+        "notes": "Your waiver claim was processed successfully!"
+    },
+    {
+        "season": "2026",
+        "week": 8,
+        "created": "Nov 2, 2026 • 1:34 PM PT",
+        "transaction_id": "1423096905583329280",
+        "type": "waiver",
+        "status": "failed",
+        "teams": [
+            "IconicJH"
+        ],
+        "added": [
+            {
+                "name": "Gardner Minshew II",
+                "position": "QB",
+                "team": "ARI"
+            }
+        ],
+        "dropped": [],
+        "faab": 0,
+        "waiver_bid": 76,
+        "notes": "This player was claimed by another owner."
+    },
     {
         "season": "2026",
         "week": 8,
