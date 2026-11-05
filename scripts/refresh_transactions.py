@@ -331,6 +331,24 @@ def refresh_matchups(league_id, rid_to_name, players):
     print(f"  matchups: wrote weeks {', '.join(out) or 'none'}")
     return True
 
+def update_current_standings(data, rosters_raw, rid_to_name):
+    """Refresh only the active season from Sleeper's completed-game records."""
+    if not rosters_raw or any(r.get('roster_id') not in rid_to_name for r in rosters_raw):
+        raise ValueError('Incomplete roster identity data; standings left unchanged')
+    rows = []
+    for r in rosters_raw:
+        s = r.get('settings') or {}
+        required = ('wins', 'losses', 'fpts', 'fpts_against')
+        if any(k not in s for k in required):
+            raise ValueError('Incomplete standings record; standings left unchanged')
+        rows.append({'name': rid_to_name[r['roster_id']],
+                     'wins': s['wins'], 'losses': s['losses'], 'ties': s.get('ties', 0),
+                     'pf': round(s['fpts'] + s.get('fpts_decimal', 0) / 100, 2),
+                     'pa': round(s['fpts_against'] + s.get('fpts_against_decimal', 0) / 100, 2)})
+    rows.sort(key=lambda r: (-r['wins'], -r['pf']))
+    data.setdefault('standings', {})[CURRENT_YEAR] = rows
+    return rows
+
 def main():
     print("Loading players...")
     players = load_players()
@@ -349,6 +367,9 @@ def main():
     # Read existing data.js
     with open(DATA_JS) as f:
         content = f.read()
+
+    data = json.loads(content[content.index('{'):content.rindex('}') + 1])
+    update_current_standings(data, rosters_raw, rid_to_name)
 
     # Extract existing transactions for older years
     idx = content.find('"transactions"')
@@ -401,7 +422,9 @@ def main():
     content, ros_changed   = inject_section(content, "rosters",       rosters_json)
     content, picks_changed = inject_section(content, "traded_picks",  picks_json)
 
-    if not tx_changed and not ros_changed and not picks_changed:
+    content, st_changed = inject_section(content, 'standings', json.dumps(data['standings'], indent=2, ensure_ascii=False))
+
+    if not tx_changed and not ros_changed and not picks_changed and not st_changed:
         if mu_changed:
             print("Updated: matchups")
             sys.exit(0)   # signal to workflow: commit needed

@@ -63612,87 +63612,99 @@ window.__STATIC_DATA__ = {
     "2026": [
       {
         "name": "ddhk",
-        "wins": 0,
-        "losses": 0,
-        "pf": 0.0,
-        "pa": 0.0
+        "wins": 7,
+        "losses": 1,
+        "ties": 0,
+        "pf": 1451.9,
+        "pa": 1041.24
       },
       {
-        "name": "spiffster",
-        "wins": 0,
-        "losses": 0,
-        "pf": 0.0,
-        "pa": 0.0
-      },
-      {
-        "name": "NoSkilzPak",
-        "wins": 0,
-        "losses": 0,
-        "pf": 0.0,
-        "pa": 0.0
+        "name": "ganathan",
+        "wins": 6,
+        "losses": 2,
+        "ties": 0,
+        "pf": 1347.98,
+        "pa": 984.48
       },
       {
         "name": "jonsung",
-        "wins": 0,
-        "losses": 0,
-        "pf": 0.0,
-        "pa": 0.0
+        "wins": 6,
+        "losses": 2,
+        "ties": 0,
+        "pf": 1347.74,
+        "pa": 1112.72
       },
       {
-        "name": "andyxia124",
-        "wins": 0,
-        "losses": 0,
-        "pf": 0.0,
-        "pa": 0.0
+        "name": "NoSkilzPak",
+        "wins": 6,
+        "losses": 2,
+        "ties": 0,
+        "pf": 1313.44,
+        "pa": 1106.62
       },
       {
         "name": "IconicJH",
-        "wins": 0,
-        "losses": 0,
-        "pf": 0.0,
-        "pa": 0.0
+        "wins": 5,
+        "losses": 3,
+        "ties": 0,
+        "pf": 1296.24,
+        "pa": 1216.04
+      },
+      {
+        "name": "andyxia124",
+        "wins": 5,
+        "losses": 3,
+        "ties": 0,
+        "pf": 1214.38,
+        "pa": 1059.74
+      },
+      {
+        "name": "ngman",
+        "wins": 4,
+        "losses": 4,
+        "ties": 0,
+        "pf": 1207.8,
+        "pa": 1019.74
+      },
+      {
+        "name": "velmixon",
+        "wins": 3,
+        "losses": 5,
+        "ties": 0,
+        "pf": 1059.74,
+        "pa": 1063.44
+      },
+      {
+        "name": "spiffster",
+        "wins": 3,
+        "losses": 5,
+        "ties": 0,
+        "pf": 1008.7,
+        "pa": 1193.08
+      },
+      {
+        "name": "eikichii952",
+        "wins": 2,
+        "losses": 6,
+        "ties": 0,
+        "pf": 881.88,
+        "pa": 1058.36
+      },
+      {
+        "name": "paddleham",
+        "wins": 1,
+        "losses": 7,
+        "ties": 0,
+        "pf": 423.2,
+        "pa": 1059.48
       },
       {
         "name": "Paul_Yoon",
         "wins": 0,
-        "losses": 0,
-        "pf": 0.0,
-        "pa": 0.0
-      },
-      {
-        "name": "eikichii952",
-        "wins": 0,
-        "losses": 0,
-        "pf": 0.0,
-        "pa": 0.0
-      },
-      {
-        "name": "paddleham",
-        "wins": 0,
-        "losses": 0,
-        "pf": 0.0,
-        "pa": 0.0
-      },
-      {
-        "name": "velmixon",
-        "wins": 0,
-        "losses": 0,
-        "pf": 0.0,
-        "pa": 0.0
-      },
-      {
-        "name": "ngman",
-        "wins": 0,
-        "losses": 0,
-        "pf": 0.0,
-        "pa": 0.0
-      },
-      {
-        "name": "ganathan",
-        "wins": 0,
-        "losses": 0,
-        "pf": 0.0,
-        "pa": 0.0
+        "losses": 8,
+        "ties": 0,
+        "pf": 524.38,
+        "pa": 1162.44
       }
     ],
     "2025": [
