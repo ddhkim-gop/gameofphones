@@ -1,6 +1,6 @@
 {
   "team": "ganathan",
-  "updated": "2026-11-04",
+  "updated": "2026-11-05",
   "note": "Curated: X has no public search API, so posts are collected by hand and matched to rosters by this script.",
   "tweets": [
     {
@@ -142,6 +142,27 @@
       "poster": "https://pbs.twimg.com/amplify_video_thumb/2117018426506162176/img/xzzKndSArsT6dOEI.jpg",
       "published": "2026-11-01T22:19:38Z",
       "video": "https://video.twimg.com/amplify_video/2117018426506162176/vid/avc1/1920x1080/R6k83fqd-74T4jYU.mp4",
+      "author_name": "NFL",
+      "avatar": "https://pbs.twimg.com/profile_images/1619895559334273028/PHKS_mjX_normal.jpg",
+      "author_verified": true
+    },
+    {
+      "url": "https://x.com/NFL/status/2117003411376001219",
+      "player": "Michael Wilson",
+      "meta": "WR \u00b7 ARI",
+      "date": "2026-11-01",
+      "author": "NFL",
+      "text": "MINSHEW MAGIC OH MY!",
+      "verified": true,
+      "faves": 1047,
+      "secs": 14,
+      "game_id": "401873024",
+      "game_time": "Q4 0:06",
+      "play_key": "401873024:4018730244667",
+      "played_at": "2026-11-01T21:17:36Z",
+      "poster": "https://pbs.twimg.com/amplify_video_thumb/2117003357705633792/img/ukCeLRZrnHoEOAl9.jpg",
+      "published": "2026-11-01T21:18:39Z",
+      "video": "https://video.twimg.com/amplify_video/2117003357705633792/vid/avc1/1920x1080/kUJH4a-f6DNxRUZc.mp4",
       "author_name": "NFL",
       "avatar": "https://pbs.twimg.com/profile_images/1619895559334273028/PHKS_mjX_normal.jpg",
       "author_verified": true
