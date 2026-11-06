@@ -500,7 +500,11 @@
   "https://x.com/Jaguars/status/2118547983977349282": "Cam Little - Cam Little cashes in again!\n\n#JAXvsBAL (auto: X)",
   "https://x.com/Jaguars/status/2118551545964908557": "Chris Rodriguez Jr. - From the WildJag formation!\n\n#JAXvsBAL (auto: X)",
   "https://x.com/NFL/status/2118551702911816007": "Chris Rodriguez Jr. - Another one. Jags go direct snap to Rodriguez for the score. (auto: X)",
-  "https://x.com/Ravens/status/2118552638811734296": "Justice Hill - 65-yard touchdown for Justice Hill!\n\nTune in on Prime. (auto: X)"
+  "https://x.com/Ravens/status/2118552638811734296": "Justice Hill - 65-yard touchdown for Justice Hill!\n\nTune in on Prime. (auto: X)",
+  "https://www.espn.com/video/clip/_/id/50394637/bhayshul-tuten-punches-jags-opening-td": "Bhayshul Tuten - Bhayshul Tuten punches in Jags' opening TD (auto: ESPN)",
+  "https://www.espn.com/video/clip/_/id/50395412/trevor-lawrence-dimes-parker-washington-50-yard-td": "Parker Washington & Trevor Lawrence - Trevor Lawrence dimes Parker Washington for 50-yard TD (auto: ESPN)",
+  "https://www.espn.com/video/clip/_/id/50396354/chris-rodriguez-jr-sneaks-another-jags-td": "Chris Rodriguez Jr. - Chris Rodriguez Jr. sneaks in for another Jags TD (auto: ESPN)",
+  "https://www.espn.com/video/clip/_/id/50396386/justice-hill-shows-speed-65-yard-td": "Justice Hill - Justice Hill shows off his speed on a 65-yard TD (auto: ESPN)"
  },
  "reject": {
   "https://www.espn.com/video/clip/_/id/50047823/mike-evans-carted-rib-injury": "negative play (auto): Mike Evans carted off with a rib injury (auto: ESPN)",
