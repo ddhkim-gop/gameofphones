@@ -1,8 +1,29 @@
 {
   "team": "ngman",
-  "updated": "2026-11-05",
+  "updated": "2026-11-06",
   "note": "Curated: X has no public search API, so posts are collected by hand and matched to rosters by this script.",
   "tweets": [
+    {
+      "url": "https://x.com/Jaguars/status/2118520063707742714",
+      "player": "Cam Little",
+      "meta": "K \u00b7 JAX",
+      "date": "2026-11-06",
+      "author": "Jaguars",
+      "text": "Cam Little drills it.\n\n#JAXvsBAL",
+      "verified": true,
+      "faves": 219,
+      "secs": 8,
+      "game_id": "401873037",
+      "game_time": "Q1 2:00",
+      "play_key": "401873037:401873037757",
+      "played_at": "2026-11-06T01:44:46Z",
+      "poster": "https://pbs.twimg.com/amplify_video_thumb/2088683839442788352/img/XISorwuu9TI2iLQz.jpg",
+      "published": "2026-11-06T01:45:18Z",
+      "video": "https://video.twimg.com/amplify_video/2088683839442788352/vid/avc1/1080x1080/TVU0iXBt1PcfWNvo.mp4",
+      "author_name": "Jacksonville Jaguars",
+      "avatar": "https://pbs.twimg.com/profile_images/2117679003343396864/74pm70W2_normal.jpg",
+      "author_verified": true
+    },
     {
       "url": "https://www.espn.com/video/clip/_/id/50365027/dandre-swift-breaks-plane-3rd-td",
       "player": "D'Andre Swift",
