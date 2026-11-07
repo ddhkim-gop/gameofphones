@@ -5179,6 +5179,22 @@ window.__STATIC_DATA__ = {
                 "search_rank": 89
             },
             {
+                "player_id": "11579",
+                "espn_id": null,
+                "name": "Audric Estime",
+                "position": "RB",
+                "team": "NO",
+                "age": 23,
+                "birth_date": "2003-09-06",
+                "college": "Notre Dame",
+                "height": "71",
+                "weight": "227",
+                "years_exp": 2,
+                "status": "Active",
+                "injury_status": null,
+                "search_rank": 190
+            },
+            {
                 "player_id": "11583",
                 "espn_id": null,
                 "name": "Jonathon Brooks",
@@ -5433,22 +5449,6 @@ window.__STATIC_DATA__ = {
                 "status": "Active",
                 "injury_status": null,
                 "search_rank": 61
-            },
-            {
-                "player_id": "3286",
-                "espn_id": 3043116,
-                "name": "Demarcus Robinson",
-                "position": "WR",
-                "team": "SF",
-                "age": 32,
-                "birth_date": "1994-09-21",
-                "college": "Florida",
-                "height": "73",
-                "weight": "202",
-                "years_exp": 10,
-                "status": "Inactive",
-                "injury_status": "IR",
-                "search_rank": 679
             },
             {
                 "player_id": "4046",
@@ -11700,6 +11700,34 @@ window.__STATIC_DATA__ = {
     }
   ],
   "transactions": [
+    {
+        "season": "2026",
+        "week": 9,
+        "created": "Nov 7, 2026 • 1:59 PM PT",
+        "transaction_id": "1424915231590678528",
+        "type": "free_agent",
+        "status": "complete",
+        "teams": [
+            "ddhk"
+        ],
+        "added": [
+            {
+                "name": "Audric Estime",
+                "position": "RB",
+                "team": "NO"
+            }
+        ],
+        "dropped": [
+            {
+                "name": "Demarcus Robinson",
+                "position": "WR",
+                "team": "SF"
+            }
+        ],
+        "faab": 0,
+        "waiver_bid": 0,
+        "notes": null
+    },
     {
         "season": "2026",
         "week": 9,
