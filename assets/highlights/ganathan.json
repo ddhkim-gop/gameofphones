@@ -1,6 +1,6 @@
 {
   "team": "ganathan",
-  "updated": "2026-11-06",
+  "updated": "2026-11-07",
   "note": "Curated: X has no public search API, so posts are collected by hand and matched to rosters by this script.",
   "tweets": [
     {
@@ -305,27 +305,6 @@
       "poster": "https://espnmedia-cdn.akamaized.net/espn/media/common/2026/1101/69d2ab832d0c44618b731d66003a3af6949/69d2ab832d0c44618b731d66003a3af6949.jpg",
       "published": "2026-11-01T18:18:52Z",
       "video": "https://espnmedia-cdn.akamaized.net/espn/media/16x9/wsc/2026/1101/69d2ab83-2d0c-4461-8b73-1d66003a3af6/69d2ab83-2d0c-4461-8b73-1d66003a3af6.mp4"
-    },
-    {
-      "url": "https://x.com/packers/status/2115980193550536714",
-      "player": "Matthew Golden",
-      "meta": "WR \u00b7 GB",
-      "date": "2026-10-30",
-      "author": "packers",
-      "text": "It's GOLDEN\n\n\ud83d\udcfa: Prime Video",
-      "verified": true,
-      "faves": 1708,
-      "secs": 16,
-      "game_id": "401873023",
-      "game_time": "Q2 1:46",
-      "play_key": "401873023:4018730231998",
-      "played_at": "2026-10-30T01:31:48Z",
-      "poster": "https://pbs.twimg.com/amplify_video_thumb/2115980100864798720/img/4GpqoubtSZitsB8f.jpg",
-      "published": "2026-10-30T01:32:45Z",
-      "video": "https://video.twimg.com/amplify_video/2115980100864798720/vid/avc1/1920x1080/mUSKo_34sMYSElSf.mp4",
-      "author_name": "Green Bay Packers",
-      "avatar": "",
-      "author_verified": true
     },
     {
       "url": "https://x.com/NFL/status/2117101963230019658",

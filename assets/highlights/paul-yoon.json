@@ -1,6 +1,6 @@
 {
   "team": "Paul_Yoon",
-  "updated": "2026-11-06",
+  "updated": "2026-11-07",
   "note": "Curated: X has no public search API, so posts are collected by hand and matched to rosters by this script.",
   "tweets": [
     {
@@ -99,6 +99,21 @@
       "poster": "https://espnmedia-cdn.akamaized.net/espn/media/common/wsc/2026/1102/b1f65b07-9a35-4fc1-8239-99b7938efa1d/b1f65b07-9a35-4fc1-8239-99b7938efa1d.jpg",
       "published": "2026-11-02T03:33:25Z",
       "video": "https://espnmedia-cdn.akamaized.net/espn/media/16x9/wsc/2026/1102/b1f65b07-9a35-4fc1-8239-99b7938efa1d/b1f65b07-9a35-4fc1-8239-99b7938efa1d.mp4"
+    },
+    {
+      "url": "https://www.espn.com/video/clip/_/id/50399574/how-bucs-defense-create-problems-caleb-williams",
+      "player": "Caleb Williams",
+      "meta": "QB \u00b7 CHI",
+      "date": "2026-11-06",
+      "author": "ESPN",
+      "text": "How the Bucs' defense could create problems for Caleb Williams",
+      "verified": true,
+      "faves": 0,
+      "secs": 0,
+      "espn_game": "401873050",
+      "poster": "https://espnmedia-cdn.akamaized.net/espn/media/common/2026/1106/ss_20261106_100715530_3727572/ss_20261106_100715530_3727572.jpg",
+      "published": "2026-11-06T15:07:14Z",
+      "video": "https://espnmedia-cdn.akamaized.net/espn/media/16x9/2026/1106/ss_20261106_100715530_3727572/ss_20261106_100715530_3727572.mp4"
     },
     {
       "url": "https://www.espn.com/video/clip/_/id/50355259/chig-okonkwo-lands-bounds-another-unbelievable-one-handed-grab",
