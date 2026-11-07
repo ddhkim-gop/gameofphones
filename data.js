@@ -5435,6 +5435,22 @@ window.__STATIC_DATA__ = {
                 "search_rank": 61
             },
             {
+                "player_id": "3286",
+                "espn_id": 3043116,
+                "name": "Demarcus Robinson",
+                "position": "WR",
+                "team": "SF",
+                "age": 32,
+                "birth_date": "1994-09-21",
+                "college": "Florida",
+                "height": "73",
+                "weight": "202",
+                "years_exp": 10,
+                "status": "Inactive",
+                "injury_status": "IR",
+                "search_rank": 679
+            },
+            {
                 "player_id": "4046",
                 "espn_id": 3139477,
                 "name": "Patrick Mahomes",
@@ -5449,22 +5465,6 @@ window.__STATIC_DATA__ = {
                 "status": "Active",
                 "injury_status": null,
                 "search_rank": 39
-            },
-            {
-                "player_id": "4950",
-                "espn_id": 3895856,
-                "name": "Christian Kirk",
-                "position": "WR",
-                "team": "SF",
-                "age": 29,
-                "birth_date": "1996-11-18",
-                "college": "Texas A&M",
-                "height": "71",
-                "weight": "200",
-                "years_exp": 8,
-                "status": "Active",
-                "injury_status": "Questionable",
-                "search_rank": 210
             },
             {
                 "player_id": "4983",
@@ -5725,7 +5725,7 @@ window.__STATIC_DATA__ = {
                 "weight": "246",
                 "years_exp": 3,
                 "status": "Active",
-                "injury_status": "Questionable",
+                "injury_status": null,
                 "search_rank": 81
             },
             {
@@ -6183,6 +6183,22 @@ window.__STATIC_DATA__ = {
         "roster_id": 3,
         "players": [
             {
+                "player_id": "10218",
+                "espn_id": null,
+                "name": "Xavier Hutchinson",
+                "position": "WR",
+                "team": "HOU",
+                "age": 26,
+                "birth_date": "2000-06-01",
+                "college": "Iowa State",
+                "height": "75",
+                "weight": "210",
+                "years_exp": 3,
+                "status": "Active",
+                "injury_status": null,
+                "search_rank": 679
+            },
+            {
                 "player_id": "11435",
                 "espn_id": null,
                 "name": "Emanuel Wilson",
@@ -6487,22 +6503,6 @@ window.__STATIC_DATA__ = {
                 "search_rank": 465
             },
             {
-                "player_id": "4137",
-                "espn_id": 3045147,
-                "name": "James Conner",
-                "position": "RB",
-                "team": "ARI",
-                "age": 31,
-                "birth_date": "1995-05-05",
-                "college": "Pittsburgh",
-                "height": "73",
-                "weight": "233",
-                "years_exp": 9,
-                "status": "Inactive",
-                "injury_status": "IR",
-                "search_rank": 92
-            },
-            {
                 "player_id": "4943",
                 "espn_id": 3912547,
                 "name": "Sam Darnold",
@@ -6643,7 +6643,7 @@ window.__STATIC_DATA__ = {
                 "weight": "180",
                 "years_exp": 4,
                 "status": "Active",
-                "injury_status": "Questionable",
+                "injury_status": "Out",
                 "search_rank": 150
             },
             {
@@ -6889,7 +6889,7 @@ window.__STATIC_DATA__ = {
                 "weight": "231",
                 "years_exp": 12,
                 "status": "Active",
-                "injury_status": "Questionable",
+                "injury_status": "Out",
                 "search_rank": 60
             },
             {
@@ -7113,7 +7113,7 @@ window.__STATIC_DATA__ = {
                 "weight": "218",
                 "years_exp": 4,
                 "status": "Inactive",
-                "injury_status": "IR",
+                "injury_status": "Questionable",
                 "search_rank": 627
             },
             {
@@ -7263,7 +7263,7 @@ window.__STATIC_DATA__ = {
                 "weight": "216",
                 "years_exp": 2,
                 "status": "Active",
-                "injury_status": null,
+                "injury_status": "Questionable",
                 "search_rank": 527
             },
             {
@@ -7845,7 +7845,7 @@ window.__STATIC_DATA__ = {
                 "weight": "200",
                 "years_exp": 2,
                 "status": "Active",
-                "injury_status": "Questionable",
+                "injury_status": null,
                 "search_rank": 28
             },
             {
@@ -8395,7 +8395,7 @@ window.__STATIC_DATA__ = {
                 "weight": "205",
                 "years_exp": 1,
                 "status": "Active",
-                "injury_status": "Questionable",
+                "injury_status": null,
                 "search_rank": 677
             },
             {
@@ -10061,7 +10061,7 @@ window.__STATIC_DATA__ = {
                 "weight": "228",
                 "years_exp": 7,
                 "status": "Active",
-                "injury_status": "Questionable",
+                "injury_status": null,
                 "search_rank": 691
             },
             {
@@ -10761,7 +10761,7 @@ window.__STATIC_DATA__ = {
                 "weight": "213",
                 "years_exp": 3,
                 "status": "Active",
-                "injury_status": "Questionable",
+                "injury_status": null,
                 "search_rank": 75
             },
             {
@@ -10953,7 +10953,7 @@ window.__STATIC_DATA__ = {
                 "weight": "210",
                 "years_exp": 9,
                 "status": "Active",
-                "injury_status": "Questionable",
+                "injury_status": null,
                 "search_rank": 4
             },
             {
@@ -11017,7 +11017,7 @@ window.__STATIC_DATA__ = {
                 "weight": "215",
                 "years_exp": 7,
                 "status": "Active",
-                "injury_status": "Questionable",
+                "injury_status": "Out",
                 "search_rank": 130
             },
             {
@@ -11700,6 +11700,62 @@ window.__STATIC_DATA__ = {
     }
   ],
   "transactions": [
+    {
+        "season": "2026",
+        "week": 9,
+        "created": "Nov 6, 2026 • 2:10 PM PT",
+        "transaction_id": "1424555626452791296",
+        "type": "free_agent",
+        "status": "complete",
+        "teams": [
+            "ddhk"
+        ],
+        "added": [
+            {
+                "name": "Demarcus Robinson",
+                "position": "WR",
+                "team": "SF"
+            }
+        ],
+        "dropped": [
+            {
+                "name": "Christian Kirk",
+                "position": "WR",
+                "team": "SF"
+            }
+        ],
+        "faab": 0,
+        "waiver_bid": 0,
+        "notes": null
+    },
+    {
+        "season": "2026",
+        "week": 9,
+        "created": "Nov 6, 2026 • 2:04 PM PT",
+        "transaction_id": "1424554104339853312",
+        "type": "free_agent",
+        "status": "complete",
+        "teams": [
+            "NoSkilzPak"
+        ],
+        "added": [
+            {
+                "name": "Xavier Hutchinson",
+                "position": "WR",
+                "team": "HOU"
+            }
+        ],
+        "dropped": [
+            {
+                "name": "James Conner",
+                "position": "RB",
+                "team": "ARI"
+            }
+        ],
+        "faab": 0,
+        "waiver_bid": 0,
+        "notes": null
+    },
     {
         "season": "2026",
         "week": 9,
