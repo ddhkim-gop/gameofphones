@@ -5271,7 +5271,7 @@ window.__STATIC_DATA__ = {
                 "weight": "204",
                 "years_exp": 1,
                 "status": "Active",
-                "injury_status": "Questionable",
+                "injury_status": null,
                 "search_rank": 172
             },
             {
@@ -5399,7 +5399,7 @@ window.__STATIC_DATA__ = {
                 "weight": "230",
                 "years_exp": 0,
                 "status": "Active",
-                "injury_status": null,
+                "injury_status": "Out",
                 "search_rank": 523
             },
             {
@@ -5559,7 +5559,7 @@ window.__STATIC_DATA__ = {
                 "weight": "202",
                 "years_exp": 5,
                 "status": "Active",
-                "injury_status": "Questionable",
+                "injury_status": null,
                 "search_rank": 7
             },
             {
@@ -5591,7 +5591,7 @@ window.__STATIC_DATA__ = {
                 "weight": "250",
                 "years_exp": 4,
                 "status": "Active",
-                "injury_status": "Questionable",
+                "injury_status": null,
                 "search_rank": 97
             },
             {
@@ -5933,7 +5933,7 @@ window.__STATIC_DATA__ = {
                 "weight": "223",
                 "years_exp": 9,
                 "status": "Active",
-                "injury_status": "Questionable",
+                "injury_status": "Out",
                 "search_rank": 291
             },
             {
@@ -6841,7 +6841,7 @@ window.__STATIC_DATA__ = {
                 "weight": "170",
                 "years_exp": 0,
                 "status": "Active",
-                "injury_status": "Doubtful",
+                "injury_status": "Out",
                 "search_rank": 509
             },
             {
@@ -7161,7 +7161,7 @@ window.__STATIC_DATA__ = {
                 "weight": "205",
                 "years_exp": 4,
                 "status": "Active",
-                "injury_status": "Questionable",
+                "injury_status": "Out",
                 "search_rank": 23
             },
             {
@@ -7215,7 +7215,7 @@ window.__STATIC_DATA__ = {
                 "weight": "195",
                 "years_exp": 3,
                 "status": "Active",
-                "injury_status": "Questionable",
+                "injury_status": "Out",
                 "search_rank": 644
             },
             {
@@ -7263,7 +7263,7 @@ window.__STATIC_DATA__ = {
                 "weight": "216",
                 "years_exp": 2,
                 "status": "Active",
-                "injury_status": "Questionable",
+                "injury_status": null,
                 "search_rank": 527
             },
             {
@@ -8315,7 +8315,7 @@ window.__STATIC_DATA__ = {
                 "weight": "213",
                 "years_exp": 1,
                 "status": "Active",
-                "injury_status": null,
+                "injury_status": "Out",
                 "search_rank": 547
             },
             {
@@ -9073,7 +9073,7 @@ window.__STATIC_DATA__ = {
                 "weight": "217",
                 "years_exp": 0,
                 "status": "Active",
-                "injury_status": "Questionable",
+                "injury_status": null,
                 "search_rank": 157
             },
             {
@@ -9367,7 +9367,7 @@ window.__STATIC_DATA__ = {
                 "weight": "208",
                 "years_exp": 0,
                 "status": "Active",
-                "injury_status": null,
+                "injury_status": "Out",
                 "search_rank": 242
             },
             {
@@ -9383,7 +9383,7 @@ window.__STATIC_DATA__ = {
                 "weight": "203",
                 "years_exp": 0,
                 "status": "Active",
-                "injury_status": "Questionable",
+                "injury_status": null,
                 "search_rank": 62
             },
             {
@@ -9495,7 +9495,7 @@ window.__STATIC_DATA__ = {
                 "weight": "205",
                 "years_exp": 0,
                 "status": "Active",
-                "injury_status": null,
+                "injury_status": "Out",
                 "search_rank": 515
             },
             {
@@ -9695,7 +9695,7 @@ window.__STATIC_DATA__ = {
                 "espn_id": null,
                 "name": "Kendre Miller",
                 "position": "RB",
-                "team": "NO",
+                "team": null,
                 "age": 24,
                 "birth_date": "2002-06-11",
                 "college": "TCU",
@@ -9853,7 +9853,7 @@ window.__STATIC_DATA__ = {
                 "weight": "215",
                 "years_exp": 1,
                 "status": "Active",
-                "injury_status": "Doubtful",
+                "injury_status": "Out",
                 "search_rank": 36
             },
             {
@@ -10905,7 +10905,7 @@ window.__STATIC_DATA__ = {
                 "weight": "241",
                 "years_exp": 0,
                 "status": "Active",
-                "injury_status": null,
+                "injury_status": "Out",
                 "search_rank": 484
             },
             {
@@ -11065,7 +11065,7 @@ window.__STATIC_DATA__ = {
                 "weight": "266",
                 "years_exp": 6,
                 "status": "Active",
-                "injury_status": "Questionable",
+                "injury_status": null,
                 "search_rank": 136
             },
             {
@@ -11113,7 +11113,7 @@ window.__STATIC_DATA__ = {
                 "weight": "185",
                 "years_exp": 5,
                 "status": "Active",
-                "injury_status": null,
+                "injury_status": "Questionable",
                 "search_rank": 42
             },
             {
@@ -11241,7 +11241,7 @@ window.__STATIC_DATA__ = {
                 "weight": "231",
                 "years_exp": 3,
                 "status": "Active",
-                "injury_status": "Questionable",
+                "injury_status": null,
                 "search_rank": 677
             },
             {
