@@ -697,7 +697,6 @@ https://www.youtube.com/shorts/qUOB94SnDwY
 https://www.youtube.com/shorts/qWK9y8_QtOU
 https://www.youtube.com/shorts/qapUe6EtdCU
 https://www.youtube.com/shorts/qbGeiIjJhYI
-https://www.youtube.com/shorts/qcFZMdvBLP8
 https://www.youtube.com/shorts/qf7po7j6V0A
 https://www.youtube.com/shorts/qgD39YVOHAI
 https://www.youtube.com/shorts/qgkT8h6JRR4
@@ -783,6 +782,7 @@ https://x.com/Broncos/status/2110901662961279225
 https://x.com/Broncos/status/2117026946127180055
 https://x.com/Broncos/status/2117046185106264133
 https://x.com/Broncos/status/2117046536853180510
+https://x.com/Broncos/status/2119498204760645896
 https://x.com/Buccaneers/status/2108358426719916467
 https://x.com/Buccaneers/status/2108376131108041026
 https://x.com/Buccaneers/status/2108376259143098606
@@ -797,6 +797,7 @@ https://x.com/Chiefs/status/2116991165333397651
 https://x.com/Chiefs/status/2117012651368935518
 https://x.com/Chiefs/status/2117022737596047658
 https://x.com/Chiefs/status/2119473339781783577
+https://x.com/Colts/status/2119496098494496855
 https://x.com/Commanders/status/2117080989688033669
 https://x.com/Commanders/status/2117095160169271658
 https://x.com/Commanders/status/2117108338693378265
@@ -992,6 +993,9 @@ https://x.com/NFL/status/2119490895250686161
 https://x.com/NFL/status/2119490973092675707
 https://x.com/NFL/status/2119495827592761830
 https://x.com/NFL/status/2119496020497207475
+https://x.com/NFL/status/2119506265617379802
+https://x.com/NFL/status/2119507387123941856
+https://x.com/NFL/status/2119511019944919352
 https://x.com/NFLTDsVideos/status/2098243863588540602
 https://x.com/NFLTDsVideos/status/2099189736858419294
 https://x.com/NFLTDsVideos/status/2099201418368262610
@@ -1136,6 +1140,7 @@ https://x.com/cooterdoodle/status/2095888393615904800
 https://x.com/dallascowboys/status/2095949595217932480
 https://x.com/dallascowboys/status/2108352810047975912
 https://x.com/dallascowboys/status/2108391839120187559
+https://x.com/dallascowboys/status/2119501456373862533
 https://x.com/dawhitehousepod/status/2096011194247069748
 https://x.com/fantasyfocus/status/2095998338160108030
 https://x.com/gbellseattle/status/2095753484431933695
