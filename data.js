@@ -5885,7 +5885,7 @@ window.__STATIC_DATA__ = {
                 "weight": "240",
                 "years_exp": 0,
                 "status": "Active",
-                "injury_status": null,
+                "injury_status": "Out",
                 "search_rank": 688
             },
             {
@@ -6909,6 +6909,22 @@ window.__STATIC_DATA__ = {
                 "search_rank": 7
             },
             {
+                "player_id": "3286",
+                "espn_id": 3043116,
+                "name": "Demarcus Robinson",
+                "position": "WR",
+                "team": "SF",
+                "age": 32,
+                "birth_date": "1994-09-21",
+                "college": "Florida",
+                "height": "73",
+                "weight": "202",
+                "years_exp": 10,
+                "status": "Active",
+                "injury_status": null,
+                "search_rank": 679
+            },
+            {
                 "player_id": "4018",
                 "espn_id": 3116385,
                 "name": "Joe Mixon",
@@ -7083,22 +7099,6 @@ window.__STATIC_DATA__ = {
                 "status": "Inactive",
                 "injury_status": "IR",
                 "search_rank": 34
-            },
-            {
-                "player_id": "7828",
-                "espn_id": null,
-                "name": "Noah Gray",
-                "position": "TE",
-                "team": "KC",
-                "age": 27,
-                "birth_date": "1999-04-30",
-                "college": "Duke",
-                "height": "75",
-                "weight": "240",
-                "years_exp": 5,
-                "status": "Active",
-                "injury_status": null,
-                "search_rank": 683
             },
             {
                 "player_id": "8129",
@@ -11700,6 +11700,34 @@ window.__STATIC_DATA__ = {
     }
   ],
   "transactions": [
+    {
+        "season": "2026",
+        "week": 9,
+        "created": "Nov 8, 2026 • 12:15 AM PT",
+        "transaction_id": "1425070261278920704",
+        "type": "free_agent",
+        "status": "complete",
+        "teams": [
+            "jonsung"
+        ],
+        "added": [
+            {
+                "name": "Demarcus Robinson",
+                "position": "WR",
+                "team": "SF"
+            }
+        ],
+        "dropped": [
+            {
+                "name": "Noah Gray",
+                "position": "TE",
+                "team": "KC"
+            }
+        ],
+        "faab": 0,
+        "waiver_bid": 0,
+        "notes": null
+    },
     {
         "season": "2026",
         "week": 9,
