@@ -221,25 +221,6 @@
       "author_verified": true
     },
     {
-      "url": "https://www.espn.com/video/clip/_/id/50349926/michael-penix-jr-throws-3rd-int-1st-half",
-      "player": "Michael Penix Jr.",
-      "meta": "QB \u00b7 ATL",
-      "date": "2026-11-01",
-      "author": "ESPN",
-      "text": "Michael Penix Jr. throws his 3rd INT of the 1st half",
-      "verified": true,
-      "faves": 0,
-      "secs": 0,
-      "espn_game": "401873025",
-      "game_id": "401873025",
-      "game_time": "Q2 2:00",
-      "play_key": "401873025:4018730251619",
-      "played_at": "2026-11-01T19:11:49Z",
-      "poster": "https://espnmedia-cdn.akamaized.net/espn/media/common/wsc/2026/1101/a66a3cfd-6324-408b-b2ac-fff66265e9ed/a66a3cfd-6324-408b-b2ac-fff66265e9ed.jpg",
-      "published": "2026-11-01T19:36:40Z",
-      "video": "https://espnmedia-cdn.akamaized.net/espn/media/16x9/wsc/2026/1101/a66a3cfd-6324-408b-b2ac-fff66265e9ed/a66a3cfd-6324-408b-b2ac-fff66265e9ed.mp4"
-    },
-    {
       "url": "https://www.youtube.com/shorts/JjbScqrSKY0",
       "player": "Michael Penix Jr.",
       "meta": "QB \u00b7 ATL",
@@ -257,7 +238,7 @@
       "published": "2026-11-01T18:09:28Z",
       "youtube": "JjbScqrSKY0",
       "author_name": "Atlanta Falcons",
-      "avatar": "https://pbs.twimg.com/profile_images/2117663590081503232/tW0Bm-Rx_normal.jpg",
+      "avatar": "",
       "author_verified": true
     }
   ]
