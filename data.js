@@ -5270,8 +5270,8 @@ window.__STATIC_DATA__ = {
                 "height": "74",
                 "weight": "204",
                 "years_exp": 1,
-                "status": "Inactive",
-                "injury_status": "IR",
+                "status": "Active",
+                "injury_status": "Questionable",
                 "search_rank": 172
             },
             {
@@ -5479,7 +5479,7 @@ window.__STATIC_DATA__ = {
                 "weight": "213",
                 "years_exp": 8,
                 "status": "Active",
-                "injury_status": "Questionable",
+                "injury_status": null,
                 "search_rank": 50
             },
             {
@@ -5495,7 +5495,7 @@ window.__STATIC_DATA__ = {
                 "weight": "207",
                 "years_exp": 7,
                 "status": "Active",
-                "injury_status": "Questionable",
+                "injury_status": "Out",
                 "search_rank": 88
             },
             {
@@ -6387,7 +6387,7 @@ window.__STATIC_DATA__ = {
                 "weight": "188",
                 "years_exp": 0,
                 "status": "Active",
-                "injury_status": "Questionable",
+                "injury_status": "Out",
                 "search_rank": 176
             },
             {
@@ -7105,7 +7105,7 @@ window.__STATIC_DATA__ = {
                 "espn_id": null,
                 "name": "Dameon Pierce",
                 "position": "RB",
-                "team": "PHI",
+                "team": null,
                 "age": 26,
                 "birth_date": "2000-02-19",
                 "college": "Florida",
@@ -9216,8 +9216,8 @@ window.__STATIC_DATA__ = {
                 "height": "73",
                 "weight": "225",
                 "years_exp": 4,
-                "status": "Active",
-                "injury_status": "Out",
+                "status": "Inactive",
+                "injury_status": "IR",
                 "search_rank": 80
             },
             {
@@ -9382,8 +9382,8 @@ window.__STATIC_DATA__ = {
                 "height": "74",
                 "weight": "203",
                 "years_exp": 0,
-                "status": "Inactive",
-                "injury_status": "IR",
+                "status": "Active",
+                "injury_status": "Questionable",
                 "search_rank": 62
             },
             {
@@ -9574,8 +9574,8 @@ window.__STATIC_DATA__ = {
                 "height": "76",
                 "weight": "221",
                 "years_exp": 9,
-                "status": "Inactive",
-                "injury_status": "IR",
+                "status": "Active",
+                "injury_status": "Questionable",
                 "search_rank": 697
             },
             {
@@ -9805,7 +9805,7 @@ window.__STATIC_DATA__ = {
                 "weight": "213",
                 "years_exp": 2,
                 "status": "Active",
-                "injury_status": "Questionable",
+                "injury_status": null,
                 "search_rank": 206
             },
             {
@@ -11097,7 +11097,7 @@ window.__STATIC_DATA__ = {
                 "weight": "212",
                 "years_exp": 6,
                 "status": "Active",
-                "injury_status": "Questionable",
+                "injury_status": "Out",
                 "search_rank": 123
             },
             {
@@ -13137,7 +13137,7 @@ window.__STATIC_DATA__ = {
             {
                 "name": "Dameon Pierce",
                 "position": "RB",
-                "team": "PHI"
+                "team": null
             }
         ],
         "dropped": [
@@ -19369,7 +19369,7 @@ window.__STATIC_DATA__ = {
             {
                 "name": "Dameon Pierce",
                 "position": "RB",
-                "team": "PHI"
+                "team": null
             }
         ],
         "faab": 0,
