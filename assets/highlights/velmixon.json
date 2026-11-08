@@ -4,6 +4,27 @@
   "note": "Curated: X has no public search API, so posts are collected by hand and matched to rosters by this script.",
   "tweets": [
     {
+      "url": "https://x.com/NFL/status/2119562069913596353",
+      "player": "AJ Barner & Drew Lock",
+      "meta": "TE \u00b7 SEA",
+      "date": "2026-11-08",
+      "author": "NFL",
+      "text": "Lock finds JSN in a sea of defenders \ud83d\ude2e\n\nAZvsSEA on FOX/FOX One\nStream on @NFLPlus",
+      "verified": true,
+      "faves": 116,
+      "secs": 13,
+      "game_id": "401873048",
+      "game_time": "Q2 0:15",
+      "play_key": "401873048:4018730482046",
+      "played_at": "2026-11-08T22:47:17Z",
+      "poster": "https://pbs.twimg.com/amplify_video_thumb/2119561954423406592/img/5hyxYSFQSgzmOig4.jpg",
+      "published": "2026-11-08T22:45:51Z",
+      "video": "https://video.twimg.com/amplify_video/2119561954423406592/vid/avc1/1920x1080/QCrTCV5UCOInTOOA.mp4",
+      "author_name": "NFL",
+      "avatar": "https://pbs.twimg.com/profile_images/1619895559334273028/PHKS_mjX_normal.jpg",
+      "author_verified": true
+    },
+    {
       "url": "https://www.youtube.com/shorts/Itm8O7rDweQ",
       "player": "AJ Barner",
       "meta": "TE \u00b7 SEA",
