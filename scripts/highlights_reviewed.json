@@ -622,8 +622,8 @@
   "https://www.espn.com/video/clip/_/id/50425990/brock-purdy-finds-christian-mccaffrey-49ers-td": "Brock Purdy & Christian McCaffrey - Brock Purdy finds Christian McCaffrey for a 49ers TD (auto: ESPN)",
   "https://www.espn.com/video/clip/_/id/50426673/brock-bowers-pulls-td-raiders": "Brock Bowers & Kirk Cousins - Brock Bowers pulls down a TD for Raiders (auto: ESPN)",
   "https://www.espn.com/video/clip/_/id/50426971/brock-purdy-lets-fly-jordan-watkins-49ers-td": "Brock Purdy & Jordan Watkins - Brock Purdy lets it fly to Jordan Watkins for a 49ers' TD (auto: ESPN)",
-  "https://www.espn.com/video/clip/_/id/50425638/seahawks-te-aj-barner-scores-tush-push": "AJ Barner - Live on FOX: Seahawks TE AJ Barner scores on a tush push (auto: ESPN)",
-  "https://www.espn.com/video/clip/_/id/50426265/aj-barner-hangs-2nd-td-game": "AJ Barner - Live on FOX: AJ Barner hangs on for his 2nd TD of the game (auto: ESPN)",
+  "https://www.espn.com/video/clip/_/id/50425638/seahawks-te-aj-barner-scores-tush-push": "AJ Barner - Seahawks TE AJ Barner scores on a tush push (auto: ESPN)",
+  "https://www.espn.com/video/clip/_/id/50426265/aj-barner-hangs-2nd-td-game": "AJ Barner - AJ Barner hangs on for his 2nd TD of the game (auto: ESPN)",
   "https://x.com/Raiders/status/2119552929493291355": "Kirk Cousins - Snuck in for six.\n\n#LVvsSF | 📺 FOX (auto: X)",
   "https://x.com/Patriots/status/2119556089469394952": "Drake Maye & Rhamondre Stevenson - Touchdown Drake to Dre!\n\n📺 FOX (auto: X)",
   "https://www.youtube.com/shorts/2CCM1b26Ixc": "Drake Maye & Rhamondre Stevenson - Touchdown Drake to Dre! 📺FOX #patriots #nfl #shorts (auto: YouTube)",
@@ -685,7 +685,9 @@
   "https://www.espn.com/video/clip/_/id/50428908/caleb-williams-throws-third-int-half": "Caleb Williams - Live on NBC: Caleb Williams throws third INT before halftime (auto: ESPN)",
   "https://x.com/Buccaneers/status/2119648603333402944": "Bucky Irving - LET’S GO BUCKY!!! (auto: X)",
   "https://x.com/Buccaneers/status/2119648748431118821": "Bucky Irving - BUC-KY 🗣️ BUC-KY 🗣️ BUC-KY 🗣️\n\n📺: #TBvsCHI on NBC (auto: X)",
-  "https://x.com/ChicagoBears/status/2119650238877028825": "Caleb Williams & Colston Loveland - Caleb to Colston. Big gain. 💪\n\n📺: NBC (auto: X)"
+  "https://x.com/ChicagoBears/status/2119650238877028825": "Caleb Williams & Colston Loveland - Caleb to Colston. Big gain. 💪\n\n📺: NBC (auto: X)",
+  "https://www.espn.com/video/clip/_/id/50427420/trey-mcbride-tiptoes-sideline-spectacular-cards-catch": "Trey McBride - Trey McBride tiptoes along sideline for spectacular Cards catch (auto: ESPN)",
+  "https://www.espn.com/video/clip/_/id/50427469/cardinals-turn-downs-seal-seahawks-win": "Josh Downs & Daniel Jones - Cardinals turn it over on downs to seal Seahawks' win (auto: ESPN)"
  },
  "reject": {
   "https://www.espn.com/video/clip/_/id/50047823/mike-evans-carted-rib-injury": "negative play (auto): Mike Evans carted off with a rib injury (auto: ESPN)",

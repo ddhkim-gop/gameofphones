@@ -3181,7 +3181,7 @@
   "game_time": "Q3 0:36",
   "play_key": "401873047:4018730472791",
   "played_at": "2026-11-08T23:27:39Z",
-  "poster": "https://espnmedia-cdn.akamaized.net/espn/media/common/wsc/2026/1108/73c38889-9f5d-4a3b-974d-6507f6af5889/73c38889-9f5d-4a3b-974d-6507f6af5889.jpg",
+  "poster": "https://espnmedia-cdn.akamaized.net/espn/media/common/2026/1108/73c388899f5d4a3b974d6507f6af58891159/73c388899f5d4a3b974d6507f6af58891159.jpg",
   "published": "2026-11-08T23:46:34Z",
   "video": "https://espnmedia-cdn.akamaized.net/espn/media/16x9/wsc/2026/1108/73c38889-9f5d-4a3b-974d-6507f6af5889/73c38889-9f5d-4a3b-974d-6507f6af5889.mp4"
  },
@@ -3214,6 +3214,18 @@
   "poster": "https://espnmedia-cdn.akamaized.net/espn/media/common/wsc/2026/1109/9ac8b299-3836-4a87-abcb-4b4a7f16a5cd/9ac8b299-3836-4a87-abcb-4b4a7f16a5cd.jpg",
   "published": "2026-11-09T00:07:55Z",
   "video": "https://espnmedia-cdn.akamaized.net/espn/media/16x9/wsc/2026/1109/9ac8b299-3836-4a87-abcb-4b4a7f16a5cd/9ac8b299-3836-4a87-abcb-4b4a7f16a5cd.mp4"
+ },
+ "https://www.espn.com/video/clip/_/id/50427420/trey-mcbride-tiptoes-sideline-spectacular-cards-catch": {
+  "espn_game": "401873048",
+  "poster": "https://espnmedia-cdn.akamaized.net/espn/media/common/wsc/2026/1109/3058bd25-1ca5-4297-8b10-7b47a9853636/3058bd25-1ca5-4297-8b10-7b47a9853636.jpg",
+  "published": "2026-11-09T00:26:54Z",
+  "video": "https://espnmedia-cdn.akamaized.net/espn/media/16x9/wsc/2026/1109/3058bd25-1ca5-4297-8b10-7b47a9853636/3058bd25-1ca5-4297-8b10-7b47a9853636.mp4"
+ },
+ "https://www.espn.com/video/clip/_/id/50427469/cardinals-turn-downs-seal-seahawks-win": {
+  "espn_game": "401873048",
+  "poster": "https://espnmedia-cdn.akamaized.net/espn/media/common/wsc/2026/1109/fac47bea-f0ec-4c73-890c-bcb0bfbb089e/fac47bea-f0ec-4c73-890c-bcb0bfbb089e.jpg",
+  "published": "2026-11-09T00:32:02Z",
+  "video": "https://espnmedia-cdn.akamaized.net/espn/media/16x9/wsc/2026/1109/fac47bea-f0ec-4c73-890c-bcb0bfbb089e/fac47bea-f0ec-4c73-890c-bcb0bfbb089e.mp4"
  },
  "https://www.espn.com/video/clip/_/id/50428198/rome-odunze-scores-first-td-season-bears-opening-drive": {
   "espn_game": "401873050",
