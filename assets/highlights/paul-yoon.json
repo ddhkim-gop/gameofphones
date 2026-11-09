@@ -4,6 +4,27 @@
   "note": "Curated: X has no public search API, so posts are collected by hand and matched to rosters by this script.",
   "tweets": [
     {
+      "url": "https://x.com/ChicagoBears/status/2119650238877028825",
+      "player": "Caleb Williams",
+      "meta": "QB \u00b7 CHI",
+      "date": "2026-11-09",
+      "author": "ChicagoBears",
+      "text": "Caleb to Colston. Big gain. \ud83d\udcaa\n\n\ud83d\udcfa: NBC",
+      "verified": true,
+      "faves": 1337,
+      "secs": 20,
+      "game_id": "401873050",
+      "game_time": "Q4 0:36",
+      "play_key": "401873050:4018730504376",
+      "played_at": "2026-11-09T04:37:00Z",
+      "poster": "https://pbs.twimg.com/amplify_video_thumb/2119650158740746240/img/iYLwob7KwWbABIsy.jpg",
+      "published": "2026-11-09T04:36:12Z",
+      "video": "https://video.twimg.com/amplify_video/2119650158740746240/vid/avc1/1920x1080/0MDZHSsS4D9x7xrE.mp4",
+      "author_name": "Chicago Bears",
+      "avatar": "https://pbs.twimg.com/profile_images/2095215291395665920/hTWEqaly_normal.jpg",
+      "author_verified": true
+    },
+    {
       "url": "https://x.com/ChicagoBears/status/2119606987453317167",
       "player": "Caleb Williams",
       "meta": "QB \u00b7 CHI",
@@ -21,7 +42,7 @@
       "published": "2026-11-09T01:44:20Z",
       "video": "https://video.twimg.com/amplify_video/2119606789150818304/vid/avc1/1920x1080/kjJNb-GZI0JQVqml.mp4",
       "author_name": "Chicago Bears",
-      "avatar": "",
+      "avatar": "https://pbs.twimg.com/profile_images/2095215291395665920/hTWEqaly_normal.jpg",
       "author_verified": true
     },
     {
@@ -164,21 +185,6 @@
       "poster": "https://espnmedia-cdn.akamaized.net/espn/media/common/wsc/2026/1102/b1f65b07-9a35-4fc1-8239-99b7938efa1d/b1f65b07-9a35-4fc1-8239-99b7938efa1d.jpg",
       "published": "2026-11-02T03:33:25Z",
       "video": "https://espnmedia-cdn.akamaized.net/espn/media/16x9/wsc/2026/1102/b1f65b07-9a35-4fc1-8239-99b7938efa1d/b1f65b07-9a35-4fc1-8239-99b7938efa1d.mp4"
-    },
-    {
-      "url": "https://www.espn.com/video/clip/_/id/50399574/how-bucs-defense-create-problems-caleb-williams",
-      "player": "Caleb Williams",
-      "meta": "QB \u00b7 CHI",
-      "date": "2026-11-06",
-      "author": "ESPN",
-      "text": "How the Bucs' defense could create problems for Caleb Williams",
-      "verified": true,
-      "faves": 0,
-      "secs": 0,
-      "espn_game": "401873050",
-      "poster": "https://espnmedia-cdn.akamaized.net/espn/media/common/2026/1106/ss_20261106_100715530_3727572/ss_20261106_100715530_3727572.jpg",
-      "published": "2026-11-06T15:07:14Z",
-      "video": "https://espnmedia-cdn.akamaized.net/espn/media/16x9/2026/1106/ss_20261106_100715530_3727572/ss_20261106_100715530_3727572.mp4"
     },
     {
       "url": "https://www.espn.com/video/clip/_/id/50355259/chig-okonkwo-lands-bounds-another-unbelievable-one-handed-grab",
