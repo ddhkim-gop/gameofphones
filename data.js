@@ -5912,7 +5912,7 @@ window.__STATIC_DATA__ = {
                 "team": "BAL",
                 "age": 33,
                 "birth_date": "1992-12-11",
-                "college": "North Carolina State",
+                "college": "NC State",
                 "height": "76",
                 "weight": "235",
                 "years_exp": 10,
@@ -7193,7 +7193,7 @@ window.__STATIC_DATA__ = {
                 "weight": "225",
                 "years_exp": 4,
                 "status": "Active",
-                "injury_status": null,
+                "injury_status": "Questionable",
                 "search_rank": 122
             }
         ]
