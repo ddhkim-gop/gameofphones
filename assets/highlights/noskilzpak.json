@@ -4,6 +4,27 @@
   "note": "Curated: X has no public search API, so posts are collected by hand and matched to rosters by this script.",
   "tweets": [
     {
+      "url": "https://x.com/NFL/status/2119630088463331358",
+      "player": "Bucky Irving",
+      "meta": "RB \u00b7 TB",
+      "date": "2026-11-09",
+      "author": "NFL",
+      "text": "Bucky Irving takes it into the end zone himself \ud83d\udcaa\n\nTBvsCHI on NBC/Peacock\nStream on @NFLPlus",
+      "verified": true,
+      "faves": 458,
+      "secs": 17,
+      "game_id": "401873050",
+      "game_time": "Q3 11:37",
+      "play_key": "401873050:4018730502416",
+      "played_at": "2026-11-09T03:14:25Z",
+      "poster": "https://pbs.twimg.com/amplify_video_thumb/2119629879343816704/img/wt8OUh5rsBzUem5p.jpg",
+      "published": "2026-11-09T03:16:08Z",
+      "video": "https://video.twimg.com/amplify_video/2119629879343816704/vid/avc1/1920x1080/zxpT_Q81IBE43U_v.mp4",
+      "author_name": "NFL",
+      "avatar": "https://pbs.twimg.com/profile_images/1619895559334273028/PHKS_mjX_normal.jpg",
+      "author_verified": true
+    },
+    {
       "url": "https://x.com/NFL/status/2119573152829206973",
       "player": "Brock Purdy",
       "meta": "QB \u00b7 SF",

@@ -4,6 +4,27 @@
   "note": "Curated: X has no public search API, so posts are collected by hand and matched to rosters by this script.",
   "tweets": [
     {
+      "url": "https://x.com/Buccaneers/status/2119636572798701943",
+      "player": "Baker Mayfield",
+      "meta": "QB \u00b7 TB",
+      "date": "2026-11-09",
+      "author": "Buccaneers",
+      "text": "THAT\u2019S 4\ufe0f\u20e3 PICKS THIS YEAR FOR ANZALONE!!!",
+      "verified": true,
+      "faves": 139,
+      "secs": 9,
+      "game_id": "401873050",
+      "game_time": "Q3 3:39",
+      "play_key": "401873050:4018730503054",
+      "played_at": "2026-11-09T03:41:50Z",
+      "poster": "https://pbs.twimg.com/media/HSrAxgIaoAAv8R0.jpg",
+      "published": "2026-11-09T03:41:54Z",
+      "video": "https://video.twimg.com/amplify_video/2101691204832313344/vid/avc1/1080x1350/yRKswrH1BTwrSk5C.mp4",
+      "author_name": "Tampa Bay Buccaneers",
+      "avatar": "https://pbs.twimg.com/profile_images/2037618478622887936/e0YeskTe_normal.png",
+      "author_verified": true
+    },
+    {
       "url": "https://x.com/NFL/status/2119608824373928399",
       "player": "Baker Mayfield",
       "meta": "QB \u00b7 TB",
@@ -11,7 +32,7 @@
       "author": "NFL",
       "text": "Baker Mayfield scrambles and throws to Kenny Gainwell for the first down!\n\nTBvsCHI on NBC/Peacock\nStream on @NFLPlus",
       "verified": true,
-      "faves": 316,
+      "faves": 412,
       "secs": 17,
       "game_id": "401873050",
       "game_time": "Q1 4:03",
@@ -72,7 +93,7 @@
       "meta": "QB \u00b7 IND",
       "date": "2026-11-08",
       "author": "ESPN",
-      "text": "Live on FOX: Ashton Dulin breaks free of the Cowboys' defense for a 55-yard TD",
+      "text": "Ashton Dulin breaks free of the Cowboys' defense for a 55-yard TD",
       "verified": true,
       "faves": 0,
       "secs": 0,
@@ -81,7 +102,7 @@
       "game_time": "Q3 1:17",
       "play_key": "401873040:4018730403393",
       "played_at": "2026-11-08T20:30:28Z",
-      "poster": "https://espnmedia-cdn.akamaized.net/espn/media/common/wsc/2026/1108/67532724-0464-4663-b0a8-28213315e812/67532724-0464-4663-b0a8-28213315e812.jpg",
+      "poster": "https://espnmedia-cdn.akamaized.net/espn/media/common/2026/1108/6753272404644663b0a828213315e8121013/6753272404644663b0a828213315e8121013.jpg",
       "published": "2026-11-08T21:00:38Z",
       "video": "https://espnmedia-cdn.akamaized.net/espn/media/16x9/wsc/2026/1108/67532724-0464-4663-b0a8-28213315e812/67532724-0464-4663-b0a8-28213315e812.mp4"
     },
@@ -107,25 +128,23 @@
       "author_verified": true
     },
     {
-      "url": "https://x.com/NFL/status/2119518016278872337",
+      "url": "https://www.espn.com/video/clip/_/id/50423321/bryce-young-dart-darren-waller-puts-panthers-up",
       "player": "Darren Waller",
       "meta": "TE \u00b7 CAR",
       "date": "2026-11-08",
-      "author": "NFL",
-      "text": "Darren Waller gets UP to snag the TD!\n\nDENvsCAR on CBS/Paramount+\nStream on @NFLPlus",
+      "author": "ESPN",
+      "text": "Bryce Young's dart to Darren Waller puts Panthers up",
       "verified": true,
-      "faves": 659,
-      "secs": 12,
+      "faves": 0,
+      "secs": 0,
+      "espn_game": "401873041",
       "game_id": "401873041",
       "game_time": "Q3 11:30",
       "play_key": "401873041:4018730412546",
       "played_at": "2026-11-08T19:49:45Z",
-      "poster": "https://pbs.twimg.com/amplify_video_thumb/2119517887178158080/img/ryMbVpbcCWht4qdd.jpg",
-      "published": "2026-11-08T19:50:48Z",
-      "video": "https://video.twimg.com/amplify_video/2119517887178158080/vid/avc1/1920x1080/EtBpl8Us9UiDe_XK.mp4",
-      "author_name": "NFL",
-      "avatar": "https://pbs.twimg.com/profile_images/1619895559334273028/PHKS_mjX_normal.jpg",
-      "author_verified": true
+      "poster": "https://espnmedia-cdn.akamaized.net/espn/media/common/wsc/2026/1108/41bea39e-4ca1-4a5c-8209-1e2a36ec3a7e/41bea39e-4ca1-4a5c-8209-1e2a36ec3a7e.jpg",
+      "published": "2026-11-08T20:02:12Z",
+      "video": "https://espnmedia-cdn.akamaized.net/espn/media/16x9/wsc/2026/1108/41bea39e-4ca1-4a5c-8209-1e2a36ec3a7e/41bea39e-4ca1-4a5c-8209-1e2a36ec3a7e.mp4"
     },
     {
       "url": "https://x.com/Saints/status/2119509849738248431",
@@ -168,6 +187,21 @@
       "author_name": "Atlanta Falcons",
       "avatar": "",
       "author_verified": true
+    },
+    {
+      "url": "https://www.espn.com/video/clip/_/id/50425242/caleb-downs-seals-cowboys-win-pivotal-int",
+      "player": "Daniel Jones",
+      "meta": "QB \u00b7 IND",
+      "date": "2026-11-08",
+      "author": "ESPN",
+      "text": "Caleb Downs seals Cowboys win with pivotal INT",
+      "verified": true,
+      "faves": 0,
+      "secs": 0,
+      "espn_game": "401873040",
+      "poster": "https://espnmedia-cdn.akamaized.net/espn/media/common/2026/1108/28b2e2663a1f434cbe09522975aa3c7a1016/28b2e2663a1f434cbe09522975aa3c7a1016.jpg",
+      "published": "2026-11-08T21:44:57Z",
+      "video": "https://espnmedia-cdn.akamaized.net/espn/media/16x9/wsc/2026/1108/28b2e266-3a1f-434c-be09-522975aa3c7a/28b2e266-3a1f-434c-be09-522975aa3c7a.mp4"
     }
   ]
 }

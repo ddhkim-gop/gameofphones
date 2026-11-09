@@ -63,25 +63,23 @@
       "video": "https://espnmedia-cdn.akamaized.net/espn/media/16x9/wsc/2026/1108/02db4745-0869-4ba0-b4d5-f3cf94cd2616/02db4745-0869-4ba0-b4d5-f3cf94cd2616.mp4"
     },
     {
-      "url": "https://x.com/Chiefs/status/2119534505278964061",
+      "url": "https://www.espn.com/video/clip/_/id/50424578/emmett-johnson-pads-chiefs-lead-late-td",
       "player": "Emmett Johnson",
       "meta": "RB \u00b7 KC",
       "date": "2026-11-08",
-      "author": "Chiefs",
-      "text": "E-MONEY SEALS THE DEAL \ud83e\udd11",
+      "author": "ESPN",
+      "text": "Emmett Johnson pads Chiefs lead with late TD. Emmett Johnson pads Chiefs lead with late TD ",
       "verified": true,
-      "faves": 1482,
-      "secs": 34,
+      "faves": 0,
+      "secs": 0,
+      "espn_game": "401873045",
       "game_id": "401873045",
       "game_time": "Q4 3:35",
       "play_key": "401873045:4018730454040",
       "played_at": "2026-11-08T20:54:48Z",
-      "poster": "https://pbs.twimg.com/amplify_video_thumb/2119534335028006912/img/8WYc6G7sUms031FD.jpg",
-      "published": "2026-11-08T20:56:19Z",
-      "video": "https://video.twimg.com/amplify_video/2119534335028006912/vid/avc1/1920x1080/GMdUg--m24fiSd-J.mp4",
-      "author_name": "Kansas City Chiefs",
-      "avatar": "https://pbs.twimg.com/profile_images/2007106813859184640/FWg8XWsT_normal.jpg",
-      "author_verified": true
+      "poster": "https://espnmedia-cdn.akamaized.net/espn/media/common/wsc/2026/1108/da025fc6-8d0a-4106-8441-4def36259f01/da025fc6-8d0a-4106-8441-4def36259f01.jpg",
+      "published": "2026-11-08T21:10:49Z",
+      "video": "https://espnmedia-cdn.akamaized.net/espn/media/16x9/wsc/2026/1108/da025fc6-8d0a-4106-8441-4def36259f01/da025fc6-8d0a-4106-8441-4def36259f01.mp4"
     },
     {
       "url": "https://x.com/NFL/status/2119531372582687172",
@@ -188,7 +186,7 @@
       "meta": "QB \u00b7 DAL",
       "date": "2026-11-08",
       "author": "ESPN",
-      "text": "Live on FOX: Jake Ferguson hauls in a Cowboys TD",
+      "text": "Jake Ferguson hauls in a Cowboys TD",
       "verified": true,
       "faves": 0,
       "secs": 0,
@@ -197,7 +195,7 @@
       "game_time": "Q2 14:08",
       "play_key": "401873040:4018730401041",
       "played_at": "2026-11-08T18:43:10Z",
-      "poster": "https://espnmedia-cdn.akamaized.net/espn/media/common/wsc/2026/1108/5eaaa1cf-a363-4462-89b2-e4f68d3f470c/5eaaa1cf-a363-4462-89b2-e4f68d3f470c.jpg",
+      "poster": "https://espnmedia-cdn.akamaized.net/espn/media/common/2026/1108/5eaaa1cfa363446289b2e4f68d3f470c1010/5eaaa1cfa363446289b2e4f68d3f470c1010.jpg",
       "published": "2026-11-08T18:50:51Z",
       "video": "https://espnmedia-cdn.akamaized.net/espn/media/16x9/wsc/2026/1108/5eaaa1cf-a363-4462-89b2-e4f68d3f470c/5eaaa1cf-a363-4462-89b2-e4f68d3f470c.mp4"
     },
@@ -278,7 +276,7 @@
       "published": "2026-11-03T03:52:51Z",
       "video": "https://video.twimg.com/amplify_video/2117464931209781248/vid/avc1/1920x1080/XAuNYrHFh1Btb0TY.mp4",
       "author_name": "Chicago Bears",
-      "avatar": "https://pbs.twimg.com/profile_images/2095215291395665920/hTWEqaly_normal.jpg",
+      "avatar": "",
       "author_verified": true
     },
     {
@@ -299,7 +297,7 @@
       "published": "2026-11-03T03:15:01Z",
       "video": "https://video.twimg.com/amplify_video/2117455292934045696/vid/avc1/1920x1080/wTXA-7ltTEtPxISB.mp4",
       "author_name": "Chicago Bears",
-      "avatar": "https://pbs.twimg.com/profile_images/2095215291395665920/hTWEqaly_normal.jpg",
+      "avatar": "",
       "author_verified": true
     },
     {
