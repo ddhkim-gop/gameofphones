@@ -3267,6 +3267,16 @@
   "published": "2026-11-09T04:47:22Z",
   "video": "https://espnmedia-cdn.akamaized.net/espn/media/16x9/wsc/2026/1109/46c9cd0b-71e0-4e66-a674-1fa055620fe4/46c9cd0b-71e0-4e66-a674-1fa055620fe4.mp4"
  },
+ "https://www.espn.com/video/clip/_/id/50438454/keleki-latu-hauls-first-nfl-td-dime-josh-allen": {
+  "espn_game": "401873051",
+  "game_id": "401873051",
+  "game_time": "Q2 0:44",
+  "play_key": "401873051:4018730512011",
+  "played_at": "2026-11-10T02:42:02Z",
+  "poster": "https://espnmedia-cdn.akamaized.net/espn/media/common/2026/1109/233afea7a83340aea846f644b0708c081318/233afea7a83340aea846f644b0708c081318.jpg",
+  "published": "2026-11-10T02:55:04Z",
+  "video": "https://espnmedia-cdn.akamaized.net/espn/media/16x9/wsc/2026/1110/233afea7-a833-40ae-a846-f644b0708c08/233afea7-a833-40ae-a846-f644b0708c08.mp4"
+ },
  "https://www.youtube.com/shorts/-150A9vaDV0": {
   "poster": "https://i.ytimg.com/vi/-150A9vaDV0/hqdefault.jpg",
   "published": "2026-10-14T17:00:35Z",
@@ -13669,6 +13679,15 @@
   "published": "2026-11-10T02:47:31Z",
   "video": "https://video.twimg.com/amplify_video/2119985116718276608/vid/avc1/1920x1080/A60Y4HnM0Q52U7TY.mp4"
  },
+ "https://x.com/NFL/status/2119992250507948160": {
+  "game_id": "401873051",
+  "game_time": "Q3 11:48",
+  "play_key": "401873051:4018730512533",
+  "played_at": "2026-11-10T03:15:20Z",
+  "poster": "https://pbs.twimg.com/amplify_video_thumb/2119992195172438016/img/tH4lVXYIXCNcsz3h.jpg",
+  "published": "2026-11-10T03:15:14Z",
+  "video": "https://video.twimg.com/amplify_video/2119992195172438016/vid/avc1/1920x1080/HFu8j_dgnjJUpNnV.mp4"
+ },
  "https://x.com/NFLTDsVideos/status/2098243863588540602": {
   "poster": "https://pbs.twimg.com/amplify_video_thumb/2098241229179981824/img/2KDyL8xVMdAuIHf1.jpg?name=orig",
   "video": "https://video.twimg.com/amplify_video/2098241229179981824/vid/avc1/1920x1080/Z9YA4l2bMWqkTm7Y.mp4?tag=29"
@@ -14257,6 +14276,16 @@
   "poster": "https://pbs.twimg.com/amplify_video_thumb/2119587855060381696/img/_5nE0lUDvRKRDwbi.jpg",
   "published": "2026-11-09T00:33:13Z",
   "video": "https://video.twimg.com/amplify_video/2119587855060381696/vid/avc1/1920x1080/-5Uf5QZgUpxhQwpL.mp4"
+ },
+ "https://x.com/NFLonFOX/status/2119918946401042454": {
+  "poster": "https://pbs.twimg.com/amplify_video_thumb/2119918831271546880/img/ZFyVFFlsNEq5OjyJ.jpg",
+  "published": "2026-11-09T22:23:57Z",
+  "video": "https://video.twimg.com/amplify_video/2119918831271546880/vid/avc1/1080x1920/nZr8tixKHkinIVbT.mp4"
+ },
+ "https://x.com/NFLonFOX/status/2119925458485850170": {
+  "poster": "https://pbs.twimg.com/amplify_video_thumb/2119925311030931456/img/J1r0xWm70d_4n9zP.jpg",
+  "published": "2026-11-09T22:49:50Z",
+  "video": "https://video.twimg.com/amplify_video/2119925311030931456/vid/avc1/1080x1920/5G84SWJp8nVcvCx3.mp4"
  },
  "https://x.com/Panthers/status/2111884278594191399": {
   "game_id": "401872998",
