@@ -1,8 +1,27 @@
 {
   "team": "ngman",
-  "updated": "2026-11-09",
+  "updated": "2026-11-10",
   "note": "Curated: X has no public search API, so posts are collected by hand and matched to rosters by this script.",
   "tweets": [
+    {
+      "url": "https://www.espn.com/video/clip/_/id/50429559/cairo-santos-walk-fg-lifts-bears-bucs-snf",
+      "player": "Cairo Santos",
+      "meta": "K \u00b7 CHI",
+      "date": "2026-11-09",
+      "author": "ESPN",
+      "text": "Cairo Santos' walk-off FG lifts Bears over Bucs on SNF. Cairo Santos' walk-off FG lifts Bears over Bucs on SNF  ",
+      "verified": true,
+      "faves": 0,
+      "secs": 0,
+      "espn_game": "401873050",
+      "game_id": "401873050",
+      "game_time": "Q4 0:00",
+      "play_key": "401873050:4018730504405",
+      "played_at": "2026-11-09T04:38:28Z",
+      "poster": "https://espnmedia-cdn.akamaized.net/espn/media/common/2026/1108/46c9cd0b71e04e66a6741fa055620fe41429/46c9cd0b71e04e66a6741fa055620fe41429.jpg",
+      "published": "2026-11-09T04:47:22Z",
+      "video": "https://espnmedia-cdn.akamaized.net/espn/media/16x9/wsc/2026/1109/46c9cd0b-71e0-4e66-a674-1fa055620fe4/46c9cd0b-71e0-4e66-a674-1fa055620fe4.mp4"
+    },
     {
       "url": "https://x.com/NFL/status/2119578109380788367",
       "player": "Christian Watson",
@@ -39,7 +58,7 @@
       "game_time": "Q3 10:51",
       "play_key": "401873049:4018730492786",
       "played_at": "2026-11-08T23:25:49Z",
-      "poster": "https://espnmedia-cdn.akamaized.net/espn/media/common/wsc/2026/1108/eda1101e-5fdf-4f05-bfd2-0658b5877bfd/eda1101e-5fdf-4f05-bfd2-0658b5877bfd.jpg",
+      "poster": "https://espnmedia-cdn.akamaized.net/espn/media/common/2026/1108/eda1101e5fdf4f05bfd20658b5877bfd1193/eda1101e5fdf4f05bfd20658b5877bfd1193.jpg",
       "published": "2026-11-08T23:34:43Z",
       "video": "https://espnmedia-cdn.akamaized.net/espn/media/16x9/wsc/2026/1108/eda1101e-5fdf-4f05-bfd2-0658b5877bfd/eda1101e-5fdf-4f05-bfd2-0658b5877bfd.mp4"
     },
@@ -49,7 +68,7 @@
       "meta": "RB \u00b7 GB",
       "date": "2026-11-08",
       "author": "ESPN",
-      "text": "Live on FOX: Kaleb Johnson punches in a Packers TD",
+      "text": "Kaleb Johnson punches in a Packers TD",
       "verified": true,
       "faves": 0,
       "secs": 0,
@@ -58,7 +77,7 @@
       "game_time": "Q2 4:45",
       "play_key": "401873049:4018730491862",
       "played_at": "2026-11-08T22:42:51Z",
-      "poster": "https://espnmedia-cdn.akamaized.net/espn/media/common/wsc/2026/1108/02db4745-0869-4ba0-b4d5-f3cf94cd2616/02db4745-0869-4ba0-b4d5-f3cf94cd2616.jpg",
+      "poster": "https://espnmedia-cdn.akamaized.net/espn/media/common/2026/1108/02db474508694ba0b4d5f3cf94cd26161197/02db474508694ba0b4d5f3cf94cd26161197.jpg",
       "published": "2026-11-08T22:51:19Z",
       "video": "https://espnmedia-cdn.akamaized.net/espn/media/16x9/wsc/2026/1108/02db4745-0869-4ba0-b4d5-f3cf94cd2616/02db4745-0869-4ba0-b4d5-f3cf94cd2616.mp4"
     },
@@ -117,7 +136,7 @@
       "game_time": "Q4 12:51",
       "play_key": "401873043:4018730433542",
       "played_at": "2026-11-08T20:25:59Z",
-      "poster": "https://espnmedia-cdn.akamaized.net/espn/media/common/wsc/2026/1108/9ec58b98-f0eb-4250-adc6-c69f0624d1f5/9ec58b98-f0eb-4250-adc6-c69f0624d1f5.jpg",
+      "poster": "https://espnmedia-cdn.akamaized.net/espn/media/common/2026/1108/9ec58b98f0eb4250adc6c69f0624d1f51062/9ec58b98f0eb4250adc6c69f0624d1f51062.jpg",
       "published": "2026-11-08T20:35:05Z",
       "video": "https://espnmedia-cdn.akamaized.net/espn/media/16x9/wsc/2026/1108/9ec58b98-f0eb-4250-adc6-c69f0624d1f5/9ec58b98-f0eb-4250-adc6-c69f0624d1f5.mp4"
     },
@@ -276,7 +295,7 @@
       "published": "2026-11-03T03:52:51Z",
       "video": "https://video.twimg.com/amplify_video/2117464931209781248/vid/avc1/1920x1080/XAuNYrHFh1Btb0TY.mp4",
       "author_name": "Chicago Bears",
-      "avatar": "https://pbs.twimg.com/profile_images/2095215291395665920/hTWEqaly_normal.jpg",
+      "avatar": "",
       "author_verified": true
     },
     {
@@ -297,7 +316,7 @@
       "published": "2026-11-03T03:15:01Z",
       "video": "https://video.twimg.com/amplify_video/2117455292934045696/vid/avc1/1920x1080/wTXA-7ltTEtPxISB.mp4",
       "author_name": "Chicago Bears",
-      "avatar": "https://pbs.twimg.com/profile_images/2095215291395665920/hTWEqaly_normal.jpg",
+      "avatar": "",
       "author_verified": true
     },
     {

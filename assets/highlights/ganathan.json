@@ -1,8 +1,29 @@
 {
   "team": "ganathan",
-  "updated": "2026-11-09",
+  "updated": "2026-11-10",
   "note": "Curated: X has no public search API, so posts are collected by hand and matched to rosters by this script.",
   "tweets": [
+    {
+      "url": "https://www.youtube.com/shorts/GI2NLJ7gl2Y",
+      "player": "Josh Allen",
+      "meta": "QB \u00b7 BUF",
+      "date": "2026-11-10",
+      "author": "BuffaloBills",
+      "text": "JA17 buys just enough time for the TD \ud83e\udd29 #shorts",
+      "verified": true,
+      "faves": 90,
+      "secs": 17,
+      "game_id": "401873051",
+      "game_time": "Q2 0:44",
+      "play_key": "401873051:4018730512011",
+      "played_at": "2026-11-10T02:42:02Z",
+      "poster": "https://i.ytimg.com/vi/GI2NLJ7gl2Y/hqdefault.jpg",
+      "published": "2026-11-10T02:54:55Z",
+      "youtube": "GI2NLJ7gl2Y",
+      "author_name": "Buffalo Bills",
+      "avatar": "",
+      "author_verified": true
+    },
     {
       "url": "https://x.com/Buccaneers/status/2119636572798701943",
       "player": "Cade Otton",
@@ -77,7 +98,7 @@
       "game_time": "Q2 9:23",
       "play_key": "401873049:4018730491437",
       "played_at": "2026-11-08T22:21:18Z",
-      "poster": "https://espnmedia-cdn.akamaized.net/espn/media/common/wsc/2026/1108/1de44c11-d8a4-4314-aee9-8821f4ac3507/1de44c11-d8a4-4314-aee9-8821f4ac3507.jpg",
+      "poster": "https://espnmedia-cdn.akamaized.net/espn/media/common/2026/1108/1de44c11d8a44314aee98821f4ac35071198/1de44c11d8a44314aee98821f4ac35071198.jpg",
       "published": "2026-11-08T22:32:16Z",
       "video": "https://espnmedia-cdn.akamaized.net/espn/media/16x9/wsc/2026/1108/1de44c11-d8a4-4314-aee9-8821f4ac3507/1de44c11-d8a4-4314-aee9-8821f4ac3507.mp4"
     },
@@ -115,7 +136,7 @@
       "game_time": "Q1 7:59",
       "play_key": "401873049:401873049501",
       "played_at": "2026-11-08T21:40:23Z",
-      "poster": "https://espnmedia-cdn.akamaized.net/espn/media/common/wsc/2026/1108/28f18584-5b03-438c-b7a4-1b1290fabf1d/28f18584-5b03-438c-b7a4-1b1290fabf1d.jpg",
+      "poster": "https://espnmedia-cdn.akamaized.net/espn/media/common/2026/1108/28f185845b03438cb7a41b1290fabf1d1195/28f185845b03438cb7a41b1290fabf1d1195.jpg",
       "published": "2026-11-08T21:54:48Z",
       "video": "https://espnmedia-cdn.akamaized.net/espn/media/16x9/wsc/2026/1108/28f18584-5b03-438c-b7a4-1b1290fabf1d/28f18584-5b03-438c-b7a4-1b1290fabf1d.mp4"
     },
@@ -176,7 +197,7 @@
       "game_time": "Q4 12:51",
       "play_key": "401873043:4018730433542",
       "played_at": "2026-11-08T20:25:59Z",
-      "poster": "https://espnmedia-cdn.akamaized.net/espn/media/common/wsc/2026/1108/9ec58b98-f0eb-4250-adc6-c69f0624d1f5/9ec58b98-f0eb-4250-adc6-c69f0624d1f5.jpg",
+      "poster": "https://espnmedia-cdn.akamaized.net/espn/media/common/2026/1108/9ec58b98f0eb4250adc6c69f0624d1f51062/9ec58b98f0eb4250adc6c69f0624d1f51062.jpg",
       "published": "2026-11-08T20:35:05Z",
       "video": "https://espnmedia-cdn.akamaized.net/espn/media/16x9/wsc/2026/1108/9ec58b98-f0eb-4250-adc6-c69f0624d1f5/9ec58b98-f0eb-4250-adc6-c69f0624d1f5.mp4"
     },
@@ -244,48 +265,6 @@
       "author_verified": true
     },
     {
-      "url": "https://x.com/NFL/status/2117097127012860320",
-      "player": "Tanner McKee",
-      "meta": "QB \u00b7 PHI",
-      "date": "2026-11-02",
-      "author": "NFL",
-      "text": "Tanner McKee connects with Dallas Goedert for the first down!\n\nPHIvsWAS on NBC/Peacock\nStream on @NFLPlus",
-      "verified": true,
-      "faves": 162,
-      "secs": 8,
-      "game_id": "401873035",
-      "game_time": "Q3 3:40",
-      "play_key": "401873035:4018730352971",
-      "played_at": "2026-11-02T03:30:38Z",
-      "poster": "https://pbs.twimg.com/amplify_video_thumb/2117096904421154816/img/_fp8lODaBZdLi375.jpg",
-      "published": "2026-11-02T03:31:03Z",
-      "video": "https://video.twimg.com/amplify_video/2117096904421154816/vid/avc1/1920x1080/DPBhbdxlSB1-GFJ1.mp4",
-      "author_name": "NFL",
-      "avatar": "https://pbs.twimg.com/profile_images/1619895559334273028/PHKS_mjX_normal.jpg",
-      "author_verified": true
-    },
-    {
-      "url": "https://x.com/NFL/status/2117070258662154620",
-      "player": "Tanner McKee",
-      "meta": "QB \u00b7 PHI",
-      "date": "2026-11-02",
-      "author": "NFL",
-      "text": "Tanner McKee floats it to Makai Lemon for the first down!\n\nPHIvsWAS on NBC/Peacock\nStream on @NFLPlus",
-      "verified": true,
-      "faves": 586,
-      "secs": 11,
-      "game_id": "401873035",
-      "game_time": "Q1 9:40",
-      "play_key": "401873035:401873035554",
-      "played_at": "2026-11-02T01:42:40Z",
-      "poster": "https://pbs.twimg.com/amplify_video_thumb/2117070037181960192/img/Dwl-2McAQ5Unzg-1.jpg",
-      "published": "2026-11-02T01:44:17Z",
-      "video": "https://video.twimg.com/amplify_video/2117070037181960192/vid/avc1/1920x1080/JC7j9tJ0uVQ0F7ls.mp4",
-      "author_name": "NFL",
-      "avatar": "https://pbs.twimg.com/profile_images/1619895559334273028/PHKS_mjX_normal.jpg",
-      "author_verified": true
-    },
-    {
       "url": "https://www.espn.com/video/clip/_/id/50425259/christian-mccaffrey-strikes-first-49ers",
       "player": "Christian McCaffrey",
       "meta": "RB \u00b7 SF",
@@ -299,23 +278,6 @@
       "poster": "https://espnmedia-cdn.akamaized.net/espn/media/common/2026/1108/9d9d0ff5794146c6982d14518818025d1012/9d9d0ff5794146c6982d14518818025d1012.jpg",
       "published": "2026-11-08T21:48:31Z",
       "video": "https://espnmedia-cdn.akamaized.net/espn/media/16x9/wsc/2026/1108/9d9d0ff5-7941-46c6-982d-14518818025d/9d9d0ff5-7941-46c6-982d-14518818025d.mp4"
-    },
-    {
-      "url": "https://x.com/NFL/status/2117101963230019658",
-      "player": "Tanner McKee",
-      "meta": "QB \u00b7 PHI",
-      "date": "2026-11-02",
-      "author": "NFL",
-      "text": "Tanner McKee showing off his speed \ud83d\udca8\n\nPHIvsWAS on NBC/Peacock\nStream on @NFLPlus",
-      "verified": false,
-      "faves": 214,
-      "secs": 16,
-      "poster": "https://pbs.twimg.com/amplify_video_thumb/2117101788629458944/img/V8xcpXvydODrCWCs.jpg",
-      "published": "2026-11-02T03:50:16Z",
-      "video": "https://video.twimg.com/amplify_video/2117101788629458944/vid/avc1/1920x1080/jXA7ha_GlyNYggMi.mp4",
-      "author_name": "NFL",
-      "avatar": "https://pbs.twimg.com/profile_images/1619895559334273028/PHKS_mjX_normal.jpg",
-      "author_verified": true
     }
   ]
 }
