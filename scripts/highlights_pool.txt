@@ -561,7 +561,6 @@ https://www.youtube.com/shorts/Op3GadudgCY
 https://www.youtube.com/shorts/Or5DgCHilFs
 https://www.youtube.com/shorts/PEa2jJlqxa8
 https://www.youtube.com/shorts/PkfQBS4oFHs
-https://www.youtube.com/shorts/PkvPhPCaPo4
 https://www.youtube.com/shorts/PviDgjLtKlQ
 https://www.youtube.com/shorts/QB09mFILQ0Y
 https://www.youtube.com/shorts/QC4kUiEN4tM
@@ -848,6 +847,9 @@ https://x.com/Buccaneers/status/2119636572798701943
 https://x.com/Buccaneers/status/2119648603333402944
 https://x.com/Buccaneers/status/2119648748431118821
 https://x.com/BuffaloBills/status/2119938562112012396
+https://x.com/BuffaloBills/status/2119984341048537488
+https://x.com/BuffaloBills/status/2120004975103242403
+https://x.com/BuffaloBills/status/2120013199231664304
 https://x.com/ChiSportsTracks/status/2095307339750404405
 https://x.com/ChicagoBears/status/2117454133448044738
 https://x.com/ChicagoBears/status/2117455480151007738
@@ -857,8 +859,6 @@ https://x.com/ChicagoBears/status/2119650238877028825
 https://x.com/Chiefs/status/2119473339781783577
 https://x.com/Chiefs/status/2119534505278964061
 https://x.com/Colts/status/2119496098494496855
-https://x.com/Commanders/status/2117108338693378265
-https://x.com/Commanders/status/2117109214531174856
 https://x.com/DreareaSports/status/2091624681573146837
 https://x.com/Eagles/status/2119499702882259069
 https://x.com/FFPhinest/status/2095346301269357032
@@ -946,9 +946,6 @@ https://x.com/NFL/status/2110901632976232573
 https://x.com/NFL/status/2110911744725942454
 https://x.com/NFL/status/2110932117664284764
 https://x.com/NFL/status/2110933034966958420
-https://x.com/NFL/status/2117108283437899921
-https://x.com/NFL/status/2117109272349982825
-https://x.com/NFL/status/2117116513018847716
 https://x.com/NFL/status/2117443019767267829
 https://x.com/NFL/status/2117455429139837073
 https://x.com/NFL/status/2117462399058141279
@@ -1057,6 +1054,9 @@ https://x.com/NFL/status/2119960338498232547
 https://x.com/NFL/status/2119961160825065828
 https://x.com/NFL/status/2119985275384602814
 https://x.com/NFL/status/2119992250507948160
+https://x.com/NFL/status/2120001488936448336
+https://x.com/NFL/status/2120004918610366839
+https://x.com/NFL/status/2120013861625724936
 https://x.com/NFLTDsVideos/status/2098243863588540602
 https://x.com/NFLTDsVideos/status/2099189736858419294
 https://x.com/NFLTDsVideos/status/2099201418368262610
