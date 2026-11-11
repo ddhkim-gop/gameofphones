@@ -5176,7 +5176,7 @@ window.__STATIC_DATA__ = {
                 "years_exp": 3,
                 "status": "Active",
                 "injury_status": null,
-                "search_rank": 91
+                "search_rank": 89
             },
             {
                 "player_id": "11579",
@@ -5288,7 +5288,7 @@ window.__STATIC_DATA__ = {
                 "years_exp": 1,
                 "status": "Active",
                 "injury_status": null,
-                "search_rank": 495
+                "search_rank": 497
             },
             {
                 "player_id": "12518",
@@ -5351,7 +5351,7 @@ window.__STATIC_DATA__ = {
                 "weight": "202",
                 "years_exp": 1,
                 "status": "Active",
-                "injury_status": "Out",
+                "injury_status": "Questionable",
                 "search_rank": 39
             },
             {
@@ -5399,7 +5399,7 @@ window.__STATIC_DATA__ = {
                 "weight": "230",
                 "years_exp": 0,
                 "status": "Active",
-                "injury_status": "Out",
+                "injury_status": null,
                 "search_rank": 523
             },
             {
@@ -5415,7 +5415,7 @@ window.__STATIC_DATA__ = {
                 "weight": "195",
                 "years_exp": 0,
                 "status": "Active",
-                "injury_status": "Out",
+                "injury_status": null,
                 "search_rank": 502
             },
             {
@@ -5495,7 +5495,7 @@ window.__STATIC_DATA__ = {
                 "weight": "207",
                 "years_exp": 7,
                 "status": "Active",
-                "injury_status": "Out",
+                "injury_status": "Doubtful",
                 "search_rank": 88
             },
             {
@@ -5528,7 +5528,7 @@ window.__STATIC_DATA__ = {
                 "years_exp": 6,
                 "status": "Active",
                 "injury_status": "Questionable",
-                "search_rank": 34
+                "search_rank": 33
             },
             {
                 "player_id": "7002",
@@ -5655,7 +5655,7 @@ window.__STATIC_DATA__ = {
                 "weight": "183",
                 "years_exp": 4,
                 "status": "Active",
-                "injury_status": "Out",
+                "injury_status": "Questionable",
                 "search_rank": 38
             },
             {
@@ -5694,7 +5694,7 @@ window.__STATIC_DATA__ = {
                 "years_exp": 3,
                 "status": "Active",
                 "injury_status": null,
-                "search_rank": 127
+                "search_rank": 125
             },
             {
                 "player_id": "10229",
@@ -5885,7 +5885,7 @@ window.__STATIC_DATA__ = {
                 "weight": "240",
                 "years_exp": 0,
                 "status": "Active",
-                "injury_status": "Out",
+                "injury_status": null,
                 "search_rank": 688
             },
             {
@@ -5902,7 +5902,7 @@ window.__STATIC_DATA__ = {
                 "years_exp": 11,
                 "status": "Active",
                 "injury_status": null,
-                "search_rank": 104
+                "search_rank": 105
             },
             {
                 "player_id": "3257",
@@ -5933,7 +5933,7 @@ window.__STATIC_DATA__ = {
                 "weight": "223",
                 "years_exp": 9,
                 "status": "Active",
-                "injury_status": "Out",
+                "injury_status": "Questionable",
                 "search_rank": 291
             },
             {
@@ -6081,6 +6081,22 @@ window.__STATIC_DATA__ = {
                 "search_rank": 288
             },
             {
+                "player_id": "7562",
+                "espn_id": null,
+                "name": "Tutu Atwell",
+                "position": "WR",
+                "team": "LAR",
+                "age": 27,
+                "birth_date": "1999-10-07",
+                "college": "Louisville",
+                "height": "69",
+                "weight": "165",
+                "years_exp": 5,
+                "status": "Active",
+                "injury_status": null,
+                "search_rank": 691
+            },
+            {
                 "player_id": "7594",
                 "espn_id": null,
                 "name": "Chuba Hubbard",
@@ -6145,22 +6161,6 @@ window.__STATIC_DATA__ = {
                 "search_rank": 187
             },
             {
-                "player_id": "9506",
-                "espn_id": null,
-                "name": "Sean Tucker",
-                "position": "RB",
-                "team": "TB",
-                "age": 25,
-                "birth_date": "2001-10-25",
-                "college": "Syracuse",
-                "height": "70",
-                "weight": "205",
-                "years_exp": 3,
-                "status": "Active",
-                "injury_status": null,
-                "search_rank": 155
-            },
-            {
                 "player_id": "9758",
                 "espn_id": null,
                 "name": "C.J. Stroud",
@@ -6174,7 +6174,7 @@ window.__STATIC_DATA__ = {
                 "years_exp": 3,
                 "status": "Active",
                 "injury_status": null,
-                "search_rank": 101
+                "search_rank": 102
             }
         ]
     },
@@ -6275,7 +6275,7 @@ window.__STATIC_DATA__ = {
                 "weight": "165",
                 "years_exp": 2,
                 "status": "Active",
-                "injury_status": "Out",
+                "injury_status": "Questionable",
                 "search_rank": 122
             },
             {
@@ -6372,7 +6372,7 @@ window.__STATIC_DATA__ = {
                 "years_exp": 0,
                 "status": "Active",
                 "injury_status": null,
-                "search_rank": 288
+                "search_rank": 287
             },
             {
                 "player_id": "13347",
@@ -6403,8 +6403,8 @@ window.__STATIC_DATA__ = {
                 "weight": "198",
                 "years_exp": 0,
                 "status": "Active",
-                "injury_status": "Out",
-                "search_rank": 488
+                "injury_status": null,
+                "search_rank": 489
             },
             {
                 "player_id": "13434",
@@ -6643,7 +6643,7 @@ window.__STATIC_DATA__ = {
                 "weight": "180",
                 "years_exp": 4,
                 "status": "Active",
-                "injury_status": "Out",
+                "injury_status": "Questionable",
                 "search_rank": 150
             },
             {
@@ -6737,7 +6737,7 @@ window.__STATIC_DATA__ = {
                 "espn_id": 14880,
                 "name": "Kirk Cousins",
                 "position": "QB",
-                "team": "LV",
+                "team": "MIN",
                 "age": 38,
                 "birth_date": "1988-08-19",
                 "college": "Michigan State",
@@ -6746,7 +6746,7 @@ window.__STATIC_DATA__ = {
                 "years_exp": 14,
                 "status": "Active",
                 "injury_status": null,
-                "search_rank": 263
+                "search_rank": 262
             },
             {
                 "player_id": "12495",
@@ -6762,7 +6762,7 @@ window.__STATIC_DATA__ = {
                 "years_exp": 1,
                 "status": "Active",
                 "injury_status": null,
-                "search_rank": 449
+                "search_rank": 448
             },
             {
                 "player_id": "12533",
@@ -6841,7 +6841,7 @@ window.__STATIC_DATA__ = {
                 "weight": "170",
                 "years_exp": 0,
                 "status": "Active",
-                "injury_status": "Out",
+                "injury_status": "Questionable",
                 "search_rank": 509
             },
             {
@@ -6889,7 +6889,7 @@ window.__STATIC_DATA__ = {
                 "weight": "231",
                 "years_exp": 12,
                 "status": "Active",
-                "injury_status": "Out",
+                "injury_status": "Questionable",
                 "search_rank": 60
             },
             {
@@ -7161,7 +7161,7 @@ window.__STATIC_DATA__ = {
                 "weight": "205",
                 "years_exp": 4,
                 "status": "Active",
-                "injury_status": "Out",
+                "injury_status": "Questionable",
                 "search_rank": 23
             },
             {
@@ -7178,7 +7178,7 @@ window.__STATIC_DATA__ = {
                 "years_exp": 4,
                 "status": "Active",
                 "injury_status": null,
-                "search_rank": 19
+                "search_rank": 17
             },
             {
                 "player_id": "8161",
@@ -7192,8 +7192,8 @@ window.__STATIC_DATA__ = {
                 "height": "73",
                 "weight": "225",
                 "years_exp": 4,
-                "status": "Active",
-                "injury_status": "Questionable",
+                "status": "Inactive",
+                "injury_status": "IR",
                 "search_rank": 122
             }
         ]
@@ -7215,7 +7215,7 @@ window.__STATIC_DATA__ = {
                 "weight": "195",
                 "years_exp": 3,
                 "status": "Active",
-                "injury_status": "Out",
+                "injury_status": "Questionable",
                 "search_rank": 644
             },
             {
@@ -7408,7 +7408,7 @@ window.__STATIC_DATA__ = {
                 "years_exp": 0,
                 "status": "Active",
                 "injury_status": null,
-                "search_rank": 462
+                "search_rank": 458
             },
             {
                 "player_id": "1466",
@@ -7440,7 +7440,7 @@ window.__STATIC_DATA__ = {
                 "years_exp": 8,
                 "status": "Inactive",
                 "injury_status": "IR",
-                "search_rank": 10
+                "search_rank": 9
             },
             {
                 "player_id": "5012",
@@ -7487,7 +7487,7 @@ window.__STATIC_DATA__ = {
                 "weight": "226",
                 "years_exp": 7,
                 "status": "Active",
-                "injury_status": "Out",
+                "injury_status": "Questionable",
                 "search_rank": 17
             },
             {
@@ -7503,7 +7503,7 @@ window.__STATIC_DATA__ = {
                 "weight": "230",
                 "years_exp": 7,
                 "status": "Active",
-                "injury_status": "Out",
+                "injury_status": "Questionable",
                 "search_rank": 42
             },
             {
@@ -7518,8 +7518,8 @@ window.__STATIC_DATA__ = {
                 "height": "73",
                 "weight": "225",
                 "years_exp": 7,
-                "status": "Active",
-                "injury_status": "Questionable",
+                "status": "Inactive",
+                "injury_status": "IR",
                 "search_rank": 650
             },
             {
@@ -7782,7 +7782,7 @@ window.__STATIC_DATA__ = {
                 "years_exp": 2,
                 "status": "Active",
                 "injury_status": null,
-                "search_rank": 11
+                "search_rank": 10
             },
             {
                 "player_id": "11565",
@@ -7797,7 +7797,7 @@ window.__STATIC_DATA__ = {
                 "weight": "219",
                 "years_exp": 2,
                 "status": "Active",
-                "injury_status": "Questionable",
+                "injury_status": null,
                 "search_rank": 224
             },
             {
@@ -7830,7 +7830,7 @@ window.__STATIC_DATA__ = {
                 "years_exp": 2,
                 "status": "Active",
                 "injury_status": null,
-                "search_rank": 63
+                "search_rank": 65
             },
             {
                 "player_id": "11632",
@@ -7846,7 +7846,7 @@ window.__STATIC_DATA__ = {
                 "years_exp": 2,
                 "status": "Active",
                 "injury_status": null,
-                "search_rank": 28
+                "search_rank": 26
             },
             {
                 "player_id": "11783",
@@ -7941,7 +7941,7 @@ window.__STATIC_DATA__ = {
                 "weight": "192",
                 "years_exp": 0,
                 "status": "Active",
-                "injury_status": "Out",
+                "injury_status": "Questionable",
                 "search_rank": 61
             },
             {
@@ -7958,7 +7958,7 @@ window.__STATIC_DATA__ = {
                 "years_exp": 0,
                 "status": "Active",
                 "injury_status": null,
-                "search_rank": 199
+                "search_rank": 197
             },
             {
                 "player_id": "13333",
@@ -8117,7 +8117,7 @@ window.__STATIC_DATA__ = {
                 "weight": "225",
                 "years_exp": 4,
                 "status": "Active",
-                "injury_status": "Out",
+                "injury_status": "Questionable",
                 "search_rank": 679
             },
             {
@@ -8166,7 +8166,7 @@ window.__STATIC_DATA__ = {
                 "years_exp": 3,
                 "status": "Active",
                 "injury_status": null,
-                "search_rank": 487
+                "search_rank": 488
             },
             {
                 "player_id": "9504",
@@ -8252,7 +8252,7 @@ window.__STATIC_DATA__ = {
                 "years_exp": 2,
                 "status": "Active",
                 "injury_status": null,
-                "search_rank": 22
+                "search_rank": 21
             },
             {
                 "player_id": "11571",
@@ -8315,7 +8315,7 @@ window.__STATIC_DATA__ = {
                 "weight": "213",
                 "years_exp": 1,
                 "status": "Active",
-                "injury_status": "Out",
+                "injury_status": null,
                 "search_rank": 547
             },
             {
@@ -8363,7 +8363,7 @@ window.__STATIC_DATA__ = {
                 "weight": "235",
                 "years_exp": 1,
                 "status": "Active",
-                "injury_status": "Out",
+                "injury_status": null,
                 "search_rank": 499
             },
             {
@@ -8395,7 +8395,7 @@ window.__STATIC_DATA__ = {
                 "weight": "205",
                 "years_exp": 1,
                 "status": "Active",
-                "injury_status": "Out",
+                "injury_status": null,
                 "search_rank": 677
             },
             {
@@ -8443,7 +8443,7 @@ window.__STATIC_DATA__ = {
                 "weight": "228",
                 "years_exp": 0,
                 "status": "Active",
-                "injury_status": "Out",
+                "injury_status": null,
                 "search_rank": 360
             },
             {
@@ -8491,7 +8491,7 @@ window.__STATIC_DATA__ = {
                 "weight": "180",
                 "years_exp": 0,
                 "status": "Active",
-                "injury_status": "Out",
+                "injury_status": "Doubtful",
                 "search_rank": 185
             },
             {
@@ -8572,7 +8572,7 @@ window.__STATIC_DATA__ = {
                 "years_exp": 0,
                 "status": "Active",
                 "injury_status": null,
-                "search_rank": 366
+                "search_rank": 365
             },
             {
                 "player_id": "13413",
@@ -8588,7 +8588,7 @@ window.__STATIC_DATA__ = {
                 "years_exp": 0,
                 "status": "Active",
                 "injury_status": null,
-                "search_rank": 181
+                "search_rank": 179
             },
             {
                 "player_id": "13414",
@@ -8611,7 +8611,7 @@ window.__STATIC_DATA__ = {
                 "espn_id": 15818,
                 "name": "Keenan Allen",
                 "position": "WR",
-                "team": "IND",
+                "team": "SF",
                 "age": 34,
                 "birth_date": "1992-04-27",
                 "college": "California",
@@ -8715,7 +8715,7 @@ window.__STATIC_DATA__ = {
                 "weight": "238",
                 "years_exp": 4,
                 "status": "Active",
-                "injury_status": "Questionable",
+                "injury_status": null,
                 "search_rank": 137
             }
         ]
@@ -8882,7 +8882,7 @@ window.__STATIC_DATA__ = {
                 "years_exp": 1,
                 "status": "Active",
                 "injury_status": null,
-                "search_rank": 37
+                "search_rank": 35
             },
             {
                 "player_id": "12521",
@@ -8898,7 +8898,7 @@ window.__STATIC_DATA__ = {
                 "years_exp": 1,
                 "status": "Inactive",
                 "injury_status": "IR",
-                "search_rank": 460
+                "search_rank": 461
             },
             {
                 "player_id": "12540",
@@ -9010,7 +9010,7 @@ window.__STATIC_DATA__ = {
                 "years_exp": 0,
                 "status": "Active",
                 "injury_status": null,
-                "search_rank": 199
+                "search_rank": 201
             },
             {
                 "player_id": "13287",
@@ -9090,7 +9090,7 @@ window.__STATIC_DATA__ = {
                 "years_exp": 11,
                 "status": "Active",
                 "injury_status": null,
-                "search_rank": 357
+                "search_rank": 356
             },
             {
                 "player_id": "3161",
@@ -9138,7 +9138,7 @@ window.__STATIC_DATA__ = {
                 "years_exp": 8,
                 "status": "Active",
                 "injury_status": null,
-                "search_rank": 76
+                "search_rank": 75
             },
             {
                 "player_id": "5844",
@@ -9256,7 +9256,7 @@ window.__STATIC_DATA__ = {
                 "years_exp": 3,
                 "status": "Active",
                 "injury_status": null,
-                "search_rank": 694
+                "search_rank": 692
             },
             {
                 "player_id": "11630",
@@ -9351,7 +9351,7 @@ window.__STATIC_DATA__ = {
                 "weight": "215",
                 "years_exp": 0,
                 "status": "Active",
-                "injury_status": "Out",
+                "injury_status": null,
                 "search_rank": 201
             },
             {
@@ -9367,7 +9367,7 @@ window.__STATIC_DATA__ = {
                 "weight": "208",
                 "years_exp": 0,
                 "status": "Active",
-                "injury_status": "Out",
+                "injury_status": null,
                 "search_rank": 242
             },
             {
@@ -9416,7 +9416,7 @@ window.__STATIC_DATA__ = {
                 "years_exp": 0,
                 "status": "Active",
                 "injury_status": null,
-                "search_rank": 395
+                "search_rank": 394
             },
             {
                 "player_id": "13307",
@@ -9495,7 +9495,7 @@ window.__STATIC_DATA__ = {
                 "weight": "205",
                 "years_exp": 0,
                 "status": "Active",
-                "injury_status": "Out",
+                "injury_status": null,
                 "search_rank": 515
             },
             {
@@ -9528,7 +9528,7 @@ window.__STATIC_DATA__ = {
                 "years_exp": 0,
                 "status": "Active",
                 "injury_status": null,
-                "search_rank": 378
+                "search_rank": 377
             },
             {
                 "player_id": "13477",
@@ -9695,7 +9695,7 @@ window.__STATIC_DATA__ = {
                 "espn_id": null,
                 "name": "Kendre Miller",
                 "position": "RB",
-                "team": null,
+                "team": "DAL",
                 "age": 24,
                 "birth_date": "2002-06-11",
                 "college": "TCU",
@@ -9853,8 +9853,8 @@ window.__STATIC_DATA__ = {
                 "weight": "215",
                 "years_exp": 1,
                 "status": "Active",
-                "injury_status": "Out",
-                "search_rank": 37
+                "injury_status": null,
+                "search_rank": 36
             },
             {
                 "player_id": "12499",
@@ -9933,7 +9933,7 @@ window.__STATIC_DATA__ = {
                 "weight": "230",
                 "years_exp": 0,
                 "status": "Active",
-                "injury_status": "Out",
+                "injury_status": "Questionable",
                 "search_rank": 466
             },
             {
@@ -9950,7 +9950,7 @@ window.__STATIC_DATA__ = {
                 "years_exp": 0,
                 "status": "Active",
                 "injury_status": null,
-                "search_rank": 91
+                "search_rank": 89
             },
             {
                 "player_id": "13298",
@@ -9965,7 +9965,7 @@ window.__STATIC_DATA__ = {
                 "weight": "190",
                 "years_exp": 0,
                 "status": "Active",
-                "injury_status": "Questionable",
+                "injury_status": null,
                 "search_rank": 111
             },
             {
@@ -9998,7 +9998,7 @@ window.__STATIC_DATA__ = {
                 "years_exp": 0,
                 "status": "Active",
                 "injury_status": null,
-                "search_rank": 364
+                "search_rank": 363
             },
             {
                 "player_id": "13545",
@@ -10213,7 +10213,7 @@ window.__STATIC_DATA__ = {
                 "espn_id": null,
                 "name": "Josh Downs",
                 "position": "WR",
-                "team": "IND",
+                "team": "KC",
                 "age": 25,
                 "birth_date": "2001-08-12",
                 "college": "North Carolina",
@@ -10244,7 +10244,7 @@ window.__STATIC_DATA__ = {
                 "years_exp": 2,
                 "status": "Active",
                 "injury_status": null,
-                "search_rank": 46
+                "search_rank": 45
             },
             {
                 "player_id": "11581",
@@ -10259,7 +10259,7 @@ window.__STATIC_DATA__ = {
                 "weight": "220",
                 "years_exp": 2,
                 "status": "Active",
-                "injury_status": "Out",
+                "injury_status": "Questionable",
                 "search_rank": 98
             },
             {
@@ -10487,6 +10487,22 @@ window.__STATIC_DATA__ = {
                 "search_rank": 147
             },
             {
+                "player_id": "13297",
+                "espn_id": null,
+                "name": "Reggie Virgil",
+                "position": "WR",
+                "team": "ARI",
+                "age": 22,
+                "birth_date": "2004-05-14",
+                "college": "Texas Tech",
+                "height": "75",
+                "weight": "187",
+                "years_exp": 0,
+                "status": "Active",
+                "injury_status": null,
+                "search_rank": 699
+            },
+            {
                 "player_id": "13305",
                 "espn_id": null,
                 "name": "Mike Washington Jr.",
@@ -10551,22 +10567,6 @@ window.__STATIC_DATA__ = {
                 "search_rank": 112
             },
             {
-                "player_id": "2020",
-                "espn_id": 17427,
-                "name": "Cairo Santos",
-                "position": "K",
-                "team": "CHI",
-                "age": 34,
-                "birth_date": "1991-11-12",
-                "college": "Tulane",
-                "height": "68",
-                "weight": "173",
-                "years_exp": 12,
-                "status": "Active",
-                "injury_status": null,
-                "search_rank": 190
-            },
-            {
                 "player_id": "3294",
                 "espn_id": 2577417,
                 "name": "Dak Prescott",
@@ -10628,7 +10628,7 @@ window.__STATIC_DATA__ = {
                 "years_exp": 8,
                 "status": "Active",
                 "injury_status": null,
-                "search_rank": 448
+                "search_rank": 450
             },
             {
                 "player_id": "5967",
@@ -10660,7 +10660,7 @@ window.__STATIC_DATA__ = {
                 "years_exp": 6,
                 "status": "Active",
                 "injury_status": null,
-                "search_rank": 46
+                "search_rank": 44
             },
             {
                 "player_id": "8167",
@@ -10707,7 +10707,7 @@ window.__STATIC_DATA__ = {
                 "weight": "216",
                 "years_exp": 3,
                 "status": "Inactive",
-                "injury_status": "Questionable",
+                "injury_status": "Doubtful",
                 "search_rank": 4
             },
             {
@@ -10724,7 +10724,7 @@ window.__STATIC_DATA__ = {
                 "years_exp": 21,
                 "status": "Active",
                 "injury_status": null,
-                "search_rank": 187
+                "search_rank": 186
             },
             {
                 "player_id": "9753",
@@ -10760,8 +10760,8 @@ window.__STATIC_DATA__ = {
                 "height": "74",
                 "weight": "213",
                 "years_exp": 3,
-                "status": "Active",
-                "injury_status": "Out",
+                "status": "Inactive",
+                "injury_status": "IR",
                 "search_rank": 75
             },
             {
@@ -10905,7 +10905,7 @@ window.__STATIC_DATA__ = {
                 "weight": "241",
                 "years_exp": 0,
                 "status": "Active",
-                "injury_status": "Out",
+                "injury_status": null,
                 "search_rank": 484
             },
             {
@@ -10921,7 +10921,7 @@ window.__STATIC_DATA__ = {
                 "weight": "192",
                 "years_exp": 0,
                 "status": "Active",
-                "injury_status": "Out",
+                "injury_status": null,
                 "search_rank": 390
             },
             {
@@ -10970,7 +10970,7 @@ window.__STATIC_DATA__ = {
                 "years_exp": 17,
                 "status": "Active",
                 "injury_status": null,
-                "search_rank": 66
+                "search_rank": 65
             },
             {
                 "player_id": "4984",
@@ -11017,7 +11017,7 @@ window.__STATIC_DATA__ = {
                 "weight": "215",
                 "years_exp": 7,
                 "status": "Active",
-                "injury_status": "Out",
+                "injury_status": "Questionable",
                 "search_rank": 130
             },
             {
@@ -11082,7 +11082,7 @@ window.__STATIC_DATA__ = {
                 "years_exp": 6,
                 "status": "Inactive",
                 "injury_status": "IR",
-                "search_rank": 28
+                "search_rank": 27
             },
             {
                 "player_id": "7049",
@@ -11097,7 +11097,7 @@ window.__STATIC_DATA__ = {
                 "weight": "212",
                 "years_exp": 6,
                 "status": "Active",
-                "injury_status": "Out",
+                "injury_status": "Questionable",
                 "search_rank": 123
             },
             {
@@ -11177,7 +11177,7 @@ window.__STATIC_DATA__ = {
                 "weight": "227",
                 "years_exp": 5,
                 "status": "Active",
-                "injury_status": "Out",
+                "injury_status": "Doubtful",
                 "search_rank": 58
             },
             {
@@ -11209,7 +11209,7 @@ window.__STATIC_DATA__ = {
                 "weight": "210",
                 "years_exp": 4,
                 "status": "Active",
-                "injury_status": "Out",
+                "injury_status": "Questionable",
                 "search_rank": 669
             },
             {
@@ -11257,7 +11257,7 @@ window.__STATIC_DATA__ = {
                 "weight": "200",
                 "years_exp": 3,
                 "status": "Active",
-                "injury_status": "Out",
+                "injury_status": "Questionable",
                 "search_rank": 122
             }
         ]
@@ -11700,6 +11700,62 @@ window.__STATIC_DATA__ = {
     }
   ],
   "transactions": [
+    {
+        "season": "2026",
+        "week": 9,
+        "created": "Nov 10, 2026 • 7:57 PM PT",
+        "transaction_id": "1426092409179107328",
+        "type": "waiver",
+        "status": "complete",
+        "teams": [
+            "spiffster"
+        ],
+        "added": [
+            {
+                "name": "Tutu Atwell",
+                "position": "WR",
+                "team": "LAR"
+            }
+        ],
+        "dropped": [
+            {
+                "name": "Sean Tucker",
+                "position": "RB",
+                "team": "TB"
+            }
+        ],
+        "faab": 0,
+        "waiver_bid": 44,
+        "notes": "Your waiver claim was processed successfully!"
+    },
+    {
+        "season": "2026",
+        "week": 9,
+        "created": "Nov 10, 2026 • 8:10 AM PT",
+        "transaction_id": "1425914431824465920",
+        "type": "waiver",
+        "status": "complete",
+        "teams": [
+            "ngman"
+        ],
+        "added": [
+            {
+                "name": "Reggie Virgil",
+                "position": "WR",
+                "team": "ARI"
+            }
+        ],
+        "dropped": [
+            {
+                "name": "Cairo Santos",
+                "position": "K",
+                "team": "CHI"
+            }
+        ],
+        "faab": 0,
+        "waiver_bid": 0,
+        "notes": "Your waiver claim was processed successfully!"
+    },
     {
         "season": "2026",
         "week": 9,
