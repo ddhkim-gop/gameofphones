@@ -5933,7 +5933,7 @@ window.__STATIC_DATA__ = {
                 "weight": "223",
                 "years_exp": 9,
                 "status": "Active",
-                "injury_status": "Questionable",
+                "injury_status": null,
                 "search_rank": 291
             },
             {
@@ -6893,6 +6893,22 @@ window.__STATIC_DATA__ = {
                 "search_rank": 60
             },
             {
+                "player_id": "3155",
+                "espn_id": 3051889,
+                "name": "Laquon Treadwell",
+                "position": "WR",
+                "team": "IND",
+                "age": 31,
+                "birth_date": "1995-06-14",
+                "college": "Ole Miss",
+                "height": "74",
+                "weight": "215",
+                "years_exp": 10,
+                "status": "Active",
+                "injury_status": null,
+                "search_rank": 674
+            },
+            {
                 "player_id": "3198",
                 "espn_id": 3043078,
                 "name": "Derrick Henry",
@@ -6907,22 +6923,6 @@ window.__STATIC_DATA__ = {
                 "status": "Active",
                 "injury_status": null,
                 "search_rank": 7
-            },
-            {
-                "player_id": "3286",
-                "espn_id": 3043116,
-                "name": "Demarcus Robinson",
-                "position": "WR",
-                "team": "SF",
-                "age": 32,
-                "birth_date": "1994-09-21",
-                "college": "Florida",
-                "height": "73",
-                "weight": "202",
-                "years_exp": 10,
-                "status": "Active",
-                "injury_status": null,
-                "search_rank": 679
             },
             {
                 "player_id": "4018",
@@ -6987,22 +6987,6 @@ window.__STATIC_DATA__ = {
                 "status": "Active",
                 "injury_status": null,
                 "search_rank": 72
-            },
-            {
-                "player_id": "6130",
-                "espn_id": 4040761,
-                "name": "Devin Singletary",
-                "position": "RB",
-                "team": "NYG",
-                "age": 29,
-                "birth_date": "1997-09-03",
-                "college": "Florida Atlantic",
-                "height": "67",
-                "weight": "203",
-                "years_exp": 7,
-                "status": "Active",
-                "injury_status": null,
-                "search_rank": 660
             },
             {
                 "player_id": "6794",
@@ -7099,6 +7083,22 @@ window.__STATIC_DATA__ = {
                 "status": "Inactive",
                 "injury_status": "IR",
                 "search_rank": 34
+            },
+            {
+                "player_id": "8116",
+                "espn_id": null,
+                "name": "Pierre Strong Jr.",
+                "position": "RB",
+                "team": "GB",
+                "age": 27,
+                "birth_date": "1998-12-10",
+                "college": "South Dakota State",
+                "height": "71",
+                "weight": "207",
+                "years_exp": 4,
+                "status": "Active",
+                "injury_status": null,
+                "search_rank": 631
             },
             {
                 "player_id": "8129",
@@ -7805,7 +7805,7 @@ window.__STATIC_DATA__ = {
                 "espn_id": null,
                 "name": "Jarquez Hunter",
                 "position": "RB",
-                "team": "NO",
+                "team": null,
                 "age": 23,
                 "birth_date": "2002-12-29",
                 "college": "Auburn",
@@ -10451,7 +10451,7 @@ window.__STATIC_DATA__ = {
                 "weight": "199",
                 "years_exp": 0,
                 "status": "Active",
-                "injury_status": null,
+                "injury_status": "Questionable",
                 "search_rank": 151
             },
             {
@@ -10547,7 +10547,7 @@ window.__STATIC_DATA__ = {
                 "weight": "215",
                 "years_exp": 0,
                 "status": "Active",
-                "injury_status": null,
+                "injury_status": "Questionable",
                 "search_rank": 153
             },
             {
@@ -11702,6 +11702,90 @@ window.__STATIC_DATA__ = {
   "transactions": [
     {
         "season": "2026",
+        "week": 10,
+        "created": "Nov 11, 2026 • 5:07 AM PT",
+        "transaction_id": "1426230873233043456",
+        "type": "free_agent",
+        "status": "complete",
+        "teams": [
+            "jonsung"
+        ],
+        "added": [
+            {
+                "name": "Laquon Treadwell",
+                "position": "WR",
+                "team": "IND"
+            }
+        ],
+        "dropped": [
+            {
+                "name": "Ashton Dulin",
+                "position": "WR",
+                "team": "IND"
+            }
+        ],
+        "faab": 0,
+        "waiver_bid": 0,
+        "notes": null
+    },
+    {
+        "season": "2026",
+        "week": 10,
+        "created": "Nov 11, 2026 • 4:58 AM PT",
+        "transaction_id": "1426228631201415168",
+        "type": "free_agent",
+        "status": "complete",
+        "teams": [
+            "jonsung"
+        ],
+        "added": [
+            {
+                "name": "Pierre Strong Jr.",
+                "position": "RB",
+                "team": "GB"
+            }
+        ],
+        "dropped": [
+            {
+                "name": "Devin Singletary",
+                "position": "RB",
+                "team": "NYG"
+            }
+        ],
+        "faab": 0,
+        "waiver_bid": 0,
+        "notes": null
+    },
+    {
+        "season": "2026",
+        "week": 10,
+        "created": "Nov 11, 2026 • 4:57 AM PT",
+        "transaction_id": "1426228336471871488",
+        "type": "free_agent",
+        "status": "complete",
+        "teams": [
+            "jonsung"
+        ],
+        "added": [
+            {
+                "name": "Ashton Dulin",
+                "position": "WR",
+                "team": "IND"
+            }
+        ],
+        "dropped": [
+            {
+                "name": "Demarcus Robinson",
+                "position": "WR",
+                "team": "SF"
+            }
+        ],
+        "faab": 0,
+        "waiver_bid": 0,
+        "notes": null
+    },
+    {
+        "season": "2026",
         "week": 9,
         "created": "Nov 10, 2026 • 7:57 PM PT",
         "transaction_id": "1426092409179107328",
@@ -12591,7 +12675,7 @@ window.__STATIC_DATA__ = {
             {
                 "name": "Jaydon Blue",
                 "position": "RB",
-                "team": "PHI"
+                "team": null
             }
         ],
         "faab": 0,
@@ -12769,7 +12853,7 @@ window.__STATIC_DATA__ = {
             {
                 "name": "Jaydon Blue",
                 "position": "RB",
-                "team": "PHI"
+                "team": null
             }
         ],
         "dropped": [
@@ -13094,7 +13178,7 @@ window.__STATIC_DATA__ = {
             {
                 "name": "Odell Beckham Jr.",
                 "position": "WR",
-                "team": "MIN"
+                "team": null
             }
         ],
         "faab": 0,
@@ -13271,7 +13355,7 @@ window.__STATIC_DATA__ = {
             {
                 "name": "Odell Beckham Jr.",
                 "position": "WR",
-                "team": "MIN"
+                "team": null
             }
         ],
         "dropped": [
@@ -13762,7 +13846,7 @@ window.__STATIC_DATA__ = {
             {
                 "name": "Odell Beckham Jr.",
                 "position": "WR",
-                "team": "MIN"
+                "team": null
             }
         ],
         "faab": 0,
@@ -14864,7 +14948,7 @@ window.__STATIC_DATA__ = {
             {
                 "name": "Jaydon Blue",
                 "position": "RB",
-                "team": "PHI"
+                "team": null
             }
         ],
         "faab": 0,
@@ -20353,7 +20437,7 @@ window.__STATIC_DATA__ = {
             {
                 "name": "Odell Beckham Jr.",
                 "position": "WR",
-                "team": "MIN"
+                "team": null
             }
         ],
         "dropped": [
