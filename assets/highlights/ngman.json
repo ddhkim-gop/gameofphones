@@ -1,27 +1,8 @@
 {
   "team": "ngman",
-  "updated": "2026-11-11",
+  "updated": "2026-11-12",
   "note": "Curated: X has no public search API, so posts are collected by hand and matched to rosters by this script.",
   "tweets": [
-    {
-      "url": "https://www.espn.com/video/clip/_/id/50429559/cairo-santos-walk-fg-lifts-bears-bucs-snf",
-      "player": "Cairo Santos",
-      "meta": "K \u00b7 CHI",
-      "date": "2026-11-09",
-      "author": "ESPN",
-      "text": "Cairo Santos' walk-off FG lifts Bears over Bucs on SNF. Cairo Santos' walk-off FG lifts Bears over Bucs on SNF  ",
-      "verified": true,
-      "faves": 0,
-      "secs": 0,
-      "espn_game": "401873050",
-      "game_id": "401873050",
-      "game_time": "Q4 0:00",
-      "play_key": "401873050:4018730504405",
-      "played_at": "2026-11-09T04:38:28Z",
-      "poster": "https://espnmedia-cdn.akamaized.net/espn/media/common/2026/1108/46c9cd0b71e04e66a6741fa055620fe41429/46c9cd0b71e04e66a6741fa055620fe41429.jpg",
-      "published": "2026-11-09T04:47:22Z",
-      "video": "https://espnmedia-cdn.akamaized.net/espn/media/16x9/wsc/2026/1109/46c9cd0b-71e0-4e66-a674-1fa055620fe4/46c9cd0b-71e0-4e66-a674-1fa055620fe4.mp4"
-    },
     {
       "url": "https://x.com/NFL/status/2119578109380788367",
       "player": "Christian Watson",
@@ -80,6 +61,27 @@
       "poster": "https://espnmedia-cdn.akamaized.net/espn/media/common/2026/1108/02db474508694ba0b4d5f3cf94cd26161197/02db474508694ba0b4d5f3cf94cd26161197.jpg",
       "published": "2026-11-08T22:51:19Z",
       "video": "https://espnmedia-cdn.akamaized.net/espn/media/16x9/wsc/2026/1108/02db4745-0869-4ba0-b4d5-f3cf94cd2616/02db4745-0869-4ba0-b4d5-f3cf94cd2616.mp4"
+    },
+    {
+      "url": "https://x.com/AZCardinals/status/2119543823776800806",
+      "player": "Reggie Virgil",
+      "meta": "WR \u00b7 ARI",
+      "date": "2026-11-08",
+      "author": "AZCardinals",
+      "text": "REGGIE VIRGIL + 25  \ud83d\ude24\n\n\ud83d\udcfa:FOX",
+      "verified": true,
+      "faves": 256,
+      "secs": 14,
+      "game_id": "401873048",
+      "game_time": "Q1 12:53",
+      "play_key": "401873048:401873048198",
+      "played_at": "2026-11-08T21:30:14Z",
+      "poster": "https://pbs.twimg.com/amplify_video_thumb/2119543169003982848/img/VGqbvAD6a5LcEb-i.jpg",
+      "published": "2026-11-08T21:33:21Z",
+      "video": "https://video.twimg.com/amplify_video/2119543169003982848/vid/avc1/1920x1080/eg1oeC9WnbnYD8zz.mp4",
+      "author_name": "Arizona Cardinals",
+      "avatar": "",
+      "author_verified": true
     },
     {
       "url": "https://www.espn.com/video/clip/_/id/50424578/emmett-johnson-pads-chiefs-lead-late-td",
