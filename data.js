@@ -10279,22 +10279,6 @@ window.__STATIC_DATA__ = {
                 "search_rank": 68
             },
             {
-                "player_id": "11597",
-                "espn_id": null,
-                "name": "Theo Johnson",
-                "position": "TE",
-                "team": "NYG",
-                "age": 25,
-                "birth_date": "2001-02-26",
-                "college": "Penn State",
-                "height": "78",
-                "weight": "264",
-                "years_exp": 2,
-                "status": "Active",
-                "injury_status": null,
-                "search_rank": 144
-            },
-            {
                 "player_id": "11786",
                 "espn_id": null,
                 "name": "Cam Little",
@@ -10599,22 +10583,6 @@ window.__STATIC_DATA__ = {
                 "search_rank": 645
             },
             {
-                "player_id": "4454",
-                "espn_id": 3045523,
-                "name": "Kendrick Bourne",
-                "position": "WR",
-                "team": "ARI",
-                "age": 31,
-                "birth_date": "1995-08-04",
-                "college": "Eastern Washington",
-                "height": "73",
-                "weight": "205",
-                "years_exp": 9,
-                "status": "Inactive",
-                "injury_status": "IR",
-                "search_rank": 673
-            },
-            {
                 "player_id": "4993",
                 "espn_id": 3116164,
                 "name": "Mike Gesicki",
@@ -10645,6 +10613,38 @@ window.__STATIC_DATA__ = {
                 "status": "Active",
                 "injury_status": null,
                 "search_rank": 63
+            },
+            {
+                "player_id": "6130",
+                "espn_id": 4040761,
+                "name": "Devin Singletary",
+                "position": "RB",
+                "team": "NYG",
+                "age": 29,
+                "birth_date": "1997-09-03",
+                "college": "Florida Atlantic",
+                "height": "67",
+                "weight": "203",
+                "years_exp": 7,
+                "status": "Active",
+                "injury_status": null,
+                "search_rank": 660
+            },
+            {
+                "player_id": "6427",
+                "espn_id": 4061956,
+                "name": "Ashton Dulin",
+                "position": "WR",
+                "team": "IND",
+                "age": 29,
+                "birth_date": "1997-05-15",
+                "college": "Malone (OH)",
+                "height": "74",
+                "weight": "215",
+                "years_exp": 7,
+                "status": "Active",
+                "injury_status": null,
+                "search_rank": 697
             },
             {
                 "player_id": "6790",
@@ -11700,6 +11700,62 @@ window.__STATIC_DATA__ = {
     }
   ],
   "transactions": [
+    {
+        "season": "2026",
+        "week": 10,
+        "created": "Nov 12, 2026 • 8:39 AM PT",
+        "transaction_id": "1426646562989150208",
+        "type": "free_agent",
+        "status": "complete",
+        "teams": [
+            "ngman"
+        ],
+        "added": [
+            {
+                "name": "Ashton Dulin",
+                "position": "WR",
+                "team": "IND"
+            }
+        ],
+        "dropped": [
+            {
+                "name": "Kendrick Bourne",
+                "position": "WR",
+                "team": "ARI"
+            }
+        ],
+        "faab": 0,
+        "waiver_bid": 0,
+        "notes": null
+    },
+    {
+        "season": "2026",
+        "week": 10,
+        "created": "Nov 12, 2026 • 8:37 AM PT",
+        "transaction_id": "1426646178509881344",
+        "type": "free_agent",
+        "status": "complete",
+        "teams": [
+            "ngman"
+        ],
+        "added": [
+            {
+                "name": "Devin Singletary",
+                "position": "RB",
+                "team": "NYG"
+            }
+        ],
+        "dropped": [
+            {
+                "name": "Theo Johnson",
+                "position": "TE",
+                "team": "NYG"
+            }
+        ],
+        "faab": 0,
+        "waiver_bid": 0,
+        "notes": null
+    },
     {
         "season": "2026",
         "week": 10,
@@ -14276,7 +14332,7 @@ window.__STATIC_DATA__ = {
             {
                 "name": "Harrison Mevis",
                 "position": "K",
-                "team": null
+                "team": "BAL"
             }
         ],
         "faab": 0,
@@ -17337,7 +17393,7 @@ window.__STATIC_DATA__ = {
             {
                 "name": "Harrison Mevis",
                 "position": "K",
-                "team": null
+                "team": "BAL"
             }
         ],
         "dropped": [],
