@@ -1,6 +1,6 @@
 {
   "team": "ngman",
-  "updated": "2026-11-12",
+  "updated": "2026-11-13",
   "note": "Curated: X has no public search API, so posts are collected by hand and matched to rosters by this script.",
   "tweets": [
     {
@@ -119,6 +119,27 @@
       "poster": "https://pbs.twimg.com/amplify_video_thumb/2119531264982003712/img/i9Pq-9UYYjAc-eyp.jpg",
       "published": "2026-11-08T20:43:52Z",
       "video": "https://video.twimg.com/amplify_video/2119531264982003712/vid/avc1/1920x1080/9QV1jDuD1b07K8c8.mp4",
+      "author_name": "NFL",
+      "avatar": "https://pbs.twimg.com/profile_images/1619895559334273028/PHKS_mjX_normal.jpg",
+      "author_verified": true
+    },
+    {
+      "url": "https://x.com/NFL/status/2119528364729868726",
+      "player": "Ashton Dulin",
+      "meta": "WR \u00b7 IND",
+      "date": "2026-11-08",
+      "author": "NFL",
+      "text": "Ashton Dulin 55-yard catch-and-run TD!\n\nDALvsIND on FOX/FOX One\nStream on @NFLPlus",
+      "verified": true,
+      "faves": 491,
+      "secs": 14,
+      "game_id": "401873040",
+      "game_time": "Q3 1:17",
+      "play_key": "401873040:4018730403393",
+      "played_at": "2026-11-08T20:30:28Z",
+      "poster": "https://pbs.twimg.com/amplify_video_thumb/2119528169610874880/img/S5C70bdL4INvo539.jpg",
+      "published": "2026-11-08T20:31:55Z",
+      "video": "https://video.twimg.com/amplify_video/2119528169610874880/vid/avc1/1920x1080/Hu5Srcor99pdsdzH.mp4",
       "author_name": "NFL",
       "avatar": "https://pbs.twimg.com/profile_images/1619895559334273028/PHKS_mjX_normal.jpg",
       "author_verified": true

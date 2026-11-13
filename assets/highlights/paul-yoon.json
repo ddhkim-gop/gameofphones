@@ -1,8 +1,29 @@
 {
   "team": "Paul_Yoon",
-  "updated": "2026-11-12",
+  "updated": "2026-11-13",
   "note": "Curated: X has no public search API, so posts are collected by hand and matched to rosters by this script.",
   "tweets": [
+    {
+      "url": "https://x.com/Commanders/status/2121068907981160455",
+      "player": "Ben Sinnott",
+      "meta": "TE \u00b7 WAS",
+      "date": "2026-11-13",
+      "author": "Commanders",
+      "text": "COME ONNNNN 82\n\n\ud83d\udcfa\u00a0#WASvsNYG @nflonprime",
+      "verified": true,
+      "faves": 805,
+      "secs": 18,
+      "game_id": "401873052",
+      "game_time": "Q2 0:05",
+      "play_key": "401873052:4018730522023",
+      "played_at": "2026-11-13T02:32:22Z",
+      "poster": "https://pbs.twimg.com/amplify_video_thumb/2121068776338685952/img/VfaOt01ZIOfyVMPi.jpg",
+      "published": "2026-11-13T02:33:29Z",
+      "video": "https://video.twimg.com/amplify_video/2121068776338685952/vid/avc1/1920x1080/PMH1nLQ9Io0P9bCH.mp4",
+      "author_name": "Washington Commanders",
+      "avatar": "https://pbs.twimg.com/profile_images/2043720907617632256/ceXYRByJ_normal.jpg",
+      "author_verified": true
+    },
     {
       "url": "https://x.com/ChicagoBears/status/2119650238877028825",
       "player": "Caleb Williams",
@@ -88,27 +109,6 @@
       "author_verified": true
     },
     {
-      "url": "https://x.com/NFL/status/2119543017128292408",
-      "player": "Harold Fannin Jr.",
-      "meta": "TE \u00b7 CLE",
-      "date": "2026-11-08",
-      "author": "NFL",
-      "text": "HAROLD FANNIN GOES BEASTMODE!",
-      "verified": true,
-      "faves": 995,
-      "secs": 14,
-      "game_id": "401873039",
-      "game_time": "Q5 1:00",
-      "play_key": "401873039:4018730394973",
-      "played_at": "2026-11-08T21:29:07Z",
-      "poster": "https://pbs.twimg.com/amplify_video_thumb/2119542907266891776/img/u7JcRgQyaM5pau9s.jpg",
-      "published": "2026-11-08T21:30:09Z",
-      "video": "https://video.twimg.com/amplify_video/2119542907266891776/vid/avc1/1920x1080/tGkjKodKqu49r5XA.mp4",
-      "author_name": "NFL",
-      "avatar": "https://pbs.twimg.com/profile_images/1619895559334273028/PHKS_mjX_normal.jpg",
-      "author_verified": true
-    },
-    {
       "url": "https://x.com/MiamiDolphins/status/2119497434661335144",
       "player": "Chris Bell",
       "meta": "WR \u00b7 MIA",
@@ -128,25 +128,6 @@
       "author_name": "Miami Dolphins",
       "avatar": "",
       "author_verified": true
-    },
-    {
-      "url": "https://www.espn.com/video/clip/_/id/50396386/justice-hill-shows-speed-65-yard-td",
-      "player": "Justice Hill",
-      "meta": "RB \u00b7 BAL",
-      "date": "2026-11-06",
-      "author": "ESPN",
-      "text": "Justice Hill shows off his speed on a 65-yard TD",
-      "verified": true,
-      "faves": 0,
-      "secs": 0,
-      "espn_game": "401873037",
-      "game_id": "401873037",
-      "game_time": "Q4 7:15",
-      "play_key": "401873037:4018730373490",
-      "played_at": "2026-11-06T03:53:02Z",
-      "poster": "https://espnmedia-cdn.akamaized.net/espn/media/common/2026/1105/36b43468f2414c5ebaca1bffdc1fbbf01397/36b43468f2414c5ebaca1bffdc1fbbf01397.jpg",
-      "published": "2026-11-06T04:07:38Z",
-      "video": "https://espnmedia-cdn.akamaized.net/espn/media/16x9/wsc/2026/1106/36b43468-f241-4c5e-baca-1bffdc1fbbf0/36b43468-f241-4c5e-baca-1bffdc1fbbf0.mp4"
     }
   ]
 }
