@@ -7925,7 +7925,7 @@ window.__STATIC_DATA__ = {
                 "weight": "192",
                 "years_exp": 0,
                 "status": "Active",
-                "injury_status": "Questionable",
+                "injury_status": "Out",
                 "search_rank": 61
             },
             {
@@ -7981,7 +7981,7 @@ window.__STATIC_DATA__ = {
                 "espn_id": 4241372,
                 "name": "Marquise Brown",
                 "position": "WR",
-                "team": "PHI",
+                "team": null,
                 "age": 29,
                 "birth_date": "1997-06-04",
                 "college": "Oklahoma",
@@ -8443,7 +8443,7 @@ window.__STATIC_DATA__ = {
                 "weight": "228",
                 "years_exp": 0,
                 "status": "Active",
-                "injury_status": "Questionable",
+                "injury_status": "Doubtful",
                 "search_rank": 197
             },
             {
@@ -8475,7 +8475,7 @@ window.__STATIC_DATA__ = {
                 "weight": "180",
                 "years_exp": 0,
                 "status": "Active",
-                "injury_status": "Doubtful",
+                "injury_status": "Out",
                 "search_rank": 185
             },
             {
@@ -10013,7 +10013,7 @@ window.__STATIC_DATA__ = {
                 "weight": "249",
                 "years_exp": 10,
                 "status": "Active",
-                "injury_status": "Questionable",
+                "injury_status": null,
                 "search_rank": 92
             },
             {
@@ -10403,7 +10403,7 @@ window.__STATIC_DATA__ = {
                 "weight": "199",
                 "years_exp": 0,
                 "status": "Active",
-                "injury_status": "Questionable",
+                "injury_status": null,
                 "search_rank": 151
             },
             {
@@ -11161,7 +11161,7 @@ window.__STATIC_DATA__ = {
                 "weight": "210",
                 "years_exp": 4,
                 "status": "Active",
-                "injury_status": "Questionable",
+                "injury_status": null,
                 "search_rank": 669
             },
             {
@@ -12395,7 +12395,7 @@ window.__STATIC_DATA__ = {
             {
                 "name": "Marquise Brown",
                 "position": "WR",
-                "team": "PHI"
+                "team": null
             }
         ],
         "dropped": [],
@@ -12452,7 +12452,7 @@ window.__STATIC_DATA__ = {
             {
                 "name": "Marquise Brown",
                 "position": "WR",
-                "team": "PHI"
+                "team": null
             }
         ],
         "faab": 0,
@@ -12657,7 +12657,7 @@ window.__STATIC_DATA__ = {
             {
                 "name": "Marquise Brown",
                 "position": "WR",
-                "team": "PHI"
+                "team": null
             }
         ],
         "dropped": [
@@ -14387,7 +14387,7 @@ window.__STATIC_DATA__ = {
             {
                 "name": "Marquise Brown",
                 "position": "WR",
-                "team": "PHI"
+                "team": null
             }
         ],
         "faab": 0,
@@ -14542,7 +14542,7 @@ window.__STATIC_DATA__ = {
             {
                 "name": "Marquise Brown",
                 "position": "WR",
-                "team": "PHI"
+                "team": null
             }
         ],
         "dropped": [],
@@ -14749,7 +14749,7 @@ window.__STATIC_DATA__ = {
             {
                 "name": "Marquise Brown",
                 "position": "WR",
-                "team": "PHI"
+                "team": null
             }
         ],
         "faab": 0,
@@ -17232,7 +17232,7 @@ window.__STATIC_DATA__ = {
             {
                 "name": "Marquise Brown",
                 "position": "WR",
-                "team": "PHI"
+                "team": null
             }
         ],
         "dropped": [],
@@ -17254,7 +17254,7 @@ window.__STATIC_DATA__ = {
             {
                 "name": "Marquise Brown",
                 "position": "WR",
-                "team": "PHI"
+                "team": null
             }
         ],
         "dropped": [
@@ -17289,7 +17289,7 @@ window.__STATIC_DATA__ = {
             {
                 "name": "Marquise Brown",
                 "position": "WR",
-                "team": "PHI"
+                "team": null
             }
         ],
         "faab": 0,
