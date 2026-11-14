@@ -6183,22 +6183,6 @@ window.__STATIC_DATA__ = {
         "roster_id": 3,
         "players": [
             {
-                "player_id": "10218",
-                "espn_id": null,
-                "name": "Xavier Hutchinson",
-                "position": "WR",
-                "team": "HOU",
-                "age": 26,
-                "birth_date": "2000-06-01",
-                "college": "Iowa State",
-                "height": "75",
-                "weight": "210",
-                "years_exp": 3,
-                "status": "Active",
-                "injury_status": null,
-                "search_rank": 679
-            },
-            {
                 "player_id": "11435",
                 "espn_id": null,
                 "name": "Emanuel Wilson",
@@ -6277,6 +6261,22 @@ window.__STATIC_DATA__ = {
                 "status": "Active",
                 "injury_status": null,
                 "search_rank": 122
+            },
+            {
+                "player_id": "11762",
+                "espn_id": null,
+                "name": "Anthony Gould",
+                "position": "WR",
+                "team": "IND",
+                "age": 25,
+                "birth_date": "2001-04-06",
+                "college": "Oregon State",
+                "height": "68",
+                "weight": "174",
+                "years_exp": 2,
+                "status": "Active",
+                "injury_status": null,
+                "search_rank": 573
             },
             {
                 "player_id": "12467",
@@ -7058,7 +7058,7 @@ window.__STATIC_DATA__ = {
                 "name": "DeVonta Smith",
                 "position": "WR",
                 "team": "PHI",
-                "age": 27,
+                "age": 28,
                 "birth_date": "1998-11-14",
                 "college": "Alabama",
                 "height": "72",
@@ -9552,7 +9552,7 @@ window.__STATIC_DATA__ = {
                 "name": "Dawson Knox",
                 "position": "TE",
                 "team": "BUF",
-                "age": 29,
+                "age": 30,
                 "birth_date": "1996-11-14",
                 "college": "Ole Miss",
                 "height": "76",
@@ -10994,7 +10994,7 @@ window.__STATIC_DATA__ = {
                 "name": "Justice Hill",
                 "position": "RB",
                 "team": "BAL",
-                "age": 28,
+                "age": 29,
                 "birth_date": "1997-11-14",
                 "college": "Oklahoma State",
                 "height": "70",
@@ -11652,6 +11652,34 @@ window.__STATIC_DATA__ = {
     }
   ],
   "transactions": [
+    {
+        "season": "2026",
+        "week": 10,
+        "created": "Nov 13, 2026 • 6:30 PM PT",
+        "transaction_id": "1427157852287406080",
+        "type": "free_agent",
+        "status": "complete",
+        "teams": [
+            "NoSkilzPak"
+        ],
+        "added": [
+            {
+                "name": "Anthony Gould",
+                "position": "WR",
+                "team": "IND"
+            }
+        ],
+        "dropped": [
+            {
+                "name": "Xavier Hutchinson",
+                "position": "WR",
+                "team": "HOU"
+            }
+        ],
+        "faab": 0,
+        "waiver_bid": 0,
+        "notes": null
+    },
     {
         "season": "2026",
         "week": 10,
