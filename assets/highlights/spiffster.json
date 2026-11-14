@@ -1,6 +1,6 @@
 {
   "team": "spiffster",
-  "updated": "2026-11-13",
+  "updated": "2026-11-14",
   "note": "Curated: X has no public search API, so posts are collected by hand and matched to rosters by this script.",
   "tweets": [
     {
@@ -18,7 +18,7 @@
       "game_time": "Q4 0:57",
       "play_key": "401873052:4018730524259",
       "played_at": "2026-11-13T04:11:00Z",
-      "poster": "https://espnmedia-cdn.akamaized.net/espn/media/common/wsc/2026/1113/439d55db-bebe-489b-b737-8e0094f4105e/439d55db-bebe-489b-b737-8e0094f4105e.jpg",
+      "poster": "https://espnmedia-cdn.akamaized.net/espn/media/common/2026/1112/439d55dbbebe489bb7378e0094f4105e1416/439d55dbbebe489bb7378e0094f4105e1416.jpg",
       "published": "2026-11-13T04:21:40Z",
       "video": "https://espnmedia-cdn.akamaized.net/espn/media/16x9/wsc/2026/1113/439d55db-bebe-489b-b737-8e0094f4105e/439d55db-bebe-489b-b737-8e0094f4105e.mp4"
     },
@@ -185,25 +185,6 @@
       "poster": "https://espnmedia-cdn.akamaized.net/espn/media/common/wsc/2026/1108/e7a76f16-615d-4c7f-bce6-ccce47c3f642/e7a76f16-615d-4c7f-bce6-ccce47c3f642.jpg",
       "published": "2026-11-08T14:50:11Z",
       "video": "https://espnmedia-cdn.akamaized.net/espn/media/16x9/wsc/2026/1108/e7a76f16-615d-4c7f-bce6-ccce47c3f642/e7a76f16-615d-4c7f-bce6-ccce47c3f642.mp4"
-    },
-    {
-      "url": "https://www.espn.com/video/clip/_/id/50396354/chris-rodriguez-jr-sneaks-another-jags-td",
-      "player": "Chris Rodriguez Jr.",
-      "meta": "RB \u00b7 JAX",
-      "date": "2026-11-06",
-      "author": "ESPN",
-      "text": "Chris Rodriguez Jr. sneaks in for another Jags TD",
-      "verified": true,
-      "faves": 0,
-      "secs": 0,
-      "espn_game": "401873037",
-      "game_id": "401873037",
-      "game_time": "Q4 7:26",
-      "play_key": "401873037:4018730373372",
-      "played_at": "2026-11-06T03:49:30Z",
-      "poster": "https://espnmedia-cdn.akamaized.net/espn/media/common/2026/1105/59af00c24a104d4c90b81788043bc9101401/59af00c24a104d4c90b81788043bc9101401.jpg",
-      "published": "2026-11-06T04:05:14Z",
-      "video": "https://espnmedia-cdn.akamaized.net/espn/media/16x9/wsc/2026/1106/59af00c2-4a10-4d4c-90b8-1788043bc910/59af00c2-4a10-4d4c-90b8-1788043bc910.mp4"
     },
     {
       "url": "https://x.com/NFL/status/2119559971360694691",

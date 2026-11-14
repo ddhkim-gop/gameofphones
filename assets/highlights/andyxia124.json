@@ -1,6 +1,6 @@
 {
   "team": "andyxia124",
-  "updated": "2026-11-13",
+  "updated": "2026-11-14",
   "note": "Curated: X has no public search API, so posts are collected by hand and matched to rosters by this script.",
   "tweets": [
     {
@@ -181,44 +181,6 @@
       "poster": "https://espnmedia-cdn.akamaized.net/espn/media/common/wsc/2026/1108/6a1e4a2e-48d7-4ae5-be9b-1d060a038675/6a1e4a2e-48d7-4ae5-be9b-1d060a038675.jpg",
       "published": "2026-11-08T16:07:10Z",
       "video": "https://espnmedia-cdn.akamaized.net/espn/media/16x9/wsc/2026/1108/6a1e4a2e-48d7-4ae5-be9b-1d060a038675/6a1e4a2e-48d7-4ae5-be9b-1d060a038675.mp4"
-    },
-    {
-      "url": "https://www.espn.com/video/clip/_/id/50395861/joe-fagnano-throws-first-nfl-int-ravens",
-      "player": "Joe Fagnano",
-      "meta": "QB \u00b7 BAL",
-      "date": "2026-11-06",
-      "author": "ESPN",
-      "text": "Joe Fagnano throws first NFL INT for the Ravens.  Joe Fagnano throws first NFL INT for the Ravens",
-      "verified": true,
-      "faves": 0,
-      "secs": 0,
-      "espn_game": "401873037",
-      "game_id": "401873037",
-      "game_time": "Q3 6:09",
-      "play_key": "401873037:4018730372531",
-      "played_at": "2026-11-06T03:11:23Z",
-      "poster": "https://espnmedia-cdn.akamaized.net/espn/media/common/2026/1105/f9a88e44f9254b9ab759b9565c1725261405/f9a88e44f9254b9ab759b9565c1725261405.jpg",
-      "published": "2026-11-06T03:25:18Z",
-      "video": "https://espnmedia-cdn.akamaized.net/espn/media/16x9/wsc/2026/1106/f9a88e44-f925-4b9a-b759-b9565c172526/f9a88e44-f925-4b9a-b759-b9565c172526.mp4"
-    },
-    {
-      "url": "https://www.espn.com/video/clip/_/id/50395412/trevor-lawrence-dimes-parker-washington-50-yard-td",
-      "player": "Trevor Lawrence",
-      "meta": "QB \u00b7 JAX",
-      "date": "2026-11-06",
-      "author": "ESPN",
-      "text": "Trevor Lawrence dimes Parker Washington for 50-yard TD",
-      "verified": true,
-      "faves": 0,
-      "secs": 0,
-      "espn_game": "401873037",
-      "game_id": "401873037",
-      "game_time": "Q2 0:58",
-      "play_key": "401873037:4018730371721",
-      "played_at": "2026-11-06T02:24:58Z",
-      "poster": "https://espnmedia-cdn.akamaized.net/espn/media/common/2026/1105/7b74a7e2ca70462cb41a37fcda4e6b4c1401/7b74a7e2ca70462cb41a37fcda4e6b4c1401.jpg",
-      "published": "2026-11-06T02:37:15Z",
-      "video": "https://espnmedia-cdn.akamaized.net/espn/media/16x9/wsc/2026/1106/7b74a7e2-ca70-462c-b41a-37fcda4e6b4c/7b74a7e2-ca70-462c-b41a-37fcda4e6b4c.mp4"
     }
   ]
 }

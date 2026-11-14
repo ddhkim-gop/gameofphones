@@ -1,6 +1,6 @@
 {
   "team": "ganathan",
-  "updated": "2026-11-13",
+  "updated": "2026-11-14",
   "note": "Curated: X has no public search API, so posts are collected by hand and matched to rosters by this script.",
   "tweets": [
     {
@@ -282,25 +282,6 @@
       "author_name": "NFL",
       "avatar": "https://pbs.twimg.com/profile_images/1619895559334273028/PHKS_mjX_normal.jpg",
       "author_verified": true
-    },
-    {
-      "url": "https://www.espn.com/video/clip/_/id/50396386/justice-hill-shows-speed-65-yard-td",
-      "player": "Justice Hill",
-      "meta": "RB \u00b7 BAL",
-      "date": "2026-11-06",
-      "author": "ESPN",
-      "text": "Justice Hill shows off his speed on a 65-yard TD",
-      "verified": true,
-      "faves": 0,
-      "secs": 0,
-      "espn_game": "401873037",
-      "game_id": "401873037",
-      "game_time": "Q4 7:15",
-      "play_key": "401873037:4018730373490",
-      "played_at": "2026-11-06T03:53:02Z",
-      "poster": "https://espnmedia-cdn.akamaized.net/espn/media/common/2026/1105/36b43468f2414c5ebaca1bffdc1fbbf01397/36b43468f2414c5ebaca1bffdc1fbbf01397.jpg",
-      "published": "2026-11-06T04:07:38Z",
-      "video": "https://espnmedia-cdn.akamaized.net/espn/media/16x9/wsc/2026/1106/36b43468-f241-4c5e-baca-1bffdc1fbbf0/36b43468-f241-4c5e-baca-1bffdc1fbbf0.mp4"
     },
     {
       "url": "https://www.espn.com/video/clip/_/id/50439406/josh-allen-bills-outlast-vikings-23-6-mnf",
