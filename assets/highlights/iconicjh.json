@@ -4,6 +4,27 @@
   "note": "Curated: X has no public search API, so posts are collected by hand and matched to rosters by this script.",
   "tweets": [
     {
+      "url": "https://x.com/NFL/status/2122043657885012293",
+      "player": "Jerry Jeudy",
+      "meta": "WR \u00b7 CLE",
+      "date": "2026-11-15",
+      "author": "NFL",
+      "text": "65 yards for Jerry Jeudy!\n\nHOUvsCLE on FOX/FOX One\nStream on @NFLPlus",
+      "verified": true,
+      "faves": 536,
+      "secs": 12,
+      "game_id": "401873056",
+      "game_time": "Q2 5:05",
+      "play_key": "401873056:4018730561602",
+      "played_at": "2026-11-15T19:05:32Z",
+      "poster": "https://pbs.twimg.com/amplify_video_thumb/2122043509318483968/img/iAyCDVwyvZ--11l1.jpg",
+      "published": "2026-11-15T19:06:48Z",
+      "video": "https://video.twimg.com/amplify_video/2122043509318483968/vid/avc1/1920x1080/cztLZk19eA21iL8r.mp4",
+      "author_name": "NFL",
+      "avatar": "https://pbs.twimg.com/profile_images/1619895559334273028/PHKS_mjX_normal.jpg",
+      "author_verified": true
+    },
+    {
       "url": "https://www.espn.com/video/clip/_/id/50468168/isaiah-likely-takes-66-yards-house-giants-td",
       "player": "Jameis Winston",
       "meta": "QB \u00b7 NYG",
