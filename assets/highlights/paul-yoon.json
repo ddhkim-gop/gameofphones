@@ -4,6 +4,27 @@
   "note": "Curated: X has no public search API, so posts are collected by hand and matched to rosters by this script.",
   "tweets": [
     {
+      "url": "https://x.com/Lions/status/2121986085572014392",
+      "player": "Isaac TeSlaa",
+      "meta": "WR \u00b7 DET",
+      "date": "2026-11-15",
+      "author": "Lions",
+      "text": "That was filthy, @TeslaaIsaac",
+      "verified": true,
+      "faves": 1450,
+      "secs": 31,
+      "game_id": "401873053",
+      "game_time": "Q2 12:57",
+      "play_key": "401873053:4018730531061",
+      "played_at": "2026-11-15T15:15:43Z",
+      "poster": "https://pbs.twimg.com/amplify_video_thumb/2121985785343741952/img/RovB57pi2avbmyQF.jpg",
+      "published": "2026-11-15T15:18:02Z",
+      "video": "https://video.twimg.com/amplify_video/2121985785343741952/vid/avc1/1920x1080/HVtqt2fWBsaK6TL_.mp4",
+      "author_name": "Detroit Lions",
+      "avatar": "https://pbs.twimg.com/profile_images/2117366427938160640/bSarkWks_normal.jpg",
+      "author_verified": true
+    },
+    {
       "url": "https://x.com/Commanders/status/2121068907981160455",
       "player": "Ben Sinnott",
       "meta": "TE \u00b7 WAS",
