@@ -65,7 +65,7 @@
   "verified": true
  },
  "Browns": {
-  "avatar": "https://pbs.twimg.com/profile_images/2120617438324699137/pjKuFU5g_normal.jpg",
+  "avatar": "",
   "name": "Cleveland Browns",
   "verified": true
  },
@@ -75,7 +75,7 @@
   "verified": true
  },
  "BuffaloBills": {
-  "avatar": "https://pbs.twimg.com/profile_images/2104615660366016512/ngGoCmLH_normal.jpg",
+  "avatar": "",
   "name": "Buffalo Bills",
   "verified": true
  },
@@ -110,7 +110,7 @@
   "verified": true
  },
  "Colts": {
-  "avatar": "https://pbs.twimg.com/profile_images/2119807214407897088/QsbT0-qM_normal.jpg",
+  "avatar": "",
   "name": "Indianapolis Colts",
   "verified": true
  },
@@ -195,7 +195,7 @@
   "verified": true
  },
  "Jaguars": {
-  "avatar": "",
+  "avatar": "https://pbs.twimg.com/profile_images/2117679003343396864/74pm70W2_normal.jpg",
   "name": "Jacksonville Jaguars",
   "verified": true
  },
@@ -380,7 +380,7 @@
   "verified": true
  },
  "packers": {
-  "avatar": "",
+  "avatar": "https://pbs.twimg.com/profile_images/2110091159766802432/OF5urpIt_normal.jpg",
   "name": "Green Bay Packers",
   "verified": true
  },
