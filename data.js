@@ -6183,6 +6183,22 @@ window.__STATIC_DATA__ = {
         "roster_id": 3,
         "players": [
             {
+                "player_id": "10218",
+                "espn_id": null,
+                "name": "Xavier Hutchinson",
+                "position": "WR",
+                "team": "HOU",
+                "age": 26,
+                "birth_date": "2000-06-01",
+                "college": "Iowa State",
+                "height": "75",
+                "weight": "210",
+                "years_exp": 3,
+                "status": "Active",
+                "injury_status": null,
+                "search_rank": 679
+            },
+            {
                 "player_id": "11435",
                 "espn_id": null,
                 "name": "Emanuel Wilson",
@@ -6423,22 +6439,6 @@ window.__STATIC_DATA__ = {
                 "search_rank": 514
             },
             {
-                "player_id": "2307",
-                "espn_id": 2576980,
-                "name": "Marcus Mariota",
-                "position": "QB",
-                "team": "WAS",
-                "age": 33,
-                "birth_date": "1993-10-30",
-                "college": "Oregon",
-                "height": "76",
-                "weight": "222",
-                "years_exp": 11,
-                "status": "Active",
-                "injury_status": null,
-                "search_rank": 508
-            },
-            {
                 "player_id": "2747",
                 "espn_id": 2473037,
                 "name": "Jason Myers",
@@ -6487,22 +6487,6 @@ window.__STATIC_DATA__ = {
                 "search_rank": 128
             },
             {
-                "player_id": "4066",
-                "espn_id": 3051876,
-                "name": "Evan Engram",
-                "position": "TE",
-                "team": "DEN",
-                "age": 32,
-                "birth_date": "1994-09-02",
-                "college": "Ole Miss",
-                "height": "75",
-                "weight": "240",
-                "years_exp": 9,
-                "status": "Active",
-                "injury_status": null,
-                "search_rank": 464
-            },
-            {
                 "player_id": "4943",
                 "espn_id": 3912547,
                 "name": "Sam Darnold",
@@ -6533,6 +6517,22 @@ window.__STATIC_DATA__ = {
                 "status": "Active",
                 "injury_status": null,
                 "search_rank": 4
+            },
+            {
+                "player_id": "8111",
+                "espn_id": null,
+                "name": "Cade Otton",
+                "position": "TE",
+                "team": "TB",
+                "age": 27,
+                "birth_date": "1999-04-15",
+                "college": "Washington",
+                "height": "77",
+                "weight": "247",
+                "years_exp": 4,
+                "status": "Active",
+                "injury_status": null,
+                "search_rank": 148
             },
             {
                 "player_id": "8121",
@@ -11652,6 +11652,62 @@ window.__STATIC_DATA__ = {
     }
   ],
   "transactions": [
+    {
+        "season": "2026",
+        "week": 10,
+        "created": "Nov 14, 2026 • 8:41 PM PT",
+        "transaction_id": "1427553137228521472",
+        "type": "free_agent",
+        "status": "complete",
+        "teams": [
+            "NoSkilzPak"
+        ],
+        "added": [
+            {
+                "name": "Cade Otton",
+                "position": "TE",
+                "team": "TB"
+            }
+        ],
+        "dropped": [
+            {
+                "name": "Marcus Mariota",
+                "position": "QB",
+                "team": "WAS"
+            }
+        ],
+        "faab": 0,
+        "waiver_bid": 0,
+        "notes": null
+    },
+    {
+        "season": "2026",
+        "week": 10,
+        "created": "Nov 14, 2026 • 8:39 PM PT",
+        "transaction_id": "1427552701989797888",
+        "type": "free_agent",
+        "status": "complete",
+        "teams": [
+            "NoSkilzPak"
+        ],
+        "added": [
+            {
+                "name": "Xavier Hutchinson",
+                "position": "WR",
+                "team": "HOU"
+            }
+        ],
+        "dropped": [
+            {
+                "name": "Evan Engram",
+                "position": "TE",
+                "team": "DEN"
+            }
+        ],
+        "faab": 0,
+        "waiver_bid": 0,
+        "notes": null
+    },
     {
         "season": "2026",
         "week": 10,
