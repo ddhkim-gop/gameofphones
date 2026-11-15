@@ -4,6 +4,48 @@
   "note": "Curated: X has no public search API, so posts are collected by hand and matched to rosters by this script.",
   "tweets": [
     {
+      "url": "https://x.com/NFL/status/2122033929637261370",
+      "player": "Justin Jefferson & Kirk Cousins",
+      "meta": "QB \u00b7 MIN",
+      "date": "2026-11-15",
+      "author": "NFL",
+      "text": "The Kirk Cousins to Justin Jefferson connection is so back\n\nMINvsGB on FOX/FOX One\nStream on @NFLPlus",
+      "verified": true,
+      "faves": 690,
+      "secs": 8,
+      "game_id": "401873060",
+      "game_time": "Q1 2:46",
+      "play_key": "401873060:401873060757",
+      "played_at": "2026-11-15T18:28:35Z",
+      "poster": "https://pbs.twimg.com/amplify_video_thumb/2122033251347034112/img/6ypSB9-rYhM4OLi0.jpg",
+      "published": "2026-11-15T18:28:08Z",
+      "video": "https://video.twimg.com/amplify_video/2122033251347034112/vid/avc1/1920x1080/nG2eKfH2ZG_fufO8.mp4",
+      "author_name": "NFL",
+      "avatar": "https://pbs.twimg.com/profile_images/1619895559334273028/PHKS_mjX_normal.jpg",
+      "author_verified": true
+    },
+    {
+      "url": "https://x.com/NFL/status/2122031485519868279",
+      "player": "Jordan Love",
+      "meta": "QB \u00b7 GB",
+      "date": "2026-11-15",
+      "author": "NFL",
+      "text": "Tucker Kraft takes the snap and tosses it to Jordan Love, who completes it to Christian Watson \ud83d\ude2e\n\nMINvsGB on FOX/FOX One\nStream on @NFLPlus",
+      "verified": true,
+      "faves": 334,
+      "secs": 14,
+      "game_id": "401873060",
+      "game_time": "Q1 8:52",
+      "play_key": "401873060:401873060450",
+      "played_at": "2026-11-15T18:17:12Z",
+      "poster": "https://pbs.twimg.com/amplify_video_thumb/2122031326656356352/img/A4eMnqI9AZMtzb0S.jpg",
+      "published": "2026-11-15T18:18:26Z",
+      "video": "https://video.twimg.com/amplify_video/2122031326656356352/vid/avc1/1920x1080/dT7XaCB5sp1BVfeN.mp4",
+      "author_name": "NFL",
+      "avatar": "https://pbs.twimg.com/profile_images/1619895559334273028/PHKS_mjX_normal.jpg",
+      "author_verified": true
+    },
+    {
       "url": "https://www.espn.com/video/clip/_/id/50468168/isaiah-likely-takes-66-yards-house-giants-td",
       "player": "Isaiah Likely",
       "meta": "TE \u00b7 NYG",
@@ -360,21 +402,6 @@
       "poster": "https://espnmedia-cdn.akamaized.net/espn/media/common/wsc/2026/1108/9360c8cb-32b8-42a0-a4fd-3391298256ee/9360c8cb-32b8-42a0-a4fd-3391298256ee.jpg",
       "published": "2026-11-08T18:38:56Z",
       "video": "https://espnmedia-cdn.akamaized.net/espn/media/16x9/wsc/2026/1108/9360c8cb-32b8-42a0-a4fd-3391298256ee/9360c8cb-32b8-42a0-a4fd-3391298256ee.mp4"
-    },
-    {
-      "url": "https://www.espn.com/video/clip/_/id/50425348/jordan-love-runs-put-packers-board",
-      "player": "Jordan Love",
-      "meta": "QB \u00b7 GB",
-      "date": "2026-11-08",
-      "author": "ESPN",
-      "text": "Jordan Love runs it himself to put the Packers on the board",
-      "verified": true,
-      "faves": 0,
-      "secs": 0,
-      "espn_game": "401873049",
-      "poster": "https://espnmedia-cdn.akamaized.net/espn/media/common/2026/1108/4dbafa9fb9a040f5834e9a322e5b0e0e1194/4dbafa9fb9a040f5834e9a322e5b0e0e1194.jpg",
-      "published": "2026-11-08T21:55:14Z",
-      "video": "https://espnmedia-cdn.akamaized.net/espn/media/16x9/wsc/2026/1108/4dbafa9f-b9a0-40f5-834e-9a322e5b0e0e/4dbafa9f-b9a0-40f5-834e-9a322e5b0e0e.mp4"
     }
   ]
 }
