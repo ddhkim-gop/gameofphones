@@ -432,6 +432,7 @@ https://www.espn.com/video/clip/_/id/50491628/trevor-lawrence-strikes-opening-dr
 https://www.espn.com/video/clip/_/id/50491668/patrick-mahomes-emmett-johnson-strike-first-td
 https://www.espn.com/video/clip/_/id/50491679/josh-allen-barrels-bills-td
 https://www.espn.com/video/clip/_/id/50491682/kirk-cousins-gets-vikings-return-going-early-td-pass-myles-price
+https://www.espn.com/video/clip/_/id/50491725/travis-hunter-comes-slick-int-jaguars
 https://www.espn.com/video/clip/_/id/50491774/seth-mcgowan-puts-colts-board
 https://www.espn.com/video/clip/_/id/50491785/cj-stroud-links-xavier-hutchinson-texans-td
 https://www.espn.com/video/clip/_/id/50491809/travis-kelce-exits-game-getting-taken-down
@@ -443,6 +444,7 @@ https://www.espn.com/video/clip/_/id/50492205/tyson-campbell-comes-incredible-pi
 https://www.espn.com/video/clip/_/id/50492260/laquon-treadwell-gets-first-td-catch-season
 https://www.espn.com/video/clip/_/id/50492421/geno-smith-goes-deep-garrett-wilson-33-yard-jets-completion
 https://www.espn.com/video/clip/_/id/50492630/josh-downs-stamps-chiefs-debut-td-catch
+https://www.espn.com/video/clip/_/id/50492664/alvin-kamara-barrels-a-saints-touchdown
 https://www.espn.com/video/clip/_/id/50492685/kc-concepcion-finds-angle-runs-browns-td
 https://www.espn.com/video/clip/_/id/50492731/josh-allen-punches-2nd-td-game-bills
 https://www.espn.com/video/clip/_/id/50492753/jordan-love-puts-packers-board-32-yard-td-pass-j-michael-sturdivant
@@ -450,19 +452,32 @@ https://www.espn.com/video/clip/_/id/50492804/trevor-lawrence-finds-wide-open-br
 https://www.espn.com/video/clip/_/id/50492861/josh-allen-goes-deep-dj-moore-bills-td
 https://www.espn.com/video/clip/_/id/50492993/mahomes-goes-deep-cyrus-allen-extend-chiefs-lead
 https://www.espn.com/video/clip/_/id/50493079/kyle-mccord-shakes-getting-facemask-grabbed-runs-td
+https://www.espn.com/video/clip/_/id/50493184/gavin-bartholomew-stiff-arms-way-end-zone-pad-vikings-lead
 https://www.espn.com/video/clip/_/id/50493276/cj-stroud-finds-dalton-schultz-put-texans-top
 https://www.espn.com/video/clip/_/id/50493279/trevor-lawrence-hits-wide-open-josh-cameron-25-yard-jags-td
 https://www.espn.com/video/clip/_/id/50493413/tony-pollard-breaks-free-32-yard-td-keep-titans-alive
 https://www.espn.com/video/clip/_/id/50493457/james-cook-iii-erupts-74-yard-rushing-td
 https://www.espn.com/video/clip/_/id/50493631/quinshon-judkins-punches-late-go-ahead-td-browns
+https://www.espn.com/video/clip/_/id/50493934/alvin-kamara-lunges-give-saints-lead
 https://www.espn.com/video/clip/_/id/50494034/fernando-mendoza-runs-1st-nfl-td
 https://www.espn.com/video/clip/_/id/50494140/drew-lock-airs-one-cooper-kupp-incredible-seahawks-td
 https://www.espn.com/video/clip/_/id/50494615/dak-prescott-lets-fly-george-pickens-cowboys-td
 https://www.espn.com/video/clip/_/id/50495085/matthew-stafford-finds-tyler-higbee-rams-td
+https://www.espn.com/video/clip/_/id/50495150/dak-prescott-george-pickens-link-their-2nd-td-connection-1st-half
+https://www.espn.com/video/clip/_/id/50495213/brock-purdy-scrambles-eventually-finds-cmc-thrilling-74-yard-td
 https://www.espn.com/video/clip/_/id/50495227/jadarian-price-dashes-seahawks-td
 https://www.espn.com/video/clip/_/id/50495246/rams-xavier-smith-finds-end-zone-first-nfl-td
+https://www.espn.com/video/clip/_/id/50495784/kaelon-black-plows-end-zone-san-francisco
 https://www.espn.com/video/clip/_/id/50495823/blake-corum-registers-td-sixth-straight-game-rams
 https://www.espn.com/video/clip/_/id/50496009/matthew-stafford-zips-davis-allen-rams-td
+https://www.espn.com/video/clip/_/id/50496045/deebo-samuel-sr-somersaults-end-zone-49ers-td
+https://www.espn.com/video/clip/_/id/50496336/christian-mccaffrey-takes-house-again-49ers
+https://www.espn.com/video/clip/_/id/50497577/drew-sample-finds-paydirt-put-bengals-board
+https://www.espn.com/video/clip/_/id/50497654/joe-burrow-finds-wide-open-chase-brown-bengals-td
+https://www.espn.com/video/clip/_/id/50497846/joe-burrow-throws-3rd-td-first-half
+https://www.espn.com/video/clip/_/id/50498116/joe-burrow-4th-passing-td-gives-bengals-commanding-lead
+https://www.espn.com/video/clip/_/id/50498368/pat-freiermuth-fights-goal-line-powerful-steelers-td
+https://www.espn.com/video/clip/_/id/50498452/burrow-throws-4-tds-bengals-blow-steelers
 https://www.youtube.com/shorts/-150A9vaDV0
 https://www.youtube.com/shorts/-A6_wYR6KkA
 https://www.youtube.com/shorts/-F39Ct7vQOc
@@ -480,6 +495,7 @@ https://www.youtube.com/shorts/1-0HclEC-wU
 https://www.youtube.com/shorts/1-igAhtw8w4
 https://www.youtube.com/shorts/1JnPkRa1U5w
 https://www.youtube.com/shorts/1KOcKIo7uxY
+https://www.youtube.com/shorts/1ZD0ORcFDkw
 https://www.youtube.com/shorts/1cqp6lTmIXs
 https://www.youtube.com/shorts/1gWhMbfqwaY
 https://www.youtube.com/shorts/1kLu980MfSo
@@ -487,6 +503,7 @@ https://www.youtube.com/shorts/1pslmhCQqa4
 https://www.youtube.com/shorts/1qmVS9R-qVQ
 https://www.youtube.com/shorts/1rCPVmBkz0w
 https://www.youtube.com/shorts/1x2lX-E5S_4
+https://www.youtube.com/shorts/1zuNVgczUs4
 https://www.youtube.com/shorts/2CCM1b26Ixc
 https://www.youtube.com/shorts/2QvtJzOosng
 https://www.youtube.com/shorts/2jyjfBY3Dxk
@@ -553,6 +570,7 @@ https://www.youtube.com/shorts/C8ipQWaQqok
 https://www.youtube.com/shorts/C9lLKifjf0o
 https://www.youtube.com/shorts/CLdTX8tpmcw
 https://www.youtube.com/shorts/CLsGai-oYRY
+https://www.youtube.com/shorts/CQ6de6kSsgo
 https://www.youtube.com/shorts/Ck64lXIqBZk
 https://www.youtube.com/shorts/ClOknOCcjvU
 https://www.youtube.com/shorts/CrplOyLsLFs
@@ -595,6 +613,7 @@ https://www.youtube.com/shorts/HY3u4bzvYd4
 https://www.youtube.com/shorts/HrF-YORPr8k
 https://www.youtube.com/shorts/IG-d47I-4WQ
 https://www.youtube.com/shorts/IPX2q_kBS6c
+https://www.youtube.com/shorts/I_zZkCboGyU
 https://www.youtube.com/shorts/IbGJzj5Ni9U
 https://www.youtube.com/shorts/IjQ6i-a3XmI
 https://www.youtube.com/shorts/IlkfsyHzgOY
@@ -604,6 +623,7 @@ https://www.youtube.com/shorts/Iuqeeg2fIKw
 https://www.youtube.com/shorts/J0WrcS5A_Rc
 https://www.youtube.com/shorts/J35lpjRH-bM
 https://www.youtube.com/shorts/JBNXQKuxu44
+https://www.youtube.com/shorts/JP4IYP_W1Mo
 https://www.youtube.com/shorts/JTlGt1RWIsU
 https://www.youtube.com/shorts/JUO_0eR4LdI
 https://www.youtube.com/shorts/JZ-f9Yig-F4
@@ -652,6 +672,7 @@ https://www.youtube.com/shorts/OwWVg4ipHFU
 https://www.youtube.com/shorts/P2IoXafEfG8
 https://www.youtube.com/shorts/PEa2jJlqxa8
 https://www.youtube.com/shorts/PkfQBS4oFHs
+https://www.youtube.com/shorts/PpKp1i1iaqw
 https://www.youtube.com/shorts/PviDgjLtKlQ
 https://www.youtube.com/shorts/PyLWnSg-J1M
 https://www.youtube.com/shorts/QC4kUiEN4tM
@@ -686,6 +707,7 @@ https://www.youtube.com/shorts/TEF0_cEx_XM
 https://www.youtube.com/shorts/TJLMntIHi1Y
 https://www.youtube.com/shorts/TKia-SAx5aI
 https://www.youtube.com/shorts/TWheDPxomyg
+https://www.youtube.com/shorts/Tmqa9MgjqHg
 https://www.youtube.com/shorts/ToAXjetWsRo
 https://www.youtube.com/shorts/Tpf-TajJEC0
 https://www.youtube.com/shorts/U4IfdWut3Ac
@@ -728,6 +750,7 @@ https://www.youtube.com/shorts/ZcBq7n2j9lo
 https://www.youtube.com/shorts/_5NZ0OKQyHs
 https://www.youtube.com/shorts/_GvS_gIwuew
 https://www.youtube.com/shorts/_N5mxg3-Mrw
+https://www.youtube.com/shorts/_RM6F-sks_0
 https://www.youtube.com/shorts/_SqOlaemAQc
 https://www.youtube.com/shorts/_SuMsv1VPio
 https://www.youtube.com/shorts/_fdjmL6rMnw
@@ -741,6 +764,7 @@ https://www.youtube.com/shorts/a8gFCGyg1y8
 https://www.youtube.com/shorts/aD3yqopFZgg
 https://www.youtube.com/shorts/aTp_SdDWSkw
 https://www.youtube.com/shorts/aVMbI1MTOmM
+https://www.youtube.com/shorts/asXR2t7MC8A
 https://www.youtube.com/shorts/b1Ad1fV7tpk
 https://www.youtube.com/shorts/b2IA-fSozUw
 https://www.youtube.com/shorts/bA-i0exkvwc
@@ -937,6 +961,8 @@ https://x.com/49ers/status/2122106616002576603
 https://x.com/49ers/status/2122110215961108653
 https://x.com/49ers/status/2122116068617388240
 https://x.com/49ers/status/2122123384284954897
+https://x.com/49ers/status/2122131086033735992
+https://x.com/49ers/status/2122133660883419168
 https://x.com/AFantasyFormula/status/2090575974840561965
 https://x.com/AZCardinals/status/2119543823776800806
 https://x.com/AdamSchefter/status/2095964161415196956
@@ -955,6 +981,7 @@ https://x.com/Bengals/status/2119442320114274712
 https://x.com/Bengals/status/2119449645113909518
 https://x.com/Bengals/status/2119454980696318451
 https://x.com/Bengals/status/2119471348602802440
+https://x.com/Bengals/status/2122147156471513564
 https://x.com/BigVeks/status/2095857678534795378
 https://x.com/BleacherReport/status/2096227598846341556
 https://x.com/Broncos/status/2110896958433095695
@@ -1284,6 +1311,18 @@ https://x.com/NFL/status/2122113545580249133
 https://x.com/NFL/status/2122116412428701855
 https://x.com/NFL/status/2122117738961240194
 https://x.com/NFL/status/2122121595888316813
+https://x.com/NFL/status/2122139673267167257
+https://x.com/NFL/status/2122143727988957526
+https://x.com/NFL/status/2122145395493269839
+https://x.com/NFL/status/2122147723612975146
+https://x.com/NFL/status/2122154199114994162
+https://x.com/NFL/status/2122154821419667929
+https://x.com/NFL/status/2122160909707858120
+https://x.com/NFL/status/2122169336857317877
+https://x.com/NFL/status/2122174292997935134
+https://x.com/NFL/status/2122175102955778155
+https://x.com/NFL/status/2122177346577068074
+https://x.com/NFL/status/2122179831781847165
 https://x.com/NFLTDsVideos/status/2098243863588540602
 https://x.com/NFLTDsVideos/status/2099189736858419294
 https://x.com/NFLTDsVideos/status/2099201418368262610
@@ -1373,6 +1412,7 @@ https://x.com/NFLonFOX/status/2122086662641791385
 https://x.com/NFLonFOX/status/2122090829154287899
 https://x.com/NFLonFOX/status/2122091586444239328
 https://x.com/NFLonFOX/status/2122094361341251681
+https://x.com/NFLonFOX/status/2122162353345339445
 https://x.com/Nate_Tice/status/2095691914121265331
 https://x.com/NotJustFootball/status/2095953794605645913
 https://x.com/OwenGregorian/status/2096200858102813005
@@ -1462,6 +1502,7 @@ https://x.com/dallascowboys/status/2119501456373862533
 https://x.com/dallascowboys/status/2122095021704778212
 https://x.com/dallascowboys/status/2122117869391560931
 https://x.com/dallascowboys/status/2122121754768187689
+https://x.com/dallascowboys/status/2122126984851382757
 https://x.com/dawhitehousepod/status/2096011194247069748
 https://x.com/fantasyfocus/status/2095998338160108030
 https://x.com/gbellseattle/status/2095753484431933695
@@ -1470,6 +1511,8 @@ https://x.com/newheightshow/status/2095920685457494043
 https://x.com/nyjets/status/2119462241426706663
 https://x.com/packers/status/2122057861949788625
 https://x.com/rannyxkmj/status/2097884866348216770
+https://x.com/steelers/status/2122175082709549449
+https://x.com/steelers/status/2122179737820795372
 https://x.com/thescorechicago/status/2095861735408214076
 https://x.com/thomasrp93/status/2098032737227505686
 https://x.com/tomorrowsretro/status/2095987327738823036
