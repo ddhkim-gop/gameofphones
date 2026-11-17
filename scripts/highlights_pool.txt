@@ -484,6 +484,7 @@ https://www.espn.com/video/clip/_/id/50498452/burrow-throws-4-tds-bengals-blow-s
 https://www.espn.com/video/clip/_/id/50506563/justin-herbert-shows-elusiveness-rushing-td
 https://www.espn.com/video/clip/_/id/50506867/mark-andrews-amazing-snag-sets-king-henry-rushing-td
 https://www.espn.com/video/clip/_/id/50507150/omarion-hampton-plows-goal-line-chargers-td
+https://www.espn.com/video/clip/_/id/50507656/derrick-henry-2nd-rushing-td-pulls-ravens-closer
 https://www.youtube.com/shorts/-150A9vaDV0
 https://www.youtube.com/shorts/-JPJdRx4C7E
 https://www.youtube.com/shorts/-Prt969WqGo
@@ -582,7 +583,6 @@ https://www.youtube.com/shorts/Fuzh2uPo4AY
 https://www.youtube.com/shorts/FvdjEnK4yjM
 https://www.youtube.com/shorts/G2tOYPJ6sXs
 https://www.youtube.com/shorts/G93l1bu_KT4
-https://www.youtube.com/shorts/GI2NLJ7gl2Y
 https://www.youtube.com/shorts/GgLZp4Uxavw
 https://www.youtube.com/shorts/GoEVZAlu0GU
 https://www.youtube.com/shorts/GrdghAMkntE
@@ -925,17 +925,12 @@ https://x.com/Buccaneers/status/2108376259143098606
 https://x.com/Buccaneers/status/2108376949077021061
 https://x.com/Buccaneers/status/2108380136743539171
 https://x.com/Buccaneers/status/2108380304763236824
-https://x.com/Buccaneers/status/2119648603333402944
-https://x.com/Buccaneers/status/2119648748431118821
 https://x.com/BuffaloBills/status/2119938562112012396
-https://x.com/BuffaloBills/status/2119984341048537488
-https://x.com/BuffaloBills/status/2120004975103242403
 https://x.com/BuffaloBills/status/2120013199231664304
 https://x.com/BuffaloBills/status/2122057732488376770
 https://x.com/BuffaloBills/status/2122061373710422295
 https://x.com/BuffaloBills/status/2122070575602352469
 https://x.com/ChiSportsTracks/status/2095307339750404405
-https://x.com/ChicagoBears/status/2119650238877028825
 https://x.com/Chiefs/status/2122020144633327976
 https://x.com/Chiefs/status/2122035792558088327
 https://x.com/Chiefs/status/2122048070552559941
@@ -1040,8 +1035,6 @@ https://x.com/NFL/status/2110901632976232573
 https://x.com/NFL/status/2110911744725942454
 https://x.com/NFL/status/2110932117664284764
 https://x.com/NFL/status/2110933034966958420
-https://x.com/NFL/status/2119648725312172367
-https://x.com/NFL/status/2119650417973871049
 https://x.com/NFL/status/2119942503533338733
 https://x.com/NFL/status/2119960338498232547
 https://x.com/NFL/status/2119961160825065828
@@ -1164,6 +1157,9 @@ https://x.com/NFL/status/2122520856371065124
 https://x.com/NFL/status/2122531386083115275
 https://x.com/NFL/status/2122535723744321900
 https://x.com/NFL/status/2122536203807584494
+https://x.com/NFL/status/2122542654269608136
+https://x.com/NFL/status/2122546254660173945
+https://x.com/NFL/status/2122550638005612605
 https://x.com/NFLTDsVideos/status/2098243863588540602
 https://x.com/NFLTDsVideos/status/2099189736858419294
 https://x.com/NFLTDsVideos/status/2099201418368262610
@@ -1247,6 +1243,7 @@ https://x.com/NFLonFOX/status/2122090829154287899
 https://x.com/NFLonFOX/status/2122091586444239328
 https://x.com/NFLonFOX/status/2122094361341251681
 https://x.com/NFLonFOX/status/2122162353345339445
+https://x.com/NFLonFOX/status/2122352986479632735
 https://x.com/Nate_Tice/status/2095691914121265331
 https://x.com/NotJustFootball/status/2095953794605645913
 https://x.com/OwenGregorian/status/2096200858102813005
