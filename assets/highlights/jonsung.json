@@ -1,8 +1,29 @@
 {
   "team": "jonsung",
-  "updated": "2026-11-16",
+  "updated": "2026-11-17",
   "note": "Curated: X has no public search API, so posts are collected by hand and matched to rosters by this script.",
   "tweets": [
+    {
+      "url": "https://x.com/Ravens/status/2122511512967258439",
+      "player": "Derrick Henry",
+      "meta": "RB \u00b7 BAL",
+      "date": "2026-11-17",
+      "author": "Ravens",
+      "text": "TOUCHDOWN @KingHenry_2!!! Tune in on ESPN!!",
+      "verified": true,
+      "faves": 793,
+      "secs": 24,
+      "game_id": "401873065",
+      "game_time": "Q2 12:33",
+      "play_key": "401873065:4018730651240",
+      "played_at": "2026-11-17T02:04:23Z",
+      "poster": "https://pbs.twimg.com/amplify_video_thumb/2122511367328432128/img/-a7u0bbJFevRk6z8.jpg",
+      "published": "2026-11-17T02:05:53Z",
+      "video": "https://video.twimg.com/amplify_video/2122511367328432128/vid/avc1/1920x1080/-PAaJhYgC25AjI-D.mp4",
+      "author_name": "Baltimore Ravens",
+      "avatar": "https://pbs.twimg.com/profile_images/1994466436266225664/05ma1sy0_normal.jpg",
+      "author_verified": true
+    },
     {
       "url": "https://x.com/dallascowboys/status/2122117869391560931",
       "player": "George Pickens",
@@ -283,6 +304,23 @@
       "video": "https://video.twimg.com/amplify_video/2119985116718276608/vid/avc1/1920x1080/A60Y4HnM0Q52U7TY.mp4",
       "author_name": "NFL",
       "avatar": "https://pbs.twimg.com/profile_images/1619895559334273028/PHKS_mjX_normal.jpg",
+      "author_verified": true
+    },
+    {
+      "url": "https://www.youtube.com/shorts/G93l1bu_KT4",
+      "player": "Isaiah Likely",
+      "meta": "TE \u00b7 NYG",
+      "date": "2026-11-16",
+      "author": "NYGiants",
+      "text": "\ud83c\udf99\ufe0f \"3rd & Likely again!\" #newyorkgiants #nfl #shorts #radiocall #isaiahlikely #highlights #football",
+      "verified": false,
+      "faves": 376,
+      "secs": 19,
+      "poster": "https://i.ytimg.com/vi/G93l1bu_KT4/hqdefault.jpg",
+      "published": "2026-11-16T16:53:15Z",
+      "youtube": "G93l1bu_KT4",
+      "author_name": "New York Giants",
+      "avatar": "",
       "author_verified": true
     },
     {

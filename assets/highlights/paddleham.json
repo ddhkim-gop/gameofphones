@@ -1,8 +1,27 @@
 {
   "team": "paddleham",
-  "updated": "2026-11-16",
+  "updated": "2026-11-17",
   "note": "Curated: X has no public search API, so posts are collected by hand and matched to rosters by this script.",
   "tweets": [
+    {
+      "url": "https://www.espn.com/video/clip/_/id/50507150/omarion-hampton-plows-goal-line-chargers-td",
+      "player": "Omarion Hampton",
+      "meta": "RB \u00b7 LAC",
+      "date": "2026-11-17",
+      "author": "ESPN",
+      "text": "Omarion Hampton plows across the goal line for a Chargers TD",
+      "verified": true,
+      "faves": 0,
+      "secs": 0,
+      "espn_game": "401873065",
+      "game_id": "401873065",
+      "game_time": "Q2 1:56",
+      "play_key": "401873065:4018730651805",
+      "played_at": "2026-11-17T02:29:27Z",
+      "poster": "https://espnmedia-cdn.akamaized.net/espn/media/common/2026/1116/acdf85a9dd0544ea85805dbdfb17d37b1306/acdf85a9dd0544ea85805dbdfb17d37b1306.jpg",
+      "published": "2026-11-17T02:39:38Z",
+      "video": "https://espnmedia-cdn.akamaized.net/espn/media/16x9/wsc/2026/1117/acdf85a9-dd05-44ea-8580-5dbdfb17d37b/acdf85a9-dd05-44ea-8580-5dbdfb17d37b.mp4"
+    },
     {
       "url": "https://x.com/NFL/status/2122160909707858120",
       "player": "Dohnte Meyers",

@@ -1,8 +1,27 @@
 {
   "team": "ddhk",
-  "updated": "2026-11-16",
+  "updated": "2026-11-17",
   "note": "Curated: X has no public search API, so posts are collected by hand and matched to rosters by this script.",
   "tweets": [
+    {
+      "url": "https://www.espn.com/video/clip/_/id/50506563/justin-herbert-shows-elusiveness-rushing-td",
+      "player": "Justin Herbert",
+      "meta": "QB \u00b7 LAC",
+      "date": "2026-11-17",
+      "author": "ESPN",
+      "text": "Justin Herbert shows off his elusiveness with a rushing TD. Justin Herbert shows off his elusiveness with a rushing TD ",
+      "verified": true,
+      "faves": 0,
+      "secs": 0,
+      "espn_game": "401873065",
+      "game_id": "401873065",
+      "game_time": "Q1 10:39",
+      "play_key": "401873065:401873065309",
+      "played_at": "2026-11-17T01:23:17Z",
+      "poster": "https://espnmedia-cdn.akamaized.net/espn/media/common/2026/1116/b8968a19477646249f0ec25dc285545f1268/b8968a19477646249f0ec25dc285545f1268.jpg",
+      "published": "2026-11-17T01:32:31Z",
+      "video": "https://espnmedia-cdn.akamaized.net/espn/media/16x9/wsc/2026/1117/b8968a19-4776-4624-9f0e-c25dc285545f/b8968a19-4776-4624-9f0e-c25dc285545f.mp4"
+    },
     {
       "url": "https://x.com/dallascowboys/status/2122126984851382757",
       "player": "CeeDee Lamb",
@@ -311,25 +330,6 @@
       "author_name": "Buffalo Bills",
       "avatar": "",
       "author_verified": true
-    },
-    {
-      "url": "https://www.espn.com/video/clip/_/id/50428420/luther-burden-iii-outruns-defense-56-yard-bears-td",
-      "player": "Luther Burden III",
-      "meta": "WR \u00b7 CHI",
-      "date": "2026-11-09",
-      "author": "ESPN",
-      "text": "Luther Burden III outruns defense for 56-yard Bears TD",
-      "verified": true,
-      "faves": 0,
-      "secs": 0,
-      "espn_game": "401873050",
-      "game_id": "401873050",
-      "game_time": "Q1 6:00",
-      "play_key": "401873050:401873050546",
-      "played_at": "2026-11-09T01:42:41Z",
-      "poster": "https://espnmedia-cdn.akamaized.net/espn/media/common/2026/1108/cfd2746e38694f7a95d7db075e6e77cd1327/cfd2746e38694f7a95d7db075e6e77cd1327.jpg",
-      "published": "2026-11-09T01:56:45Z",
-      "video": "https://espnmedia-cdn.akamaized.net/espn/media/16x9/wsc/2026/1109/cfd2746e-3869-4f7a-95d7-db075e6e77cd/cfd2746e-3869-4f7a-95d7-db075e6e77cd.mp4"
     },
     {
       "url": "https://www.espn.com/video/clip/_/id/50491725/travis-hunter-comes-slick-int-jaguars",
