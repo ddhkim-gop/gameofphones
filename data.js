@@ -5841,6 +5841,22 @@ window.__STATIC_DATA__ = {
                 "search_rank": 572
             },
             {
+                "player_id": "13075",
+                "espn_id": null,
+                "name": "Myles Price",
+                "position": "WR",
+                "team": "MIN",
+                "age": 24,
+                "birth_date": "2001-12-16",
+                "college": "Indiana",
+                "height": "69",
+                "weight": "183",
+                "years_exp": 1,
+                "status": "Active",
+                "injury_status": null,
+                "search_rank": 700
+            },
+            {
                 "player_id": "13338",
                 "espn_id": null,
                 "name": "Kevin Coleman Jr.",
@@ -6079,22 +6095,6 @@ window.__STATIC_DATA__ = {
                 "status": "Active",
                 "injury_status": null,
                 "search_rank": 288
-            },
-            {
-                "player_id": "7562",
-                "espn_id": null,
-                "name": "Tutu Atwell",
-                "position": "WR",
-                "team": "LAR",
-                "age": 27,
-                "birth_date": "1999-10-07",
-                "college": "Louisville",
-                "height": "69",
-                "weight": "165",
-                "years_exp": 5,
-                "status": "Active",
-                "injury_status": null,
-                "search_rank": 691
             },
             {
                 "player_id": "7594",
@@ -9757,7 +9757,7 @@ window.__STATIC_DATA__ = {
                 "weight": "185",
                 "years_exp": 2,
                 "status": "Active",
-                "injury_status": null,
+                "injury_status": "Questionable",
                 "search_rank": 650
             },
             {
@@ -11652,6 +11652,34 @@ window.__STATIC_DATA__ = {
     }
   ],
   "transactions": [
+    {
+        "season": "2026",
+        "week": 11,
+        "created": "Nov 18, 2026 • 5:59 AM PT",
+        "transaction_id": "1428780797795516416",
+        "type": "free_agent",
+        "status": "complete",
+        "teams": [
+            "spiffster"
+        ],
+        "added": [
+            {
+                "name": "Myles Price",
+                "position": "WR",
+                "team": "MIN"
+            }
+        ],
+        "dropped": [
+            {
+                "name": "Tutu Atwell",
+                "position": "WR",
+                "team": "LAR"
+            }
+        ],
+        "faab": 0,
+        "waiver_bid": 0,
+        "notes": null
+    },
     {
         "season": "2026",
         "week": 10,
@@ -14639,7 +14667,7 @@ window.__STATIC_DATA__ = {
             {
                 "name": "Harrison Mevis",
                 "position": "K",
-                "team": "BAL"
+                "team": null
             }
         ],
         "faab": 0,
@@ -17700,7 +17728,7 @@ window.__STATIC_DATA__ = {
             {
                 "name": "Harrison Mevis",
                 "position": "K",
-                "team": "BAL"
+                "team": null
             }
         ],
         "dropped": [],
