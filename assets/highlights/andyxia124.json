@@ -1,6 +1,6 @@
 {
   "team": "andyxia124",
-  "updated": "2026-11-17",
+  "updated": "2026-11-18",
   "note": "Curated: X has no public search API, so posts are collected by hand and matched to rosters by this script.",
   "tweets": [
     {
@@ -242,6 +242,21 @@
       "poster": "https://espnmedia-cdn.akamaized.net/espn/media/common/2026/1116/74ad0265b99e49bf87d4996ecf86a56a1286/74ad0265b99e49bf87d4996ecf86a56a1286.jpg",
       "published": "2026-11-17T02:12:34Z",
       "video": "https://espnmedia-cdn.akamaized.net/espn/media/16x9/wsc/2026/1117/74ad0265-b99e-49bf-87d4-996ecf86a56a/74ad0265-b99e-49bf-87d4-996ecf86a56a.mp4"
+    },
+    {
+      "url": "https://www.espn.com/video/clip/_/id/50507821/rashod-bateman-makes-amazing-grab-traffic",
+      "player": "Lamar Jackson",
+      "meta": "QB \u00b7 BAL",
+      "date": "2026-11-17",
+      "author": "ESPN",
+      "text": "Rashod Bateman makes an amazing grab in traffic. Rashod Bateman makes an amazing grab in traffic  ",
+      "verified": true,
+      "faves": 0,
+      "secs": 0,
+      "espn_game": "401873065",
+      "poster": "https://espnmedia-cdn.akamaized.net/espn/media/common/2026/1116/5623b86dcf6e4033a964c89780e2a0571425/5623b86dcf6e4033a964c89780e2a0571425.jpg",
+      "published": "2026-11-17T04:37:29Z",
+      "video": "https://espnmedia-cdn.akamaized.net/espn/media/16x9/wsc/2026/1117/5623b86d-cf6e-4033-a964-c89780e2a057/5623b86d-cf6e-4033-a964-c89780e2a057.mp4"
     },
     {
       "url": "https://www.espn.com/video/clip/_/id/50491809/travis-kelce-exits-game-getting-taken-down",

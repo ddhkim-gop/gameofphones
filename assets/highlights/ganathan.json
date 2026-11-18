@@ -1,6 +1,6 @@
 {
   "team": "ganathan",
-  "updated": "2026-11-17",
+  "updated": "2026-11-18",
   "note": "Curated: X has no public search API, so posts are collected by hand and matched to rosters by this script.",
   "tweets": [
     {
@@ -320,6 +320,53 @@
       "author_name": "NFL",
       "avatar": "https://pbs.twimg.com/profile_images/1619895559334273028/PHKS_mjX_normal.jpg",
       "author_verified": true
+    },
+    {
+      "url": "https://www.youtube.com/shorts/cqkMsEmOPpI",
+      "player": "Harold Fannin Jr.",
+      "meta": "TE \u00b7 CLE",
+      "date": "2026-11-17",
+      "author": "Browns",
+      "text": "Another angry Fannin run",
+      "verified": false,
+      "faves": 290,
+      "secs": 76,
+      "poster": "https://i.ytimg.com/vi/cqkMsEmOPpI/hqdefault.jpg",
+      "published": "2026-11-17T22:35:30Z",
+      "youtube": "cqkMsEmOPpI",
+      "author_name": "Cleveland Browns",
+      "avatar": "",
+      "author_verified": true
+    },
+    {
+      "url": "https://www.espn.com/video/clip/_/id/50507817/justice-hill-breaks-free-big-ravens-1st-down",
+      "player": "Justice Hill",
+      "meta": "RB \u00b7 BAL",
+      "date": "2026-11-17",
+      "author": "ESPN",
+      "text": "Justice Hill breaks free for a big-time Ravens 1st down",
+      "verified": true,
+      "faves": 0,
+      "secs": 0,
+      "espn_game": "401873065",
+      "poster": "https://espnmedia-cdn.akamaized.net/espn/media/common/2026/1116/ff5010be88994a578b9d7401f67df07f1424/ff5010be88994a578b9d7401f67df07f1424.jpg",
+      "published": "2026-11-17T04:36:43Z",
+      "video": "https://espnmedia-cdn.akamaized.net/espn/media/16x9/wsc/2026/1117/ff5010be-8899-4a57-8b9d-7401f67df07f/ff5010be-8899-4a57-8b9d-7401f67df07f.mp4"
+    },
+    {
+      "url": "https://www.espn.com/video/clip/_/id/50507821/rashod-bateman-makes-amazing-grab-traffic",
+      "player": "Rashod Bateman",
+      "meta": "WR \u00b7 BAL",
+      "date": "2026-11-17",
+      "author": "ESPN",
+      "text": "Rashod Bateman makes an amazing grab in traffic. Rashod Bateman makes an amazing grab in traffic  ",
+      "verified": true,
+      "faves": 0,
+      "secs": 0,
+      "espn_game": "401873065",
+      "poster": "https://espnmedia-cdn.akamaized.net/espn/media/common/2026/1116/5623b86dcf6e4033a964c89780e2a0571425/5623b86dcf6e4033a964c89780e2a0571425.jpg",
+      "published": "2026-11-17T04:37:29Z",
+      "video": "https://espnmedia-cdn.akamaized.net/espn/media/16x9/wsc/2026/1117/5623b86d-cf6e-4033-a964-c89780e2a057/5623b86d-cf6e-4033-a964-c89780e2a057.mp4"
     }
   ]
 }

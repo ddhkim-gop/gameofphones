@@ -3939,9 +3939,21 @@
   "game_time": "Q4 10:23",
   "play_key": "401873065:4018730653461",
   "played_at": "2026-11-17T03:48:50Z",
-  "poster": "https://espnmedia-cdn.akamaized.net/espn/media/common/wsc/2026/1117/4e412606-6b22-4382-bbef-9b456ee2bf66/4e412606-6b22-4382-bbef-9b456ee2bf66.jpg",
+  "poster": "https://espnmedia-cdn.akamaized.net/espn/media/common/2026/1116/4e4126066b224382bbef9b456ee2bf661429/4e4126066b224382bbef9b456ee2bf661429.jpg",
   "published": "2026-11-17T03:56:52Z",
   "video": "https://espnmedia-cdn.akamaized.net/espn/media/16x9/wsc/2026/1117/4e412606-6b22-4382-bbef-9b456ee2bf66/4e412606-6b22-4382-bbef-9b456ee2bf66.mp4"
+ },
+ "https://www.espn.com/video/clip/_/id/50507817/justice-hill-breaks-free-big-ravens-1st-down": {
+  "espn_game": "401873065",
+  "poster": "https://espnmedia-cdn.akamaized.net/espn/media/common/2026/1116/ff5010be88994a578b9d7401f67df07f1424/ff5010be88994a578b9d7401f67df07f1424.jpg",
+  "published": "2026-11-17T04:36:43Z",
+  "video": "https://espnmedia-cdn.akamaized.net/espn/media/16x9/wsc/2026/1117/ff5010be-8899-4a57-8b9d-7401f67df07f/ff5010be-8899-4a57-8b9d-7401f67df07f.mp4"
+ },
+ "https://www.espn.com/video/clip/_/id/50507821/rashod-bateman-makes-amazing-grab-traffic": {
+  "espn_game": "401873065",
+  "poster": "https://espnmedia-cdn.akamaized.net/espn/media/common/2026/1116/5623b86dcf6e4033a964c89780e2a0571425/5623b86dcf6e4033a964c89780e2a0571425.jpg",
+  "published": "2026-11-17T04:37:29Z",
+  "video": "https://espnmedia-cdn.akamaized.net/espn/media/16x9/wsc/2026/1117/5623b86d-cf6e-4033-a964-c89780e2a057/5623b86d-cf6e-4033-a964-c89780e2a057.mp4"
  },
  "https://www.youtube.com/shorts/-150A9vaDV0": {
   "poster": "https://i.ytimg.com/vi/-150A9vaDV0/hqdefault.jpg",
@@ -4414,6 +4426,11 @@
   "published": "2026-10-25T18:06:11Z",
   "youtube": "46LOhrADqYc"
  },
+ "https://www.youtube.com/shorts/471Q_g0GJ8k": {
+  "poster": "https://i.ytimg.com/vi/471Q_g0GJ8k/hqdefault.jpg",
+  "published": "2026-11-17T17:38:22Z",
+  "youtube": "471Q_g0GJ8k"
+ },
  "https://www.youtube.com/shorts/47oizF9bIdU": {
   "poster": "https://i.ytimg.com/vi/47oizF9bIdU/hqdefault.jpg",
   "published": "2026-10-27T01:25:56Z",
@@ -4494,6 +4511,11 @@
   "poster": "https://i.ytimg.com/vi/4hmDSAWa56E/hqdefault.jpg",
   "published": "2026-11-08T19:53:26Z",
   "youtube": "4hmDSAWa56E"
+ },
+ "https://www.youtube.com/shorts/4jTjAk-N0OY": {
+  "poster": "https://i.ytimg.com/vi/4jTjAk-N0OY/hqdefault.jpg",
+  "published": "2026-11-17T19:00:29Z",
+  "youtube": "4jTjAk-N0OY"
  },
  "https://www.youtube.com/shorts/4tcsd6fljT4": {
   "poster": "https://i.ytimg.com/vi/4tcsd6fljT4/hqdefault.jpg",
@@ -4889,6 +4911,11 @@
   "poster": "https://i.ytimg.com/vi/8um1qJ2lPFI/hqdefault.jpg",
   "published": "2026-10-11T16:50:05Z",
   "youtube": "8um1qJ2lPFI"
+ },
+ "https://www.youtube.com/shorts/8y12eHI0brg": {
+  "poster": "https://i.ytimg.com/vi/8y12eHI0brg/hqdefault.jpg",
+  "published": "2026-11-17T17:00:35Z",
+  "youtube": "8y12eHI0brg"
  },
  "https://www.youtube.com/shorts/8z21FF6sHVk": {
   "poster": "https://i.ytimg.com/vi/8z21FF6sHVk/hqdefault.jpg",
@@ -5679,6 +5706,11 @@
   "published": "2026-10-25T22:37:35Z",
   "youtube": "GxpnQScVLJE"
  },
+ "https://www.youtube.com/shorts/H1GCsGuYqf4": {
+  "poster": "https://i.ytimg.com/vi/H1GCsGuYqf4/hqdefault.jpg",
+  "published": "2026-11-17T21:00:33Z",
+  "youtube": "H1GCsGuYqf4"
+ },
  "https://www.youtube.com/shorts/H23u8KHsbhY": {
   "poster": "https://i.ytimg.com/vi/H23u8KHsbhY/hqdefault.jpg",
   "published": "2026-11-16T15:45:01Z",
@@ -5744,6 +5776,11 @@
   "poster": "https://i.ytimg.com/vi/HW9qBbvE87E/hqdefault.jpg",
   "published": "2026-10-10T15:00:25Z",
   "youtube": "HW9qBbvE87E"
+ },
+ "https://www.youtube.com/shorts/HWFcTdMKIm8": {
+  "poster": "https://i.ytimg.com/vi/HWFcTdMKIm8/hqdefault.jpg",
+  "published": "2026-11-17T21:30:22Z",
+  "youtube": "HWFcTdMKIm8"
  },
  "https://www.youtube.com/shorts/HY3u4bzvYd4": {
   "poster": "https://i.ytimg.com/vi/HY3u4bzvYd4/hqdefault.jpg",
@@ -5960,6 +5997,11 @@
   "poster": "https://i.ytimg.com/vi/JZ-f9Yig-F4/hqdefault.jpg",
   "published": "2026-10-02T20:46:50Z",
   "youtube": "JZ-f9Yig-F4"
+ },
+ "https://www.youtube.com/shorts/JeumY2QKpjw": {
+  "poster": "https://i.ytimg.com/vi/JeumY2QKpjw/hqdefault.jpg",
+  "published": "2026-11-18T00:55:56Z",
+  "youtube": "JeumY2QKpjw"
  },
  "https://www.youtube.com/shorts/JfRgq8G2bBw": {
   "poster": "https://i.ytimg.com/vi/JfRgq8G2bBw/hqdefault.jpg",
@@ -6382,6 +6424,11 @@
   "poster": "https://i.ytimg.com/vi/OF7EE8wQm_E/hqdefault.jpg",
   "published": "2026-10-04T21:01:28Z",
   "youtube": "OF7EE8wQm_E"
+ },
+ "https://www.youtube.com/shorts/OFFED34e-7M": {
+  "poster": "https://i.ytimg.com/vi/OFFED34e-7M/hqdefault.jpg",
+  "published": "2026-11-17T21:42:38Z",
+  "youtube": "OFFED34e-7M"
  },
  "https://www.youtube.com/shorts/OFJR3XdrcUU": {
   "poster": "https://i.ytimg.com/vi/OFJR3XdrcUU/hqdefault.jpg",
@@ -7615,6 +7662,11 @@
   "published": "2026-10-25T18:51:36Z",
   "youtube": "amvmMpf3qpg"
  },
+ "https://www.youtube.com/shorts/apPNGlazFKM": {
+  "poster": "https://i.ytimg.com/vi/apPNGlazFKM/hqdefault.jpg",
+  "published": "2026-11-17T19:00:15Z",
+  "youtube": "apPNGlazFKM"
+ },
  "https://www.youtube.com/shorts/asXR2t7MC8A": {
   "poster": "https://i.ytimg.com/vi/asXR2t7MC8A/hqdefault.jpg",
   "published": "2026-11-16T01:04:16Z",
@@ -7805,6 +7857,11 @@
   "poster": "https://i.ytimg.com/vi/cn50RiEL1gI/hqdefault.jpg",
   "published": "2026-10-11T16:15:05Z",
   "youtube": "cn50RiEL1gI"
+ },
+ "https://www.youtube.com/shorts/cqkMsEmOPpI": {
+  "poster": "https://i.ytimg.com/vi/cqkMsEmOPpI/hqdefault.jpg",
+  "published": "2026-11-17T22:35:30Z",
+  "youtube": "cqkMsEmOPpI"
  },
  "https://www.youtube.com/shorts/csmdgIJLu64": {
   "poster": "https://i.ytimg.com/vi/csmdgIJLu64/hqdefault.jpg",
@@ -8538,6 +8595,11 @@
   "poster": "https://i.ytimg.com/vi/kXiEugPvWJ4/hqdefault.jpg",
   "published": "2026-11-01T23:45:27Z",
   "youtube": "kXiEugPvWJ4"
+ },
+ "https://www.youtube.com/shorts/kXwEw95oCQ4": {
+  "poster": "https://i.ytimg.com/vi/kXwEw95oCQ4/hqdefault.jpg",
+  "published": "2026-11-17T18:24:12Z",
+  "youtube": "kXwEw95oCQ4"
  },
  "https://www.youtube.com/shorts/kYbsk1C-CQE": {
   "poster": "https://i.ytimg.com/vi/kYbsk1C-CQE/hqdefault.jpg",
@@ -9764,6 +9826,11 @@
   "published": "2026-10-25T15:58:41Z",
   "youtube": "xVcbYK9LT18"
  },
+ "https://www.youtube.com/shorts/xVxa6HMdTt0": {
+  "poster": "https://i.ytimg.com/vi/xVxa6HMdTt0/hqdefault.jpg",
+  "published": "2026-11-17T21:00:37Z",
+  "youtube": "xVxa6HMdTt0"
+ },
  "https://www.youtube.com/shorts/xafut2NyiaY": {
   "game_id": "401872964",
   "game_time": "Q2 1:22",
@@ -9806,6 +9873,11 @@
   "poster": "https://i.ytimg.com/vi/xwUccKganlc/hqdefault.jpg",
   "published": "2026-10-11T16:50:24Z",
   "youtube": "xwUccKganlc"
+ },
+ "https://www.youtube.com/shorts/xz4V8moVkRA": {
+  "poster": "https://i.ytimg.com/vi/xz4V8moVkRA/hqdefault.jpg",
+  "published": "2026-11-17T19:30:01Z",
+  "youtube": "xz4V8moVkRA"
  },
  "https://www.youtube.com/shorts/y1ApptrKlPE": {
   "poster": "https://i.ytimg.com/vi/y1ApptrKlPE/hqdefault.jpg",

@@ -1,6 +1,6 @@
 {
   "team": "ddhk",
-  "updated": "2026-11-17",
+  "updated": "2026-11-18",
   "note": "Curated: X has no public search API, so posts are collected by hand and matched to rosters by this script.",
   "tweets": [
     {
@@ -309,25 +309,6 @@
       "author_name": "NFL",
       "avatar": "https://pbs.twimg.com/profile_images/1619895559334273028/PHKS_mjX_normal.jpg",
       "author_verified": true
-    },
-    {
-      "url": "https://www.espn.com/video/clip/_/id/50439289/james-cook-iii-cooks-dive-end-zone-bills-td",
-      "player": "James Cook III",
-      "meta": "RB \u00b7 BUF",
-      "date": "2026-11-10",
-      "author": "ESPN",
-      "text": "James Cook III cooks up a dive into the end zone for Bills TD. James Cook III cooks up a dive into the end zone for Bills TD  ",
-      "verified": true,
-      "faves": 0,
-      "secs": 0,
-      "espn_game": "401873051",
-      "game_id": "401873051",
-      "game_time": "Q4 6:17",
-      "play_key": "401873051:4018730513698",
-      "played_at": "2026-11-10T04:04:23Z",
-      "poster": "https://espnmedia-cdn.akamaized.net/espn/media/common/2026/1109/16f7045f16bf4794b80839f530afa3d91398/16f7045f16bf4794b80839f530afa3d91398.jpg",
-      "published": "2026-11-10T04:14:05Z",
-      "video": "https://espnmedia-cdn.akamaized.net/espn/media/16x9/wsc/2026/1110/16f7045f-16bf-4794-b808-39f530afa3d9/16f7045f-16bf-4794-b808-39f530afa3d9.mp4"
     },
     {
       "url": "https://www.espn.com/video/clip/_/id/50491725/travis-hunter-comes-slick-int-jaguars",
