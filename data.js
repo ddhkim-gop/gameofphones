@@ -8244,7 +8244,7 @@ window.__STATIC_DATA__ = {
                 "name": "Caleb Williams",
                 "position": "QB",
                 "team": "CHI",
-                "age": 24,
+                "age": 25,
                 "birth_date": "2001-11-18",
                 "college": "USC",
                 "height": "73",
