@@ -1,6 +1,6 @@
 {
   "team": "IconicJH",
-  "updated": "2026-11-18",
+  "updated": "2026-11-19",
   "note": "Curated: X has no public search API, so posts are collected by hand and matched to rosters by this script.",
   "tweets": [
     {
@@ -165,6 +165,27 @@
       "video": "https://video.twimg.com/amplify_video/2122043509318483968/vid/avc1/1920x1080/cztLZk19eA21iL8r.mp4",
       "author_name": "NFL",
       "avatar": "https://pbs.twimg.com/profile_images/1619895559334273028/PHKS_mjX_normal.jpg",
+      "author_verified": true
+    },
+    {
+      "url": "https://x.com/Patriots/status/2122013877386797199",
+      "player": "Tommy DeVito",
+      "meta": "QB \u00b7 NE",
+      "date": "2026-11-15",
+      "author": "Patriots",
+      "text": "First career TD for Lan Larison.\n\n\ud83d\udcfa FOX",
+      "verified": true,
+      "faves": 554,
+      "secs": 10,
+      "game_id": "401873053",
+      "game_time": "Q4 12:40",
+      "play_key": "401873053:4018730533528",
+      "played_at": "2026-11-15T17:07:24Z",
+      "poster": "https://pbs.twimg.com/amplify_video_thumb/2122013723472613376/img/zFDKNT8STueaem2h.jpg",
+      "published": "2026-11-15T17:08:28Z",
+      "video": "https://video.twimg.com/amplify_video/2122013723472613376/vid/avc1/1920x1080/TJWcpQXa2VL8Njho.mp4",
+      "author_name": "New England Patriots",
+      "avatar": "",
       "author_verified": true
     },
     {
