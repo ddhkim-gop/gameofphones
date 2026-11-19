@@ -5382,8 +5382,8 @@ window.__STATIC_DATA__ = {
                 "height": "75",
                 "weight": "240",
                 "years_exp": 0,
-                "status": "Inactive",
-                "injury_status": "IR",
+                "status": "Active",
+                "injury_status": null,
                 "search_rank": 411
             },
             {
@@ -5693,7 +5693,7 @@ window.__STATIC_DATA__ = {
                 "weight": "224",
                 "years_exp": 3,
                 "status": "Active",
-                "injury_status": null,
+                "injury_status": "Questionable",
                 "search_rank": 127
             },
             {
@@ -5725,7 +5725,7 @@ window.__STATIC_DATA__ = {
                 "weight": "246",
                 "years_exp": 3,
                 "status": "Active",
-                "injury_status": null,
+                "injury_status": "Questionable",
                 "search_rank": 81
             },
             {
@@ -6061,7 +6061,7 @@ window.__STATIC_DATA__ = {
                 "weight": "200",
                 "years_exp": 7,
                 "status": "Active",
-                "injury_status": null,
+                "injury_status": "Questionable",
                 "search_rank": 77
             },
             {
@@ -6243,7 +6243,7 @@ window.__STATIC_DATA__ = {
                 "weight": "211",
                 "years_exp": 2,
                 "status": "Active",
-                "injury_status": null,
+                "injury_status": "Questionable",
                 "search_rank": 167
             },
             {
@@ -6380,7 +6380,7 @@ window.__STATIC_DATA__ = {
                 "name": "Carson Beck",
                 "position": "QB",
                 "team": "ARI",
-                "age": 23,
+                "age": 24,
                 "birth_date": "2002-11-19",
                 "college": "Miami (FL)",
                 "height": "76",
@@ -6777,7 +6777,7 @@ window.__STATIC_DATA__ = {
                 "weight": "207",
                 "years_exp": 1,
                 "status": "Active",
-                "injury_status": "Questionable",
+                "injury_status": null,
                 "search_rank": 61
             },
             {
@@ -7263,7 +7263,7 @@ window.__STATIC_DATA__ = {
                 "weight": "216",
                 "years_exp": 2,
                 "status": "Active",
-                "injury_status": null,
+                "injury_status": "Questionable",
                 "search_rank": 527
             },
             {
@@ -7379,22 +7379,6 @@ window.__STATIC_DATA__ = {
                 "search_rank": 550
             },
             {
-                "player_id": "13350",
-                "espn_id": null,
-                "name": "Joe Fagnano",
-                "position": "QB",
-                "team": "BAL",
-                "age": 25,
-                "birth_date": "2001-03-31",
-                "college": "UConn",
-                "height": "75",
-                "weight": "230",
-                "years_exp": 0,
-                "status": "Active",
-                "injury_status": null,
-                "search_rank": 656
-            },
-            {
                 "player_id": "13533",
                 "espn_id": null,
                 "name": "Barion Brown",
@@ -7425,6 +7409,22 @@ window.__STATIC_DATA__ = {
                 "status": "Active",
                 "injury_status": null,
                 "search_rank": 89
+            },
+            {
+                "player_id": "1837",
+                "espn_id": 16760,
+                "name": "Jimmy Garoppolo",
+                "position": "QB",
+                "team": null,
+                "age": 35,
+                "birth_date": "1991-11-02",
+                "college": "Eastern Illinois",
+                "height": "74",
+                "weight": "226",
+                "years_exp": 12,
+                "status": "Active",
+                "injury_status": null,
+                "search_rank": 219
             },
             {
                 "player_id": "4881",
@@ -7877,7 +7877,7 @@ window.__STATIC_DATA__ = {
                 "weight": "209",
                 "years_exp": 1,
                 "status": "Active",
-                "injury_status": null,
+                "injury_status": "Questionable",
                 "search_rank": 44
             },
             {
@@ -7957,7 +7957,7 @@ window.__STATIC_DATA__ = {
                 "weight": "208",
                 "years_exp": 0,
                 "status": "Active",
-                "injury_status": null,
+                "injury_status": "Questionable",
                 "search_rank": 199
             },
             {
@@ -8379,7 +8379,7 @@ window.__STATIC_DATA__ = {
                 "weight": "205",
                 "years_exp": 1,
                 "status": "Active",
-                "injury_status": "Questionable",
+                "injury_status": null,
                 "search_rank": 677
             },
             {
@@ -8667,7 +8667,7 @@ window.__STATIC_DATA__ = {
                 "weight": "212",
                 "years_exp": 6,
                 "status": "Active",
-                "injury_status": "Questionable",
+                "injury_status": null,
                 "search_rank": 123
             },
             {
@@ -8769,7 +8769,7 @@ window.__STATIC_DATA__ = {
                 "weight": "220",
                 "years_exp": 2,
                 "status": "Active",
-                "injury_status": "Questionable",
+                "injury_status": "Out",
                 "search_rank": 73
             },
             {
@@ -9057,7 +9057,7 @@ window.__STATIC_DATA__ = {
                 "weight": "238",
                 "years_exp": 11,
                 "status": "Active",
-                "injury_status": null,
+                "injury_status": "Questionable",
                 "search_rank": 357
             },
             {
@@ -9200,7 +9200,7 @@ window.__STATIC_DATA__ = {
                 "height": "71",
                 "weight": "179",
                 "years_exp": 3,
-                "status": "Inactive",
+                "status": "Active",
                 "injury_status": "Out",
                 "search_rank": 99
             }
@@ -9351,7 +9351,7 @@ window.__STATIC_DATA__ = {
                 "weight": "203",
                 "years_exp": 0,
                 "status": "Active",
-                "injury_status": null,
+                "injury_status": "Questionable",
                 "search_rank": 62
             },
             {
@@ -9479,7 +9479,7 @@ window.__STATIC_DATA__ = {
                 "weight": "208",
                 "years_exp": 0,
                 "status": "Active",
-                "injury_status": "Questionable",
+                "injury_status": null,
                 "search_rank": 527
             },
             {
@@ -9869,7 +9869,7 @@ window.__STATIC_DATA__ = {
                 "weight": "201",
                 "years_exp": 1,
                 "status": "Active",
-                "injury_status": null,
+                "injury_status": "Questionable",
                 "search_rank": 511
             },
             {
@@ -9917,7 +9917,7 @@ window.__STATIC_DATA__ = {
                 "weight": "230",
                 "years_exp": 0,
                 "status": "Active",
-                "injury_status": "Questionable",
+                "injury_status": null,
                 "search_rank": 466
             },
             {
@@ -10275,7 +10275,7 @@ window.__STATIC_DATA__ = {
                 "weight": "208",
                 "years_exp": 1,
                 "status": "Active",
-                "injury_status": "Doubtful",
+                "injury_status": "Out",
                 "search_rank": 105
             },
             {
@@ -10627,7 +10627,7 @@ window.__STATIC_DATA__ = {
                 "weight": "247",
                 "years_exp": 5,
                 "status": "Active",
-                "injury_status": null,
+                "injury_status": "Questionable",
                 "search_rank": 597
             },
             {
@@ -11097,7 +11097,7 @@ window.__STATIC_DATA__ = {
                 "weight": "220",
                 "years_exp": 5,
                 "status": "Active",
-                "injury_status": null,
+                "injury_status": "Questionable",
                 "search_rank": 400
             },
             {
@@ -11209,7 +11209,7 @@ window.__STATIC_DATA__ = {
                 "weight": "200",
                 "years_exp": 3,
                 "status": "Active",
-                "injury_status": null,
+                "injury_status": "Questionable",
                 "search_rank": 122
             }
         ]
@@ -11652,6 +11652,34 @@ window.__STATIC_DATA__ = {
     }
   ],
   "transactions": [
+    {
+        "season": "2026",
+        "week": 11,
+        "created": "Nov 18, 2026 • 1:58 PM PT",
+        "transaction_id": "1428901134239547392",
+        "type": "free_agent",
+        "status": "complete",
+        "teams": [
+            "andyxia124"
+        ],
+        "added": [
+            {
+                "name": "Jimmy Garoppolo",
+                "position": "QB",
+                "team": null
+            }
+        ],
+        "dropped": [
+            {
+                "name": "Joe Fagnano",
+                "position": "QB",
+                "team": "BAL"
+            }
+        ],
+        "faab": 0,
+        "waiver_bid": 0,
+        "notes": null
+    },
     {
         "season": "2026",
         "week": 11,
