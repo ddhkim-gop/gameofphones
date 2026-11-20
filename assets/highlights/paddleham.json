@@ -4,6 +4,25 @@
   "note": "Curated: X has no public search API, so posts are collected by hand and matched to rosters by this script.",
   "tweets": [
     {
+      "url": "https://www.espn.com/video/clip/_/id/50537202/cj-stroud-finds-marlin-klein-3rd-passing-td",
+      "player": "Marlin Klein",
+      "meta": "TE \u00b7 HOU",
+      "date": "2026-11-20",
+      "author": "ESPN",
+      "text": "Live on Prime Video: C.J. Stroud finds Marlin Klein for his 3rd passing TD",
+      "verified": true,
+      "faves": 0,
+      "secs": 0,
+      "espn_game": "401873066",
+      "game_id": "401873066",
+      "game_time": "Q3 4:19",
+      "play_key": "401873066:4018730662675",
+      "played_at": "2026-11-20T03:22:56Z",
+      "poster": "https://espnmedia-cdn.akamaized.net/espn/media/common/wsc/2026/1120/fddfb86a-75b8-404b-a3c0-b89329f7e12b/fddfb86a-75b8-404b-a3c0-b89329f7e12b.jpg",
+      "published": "2026-11-20T03:33:41Z",
+      "video": "https://espnmedia-cdn.akamaized.net/espn/media/16x9/wsc/2026/1120/fddfb86a-75b8-404b-a3c0-b89329f7e12b/fddfb86a-75b8-404b-a3c0-b89329f7e12b.mp4"
+    },
+    {
       "url": "https://www.espn.com/video/clip/_/id/50507150/omarion-hampton-plows-goal-line-chargers-td",
       "player": "Omarion Hampton",
       "meta": "RB \u00b7 LAC",
