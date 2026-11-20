@@ -6797,6 +6797,22 @@ window.__STATIC_DATA__ = {
                 "search_rank": 649
             },
             {
+                "player_id": "12700",
+                "espn_id": null,
+                "name": "Gavin Bartholomew",
+                "position": "TE",
+                "team": "MIN",
+                "age": 23,
+                "birth_date": "2003-04-30",
+                "college": "Pittsburgh",
+                "height": "77",
+                "weight": "249",
+                "years_exp": 1,
+                "status": "Active",
+                "injury_status": null,
+                "search_rank": 667
+            },
+            {
                 "player_id": "13324",
                 "espn_id": null,
                 "name": "Matt Hibner",
@@ -7083,22 +7099,6 @@ window.__STATIC_DATA__ = {
                 "status": "Active",
                 "injury_status": null,
                 "search_rank": 34
-            },
-            {
-                "player_id": "8116",
-                "espn_id": null,
-                "name": "Pierre Strong Jr.",
-                "position": "RB",
-                "team": "GB",
-                "age": 27,
-                "birth_date": "1998-12-10",
-                "college": "South Dakota State",
-                "height": "71",
-                "weight": "207",
-                "years_exp": 4,
-                "status": "Active",
-                "injury_status": "Out",
-                "search_rank": 631
             },
             {
                 "player_id": "8129",
@@ -9130,7 +9130,7 @@ window.__STATIC_DATA__ = {
                 "name": "Noah Fant",
                 "position": "TE",
                 "team": "NO",
-                "age": 28,
+                "age": 29,
                 "birth_date": "1997-11-20",
                 "college": "Iowa",
                 "height": "76",
@@ -11652,6 +11652,34 @@ window.__STATIC_DATA__ = {
     }
   ],
   "transactions": [
+    {
+        "season": "2026",
+        "week": 11,
+        "created": "Nov 19, 2026 • 3:49 PM PT",
+        "transaction_id": "1429291670045732864",
+        "type": "free_agent",
+        "status": "complete",
+        "teams": [
+            "jonsung"
+        ],
+        "added": [
+            {
+                "name": "Gavin Bartholomew",
+                "position": "TE",
+                "team": "MIN"
+            }
+        ],
+        "dropped": [
+            {
+                "name": "Pierre Strong Jr.",
+                "position": "RB",
+                "team": "GB"
+            }
+        ],
+        "faab": 0,
+        "waiver_bid": 0,
+        "notes": null
+    },
     {
         "season": "2026",
         "week": 11,
