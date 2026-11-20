@@ -5607,7 +5607,7 @@ window.__STATIC_DATA__ = {
                 "weight": "214",
                 "years_exp": 4,
                 "status": "Active",
-                "injury_status": null,
+                "injury_status": "Questionable",
                 "search_rank": 125
             },
             {
@@ -5671,7 +5671,7 @@ window.__STATIC_DATA__ = {
                 "weight": "206",
                 "years_exp": 3,
                 "status": "Active",
-                "injury_status": "Questionable",
+                "injury_status": "Out",
                 "search_rank": 203
             }
         ]
@@ -5693,7 +5693,7 @@ window.__STATIC_DATA__ = {
                 "weight": "224",
                 "years_exp": 3,
                 "status": "Active",
-                "injury_status": "Questionable",
+                "injury_status": null,
                 "search_rank": 125
             },
             {
@@ -5725,7 +5725,7 @@ window.__STATIC_DATA__ = {
                 "weight": "246",
                 "years_exp": 3,
                 "status": "Active",
-                "injury_status": "Questionable",
+                "injury_status": "Doubtful",
                 "search_rank": 81
             },
             {
@@ -6061,7 +6061,7 @@ window.__STATIC_DATA__ = {
                 "weight": "200",
                 "years_exp": 7,
                 "status": "Active",
-                "injury_status": "Questionable",
+                "injury_status": null,
                 "search_rank": 77
             },
             {
@@ -6243,7 +6243,7 @@ window.__STATIC_DATA__ = {
                 "weight": "211",
                 "years_exp": 2,
                 "status": "Active",
-                "injury_status": "Questionable",
+                "injury_status": null,
                 "search_rank": 167
             },
             {
@@ -6841,7 +6841,7 @@ window.__STATIC_DATA__ = {
                 "weight": "170",
                 "years_exp": 0,
                 "status": "Active",
-                "injury_status": "Questionable",
+                "injury_status": "Doubtful",
                 "search_rank": 508
             },
             {
@@ -6873,7 +6873,7 @@ window.__STATIC_DATA__ = {
                 "weight": "221",
                 "years_exp": 13,
                 "status": "Active",
-                "injury_status": "Questionable",
+                "injury_status": null,
                 "search_rank": 209
             },
             {
@@ -7177,7 +7177,7 @@ window.__STATIC_DATA__ = {
                 "weight": "211",
                 "years_exp": 4,
                 "status": "Active",
-                "injury_status": "Questionable",
+                "injury_status": "Out",
                 "search_rank": 17
             },
             {
@@ -7425,6 +7425,22 @@ window.__STATIC_DATA__ = {
                 "status": "Active",
                 "injury_status": null,
                 "search_rank": 219
+            },
+            {
+                "player_id": "260",
+                "espn_id": 11394,
+                "name": "Josh Johnson",
+                "position": "QB",
+                "team": "ARI",
+                "age": 40,
+                "birth_date": "1986-05-15",
+                "college": "San Diego",
+                "height": "74",
+                "weight": "201",
+                "years_exp": 18,
+                "status": "Active",
+                "injury_status": null,
+                "search_rank": 544
             },
             {
                 "player_id": "4881",
@@ -7877,7 +7893,7 @@ window.__STATIC_DATA__ = {
                 "weight": "209",
                 "years_exp": 1,
                 "status": "Active",
-                "injury_status": "Questionable",
+                "injury_status": null,
                 "search_rank": 44
             },
             {
@@ -7957,7 +7973,7 @@ window.__STATIC_DATA__ = {
                 "weight": "208",
                 "years_exp": 0,
                 "status": "Active",
-                "injury_status": "Questionable",
+                "injury_status": null,
                 "search_rank": 197
             },
             {
@@ -8101,7 +8117,7 @@ window.__STATIC_DATA__ = {
                 "weight": "225",
                 "years_exp": 4,
                 "status": "Active",
-                "injury_status": null,
+                "injury_status": "Questionable",
                 "search_rank": 679
             },
             {
@@ -8443,7 +8459,7 @@ window.__STATIC_DATA__ = {
                 "weight": "228",
                 "years_exp": 0,
                 "status": "Active",
-                "injury_status": "Questionable",
+                "injury_status": null,
                 "search_rank": 197
             },
             {
@@ -8571,7 +8587,7 @@ window.__STATIC_DATA__ = {
                 "weight": "190",
                 "years_exp": 0,
                 "status": "Active",
-                "injury_status": null,
+                "injury_status": "Questionable",
                 "search_rank": 365
             },
             {
@@ -9121,7 +9137,7 @@ window.__STATIC_DATA__ = {
                 "weight": "248",
                 "years_exp": 7,
                 "status": "Active",
-                "injury_status": "Questionable",
+                "injury_status": null,
                 "search_rank": 128
             },
             {
@@ -9351,7 +9367,7 @@ window.__STATIC_DATA__ = {
                 "weight": "203",
                 "years_exp": 0,
                 "status": "Active",
-                "injury_status": "Questionable",
+                "injury_status": null,
                 "search_rank": 62
             },
             {
@@ -9757,7 +9773,7 @@ window.__STATIC_DATA__ = {
                 "weight": "185",
                 "years_exp": 2,
                 "status": "Active",
-                "injury_status": "Questionable",
+                "injury_status": "Out",
                 "search_rank": 650
             },
             {
@@ -9869,7 +9885,7 @@ window.__STATIC_DATA__ = {
                 "weight": "201",
                 "years_exp": 1,
                 "status": "Active",
-                "injury_status": "Questionable",
+                "injury_status": null,
                 "search_rank": 511
             },
             {
@@ -10403,7 +10419,7 @@ window.__STATIC_DATA__ = {
                 "weight": "199",
                 "years_exp": 0,
                 "status": "Active",
-                "injury_status": "Questionable",
+                "injury_status": "Out",
                 "search_rank": 151
             },
             {
@@ -11655,6 +11671,28 @@ window.__STATIC_DATA__ = {
     {
         "season": "2026",
         "week": 11,
+        "created": "Nov 20, 2026 • 12:52 PM PT",
+        "transaction_id": "1429609432597159936",
+        "type": "free_agent",
+        "status": "complete",
+        "teams": [
+            "andyxia124"
+        ],
+        "added": [
+            {
+                "name": "Josh Johnson",
+                "position": "QB",
+                "team": "ARI"
+            }
+        ],
+        "dropped": [],
+        "faab": 0,
+        "waiver_bid": 0,
+        "notes": null
+    },
+    {
+        "season": "2026",
+        "week": 11,
         "created": "Nov 19, 2026 • 3:49 PM PT",
         "transaction_id": "1429291670045732864",
         "type": "free_agent",
@@ -11673,7 +11711,7 @@ window.__STATIC_DATA__ = {
             {
                 "name": "Pierre Strong Jr.",
                 "position": "RB",
-                "team": "GB"
+                "team": null
             }
         ],
         "faab": 0,
@@ -12189,7 +12227,7 @@ window.__STATIC_DATA__ = {
             {
                 "name": "Pierre Strong Jr.",
                 "position": "RB",
-                "team": "GB"
+                "team": null
             }
         ],
         "dropped": [
@@ -12464,7 +12502,7 @@ window.__STATIC_DATA__ = {
             {
                 "name": "Pierre Strong Jr.",
                 "position": "RB",
-                "team": "GB"
+                "team": null
             }
         ],
         "faab": 0,
@@ -13378,7 +13416,7 @@ window.__STATIC_DATA__ = {
             {
                 "name": "Pierre Strong Jr.",
                 "position": "RB",
-                "team": "GB"
+                "team": null
             }
         ],
         "dropped": [
@@ -16498,7 +16536,7 @@ window.__STATIC_DATA__ = {
         ],
         "dropped": [
             {
-                "name": "Gregory Desrosiers",
+                "name": "Gregory Desrosiers Jr.",
                 "position": "RB",
                 "team": "NYG"
             }
@@ -16647,7 +16685,7 @@ window.__STATIC_DATA__ = {
         ],
         "added": [
             {
-                "name": "Gregory Desrosiers",
+                "name": "Gregory Desrosiers Jr.",
                 "position": "RB",
                 "team": "NYG"
             }
