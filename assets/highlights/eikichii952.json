@@ -1,8 +1,29 @@
 {
   "team": "eikichii952",
-  "updated": "2026-11-19",
+  "updated": "2026-11-20",
   "note": "Curated: X has no public search API, so posts are collected by hand and matched to rosters by this script.",
   "tweets": [
+    {
+      "url": "https://x.com/NFL/status/2123592601635066091",
+      "player": "Daniel Jones",
+      "meta": "QB \u00b7 IND",
+      "date": "2026-11-20",
+      "author": "NFL",
+      "text": "Daniel Jones drops one into Watkins.\n\nINDvsHOU on Prime\nStream on @NFLPlus",
+      "verified": true,
+      "faves": 174,
+      "secs": 9,
+      "game_id": "401873066",
+      "game_time": "Q1 6:14",
+      "play_key": "401873066:401873066582",
+      "played_at": "2026-11-20T01:39:57Z",
+      "poster": "https://pbs.twimg.com/amplify_video_thumb/2123592351784546304/img/YozylOCBImnfOjmQ.jpg",
+      "published": "2026-11-20T01:41:45Z",
+      "video": "https://video.twimg.com/amplify_video/2123592351784546304/vid/avc1/1920x1080/G0RKtLH9G7DEjUOL.mp4",
+      "author_name": "NFL",
+      "avatar": "https://pbs.twimg.com/profile_images/1619895559334273028/PHKS_mjX_normal.jpg",
+      "author_verified": true
+    },
     {
       "url": "https://www.youtube.com/shorts/Y3y1P-FHeH0",
       "player": "Tyler Shough",

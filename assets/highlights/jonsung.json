@@ -1,6 +1,6 @@
 {
   "team": "jonsung",
-  "updated": "2026-11-19",
+  "updated": "2026-11-20",
   "note": "Curated: X has no public search API, so posts are collected by hand and matched to rosters by this script.",
   "tweets": [
     {
@@ -61,7 +61,7 @@
       "published": "2026-11-16T00:01:41Z",
       "video": "https://video.twimg.com/amplify_video/2122117688650530817/vid/avc1/1920x1080/kxJy34nHlwalel2K.mp4",
       "author_name": "Dallas Cowboys",
-      "avatar": "https://pbs.twimg.com/profile_images/2047411798953857024/QaW_Sgph_normal.jpg",
+      "avatar": "",
       "author_verified": true
     },
     {
@@ -82,7 +82,7 @@
       "published": "2026-11-15T22:30:54Z",
       "video": "https://video.twimg.com/amplify_video/2122094842750566401/vid/avc1/1920x1080/dX1KS_kOt3sLXhiU.mp4",
       "author_name": "Dallas Cowboys",
-      "avatar": "https://pbs.twimg.com/profile_images/2047411798953857024/QaW_Sgph_normal.jpg",
+      "avatar": "",
       "author_verified": true
     },
     {
@@ -107,24 +107,24 @@
       "author_verified": true
     },
     {
-      "url": "https://www.youtube.com/shorts/bA-i0exkvwc",
-      "player": "Kirk Cousins",
+      "url": "https://x.com/NFL/status/2122065633554886729",
+      "player": "Gavin Bartholomew & Kirk Cousins",
       "meta": "QB \u00b7 MIN",
       "date": "2026-11-15",
-      "author": "Vikings",
-      "text": "FIRST CAREER TOUCHDOWN FOR GAVIN BARTHOLOMEW \ud83d\ude24 | \ud83d\udcfa: NFL on FOX",
+      "author": "NFL",
+      "text": "Gavin Bartholomew's first NFL TD makes it a three-score game!\n\nMINvsGB on FOX/FOX One\nStream on @NFLPlus",
       "verified": true,
-      "faves": 313,
-      "secs": 22,
+      "faves": 868,
+      "secs": 11,
       "game_id": "401873060",
       "game_time": "Q4 8:29",
       "play_key": "401873060:4018730603568",
       "played_at": "2026-11-15T20:32:25Z",
-      "poster": "https://i.ytimg.com/vi/bA-i0exkvwc/hqdefault.jpg",
-      "published": "2026-11-15T20:40:52Z",
-      "youtube": "bA-i0exkvwc",
-      "author_name": "Minnesota Vikings",
-      "avatar": "",
+      "poster": "https://pbs.twimg.com/amplify_video_thumb/2122065370362380288/img/u0fTErFYCeF8eDaB.jpg",
+      "published": "2026-11-15T20:34:07Z",
+      "video": "https://video.twimg.com/amplify_video/2122065370362380288/vid/avc1/1920x1080/5bbC5ya1TynVeGR2.mp4",
+      "author_name": "NFL",
+      "avatar": "https://pbs.twimg.com/profile_images/1619895559334273028/PHKS_mjX_normal.jpg",
       "author_verified": true
     },
     {
