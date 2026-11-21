@@ -488,6 +488,7 @@ https://www.espn.com/video/clip/_/id/50507656/derrick-henry-2nd-rushing-td-pulls
 https://www.espn.com/video/clip/_/id/50507817/justice-hill-breaks-free-big-ravens-1st-down
 https://www.espn.com/video/clip/_/id/50507821/rashod-bateman-makes-amazing-grab-traffic
 https://www.espn.com/video/clip/_/id/50520478/can-vikings-make-super-bowl-run-kirk-cousins
+https://www.espn.com/video/clip/_/id/50536298/cj-stroud-fires-42-yard-dime-nico-collins-texans-td
 https://www.espn.com/video/clip/_/id/50536298/cj-stroud-fires-46-yard-dime-nico-collins-texans-td
 https://www.espn.com/video/clip/_/id/50536522/kayshon-boutte-rises-make-awesome-grab-texans-td
 https://www.espn.com/video/clip/_/id/50537202/cj-stroud-finds-marlin-klein-3rd-passing-td
@@ -504,7 +505,6 @@ https://www.youtube.com/shorts/1KOcKIo7uxY
 https://www.youtube.com/shorts/1ZD0ORcFDkw
 https://www.youtube.com/shorts/1cqp6lTmIXs
 https://www.youtube.com/shorts/1gWhMbfqwaY
-https://www.youtube.com/shorts/1kLu980MfSo
 https://www.youtube.com/shorts/1pslmhCQqa4
 https://www.youtube.com/shorts/1qmVS9R-qVQ
 https://www.youtube.com/shorts/1rCPVmBkz0w
@@ -514,10 +514,10 @@ https://www.youtube.com/shorts/2QvtJzOosng
 https://www.youtube.com/shorts/2jyjfBY3Dxk
 https://www.youtube.com/shorts/2lm4B4dR7iI
 https://www.youtube.com/shorts/2yWk5Or6g8A
+https://www.youtube.com/shorts/3B_hyvWaLD8
 https://www.youtube.com/shorts/3a-Gul4uBQQ
 https://www.youtube.com/shorts/3a13nKbA2-w
 https://www.youtube.com/shorts/3cBN8HBkuM4
-https://www.youtube.com/shorts/3kGaZ1uk5Dk
 https://www.youtube.com/shorts/3kGrtRToJs0
 https://www.youtube.com/shorts/471Q_g0GJ8k
 https://www.youtube.com/shorts/47tIVCKT-B8
@@ -534,7 +534,6 @@ https://www.youtube.com/shorts/6mEMJ6lUAUc
 https://www.youtube.com/shorts/6t-aqgDawQQ
 https://www.youtube.com/shorts/6uoe_12OFX4
 https://www.youtube.com/shorts/74Rlq87lqWE
-https://www.youtube.com/shorts/7AXloMz3XLk
 https://www.youtube.com/shorts/7JFjAmSpwSM
 https://www.youtube.com/shorts/7XHZqupjnoc
 https://www.youtube.com/shorts/7fHzKwZkrL4
@@ -566,7 +565,6 @@ https://www.youtube.com/shorts/CLsGai-oYRY
 https://www.youtube.com/shorts/CQ6de6kSsgo
 https://www.youtube.com/shorts/Ck64lXIqBZk
 https://www.youtube.com/shorts/CuhxJ-lSooo
-https://www.youtube.com/shorts/Cz5B0Stsvd4
 https://www.youtube.com/shorts/D3WGIJl5YBI
 https://www.youtube.com/shorts/DebK26u_ur8
 https://www.youtube.com/shorts/DyveDd1muUI
@@ -583,13 +581,11 @@ https://www.youtube.com/shorts/ExJs0V0STMs
 https://www.youtube.com/shorts/ExWgvuJUSdk
 https://www.youtube.com/shorts/F2Hayyudmi0
 https://www.youtube.com/shorts/FNcUWcBF48c
-https://www.youtube.com/shorts/Fh4r28Uho48
 https://www.youtube.com/shorts/FqK2bLtHr98
 https://www.youtube.com/shorts/Fuzh2uPo4AY
 https://www.youtube.com/shorts/FvdjEnK4yjM
 https://www.youtube.com/shorts/G2tOYPJ6sXs
 https://www.youtube.com/shorts/G93l1bu_KT4
-https://www.youtube.com/shorts/GgLZp4Uxavw
 https://www.youtube.com/shorts/GrdghAMkntE
 https://www.youtube.com/shorts/H1GCsGuYqf4
 https://www.youtube.com/shorts/H23u8KHsbhY
@@ -607,7 +603,6 @@ https://www.youtube.com/shorts/Iuqeeg2fIKw
 https://www.youtube.com/shorts/J0WrcS5A_Rc
 https://www.youtube.com/shorts/J35lpjRH-bM
 https://www.youtube.com/shorts/JP4IYP_W1Mo
-https://www.youtube.com/shorts/JTlGt1RWIsU
 https://www.youtube.com/shorts/JUO_0eR4LdI
 https://www.youtube.com/shorts/JZ-f9Yig-F4
 https://www.youtube.com/shorts/JeumY2QKpjw
@@ -620,6 +615,7 @@ https://www.youtube.com/shorts/KEVZog0WrW8
 https://www.youtube.com/shorts/KGGHgIMzfC8
 https://www.youtube.com/shorts/KQeJROoUaS0
 https://www.youtube.com/shorts/KbxWqCxzC-w
+https://www.youtube.com/shorts/KfXS_whDoAM
 https://www.youtube.com/shorts/Knn_RjHERWg
 https://www.youtube.com/shorts/L-IXNyFKbbk
 https://www.youtube.com/shorts/M3pfpoaM4Lo
@@ -628,7 +624,6 @@ https://www.youtube.com/shorts/Me6EXEEodfE
 https://www.youtube.com/shorts/MivT5fERES0
 https://www.youtube.com/shorts/N1iWunu4GTA
 https://www.youtube.com/shorts/N3Pdz_KgjZg
-https://www.youtube.com/shorts/NK8u3se_i5Q
 https://www.youtube.com/shorts/NOl0lm1LLsM
 https://www.youtube.com/shorts/NPD4yst7X-8
 https://www.youtube.com/shorts/NZJNGQ3hmuU
@@ -675,9 +670,9 @@ https://www.youtube.com/shorts/SrpzZCDD0Qk
 https://www.youtube.com/shorts/T0qofwg4cFk
 https://www.youtube.com/shorts/T5fTF5aZQu8
 https://www.youtube.com/shorts/TEF0_cEx_XM
-https://www.youtube.com/shorts/TJLMntIHi1Y
 https://www.youtube.com/shorts/Tmqa9MgjqHg
 https://www.youtube.com/shorts/Tpf-TajJEC0
+https://www.youtube.com/shorts/UOhtQhyAYyU
 https://www.youtube.com/shorts/UTWN858YWfw
 https://www.youtube.com/shorts/UdzJgyKFnPI
 https://www.youtube.com/shorts/Um-deoXMRwo
@@ -719,7 +714,6 @@ https://www.youtube.com/shorts/_upSWMfAxuw
 https://www.youtube.com/shorts/_yhOQBFOfGA
 https://www.youtube.com/shorts/a1attVhCNm0
 https://www.youtube.com/shorts/a8gFCGyg1y8
-https://www.youtube.com/shorts/aD3yqopFZgg
 https://www.youtube.com/shorts/aTp_SdDWSkw
 https://www.youtube.com/shorts/aVMbI1MTOmM
 https://www.youtube.com/shorts/apPNGlazFKM
@@ -727,6 +721,7 @@ https://www.youtube.com/shorts/asXR2t7MC8A
 https://www.youtube.com/shorts/b1Ad1fV7tpk
 https://www.youtube.com/shorts/b2IA-fSozUw
 https://www.youtube.com/shorts/bA-i0exkvwc
+https://www.youtube.com/shorts/bIztlHIUf-M
 https://www.youtube.com/shorts/bJdXl77vRGc
 https://www.youtube.com/shorts/bMG4jCOCDj8
 https://www.youtube.com/shorts/bOeGrQHNgqA
@@ -789,7 +784,6 @@ https://www.youtube.com/shorts/kXwEw95oCQ4
 https://www.youtube.com/shorts/kZtqiE98saw
 https://www.youtube.com/shorts/kcLceAPoqAY
 https://www.youtube.com/shorts/koIUkKeObdw
-https://www.youtube.com/shorts/kswxVTD4HR8
 https://www.youtube.com/shorts/kurv759TMos
 https://www.youtube.com/shorts/kvl_7epjQsk
 https://www.youtube.com/shorts/lVRCOR_jwZc
@@ -808,7 +802,6 @@ https://www.youtube.com/shorts/mniUk9UCYhQ
 https://www.youtube.com/shorts/n7XK9u2X_yY
 https://www.youtube.com/shorts/n9Dz1qPuB6Y
 https://www.youtube.com/shorts/o3Q9TZoYHxM
-https://www.youtube.com/shorts/o3eoNl9XFF0
 https://www.youtube.com/shorts/oQLTul-gyXA
 https://www.youtube.com/shorts/oUQ73gO2vRI
 https://www.youtube.com/shorts/oWLJRu40mM8
@@ -817,7 +810,6 @@ https://www.youtube.com/shorts/obQZWE7bclA
 https://www.youtube.com/shorts/oeeqWICb_A8
 https://www.youtube.com/shorts/ooLkm5wdyl0
 https://www.youtube.com/shorts/ow4eW2JZ3cA
-https://www.youtube.com/shorts/p6Wg6s9kiUs
 https://www.youtube.com/shorts/pOM0sIH4kU8
 https://www.youtube.com/shorts/pmvGlg_7_2w
 https://www.youtube.com/shorts/pr2tLCTwQZc
@@ -844,6 +836,7 @@ https://www.youtube.com/shorts/ru2f3edWpMc
 https://www.youtube.com/shorts/s08MMbI2mgA
 https://www.youtube.com/shorts/sBOIMiqr9Hg
 https://www.youtube.com/shorts/sEyQOcwkWXU
+https://www.youtube.com/shorts/sFaVxKy9yqI
 https://www.youtube.com/shorts/sVab8XDQERo
 https://www.youtube.com/shorts/sckePHzBhIw
 https://www.youtube.com/shorts/shvnIgpAUno
@@ -851,7 +844,6 @@ https://www.youtube.com/shorts/t3KLgpkdznQ
 https://www.youtube.com/shorts/tI0d1QAMh94
 https://www.youtube.com/shorts/tQGa4zq4o54
 https://www.youtube.com/shorts/tf50w_sKhFg
-https://www.youtube.com/shorts/tkq3AHInQn4
 https://www.youtube.com/shorts/troon_vpRBU
 https://www.youtube.com/shorts/u1uj9GmDxpI
 https://www.youtube.com/shorts/u2uCEgppKJU
@@ -935,9 +927,6 @@ https://x.com/Colts/status/2122035334435180572
 https://x.com/Colts/status/2122036952580968873
 https://x.com/Colts/status/2122045737873625332
 https://x.com/Colts/status/2122047295596167363
-https://x.com/Commanders/status/2121068907981160455
-https://x.com/Commanders/status/2121077764753080589
-https://x.com/Commanders/status/2121093883891503567
 https://x.com/DreareaSports/status/2091624681573146837
 https://x.com/FFPhinest/status/2095346301269357032
 https://x.com/FantasyInjuryT/status/2099242235669708959
@@ -964,9 +953,6 @@ https://x.com/FantasyPros/status/2096249000252887150
 https://x.com/FantasyPros/status/2096256794129494410
 https://x.com/FantasyPros/status/2096256795492630756
 https://x.com/FantasyPros/status/2096267190143963312
-https://x.com/Giants/status/2121064809147801608
-https://x.com/Giants/status/2121075916939882687
-https://x.com/Giants/status/2121086969350348923
 https://x.com/HoustonTexans/status/2122038599931572343
 https://x.com/HoustonTexans/status/2122066735838667154
 https://x.com/HoustonTexans/status/2123595114840736201
@@ -1032,18 +1018,6 @@ https://x.com/NFL/status/2110901632976232573
 https://x.com/NFL/status/2110911744725942454
 https://x.com/NFL/status/2110932117664284764
 https://x.com/NFL/status/2110933034966958420
-https://x.com/NFL/status/2121018663830777932
-https://x.com/NFL/status/2121050308025758182
-https://x.com/NFL/status/2121063111809765872
-https://x.com/NFL/status/2121064722049184175
-https://x.com/NFL/status/2121068975253807414
-https://x.com/NFL/status/2121074901239165005
-https://x.com/NFL/status/2121075772941348940
-https://x.com/NFL/status/2121077675863461979
-https://x.com/NFL/status/2121078729128698006
-https://x.com/NFL/status/2121086110470480085
-https://x.com/NFL/status/2121087362977632484
-https://x.com/NFL/status/2121091121145356470
 https://x.com/NFL/status/2121732407904682084
 https://x.com/NFL/status/2121979549520892158
 https://x.com/NFL/status/2121984743449166055
@@ -1223,7 +1197,6 @@ https://x.com/NFLonFOX/status/2099191585690776056
 https://x.com/NFLonFOX/status/2099242241982156970
 https://x.com/NFLonFOX/status/2108330192255262774
 https://x.com/NFLonFOX/status/2110796062336377002
-https://x.com/NFLonFOX/status/2120893629065810335
 https://x.com/NFLonFOX/status/2121980809745666068
 https://x.com/NFLonFOX/status/2121986046225240291
 https://x.com/NFLonFOX/status/2121992270681374820
