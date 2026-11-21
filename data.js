@@ -5670,8 +5670,8 @@ window.__STATIC_DATA__ = {
                 "height": "73",
                 "weight": "206",
                 "years_exp": 3,
-                "status": "Active",
-                "injury_status": "Out",
+                "status": "Inactive",
+                "injury_status": "IR",
                 "search_rank": 203
             }
         ]
@@ -6387,7 +6387,7 @@ window.__STATIC_DATA__ = {
                 "weight": "233",
                 "years_exp": 0,
                 "status": "Active",
-                "injury_status": "Questionable",
+                "injury_status": "Out",
                 "search_rank": 287
             },
             {
@@ -8117,7 +8117,7 @@ window.__STATIC_DATA__ = {
                 "weight": "225",
                 "years_exp": 4,
                 "status": "Active",
-                "injury_status": "Questionable",
+                "injury_status": null,
                 "search_rank": 679
             },
             {
@@ -9254,8 +9254,8 @@ window.__STATIC_DATA__ = {
                 "height": "72",
                 "weight": "192",
                 "years_exp": 2,
-                "status": "Inactive",
-                "injury_status": "IR",
+                "status": "Active",
+                "injury_status": "Questionable",
                 "search_rank": 688
             },
             {
@@ -10760,8 +10760,8 @@ window.__STATIC_DATA__ = {
                 "height": "71",
                 "weight": "209",
                 "years_exp": 2,
-                "status": "Inactive",
-                "injury_status": "IR",
+                "status": "Active",
+                "injury_status": "Questionable",
                 "search_rank": 686
             },
             {
@@ -11193,7 +11193,7 @@ window.__STATIC_DATA__ = {
                 "weight": "207",
                 "years_exp": 4,
                 "status": "Active",
-                "injury_status": null,
+                "injury_status": "Questionable",
                 "search_rank": 13
             },
             {
@@ -11224,8 +11224,8 @@ window.__STATIC_DATA__ = {
                 "height": "71",
                 "weight": "200",
                 "years_exp": 3,
-                "status": "Active",
-                "injury_status": "Questionable",
+                "status": "Inactive",
+                "injury_status": "IR",
                 "search_rank": 122
             }
         ]
@@ -11739,7 +11739,7 @@ window.__STATIC_DATA__ = {
             {
                 "name": "Pierre Strong Jr.",
                 "position": "RB",
-                "team": null
+                "team": "GB"
             }
         ],
         "faab": 0,
@@ -12255,7 +12255,7 @@ window.__STATIC_DATA__ = {
             {
                 "name": "Pierre Strong Jr.",
                 "position": "RB",
-                "team": null
+                "team": "GB"
             }
         ],
         "dropped": [
@@ -12530,7 +12530,7 @@ window.__STATIC_DATA__ = {
             {
                 "name": "Pierre Strong Jr.",
                 "position": "RB",
-                "team": null
+                "team": "GB"
             }
         ],
         "faab": 0,
@@ -13444,7 +13444,7 @@ window.__STATIC_DATA__ = {
             {
                 "name": "Pierre Strong Jr.",
                 "position": "RB",
-                "team": null
+                "team": "GB"
             }
         ],
         "dropped": [
