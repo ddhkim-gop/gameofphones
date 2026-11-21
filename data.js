@@ -9161,7 +9161,7 @@ window.__STATIC_DATA__ = {
                 "espn_id": 3917792,
                 "name": "Daniel Jones",
                 "position": "QB",
-                "team": "IND",
+                "team": null,
                 "age": 29,
                 "birth_date": "1997-05-27",
                 "college": "Duke",
@@ -16146,7 +16146,7 @@ window.__STATIC_DATA__ = {
                 {
                     "name": "Daniel Jones",
                     "position": "QB",
-                    "team": "IND"
+                    "team": null
                 },
                 {
                     "name": "2028 Round 1",
@@ -20803,7 +20803,7 @@ window.__STATIC_DATA__ = {
                 {
                     "name": "Daniel Jones",
                     "position": "QB",
-                    "team": "IND"
+                    "team": null
                 },
                 {
                     "name": "2026 Round 3",
