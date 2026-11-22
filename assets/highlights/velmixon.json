@@ -4,6 +4,48 @@
   "note": "Curated: X has no public search API, so posts are collected by hand and matched to rosters by this script.",
   "tweets": [
     {
+      "url": "https://x.com/NFL/status/2124582293205549157",
+      "player": "Bryce Young",
+      "meta": "QB \u00b7 CAR",
+      "date": "2026-11-22",
+      "author": "NFL",
+      "text": "Bryce Young to Tetairoa McMillan for a Panthers TD!\n\nBALvsCAR on FOX/FOX One\nStream on @NFLPlus",
+      "verified": true,
+      "faves": 259,
+      "secs": 10,
+      "game_id": "401873068",
+      "game_time": "Q2 5:06",
+      "play_key": "401873068:4018730681799",
+      "played_at": "2026-11-22T19:13:07Z",
+      "poster": "https://pbs.twimg.com/amplify_video_thumb/2124582087483367424/img/j50sFva-z11A3Vlh.jpg",
+      "published": "2026-11-22T19:14:26Z",
+      "video": "https://video.twimg.com/amplify_video/2124582087483367424/vid/avc1/1920x1080/f12TOh_yGzDTM113.mp4",
+      "author_name": "NFL",
+      "avatar": "https://pbs.twimg.com/profile_images/1619895559334273028/PHKS_mjX_normal.jpg",
+      "author_verified": true
+    },
+    {
+      "url": "https://x.com/NFL/status/2124575240164712604",
+      "player": "Bryce Young",
+      "meta": "QB \u00b7 CAR",
+      "date": "2026-11-22",
+      "author": "NFL",
+      "text": "Direct snap to Jalen Coker naturally results in a Bryce Young TD pass to Mitchell Evans \ud83d\ude05\n\nBALvsCAR on FOX/FOX One\nStream on @NFLPlus",
+      "verified": true,
+      "faves": 383,
+      "secs": 14,
+      "game_id": "401873068",
+      "game_time": "Q1 0:01",
+      "play_key": "401873068:4018730681086",
+      "played_at": "2026-11-22T18:43:14Z",
+      "poster": "https://pbs.twimg.com/amplify_video_thumb/2124575122434740224/img/7lo0N0H5X3WW8w3x.jpg",
+      "published": "2026-11-22T18:46:24Z",
+      "video": "https://video.twimg.com/amplify_video/2124575122434740224/vid/avc1/1920x1080/nNSX6OSQUxXUps4j.mp4",
+      "author_name": "NFL",
+      "avatar": "https://pbs.twimg.com/profile_images/1619895559334273028/PHKS_mjX_normal.jpg",
+      "author_verified": true
+    },
+    {
       "url": "https://www.youtube.com/shorts/Tmqa9MgjqHg",
       "player": "Samaje Perine",
       "meta": "RB \u00b7 CIN",
@@ -250,7 +292,7 @@
       "published": "2026-11-15T19:07:34Z",
       "youtube": "gRvVB3rMXvU",
       "author_name": "Tennessee Titans",
-      "avatar": "",
+      "avatar": "https://pbs.twimg.com/profile_images/2123076662069792768/JIoLPoQh_normal.png",
       "author_verified": true
     },
     {
@@ -271,7 +313,7 @@
       "published": "2026-11-15T19:04:24Z",
       "video": "https://video.twimg.com/amplify_video/2122042854054793217/vid/avc1/1920x1080/7KKOWSjg6MLghegr.mp4",
       "author_name": "Tennessee Titans",
-      "avatar": "",
+      "avatar": "https://pbs.twimg.com/profile_images/2123076662069792768/JIoLPoQh_normal.png",
       "author_verified": true
     },
     {
