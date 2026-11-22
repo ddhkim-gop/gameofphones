@@ -4,6 +4,27 @@
   "note": "Curated: X has no public search API, so posts are collected by hand and matched to rosters by this script.",
   "tweets": [
     {
+      "url": "https://x.com/Buccaneers/status/2124582856806514786",
+      "player": "Ted Hurst III",
+      "meta": "WR \u00b7 TB",
+      "date": "2026-11-22",
+      "author": "Buccaneers",
+      "text": "The throw \ud83c\udfaf The catch \ud83d\ude4c\n\n\ud83d\udcfa: #TBvsDET on FOX",
+      "verified": true,
+      "faves": 405,
+      "secs": 13,
+      "game_id": "401873072",
+      "game_time": "Q2 0:04",
+      "play_key": "401873072:4018730721852",
+      "played_at": "2026-11-22T19:14:27Z",
+      "poster": "https://pbs.twimg.com/amplify_video_thumb/2124582459991789568/img/42AwDeq1IAhauJXu.jpg",
+      "published": "2026-11-22T19:16:40Z",
+      "video": "https://video.twimg.com/amplify_video/2124582459991789568/vid/avc1/1920x1080/rcZoOcqKfeirKTUS.mp4",
+      "author_name": "Tampa Bay Buccaneers",
+      "avatar": "https://pbs.twimg.com/profile_images/2037618478622887936/e0YeskTe_normal.png",
+      "author_verified": true
+    },
+    {
       "url": "https://www.espn.com/video/clip/_/id/50537202/cj-stroud-finds-marlin-klein-3rd-passing-td",
       "player": "Marlin Klein",
       "meta": "TE \u00b7 HOU",

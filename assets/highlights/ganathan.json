@@ -4,6 +4,27 @@
   "note": "Curated: X has no public search API, so posts are collected by hand and matched to rosters by this script.",
   "tweets": [
     {
+      "url": "https://x.com/NFL/status/2124584624546623916",
+      "player": "Justice Hill",
+      "meta": "RB \u00b7 BAL",
+      "date": "2026-11-22",
+      "author": "NFL",
+      "text": "Justice Hill scores and we have another lead change in this crazy first half!\n\nBALvsCAR on FOX/FOX One\nStream on @NFLPlus",
+      "verified": true,
+      "faves": 506,
+      "secs": 10,
+      "game_id": "401873068",
+      "game_time": "Q2 2:22",
+      "play_key": "401873068:4018730682024",
+      "played_at": "2026-11-22T19:22:27Z",
+      "poster": "https://pbs.twimg.com/amplify_video_thumb/2124584479805296640/img/mqd_Fk9tOoPnZRBK.jpg",
+      "published": "2026-11-22T19:23:42Z",
+      "video": "https://video.twimg.com/amplify_video/2124584479805296640/vid/avc1/1920x1080/3KYQI-zEfMJntWbn.mp4",
+      "author_name": "NFL",
+      "avatar": "https://pbs.twimg.com/profile_images/1619895559334273028/PHKS_mjX_normal.jpg",
+      "author_verified": true
+    },
+    {
       "url": "https://x.com/BuffaloBills/status/2124574931518128469",
       "player": "Josh Allen",
       "meta": "QB \u00b7 BUF",
