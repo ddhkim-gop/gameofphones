@@ -5179,22 +5179,6 @@ window.__STATIC_DATA__ = {
                 "search_rank": 91
             },
             {
-                "player_id": "11579",
-                "espn_id": null,
-                "name": "Audric Estime",
-                "position": "RB",
-                "team": "NO",
-                "age": 23,
-                "birth_date": "2003-09-06",
-                "college": "Notre Dame",
-                "height": "71",
-                "weight": "227",
-                "years_exp": 2,
-                "status": "Active",
-                "injury_status": null,
-                "search_rank": 190
-            },
-            {
                 "player_id": "11583",
                 "espn_id": null,
                 "name": "Jonathon Brooks",
@@ -5209,6 +5193,22 @@ window.__STATIC_DATA__ = {
                 "status": "Inactive",
                 "injury_status": "IR",
                 "search_rank": 88
+            },
+            {
+                "player_id": "11593",
+                "espn_id": null,
+                "name": "Brevyn Spann-Ford",
+                "position": "TE",
+                "team": "DAL",
+                "age": 26,
+                "birth_date": "1999-12-27",
+                "college": "Minnesota",
+                "height": "78",
+                "weight": "265",
+                "years_exp": 2,
+                "status": "Active",
+                "injury_status": null,
+                "search_rank": 634
             },
             {
                 "player_id": "11646",
@@ -5383,7 +5383,7 @@ window.__STATIC_DATA__ = {
                 "weight": "240",
                 "years_exp": 0,
                 "status": "Active",
-                "injury_status": null,
+                "injury_status": "Out",
                 "search_rank": 413
             },
             {
@@ -5497,6 +5497,22 @@ window.__STATIC_DATA__ = {
                 "status": "Active",
                 "injury_status": "Out",
                 "search_rank": 88
+            },
+            {
+                "player_id": "6039",
+                "espn_id": 3915411,
+                "name": "Ty Johnson",
+                "position": "RB",
+                "team": "BUF",
+                "age": 29,
+                "birth_date": "1997-09-17",
+                "college": "Maryland",
+                "height": "70",
+                "weight": "210",
+                "years_exp": 7,
+                "status": "Active",
+                "injury_status": null,
+                "search_rank": 534
             },
             {
                 "player_id": "6786",
@@ -5657,22 +5673,6 @@ window.__STATIC_DATA__ = {
                 "status": "Active",
                 "injury_status": null,
                 "search_rank": 38
-            },
-            {
-                "player_id": "9486",
-                "espn_id": null,
-                "name": "Dontayvion Wicks",
-                "position": "WR",
-                "team": "PHI",
-                "age": 25,
-                "birth_date": "2001-06-16",
-                "college": "Virginia",
-                "height": "73",
-                "weight": "206",
-                "years_exp": 3,
-                "status": "Inactive",
-                "injury_status": "IR",
-                "search_rank": 203
             }
         ]
     },
@@ -5725,7 +5725,7 @@ window.__STATIC_DATA__ = {
                 "weight": "246",
                 "years_exp": 3,
                 "status": "Active",
-                "injury_status": "Doubtful",
+                "injury_status": "Out",
                 "search_rank": 81
             },
             {
@@ -6419,7 +6419,7 @@ window.__STATIC_DATA__ = {
                 "weight": "198",
                 "years_exp": 0,
                 "status": "Active",
-                "injury_status": null,
+                "injury_status": "Out",
                 "search_rank": 488
             },
             {
@@ -7263,7 +7263,7 @@ window.__STATIC_DATA__ = {
                 "weight": "216",
                 "years_exp": 2,
                 "status": "Active",
-                "injury_status": "Questionable",
+                "injury_status": null,
                 "search_rank": 527
             },
             {
@@ -7957,7 +7957,7 @@ window.__STATIC_DATA__ = {
                 "weight": "192",
                 "years_exp": 0,
                 "status": "Active",
-                "injury_status": "Questionable",
+                "injury_status": null,
                 "search_rank": 61
             },
             {
@@ -8363,7 +8363,7 @@ window.__STATIC_DATA__ = {
                 "weight": "235",
                 "years_exp": 1,
                 "status": "Active",
-                "injury_status": null,
+                "injury_status": "Out",
                 "search_rank": 499
             },
             {
@@ -8427,7 +8427,7 @@ window.__STATIC_DATA__ = {
                 "weight": "219",
                 "years_exp": 0,
                 "status": "Active",
-                "injury_status": null,
+                "injury_status": "Out",
                 "search_rank": 167
             },
             {
@@ -8443,7 +8443,7 @@ window.__STATIC_DATA__ = {
                 "weight": "228",
                 "years_exp": 0,
                 "status": "Active",
-                "injury_status": null,
+                "injury_status": "Out",
                 "search_rank": 362
             },
             {
@@ -8507,7 +8507,7 @@ window.__STATIC_DATA__ = {
                 "weight": "232",
                 "years_exp": 0,
                 "status": "Active",
-                "injury_status": null,
+                "injury_status": "Out",
                 "search_rank": 647
             },
             {
@@ -8539,7 +8539,7 @@ window.__STATIC_DATA__ = {
                 "weight": "241",
                 "years_exp": 0,
                 "status": "Active",
-                "injury_status": null,
+                "injury_status": "Out",
                 "search_rank": 484
             },
             {
@@ -8587,7 +8587,7 @@ window.__STATIC_DATA__ = {
                 "weight": "190",
                 "years_exp": 0,
                 "status": "Active",
-                "injury_status": "Questionable",
+                "injury_status": null,
                 "search_rank": 365
             },
             {
@@ -9061,6 +9061,22 @@ window.__STATIC_DATA__ = {
                 "search_rank": 157
             },
             {
+                "player_id": "13968",
+                "espn_id": null,
+                "name": "Drew Stevens",
+                "position": "K",
+                "team": "WAS",
+                "age": 22,
+                "birth_date": "2003-12-09",
+                "college": "Iowa",
+                "height": "73",
+                "weight": "213",
+                "years_exp": 0,
+                "status": "Active",
+                "injury_status": null,
+                "search_rank": 630
+            },
+            {
                 "player_id": "2505",
                 "espn_id": 2576925,
                 "name": "Darren Waller",
@@ -9073,7 +9089,7 @@ window.__STATIC_DATA__ = {
                 "weight": "238",
                 "years_exp": 11,
                 "status": "Active",
-                "injury_status": "Questionable",
+                "injury_status": null,
                 "search_rank": 356
             },
             {
@@ -9121,7 +9137,7 @@ window.__STATIC_DATA__ = {
                 "weight": "215",
                 "years_exp": 8,
                 "status": "Active",
-                "injury_status": "Questionable",
+                "injury_status": null,
                 "search_rank": 76
             },
             {
@@ -9139,22 +9155,6 @@ window.__STATIC_DATA__ = {
                 "status": "Active",
                 "injury_status": null,
                 "search_rank": 128
-            },
-            {
-                "player_id": "5857",
-                "espn_id": 4036131,
-                "name": "Noah Fant",
-                "position": "TE",
-                "team": "NO",
-                "age": 29,
-                "birth_date": "1997-11-20",
-                "college": "Iowa",
-                "height": "76",
-                "weight": "249",
-                "years_exp": 7,
-                "status": "Active",
-                "injury_status": null,
-                "search_rank": 642
             },
             {
                 "player_id": "5870",
@@ -9255,7 +9255,7 @@ window.__STATIC_DATA__ = {
                 "weight": "192",
                 "years_exp": 2,
                 "status": "Active",
-                "injury_status": "Questionable",
+                "injury_status": null,
                 "search_rank": 688
             },
             {
@@ -9335,7 +9335,7 @@ window.__STATIC_DATA__ = {
                 "weight": "215",
                 "years_exp": 0,
                 "status": "Active",
-                "injury_status": null,
+                "injury_status": "Out",
                 "search_rank": 201
             },
             {
@@ -9479,7 +9479,7 @@ window.__STATIC_DATA__ = {
                 "weight": "205",
                 "years_exp": 0,
                 "status": "Active",
-                "injury_status": null,
+                "injury_status": "Out",
                 "search_rank": 515
             },
             {
@@ -10643,7 +10643,7 @@ window.__STATIC_DATA__ = {
                 "weight": "247",
                 "years_exp": 5,
                 "status": "Active",
-                "injury_status": "Questionable",
+                "injury_status": null,
                 "search_rank": 597
             },
             {
@@ -10761,7 +10761,7 @@ window.__STATIC_DATA__ = {
                 "weight": "209",
                 "years_exp": 2,
                 "status": "Active",
-                "injury_status": "Questionable",
+                "injury_status": null,
                 "search_rank": 686
             },
             {
@@ -10889,7 +10889,7 @@ window.__STATIC_DATA__ = {
                 "weight": "192",
                 "years_exp": 0,
                 "status": "Active",
-                "injury_status": null,
+                "injury_status": "Out",
                 "search_rank": 392
             },
             {
@@ -11668,6 +11668,90 @@ window.__STATIC_DATA__ = {
     }
   ],
   "transactions": [
+    {
+        "season": "2026",
+        "week": 11,
+        "created": "Nov 22, 2026 • 9:40 AM PT",
+        "transaction_id": "1430285936796631040",
+        "type": "free_agent",
+        "status": "complete",
+        "teams": [
+            "eikichii952"
+        ],
+        "added": [
+            {
+                "name": "Drew Stevens",
+                "position": "K",
+                "team": "WAS"
+            }
+        ],
+        "dropped": [
+            {
+                "name": "Noah Fant",
+                "position": "TE",
+                "team": "NO"
+            }
+        ],
+        "faab": 0,
+        "waiver_bid": 0,
+        "notes": null
+    },
+    {
+        "season": "2026",
+        "week": 11,
+        "created": "Nov 22, 2026 • 8:11 AM PT",
+        "transaction_id": "1430263539141996544",
+        "type": "free_agent",
+        "status": "complete",
+        "teams": [
+            "ddhk"
+        ],
+        "added": [
+            {
+                "name": "Brevyn Spann-Ford",
+                "position": "TE",
+                "team": "DAL"
+            }
+        ],
+        "dropped": [
+            {
+                "name": "Audric Estime",
+                "position": "RB",
+                "team": "NO"
+            }
+        ],
+        "faab": 0,
+        "waiver_bid": 0,
+        "notes": null
+    },
+    {
+        "season": "2026",
+        "week": 11,
+        "created": "Nov 22, 2026 • 8:11 AM PT",
+        "transaction_id": "1430263444250046464",
+        "type": "free_agent",
+        "status": "complete",
+        "teams": [
+            "ddhk"
+        ],
+        "added": [
+            {
+                "name": "Ty Johnson",
+                "position": "RB",
+                "team": "BUF"
+            }
+        ],
+        "dropped": [
+            {
+                "name": "Dontayvion Wicks",
+                "position": "WR",
+                "team": "PHI"
+            }
+        ],
+        "faab": 0,
+        "waiver_bid": 0,
+        "notes": null
+    },
     {
         "season": "2026",
         "week": 11,
@@ -12870,7 +12954,7 @@ window.__STATIC_DATA__ = {
             {
                 "name": "Brandin Cooks",
                 "position": "WR",
-                "team": "SF"
+                "team": null
             }
         ],
         "faab": 0,
@@ -13394,7 +13478,7 @@ window.__STATIC_DATA__ = {
             {
                 "name": "Brandin Cooks",
                 "position": "WR",
-                "team": "SF"
+                "team": null
             }
         ],
         "dropped": [],
@@ -13507,7 +13591,7 @@ window.__STATIC_DATA__ = {
             {
                 "name": "Brandin Cooks",
                 "position": "WR",
-                "team": "SF"
+                "team": null
             }
         ],
         "faab": 0,
@@ -13556,7 +13640,7 @@ window.__STATIC_DATA__ = {
             {
                 "name": "Brandin Cooks",
                 "position": "WR",
-                "team": "SF"
+                "team": null
             }
         ],
         "dropped": [
