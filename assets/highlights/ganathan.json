@@ -25,25 +25,23 @@
       "author_verified": true
     },
     {
-      "url": "https://x.com/BuffaloBills/status/2124574931518128469",
+      "url": "https://www.espn.com/video/clip/_/id/50563596/dj-moore-breaks-sea-lion-celly-td",
       "player": "Josh Allen",
       "meta": "QB \u00b7 BUF",
       "date": "2026-11-22",
-      "author": "BuffaloBills",
-      "text": "He did it again. \ud83d\ude02",
+      "author": "ESPN",
+      "text": "DJ Moore breaks out sea lion celly after TD",
       "verified": true,
-      "faves": 912,
-      "secs": 3,
+      "faves": 0,
+      "secs": 0,
+      "espn_game": "401873070",
       "game_id": "401873070",
       "game_time": "Q2 13:23",
       "play_key": "401873070:4018730701100",
       "played_at": "2026-11-22T18:42:49Z",
-      "poster": "https://pbs.twimg.com/amplify_video_thumb/2124574699900309504/img/gYG3eHNnVRUW2k1I.jpg",
-      "published": "2026-11-22T18:45:11Z",
-      "video": "https://video.twimg.com/amplify_video/2124574699900309504/vid/avc1/1920x1080/4laD2NuOnJswBZjg.mp4",
-      "author_name": "Buffalo Bills",
-      "avatar": "https://pbs.twimg.com/profile_images/2122736573888307200/x_8TH138_normal.jpg",
-      "author_verified": true
+      "poster": "https://espnmedia-cdn.akamaized.net/espn/media/common/2026/1122/0d08dfb44aaa4659b8bb418db9c95994868/0d08dfb44aaa4659b8bb418db9c95994868.jpg",
+      "published": "2026-11-22T18:52:08Z",
+      "video": "https://espnmedia-cdn.akamaized.net/espn/media/16x9/wsc/2026/1122/0d08dfb4-4aaa-4659-b8bb-418db9c95994/0d08dfb4-4aaa-4659-b8bb-418db9c95994.mp4"
     },
     {
       "url": "https://x.com/Ravens/status/2124567751888982170",
@@ -387,6 +385,21 @@
       "author_name": "NFL",
       "avatar": "https://pbs.twimg.com/profile_images/1619895559334273028/PHKS_mjX_normal.jpg",
       "author_verified": true
+    },
+    {
+      "url": "https://www.espn.com/video/clip/_/id/50564445/dk-metcalf-ejected-altercations-eagles",
+      "player": "DK Metcalf",
+      "meta": "WR \u00b7 PIT",
+      "date": "2026-11-22",
+      "author": "ESPN",
+      "text": "Live on CBS: DK Metcalf ejected after altercations with Eagles",
+      "verified": true,
+      "faves": 0,
+      "secs": 0,
+      "espn_game": "401873076",
+      "poster": "https://espnmedia-cdn.akamaized.net/espn/media/common/2026/1122/ad48625335584e4aa01dfffeda38b12f931/ad48625335584e4aa01dfffeda38b12f931.jpg",
+      "published": "2026-11-22T20:28:25Z",
+      "video": "https://espnmedia-cdn.akamaized.net/espn/media/16x9/wsc/2026/1122/ad486253-3558-4e4a-a01d-fffeda38b12f/ad486253-3558-4e4a-a01d-fffeda38b12f.mp4"
     },
     {
       "url": "https://x.com/NFL/status/2122531386083115275",
