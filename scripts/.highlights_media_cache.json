@@ -4891,6 +4891,11 @@
   "published": "2026-10-22T15:00:17Z",
   "youtube": "8ALV697Fsa4"
  },
+ "https://www.youtube.com/shorts/8BWTdeYt4VE": {
+  "poster": "https://i.ytimg.com/vi/8BWTdeYt4VE/hqdefault.jpg",
+  "published": "2026-11-22T00:28:14Z",
+  "youtube": "8BWTdeYt4VE"
+ },
  "https://www.youtube.com/shorts/8D8g7RpiCQY": {
   "poster": "https://i.ytimg.com/vi/8D8g7RpiCQY/hqdefault.jpg",
   "published": "2026-10-21T19:18:29Z",
@@ -9633,6 +9638,11 @@
   "poster": "https://i.ytimg.com/vi/t1eIuklotX0/hqdefault.jpg",
   "published": "2026-11-03T22:30:37Z",
   "youtube": "t1eIuklotX0"
+ },
+ "https://www.youtube.com/shorts/t2aDDQJjozo": {
+  "poster": "https://i.ytimg.com/vi/t2aDDQJjozo/hqdefault.jpg",
+  "published": "2026-11-21T15:00:21Z",
+  "youtube": "t2aDDQJjozo"
  },
  "https://www.youtube.com/shorts/t3KLgpkdznQ": {
   "poster": "https://i.ytimg.com/vi/t3KLgpkdznQ/hqdefault.jpg",
@@ -16230,10 +16240,6 @@
   "video": "https://video.twimg.com/amplify_video/2122046814463672320/vid/avc1/1920x1080/zcMrra545CJR7lg9.mp4"
  },
  "https://x.com/NFL/status/2122047444620046764": {
-  "game_id": "401873059",
-  "game_time": "Q2 0:39",
-  "play_key": "401873059:4018730591950",
-  "played_at": "2026-11-15T19:20:03Z",
   "poster": "https://pbs.twimg.com/amplify_video_thumb/2122047208996610048/img/sNsht2pbDHzdexth.jpg",
   "published": "2026-11-15T19:21:51Z",
   "video": "https://video.twimg.com/amplify_video/2122047208996610048/vid/avc1/1920x1080/zsQsFcw13emvIarD.mp4"
@@ -16814,10 +16820,6 @@
   "video": "https://video.twimg.com/amplify_video/2123575900197294080/vid/avc1/1080x1920/RgguEsphu2v6GTuA.mp4"
  },
  "https://x.com/NFL/status/2123592601635066091": {
-  "game_id": "401873066",
-  "game_time": "Q1 6:14",
-  "play_key": "401873066:401873066582",
-  "played_at": "2026-11-20T01:39:57Z",
   "poster": "https://pbs.twimg.com/amplify_video_thumb/2123592351784546304/img/YozylOCBImnfOjmQ.jpg",
   "published": "2026-11-20T01:41:45Z",
   "video": "https://video.twimg.com/amplify_video/2123592351784546304/vid/avc1/1920x1080/G0RKtLH9G7DEjUOL.mp4"
