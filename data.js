@@ -5543,7 +5543,7 @@ window.__STATIC_DATA__ = {
                 "weight": "236",
                 "years_exp": 6,
                 "status": "Active",
-                "injury_status": null,
+                "injury_status": "Questionable",
                 "search_rank": 35
             },
             {
@@ -5766,7 +5766,7 @@ window.__STATIC_DATA__ = {
                 "name": "Tyrone Tracy Jr.",
                 "position": "RB",
                 "team": "NYG",
-                "age": 26,
+                "age": 27,
                 "birth_date": "1999-11-23",
                 "college": "Purdue",
                 "height": "71",
@@ -6307,7 +6307,7 @@ window.__STATIC_DATA__ = {
                 "weight": "208",
                 "years_exp": 1,
                 "status": "Active",
-                "injury_status": "Questionable",
+                "injury_status": null,
                 "search_rank": 222
             },
             {
@@ -6905,7 +6905,7 @@ window.__STATIC_DATA__ = {
                 "weight": "231",
                 "years_exp": 12,
                 "status": "Active",
-                "injury_status": "Questionable",
+                "injury_status": null,
                 "search_rank": 60
             },
             {
@@ -11113,7 +11113,7 @@ window.__STATIC_DATA__ = {
                 "weight": "220",
                 "years_exp": 5,
                 "status": "Active",
-                "injury_status": "Questionable",
+                "injury_status": null,
                 "search_rank": 402
             },
             {
