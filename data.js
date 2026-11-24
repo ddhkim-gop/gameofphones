@@ -5567,7 +5567,7 @@ window.__STATIC_DATA__ = {
                 "espn_id": 4360438,
                 "name": "Brandon Aiyuk",
                 "position": "WR",
-                "team": "SF",
+                "team": null,
                 "age": 28,
                 "birth_date": "1998-03-17",
                 "college": "Arizona State",
@@ -10515,7 +10515,7 @@ window.__STATIC_DATA__ = {
                 "weight": "215",
                 "years_exp": 0,
                 "status": "Active",
-                "injury_status": null,
+                "injury_status": "Questionable",
                 "search_rank": 153
             },
             {
@@ -11733,7 +11733,7 @@ window.__STATIC_DATA__ = {
                 {
                     "name": "Brandon Aiyuk",
                     "position": "WR",
-                    "team": "SF"
+                    "team": null
                 },
                 {
                     "name": "Brian Robinson Jr.",
