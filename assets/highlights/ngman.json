@@ -1,8 +1,29 @@
 {
   "team": "ngman",
-  "updated": "2026-11-23",
+  "updated": "2026-11-24",
   "note": "Curated: X has no public search API, so posts are collected by hand and matched to rosters by this script.",
   "tweets": [
+    {
+      "url": "https://x.com/NFL/status/2125079171684855841",
+      "player": "Mike Gesicki",
+      "meta": "TE \u00b7 CIN",
+      "date": "2026-11-24",
+      "author": "NFL",
+      "text": "Joe Burrow floats it to Mike Gesicki \ud83c\udfaf\n\nCINvsWAS on ESPN\nStream on @NFLPlus",
+      "verified": true,
+      "faves": 335,
+      "secs": 9,
+      "game_id": "401873078",
+      "game_time": "Q4 2:00",
+      "play_key": "401873078:4018730783848",
+      "played_at": "2026-11-24T04:07:31Z",
+      "poster": "https://pbs.twimg.com/amplify_video_thumb/2125078968881807360/img/V7Qpbzuo6eMB9mj8.jpg",
+      "published": "2026-11-24T04:08:51Z",
+      "video": "https://video.twimg.com/amplify_video/2125078968881807360/vid/avc1/1920x1080/sM4HDHEDFivIfnQz.mp4",
+      "author_name": "NFL",
+      "avatar": "https://pbs.twimg.com/profile_images/1619895559334273028/PHKS_mjX_normal.jpg",
+      "author_verified": true
+    },
     {
       "url": "https://x.com/Jaguars/status/2124665571992035804",
       "player": "Cam Little",
@@ -46,25 +67,23 @@
       "author_verified": true
     },
     {
-      "url": "https://x.com/Broncos/status/2124625104483361046",
+      "url": "https://www.espn.com/video/clip/_/id/50565818/announcer-breaks-song-adam-trautman-broncos-td",
       "player": "Bo Nix",
       "meta": "QB \u00b7 DEN",
       "date": "2026-11-22",
-      "author": "Broncos",
-      "text": "The TJ reference on this TD call \ud83e\udde1\n\n\ud83d\udcfa: CBS",
+      "author": "ESPN",
+      "text": "Announcer breaks into song over Adam Trautman's Broncos TD",
       "verified": true,
-      "faves": 1475,
-      "secs": 22,
+      "faves": 0,
+      "secs": 0,
+      "espn_game": "401873075",
       "game_id": "401873075",
       "game_time": "Q2 14:50",
       "play_key": "401873075:401873075987",
       "played_at": "2026-11-22T22:01:27Z",
-      "poster": "https://pbs.twimg.com/amplify_video_thumb/2124624507398918144/img/brx4nEqneNpIpmR0.jpg",
-      "published": "2026-11-22T22:04:33Z",
-      "video": "https://video.twimg.com/amplify_video/2124624507398918144/vid/avc1/1920x1080/_yCWqXXAvNwl6Cqy.mp4",
-      "author_name": "Denver Broncos",
-      "avatar": "https://pbs.twimg.com/profile_images/2112577385640116224/VdpaQL_v_normal.jpg",
-      "author_verified": true
+      "poster": "https://espnmedia-cdn.akamaized.net/espn/media/common/wsc/2026/1122/a34834bc-d062-4d6b-b58b-fc685f6c97ba/a34834bc-d062-4d6b-b58b-fc685f6c97ba.jpg",
+      "published": "2026-11-22T22:14:13Z",
+      "video": "https://espnmedia-cdn.akamaized.net/espn/media/16x9/wsc/2026/1122/a34834bc-d062-4d6b-b58b-fc685f6c97ba/a34834bc-d062-4d6b-b58b-fc685f6c97ba.mp4"
     },
     {
       "url": "https://www.espn.com/video/clip/_/id/50565011/max-hurleman-catches-td-1st-nfl-game",
@@ -124,7 +143,7 @@
       "published": "2026-11-22T20:48:08Z",
       "video": "https://video.twimg.com/amplify_video/2124605578668367873/vid/avc1/1920x1080/gEXL7YkBiKVG-eqy.mp4",
       "author_name": "Dallas Cowboys",
-      "avatar": "https://pbs.twimg.com/profile_images/2047411798953857024/QaW_Sgph_normal.jpg",
+      "avatar": "",
       "author_verified": true
     },
     {
@@ -229,7 +248,7 @@
       "published": "2026-11-22T19:01:11Z",
       "youtube": "h4D6mc1fozo",
       "author_name": "Dallas Cowboys",
-      "avatar": "https://pbs.twimg.com/profile_images/2047411798953857024/QaW_Sgph_normal.jpg",
+      "avatar": "",
       "author_verified": true
     },
     {
@@ -271,48 +290,6 @@
       "video": "https://espnmedia-cdn.akamaized.net/espn/media/16x9/wsc/2026/1122/e3eabedd-5a88-4a39-a2f3-851e8dea80f8/e3eabedd-5a88-4a39-a2f3-851e8dea80f8.mp4"
     },
     {
-      "url": "https://x.com/steelers/status/2122179737820795372",
-      "player": "Aaron Rodgers",
-      "meta": "QB \u00b7 PIT",
-      "date": "2026-11-16",
-      "author": "steelers",
-      "text": "Touchdown @pat_fry5",
-      "verified": true,
-      "faves": 347,
-      "secs": 10,
-      "game_id": "401873064",
-      "game_time": "Q4 7:19",
-      "play_key": "401873064:4018730643817",
-      "played_at": "2026-11-16T04:05:44Z",
-      "poster": "https://pbs.twimg.com/amplify_video_thumb/2122179496287547392/img/JFSdNLr2dqmLfJvL.jpg",
-      "published": "2026-11-16T04:07:32Z",
-      "video": "https://video.twimg.com/amplify_video/2122179496287547392/vid/avc1/1920x1080/Mw_a3SvLpEWVK9x8.mp4",
-      "author_name": "Pittsburgh Steelers",
-      "avatar": "",
-      "author_verified": true
-    },
-    {
-      "url": "https://x.com/NFL/status/2122175102955778155",
-      "player": "Aaron Rodgers",
-      "meta": "QB \u00b7 PIT",
-      "date": "2026-11-16",
-      "author": "NFL",
-      "text": "Aaron Rodgers floats it to DK Metcalf for the TD \u203c\ufe0f\n\nPITvsCIN on NBC/Peacock\nStream on @NFLPlus",
-      "verified": true,
-      "faves": 433,
-      "secs": 19,
-      "game_id": "401873064",
-      "game_time": "Q4 12:16",
-      "play_key": "401873064:4018730643336",
-      "played_at": "2026-11-16T03:47:00Z",
-      "poster": "https://pbs.twimg.com/amplify_video_thumb/2122174831609405440/img/OICziZFs7Ebygwix.jpg",
-      "published": "2026-11-16T03:49:07Z",
-      "video": "https://video.twimg.com/amplify_video/2122174831609405440/vid/avc1/1920x1080/x-BcWoRHJ3b3kbs8.mp4",
-      "author_name": "NFL",
-      "avatar": "https://pbs.twimg.com/profile_images/1619895559334273028/PHKS_mjX_normal.jpg",
-      "author_verified": true
-    },
-    {
       "url": "https://www.youtube.com/shorts/qrlv60nl58o",
       "player": "Cam Ward",
       "meta": "QB \u00b7 TEN",
@@ -343,21 +320,6 @@
       "poster": "https://espnmedia-cdn.akamaized.net/espn/media/common/2026/1122/ad48625335584e4aa01dfffeda38b12f931/ad48625335584e4aa01dfffeda38b12f931.jpg",
       "published": "2026-11-22T20:28:25Z",
       "video": "https://espnmedia-cdn.akamaized.net/espn/media/16x9/wsc/2026/1122/ad486253-3558-4e4a-a01d-fffeda38b12f/ad486253-3558-4e4a-a01d-fffeda38b12f.mp4"
-    },
-    {
-      "url": "https://www.espn.com/video/clip/_/id/50496295/seahawks-tory-horton-bats-kick-end-zone-avoid-2-minute-warning",
-      "player": "Tory Horton",
-      "meta": "WR \u00b7 SEA",
-      "date": "2026-11-16",
-      "author": "ESPN",
-      "text": "Seahawks' Tory Horton bats kick-off while in end zone to avoid 2-minute warning",
-      "verified": true,
-      "faves": 0,
-      "secs": 0,
-      "espn_game": "401873062",
-      "poster": "https://espnmedia-cdn.akamaized.net/espn/media/common/wsc/2026/1116/e797ca10-73a2-41e4-ad52-6536778742b8/e797ca10-73a2-41e4-ad52-6536778742b8.jpg",
-      "published": "2026-11-16T00:08:14Z",
-      "video": "https://espnmedia-cdn.akamaized.net/espn/media/16x9/wsc/2026/1116/e797ca10-73a2-41e4-ad52-6536778742b8/e797ca10-73a2-41e4-ad52-6536778742b8.mp4"
     }
   ]
 }

@@ -1,6 +1,6 @@
 {
   "team": "eikichii952",
-  "updated": "2026-11-23",
+  "updated": "2026-11-24",
   "note": "Curated: X has no public search API, so posts are collected by hand and matched to rosters by this script.",
   "tweets": [
     {
@@ -21,7 +21,7 @@
       "published": "2026-11-22T23:46:09Z",
       "video": "https://video.twimg.com/amplify_video/2124650523496501248/vid/avc1/1920x1080/HolwhCSQltTdUL1x.mp4",
       "author_name": "New York Jets",
-      "avatar": "https://pbs.twimg.com/profile_images/2114726710214103040/pVXiph6H_normal.jpg",
+      "avatar": "",
       "author_verified": true
     },
     {
@@ -63,7 +63,28 @@
       "published": "2026-11-22T21:08:12Z",
       "video": "https://video.twimg.com/amplify_video/2124610847305805825/vid/avc1/1080x1080/SfOaH_kryNlRuKra.mp4",
       "author_name": "New York Jets",
-      "avatar": "https://pbs.twimg.com/profile_images/2114726710214103040/pVXiph6H_normal.jpg",
+      "avatar": "",
+      "author_verified": true
+    },
+    {
+      "url": "https://x.com/dallascowboys/status/2124605876833005569",
+      "player": "Brevyn Spann-Ford",
+      "meta": "TE \u00b7 DAL",
+      "date": "2026-11-22",
+      "author": "dallascowboys",
+      "text": "BIG TOUCHDOWN FOR BIG BREV \ud83d\ude4c\n\n@brxvyn | #DallasCowboys\n\n\ud83d\udcfa: #TENvsDAL on FOX\n\ud83d\udcf2: Stream on NFL+",
+      "verified": true,
+      "faves": 363,
+      "secs": 39,
+      "game_id": "401873073",
+      "game_time": "Q4 4:59",
+      "play_key": "401873073:4018730734093",
+      "played_at": "2026-11-22T20:45:58Z",
+      "poster": "https://pbs.twimg.com/amplify_video_thumb/2124605578668367873/img/oi9ATN_64vG5rvkB.jpg",
+      "published": "2026-11-22T20:48:08Z",
+      "video": "https://video.twimg.com/amplify_video/2124605578668367873/vid/avc1/1920x1080/gEXL7YkBiKVG-eqy.mp4",
+      "author_name": "Dallas Cowboys",
+      "avatar": "",
       "author_verified": true
     },
     {
@@ -128,23 +149,19 @@
       "author_verified": true
     },
     {
-      "url": "https://www.espn.com/video/clip/_/id/50563851/colston-loveland-hurdles-defender-spectacular-bears-td",
-      "player": "Colston Loveland",
-      "meta": "TE \u00b7 CHI",
-      "date": "2026-11-22",
+      "url": "https://www.espn.com/video/clip/_/id/50569951/justin-jefferson-visibly-upset-fumbling-third-quarter",
+      "player": "Carson Wentz",
+      "meta": "QB \u00b7 MIN",
+      "date": "2026-11-23",
       "author": "ESPN",
-      "text": "Colston Loveland hurdles over defender for spectacular Bears TD",
+      "text": "Justin Jefferson visibly upset after fumbling in third quarter",
       "verified": true,
       "faves": 0,
       "secs": 0,
-      "espn_game": "401873071",
-      "game_id": "401873071",
-      "game_time": "Q2 7:21",
-      "play_key": "401873071:4018730711480",
-      "played_at": "2026-11-22T19:01:08Z",
-      "poster": "https://espnmedia-cdn.akamaized.net/espn/media/common/2026/1122/fefab0e7fd18417d8c25151234ad408c967/fefab0e7fd18417d8c25151234ad408c967.jpg",
-      "published": "2026-11-22T19:24:39Z",
-      "video": "https://espnmedia-cdn.akamaized.net/espn/media/16x9/wsc/2026/1122/fefab0e7-fd18-417d-8c25-151234ad408c/fefab0e7-fd18-417d-8c25-151234ad408c.mp4"
+      "espn_game": "401873077",
+      "poster": "https://espnmedia-cdn.akamaized.net/espn/media/common/2026/1122/6a9ad9671fa54108b400d741c3a8aa431417/6a9ad9671fa54108b400d741c3a8aa431417.jpg",
+      "published": "2026-11-23T04:33:24Z",
+      "video": "https://espnmedia-cdn.akamaized.net/espn/media/16x9/wsc/2026/1123/6a9ad967-1fa5-4108-b400-d741c3a8aa43/6a9ad967-1fa5-4108-b400-d741c3a8aa43.mp4"
     }
   ]
 }

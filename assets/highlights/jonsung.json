@@ -1,8 +1,27 @@
 {
   "team": "jonsung",
-  "updated": "2026-11-23",
+  "updated": "2026-11-24",
   "note": "Curated: X has no public search API, so posts are collected by hand and matched to rosters by this script.",
   "tweets": [
+    {
+      "url": "https://www.espn.com/video/clip/_/id/50578740/jacory-croskey-merritt-finds-pay-dirt-commanders-td",
+      "player": "Jacory Croskey-Merritt",
+      "meta": "RB \u00b7 WAS",
+      "date": "2026-11-24",
+      "author": "ESPN",
+      "text": "Jacory Croskey-Merritt finds pay dirt for a Commanders TD",
+      "verified": true,
+      "faves": 0,
+      "secs": 0,
+      "espn_game": "401873078",
+      "game_id": "401873078",
+      "game_time": "Q2 0:12",
+      "play_key": "401873078:4018730781923",
+      "played_at": "2026-11-24T02:37:48Z",
+      "poster": "https://espnmedia-cdn.akamaized.net/espn/media/common/2026/1123/19e95e4e42d44ef29f7063e2b24663961313/19e95e4e42d44ef29f7063e2b24663961313.jpg",
+      "published": "2026-11-24T02:46:13Z",
+      "video": "https://espnmedia-cdn.akamaized.net/espn/media/16x9/wsc/2026/1124/19e95e4e-42d4-4ef2-9f70-63e2b2466396/19e95e4e-42d4-4ef2-9f70-63e2b2466396.mp4"
+    },
     {
       "url": "https://www.youtube.com/shorts/J0cAnqHv2U4",
       "player": "Kirk Cousins",
@@ -51,7 +70,7 @@
       "meta": "TE \u00b7 SF",
       "date": "2026-11-23",
       "author": "ESPN",
-      "text": "Live on NBC: Brock Purdy finds George Kittle again for a 49ers TD",
+      "text": "Brock Purdy finds George Kittle again for a 49ers TD",
       "verified": true,
       "faves": 0,
       "secs": 0,
@@ -70,7 +89,7 @@
       "meta": "TE \u00b7 SF",
       "date": "2026-11-23",
       "author": "ESPN",
-      "text": "Live on NBC: George Kittle runs over multiple defenders for a 49ers TD",
+      "text": "George Kittle runs over multiple defenders for a 49ers TD",
       "verified": true,
       "faves": 0,
       "secs": 0,
@@ -101,7 +120,7 @@
       "published": "2026-11-22T23:18:16Z",
       "video": "https://video.twimg.com/amplify_video/2124643372921200640/vid/avc1/1920x1080/-uUc22ki9g60KXlP.mp4",
       "author_name": "New York Jets",
-      "avatar": "https://pbs.twimg.com/profile_images/2114726710214103040/pVXiph6H_normal.jpg",
+      "avatar": "",
       "author_verified": true
     },
     {
@@ -122,7 +141,7 @@
       "published": "2026-11-22T22:05:43Z",
       "video": "https://video.twimg.com/amplify_video/2124624910840651777/vid/avc1/1920x1080/hD7iA697XltXiM24.mp4",
       "author_name": "New York Jets",
-      "avatar": "https://pbs.twimg.com/profile_images/2114726710214103040/pVXiph6H_normal.jpg",
+      "avatar": "",
       "author_verified": true
     },
     {
@@ -201,7 +220,7 @@
       "game_time": "Q2 4:08",
       "play_key": "401873073:4018730731835",
       "played_at": "2026-11-22T19:11:35Z",
-      "poster": "https://espnmedia-cdn.akamaized.net/espn/media/common/wsc/2026/1122/ad7ccc6f-3dd8-4246-b9c9-ed085c5286f3/ad7ccc6f-3dd8-4246-b9c9-ed085c5286f3.jpg",
+      "poster": "https://espnmedia-cdn.akamaized.net/espn/media/common/2026/1123/ad7ccc6f3dd84246b9c9ed085c5286f3170/ad7ccc6f3dd84246b9c9ed085c5286f3170.jpg",
       "published": "2026-11-22T19:23:02Z",
       "video": "https://espnmedia-cdn.akamaized.net/espn/media/16x9/wsc/2026/1122/ad7ccc6f-3dd8-4246-b9c9-ed085c5286f3/ad7ccc6f-3dd8-4246-b9c9-ed085c5286f3.mp4"
     },
@@ -246,25 +265,19 @@
       "author_verified": true
     },
     {
-      "url": "https://x.com/dallascowboys/status/2122117869391560931",
-      "player": "George Pickens",
-      "meta": "WR \u00b7 DAL",
-      "date": "2026-11-16",
-      "author": "dallascowboys",
-      "text": "GP 3\ufe0f\u20e3 Touchdowns \ud83d\ude24\n\n\ud83d\udcfa: #SFvsDAL on FOX\n\ud83d\udcf2: Stream on NFL+",
+      "url": "https://www.espn.com/video/clip/_/id/50569951/justin-jefferson-visibly-upset-fumbling-third-quarter",
+      "player": "Justin Jefferson",
+      "meta": "WR \u00b7 MIN",
+      "date": "2026-11-23",
+      "author": "ESPN",
+      "text": "Justin Jefferson visibly upset after fumbling in third quarter",
       "verified": true,
-      "faves": 417,
-      "secs": 9,
-      "game_id": "401873063",
-      "game_time": "Q4 9:08",
-      "play_key": "401873063:4018730633619",
-      "played_at": "2026-11-16T00:00:06Z",
-      "poster": "https://pbs.twimg.com/amplify_video_thumb/2122117688650530817/img/7oc9YpLYKa-rPf62.jpg",
-      "published": "2026-11-16T00:01:41Z",
-      "video": "https://video.twimg.com/amplify_video/2122117688650530817/vid/avc1/1920x1080/kxJy34nHlwalel2K.mp4",
-      "author_name": "Dallas Cowboys",
-      "avatar": "https://pbs.twimg.com/profile_images/2047411798953857024/QaW_Sgph_normal.jpg",
-      "author_verified": true
+      "faves": 0,
+      "secs": 0,
+      "espn_game": "401873077",
+      "poster": "https://espnmedia-cdn.akamaized.net/espn/media/common/2026/1122/6a9ad9671fa54108b400d741c3a8aa431417/6a9ad9671fa54108b400d741c3a8aa431417.jpg",
+      "published": "2026-11-23T04:33:24Z",
+      "video": "https://espnmedia-cdn.akamaized.net/espn/media/16x9/wsc/2026/1123/6a9ad967-1fa5-4108-b400-d741c3a8aa43/6a9ad967-1fa5-4108-b400-d741c3a8aa43.mp4"
     },
     {
       "url": "https://www.youtube.com/shorts/7Ywr4gTK9bw",
@@ -297,23 +310,6 @@
       "poster": "https://espnmedia-cdn.akamaized.net/espn/media/common/2026/1118/ss_20261118_085910184_3747727542/ss_20261118_085910184_3747727542.jpg",
       "published": "2026-11-18T13:59:09Z",
       "video": "https://espnmedia-cdn.akamaized.net/espn/media/16x9/2026/1118/ss_20261118_085910184_3747727/ss_20261118_085910184_3747727.mp4"
-    },
-    {
-      "url": "https://www.youtube.com/shorts/G93l1bu_KT4",
-      "player": "Isaiah Likely",
-      "meta": "TE \u00b7 NYG",
-      "date": "2026-11-16",
-      "author": "NYGiants",
-      "text": "\ud83c\udf99\ufe0f \"3rd & Likely again!\" #newyorkgiants #nfl #shorts #radiocall #isaiahlikely #highlights #football",
-      "verified": false,
-      "faves": 376,
-      "secs": 19,
-      "poster": "https://i.ytimg.com/vi/G93l1bu_KT4/hqdefault.jpg",
-      "published": "2026-11-16T16:53:15Z",
-      "youtube": "G93l1bu_KT4",
-      "author_name": "New York Giants",
-      "avatar": "",
-      "author_verified": true
     }
   ]
 }
