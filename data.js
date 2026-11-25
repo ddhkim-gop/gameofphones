@@ -6077,7 +6077,7 @@ window.__STATIC_DATA__ = {
                 "weight": "212",
                 "years_exp": 6,
                 "status": "Active",
-                "injury_status": null,
+                "injury_status": "Out",
                 "search_rank": 68
             },
             {
@@ -10252,7 +10252,7 @@ window.__STATIC_DATA__ = {
                 "name": "Blake Corum",
                 "position": "RB",
                 "team": "LAR",
-                "age": 25,
+                "age": 26,
                 "birth_date": "2000-11-25",
                 "college": "Michigan",
                 "height": "68",
@@ -11090,7 +11090,7 @@ window.__STATIC_DATA__ = {
                 "name": "Jaylen Waddle",
                 "position": "WR",
                 "team": "DEN",
-                "age": 27,
+                "age": 28,
                 "birth_date": "1998-11-25",
                 "college": "Alabama",
                 "height": "70",
