@@ -1,6 +1,6 @@
 {
   "team": "andyxia124",
-  "updated": "2026-11-24",
+  "updated": "2026-11-25",
   "note": "Curated: X has no public search API, so posts are collected by hand and matched to rosters by this script.",
   "tweets": [
     {
@@ -213,87 +213,6 @@
       "poster": "https://espnmedia-cdn.akamaized.net/espn/media/common/2026/1122/dm_261122_Chiefs_beat_Cardinals_IA/dm_261122_Chiefs_beat_Cardinals_IA.jpg",
       "published": "2026-11-23T04:50:26Z",
       "video": "https://espnmedia-cdn.akamaized.net/espn/media/16x9/2026/1122/dm_261122_Chiefs_beat_Cardinals_IA/dm_261122_Chiefs_beat_Cardinals_IA.mp4"
-    },
-    {
-      "url": "https://x.com/NFL/status/2122509899049640254",
-      "player": "Zay Flowers",
-      "meta": "WR \u00b7 BAL",
-      "date": "2026-11-17",
-      "author": "NFL",
-      "text": "Zay Flowers with the sideline grab \ud83d\udd25\n\nLACvsBAL on ESPN\nStream on @NFLPlus",
-      "verified": false,
-      "faves": 485,
-      "secs": 13,
-      "poster": "https://pbs.twimg.com/amplify_video_thumb/2122509560602927104/img/vaVIakvvFBlM0m7p.jpg",
-      "published": "2026-11-17T01:59:28Z",
-      "video": "https://video.twimg.com/amplify_video/2122509560602927104/vid/avc1/1920x1080/peHhtRAf4LNGDop_.mp4",
-      "author_name": "NFL",
-      "avatar": "https://pbs.twimg.com/profile_images/1619895559334273028/PHKS_mjX_normal.jpg",
-      "author_verified": true
-    },
-    {
-      "url": "https://x.com/NFL/status/2122510825462399156",
-      "player": "Mark Andrews",
-      "meta": "TE \u00b7 BAL",
-      "date": "2026-11-17",
-      "author": "NFL",
-      "text": "This catch by Mark Andrews \ud83d\udc40\n\nLACvsBAL on ESPN\nStream on @NFLPlus",
-      "verified": false,
-      "faves": 368,
-      "secs": 13,
-      "poster": "https://pbs.twimg.com/amplify_video_thumb/2122510668733767680/img/kq-cpkcCeyLeuiRC.jpg",
-      "published": "2026-11-17T02:03:09Z",
-      "video": "https://video.twimg.com/amplify_video/2122510668733767680/vid/avc1/1920x1080/Z815uxYwhDFJ8KtV.mp4",
-      "author_name": "NFL",
-      "avatar": "https://pbs.twimg.com/profile_images/1619895559334273028/PHKS_mjX_normal.jpg",
-      "author_verified": true
-    },
-    {
-      "url": "https://x.com/NFL/status/2122542654269608136",
-      "player": "Mark Andrews",
-      "meta": "TE \u00b7 BAL",
-      "date": "2026-11-17",
-      "author": "NFL",
-      "text": "Mark Andrews making big catches tonight \ud83d\ude4c\n\nLACvsBAL on ESPN\nStream on @NFLPlus",
-      "verified": false,
-      "faves": 288,
-      "secs": 12,
-      "poster": "https://pbs.twimg.com/amplify_video_thumb/2122542467505704960/img/7J6pnQOzCm2_0ph2.jpg",
-      "published": "2026-11-17T04:09:38Z",
-      "video": "https://video.twimg.com/amplify_video/2122542467505704960/vid/avc1/1920x1080/w84o95DGtl_wwc8A.mp4",
-      "author_name": "NFL",
-      "avatar": "https://pbs.twimg.com/profile_images/1619895559334273028/PHKS_mjX_normal.jpg",
-      "author_verified": true
-    },
-    {
-      "url": "https://www.espn.com/video/clip/_/id/50506867/mark-andrews-amazing-snag-sets-king-henry-rushing-td",
-      "player": "Mark Andrews",
-      "meta": "TE \u00b7 BAL",
-      "date": "2026-11-17",
-      "author": "ESPN",
-      "text": "Mark Andrews' amazing snag sets up a King Henry rushing TD",
-      "verified": true,
-      "faves": 0,
-      "secs": 0,
-      "espn_game": "401873065",
-      "poster": "https://espnmedia-cdn.akamaized.net/espn/media/common/2026/1116/74ad0265b99e49bf87d4996ecf86a56a1286/74ad0265b99e49bf87d4996ecf86a56a1286.jpg",
-      "published": "2026-11-17T02:12:34Z",
-      "video": "https://espnmedia-cdn.akamaized.net/espn/media/16x9/wsc/2026/1117/74ad0265-b99e-49bf-87d4-996ecf86a56a/74ad0265-b99e-49bf-87d4-996ecf86a56a.mp4"
-    },
-    {
-      "url": "https://www.espn.com/video/clip/_/id/50507821/rashod-bateman-makes-amazing-grab-traffic",
-      "player": "Lamar Jackson",
-      "meta": "QB \u00b7 BAL",
-      "date": "2026-11-17",
-      "author": "ESPN",
-      "text": "Rashod Bateman makes an amazing grab in traffic. Rashod Bateman makes an amazing grab in traffic  ",
-      "verified": true,
-      "faves": 0,
-      "secs": 0,
-      "espn_game": "401873065",
-      "poster": "https://espnmedia-cdn.akamaized.net/espn/media/common/2026/1116/5623b86dcf6e4033a964c89780e2a0571425/5623b86dcf6e4033a964c89780e2a0571425.jpg",
-      "published": "2026-11-17T04:37:29Z",
-      "video": "https://espnmedia-cdn.akamaized.net/espn/media/16x9/wsc/2026/1117/5623b86d-cf6e-4033-a964-c89780e2a057/5623b86d-cf6e-4033-a964-c89780e2a057.mp4"
     }
   ]
 }

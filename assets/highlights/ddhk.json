@@ -1,6 +1,6 @@
 {
   "team": "ddhk",
-  "updated": "2026-11-24",
+  "updated": "2026-11-25",
   "note": "Curated: X has no public search API, so posts are collected by hand and matched to rosters by this script.",
   "tweets": [
     {
@@ -204,7 +204,7 @@
       "published": "2026-11-22T19:07:13Z",
       "video": "https://video.twimg.com/amplify_video/2124580277766737920/vid/avc1/1920x1080/VjkmC_pRlwlKbGm_.mp4",
       "author_name": "Buffalo Bills",
-      "avatar": "https://pbs.twimg.com/profile_images/2122736573888307200/x_8TH138_normal.jpg",
+      "avatar": "",
       "author_verified": true
     },
     {
@@ -383,25 +383,6 @@
       "author_name": "NFL",
       "avatar": "https://pbs.twimg.com/profile_images/1619895559334273028/PHKS_mjX_normal.jpg",
       "author_verified": true
-    },
-    {
-      "url": "https://www.espn.com/video/clip/_/id/50507150/omarion-hampton-plows-goal-line-chargers-td",
-      "player": "Omarion Hampton",
-      "meta": "RB \u00b7 LAC",
-      "date": "2026-11-17",
-      "author": "ESPN",
-      "text": "Omarion Hampton plows across the goal line for a Chargers TD",
-      "verified": true,
-      "faves": 0,
-      "secs": 0,
-      "espn_game": "401873065",
-      "game_id": "401873065",
-      "game_time": "Q2 1:56",
-      "play_key": "401873065:4018730651805",
-      "played_at": "2026-11-17T02:29:27Z",
-      "poster": "https://espnmedia-cdn.akamaized.net/espn/media/common/2026/1116/acdf85a9dd0544ea85805dbdfb17d37b1306/acdf85a9dd0544ea85805dbdfb17d37b1306.jpg",
-      "published": "2026-11-17T02:39:38Z",
-      "video": "https://espnmedia-cdn.akamaized.net/espn/media/16x9/wsc/2026/1117/acdf85a9-dd05-44ea-8580-5dbdfb17d37b/acdf85a9-dd05-44ea-8580-5dbdfb17d37b.mp4"
     },
     {
       "url": "https://www.espn.com/video/clip/_/id/50569951/justin-jefferson-visibly-upset-fumbling-third-quarter",

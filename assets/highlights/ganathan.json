@@ -1,6 +1,6 @@
 {
   "team": "ganathan",
-  "updated": "2026-11-24",
+  "updated": "2026-11-25",
   "note": "Curated: X has no public search API, so posts are collected by hand and matched to rosters by this script.",
   "tweets": [
     {
@@ -158,89 +158,6 @@
       "poster": "https://espnmedia-cdn.akamaized.net/espn/media/common/2026/1122/ad48625335584e4aa01dfffeda38b12f931/ad48625335584e4aa01dfffeda38b12f931.jpg",
       "published": "2026-11-22T20:28:25Z",
       "video": "https://espnmedia-cdn.akamaized.net/espn/media/16x9/wsc/2026/1122/ad486253-3558-4e4a-a01d-fffeda38b12f/ad486253-3558-4e4a-a01d-fffeda38b12f.mp4"
-    },
-    {
-      "url": "https://x.com/NFL/status/2122511311317954867",
-      "player": "Rashod Bateman",
-      "meta": "WR \u00b7 BAL",
-      "date": "2026-11-17",
-      "author": "NFL",
-      "text": "Rashod Bateman got \ud83c\udd99 for this catch!\n\nLACvsBAL on ESPN\nStream on @NFLPlus",
-      "verified": false,
-      "faves": 384,
-      "secs": 10,
-      "poster": "https://pbs.twimg.com/amplify_video_thumb/2122511114030415872/img/b5bXO8f6mnZIwQi9.jpg",
-      "published": "2026-11-17T02:05:05Z",
-      "video": "https://video.twimg.com/amplify_video/2122511114030415872/vid/avc1/1920x1080/o6jaMKyZC3TCGEKP.mp4",
-      "author_name": "NFL",
-      "avatar": "https://pbs.twimg.com/profile_images/1619895559334273028/PHKS_mjX_normal.jpg",
-      "author_verified": true
-    },
-    {
-      "url": "https://x.com/NFL/status/2122531386083115275",
-      "player": "Justice Hill",
-      "meta": "RB \u00b7 BAL",
-      "date": "2026-11-17",
-      "author": "NFL",
-      "text": "Justice Hill with room to run!\n\nLACvsBAL on ESPN\nStream on @NFLPlus",
-      "verified": false,
-      "faves": 314,
-      "secs": 13,
-      "poster": "https://pbs.twimg.com/amplify_video_thumb/2122531268244242432/img/KNmYLRcVvU-UQDob.jpg",
-      "published": "2026-11-17T03:24:51Z",
-      "video": "https://video.twimg.com/amplify_video/2122531268244242432/vid/avc1/1920x1080/CRGY_irk3ZbcPVCM.mp4",
-      "author_name": "NFL",
-      "avatar": "https://pbs.twimg.com/profile_images/1619895559334273028/PHKS_mjX_normal.jpg",
-      "author_verified": true
-    },
-    {
-      "url": "https://www.youtube.com/shorts/cqkMsEmOPpI",
-      "player": "Harold Fannin Jr.",
-      "meta": "TE \u00b7 CLE",
-      "date": "2026-11-17",
-      "author": "Browns",
-      "text": "Another angry Fannin run",
-      "verified": false,
-      "faves": 290,
-      "secs": 76,
-      "poster": "https://i.ytimg.com/vi/cqkMsEmOPpI/hqdefault.jpg",
-      "published": "2026-11-17T22:35:30Z",
-      "youtube": "cqkMsEmOPpI",
-      "author_name": "Cleveland Browns",
-      "avatar": "",
-      "author_verified": true
-    },
-    {
-      "url": "https://x.com/NFL/status/2122507553624170978",
-      "player": "Tre' Harris",
-      "meta": "WR \u00b7 LAC",
-      "date": "2026-11-17",
-      "author": "NFL",
-      "text": "Tre' Harris with the sliding catch \ud83d\ude2e\u200d\ud83d\udca8\n\nLACvsBAL on ESPN\nStream on @NFLPlus",
-      "verified": false,
-      "faves": 264,
-      "secs": 12,
-      "poster": "https://pbs.twimg.com/amplify_video_thumb/2122506656840142849/img/ZVS43eztybx3EcXt.jpg",
-      "published": "2026-11-17T01:50:09Z",
-      "video": "https://video.twimg.com/amplify_video/2122506656840142849/vid/avc1/1920x1080/YwAdLxDDyv3LmC7N.mp4",
-      "author_name": "NFL",
-      "avatar": "https://pbs.twimg.com/profile_images/1619895559334273028/PHKS_mjX_normal.jpg",
-      "author_verified": true
-    },
-    {
-      "url": "https://www.espn.com/video/clip/_/id/50507817/justice-hill-breaks-free-big-ravens-1st-down",
-      "player": "Justice Hill",
-      "meta": "RB \u00b7 BAL",
-      "date": "2026-11-17",
-      "author": "ESPN",
-      "text": "Justice Hill breaks free for a big-time Ravens 1st down",
-      "verified": true,
-      "faves": 0,
-      "secs": 0,
-      "espn_game": "401873065",
-      "poster": "https://espnmedia-cdn.akamaized.net/espn/media/common/2026/1116/ff5010be88994a578b9d7401f67df07f1424/ff5010be88994a578b9d7401f67df07f1424.jpg",
-      "published": "2026-11-17T04:36:43Z",
-      "video": "https://espnmedia-cdn.akamaized.net/espn/media/16x9/wsc/2026/1117/ff5010be-8899-4a57-8b9d-7401f67df07f/ff5010be-8899-4a57-8b9d-7401f67df07f.mp4"
     }
   ]
 }
