@@ -5335,7 +5335,7 @@ window.__STATIC_DATA__ = {
                 "weight": "220",
                 "years_exp": 1,
                 "status": "Active",
-                "injury_status": null,
+                "injury_status": "Questionable",
                 "search_rank": 38
             },
             {
@@ -5567,7 +5567,7 @@ window.__STATIC_DATA__ = {
                 "espn_id": 4360438,
                 "name": "Brandon Aiyuk",
                 "position": "WR",
-                "team": null,
+                "team": "WAS",
                 "age": 28,
                 "birth_date": "1998-03-17",
                 "college": "Arizona State",
@@ -5853,7 +5853,7 @@ window.__STATIC_DATA__ = {
                 "weight": "183",
                 "years_exp": 1,
                 "status": "Active",
-                "injury_status": null,
+                "injury_status": "Questionable",
                 "search_rank": 664
             },
             {
@@ -5917,7 +5917,7 @@ window.__STATIC_DATA__ = {
                 "weight": "191",
                 "years_exp": 11,
                 "status": "Active",
-                "injury_status": null,
+                "injury_status": "Questionable",
                 "search_rank": 105
             },
             {
@@ -6061,7 +6061,7 @@ window.__STATIC_DATA__ = {
                 "weight": "200",
                 "years_exp": 7,
                 "status": "Active",
-                "injury_status": null,
+                "injury_status": "Questionable",
                 "search_rank": 77
             },
             {
@@ -6077,7 +6077,7 @@ window.__STATIC_DATA__ = {
                 "weight": "212",
                 "years_exp": 6,
                 "status": "Active",
-                "injury_status": "Out",
+                "injury_status": "Sus",
                 "search_rank": 68
             },
             {
@@ -6595,7 +6595,7 @@ window.__STATIC_DATA__ = {
                 "weight": "220",
                 "years_exp": 4,
                 "status": "Active",
-                "injury_status": null,
+                "injury_status": "Questionable",
                 "search_rank": 56
             },
             {
@@ -6905,7 +6905,7 @@ window.__STATIC_DATA__ = {
                 "weight": "231",
                 "years_exp": 12,
                 "status": "Active",
-                "injury_status": null,
+                "injury_status": "Questionable",
                 "search_rank": 60
             },
             {
@@ -6937,7 +6937,7 @@ window.__STATIC_DATA__ = {
                 "weight": "252",
                 "years_exp": 10,
                 "status": "Active",
-                "injury_status": null,
+                "injury_status": "Questionable",
                 "search_rank": 7
             },
             {
@@ -7129,7 +7129,7 @@ window.__STATIC_DATA__ = {
                 "weight": "241",
                 "years_exp": 4,
                 "status": "Active",
-                "injury_status": null,
+                "injury_status": "Questionable",
                 "search_rank": 105
             },
             {
@@ -7177,7 +7177,7 @@ window.__STATIC_DATA__ = {
                 "weight": "211",
                 "years_exp": 4,
                 "status": "Active",
-                "injury_status": "Questionable",
+                "injury_status": "Out",
                 "search_rank": 19
             },
             {
@@ -7909,7 +7909,7 @@ window.__STATIC_DATA__ = {
                 "weight": "186",
                 "years_exp": 1,
                 "status": "Active",
-                "injury_status": null,
+                "injury_status": "Questionable",
                 "search_rank": 693
             },
             {
@@ -8069,7 +8069,7 @@ window.__STATIC_DATA__ = {
                 "weight": "184",
                 "years_exp": 4,
                 "status": "Active",
-                "injury_status": null,
+                "injury_status": "Questionable",
                 "search_rank": 508
             },
             {
@@ -8117,7 +8117,7 @@ window.__STATIC_DATA__ = {
                 "weight": "225",
                 "years_exp": 4,
                 "status": "Active",
-                "injury_status": null,
+                "injury_status": "Questionable",
                 "search_rank": 679
             },
             {
@@ -9185,7 +9185,7 @@ window.__STATIC_DATA__ = {
                 "weight": "250",
                 "years_exp": 4,
                 "status": "Active",
-                "injury_status": "Doubtful",
+                "injury_status": "Out",
                 "search_rank": 97
             },
             {
@@ -10777,7 +10777,7 @@ window.__STATIC_DATA__ = {
                 "weight": "209",
                 "years_exp": 2,
                 "status": "Active",
-                "injury_status": "Questionable",
+                "injury_status": null,
                 "search_rank": 686
             },
             {
@@ -10841,7 +10841,7 @@ window.__STATIC_DATA__ = {
                 "weight": "241",
                 "years_exp": 1,
                 "status": "Active",
-                "injury_status": null,
+                "injury_status": "Questionable",
                 "search_rank": 63
             },
             {
@@ -12045,7 +12045,7 @@ window.__STATIC_DATA__ = {
                 {
                     "name": "Brandon Aiyuk",
                     "position": "WR",
-                    "team": null
+                    "team": "WAS"
                 },
                 {
                     "name": "Brian Robinson Jr.",
@@ -13418,7 +13418,7 @@ window.__STATIC_DATA__ = {
             {
                 "name": "Brandin Cooks",
                 "position": "WR",
-                "team": null
+                "team": "SF"
             }
         ],
         "faab": 0,
@@ -13942,7 +13942,7 @@ window.__STATIC_DATA__ = {
             {
                 "name": "Brandin Cooks",
                 "position": "WR",
-                "team": null
+                "team": "SF"
             }
         ],
         "dropped": [],
@@ -14055,7 +14055,7 @@ window.__STATIC_DATA__ = {
             {
                 "name": "Brandin Cooks",
                 "position": "WR",
-                "team": null
+                "team": "SF"
             }
         ],
         "faab": 0,
@@ -14104,7 +14104,7 @@ window.__STATIC_DATA__ = {
             {
                 "name": "Brandin Cooks",
                 "position": "WR",
-                "team": null
+                "team": "SF"
             }
         ],
         "dropped": [
@@ -19812,7 +19812,7 @@ window.__STATIC_DATA__ = {
             {
                 "name": "Theo Wease Jr.",
                 "position": "WR",
-                "team": "LAC"
+                "team": null
             }
         ],
         "faab": 0,
@@ -22198,7 +22198,7 @@ window.__STATIC_DATA__ = {
             {
                 "name": "Theo Wease Jr.",
                 "position": "WR",
-                "team": "LAC"
+                "team": null
             }
         ],
         "dropped": [
