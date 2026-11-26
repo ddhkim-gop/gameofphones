@@ -5287,7 +5287,7 @@ window.__STATIC_DATA__ = {
                 "weight": "216",
                 "years_exp": 1,
                 "status": "Active",
-                "injury_status": null,
+                "injury_status": "Questionable",
                 "search_rank": 497
             },
             {
@@ -6499,7 +6499,7 @@ window.__STATIC_DATA__ = {
                 "weight": "225",
                 "years_exp": 8,
                 "status": "Active",
-                "injury_status": "Questionable",
+                "injury_status": null,
                 "search_rank": 92
             },
             {
@@ -6691,7 +6691,7 @@ window.__STATIC_DATA__ = {
                 "weight": "197",
                 "years_exp": 3,
                 "status": "Active",
-                "injury_status": null,
+                "injury_status": "Questionable",
                 "search_rank": 6
             }
         ]
@@ -7471,7 +7471,7 @@ window.__STATIC_DATA__ = {
                 "weight": "223",
                 "years_exp": 7,
                 "status": "Active",
-                "injury_status": "Questionable",
+                "injury_status": "Out",
                 "search_rank": 20
             },
             {
@@ -7711,7 +7711,7 @@ window.__STATIC_DATA__ = {
                 "weight": "183",
                 "years_exp": 3,
                 "status": "Active",
-                "injury_status": null,
+                "injury_status": "Questionable",
                 "search_rank": 40
             }
         ]
@@ -8757,22 +8757,6 @@ window.__STATIC_DATA__ = {
                 "search_rank": 355
             },
             {
-                "player_id": "12711",
-                "espn_id": null,
-                "name": "Tyler Loop",
-                "position": "K",
-                "team": "BAL",
-                "age": 25,
-                "birth_date": "2001-08-04",
-                "college": "Arizona",
-                "height": "71",
-                "weight": "191",
-                "years_exp": 1,
-                "status": "Inactive",
-                "injury_status": "IR",
-                "search_rank": 150
-            },
-            {
                 "player_id": "13274",
                 "espn_id": null,
                 "name": "Germie Bernard",
@@ -9093,22 +9077,6 @@ window.__STATIC_DATA__ = {
                 "search_rank": 135
             },
             {
-                "player_id": "11650",
-                "espn_id": null,
-                "name": "Luke McCaffrey",
-                "position": "WR",
-                "team": "WAS",
-                "age": 25,
-                "birth_date": "2001-04-02",
-                "college": "Rice",
-                "height": "74",
-                "weight": "195",
-                "years_exp": 2,
-                "status": "Active",
-                "injury_status": null,
-                "search_rank": 620
-            },
-            {
                 "player_id": "12514",
                 "espn_id": null,
                 "name": "Emeka Egbuka",
@@ -9399,7 +9367,7 @@ window.__STATIC_DATA__ = {
                 "weight": "208",
                 "years_exp": 0,
                 "status": "Active",
-                "injury_status": null,
+                "injury_status": "Out",
                 "search_rank": 242
             },
             {
@@ -9543,7 +9511,7 @@ window.__STATIC_DATA__ = {
                 "weight": "253",
                 "years_exp": 10,
                 "status": "Active",
-                "injury_status": null,
+                "injury_status": "Out",
                 "search_rank": 652
             },
             {
@@ -10077,7 +10045,7 @@ window.__STATIC_DATA__ = {
                 "weight": "228",
                 "years_exp": 7,
                 "status": "Active",
-                "injury_status": null,
+                "injury_status": "Questionable",
                 "search_rank": 691
             },
             {
@@ -10675,7 +10643,7 @@ window.__STATIC_DATA__ = {
                 "weight": "215",
                 "years_exp": 4,
                 "status": "Active",
-                "injury_status": null,
+                "injury_status": "Out",
                 "search_rank": 64
             },
             {
@@ -10873,7 +10841,7 @@ window.__STATIC_DATA__ = {
                 "weight": "196",
                 "years_exp": 1,
                 "status": "Active",
-                "injury_status": null,
+                "injury_status": "Questionable",
                 "search_rank": 999
             },
             {
@@ -11145,7 +11113,7 @@ window.__STATIC_DATA__ = {
                 "weight": "193",
                 "years_exp": 5,
                 "status": "Active",
-                "injury_status": null,
+                "injury_status": "Questionable",
                 "search_rank": 203
             },
             {
@@ -11684,6 +11652,50 @@ window.__STATIC_DATA__ = {
     }
   ],
   "transactions": [
+    {
+        "season": "2026",
+        "week": 12,
+        "created": "Nov 25, 2026 • 5:16 PM PT",
+        "transaction_id": "1431487666863476744",
+        "type": "free_agent",
+        "status": "complete",
+        "teams": [
+            "eikichii952"
+        ],
+        "added": [],
+        "dropped": [
+            {
+                "name": "Luke McCaffrey",
+                "position": "WR",
+                "team": "WAS"
+            }
+        ],
+        "faab": 0,
+        "waiver_bid": 0,
+        "notes": null
+    },
+    {
+        "season": "2026",
+        "week": 12,
+        "created": "Nov 25, 2026 • 5:07 PM PT",
+        "transaction_id": "1431485466405765120",
+        "type": "free_agent",
+        "status": "complete",
+        "teams": [
+            "eikichii952"
+        ],
+        "added": [],
+        "dropped": [
+            {
+                "name": "Tyler Loop",
+                "position": "K",
+                "team": "BAL"
+            }
+        ],
+        "faab": 0,
+        "waiver_bid": 0,
+        "notes": null
+    },
     {
         "season": "2026",
         "week": 12,
