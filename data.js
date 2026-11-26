@@ -5303,7 +5303,7 @@ window.__STATIC_DATA__ = {
                 "weight": "241",
                 "years_exp": 1,
                 "status": "Active",
-                "injury_status": null,
+                "injury_status": "Out",
                 "search_rank": 36
             },
             {
@@ -5917,7 +5917,7 @@ window.__STATIC_DATA__ = {
                 "weight": "191",
                 "years_exp": 11,
                 "status": "Active",
-                "injury_status": "Questionable",
+                "injury_status": null,
                 "search_rank": 104
             },
             {
@@ -6013,7 +6013,7 @@ window.__STATIC_DATA__ = {
                 "weight": "242",
                 "years_exp": 8,
                 "status": "Active",
-                "injury_status": null,
+                "injury_status": "Questionable",
                 "search_rank": 98
             },
             {
@@ -6029,7 +6029,7 @@ window.__STATIC_DATA__ = {
                 "weight": "256",
                 "years_exp": 8,
                 "status": "Active",
-                "injury_status": null,
+                "injury_status": "Out",
                 "search_rank": 94
             },
             {
@@ -6969,7 +6969,7 @@ window.__STATIC_DATA__ = {
                 "weight": "233",
                 "years_exp": 8,
                 "status": "Active",
-                "injury_status": null,
+                "injury_status": "Questionable",
                 "search_rank": 10
             },
             {
@@ -7711,7 +7711,7 @@ window.__STATIC_DATA__ = {
                 "weight": "183",
                 "years_exp": 3,
                 "status": "Active",
-                "injury_status": "Questionable",
+                "injury_status": null,
                 "search_rank": 40
             }
         ]
@@ -7909,7 +7909,7 @@ window.__STATIC_DATA__ = {
                 "weight": "186",
                 "years_exp": 1,
                 "status": "Active",
-                "injury_status": "Questionable",
+                "injury_status": null,
                 "search_rank": 693
             },
             {
@@ -8267,7 +8267,7 @@ window.__STATIC_DATA__ = {
                 "weight": "226",
                 "years_exp": 2,
                 "status": "Active",
-                "injury_status": null,
+                "injury_status": "Questionable",
                 "search_rank": 23
             },
             {
@@ -8539,7 +8539,7 @@ window.__STATIC_DATA__ = {
                 "weight": "232",
                 "years_exp": 0,
                 "status": "Active",
-                "injury_status": null,
+                "injury_status": "Out",
                 "search_rank": 647
             },
             {
@@ -8753,7 +8753,7 @@ window.__STATIC_DATA__ = {
                 "weight": "238",
                 "years_exp": 11,
                 "status": "Active",
-                "injury_status": null,
+                "injury_status": "Questionable",
                 "search_rank": 355
             },
             {
@@ -8929,7 +8929,7 @@ window.__STATIC_DATA__ = {
                 "weight": "220",
                 "years_exp": 2,
                 "status": "Active",
-                "injury_status": "Questionable",
+                "injury_status": null,
                 "search_rank": 73
             },
             {
@@ -9757,7 +9757,7 @@ window.__STATIC_DATA__ = {
                 "weight": "185",
                 "years_exp": 2,
                 "status": "Active",
-                "injury_status": "Questionable",
+                "injury_status": null,
                 "search_rank": 650
             },
             {
@@ -10173,7 +10173,7 @@ window.__STATIC_DATA__ = {
                 "weight": "204",
                 "years_exp": 3,
                 "status": "Active",
-                "injury_status": null,
+                "injury_status": "Questionable",
                 "search_rank": 68
             },
             {
@@ -10627,7 +10627,7 @@ window.__STATIC_DATA__ = {
                 "weight": "247",
                 "years_exp": 5,
                 "status": "Active",
-                "injury_status": null,
+                "injury_status": "Questionable",
                 "search_rank": 597
             },
             {
@@ -10683,7 +10683,7 @@ window.__STATIC_DATA__ = {
                 "espn_id": 8439,
                 "name": "Aaron Rodgers",
                 "position": "QB",
-                "team": "PIT",
+                "team": null,
                 "age": 42,
                 "birth_date": "1983-12-02",
                 "college": "California",
@@ -10809,7 +10809,7 @@ window.__STATIC_DATA__ = {
                 "weight": "241",
                 "years_exp": 1,
                 "status": "Active",
-                "injury_status": "Questionable",
+                "injury_status": null,
                 "search_rank": 63
             },
             {
@@ -11016,8 +11016,8 @@ window.__STATIC_DATA__ = {
                 "height": "76",
                 "weight": "223",
                 "years_exp": 6,
-                "status": "Inactive",
-                "injury_status": "IR",
+                "status": "Active",
+                "injury_status": null,
                 "search_rank": 107
             },
             {
@@ -11113,7 +11113,7 @@ window.__STATIC_DATA__ = {
                 "weight": "193",
                 "years_exp": 5,
                 "status": "Active",
-                "injury_status": "Questionable",
+                "injury_status": null,
                 "search_rank": 203
             },
             {
@@ -19852,7 +19852,7 @@ window.__STATIC_DATA__ = {
             {
                 "name": "Theo Wease Jr.",
                 "position": "WR",
-                "team": null
+                "team": "LAC"
             }
         ],
         "faab": 0,
@@ -22238,7 +22238,7 @@ window.__STATIC_DATA__ = {
             {
                 "name": "Theo Wease Jr.",
                 "position": "WR",
-                "team": null
+                "team": "LAC"
             }
         ],
         "dropped": [
