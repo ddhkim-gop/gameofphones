@@ -4,6 +4,27 @@
   "note": "Curated: X has no public search API, so posts are collected by hand and matched to rosters by this script.",
   "tweets": [
     {
+      "url": "https://x.com/NFL/status/2126085405934227605",
+      "player": "Makai Lemon",
+      "meta": "WR \u00b7 PHI",
+      "date": "2026-11-26",
+      "author": "NFL",
+      "text": "Milton scrambles and finds Makai Lemon to convert on 3rd and long \ud83d\udd25\n\nPHIvsDAL on FOX/FOX One/Tubi\nStream on @NFLPlus",
+      "verified": true,
+      "faves": 305,
+      "secs": 10,
+      "game_id": "401873080",
+      "game_time": "Q2 9:44",
+      "play_key": "401873080:4018730801430",
+      "played_at": "2026-11-26T22:46:20Z",
+      "poster": "https://pbs.twimg.com/amplify_video_thumb/2126085312669507584/img/dvizHq9I0jn8kCA6.jpg",
+      "published": "2026-11-26T22:47:16Z",
+      "video": "https://video.twimg.com/amplify_video/2126085312669507584/vid/avc1/1920x1080/utvH0SMyt46K0uZl.mp4",
+      "author_name": "NFL",
+      "avatar": "https://pbs.twimg.com/profile_images/1619895559334273028/PHKS_mjX_normal.jpg",
+      "author_verified": true
+    },
+    {
       "url": "https://x.com/Bengals/status/2125065874910413222",
       "player": "Joe Burrow",
       "meta": "QB \u00b7 CIN",
