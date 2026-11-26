@@ -1,29 +1,8 @@
 {
   "team": "Paul_Yoon",
-  "updated": "2026-11-25",
+  "updated": "2026-11-26",
   "note": "Curated: X has no public search API, so posts are collected by hand and matched to rosters by this script.",
   "tweets": [
-    {
-      "url": "https://x.com/NFL/status/2124610603339927947",
-      "player": "Calvin Ridley",
-      "meta": "WR \u00b7 TEN",
-      "date": "2026-11-22",
-      "author": "NFL",
-      "text": "Cam Ward was doing the most on this wild TD pass \ud83d\udc40",
-      "verified": true,
-      "faves": 1031,
-      "secs": 17,
-      "game_id": "401873073",
-      "game_time": "Q4 0:31",
-      "play_key": "401873073:4018730734553",
-      "played_at": "2026-11-22T21:00:33Z",
-      "poster": "https://pbs.twimg.com/amplify_video_thumb/2124610462029684736/img/A3tgjAQS4l4PgpUK.jpg",
-      "published": "2026-11-22T21:06:55Z",
-      "video": "https://video.twimg.com/amplify_video/2124610462029684736/vid/avc1/1920x1080/5OiwD5qIeYvDvCbZ.mp4",
-      "author_name": "NFL",
-      "avatar": "https://pbs.twimg.com/profile_images/1619895559334273028/PHKS_mjX_normal.jpg",
-      "author_verified": true
-    },
     {
       "url": "https://x.com/NFL/status/2124606105519071566",
       "player": "Zavion Thomas",
