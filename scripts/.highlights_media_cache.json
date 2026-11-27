@@ -20172,6 +20172,36 @@
   "published": "2026-11-26T23:08:21Z",
   "video": "https://video.twimg.com/ext_tw_video/2126090681542172672/pu/vid/avc1/1280x720/2NIp_8UZAw29Nzk_.mp4?tag=12"
  },
+ "https://x.com/NFLonFOX/status/2126111147547935021": {
+  "poster": "https://pbs.twimg.com/amplify_video_thumb/2126110854512799744/img/eCExwO-CYvQ_u2Xt.jpg",
+  "published": "2026-11-27T00:29:33Z",
+  "video": "https://video.twimg.com/amplify_video/2126110854512799744/vid/avc1/1920x1080/BP867U85h1Dwf8NZ.mp4"
+ },
+ "https://x.com/NFLonFOX/status/2126131801634795670": {
+  "poster": "https://pbs.twimg.com/amplify_video_thumb/2126131319692242944/img/EchYut1dhhmdlIwh.jpg",
+  "published": "2026-11-27T01:51:37Z",
+  "video": "https://video.twimg.com/amplify_video/2126131319692242944/vid/avc1/1920x1080/pfTbjpfoqWsQg3uc.mp4"
+ },
+ "https://x.com/NFLonFOX/status/2126148636576985428": {
+  "poster": "https://pbs.twimg.com/amplify_video_thumb/2126148534114320384/img/kk7FIqsPcb_29tfa.jpg",
+  "published": "2026-11-27T02:58:31Z",
+  "video": "https://video.twimg.com/amplify_video/2126148534114320384/vid/avc1/1080x1920/UpQIo_AaFdfVC20Y.mp4"
+ },
+ "https://x.com/NFLonFOX/status/2126154148651708511": {
+  "poster": "https://pbs.twimg.com/amplify_video_thumb/2126153911111389184/img/lO-C0NId2aDn_CeP.jpg",
+  "published": "2026-11-27T03:20:25Z",
+  "video": "https://video.twimg.com/amplify_video/2126153911111389184/vid/avc1/1080x1920/kqyEXuHufOGRRBpK.mp4"
+ },
+ "https://x.com/NFLonFOX/status/2126165153242894577": {
+  "poster": "https://pbs.twimg.com/amplify_video_thumb/2126165015153586176/img/JXutohi43AMRKApi.jpg",
+  "published": "2026-11-27T04:04:09Z",
+  "video": "https://video.twimg.com/amplify_video/2126165015153586176/vid/avc1/1080x1920/YemROrxMAcrkTQj7.mp4"
+ },
+ "https://x.com/NFLonFOX/status/2126425951940772039": {
+  "poster": "https://pbs.twimg.com/amplify_video_thumb/2126425615855394816/img/JXkfpQ9o0-7F8YTC.jpg",
+  "published": "2026-11-27T21:20:28Z",
+  "video": "https://video.twimg.com/amplify_video/2126425615855394816/vid/avc1/1080x1920/nTPOFabj3ubam6o4.mp4"
+ },
  "https://x.com/Panthers/status/2111884278594191399": {
   "game_id": "401872998",
   "game_time": "Q2 8:08",
@@ -21738,5 +21768,14 @@
   "poster": "https://pbs.twimg.com/amplify_video_thumb/2124560129265651712/img/pSV9I8NU5kPPrUqQ.jpg",
   "published": "2026-11-22T17:46:37Z",
   "video": "https://video.twimg.com/amplify_video/2124560129265651712/vid/avc1/2160x3840/CDF2KaGtZbc1pkcs.mp4"
+ },
+ "https://x.com/steelers/status/2126437299948777498": {
+  "game_id": "401873083",
+  "game_time": "Q3 3:31",
+  "play_key": "401873083:4018730832758",
+  "played_at": "2026-11-27T22:05:22Z",
+  "poster": "https://pbs.twimg.com/amplify_video_thumb/2126437218973528064/img/PzJriN9ndkvMsPDN.jpg",
+  "published": "2026-11-27T22:05:34Z",
+  "video": "https://video.twimg.com/amplify_video/2126437218973528064/vid/avc1/1920x1080/PDTLE7XkNep5P3Xd.mp4"
  }
 }
