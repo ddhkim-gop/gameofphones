@@ -1,8 +1,27 @@
 {
   "team": "ganathan",
-  "updated": "2026-11-27",
+  "updated": "2026-11-28",
   "note": "Curated: X has no public search API, so posts are collected by hand and matched to rosters by this script.",
   "tweets": [
+    {
+      "url": "https://www.espn.com/video/clip/_/id/50613822/dk-metcalf-makes-nice-td-snag",
+      "player": "DK Metcalf",
+      "meta": "WR \u00b7 PIT",
+      "date": "2026-11-27",
+      "author": "ESPN",
+      "text": "DK Metcalf makes nice TD snag",
+      "verified": true,
+      "faves": 0,
+      "secs": 0,
+      "espn_game": "401873083",
+      "game_id": "401873083",
+      "game_time": "Q1 1:40",
+      "play_key": "401873083:401873083773",
+      "played_at": "2026-11-27T20:33:54Z",
+      "poster": "https://espnmedia-cdn.akamaized.net/espn/media/common/2026/1127/6aa2ac3bc9bf43dbbd142bd73ab5ae581080/6aa2ac3bc9bf43dbbd142bd73ab5ae581080.jpg",
+      "published": "2026-11-27T20:41:22Z",
+      "video": "https://espnmedia-cdn.akamaized.net/espn/media/16x9/wsc/2026/1127/6aa2ac3b-c9bf-43db-bd14-2bd73ab5ae58/6aa2ac3b-c9bf-43db-bd14-2bd73ab5ae58.mp4"
+    },
     {
       "url": "https://www.espn.com/video/clip/_/id/50608845/josh-allen-pass-ricochets-khalil-shakir-second-int",
       "player": "Josh Allen",
@@ -219,25 +238,6 @@
       "author_name": "Baltimore Ravens",
       "avatar": "https://pbs.twimg.com/profile_images/1994466436266225664/05ma1sy0_normal.jpg",
       "author_verified": true
-    },
-    {
-      "url": "https://www.espn.com/video/clip/_/id/50536298/cj-stroud-fires-42-yard-dime-nico-collins-texans-td",
-      "player": "Nico Collins",
-      "meta": "WR \u00b7 HOU",
-      "date": "2026-11-20",
-      "author": "ESPN",
-      "text": "C.J. Stroud fires a 42-yard dime to Nico Collins for Texans TD",
-      "verified": true,
-      "faves": 0,
-      "secs": 0,
-      "espn_game": "401873066",
-      "game_id": "401873066",
-      "game_time": "Q1 2:14",
-      "play_key": "401873066:401873066834",
-      "played_at": "2026-11-20T01:49:58Z",
-      "poster": "https://espnmedia-cdn.akamaized.net/espn/media/common/2026/1119/535362da4bd843209c51ff446272a7a01390/535362da4bd843209c51ff446272a7a01390.jpg",
-      "published": "2026-11-20T01:59:49Z",
-      "video": "https://espnmedia-cdn.akamaized.net/espn/media/16x9/wsc/2026/1120/535362da-4bd8-4320-9c51-ff446272a7a0/535362da-4bd8-4320-9c51-ff446272a7a0.mp4"
     },
     {
       "url": "https://www.espn.com/video/clip/_/id/50564445/dk-metcalf-ejected-altercations-eagles",

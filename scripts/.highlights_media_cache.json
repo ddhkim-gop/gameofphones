@@ -4727,6 +4727,28 @@
   "published": "2026-11-27T03:51:36Z",
   "video": "https://espnmedia-cdn.akamaized.net/espn/media/16x9/wsc/2026/1127/1b32bd69-d907-4bd2-b65c-74ce3b3c6ce6/1b32bd69-d907-4bd2-b65c-74ce3b3c6ce6.mp4"
  },
+ "https://www.espn.com/video/clip/_/id/50613822/dk-metcalf-makes-nice-td-snag": {
+  "espn_game": "401873083",
+  "game_id": "401873083",
+  "game_time": "Q1 1:40",
+  "play_key": "401873083:401873083773",
+  "played_at": "2026-11-27T20:33:54Z",
+  "poster": "https://espnmedia-cdn.akamaized.net/espn/media/common/2026/1127/6aa2ac3bc9bf43dbbd142bd73ab5ae581080/6aa2ac3bc9bf43dbbd142bd73ab5ae581080.jpg",
+  "published": "2026-11-27T20:41:22Z",
+  "video": "https://espnmedia-cdn.akamaized.net/espn/media/16x9/wsc/2026/1127/6aa2ac3b-c9bf-43db-bd14-2bd73ab5ae58/6aa2ac3b-c9bf-43db-bd14-2bd73ab5ae58.mp4"
+ },
+ "https://www.espn.com/video/clip/_/id/50614091/broncos-mock-aaron-rodgers-celebration-safety": {
+  "espn_game": "401873083",
+  "poster": "https://espnmedia-cdn.akamaized.net/espn/media/common/2026/1127/ab060d87d1de4ab0b58881d93502ef231082/ab060d87d1de4ab0b58881d93502ef231082.jpg",
+  "published": "2026-11-27T21:05:06Z",
+  "video": "https://espnmedia-cdn.akamaized.net/espn/media/16x9/wsc/2026/1127/ab060d87-d1de-4ab0-b588-81d93502ef23/ab060d87-d1de-4ab0-b588-81d93502ef23.mp4"
+ },
+ "https://www.espn.com/video/clip/_/id/50615531/bo-nix-turns-3rd-4th-21": {
+  "espn_game": "401873083",
+  "poster": "https://espnmedia-cdn.akamaized.net/espn/media/common/wsc/2026/1127/0f588709-0686-411e-87b9-63a1ed8220b3/0f588709-0686-411e-87b9-63a1ed8220b3.jpg",
+  "published": "2026-11-27T22:53:13Z",
+  "video": "https://espnmedia-cdn.akamaized.net/espn/media/16x9/wsc/2026/1127/0f588709-0686-411e-87b9-63a1ed8220b3/0f588709-0686-411e-87b9-63a1ed8220b3.mp4"
+ },
  "https://www.youtube.com/shorts/-150A9vaDV0": {
   "poster": "https://i.ytimg.com/vi/-150A9vaDV0/hqdefault.jpg",
   "published": "2026-10-14T17:00:35Z",
@@ -19378,6 +19400,11 @@
   "poster": "https://pbs.twimg.com/amplify_video_thumb/2126398341579968512/img/lGzujUM1gGeB8PX2.jpg",
   "published": "2026-11-27T19:37:17Z",
   "video": "https://video.twimg.com/amplify_video/2126398341579968512/vid/avc1/1080x1920/KsYAgOOY1y7JNpGC.mp4"
+ },
+ "https://x.com/NFL/status/2126452962260087279": {
+  "poster": "https://pbs.twimg.com/amplify_video_thumb/2126452678624681984/img/fcz6MZ4YtUK4pBLN.jpg",
+  "published": "2026-11-27T23:07:48Z",
+  "video": "https://video.twimg.com/amplify_video/2126452678624681984/vid/avc1/2160x3840/pusXz508Zx-5Ujkr.mp4"
  },
  "https://x.com/NFLTDsVideos/status/2098243863588540602": {
   "poster": "https://pbs.twimg.com/amplify_video_thumb/2098241229179981824/img/2KDyL8xVMdAuIHf1.jpg?name=orig",
