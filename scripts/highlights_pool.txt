@@ -570,6 +570,7 @@ https://www.espn.com/video/clip/_/id/50608845/josh-allen-pass-ricochets-khalil-s
 https://www.espn.com/video/clip/_/id/50613822/dk-metcalf-makes-nice-td-snag
 https://www.espn.com/video/clip/_/id/50614091/broncos-mock-aaron-rodgers-celebration-safety
 https://www.espn.com/video/clip/_/id/50615531/bo-nix-turns-3rd-4th-21
+https://www.espn.com/video/clip/_/id/50616923/falcons-play-familiar-face-kirk-cousins
 https://www.youtube.com/shorts/-150A9vaDV0
 https://www.youtube.com/shorts/-Prt969WqGo
 https://www.youtube.com/shorts/-hYZPx0E-Mw
@@ -603,7 +604,6 @@ https://www.youtube.com/shorts/4X-gzqEwMlo
 https://www.youtube.com/shorts/4oRrgW9RB3c
 https://www.youtube.com/shorts/5XJwiLYCFy4
 https://www.youtube.com/shorts/5kaZm06xrcE
-https://www.youtube.com/shorts/5vRZggzKamE
 https://www.youtube.com/shorts/63D476Z0-E0
 https://www.youtube.com/shorts/64fzMxVTmX4
 https://www.youtube.com/shorts/6CW-KrBXuWM
@@ -632,6 +632,7 @@ https://www.youtube.com/shorts/Ax0AgGJD6Jc
 https://www.youtube.com/shorts/BKZ_OKCXMYk
 https://www.youtube.com/shorts/Bjx0LYxED1M
 https://www.youtube.com/shorts/Bs0c36ByT5o
+https://www.youtube.com/shorts/BwUGlT3ySqE
 https://www.youtube.com/shorts/BycfnV-6Isg
 https://www.youtube.com/shorts/C6i296SuCE0
 https://www.youtube.com/shorts/C8ipQWaQqok
@@ -644,7 +645,6 @@ https://www.youtube.com/shorts/DDmYFDPknP8
 https://www.youtube.com/shorts/DYygYije85A
 https://www.youtube.com/shorts/EH0MtCZpPps
 https://www.youtube.com/shorts/EbbsPCWHHWE
-https://www.youtube.com/shorts/Es9MbX9TL3E
 https://www.youtube.com/shorts/EwYRLeEifOw
 https://www.youtube.com/shorts/ExWgvuJUSdk
 https://www.youtube.com/shorts/F2Hayyudmi0
@@ -884,7 +884,6 @@ https://www.youtube.com/shorts/qgD39YVOHAI
 https://www.youtube.com/shorts/qgkT8h6JRR4
 https://www.youtube.com/shorts/qrlv60nl58o
 https://www.youtube.com/shorts/r1-PVe83IWQ
-https://www.youtube.com/shorts/rJbeebhcHhU
 https://www.youtube.com/shorts/rKANN3zB6n4
 https://www.youtube.com/shorts/rR1M8zjuZuM
 https://www.youtube.com/shorts/rZK2zYip9GY
@@ -906,7 +905,6 @@ https://www.youtube.com/shorts/tf50w_sKhFg
 https://www.youtube.com/shorts/troon_vpRBU
 https://www.youtube.com/shorts/u1uj9GmDxpI
 https://www.youtube.com/shorts/uCh9thLlmt8
-https://www.youtube.com/shorts/uO3mAsnggpc
 https://www.youtube.com/shorts/uSiRBN7TbEI
 https://www.youtube.com/shorts/uZOLh60FcX8
 https://www.youtube.com/shorts/uh04PL8s7CM
@@ -1013,9 +1011,6 @@ https://x.com/FantasyPros/status/2096256795492630756
 https://x.com/FantasyPros/status/2096267190143963312
 https://x.com/Giants/status/2124626989852381308
 https://x.com/Giants/status/2124634370216522054
-https://x.com/HoustonTexans/status/2123595114840736201
-https://x.com/HoustonTexans/status/2123600052119556599
-https://x.com/HoustonTexans/status/2123603846681460866
 https://x.com/JDurham_FBall/status/2098220723357597783
 https://x.com/JFowlerESPN/status/2096039707217953172
 https://x.com/JFowlerESPN/status/2096041783343894722
@@ -1073,13 +1068,6 @@ https://x.com/NFL/status/2110901632976232573
 https://x.com/NFL/status/2110911744725942454
 https://x.com/NFL/status/2110932117664284764
 https://x.com/NFL/status/2110933034966958420
-https://x.com/NFL/status/2123576179512992165
-https://x.com/NFL/status/2123592601635066091
-https://x.com/NFL/status/2123595089394229303
-https://x.com/NFL/status/2123595924761112640
-https://x.com/NFL/status/2123599940811387062
-https://x.com/NFL/status/2123618818589429900
-https://x.com/NFL/status/2123626432706564458
 https://x.com/NFL/status/2124555057765253447
 https://x.com/NFL/status/2124557402335002764
 https://x.com/NFL/status/2124566327348105661
