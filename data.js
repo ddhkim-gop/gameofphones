@@ -5287,7 +5287,7 @@ window.__STATIC_DATA__ = {
                 "weight": "216",
                 "years_exp": 1,
                 "status": "Active",
-                "injury_status": "Questionable",
+                "injury_status": null,
                 "search_rank": 497
             },
             {
@@ -5511,24 +5511,8 @@ window.__STATIC_DATA__ = {
                 "weight": "207",
                 "years_exp": 7,
                 "status": "Active",
-                "injury_status": "Questionable",
-                "search_rank": 89
-            },
-            {
-                "player_id": "6039",
-                "espn_id": 3915411,
-                "name": "Ty Johnson",
-                "position": "RB",
-                "team": "BUF",
-                "age": 29,
-                "birth_date": "1997-09-17",
-                "college": "Maryland",
-                "height": "70",
-                "weight": "210",
-                "years_exp": 7,
-                "status": "Active",
                 "injury_status": null,
-                "search_rank": 534
+                "search_rank": 89
             },
             {
                 "player_id": "6786",
@@ -5559,7 +5543,7 @@ window.__STATIC_DATA__ = {
                 "weight": "236",
                 "years_exp": 6,
                 "status": "Active",
-                "injury_status": "Questionable",
+                "injury_status": "Out",
                 "search_rank": 34
             },
             {
@@ -5591,7 +5575,7 @@ window.__STATIC_DATA__ = {
                 "weight": "245",
                 "years_exp": 6,
                 "status": "Active",
-                "injury_status": "Questionable",
+                "injury_status": "Out",
                 "search_rank": 103
             },
             {
@@ -5853,7 +5837,7 @@ window.__STATIC_DATA__ = {
                 "weight": "183",
                 "years_exp": 1,
                 "status": "Active",
-                "injury_status": "Questionable",
+                "injury_status": null,
                 "search_rank": 660
             },
             {
@@ -6013,7 +5997,7 @@ window.__STATIC_DATA__ = {
                 "weight": "242",
                 "years_exp": 8,
                 "status": "Active",
-                "injury_status": "Questionable",
+                "injury_status": null,
                 "search_rank": 98
             },
             {
@@ -6061,7 +6045,7 @@ window.__STATIC_DATA__ = {
                 "weight": "200",
                 "years_exp": 7,
                 "status": "Active",
-                "injury_status": "Questionable",
+                "injury_status": null,
                 "search_rank": 77
             },
             {
@@ -6387,7 +6371,7 @@ window.__STATIC_DATA__ = {
                 "weight": "233",
                 "years_exp": 0,
                 "status": "Active",
-                "injury_status": "Questionable",
+                "injury_status": "Out",
                 "search_rank": 288
             },
             {
@@ -6419,7 +6403,7 @@ window.__STATIC_DATA__ = {
                 "weight": "198",
                 "years_exp": 0,
                 "status": "Active",
-                "injury_status": null,
+                "injury_status": "Out",
                 "search_rank": 488
             },
             {
@@ -6595,7 +6579,7 @@ window.__STATIC_DATA__ = {
                 "weight": "220",
                 "years_exp": 4,
                 "status": "Active",
-                "injury_status": "Questionable",
+                "injury_status": "Out",
                 "search_rank": 56
             },
             {
@@ -6691,7 +6675,7 @@ window.__STATIC_DATA__ = {
                 "weight": "197",
                 "years_exp": 3,
                 "status": "Active",
-                "injury_status": "Questionable",
+                "injury_status": null,
                 "search_rank": 6
             }
         ]
@@ -6825,7 +6809,7 @@ window.__STATIC_DATA__ = {
                 "weight": "170",
                 "years_exp": 0,
                 "status": "Active",
-                "injury_status": "Questionable",
+                "injury_status": "Doubtful",
                 "search_rank": 508
             },
             {
@@ -6921,7 +6905,7 @@ window.__STATIC_DATA__ = {
                 "weight": "252",
                 "years_exp": 10,
                 "status": "Active",
-                "injury_status": "Questionable",
+                "injury_status": null,
                 "search_rank": 7
             },
             {
@@ -7129,7 +7113,7 @@ window.__STATIC_DATA__ = {
                 "weight": "241",
                 "years_exp": 4,
                 "status": "Active",
-                "injury_status": "Questionable",
+                "injury_status": null,
                 "search_rank": 105
             },
             {
@@ -7487,7 +7471,7 @@ window.__STATIC_DATA__ = {
                 "weight": "226",
                 "years_exp": 7,
                 "status": "Active",
-                "injury_status": "Doubtful",
+                "injury_status": "Out",
                 "search_rank": 17
             },
             {
@@ -7893,7 +7877,7 @@ window.__STATIC_DATA__ = {
                 "weight": "209",
                 "years_exp": 1,
                 "status": "Active",
-                "injury_status": "Questionable",
+                "injury_status": "Out",
                 "search_rank": 44
             },
             {
@@ -8069,7 +8053,7 @@ window.__STATIC_DATA__ = {
                 "weight": "184",
                 "years_exp": 4,
                 "status": "Active",
-                "injury_status": "Questionable",
+                "injury_status": "Out",
                 "search_rank": 508
             },
             {
@@ -8117,7 +8101,7 @@ window.__STATIC_DATA__ = {
                 "weight": "225",
                 "years_exp": 4,
                 "status": "Active",
-                "injury_status": "Questionable",
+                "injury_status": null,
                 "search_rank": 679
             },
             {
@@ -8181,7 +8165,7 @@ window.__STATIC_DATA__ = {
                 "weight": "203",
                 "years_exp": 3,
                 "status": "Active",
-                "injury_status": "Questionable",
+                "injury_status": "Out",
                 "search_rank": 164
             },
             {
@@ -8213,7 +8197,7 @@ window.__STATIC_DATA__ = {
                 "weight": "191",
                 "years_exp": 3,
                 "status": "Active",
-                "injury_status": "Questionable",
+                "injury_status": "Out",
                 "search_rank": 148
             },
             {
@@ -8475,7 +8459,7 @@ window.__STATIC_DATA__ = {
                 "weight": "228",
                 "years_exp": 0,
                 "status": "Active",
-                "injury_status": null,
+                "injury_status": "Out",
                 "search_rank": 362
             },
             {
@@ -8523,7 +8507,7 @@ window.__STATIC_DATA__ = {
                 "weight": "180",
                 "years_exp": 0,
                 "status": "Active",
-                "injury_status": "Questionable",
+                "injury_status": "Out",
                 "search_rank": 185
             },
             {
@@ -8737,7 +8721,7 @@ window.__STATIC_DATA__ = {
                 "weight": "179",
                 "years_exp": 3,
                 "status": "Active",
-                "injury_status": "Doubtful",
+                "injury_status": "Out",
                 "search_rank": 99
             },
             {
@@ -9380,7 +9364,7 @@ window.__STATIC_DATA__ = {
                 "birth_date": "2004-08-12",
                 "college": "Arizona State",
                 "height": "74",
-                "weight": "203",
+                "weight": "200",
                 "years_exp": 0,
                 "status": "Active",
                 "injury_status": null,
@@ -10045,7 +10029,7 @@ window.__STATIC_DATA__ = {
                 "weight": "228",
                 "years_exp": 7,
                 "status": "Active",
-                "injury_status": "Questionable",
+                "injury_status": null,
                 "search_rank": 691
             },
             {
@@ -10275,7 +10259,7 @@ window.__STATIC_DATA__ = {
                 "weight": "208",
                 "years_exp": 1,
                 "status": "Active",
-                "injury_status": "Questionable",
+                "injury_status": null,
                 "search_rank": 105
             },
             {
@@ -10323,7 +10307,7 @@ window.__STATIC_DATA__ = {
                 "weight": "165",
                 "years_exp": 1,
                 "status": "Active",
-                "injury_status": null,
+                "injury_status": "Questionable",
                 "search_rank": 674
             },
             {
@@ -10841,7 +10825,7 @@ window.__STATIC_DATA__ = {
                 "weight": "196",
                 "years_exp": 1,
                 "status": "Active",
-                "injury_status": "Questionable",
+                "injury_status": "Out",
                 "search_rank": 999
             },
             {
@@ -11001,7 +10985,7 @@ window.__STATIC_DATA__ = {
                 "weight": "220",
                 "years_exp": 6,
                 "status": "Active",
-                "injury_status": null,
+                "injury_status": "Questionable",
                 "search_rank": 36
             },
             {
@@ -11652,6 +11636,28 @@ window.__STATIC_DATA__ = {
     }
   ],
   "transactions": [
+    {
+        "season": "2026",
+        "week": 12,
+        "created": "Nov 27, 2026 • 12:38 PM PT",
+        "transaction_id": "1432142492047773696",
+        "type": "free_agent",
+        "status": "complete",
+        "teams": [
+            "ddhk"
+        ],
+        "added": [],
+        "dropped": [
+            {
+                "name": "Ty Johnson",
+                "position": "RB",
+                "team": "BUF"
+            }
+        ],
+        "faab": 0,
+        "waiver_bid": 0,
+        "notes": null
+    },
     {
         "season": "2026",
         "week": 12,
